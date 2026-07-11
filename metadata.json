@@ -1,0 +1,6 @@
+{
+  "name": "Simulado ENADE Medicina",
+  "description": "Plataforma moderna de simulados para estudantes de Medicina treinarem para o ENADE e Teste de Progresso sem necessidade de cadastro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
