@@ -1,0 +1,1926 @@
+import { Question } from '../types';
+
+export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
+  {
+    id: 'tp2024-101',
+    module: 'Saúde Coletiva',
+    text: 'Indivíduos com DPOC devem tomar medidas para reduzir a exposição a material particulado (MP) no ar interior. Assinale a alternativa que contém medidas eficazes:',
+    options: [
+      'Verificar qualidade do ar, usar purificador domiciliar, abrir janelas para ventilar e usar máscara ao sair se MP externo alto.',
+      'Manter janelas fechadas sempre, evitar purificadores de ar e usar máscara apenas dentro de casa.',
+      'Não há evidências de que purificadores de ar ajudem na redução de MP em ambientes fechados.',
+      'O uso de máscaras ao ar livre não tem impacto na redução da inflamação pulmonar em pacientes com DPOC.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Mudanças comportamentais associadas a melhores condições econômicas são eficazes na redução da concentração interior de MP.',
+    commentary: 'De acordo com as referências citadas foram comprovadas que mudanças comportamentais no estilo de vida tais como: verificação da qualidade do ar; uso de purificador de ar domiciliar; abrir as janelas da casa, para promover uma melhor ventilação do ambiente; verificar os filtros do ar condicionado; abster-se de sair quando a concentração de MP externo estiver alta e o uso de máscara ao sair quando associadas a melhores condições econômicas são eficazes na redução da concentração interior de MP.',
+    reference: 'Hajeong Kim, Geunjoo Na, Shinhee Park, Seung Won Ra, Sung-Yoon Kang, Ho Cheol Kim, Hwan-Cheol Kim, Sei Won Lee,The impact of life behavior and environment on particulate matter in chronic obstructive pulmonary disease,Environmental Research, Volume 198,2021,111265,ISSN 0013-9351, https://doi.org/10.1016/j.envres.2021.111265; Kim, H., Huh, JY., Na, G. et al. Lifestyle practices that reduce seasonal PM2.5 exposure and their impact on COPD. Sci Rep 13, 11822 (2023). https://doi.org/10.1038/s41598-023-38714-5',
+    tags: ['Saúde Ambiental', 'DPOC']
+  },
+  {
+    id: 'tp2024-102',
+    module: 'Saúde Coletiva',
+    text: 'Paciente comparece com hematomas e relata agressão por pessoa com quem convive, mas nega-se a registrar Boletim de Ocorrência. Sobre a notificação, assinale a correta:',
+    options: [
+      'A notificação é obrigatória somente após o registro do BO policial.',
+      'A ficha de notificação deve ser preenchida apenas em casos confirmados pela assistência social.',
+      'É obrigatório ao médico o preenchimento da Ficha de Notificação de Violência Interpessoal e o envio à Autoridade de Saúde.',
+      'A pessoa agredida pode optar por não realizar a ficha de notificação assinando um termo.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A notificação de violência é compulsória para profissionais de saúde e não depende de autorização da vítima ou registro policial.',
+    commentary: '(A) Está incorreta porque a pessoa tem o direito de registrar o Boletim de Ocorrência junto às autoridades policiais, mas não existe esta obrigatoriedade, principalmente, quando existe manifestação contrária por parte da pessoa agredida. (B) Está incorreta porque afirma que existe a obrigatoriedade da confirmação do caso e necessidade de equipe para registrar o envio da Ficha de Notificação de agravo o que contraria as orientações do Art. 8º reproduzido acima. (C) É a alternativa correta porque a Lei 6.259 de 30 de outubro de 1975 em seu Art 8º retrata que “É dever de todo cidadão comunicar à autoridade sanitária local a ocorrência de fato, comprovado ou presumível, de caso de doença transmissível, sendo obrigatória a médicos e outros profissionais de saúde no exercício da profissão, bem como aos responsáveis por organizações e estabelecimentos públicos e particulares de saúde e ensino a notificação de casos suspeitos ou confirmados das doenças relacionadas em conformidade com o artigo 7º”. A periodicidade do envio está presente na Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública atualizada em 19/02/2024. (D) Está incorreta porque à comunicação à Autoridade de Saúde deve ocorrer conforme a Lei 6259/75',
+    reference: 'BRASIL, SINANWEB. Brasília. 09 de janeiro de 2020. Link disponível em: https://portalsinan.saude.gov.br/doencas-eagravos; BRASIL. Ficha de Notificação de SINAN SISTEMA DE INFORMAÇÃO DE AGRAVOS DE NOTIFICAÇÃO FICHA DE NOTIFICAÇÃO INDIVIDUAL. Brasília. Link disponível em: http://portalsinan.saude.gov.br/images/documentos/Agravos/via/violencia_v5.pdf. Acesso em 11 de junho de 2024; BRASIL. Portal SINAN. Brasília. 25 de julho de 2022. Link disponível em: http://portalsinan.saude.gov.br/violenciainterpessoal-autoprovocada. Acesso em 11 de junho de 2024; CASA CIVIL. L6259.Brasília. Link disponível: https://www.planalto.gov.br/ccivil_03/leis/l6259.htm; MINISTÉRIO DA SAÚDE. Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública. Brasília. 19 de fevereiro de 2024.',
+    tags: ['Ética Médica', 'Vigilância em Saúde']
+  },
+  {
+    id: 'tp2024-103',
+    module: 'Saúde Coletiva',
+    text: 'Dentre os atributos da Atenção Primária à Saúde (APS), como a "coordenação do cuidado" pode ser entendida?',
+    options: [
+      'Acolher o indivíduo em seus aspectos biopsicossociais de forma holística.',
+      'Capacidade de integrar as informações sobre os usuários entre os diversos serviços (referência e contrarreferência).',
+      'Organizar a relação contínua entre usuários e profissionais que favoreça o conhecimento mútuo.',
+      'Construção do reconhecimento pela população do serviço como sua referência preferencial.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A coordenação do cuidado refere-se à sincronização da assistência entre diferentes pontos da rede.',
+    commentary: 'Correta: A coordenação do cuidado implica adequada e eficiente troca de informações nos casos de referência e contrarreferências, e é melhor desempenhada por meio de um sistema de informação de base eletrônica que integre os pontos assistenciais e que permita aos serviços de APS acompanhar e avaliar se a atenção recebida nos demais pontos foi adequada às necessidades dos pacientes. Além disso, a realização de interconsultas entre profissionais de diferentes pontos assistenciais, estratégias de apoio matricial, encontros para discussão de casos clínicos com profissionais de diferentes pontos de atenção e ferramentas de comunicação entre esses pontos – uso rotineiro de contato telefônico, ampliação do uso de tecnologias de comunicação e informação, como as teleconsultorias – são fundamentais para que a coordenação do cuidado realizada pelos serviços de APS se consolide. Incorretas: A capacidade que detém uma equipe de saúde de identificar e lidar com o leque das necessidades de saúde apresentadas pelos indivíduos, seja resolvendo-as ou restando orientações para que recebam os serviços dos demais pontos de atenção à saúde, é a Integralidade. A essência do conceito de longitudinalidade é a duração, no tempo, de uma relação de confiança de base pessoal que se estabelece entre indivíduos e um médico e uma equipe de saúde, independentemente do tipo de problema de saúde apresentado ou mesmo de sua presença pontual. Essa relação possibilita que os profissionais conheçam os usuários do serviço e que estes conheçam a equipe de saúde. A longitudinalidade pressupõe a existência de uma fonte regular de atenção e a recorrência a ela ao longo do tempo, o que implica a Adscrição da população a equipes de saúde. Um serviço é considerado a porta de entrada ao sistema de saúde quando é identificado pela população e pela equipe como o primeiro recurso a ser buscado, em caso de uma necessidade em saúde. Em uma situação ideal, sempre que um indivíduo apresenta uma necessidade em saúde, o primeiro contato é feito nesse serviço, que deve ser de fácil acesso e disponível; se isso não acontecer, a procura será adiada, talvez a ponto de afetar negativamente a saúde. O conceito “porta de entrada ao sistema de saúde” refere-se tanto à acessibilidade quanto à utilização do serviço pela população, seja em caso de um novo evento de saúde ou de um novo episódio de uma condição antiga.',
+    reference: 'Medicina ambulatorial: condutas de atenção primária baseadas em evidências [recurso eletrônico] / Organizadores, Bruce B. Duncan ... [et al.]. – 5. ed. – Porto Alegre: Artmed, 2022. Capítulo 3 - A ORGANIZAÇÃO DE SERVIÇOS DE ATENÇÃO PRIMÁRIA À SAÚDE, Takeda, Silvia.',
+    tags: ['APS', 'Políticas de Saúde', 'Gestão']
+  },
+  {
+    id: 'tp2024-104',
+    module: 'Saúde Coletiva',
+    text: 'Sobre o instrumento de avaliação multidimensional do idoso na Atenção Primária, assinale a alternativa CORRETA:',
+    options: [
+      'A dimensão psicossocial avalia exclusivamente a funcionalidade para o trabalho.',
+      'Testes de visão e audição são restritos à atenção secundária (especialista).',
+      'A saúde mental deve ser avaliada por psiquiatra, não pelo clínico da APS.',
+      'Resume-se à checagem de funções-chave (visão, audição, cognição, mobilidade) que podem estar alteradas.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A avaliação multidimensional é uma ferramenta de triagem oportunística para detectar declínios funcionais comuns no envelhecimento.',
+    commentary: '(D) CORRETA. O instrumento de avaliação multidimensional do idoso foi desenvolvido para ser usado em ambulatório de APS, de forma complementar a uma consulta médica e de maneira oportunística. A abordagem proposta resume-se à checagem de um limitado número de funções-chave que podem estar alteradas, mas que, com frequência, não são pesquisadas quando uma história e um exame físico convencional são utilizados na avaliação de pacientes idosos. (A) INCORRETA. A funcionalidade é avaliada pela dimensão funcional. A dimensão psicossocial avalia tanto os fatores sociais, incluindo os culturais, bem como a saúde mental do indivíduo idoso. (B) INCORRETA. As dimensões avaliadas são visão, audição, função dos membros superiores e inferiores, função cognitiva, humor, risco domiciliar para quedas, atividades da vida diária básica e instrumentada, incontinência urinária, perda de peso e suporte social. (C) INCORRETA. A saúde mental do idoso é avaliada pela dimensão psicossocial.',
+    reference: 'Ministério da Saúde. Nota técnica 01/2019 – Esclarecimento aos gestores sobre a avaliação multidimensional do idoso. Disponível em: https://atencaobasica.saude.rs.gov.br/upload/arquivos/201904/ 25085725-nt-01-avaliacao-multi.pdf; GUSSO, Gustavo; LOPES, José M C.; DIAS, Lêda C. Tratado de medicina de família e comunidade - 2 volumes: princípios, formação e prática. Grupo A, 2019., Capítulo 89',
+    tags: ['Geriatria', 'APS', 'Saúde do Idoso']
+  },
+  {
+    id: 'tp2024-105',
+    module: 'Saúde Coletiva',
+    text: 'Mulher de 27 anos, primigesta no 2º trimestre de gestação, nunca realizou Papanicolau. Qual a indicação correta?',
+    options: [
+      'Indicar colposcopia diretamente por segurança.',
+      'Aguardar o período puerperal para evitar riscos de sangramento.',
+      'Realizar a coleta citológica na gestação, seguindo técnica adequada.',
+      'Coletar apenas se houver lesões visíveis como condilomas.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A gestação não contraindica o rastreamento do câncer de colo de útero.',
+    commentary: 'Recomendações da coleta do exame citopatológico do colo do útero diante de situações especiais: Seguir as recomendações de periodicidade e faixa etária como para as demais mulheres. Há recomendações conflitantes quanto à coleta de material endocervical em grávidas. Apesar de não haver evidências de que a coleta de espécime endocervical aumente o risco sobre a gestação quando utilizada uma técnica adequada, outras fontes recomendam evitá-la devido ao risco em potencial. Recomenda-se análise caso a caso, pesando riscos e benefícios da ação. Gestantes aderentes ao programa de rastreamento com últimos exames normais podem ser acompanhadas de forma segura sem a coleta endocervical durante a gravidez. Por outro lado, para mulheres com vínculo frágil ao serviço e/ou não aderentes ao programa de rastreamento, o momento da gestação se mostra como valiosa oportunidade para a coleta do exame, devendo, portanto, ser completa.',
+    reference: 'Protocolos da Atenção Básica: Saúde das Mulheres / Ministério da Saúde, Instituto Sírio-Libanês de Ensino e Pesquisa – Brasília: Ministério da Saúde, 2016.',
+    tags: ['Rastreamento', 'Saúde da Mulher', 'Gestação']
+  },
+  {
+    id: 'tp2024-106',
+    module: 'Saúde Coletiva',
+    text: 'Os Determinantes Sociais de Saúde (DSSs) estabelecem decisivamente a saúde das pessoas. Qual alternativa demonstra a influência dos DSSs nas políticas do SUS?',
+    options: [
+      'Promoção de campanhas de vacinação anuais para grupos prioritários.',
+      'Aumento do número de hospitais privados via Saúde Suplementar.',
+      'Desenvolvimento de novas tecnologias médicas curativas.',
+      'Implementação da Estratégia Saúde da Família (ESF) visando saneamento, educação e habitação.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A ESF atua sobre o território e suas condições de vida, abordando os determinantes sociais.',
+    commentary: 'A Estratégia de Saúde da Família (ESF), um dos pilares do SUS, objetiva consolidar a atenção básica no brasil a partir dos elementos que compõem os DSS. busca-se, assim, alcançar a saúde, entendida de forma coletiva e holística. isto é, por meio da atenção integral, das atividades de educação em saúde, do vínculo humanizado entre profissionais da saúde e usuários, da abordagem intersetorial, do acesso universal e equitativo entre outros procedimentos que contribuirão para a redução das desigualdades sociais. A saúde complementar, entre ela os planos privados de saúde, não são caracterizados pelos princípios da saúde pública e coletiva, portanto, apenas podem ser acessados por aqueles que podem pagar, ou seja, por uma minoria. Por sua vez, o desenvolvimento tecnológico médico e as campanhas de vacinação, apesar de serem essenciais para a prevenção e a promoção da saúde, não estão diretamente relacionados com, por exemplo, as condições sociais e econômicas que determinam estruturalmente a saúde de uma população.',
+    reference: 'BUSS, P. M.; PELLEGRINI FILHO, A. A Saúde e seus Determinantes Sociais. Physis: Revista de Saúde Coletiva, p. 77-93, 2007. PAIM, J. S. Atenção Primária à Saúde no Brasil: fundamentos e perspectivas. Saúde em Debate, p. 633-646, 2020.',
+    tags: ['DSS', 'SUS', 'Saúde da Família']
+  },
+  {
+    id: 'tp2024-107',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 76 anos, polifarmácia (Enalapril, HCTZ, Levotiroxina, Sinvastatina, Zolpidem). Apresenta sonolência, lapsos de memória e tosse. Qual a conduta mais apropriada?',
+    options: [
+      'Manter prescrição e adicionar antidepressivo (ISRS).',
+      'Substituir Enalapril por BRA e considerar redução/descontinuação do Zolpidem.',
+      'Aumentar HCTZ para controle pressórico e adicionar IBP.',
+      'Aumentar Levotiroxina para melhorar a fadiga e manter Zolpidem.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A tosse pode ser efeito colateral do Enalapril e a sonolência/lapsos de memória do Zolpidem.',
+    commentary: 'A substituição do enalapril por um BRA (bloqueador do receptor da angiotensina) pode reduzir a tosse persistente. A redução ou descontinuação do zolpidem pode diminuir a sonolência diurna, lapsos de memória e fadiga. A introdução de estratégias não farmacológicas para insônia, como a terapia cognitivocomportamental, pode melhorar a qualidade do sono sem os efeitos adversos do zolpidem. As outras opções não abordam adequadamente os problemas relacionados à polifarmácia e podem introduzir novos riscos ou não resolver os sintomas atuais.',
+    reference: 'Fick, D. M., et al. (2019). "2019 American Geriatrics Society Beers Criteria® Update Expert Panel." Journal of the American Geriatrics Society, 67(4), 674-694. Maher, R. L., Hanlon, J., & Hajjar, E. R. (2014). "Clinical consequences of polypharmacy in elderly." Expert Opinion on Drug Safety, 13(1), 57-65. Katzung, B. G., Masters, S. B., & Trevor, A. J. (2012). "Basic & Clinical Pharmacology." 12ª ed. New York: McGraw-Hill Medical.',
+    tags: ['Polifarmácia', 'Geriatria', 'Farmacologia']
+  },
+  {
+    id: 'tp2024-108',
+    module: 'Saúde Coletiva',
+    text: 'João, 23 anos, entregador de aplicativo, diagnosticado com HAS. Não tem condições de comprar os remédios, mas a médica explica que estão na farmácia da unidade. Quais princípios do SUS estão em destaque?',
+    options: [
+      'Universalidade e Integralidade.',
+      'Participação e Equidade.',
+      'Universalidade e Hierarquização.',
+      'Equidade e Hierarquização.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Acesso garantido (Universalidade) e assistência farmacêutica como parte do cuidado (Integralidade).',
+    commentary: 'De acordo com o artigo 196 da constituição, a saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal e igualitário às ações e serviços para sua promoção, proteção e recuperação. O acesso universal significa que todos podem alcançar uma ação/serviço de saúde sem qualquer barreira legal, econômica, física ou cultural. Além disso, de acordo com a Lei 8.080/1990, um dos princípios do SUS é a universalidade de acesso aos serviços de saúde em todos os níveis de assistência e outro princípio é integralidade de assistência, ou seja, o conjunto articulado e contínuo das ações e serviços preventivos e curativos, individuais e coletivos, exigidos para cada caso em todos os níveis de complexidade do sistema.',
+    reference: 'BRASIL. Constituição da República Federativa do Brasil. 18.ed. Brasília, DF: Senado, 1988. BRASIL. Lei 8.080, de 19 de setembro de 1990. Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. Diário Oficial da União, Brasília, DF, 19 set. 1990a. Seção 1.',
+    tags: ['SUS', 'Princípios', 'Bioética']
+  },
+  {
+    id: 'tp2024-109',
+    module: 'Saúde Coletiva',
+    text: 'Dona Maria, 65 anos, mora em zona rural isolada sem transporte público. A ESF vai à região uma vez por mês. Ela tem dificuldade de acesso à UBS urbana. Qual princípio está sendo violado?',
+    options: [
+      'Descentralização.',
+      'Participação Popular.',
+      'Universalidade.',
+      'Equidade.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Barreiras geográficas e organizacionais que impedem o acesso efetivo comprometem a Universalidade.',
+    commentary: '• Universalidade é o princípio que significa que todos podem alcançar uma ação ou serviço de saúde sem qualquer barreira legal, econômica, física ou cultural. • A participação é uma diretriz que aborda o controle social no SUS, ou seja, participação social nas instâncias previstas, como conselhos e conferências de saúde. • A descentralização político-administrativa significa a descentralização dos serviços e divisão de responsabilidades nas três esferas de governo; e serviços de referência mais especializados do SUS, não se localizam em municípios de pequeno porte, mas em cidades maiores que são referências em suas regionais de saúde. • A equidade é o princípio que trata da compreensão da igualdade da assistência à saúde, sem preconceitos ou privilégios de qualquer espécie, mas levando em consideração as desigualdades para seu melhor direcionamento; o princípio estaria correto para a situação descrita, contudo a justificativa trata da integralidade e de forma incorreta, pois não compete à UBS oferecer exames mais especializados.',
+    reference: 'BRASIL. Constituição da República Federativa do Brasil. 18.ed. Brasília, DF: Senado, 1988. BRASIL. Lei 8.080, de 19 de setembro de 1990. Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. Diário Oficial da União, Brasília, DF, 19 set. 1990a. Seção 1.',
+    tags: ['SUS', 'Acesso', 'Saúde Rural']
+  },
+  {
+    id: 'tp2024-110',
+    module: 'Saúde Coletiva',
+    text: 'Qual estratégia é mais abrangente para promover a adesão à imunização infantil, considerando os desafios atuais no Brasil?',
+    options: [
+      'Programas de capacitação técnica apenas para vacinadores.',
+      'Políticas de conscientização com foco na redução da desigualdade de acesso e determinantes sociais.',
+      'Incentivos financeiros diretos para famílias que vacinam.',
+      'Vigilância intensificada apenas em regiões com alta cobertura anterior.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Abordar barreiras socioeconômicas e culturais é chave para a justiça social na distribuição de vacinas.',
+    commentary: 'A alternativa correta (B), haja vista que esta alternativa reconhece a complexidade das barreiras que impedem o acesso equitativo à imunização e busca promover a justiça social na distribuição de vacinas, abordando questões socioeconômicas e culturais que influenciam a adesão vacinal. De acordo com o artigo 196 da constituição, a saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal e igualitário às ações e serviços para sua promoção, proteção e recuperação. O acesso universal significa que todos podem alcançar uma ação/serviço de saúde sem qualquer barreira legal, econômica, física ou cultural. Além disso, de acordo com a Lei 8.080/1990, um dos princípios do SUS é a universalidade de acesso aos serviços de saúde em todos os níveis de assistência e outro princípio é integralidade de assistência, ou seja, o conjunto articulado e contínuo das ações e serviços preventivos e curativos, individuais e coletivos, exigidos para cada caso em todos os níveis de complexidade do sistema.',
+    reference: 'BRASIL. Constituição da República Federativa do Brasil. 18.ed. Brasília, DF: Senado, 1988. BRASIL. Lei 8.080, de 19 de setembro de 1990. Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. Diário Oficial da União, Brasília, DF, 19 set. 1990a. Seção 1. GUSSO, Gustavo et al. Tratado de medicina de família e comunidade: princípios, formação e prática. 2. ed. V. 1 e 2. Porto Alegre: Artmed, 2019, xxii, 938. p',
+    tags: ['Imunização', 'Saúde Pública', 'Equidade']
+  },
+  {
+    id: 'tp2024-111',
+    module: 'Saúde Coletiva',
+    text: 'Qual estratégia é mais eficaz para proteger trabalhadores da saúde contra riscos ocupacionais no ambiente hospitalar?',
+    options: [
+      'Apenas contratação de mais pessoal para reduzir estresse.',
+      'Foco exclusivo na aquisição de tecnologias avançadas.',
+      'Programa integrado: avaliação de riscos, treinamento, ergonomia, suporte psicossocial e EPIs.',
+      'Apenas melhoria na infraestrutura física do prédio.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Abordagens holísticas e coordenadas são mais abrangentes.',
+    commentary: 'A resposta correta é a alternativa (C), pois a implementação de um programa integrado de saúde ocupacional é a estratégia mais abrangente e eficaz para proteger os trabalhadores da saúde. Este programa deve incluir a avaliação contínua dos riscos ocupacionais, treinamento regular dos profissionais, ajustes ergonômicos no local de trabalho, suporte psicossocial para lidar com o estresse e o uso adequado de Equipamentos de Proteção Individual (EPIs). Uma abordagem integrada garante que todos os tipos de riscos sejam mitigados de maneira holística e coordenada, promovendo um ambiente de trabalho mais seguro e saudável.',
+    reference: 'BRASIL. Ministério da Saúde. (2012). Programa de Melhoria da Qualidade de Vida e Saúde no Trabalho (PMQVST). Brasília: Ministério da Saúde. Disponível em: http://bvsms.saude.gov.br/bvs/publicacoes/programa_qualidade_vida_saude_trabalho.pdf Santos, A. P., & Oliveira, R. A. (2013). Avaliação dos fatores de risco ocupacionais e medidas de prevenção para trabalhadores da saúde. Revista Brasileira de Saúde Ocupacional, 38(127), 172-182. Disponível em: https://www.scielo.br/j/rbso/a/ZrHP88HPdD9sL7P5tHPb8vF/?lang=pt',
+    tags: ['Saúde do Trabalhador', 'Gestão Hospitalar']
+  },
+  {
+    id: 'tp2024-112',
+    module: 'Saúde Coletiva',
+    text: 'D.E.N., 39 anos, universitária, apresenta secreção vaginal espessa e amarelada há 7 dias, com sangramento pós-coito. Nunca fez Papanicolau. Qual a hipótese principal?',
+    options: [
+      'Câncer de colo do útero.',
+      'Secreção vaginal fisiológica.',
+      'Candidíase.',
+      'Cervicite.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Secreção purulenta e sangramento pós-coito (sinusorragia) são sinais clássicos de cervicite.',
+    commentary: 'A hipótese que mais se encaixa devido aos sintomas é cervicite. (A) Não é a primeira hipótese a ser pensada no momento. (B) Não pode ser, pois a paciente apresenta sinais e sintomas como dor e secreção amarelada. (C) Também não pode devido a coloração da secreção.',
+    reference: 'GUSSO, Gustavo et al. Tratado de medicina de família e comunidade: princípios, formação e prática. 2. ed. V. 1 e 2. Porto Alegre: Artmed, 2019, xxii, 938. p',
+    tags: ['Saúde da Mulher', 'IST', 'Cervicite']
+  },
+  {
+    id: 'tp2024-113',
+    module: 'Saúde Coletiva',
+    text: 'M.S.N., 26 anos, 3 filhos, deseja esterilização definitiva (laqueadura). Qual o critério legal atual segundo a Lei 14.443/2022?',
+    options: [
+      'Ter mais de 21 anos ou pelo menos dois filhos vivos.',
+      'O desejo da paciente prevalece independente de filhos ou idade.',
+      'Ter mais de 3 filhos e relação estável.',
+      'Apenas com laudo favorável de psicólogo e assistente social.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A lei brasileira exige capacidade civil plena e idade mínima ou prole mínima.',
+    commentary: 'A indicação de contracepção definitiva é que a paciente tenha mais de 25 anos de idade ou dois filhos vivos. independente do desejo da paciente se ela não cumprir os critérios não haverá a contracepção definitiva.',
+    reference: 'GUSSO, Gustavo et al. Tratado de medicina de família e comunidade: princípios, formação e prática. 2. ed. V. 1 e 2. Porto Alegre: Artmed, 2019, XXII, 938. p LEI Nº 14.443, DE 2 DE SETEMBRO DE 2022, Diário Oficial da União, Publicado em: 05/09/2022 | Edição: 169 | Seção: 1 | Página: 5',
+    tags: ['Ética Médica', 'Saúde Reprodutiva', 'Legislação']
+  },
+  {
+    id: 'tp2024-114',
+    module: 'Saúde Coletiva',
+    text: 'Sobre os princípios para evitar a polifarmácia, assinale a alternativa correta:',
+    options: [
+      'Usuários de 5 ou mais fármacos devem ter revisão regular para reduzir doses ou suspender itens.',
+      'Para cada problema de saúde novo, deve-se obrigatoriamente adicionar um medicamento.',
+      'Deve-se suspender medicamentos ignorando os desejos do paciente se o médico julgar necessário.',
+      'A escolha do medicamento deve basear-se exclusivamente na preferência do prescritor.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Revisão periódica (Medication Review) é fundamental para reduzir iatrogenias em polifarmácia.',
+    commentary: '(A) Está correta pois a partir de cinco fármacos é necessário revisão regular de medicamentos. a letra. (B) Está errada pois sempre precisamos pensar em um medicamento que dê para ser usado para resolver dois ou mais problemas de saúde para evitar a polifarmácia. a letra. (C) Está errada pois nunca devemos piorar a saúde do paciente. (D) Está errada pois as preferências consideradas serão do paciente e não do prescritor.',
+    reference: 'GUSSO, Gustavo et al. Tratado de medicina de família e comunidade: princípios, formação e prática. 2. ed. V. 1 e 2. Porto Alegre: Artmed, 2019, XXII, 938. p',
+    tags: ['Geriatria', 'Polifarmácia', 'Segurança do Paciente']
+  },
+  {
+    id: 'tp2024-115',
+    module: 'Saúde Coletiva',
+    text: 'Mulher, 25 anos, assintomática, deseja "check-up". Além da PA, quais rastreios são recomendados?',
+    options: [
+      'Glicemia, Colesterol e PSA.',
+      'Hemograma, TSH e Papanicolau.',
+      'Papanicolau e abordagem de álcool, tabaco e drogas.',
+      'TSH, Glicemia e Colesterol total.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Rastreios populacionais devem ter evidência de benefício; check-ups exaustivos em jovens saudáveis geram sobrediagnóstico.',
+    commentary: '(A) Glicemia não é um exame indicado de rastreamento nesta paciente pela sua faixa etária (<45 anos) e sem outros fatores de risco em sua história. (B) TSH não é exame de rastreamento. (D) TSH não é exame de rastreamento.',
+    reference: 'https://bvsms.saude.gov.br/bvs/publicacoes/caderno_atencao_primaria_29_rastreamento.pdf',
+    tags: ['Rastreamento', 'Saúde da Mulher', 'Prevenção']
+  },
+  {
+    id: 'tp2024-116',
+    module: 'Saúde Coletiva',
+    text: 'Sobre o Método Clínico Centrado na Pessoa (MCCP), é correto afirmar:',
+    options: [
+      'O componente "Sendo Realista" foca apenas nos recursos financeiros do paciente.',
+      'O acrônimo SIFE refere-se à anamnese técnica por sistemas.',
+      'Deve-se seguir rigidamente a ordem dos quatro componentes em todas as consultas.',
+      'O primeiro componente foca em entender a experiência da doença para o indivíduo (ideias, sentimentos, expectativas).'
+    ],
+    correctAnswer: 3,
+    explanation: 'O MCCP busca integrar a doença (disease) com a experiência de estar doente (illness).',
+    commentary: '(A) O Sendo realista é o quarto componente. (B) SIFE – Sentimentos, Ideias, Funcionalidade e Expectativa. (C) Não é necessário seguir a ordem dos componentes, podendo as consultas abordar os temas de forma mais natural e de acordo com o decorrer e confiança da relação médico-pessoa.',
+    reference: 'Consulta centrada na pessoa, José Mauro Ceratti Lopes; Lêda Chaves Dias, Tratado de Medicina de Família e Comunidade, Capítulo 15, 2ª edição, Gustavo Gusso, 2019. Método clínico centrado na pessoa, Marcelo Garcia Kolling, Medicina Ambulatorial – Condutas de Atenção Primária baseadas em Evidências, Cap 11, 5ª edição, Artmed, 2022',
+    tags: ['MCCP', 'Relação Médico-Paciente', 'APS']
+  },
+  {
+    id: 'tp2024-117',
+    module: 'Saúde Coletiva',
+    text: 'Adolescente de 15 anos descobre gravidez indesejada e pede sigilo aos pais. Qual a conduta médica correta segundo o ECA?',
+    options: [
+      'Induzir a paciente a contar para os pais obrigatoriamente.',
+      'Respeitar o sigilo da adolescente, desde que não haja risco de vida para ela ou o feto.',
+      'Contar aos pais imediatamente por ela ser menor de idade.',
+      'Convocar consulta familiar obrigatória sem o consentimento da paciente.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Adolescentes têm direito ao sigilo se tiverem capacidade de discernimento e ausência de riscos graves.',
+    reference: 'Estatuto da Criança e do Adolescente, Lei Federal nº 8.069, de 13 de julho de 1990, artigo 227 da Constituição Federal',
+    tags: ['Ética Médica', 'Adolescência', 'Sigilo']
+  },
+  {
+    id: 'tp2024-118',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 19 anos, com disúria e secreção uretral após contato sexual desprotegido. Qual o tratamento recomendado pelo Ministério da Saúde?',
+    options: [
+      'Doxiciclina oral isolada.',
+      'Azitromicina oral isolada.',
+      'Ciprofloxacino oral + Azitromicina.',
+      'Ceftriaxona IM + Azitromicina oral.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Tratamento sindrômico para Gonococo (resistente a quinas) e Clamídia.',
+    commentary: 'Devido à possibilidade de coinfecção sem a identificação dessas bactérias, o ministério da saúde recomenda o uso de ceftriaxona intramuscular para o gonococo, associada à azitromicina oral para o tratamento dos outros agentes causadores de uretrites. cabe ressaltar que, devido ao aumento da resistência do gonococo às quinolonas, as mesmas não são mais indicadas como a primeira opção de tratamento de uritrite gonocócica, sendo substituídas pela ceftriaxona.',
+    reference: 'Ministério da Saúde. Guia de vigilância em Saúde: volume 2 [recurso eletrônico] / Ministério da Saúde, Departamento de Ações Estratégicas de Epidemiologia e Vigilância em Saúde e Ambiente. – 6. ed. rev. – Brasília: Ministério da Saúde, 2024.',
+    tags: ['IST', 'Tratamento Sindrômico', 'Uretrite']
+  },
+  {
+    id: 'tp2024-119',
+    module: 'Saúde Coletiva',
+    text: 'Em comunidades pobres, qual a melhor intervenção para apoiar uma mãe com dificuldades na amamentação?',
+    options: [
+      'Oferecer apoio emocional e orientação sobre técnicas de amamentação.',
+      'Introduzir alimentos sólidos precocemente (antes dos 6 meses).',
+      'Fornecer fórmulas infantis industrializadas como primeira opção.',
+      'Substituir o leite materno por leite de vaca in natura.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Apoio ao aleitamento materno exclusivo até os 6 meses é a intervenção de maior impacto em mortalidade infantil.',
+    commentary: 'Em uma comunidade onde os recursos financeiros são escassos, é fundamental oferecer apoio emocional à mãe e orientação sobre técnicas de amamentação eficazes. Isso pode ajudar a mãe a superar desafios e dificuldades relacionados à amamentação, como problemas de posicionamento ou pega incorreta, permitindo que ela continue a amamentar exclusivamente nos primeiros seis meses de vida do bebê. Além disso, oferecer apoio emocional pode ajudar a mãe a se sentir mais confiante e capacitada para enfrentar os desafios associados à amamentação em uma situação de vulnerabilidade econômica.',
+    reference: 'Ministério da Saúde (Brasil). "Saúde da Criança: Nutrição Infantil - Aleitamento Materno e Alimentação Complementar." Cadernos de Atenção Básica, n. 33. Brasília: Ministério da Saúde, 2015. Rede IBFAN Brasil. "Manual de Aconselhamento em Amamentação." São Paulo: IBFAN Brasil, 2012. Sociedade Brasileira de Pediatria (SBP). "Aleitamento Materno: Manual de Orientação." 4ª edição, 2018. World Health Organization (WHO) e Fundo das Nações Unidas para a Infância (UNICEF). "Estratégia Global para a Alimentação de Lactentes e Crianças de Primeira Infância." Brasília: Ministério da Saúde, 2003.',
+    tags: ['Aleitamento Materno', 'Saúde da Criança', 'Puericultura']
+  },
+  {
+    id: 'tp2024-120',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 52 anos, hipertenso e tabagista assintomático. Quais exames de rastreio são adequados?',
+    options: [
+      'PSA e Creatinina isolados.',
+      'PA, Glicemia, Colesterol e abordagem de álcool/drogas.',
+      'Hemograma completo e TGO/TGP.',
+      'PSA, Urina tipo I e Potássio.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Rastreio foca em fatores de risco cardiovascular e hábitos de vida nesta faixa etária.',
+    commentary: 'A alternativa correta (B) apresenta os exames de rastreamento adequados à faixa etária e contexto do usuário. PSA, TGO e TGP, Potássio não fazem parte dos exames de rastreamento recomendados.',
+    reference: 'https://bvsms.saude.gov.br/bvs/publicacoes/caderno_atencao_primaria_29_rastreamento.pdf',
+    tags: ['Rastreamento', 'Saúde do Homem', 'Prevenção']
+  },
+  {
+    id: 'tp2023-101',
+    module: 'Saúde Coletiva',
+    text: 'De acordo com o Decreto nº 7.508/11, que regulamentou a Lei nº 8.080/1990, a instituição das Regiões de Saúde foi um dos grandes marcos na organização do SUS, pois permite que a integralidade da assistência seja proporcionada à população de forma mais justa e otimizada, aproximando os usuários dos serviços necessários. Para que uma Região de Saúde seja instituída existem requisitos mínimos na oferta de ações e serviços. Desta forma uma Região de Saúde deve conter no mínimo:',
+    options: [
+      '(A) Atenção primária; atenção secundária; urgência e emergência; atenção psicossocial.',
+      '(B) Atenção primária; vigilância em saúde; atenção hospitalar de alta complexidade; serviço móvel de urgência.',
+      '(C) Atenção primária; urgência e emergência; atenção psicossocial; atenção ambulatorial especializada e hospitalar; vigilância em saúde.',
+      '(D) Atenção básica em saúde; unidade de pronto atendimento; ambulatório de especialidades; hospital de referência.'
+    ],
+    correctAnswer: 2,
+    explanation: 'As Regiões de Saúde devem garantir um conjunto mínimo de ações para assegurar a integralidade na própria região.',
+    commentary: 'A atenção primária; urgência e emergência; atenção psicossocial; atenção ambulatorial especializada e hospitalar; e vigilância em saúde; devem ser garantidos minimamente na instituição das Regiões de Saúde justamente para que os usuários possam receber os serviços e ações de saúde de forma integral, sem a necessidade de grandes deslocamentos ou referenciamentos de difícil atendimento.',
+    reference: 'Brasil. Conselho Nacional de Secretários de Saúde. A Gestão do SUS / Conselho Nacional de Secretários de Saúde. Brasília: CONASS, 2015. Brasil. Decreto nº 7.508, 28 de junho de 2011. Regulamenta a Lei nº 8.080 de 19 de setembro de 1990, para dispor sobre a organização do Sistema Único de Saúde – SUS, o planejamento da saúde, a assistência à saúde e a articulação interfederativa, e dá outras providências.',
+    tags: ['Políticas de Saúde', 'SUS']
+  },
+  {
+    id: 'tp2023-102',
+    module: 'Saúde Coletiva',
+    text: 'O Serviço Médico de uma empresa quer calcular a prevalência de lesão sugestiva de câncer de pele entre funcionários que trabalham expostos aos raios solares em via pública e, para isso, criou um protocolo clínico. Qual é o tipo de desenho mais adequado para essa pesquisa?',
+    options: [
+      '(A) Relato de casos',
+      '(B) Transversal',
+      '(C) Ecológico',
+      '(D) Caso-controle'
+    ],
+    correctAnswer: 1,
+    explanation: 'Estudos transversais (seccionais) medem a prevalência de uma condição em um determinado momento.',
+    commentary: 'Prevalência em um local de trabalho é um indicador claro de que o estudo é transversal.',
+    reference: 'PEREIRA, M. G. Epidemiologia: teoria e prática. Rio de Janeiro: Guanabara Koogan, 2013.',
+    tags: ['Epidemiologia', 'Bioestatística']
+  },
+  {
+    id: 'tp2023-103',
+    module: 'Saúde Coletiva',
+    text: 'Médico de Estratégia Saúde da Família (ESF) atende um lactente com 12 meses de idade e observa no cartão vacinal da criança que as últimas vacinas recebidas foram aos 6 meses. Os pais viajarão em breve para a cidade de Belém (PA). Nesse caso, quais vacinas são prioridades nesse momento, de acordo com o Programa Nacional de Imunizações do Ministério da Saúde do Brasil?',
+    options: [
+      '(A) Pneumocócica 10 valente, meningocócica C, tetra viral (SCRV) e febre amarela concomitantes.',
+      '(B) Tríplice viral (SCR), meningocócica C e pneumocócica 10 valente concomitantes; febre amarela após 30 dias.',
+      '(C) Tríplice bacteriana (DPT), meningocócica C e tríplice viral (SCR) concomitantes; varicela após 30 dias.',
+      '(D) Pneumocócica 10 valente, meningocócica C e febre amarela concomitantes; sarampo, caxumba e rubéola após 30 dias.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Em áreas endêmicas de febre amarela, a vacinação contra a doença é prioridade; vacinas de vírus vivos atenuados (como SCR e FA) devem ter intervalo de 30 dias se não aplicadas no mesmo dia.',
+    commentary: '(A) Pneumocócica 10 valente, meningocócica C, tetra viral (SCRV) e febre amarela concomitantes. Não pode aplicar no mesmo dia as vacinas compostas por vírus vivos atenuados, portanto, não poderia aplicar tetra viral (SCRV) e febre amarela concomitantes.\n\n(B) Tríplice viral (SCR), meningocócica C e pneumocócica 10 valente concomitantes; febre amarela após 30 dias. Deve dar prioridade para a vacina contra Febre Amarela porque a proteção só inicia a partir de 10 dias de sua aplicação.\n\n(C) Tríplice bacteriana (DPT), meningocócica C e tríplice viral (SCR) concomitantes; varicela após 30 dias. Não poderá faltar a vacina contra Febre Amarela.\n\n(D) Pneumocócica 10 valente, meningocócica C e febre amarela concomitantes; sarampo, caxumba e rubéola após 30 dias. Deve dar prioridade para Febre Amarela porque o Pará é zona endêmica para essa doença e, portanto, adiar as outras vacinas compostas de vírus vivos atenuados.',
+    reference: 'Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. Manual de Normas e Procedimentos para Vacinação / Ministério da Saúde, Secretaria de Vigilância em Saúde, Departamento de Vigilância das Doenças Transmissíveis. – Brasília: Ministério da Saúde, 2014. Kfouri RA, et al. Febre amarela: Nota Informativa. Departamento Científico de Imunizações/Sociedade Brasileira de Pediatria, Nº 3, fevereiro de 2017.',
+    tags: ['Imunização', 'Pediatria']
+  },
+  {
+    id: 'tp2023-104',
+    module: 'Saúde Coletiva',
+    text: 'A Política Nacional de Atenção Integral da Saúde do Homem (PNAISH) tem como objetivo apoiar mudanças nas maneiras como profissionais de saúde e a população em geral entendem e agem em relação às condições de saúde do segmento de homens em nosso país, através de diversas ações. Qual ação se configura como prevenção primária para homens adultos?',
+    options: [
+      '(A) Disponibilidade de áreas de atividade física.',
+      '(B) Dosagem de PSA (antígeno prostático específico).',
+      '(C) Oferta de anti-hipertensivos ou hipoglicemiantes.',
+      '(D) Notificação de casos de violência contra homens.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Prevenção primária visa remover as causas ou aumentar a resistência a doenças antes que ocorram.',
+    commentary: 'Ações de prevenção primária são definidas como intervenções que impedem a ocorrência da doença antes de seu aparecimento, enquanto as que diagnosticam precocemente, detém ou retardam a progressão da doença ou suas sequelas em qualquer momento da identificação são classificadas como secundária.\n\nA oferta de espaços para atividade física auxilia no fortalecimento das condições cardiovasculares, osteomusculares e reduzem chances de complicações associadas com doenças cardiovasculares, ósseas, ou relacionadas à resistência à insulina.\n\nDosagem de substâncias, como no caso o psa, auxiliam parcialmente no rastreio de alterações patológicas antes que elas possam agravar a saúde da pessoa, sendo açao de prevenção secundária.\n\nO uso de medicamentos para hipertensão e/ou diabetes configura ação de tratamento da doença já instalada, com objetivo de evitar sua progressão, sendo também secundária.\n\nA notificação de casos de violência contra homens é peça importante na compreensão do perfil epidemiológico da violencia, mas não é capaz, por si só de evitar que a violencia ocorra.',
+    reference: 'Política nacional de atenção integral a saúde do homem [recurso eletrônico] / Elza Berger Salema Coelho... [et al] — Florianópolis : Universidade Federal de Santa Catarina, 2018.',
+    tags: ['Prevenção', 'Saúde do Homem']
+  },
+  {
+    id: 'tp2023-105',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 35 anos, motorista de aplicativo, não segue uma alimentação regular e faz atividade física aos finais de semana. Devido ao histórico familiar, seu médico solicitou exames cardiovasculares de triagem, sendo constatado que ele apresentava um estreitamento das artérias coronárias. O diagnóstico precoce permitiu que ele recebesse tratamento adequado, incluindo mudanças no estilo de vida, medicamentos e terapia de reabilitação cardíaca, contribuindo na sua recuperação. Considerando o contexto acima, assinale a alternativa onde o nível de prevenção está adequadamente caracterizado:',
+    options: [
+      '(A) A terapia de reabilitação cardíaca que o paciente recebeu após o tratamento é um exemplo de prevenção secundária, pois tem o objetivo de melhorar a função cardíaca.',
+      '(B) O diagnóstico precoce visa identificar e tratar a condição em seu estágio inicial para evitar complicações, essas intervenções são exemplos de prevenção terciária.',
+      '(C) O estreitamento das artérias coronárias poderia ser evitado com medidas de prevenção primária, como alimentação balanceada e prática de atividade física regular.',
+      '(D) Monitorar regularmente a saúde cardiovascular por meio de consultas médicas e exames de acompanhamento é uma prática de prevenção terciária.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Prevenção primária atua nos fatores de risco para evitar o surgimento da patologia.',
+    commentary: 'A resposta correta destaca a importância da prevenção primária, ou seja, adotar medidas de estilo de vida saudável, como alimentação adequada e atividade física regular, para evitar o desenvolvimento de condições cardiovasculares, medidas que fazem parte de ações de atenção primária, uma vez que são medidas adotadas para evitar o adoecimento.',
+    reference: 'Epidemiologia básica / R. Bonita, R. Beaglehole, T. Kjellström; [tradução e revisão científica Juraci A. Cesar]. - 2.ed. - São Paulo, Santos. 2010. Disponivel em https://apps.who.int/iris/bitstream/handle/10665/43541/9788572888394_por.pdf;sequence=6',
+    tags: ['Prevenção', 'Saúde Cardiovascular']
+  },
+  {
+    id: 'tp2023-106',
+    module: 'Saúde Coletiva',
+    text: 'Os estudos epidemiológicos podem se diferenciar em relação à unidade de análise (individual ou agregado), posicionamento do investigador (observacional ou de intervenção) e dimensão temporal (instantâneo/corte ou serial/longitudinal). Em relação aos tipos de estudos, assinale a alternativa correta seguindo, respectivamente, a sequência descrita no enunciado:',
+    options: [
+      '(A) Estudos caso-controle: agregado; de intervenção; longitudinal.',
+      '(B) Ensaios clínicos: individual; de intervenção; longitudinal.',
+      '(C) Estudos transversais: agregado; observacional; longitudinal.',
+      '(D) Estudos de coorte: individual; observacional; instantâneo.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Ensaios clínicos são longitudinais, envolvem intervenção do pesquisador e análise individual.',
+    commentary: 'Nos ensaios clínicos o investigador controla a exposição; portanto, são estudos de intervenção, tem-se os dados de cada indivíduo (individual), e como numa coorte, esta população é acompanhada ao longo de determinado tempo (longitudinal).\n\nOs estudos caso-controle são observacionais (o investigador não intervém, só observa desfecho/exposição), tem-se os dados de cada indivíduo e não da população (característica esta, dos estudos ecológicos ou ensaios comunitários).\n\nNo estudo transversal tem-se os dados de cada indivíduo e a informação é coletada no mesmo momento (exposição/desfecho); portanto, não são longitudinais e sim instantâneos (como se fosse um corte transversal, um retrato do momento).\n\nOs estudos de coorte são longitudinais (seguimento – exposição/desfecho).',
+    reference: 'MEDRONHO, R.A (ed) Epidemiologia. 2 ed. São Paulo: Atheneu, 2011.',
+    tags: ['Epidemiologia', 'Bioestatística']
+  },
+  {
+    id: 'tp2023-107',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 25 anos, relata perda de peso espontânea de oito quilos em três meses, acompanhada de tosse e febre diária. Para a confirmação da suspeita de tuberculose pulmonar, quais são os exames laboratoriais e/ou complementares mais facilmente indicados e realizados?',
+    options: [
+      '(A) Biópsia pulmonar com exame histopatológico; sorologia com pesquisa de IgM.',
+      '(B) Broncoscopia com baciloscopia do lavado broncoalveolar; radiografia de tórax.',
+      '(C) Teste rápido molecular de escarro; tomografia de tórax.',
+      '(D) Baciloscopia; teste rápido molecular; radiografia de tórax.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A investigação básica de TB pulmonar utiliza exames de escarro (TRM-TB e baciloscopia) e imagem (RX).',
+    commentary: 'O diagnóstico da tuberculose pulmonar é preferencialmente clínico-epidemiológico e bacteriológico. Assim, a partir dos sintomas em pessoas dos grupos de risco, a recomendação é o diagnóstico bacteriológico. Dentre os exames de escarro, a baciloscopia e o teste molecular rápido são específicos. Porém a baciloscopia não apresenta alta sensibilidade, sendo o Teste Molecular Rápido o exame de escolha. A cultura para micobactérias é específica e sensível sendo considerada exame padrão ouro, reservado aos casos de dúvida ou em suspeita de resistência bacteriana. Os exames radiológicos são exames de suspeição para tuberculose, uma vez que a doença pode apresentar diversas alterações relacionadas tanto com a doença ativa como sequelas.',
+    reference: 'Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. Manual de Recomendações para o Controle da Tuberculose no Brasil / Ministério da Saúde, Secretaria de Vigilância em Saúde, Departamento de Vigilância das Doenças Transmissíveis. – Brasília: Ministério da Saúde, 2019. 364 p.: il. ISBN 978-85-334-2696-2.',
+    tags: ['Vigilância em Saúde', 'Infectologia']
+  },
+  {
+    id: 'tp2023-108',
+    module: 'Saúde Coletiva',
+    text: 'Qual das seguintes características está associada à fase avançada da transição demográfica epidemiológica?',
+    options: [
+      '(A) Baixa prevalência de doenças crônicas não transmissíveis.',
+      '(B) Predominância de doenças infecciosas e parasitárias.',
+      '(C) Aumento da expectativa de vida.',
+      '(D) Alta taxa de mortalidade infantil.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A transição demográfica caracteriza-se pelo envelhecimento populacional e aumento da longevidade.',
+    commentary: 'Durante a fase inicial da transição demográfica, as principais causas de morte e morbidade são dominadas por doenças infecciosas, como doenças respiratórias, diarreia e outras infecções transmissíveis. No entanto, à medida que as condições socioeconômicas melhoram, o acesso aos cuidados de saúde se amplia e ocorrem mudanças no estilo de vida e no ambiente, ocorre a transição para a fase avançada.\n\nNessa fase, a prevalência das dcnts começa a aumentar, enquanto a incidência de doenças infecciosas diminui. as dcnts, como doenças cardiovasculares, diabetes, doenças respiratórias crônicas e certos tipos de câncer, estão relacionadas principalmente a fatores de risco não transmissíveis, como tabagismo, alimentação inadequada, inatividade física, consumo excessivo de álcool e exposição a poluentes ambientais.\n\nPortanto, quando uma população entra na fase avançada da transição demográfica epidemiológica, a baixa prevalência de dcnts é uma característica observada. isso indica que a população está enfrentando uma menor carga de doenças infecciosas e está vivendo por mais tempo, mas também destaca a importância de enfrentar os fatores de risco relacionados às DCNTs para garantir a saúde e o bem-estar a longo prazo.',
+    reference: 'Duarte Elisabeth Carmen, Barreto Sandhi Maria. Transição demográfica e epidemiológica: a Epidemiologia e Serviços de Saúde revisita e atualiza o tema. Epidemiol. Serv. Saúde [Internet]. 2012 Dez [citado 2023 Jun 29] ; 21( 4 ): 529-532. Oliveira AS. TRANSIÇÃO DEMOGRÁFICA, TRANSIÇÃO EPIDEMIOLÓGICA E ENVELHECIMENTO POPULACIONAL NO BRASIL. Hygeia [Internet];15(32):69-7. Goldani MZ, Mosca PRF, Portela AK, Silveira PP, Silva CH da. O impacto da transição demográfico-epidemiológica na saúde da criança e do adolescente do Brasil. Clin Biomed Res [Internet]. 27º de abril de 2012 ;32(1).',
+    tags: ['Saúde Coletiva', 'Demografia']
+  },
+  {
+    id: 'tp2023-109',
+    module: 'Saúde Coletiva',
+    text: 'Mulher, 30 anos, tabagista (13 maços/ano), sexualmente ativa, comparece à Unidade de Saúde da Família (USF) apenas para solicitar um “check-up”. Seguindo as recomendações de evidência científica níveis A e B, quais procedimentos, em consulta e exames, deveriam ser realizados e solicitados?',
+    options: [
+      '(A) Hemograma completo, glicemia, colesterol total e frações, triglicerídeos, creatinina, ureia, TSH, urina tipo I e exame citopatológico do colo de útero.',
+      '(B) Incentivo à cessação do tabagismo, exame citopatológico do colo de útero e verificação da pressão arterial.',
+      '(C) Incentivo à cessação do tabagismo, solicitação de sorologia para HIV, sífilis, hepatites B e C, verificação da pressão arterial e exame citopatológico do colo de útero.',
+      '(D) Não é necessário solicitar exames, pois a paciente está assintomática.'
+    ],
+    correctAnswer: 2,
+    explanation: 'O rastreio deve ser voltado para condições de alta prevalência e impacto onde o tratamento precoce é eficaz.',
+    commentary: 'A prevenção secundária é a ação realizada para detectar um problema de saúde em estágio inicial, muitas vezes em estágio subclínico, no indivíduo ou na população, facilitando o diagnóstico definitivo, o tratamento e reduzindo ou prevenindo sua disseminação e os efeitos de longo prazo. Para o caso específico o rastreamento mais adequado inclui a verificação da PA, sorologia de ISTs, coleta do citopatológico e incentivo ao abandono do tabagismo.',
+    reference: 'Brasil. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica. Rastreamento / Ministério da Saúde, Secretaria de Atenção à Saúde, Departamento de Atenção Básica. – Brasília : Ministério da Saúde, 2010.',
+    tags: ['Rastreamento', 'Saúde da Mulher']
+  },
+  {
+    id: 'tp2023-110',
+    module: 'Saúde Coletiva',
+    text: 'Um profissional de saúde que atua na Atenção Primária se depara com um dilema ético envolvendo a privacidade e o compartilhamento de informações de saúde de um paciente. O paciente em questão apresenta o diagnóstico de Botulismo e o profissional precisa decidir se deve divulgar essas informações a terceiros para proteger a saúde pública. O princípio ético mais relevante para orientar a decisão do profissional é:',
+    options: [
+      '(A) Respeito à autonomia',
+      '(B) Beneficência',
+      '(C) Não-maleficência',
+      '(D) Justiça'
+    ],
+    correctAnswer: 3,
+    explanation: 'O princípio da Justiça foca no bem-estar coletivo e na equidade, justificando a quebra de sigilo por risco à saúde pública.',
+    commentary: 'Na situação descrita, o princípio ético mais relevante para orientar a decisão do profissional de saúde é a letra a) Justiça. Ao lidar com questões de privacidade e compartilhamento de informações de saúde, o profissional precisa considerar tanto o respeito à autonomia do paciente quanto os princípios de beneficência e não maleficência. No entanto, quando há o risco de disseminação de uma doença que faz parte da lista de agravos de notificação compulsória imediata, a divulgação das informações é necessária para proteger a saúde pública, o princípio ético da justiça ganha destaque. A justiça envolve a busca pela equidade e pelo bem-estar coletivo. Nesse contexto, o profissional deve ponderar os direitos e interesses individuais do paciente em relação ao bem-estar e à segurança da comunidade em geral, tomando uma decisão que busque encontrar um equilíbrio ético entre esses aspectos.',
+    reference: 'Código de Ética Médica: Resolução CFM no 2.217, de 27 de setembro de 2018, modificada pelas Resoluções CFM no 2.222/2018 e 2.226/2019 / Conselho Federal de Medicina – Brasília: Conselho Federal de Medicina, 2019. 108 p. 15. https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/lista-nacional-de-notificacao-compulsoria-de-doencas-agravos-e-eventos-de-saude-publica',
+    tags: ['Ética Médica', 'Saúde Pública']
+  },
+  {
+    id: 'tp2023-111',
+    module: 'Saúde Coletiva',
+    text: 'A Estratégia Saúde da Família é reconhecida como fonte regular de cuidado às pessoas que vivem em determinado território, a qual deve ser acessada ao longo do tempo, independentemente da existência de enfermidades. Para tanto, é essencial o estabelecimento de vínculo nas relações interpessoais entre profissional de saúde e usuário, as quais podem proporcionar maior efetividade e eficiência das intervenções em saúde. Qual o atributo essencial da Atenção Primária que favorece a aproximação da unidade de saúde das famílias e possibilita o estabelecimento de vínculos entre a equipe e os usuários?',
+    options: [
+      '(A) Integralidade',
+      '(B) Longitudinalidade',
+      '(C) Coordenação do cuidado',
+      '(D) Acesso de primeiro contato'
+    ],
+    correctAnswer: 1,
+    explanation: 'A longitudinalidade foca na relação temporal e no vínculo entre equipe e usuário.',
+    commentary: 'A relação pessoal de longa duração entre os profissionais de saúde e os pacientes em suas unidades de saúde é denominada longitudinalidade, que se caracteriza pelo cuidado ao longo do tempo. A integralidade diz respeito à articulação das ações de promoção e prevenção, atenção nos três níveis de complexidade da assistência médica, articulação das ações de promoção, proteção e prevenção e abordagem integral do indivíduo e das famílias. A coordenação do cuidado consiste na atribuição da APS em articular serviços dos diversos serviços e ações de saúde, de forma que estejam sincronizados e voltados ao alcance de um objetivo comum, independentemente do local onde sejam prestados. Acesso de primeiro contato consiste na APS como porta de entrada dos serviços de saúde, sendo acessível quando há uma necessidade ou problema de saúde.',
+    reference: 'OLIVEIRA, M. A. C.; PEREIRA, I.C. Atributos essenciais da Atenção Primária e a Estratégia Saúde da Família. Rev Bras Enferm.66(esp):158-64; 2013. Portaria 2436/17 PNAB- Política Nacional de Atenção Básica',
+    tags: ['APS', 'Políticas de Saúde']
+  },
+  {
+    id: 'tp2023-112',
+    module: 'Saúde Coletiva',
+    text: 'A febre maculosa é uma doença infecciosa transmitida por carrapatos, que pode apresentar graves manifestações clínicas, inclusive podendo levar à morte. Os níveis de prevenção da doença incluem as medidas primárias, secundárias e terciárias, além da prevenção quaternária, que tem como foco evitar a iatrogenia e o excesso de medicalização. A partir do conceito epidemiológico de história natural da doença, qual é o principal objetivo da prevenção quaternária na história natural da febre maculosa?',
+    options: [
+      '(A) Evitar intervenções desnecessárias aos afetados pela febre maculosa.',
+      '(B) Identificar e tratar precocemente os casos de febre maculosa.',
+      '(C) Reduzir a carga da doença na população afetada pela febre maculosa.',
+      '(D) Evitar a exposição do hospedeiro ao vetor transmissor da doença.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A prevenção quaternária visa identificar pacientes em risco de sobremedicalização ou intervenções diagnósticas/terapêuticas abusivas.',
+    commentary: 'A prevenção quaternária busca evitar intervenções médicas desnecessárias ou prejudiciais aos indivíduos afetados pela febre maculosa, promovendo, assim, a manutenção da saúde e da qualidade de vida dos pacientes. Identificar e tratar precocemente os casos de febre maculosa é uma medida importante nos níveis de prevenção primária e secundária, portanto, essa alternativa não é a correta para a prevenção quaternária. A redução da carga da doença na população afetada é importante para a prevenção primária e secundária, porém não é a finalidade principal da prevenção quaternária. Embora a redução da exposição ao vetor transmissor possa ser uma medida importante de prevenção da febre maculosa, essa alternativa não é a principal finalidade da prevenção quaternária.',
+    reference: 'ALMEIDA, L. M. Da prevenção primordial à prevenção quaternária. Revista Portuguesa de Saúde Pública, Lisboa, vol. 23, 1, p. 91-96, 2005. LEAVELL, H.; CLARK, E. G. Preventive medicine for the doctor in his community NY: Macgraw Hill, 1965.',
+    tags: ['Prevenção', 'Saúde Coletiva']
+  },
+  {
+    id: 'tp2023-113',
+    module: 'Saúde Coletiva',
+    text: 'A Vigilância em Saúde engloba ações de atenção e promoção de saúde e de prevenção de doenças com atuação em 4 frentes: Vigilância Epidemiológica, Vigilância Sanitária, Vigilância Ambiental e Saúde do Trabalhador. Embora possa haver alguma sobreposição de funções, na maioria das situações existe uma competência mais ligada a uma determinada área. A alternativa que contempla a associação mais específica entre a ação realizada e sua respectiva área de atuação dentro da Vigilância em Saúde é:',
+    options: [
+      '(A) O controle dos vetores (capivaras e carrapatos) em fazenda (local de eventos) na cidade de Campinas (SP), associada a casos de febre maculosa - Saúde do Trabalhador.',
+      '(B) A investigação de casos e óbitos de Dengue em Presidente Prudente, que registrou o maior número de casos no estado de São Paulo - Vigilância Ambiental.',
+      '(C) A fiscalização e aplicação de multas em eventos com aglomeração por todo o país na pandemia de Covid-19 - Vigilância Sanitária.',
+      '(D) A cobrança do uso de equipamentos de proteção individual para equipes de saúde no Brasil na pandemia de Covid-19 - Vigilância Epidemiológica.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A Vigilância Sanitária possui poder de polícia administrativa para intervir em serviços e eventos que ofereçam risco sanitário.',
+    commentary: 'A Vigilância Sanitária atua (com poder de polícia), fiscalizando e multando quando há situações de risco à saúde, como o de aglomerações no Covid-19.\n\nA investigação de casos e óbitos é mais afeita à Vigilância Epidemiológica.\n\nO controle de vetores de doenças nos ambientes de risco como a fazenda em Campinas (evento) é de maior competência da Vigilância Ambiental.\n\nA orientação do uso de equipamentos de proteção individual para profissionais de saúde é uma ação da Saúde do Trabalhador, nos ambientes de trabalho.',
+    reference: 'BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Articulação Estratégica de Vigilância em Saúde. Guia de Vigilância em Saúde [recurso eletrônico]. 5. ed. rev. e atual. – Brasília: Ministério da Saúde, 2022. 1.126 p. : il. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/guia_vigilancia_saude_5ed_rev_atual.pdf',
+    tags: ['Vigilância em Saúde']
+  },
+  {
+    id: 'tp2023-114',
+    module: 'Saúde Coletiva',
+    text: 'A Medicina de Família e Comunidade, como especialidade médica, começou no Brasil no final dos anos 70, em meio ao desgaste de um modelo médico curativo, voltado para as subespecialidades e, embora inicialmente marginalizada, ganhou espaço e hoje é a segunda especialidade médica que mais aumentou o número de especialistas nos últimos 10 anos (aumento de 246%). São características do trabalho do Médico de Saúde da Família e Comunidade:',
+    options: [
+      '(A) A relação clínica de longa duração, a medicina centrada na pessoa e a abordagem integral.',
+      '(B) O manejo racional e eficiente dos recursos de saúde, evitando-se o encaminhamento do usuário aos níveis especializados de saúde, uma vez que, a partir daí, a referência assumiria a coordenação do cuidado.',
+      '(C) O cuidado biologicista, individual e reativo voltado para as condições agudas do adoecimento.',
+      '(D) O cuidado de populações amplas, em territórios não delimitados e o uso de tecnologias de baixa complexidade e alta densidade para resolver os problemas de saúde.'
+    ],
+    correctAnswer: 0,
+    explanation: 'O MFC fundamenta sua prática nos atributos da APS e na centralidade na pessoa.',
+    commentary: 'Contempla características do trabalho do médico de família e comunidade: a longitudinalidade do cuidado, a medicina centrada na pessoa e a integralidade da assistência.\n\nEmbora, o manejo racional e eficiente dos recursos de saúde seja uma característica do trabalho do médico de família e comunidade, mesmo sendo atendido na especialidade, é da Estratégia de Saúde da Família a responsabilidade pelo percurso assistencial do seu usuário (coordenação do cuidado).\n\nO cuidado biologicista, individual e reativo são todas características da medicina curativa, da era inampiana.\n\nO Médico de família é referência para o cuidado de uma população adscrita, que habita um território delimitado e utiliza tecnologias para a resolução dos problemas com alta complexidade (conhecimento de várias áreas médicas) e baixa densidade (conhecimento básico, não precisa ser um especialista em nenhuma delas).',
+    reference: 'GUSSO, G; LOPES, JMC; DIAS, LC. organizadores. Tratado de Medicina de Família e Comunidade: princípios, formação e prática. 2ª ed., Porto alegre: Artmed, 2019.',
+    tags: ['MFC', 'APS']
+  },
+  {
+    id: 'tp2023-115',
+    module: 'Saúde Coletiva',
+    text: 'A hanseníase é uma doença crônica, transmissível, que ainda se constitui num problema de saúde pública no Brasil. O Boletim Epidemiológico de 2022 mostrou que no ano de 2020 houve uma redução maior da taxa de detecção geral da doença no país por 100.000 habitantes, o que pode estar relacionado aos efeitos da sobrecarga dos serviços de saúde, às restrições de mobilidade e ao receio de adquirir o coronavírus ao frequentar serviços de saúde na pandemia de Covid-19. A narrativa faz referência específica à seguinte medida de Saúde Coletiva:',
+    options: [
+      '(A) Prevalência',
+      '(B) Incidência',
+      '(C) Taxa de ataque',
+      '(D) Taxa de letalidade'
+    ],
+    correctAnswer: 1,
+    explanation: 'A detecção de novos casos em um período de tempo define a incidência da doença.',
+    commentary: 'O relato fala em redução na taxa de detecção, ou seja, nos casos novos diagnosticados (Incidência), não fazendo menção aos casos cumulativos (Prevalência). Quanto a Taxa de Ataque, é um termo mais utilizado para referir-se à incidência de eventos agudos, para verificar logo a eclosão de um possível surto epidemiólico, mas no caso da Hanseníase trata-se de uma doença crônica, insidiosa. Quanto à Taxa de Letalidade, ela é uma medida da gravidade da doença, refletindo o seu potencial de causar a morte.',
+    reference: 'BRASIL. Ministério da Saúde. Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis, da Secretaria de Vigilância em Saúde, do Ministério da Saúde (DCCI/SVS/ MS). Boletim Epidemiológico de Hanseníase. nº especial. Jan. 2022. ROUQUAYROL, M.Z.; ALMEIDA FILHO, N.; LUZ, F.A. Epidemiologia e Saúde. Ed. Artes Médicas: 7ª ed. 2013.',
+    tags: ['Epidemiologia', 'Bioestatística']
+  },
+  {
+    id: 'tp2023-116',
+    module: 'Saúde Coletiva',
+    text: 'Um estudo multicêntrico foi conduzido em dois países diferentes (país A e país B) para avaliar a eficácia do exame de Antígeno Prostático Específico (PSA) no diagnóstico do câncer de próstata. Foram incluídos 800 homens em cada país, todos com idades entre 50 e 75 anos e suspeita clínica de câncer de próstata. Todos os pacientes realizaram o exame de PSA e biópsias da próstata para o diagnóstico final. No país A, dos 800 homens, 80 foram diagnosticados com câncer de próstata após a biópsia, sendo este o teste padrão ouro. O exame de PSA teve uma sensibilidade de 85% e uma especificidade de 70% neste país. No país B, dos 800 homens, 160 foram diagnosticados com câncer de próstata após a biópsia. No entanto, o exame de PSA demonstrou sensibilidade de 70% e especificidade de 85% neste país. Os valores preditivos negativos (VPN) do exame de PSA nos países A e B são, respectivamente:',
+    options: [
+      '(A) 23,94% e 53,84%',
+      '(B) 71,50% e 82,00%',
+      '(C) 76,05% e 46,15%',
+      '(D) 97,67% e 91,89%'
+    ],
+    correctAnswer: 3,
+    explanation: 'O VPN é a probabilidade de não ter a doença dado um teste negativo; ele aumenta quando a prevalência da doença diminui.',
+    commentary: 'A prevalencia da doença no país a é de 10% (80/800 = 0,10 ou 10%) e no país b é de 20% (160/800 = 0,2 ou 20%)\n\nVPN = (especificidade * não afetados) / (especificidade * não afetados + falsos negativos)\n\nVPN no país a: (0,70*720)/(0,70*720 + 0,15*80) = 0,9767*100 = 97,67%\n\nVPN no país b: (0,85*640)/(0,85*640 + 0,30*160) = 0,9189*100 = 91,89%',
+    reference: 'MEDRONHO, R. A. et al. Epidemiologia. 2. ed. São Paulo: Atheneu, 2010.',
+    tags: ['Epidemiologia', 'Bioestatística']
+  },
+  {
+    id: 'tp2023-117',
+    module: 'Saúde Coletiva',
+    text: 'Em um município existiam 100 casos de tuberculose pulmonar no início de 2022. No decorrer do ano foram diagnosticados 15 novos casos. A população total desse município é de 15.350 pessoas. Nesse mesmo ano morreram 15 pessoas por tuberculose. O coeficiente de letalidade da tuberculose nesse município, no ano de 2022, é:',
+    options: [
+      '(A) 13% de mortes por tuberculose em relação aos pacientes diagnosticados pela doença no mesmo período.',
+      '(B) 1 óbito por 100.000 habitantes.',
+      '(C) 749 casos por 100.000 habitantes.',
+      '(D) 53% de mortes por tuberculose em relação aos pacientes diagnosticados pela doença no mesmo período.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Letalidade = (Número de óbitos por uma causa / Total de doentes por essa causa) x 100.',
+    commentary: 'O coeficiente de letalidade da tuberculose nesse município no ano de 2022 é igual ao número total de óbitos por tuberculose no período (15 óbitos), multiplicado por 100 e dividido pelo total de casos por tuberculose no mesmo período (100 + 15 casos no ano), portanto, o coeficiente de letalidade é de 13%.\n\nInterpretação: o percentual de mortes por tuberculose em relação aos pacientes diagnosticados pela doença no mesmo período.',
+    reference: 'ROUQUAYROL, Maria Zélia; SILVA, Marcelo Gurgel Carlos da. Epidemiologia & saúde. 7.ed. Rio de Janeiro: Medbook, 2013. Capítulo: Medida da Saúde coletiva, páginas 108 a 201.',
+    tags: ['Epidemiologia', 'Bioestatística']
+  },
+  {
+    id: 'tp2023-118',
+    module: 'Saúde Coletiva',
+    text: 'A educação popular em saúde é considerada importante para ampliação do conhecimento e práticas relacionadas aos comportamentos saudáveis dos indivíduos e suas ações contribuem para o controle de doenças, prevenção e promoção da saúde. Em relação à educação popular em saúde, é correto afirmar que:',
+    options: [
+      '(A) Os valores e crenças da população não são relevantes, pois a educação popular em saúde deve ser baseada em informações técnicas e científicas.',
+      '(B) Parte da concepção de que as pessoas têm experiências e saberes acumulados, por isso valorizar o universo cultural e as formas que as comunidades se organizam é fundamental para o processo de transformação da realidade.',
+      '(C) Baseia-se em transmitir o saber biomédico para a população centrado em patologias individuais.',
+      '(D) O objetivo da educação popular em saúde é capacitar os profissionais da equipe de saúde sobre os problemas e doenças mais prevalentes da população.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A educação popular baseia-se no diálogo e na valorização da cultura e saberes da comunidade.',
+    commentary: 'Correta: a educação popular em saúde parte do pressuposto de que todas as pessoas, têm uma busca criativa de melhoria de suas vidas, acumulando saberes e experiências, cultura, os quais necessitam ser valorizados e considerados no fazer educativo.\n\nIncorreta: os valores e crenças da população são relevantes na educação popular em saúde.\n\nIncorreta: a educação popular em saúde não tem o profissional de saúde como detentor e repasse do conhecimento, mas sim uma construção do conhecimento compartilhada.\n\nIncorreta: o objetivo da educação popular em saúde é o fortalecimento do conhecimento e práticas para a população.',
+    reference: 'GUSSO, Gustavo; LOPES, José M C.; DIAS, Lêda C. Tratado de medicina de família e comunidade - 2 volumes: princípios, formation e prática. Porto Alegre : Artmed, 2019',
+    tags: ['Saúde Coletiva', 'Promoção da Saúde']
+  },
+  {
+    id: 'tp2023-119',
+    module: 'Saúde Coletiva',
+    text: 'Os indicadores de saúde são parâmetros utilizados com a finalidade de avaliar, sob o ponto de vista sanitário, a higidez de agregados humanos, bem como de fornecer subsídios aos planejamentos de saúde. A respeito desses indicadores, é correto afirmar que:',
+    options: [
+      '(A) A maior letalidade da doença e o aumento da taxa de cura da doença são fatores que podem influenciar aumentando a taxa de prevalência de uma doença.',
+      '(B) O coeficiente de incidência mede o risco da doença e a velocidade com que os casos antigos são agregados.',
+      '(C) A razão de mortalidade materna está associada à qualidade de assistência ao pré-natal, parto e puerpério, sendo que o numerador do indicador corresponde ao número de óbitos de mulheres em idade fértil.',
+      '(D) O coeficiente de mortalidade infantil estima o risco de um nascido vivo morrer durante o seu primeiro ano de vida e reflete o nível de saúde e as condições de vida da população.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A mortalidade infantil é um indicador sensível do desenvolvimento socioeconômico e qualidade da assistência à saúde.',
+    commentary: 'A incidência é calculada pela relação entre casos novos da doença no período considerado e a população exposta ao risco de adoecer no mesmo período, portanto, não são agregados casos antigos.\n\nA razão de mortalidade materna tem em seu numerador o número de óbitos de mulheres por causas ligadas a gravidez, parto e puerpério e não de mulheres em idade fértil.\n\nOs fatores citados na questão contribuem para diminuir a taxa de prevalência da doença (casos existentes).',
+    reference: 'ROUQUAYROL, M. Z.; GURGEL, M. Epidemiologia & saúde. 7. ed. Rio de Janeiro: Medbook, 2013.',
+    tags: ['Epidemiologia', 'Saúde Coletiva']
+  },
+  {
+    id: 'tp2023-120',
+    module: 'Saúde Coletiva',
+    text: 'A saúde ambiental e do trabalhador é um campo de estudo que investiga as relações entre a produção industrial, o ambiente de trabalho e os impactos na saúde das pessoas. Nesse contexto, a epidemiologia desempenha um papel importante na compreensão dos riscos e na promoção de medidas preventivas. Qual dos seguintes cenários ilustra um exemplo de exposição ocupacional relacionada à saúde ambiental e do trabalhador?',
+    options: [
+      '(A) Consumo de alimentos contaminados por pesticidas.',
+      '(B) Exposição à radiação ultravioleta (UV) durante a prática de esportes ao ar livre.',
+      '(C) Inalação de gases tóxicos provenientes da queima de combustíveis fósseis.',
+      '(D) Uso inadequado de equipamentos de proteção individual em uma construção civil.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Exposição ocupacional ocorre no exercício do trabalho e envolve riscos físicos, químicos ou biológicos no ambiente laboral.',
+    commentary: 'Esta questão aborda o tema da saúde ambiental e do trabalhador, focando na identificação de um exemplo de exposição ocupacional relacionada a esse campo. A resposta correta destaca um cenário em que os trabalhadores estão expostos a gases tóxicos provenientes da queima de combustíveis fósseis.\n\nEssa alternativa ilustra um exemplo de exposição ocupacional relacionada à saúde ambiental e do trabalhador, onde os trabalhadores estão expostos a gases tóxicos resultantes da queima de combustíveis fósseis. A inalação de gases tóxicos provenientes da queima de combustíveis fósseis é um problema comum em várias indústrias e ambientes de trabalho, representando um risco significativo para a saúde dos trabalhadores expostos. Essa exposição pode levar a uma série de problemas respiratórios, cardiovasculares e até mesmo câncer, destacando a importância de medidas de prevenção e proteção para garantir um ambiente de trabalho saudável.',
+    reference: 'Peres, Frederico. Epidemiologia e Saúde. 2ª edição. Atheneu, 2017. Gomes, Maria Angélica de Salles. Saúde Ambiental e Trabalho: Guia para Estudo em Saúde Coletiva. Editora Fiocruz, 2015.',
+    tags: ['Saúde do Trabalhador', 'Saúde Ambiental']
+  },
+  {
+    id: 'tp2022-101',
+    module: 'Saúde Coletiva',
+    text: 'As arboviroses apresentam sintomas semelhantes. As manifestações clínicas/laboratoriais mais relevantes da dengue são:',
+    options: [
+      '(A) Dor retrorbital, sangramentos e choque; linfopenia.',
+      '(B) Febre e artralgia; linfopenia e trombocitose.',
+      '(C) Mialgia, conjuntivite e artralgia; trombocitopenia.',
+      '(D) Dor retrorbital; leucopenia, neutropenia e trombocitopenia.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Dengue classicamente apresenta leucopenia e trombocitopenia acentuadas, com dor retrorbitária marcante.',
+    commentary: 'As alterações laboratoriais na dengue incluem leucopenia, neutropenia e trombocitopenia. A dor retrorbitária é um sintoma muito característico que ajuda no diagnóstico diferencial.',
+    reference: 'Brasil. Ministério da Saúde. Dengue: diagnóstico e manejo clínico. 5. ed. 2016.',
+    tags: ['Infectologia', 'Vigilância Epidemiológica']
+  },
+  {
+    id: 'tp2022-102',
+    module: 'Saúde Coletiva',
+    text: 'Sobre as epidemias de fonte comum (difundidas pelo mesmo veículo como água ou alimentos), observa-se:',
+    options: [
+      '(A) Explosividade de surto.',
+      '(B) Casos dispersos em diferentes áreas geográficas.',
+      '(C) Ocorrência de casos secundários.',
+      '(D) Propagação da doença de pessoa a pessoa.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Epidemias de fonte comum costumam ter progressão rápida e explosiva, afetando muitas pessoas simultaneamente.',
+    commentary: 'Diferente das epidemias propagadas (pessoa a pessoa), a fonte comum gera um pico rápido de casos (explosividade) pois todos se expõem ao mesmo tempo ao veículo contaminado.',
+    reference: 'Rouquayrol, M. Z. Epidemiologia & Saúde. 7. ed. 2013.',
+    tags: ['Epidemiologia']
+  },
+  {
+    id: 'tp2022-103',
+    module: 'Saúde Coletiva',
+    text: 'Gestante atendida em UBS após crise convulsiva recebe medicação, cadastro no pré-natal e encaminhamento ao neurologista da rede municipal. Quais princípios doutrinários do SUS foram atendidos?',
+    options: [
+      '(A) Universalidade e Regionalização.',
+      '(B) Intersetorialidade e Equidade.',
+      '(C) Universalidade e Integralidade.',
+      '(D) Integralidade e Territorialização.'
+    ],
+    correctAnswer: 2,
+    explanation: 'O acesso à UBS (Universalidade) e o cuidado que vai da atenção primária à especializada (Integralidade) exemplificam esses princípios.',
+    commentary: 'A universalidade garante o acesso. A integralidade é vista no atendimento que considera todas as necessidades da paciente, articulando diferentes níveis de complexidade.',
+    reference: 'Lei nº 8.080/1990.',
+    tags: ['SUS', 'Políticas de Saúde']
+  },
+  {
+    id: 'tp2022-104',
+    module: 'Saúde Coletiva',
+    text: 'A Constituição Federal de 1988 torna oficial o conteúdo da Reforma Sanitária Brasileira e estabelece:',
+    options: [
+      '(A) Mecanismos centralizadores de recursos.',
+      '(B) O Sistema Único de Saúde (SUS).',
+      '(C) O Ministério da Saúde.',
+      '(D) As Secretarias Municipais de Saúde.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A CF/88 institucionalizou o SUS, mudando o paradigma da saúde como direito de todos e dever do Estado.',
+    commentary: 'Antes da CF/88, a assistência médica era restrita aos previdenciários. O SUS universalizou o direito à saúde.',
+    reference: 'Constituição Federal de 1988.',
+    tags: ['SUS', 'História da Saúde']
+  },
+  {
+    id: 'tp2022-105',
+    module: 'Saúde Coletiva',
+    text: 'Sobre a classificação dos tipos de prevenção, assinale a alternativa correta:',
+    options: [
+      '(A) A prevenção primária envolve ações de promoção de saúde e proteção específica (ex: vacinação).',
+      '(B) Promoção de saúde via alimentação e exercícios são políticas de prevenção secundária.',
+      '(C) O rastreamento de novos casos em período pré-clínico é prevenção primária.',
+      '(D) A prevenção secundária foca na reabilitação de complicações já instaladas.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Prevenção primária atua antes da doença; secundária no diagnóstico precoce; terciária na reabilitação.',
+    commentary: 'Prevenção primária: evitar o surgimento (vacinas). Secundária: diagnóstico precoce (rastreio). Terciária: limitar sequelas (reabilitação).',
+    reference: 'Rouquayrol, M. Z. Epidemiologia & Saúde. 8. ed. 2018.',
+    tags: ['Prevenção', 'Saúde Pública']
+  },
+  {
+    id: 'tp2022-106',
+    module: 'Saúde Coletiva',
+    text: 'Adolescente com DM tipo I é atendido. O médico foca apenas em hábitos e insulina, ignorando escola, vida sexual e relação familiar. Qual diretriz do SUS foi negligenciada?',
+    options: [
+      '(A) Universalidade.',
+      '(B) Igualdade.',
+      '(C) Integralidade.',
+      '(D) Equidade.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A integralidade exige ver o paciente como um todo, considerando aspectos biológicos, psicológicos e sociais.',
+    commentary: 'Integralidade pressupõe um olhar multidimensional sobre o sujeito, não apenas focado na patologia biológica isolada.',
+    reference: 'Lei nº 8.080/1990.',
+    tags: ['SUS', 'Atenção Primária']
+  },
+  {
+    id: 'tp2022-107',
+    module: 'Saúde Coletiva',
+    text: 'Idosa de 90 anos, analfabeta, diabética com dificuldade de locomoção. Mora com sobrinha que trabalha o dia todo. Qual o Plano Terapêutico Singular (PTS) mais seguro?',
+    options: [
+      '(A) Insulina à noite com a sobrinha; exercícios em casa; metas glicêmicas mais flexíveis.',
+      '(B) Insulina de manhã com a sobrinha; dieta restritiva; metas glicêmicas rigorosas.',
+      '(C) Insulina antes do almoço com a vizinha; evitar atividade física devido a risco de queda.',
+      '(D) Insulina à noite com a sobrinha; dieta restritiva; metas glicêmicas restritivas.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Em idosos frágeis, as metas devem ser flexíveis para evitar hipoglicemia e o tratamento deve ser adaptado à rede de apoio.',
+    commentary: 'Flexibilizar metas e adaptar o horário da medicação à presença do cuidador são estratégias de segurança e adesão para o paciente idoso.',
+    reference: 'Diretrizes SBD 2019-2020.',
+    tags: ['Geriatria', 'Saúde da Família']
+  },
+  {
+    id: 'tp2022-108',
+    module: 'Saúde Coletiva',
+    text: 'Homem de 21 anos em situação de rua, usuário de crack, com tosse há 2 semanas, perda de peso e febre vespertina. Qual o manejo adequado?',
+    options: [
+      '(A) Aguardar baciloscopia e exigir endereço fixo antes de tratar.',
+      '(B) Tratar imediatamente e exigir moradia em albergue.',
+      '(C) Exigir abstinência total de drogas para iniciar o tratamento supervisionado.',
+      '(D) Solicitar baciloscopia/TRM-TB, cultura, raio-X e testes rápidos para HIV/Sífilis/Hepatites.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A busca ativa e exames completos (incluindo ISTs) são prioridade em populações vulneráveis com sintomatologia respiratória.',
+    commentary: 'Não se deve impor barreiras (como endereço ou abstinência) para o cuidado. O foco é o diagnóstico rápido e a redução de danos.',
+    reference: 'Manual de Recomendações para o Controle da Tuberculose no Brasil, 2019.',
+    tags: ['Vulnerabilidade Social', 'Tuberculose', 'IST']
+  },
+  {
+    id: 'tp2022-109',
+    module: 'Saúde Coletiva',
+    text: 'Gestante de 32 semanas com HIV positivo recém-descoberto. CV desconhecida. Sobre as recomendações do Ministério da Saúde para o parto:',
+    options: [
+      '(A) Parto natural induzido na 34ª semana.',
+      '(B) Cesárea eletiva após a 38ª semana e AZT injetável 3h antes.',
+      '(C) Parto induzido apenas se ultrapassar a 40ª semana com AZT injetável.',
+      '(D) Cesárea eletiva após 34 semanas.'
+    ],
+    correctAnswer: 1,
+    explanation: 'CV desconhecida ou > 1000 cópias em gestantes com 34+ semanas indica cesárea eletiva e profilaxia com AZT injetável.',
+    commentary: 'A cesárea eletiva (fora do trabalho de parto) e o AZT endovenoso são cruciais para reduzir a transmissão vertical quando a carga viral não está controlada.',
+    reference: 'Protocolo Transmissão Vertical HIV/Sífilis/Hepatites, 2022.',
+    tags: ['Obstetrícia', 'Infectologia']
+  },
+  {
+    id: 'tp2022-110',
+    module: 'Saúde Coletiva',
+    text: 'Quais tipos de estudos melhor servem para determinar, respectivamente, eficácia de um tratamento e o prognóstico da doença?',
+    options: [
+      '(A) Estudo de caso-controle e estudo ecológico.',
+      '(B) Estudo de coorte e estudo ecológico.',
+      '(C) Estudo de acurácia e ensaio clínico randomizado.',
+      '(D) Ensaio clínico randomizado e estudo de coorte.'
+    ],
+    correctAnswer: 3,
+    explanation: 'ECR é o padrão-ouro para intervenção/eficácia; Coorte acompanha a história natural para determinar prognóstico.',
+    commentary: 'Ensaio Clínico Randomizado controla variáveis para testar tratamentos. Coorte observa a evolução temporal de um grupo exposto ou doente.',
+    reference: 'Medicina Baseada em Evidências, Stein e Grade, 2014.',
+    tags: ['Epidemiologia', 'Bioestatística']
+  },
+  {
+    id: 'tp2022-111',
+    module: 'Saúde Coletiva',
+    text: 'A tripla carga de agravos no Brasil envolve doenças infectocontagiosas, crônicas e causas externas. Qual alternativa exemplifica isso?',
+    options: [
+      '(A) Adultos com sedentarismo e dieta rica em processados.',
+      '(B) Idosos com diabetes mellitus (crônica), risco de quedas (externa) e vulnerabilidade à COVID-19 (infecto).',
+      '(C) Adolescentes usuários de maconha e vulneráveis a ISTs.',
+      '(D) Crianças obesas em risco de violência doméstica.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A resposta (B) contempla os três pilares: doença crônica (DM), causa externa (queda) e infecciosa (COVID).',
+    commentary: 'O Brasil vive a transição epidemiológica com a coexistência de problemas antigos (infecto) e modernos (crônicas e violência).',
+    reference: 'Eugênio Vilaça Mendes - As Redes de Atenção à Saúde.',
+    tags: ['Saúde Coletiva', 'Gestão']
+  },
+  {
+    id: 'tp2022-112',
+    module: 'Saúde Coletiva',
+    text: 'Família de paciente com hipótese de Esquizofrenia solicita segunda opinião médica. De acordo com o Código de Ética Médica, a médica deve:',
+    options: [
+      '(A) Negar o pedido pois o paciente está em surto psicótico e oferece risco.',
+      '(B) Acatar e solicitar matriciamento, pois é vedado ao médico opor-se à segunda opinião solicitada.',
+      '(C) Negar pois é vedado ao médico modificar diagnóstico de colega.',
+      '(D) Acatar mas não informar o diagnóstico ao paciente para evitar danos.'
+    ],
+    correctAnswer: 1,
+    explanation: 'O paciente ou representante legal tem direito à segunda opinião e o médico deve colaborar.',
+    commentary: 'O Código de Ética Médica (Art. 34 e 39) garante o direito à informação e proíbe o médico de impedir juntas médicas ou segundas opiniões.',
+    reference: 'Código de Ética Médica (2019).',
+    tags: ['Ética Médica', 'Direito do Paciente']
+  },
+  {
+    id: 'tp2022-113',
+    module: 'Saúde Coletiva',
+    text: 'Gestante tem teste rápido para sífilis positivo. Com relação à Notificação Compulsória, deve-se:',
+    options: [
+      '(A) Completar a investigação e só notificar após confirmação.',
+      '(B) Notificar como "Gestante com Sífilis" já na suspeita.',
+      '(C) Notificar somente se houver sífilis congênita no feto.',
+      '(D) Ignorar pois sífilis não é de notificação compulsória.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pelas diretrizes de vigilância, a notificação de sífilis deve ocorrer após a confirmação diagnostica.',
+    commentary: 'Diferente de algumas outras doenças, a notificação de sífilis pressupõe a confirmação (teste treponêmico + não treponêmico ou histórico de tratamento).',
+    reference: 'Protocolo Transmissão Vertical HIV/Sífilis, 2022.',
+    tags: ['Vigilância Epidemiológica', 'IST']
+  },
+  {
+    id: 'tp2022-114',
+    module: 'Saúde Coletiva',
+    image: '/images/tp2022-114.PNG',
+    text: 'O método de cálculo da Razão de Mortalidade Materna é:',
+    options: [
+      '(A) (óbitos por causa materna / população estimada) x 10^5.',
+      '(B) (óbitos por causa materna / mulheres em idade fértil) x 10^3.',
+      '(C) (óbitos por causa materna / nascidos vivos) x 10^5.',
+      '(D) (óbitos por causa materna / óbitos infantis) x 10^3.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A Razão de Mortalidade Materna usa o número de nascidos vivos no denominador por ser o fator de risco real.',
+    commentary: 'Indicador fundamental para avaliar a qualidade da assistência obstétrica. A base 10^5 (100.000 nascidos vivos) é o padrão internacional.',
+    reference: 'Rouquayrol, M. Z. Epidemiologia & saúde. 2013.',
+    tags: ['Epidemiologia', 'Saúde Materna']
+  },
+  {
+    id: 'tp2022-115',
+    module: 'Saúde Coletiva',
+    image: '/images/tp2022-115.PNG',
+    text: 'Mulher de 37 anos com perda de peso, fadiga, nervosismo, sudorese excessiva e bócio. Qual o diagnóstico e conduta inicial prováveis?',
+    options: [
+      '(A) Hipotireoidismo; iniciar levotiroxina.',
+      '(B) Hipotireoidismo subclínico; conduta expectante.',
+      '(C) Hipertireoidismo; iniciar levotiroxina.',
+      '(D) Hipertireoidismo; iniciar metimazol.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Os sintomas cardinais são de tireotoxicose; metimazol é a droga anti-tireoidiana de primeira escolha.',
+    commentary: 'Bradicardia e ganho de peso indicariam hipo. Taquicardia, perda de peso e sudorese indicam hiper. Levotiroxina é reposição (para Hipotiroidismo).',
+    reference: 'Consenso Brasileiro de Hipertireoidismo, 2013.',
+    tags: ['Endocrinologia', 'Atenção Primária']
+  },
+  {
+    id: 'tp2022-116',
+    module: 'Saúde Coletiva',
+    text: 'Homem de 50 anos com ferimento dilacerante no braço por mordida de porco. Paciente nunca vacinado. Conduta correta:',
+    options: [
+      '(A) Vacina dupla adulto e vacina antirrábica.',
+      '(B) Vacina dupla adulto, vacina antirrábica e soro antirrábico.',
+      '(C) Apenas vacina dupla adulto.',
+      '(D) Vacina dTpa e vacina antirrábica.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Mordidas de mamíferos domésticos (exceto cão/gato observáveis) em ferimentos graves exigem soro + vacina antirrábica. É necessário também iniciar esquema para tétano.',
+    commentary: 'O ferimento dilacerante é considerado grave. Como o paciente não é vacinado, precisa do soro (passiva) e vacina (ativa) para raiva e dT/dupla adulto (tétano).',
+    reference: 'Nota Técnica Profilaxia da Raiva Humana, SES-SP, 2020.',
+    tags: ['Imunização', 'Emergência']
+  },
+  {
+    id: 'tp2022-117',
+    module: 'Saúde Coletiva',
+    text: 'Mulher vítima de violência doméstica apresenta-se chorosa e com hematomas, mas não deseja denunciar o marido. Conduta médica correta:',
+    options: [
+      '(A) Realizar anamnese/exame físico, realizar notificação e orientar a paciente sobre registro e perícia.',
+      '(B) Fazer corpo de delito e Boletim de Ocorrência mesmo contra a vontade da vítima.',
+      '(C) Respeitar o sigilo e não realizar notificação para não denunciar.',
+      '(D) Apenas orientar a procurar delegacia antes de qualquer exame.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A notificação é obrigatória para a saúde; a denúncia policial é um direito da vítima que deve ser orientado/incentivado.',
+    commentary: 'A notificação compulsória para fins epidemiológicos é dever do médico. A denúncia criminal cabe à vítima em crimes de ação penal privada/condicionada.',
+    reference: 'Manual Atendimento Vítimas Violência, SES/DF.',
+    tags: ['Violência Doméstica', 'Ética Médica']
+  },
+  {
+    id: 'tp2022-118',
+    module: 'Saúde Coletiva',
+    text: 'No SUS, qual é uma ação de competência específica do gestor MUNICIPAL de saúde?',
+    options: [
+      '(A) Financiar e regular sistemas de alta complexidade (UTIs).',
+      '(B) Aprovar na ANVISA critérios de uso de medicamentos.',
+      '(C) Elaborar e executar o plano local de saúde e aplicar vacinas.',
+      '(D) Coordenar laboratórios de referência regional.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A execução direta dos serviços de saúde e o planejamento local cabem ao município.',
+    commentary: 'O município é o principal executor da atenção básica. A União formula políticas gerais e a ANVISA é autarquia federal.',
+    reference: 'Lei nº 8.080/1990.',
+    tags: ['SUS', 'Gestão']
+  },
+  {
+    id: 'tp2022-119',
+    module: 'Saúde Coletiva',
+    text: 'Qual estratégia favorece o cuidado longitudinal e humanizado, permitindo relações clínicas de longa duração na APS?',
+    options: [
+      '(A) Hierarquização da rede.',
+      '(B) Regionalização intermunicipal.',
+      '(C) Criação de vínculos e relação clínica humanizada.',
+      '(D) Prática de uma clínica flexneriana.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A longitudinalidade foca na continuidade do cuidado ao longo do tempo pela mesma equipe.',
+    commentary: 'O vínculo profissional-usuário é a base da APS, permitindo um acompanhamento mais profundo das condições crônicas e da vida do sujeito.',
+    reference: 'Política Nacional de Atenção Básica (PNAB).',
+    tags: ['Atenção Primária', 'Princípios']
+  },
+  {
+    id: 'tp2022-120',
+    module: 'Saúde Coletiva',
+    text: 'Sobre a Medicina Baseada em Evidências (MBE), assinale a interpretação correta:',
+    options: [
+      '(A) Decisões baseiam-se exclusivamente na experiência individual.',
+      '(B) As preferências do paciente devem sempre ser ignoradas em prol da ciência.',
+      '(C) Deve ser seguida de forma cega independente da realidade local.',
+      '(D) Integra a melhor evidência científica com a expertise clínica e a realidade do paciente.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A tríade da MBE envolve: evidência externa, expertise clínica e valores/preferências do paciente.',
+    commentary: 'Evidência sem expertise é fria; expertise sem evidência é perigosa. A individualização é o pilar final da aplicação da MBE.',
+    reference: 'Medicina Baseada em Evidências aplicada à prática do MFC, Stein, 2019.',
+    tags: ['MBE', 'Bioética']
+  },
+  {
+    id: 'tp2025-101',
+    module: 'Saúde Coletiva',
+    text: 'Durante uma visita domiciliar, um médico de família avalia um paciente idoso de 85 anos, acamado, com múltiplas comorbidades, incluindo hipertensão, diabetes e insuficiência cardíaca. O paciente mora com a filha, que é sua principal cuidadora, mas ela relata dificuldades para manejar a medicação e realizar os cuidados diários com o pai. Qual deve ser a abordagem mais adequada para a gestão do cuidado desse paciente no contexto da visita domiciliar?',
+    options: [
+      '(A) Identificar as necessidades do paciente e da cuidadora, avaliar o suporte social disponível e coordenar uma abordagem multidisciplinar que inclua educação em saúde, ajustes no plano terapêutico e possível suporte domiciliar adicional.',
+      '(B) Priorizar a adesão à medicação e orientar a filha a seguir rigorosamente as prescrições médicas, garantindo que o paciente tome todos os remédios nos horários corretos.',
+      '(C) Encaminhar imediatamente o paciente para atendimento hospitalar, pois a dificuldade no manejo domiciliar indica que ele não está recebendo cuidados adequados e necessita de internação.',
+      '(D) Sugerir à filha que busque um cuidador profissional, pois a complexidade do caso exige assistência especializada e a sobrecarga da cuidadora pode comprometer a qualidade do atendimento.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Uma abordagem integral e centrada na família na Atenção Domiciliar deve identificar as necessidades de ambos (idoso e cuidadora), avaliar a rede de suporte social e mobilizar uma equipe multidisciplinar para intervenção clínica e psicossocial conjunta.',
+    commentary: 'Focar exclusivamente no componente biomédico (adesão estrita aos remédios) ou encaminhar ao hospital de maneira prematura desrespeita os propósitos da assistência domiciliar. A sobrecarga da cuidadora requer coordenação de cuidados, educação em saúde e acionamento de redes de suporte, em vez de mera sugestão de terceirização de custos.',
+    reference: 'Caderno de Atenção Domiciliar - Volumes 1 e 2, Ministério da Saúde, 2012; Gestão do Cuidado no SUS, Ministério da Saúde, 2020.',
+    tags: ['Atenção Domiciliar', 'Atenção Primária']
+  },
+  {
+    id: 'tp2025-102',
+    module: 'Saúde Coletiva',
+    text: 'Ana Clara, 35 anos, branca, solteira, atendente de telemarketing, reside com a mãe. Procura o Centro de Atenção Psicossocial (CAPS) com queixa de que, há 3 meses, não tem conseguido trabalhar, pois apresenta humor depressivo, choro fácil, anedonia, baixa autoestima, desesperança e alucinações auditivas de cunho persecutório. Não apresenta ideiação suicida. Nega história psiquiátrica e/ou outros problemas de saúde. Diante do caso, no CAPS deverá ser adotada a seguinte conduta:',
+    options: [
+      '(A) Inserir em tratamento psicoterápico individual, com posterior avaliação da necessidade de tratamento farmacológico.',
+      '(B) Encaminhar, imediatamente, a hospital de referência para internação psiquiátrica.',
+      '(C) Planejar o PTS (projeto terapêutico singular), que deverá incluir tratamento psiquiátrico e psicoterápico.',
+      '(D) Referenciar para tratamento com clínico geral na APS (Atenção Primária à Saúde).'
+    ],
+    correctAnswer: 2,
+    explanation: 'A complexidade de um quadro depressivo grave com sintomas psicóticos exige o planejamento de um Projeto Terapêutico Singular (PTS) no âmbito do CAPS, integrando farmacoterapia psiquiátrica e psicoterapia.',
+    commentary: 'O diagnóstico é de episódio depressivo grave com sintomas psicóticos (F32.3). Devido à gravidade, a paciente se beneficia enormemente do suporte multidisciplinar comunitário do CAPS, inviabilizando manejo puramente psicoterápico preliminar ou encaminhamento exclusivo ao clínico geral. Não há indicação para internação psiquiátrica imediata uma vez que não são relatados riscos de auto ou heteroagressão nem ideação suicida.',
+    reference: 'NARDI, Antonio E. et al. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. Porto Alegre: ArtMed, 2021.',
+    tags: ['Saúde Mental', 'Caps', 'PTS']
+  },
+  {
+    id: 'tp2025-103',
+    module: 'Saúde Coletiva',
+    text: 'Uma Unidade Básica de Saúde (UBS) está planejando as ações de rotina para a prevenção de câncer em sua população adscrita. A equipe multiprofissional se reúne para definir as estratégias de rastreamento a serem implementadas, considerando as diretrizes do Ministério da Saúde e a disponibilidade de recursos. Considerando as recomendações atuais para o rastreamento de neoplasias na Atenção Primária à Saúde, qual das seguintes ações representa uma estratégia prioritária e com evidências científicas consolidadas para a detecção precoce de câncer de colo do útero?',
+    options: [
+      '(A) Oferta semestral de exame citopatológico para mulheres com resultados normais.',
+      '(B) Realização anual de exame citopatológico para as mulheres sexualmente ativas com idade de 25 a 69 anos.',
+      '(C) Oferta bianual de exame citopatológico para mulheres com dois resultados normais.',
+      '(D) Realização de exame citopatológico para mulheres entre 25 e 64 anos, com periodicidade definida pelas Diretrizes Nacionais.'
+    ],
+    correctAnswer: 3,
+    explanation: 'O rastreamento do câncer de colo do útero por citologia oncótica possui evidência máxima de benefício para a faixa etária compreendida de 25 a 64 anos, com intervalo trienal após dois exames anuais normais sucessivos.',
+    commentary: 'As diretrizes oficiais do Ministério da Saúde e do INCA estipulam a colpocitologia oncológica para mulheres de 25 a 64 anos que já iniciaram vida sexual. O intervalo padrão é de 3 anos, condicionado à obtenção prévia de dois resultados anuais normais seguidos, evitando intervenções iatrogênicas desnecessárias decorrentes sobre a zona de transformação do colo uterino.',
+    reference: 'Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, INCA, 2016; OMS Global Strategy for Cervical Cancer, 2020.',
+    tags: ['Rastreamento', 'Oncologia', 'Atenção Primária']
+  },
+  {
+    id: 'tp2025-104',
+    module: 'Saúde Coletiva',
+    text: 'As ações de promoção à saúde e prevenção de complicações das doenças crônicas não transmissíveis (DCNT) devem ser priorizadas. Dessa forma, é necessário conhecimento do perfil de adoecimento da população com maior prevalência de morbimortalidade, acarretando perda de qualidade de vida, limitações, incapacidades, além de alta taxa de mortalidade prematura. Quais são as quatro principais doenças crônicas não transmissíveis?',
+    options: [
+      '(A) Doenças cardiovasculares, neoplasias, doenças respiratórias crônicas e diabetes.',
+      '(B) Doenças do aparelho digestivo, doenças cardiovasculares, doenças respiratórias crônicas, doenças do aparelho geniturinário.',
+      '(C) Doenças do aparelho circulatório, neoplasias, doenças do aparelho digestivo, doenças do aparelho geniturinário.',
+      '(D) Doenças do aparelho geniturinário, diabetes, doenças respiratórias crônicas e doenças do aparelho digestivo.'
+    ],
+    correctAnswer: 0,
+    explanation: 'As quatro prioridades de Doenças Crônicas Não Transmissíveis (DCNT) de maior impacto epidemiológico global e nacional compreendem os agravos cardiovasculares, as neoplasias, as doenças respiratórias crônicas e o diabetes mellitus.',
+    commentary: 'De acordo com a OMS e o Plano Governamental para Enfretamento das DCNT no Brasil (2021-2030), estas quatro categorias representam os maiores coeficientes de mortalidade prematura e anos de vida perdidos por incapacidade (DALYs), justificando o foco prioritário de políticas de estilo de vida, controle de tabagismo, alimentação e imunização.',
+    reference: 'Plano de Ações Estratégicas para o Enfrentamento das Doenças Crônicas e Agravos Não Transmissíveis no Brasil 2021-2030, Ministério da Saúde.',
+    tags: ['DCNT', 'Epidemiologia']
+  },
+  {
+    id: 'tp2025-105',
+    module: 'Saúde Coletiva',
+    text: 'Com base na legislação do SUS, qual dos princípios fundamentais a seguir garante que todas as pessoas tenham direito ao atendimento nos serviços públicos de saúde?',
+    options: [
+      '(A) Integralidade, pois o SUS deve oferecer atendimento completo ao indivíduo, considerando promoção, prevenção, tratamento e reabilitação.',
+      '(B) Universalidade, pois o acesso aos serviços de saúde é um direito de todos e um dever do Estado, sem qualquer tipo de restrição.',
+      '(C) Equidade, pois o SUS deve tratar desigualmente os desiguais, garantindo mais assistência a quem mais necessita.',
+      '(D) Hierarquização, pois o SUS organiza seus serviços em diferentes níveis de complexidade, garantindo acesso progressivo à assistência.'
+    ],
+    correctAnswer: 1,
+    explanation: 'O princípio da Universalidade estatui que a saúde constitui um direito fundamental de todos os cidadãos brasileiros e um dever constitucional do Estado, assegurando acesso livre e irrestrito.',
+    commentary: 'Embora todos os princípios sejam indissociáveis, cada um possui foco distinto: a Universalidade foca no acesso ao sistema de saúde sem pré-requisitos; a Integralidade enfatiza a amplitude do cuidado biopsicossocial prestado; e a Equidade trata da partilha diferenciada de recursos baseada em vulnerabilidade para atenuar as desigualdades existentes.',
+    reference: 'Constituição Federal de 1988 (Art. 196 a 198); Lei Orgânica da Saúde (Lei nº 8.080/1990).',
+    tags: ['SUS', 'Legislação']
+  },
+  {
+    id: 'tp2025-106',
+    module: 'Saúde Coletiva',
+    text: 'Em uma Unidade de Saúde da Família, o médico, ao avaliar pacientes com suspeita de dengue em uma região onde há epidemia da doença, esqueceu-se de realizar a notificação dos casos suspeitos no Sistema de Informação de Agravos de Notificação (SINAN). Em relação ao registro das informações, assinale a alternativa correta:',
+    options: [
+      '(A) Trata-se de subnotificação, pois o registro das informações deverá ser realizado em até 48 horas.',
+      '(B) Não se trata de caso de subnotificação, uma vez que já foi considerada epidemia de dengue em sua região, não impactando nas ações planejadas.',
+      '(C) Não se trata de subnotificação, pois casos de dengue deverão ser notificados somente após a confirmação.',
+      '(D) Trata-se de subnotificação, o que traz repercussões importantes no conhecimento do número de casos da doença e para as ações planejadas.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A omissão do preenchimento da ficha de notificação compulsória para casos suspeitos de agravos listados configura subnotificação, gerando impactos severos no planejamento público de controle e combate epidemiológico.',
+    commentary: 'A notificação sistemática de casos de dengue é compulsória frente à simples suspeita clínica de manifestação, independentemente de consolidação por exames complementares de sorologia ou biologia molecular, inclusive durante pandemias ou cenários de epidemia declarada. A notificação subsidia o monitoramento geoespacial vetorial e a adoção de ações ágeis de bloqueio por parte das equipes de vigilância sanitária local.',
+    reference: 'Portaria de Consolidação nº 4 de 2017, Anexo (Ministério da Saúde); Sistema de Informação de Agravos de Notificação – Sinan.',
+    tags: ['Vigilância Epidemiológica', 'Notificação Compulsória']
+  },
+  {
+    id: 'tp2025-107',
+    module: 'Saúde Coletiva',
+    text: 'Paciente com diabetes mellitus tipo 2 já diagnosticada realiza acompanhamento regular com equipe multidisciplinar para evitar retinopatia e nefropatia diabética. Este caso representa qual nível de prevenção?',
+    options: [
+      '(A) Prevenção primária',
+      '(B) Prevenção secundária',
+      '(C) Prevenção terciária',
+      '(D) Prevenção quaternária'
+    ],
+    correctAnswer: 1,
+    explanation: 'De acordo com referenciais clássicos da Medicina de Família sobre níveis preventivos, a prevenção secundária visa à detecção precoce de lesões assintomáticas e ao tratamento de base imediato para conter o avanço ao espectro clínico desfavorável.',
+    commentary: 'Embora o manejo de complicações estabelecidas de longo prazo seja classificado sob o crivo preventivo terciário (focado em reabilitação e limitação de incapacidades), a conduta ativa diagnóstica multiprofissional periódica voltada a interceptar manifestações ainda subclínicas em fase latente (como a busca ativa precoce por microalbuminúria ou retinopatia diabética inicial incipiente em paciente diagnosticado) assenta-se sob o escopo preventivo secundário.',
+    reference: 'Lopes JM, Gusso G. Tratado de Medicina de Família e Comunidade, 2a ed. Porto Alegre: Artmed, 2019.',
+    tags: ['Prevenção', 'Atenção Primária']
+  },
+  {
+    id: 'tp2025-108',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 72 anos, hipertenso, em uso de terapia medicamentosa para hipertensão, comparece à UBS para avaliação de rotina, assintomático e apresentando os seguintes sinais vitais: PA 172/124mmHg e FC 52bpm. Assinale a melhor conduta para este paciente:',
+    options: [
+      '(A) Controle de sal da dieta, atividade física após melhor controle pressórico e tratamento medicamentoso com IECA (enalapril), bloqueador de canais de cálcio (anlodipina) e tiazídico (hidroclorotiazida).',
+      '(B) Controle de sal da dieta, atividade física 3 a 5 vezes por semana e tratamento medicamentoso com IECA (enalapril), diurético de alça (furosemida) e betabloqueador(metoprolol).',
+      '(C) Controle de sal da dieta, atividade física após melhor controle da PA e tratamento medicamentoso com IECA (enalapril), betabloqueador (metoprolol) e Bloqueador de AT2 (losartana).',
+      '(D) Controle de sal da dieta, atividade física 3 a 5 vezes por semana e tratamento medicamentoso com diurético (clortalidona), bloqueador da aldosterona (espironolactona) e bloqueador de canais de cálcio (anlodipina).'
+    ],
+    correctAnswer: 0,
+    explanation: 'Paciente com hipertensão grave estágio 3 e alto risco cardiovascular exige imediato acoplamento de tríplice terapia sinérgica de mecanismos distintos (IECA, BCC e diurético tiazídico), deferindo práticas de esforço físico agudo até otimizar os níveis pressóricos.',
+    commentary: 'A obtenção de cifras pressóricas em níveis de Estágio 3 (PA ≥ 180 / 110) impõe o emprego ágil de complementações farmacológicas sinérgicas compostas por um IECAs ou BRA, um Bloqueador de Canal de Cálcio (BCC) e um diurético tiazídico em doses harmônicas. Betabloqueadores como o Metoprolol ficam restritos a indicações cardíacas e a associação de IECA direto com BRA (Enalapril + Losartana) é formalmente proibida pelo elevado risco de lesão renal crônica / hipercalemia aguda secundária. Exercício físico extenuante agudo deve ser postergado temporariamente até a redução dos picos de emergência mecânica vascular.',
+    reference: 'Barroso et al. Diretrizes Brasileiras de Hipertensão Arterial – 2020.',
+    tags: ['Atenção Primária', 'Hipertensão']
+  },
+  {
+    id: 'tp2025-109',
+    module: 'Saúde Coletiva',
+    text: 'Mulher, 55 anos, diagnosticada com diabetes mellitus tipo 2 há dois anos, retorna ao consultório médico apresentando ansiedade, além de relatar alto consumo de alimentos açucarados e a não realização de atividade física, refletindo em um mau controle glicêmico. Atualmente, utiliza como tratamento medicamentoso o cloridrato de metformina em dose máxima (850mg, 3x/dia). A seguir são mostrados os resultados dos exames laboratoriais da paciente: glicemia de jejum 220mg/dL; glicemia glicada 8,6%. Além de se reforçar a mudança do estilo de vida da paciente, qual seria a conduta terapêutica medicamentosa adequada para que haja um melhor controle dos níveis glicêmicos?',
+    options: [
+      '(A) Iniciar o uso de insulinoterapia basal ou com o esquema basal-bolus.',
+      '(B) Continuar com o cloridrato de metformina em monoterapia por mais três meses.',
+      '(C) Manter o uso do cloridrato de metformina e associar outro hipoglicemiante oral.',
+      '(D) Intensificar o uso de insulina, cloridrato de metformina e outro hipoglicemiante oral.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Diante de mau controle glicêmico residual (HbA1c 8,6%) em vigência de tratamento com monoterapia de metformina em dose plena, as diretrizes vigentes contraindicam prolongamento inútil e recomendam a associação guiada de um segundo antidiabético oral.',
+    commentary: 'As metas gerais de controle glicêmico preconizam HbA1c < 7,0% na grande maioria dos pacientes adultos. Diante de falha de monoterapia estável sob metformina, deve-se instituir terapia combinada de modo progressivo (escalonamento). As classes preferenciais para o acréscimo oral na atenção primária envolvem os inibidores de SGLT2, agonistas de GLP-1, inibidores de DPP-4 ou sulfonilureias. A insulinização direta é reservada para marcante descompensação metabólica franca catabólica (glicada ≥ 9,0% ou com sintomas de perda ponderal aguda severa cetonúrica).',
+    reference: 'Diretrizes da Sociedade Brasileira de Diabetes 2022-2023; ADA Standards of Care in Diabetes, 2023.',
+    tags: ['Atenção Primária', 'Diabetes']
+  },
+  {
+    id: 'tp2025-110',
+    module: 'Saúde Coletiva',
+    text: 'Entre as diferentes ferramentas de assistência à saúde no contexto do Sistema Único de Saúde (SUS), tem-se o Projeto Terapêutico Singular (PTS) para a organização e gestão do cuidado. Assinale a alternativa que define esta ferramenta:',
+    options: [
+      '(A) Deve ser aplicado a todos os usuários que são acompanhados na Unidade Básica de Saúde.',
+      '(B) Corresponde apenas à etapa de reabilitação do processo de tratamento para as pessoas com transtornos mentais.',
+      '(C) É definido previamente pelos profissionais e comunicado ao usuário.',
+      '(D) É destinado a um sujeito, família ou comunidade, elaborado por equipe multiprofissional.'
+    ],
+    correctAnswer: 3,
+    explanation: 'O Projeto Terapêutico Singular (PTS) constitui um dispositivo de co-construção terapêutica interdisciplinar focada em um sujeito de alta vulnerabilidade, família ou território multiprofissionalmente planejado.',
+    commentary: 'O PTS opõe-se à conduta linear vertical hegemônica: ele envolve o próprio sujeito na tomada coparticipativa de decisões de cuidado. Destina-se singularmente às conjunturas complexas em que as abordagens padronizadas habituais demonstram ineficácia ou ineficiência, não sendo, portanto, aplicável de modo extensivo obrigatório indistintamente para a totalidade absoluta de acolhimentos epidemiológicos cotidianos de uma UBS.',
+    reference: 'Slomp Júnior H, Franco TB, Merhy EE. Projeto terapêutico como dispositivo para o cuidado compartilhado. Editora Rede Unida, 2022.',
+    tags: ['PTS', 'Gestão do Cuidado']
+  },
+  {
+    id: 'tp2025-111',
+    module: 'Saúde Coletiva',
+    text: 'Para rastreamento populacional de doenças de alta incidência e/ou prevalência, qual a principal característica dos exames a serem utilizados?',
+    options: [
+      '(A) Alta especificidade',
+      '(B) Baixa sensibilidade',
+      '(C) Alta sensibilidade',
+      '(D) Baixa acurácia'
+    ],
+    correctAnswer: 2,
+    explanation: 'Os exames de triagem e rastreamento de espectro populacional inicial exigem priorizar alta sensibilidade diagnóstica para minimizar a evasão de verdadeiros doentes (falsos negativos).',
+    commentary: 'Um teste de triagem epidemiológica populacional ideal visa a englobar e "capturar" a totalidade de portadores potenciais da desordem em fase pré-clínica assintomática (daí o primado de Alta Sensibilidade). Os indivíduos que acusarem reações positivas complementares deverão ser encaminhados a posteriori para exames diagnósticos de confirmação dotados de Alta Especificidade (responsáveis por expurgar falsos positivos indesejáveis antes do início de intervenções agressivas sistêmicas).',
+    reference: 'Eluf-Neto J. Rastreamento. In: Martins MA et al (Org). Clínica Médica. Manole, 2ed, 2015; Ferreira JC, Patino CM. Entendendo testes diagnósticos. J Bras Pneumol, 2017.',
+    tags: ['Epidemiologia', 'Rastreamento']
+  },
+  {
+    id: 'tp2025-112',
+    module: 'Saúde Coletiva',
+    text: 'A mortalidade proporcional por idade também pode ser representada em gráfico, sendo conhecida como Curva de Mortalidade Proporcional ou Curva de Nelson de Moraes. A curva de mortalidade proporcional apresentada abaixo reflete:',
+    options: [
+      '(A) Nível de saúde muito baixo',
+      '(B) Nível de saúde baixo',
+      '(C) Nível de saúde regular',
+      '(D) Nível de saúde bom'
+    ],
+    correctAnswer: 1,
+    explanation: 'A curva com padrão de decréscimo linear íngreme tipo J invertido ou com picos concentrados em menores de um ano configura o padrão típico da Curva de Nelson de Moraes indicando nível de saúde baixo.',
+    commentary: 'As Curvas de Nelson de Moraes avaliam proporcionalmente os perfis de óbito por ciclos etários divididos. O Padrão de Nível de Saúde Baixo caracteriza-se por manter altíssima mortalidade na faixa infantil de recém-nascidos e lactentes (< 1 ano) e modesto percentual de sobrevida entre os maduros tardios senis (óbitos de maiores de 50 anos inferiores a thresholds de 20%). Países desenvolvidos de Nível de Saúde Elevado ostentam curva tipo "U" ou tipo "J" tradicional em que mais de 70% dos óbitos ocorrem em idosos tardios com sobrevida avançada.',
+    reference: 'Laurenti R, et al. Estudo da mortalidade e da morbidade perinatal em maternidades. Rev Saúde Pública, 18:436-47, 1984.',
+    tags: ['Indicadores de Saúde', 'Epidemiologia'],
+    image: '/images/tp2025-112.PNG'
+  },
+  {
+    id: 'tp2025-113',
+    module: 'Saúde Coletiva',
+    text: 'Durante uma semana, uma UBS identificou aumento expressivo de atendimentos com quadros de febre, mialgia, cefaleia e exantema em moradores do mesmo bairro, localizado próximo a um terreno baldio com histórico de acúmulo de lixo e água parada. Com base na suspeita epidemiológica, qual deve ser a principal hipótese diagnóstica e a primeira medida da investigação?',
+    options: [
+      '(A) Surto de meningite meningocócica – Iniciar quimioprofilaxia em todos os casos suspeitos.',
+      '(B) Surto de sarampo – Suspender atividades escolares e iniciar vacinação em bloqueio.',
+      '(C) Surto de leptospirose – Coletar sorologia e aguardar confirmação laboratorial para ação de campo.',
+      '(D) Surto de arbovirose (ex.: dengue) – Notificar imediatamente e realizar investigação entomológica e ambiental.'
+    ],
+    correctAnswer: 3,
+    explanation: 'O padrão sintomático agudo típico (febre, cefaleia, mialgia e exantema) atrelado a nichos geográficos com acúmulo hídrico orienta o alerta de surto por arboviroses (dengue), exigindo pronta notificação e controle de vetores.',
+    commentary: 'O acúmulo de detritos em terreno adjacente compõe criatório abundante para ovos do vetor Aedes aegypti. A hipótese primordial é arbovirose. A vigilância epidemiológica ágil proíbe postergar ações de eliminação ou bloqueio à espera de resultados laboratoriais tardios; impõe-se a emissão do alerta de surto e a varredura física entomológica territorial urbana de eliminação de nichos de reprodução do mosquito.',
+    reference: 'Ministério da Saúde. Guia de Vigilância em Saúde. Brasília: MS, 2022; Investigação de surtos de arboviroses, OPAS, 2021.',
+    tags: ['Vigilância Epidemiológica', 'Infectologia']
+  },
+  {
+    id: 'tp2025-114',
+    module: 'Saúde Coletiva',
+    text: 'Considere uma equipe da Estratégia Saúde da Família (ESF) em uma comunidade com elevada prevalência de doenças crônicas e aumento recente da demanda por atendimentos domiciliares de pacientes acamados e em cuidados paliativos. Diante de limitações de recursos humanos e materiais e com sobrecarga evidente da equipe, qual seria a melhor conduta para otimizar a gestão de recursos e garantir a continuidade e a qualidade assistencial?',
+    options: [
+      '(A) Interromper provisoriamente os atendimentos domiciliares para os pacientes em cuidados paliativos e priorizar as intercorrências agudas na UBS.',
+      '(B) Reorganizar o processo de trabalho com base em critérios de vulnerabilidade e complexidade dos casos, articulando com a rede de apoio e pactuando fluxos entre UBS e domicílio.',
+      '(C) Ampliar a agenda de atendimentos domiciliares para toda a equipe, incluindo médicos, mesmo sem reorganizar os fluxos de atendimento ou estratificação de risco.',
+      '(D) Solicitar remanejamento de profissionais de outras áreas da atenção secundária, sem envolver a equipe multiprofissional na tomada de decisão.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A otimização de equipes exauridas sob demandas crônicas deve utilizar matrizes de estratificação de risco e vulnerabilidade territorial, reorganizando as ordens prioritárias de fluxo de visitas e conexões com a rede intersetorial.',
+    commentary: 'Abandonar ou preterir visitas aos pacientes sob dor paliativa agride frontalmente determinantes éticos de dignidade de vida. Estender de forma desordenada a totalidade de escalas sem governança inviabiliza a conservação física funcional de recursos da unidade. Recomenda-se, portanto, a estratificação ativa de risco, definindo prioridades clínico-sociais compartilhadas continuamente com toda a equipe multiprofissional e integrando o suporte de cuidadores comunitários.',
+    reference: 'Atenção Domiciliar no SUS: guia orientador, Ministério da Saúde, 2021; PNAB (Portaria nº 2.436/2017).',
+    tags: ['Atenção Primária', 'Gestão']
+  },
+  {
+    id: 'tp2025-115',
+    module: 'Saúde Coletiva',
+    text: 'Durante uma consulta em uma UBS, um médico atende um paciente com suspeita de meningite meningocócica. Como o profissional deve proceder em relação à notificação da doença?',
+    options: [
+      '(A) Deve realizar a notificação em até 24 horas.',
+      '(B) Aguardar os resultados laboratoriais e notificar, caso a doença seja confirmada.',
+      '(C) Notificar se os sintomas persistirem por mais de 48 horas.',
+      '(D) Encaminhar o paciente para um hospital, para que seja notificado.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A suspeita clínica fundamentada de Doença Meningocócica constitui uma emergência de saúde pública relevante, exigindo notificação compulsória imediata em janela de até 24 horas.',
+    commentary: 'As meningites bacterianas agudas (como a cepa meningocócica) espalham-se celeremente por sprays aéreos de secreções orofaríngeas, exigindo profilaxia medicamentosa ágil de contatos domiciliares próximos com rifampicina/ceftriaxona. Portanto, a emissão do alerta da ficha de suspeita epidemiológica deve ocorrer em até 24 horas a partir do acolhimento original suspeito e independe de qualquer validação prévia de testes em laboratório.',
+    reference: 'Ministério da Saúde, Guia de Vigilância em Saúde: Volume 1, 2024; Artigo 269 do Código Penal Brasileiro.',
+    tags: ['Notificação Compulsória', 'Infectologia']
+  },
+  {
+    id: 'tp2025-116',
+    module: 'Saúde Coletiva',
+    text: 'Durante o atendimento em uma UBS, o médico da Equipe de Saúde da Família identifica que a unidade vem priorizando apenas pacientes com doenças crônicas graves, enquanto outros grupos, como gestantes e crianças, têm encontrado barreiras para agendamento de consultas. Considerando os princípios do Sistema Único de Saúde (SUS), qual deve ser a crítica correta do profissional em relação à situação descrita?',
+    options: [
+      '(A) A unidade está respeitando o princípio da equidade ao restringir atendimentos a pacientes com doenças crônicas graves.',
+      '(B) A organização da agenda da UBS garante a integralidade da atenção ao priorizar condições mais graves.',
+      '(C) A situação viola o princípio da universalidade, ao limitar o acesso de determinados grupos populacionais aos serviços de saúde.',
+      '(D) A priorização de grupos com doenças crônicas está alinhada ao princípio da descentralização da gestão do SUS.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A imposição de filtros limitantes que impedem o acesso rotineiro de grupos específicos (gestantes e infância) à atenção básica fere o princípio ético-doutrinário da Universalidade do SUS.',
+    commentary: 'O princípio da Universalidade exige assegurar que a totalidade da comunidade adscrita desfrute de canais acessíveis sem barreiras discriminatórias administrativas. Embora a Equidade endosse focar atenção qualificada sobre grupos de risco mais complexos sob estratificação de vulnerabilidades, ela jamais valida extinguir ou restringir as necessidades preventivas de outras coortes básicas comunitárias essenciais.',
+    reference: 'Lei Orgânica da Saúde (Lei nº 8.080/1990); Política Nacional de Atenção Básica (PNAB).',
+    tags: ['SUS', 'Legislação']
+  },
+  {
+    id: 'tp2025-117',
+    module: 'Saúde Coletiva',
+    text: 'A Febre Amarela (FA) silvestre é endêmica na Região Amazônica. De tempos em tempos, o vírus reemerge na região extra-amazônica, com surtos de magnitude e extensão variáveis. Assinale a alternativa que descreve corretamente os fatores de risco para a expansão das áreas de circulação do vírus da Febre Amarela, podendo, assim, afetar todas as regiões do país:',
+    options: [
+      '(A) Baixas temperaturas e baixa pluviosidade.',
+      '(B) Sazonalidade, com maior incidência entre os meses de dezembro a maio, em decorrência das condições ambientais, climáticas e epidemiológicas no Brasil.',
+      '(C) Circulação do vírus em região de alta sensibilidade para a vigilância de epizootias em primatas não humanos (PNH).',
+      '(D) Taxas adequadas de coberturas vacinais para Febre Amarela.'
+    ],
+    correctAnswer: 1,
+    explanation: 'O período sazonal brasileiro de maiores índices de temperatura e pluviosidade (dezembro a maio) amplifica as populações vetoriais, favorecendo a expansão geográfica e o derramamento viral para novas populações suscetíveis.',
+    commentary: 'As arboviroses transmitidas por vetores florestais (como os mosquitos dos gêneros Haemagogus e Sabethes) estão intimamente associadas a condições tropicais úmidas de alto calor e umidade, as quais aumentam a sobrevida e velocidade replicativa do vírus nos insetos vetores. A vigilância atenta de epizootias e altas taxas vacinais protegem a população de surtos expansivos urbanos (Aedes aegypti).',
+    reference: 'Guia de Vigilância em Saúde, 6ª ed, Ministério da Saúde, 2023.',
+    tags: ['Vigilância Epidemiológica', 'Zoologia e Arboviroses']
+  },
+  {
+    id: 'tp2025-118',
+    module: 'Saúde Coletiva',
+    text: 'Paciente com 60 anos, tem diagnóstico de diabetes mellitus tipo 2 há 10 anos, comparece à Unidade Básica de Saúde (UBS) para acompanhamento de rotina. Relata seguir em parte o tratamento medicamentoso, com dificuldades para manter uma dieta adequada. O exame físico mostra IMC de 29kg/m² e a glicemia de jejum está em 280mg/dL. Obedecendo os princípios do SUS e a organização da rede de atenção à saúde, qual é a conduta mais adequada para o manejo desse paciente?',
+    options: [
+      '(A) Solicitar internação hospitalar para controle glicêmico intensivo, independentemente da ausência de complicações agudas, com base no quadro clínico.',
+      '(B) Encaminhar o paciente diretamente para endocrinologista na rede especializada para acompanhamento profissional, sem intervenções prévias na UBS.',
+      '(C) Iniciar insulinoterapia de controle, devido ao quadro clínico agudo e orientar o paciente a retornar após 6 meses para novo acompanhamento.',
+      '(D) Iniciar na UBS ajuste do plano terapêutico, educação em saúde (alimentação e atividade física) e agendamento de retorno em 30 dias para reavaliação.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A Atenção Primária constituirá a coordenadora principal do cuidado crônico do diabetes, exigindo plano integrado de ajustes de metas terapêuticas, aconselhamento multiprofissional alimentar e revisões curtas frequentes regulares.',
+    commentary: 'Como o paciente mantem-se assintomático na ausência de sintomas cetoacidóticos graves evidentes, inexiste justificativa técnica para internação hospitalar ou encaminhamento precoce automático à média complexidade (endocrinologia), devendo a intervenção ocorrer integralmente na UBS. Um retorno distante em 6 meses com início isolado de insulina é perigoso em virtude do risco de hipoglicemia severa subitamente induzida e falta de acompanhamento de perto.',
+    reference: 'Portaria nº 2.436/2017 (PNAB); Diretrizes SBD 2024 - Tratamento do DM2 no SUS.',
+    tags: ['Atenção Primária', 'Diabetes']
+  },
+  {
+    id: 'tp2025-119',
+    module: 'Saúde Coletiva',
+    text: 'O médico do trabalho deve considerar aspectos coletivos e individuais para a promoção e proteção da saúde dos trabalhadores e a prevenção de doenças relacionadas ao ambiente de trabalho, devido a riscos e condições laborais. Descreva o manejo adequado para um trabalhador exposto a agentes químicos no ambiente industrial:',
+    options: [
+      '(A) O manejo adequado deve incluir a avaliação regular da saúde do trabalhador por meio de exames médicos periódicos, acompanhamento de possíveis sinais e sintomas de intoxicação e implementação de medidas de controle de risco no ambiente de trabalho, como ventilação adequada e redução da exposição.',
+      '(B) O manejo adequado para trabalhadores expostos a agentes químicos deve ser apenas informativo, fornecendo materiais educativos sobre os riscos da exposição e orientando o uso de Equipamentos de Proteção Individual (EPIs), sem necessidade de intervenções clínicas periódicas.',
+      '(C) O manejo adequado consiste em afastar o trabalhador imediatamente do ambiente de trabalho ao identificar qualquer sinal de intoxicação, sem a necessidade de acompanhamento médico ou tratamento, uma vez que o agente químico não oferece risco de longo prazo à saúde.',
+      '(D) O manejo adequado envolve a realização de exames médicos apenas quando o trabalhador relatar sintomas de intoxicação, sem necessidade de medidas preventivas ou controle ambiental, já que os riscos são considerados baixos em ambientes industriais controlados.'
+    ],
+    correctAnswer: 0,
+    explanation: 'O manejo médico-ocupacional eficaz associa o monitoramento epidemiológico clínico regular periódico individual dos trabalhadores à atuação nas melhorias de engenharia e controles sanitários dos ambientes laborais.',
+    commentary: 'As normas legais regulamentadoras federais do trabalho (como a NR-7 PCMSO) impõem o controle e vigilância biológica contínua por indicadores analíticos em trabalhadores expostos a substâncias tóxicas. Condutas limitadas puramente à entrega de informativos ou reações médicas esporádicas apenas surgidos sinais tardios negligenciam a ocorrência crônica silenciosa de agravos profissionais de relevância legal e biomédica severa.',
+    reference: 'Área Técnica de Saúde do Trabalhador, Ministério da Saúde; Norma Regulamentadora nº 7 (MTE - PCMSO).',
+    tags: ['Saúde do Trabalhador', 'Medicina Ocupacional']
+  },
+  {
+    id: 'tp2025-120',
+    module: 'Saúde Coletiva',
+    text: 'Um senhor de 80 anos faleceu em seu domicílio durante o sono. Os familiares desconhecem qualquer patologia ou tratamentos médicos prévios. No município onde residem, não há Serviço de Verificação de Óbito (SVO), somente o Instituto Médico-Legal (IML). Para que essa família possa iniciar os trâmites para a destinação do cadáver, solicitaram atendimento do Serviço de Atendimento Municipal de Urgência. Assinale a alternativa correta acerca da destinação desse cadáver pelo médico socorrista:',
+    options: [
+      '(A) O médico do SAMU não precisa verificar os sinais de ocorrência do óbito e, por ter histórico de morte natural, pode oferecer a emissão da Declaração de Óbito, mediante remuneração pela emissão do documento.',
+      '(B) O médico socorrista deve verificar os sinais de ocorrência do óbito e, por ter histórico de morte natural, deve emitir guia de encaminhamento de cadáver para a autoridade policial local, para que esta destine o cadáver ao IML.',
+      '(C) O médico socorrista deve verificar os sinais de ocorrência do óbito e, por ter histórico de morte natural, deve emitir guia de encaminhamento de cadáver para a autoridade policial local, ou pode emitir a Declaração de Óbito (D.O.).',
+      '(D) O médico do SAMU não precisa verificar os sinais de ocorrência do óbito e, por ter histórico de morte natural, deve emitir guia de encaminhamento de cadáver para a autoridade policial local, para que esta destine o cadáver ao SVO da Capital.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Em mortes domiciliares naturais ocorridas fora da assistência médica e em cidades sem SVO, o médico do socorro que confirmou o falecimento deve atestar fisicamente o óbito, podendo preencher a Declaração de Óbito (D.O.) ou acionar o encaminhamento à polícia civil para emissão do obituário por médico de serviço público municipal.',
+    commentary: 'O IML possui competência restrita ao diagnóstico necroscópico pericial das mortes ocasionadas por causas externas (traumáticas ou violentas suspicazes). Em episódios naturais de doente sem assistência em município desprovido de rede de SVO, o preenchimento da Declaração de Óbito (D.O.) recai idealmente sobre o médico que constatou presencialmente o óbito (inclusive do SAMU), sendo vedada qualquer cobrança pecuniária adicional por emissão de atestados de falecimentos públicos. Caso subsistam questionamentos, orienta-se o encaminhamento oficial do cadáver à autoridade policial para exames complementares de perícia básica por peritos indicados municipais.',
+    reference: 'Portaria MS nº 116 de 2009; Manual de Preenchimento da Declaração de Óbito, CREMESP, 2023; Resolução SS nº 229, 2024.',
+    tags: ['Medicina Legal', 'Bioética']
+  },
+  {
+    id: 'tp2021-101',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 23 anos, em situação de rua, ensino fundamental incompleto, aos 18 anos abandonou sua família devido ao uso de crack e outras drogas ilícitas. Apresentou quadro associado de esquizofrenia residual sendo acompanhado pela equipe de apoio à saúde mental, numa política de redução de danos, compartilhada à unidade básica de saúde. Com tosse persistente há mais de um mês, a equipe de consultório de rua o orientou para realizar exame de baciloscopia de escarro na unidade, diagnosticando-se tuberculose. A melhor conduta é:',
+    options: [
+      '(A) solicitar internação hospitalar compulsória para tratamento diretamente supervisionado.',
+      '(B) encaminhar para a equipe de consultório de rua que fará o tratamento diretamente observado sob supervisão da unidade.',
+      '(C) buscar a família do paciente para se responsabilizar pelo tratamento supervisionado no domicílio.',
+      '(D) impor abstinência do uso de drogas e encaminhar para tratamento diretamente observado em abrigo ou albergue do município.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A conduta prioritária e mais adequada de acordo com as políticas do Ministério da Saúde para pessoas em situação de rua com tuberculose é realizar o Tratamento Diretamente Observado (TDO) compartilhado com as equipes de Consultório na Rua (eCR) e a Unidade Básica de Saúde, buscando o vínculo com o usuário, sem imposição de abstinência de álcool ou drogas.',
+    commentary: 'O tratamento diretamente observado (TDO) é recomendado para todas as pessoas em situação de rua (PSR) e pode ser realizado na unidade de saúde, in loco e nos equipamentos sociais, pelas equipes de consultório na rua e/ou das UBSs. Não se deve subordinar o tratamento à internação compulsória ou à exigência/imposição de abstinência, o que viola as abordagens de Redução de Danos e rompe o vínculo de cuidado.',
+    reference: 'Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Manual de Recomendações para o Controle da Tuberculose no Brasil. Brasília: Ministério da Saúde, 2019.',
+    tags: ['Tuberculose', 'Consultório na Rua', 'Redução de Danos']
+  },
+  {
+    id: 'tp2021-102',
+    module: 'Saúde Coletiva',
+    text: 'Caso A: paciente que, independentemente da idade e da situação vacinal, apresenta febre e exantema maculopapular acompanhados de um ou mais dos seguintes sinais e sintomas: tosse e/ou coriza e/ou conjuntivite. Caso B: paciente com quadro discreto de febre moderada, de início súbito, que dura de 2 a 3 dias, e sintomas generalizados inespecíficos (astenia, adinamia, anorexia, cefaleia e outros) e erupção cutânea papulovesicular, que se inicia na face, couro cabeludo ou tronco. Os casos A e B apresentam, respectivamente, características de casos suspeitos de:',
+    options: [
+      '(A) Rubéola e varicela.',
+      '(B) Sarampo e rubéola.',
+      '(C) Rubéola e sarampo.',
+      '(D) Sarampo e varicela.'
+    ],
+    correctAnswer: 3,
+    explanation: 'O Caso A descreve o quadro sindrômico clássico suspeito de Sarampo (febre + exantema maculopapular acompanhados de sintomas respiratórios/oculares). O Caso B descreve a Varicela ou catapora (febre moderada de início súbito com erupção papulovesicular polimórfica que se inicia na face, couro cabeludo ou tronco).',
+    commentary: 'Caso suspeito de sarampo: febre e exantema maculopapular, acompanhados de tosse/coriza/conjuntivite. Caso suspeito de varicela: febre moderada, pródromos inespecíficos seguidos de erupção papulovesicular típica (vesículas com halo eritematoso, que evoluem para crostas). Caso suspeito de rubéola envolve febre, exantema e linfoadenopatia retroauricular/occipital/cervical.',
+    reference: 'Guia de Vigilância em Saúde, Ministério da Saúde.',
+    tags: ['Vigilância Epidemiológica', 'Doenças Exantemáticas']
+  },
+  {
+    id: 'tp2021-103',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 40 anos, recém separado, dois filhos adolescentes, torneiro mecânico, desempregado há 1 ano, tabagista, hipertensão não controlada, uso abusivo de álcool, procura atendimento na Unidade Básica de Saúde devido a episódio de síncope seguido por crise convulsiva. Refere pai falecido por AVC e mãe por complicações do diabetes mellitus. Após avaliação clínica e definição das suas necessidades de saúde seu caso foi escolhido para elaboração de um projeto terapêutico singular com a participação da equipe de saúde da família e do matriciamento da psiquiatria. De acordo com as etapas do projeto terapêutico singular o passo seguinte deverá definir:',
+    options: [
+      '(A) Um coordenador para o projeto.',
+      '(B) Os momentos de reavaliação.',
+      '(C) As metas e as responsabilidades.',
+      '(D) Os encaminhamentos necessários.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Na elaboração do Projeto Terapêutico Singular (PTS), após o diagnóstico inicial (avaliação orgânica, psicológica e social), a etapa imediata subsequente consiste na definição de metas (propostas de curto, médio e longo prazo) e na divisão de responsabilidades/tarefas específicas de cada membro da equipe de saúde e do próprio usuário.',
+    commentary: 'O PTS é estruturado tradicionalmente em quatro momentos: 1) Diagnóstico (análise da situação singular e de vulnerabilidades); 2) Definição de metas (negociação de propostas com o sujeito); 3) Divisão de responsabilidades (atribuição de tarefas claras para cada integrante); 4) Reavaliação periódica (discussão da evolução e mudanças no plano de cuidado). O passo subsequente ao diagnóstico engloba a definição de metas e responsabilidades.',
+    reference: 'BRASIL. Ministério da Saúde. Clínica ampliada, equipe de referência e projeto terapêutico singular. 2. ed. Brasília: Ministério da Saúde, 2007.',
+    tags: ['Atenção Primária', 'PTS', 'Projeto Terapêutico Singular']
+  },
+  {
+    id: 'tp2021-104',
+    module: 'Saúde Coletiva',
+    text: 'Mulher, 67 anos, PA = 160 x 90 mmHg, informa que é hipertensa e diabética há cerca de 10 anos. Teve infarto anterior do miocárdio (IAM) há dois anos. É tabagista e sedentária. O médico de família decide fazer a estratificação de risco cardiovascular, para definir sua estratégia de acompanhamento. O risco cardiovascular e o plano de cuidado a ser adotado, são respectivamente:',
+    options: [
+      '(A) Risco moderado; mudança de estilo de vida e tratamento não medicamentoso.',
+      '(B) Risco baixo; mudança de estilo de vida e tratamento não medicamentoso.',
+      '(C) Risco alto; mudança de estilo de vida e tratamento medicamentoso.',
+      '(D) Risco baixo; mudança de estilo de vida e tratamento medicamentoso.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Visto que a paciente possui diagnóstico estabelecido de diabetes mellitus associado a uma lesão em órgão-alvo em consequência de evento cardiovascular prévio (Infarto Agudo do Miocárdio), o seu risco cardiovascular é obrigatoriamente estratificado como Alto. Portanto, as diretrizes vigentes apontam para a implementação imediata de mudanças de estilo de vida (tratamento não medicamentoso) associada ao tratamento medicamentoso apropriado.',
+    commentary: 'A classificação de Alto Risco Cardiovascular é compulsória na presença de doença cardiovascular clinicamente manifesta (como infarto prévio), lesão de órgão-alvo ou diabetes complicado. O plano de atenção à saúde para portadores de risco cardiovascular elevado deve, indubitavelmente, coordenar ampla intervenção farmacológica contínua em paralelo a mudanças dietéticas e de atividade física.',
+    reference: 'Diretrizes Brasileiras de Hipertensão Arterial, SBC, 2020; Caderno de Atenção Básica nº 14, Prevenção Clínica de Doenças Cardiovasculares, Ministério da Saúde.',
+    tags: ['Risco Cardiovascular', 'Hipertensão', 'Diabetes']
+  },
+  {
+    id: 'tp2021-105',
+    module: 'Saúde Coletiva',
+    text: 'Homem, caminhoneiro, procura a UBS local para receber a vacina contra febre amarela. A restrição que se impõe para que este homem não seja vacinado é:',
+    options: [
+      '(A) Idade acima de 50 anos.',
+      '(B) Portador de HIV/AIDS assintomático.',
+      '(C) Asma leve/moderada.',
+      '(D) Contagem de LT-CD4+ < 200 células/mm³.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A vacina contra febre amarela é produzida a partir de virus vivo atenuado. Portanto, tem contraindicação formal e absoluta em pacientes com imunossupressão grave, incluindo indivíduos portadores de HIV com contagem de linfocitos T-CD4+ inferior a 200 células/mm³.',
+    commentary: 'Pacientes assintomáticos com infecção pelo vírus HIV e reserva imunológica mantida (CD4+ > 350 ou > 200 de forma ponderada) podem receber a imunização de febre amarela quando em áreas com recomendação ou trânsito necessário. A imunodeficiência grave (CD4 < 200) impõe restrição imediata pela possibilidade teórica de replicação vacinal descontrolada (doença viscero- ou neurotrópica pós-vacinação).',
+    reference: 'Brasil. Ministério da Saúde. Secretaria de Atenção à Saúde. Febre amarela: guia para profissionais de saúde. Brasília: Ministério da Saúde, 2018.',
+    tags: ['Imunização', 'Contraindicações', 'Febre Amarela']
+  },
+  {
+    id: 'tp2021-106',
+    module: 'Saúde Coletiva',
+    text: 'O resgate e cuidado integral das pessoas vulneráveis como: crianças, portadores de transtornos mentais, idosos, doentes em fase terminal ou em estado vegetativo persistent, devem ser garantidos por meio de mecanismos de proteção. Qual o mecanismo prioritário que atua como forma de superação de vulnerabilidade?',
+    options: [
+      '(A) Acolhimento.',
+      '(B) Matriciamento.',
+      '(C) Ambiência.',
+      '(D) Gestão do cuidado.'
+    ],
+    correctAnswer: 0,
+    explanation: 'O acolhimento é um dos eixos mais substanciais da Política Nacional de Humanização (PNH) e constitui o mecanismo e postura prioritários para a identificação, recepção qualificada e superação das condições de vulnerabilidade no SUS.',
+    commentary: 'De acordo com as diretrizes de humanização do Ministério da Saúde, o acolhimento não se restringe a uma triagem de recepção, mas sim a uma postura ética e estética de compromisso com a fragilidade humana e a superação da vulnerabilidade social ou clínica, amparando os indivíduos e promovendo a integralidade nas relações no SUS.',
+    reference: 'Brasil. Ministério da Saúde. Acolhimento na gestão e o trabalho em saúde. Brasília: Ministério da Saúde, 2016.',
+    tags: ['Humanização', 'Acolhimento', 'PNH']
+  },
+  {
+    id: 'tp2021-107',
+    module: 'Saúde Coletiva',
+    text: 'Foi instalada uma nova equipe de Estratégia de Saúde da família em uma área de risco. A equipe iniciou o trabalho percorrendo área, fazendo o levantamento dos recursos disponíveis, possíveis barreiras ao acesso e cadastrando os residentes da área. Que princípios norteadores da Estratégia de Saúde da Família foram utilizados nesse trabalho?',
+    options: [
+      '(A) Territorialização e adscrição da clientela.',
+      '(B) Hierarquização e integralidade.',
+      '(C) Equidade e caráter substitutivo.',
+      '(D) Referência e contrarreferência.'
+    ],
+    correctAnswer: 0,
+    explanation: 'O processo de percorrer e mapear a área geográfica delimitada de atuação da equipe (definindo barreiras, vulnerabilidades e recursos) e identificar e cadastrar os habitantes da localidade caracteriza de maneira explícita os princípios norteadores de territorialização e adscrição da clientela.',
+    commentary: 'No âmbito organizacional da Atenção Primária no Brasil, a territorialização define a área geográfica de corresponsabilidade da ESF e o mapeamento locorregional. Conectado a ela, a adscrição consagra o vínculo e responsabilidade permanente sobre uma população específica descrita (indivíduos cadastrados vinculados ao serviço no território demarcado).',
+    reference: 'PNAB - Política Nacional de Atenção Básica, Portaria nº 2.436/2017.',
+    tags: ['Estratégia Saúde da Família', 'Territorialização', 'Princípios do SUS']
+  },
+  {
+    id: 'tp2021-108',
+    module: 'Saúde Coletiva',
+    text: 'No primeiro mês de epidemia de febre amarela, registraram-se 20 casos numa comunidade indígena composta por 500 indivíduos. No mesmo período, 5 índios morreram em consequência da doença. As taxas de ataque/incidência, de mortalidade e de letalidade dessa doença neste período, considerando a base de 100 indivíduos, foram respectivamente de:',
+    options: [
+      '(A) 4; 1; 25',
+      '(B) 25; 1; 4',
+      '(C) 4; 25; 1',
+      '(D) 25; 4; 1'
+    ],
+    correctAnswer: 0,
+    explanation: 'As taxas calculadas em porcentagem (base de 100 indivíduos) são:\n1) Taxa de ataque (incidência no surto) = (20 casos / 500 expostos) * 100 = 4%.\n2) Taxa de mortalidade = (5 óbitos / 500 indivíduos sob risco) * 100 = 1%.\n3) Taxa de letalidade = (5 óbitos / 20 doentes) * 100 = 25%.',
+    commentary: 'Os coeficientes epidemiológicos medem distintos atributos da doença:\n- Taxa de Ataque estima a incidência cumulativa numa população exposta síncrona durante período epidêmico: 20/500 = 0,04 (ou 4%).\n- Taxa de Mortalidade estima a proporção absoluta sobre a população exposta total de quem veio a morrer daquela causa: 5/500 = 0,01 (ou 1%).\n- Taxa de Letalidade avalia o potencial de gravidade ou agressividade clínica do agravo (óbitos entre os doentes aferidos): 5/20 = 0,25 (ou 25%).',
+    reference: 'ROUQUAYROL, M. Z. & GURGEL, M. Epidemiologia & saúde. 7. ed. Rio de Janeiro: Medbook, 2013.',
+    tags: ['Epidemiologia', 'Coeficientes de Saúde', 'Febre Amarela']
+  },
+  {
+    id: 'tp2021-109',
+    module: 'Saúde Coletiva',
+    text: 'Um estudo investigou a associação entre o primeiro registro do índice de massa corporal (IMC) e a sobrevida até o diagnóstico, de 22 tipos de cânceres de localizações mais comuns em população registrada em banco de dados de atendimento clínico no Reino Unido. Após 12 meses do início, até três anos, a sobrevida foi comparada entre os grupos de pacientes com diferentes faixas de IMC. Observou-se associação positiva entre IMC e vários tipos de câncer. (Bhaskaran et al. Lancet 2014). O delineamento do estudo foi:',
+    options: [
+      '(A) Ecológico.',
+      '(B) Coorte.',
+      '(C) Caso-controle.',
+      '(D) Transversal.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A pesquisa parte de um fator de exposição documentado (IMC) de uma base de indivíduos inicialmente sem desfecho oncológico e os acompanha de maneira longitudinal ao longo de um intervalo temporal definido, estimando e comparando o risco de sobrevida/diagnóstico do desfecho (vários subtipos de câncer). Trata-se, portanto, de um estudo de Coorte.',
+    commentary: 'Na epidemiologia, o estudo de coorte é observacional e tipicamente longitudinal prospectivo ou histórico. A sua marca conceitual essencial e inconteste é a cronologia metodológica fundada na seleção de participantes pautada no status de exposição (exposição inicial etc.) com posterior monitoramento para documentar incidência diferencial de desfechos na comparação dos grupos.',
+    reference: 'MEDRONHO, R.A. Epidemiologia. Rio de Janeiro: Atheneu, 2a Ed. 2009.',
+    tags: ['Metodologia Científica', 'Estudo de Coorte', 'Epidemiologia']
+  },
+  {
+    id: 'tp2021-110',
+    module: 'Saúde Coletiva',
+    text: 'Durante uma comemoração em um restaurante, onde estavam presentes mais de 100 pessoas, entre 2 e 4 horas após o almoço, mais de 80% dos convidados que ingeriram maionese de batatas apresentam náuseas, vômitos e diarreia. Considerando as características de uma epidemia, podemos afirmar sobre o caso relatado:',
+    options: [
+      '(A) É um exemplo típico de epidemia progressiva, por se tratar de uma intoxicação alimentar em que vários indivíduos foram rapidamente contaminados.',
+      '(B) É um exemplo típico de epidemia por fonte comum pontual, em que os suscetíveis tiveram acesso direto a uma única fonte de contaminação por um curto espaço de tempo.',
+      '(C) Que por estar localizado em um local restrito como um restaurante, não pode ser classificado como surto epidêmico.',
+      '(D) Que não pode ser classificado como epidemia devido ao tempo extremamente curto entre a exposição e o desfecho.'
+    ],
+    correctAnswer: 1,
+    explanation: 'O evento descrito ilustra uma epidemia por fonte comum de caráter pontual (intoxicação alimentar clássica ocorrendo simultaneamente em indivíduos expostos sincronicamente a uma refeição restrita compartilhada contaminada em intervalo brevíssimo e localizado de tempo).',
+    commentary: 'As epidemias temporais distinguem-se em dois principais perfis formativos:\n- Fonte Comum Pontual: os expostos deparam-se simultaneamente com um mesmo agente transmissor num mesmo lapso temporal (ex: maionese contaminada em restaurante).\n- Epidemia Progressiva/Propagada: a transmissão decorre no encadeamento de pessoa para pessoa por via respiratória, de contato ou vetorial, sem origem pontual simultânea única compartilhada de alimento/exposição.',
+    reference: 'ROUQUAYROL, M. Z. & ALMEIDA, N. Epidemiologia e Saúde. 7ª Edição, p. 110-112.',
+    tags: ['Vigilância Epidemiológica', 'Surtos', 'Doenças de Veiculação Alimentar']
+  },
+  {
+    id: 'tp2021-111',
+    module: 'Saúde Coletiva',
+    text: 'Mulher, 58 anos, hipertensa e diabética há 12 anos. Procurou a emergência do hospital, onde se diagnosticou angina instável e diabetes descompensado. Foi internada e, após estabilização clínica, recebeu orientação para acompanhamento médico na Unidade Básica de Saúde. No atendimento da unidade, ela teve suas medicações para o tratamento do diabetes ajustadas, as prescrições de diferentes profissionais foram organizadas em apenas uma prescrição e foi referenciada para o oftalmologista. Dentre os atributos da Atenção Primária à Saúde, o que está melhor exemplificado no atendimento desta senhora é:',
+    options: [
+      '(A) Longitudinalidade.',
+      '(B) Orientação comunitária.',
+      '(C) Coordenação do cuidado.',
+      '(D) Competência cultural.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A coordenação do cuidado refere-se à habilidade da APS de exercer a integração das informações dos pacientes e coordenar os fluxos entre diferentes serviços, integrando alta hospitalar, readequação medicamentosa unificada e referenciamento articulado à rede especializada.',
+    commentary: 'O atributo da Coordenação do Cuidado é essencialmente exemplificado no ajuste integrado de condutas prescritas por equipes terciárias ou secundárias de saúde, unificação de receitas farmacológicas conflitantes a fim de evitar interações deletérias e gerenciamento eficaz do retorno à UBS com novos encaminhamentos direcionados (ex: oftalmologista da rede pública).',
+    reference: 'STARFIELD, B. Atenção Primária: equilíbrio entre necessidades de saúde, tecnologia e insumos. Brasília: UNESCO/Ministério da Saúde, 2002.',
+    tags: ['Atenção Primária', 'Atributos da APS', 'Qualidade de Assistência']
+  },
+  {
+    id: 'tp2021-112',
+    module: 'Saúde Coletiva',
+    text: 'Embora a expectativa de vida da população brasileira venha aumentando nas últimas décadas, preocupam as autoridades sanitárias os níveis elevados de mortalidade de adolescentes masculinos, na faixa etária entre 13 e 19 anos, nos grandes e médios centros urbanos. As ações de maior impacto potencial, a curto prazo, para a diminuição da mortalidade desta população devem estar centradas em:',
+    options: [
+      '(A) Aumento das ações intersetoriais contra drogas e contra a violência.',
+      '(B) Aumento das campanhas de uso de preservativo masculino.',
+      '(C) Elevação da renda per capita da população.',
+      '(D) Melhoria das condições de saneamento básico.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A principal causa de mortalidade em jovens e adolescentes masculinos no meio urbano brasileiro é constituída por causas externas (homicídios, acidentes de trânsito violento e violências interpessoais). Intervenções intersetoriais integradas direcionadas ao controle da criminalidade, violência urbana e consumo abusivo de entorpecentes/drogas são, portanto, as opções com maior ptencial de retorno e impacto imediato.',
+    commentary: 'As causas externas constituem a grande e alarmante epidemia na saúde dos jovens brasileiros, superando infinitamente patologias infecciosas transmissíveis ou crônicas na faixa etária juvenil. Por tal característica, o amparo a este público transborda o espectro estrito de atuação do setor de saúde, demandando políticas territoriais intersetoriais articuladas de segurança, assistência social, lazer e redução de violência.',
+    reference: 'BEAGLEHOLE, R.; BONITA, R.; KJELLSTRÖM, T. Epidemiologia básica. 2 ed. São Paulo: Santos / OMS, 2010.',
+    tags: ['Saúde do Adolescente', 'Causas Externas', 'Vulnerabilidade Social']
+  },
+  {
+    id: 'tp2021-113',
+    module: 'Saúde Coletiva',
+    text: 'É CORRETO afirmar que uma doença está “eliminada” quando:',
+    options: [
+      '(A) Não mais existir o risco de infecção ou doença, mesmo na ausência de vacinação ou qualquer outra medida de controle, sendo inclusive indicada a suspensão da vigilância.',
+      '(B) Sua incidência e/ou prevalência se encontra em níveis muito baixos, de forma que ela deixe de ser considerada um problema importante em saúde pública.',
+      '(C) Não mais existir o risco de transmissão, mesmo na ausência de medidas de prevenção, vacinação ou qualquer outra medida de controle.',
+      '(D) Ocorre a cessação da sua transmissão em extensa área geográfica, persistindo, no entanto, o risco de sua reintrodução.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Eliminação significa que a transmissão da doença foi interrompida em uma área geográfica ampla específica devido a medidas contínuas, contudo, ainda subsiste o risco persistente de reintrodução de casos externos (importados), demandando a manutenção contínua de ações de vigilância epidemiológica e profilaxia.',
+    commentary: 'Diferentemente da Erradicação (que define o encerramento em âmbito global e permanente dos casos e do próprio patógeno do planeta, possibilitando descontinuidade total de medidas preventivas, como vacinas, a exemplo histórico da varíola), a eliminação demanda que o complexo de vigilância e prevenção persista de maneira vigilante, face ao risco residual do retorno do patógeno a partir de nações limítrofes.',
+    reference: 'WALDMAN, E.A. Vigilância em saúde pública. São Paulo: Fundação Petrópolis, 1998.',
+    tags: ['Transmissão e Controle de Doenças', 'Erradicação e Eliminação']
+  },
+  {
+    id: 'tp2021-114',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 30 anos, solteiro, vida sexual ativa e com diferentes parceiras nos últimos cinco anos, sem uso de preservativo na maioria das relações, encontra-se assintomático, porém com exame VDRL positivo (1:8) e teste rápido treponêmico reagente. Além das orientações sobre acolhimento/esclarecimento às parceiras, a conduta farmacológica é:',
+    options: [
+      '(A) Penicilina G. Benzatina 7.200.000 UI (3 doses de 2.400.000 – semanal, por 3 semanas).',
+      '(B) Penicilina G. Benzatina 2.400.000 UI (dose única), repetir o exame após um ano.',
+      '(C) Penicilina G. Benzatina 1.200.000 UI (dose única), repetir o exame após um ano, pois o VDRL é inespecífico para o Treponema pallidum.',
+      '(D) Penicilina G. Benzatina 4.800.000 UI (2 doses de 2.400.000 – semanal, por 2 semanas), controle de cura semestral por meio do FTA-Abs.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Diante de diagnóstico sorológico de sífilis assintomática de duração desconhecida (latente tardia ou latente indeterminada), o tratamento padrão do Ministério da Saúde consiste na administração intramuscular de Penicilina G Benzatina na dosagem total de 7.200.000 UI, dividida em três doses semanais consecutivas de 2.400.000 UI.',
+    commentary: 'O VDRL reagente quantitativo associado a teste confirmatório treponêmico (teste rápido ou FTA-Abs) em adulto assintomático sem histórico de exames prévios ou lesões recentes enquadra-se no diagnóstico de Sífilis Latente Tardia/Indeterminada. O tratamento de 3 semanas é preconizado devido ao desconhecimento e provável persistência cronológica do patógeno Treponema pallidum nos compartimentos corpóreos.',
+    reference: 'Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST), Ministério da Saúde, 2020.',
+    tags: ['IST', 'Sífilis', 'PCDT']
+  },
+  {
+    id: 'tp2021-115',
+    module: 'Saúde Coletiva',
+    text: 'No que diz respeito à Mortalidade Infantil, os impactos do programa nacional de Imunização (PNI) podem ser observados por meio da redução da taxa de mortalidade no período:',
+    options: [
+      '(A) Neonatal precoce.',
+      '(B) Perinatal.',
+      '(C) Pós-neonatal.',
+      '(D) Neonatal tardio.'
+    ],
+    correctAnswer: 2,
+    explanation: 'O período pós-neonatal (compreendido entre o 28º dia e o 364º dia completo de vida da criança) é marcadamente influenciado por determinantes sociais e ambientais modificáveis, no qual as infecções imunopreveníveis (coqueluche, meningite, diarreias etc.) têm elevadíssima taxa histórica. Portanto, os impactos do PNI e ampliação de coberturas vacinais reduzem com maior fidedignidade a mortalidade pós-neonatal.',
+    commentary: 'A mortalidade infantil fraciona-se em períodos determinantes:\n- Período Perinatal ou Neonatal Precoce (até o 6º dia): depende de forma mais expressiva de amparo de ginecologia-obstetrícia intraparto, genética, prematuridade ao nascimento, pré-natal, etc.\n- Período Pós-Neonatal: reflete as condições básicas sanitárias de vida familiar, oferta nutricional, acesso hospitalar primário e, decisivamente, cobertura vacinal protetiva contra infecções infantis endêmicas.',
+    reference: 'Guia de Indicadores de Saúde e IDB, Ministério da Saúde/DATASUS.',
+    tags: ['Mortalidade Infantil', 'Imunização', 'Saúde da Criança']
+  },
+  {
+    id: 'tp2021-116',
+    module: 'Saúde Coletiva',
+    text: 'Considerando as recomendações sobre a saúde do idoso do Ministério da Saúde, assinale a ação preventiva que deve ser indicada para todos os idosos.',
+    options: [
+      '(A) Vacinação anual antipneumocócica após 65 anos.',
+      '(B) Vacinação anual contra Influenza após 60 anos.',
+      '(C) Rastreamento com densitometria óssea após 60 anos.',
+      '(D) Rastreamento com teste de esforço após 70 anos.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Pelo PNI e diretrizes de saúde do idoso do Brasil, a imunização anual preventiva contra o vírus Influenza (Gripe) é indicada para toda a população de idosos com idade igual ou superior a 60 anos.',
+    commentary: 'A vacina de influenza é de ampla escala populacional universal. Diferentemente, a vacina antipneumocócica possui indicações mais restritas a subgrupos de risco específicos ou imunocomprometidos. O rastreio universal de osteoporose por densitometria óssea é recomendado somente a mulheres após os 65 anos ou de forma baseada em riscos individuais de fraturas antes dessa idade.',
+    reference: 'Diretrizes para o Cuidado das Pessoas Idosas no SUS, Ministério da Saúde.',
+    tags: ['Saúde do Idoso', 'Imunização', 'Ações Preventivas']
+  },
+  {
+    id: 'tp2021-117',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 81 anos, foi levado ao ambulatório pelo neto por ter sofrido várias quedas da própria altura no último ano, logo após se levantar pela manhã. É portador de diabetes mellitus há 12 anos e refere uso de Diazepam 10 mg todas as noites. Para prevenção efetiva de novas quedas deve-se:',
+    options: [
+      '(A) Usar esteroides para ganho de massa magra.',
+      '(B) Prescrever fludrocortisona para a hipotensão ortostática.',
+      '(C) Prescrever polivitamínicos para melhorar a força muscular.',
+      '(D) Retirar gradativamente o benzodiazepínico.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A utilização de benzodiazepínicos (como o Diazepam) de meia-vida longa em idosos de faixa etária avançada é fator de risco clássico e modificável de maior relevância para ocorrência de episódios graves de instabilidade postural, sonolência residual, comprometimento cognitivo e quedas recorrentes. A conduta preventiva imediata e mais efetiva consiste no desmame gradual do psicotrópico.',
+    commentary: 'De acordo com os Critérios de Beers para prescrições potencialmente inapropriadas em idosos, os benzodiazepínicos de longa duração devem ser proscritos pelo aumento drástico de quedas e confusão. Prescrever medicamentos para conter efeitos deletérios do diazepam sem sua retirada prévia gera o fenômeno de Cascata Iatrogênica.',
+    reference: 'Critérios de Beers, American Geriatrics Society (AGS); FREITAS, E. V. & PY, L. Tratado de Geriatria e Gerontologia. 3ª Ed.',
+    tags: ['Saúde do Idoso', 'Polifarmácia', 'Segurança do Paciente']
+  },
+  {
+    id: 'tp2021-118',
+    module: 'Saúde Coletiva',
+    text: 'Adolescente, 16 anos, G1P1, comparece à primeira consulta de sua filha, nascida há 10 dias. Queixa-se de que a criança chora muito, apesar de amamentá-la o dia todo. Parto a termo, via vaginal, sem complicações. PN = 2.900 g, APGAR 9/10. Após avaliação da dupla mãe-bebê, constatou-se: mãe com as mamas túrgidas, bebê com peso de 2.610 g. A orientação neste momento será:',
+    options: [
+      '(A) Introduzir o aleitamento misto porque o bebê teve perda de peso maior que o esperado.',
+      '(B) Oferecer leite materno ordenhado e com suplementação energética.',
+      '(C) Prescrever medicamento para as cólicas, causa provável do choro.',
+      '(D) Manter o aleitamento materno exclusivo após revisão da técnica.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A perda ponderal do bebê de 10 dias (2.610 g em relação ao peso de nascimento de 2.900 g) representa um decréscimo de exatos 10%, o que situa-se estritamente no intervalo fisiológico máximo aceito para os primeiros 10 dias de vida pós-natal. Visando preservar a barreira imunológica e os benefícios nutricionais exclusivos, deve-se orientar e manter o aleitamento materno exclusivo, revisando e corrigindo eventuais falhas nas técnicas de pega e posicionamento no peito.',
+    commentary: 'O aleitamento sob livre demanda em mamas túrgidas na perimenarca materna pode cursar com fadiga ou choro do recém-nascido se a apojadura e a pega/posicionamento não estiverem gerando esvaziamento efetivo e saciedade do lactente. Não há indicações clínicas que justifiquem fórmulas infantis substitutas, visto que o decréscimo ponderal é inteiramente fisiológico até 10 dias de vida (esperando-se recuperação ponderal de nascimento até 14 dias).',
+    reference: 'Guia Alimentar para Crianças Brasileiras Menores de 2 anos, Ministério da Saúde, 2021.',
+    tags: ['Puericultura', 'Aleitamento Materno', 'Desenvolvimento Infantil']
+  },
+  {
+    id: 'tp2021-119',
+    module: 'Saúde Coletiva',
+    text: 'Gestante, 23 anos, na 35ª semana, em tratamento antirretroviral há 7 anos, sendo os últimos 3 anos em resgate. Nesta segunda gestação, apresentou efeitos adversos à Zidovudina, interrompeu todos os medicamentos e abandonou o pré-natal. Deu entrada na Unidade de Urgência com quadro de sangramento vaginal, falta de ar e dores intensas em baixo ventre. Apresentava-se em mau estado geral e evoluiu com dispneia importante, saturação de O₂ = 60%, necessitando de intubação orotraqueal, vindo a falecer após três horas. Aspirado pulmonar com BAAR positivo, radiografia de tórax com processo intersticial (miliar) e hemograma com anemia. O preenchimento correto da Declaração de Óbito é:',
+    options: [
+      '(A) Parte I: a – Tuberculose Pulmonar; b – HIV; c – Gestação na 35ª semana. Parte II: Insuficiência Respiratória Aguda.',
+      '(B) Parte I: a – Insuficiência Respiratória Aguda; b – Tuberculose Pulmonar; c – AIDS; Parte II: Gestação na 35ª semana.',
+      '(C) Parte I: a – Insuficiência Respiratória Aguda; b – Tuberculose Pulmonar; c – Gestação na 35ª semana; Parte II: HIV.',
+      '(D) Parte I: a – Tuberculose pulmonar; b – Insuficiência Respiratória; c – Gestação na 35ª semana; Parte II: AIDS.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Na Declaração de Óbito (D.O.), a Parte I é destinada à cadeia causal direta em ordem retrógrada (causa imediata na linha superior \'a\', causas intervenientes nas linhas intermediárias \'b\'/\'c\' e a causa básica determinante na linha inferior \'d\'). Na paciente, a sequência causal fisiopatológica imediata é: \'a\' Insuficiência respiratória aguda, causada por \'b\' Tuberculose pulmonar de aspecto militar, decorrente de imunodeficiência severa causada por \'c\' Infecção por HIV/AIDS em virtude de abandono terapêutico antirretroviral. A condição gravídica atual do falecimento, embora importante, não faz parte da cadeia patológica direta determinante do óbito, devendo, obrigatoriamente, figurar como causa contribuinte menor no bloco da Parte II.',
+    commentary: 'O correto preenchimento estatístico do obituário nacional é regulado por normas rigorosas. A causa imediata (insuficiência respiratória) estabelece o desfecho terminal na linha superior \'a\'. O processo inicial básico motivador de todo o declínio clínico progressivo (infecção crônica severa por HIV/AIDS) encerra a cadeia etiológica na base da Parte I. Por fim, a condição fisiológica coexistente gravídica puerperal de 35 semanas, que influi no risco sistêmico geral de deterioração pulmonar e que constitui morte materna indireta clássica, é inserida na Parte II da D.O.',
+    reference: 'Manual de Instruções para o Preenchimento da Declaração de Óbito, Ministério da Saúde, 2011.',
+    tags: ['Medicina Legal', 'Declaração de Óbito', 'HIV/AIDS na Gestação']
+  },
+  {
+    id: 'tp2021-120',
+    module: 'Saúde Coletiva',
+    text: 'Em estudo para avaliar um teste sorológico encontramos que entre 342 portadores da doença, 254 apresentam teste positivo e entre 328 que não apresentam a doença, 30 testaram positivo. Qual alternativa contempla, respectivamente, a especificidade, o valor preditivo positivo e a acurácia do teste?',
+    options: [
+      '(A) 90,8%; 74,2%; 89,4%',
+      '(B) 74,2%; 77,2%; 51,0%',
+      '(C) 90,8%; 89,4%; 82,4%',
+      '(D) 74,2%; 77,2%; 82,4%'
+    ],
+    correctAnswer: 2,
+    explanation: 'Os cálculos de desempenho do teste diagnóstico definem:\n- Especificidade (Verdadeiros Negativos / Total de Não Portadores) = (328 - 30) / 328 = 298 / 328 = 90,85%.\n- Valor Preditivo Positivo (Verdadeiros Positivos / Total de Testados Positivos) = 254 / (254 + 30) = 254 / 284 = 89,43%.\n- Acurácia (Verdadeiros Resultados Corretos / População Total) = (254 + 298) / (342 + 328) = 552 / 670 = 82,38%.',
+    commentary: 'Portadores da doença (N = 342) -> 254 Positivos (VP) e 88 Negativos (FN).\nNão Portadores da doença (N = 328) -> 30 Positivos (FP) e 298 Negativos (VN).\n- Sensibilidade = VP / Total Portadores = 254 / 342 = 74,2%.\n- Especificidade = VN / Total Não Portadores = 298 / 328 = 90,8%.\n- VPP = VP / Total de Positivos = 254 / 284 = 89,4%.\n- Acurácia = (VP + VN) / Total Geral = 552 / 670 = 82,4%.',
+    reference: 'Gordis L. Epidemiologia. Editora Revinter; 4 ed. 2010.',
+    tags: ['Metodologia Científica', 'Epidemiologia', 'Testes Diagnósticos']
+  },
+  {
+    id: 'tp2026-101',
+    module: 'Saúde Coletiva',
+    text: 'Paciente de 82 anos, portador de neoplasia maligna avançada e sem possibilidade de terapêutica modificadora da doença, é internado por insuficiência respiratória aguda (IRA). Apresenta diretiva antecipada de vontade formalmente registrada, com recusa a medidas invasivas de suporte avançado de vida. Diante da deterioração clínica, familiares solicitam a instituição de todas as medidas de prolongamento da vida. À luz dos cuidados paliativos, da bioética e das normativas do Conselho Federal de Medicina (CFM), a conduta da equipe deve ser:',
+    options: [
+      '(A) Transferir a decisão integralmente para a família, já que o paciente não pode mais se comunicar.',
+      '(B) Atender ao pedido da família e realizar todas as medidas invasivas possíveis, independentemente do desejo prévio do paciente.',
+      '(C) Solicitar decisão judicial antes de qualquer conduta, devido ao conflito entre família e vontade do paciente.',
+      '(D) Respeitar a autonomia expressa pelo paciente, evitar medidas invasivas e priorizar o controle de sintomas e conforto.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Respeitar a autonomia expressa pelo paciente, evitar medidas invasivas e priorizar o controle de sintomas e conforto.',
+    commentary: 'O desejo previamente manifestado pelo paciente por meio de diretivas antecipadas de vontade é soberano em relação à vontade de familiares e equipe de saúde, possuindo pleno amparo legal, ético e normativo (Resolução CFM nº 1.995/2012). Cuidados paliativos priorizam a beneficência, a não maleficência e o conforto em detrimento da distanásia.',
+    reference: 'Instituto Nacional de Câncer (INCA). Diretrizes para a organização dos cuidados paliativos no Brasil; Resolução CFM nº 1.995/2012.',
+    tags: ['Bioética', 'Cuidados Paliativos', 'Autonomia do Paciente']
+  },
+  {
+    id: 'tp2026-102',
+    module: 'Saúde Coletiva',
+    text: 'Uma equipe de Saúde da Família, em uma Unidade Básica de Saúde (UBS) de território urbano vulnerável, realiza territorialização conforme a Política Nacional de Atenção Básica (PNAB) e identifica microáreas com alta incidência de arboviroses, elevada prevalência de Hipertensão Arterial Sitemica (HAS) e Diabetes Mellitus (DM), baixa adesão ao cuidado longitudinal e fragilidade do vínculo. Considerando o planejamento territorial baseado em risco e a integração entre vigilância e assistência, qual é a estratégia a ser adotada pela equipe?',
+    options: [
+      '(A) Centralizar ações de arboviroses na vigilância municipal, mantendo a equipe da APS focada no manejo clínico, notificação e acompanhamento dos casos.',
+      '(B) Priorizar atendimentos clínicos para condições crônicas, ampliando o controle individual e manutenção das atividades coletivas conforme disponibilidade e organização centrada na demanda espontânea da UBS.',
+      '(C) Reorganizar o processo de trabalho com estratificação de risco, priorização de microáreas críticas, integração vigilância-assistência, busca ativa, ações intersetoriais e fortalecimento do vínculo e da participação social.',
+      '(D) Desenvolver campanhas periódicas voltadas ao controle de agravos, com definição de metas e organização das ações no território, sem necessidade de mudanças estruturais no processo de trabalho.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Reorganizar o processo de trabalho com estratificação de risco, priorização de microáreas críticas, integração vigilância-assistência, busca ativa, ações intersetoriais e fortalecimento do vínculo e da participação social.',
+    commentary: 'De acordo com a PNAB, o planejamento das ações em uma UBS de território vulnerável deve integrar a vigilância em saúde e a assistência clínica, baseando-se na estratificação de risco, no fortalecimento do vínculo comunitário e em ações intersetoriais de promoção de saúde no território.',
+    reference: 'BRASIL. Ministério da Saúde. Política Nacional de Atenção Básica (PNAB), 2017.',
+    tags: ['Atenção Primária', 'PNAB', 'Planejamento Territorial']
+  },
+  {
+    id: 'tp2026-103',
+    module: 'Saúde Coletiva',
+    text: 'Em uma UBS, mulher de 74 anos, diabética e hipertensa, independente para atividades de vida diária, apresenta quedas recorrentes no último ano. Considerando ações de promoção e prevenção, qual estratégia deve ser priorizada pela equipe?',
+    options: [
+      '(A) Fazer avaliação multifatorial de risco de quedas, revisão medicamentosa e orientação de exercício físico.',
+      '(B) Solicitar densitometria óssea anual, independentemente de fatores adicionais de risco.',
+      '(C) Encaminhar para otorrino para investigação de alteração do equilíbrio como causa principal das quedas.',
+      '(D) Encaminhar para ortopedia para investigação de artrose como causa principal das quedas.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Fazer avaliação multifatorial de risco de quedas, revisão medicamentosa e orientação de exercício físico.',
+    commentary: 'A prevenção secundária de quedas recorrentes no idoso demanda avaliação clínica abrangente e multifatorial (visão, equilíbrio, marcha, análise ambiental e revisão da polifarmácia) e estímulo à prática de atividade física direcionada de força e equilíbrio, evitando encaminhamentos setoriais sem abordagem primária.',
+    reference: 'Ministério da Saúde. Caderneta de Saúde da Pessoa Idosa; Sociedade Brasileira de Geriatria e Gerontologia (SBGG).',
+    tags: ['Saúde do Idoso', 'Prevenção de Quedas', 'Multifatorialidade']
+  },
+  {
+    id: 'tp2026-104',
+    module: 'Saúde Coletiva',
+    text: 'Mulher de 32 anos procura a UBS com tristeza persistente, insônia e desesperança há dois meses. Durante a consulta, relata que “às vezes pensa que seria melhor não acordar”. Qual é a conduta no contexto da Atenção Primária com foco na promoção e prevenção em saúde?',
+    options: [
+      '(A) Prescrever antidepressivo, orientar retorno programado e aguardar resposta clínica inicial ao tratamento.',
+      '(B) Realizar avaliação estruturada do risco, fortalecer vínculo e organizar plano de cuidado na UBS.',
+      '(C) Encaminhar ao CAPS para seguimento especializado e suspender acompanhamento na UBS.',
+      '(D) Orientar medidas de autocuidado, incentivar rede de apoio e agendar reavaliação em longo prazo.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Realizar avaliação estruturada do risco, fortalecer vínculo e organizar plano de cuidado na UBS.',
+    commentary: 'A ideação de morte sutil exige da equipe de APS uma escuta ativa e qualificada imediata, com avaliação estruturada do grau de risco suicida (ferramentas como Columbia), pactuação de plano de crise e fortalecimento do acompanhamento longitudinal.',
+    reference: 'Ministério da Saúde. Prevenção do Suicídio: Manual dirigido a profissionais da APS.',
+    tags: ['Saúde Mental', 'Prevenção do Suicídio', 'Acolhimento']
+  },
+  {
+    id: 'tp2026-105',
+    module: 'Saúde Coletiva',
+    text: 'Homem de 28 anos é acompanhado na UBS com diagnóstico prévio de transtorno bipolar tipo I. Apresenta histórico recente de episódio maníaco com prejuízo funcional. Atualmente está eutímico. Qual estratégia terapêutica é mais adequada para prevenção de recaídas?',
+    options: [
+      '(A) Prescrever antidepressivo isolado para estabilização do humor e reavaliar em consulta futura.',
+      '(B) Iniciar estabilizador de humor, como lítio, e acompanhar na APS, em articulação com saúde mental.',
+      '(C) Utilizar benzodiazepínico de uso prolongado como estratégia principal de manutenção clínica.',
+      '(D) Suspender a farmacoterapia após estabilização e manter apenas acompanhamento psicossocial.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Iniciar estabilizador de humor, como lítio, e acompanhar na APS, em articulação com saúde mental.',
+    commentary: 'Estabilizadores de humor (como o carbonato de lítio) constituem a base indispensável da terapia preventiva de manutenção no transtorno bipolar tipo I. A suspensão medicamentosa ou uso isolado de antidepressivos precipitariam novos episódios de virada maníaca.',
+    reference: 'Diretrizes da CANMAT; Ministério da Saúde. Caderno de Atenção Básica - Saúde Mental.',
+    tags: ['Saúde Mental', 'Transtorno Bipolar', 'Farmacoterapia']
+  },
+  {
+    id: 'tp2026-106',
+    module: 'Saúde Coletiva',
+    text: 'Mulher, de 38 anos, comparece à UBS relatando episódios recorrentes de taquicardia súbita, sudorese, tremores e sensação de morte iminente há 3 meses. Nega uso de substâncias psicoativas ou comorbidades. Histórico de estresse crônico por sobrecarga laboral e luto recente pela perda materna. Qual o planejamento diagnóstico mais adequado para Transtorno de Ansiedade Generalizada e Transtorno de Pânico comórbido?',
+    options: [
+      '(A) Realizar apenas anamnese estendida sem ferramentas validadas, prescrever benzodiazepínico de ação curta (ex.: alprazolam 0,5mg PRN) para crises agudas e orientar terapia cognitivo-comportamental (TCC), adiando exames complementares para eventual descompensação.',
+      '(B) Solicitar TSH, T4 livre e hemograma completo isoladamente, prescrever escitalopram 10mg/dia empiricamente e agendar retorno em 30 dias para reavaliação clínica sem escalas padronizadas, priorizando abordagem farmacológica inicial sem investigação diferencial.',
+      '(C) Encaminhar diretamente para psiquiatria via regulação, sem escalas locais ou exames laboratoriais iniciais, e monitorar apenas com diário de crises submetido à especialidade, delegando integralmente o planejamento diagnóstico à atenção secundária.',
+      '(D) Aplicar ferramentas validadas para confirmação diagnóstica e para quantificação, solicitar TSH, hemograma, ECG Holter (se crises > 3/semana) e descartar orgânico (cafeína, tireotoxicose), com estratificação de risco e plano terapêutico stepwise.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Aplicar ferramentas validadas para confirmação diagnóstica e para quantificação, solicitar TSH, hemograma, ECG Holter (se crises > 3/semana) e descartar orgânico (cafeína, tireotoxicose), com estratificação de risco e plano terapêutico stepwise.',
+    commentary: 'O planejamento diagnóstico na APS deve ser baseado em evidências (stepwise), utilizando escalas padronizadas para confirmação diagnóstica de ansiedade/pânico, descartando distúrbios orgânicos subjacentes (tireotoxicose, anemia, arritmias) e estratificando o risco clínico.',
+    reference: 'American Psychiatric Association. DSM-5-TR; Cadernos de Atenção Básica nº 34: Saúde Mental.',
+    tags: ['Saúde Mental', 'Ansiedade', 'Diagnóstico Stepwise']
+  },
+  {
+    id: 'tp2026-107',
+    module: 'Saúde Coletiva',
+    text: 'Uma população em situação de rua apresenta baixa adesão às ações municipais de prevenção e rastreamento da tuberculose. Considerando a bioética nas políticas de saúde, qual medida melhor responde a esse cenário?',
+    options: [
+      '(A) Centralizar a oferta preventiva, padronizar horários fixos e priorizar demanda espontânea.',
+      '(B) Exigir identificação formal, cadastro prévio e comparecimento regular para inclusão no rastreamento.',
+      '(C) Estruturar busca territorial, vínculo longitudinal e fluxos flexíveis de acesso ao rastreamento.',
+      '(D) Direcionar a oferta inicial aos usuários mais aderentes, com seguimento clínico já estabelecido.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Estruturar busca territorial, vínculo longitudinal e fluxos flexíveis de acesso ao rastreamento.',
+    commentary: 'O cuidado ético de populações altamente vulneráveis sob a lógica da saúde coletiva demanda a aplicação prática do princípio da equidade. Isso se traduz na flexibilização de fluxos burocráticos, busca territorial ativa e estabelecimento de vínculos longitudinais de confiança que removam barreiras de acesso.',
+    reference: 'Decreto Federal nº 7.053/2009 (Política Nacional para População em Situação de Rua); Manual de Tuberculose, Ministério da Saúde.',
+    tags: ['Bioética', 'População em Situação de Rua', 'Equidade']
+  },
+  {
+    id: 'tp2026-108',
+    module: 'Saúde Coletiva',
+    text: 'Após identificar alta mortalidade materna em um bairro de extrema pobreza, o gestor municipal alocou equipes extras de saúde da família exclusivamente para esse local. Simultaneamente, pactuou com as prefeituras das cidades vizinhas a criação de um consórcio para garantir leitos de UTI neonatal no município polo da região. As duas ações tomadas pelo gestor representam, respectivamente, um princípio doutrinário e um organizativo do SUS. São eles:',
+    options: [
+      '(A) Longitudinalidade e descentralização.',
+      '(B) Integralidade e hierarquização.',
+      '(C) Universalidade e participação social.',
+      '(D) Equidade e regionalização.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Equidade e regionalização.',
+    commentary: 'A alocação desigual de recursos em benefício de áreas de maior vulnerabilidade extrema reflete a Equidade (princípio doutrinário). O pacto cooperativo intermunicipal para compartilhamento de leitos de terapia intensiva neonatal em um município-polo consubstancia a Regionalização (diretriz organizativa).',
+    reference: 'FALK, J. W.; ROSA, R. S. O Sistema de Saúde no Brasil; Lei nº 8.080/1990.',
+    tags: ['SUS', 'Diretrizes do SUS', 'Princípios do SUS']
+  },
+  {
+    id: 'tp2026-109',
+    module: 'Saúde Coletiva',
+    text: 'Em uma reunião do Conselho Municipal de Saúde, um representante dos usuários critica a mudança no cofinanciamento da Atenção Primária, que promove a redução da população adscrita por equipe de ESF para uma média de 2.500 pessoas. O usuário alega que "reduzir o número de pessoas piora a assistência, pois os médicos deveriam atender mais pacientes ao invés de menos". Qual é a justificativa técnica para a mudança?',
+    options: [
+      '(A) A redução do dimensionamento da população por equipe promove o acesso efetivo e aumenta a qualidade no atendimento, equilibrando a demanda e viabilizando o manejo eficaz de doenças agudas e crônicas, assim como ações intersetoriais e de vigilância em saúde.',
+      '(B) A diminuição do número de pacientes por equipe tem como objetivo corrigir a baixa resolutividade inerente à Atenção Primária, para que o médico da ESF tenha tempo suficiente para solicitar mais exames complementares e encaminhar adequadamente cada indivíduo.',
+      '(C) A redução do número de pessoas adscritas tem por finalidade diminuir também a carteira de serviços oferecida pela ESF, permitindo que as UPAs fiquem responsáveis pelas queixas agudas, para que a ESF foque nas ações de prevenção e promoção em saúde.',
+      '(D) O redimensionamento populacional visa reverter a fragmentação assistencial, aumentando as consultas médicas e reduzindo a necessidade de atendimento de enfermagem e outros profissionais, o que garante maior segurança e resolutividade terapêutica aos usuários.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A redução do dimensionamento da população por equipe promove o acesso efetivo e aumenta a qualidade no atendimento, equilibrando a demanda e viabilizando o manejo eficaz de doenças agudas e crônicas, assim como ações intersetoriais e de vigilância em saúde.',
+    commentary: 'A adscrição de um contingente menor por equipe (média de 2.500 pessoas na atualização da PNAB) visa equacionar a carga assistencial diária, permitindo dedicação à prevenção, ao manejo integral qualificado de doenças crônicas complexas, às ações territoriais e intersetoriais.',
+    reference: 'Portaria GM/MS nº 3.493/2024; Tratado de Medicina de Família e Comunidade (Gusso & Lopes).',
+    tags: ['Organização da APS', 'PNAB 2024', 'Dimensionamento de Equipes']
+  },
+  {
+    id: 'tp2026-110',
+    module: 'Saúde Coletiva',
+    text: '"O relatório Níveis e Tendências da Mortalidade Infantil, divulgado nesta terça-feira (17) pelas Nações Unidas, aponta que o Brasil alcançou as menores taxas de mortalidade neonatal e em crianças abaixo dos cinco anos dos últimos 34 anos. Segundo o Fundo das Nações Unidas para a Infância (Unicef), um conjunto de políticas adotadas pelo país tem diminuído as mortes preveníveis de crianças, em consonância com a tendência global". (Publicado em 17/03/2026 pela Agência Brasil). Quais os fatores que influenciam a taxa de mortalidade infantil?',
+    options: [
+      '(A) O maior acesso aos serviços de atendimento pré-natal e puericultura e à assistência especializada durante o trabalho de parto contribui de maneira significativa para redução da mortalidade infantil e materna.',
+      '(B) A urbanização progressiva da população brasileira não interferiu na queda da mortalidade infantil, visto que as suas taxas são as mesmas em áreas urbanas e rurais.',
+      '(C) A queda da mortalidade infantil vem ocorrendo de maneira uniforme em toda a extensão territorial, independentemente da região do país ou se é extraída de municípios do interior ou capital.',
+      '(D) Com a queda da mortalidade infantil, a proporção de crianças na população brasileira vem aumentando consideravelmente, levando ao alargamento da base da pirâmide etária nacional.'
+    ],
+    correctAnswer: 0,
+    explanation: 'O maior acesso aos serviços de atendimento pré-natal e puericultura e à assistência especializada durante o trabalho de parto contribui de maneira significativa para redução da mortalidade infantil e materna.',
+    commentary: 'A cobertura robusta de pré-natal de qualidade e o acompanhamento de puericultura na rede de atenção primária são determinantes centrais estabelecidos para a queda sustentada da mortalidade infantil pós-neonatal. Fatores ambientais, econômicos e regionais mantêm fortes disparidades territoriais.',
+    reference: 'RIBEIRO, G. S. Problemas de Saúde da População Brasileira e seus Determinantes. In: Saúde Coletiva: Teoria e Prática (2022).',
+    tags: ['Mortalidade Infantil', 'Indicadores de Saúde', 'Saúde da Criança']
+  },
+  {
+    id: 'tp2026-111',
+    module: 'Saúde Coletiva',
+    text: 'Um município implementou um programa de rastreamento para tuberculose pulmonar, permitindo diagnóstico e tratamento mais precoces. Após dois anos, observou-se redução do tempo médio de duração da doença na população. O número de novos casos diagnosticados por ano permaneceu semelhante ao período anterior, mas o número total de pessoas com tuberculose na comunidade diminuiu. Qual interpretação epidemiológica explica esse cenário?',
+    options: [
+      '(A) A incidência diminuiu devido ao diagnóstico precoce, enquanto a prevalência permaneceu estável.',
+      '(B) A incidência aumentou devido ao diagnóstico precoce, enquanto a prevalência permaneceu inalterada.',
+      '(C) A prevalência da doença diminuiu devido à redução da duração da doença, enquanto a incidência permaneceu estável.',
+      '(D) A prevalência aumentou devido à maior detecção de casos, enquanto a incidência diminuiu.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A prevalência da doença diminuiu devido à redução da duração da doença, enquanto a incidência permaneceu estável.',
+    commentary: 'A incidência permaneceu estável (número anual de novos casos constante). Como o rastreio e tratamento precoce curam mais rapidamente os doentes, reduz-se o tempo de duração da moléstia (D). Pela relação Prevalência ≈ Incidência × Duração, a prevalência diminuiu substancialmente.',
+    reference: 'ROTHMAN, K. J. Modern Epidemiology (4th ed., 2021); Princípios de Epidemiologia.',
+    tags: ['Indicadores Epidemiológicos', 'Prevalência', 'Incidência']
+  },
+  {
+    id: 'tp2026-112',
+    module: 'Saúde Coletiva',
+    text: 'Um trabalhador de 42 anos atua há 15 anos em indústria de baterias com exposição ocupacional a chumbo. Apresenta fadiga, dor abdominal, cefaleia e parestesias. Exames laboratoriais evidenciam anemia e níveis elevados de chumbo no sangue. Considerando as ações da Vigilância em Saúde do Trabalhador, qual é a conduta inicial indicada diante desse caso?',
+    options: [
+      '(A) Encaminhar o trabalhador para acompanhamento clínico especializado e iniciar investigação epidemiológica, se surgirem novos casos entre trabalhadores expostos.',
+      '(B) Notificar o agravo relacionado ao trabalho e iniciar investigação epidemiológica no ambiente laboral, com adoção de medidas de controle do risco ocupacional.',
+      '(C) Registrar o caso no prontuário da unidade de saúde e orientar o trabalhador a procurar avaliação ocupacional junto à empresa empregadora.',
+      '(D) Solicitar avaliação ocupacional pela empresa e aguardar a conclusão da investigação interna antes da atuação da vigilância em saúde.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Notificar o agravo relacionado ao trabalho e iniciar investigação epidemiológica no ambiente laboral, com adoção de medidas de controle do risco ocupacional.',
+    commentary: 'A suspeita ou confirmação de intoxicação ocupacional por metais pesados (saturnismo) constitui agravo de notificação compulsória relacionada ao trabalho. Demanda imediata intervenção da Vigilância em Saúde do Trabalhador (VISAT) no ambiente fabril para neutralização de fontes de risco.',
+    reference: 'Ministério da Saúde. Vigilância em Saúde do Trabalhador no SUS: orientações básicas.',
+    tags: ['Saúde do Trabalhador', 'VISAT', 'Doenças Ocupacionais']
+  },
+  {
+    id: 'tp2026-113',
+    module: 'Saúde Coletiva',
+    text: 'Um trabalhador de 32 anos, motorista de ônibus, sofreu acidente de motocicleta enquanto retornava para casa após o expediente do seu trabalho. No trajeto habitual, ele interrompeu o percurso para entrar rapidamente a sua esquerda, em uma padaria para comprar pão; ao retomar na rua para o deslocamento, colidiu com um carro e sofreu escoriações e fratura de punho. Escolha a alternativa que descreva o evento médico-legal mencionado.',
+    options: [
+      '(A) Acidente de trabalho típico, porque houve nexo temporal com o término da jornada e o deslocamento para casa.',
+      '(B) Acidente de trajeto, equiparado a acidente de trabalho, pois qualquer interrupção breve no percurso é juridicamente irrelevante.',
+      '(C) Acidente de trabalho por equiparação, desde que o trabalhador tenha saído do local de trabalho no mesmo dia do evento.',
+      '(D) Acidente comum, porque a parada para atender interesse pessoal descaracteriza o percurso habitual entre trabalho e residência.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Acidente comum, porque a parada para atender interesse pessoal descaracteriza o percurso habitual entre trabalho e residência.',
+    commentary: 'O acidente de trajeto exige linearidade habitual do percurso residencial-laboral. Desvios e interrupções significativas motivadas por interesse particular do obreiro rompem o nexo previdenciário de equiparação ao acidente laboral, enquadrando o evento como sinistro de natureza comum.',
+    reference: 'Brasil. Lei nº 8.213/1991, Artigo 21, IV, "d"; Decreto nº 3.048/1999.',
+    tags: ['Medicina Legal', 'Acidente de Trabalho', 'Previdência Social']
+  },
+  {
+    id: 'tp2026-114',
+    module: 'Saúde Coletiva',
+    text: 'Durante uma visita domiciliar programada, o médico da ESF atende um agricultor de 38 anos que apresenta náuseas, tontura, miose e sialorreia iniciadas há 24 horas, após a aplicação de defensivos agrícolas em sua pequena lavoura. O paciente está estável, mas relata que "não queria ir ao posto para não perder o dia de serviço". Ao aplicar os cuidados médicos e os aspectos médico-legais no domicílio deste trabalhador, qual deve ser a conduta prioritária do médico?',
+    options: [
+      '(A) Realizar o manejo clínico imediato das manifestações colinérgicas, providenciar a notificação compulsória no SINAN e orientar o afastamento imediato da exposição, investigando se outros familiares também foram expostos.',
+      '(B) Prescrever sintomáticos e orientar o repouso domiciliar, respeitando a autonomia do paciente em não querer que o caso seja registrado formalmente para evitar conflitos com fornecedores.',
+      '(C) Encaminhar o paciente para a emergência hospitalar apenas para lavagem gástrica, visto que o atendimento domiciliar não possui respaldo legal para manejar intoxicações exógenas no SUS.',
+      '(D) Notificar o caso diretamente ao Ministério do Trabalho antes de tratar o paciente, priorizando o aspect médico-legal de fiscalização da propriedade rural sobre o cuidado clínico.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Realizar o manejo clínico imediato das manifestações colinérgicas, providenciar a notificação compulsória no SINAN e orientar o afastamento imediato da exposição, investigando se outros familiares também foram expostos.',
+    commentary: 'O dever de intervir clinicamente (antídotos/suporte) e a obrigação de notificar o agravo compulsório de intoxicação exógena pelo trabalho sobrepõem-se à solicitação de recusa de registro do paciente. Na saúde coletiva e medicina de família, estende-se a análise clínica de risco aos coabitantes do lar agrícola.',
+    reference: 'Ministério da Saúde. Cadernos de Atenção Básica, n. 41: Saúde do Trabalhador e da Trabalhadora.',
+    tags: ['Saúde do Trabalhador', 'Notificação Compulsória', 'Agrotóxicos']
+  },
+  {
+    id: 'tp2026-115',
+    module: 'Saúde Coletiva',
+    text: 'Maria, 55 anos, comparece a consulta para buscar o resultado de sua mamografia de rastreamento bianual, que apresentou laudo BIRADS 2. Durante a consulta, o médico aproveita para discutir hábitos de vida e a autonomia dela no cuidado com o corpo. Nesse sentido, o documento "Controle do câncer de mama no Brasil: dados e números 2025" enfatiza que a prevenção primária (controle de fatores de risco) é tão importante quanto o rastreamento. Ao aplicar as diretrizes de promoção da saúde para esta paciente, qual orientação é prioritária para reduzir o risco de desenvolvimento de novas lesões?',
+    options: [
+      '(A) Orientar que o achado BIRADS 2 exige repetição da mamografia em 6 meses para acompanhamento rigoroso.',
+      '(B) Incentivar a manutenção do peso corporal adequado e a prática regular de atividade física, explicando a relação entre tecido adiposo e estrogênio.',
+      '(C) Instruir a paciente sobre a técnica do autoexame mensal com data fixa como substituto da mamografia, visando a autonomia.',
+      '(D) Recomendar a interrupção de qualquer uso de contraceptivos orais, independentemente da idade, como única medida preventiva eficaz.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Incentivar a manutenção do peso corporal adequado e a prática regular de atividade física, explicando a relação entre tecido adiposo e estrogênio.',
+    commentary: 'O laudo BI-RADS 2 refere-se a achados estritamente benignos, mantendo o rastreamento bianual regular. A prevenção primária foca em fatores modificáveis, como obesidade pós-menopausa (tecido adiposo periférico converte andrógenos em estrogênios pela aromatase, elevando o risco de tumores estrogênio-dependentes).',
+    reference: 'INCA. Controle do câncer de mama no Brasil: dados e números 2025; Diretrizes de Rastreamento.',
+    tags: ['Saúde da Mulher', 'Rastreamento', 'Prevenção Primária']
+  },
+  {
+    id: 'tp2026-116',
+    module: 'Saúde Coletiva',
+    text: 'Uma mulher trans de 52 anos, preta, procura a Unidade Básica de Saúde (UBS) para uma consulta de rotina. Realiza terapia de afirmação de gênero com estrogênios há 10 anos e não foi submetida a cirurgia de redesignação sexual (neovaginoplastia). Durante a consulta, ela questiona o médico sobre a necessidade de realizar exames para "prevenir o câncer de próstata", pois leu em uma rede social que mulheres trans não precisam se preocupar com isso. Está assintomática e não possui histórico familiar de câncer de próstata em parentes de primeiro grau. Com base nas diretrizes de promoção e prevenção em saúde e nas recomendações do Ministério da Saúde e da Sociedade Brasileira de Urologia (SBU), qual a conduta mais adequada para esta paciente?',
+    options: [
+      '(A) Realizar o compartilhamento de decisões (Decisão Compartilhada), discutindo os potenciais riscos e benefícios do rastreamento, respeitando a identidade de gênero e mantendo a vigilância do órgão presente.',
+      '(B) Orientar que a terapia hormonal com estrogênio causa atrofia prostática completa, eliminando o risco de neoplasia, desobrigando-a de qualquer tipo de rastreamento.',
+      '(C) Iniciar o rastreamento imediato com dosagem de PSA sérico e toque retal, visto que mulheres trans pretas possuem risco genético triplicado para adenocarcinoma de próstata.',
+      '(D) Indicar a realização de Ultrassonografia Transretal anualmente, pois o toque retal é contraindicado em pacientes que fazem uso de hormonioterapia feminina.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Realizar o compartilhamento de decisões (Decisão Compartilhada), discutindo os potenciais riscos e benefícios do rastreamento, respeitando a identidade de gênero e mantendo a vigilância do órgão presente.',
+    commentary: 'Mulheres trans mantêm a glândula prostática mesmo sob hormonioterapia feminilizante (que atrofia o órgão mas não extingue integralmente o risco carcinogênico). O rastreamento deve seguir o princípio da Decisão Compartilhada de forma personalizada, evitando abordagens puramente compulsórias ou negligentes.',
+    reference: 'Sociedade Brasileira de Urologia (SBU). Recomendações em Saúde Urológica de Pessoas Transgênero; Ministério da Saúde.',
+    tags: ['Saúde LGBT', 'Decisão Compartilhada', 'Câncer de Próstata']
+  },
+  {
+    id: 'tp2026-117',
+    module: 'Saúde Coletiva',
+    text: 'Homem indígena de 46 anos procura a Unidade Básica de Saúde para avaliação de rotina. Nega comorbidades conhecidas. Refere sedentarismo e histórico familiar de hipertensão. Durante a consulta, apresenta as seguintes medidas de pressão arterial: 1ª medida: 148/92mmHg; 2ª medida (após 2 minutos): 146/90mmHg. Está assintomático e com exame físico sem alterações. Considerando as recomendações atuais para o diagnóstico de hipertensão arterial, qual é a melhor conduta para confirmação diagnóstica?',
+    options: [
+      '(A) Solicitar um painel de exames laboratoriais para a confirmação diagnóstica.',
+      '(B) Repetir outras 3 medidas na mesma consulta médica, de modo a garantir média elevada.',
+      '(C) Solicitar monitorização ambulatorial ou residencial da pressão arterial.',
+      '(D) Devido ao alto risco do paciente, deve-se iniciar o tratamento medicamentoso.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Solicitar monitorização ambulatorial ou residencial da pressão arterial.',
+    commentary: 'Valores elevados aferidos de forma isolada no estágio 1 requerem confirmação fora do consultório por meio de MAPA ou MRPA de modo a afastar a hipertensão do avental branco, exceto se houver indício imediato de emergência hipertensiva ou lesão aguda de órgão-alvo.',
+    reference: 'Diretrizes Brasileiras de Hipertensão Arterial, Sociedade Brasileira de Cardiologia (SBC), 2020.',
+    tags: ['Hipertensão Arterial', 'Diretrizes Clínicas', 'Diagnóstico']
+  },
+  {
+    id: 'tp2026-118',
+    module: 'Saúde Coletiva',
+    text: 'Mulher de 55 anos, parda, diabética há mais de 10 anos, em tratamento irregular, procura a UBS relatando que há 1 ano iniciou dor plantar, bilateral, progressiva, em queimação e mais importante no período noturno. Ao exame físico, apresenta hipoestesia plantar. Além do controle glicêmico, a medicação com maior benefício no tratamento sintomático do quadro álgico é:',
+    options: [
+      '(A) Tramadol',
+      '(B) Gabapentina',
+      '(C) Prednisona',
+      '(D) Diclofenaco'
+    ],
+    correctAnswer: 1,
+    explanation: 'Gabapentina',
+    commentary: 'A polineuropatia periférica simétrica distal dolorosa do paciente diabético crônico deve ser tratada prioritariamente com classes medicamentosas com atuação direta sobre a dor neuropática (como gabapentinoides [gabapentina, pregabalina] ou antidepressivos tricíclicos/duais [amitriptilina, duloxetina]). Anti-inflamatórios e corticoide não trazem benefício e oferecem sério risco de toxicidade sistêmica e descompensação glicêmica.',
+    reference: 'Diretrizes da Sociedade Brasileira de Diabetes (SBD), 2023.',
+    tags: ['Diabetes Mellitus', 'Neuropatia Diabética', 'Dor Neuropática']
+  },
+  {
+    id: 'tp2026-119',
+    module: 'Saúde Coletiva',
+    text: 'Em uma UBS, um paciente de 68 anos, em uso crônico de corticoide em dose imunossupressora, apresenta esquema vacinal incompleto. Considerando a Vigilância em Saúde e as ações de promoção e prevenção, qual é a conduta mais adequada em relação à imunização?',
+    options: [
+      '(A) Aplicar apenas a vacina contra influenza anual.',
+      '(B) Suspender o corticoide para posterior aplicação das vacinas.',
+      '(C) Administrar todas as vacinas do calendário.',
+      '(D) Aplicar as vacinas inativadas e avaliar contraindicação de vacinas vivas.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Aplicar as vacinas inativadas e avaliar contraindicação de vacinas vivas.',
+    commentary: 'Pacientes sob imunossupressão crônica ativa têm contraindicação absoluta ao recebimento de vacinas contendo patógenos vivos atenuados, pelo perigo de indução de patogênese infecciosa vacinal. Vacinas compostas por microrganismos inativados ou componentes purificados são seguras e devem ser prontamente ministradas para imunoproteção robusta.',
+    reference: 'Manual de Imunização para Pacientes Especiais (CRIE), Ministério da Saúde.',
+    tags: ['Imunização', 'Imunossuprimido', 'Corticoterapia Crônica']
+  },
+  {
+    id: 'tp2026-120',
+    module: 'Saúde Coletiva',
+    text: 'Em uma UBS, mulher cis de 45 anos apresenta teste de HPV oncogênico positivo e citologia sem lesão intraepitelial. É vacinada tardiamente contra HPV aos 30 anos. Considerando vigilância e prevenção do câncer do colo do útero, qual conduta é mais adequada?',
+    options: [
+      '(A) Indicar conização imediata para reduzir risco de progressão neoplásica associada ao HPV oncogênico detectado.',
+      '(B) Suspender rastreamento, considerando vacinação prévia contra HPV e ausência de lesão intraepitelial detectada na citologia.',
+      '(C) Repetir teste conforme protocolo de rastreamento, com seguimento organizado e monitoramento periódico da paciente.',
+      '(D) Solicitar histerectomia profilática para reduzir risco futuro de câncer do colo uterino associado a infecção viral persistente.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Repetir teste conforme protocolo de rastreamento, com seguimento organizado e monitoramento periódico da paciente.',
+    commentary: 'A presença do DNA do papilomavírus humano de alto risco (HPV oncogênico) com citologia normal (ausência de lesão intraepitelial) não requer conização ou intervenções ablativas maiores imediatas na ausência de achado histológico/colposcópico precursor. Indica-se repetição do teste em 12 meses. A vacinação prévia, por fim, não isenta a paciente de realizar o rastreamento citopatológico de rotina.',
+    reference: 'Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, INCA/Ministério da Saúde.',
+    tags: ['Saúde da Mulher', 'Rastreamento de Colo do Útero', 'HPV']
+  }
+];
