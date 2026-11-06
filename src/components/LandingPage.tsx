@@ -27,7 +27,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onStart }) => {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white shadow-sm shadow-primary/20">
               <Zap size={16} />
             </div>
-            <div className="text-lg font-heading font-extrabold text-ink tracking-tight">DEsimulados</div>
+            <div className="text-lg font-heading font-extrabold text-ink tracking-tight notranslate" translate="no">DEsimulados</div>
           </div>
           <button 
             onClick={onStart}
@@ -234,7 +234,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onStart }) => {
       {/* Footer - Elegant and Minimal */}
       <footer className="py-8 border-t border-line bg-white/50">
         <div className="container-custom text-center text-[11px] font-mono font-bold text-muted uppercase tracking-wider">
-          DEsimulados · Preparação Inteligente para Medicina
+          <span translate="no" className="notranslate">DEsimulados</span> · Preparação Inteligente para Medicina
         </div>
       </footer>
     </div>

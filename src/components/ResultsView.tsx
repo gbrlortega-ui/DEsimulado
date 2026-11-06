@@ -74,7 +74,7 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, onReset, onNe
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white shadow-sm">
               <Zap size={16} />
             </div>
-            <div className="text-lg font-heading font-extrabold text-ink">DEsimulados</div>
+            <div className="text-lg font-heading font-extrabold text-ink notranslate" translate="no">DEsimulados</div>
           </div>
           <button 
             onClick={onHome}

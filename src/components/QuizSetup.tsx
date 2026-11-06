@@ -49,7 +49,7 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ onBack, onStart }) => {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white shadow-sm shadow-primary/20">
               <Zap size={16} />
             </div>
-            <div className="text-lg font-heading font-extrabold text-ink tracking-tight">DEsimulados</div>
+            <div className="text-lg font-heading font-extrabold text-ink tracking-tight notranslate" translate="no">DEsimulados</div>
           </div>
           <button 
             onClick={onBack}

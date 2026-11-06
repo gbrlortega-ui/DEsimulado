@@ -157,7 +157,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
               <Home className="w-5 h-5" />
             </button>
             <div className="w-0.5 h-4 bg-line hidden sm:block"></div>
-            <div className="text-sm font-heading font-extrabold text-ink hidden sm:block">DEsimulados</div>
+            <div className="text-sm font-heading font-extrabold text-ink hidden sm:block notranslate" translate="no">DEsimulados</div>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4">
