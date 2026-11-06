@@ -1925,5 +1925,326 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     commentary: 'Comentários sobre a resposta correta:\n(B) O quadro clínico (menina de 4 anos com artrite crônica ≥ 6 semanas, rigidez matinal, febre persistente e exantema macular evanescente compatível com a forma sistêmica de Artrite Idiopática Juvenil - AIJ) tem como mecanismo central de destruição articular a sinovite proliferativa crônica. O processo inflamatório estimula a angiogênese e a hiperplasia das células sinoviais, dando origem ao "pannus" — um tecido de granulação inflamatório invasivo rico em macrófagos, fibroblastos e linfócitos. O pannus adere firmemente e invade a cartilagem articular e o osso subcondral adjacente, liberando metaloproteinases e citocinas pró-inflamatórias (como TNF-alfa, IL-1 e IL-6) que degradam progressivamente a matriz extracelular, causando o dano articular estrutural e irreversível típico da doença descontrolada.\n\nComentários sobre os distratores:\n(A) Descreve a fisiopatologia da osteoartrite (doença degenerativa articular), incomum na infância, que não possui a base inflamatória autoimune sistêmica da AIJ.\n(C) Embora haja mecanismos imunológicos humorais e celulares envolvidos na AIJ, a deposição de imunocomplexos isoladamente na cápsula não é o mecanismo anatômico primário do dano articular invasivo que leva a erosões.\n(D) Na artrite inflamatória ocorre efusão articular ativa (aumento do líquido sinovial com características inflamatórias), e não redução deste.',
     reference: 'PETTY, R. E. et al. Textbook of Pediatric Rheumatology. 8. ed. Philadelphia: Elsevier, 2021. | Nelson Textbook of Pediatrics, 22. ed. 2024.',
     tags: ['Reumatologia']
+  },
+  // ---- Teste de Progresso 2019 (gabarito oficial) ----
+  {
+    id: 'tp2019-41',
+    module: 'Pediatria',
+    text: 'Menino, 2 anos, em consulta de rotina, apresenta ao exame físico: pregas palpebrais oblíquas para cima, epicanto, base nasal plana, face aplanada, protusão lingual, palato ogival, orelhas de implantação baixa, pavilhão auricular pequeno, cabelo fino, clinodactilia do 5º dedo da mão, pé plano, prega palmar única transversa, hipotonia, frouxidão ligamentar, excesso de tecido adiposo no dorso do pescoço, retrognatia, diástase de retos abdominais, hérnia umbilical e sopro sistólico.\n\nConsiderando a síndrome deste paciente, qual afirmativa apenas enumera doenças cuja incidência é maior do que na população normal?',
+    options: [
+      '(A) Fibrose cística, surdez, instabilidade atlanto-axial.',
+      '(B) Catarata congênita, tetralogia de Fallot, instabilidade atlanto-axial.',
+      '(C) Leucemia, defeitos do septo átrio-ventricular, hipotireoidismo.',
+      '(D) Anemia megaloblástica, retinoblastoma, persistência do canal arterial.'
+    ],
+    correctAnswer: 2,
+    explanation: 'O fenótipo (fendas palpebrais oblíquas, epicanto, prega palmar única, hipotonia, sopro) é de síndrome de Down. Essas crianças têm risco aumentado de leucemias, cardiopatias — especialmente o defeito do septo atrioventricular — e hipotireoidismo, entre outras condições.',
+    commentary: 'Fibrose cística, retinoblastoma, anemia megaloblástica e tetralogia de Fallot (isoladamente) não são as associações típicas; cada alternativa incorreta mistura ao menos uma doença sem incidência aumentada na síndrome.',
+    reference: 'Ministério da Saúde. Diretrizes de atenção à pessoa com Síndrome de Down. Disponível em: http://www.hc.ufpr.br/files/diretrizes_cuidados_sindrome_down.pdf. Acesso em 30/06/2017. / BULL, M. J. Clinical report: health supervision for children with Down syndrome. Pediatrics, Illinois, v. 128, n. 2, p. 393- 405, ago. 2011. / MUSTACCHI, Z. Guia do bebê com síndrome de Down. São Paulo: Companhia Editora Nacional, 2009.',
+    tags: ['pediatria', 'genética', 'síndrome de down']
+  },
+  {
+    id: 'tp2019-42',
+    module: 'Pediatria',
+    text: 'Recém-nascido (RN) a termo apresentando icterícia Zona 2 de Krammer, com 40 horas de vida. Mãe primigesta apresenta tipagem sanguínea A negativo, Coombs indireto negativo. O RN é O positivo, Coombs direto negativo. Dosagem de bilirrubina indireta de 9,0 mg/dL, bilirrubina direta de 0,8 mg/dL.\n\nO diagnóstico mais provável é:',
+    options: [
+      '(A) Atresia de vias biliares extra-hepáticas.',
+      '(B) Icterícia fisiológica do RN.',
+      '(C) Icterícia por isoimunização ABO.',
+      '(D) Icterícia por isoimunização Rh.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Recém-nascido a termo com icterícia leve (zona 2 de Kramer) após 24 horas de vida, à custa de bilirrubina indireta, sem incompatibilidade sanguínea (mãe A e RN O — não há incompatibilidade ABO; Coombs direto e indireto negativos): icterícia fisiológica.',
+    commentary: 'Atresia de vias biliares cursa com hiperbilirrubinemia direta e acolia. Não há incompatibilidade ABO (mãe A, RN O) nem Rh com Coombs negativo.',
+    reference: 'Hiperbilirrubinemia Neonatal. Cloherty, 2015. Manual de Neonatologia.',
+    tags: ['pediatria', 'neonatologia', 'icterícia neonatal']
+  },
+  {
+    id: 'tp2019-43',
+    module: 'Pediatria',
+    text: 'Criança, 3 meses de vida, nascida de parto normal, gestação de 40 semanas, com peso de 3400 gramas, em aleitamento materno exclusivo. Na consulta de rotina, é observado que está discretamente descorada, fígado e baço não palpáveis. Mãe nega queixas, nega anemia na família. Teste do pezinho: sem alterações. Solicitado hemograma que revela: GV: 3,6 milhões/mm³; Hb: 9,8 g/dL, Ht: 32%; GB: 6000/mm³; Plaquetas: 250.000/mm³; VCM: 91fL (74 - 108); HCM: 30pg (25 - 35).\n\nA hipótese diagnóstica e conduta são:',
+    options: [
+      '(A) Anemia fisiológica, não necessita terapêutica.',
+      '(B) Anemia falciforme, encaminhamento ao hematologista.',
+      '(C) Anemia ferropriva, medicamento com ferro.',
+      '(D) Anemia por traço talassêmico, aconselhamento genético.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Lactente de 3 meses, a termo, em aleitamento exclusivo, com Hb 9,8 g/dL e índices normocíticos e normocrômicos, sem outros achados: anemia fisiológica do lactente, com nadir entre 8 e 12 semanas de vida. Não exige tratamento.',
+    commentary: 'A anemia ferropriva é microcítica e improvável aos 3 meses em nascido a termo. A falciforme seria detectada no teste do pezinho. O traço talassêmico também é microcítico.',
+    reference: 'Chopard MRT et al. Deficiência de ferro no feto e recém-nascido. RevBrasHematolHemoter. 23 (supl 2):32-37. / Nathan and Oski’s hematology of infancy and childhood. 8ªed, Elsevier Saunders, Philadelphia, 2015',
+    tags: ['pediatria', 'hematologia', 'anemia']
+  },
+  {
+    id: 'tp2019-44',
+    module: 'Pediatria',
+    text: 'Criança, 18 meses, iniciou quadro de febre alta há 3 dias e irritação durante os episódios febris. Passou por consulta 48 horas antes, tendo sido receitada amoxicilina para infecção de garganta, sem melhora do quadro. Mãe refere que hoje a febre cessou, mas surgiram manchas na pele, além de ter evacuado 3 vezes amolecido. Exame físico: bom estado geral, exantema maculopapular que desaparece à compressão na face, pescoço e tronco, mais discreto em membros, leve eritema de orofaringe, sem outras alterações.\n\nO diagnóstico mais provável e a conduta são:',
+    options: [
+      '(A) Exantema por alergia à amoxicilina; trocar droga por azitromicina e antialérgico.',
+      '(B) Exantema por alergia à amoxicilina; suspender a medicação e aguardar a evolução.',
+      '(C) Exantema súbito por herpesvírus-6 humano (HHV-6); manter a amoxicilina.',
+      '(D) Exantema súbito por herpesvírus-6 humano (HHV-6); suspender amoxicilina.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Febre alta por 3 dias em criança de 18 meses, com exantema maculopapular surgindo após o desaparecimento da febre: exantema súbito (roséola), causado pelo herpesvírus humano 6 (ou 7).\n\nA amoxicilina não estava indicada (faringite viral é a regra nessa idade) e deve ser suspensa.',
+    commentary: 'O exantema não é alérgico: o momento de surgimento (após defervescência) é típico da roséola. Manter a amoxicilina seria uso desnecessário de antibiótico.',
+    reference: 'Carvalho AP. Exantema súbito. In: Farhat CK, Carvalho ES, Carvalho LHFR, Succi RCM, eds. Infectologia Pediátrica. 2rd ed. São Paulo. Editora Atheneu, 1998. p. 389-93. / Rosário NA, Grumach AS. Allergy to betalactams in pediatrics: a practical approach. J Pediatr (Rio J). 2006: 82 (5 Suppl): S181-8.',
+    tags: ['pediatria', 'infectologia', 'doenças exantemáticas']
+  },
+  {
+    id: 'tp2019-45',
+    module: 'Pediatria',
+    text: 'Recém-nascido (RN) nascido a termo, sem queixas e sem alterações ao exame físico.\n\nConsiderando-se que os exames pré-natais ao final da gestação apontaram infecção materna pelo vírus da imunodeficiência humana, a recomendação correta em relação à alimentação desse RN é:',
+    options: [
+      '(A) Indicar aleitamento materno em regime de livre demanda.',
+      '(B) Contraindicar a amamentação e prescrever fórmula láctea.',
+      '(C) Indicar aleitamento materno com leite ordenhado após congelamento.',
+      '(D) Contraindicar a amamentação e indicar aleitamento humano cruzado.'
+    ],
+    correctAnswer: 1,
+    explanation: 'No Brasil, a infecção materna pelo HIV é contraindicação ao aleitamento materno, pelo risco de transmissão vertical. O recém-nascido deve receber fórmula láctea, fornecida pelo SUS, e a lactação da mãe deve ser inibida.',
+    commentary: 'Leite ordenhado congelado não elimina o vírus. O aleitamento cruzado (por outra mulher) não é recomendado.',
+    reference: 'Tratado de Pediatria – Sociedade Brasileira de Pediatria 4ª Edição / Ministério da Saúde. Protocolo clínico e diretrizes terapêuticas para manejo da infecção pelo HIV em crianças e adolescentes. Brasília, 2018.',
+    tags: ['pediatria', 'aleitamento materno', 'HIV']
+  },
+  {
+    id: 'tp2019-46',
+    module: 'Pediatria',
+    text: 'Jovem, 17 anos, apresenta ferimento profundo no pé por caco de vidro. O ferimento já foi lavado com soro fisiológico e solução antisséptica. Não havia corpos estranhos nem tecidos desvitalizados. Trata-se de jovem saudável, consciente e responsável, que se comprometeu a cuidar adequadamente do ferimento em casa. Em seu cartão de vacinação constam 3 doses e 2 reforços de vacina antitetânica, tendo sido o último aos 5 anos de idade.\n\nA conduta para a profilaxia do tétano é:',
+    options: [
+      '(A) Aplicar apenas um reforço da vacina Dupla Adulto.',
+      '(B) Iniciar o esquema de três doses de vacina antitetânica.',
+      '(C) Aplicar soro antitetânico e penicilina benzatina.',
+      '(D) Aplicar um reforço da vacina Dupla Adulto e soro antitetânico.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Ferimento profundo em paciente com esquema completo, cuja última dose foi há mais de 10 anos: indicada uma dose de reforço da vacina dupla adulto (dT). Em imunocompetente, capaz de cuidar da ferida, não há necessidade de soro antitetânico.',
+    commentary: 'Não é preciso reiniciar o esquema, já que ele foi completo. Soro e penicilina não estão indicados nesse cenário.',
+    reference: 'http://bvsms.saude.gov.br/bvs/publicacoes/doencas_infecciosas_ parasitaria_guia_bolso.pdf http://www.cve.saude.sp.gov.br/htm/imuni/pdf/imuni08_prof_tetan o.pdf',
+    tags: ['pediatria', 'imunização', 'tétano']
+  },
+  {
+    id: 'tp2019-47',
+    module: 'Pediatria',
+    text: 'Menina, 12 meses de idade, pesando 10kg, chega à emergência devido a quadro de vômitos que iniciou há 1 dia (3 episódios) acompanhados de diarreia (8 episódios nas últimas 24h), fezes volumosas, líquidas, com odor fétido, sem sangue ou muco. A criança é previamente hígida e frequenta escola. Ao exame: bom estado geral, chorosa, olhos levemente encovados, saliva pouco espessa, FC = 120 bpm, tempo de enchimento capilar 2seg.\n\nO diagnóstico provável e a conduta inicial são:',
+    options: [
+      '(A) Desidratação grave; bolo de soro fisiológico 20 mL/kg em 10min seguido de terapia de reposição oral, coleta de fezes para cultura.',
+      '(B) Desidratação leve; terapia de reposição oral, coleta de fezes para cultura.',
+      '(C) Desidratação grave; bolo de soro fisiológico 20 mL/kg em 10min seguido de terapia de reposição oral, sem coleta de exames.',
+      '(D) Desidratação leve; terapia de reposição oral, sem coleta de exames.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Criança em bom estado geral, chorosa (irritável), com olhos levemente encovados e enchimento capilar normal: tem \'algum grau\' de desidratação (desidratação leve), tratada com terapia de reidratação oral (plano B).\n\nDiarreia aguda aquosa em criança previamente hígida não exige exames laboratoriais.',
+    commentary: 'Não há sinais de desidratação grave (letargia, incapacidade de beber, enchimento capilar lento) que justifiquem expansão endovenosa. Coprocultura não é rotina na diarreia aquosa.',
+    reference: 'Shane AL, Mody RK, Crump JA, Tarr PI, Steiner TS, Kotlloff K, et al. 2017 Infectious Diseases Society of America Clinical Practice Guidelines for de Diagnosis and Management of Infectious Diarrhea. ClinInfectDis. 2017, 65(12): 1963-1973.',
+    tags: ['pediatria', 'diarreia aguda', 'desidratação']
+  },
+  {
+    id: 'tp2019-48',
+    module: 'Pediatria',
+    text: 'Menina, 13 anos, trazida à consulta com queixa de irregularidade menstrual, constipação e queda de cabelo. A menarca foi aos 11 anos. A mãe se queixa de que a filha já vinha crescendo pouco nos últimos anos e parou de crescer, ficando sua estatura abaixo do padrão da família. Tem um primo por parte da mãe com diabetes mellitus tipo 1. Exame físico: aumento do pescoço na região da tireoide e uma lesão hipocrômica na região genital.\n\nOs prováveis diagnóstico e resultado de dosagem de T4 livre e TSH são: (Valores de normalidade para T4livre = 0,7 - 1,5 ng/dL e TSH = 0,3 - 4,0 mUI/L).',
+    options: [
+      '(A) Tireoidite de Hashimoto; T4livre = 0,5 ng/dL e TSH = 25 mUI/L.',
+      '(B) Bócio puberal; T4livre = 0,4 ng/dL e TSH = 25 mUI/L.',
+      '(C) Tireoidite de Hashimoto; T4livre = 2,3 ng/dL e TSH < 0,01 mUI/L.',
+      '(D) Bócio puberal; T4livre = 1,0 ng/dL e TSH = 2,0 mUI/L.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Bócio, desaceleração do crescimento, constipação, queda de cabelo e irregularidade menstrual sugerem hipotireoidismo. O vitiligo genital e o familiar com diabetes tipo 1 apontam para autoimunidade: tireoidite de Hashimoto, principal causa de hipotireoidismo adquirido na infância.\n\nO perfil laboratorial esperado é T4 livre baixo e TSH alto.',
+    commentary: 'O bócio puberal é eutireoidiano e não explica os sintomas. A combinação T4 livre alto e TSH suprimido é de hipertireoidismo.',
+    reference: 'Radetti G. Clinical aspects of Hashimoto\'s thyroiditis. Endocr Dev. 2014; 26:158-70.',
+    tags: ['pediatria', 'endocrinologia', 'tireoide']
+  },
+  {
+    id: 'tp2019-49',
+    module: 'Pediatria',
+    text: 'Adolescente, 12 anos, masculino, encaminhado para avaliação de hipertensão arterial detectada há 3 meses. Apresentou cefaleia, palpitações, tontura, dor abdominal e perda de 3kg nesse período. Hoje apresentou episódio súbito de perda de consciência durante jogo de futebol na escola. Exame físico, uma hora após o evento: letárgico: FC = 124 bpm, FR = 20 irpm, PA = 195 x 125 mmHg, estertores crepitantes em bases pulmonares e hepatomegalia (4cm do rebordo costal direito).\n\nEste quadro sugere:',
+    options: [
+      '(A) Síndrome de Cushing',
+      '(B) Coarctação da aorta',
+      '(C) Feocromocitoma',
+      '(D) Hipertireoidismo'
+    ],
+    correctAnswer: 2,
+    explanation: 'Hipertensão grave e sintomática em adolescente, com cefaleia, palpitações, sudorese/tontura e perda de peso, evoluindo com crise hipertensiva, síncope ao esforço e congestão: feocromocitoma (excesso de catecolaminas).',
+    commentary: 'A síndrome de Cushing causaria ganho de peso. A coarctação cursaria com diferença de pulsos e PA entre membros. O hipertireoidismo não produz hipertensão diastólica tão grave nem crises paroxísticas.',
+    reference: 'Sociedade Brasileira de Pediatria. Tratado de Pediatria - SBP 4ª edição. 2017. 9 11',
+    tags: ['pediatria', 'endocrinologia', 'hipertensão']
+  },
+  {
+    id: 'tp2019-50',
+    module: 'Pediatria',
+    text: 'Gestante, 25 anos, em exame de rotina no pré-natal apresentou VDRL reagente 1:64 no primeiro trimestre. A gestante e seu parceiro foram adequadamente tratados com penicilina benzatina, como confirmado por anotações na carteira de pré-natal. A evolução do VDRL foi: pré-tratamento – 1:64; após o tratamento – 1:4; na internação para o parto – 1:32. No recém-nascido (RN) o VDRL foi 1:16, e o exame físico estava normal.\n\nDe acordo com as recomendações do Ministério da Saúde:',
+    options: [
+      '(A) Se o RN permanecer assintomático até a alta, não há necessidade de tratamento e deve-se repetir o VDRL com 1, 2 e 6 meses de vida.',
+      '(B) Como o RN está assintomático, aplicar uma dose de penicilina benzatina e encaminhar para seguimento ambulatorial.',
+      '(C) Deve-se realizar hemograma, radiografia de ossos longos, líquor e iniciar tratamento do RN com penicilina cristalina.',
+      '(D) Coletar FTA-Abs, hemograma e radiografia de ossos longos; se algum destes exames estiver alterado, coletar líquor e iniciar tratamento.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Apesar do tratamento adequado no início da gestação, o VDRL subiu de 1:4 para 1:32 no parto (aumento de mais de duas diluições), indicando reinfecção. Por isso, o recém-nascido é considerado exposto a sífilis materna não adequadamente tratada no momento do parto.\n\nDeve ser investigado com hemograma, radiografia de ossos longos e líquor e tratado com penicilina cristalina.',
+    commentary: 'A conduta expectante e a penicilina benzatina em dose única são reservadas a recém-nascidos de mães adequadamente tratadas, sem reinfecção. O FTA-Abs não é usado no recém-nascido.',
+    reference: 'Ministério da Saúde Departamento de Gestão e Incorporação de Tecnologias em Saúde da Secretaria de Ciência, Tecnologia e Insumos Estratégicos – DGITS/SCTIE Comissão Nacional de Incorporação de Tecnologias no SUS (CONITEC) - Protocolo Clínico e Diretrizes Terapêuticas para Prevenção da Transmissão Vertical de HIV, Sífilis e Hepatites Virais, junho/ 2017',
+    tags: ['pediatria', 'sífilis congênita', 'neonatologia']
+  },
+  {
+    id: 'tp2019-51',
+    module: 'Pediatria',
+    text: 'Menina, 7 anos, apresenta excesso de peso desde os 4 anos. Os pais são obesos. Avaliação nutricional atual: Escore Z do índice de massa corporal/idade entre +2,0 e +3,0 Escore Z da estatura/idade: +2,0. Estadiamento puberal: M1P1. Ao exame físico: acantose nigricans em pescoço, estrias no abdome, circunferência abdominal aumentada, pressão arterial 120 x 70 mmHg.\n\nO quadro clínico sugere:',
+    options: [
+      '(A) Sobrepeso secundário a hipotireoidismo não tratado.',
+      '(B) Obesidade exógena.',
+      '(C) Excesso de peso secundário a tumor de sistema nervoso central.',
+      '(D) Obesidade de causa genética (Prader-Willy).'
+    ],
+    correctAnswer: 1,
+    explanation: 'IMC/idade com escore Z entre +2 e +3 em criança de 7 anos define obesidade. A estatura alta (escore Z +2), os pais obesos e a acantose (resistência insulínica) apontam para obesidade exógena (nutricional).\n\nNas causas endócrinas e genéticas, a criança costuma ter baixa estatura.',
+    commentary: 'Hipotireoidismo, tumor de SNC e síndrome de Prader-Willi cursam tipicamente com baixa estatura ou atraso do crescimento, além de outros sinais.',
+    reference: 'Sociedade Brasileira de Pediatria. Obesidade na infância e adolescência. 4ª Edição. Rio de Janeiro, 2016.',
+    tags: ['pediatria', 'obesidade infantil']
+  },
+  {
+    id: 'tp2019-52',
+    module: 'Pediatria',
+    text: 'Menino, 1 ano e 6 meses, atendido no Pronto-Socorro, apresentando há dois dias disfonia, tosse seca de padrão irritativo, com aumento progressivo de intensidade e frequência, e temperatura corpórea subfebril. Exame físico: bom estado geral com presença de coriza hialina, estridor, taquidispneia, com retração intercostal e subdiafragmática, ausculta pulmonar sem alterações.\n\nO diagnóstico e conduta são:',
+    options: [
+      '(A) Faringo-tonsilite; antibioticoterapia, hidratação, inalação com vasoconstritor e corticoterapia.',
+      '(B) Rinossinusite; hidratação e aspiração de secreções em vias aéreas superiores.',
+      '(C) Epiglotite; antibioticoterapia, corticoterapia, hidratação e aspiração de secreções em vias aéreas superiores.',
+      '(D) Laringite aguda; hidratação, inalação com vasoconstritor e corticoterapia.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Lactente com quadro gradual de rouquidão, tosse ladrante e estridor, febre baixa, coriza e bom estado geral: laringotraqueíte viral aguda (crupe).\n\nO tratamento inclui corticoide (dexametasona) e, nos casos com estridor em repouso ou desconforto, nebulização com adrenalina.',
+    commentary: 'A epiglotite tem início súbito, toxemia, febre alta e sialorreia. Faringotonsilite e rinossinusite não causam estridor e disfonia.',
+    reference: 'Pediatria – Diagnóstico e Tratamento. Morais, MB; Campos, SO; Hilario, MOE. FAP/UNIFESP Editora Manole, 2013. 1839p.',
+    tags: ['pediatria', 'crupe', 'via aérea']
+  },
+  {
+    id: 'tp2019-53',
+    module: 'Pediatria',
+    text: 'Pré-escolar, levado ao pediatra por apresentar lesão eritematosa em fossas antecubitais e poplíteas há 1 mês. Mãe refere que as lesões são acompanhadas por prurido que piora com o suor. Exame físico: placas e pápulas eritematosas que desaparecem à digitopressão nos locais descritos. Apresenta xerose cutânea e pitiríase alba em face.\n\nQual alteração laboratorial é critério diagnóstico para a doença apresentada?',
+    options: [
+      '(A) Linfocitose',
+      '(B) IgA sérica diminuída',
+      '(C) IgE sérica elevada',
+      '(D) Leucocitose com eosinofilia'
+    ],
+    correctAnswer: 2,
+    explanation: 'Lesões eczematosas pruriginosas em fossas antecubitais e poplíteas, xerose e pitiríase alba: dermatite atópica.\n\nA IgE sérica elevada é um dos critérios menores de Hanifin e Rajka, embora seja inespecífica.',
+    commentary: 'Linfocitose e deficiência de IgA não fazem parte dos critérios. A eosinofilia pode ocorrer, mas leucocitose com eosinofilia não é critério diagnóstico.',
+    reference: 'Tratado de Pediatria – Sociedade Brasileira de Pediatria 4a Edição. 2017.',
+    tags: ['pediatria', 'dermatologia', 'dermatite atópica']
+  },
+  {
+    id: 'tp2019-54',
+    module: 'Pediatria',
+    text: 'Adolescente, 17 anos, feminino, apresenta desmaios e tosse há 40 dias. Relata fraqueza e diminuição do apetite há 10 dias. Exame físico: emagrecida, palidez cutâneo-mucosa, frequência respiratória = 36 ipm, frequência cardíaca = 78 bpm, pressão arterial = 120 x 70 mmHg, discreta turgência jugular à direita, sem fígado e baço palpáveis. RX de tórax: massa mediastinal estendendo-se para hemitórax superior direito.\n\nA hipótese diagnóstica é:',
+    options: [
+      '(A) Linfoma',
+      '(B) Higroma cístico',
+      '(C) Bócio mergulhante',
+      '(D) Tuberculose pulmonar'
+    ],
+    correctAnswer: 0,
+    explanation: 'Adolescente com sintomas constitucionais, tosse e massa mediastinal com turgência jugular (sinal de compressão da veia cava superior): a principal hipótese é linfoma, a causa mais comum de massa de mediastino anterior nessa faixa etária.',
+    commentary: 'O higroma cístico é congênito e cervical. O bócio mergulhante é raro em adolescentes. A tuberculose pulmonar não costuma causar síndrome de veia cava superior.',
+    reference: 'Nelson Tratado de Pediatria – 16ª. ed / Kliegman, Stanton, St. Geme, Schor, Elsevier, 2003.',
+    tags: ['pediatria', 'oncologia pediátrica', 'linfoma']
+  },
+  {
+    id: 'tp2019-55',
+    module: 'Pediatria',
+    text: 'Menina, 4 anos, trazida à Unidade Básica de Saúde por dificuldade para deambular há 2 meses. Mãe refere que a criança acorda com dificuldade de estender o joelho direito, com melhora após cerca de 3 horas de atividade. Notou inchaço no joelho direito durante o mesmo período. Nega emagrecimento ou lesão cutânea. Exame físico: bom estado geral, com peso, altura e pressão arterial dentro do percentil 75 para a idade, sinais flogísticos no joelho direito com contratura em flexão.\n\nEm relação à investigação complementar, podemos dizer que:',
+    options: [
+      '(A) Níveis elevados de ASLO confirmam o diagnóstico.',
+      '(B) A presença de uveíte anterior corrobora o diagnóstico.',
+      '(C) A presença de FAN confirma o diagnóstico.',
+      '(D) A ausência de fator reumatoide afasta o diagnóstico.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Artrite de joelho há mais de 6 semanas, rigidez matinal e contratura em flexão em menina de 4 anos: artrite idiopática juvenil, provavelmente oligoarticular.\n\nO diagnóstico é clínico. A uveíte anterior, frequente nas meninas com forma oligoarticular e FAN positivo, corrobora o diagnóstico e exige rastreio oftalmológico periódico.',
+    commentary: 'ASLO elevada indica estreptococcia prévia. FAN positivo não confirma o diagnóstico (é marcador de risco de uveíte). A maioria das crianças com AIJ tem fator reumatoide negativo.',
+    reference: 'Tratado de Pediatria: Sociedade Brasileira de Pediatria, 4ª. Ed. Manole: Barueri-SP. 2017- Cap de Artrite Idiopática Juvenil Pg 1775.',
+    tags: ['pediatria', 'reumatologia', 'artrite idiopática juvenil']
+  },
+  {
+    id: 'tp2019-56',
+    module: 'Pediatria',
+    text: 'Lactente, sexo masculino, 6 meses de idade, inicia quadro de febre intermitente, inapetência e pouco ganho ponderal, apresentando exame qualitativo de urina com nitritos (++), esterases leucocitárias (++) e urocultura com mais de 100.000 colônias de Escherichia coli. Inicia prontamente o tratamento com antimicrobiano.\n\nA seguir, deve-se solicitar:',
+    options: [
+      '(A) Ultrassonografia de vias urinárias',
+      '(B) Urografia excretora',
+      '(C) Uretrocistografia miccional',
+      '(D) Tomografia computadorizada de abdome'
+    ],
+    correctAnswer: 0,
+    explanation: 'Após a primeira infecção urinária febril em lactente, a investigação inicial é a ultrassonografia de rins e vias urinárias, que é não invasiva e identifica malformações, hidronefrose e alterações do parênquima.',
+    commentary: 'A uretrocistografia miccional é reservada a casos com alteração na ultrassonografia ou ITU de repetição. A urografia excretora caiu em desuso. A tomografia expõe à radiação sem indicação.',
+    reference: 'Tratado de Pediatria: Sociedade Brasileira de Pediatria, 4ª. Ed. Manole: Barueri-SP. 2017. Pg 1109.',
+    tags: ['pediatria', 'nefrologia', 'infecção urinária']
+  },
+  {
+    id: 'tp2019-57',
+    module: 'Pediatria',
+    text: 'Lactente, sexo feminino, 2 meses de idade, atendida no Pronto-Socorro com história de cansaço, sudorese e interrupções às mamadas, acompanhada de palidez cutânea e discreta cianose perioral, além de ganho de peso insuficiente. Exame físico: regular estado geral, pulsos dos membros inferiores com amplitude diminuída em relação à dos superiores. Frequência respiratória = 72 irpm, tiragens intercostais, SaO₂ = 94%. Coração rítmico a 168 bpm, com sopro sistólico na borda esternal esquerda (3+/6+). Pressão arterial = 80 x 40 mmHg no membro superior direito. Fígado palpável a 4cm do rebordo costal direito na linha hemiclavicular. Eletrocardiograma: sinais de sobrecarga ventricular esquerda com ondas T invertidas nas derivações V5 e V6 (tipo “strain”).\n\nA cardiopatia congênita é:',
+    options: [
+      '(A) Comunicação interventricular',
+      '(B) Persistência do canal arterial',
+      '(C) Estenose valvar aórtica',
+      '(D) Coarctação da aorta'
+    ],
+    correctAnswer: 3,
+    explanation: 'Lactente com insuficiência cardíaca (taquipneia, taquicardia, hepatomegalia, baixo ganho de peso) e pulsos femorais diminuídos em relação aos braquiais, com sobrecarga ventricular esquerda no ECG: coarctação da aorta.\n\nA diferença de pulsos entre membros superiores e inferiores é a pista clínica fundamental.',
+    commentary: 'CIV e PCA causam IC por hiperfluxo pulmonar, sem diferença de pulsos entre membros. A estenose aórtica valvar produz sopro em foco aórtico e pulsos reduzidos globalmente.',
+    reference: 'Cavalini JF et. L. Coarctação da aorta. In: Atik E ed. Cardiopatias congênitas: guia prático de diagnóstico, tratamento e conduta geral. 1ª. ed. São Paulo: Ed. Atheneu. 2014, p.341-52',
+    tags: ['pediatria', 'cardiologia', 'cardiopatias congênitas']
+  },
+  {
+    id: 'tp2019-58',
+    module: 'Pediatria',
+    text: 'Menino, 5 anos, chega ao Pronto-Socorro com história de vômitos, perda de peso, polidipsia e poliúria. Exame físico: mucosas secas, turgor semipastoso, taquidispneico e torporoso. Exames laboratoriais: glicemia = 620 mg/dL; gasometria – pH: 7,08, HCO3: 4,0 mEq/L, BE: –20; Na: 135 mEq/L; K = 3,5 mEq/L; urina 1 – cetonúria +++.\n\nA primeira conduta é:',
+    options: [
+      '(A) Reposição de potássio.',
+      '(B) Insulina rápida ou ultra-rápida.',
+      '(C) Manitol e hiperventilação.',
+      '(D) Hidratação com solução isotônica.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Cetoacidose diabética (glicemia 620, pH 7,08, bicarbonato 4, cetonúria) na abertura do diabetes tipo 1, com desidratação.\n\nA primeira medida é a hidratação com solução isotônica (soro fisiológico 0,9%). A insulina é iniciada depois da expansão inicial (em geral 1–2 horas), e o potássio é reposto conforme o nível sérico.',
+    commentary: 'Insulina antes da hidratação aumenta o risco de choque e de hipocalemia. A reposição de potássio é feita junto com a insulina. Manitol é para edema cerebral estabelecido.',
+    reference: 'Wolfsdorf JI, Allgrove J, Craig ME, Edge J, Glaser N, Jain V, Lee WW, Mungai LN, Rosenbloom AL, Sperling MA, Hanas R; International Society for Pediatric and Adolescent Diabetes. ISPAD Clinical Practice Consensus Guidelines 2014. Diabetic ketoacidosis and hyperglycemic hyperosmolar state. Pediatr Diabetes. 2014;15 Suppl 20:154-79',
+    tags: ['pediatria', 'endocrinologia', 'cetoacidose diabética']
+  },
+  {
+    id: 'tp2019-59',
+    module: 'Pediatria',
+    text: 'Criança, 7 anos, proveniente de região rural, deu entrada no Pronto-Socorro com história de possível acidente com animal peçonhento, não sabendo informar a espécie, há cerca de três horas. Ao exame, apresentava edema tenso de cor violácea no pé e tornozelo direitos, com duas lesões puntiformes no pé direito, presença de botão hemorrágico e dor local. O resultado do exame tempo de coagulação apresentou-se prolongado de 15 minutos.\n\nA hipótese diagnóstica é de acidente:',
+    options: [
+      '(A) loxoscélico',
+      '(B) botrópico',
+      '(C) crotálico',
+      '(D) elapídico'
+    ],
+    correctAnswer: 1,
+    explanation: 'Dor e edema local importantes, equimose e bolha hemorrágica no local da picada e tempo de coagulação prolongado: acidente botrópico (jararaca), o mais comum no Brasil. O veneno tem ação proteolítica (inflamatória), coagulante e hemorrágica.',
+    commentary: 'O acidente crotálico tem poucos sinais locais e cursa com neurotoxicidade e mialgia/rabdomiólise. O elapídico (coral) é neurotóxico, com poucos sinais locais. O loxoscélico (aranha-marrom) causa lesão necrótica de evolução lenta.',
+    reference: 'Fundação Nacional de Saúde.Manual de diagnóstico e tratamento de acidentes por animais peçonhentos, 2ed. Brasília; 2001. / Cardoso, JLC, França, OSF, Wen, FH, M laque, CMS, Haddad Jr, V. Animais peçonhentos no Brasil: biologia clínica e terapêutica. São Paulo: Sarvier; 2002.',
+    tags: ['pediatria', 'toxicologia', 'acidentes por animais peçonhentos']
+  },
+  {
+    id: 'tp2019-60',
+    module: 'Pediatria',
+    text: 'Lactente, 3 meses, chega ao Pronto-Socorro com história de choro intenso, por vezes contínuo, geralmente no período vespertino. Foi atendido em várias ocasiões, nas quais foi diagnosticada cólica do lactente, sendo a última vez há 3 semanas. Pais negam traumas, febre, vômitos ou outras alterações. Não recebeu a vacina de 2 meses. Mãe e pai hígidos com 18 e 19 anos, respectivamente. Exame físico: choroso, principalmente à manipulação de membro inferior direito, com edema na coxa direita, presença de alguns hematomas. Realizada radiografia de membro inferior direito: fratura de fêmur direito.\n\nO exame mais útil para elucidação diagnóstica é:',
+    options: [
+      '(A) Hemograma mais coagulograma.',
+      '(B) Dosagem de Cálcio sérico e Vitamina D.',
+      '(C) Raio-X de corpo inteiro.',
+      '(D) Ultrassonografia de abdome.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Lactente de 3 meses, sem capacidade de locomoção, com fratura de fêmur sem história de trauma, hematomas, choro recorrente, atraso vacinal e pais muito jovens: forte suspeita de maus-tratos.\n\nA radiografia de esqueleto inteiro (inventário ósseo) é o exame mais útil para identificar fraturas ocultas, múltiplas e em diferentes estágios de consolidação.',
+    commentary: 'Hemograma, coagulograma, cálcio e vitamina D ajudam a excluir causas orgânicas, mas não elucidam a principal hipótese. A ultrassonografia de abdome não é o exame central.',
+    reference: 'RevBras Ortop. 2013;48(1). Maus tratos infantis. Revisão da literatura. Bernardo B. Terra, Eduardo A. Figueiredo, Morena P E O L Terra, Carlos V. Andreoli, Benno Ejnisman',
+    tags: ['pediatria', 'maus-tratos', 'ortopedia']
   }
 ];

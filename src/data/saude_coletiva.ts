@@ -1922,5 +1922,326 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     commentary: 'A presença do DNA do papilomavírus humano de alto risco (HPV oncogênico) com citologia normal (ausência de lesão intraepitelial) não requer conização ou intervenções ablativas maiores imediatas na ausência de achado histológico/colposcópico precursor. Indica-se repetição do teste em 12 meses. A vacinação prévia, por fim, não isenta a paciente de realizar o rastreamento citopatológico de rotina.',
     reference: 'Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, INCA/Ministério da Saúde.',
     tags: ['Saúde da Mulher', 'Rastreamento de Colo do Útero', 'HPV']
+  },
+  // ---- Teste de Progresso 2019 (gabarito oficial) ----
+  {
+    id: 'tp2019-101',
+    module: 'Saúde Coletiva',
+    text: 'Conforme normatização vigente do SUS, as Redes de Atenção à Saúde (RAS) são entendidas como entrelaçamentos organizativos entre ações e serviços de saúde com diferentes densidades tecnológicas, integradas por meio de sistemas de apoio técnico, logístico e gestão, com a finalidade de:',
+    options: [
+      '(A) Garantir a integralidade do cuidado.',
+      '(B) Aumentar a eficiência da gestão municipal.',
+      '(C) Ofertar mais serviços pelo SUS.',
+      '(D) Compor uma rede de atenção secundária.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Segundo a Portaria 4.279/2010, as Redes de Atenção à Saúde são arranjos de ações e serviços de diferentes densidades tecnológicas, integrados por sistemas de apoio técnico, logístico e de gestão, com o objetivo de garantir a integralidade do cuidado.',
+    commentary: 'Eficiência, ampliação de oferta e composição da atenção secundária podem ser consequências, mas não são a finalidade definida pela norma.',
+    reference: 'BRASIL. Ministério da Saúde. Portaria nº 4279, de 30 de dezembro de 2010. Estabelece as diretrizes para a organização da Rede de Atenção à Saúde no âmbito do Sistema Único de Saúde (SUS). Disponível em: http://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/anexos/anexo s_prt4279_30_12_2010.pdf. Acesso em: 24 abr 2016.',
+    tags: ['saúde coletiva', 'SUS', 'redes de atenção']
+  },
+  {
+    id: 'tp2019-102',
+    module: 'Saúde Coletiva',
+    text: 'As doenças cardiovasculares e cerebrovasculares continuam sendo a principal causa de morte nos países desenvolvidos. No entanto, suas taxas de mortalidade vêm diminuindo nas últimas décadas em razão de ações de prevenção e melhor tratamento.\n\nA ação e o respectivo nível de prevenção capaz de reduzir a morbimortalidade por acidente vascular encefálico (AVE) são:',
+    options: [
+      '(A) Evitar iatrogenia; prevenção terciária.',
+      '(B) Diagnóstico precoce do AVE; prevenção primária.',
+      '(C) Tratamento precoce do AVE; prevenção secundária.',
+      '(D) Redução da ingestão de sal; prevenção secundária.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Pelos níveis de prevenção de Leavell e Clark, o diagnóstico e o tratamento precoces de uma doença já instalada correspondem à prevenção secundária. O tratamento precoce do AVE (trombólise, unidades de AVC) reduz a morbimortalidade.',
+    commentary: 'Reduzir o sal é prevenção primária. Diagnóstico precoce não é prevenção primária. Evitar iatrogenia é prevenção quaternária.',
+    reference: 'LEAVELL Hugh R.; CLARK, Edwin G. Medicina Preventiva. SP, McGraw-Hill do Brasil, RJ FENAME, 1978 NORMAN, Armando Henrique; TESSER, Charles Dalcanale. Prevenção quaternária na atenção primária à saúde: uma necessidade do Sistema Único de Saúde. Cad. Saúde Pública, Rio de Janeiro, v. 25, n. 9, p. 2012-2020, Sept. 2009 Tratado de Medicina de Família e Comunidade 2ª edição, 2018.',
+    tags: ['saúde coletiva', 'níveis de prevenção']
+  },
+  {
+    id: 'tp2019-103',
+    module: 'Saúde Coletiva',
+    text: 'No Brasil, o perfil de morbimortalidade passou do predomínio de doenças infectocontagiosas para o predomínio de doenças crônicas não transmissíveis.\n\nEsse fenômeno é denominado:',
+    options: [
+      '(A) Falácia ecológica',
+      '(B) Perfil de morbimortalidade da população',
+      '(C) Transição epidemiológica',
+      '(D) Evolução natural das doenças'
+    ],
+    correctAnswer: 2,
+    explanation: 'A transição epidemiológica é a mudança, a longo prazo, dos padrões de morbimortalidade de uma população — no Brasil, o predomínio passou das doenças infecciosas para as doenças crônicas não transmissíveis, acompanhando a transição demográfica.',
+    commentary: 'A falácia ecológica é um erro de inferência em estudos ecológicos. \'Perfil de morbimortalidade\' e \'evolução natural das doenças\' não nomeiam o fenômeno.',
+    reference: 'Medronho RA, Carvalho DM, Bloch KV, Luiz RR, Werneck GL. Epidemiologia. São Paulo: Atheneu, 2006. / Rouquayrol MZ, Gurgel M. Epidemiologia e saúde. 8ª Ed. Rio de Janeiro: MedBook, 2018.',
+    tags: ['saúde coletiva', 'epidemiologia', 'transição epidemiológica']
+  },
+  {
+    id: 'tp2019-104',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 32 anos, comparece à Unidade Básica de Saúde com queixas de náuseas e vômitos há 5 dias. Teve diagnóstico recente de tuberculose pulmonar e iniciou, há 20 dias, o uso de rifampicina + isoniazida + pirazinamida + etambutol (quatro comprimidos em jejum), mas suspendeu a medicação desde que os sintomas surgiram. Exame físico: desidratado, sem outras alterações.\n\nApós hidratação venosa na própria UBS, a conduta, com base nas recomendações do Ministério da Saúde, é:',
+    options: [
+      '(A) Prescrever sintomáticos, reintroduzir os medicamentos um a um e acompanhar com dosagem seriada de aminotransferases (ALT/AST).',
+      '(B) Encaminhar para hospital de referência secundária, pois a medicação deverá ser reintroduzida em regime de internação.',
+      '(C) Prescrever medicação sintomática, manter a medicação suspensa por mais 7 dias e reintroduzir, orientando que seja tomada com o café da manhã.',
+      '(D) Prescrever sintomáticos, solicitar dosagem de aminotransferases (ALT/AST) e reintroduzir a medicação, orientando que seja tomada duas horas após o café da manhã.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Náuseas e vômitos são reações adversas menores ao esquema básico da tuberculose. A conduta é manejá-las na atenção básica: sintomáticos, investigar hepatotoxicidade (ALT/AST) e reintroduzir a medicação, orientando a tomada após o café da manhã ou duas horas depois para reduzir a intolerância.',
+    commentary: 'A reintrodução \'um a um\' é para hepatotoxicidade confirmada. Internação não é necessária para reação menor. Manter suspenso por mais 7 dias prolonga desnecessariamente a interrupção.',
+    reference: 'Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância Epidemiológica. Manual de recomendações para o controle da tuberculose no Brasil. Brasília: Ministério da Saúde, 2018.',
+    tags: ['saúde coletiva', 'tuberculose', 'atenção primária']
+  },
+  {
+    id: 'tp2019-105',
+    module: 'Saúde Coletiva',
+    text: 'Na organização do processo de trabalho das equipes de saúde da família, as equipes de apoio matricial (NASF – Núcleo Ampliado de Saúde da Família) têm como responsabilidade:',
+    options: [
+      '(A) A gestão do cuidado das famílias da área de abrangência da equipe de saúde da família.',
+      '(B) O atendimento básico integral às famílias da área de abrangência da equipe de saúde da família.',
+      '(C) O planejamento e a execução das ações de saúde na área de abrangência da equipe de saúde da família.',
+      '(D) O compartilhamento e apoio às práticas em saúde das equipes de saúde da família.'
+    ],
+    correctAnswer: 3,
+    explanation: 'O NASF atuava como apoio matricial às equipes de Saúde da Família: compartilhava casos, apoiava tecnicamente e qualificava as práticas, sem assumir a coordenação do cuidado, que permanecia com a equipe de referência.',
+    commentary: 'Gestão do cuidado, atendimento básico integral e planejamento das ações do território são atribuições da equipe de Saúde da Família. Observação: em 2023, o NASF foi substituído pelas equipes Multiprofissionais na APS (eMulti), com lógica semelhante de apoio.',
+    reference: 'Brasil. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica. – Brasília: Ministério da Saúde, 2009. / PORTARIA Nº 2.436, DE 21 DE SETEMBRO DE 2017. Aprova a Política Nacional de Atenção Básica, estabelecendo a revisão de diretrizes para a organização da Atenção Básica, no âmbito do Sistema Único de Saúde (SUS). 9 19',
+    tags: ['saúde coletiva', 'atenção primária', 'apoio matricial']
+  },
+  {
+    id: 'tp2019-106',
+    module: 'Saúde Coletiva',
+    text: 'Gestante, 23 anos, na 35ª semana, em tratamento antirretroviral há 7 anos, sendo os últimos 3 anos em resgate. Nesta segunda gestação, apresentou efeitos adversos à zidovudina, interrompeu todos os medicamentos e abandonou o pré-natal. Deu entrada na Unidade de Urgência com quadro de sangramento vaginal, falta de ar e dores intensas em baixo ventre. Apresentava-se em mau estado geral e evoluiu com dispneia importante, saturação de O₂ = 60%, necessitando de intubação orotraqueal, vindo a falecer após três horas. Aspirado pulmonar com BAAR positivo, radiografia de tórax com áreas de cavitações em ápice direito e hemograma com anemia.\n\nO preenchimento correto da Declaração de Óbito é:',
+    options: [
+      '(A) Parte I: a – Insuficiência Respiratória Aguda; b – Tuberculose Pulmonar; c – AIDS; Parte II: Gestação na 35ª semana.',
+      '(B) Parte I: a – Tuberculose Pulmonar; b – AIDS; c – Gestação na 35ª semana. Parte II: Insuficiência Respiratória Aguda.',
+      '(C) Parte I: a – Insuficiência Respiratória Aguda; b – Tuberculose Pulmonar; c - Gestação na 35ª semana; Parte II: AIDS.',
+      '(D) Parte I: a – Tuberculose pulmonar; b – Insuficiência Respiratória; c – Gestação na 35ª semana; Parte II: AIDS.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Na Parte I da Declaração de Óbito, a linha \'a\' traz a causa terminal e as linhas seguintes, a sequência de causas até a básica. Aqui: insuficiência respiratória aguda ← tuberculose pulmonar ← AIDS (causa básica).\n\nA gestação, que contribuiu mas não integra a cadeia causal direta, é registrada na Parte II.',
+    commentary: 'As demais alternativas invertem a sequência causal ou colocam a AIDS — causa básica — fora da Parte I.',
+    reference: 'Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Análise de Situação de Saúde. Manual de Instruções para o preenchimento da Declaração de Óbito /Ministério da Saúde, Secretaria de Vigilância em Saúde, Departamento de Análise de Situação de Saúde. – Brasília: Ministério da Saúde, 2011 / Atestado médico – prática e ética. / Coordenação de Gabriel Oselka. São Paulo: Conselho Regional de Medicina do Estado de São Paulo, 2013.',
+    tags: ['saúde coletiva', 'declaração de óbito']
+  },
+  {
+    id: 'tp2019-107',
+    module: 'Saúde Coletiva',
+    text: 'Jovem, 15 anos, é atendida pelo médico de família de uma USF desde o seu nascimento. O médico conhece a família, que é bem estruturada e tem boas relações entre si. Ela vem ao atendimento com queixa de gripe. Durante a consulta, conta que está feliz, namorando um rapaz de 19 anos, que é usuário de drogas injetáveis e que mantém relação sexual com ele, com preservativo masculino. Além disso, conta que está usando cocaína quase diariamente com ele e que não vê nenhum problema, pois os pais não perceberam e continua indo bem na escola.\n\nLevando em conta o Código de Ética Médica, a medida mais cabível para o cuidado da jovem é:',
+    options: [
+      '(A) Discutir os riscos com a jovem, mas não quebrar o sigilo médico, pois pelo Estatuto da Criança e do Adolescente, o médico não pode quebrar o sigilo nesta situação.',
+      '(B) Não discutir essas questões com a jovem, pois é menor de idade e quebrar o sigilo médico contando a seus pais, já que não pode ter relações sexuais com maiores de 18 anos.',
+      '(C) Discutir os riscos com a jovem e avisá-la que vai quebrar o sigilo médico contando a seus pais, já que corre risco, pois está usando drogas e é menor de 18 anos.',
+      '(D) Discutir os riscos com a jovem, mas não quebrar o sigilo médico, pois ela está indo bem na escola e não tem nenhuma doença ou perda de funcionalidade por este motivo.'
+    ],
+    correctAnswer: 2,
+    explanation: 'O Código de Ética Médica veda a quebra de sigilo do adolescente com capacidade de discernimento, exceto quando a não revelação puder acarretar dano ao paciente.\n\nO uso quase diário de cocaína por uma adolescente, com parceiro usuário de drogas injetáveis, representa risco à sua saúde. Justifica-se a quebra de sigilo, informando-a previamente e discutindo os riscos com ela.',
+    commentary: 'A alternativa B dispensa o diálogo com a paciente. As alternativas A e D ignoram o risco que justifica a quebra.',
+    reference: 'Código de Ética Médica: Resolução CFM nº 2.217, de 27 de setembro de 2018, modificada pelas Resoluções CFM nº 2.222/2018 e 2.226/2019 / Conselho Federal de Medicina – Brasília: Conselho Federal de Medicina, 2019.',
+    tags: ['ética médica', 'adolescência', 'sigilo']
+  },
+  {
+    id: 'tp2019-108',
+    module: 'Saúde Coletiva',
+    text: 'Um pesquisador diz que um determinado exame laboratorial tem sensibilidade de 98% para o diagnóstico de uma doença.\n\nEle está dizendo que:',
+    options: [
+      '(A) 98% dos indivíduos que não têm essa doença terão resultados negativos nesse exame.',
+      '(B) 2% dos indivíduos que têm essa doença terão resultados negativos para ela.',
+      '(C) 98% dos indivíduos que têm resultados positivos para essa doença serão verdadeiramente doentes.',
+      '(D) 2% dos indivíduos que não têm essa doença terão resultados positivos para ela.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Sensibilidade é a proporção de doentes com teste positivo. Sensibilidade de 98% significa que 98% dos doentes testam positivo — e, portanto, 2% dos doentes terão resultado negativo (falsos negativos).',
+    commentary: 'A alternativa A descreve especificidade. A C descreve valor preditivo positivo. A D descreve o complemento da especificidade (falsos positivos).',
+    reference: 'Weiss, N S. Clinical Epidemiology. In: Rothman KJ, Organizador. Modern Epidemiology. 3o. Philadelphia: Lippincott Williams & Wilkins; 2008. p. 641.',
+    tags: ['saúde coletiva', 'epidemiologia', 'testes diagnósticos']
+  },
+  {
+    id: 'tp2019-109',
+    module: 'Saúde Coletiva',
+    text: 'Mulher, 39 anos, trabalhadora de uma indústria alimentícia, comparece ao Serviço Especializado de Segurança e Medicina do Trabalho da empresa para exame médico periódico. Queixa-se de parestesias nas mãos, com piora noturna e limitação para preensão de objetos. Exerce sua atividade laboral executando movimentos repetitivos de flexão e extensão dos dedos e punhos.\n\nDuas manobras de exame físico para avaliar possível diagnóstico são:',
+    options: [
+      '(A) Phalen e Eichoff',
+      '(B) Finkelstein e Eichoff',
+      '(C) Tinel e Finkelstein',
+      '(D) Tinel e Phalen'
+    ],
+    correctAnswer: 3,
+    explanation: 'Parestesias nas mãos com piora noturna em trabalhadora com movimentos repetitivos de punho: síndrome do túnel do carpo (LER/DORT).\n\nAs manobras indicadas são o sinal de Tinel (percussão do nervo mediano no punho) e o teste de Phalen (flexão máxima do punho).',
+    commentary: 'Finkelstein e Eichhoff avaliam a tenossinovite de De Quervain.',
+    reference: 'BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância em Saúde Ambiental e do Trabalhador. Dor relacionada ao trabalho: lesões por esforços repetitivos (LER) e Distúrbios Osteomusculares Relacionados ao Trabalho (Dort). Brasília: Editora do Ministério da Saúde, 2012. 68 p Manuais Técnicos em Saúde do Trabalhador nº. 10. Protocolos de Complexidade Diferenciada. / http://www.scielo.br/pdf/rbort/v49n5/pt_0102-3616-rbort-49-05-0429.pdf',
+    tags: ['saúde coletiva', 'saúde do trabalhador', 'ortopedia']
+  },
+  {
+    id: 'tp2019-110',
+    module: 'Saúde Coletiva',
+    text: 'Jovem deu entrada na Unidade de Emergência com ferimentos na cabeça, nos braços e nas pernas. Durante a consulta com o médico de plantão, ela revelou que os ferimentos foram causados pelo marido. Nitidamente envergonhada e assustada, ela pediu ao médico que tratasse apenas os ferimentos e mantivesse a situação em segredo.\n\nCom relação à violência doméstica, a equipe deve notificar quando houver:',
+    options: [
+      '(A) Suspeita ou confirmação de violência doméstica, configurando quebra de sigilo profissional.',
+      '(B) Suspeita ou confirmação de violência doméstica, sem o risco de configurar quebra de sigilo profissional.',
+      '(C) Confirmação por exame de corpo de delito de violência doméstica, sem o risco de configurar quebra de sigilo profissional.',
+      '(D) Confirmação por exame de corpo de delito de violência doméstica, configurando quebra de sigilo profissional.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A violência doméstica é de notificação compulsória diante de suspeita ou confirmação. A notificação é feita à vigilância epidemiológica (SINAN), tem finalidade de vigilância e proteção e não configura quebra de sigilo profissional nem equivale a denúncia policial.',
+    commentary: 'Não é necessário exame de corpo de delito para notificar.',
+    reference: 'Paraná. Atenção à Mulher em Situação de Violência – Linha Guia, 2012. Disponível em: http://www.saude.pr.gov.br/arquivos/File/Linha_Guia_Violencia_S exual_contra_a_Mulher2.pdf. / CFM. Notas e Despachos. 2016. Disponível em: http://www.portalmedico.org.br/notasdespachos/CFM/2016/3_201 2.pdf',
+    tags: ['saúde coletiva', 'violência', 'notificação compulsória']
+  },
+  {
+    id: 'tp2019-111',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 30 anos, solteiro, vida sexual ativa e com diferentes parceiras nos últimos cinco anos, sem uso de preservativo na maioria das relações.\n\nEncontra-se assintomático, porém com exame VDRL positivo e teste rápido treponêmico reagente. A conduta é:',
+    options: [
+      '(A) Tratamento com Penicilina G Benzatina 7.200.000 UI, controle de cura semestral por meio do FTA-Abs e orientar sobre o uso de preservativos nas relações sexuais.',
+      '(B) Não é necessário tratamento, repetir o exame após um ano, pois o VDRL é inespecífico para o Treponema pallidum.',
+      '(C) Tratamento com Penicilina G Benzatina 7.200.000 UI, esclarecer sobre a importância de trazer as parceiras sexuais para o aconselhamento, diagnóstico e tratamento.',
+      '(D) Tratamento com Penicilina G Benzatina 2.400.000 UI, repetir o exame após um ano e orientar sobre o uso de preservativos nas relações sexuais.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Teste não treponêmico e treponêmico reagentes em paciente assintomático, sem tempo de infecção conhecido: sífilis latente de duração indeterminada.\n\nO tratamento é penicilina benzatina 7,2 milhões UI (3 doses semanais de 2,4 milhões UI), com seguimento por VDRL trimestral e convocação das parcerias sexuais para testagem e tratamento.',
+    commentary: 'Testes treponêmicos não servem para controle de cura. O VDRL reagente com treponêmico positivo não pode ser descartado. A dose de 2,4 milhões UI é para sífilis recente.',
+    reference: 'Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de DST, Aids e Hepatites Virais. Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis – Brasília: Ministério da Saúde, 2ª edição revisada – 2016.',
+    tags: ['saúde coletiva', 'sífilis', 'IST']
+  },
+  {
+    id: 'tp2019-112',
+    module: 'Saúde Coletiva',
+    text: 'O coeficiente de mortalidade perinatal tem sido recomendado como o indicador mais apropriado para análise da assistência obstétrica e neonatal e de utilização dos serviços de saúde, por dar maior visibilidade aos problemas existentes e para planejamento de ações e prevenção de morte fetal e neonatal.\n\nA mortalidade perinatal representa os óbitos ocorridos entre:',
+    options: [
+      '(A) 22ª semana de gestação e até 7 dias após o nascimento.',
+      '(B) 20ª semana de gestação e até 7 dias após o nascimento.',
+      '(C) 22ª semana de gestação e até 5 dias após o nascimento.',
+      '(D) 20ª semana de gestação e até 5 dias após o nascimento.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A mortalidade perinatal inclui os óbitos fetais a partir de 22 semanas completas de gestação (ou 500 g) e os óbitos neonatais precoces, até 7 dias completos de vida.',
+    commentary: 'O limite inferior é 22 semanas, e não 20. O limite superior é 7 dias, e não 5.',
+    reference: 'http://tabnet.datasus.gov.br/cgi/idb2000/fqc05.htm',
+    tags: ['saúde coletiva', 'indicadores de saúde']
+  },
+  {
+    id: 'tp2019-113',
+    module: 'Saúde Coletiva',
+    text: 'Caso A: paciente que, independentemente da idade e da situação vacinal, apresenta febre e exantema maculopapular acompanhados de um ou mais dos seguintes sinais e sintomas: tosse e/ou coriza e/ou conjuntivite. Caso B: paciente com quadro discreto de febre moderada, de início súbito, que dura de 2 a 3 dias, e sintomas generalizados inespecíficos (astenia, adinamia, anorexia, cefaleia e outros) e erupção cutânea papulovesicular, que se inicia na face, couro cabeludo ou tronco.\n\nOs casos A e B apresentam, respectivamente, características de casos suspeitos de:',
+    options: [
+      '(A) Rubéola e varicela',
+      '(B) Sarampo e varicela',
+      '(C) Sarampo e rubéola',
+      '(D) Rubéola e sarampo'
+    ],
+    correctAnswer: 1,
+    explanation: 'Caso A — febre e exantema maculopapular com tosse, coriza ou conjuntivite, independentemente de idade e vacinação: definição de caso suspeito de sarampo.\n\nCaso B — febre moderada de início súbito, sintomas gerais e exantema papulovesicular que começa na face, couro cabeludo ou tronco: varicela.',
+    commentary: 'A rubéola cursa com exantema maculopapular e linfadenopatia retroauricular/occipital, sem a tríade catarral e sem vesículas.',
+    reference: 'http://portal.saude.sp.gov.br/resources/cve-centro-de-vigilancia-epidemiologica/areas-de-vigilancia/doencas-de-transmissao-respiratoria/sindrome-da-rubeola-congenita-src/doc/2019/sarampo19_alerta_profissionais_saude.pdf https://www.cevs.rs.gov.br/upload/arquivos/201704/18115053-nota-tecnica-varicela-18-04-2017.pdf http://www.saude.sp.gov.br/resources/cve-centro-de-vigilancia-epidemiologica/areas-de-vigilancia/doencas-de-transmissao-respiratoria/sindrome-da-rubeola-congenita-src/rubeola.html',
+    tags: ['saúde coletiva', 'vigilância epidemiológica', 'doenças exantemáticas']
+  },
+  {
+    id: 'tp2019-114',
+    module: 'Saúde Coletiva',
+    text: 'Homem, 66 anos, hígido, comparece à USF para vacinar-se contra a gripe. Relata que viajará em um mês para uma região endêmica de febre amarela. No seu cartão de vacinação há somente o registro de um reforço de vacina dupla adulto, feito há oito anos.\n\nConsiderando o esquema vacinal do idoso preconizado pelo Ministério da Saúde, a melhor conduta é:',
+    options: [
+      '(A) Vacinar contra febre amarela e gripe no mesmo dia, informar que o cartão está incompleto e reagendar vacina para hepatite B.',
+      '(B) Vacinar contra febre amarela e gripe no mesmo dia, informar que o cartão está incompleto e reagendar vacina para hepatite B e reforço da dupla adulto.',
+      '(C) Vacinar contra gripe no mesmo dia, informar que o cartão está incompleto e reagendar, em cinco dias, vacina para febre amarela e hepatite B.',
+      '(D) Vacinar contra febre amarela no mesmo dia, informar que o cartão está incompleto e reagendar, em cinco dias, vacina para gripe, hepatite B e dupla adulto.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pelo calendário do Ministério da Saúde para idosos à época: hepatite B (3 doses, se não vacinado), dT a cada 10 anos e influenza anual. A febre amarela é indicada para viagem a área de risco e pode ser feita no mesmo dia da influenza.\n\nO idoso deve receber febre amarela e influenza hoje e agendar a hepatite B. A dT foi há 8 anos, portanto ainda está em dia.',
+    commentary: 'O reforço de dT não está vencido. Não é necessário intervalo entre febre amarela e influenza. Observação: para pessoas com 60 anos ou mais, a vacina de febre amarela requer avaliação de risco-benefício.',
+    reference: 'Sites do Ministério da Saúde: http://portalms.saude.gov.br/acoes-e-programas/vacinacao/calendario-nacional-de-vacinacao/idoso e http://portalms.saude.gov.br/acoes-e-programas/vacinacao/calendario-nacional-de-vacinacao acessados em 20/05/2018.',
+    tags: ['saúde coletiva', 'imunização', 'saúde do idoso']
+  },
+  {
+    id: 'tp2019-115',
+    module: 'Saúde Coletiva',
+    text: 'Vinte pessoas foram atendidas em uma Unidade de Emergência com histórico de diarreia, náuseas, vômitos, dor abdominal e febre há poucas horas. O médico plantonista identificou que todas participaram de um almoço de confraternização, oferecido em restaurante, tendo como cardápio churrasco com carnes variadas e maionese.\n\nConsiderando esse contexto, uma das condutas do médico deverá ser:',
+    options: [
+      '(A) Encaminhar os pacientes para a Vigilância Sanitária para que realizem a formalização da notificação.',
+      '(B) Orientar para prestarem queixa policial para investigação do surto, sendo esta a autoridade responsável pela investigação e intervenção no estabelecimento.',
+      '(C) Notificar o serviço de vigilância em saúde (Vigilância Epidemiológica e/ou Vigilância Sanitária).',
+      '(D) Investigar as causas do surto junto ao órgão federal de saúde, para embasar o processo contra o restaurante.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Surto de doença transmitida por alimentos é de notificação compulsória imediata. O médico deve notificar a vigilância em saúde (epidemiológica e/ou sanitária), responsável pela investigação do surto e pelas medidas no estabelecimento.',
+    commentary: 'A notificação é dever do profissional, não do paciente. A polícia não é a autoridade sanitária. A investigação não é feita pelo médico junto ao órgão federal para processar o restaurante.',
+    reference: 'Brasil, Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância Epidemiológica. Manual integrado de vigilância, prevenção e controle de doenças transmitidas por alimentos/ Ministério da saúde, secretaria de vigilância em saúde. Brasília: editora do Ministério da Saúde, 2010.',
+    tags: ['saúde coletiva', 'vigilância', 'doenças transmitidas por alimentos']
+  },
+  {
+    id: 'tp2019-116',
+    module: 'Saúde Coletiva',
+    text: 'A Norma Regulamentadora nº 32, lançada pelo Ministério do Trabalho por meio da Portaria nº 485/2005, estabelece as diretrizes básicas para a implementação de medidas de proteção e segurança à saúde dos trabalhadores nos serviços de saúde.\n\nEm relação ao uso dos Equipamentos de Proteção Individual (EPI), é correto afirmar que:',
+    options: [
+      '(A) O uso de luvas substitui o processo de lavagem das mãos, trazendo agilidade e maior segurança durante a assistência à saúde, principalmente se o trabalhador estiver com feridas ou lesões nos membros superiores.',
+      '(B) Os EPIs devem ser fornecidos gratuitamente pelo empregador; os trabalhadores não devem deixar o local de trabalho com eles e aqueles com possibilidade de exposição a agentes biológicos devem utilizar vestimenta de trabalho adequada e em condições de conforto.',
+      '(C) Descartáveis ou não, deverão estar à disposição em número suficiente nos postos de trabalho, de forma que seja garantido o imediato fornecimento ou reposição, ficando sob responsabilidade do trabalhador repor o EPI quando esse deixar de seguir as normas de biossegurança.',
+      '(D) O trabalhador que realiza atividades em áreas onde existam fontes de radiações ionizantes deverá utilizar o dosímetro, o qual deverá estar calibrado e enviado para leitura em até 48 horas na ocorrência ou suspeita de exposição acidental.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A NR 32 determina que os EPIs sejam fornecidos gratuitamente pelo empregador, que os trabalhadores não deixem o local de trabalho com EPIs ou vestimentas usadas e que os expostos a agentes biológicos usem vestimenta adequada e confortável.',
+    commentary: 'Luvas não substituem a higiene das mãos. A reposição de EPI é responsabilidade do empregador. As regras de dosimetria descritas na alternativa D estão incorretas.',
+    reference: 'BRASIL. Ministério do Trabalho. NR 32 – Segurança e saúde no trabalho em serviços de saúde. Disponível em: http://www.guiatrabalhista.com.br/legislacao/nr/nr32.htm 9 21',
+    tags: ['saúde coletiva', 'saúde do trabalhador', 'biossegurança']
+  },
+  {
+    id: 'tp2019-117',
+    module: 'Saúde Coletiva',
+    text: 'O financiamento do Sistema Único de Saúde é feito por meio de recursos oriundos das seguintes fontes:',
+    options: [
+      '(A) Orçamento da Seguridade Social, impostos de estados e municípios.',
+      '(B) Fundo Nacional de Saúde e Percentual de Renda em eventos esportivos.',
+      '(C) Assembleia Legislativa e Impostos pagos pelas empresas.',
+      '(D) Ministério da Saúde e Contribuição Provisória sobre Movimentação Financeira (CPMF).'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pela Constituição e pela Lei 8.080/1990, o SUS é financiado com recursos do orçamento da Seguridade Social da União, além de recursos próprios de estados e municípios (impostos e transferências).',
+    commentary: 'Eventos esportivos, assembleias legislativas e a CPMF (extinta em 2007) não são as fontes de financiamento do SUS.',
+    reference: 'https://viniciusmaiasilva.jusbrasil.com.br/artigos/342767224/financi amento-do-sistema-unico-de-saude',
+    tags: ['saúde coletiva', 'SUS', 'financiamento']
+  },
+  {
+    id: 'tp2019-118',
+    module: 'Saúde Coletiva',
+    text: 'Quanto aos segmentos sociais que compõem o Conselho Nacional de Saúde (CNS), a alternativa correta de acordo com a lei 8.142/90 é:',
+    options: [
+      '(A) 50% de usuário do SUS, 30% de trabalhadores do SUS e 20% de gestores/prestadores de serviço de saúde.',
+      '(B) 30% de usuário do SUS, 30% de trabalhadores do SUS e 40% de gestores/prestadores de serviço de saúde.',
+      '(C) 25% de usuário do SUS, 25% de trabalhadores do SUS e 50% de gestores/prestadores de serviço de saúde.',
+      '(D) 50% de usuário do SUS, 25% de trabalhadores do SUS e 25% de gestores/prestadores de serviço de saúde.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A Lei 8.142/1990 estabelece a paridade nos conselhos de saúde: 50% de representantes de usuários e 50% divididos entre os demais segmentos — 25% de trabalhadores da saúde e 25% de gestores e prestadores.',
+    commentary: 'As demais distribuições não respeitam a paridade dos usuários.',
+    reference: 'Página do Conselho Nacional de Saúde – ministério da saúde, https://conselho.saude.gov.br/apresentacao/composicao.htm Lei 8.142/90, 28/12/90 / Instituto de Métrica e Avaliação em Saúde. Estudo de Carga de Doença Global: gerando evidências, informando políticas de saúde. Seattle, WA: IHME, 2013.',
+    tags: ['saúde coletiva', 'SUS', 'controle social']
+  },
+  {
+    id: 'tp2019-119',
+    module: 'Saúde Coletiva',
+    text: 'No período prévio à implantação do Sistema Único de Saúde (SUS), podemos afirmar que, em relação ao acesso aos serviços de saúde:',
+    options: [
+      '(A) Pessoas estrangeiras só conseguiam atendimento nos serviços de saúde das entidades filantrópicas.',
+      '(B) Todos os cidadãos brasileiros poderiam acessar gratuitamente os serviços de saúde dos hospitais conveniados às caixas de aposentadoria e pensão.',
+      '(C) Os trabalhadores não formais tinham garantido o acesso aos serviços dos prestadores de saúde do sistema complementar gratuitamente.',
+      '(D) Apenas os trabalhadores com vínculo empregatício tinham direito à assistência do Instituto Nacional de Assistência Médica da Previdência Social.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Antes do SUS, a assistência médica pública era vinculada à Previdência Social: apenas trabalhadores com carteira assinada (contribuintes) e seus dependentes tinham acesso ao INAMPS. Os demais dependiam de serviços filantrópicos, do pagamento direto ou das ações do Ministério da Saúde.',
+    commentary: 'Não havia acesso universal e gratuito. Trabalhadores informais não tinham garantia de assistência, e estrangeiros não eram restritos às filantrópicas.',
+    reference: 'Souza R R. - O Sistema Público de Saúde Brasileiro - MS, Brasília - DF. Coordenação-Geral de Documentação e Informação/SAA/SE Ministério da Saúde, ed. MS; 2002.',
+    tags: ['saúde coletiva', 'história do SUS']
+  },
+  {
+    id: 'tp2019-120',
+    module: 'Saúde Coletiva',
+    text: 'Estudante, 20 anos, comparece ao serviço de pronto atendimento ginecológico solicitando realização de testes sorológicos para doenças sexualmente transmissíveis. Na avaliação inicial, estava bastante ansiosa e, após hesitação inicial, referiu queixas depressivas há três meses, desde quando foi vítima de violência sexual em uma festa. Refere que estava embriagada, mas que se lembra sobre o evento e que ficou envergonhada quando acordou no local e notou o que havia ocorrido. Não procurou atendimento médico em um primeiro momento e nem contou a ninguém sobre o fato, com medo de julgamentos. Refere que já menstruou, mas que se sente constantemente triste e ansiosa, com medo de sair de casa, queda no rendimento acadêmico, com dificuldade de interagir com colegas e familiares, insônia e estar assustando-se com facilidade. Conta ainda que, quando dorme, frequentemente tem pesadelos e que se sente constantemente invadida por lembranças do evento.\n\nA hipótese diagnóstica mais provável é de transtorno:',
+    options: [
+      '(A) depressivo maior',
+      '(B) do estresse pós-traumático',
+      '(C) de estresse agudo',
+      '(D) de ansiedade generalizada'
+    ],
+    correctAnswer: 1,
+    explanation: 'Após um evento traumático (violência sexual), há mais de 1 mês: revivescência (pesadelos e lembranças intrusivas), evitação (medo de sair de casa), hiperexcitabilidade (sobressalto, insônia) e prejuízo funcional. O quadro é transtorno de estresse pós-traumático.',
+    commentary: 'O transtorno de estresse agudo dura menos de 1 mês. O transtorno depressivo maior e o TAG não explicam as intrusões ligadas ao trauma.',
+    reference: 'Organização Mundial da Saúde. CID-10 Classificação Estatística Internacional de Doenças e Problemas Relacionados à Saúde; 1997. / Dalgalarrondo P. Psicopatologia e semiologia dos transtornos mentais – 2a edição – Porto Alegre: Artmed, 2008. 9 23',
+    tags: ['psiquiatria', 'violência sexual', 'TEPT']
   }
 ];

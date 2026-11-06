@@ -1934,5 +1934,333 @@ export const CLINICA_QUESTIONS: Question[] = [
     commentary: 'Comentários sobre a resposta correta:\n(B) A cetoacidose diabética (CAD) causa desidratação profunda decorrente de diurese osmótica maciça. O passo prioritário inicial do tratamento é a reposição volêmica imediata com soro fisiológico e a dosagem do potássio sérico. É imperativo conhecer os níveis de potássio antes de iniciar a infusão de insulina regular, pois a insulina desvia o potássio para o intracelular, o que pode desencadear hipocalemia severa e arritmias cardíacas fatais se os níveis basais forem menores que 3,3 mEq/L.\n\nComentários sobre os distratores:\n(A) O uso de bicarbonato na CAD é de exceção e reservado a casos de acidemia extrema com pH < 6,9 pelo risco de hipocalemia refratária, edema cerebral e acidose liquórica paradoxal.\n(C) Embora a insulina regular intravenosa seja o tratamento específico para a CAD, ela não deve anteceder a expansão volêmica vigorosa inicial e deve aguardar a confirmação de que o potássio sérico está > 3,3 mEq/L.\n(D) A insulina subcutânea de ação intermediária (NPH) não possui papel terapêutico útil no manejo de urgência de crises hiperglicêmicas agudas no pronto-socorro.',
     reference: 'American Diabetes Association (ADA) Guidelines on Hyperglycemic Crises in Adult Patients with Diabetes. | HAJJAR, Ludhmila Abrahão; BRANDÃO NETO, Rodrigo Antonio (eds.). Medicina de emergência: abordagem prática. 19. ed. Santana de Parnaíba (SP): Manole, 2025. Note: esta questão foi originalmente anulada no gabarito oficial por imprecisão de opções, porém clinicamente a hidratação associada à dosagem de potássio permanece como a conduta primária obrigatória.',
     tags: ['Endocrinologia', 'Emergência']
+  },
+  // ---- Teste de Progresso 2019 (gabarito oficial) ----
+  {
+    id: 'tp2019-21',
+    module: 'Clínica Médica',
+    image: '/images/tp2019-21.PNG',
+    text: 'Homem, 82 anos, 60kg, com hipertensão arterial sistêmica e diabetes melitus 2, vem ao pronto-socorro referindo dor torácica há um dia com duração de mais ou menos 20 minutos. Relata também dispneia ao deitar, edema nas pernas e diminuição da diurese. Refere ter “problema de coração”. Faz uso de furosemida 40mg (2x/dia), carvedilol 6,25mg (2x/dia), enalapril 20mg (2x/dia). Exame físico: estase jugular, edema de membros inferiores 2+/4+, PA = 140 x 90 mmHg e boa perfusão periférica. Eletrocardiograma a seguir:\n\nQual exame deve ser solicitado nesse momento e qual a primeira medicação a ser realizada?',
+    options: [
+      '(A) Troponina; trombolítico.',
+      '(B) Eletrólitos; furosemida.',
+      '(C) Troponina; furosemida.',
+      '(D) Eletrólitos; gluconato de cálcio.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Idoso com insuficiência cardíaca descompensada, em uso de IECA em dose alta e com oligúria: o ECG mostra ondas T apiculadas, sugestivas de hipercalemia.\n\nCom alteração eletrocardiográfica, o gluconato de cálcio deve ser feito antes mesmo do resultado do potássio, para estabilizar a membrana miocárdica e prevenir arritmias. Os eletrólitos confirmam o diagnóstico.',
+    commentary: 'Trombolítico não tem indicação sem supradesnivelamento de ST. A furosemida ajuda a tratar a congestão e a eliminar potássio, mas não é a primeira medida diante de alteração eletrocardiográfica por hipercalemia.',
+    reference: 'Suporte Avançado de Vida em Insuficiência Cardíaca: SAVIC. Ed. Canesin MF, Oliveira Jr MT, Pereira-Barretto AC. 3a edição, São Paulo: Editora Manole Ltda, 2014, pp 37-44. / Emergências Clínicas: abordagem prática. Ed. Martins HS, Brandão Neto RA, Scalabrini Neto A, Velasco IT. 9a edição: Editora Manole Ltda, 2014, pp 1130-1135.',
+    tags: ['cardiologia', 'hipercalemia', 'insuficiência cardíaca']
+  },
+  {
+    id: 'tp2019-22',
+    module: 'Clínica Médica',
+    text: 'Mulher, 70 anos, está em observação no Pronto-Socorro devido a febre, tosse com expectoração purulenta e dor ventilatório-dependente em região posterior do hemitórax esquerdo há três dias. Na admissão, estava com FC = 98 bpm, temperatura axilar = 39ºC, FR = 22 ipm e PA = 90 x 58 mmHg. Evoluiu com redução do débito urinário < 0,5 mL/kg/h por 24h e aumento proporcionado dos níveis séricos de ureia e creatinina. O sedimento de urina revelou cilindros granulosos e epiteliais. A osmolaridade urinária está normal.\n\nA causa provável da insuficiência renal aguda é:',
+    options: [
+      '(A) Lesão pré-renal, queda da filtração renal por sepse.',
+      '(B) Lesão renal, necrose tubular aguda por sepse.',
+      '(C) Lesão pré-renal, queda da filtração renal por hipotensão.',
+      '(D) Lesão renal, nefrite intersticial por pielonefrite aguda.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Idosa com pneumonia e hipotensão (sepse de foco pulmonar) evoluindo com oligúria, elevação proporcional de ureia e creatinina, cilindros granulosos e epiteliais e osmolaridade urinária normal (sem concentração).\n\nEsse padrão indica lesão renal intrínseca — necrose tubular aguda por sepse.',
+    commentary: 'Na lesão pré-renal, a relação ureia/creatinina é desproporcionalmente elevada e a urina é concentrada, com sedimento pobre. Não há dados de pielonefrite.',
+    reference: 'http://www.uptodate.com/contents/overview-of-the-management-of-acute-kidney-injury-acute-renal-failure',
+    tags: ['nefrologia', 'lesão renal aguda', 'sepse']
+  },
+  {
+    id: 'tp2019-23',
+    module: 'Clínica Médica',
+    image: '/images/tp2019-23.PNG',
+    text: 'Homem, 80 anos, admitido para avaliação no Pronto-Socorro por lombalgia intensa há duas horas. Nega história de trauma ou esforço. Queixa-se de dor localizada em região lombar alta, sem irradiação, sem outros sintomas. Histórico de nefrolitíase, gota e doença pulmonar obstrutiva crônica (DPOC) grave, com inúmeras crises de exacerbação, com necessidade de internação e corticoterapia sistêmica. Exame físico: dor à palpação local e à mobilização da coluna, porém com amplitude de movimento preservada. Radiografia de coluna a seguir:\n\nDiante desse quadro, o diagnóstico é:',
+    options: [
+      '(A) Osteoartrite',
+      '(B) Hérnia de disco vertebral',
+      '(C) Osteoporose',
+      '(D) Espondilodiscite'
+    ],
+    correctAnswer: 2,
+    explanation: 'Idoso com DPOC grave e uso repetido de corticoide sistêmico, com lombalgia súbita sem trauma: os dois principais fatores de risco para fratura vertebral por fragilidade. A radiografia mostra corpos vertebrais hipertransparentes e acunhamento vertebral — osteoporose com fratura por compressão.',
+    commentary: 'Osteoartrite causa osteófitos e redução de espaço articular. A hérnia de disco não é visível em radiografia e cursa com radiculopatia. A espondilodiscite cursa com febre e destruição do disco.',
+    reference: 'Lindsay R, Cosman F. Osteoporosis. In: Kasper D, Fauci A, Hauser S, Longo D, Jameson J, Loscalzo J. eds. Harrison\'s Principles of Internal Medicine, 19e. New York, NY: McGraw-Hill; 2015.',
+    tags: ['reumatologia', 'osteoporose', 'corticoterapia']
+  },
+  {
+    id: 'tp2019-24',
+    module: 'Clínica Médica',
+    image: '/images/tp2019-24.PNG',
+    text: 'Homem, 53 anos, lavrador, apresenta há oito meses lesão indolor e de crescimento lento, medindo 3cm, na região bucinadora esquerda (figura a seguir), associada a manchas hipercrômicas em áreas expostas ao sol.\n\nO diagnóstico, o tratamento e o prognóstico são:',
+    options: [
+      '(A) Carcinoma basocelular; excisão cirúrgica com margens de segurança; bom prognóstico por não causar metástases.',
+      '(B) Carcinoma basocelular; eletrocoagulação; bom prognóstico por não causar metástases.',
+      '(C) Carcinoma espinocelular; excisão cirúrgica com margens de segurança; prognóstico reservado, pois pode causar metástases.',
+      '(D) Carcinoma espinocelular; eletrocoagulação; prognóstico reservado, pois pode causar metástases.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Lesão nodular perolada, com telangiectasias e crescimento lento em área fotoexposta de lavrador: carcinoma basocelular nodular.\n\nO tratamento de escolha é a excisão cirúrgica com margens de segurança e análise histológica. O prognóstico é muito bom, pois o CBC raramente metastatiza, embora possa ser localmente destrutivo.',
+    commentary: 'A eletrocoagulação não permite avaliação de margens e não é a opção indicada para lesão desse tamanho na face. O carcinoma espinocelular tende a ser ceratósico, ulcerado e de crescimento mais rápido.',
+    reference: 'Belda W, Di Chiachio N, Criado PR. Tratado de Dermatologia, Ed. Atheneu, 2015. / Sampaio SAP; Rivitti EA. Dermatologia - edição 2011 - São Paulo: Artes médicas. 9 5',
+    tags: ['dermatologia', 'câncer de pele', 'carcinoma basocelular']
+  },
+  {
+    id: 'tp2019-25',
+    module: 'Clínica Médica',
+    text: 'Homem, 47 anos, dá entrada na Unidade de Emergência trazido por familiares, com história de etilismo crônico. Encontrava-se acamado há dois dias por queda do estado geral, fraqueza generalizada e anorexia. Não apresentava febre. Hoje, iniciou confusão mental, alucinações, ideação paranoide e abalos musculares tônico-clônicos generalizados fugazes, com recuperação espontânea, recobrando a consciência entre as crises. Exame físico: PA = 150/90 mmHg; FC = 120 bpm; T = 37,6ºC; FR = 22 ipm, ansioso, agitado, confuso, desorientado, com sudorese profusa e tremor intenso das mãos. Glicemia capilar = 75 mg/dL.\n\nO diagnóstico clínico mais provável é:',
+    options: [
+      '(A) Crise epiléptica do paciente etilista crônico',
+      '(B) Síndrome colinérgica',
+      '(C) Delirium tremens',
+      '(D) Síndrome de Wernicke-Korsakoff'
+    ],
+    correctAnswer: 2,
+    explanation: 'Etilista crônico com abstinência (acamado há 2 dias) apresenta confusão, alucinações, crises convulsivas, hiperatividade autonômica intensa (taquicardia, hipertensão, febre baixa, sudorese) e tremor: delirium tremens, a forma mais grave da síndrome de abstinência alcoólica, em geral 48–72 horas após a última dose.\n\nO tratamento envolve benzodiazepínicos, tiamina antes da glicose e suporte.',
+    commentary: 'Uma crise epiléptica isolada não explica o delirium e a hiperatividade autonômica. A síndrome colinérgica cursa com miose, bradicardia e secreções. A encefalopatia de Wernicke cursa com ataxia, oftalmoplegia e confusão, sem hiperatividade autonômica.',
+    reference: 'Condutas em urgências e emergências da Faculdade de Medicina de Botucatu-UNESP / editores Regina Helena Garcia Martins, Silvana Artioli Schellini. - Botucatu: UNESP, Faculdade de Medicina de Botucatu e Pró-Reitoria de Graduação da UNESP: Cultura acadêmica, 2014. / Hoffman RS, Weinhouse GL. Management of moderate and severe alcohol withdrawal. In: Post TW, ed. UpToDate. Waltham, MA: UpToDate Inc. Disponível online em: https://www.uptodate.com (Último acesso em 25 de julho de 2019.)',
+    tags: ['clínica médica', 'álcool', 'emergência']
+  },
+  {
+    id: 'tp2019-26',
+    module: 'Clínica Médica',
+    text: 'Mulher, 45 anos, portadora de Doença de Crohn com acometimento ileal, apresenta-se com queixas de mal-estar, fadiga, astenia, tontura e palpitações de caráter progressivo. Exame físico: emagrecida, descorada 3+/4+, glossite e queilite angular. Hb = 6,8 g/dL (VR > 12,5), Ht = 22% (VR > 38%), VCM = 116 fL (VR = 80 - 100), HCM = 38 pg (VR = 28 - 34), RDW = 14,5% (VR < 15,5%), leucócitos = 2.800 células/mm³ (VR = 3.500 - 10.500), plaquetas = 110.000/mm³ (VR = 150.000 - 450.000).\n\nA causa mais provável da anemia nesta paciente é:',
+    options: [
+      '(A) Anemia por doença crônica',
+      '(B) Deficiência de ferro',
+      '(C) Síndrome mielodisplásica',
+      '(D) Deficiência de vitamina B12'
+    ],
+    correctAnswer: 3,
+    explanation: 'Doença de Crohn com acometimento ileal compromete a absorção de vitamina B12 (absorvida no íleo terminal). A anemia é macrocítica (VCM 116), com glossite, queilite e pancitopenia, compatíveis com anemia megaloblástica por deficiência de B12.\n\nObservação: o enunciado traz \'Hb = 6,8 g/L\', o que é um erro de digitação da prova — o valor é g/dL.',
+    commentary: 'A deficiência de ferro e a anemia de doença crônica são micro ou normocíticas. A mielodisplasia é diagnóstico de exclusão e menos provável nesse contexto.',
+    reference: 'Tratado de Clínica Médica - Obra Completa - 2 Vols. - 3ª Ed. 2015. (Cód: 9205200) Lopes, Antonio Carlos - Roca – Brasil.',
+    tags: ['hematologia', 'anemia megaloblástica', 'doença de crohn']
+  },
+  {
+    id: 'tp2019-27',
+    module: 'Clínica Médica',
+    image: '/images/tp2019-27.PNG',
+    text: 'Mulher, 25 anos, procura a Unidade Básica de Saúde por prurido no corpo todo há 10 dias. Trabalha em fábrica de peças para automóveis, manipulando graxa e solventes. Tem um filho de três anos que passa o dia na creche e que também está se coçando muito, principalmente à noite. As lesões são pápulas eritematosas, algumas encimadas por crostículas, outras em arranjo linear, com muita escoriação, distribuindo-se no abdome, mamas, axilas e face interna dos braços (foto a seguir).\n\nO diagnóstico e os achados clínicos que o definem são:',
+    options: [
+      '(A) Dermatofitose; caso semelhante em criança da família que frequenta creche.',
+      '(B) Escabiose; pápulas escoriadas e túneis, prurido noturno e topografia.',
+      '(C) Dermatite atópica; prurido, escoriações e topografia das lesões.',
+      '(D) Dermatite de contato; histórico profissional, características e distribuição das lesões.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Prurido intenso, pior à noite, com pápulas escoriadas e túneis em abdome, mamas, axilas e face interna dos braços, e caso semelhante em contactante (filho): escabiose, causada pelo Sarcoptes scabiei.\n\nO tratamento deve ser feito em todos os contactantes ao mesmo tempo.',
+    commentary: 'A dermatofitose forma lesões anulares descamativas. A dermatite atópica é crônica e flexural, sem túneis. A dermatite de contato ocupacional acometeria as áreas de contato com graxa e solventes (mãos e antebraços).',
+    reference: 'Sampaio SAP; Rivitti EA. Dermatologia - edição 2011 - São Paulo: Artes médicas. / Belda W, Di Chiachio N, Criado PR. Tratado de Dermatologia, Ed. Atheneu, 2015. / BOLOGNIA, J.; JORIZZO, J & RAPINI, RP. Dermatology, Mosby: 2nd ed, 2014.',
+    tags: ['dermatologia', 'escabiose', 'ectoparasitoses']
+  },
+  {
+    id: 'tp2019-28',
+    module: 'Clínica Médica',
+    text: 'Homem, 75 anos, hipertenso e diabético do tipo 2, procura Unidade de Emergência com queixa de ortopneia, edema de membros inferiores e cansaço. Refere uso de enalapril 10mg 12/12h, furosemida 40mg/dia e AAS 100mg/dia. Foi administrado furosemida por via endovenosa sem melhora do quadro, mantendo estase jugular, edema de membros inferiores e crepitação pulmonar bilateral até ápice. FR = 35 ipm, saturação de O₂ = 89% com fração inspirada de O₂ = 10 L/min em máscara com reservatório, FC = 92 bpm, PA = 190 x 100 mmHg e tempo de enchimento capilar de 2 segundos.\n\nA medicação mais adequada indicada nesse momento é:',
+    options: [
+      '(A) Dobutamina',
+      '(B) Carvedilol',
+      '(C) Nitroprussiato',
+      '(D) Captopril'
+    ],
+    correctAnswer: 2,
+    explanation: 'Edema agudo de pulmão hipertensivo (PA 190 x 100) em insuficiência cardíaca perfil B (quente e úmido), sem resposta ao diurético.\n\nO vasodilatador endovenoso arterial e venoso — nitroprussiato — reduz pré e pós-carga, alivia a congestão e controla a pressão rapidamente.',
+    commentary: 'Dobutamina é indicada no paciente frio (baixo débito). Carvedilol não deve ser iniciado na descompensação aguda. Captopril oral age mais lentamente e é introduzido após a estabilização.',
+    reference: 'Suporte Avançado de Vida em Insuficiência Cardíaca: SAVIC. Ed. Canesin MF, Oliveira Jr MT, Pereira-Barretto AC. 3a edição, São Paulo: Editora Manole Ltda, 2014, pp 09-14 e 37-44.',
+    tags: ['cardiologia', 'insuficiência cardíaca', 'edema agudo de pulmão']
+  },
+  {
+    id: 'tp2019-29',
+    module: 'Clínica Médica',
+    text: 'Mulher, 40 anos, apresenta há dois meses poliartrite simétrica em articulações das mãos e punhos, aditiva, com rigidez matinal superior a uma hora. A radiografia de mãos apresenta osteopenia periarticular, erosões marginais e cistos subcondrais em articulações metacarpofalangeanas e interfalangeanas proximais. Exames laboratoriais com anemia normocítica normocrômica, elevação de provas inflamatórias e fator reumatoide negativo.\n\nO diagnóstico mais provável é:',
+    options: [
+      '(A) Artrite Reumatoide',
+      '(B) Lúpus Eritematoso Sistêmico',
+      '(C) Osteoartrite',
+      '(D) Fibromialgia'
+    ],
+    correctAnswer: 0,
+    explanation: 'Poliartrite simétrica, aditiva, de pequenas articulações das mãos e punhos, rigidez matinal maior que uma hora, osteopenia periarticular e erosões marginais à radiografia, com provas inflamatórias elevadas: artrite reumatoide.\n\nO fator reumatoide negativo não exclui o diagnóstico, pois cerca de 25% dos pacientes são soronegativos; o anti-CCP pode ajudar.',
+    commentary: 'O lúpus causa artrite não erosiva. A osteoartrite acomete interfalangeanas distais, com osteófitos e rigidez curta. A fibromialgia não tem sinovite nem alterações radiográficas.',
+    reference: 'Protocolo Clínico e Diretrizes Terapêuticas. Ministério de Saúde. Portaria SAS/MS nº 710, de 27 de junho de 2013, retificada em 06 de março de 2014 e 10 de junho de 2014. / Altman R, Alarcón G, Appelrouth D, Bloch D, Borenstein D, Brandt K, et al. The American College of Rheumatology criteria for the classification Andre porting of osteoarthritis of the hand. Arthritis Rheum. 1990;33(11):1601-10. / Wolfe F, Clauw DJ, Fitzcharles MA, Goldenberg DL, Katz RS, Mease P, et al. The American College of Rheumatology preliminary diagnostic criteria for fibromyalgia and measurement of symptom severity. Arthritis Care Res (Hoboken). 2010;62:600-10. 9 7',
+    tags: ['reumatologia', 'artrite reumatoide']
+  },
+  {
+    id: 'tp2019-30',
+    module: 'Clínica Médica',
+    text: 'Homem, 50 anos, queixa-se de cefaleia diária nas últimas duas semanas. Relata dois episódios diários de dor, um deles ocorrendo sempre no período noturno, despertando-o do sono. A dor é de grande intensidade, no lado direito da face e crânio, com duração de uma hora, acompanhada de lacrimejamento e hiperemia do olho direito e congestão nasal. Exame neurológico normal.\n\nO diagnóstico mais provável é:',
+    options: [
+      '(A) Glaucoma de ângulo fechado',
+      '(B) Sinusite etmoidal',
+      '(C) Neuralgia idiopática persistente',
+      '(D) Cefaleia em salvas'
+    ],
+    correctAnswer: 3,
+    explanation: 'Homem com crises de dor unilateral intensa periorbitária de cerca de uma hora, uma ou duas vezes ao dia, despertando-o à noite, com lacrimejamento, hiperemia ocular e congestão nasal ipsilaterais: cefaleia em salvas, uma cefaleia trigêmino-autonômica.\n\nA crise é tratada com oxigênio a 100% ou triptano subcutâneo.',
+    commentary: 'O glaucoma agudo cursa com baixa visual e olho vermelho persistente, sem padrão em crises diárias. A sinusite causa dor contínua com febre e secreção. A neuralgia idiopática persistente não tem sinais autonômicos.',
+    reference: 'Headache Classification Committee of the International Headache Society (IHS). The international classification of headache disorders, 3rd edition. Cephalalgia 2018, 38(1): 1- 211. / Speciali JG, Kowacs F, Jurno ME et al. Protocolo nacional para diagnóstico e manejo das cefaleias nas unidades de urgência do brasil. ABN, 2018. / Paço J, Sousa MT. Patologia naso-sinusal. Círculo Médico, 2008. Disponível em: repositorio.hff.min-saude.pt. Acesso em: 05/07/2019. / Gronseth G, Cruccu G, Alksne J, Argoff C, Brainin M, Burchiel K, Nurmikko T, Zakrzewska JM. Practice parameter: the diagnostic evaluation and treatment of trigeminal neuralgia (an evidence-based review): report of the Quality Standards Subcommittee of the American Academy of Neurology and the European Federation of Neurological Societies. Neurology 2008;71: 1183– 90. / Conselho Brasileiro de Oftalmologia. Glaucoma. Disponível em: http://www.cbo.com.br/pacientes/doencas/doencas_glaucoma.htm. Acesso em: 05/07/2019.',
+    tags: ['neurologia', 'cefaleias']
+  },
+  {
+    id: 'tp2019-31',
+    module: 'Clínica Médica',
+    image: '/images/tp2019-31.PNG',
+    text: 'Homem, 68 anos, há 20 dias apresentou mal-estar, tosse com expectoração amarelada e febre de até 39°C. Foi tratado com amoxicilina e apresentou melhora do quadro. Há dois dias, surgiu dor no hemitórax direito, ventilatório-dependente, sem irradiação e sem fatores de melhora. Procurou novamente o serviço médico. Exame físico: bom estado geral, hidratado, eupneico. PA = 130 x 80 mmHg, SatO₂ em ar ambiente = 94%, FR = 14 ipm, FC = 100 bpm, T = 36,5°C. Bulhas rítmicas e normofonéticas sem sopros. Expansibilidade diminuída, redução do frêmito toracovocal, macicez à percussão e diminuição do murmúrio vesicular no terço inferior do hemitórax direito. Radiografia de tórax:\n\nA conduta mais adequada é:',
+    options: [
+      '(A) Drenagem torácica',
+      '(B) Tratamento com analgésico',
+      '(C) Toracocentese diagnóstica',
+      '(D) Tratamento com novo antibiótico'
+    ],
+    correctAnswer: 2,
+    explanation: 'Após pneumonia tratada, o paciente desenvolve dor pleurítica e sinais de derrame pleural à direita (macicez, murmúrio e frêmito reduzidos), confirmado à radiografia.\n\nTodo derrame parapneumônico significativo deve ser puncionado (toracocentese diagnóstica) para diferenciar derrame não complicado, complicado ou empiema — o que define a necessidade de drenagem.',
+    commentary: 'A drenagem antes da análise do líquido seria precipitada. Analgesia isolada ou troca de antibiótico não esclarecem a natureza do derrame.',
+    reference: 'Marchi, E; Vaz MAC, Fernandes, PMP; Derrames parapneumônicos e empiema. In: Vargas, F; Teixeira, L, Marchi, E. Derrame pleural. São Paulo, Roca, 2004.',
+    tags: ['pneumologia', 'derrame pleural', 'pneumonia']
+  },
+  {
+    id: 'tp2019-32',
+    module: 'Clínica Médica',
+    image: '/images/tp2019-32.PNG',
+    text: 'Homem, 60 anos, está em tratamento para psoríase sem controle adequado da doença. Há oito meses iniciou uso de imunobiológico (infliximabe) e obteve significativa melhora. Há três semanas começou a apresentar febre e tosse seca. Foi à Unidade de Pronto Atendimento há uma semana e foi tratado com azitromicina, sem melhora. Refere perda do apetite e diminuição do peso (3kg) no período. Exame físico: bom estado geral, hidratado, taquipneico e afebril. Exame respiratório, cardiovascular e abdominal sem alterações. FC = 90 bpm; PA = 120 x 70 mmHg, T = 38,6ºC. Radiografia de tórax:\n\nA hipótese diagnóstica mais provável é:',
+    options: [
+      '(A) Tuberculose miliar',
+      '(B) Histoplasmose disseminada',
+      '(C) Broncopneumonia',
+      '(D) Paracoccidiodomicose'
+    ],
+    correctAnswer: 0,
+    explanation: 'Paciente em uso de anti-TNF (infliximabe), que aumenta muito o risco de reativação de tuberculose, com febre, tosse seca, perda de peso, sem resposta à azitromicina, e radiografia com infiltrado micronodular difuso (padrão miliar): tuberculose miliar.\n\nPor isso, rastrear e tratar infecção latente antes de iniciar imunobiológicos é obrigatório.',
+    commentary: 'A broncopneumonia não tem esse padrão radiológico nem evolução subaguda. Não há dados epidemiológicos para histoplasmose ou paracoccidioidomicose.',
+    reference: 'Manual de Controle da Tuberculose – Ministério da Saúde – 2011.',
+    tags: ['pneumologia', 'tuberculose', 'imunobiológicos']
+  },
+  {
+    id: 'tp2019-33',
+    module: 'Clínica Médica',
+    text: 'Mulher, 28 anos, refere dificuldade de concentração, sono não reparador, sensação de cansaço ao acordar e dor articular e muscular em membros superiores e inferiores há seis meses. Nega perda de peso, hiporexia e febre. Exame físico: pele e mucosa sem alterações, articulações ou músculos sem sinais inflamatórios, força muscular preservada e dor em tender points.\n\nO tratamento mais efetivo é:',
+    options: [
+      '(A) Anti-inflamatório não hormonal',
+      '(B) Atividade física aeróbica',
+      '(C) Agulhamento de tender points',
+      '(D) Anti-inflamatório hormonal'
+    ],
+    correctAnswer: 1,
+    explanation: 'Dor musculoesquelética difusa há mais de 3 meses, sono não reparador, fadiga e alteração cognitiva, com exame físico sem sinais inflamatórios e dor em pontos dolorosos: fibromialgia.\n\nO tratamento com melhor evidência é a atividade física aeróbica regular, associada a educação em dor e, se necessário, fármacos como amitriptilina ou duloxetina.',
+    commentary: 'Anti-inflamatórios (hormonais ou não) não têm eficácia na fibromialgia, que não é inflamatória. O agulhamento de pontos não tem evidência consistente.',
+    reference: 'Goldenberg, DL. Patient education: Fibromyalgia (Beyond the Basics) UpToDate 2018. / https://www.uptodate.com/contents/fibromyalgia-beyond-the-basics.',
+    tags: ['reumatologia', 'fibromialgia', 'dor crônica']
+  },
+  {
+    id: 'tp2019-34',
+    module: 'Clínica Médica',
+    text: 'Mulher, 30 anos, professora, foi encaminhada da Unidade de Emergência para a Unidade de Saúde da Família (USF), após ter sido atendida seis vezes no último mês por queixas de desconforto precordial, palpitações, falta de ar, sensação de desmaio e medo de estar tendo um ataque cardíaco. Os exames realizados na emergência estavam normais e as crises passavam após a injeção de benzodiazepínico. Na USF, a paciente diz estar com receio de ter crises na frente dos alunos. Nega uso de substâncias psicoativas.\n\nA opção farmacológica de primeira escolha é:',
+    options: [
+      '(A) Betabloqueador',
+      '(B) Antidepressivo',
+      '(C) Benzodiazepínico',
+      '(D) Estabilizador de humor'
+    ],
+    correctAnswer: 1,
+    explanation: 'Crises recorrentes e inesperadas de palpitações, dispneia, dor precordial e medo de morrer, com exames normais e ansiedade antecipatória: transtorno de pânico.\n\nA primeira escolha farmacológica são os antidepressivos (ISRS), associados à terapia cognitivo-comportamental.',
+    commentary: 'Benzodiazepínicos aliviam as crises, mas não devem ser a base do tratamento pelo risco de dependência. Betabloqueadores têm eficácia controversa. Estabilizadores de humor não têm indicação.',
+    reference: 'National Institute for National Care and Excellence (NICE). Managing panic disorder in primary care. Disponível em: https://pathways.nice.org.uk/pathways/panic-disorder#path=view%3A;pathways/panic-disorder/stepas-2-to-5-managing-panic=disorder-in-primary-care.xml&content=view-node%3Anodes-drug-treatment',
+    tags: ['psiquiatria', 'transtorno de pânico', 'atenção primária']
+  },
+  {
+    id: 'tp2019-35',
+    module: 'Clínica Médica',
+    text: 'Mulher, 25 anos, operada de fístula perianal há um ano, procura o ambulatório com queixa de diarreia líquida e cólica abdominal há 10 meses. Exame físico: pálida, emagrecida, com massa palpável e dolorosa em fossa ilíaca direita. Exame contrastado do trânsito intestinal com área de estenose do íleo terminal. A colonoscopia revelou úlcera de coloração avermelhada superficial em cólon ascendente, algumas erosões lineares entremeadas por mucosa normal em cólon transverso. A análise histopatológica mostrou intenso infiltrado inflamatório linfomononuclear constituindo formações granulomatosas sem material caseoso.\n\nO diagnóstico mais provável é:',
+    options: [
+      '(A) Doença celíaca',
+      '(B) Tuberculose intestinal',
+      '(C) Retocolite ulcerativa',
+      '(D) Doença de Crohn'
+    ],
+    correctAnswer: 3,
+    explanation: 'Mulher jovem com diarreia crônica, dor, massa em fossa ilíaca direita, doença perianal (fístula), estenose de íleo terminal, lesões descontínuas no cólon e granulomas não caseosos à biópsia: doença de Crohn.',
+    commentary: 'A retocolite ulcerativa é contínua, a partir do reto, restrita à mucosa e sem granulomas. A tuberculose intestinal tem granulomas caseosos. A doença celíaca acomete o delgado proximal, sem granulomas ou fístulas.',
+    reference: 'KASPER, Dennis L. et al. Medicina interna de Harrison. 19. ed. Porto Alegre: AMGH, 2017.',
+    tags: ['gastroenterologia', 'doença inflamatória intestinal']
+  },
+  {
+    id: 'tp2019-36',
+    module: 'Clínica Médica',
+    text: 'Mulher, 68 anos, é avaliada na Unidade de Pronto Atendimento com quadro febril agudo e dispneia, recebendo o diagnóstico de pneumonia. Não apresenta comorbidades, internações ou procedimentos invasivos recentes. Exame físico: FR = 32 irpm, PA = 100 / 65 mmHg, com desorientação têmporo-espacial.\n\nO plano terapêutico para o caso deve incluir:',
+    options: [
+      '(A) Internação hospitalar e terapia antimicrobiana com betalactâmico e macrolídeo.',
+      '(B) Observação no leito de retaguarda da UPA e terapia antimicrobiana com macrolídeo.',
+      '(C) Internação hospitalar e terapia antimicrobiana com macrolídeo.',
+      '(D) Alta para domicílio e terapia antimicrobiana com quinolona.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pneumonia em idosa com confusão mental, FR ≥ 30 e idade ≥ 65 anos: CURB-65 ≥ 3, que indica internação hospitalar.\n\nPara pneumonia comunitária internada fora da UTI, o esquema recomendado é β-lactâmico associado a macrolídeo (ou quinolona respiratória isolada).',
+    commentary: 'Observação na UPA ou alta domiciliar são inadequadas pela gravidade. Monoterapia com macrolídeo é reservada a pacientes ambulatoriais de baixo risco.',
+    reference: 'Welte T, Torres A, Nathwani D. Clinical and economic burden of community-acquired pneumonia amongadults in Europe. Thorax. 2012; 67(1):71-9. https://doi.org/10.1136/thx.2009.129502 / Eccles S, Pincus C, Higgins B, Woodhead M; Guideline Development Group. Diagnosisand management of communityand hospital acquired pneumonia in adults: summaryof NICE guidance. BMJ. 2014; 349: g6722. / https://doi.org/10.1136/bmj.g6722 / Arnold FW, Summersgill JT, Ramirez JA. Role of Atypical Pathogens in theEtiologyofCommunity-Acquired Pneumonia. Semin Respir Crit Care Med. 2016;37(6):819-828. https://doi. org/10.1055/s-0036-1592121 / Corrêa RA, Costa AN, Lundgren F, Michelin L, Figueiredo MR, Holanda M, Gomes M, Teixeira PJZ, Martins R, Silva R, Athanasio RA, Silva RM, Pereira MC. Recomendações para o manejo da pneumonia adquirida na comunidade 2018. J BrasPneumol. 2018;44(5):405 424.',
+    tags: ['pneumologia', 'pneumonia', 'infectologia']
+  },
+  {
+    id: 'tp2019-37',
+    module: 'Clínica Médica',
+    text: 'Mulher, 30 anos, procura Pronto Atendimento com história de agitação, perda de peso (5kg) e palpitações há 15 dias. Há dois dias houve piora dos sintomas, principalmente das palpitações. Exame físico: agitada, consciente e acianótica. Pele quente e úmida. T = 37,4°C. Pulso = 160 bpm, arrítmico; PA = 90 x 60 mmHg. Aumento da tireoide de três vezes e proptose ocular bilateral. ECG mostrou ritmo de fibrilação atrial.\n\nA hipótese diagnóstica mais provável e a conduta mais apropriada são:',
+    options: [
+      '(A) Tempestade tiroidiana; internar e medicar com antitiroidianos, betabloqueadores, corticoide.',
+      '(B) Crise de pânico; medicar com ansiolítico e encaminhar para avaliação psiquiátrica.',
+      '(C) Hipertiroidismo por doença de Graves; medicar com antitiroidiano e betabloqueador e encaminhar para especialista.',
+      '(D) Crise adrenérgica por feocromocitoma; internar para alfabloqueio e planejamento cirúrgico.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Hipertireoidismo (doença de Graves: bócio difuso e proptose) com disfunção orgânica grave: taquicardia de 160 bpm, fibrilação atrial, hipotensão e agitação. Esse quadro é a tempestade tireoidiana (crise tireotóxica), emergência com alta mortalidade.\n\nO tratamento é em ambiente hospitalar com tionamida (propiltiouracil ou metimazol), betabloqueador, corticoide e, depois, iodo.',
+    commentary: 'Tratar como Graves ambulatorial subestima a gravidade. A crise de pânico não explica bócio, proptose e FA. O feocromocitoma não cursa com bócio e proptose.',
+    reference: 'NAYAK, B & BURMAN, K. Thyrotoxicosis and thyroid storm. Endocrinol Metab Clin N Am 2006, 35:663-686.',
+    tags: ['endocrinologia', 'tireoide', 'emergência']
+  },
+  {
+    id: 'tp2019-38',
+    module: 'Clínica Médica',
+    text: 'Homem, 56 anos, com diabetes mellitus há 12 anos, está em uso de metformina 2g de liberação prolongada e gliclazida 120mg por dia. Exames laboratoriais: Hb glicada = 10,2%; glicemia de jejum = 190 mg/dL.\n\nA melhor conduta para esse caso é:',
+    options: [
+      '(A) Substituir a gliclazida por insulina regular no jantar.',
+      '(B) Aumentar a metformina para 3g/dia.',
+      '(C) Introduzir insulina NPH ao deitar.',
+      '(D) Reforçar modificação do estilo de vida e reavaliar em seis meses.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Diabético tipo 2 com HbA1c de 10,2% apesar de metformina e sulfonilureia em doses plenas: está muito acima da meta e precisa de intensificação.\n\nA conduta clássica é iniciar insulina basal (NPH ao deitar), mantendo os orais, e titular pela glicemia de jejum.',
+    commentary: 'Trocar a gliclazida por insulina regular no jantar não é o esquema inicial. A dose de 2 g/dia já é a máxima efetiva da metformina. Apenas reforçar o estilo de vida e reavaliar em 6 meses atrasaria o controle.',
+    reference: 'Qaseem A, Wilt TJ, Kansagara D, Horwitch C, Barry MJ, Forciea MA, et al. Hemoglobin A1c Targets for Glycemic Control With Pharmacologic Therapy for Non pregnant Adults With Type 2. / Diabetes Mellitus: A Guidance Statement Update From the American College of Physicians. Ann Intern Med. [Epubahead of print 6 March 2018]168:569–576. doi: 10.7326/M17-0939. / Diretrizes da Sociedade Brasileira de Diabetes 2017-2018 /Organização José Egídio Paulo de Oliveira, Renan Magalhães Montenegro Junior, Sérgio Vencio. -- São Paulo: Editora Clannad, 2017. / Netto, A P. Conduta terapêutica no Diabetes tipo 2: Algoritmo SBD 2017. 9 9',
+    tags: ['endocrinologia', 'diabetes', 'insulinoterapia']
+  },
+  {
+    id: 'tp2019-39',
+    module: 'Clínica Médica',
+    text: 'Homem de 75 anos, aposentado, oito anos de escolaridade, é levado ao consultório pela esposa com quadro evolutivo de esquecimento e desorientação temporal que interferem em atividades diárias, como sair sozinho para fazer as compras e controlar as finanças. Mini-exame do estado mental = 20 pontos (normal > 24), Memory Impairment Screen = 3 pontos (normal > 5), Teste de fluência verbal = 6 animais/minuto (normal > 13).\n\nO diagnóstico é compatível com:',
+    options: [
+      '(A) Comprometimento cognitivo leve',
+      '(B) Doença de Alzheimer',
+      '(C) Síndrome depressiva',
+      '(D) Síndrome demencial'
+    ],
+    correctAnswer: 3,
+    explanation: 'Declínio cognitivo progressivo que já interfere nas atividades instrumentais (compras, finanças), com testes alterados (MEEM 20 para 8 anos de escolaridade, MIS e fluência verbal baixos): síndrome demencial.\n\nO enunciado permite afirmar a síndrome, mas não sua etiologia — a doença de Alzheimer exige investigação adicional.',
+    commentary: 'O comprometimento cognitivo leve não prejudica a funcionalidade. Apontar Alzheimer seria saltar para a etiologia sem dados. A depressão não é sugerida pelo quadro.',
+    reference: 'Consenso brasileiro de demência (Frota et al. 2011). Frota, N., Nitrini, R., Damasceno, B. P. & Forlenza, O. V. Critérios para o diagnóstico de doença de Alzheimer. Dement Neuropsychol 5 (supl 1), (2011).',
+    tags: ['geriatria', 'neurologia', 'demência']
+  },
+  {
+    id: 'tp2019-40',
+    module: 'Clínica Médica',
+    image: '/images/tp2019-40.PNG',
+    text: 'Mulher, 38 anos, tem crises de dispneia, sibilância e tosse produtiva, frequentes nos meses de clima frio, há cerca de oito anos. Tem rinite desde a infância e história de tabagismo de longa data. Radiografia do tórax: sinais de hiperinsuflação pulmonar. Espirometria:\n\nO melhor diagnóstico que se aplica a este caso é:',
+    options: [
+      '(A) Bronquiectasia',
+      '(B) Asma',
+      '(C) Doença pulmonar obstrutiva crônica',
+      '(D) Fibrose pulmonar'
+    ],
+    correctAnswer: 1,
+    explanation: 'Rinite desde a infância, crises de sibilância desencadeadas pelo frio e espirometria com obstrução que responde de forma acentuada ao broncodilatador (VEF1 aumenta 700 mL e 25%; critério: > 200 mL e > 12%) caracterizam asma.\n\nO tabagismo não exclui asma, e a reversibilidade expressiva fala contra DPOC.',
+    commentary: 'Na DPOC a obstrução é pouco reversível. A bronquiectasia cursa com infecções de repetição e broncorreia. A fibrose pulmonar produz padrão restritivo.',
+    reference: 'GINA (Global Initiative for Asthma): https://ginasthma.org/2018-gina/ / Diretrizes da Sociedade Brasileira de Pneumologia e Tisiologia para o Manejo da Asma – 2012. Jornal Brasileiro de Pneumologia, Vol. 38 - Supl. 1.',
+    tags: ['pneumologia', 'asma', 'espirometria']
   }
 ];

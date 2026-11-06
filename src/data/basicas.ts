@@ -1932,5 +1932,329 @@ export const BASICAS_QUESTIONS: Question[] = [
     commentary: 'Comentários sobre a resposta correta:\n(A) O mecanismo citogenético mais comum na Síndrome de Down é a não disjunção meiótica materna (cerca de 95%), resultando na trissomia livre do 21 e cariótipo com 47 cromossomos.\n\nComentários sobre os distratores:\n(B) A translocação robertsoniana representa aproximadamente 3-4% dos casos.\n(C) O mosaicismo celular representa cerca de 1-2% dos casos.\n(D) Duplicações segmentares por crossing-over desigual ocorrem em menos de 1% dos casos.',
     reference: 'JONES, K. L.; JONES, M. C.; DEL CAMPO. Smith\'s Recognizable Patterns of Human Malformation.',
     tags: ['Genética', 'Pediatria']
+  },
+  // ---- Teste de Progresso 2019 (gabarito oficial) ----
+  {
+    id: 'tp2019-1',
+    module: 'Ciências Básicas',
+    text: 'Paciente alcoolista e sem-teto queixa-se que seus dentes estão soltos e as gengivas sangram com facilidade. Suspeita-se que ele tenha uma dieta pobre e que pode ter escorbuto (deficiência de vitamina C). O escorbuto é caracterizado por um defeito na hidroxilação de prolina.\n\nDos componentes químicos abaixo, o relacionado com esta condição é:',
+    options: [
+      '(A) Fibronectina',
+      '(B) Elastina',
+      '(C) Ácido hialurônico',
+      '(D) Colágeno'
+    ],
+    correctAnswer: 3,
+    explanation: 'A vitamina C é cofator das enzimas prolil e lisil-hidroxilases, essenciais para a hidroxilação dos resíduos de prolina e lisina do colágeno. Sem ela, a tripla hélice fica instável e o colágeno, frágil.\n\nIsso explica os sinais do escorbuto: sangramento gengival, perda dentária, hemorragias perifoliculares e má cicatrização.',
+    commentary: 'Fibronectina, elastina e ácido hialurônico são componentes da matriz extracelular, mas não dependem da hidroxilação de prolina mediada pela vitamina C.',
+    reference: 'Junqueira LC & Carneiro J. Biologia Celular e Molecular - Biologia da Interação Célula-Matriz Extracelular. 8 ed. Guanabara Koogan, 2005, pag. 229-238.',
+    tags: ['bioquímica', 'vitaminas', 'colágeno']
+  },
+  {
+    id: 'tp2019-2',
+    module: 'Ciências Básicas',
+    text: 'Menino, 2 anos, apresenta desde o nascimento esclera azulada, edema de extremidades e histórico de fraturas. As radiografias mostram fratura recente do colo do fêmur direito, bem como várias calosidades ósseas indicativas de consolidações de fraturas anteriores.\n\nO diagnóstico é:',
+    options: [
+      '(A) Esclerose sistêmica progressiva',
+      '(B) Osteogênese imperfeita',
+      '(C) Síndrome de Ehler-Danlos',
+      '(D) Raquitismo'
+    ],
+    correctAnswer: 1,
+    explanation: 'Fraturas de repetição desde o nascimento, com calos de consolidação de fraturas antigas e escleras azuladas, caracterizam a osteogênese imperfeita, um defeito quantitativo ou qualitativo do colágeno tipo I.\n\nA esclera fina deixa transparecer a coroide, daí a cor azulada.',
+    commentary: 'A síndrome de Ehlers-Danlos cursa com hiperelasticidade da pele e hipermobilidade articular, não com fraturas múltiplas. O raquitismo causa deformidades por falha de mineralização, sem esclera azul. A esclerose sistêmica é doença autoimune do adulto.',
+    reference: 'JUNQUEIRA, L. C. U. CARNEIRO, J. Histologia Básica: texto e atlas. 12. ed. Rio de Janeiro: Guanabara Koogan, 2013. / KIERSZENBAUM, A. L; TRES, L. L. Histologia e Biologia Celular: uma introdução à patologia. 4. ed. Rio de Janeiro: Elsevier, 2016.',
+    tags: ['histologia', 'genética', 'colágeno']
+  },
+  {
+    id: 'tp2019-3',
+    module: 'Ciências Básicas',
+    image: '/images/tp2019-3.PNG',
+    text: 'Mulher, 15 anos, procurou a UBS referindo edema de pálpebras bilateral, com prurido intenso, acompanhado de lesões avermelhadas no pescoço, também pruriginosas, que se repetem em intervalos variados nos últimos seis meses. Refere ainda que, anteriormente, as lesões apareciam no início da semana e desapareciam sem necessidade de tratamento, porém nas últimas semanas elas permanecem inalteradas.\n\nA resposta imune envolvida é:',
+    options: [
+      '(A) Hipersensibilidade tipo II ou citotóxica.',
+      '(B) Hipersensibilidade tipo I ou imediata.',
+      '(C) Hipersensibilidade tipo IV ou tardia.',
+      '(D) Hipersensibilidade tipo III ou mediada por complexo imune.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Edema palpebral pruriginoso e lesões eczematosas recorrentes no pescoço, que surgem no início da semana e regridem com o afastamento, sugerem dermatite alérgica de contato (por exemplo, a cosméticos ou esmaltes).\n\nA dermatite de contato alérgica é o protótipo da hipersensibilidade tipo IV (tardia), mediada por linfócitos T sensibilizados, com reação 48–72 horas após a reexposição.',
+    commentary: 'A tipo I (IgE) é imediata e produz urticária e angioedema em minutos. A tipo II é citotóxica, mediada por anticorpos contra antígenos de membrana. A tipo III depende de imunocomplexos (doença do soro, nefrite lúpica).',
+    reference: 'Azulay, Ruben David. Dermatologia 7ª edição, 2017 / Belda Jr., Walter. Tratado de Dermatologia 2ª edição, 2014',
+    tags: ['imunologia', 'hipersensibilidade', 'dermatologia']
+  },
+  {
+    id: 'tp2019-4',
+    module: 'Ciências Básicas',
+    text: 'Mulher, 25 anos, portadora de Esclerose Lateral Amiotrófica (ELA) apresenta piora da deambulação. Exame físico geral: sem alterações aparentes. Exame neurológico com alteração motora importante em membros inferiores e moderada em membros superiores.\n\nConsiderando que a ELA é uma doença neurodegenerativa que atinge especificamente neurônios motores que controlam os músculos esqueléticos, a localização anatômica dos corpos celulares para os referidos neurônios é nos:',
+    options: [
+      '(A) Gânglios da cadeia simpática.',
+      '(B) Cornos posteriores da medula espinal.',
+      '(C) Cornos anteriores da medula espinal.',
+      '(D) Gânglios da raiz posterior.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Os corpos celulares dos neurônios motores inferiores que inervam a musculatura esquelética de tronco e membros ficam no corno anterior da substância cinzenta da medula espinal. A ELA acomete esses neurônios e os neurônios motores superiores do córtex.',
+    commentary: 'Os gânglios da cadeia simpática pertencem ao sistema nervoso autônomo. Os cornos posteriores e os gânglios da raiz dorsal são estruturas sensitivas.',
+    reference: 'Cosenza RM. Fundamentos de Neuroanatomia. 4a Ed. Rio de Janeiro: Guanabara-Koogan. 2013. / Pezzi LHA, Correia JAP, Prinz RAD, Pessanha Neto S. Anatomia Clínica Baseada em Problemas. Rio de Janeiro: Guanabara- Koogan. 2013. / Moore KL, Agur AMR, Dalley AF. Fundamentos de Anatomia Clínica. 4a Ed. Rio de Janeiro: Guanabara-Koogan. 2013.',
+    tags: ['neuroanatomia', 'medula espinal']
+  },
+  {
+    id: 'tp2019-5',
+    module: 'Ciências Básicas',
+    text: 'Homem, 40 anos, com antecedente de febre reumática, queixa-se de falta de ar e fraqueza aos esforços. Exame físico: sopro sistólico no 2º espaço intercostal paraesternal direito.\n\nCorrelacionando as queixas, a ausculta e a morfologia cardíaca, provavelmente o paciente é portador de:',
+    options: [
+      '(A) Insuficiência mitral',
+      '(B) Estenose aórtica',
+      '(C) Insuficiência aórtica',
+      '(D) Estenose mitral'
+    ],
+    correctAnswer: 1,
+    explanation: 'O 2º espaço intercostal paraesternal direito é o foco aórtico. Um sopro sistólico nesse foco indica fluxo turbulento pela valva aórtica durante a ejeção, isto é, estenose aórtica — compatível com a sequela reumática e os sintomas de baixo débito aos esforços.',
+    commentary: 'A insuficiência aórtica produz sopro diastólico. A estenose mitral, sopro diastólico no foco mitral. A insuficiência mitral, sopro sistólico no foco mitral (ápice), irradiado para a axila.',
+    reference: 'BICKLEY, LS. Propedêutica Médica. 11ª. Ed, Guanabara Koogan, Rio de Janeiro, 2015.',
+    tags: ['semiologia', 'cardiologia', 'valvopatias']
+  },
+  {
+    id: 'tp2019-6',
+    module: 'Ciências Básicas',
+    image: '/images/tp2019-6.PNG',
+    text: 'A figura abaixo representa uma condição em que a frequência cardíaca, gerada pelo principal marcapasso cardíaco (nó sinoatrial) é modificada.\n\nEste fato é decorrente de:',
+    options: [
+      '(A) A atividade da porção eferente simpática aumenta a permeabilidade da membrana ao íon Na⁺ e Ca²⁺, com isso, aumenta a frequência de despolarização do marcapasso.',
+      '(B) A atividade da porção eferente parassimpática aumenta a permeabilidade da membrana ao íon Na⁺, com isso, diminui a frequência de despolarização do marcapasso.',
+      '(C) A atividade da porção eferente parassimpática aumenta a permeabilidade da membrana ao íon K⁺, com isso, aumenta a frequência de despolarização do marcapasso.',
+      '(D) A atividade da porção eferente simpática aumenta a permeabilidade da membrana ao íon K⁺, com isso, aumenta a frequência de despolarização do marcapasso.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A estimulação simpática (noradrenalina em receptores β1) aumenta as correntes de entrada de Na⁺ (corrente \'funny\', If) e de Ca²⁺ nas células do nó sinoatrial. A despolarização diastólica fica mais rápida, o limiar é atingido antes e a frequência cardíaca aumenta — a curva azul da figura.',
+    commentary: 'A estimulação parassimpática (acetilcolina) aumenta a condutância ao K⁺ e hiperpolariza a célula, reduzindo a frequência (curva vermelha). O aumento da permeabilidade ao K⁺ não acelera a despolarização.',
+    reference: 'Douglas, C.R. - Tratado de Fisiologia Aplicada às Ciências Médicas. 6ª edição, Guanabara Koogan. Rio de Janeiro, 2006. / Berne & Levy - Fisiologia. 6ª edição, Elsevier. Rio de janeiro, 2009.',
+    tags: ['fisiologia', 'cardiologia', 'sistema nervoso autônomo']
+  },
+  {
+    id: 'tp2019-7',
+    module: 'Ciências Básicas',
+    text: 'Mulher, 38 anos, terceiro trimestre gestacional, vem para consulta de pré-natal na unidade básica de saúde com o resultado do exame ultrassonográfico, que detectou a presença de saco herniário na linha mediana da região abdominal do feto, com diâmetro de ± 2cm. Anomalia cardiovascular estava associada.\n\nO defeito consiste de:',
+    options: [
+      '(A) Gastrosquise, que decorre da falha do retorno das alças intestinais para o abdome no final da 10ª semana, resultando em vísceras herniadas e recobertas pela membrana que envolve o cordão umbilical.',
+      '(B) Onfalocele, que decorre da falha na rotação das alças intestinais durante a herniação fisiológica, resultando em exteriorização das vísceras, que ficam recobertas pela membrana que envolve o cordão umbilical.',
+      '(C) Gastrosquise, que resulta da falha na rotação das alças intestinais durante a herniação fisiológica, leva à exteriorização das vísceras, as quais são recobertas pela membrana que envolve o cordão umbilical.',
+      '(D) Onfalocele, que resulta da falha do retorno das alças intestinais para o abdome no final da 10ª semana, levando à exteriorização das vísceras, que ficam recobertas pela membrana que envolve o cordão umbilical.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A alça intestinal média hernia fisiologicamente para o cordão umbilical na 6ª semana e retorna à cavidade abdominal ao fim da 10ª semana. A falha desse retorno gera a onfalocele: defeito na linha média, com vísceras recobertas pela membrana do cordão (âmnio e peritônio).\n\nA onfalocele associa-se com frequência a cardiopatias e cromossomopatias, como no caso.',
+    commentary: 'A gastrosquise é um defeito paraumbilical, geralmente à direita, com alças expostas sem membrana de cobertura e baixa associação com outras malformações. A falha de rotação causa má rotação intestinal, não onfalocele.',
+    reference: 'Sadler, T.W. Langman Embriologia Médica. 12.ª ed. Rio de Janeiro: Guanabara koogan. 2013. / Moore, K. L., Persaud, T.V.N., Torchia, M.G. Embriologia Clínica. 10.ª ed. Rio de Janeiro: Elsevier. 2016.',
+    tags: ['embriologia', 'defeitos da parede abdominal']
+  },
+  {
+    id: 'tp2019-8',
+    module: 'Ciências Básicas',
+    image: '/images/tp2019-8.PNG',
+    text: 'Parturiente desenvolveu infecção hospitalar na incisão cirúrgica da cesariana, da qual foi isolado Staphylococcus aureus, cujo antibiograma é representado pela figura abaixo:\n\nEm Staphylococcus aureus, a resistência à oxacilina é:',
+    options: [
+      '(A) Determinada pelo gene mecA, localizado no cromossomo da bactéria, e geralmente é acompanhada por resistência aos demais antibióticos beta-lactâmicos.',
+      '(B) Observada em poucas amostras isoladas de pacientes hospitalizados, mas indutor de alta mortalidade pela frequente capacidade de causar sepse.',
+      '(C) Contornada pela utilização da associação de outras penicilinas com inibidores de beta-lactamases do tipo sulbactam e clavulanato.',
+      '(D) Mediada essencialmente pela produção de beta-lactamases, enzimas que hidrolisam o anel beta-lactâmico e inativam a droga, codificadas por genes plasmidiais.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A resistência do Staphylococcus aureus à oxacilina (MRSA) é mediada pelo gene cromossômico mecA, que codifica a PBP2a, uma proteína ligadora de penicilina com baixa afinidade pelos β-lactâmicos. Por isso, o MRSA é resistente a praticamente todos os β-lactâmicos.',
+    commentary: 'O MRSA é frequente em infecções hospitalares no Brasil, não raro. Inibidores de β-lactamase não superam a PBP2a. A produção de penicilinase (plasmidial) explica a resistência à penicilina, não à oxacilina.',
+    reference: 'Murray PR, Rosenthal KS & Pfaller MA. Microbiologia Médica. 6a Ed. Elsevier Editora Ltda, Rio de Janeiro, 2009. / Ratti RP & Sousa CP. Staphylococcus aureus meticilina resistente (MRSA) e infecções nosocomiais. Ver,Ciewnc.Fram.Basica Apl. 30(2):137-43, 2009.',
+    tags: ['microbiologia', 'resistência bacteriana', 'staphylococcus']
+  },
+  {
+    id: 'tp2019-9',
+    module: 'Ciências Básicas',
+    text: 'A extensa variabilidade genética existente na maioria dos vírus de RNA deve-se à:',
+    options: [
+      '(A) Grande capacidade de recombinação entre segmentos de genomas de dois vírus diferentes em situações de coinfecção.',
+      '(B) Pressão seletiva de anticorpos que induz os vírus à variação antigênica.',
+      '(C) Falta da função de correção de erros de transcrição na RNA-polimerase viral.',
+      '(D) Reconhecimento de RNA de dupla fita por receptores do tipo ‘toll’.'
+    ],
+    correctAnswer: 2,
+    explanation: 'As RNA-polimerases virais não têm atividade de revisão (proofreading 3\'→5\'). Erros de incorporação se acumulam a cada ciclo de replicação, gerando grande diversidade genética e rápido surgimento de variantes.',
+    commentary: 'Recombinação/rearranjo ocorre em vírus segmentados (como influenza), mas não explica a variabilidade contínua da maioria dos vírus de RNA. A pressão de anticorpos seleciona variantes, mas não as cria. Receptores toll-like participam da resposta imune.',
+    reference: 'Brooks GF et al. Jawetz Medical Microbiology (25th Ed). McGraw Hill, 2010',
+    tags: ['microbiologia', 'virologia']
+  },
+  {
+    id: 'tp2019-10',
+    module: 'Ciências Básicas',
+    text: 'Menino, 5 anos, morador da zona urbana do centro-oeste paulista, compareceu à Unidade Básica de Saúde apresentando quadro de febre não aferida há 1 mês. Há 15 dias, a mãe também observou perda do apetite e emagrecimento, além de episódios de diarreia. Exame físico: regular estado geral, sinais vitais preservados, mucosas descoradas 2+/4+ e hepatoesplenomegalia. O hemograma revelou anemia, leucopenia e plaquetopenia.\n\nConsiderando que o paciente nunca se ausentou da cidade, nunca recebeu transfusão sanguínea, mora em casa de alvenaria, e os aspectos clínicos e epidemiológicos, a conduta é:',
+    options: [
+      '(A) Coleta de material para pesquisa de H1N1 e tratamento adequado.',
+      '(B) Realização de teste rápido para leishmaniose e pesquisa de leishmania em esfregaço de aspirado de medula óssea.',
+      '(C) Xenodiagnóstico para pesquisa de Trypanosoma cruzi (fase aguda da doença de Chagas).',
+      '(D) Exame parasitológico das fezes para pesquisa de ovos de Schistosoma mansoni.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Febre prolongada, perda de peso, hepatoesplenomegalia e pancitopenia em criança do centro-oeste paulista, região que se tornou área de transmissão de leishmaniose visceral a partir de Araçatuba, apontam para calazar.\n\nA investigação inclui teste rápido sorológico (rK39) e pesquisa de Leishmania em aspirado de medula óssea.',
+    commentary: 'O quadro não é compatível com H1N1 nem com doença de Chagas aguda (sem exposição a triatomíneos ou transfusão). A esquistossomose tem outra epidemiologia e não causa pancitopenia febril dessa forma.',
+    reference: 'Parasitologia Humana, 12º edição. David Pereira Neves. Livraria Atheneu, 2011. / Parasitologia, 4ª edição. Luis Rey. Guanabara Koogan, 2013. / Doenças Infecciosas e Parasitárias. Sylvia Lemos Hinrichsen. GuanabaraKoogan, 2013.',
+    tags: ['parasitologia', 'infectologia', 'leishmaniose visceral']
+  },
+  {
+    id: 'tp2019-11',
+    module: 'Ciências Básicas',
+    text: 'Homem, 55 anos, apresenta inflamação articular compatível com crise de gota e elevado nível sérico de ácido úrico. Relata que esses sintomas surgiram algum tempo após ter iniciado um novo esquema terapêutico para o tratamento da hipertensão, com a utilização combinada de três anti-hipertensivos: captopril, hidroclorotiazida e nifedipina.\n\nO mecanismo responsável por esse quadro se deve a:',
+    options: [
+      '(A) A nifedipina competiu com o ácido úrico por sítios de ligação a proteínas plasmáticas, permitindo que uma fração maior deste último ficasse livre e se depositasse nas articulações.',
+      '(B) O esquema terapêutico tríplice utilizado para o tratamento da hipertensão não tem qualquer relação com a elevação dos níveis séricos de ácido úrico.',
+      '(C) O captopril (iECA) aumentou a biossíntese de ácido úrico, causando a elevação dos níveis séricos desta substância e sua consequente deposição nas articulações.',
+      '(D) A hidroclorotiazida reduziu excreção do ácido úrico, causando a elevação dos níveis séricos desta substância e sua consequente deposição nas articulações.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Diuréticos tiazídicos reduzem a excreção renal de ácido úrico: a contração de volume aumenta a reabsorção proximal de urato e o diurético compete com o urato pelos transportadores secretores de ácidos orgânicos. A hiperuricemia resultante pode precipitar crises de gota.',
+    commentary: 'A nifedipina não desloca o urato de proteínas plasmáticas, e o captopril não aumenta a síntese de ácido úrico. Os anti-hipertensivos têm, sim, relação com a uricemia (losartana, ao contrário, é uricosúrica).',
+    reference: 'KNOLLMAN, BJORN C. – As bases farmacológicas da terapêutica – Goodman & Gilman. 12ª edição, 2012. Editora: MCGRAW HILL – ARTMED. 2012.',
+    tags: ['farmacologia', 'diuréticos', 'gota']
+  },
+  {
+    id: 'tp2019-12',
+    module: 'Ciências Básicas',
+    text: 'Logo após o nascimento de seu filho, uma mãe apresentou quadro convulsivo, sendo diagnosticado um foco epileptogênico e indicado o uso de fenobarbital sódico por tempo prolongado. Após os três primeiros meses do nascimento da criança, a mãe voltou a tomar anticoncepcional oral de microdosagem. No entanto, os ciclos menstruais continuaram irregulares e o ginecologista suspeitou que não estivesse sendo efetivo, tendo pedido à mãe que utilizasse outro método anticoncepcional até a retirada do fenobarbital.\n\nEsta interação medicamentosa pode ser explicada porque o medicamento:',
+    options: [
+      '(A) Aumenta a quantidade de enzimas citocrômicas hepáticas (CYP) e a metabolização dos hormônios do anticoncepcional.',
+      '(B) Diminui a absorção dos hormônios existentes no anticoncepcional.',
+      '(C) Aumenta a capacidade renal em excretar os hormônios existentes no anticoncepcional.',
+      '(D) Altera o efeito do anticoncepcional no útero, inibindo o efeito deste hormônio na movimentação das tubas uterinas.'
+    ],
+    correctAnswer: 0,
+    explanation: 'O fenobarbital é um potente indutor enzimático do citocromo P450 hepático (especialmente CYP3A4). Aumenta a metabolização de estrogênios e progestagênios, reduzindo seus níveis e a eficácia contraceptiva — daí o sangramento irregular e a recomendação de outro método.',
+    commentary: 'A interação não envolve absorção, excreção renal ou efeito local nas tubas.',
+    reference: 'RANG HP, Dale MM. Farmacologia. 7ª ed. 2011. 9 3',
+    tags: ['farmacologia', 'interações medicamentosas', 'contracepção']
+  },
+  {
+    id: 'tp2019-13',
+    module: 'Ciências Básicas',
+    text: 'Mulher, 45 anos, foi diagnosticada com câncer de mama. A análise histopatológica do tumor classificou-o como pouco diferenciado (GH3) e acusou a presença de comedonecrose. Testes imunohistoquímicos mostraram alto percentual de células com expressão de Ki-67 (uma proteína nuclear expressa em todo o ciclo celular, exceto G0) e altos níveis de expressão de bcl-2 (uma proteína com função antiapoptótica).\n\nAs áreas de necrose observadas no tumor podem ser interpretadas como:',
+    options: [
+      '(A) Morte de células indiferenciadas que permanecem em G0, crescimento lento e a elevada taxa de bcl-2 sugere baixo índice apoptótico.',
+      '(B) Morte de células tumorais por apoptose, sendo que o crescimento lento do tumor garante a ocorrência de apoptose, apesar da elevada expressão de bcl-2.',
+      '(C) Morte de células tumorais provocada por privação de nutrientes, favorecida pelo crescimento acelerado apresentado por esse tumor, evidenciado pelo elevado índice Ki-67.',
+      '(D) Restos da fagocitose de células tumorais, devido ao elevado índice proliferativo pelo alto percentual de células com expressão de Ki67.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Ki-67 elevado indica alta fração de células em proliferação: o tumor cresce rapidamente. Em tumores de crescimento acelerado, o centro da massa fica distante da vascularização e sofre necrose por privação de oxigênio e nutrientes (comedonecrose).\n\nO bcl-2 alto, antiapoptótico, reforça que a morte observada não é apoptose.',
+    commentary: 'As alternativas que falam em crescimento lento ou células em G0 contradizem o Ki-67 elevado. A necrose não é resto de fagocitose.',
+    reference: 'Carvalho HF, SM Recco-Pimentel. A Célula. 3a Edição. Editora Manole, 2013. / Alberts B, Johnson A, Lewis J, Morgan D, Raff M, Roberts K, Walter P. Molecular Biology of the Cell. 6th Edition. Garland Science (New York), 2014.',
+    tags: ['patologia', 'oncologia', 'biologia celular']
+  },
+  {
+    id: 'tp2019-14',
+    module: 'Ciências Básicas',
+    text: 'Homem, afrodescendente, 35 anos, atendido na emergência com quadro de dor torácica, palidez intensa e icterícia, e história pregressa de dores articulares. A suspeita diagnóstica foi de síndrome torácica aguda, por crise vaso-oclusiva associada.\n\nOs exames laboratoriais necessários para confirmar o diagnóstico da doença de base, além do hemograma, são:',
+    options: [
+      '(A) Contagem de reticulócitos e eletroforese de proteínas.',
+      '(B) Teste de falcização e Coombs direto.',
+      '(C) Teste de falcização e Coombs indireto.',
+      '(D) Contagem de reticulócitos e eletroforese de hemoglobina.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Homem afrodescendente com síndrome torácica aguda, icterícia e história de dor articular: a principal hipótese é anemia falciforme.\n\nA confirmação é feita pela eletroforese de hemoglobina (identifica a HbS e define o genótipo), e a contagem de reticulócitos documenta a hemólise com resposta medular.',
+    commentary: 'Coombs direto e indireto investigam hemólise imune, que não é o caso. O teste de falcização apenas detecta a presença de HbS, sem diferenciar traço de doença. A eletroforese de proteínas não identifica hemoglobinas.',
+    reference: 'LOBO, C. Doenças falciformes. In: LOPES, A. C. (Ed.). Tratado de clínica médica. 2. ed. São Paulo: Roca, 2009. v. 2, cap. 157, p. 1951-1963.',
+    tags: ['hematologia', 'anemia falciforme', 'laboratório']
+  },
+  {
+    id: 'tp2019-15',
+    module: 'Ciências Básicas',
+    text: 'Mulher, 32 anos, com histórico de diabetes insulinodependente, apresentando quadro de febre, vômitos e diarreia há 3 dias e piora do controle glicêmico. Deu entrada na unidade de emergência sonolenta, com frequência cardíaca = 130 bpm, frequência respiratória = 30 irpm e pressão arterial = 100 x 60 mmHg. Glicemia capilar: 375 mg/dL. O exame de gasometria arterial e dosagens séricas mostrava os seguintes parâmetros:\n\n• pH: 7,13 (VR: 7,35 - 7,45)\n• pO₂: 99,5 mmHg (VR: 83 - 108 mmHg)\n• pCO₂: 30,5 mmHg (VR: 32 - 45 mmHg)\n• HCO₃⁻: 10 mmol/L (VR: 18 - 23 mmol/L)\n• BE (Base Excess): -17,8 mmol/L (VR: -2 a 3 mmol/L)\n• Cloreto: 105 mmol/L (VR: 98 - 106 mmol/L)\n• Sódio: 136 mmol/L (VR: 136 - 146 mmol/L)\n• Potássio: 4,4 mmol/L (VR: 3,5 - 5,0 mmol/L)\n• Hiato aniônico: 25,4 mmol/L (VR: 8 - 16 mmol/L)\n• Glicose: 428 mg/dL (VR: 70 - 99 mg/dL)\n• Lactato: 1,4 mmol/L (VR: 0,5 - 1,6 mmol/L)\n\nO diagnóstico do distúrbio do equilíbrio ácido-base é:',
+    options: [
+      '(A) Distúrbio misto: acidose metabólica por excesso de ânions e alcalose metabólica pelos vômitos.',
+      '(B) Distúrbio misto: acidose metabólica pela perda de bicarbonato nas fezes diarreicas, com acidose respiratória pela taquipneia.',
+      '(C) Acidose metabólica pela perda de bicarbonato nas fezes diarreicas, com tentativa de compensação respiratória.',
+      '(D) Acidose metabólica por excesso de cetoácidos, com tentativa de compensação respiratória.'
+    ],
+    correctAnswer: 3,
+    explanation: 'pH 7,13, bicarbonato de 10 e BE −17,8 definem acidose metabólica; o pCO₂ baixo (30,5) indica tentativa de compensação respiratória.\n\nO ânion gap está elevado (25,4) com glicemia de 428 em diabética tipo 1 e lactato normal: o excesso de ânions são cetoácidos — cetoacidose diabética precipitada pela infecção.',
+    commentary: 'A perda de bicarbonato pela diarreia gera acidose com ânion gap normal (hiperclorêmica). Não há alcalose metabólica associada nem acidose respiratória (o pCO₂ está baixo, não alto).',
+    reference: 'Diagnósticos clínicos e tratamento por métodos laboratoriais de Henry - 21ª edição. Autores: Richard A. McPherson e Mathew R. Pincus. / Tietz. Fundamentos da Química Clínica - 6a edição. Autores: Carl A. Burtis, Edward R. Ashwood, David E. Bruns.',
+    tags: ['fisiologia', 'distúrbios ácido-base', 'cetoacidose diabética']
+  },
+  {
+    id: 'tp2019-16',
+    module: 'Ciências Básicas',
+    text: 'Paciente com quadro de coágulo migratório (êmbolo) na veia femoral profunda direita, associado a trombo no ventrículo esquerdo.\n\nOs destinos finais dos fenômenos tromboembólicos podem ser, respectivamente:',
+    options: [
+      '(A) Átrio direito e artéria cerebral anterior direita.',
+      '(B) Ventrículo esquerdo e artéria cerebral posterior direita.',
+      '(C) Pulmão direito e artéria cerebral média direita.',
+      '(D) Ventrículo direito e artéria cerebral anterior esquerda.'
+    ],
+    correctAnswer: 2,
+    explanation: 'O êmbolo da veia femoral segue pela cava inferior até o coração direito e se impacta na circulação pulmonar (tromboembolismo pulmonar). O trombo do ventrículo esquerdo vai para a circulação sistêmica; pela carótida, atinge mais frequentemente a artéria cerebral média, continuação direta da carótida interna.',
+    commentary: 'Átrio e ventrículo direito são locais de passagem, não destino final do êmbolo venoso. A artéria cerebral posterior deriva do sistema vertebrobasilar, menos atingido por êmbolos cardíacos.',
+    reference: 'Moore KL. Anatomia Orientada para a Clínica. 6a ed. Rio de Janeiro: Guanabara Koogan; 2011.',
+    tags: ['anatomia', 'tromboembolismo', 'circulação']
+  },
+  {
+    id: 'tp2019-17',
+    module: 'Ciências Básicas',
+    text: 'Homem, 48 anos, com insuficiência renal crônica, em realização de hemodiálise, apresenta hiperparatireodismo secundário, com hormônio paratireoidiano plasmático de 860 pg/mL (referência de 10 - 65 pg/mL), cuja fisiopatologia está associada:',
+    options: [
+      '(A) À redução das concentrações plasmáticas de fósforo.',
+      '(B) Ao aumento das concentrações plasmáticas de fósforo.',
+      '(C) Ao aumento de 1,25 (OH)2 vitamina D.',
+      '(D) À redução da produção de FGF23 pelo osso.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Na doença renal crônica, a queda da filtração causa retenção de fosfato. A hiperfosfatemia estimula diretamente as paratireoides e o FGF23, reduz a síntese renal de calcitriol e diminui o cálcio ionizado — tudo convergindo para o hiperparatireoidismo secundário.',
+    commentary: 'Na DRC o fósforo está aumentado, não reduzido. A 1,25(OH)₂ vitamina D está diminuída. O FGF23 está aumentado.',
+    reference: 'Fisiologia. 4a edição. 2012. Margarida de Mello Ayres.',
+    tags: ['fisiologia', 'nefrologia', 'metabolismo mineral']
+  },
+  {
+    id: 'tp2019-18',
+    module: 'Ciências Básicas',
+    text: 'Quais das seguintes alterações seriam esperadas quando ocorre aumento discreto da resistência da arteríola eferente do néfron?',
+    options: [
+      '(A) Diminuição do fluxo sanguíneo, aumento da pressão hidrostática nos capilares glomerulares e aumento da taxa de filtração glomerular.',
+      '(B) Aumento do fluxo sanguíneo e aumento da taxa de filtração glomerular.',
+      '(C) Aumento do fluxo sanguíneo e redução da taxa de filtração glomerular.',
+      '(D) Diminuição do fluxo sanguíneo, diminuição da pressão efetiva de ultrafiltração e redução da taxa de filtração glomerular.'
+    ],
+    correctAnswer: 0,
+    explanation: 'O aumento discreto da resistência da arteríola eferente represa o sangue no glomérulo: o fluxo plasmático renal cai, mas a pressão hidrostática nos capilares glomerulares sobe. Com aumento discreto, o efeito pressórico predomina e a taxa de filtração glomerular aumenta (é o mecanismo da angiotensina II).\n\nCom constrição intensa, a queda do fluxo passa a predominar e a TFG cai.',
+    commentary: 'A constrição eferente nunca aumenta o fluxo sanguíneo renal. A alternativa D descreve o efeito de uma constrição acentuada.',
+    reference: 'Zatz, Atheneu, 2011. -Berne: Fisiologia Renal, Elsevier, 2009. - Margarida Aires Fisiologia Renal, 2012.',
+    tags: ['fisiologia', 'fisiologia renal']
+  },
+  {
+    id: 'tp2019-19',
+    module: 'Ciências Básicas',
+    text: 'A análise da sequência primária de duas proteínas mostrou que elas diferem apenas em relação aos últimos 20 aminoácidos da porção C-terminal. Ao investigar, em diferentes tecidos, a expressão dessas proteínas, denominadas de variantes A e B, notou-se que ambas são codificadas pelo mesmo gene (gene P) e que este apresenta a mesma sequência de nucleotídeos, tanto nos tecidos que produzem a variante A quanto naqueles que expressam a variante B. Experimentos adicionais mostraram que nenhuma alteração ocorria depois da formação dos RNA mensageiros maduros utilizados na síntese dessas variantes proteicas.\n\nCom base nesses dados, conclui-se que a produção das duas variantes proteicas em questão resulta de:',
+    options: [
+      '(A) Mutação de ponto que afetou a região codificadora do gene P nas linhagens celulares que expressam uma das variantes proteicas.',
+      '(B) Formas alternativas de processamento pós-transcricional, que geram diferentes RNA mensageiros maduros a partir de um único transcrito primário de RNA.',
+      '(C) Clivagem da porção 5 do RNA mensageiro utilizado para a síntese de uma das variantes proteicas.',
+      '(D) Metilação e consequente silenciamento do gene P nas linhagens celulares que expressam uma das variantes proteicas.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Duas proteínas codificadas pelo mesmo gene, sem diferença na sequência do DNA e sem modificação após a formação do RNA mensageiro maduro, só podem diferir no processamento do transcrito primário: o splicing alternativo, que combina éxons de formas distintas e gera RNAs maduros diferentes.',
+    commentary: 'Mutação pontual alteraria a sequência do gene. Clivagem da extremidade 5\' afetaria a porção N-terminal, não a C-terminal. A metilação silenciaria o gene, sem produzir variante.',
+    reference: 'Alberts, B. et al. Molecular Biology of the Cell. Garland Publ. Inc., N. York & London, 2008. / Carvalho, H.F.; Recco-Pimentel, S.M. A Célula. 3a. Edição. Editora Manole, 2013.',
+    tags: ['biologia molecular', 'genética']
+  },
+  {
+    id: 'tp2019-20',
+    module: 'Ciências Básicas',
+    text: 'Homem, 72 anos, apresentou vômito excessivo em um curto período de tempo, decorrente de uma virose gastrintestinal. No hospital, seus exames revelaram hipocalemia.\n\nUm possível resultado de hipocalemia sobre as células excitáveis é:',
+    options: [
+      '(A) Diminuição da probabilidade de geração de potencial de ação.',
+      '(B) Diminuição do efluxo de potássio.',
+      '(C) Redução na atividade da bomba de sódio e potássio.',
+      '(D) Despolarização e geração de potenciais de ação.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Com potássio extracelular baixo, o gradiente de K⁺ aumenta e mais potássio sai das células. A membrana se hiperpolariza, afastando-se do limiar de disparo: fica mais difícil gerar potenciais de ação — o que explica fraqueza muscular e íleo na hipocalemia.',
+    commentary: 'O efluxo de K⁺ aumenta, não diminui. A hipocalemia não despolariza a membrana em repouso.',
+    reference: 'HALL, J. E. Guyton & Hall Tratado de Fisiologia Médica. 12ª ed. Rio de Janeiro: Elsevier, 2011. / KOEPPEN, B. M.; STANTON, B. A. (Ed.). Berne & Levy Fisiologia. 6ª ed. Rio de Janeiro: Elsevier, 2009.',
+    tags: ['fisiologia', 'eletrofisiologia', 'distúrbios hidroeletrolíticos']
   }
 ];

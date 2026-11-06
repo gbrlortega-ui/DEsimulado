@@ -1934,5 +1934,330 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     commentary: 'O hematoma epidural (extradural) decorre do sangramento arterial (frequentemente da artéria meníngea média) entre a dura-máter e a tábua óssea interna do crânio, comumente após fratura do osso temporal. Apresenta o clássico padrão de "intervalo lúcido": trauma inicial seguido de desmaio breve, recuperação neurológica completa e posterior declínio neurológico catastrófico devido à rápida expansão do hematoma e compressão cerebral. A midríase ipsilateral é decorrente da herniação do uncus do lobo temporal que comprime o terceiro par craniano (oculomotor) ipsilateral. Na TC de crânio, observa-se uma coleção de sangue hiperdensa limitada pelas suturas cranianas, formando o aspecto de lente biconvexa. Sobre os distratores: (A) A LAD cursa com coma imediato desde o impacto, sem intervalo lúcido. (B) O hematoma subdural agudo tem formato em crescente (côncavo-convexo) e decorre tipicamente de ruptura de veias em ponte, com pior prognóstico e evolução menos focal/lúcida. (C) A HSA traumática cursa com cefaleia súbita e sangue nas cisternas e sulcos, sem o efeito de massa biconvexo agudo descrito.',
     reference: 'ATLS (Advanced Trauma Life Support). 11ª Edição. American College of Surgeons. Sabiston Textbook of Surgery: The Biological Basis of Modern Surgical Practice. 21st Edition. Manual MSD - Versão para Profissionais de Saúde: Traumatismo Cranioencefálico (TCE).',
     tags: ['Trauma', 'Neurocirurgia', 'TCE']
+  },
+  // ---- Teste de Progresso 2019 (gabarito oficial) ----
+  {
+    id: 'tp2019-61',
+    module: 'Cirurgia',
+    image: '/images/tp2019-61.PNG',
+    text: 'Mulher, 68 anos, procura atendimento por quadro de dor abdominal em cólica há 3 dias, acompanhada de distensão, náuseas, hiporexia e parada de eliminação de flatos e fezes. Antecedentes pessoais: há seis meses apresenta emagrecimento e episódios de dores abdominais, associados a constipação intestinal. Exame físico: abdome distendido, globoso, hipertimpânico em andar superior, levemente doloroso, com massa endurecida palpável em hipogástrio. Radiografia de abdome: imagem abaixo.\n\nO diagnóstico e o achado de imagem são:',
+    options: [
+      '(A) Abdome agudo obstrutivo, pneumoperitônio e ausência de ar na ampola retal.',
+      '(B) Constipação intestinal crônica, distensão de cólon e intestino delgado e ar na ampola retal.',
+      '(C) Obstrução intestinal, distensão de alças de intestino delgado e cólon.',
+      '(D) Obstrução intestinal baixa, distensão colônica e válvula ileocecal competente.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Idosa com alteração do hábito intestinal, emagrecimento e massa em hipogástrio, evoluindo com parada de eliminação de gases e fezes: obstrução intestinal baixa, provavelmente por neoplasia de cólon.\n\nA radiografia mostra distensão do cólon sem distensão significativa do delgado — sinal de válvula ileocecal competente, situação de alça fechada com risco de perfuração do ceco.',
+    commentary: 'Não há pneumoperitônio na imagem. Não se trata de constipação crônica simples. A distensão concomitante de delgado e cólon ocorreria se a válvula ileocecal fosse incompetente.',
+    reference: 'Sabiston – Tratado de Cirurgia – 2 Volumes – 18ª Ed. Beauchamp; Townsend; Courtney, Mary. Elsevier / Medicina Nacionais',
+    tags: ['cirurgia', 'abdome agudo obstrutivo', 'câncer colorretal']
+  },
+  {
+    id: 'tp2019-62',
+    module: 'Cirurgia',
+    text: 'Homem, 66 anos, atendido no serviço de emergência por parada de eliminação de fezes e flatos há 5 dias, associada a vômitos e aumento progressivo do volume abdominal. Refere que seu hábito intestinal é de uma evacuação a cada dois dias. Antecedente pessoal: laparotomia exploradora prévia, devido a úlcera gástrica perfurada há 20 anos. Exame físico: abdome globoso, timpânico, sem sinais de irritação peritoneal, com uma cicatriz xifopúbica. Radiografia de abdome: sinais de empilhamento de moedas e níveis hidroaéreos, sem pneumoperitônio.\n\nO diagnóstico etiológico e a conduta são:',
+    options: [
+      '(A) Bridas e aderências; tratamento clínico com sonda gástrica e jejum nas primeiras 48 a 72 horas.',
+      '(B) Neoplasia de cólon; laparotomia exploradora.',
+      '(C) Diverticulite aguda bloqueada; tratamento clínico com sonda gástrica, jejum e antibioticoterapia.',
+      '(D) Hérnia femoral encarcerada; inguinotomia para correção da hérnia.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Obstrução de delgado (empilhamento de moedas e níveis hidroaéreos) em paciente com laparotomia prévia: a causa mais provável são bridas e aderências.\n\nSem sinais de sofrimento de alça ou peritonite, o tratamento inicial é conservador — jejum, sonda nasogástrica, hidratação e correção eletrolítica por 48–72 horas —, com cirurgia se não houver resolução.',
+    commentary: 'O padrão de \'empilhamento de moedas\' é de delgado, não de cólon. Não há sinais de diverticulite. Não há hérnia descrita ao exame.',
+    reference: 'SABISTON. Tratado de cirurgia: a base biológica da prática cirúrgica moderna. 19. ed. Elsevier, 2014. 2240p. / Tratado de cirurgia do CBC. 2. ed. Atheneu, 2015. 1612p.',
+    tags: ['cirurgia', 'obstrução intestinal', 'bridas']
+  },
+  {
+    id: 'tp2019-63',
+    module: 'Cirurgia',
+    image: '/images/tp2019-63.PNG',
+    text: 'Homem, 68 anos, apresenta há 4 meses dificuldade para engolir, inicialmente apenas alimentos mais sólidos e atualmente até para beber água. Refere perda de 8kg neste período e sensação de fraqueza. Antecedentes pessoais: tabagista (4 cigarros de palha ao dia, por mais de 20 anos), etilista (2 doses de pinga ao dia, parou logo que os sintomas se iniciaram), e morou em zona rural na infância. Realizado exame contrastado do esôfago, a seguir.\n\nA hipótese diagnóstica e a respectiva justificativa são:',
+    options: [
+      '(A) Divertículo de terço médio do esôfago; exame contrastado mostrando imagem sacular em terço médio com retração da luz do esôfago.',
+      '(B) Megaesôfago chagásico; história clínica típica, morou em zona rural e exame contrastado mostrando dilatação do esôfago com ondas terciárias.',
+      '(C) Neoplasia de esôfago médio; disfagia progressiva, com irregularidade da mucosa do esôfago no seu terço médio, com dilatação a montante.',
+      '(D) Estenose péptica em esôfago distal; disfagia de início súbito, tabagismo, etilismo e exame contrastado mostrando estenose em esôfago inferior.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Disfagia progressiva (de sólidos para líquidos), perda de peso, tabagismo e etilismo, com esôfago contrastado mostrando irregularidade e estreitamento da luz no terço médio e dilatação a montante: neoplasia de esôfago (carcinoma epidermoide é o tipo associado a tabaco e álcool).',
+    commentary: 'No megaesôfago chagásico, a disfagia é longa e lenta, com afilamento distal regular em \'bico de pássaro\'. O divertículo é imagem sacular sem estenose. A estenose péptica é distal.',
+    reference: 'Sabiston - Tratado de Cirurgia - 2 Volumes - 18ª Ed Beauchamp; Townsend; Courtney, MaryElsevier / MedicinaNacionais.',
+    tags: ['cirurgia', 'câncer de esôfago', 'disfagia']
+  },
+  {
+    id: 'tp2019-64',
+    module: 'Cirurgia',
+    text: 'Mulher de 65 anos apresenta há três dias icterícia, dor abdominal e urina de cor escura. Antecedentes pessoais: colecistopatia crônica calculosa, aguardando cirurgia. Exame físico: febril, ictérica 3+/4, com dor à palpação de hipocôndrio direito. Exames laboratoriais: bilirrubina total de 4,8 mg/dL (bilirrubina direta: 3,8 mg/dL), leucograma de 15.000/mm³ sem desvio.\n\nA hipótese diagnóstica mais provável é:',
+    options: [
+      '(A) Cólica biliar',
+      '(B) Pancreatite aguda',
+      '(C) Colecistite aguda calculosa',
+      '(D) Coledocolitíase com colangite'
+    ],
+    correctAnswer: 3,
+    explanation: 'Paciente com colelitíase que evolui com icterícia colestática (predomínio de bilirrubina direta), febre e dor em hipocôndrio direito — tríade de Charcot: coledocolitíase complicada por colangite.',
+    commentary: 'A cólica biliar não causa febre nem icterícia. A colecistite aguda isolada não cursa com icterícia significativa. A pancreatite cursaria com dor em faixa e elevação de amilase/lipase.',
+    reference: 'José Cesar Assef et. Al. Emergências cirúrgicas traumáticas e não traumáticas. Condutas e algorítimo. Capítulo 24. Colangite aguda. 9 13',
+    tags: ['cirurgia', 'vias biliares', 'colangite']
+  },
+  {
+    id: 'tp2019-65',
+    module: 'Cirurgia',
+    image: '/images/tp2019-65.PNG',
+    text: 'Homem, 63 anos, refere o aparecimento de tumoração localizada no flanco esquerdo, ligeiramente dolorosa, com aumento discreto, porém progressivo do seu volume há seis meses. Nega traumatismo local ou sinais inflamatórios. Foi realizada tomografia computadorizada (abaixo).\n\nO diagnóstico é:',
+    options: [
+      '(A) Hérnia na linha semilunar de Spiegel',
+      '(B) Hérnia lombar congênita',
+      '(C) Sarcoma de retroperitôneo',
+      '(D) Lipoma de parede abdominal'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tumoração lateral na parede abdominal anterior, de crescimento lento, com tomografia mostrando herniação através da aponeurose na linha semilunar, sob o oblíquo externo: hérnia de Spiegel.',
+    commentary: 'A hérnia lombar ocorre na região posterior (triângulos de Petit e Grynfeltt). O sarcoma de retroperitônio é massa profunda. O lipoma é tumor de tecido gorduroso subcutâneo, sem defeito aponeurótico.',
+    reference: 'Townsend CM (ed) et al. Sabiston textbook of surgery: the biological basis of modern surgical practice. 17th ed. Elsevier, Philadelphia, 2004:1214.',
+    tags: ['cirurgia', 'hérnias de parede abdominal']
+  },
+  {
+    id: 'tp2019-66',
+    module: 'Cirurgia',
+    image: '/images/tp2019-66.PNG',
+    text: 'Homem, 57 anos, apresenta queixa de dor abdominal em hipocôndrio direito há cinco dias, associado a náuseas e vômitos. Comorbidades: hipertenso e diabético. Exame físico: mau estado geral, confuso, sudoreico, ictérico 2+/4+, T = 38°C, FC = 130bpm, SaO₂ ar ambiente = 95%, tempo de enchimento capilar > 2 segundos, PA = 70 x 45 mmHg. Abdome flácido, dolorido em hipocôndrio direito, ruídos hidroaéreos presentes. Exames laboratoriais: Hb: 13,0 g/dL; leucócitos: 16.000/mm³ com 10% de bastonetes; ureia: 98 mg/dL; creatinina sérica: 3,2 mg/dL; bilirrubinas totais: 6,9 mg/dL (direta: 4,0 mg/dL); AST 150u/mL; ALT: 101 u/mL; Gama-GT 980 u/mL; fosfatase alcalina: 748 u/mL; amilase: 80 u/mL. Tomografia de abdome apresentada abaixo.\n\nO diagnóstico, a síndrome e a conduta são, respectivamente:',
+    options: [
+      '(A) Colecistite; síndrome colestática; colecistectomia videolaparoscopica de urgência.',
+      '(B) Colangite; pentalogia de Reynolds; estabilização hemodinâmica e colangiopancreatografia endoscópica retrógrada.',
+      '(C) Colangite; tríade de Charcot; estabilização hemodinâmica e colangiopancreatografia endoscópica retrógrada.',
+      '(D) Pancreatite; choque hipovolêmico; estabilização hemodinâmica e ressonância nuclear magnética de vias biliares.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Dor em hipocôndrio direito, febre e icterícia (tríade de Charcot) somadas a hipotensão/choque e confusão mental compõem a pêntade de Reynolds — colangite grave com sepse.\n\nO tratamento é estabilização hemodinâmica, antibioticoterapia e drenagem biliar urgente, preferencialmente por CPRE.',
+    commentary: 'Com choque e confusão, o quadro já ultrapassou a tríade de Charcot. A colecistite não explica a icterícia colestática importante. A amilase normal afasta pancreatite.',
+    reference: 'SABISTON. Tratado de cirurgia: a base biológica da prática cirúrgica moderna. 19. ed. Elsevier, 2014. 2240p.',
+    tags: ['cirurgia', 'colangite', 'sepse']
+  },
+  {
+    id: 'tp2019-67',
+    module: 'Cirurgia',
+    text: 'Homem, 18 anos, sem comorbidades, procura atendimento na UBS com queixa de dor lombar há 3 dias. A dor é intensa na região lombar e se irradia pela face posterior da coxa direita até o joelho. Há limitação da amplitude dos movimentos pela dor.\n\nO exame de sensibilidade é normal, como também o são os reflexos tendinosos profundos dos membros inferiores. A conduta é:',
+    options: [
+      '(A) Realizar ressonância magnética para investigar hérnia de disco extrusa e iniciar tratamento com medicação para dor neuropática.',
+      '(B) Recomendar repouso absoluto e realização de radiografia de coluna lombar para investigar hérnia de disco.',
+      '(C) Iniciar tratamento analgésico, podendo-se optar por anti-inflamatórios não hormonais e reservando o uso de opioides, se houver refratariedade.',
+      '(D) Iniciar tratamento analgésico com medicação neuropática e analgesia simples de resgate (dipirona ou paracetamol).'
+    ],
+    correctAnswer: 2,
+    explanation: 'Lombalgia aguda com dor referida à coxa, sem alteração de sensibilidade, reflexos ou força e sem sinais de alerta (déficit motor, alteração esfincteriana, febre, trauma, câncer): lombalgia mecânica inespecífica.\n\nNão há indicação de exame de imagem. O tratamento é sintomático (AINE ou analgésico simples, reservando opioides para refratários) e manter-se ativo.',
+    commentary: 'Ressonância só é indicada com sinais de alerta ou falha do tratamento após semanas. Repouso absoluto atrasa a recuperação. Medicação para dor neuropática não se justifica sem radiculopatia.',
+    reference: 'Brazil AV. et al. Diagnóstico e tratamento das lombalgias e lombociatalgias. Rev Bras Reumatol 2004; 44(6):419-25. / Stump PRNAG, Kobayashi R, Campos AW. Lombociatalgia. Rev Dor São Paulo 2016; 17(supl 1):S63-6.',
+    tags: ['ortopedia', 'lombalgia', 'atenção primária']
+  },
+  {
+    id: 'tp2019-68',
+    module: 'Cirurgia',
+    text: 'Mulher, 36 anos, procura atendimento ambulatorial para tratamento da obesidade. Refere ter obesidade há 12 anos, após gestação, e realizado inúmeras dietas sem sucesso. Fez uso de Sibutramina e Bupropiona nos últimos dois anos com efeitos colaterais (taquicardia e irritabilidade) e perda ponderal de 12kg. Ao exame: peso = 104kg; altura = 1,68m e IMC 36,8 kg/m². Refere esteatose hepática, doença do refluxo gastroesofágico e artropatia de joelho direito.\n\nA melhor orientação clínica para esta paciente é:',
+    options: [
+      '(A) Encaminhar para o serviço de cirurgia bariátrica, pois preenche os critérios de indicação cirúrgica.',
+      '(B) Encaminhar para nutricionista e educador físico, e evitar o uso de medicamentos devido aos efeitos colaterais já observados.',
+      '(C) Encaminhar para o endocrinologista e nutricionista, pois a paciente não preenche os critérios para cirurgia bariátrica.',
+      '(D) Encaminhar para o nutricionista e prescrever sibutramina e naltrexona, por ser a melhor combinação medicamentosa para tratamento da obesidade.'
+    ],
+    correctAnswer: 0,
+    explanation: 'IMC de 36,8 kg/m² com comorbidades relacionadas à obesidade (esteatose, refluxo, artropatia), obesidade há mais de 5 anos e falha de tratamento clínico por pelo menos 2 anos: preenche os critérios da Portaria 424/2013 do Ministério da Saúde para cirurgia bariátrica (IMC ≥ 35 com comorbidade).',
+    commentary: 'Insistir apenas em tratamento clínico ou dizer que não há critério cirúrgico contraria as normas. Sibutramina com naltrexona não é combinação padrão.',
+    reference: 'Portarias GM 424 e 425 / 2013 – Ministério da Saúde – Brasil.',
+    tags: ['cirurgia', 'obesidade', 'cirurgia bariátrica']
+  },
+  {
+    id: 'tp2019-69',
+    module: 'Cirurgia',
+    text: 'Menino, 10 anos, no 1º pós-operatório de apendicectomia por apendicite aguda perfurada, sonolento e hipoativo há 2 horas. A mãe relata que, antes disso, apresentou 3 episódios de vômitos, de conteúdo bilioso, em grande quantidade. Desde o momento da cirurgia, encontra-se em jejum e ainda não evacuou, mas está eliminando flatos. Hoje, urinou apenas uma vez, em pequena quantidade, urina de cor amarelo escura. Exame físico: REG, hipoativo, descorado 2+/4, anictérico, com turgor pastoso. T = 37,2ºC, FC = 106 bpm, FR = 15 irpm, PA = 100 x 70 mmHg. Abdome: ruídos hidroaéreos propulsivos, com dor à palpação profunda da região próxima à ferida cirúrgica, sem reação peritoneal.\n\nO diagnóstico é:',
+    options: [
+      '(A) Choque séptico',
+      '(B) Abscesso intracavitário',
+      '(C) Abdome agudo obstrutivo',
+      '(D) Desidratação aguda'
+    ],
+    correctAnswer: 3,
+    explanation: 'Criança no pós-operatório com vômitos volumosos, jejum, oligúria com urina concentrada, turgor pastoso, taquicardia e sonolência, mas com ruídos hidroaéreos presentes, eliminando flatos e sem peritonite: desidratação aguda por perdas não repostas.',
+    commentary: 'Não há febre nem instabilidade compatíveis com choque séptico. O abscesso intracavitário surge mais tarde (5º–7º dia), com febre. Há eliminação de flatos, o que afasta obstrução.',
+    reference: 'Carlotti APCP. Choque em crianças. Medicina (Ribeirão Preto) 2012; 45(2):197-207. / Spadella CT. Pós-operatório. In: Cataneo AJM, Kobayasi S. Clínica cirúrgica. Faculdade de Medicina de Botucatu – UNESP. Elsevier 2003. 254-61.',
+    tags: ['cirurgia', 'pediatria', 'pós-operatório']
+  },
+  {
+    id: 'tp2019-70',
+    module: 'Cirurgia',
+    text: 'Homem, 20 anos, vítima de capotamento de automóvel há 30 minutos, com escore de Glasgow = 7, com equimose periorbitária bilateral e trauma complexo de face com sangramento intenso.\n\nPA = 120 x 90 mmHg, FC = 100 bpm e FR = 18 ipm, saturação em ar ambiente de 96%. A conduta é:',
+    options: [
+      '(A) Pela dificuldade de intubação e riscos envolvidos, a melhor opção é a cricotiroidostomia.',
+      '(B) Como o paciente está estável, pelo risco da intubação poderá receber oxigênio em máscara ou cateter.',
+      '(C) Pelo risco de lesão da coluna cervical, a intubação nasotraqueal deverá ser realizada cuidadosamente.',
+      '(D) Para garantir uma via aérea definitiva, deve-se realizar a traqueostomia de emergência.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Trauma grave com Glasgow 7 exige via aérea definitiva. Há trauma complexo de face com sangramento intenso e sinais de fratura de base de crânio (equimose periorbitária bilateral): a intubação orotraqueal é difícil e a nasotraqueal está contraindicada.\n\nNessa situação, a via aérea cirúrgica indicada na emergência é a cricotireoidostomia.',
+    commentary: 'Oxigênio por máscara não protege a via aérea com Glasgow ≤ 8. A intubação nasotraqueal é contraindicada na suspeita de fratura de base de crânio. A traqueostomia não é procedimento de emergência no adulto.',
+    reference: 'Advanced Trauma Life Support. 10ª ed. 2018',
+    tags: ['cirurgia', 'trauma', 'via aérea']
+  },
+  {
+    id: 'tp2019-71',
+    module: 'Cirurgia',
+    text: 'Homem, 59 anos, referia dispneia importante e apresentava história clínica compatível com pneumonia comunitária. Foi realizada uma radiografia de tórax, que evidenciou um derrame pleural volumoso ocupando os 2/3 inferiores do hemitórax direito. O paciente foi submetido a uma toracocentese diagnóstica.\n\nAs características do líquido pleural que indicam uma drenagem torácica imediata são:',
+    options: [
+      '(A) pH = 7,35; glicose = 70 mg%; DHL = 700 UI/L; predomínio de linfócitos e monócitos.',
+      '(B) pH = 7,31; glicose = 80 mg%; DHL = 800 UI/L; predomínio de polimorfonucleares.',
+      '(C) pH = 7,18; glicose = 40 mg%; DHL = 1200 UI/L; predomínio de polimorfonucleares.',
+      '(D) Relação entre proteína do líquido pleural/sérica = 0,4; DHL do líquido pleural/sérica = 0,5, e DHL no líquido pleural ˂ 2/3 do limite superior no soro.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Derrame parapneumônico com pH < 7,2, glicose < 60 mg/dL, DHL elevada e predomínio de polimorfonucleares define derrame complicado/empiema, com indicação de drenagem torácica imediata.',
+    commentary: 'A alternativa A é sugestiva de derrame linfocitário (tuberculose, por exemplo). A B ainda é limítrofe (pH > 7,2). A D é um transudato pelos critérios de Light.',
+    reference: 'Catâneo, AJM & Kobayasi, S. Clínica Cirúrgica. Revinter, 2003.',
+    tags: ['cirurgia', 'pneumologia', 'derrame pleural']
+  },
+  {
+    id: 'tp2019-72',
+    module: 'Cirurgia',
+    text: 'Homem, 70 anos, deu entrada no Pronto-Socorro com quadro de dor abdominal, com irradiação para o dorso e para o flanco esquerdo, com início 4 horas antes da admissão hospitalar. Antecedentes pessoais: tabagismo, hipertensão arterial, enfisema pulmonar e dislipidemia. Exame físico: ansioso, sudoreico, PA = 90 x 50 mmHg, FC = 130 bpm. Ausculta cardíaca: presença de duas bulhas rítmicas e hipofonéticas. Abdome: massa pulsátil em região epigástrica, com dor intensa à palpação local e sinais de irritação peritoneal. MMII: pulsos femorais, poplíteos, tibiais posteriores e pediosos palpáveis, porém com amplitude diminuída.\n\nO diagnóstico é:',
+    options: [
+      '(A) Isquemia mesentérica aguda.',
+      '(B) Oclusão aguda de aorta abdominal.',
+      '(C) Rotura de aneurisma de aorta abdominal.',
+      '(D) Rotura de hemangioma hepático.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Idoso tabagista e hipertenso com dor abdominal irradiada para o dorso, hipotensão e massa pulsátil: tríade clássica da rotura de aneurisma de aorta abdominal. É emergência cirúrgica.',
+    commentary: 'A isquemia mesentérica cursa com dor desproporcional ao exame, sem massa pulsátil. A oclusão aguda da aorta causaria ausência de pulsos distais. Hemangioma hepático roto é raro e não se apresenta com massa pulsátil.',
+    reference: 'Maffei FHA, Lastória S, Yoshida WB, Rollo HÁ, Giannini M, Moura R. Doenças Vasculares Periféricas. 2015. Quarta edição.',
+    tags: ['cirurgia vascular', 'aneurisma de aorta']
+  },
+  {
+    id: 'tp2019-73',
+    module: 'Cirurgia',
+    text: 'Homem, 45 anos, tabagista, etilista, deu entrada no PS com queixa de dor de forte intensidade em região mesogástrica de início súbito há 6 horas, após vômitos intensos. Exame físico: hálito etílico, hipocorado 1+/4+, PA = 100 x 60 mmHg, FC = 110 bpm, abdome tenso, em tábua, doloroso à palpação em região de mesogástrio, sinal de Jobert positivo.\n\nO diagnóstico e o exame complementar a se solicitar são, respectivamente:',
+    options: [
+      '(A) Gastrite aguda; endoscopia digestiva alta.',
+      '(B) Úlcera perfurada; radiografia de tórax com cúpulas.',
+      '(C) Úlcera terebrante; tomografia computadorizada de abdome.',
+      '(D) Pancreatite aguda; amilase.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Dor abdominal súbita e intensa, abdome em tábua e sinal de Jobert (perda da macicez hepática por ar livre) em tabagista e etilista: úlcera péptica perfurada.\n\nA radiografia de tórax em pé com cúpulas diafragmáticas mostra pneumoperitônio.',
+    commentary: 'Gastrite não causa peritonite com pneumoperitônio. A úlcera terebrante penetra órgão vizinho sem ar livre. A pancreatite não causa sinal de Jobert.',
+    reference: 'Clínica Cirúrgica; Alipio Correia Neto, Manlio Esperanzini. Manual do Residente de Cirurgia.',
+    tags: ['cirurgia', 'abdome agudo perfurativo']
+  },
+  {
+    id: 'tp2019-74',
+    module: 'Cirurgia',
+    text: 'Mulher, 58 anos, hipertensa, é levada ao hospital devido a cefaleia súbita, intensa, acompanhada de vômitos e rebaixamento do nível de consciência há 3 horas. Exame físico: sonolenta, confusa, rigidez de nuca; PA = 200 x 120 mmHg, FC = 84bpm.\n\nO diagnóstico e a conduta são, respectivamente:',
+    options: [
+      '(A) Meningite meningogócica fulminante; punção liquórica.',
+      '(B) Hemorragia subaracnoidea secundária a aneurisma roto; tomografia de crânio.',
+      '(C) Acidente vascular cerebral hemorrágico intraparenquimatoso; angiografia digital cerebral.',
+      '(D) Encefalopatia hipertensiva; nitroprussiato de sódio.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Cefaleia súbita e intensa (\'a pior da vida\'), vômitos, rebaixamento de consciência e rigidez de nuca: hemorragia subaracnoide, cuja principal causa espontânea é a rotura de aneurisma intracraniano.\n\nO primeiro exame é a tomografia de crânio sem contraste.',
+    commentary: 'Na meningite há febre e pródromo. A angiografia é posterior à confirmação pela tomografia. A encefalopatia hipertensiva não cursa com cefaleia ictal e rigidez de nuca.',
+    reference: 'Nitrini R, Bacheschi LA. A Neurologia que Todo Médico Deve Saber. Atheneu, São Paulo, 2003.',
+    tags: ['neurologia', 'neurocirurgia', 'hemorragia subaracnoide']
+  },
+  {
+    id: 'tp2019-75',
+    module: 'Cirurgia',
+    text: 'Mulher, 36 anos, renal crônica, em uso contínuo de AAS, foi submetida a passagem de cateter de diálise (Shilley) em veia subclávia direita para iniciar hemodiálise. O método foi realizado segundo a técnica de Seldinger, não guiado por ultrassom. Após o procedimento, a paciente começou a apresentar dispneia, taquipneia e dessaturação de O₂. Submetida a radiografia de tórax, que evidenciou hemotórax extenso à direita. Realizada drenagem torácica à direita com saída imediata de 800mL de sangue. A paciente manteve-se com episódios de hipotensão arterial e necessidade de transfusões sanguíneas sucessivas. O débito no dreno de tórax foi de 280 mL/hora nas primeiras 3 horas. Não há serviço de cirurgia endovascular disponível no hospital.\n\nAs indicações para abordagem cirúrgica da paciente são:',
+    options: [
+      '(A) Necessidade de transfusões sucessivas e débito do dreno > 200 mL/hora.',
+      '(B) Débito do dreno > 250 mL/hora e uso de AAS.',
+      '(C) Debito do dreno > 150 mL/hora e dessaturação de O₂.',
+      '(D) Doença renal crônica dialítica e saída imediata de 800mL de sangue.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Pelo ATLS, as indicações de toracotomia no hemotórax são: drenagem imediata ≥ 1.500 mL, débito ≥ 200 mL/h por 2–4 horas ou necessidade persistente de transfusão.\n\nA paciente mantém débito de 280 mL/h por 3 horas e precisa de transfusões sucessivas — e não há serviço endovascular disponível.',
+    commentary: 'O uso de AAS, a doença renal crônica e a dessaturação não são critérios de indicação cirúrgica. A drenagem inicial de 800 mL não atinge o limiar de 1.500 mL.',
+    reference: 'Advanced Trauma Life Support. 10ª ed. 2018',
+    tags: ['cirurgia', 'hemotórax', 'complicações de procedimentos']
+  },
+  {
+    id: 'tp2019-76',
+    module: 'Cirurgia',
+    text: 'Homem, 65 anos, trabalhador rural, apresenta lesão ulcerada de 3cm de diâmetro no antebraço direito há um ano. Refere sangramento esporádico.\n\nAo exame, apresenta lesão de margens elevadas, não muito bem definidas, com aspecto perláceo, leito hipervascularizado e ulceração central. A conduta é:',
+    options: [
+      '(A) Curetagem seguida de eletrocoagulação do leito, com encaminhamento para anatomia patológica e posterior ampliação de margens, se necessário.',
+      '(B) Ressecção com margens superficiais de 0,5 a 1cm, e encaminhamento para análise anátomo-patológica.',
+      '(C) Biópsia, e somente após o resultado anátomo-patológico deverá ser realizado o tratamento cirúrgico.',
+      '(D) Radioterapia inicial para obter regressão do tumor e, após 30 dias, biópsia excisional.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Lesão ulcerada de crescimento progressivo, com bordas elevadas e infiltradas, em área fotoexposta de trabalhador rural, com sangramento: a banca a interpreta como carcinoma espinocelular.\n\nSem dúvida diagnóstica e com lesão ressecável, a conduta é a excisão com margens de segurança e exame anatomopatológico da peça.',
+    commentary: 'Curetagem e eletrocoagulação não permitem avaliar margens. Biópsia prévia é desnecessária quando a ressecção é factível. Radioterapia inicial não é a escolha. Observação: o aspecto \'perláceo\' descrito evoca carcinoma basocelular; de todo modo, a excisão com margens é a conduta adequada para ambos.',
+    reference: 'Guia de Cirurgia Plástica. Ferreira LM. Editor da Série: Schor N. 2007 – Barueri: Ed. Manole, p. 259. / Plastic Surgery. Stephen Mathes. Esevier, 2nd Edition, 2006, p. 391.',
+    tags: ['cirurgia', 'câncer de pele', 'carcinoma espinocelular']
+  },
+  {
+    id: 'tp2019-77',
+    module: 'Cirurgia',
+    text: 'Menino, 13 anos, apresentou queda sobre objeto cortante em via pública. Dá entrada no Pronto-Socorro com perfuração do olho direito.\n\nAté a chegada do oftalmologista, a conduta é:',
+    options: [
+      '(A) Aplicação de anestésico tópico e tampão ocular.',
+      '(B) Curativo compressivo e antibioticoterapia sistêmica.',
+      '(C) Lavagem com água corrente e antibioticoterapia tópica.',
+      '(D) Oclusão ocular com gaze e verificação de vacinação antitetânica.'
+    ],
+    correctAnswer: 3,
+    explanation: 'No trauma ocular penetrante, até a avaliação do oftalmologista, deve-se proteger o olho com oclusão sem compressão (gaze ou protetor rígido), evitar manipulação e colírios/pomadas e verificar a vacinação antitetânica.',
+    commentary: 'Curativo compressivo pode extruir o conteúdo ocular. Lavagem e antibiótico tópico manipulam o olho perfurado. Anestésico tópico não deve ser usado.',
+    reference: 'VAUGHAN, D – Oftalmologia Geral / RODRIGUES, M.L.V. - Oftalmologia Clínica',
+    tags: ['oftalmologia', 'trauma ocular']
+  },
+  {
+    id: 'tp2019-78',
+    module: 'Cirurgia',
+    text: 'Mulher, 46 anos, chega à unidade de pronto atendimento com quadro de dor em região lombar e flanco direito, vômitos, febre, taquicardia e mal-estar. Relata antecedente de urolitíase. Apresenta melhora parcial com analgésico, antitérmico e antiemético endovenosos. Exames: Hemograma: glóbulos brancos 19.600/mm³, bastões 15%; creatinina: 2,1 mg/dL; urina I: leucocitúria importante e hematúria.\n\nTomografia de abdome evidencia cálculo ureteral proximal à direita com cerca de 0,8cm, com dilatação moderada ureteropielocalicial a montante e borramento peri-renal. A conduta é:',
+    options: [
+      '(A) Antibioticoterapia por 14 dias, analgesia e acompanhamento clínico ambulatorial.',
+      '(B) Antibioticoterapia, equilíbrio hemodinâmico e desobstrução de emergência (cateter ureteral duplo J ou nefrostomia).',
+      '(C) Antibioticoterapia, ureterolitotripsia endoscópica para retirada do cálculo e hidratação com solução isotônica.',
+      '(D) Litotripsia extracorpórea, equilíbrio hemodinâmico e analgesia.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Cálculo ureteral obstrutivo com sinais de infecção (febre, leucocitose com desvio, leucocitúria) e lesão renal: pielonefrite obstrutiva, uma emergência urológica.\n\nA conduta é antibioticoterapia, suporte hemodinâmico e desobstrução de urgência da via urinária (cateter duplo J ou nefrostomia). O cálculo é tratado depois.',
+    commentary: 'Tratamento ambulatorial é inadequado. A retirada do cálculo (ureteroscopia ou litotripsia) deve ser adiada até o controle da infecção, pelo risco de sepse.',
+    reference: 'Pearle MS, Antonelli JA, Lotan Y. Urinary Lithiasis. In: Campbell-Walsh Urology, 11th ed. Editor-in-chief, Alan J. Wein. Local: Philadelphia, 2016. Elsevier. / Türk C, Neisius A, Petrik A, Seitz C, Skolarikos A, Tepeler A, Thomas K. Guidelines on Urolithiasis, 2016 (atualização 2017). European Association of Urology.',
+    tags: ['urologia', 'litíase urinária', 'sepse']
+  },
+  {
+    id: 'tp2019-79',
+    module: 'Cirurgia',
+    text: 'Homem, 60 anos, com sintomas miccionais leves, procurou atendimento ambulatorial para avaliação prostática. O toque retal mostrou próstata fibroelástica, sem nódulos e com peso estimado de 30 gramas. A dosagem do Antígeno Prostático Específico (PSA) total foi de 11,8 ng/mL (VR: até 4,0 ng/mL) e o exame de sedimento urinário foi normal.\n\nA melhor conduta é:',
+    options: [
+      '(A) Tomografia computadorizada da pelve, para melhor avaliação prostática.',
+      '(B) Dosagem de enzimas hepáticas que podem interferir com o valor do PSA.',
+      '(C) Ultrassonografia transretal com biópsia prostática.',
+      '(D) Reavaliação clínica e laboratorial em seis meses.'
+    ],
+    correctAnswer: 2,
+    explanation: 'PSA de 11,8 ng/mL (acima de 10) com próstata pequena (30 g) e sedimento normal: a probabilidade de câncer é alta. Está indicada biópsia prostática guiada por ultrassonografia transretal.',
+    commentary: 'Tomografia não diagnostica câncer de próstata. Enzimas hepáticas não interferem no PSA. Reavaliar em 6 meses atrasaria o diagnóstico. Observação: hoje, em muitos serviços, a ressonância multiparamétrica precede a biópsia.',
+    reference: 'Campbell-Walsh, Urology, TenthEditionReview, 2012. 9 15',
+    tags: ['urologia', 'câncer de próstata', 'PSA']
+  },
+  {
+    id: 'tp2019-80',
+    module: 'Cirurgia',
+    text: 'Mulher, 21 anos, foi encaminhada ao serviço de cirurgia ambulatorial para uma biópsia de linfonodo cervical. Após o preparo pré-operatório e antissepsia, foi iniciado o procedimento com anestesia local. Momentos após, ao se iniciar a manipulação do linfonodo, a paciente referiu gosto metálico na boca, vertigem e turvação visual. Passou a ficar agitada e a movimentar-se constantemente na maca.\n\nA causa dessas alterações e a conduta são:',
+    options: [
+      '(A) Ansiedade relacionada à cirurgia; administrar Midazolam endovenoso e concluir o procedimento.',
+      '(B) Estimulação vagal secundária à manipulação cervical; interromper ou abreviar o procedimento e administrar atropina intravenosa.',
+      '(C) Reação alérgica ao antisséptico de pele clorexedina; administrar anti-histamínico e corticosteroide endovenoso e concluir o procedimento.',
+      '(D) Intoxicação sistêmica por anestésico local lidocaína; interromper ou abreviar o procedimento, promover oxigenação, monitorização contínua de sinais vitais.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Gosto metálico, tontura, turvação visual e agitação durante anestesia local são sinais precoces de toxicidade sistêmica por anestésico local (lidocaína). Podem evoluir para convulsões e arritmias.\n\nA conduta é interromper o procedimento, oxigenar, monitorizar e tratar complicações (benzodiazepínico para convulsão, emulsão lipídica em casos graves).',
+    commentary: 'A ansiedade não causa gosto metálico. A resposta vagal cursa com bradicardia e hipotensão. A alergia à clorexidina provocaria urticária e broncoespasmo.',
+    reference: 'Brunton, L.L. Goodman & Gilman: As Bases Farmacológicas da Terapêutica. 12ª ed. Rio de Janeiro: McGraw-Hill, 2012',
+    tags: ['cirurgia', 'anestesiologia', 'toxicidade']
   }
 ];

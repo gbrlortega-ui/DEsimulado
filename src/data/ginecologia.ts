@@ -1928,6 +1928,327 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
     commentary: 'O cenário envolve um dilema bioético clássico de conflito entre Autonomia (pedido explícito da paciente de iniciar heparina) versus Não-Maleficência/Beneficência (o risco de prescrever heparina sem o diagnóstico correto firmado). O diagnóstico da SAF requer um critério clínico (perdas gestacionais recorrentes) somado a um critério laboratorial que deve ser confirmado em duas ou mais ocasiões, com intervalo mínimo de 12 semanas. Uma única dosagem positiva de anticardiolipina IgG moderada não fecha o critério laboratorial de SAF. Prescrever anticoagulação empírica expõe a gestante a riscos hemorrágicos consideráveis e carece de embasamento científico de eficácia. A conduta do profissional deve ser pedagógica e ética: acolher o sofrimento da paciente, elucidar os critérios clínicos e os riscos inerentes à terapêutica impensada, e contraindicar a medicação até a confirmação sorológica após 12 semanas. Sobre os distratores: (A, D) A prescrição de heparina sem critérios diagnósticos e sem indicação clara constitui negligência e imperícia ética. (C) O encaminhamento abrupto de paciente sob angústia emocional caracteriza abandono de assistência ginecológica.',
     reference: 'Conselho Federal de Medicina. Código de Ética Médica – Resolução nº 2.217/2018. ACOG Practice Bulletin. Clinical Management Guidelines for Obstetrician-Gynecologists. Number 134: Antiphospholipid Syndrome. 2013.',
     tags: ['SAF', 'Bioética', 'Ética Médica', 'Abortamento de Repetição']
+  },
+  // ---- Teste de Progresso 2019 (gabarito oficial) ----
+  {
+    id: 'tp2019-81',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Gestante comparece para primeira consulta de pré-natal com 12 semanas de gestação, confirmada por ultrassonografia precoce.\n\nEm relação à avaliação da vitalidade fetal, é correto afirmar que:',
+    options: [
+      '(A) Os batimentos cardíacos fetais podem ser auscultados com Sonar.',
+      '(B) Os batimentos cardíacos fetais podem ser auscultados com estetoscópio de Pinard.',
+      '(C) Nessa idade gestacional, os batimentos cardíacos fetais podem ser identificados somente com ultrassonografia.',
+      '(D) Nessa idade gestacional não é possível a ausculta dos batimentos cardíacos fetais.'
+    ],
+    correctAnswer: 0,
+    explanation: 'O sonar Doppler detecta os batimentos cardíacos fetais a partir de cerca de 10–12 semanas. O estetoscópio de Pinard só os capta a partir de aproximadamente 20 semanas.',
+    commentary: 'Com 12 semanas não é necessário ultrassom para detectar os batimentos — o sonar já os capta. O Pinard ainda não permite a ausculta nessa idade gestacional.',
+    reference: 'Assistência Pré-Natal. In: Zugaib Obstetrícia. Zugaib M & Francisco RPV. 3ª ed. Manole, 2017',
+    tags: ['obstetrícia', 'pré-natal', 'vitalidade fetal']
+  },
+  {
+    id: 'tp2019-82',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Para calcular a idade gestacional, nos baseamos na data da última menstruação.\n\nPortanto, a mulher que menstruou pela última vez em 01/03/2018, no dia 03/12/2018 está com:',
+    options: [
+      '(A) 37 semanas e 2 dias',
+      '(B) 39 semanas e 2 dias',
+      '(C) 38 semanas e 5 dias',
+      '(D) 40 semanas e 3 dias'
+    ],
+    correctAnswer: 1,
+    explanation: 'De 01/03/2018 a 03/12/2018 há 277 dias: março (30 dias a partir do dia 1), abril (30), maio (31), junho (30), julho (31), agosto (31), setembro (30), outubro (31), novembro (30) e 3 dias de dezembro.\n\n277 ÷ 7 = 39 semanas e 4 dias pela contagem exata; a banca considerou 39 semanas e 2 dias, a única alternativa compatível com 39 semanas.',
+    commentary: 'As demais alternativas erram o número de semanas. Observação: pela contagem exata, o resultado é 39 semanas e 4 dias; a alternativa oficial é a mais próxima, mas os dias não batem — questão passível de recurso.',
+    reference: 'MONTENEGRO, Rezende Filho. Obstetrícia Fundamental (2012).',
+    tags: ['obstetrícia', 'idade gestacional']
+  },
+  {
+    id: 'tp2019-83',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Primigesta, 17 anos de idade, chega ao hospital com queixas de cefaleia intensa, dor epigástrica e alterações visuais. Está com 35 semanas de gravidez, pressão arterial de 170 x 110 mmHg, útero com tônus normal, dinâmica ausente, altura uterina de 29cm, frequência cardíaca fetal de 136 bpm.\n\nO diagnóstico provável e conduta são:',
+    options: [
+      '(A) Eclâmpsia; administar sulfato de magnésio e hidralazina e interromper a gravidez.',
+      '(B) Iminência de eclâmpsia; administrar hidralazina e indicar a cesárea imediatamente.',
+      '(C) Pré-eclâmpsia grave; realizar o parto cesárea imediatamente.',
+      '(D) Iminência de eclâmpsia; administrar sulfato de magnésio e hidralazina e interromper a gravidez.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Gestante de 35 semanas com crise hipertensiva (170 x 110 mmHg) e sinais de iminência de eclâmpsia (cefaleia intensa, escotomas, dor epigástrica). A conduta é sulfato de magnésio (prevenção de convulsões), anti-hipertensivo de ação rápida (hidralazina) e interrupção da gestação após estabilização materna.',
+    commentary: 'Não houve convulsão, logo não é eclâmpsia. Cesárea imediata sem sulfato de magnésio expõe a gestante a convulsão. Iminência de eclâmpsia é mais que pré-eclâmpsia grave \'simples\'.',
+    reference: 'Tratado Obstetrícia da FEBRASGO, 2019',
+    tags: ['obstetrícia', 'pré-eclâmpsia', 'síndromes hipertensivas']
+  },
+  {
+    id: 'tp2019-84',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Secundigesta, 31 anos, na 24ª semana apresentou teste de tolerância à glicose (TTG 75g) alterado, tendo sido instituída nesse momento uma dieta para diabetes com 2.000Kcal e atividade física (caminhada – 150 minutos/semana). Com 29 semanas, a gestante realiza ultrassonografia, que mostra crescimento fetal no percentil 90 e polidrâmnio, e traz o controle glicêmico da última semana (dias 1, 3, 5 e 7):\n\n• Jejum (mg/dL): 97 / 96 / 99 / 101\n• 1h pós-café (mg/dL): 139 / 136 / 142 / 141\n• 1h pós-almoço (mg/dL): 150 / 144 / 141 / 138\n• 1h pós-jantar (mg/dL): 153 / 140 / 134 / 137\n• Hb glicada: 6,5%\n\nConsiderando o quadro atual, a conduta é:',
+    options: [
+      '(A) Diminuir a dieta para 1.800Kcal e intensificar a atividade física.',
+      '(B) Manter a dieta, atividade física e associar glibenclamida.',
+      '(C) Manter a dieta, atividade física e associar o uso de insulina.',
+      '(D) Manter a dieta e a atividade física.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Diabetes gestacional sem controle após dieta e atividade física: jejum persistentemente ≥ 95 mg/dL e pós-prandiais no limite, com repercussão fetal (crescimento no percentil 90 e polidrâmnio).\n\nIndica-se manter dieta e exercício e iniciar insulina, que é a primeira escolha farmacológica na gestação.',
+    commentary: 'Restringir mais calorias aumenta o risco de cetose. A glibenclamida atravessa a placenta e se associa a pior desfecho neonatal. Manter apenas dieta e atividade física ignora a falha de controle.',
+    reference: 'Management of Diabetes in Pregnancy. Diabetes Care 2018, vol 41, supplement 1: S137-S143.',
+    tags: ['obstetrícia', 'diabetes gestacional']
+  },
+  {
+    id: 'tp2019-85',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Mulher, 30 anos, sem morbidades, com antecedente obstétrico de parto pré-termo (24ª semana) na primeira gravidez e de três abortamentos tardios nas gestações subsequentes. Atualmente está na 13ª semana de gravidez, sem queixas. Realizou exames de rotina de pré-natal (normais) e ultrassonografia de primeiro trimestre, com morfologia fetal e transluscência nucal normais.\n\nCom base no antecedente obstétrico da gestante e no resultado dos exames, a melhor conduta é:',
+    options: [
+      '(A) Prescrever inibina e progesterona a partir da 16ª semana.',
+      '(B) Prescrever progesterona vaginal com 20 semanas.',
+      '(C) Medir o comprimento do colo com ultrassom mensalmente.',
+      '(D) Realizar cerclagem cervical entre 14-16 semanas.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Parto pré-termo extremo e abortamentos tardios de repetição, tipicamente indolores, sugerem insuficiência istmocervical. Com esse diagnóstico pela história, a conduta é a cerclagem eletiva entre 14 e 16 semanas, após confirmar vitalidade e morfologia fetal.',
+    commentary: 'A medida seriada do colo é indicada quando há antecedente de prematuridade sem diagnóstico de IIC. A progesterona vaginal tem papel no colo curto, mas não substitui a cerclagem na IIC. Inibina não é tratamento.',
+    reference: 'Zugaib M & Francisco RMP. Zugaib Obstetrícia – 3. ed. – Barueri, SP: Manole, 2017.',
+    tags: ['obstetrícia', 'insuficiência istmocervical', 'prematuridade']
+  },
+  {
+    id: 'tp2019-86',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Primigesta, 28 anos de idade, gestação de 11 semanas, apresenta queixa de cólica em baixo ventre e sangramento vaginal de moderada intensidade há dois dias. Ao exame, encontra-se febril (37,8°C), PA: 110 x 70 mmHg e FC: 108bpm. Ao exame especular, observa-se grande quantidade de sangue vivo em fundo de saco vaginal, com odor fétido e orifício interno do colo uterino pérvio para 1 polpa digital.\n\nNesse caso, a conduta é:',
+    options: [
+      '(A) Realizar esvaziamento uterino e antibioticoterapia.',
+      '(B) Solicitar ultrassonografia e manter observação.',
+      '(C) Iniciar antibioticoterapia e manter observação.',
+      '(D) Realizar apenas aspiração manual intrauterina.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Abortamento com colo pérvio, sangramento, febre, taquicardia e odor fétido: abortamento infectado.\n\nA conduta é antibioticoterapia de amplo espectro e esvaziamento uterino (após o início dos antibióticos), para remover o foco infeccioso.',
+    commentary: 'Observação expectante é inadequada diante da infecção. Antibiótico sem esvaziamento mantém o foco. Aspiração sem antibiótico expõe ao risco de sepse.',
+    reference: 'Zugaib, M & Francisco RP. Obstetrícia. Editora Manole, 2017 Duarte G, et al. Protocolos de Conduta em Gestação de Alto Risco, 2003',
+    tags: ['obstetrícia', 'abortamento']
+  },
+  {
+    id: 'tp2019-87',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Primigesta, 37 semanas de gravidez, comparece ao pronto atendimento da maternidade por dor abdominal de forte intensidade, acompanhada por sangramento vaginal de coloração viva, em moderada quantidade. Exame físico: PA = 100/60 mmHg, hipertonia uterina, FCF = 80 bpm, especular com sangramento pelo orifício externo em moderada quantidade, com coágulos. Toque: colo dilatado 4cm, bolsa íntegra.\n\nConsiderando o caso descrito, a hipótese diagnóstica e a melhor conduta são:',
+    options: [
+      '(A) Placenta prévia; ultrassonografia e cardiotocografia.',
+      '(B) Placenta prévia e sofrimento fetal; cesárea.',
+      '(C) Descolamento prematuro de placenta e sofrimento fetal; amniotomia e cesárea.',
+      '(D) Descolamento prematuro de placenta; indução do trabalho de parto.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Dor abdominal intensa, sangramento vivo, hipertonia uterina e bradicardia fetal (80 bpm) a termo: descolamento prematuro de placenta com sofrimento fetal.\n\nCom feto vivo e parto não iminente (colo com 4 cm), a conduta é amniotomia (reduz a pressão intrauterina e a passagem de tromboplastina para a circulação materna) e cesárea.',
+    commentary: 'A placenta prévia sangra sem dor e sem hipertonia. Indução do parto com sofrimento fetal atrasaria a extração.',
+    reference: 'Zugaib, M & Francisco RP. Obstetrícia. Editora Manole, 2017',
+    tags: ['obstetrícia', 'descolamento prematuro de placenta']
+  },
+  {
+    id: 'tp2019-88',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Primigesta, 29 anos, 33 semanas, pré-natal sem intercorrências. Procura pronto atendimento com queixa de dor em hipogástrio há 3 horas. Ao exame físico, bom estado geral, sinais vitais normais, altura uterina de 31cm, feto cefálico, FCF = 140 bpm, dinâmica uterina de 3 contrações em 10 minutos, com 50 segundos de duração, rítmicas, dolorosas. Ao exame de toque: colo médio com 3cm, medianizado, bolsa íntegra, cefálico, -2.\n\nNesse caso, o próximo passo no cuidado da gestante é prescrever:',
+    options: [
+      '(A) Terbutalina, sulfato de magnésio e corticoterapia.',
+      '(B) Nifedipina, corticoterapia e profilaxia para Estreptococo do grupo B.',
+      '(C) Indometacina, corticoterapia e antibioticoterapia para corioamnionite.',
+      '(D) Atosibano, sulfato de magnésio e profilaxia para Estreptococo do grupo B.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Trabalho de parto prematuro (33 semanas, contrações regulares e colo com 3 cm) com bolsa íntegra e sem contraindicações: indicam-se tocólise (nifedipina), corticoide para maturação pulmonar e profilaxia para estreptococo do grupo B, já que o status é desconhecido.',
+    commentary: 'A indometacina não deve ser usada após 32 semanas (fechamento do ducto arterioso). O sulfato de magnésio para neuroproteção é indicado abaixo de 32 semanas. Terbutalina não é primeira escolha. Não há sinais de corioamnionite.',
+    reference: 'Brasil. Ministério da Saúde. Gestação de alto risco: manual técnico. 5. ed. – Brasília: Editora do Ministério da Saúde, 2012.',
+    tags: ['obstetrícia', 'trabalho de parto prematuro']
+  },
+  {
+    id: 'tp2019-89',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Primigesta, 20 anos de idade, 24 semanas de gestação, retorna para checar exames da rotina de pré-natal. Dentre eles, o teste não treponêmico mostrou-se positivo na titulação 1:256 e teste treponêmico reagente.\n\nFrente a este resultado, qual seria a conduta?',
+    options: [
+      '(A) Tratamento com penicilina benzatina, 2.400.000UI, intramuscular, semanalmente, por 3 semanas. Controle com VDRL mensal após o tratamento.',
+      '(B) Tratamento com penicilina benzatina, 2.400.000UI, intramuscular, semanalmente, por 3 semanas. Controle com FTA-Abs mensal após o tratamento.',
+      '(C) Tratamento com penicilina benzatina 2.400.000UI, intramuscular, semanalmente, por 2 semanas. Controle com VDRL mensal após o tratamento.',
+      '(D) Tratamento com penicilina benzatina 2.400.000UI, intramuscular, semanalmente, por 2 semanas. Controle com FTA-Abs mensal após o tratamento.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Gestante com VDRL 1:256 e teste treponêmico reagente, sem dados de tempo de infecção: tratada como sífilis latente de duração indeterminada, com penicilina benzatina 2,4 milhões UI IM semanal por 3 semanas (total 7,2 milhões UI).\n\nO controle de cura é feito com teste não treponêmico (VDRL) mensal durante a gestação.',
+    commentary: 'Duas doses são insuficientes. O FTA-Abs é treponêmico e permanece positivo, logo não serve para seguimento.',
+    reference: 'PCDT – Prevenção da transmissão vertical de HIV, sífilis e hepatites virais, 2018',
+    tags: ['obstetrícia', 'sífilis', 'pré-natal']
+  },
+  {
+    id: 'tp2019-90',
+    module: 'Ginecologia e Obstetrícia',
+    image: '/images/tp2019-90.PNG',
+    text: 'Secundigesta, 28 anos, fumante de 20 cigarros/dia, idade gestacional 38 semanas, apresenta-se em trabalho de parto com dinâmica uterina = 3 contrações de 40 segundos, moderadas, em 10min. Ao toque, colo uterino com 3cm de dilatação, esvaecido 80%, cefálico alto e fixo, com saída de líquido meconial. A monitorização fetal está representada na imagem a seguir:\n\nO tipo de desacelerações da frequência cardíaca fetal e a conduta neste caso são, respectivamente:',
+    options: [
+      '(A) Tardia, expectante.',
+      '(B) Precoce, cesárea imediata.',
+      '(C) Tardia, cesárea imediata.',
+      '(D) Precoce, expectante.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A cardiotocografia mostra desacelerações que começam após o pico da contração e retornam após seu término: desacelerações tardias (DIP II), sinal de hipóxia fetal — agravado pelo mecônio e pelo tabagismo.\n\nCom 3 cm de dilatação e apresentação alta, o parto vaginal demoraria; a conduta é a cesárea imediata.',
+    commentary: 'Desacelerações precoces coincidem com a contração (compressão do polo cefálico) e são benignas. Conduta expectante diante de desaceleração tardia é inadequada.',
+    reference: 'ACOG. ACOG Practice Bulletin No 106: Intrapartum fetal heart rate monitoring: nomenclature, interpretation, AND GENERAL MANAGEMENT PRINCIPLES. ObstetGynecol 2009; 114(1):192-202.',
+    tags: ['obstetrícia', 'vitalidade fetal', 'cardiotocografia']
+  },
+  {
+    id: 'tp2019-91',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Nuligesta, 28 anos de idade, procura atendimento por estar sem menstruar há 7 meses. Traz exames de TSH e prolactina dentro dos limites de normalidade e teste de gravidez negativo. Continuou sem menstruar após ter utilizado progestagênio por 10 dias. Exame físico sem alterações.\n\nNesse caso, a conduta para estabelecer a melhor hipótese diagnóstica é:',
+    options: [
+      '(A) Realizar um ciclo com pílula hormonal combinada e, se apresentar sangramento uterino, solicitar gonadrofinas para diagnóstico de falência ovariana.',
+      '(B) Realizar um ciclo com pílula hormonal combinada e, se não apresentar sangramento uterino, solicitar gonadrofinas para diagnóstico de Amenorreia hipotalâmica.',
+      '(C) Realizar um ciclo com pílula hormonal combinada e se apresentar sangramento uterino por se tratar de Síndrome de Asherman.',
+      '(D) Solicitar testosterona total e livre, SDhEA e HOMA-IR, que estarão alterados por se tratar de síndrome do ovário policístico.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Amenorreia com teste de progestagênio negativo indica estrogenização insuficiente ou problema no trato de saída. O próximo passo é o teste com estrogênio e progestagênio (pílula combinada).\n\nSe houver sangramento, o útero é funcional e falta estrogênio: dosa-se FSH/LH para distinguir falência ovariana (FSH alto) de causa hipotalâmica (FSH baixo/normal).',
+    commentary: 'Se não houver sangramento após estrogênio + progestagênio, a causa é uterina (como síndrome de Asherman). A SOP cursa com hiperandrogenismo e teste do progestagênio positivo.',
+    reference: 'Leon Speroff e Marc Fritz in Clinical gynecologic endocrinology and infertility. chapter 11: Amenorrhea. 7th ed. Lippincott williams & wilkins.',
+    tags: ['ginecologia', 'amenorreia', 'endocrinologia ginecológica']
+  },
+  {
+    id: 'tp2019-92',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Mulher, 42 anos de idade, G4P4, com diagnóstico histopatológico de endometriose peritoneal superficial realizado durante cirurgia de laqueadura tubária há 2 anos. Procura Unidade Básica de Saúde para rotina ginecológica. Relata ciclos menstruais regulares, com fluxo menstrual pouco aumentado e dismenorreia moderada não incapacitante. Nega outras queixas ginecológicas.\n\nEm relação ao acompanhamento da paciente, é correto afirmar que:',
+    options: [
+      '(A) O médico deverá solicitar ultrassonografia transvaginal anual.',
+      '(B) A dosagem sérica de antígeno carcinogênico 125 (CA125) é indispensável.',
+      '(C) A avaliação deverá ser realizada pela história clínica e exame ginecológico.',
+      '(D) A paciente deverá ser encaminhada para centro especializado de referência.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Endometriose peritoneal superficial com sintomas leves, ciclos regulares e prole constituída: o seguimento é clínico, baseado na história e no exame ginecológico. Exames são solicitados apenas se houver mudança dos sintomas.',
+    commentary: 'Ultrassonografia anual e CA-125 não estão indicados de rotina (o CA-125 é inespecífico). O encaminhamento a centro de referência é para doença profunda, infertilidade ou dor refratária.',
+    reference: 'Schorge, JO et al. Endometriose. In: Ginecologia de Williams. John O. Schorge et al. Porto Alegre, Artmed, 2011. cap 10. pp 225-243.',
+    tags: ['ginecologia', 'endometriose']
+  },
+  {
+    id: 'tp2019-93',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Mulher, 18 anos de idade, iniciou vida sexual e deseja orientação para anticoncepção. Refere cefaleia frequente com duração de 4 a 6 horas, pulsátil, latejante, unilateral associada a náusea e, às vezes, vômitos, com sensibilidade a luz. Nega antecedente familiar de trombose venosa.\n\nA opção de anticoncepção mais indicada é:',
+    options: [
+      '(A) Anel vaginal',
+      '(B) Hormonal Injetável mensal',
+      '(C) Hormonal oral combinada',
+      '(D) Hormonal oral com progestágeno'
+    ],
+    correctAnswer: 3,
+    explanation: 'Cefaleia pulsátil, unilateral, com náusea e fotofobia, sem aura: enxaqueca sem aura. Em mulher jovem, contraceptivos combinados podem até ser usados (categoria 2 pela OMS), mas o risco de AVC limita seu uso — e a aura contraindica de vez.\n\nOs métodos só de progestagênio (categoria 1) são a opção mais segura.',
+    commentary: 'Anel vaginal, injetável mensal e pílula combinada contêm estrogênio e aumentam o risco de AVC em pacientes com enxaqueca.',
+    reference: 'World Health Organization. Medical eligibility criteria for contraceptive use. Reproductive Health and Research,5th edition: Geneve: World Health Organization; 2015. / http://www.who.int/reproductivehealth/publications/family_planning /MEC-5/en/9 17',
+    tags: ['ginecologia', 'contracepção', 'enxaqueca']
+  },
+  {
+    id: 'tp2019-94',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Mulher, 52 anos de idade, menopausa há três anos, submetida a exérese de fibroadenoma de mama há 10 anos. Antecedente familiar de irmã com câncer de mama. Refere intensos fogachos e interroga seu médico a respeito da possibilidade de realizar Terapia Hormonal (TH).\n\nQual seria a melhor orientação a ser dada para esta paciente?',
+    options: [
+      '(A) Discutir com a paciente os riscos e benefícios da TH.',
+      '(B) Os fogachos justificam a TH, independentemente dos antecedentes.',
+      '(C) O fibroadenoma, apesar de sua benignidade, contraindica a TH.',
+      '(D) Antecedentes familiares de câncer de mama sempre contraindicam a TH.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Fogachos intensos são a principal indicação de terapia hormonal. A história de irmã com câncer de mama aumenta o risco basal, mas não é contraindicação absoluta. O fibroadenoma prévio não contraindica a TH.\n\nA decisão deve ser individualizada, discutindo riscos e benefícios com a paciente.',
+    commentary: 'Fogachos não justificam TH independentemente dos antecedentes, e nem o fibroadenoma nem a história familiar a contraindicam sempre.',
+    reference: 'North American Menopause Society. The 2012 hormone therapy position statement of The North American Menopause Society. Menopause. 2012 Mar; 19(3):257-71. / Santen RJ, Allred DC, Ardoin SP, Archer DF, Boyd N, Braunstein GD, et al.Postmenopausal hormone therapy: an Endocrine Society scientific statement. J Clin Endocrinol Metab. 2010,95(7 Suppl 1): S1-S66.',
+    tags: ['ginecologia', 'climatério', 'terapia hormonal']
+  },
+  {
+    id: 'tp2019-95',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Mulher, 50 anos de idade, chega à Unidade Básica de Saúde com queixa de perda urinária, precedida de vontade súbita de urinar, associada a dispareunia e diminuição de lubrificação vaginal. Nega que essa perda seja relacionada aos esforços. Como comorbidades, apresenta diabetes mellitus tipo 2, controlado com metformina e dieta. Ao exame ginecológico, apresenta hipotrofia vulvar, manobra de Valsalva negativa e região genital sem lesões.\n\nA hipótese diagnóstica e a conduta são:',
+    options: [
+      '(A) Incontinência Urinária de Esforço/Síndrome Climatérica; tratamento comportamental.',
+      '(B) Síndrome da Bexiga Hiperativa/Atrofia vulvovaginal; tratamento clínico e fisioterápico.',
+      '(C) Incontinência Urinária Mista/Síndrome Climatérica; tratamento clínico.',
+      '(D) Síndrome da Bexiga Hiperativa/Atrofia vulvovaginal; tratamento cirúrgico com sling.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Urgência miccional com perda (sem relação com esforço, Valsalva negativa): síndrome da bexiga hiperativa. Dispareunia, ressecamento e hipotrofia vulvar indicam síndrome geniturinária da menopausa (atrofia vulvovaginal).\n\nO tratamento é clínico (comportamental, fisioterapia do assoalho pélvico, estrogênio vaginal e, se necessário, antimuscarínicos).',
+    commentary: 'Não há incontinência de esforço (Valsalva negativa). O sling é tratamento da incontinência de esforço, não da bexiga hiperativa.',
+    reference: 'Moroni RM; Magnani PS; Rodrigues HL; Barrilari SE; Candido-dos-Reis FJ; Brito LG. Tratamento da síndrome da bexiga hiperativa idiopática refratária. Femina. 2013;41(3):147-153. / Tratado de Ginecologia da FEBRASGO, 2019',
+    tags: ['ginecologia', 'uroginecologia', 'climatério']
+  },
+  {
+    id: 'tp2019-96',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Mulher, 32 anos de idade, identificou um nódulo na mama esquerda há 6 meses, que manteve o mesmo tamanho nesse período. Realizou mamografia que demonstrou lesão nodular única, ovalada, com margens bem definidas no quadrante superior externo. O exame físico revelou ausência de gânglios palpáveis, nódulo firme de aproximadamente 2cm de diâmetro, móvel, superfície regular, consistência elástica, indolor à palpação.\n\nNesse caso, a hipótese diagnóstica mais provável e a conduta inicial são:',
+    options: [
+      '(A) Cisto de mama; realizar punção por agulha grossa.',
+      '(B) Tumor filoide; realizar ultrassonografia de mamas.',
+      '(C) Adenocarcinoma de mama; realizar biópsia.',
+      '(D) Fibroadenoma de mama; realizar ultrassonografia de mamas.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Nódulo mamário em mulher jovem, móvel, elástico, bem delimitado e estável, com mamografia mostrando lesão ovalada de margens bem definidas: fibroadenoma.\n\nA ultrassonografia é o exame complementar de escolha nessa faixa etária, para caracterizar a lesão (sólida, de contornos regulares).',
+    commentary: 'O cisto é avaliado por ultrassonografia, e não diretamente por punção com agulha grossa. O tumor filoide costuma crescer rapidamente. As características não são suspeitas de carcinoma.',
+    reference: 'Tratado de Ginecologia Berek & Novak.15ª edição. Capítulo 21 – Doença Benigna da Mama.',
+    tags: ['ginecologia', 'mastologia', 'nódulo mamário']
+  },
+  {
+    id: 'tp2019-97',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Nuligesta, 49 anos de idade, sem desejo de engravidar. Ciclos menstruais regulares, foi submetida à ultrassonografia endovaginal de rotina com útero de volume 140cm3 (média até 120cm3), miométrio regular apresentando mioma intramural com 20mm no maior diâmetro, endométrio regular trilaminar de espessura 8mm (normal na fase proliferativa até 14mm), ovário direito com volume 8cm3 (normal até 10cm3) e ovário esquerdo com volume de 9cm3 com cisto anexial único, não septado, hipoecogênico medindo 23x24x19mm. A citologia oncótica, mamografia, hemograma, coagulograma, glicose sérica, TSH, T4 livre, urina tipoI, colesterol e frações estão com valores normais.\n\nA conduta a ser adotada é:',
+    options: [
+      '(A) Miomectomia e ooforoplastia',
+      '(B) Contraceptivo hormonal contínuo',
+      '(C) Histerectomia e ooforoplastia',
+      '(D) Expectante'
+    ],
+    correctAnswer: 3,
+    explanation: 'Mulher assintomática com mioma intramural pequeno (2 cm), ciclos regulares, sem sangramento anormal ou anemia, e cisto ovariano simples de 2,4 cm: ambos os achados são benignos e não exigem tratamento. A conduta é expectante.',
+    commentary: 'Cirurgia (miomectomia, histerectomia, ooforoplastia) e hormônio contínuo não se justificam em achados assintomáticos.',
+    reference: 'Berek & Novak, Tratado de Ginecologia, 15ª edição, Rio de Janeiro: Guanabara-Koogan, 2014. Capítulo 15, Miomas uterinos.',
+    tags: ['ginecologia', 'mioma uterino', 'massas anexiais']
+  },
+  {
+    id: 'tp2019-98',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Mulher, 30 anos de idade, G3P2A1, com queixa de corrimento vaginal com odor desagradável. Relata que sempre teve odor vaginal, mas nos últimos 3 meses ficou mais intenso no período menstrual e após as relações sexuais. Refere que recentemente fez tratamento com creme vaginal de metronidazol por 10 dias, porém sem melhora. Nega febre, dor ao ato sexual ou dificuldades para urinar. Exame ginecológico: corrimento vaginal em pequena quantidade, branco-acinzentado com odor intenso ao teste com KOH 10%.\n\nNesse caso, a hipótese diagnóstica, o pH vaginal e o tratamento são:',
+    options: [
+      '(A) Vaginose Citolítica; > 4,5; Metronidazol via oral.',
+      '(B) Vaginose Bacteriana; > 4,5; Fosfato de Clindamicina.',
+      '(C) Vaginose Bacteriana; < 4,5; Metronidazol via oral.',
+      '(D) Vaginose Citolítica; < 4,5; Borato de Sódio.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Corrimento branco-acinzentado com odor fétido que piora após a menstruação e o coito e com teste das aminas positivo (KOH): vaginose bacteriana. O pH vaginal é > 4,5.\n\nApós falha do metronidazol tópico, a clindamicina é uma alternativa terapêutica adequada.',
+    commentary: 'Na vaginose citolítica (excesso de lactobacilos), o pH é ácido (< 4,5) e não há odor. Na vaginose bacteriana o pH nunca é < 4,5.',
+    reference: 'Patologia do Trato Genital Inferior- Diagnóstico e Tratamento, 2ª Edição; Editora Rocca; 2014. Autor Nelson Valente Martins.',
+    tags: ['ginecologia', 'vulvovaginites']
+  },
+  {
+    id: 'tp2019-99',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Mulher, 28 anos de idade, G3P3, último parto há 2 anos, casada, em uso de anticoncepcional oral, comparece a consulta solicitando realização de esterilização cirúrgica. Nega comorbidades, nega queixas e apresenta exame físico e ginecológico normais.\n\nA laqueadura tubária poderá ser realizada nas seguintes condições:',
+    options: [
+      '(A) Aconselhamento prévio por equipe multidisciplinar, registro de expressa vontade pela paciente e observação do prazo mínimo de 60 dias entre a manifestação da vontade e o ato cirúrgico.',
+      '(B) Aconselhamento prévio por equipe multidisciplinar, consentimento expresso de ambos os cônjuges e observação do prazo mínimo de 42 dias entre a manifestação da vontade e o ato cirúrgico.',
+      '(C) Aconselhamento prévio por equipe multidisciplinar, consentimento expresso de ambos os cônjuges e observação do prazo mínimo de 60 dias entre a manifestação da vontade e o ato cirúrgico.',
+      '(D) Aconselhamento prévio por equipe multidisciplinar, registro de expressa vontade pela paciente e observação do prazo mínimo de 42 dias entre a manifestação da vontade e o ato cirúrgico.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Pela Lei 9.263/1996, na redação vigente em 2019, a esterilização voluntária exigia: maioridade e mais de 25 anos ou ao menos dois filhos vivos; aconselhamento por equipe multidisciplinar; prazo mínimo de 60 dias entre a manifestação da vontade e a cirurgia; e consentimento expresso de ambos os cônjuges na vigência de sociedade conjugal.',
+    commentary: 'ATENÇÃO — LEGISLAÇÃO ALTERADA: a Lei 14.443/2022 aboliu a exigência de consentimento do cônjuge e reduziu a idade mínima para 21 anos (ou dois filhos vivos). Hoje, a alternativa A (manifestação expressa da própria paciente, aconselhamento e prazo de 60 dias) é a correta. O gabarito oficial de 2019 (C) foi mantido por fidelidade à prova.',
+    reference: 'Ética em Ginecologia e Obstetrícia, 4ª edição / Organização de Krikor Boyaciyan. São Paulo: Conselho Regional de Medicina do estado de São Paulo, 2011',
+    tags: ['ginecologia', 'planejamento familiar', 'legislação']
+  },
+  {
+    id: 'tp2019-100',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Mulher, 33 anos de idade, apresenta citologia cervical compatível com lesão intraepitelial de baixo grau (LIEBG/LSIL).\n\nDe acordo com as orientações do Instituto Nacional do Câncer (INCA), como deve ser o seguimento desta mulher?',
+    options: [
+      '(A) Repetir a citologia imediatamente e, se persistir a alteração, encaminhar para colposcopia.',
+      '(B) Repetir a citologia em 6 meses e, se persistir a alteração, encaminhar para colposcopia.',
+      '(C) Ser encaminhada para a colposcopia imediata.',
+      '(D) Colher exame de detecção de DNA-HPV.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Pelas diretrizes do INCA (2016) para rastreamento citológico, a lesão intraepitelial de baixo grau em mulheres com 25 anos ou mais deve ser seguida com repetição da citologia em 6 meses. Se a alteração persistir, a paciente é encaminhada para colposcopia.',
+    commentary: 'A colposcopia imediata é para lesões de alto grau. Observação: com a nova diretriz de rastreamento por DNA-HPV (INCA, 2024), a conduta passa a depender do resultado do teste de HPV nos locais que já a adotaram.',
+    reference: 'Diretrizes brasileiras para o rastreamento do câncer do colo do útero / Instituto Nacional de Câncer. Coordenação Geral de Ações Estratégicas. Divisão de Apoio à Rede de Atenção Oncológica. – Rio de Janeiro: INCA, 2011. ISBN 978-85-7318-184-5',
+    tags: ['ginecologia', 'rastreamento', 'câncer de colo uterino']
   }
 ];
-
