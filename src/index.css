@@ -5,22 +5,23 @@
   --font-heading: "Bricolage Grotesque", sans-serif;
   --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
 
-  /* Polished Minimalist Clinical/Medical Green Palette */
-  --color-bg: oklch(99.4% 0.003 165);
-  --color-bg-2: oklch(97.2% 0.006 165);
-  --color-ink: oklch(18% 0.015 165);
-  --color-ink-2: oklch(33% 0.012 165);
-  --color-muted: oklch(50% 0.008 165);
-  --color-line: oklch(94% 0.005 165);
-  --color-line-2: oklch(89.5% 0.007 165);
-  --color-primary: oklch(68% 0.22 165);
-  --color-primary-2: oklch(58% 0.22 165);
-  --color-primary-soft: oklch(96.5% 0.025 165);
-  --color-accent-green: oklch(68% 0.22 165);
-  --color-accent-coral: oklch(58% 0.16 25);
-  --color-accent-amber: oklch(76% 0.12 75);
+  /* Paleta DEsimulados — verde clínico da marca (#00bf75) sobre fundo levemente esverdeado */
+  --color-bg: oklch(99.2% 0.004 165);          /* fundo da página */
+  --color-bg-2: oklch(97% 0.008 165);           /* superfícies recuadas */
+  --color-ink: oklch(20% 0.02 165);             /* texto principal */
+  --color-ink-2: oklch(34% 0.015 165);          /* texto secundário */
+  --color-muted: oklch(48% 0.012 165);          /* legendas */
+  --color-line: oklch(93.5% 0.007 165);
+  --color-line-2: oklch(88% 0.01 165);
+  --color-primary: oklch(68% 0.2 160);          /* verde da marca (preenchimentos, botões) */
+  --color-primary-2: oklch(58% 0.17 160);       /* hover */
+  --color-primary-ink: oklch(46% 0.12 160);     /* verde para TEXTO — contraste legível sobre branco */
+  --color-primary-soft: oklch(96.5% 0.03 160);
+  --color-accent-green: oklch(62% 0.17 158);
+  --color-accent-coral: oklch(58% 0.17 25);
+  --color-coral-soft: oklch(97% 0.02 25);
+  --color-accent-amber: oklch(72% 0.14 70);
 
-  /* Overriding standard semantic names for compatibility */
   --color-background: var(--color-bg);
   --color-surface: var(--color-bg-2);
   --color-on-surface: var(--color-ink);
@@ -29,81 +30,60 @@
 
 @layer base {
   body {
-    @apply bg-bg text-ink font-sans antialiased selection:bg-primary/20 selection:text-primary;
-    --ink: var(--color-ink);
-    --muted: var(--color-muted);
-    --primary: var(--color-primary);
-    --primary-2: var(--color-primary-2);
-    --primary-soft: var(--color-primary-soft);
-    --bg-2: var(--color-bg-2);
-    --line: var(--color-line);
-    --line-2: var(--color-line-2);
+    @apply bg-bg text-ink font-sans antialiased selection:bg-primary/20 selection:text-ink;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading tracking-tight text-ink;
     line-height: 1.1;
   }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary-ink);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
-.modern-glass {
-  @apply bg-white/80 backdrop-blur-md border border-line-2 shadow-lg;
-}
-
-.modern-shadow {
-  box-shadow: 0 4px 30px -10px oklch(18% 0.015 235 / 0.05);
-}
-
-/* Custom layout classes - streamlined and clean */
 .btn {
-  @apply inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-all duration-200 whitespace-nowrap select-none active:scale-[0.98];
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-[15px] transition-colors duration-150 whitespace-nowrap select-none;
 }
 
 .btn-primary {
-  @apply bg-primary text-white hover:bg-primary-2 hover:shadow-md;
+  @apply bg-primary text-white hover:bg-primary-2;
 }
 
 .btn-ghost {
-  @apply bg-white text-ink border border-line hover:bg-bg-2 hover:border-line-2;
-}
-
-.eyebrow {
-  @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-soft text-primary font-mono text-[10px] tracking-wider uppercase font-bold;
-}
-
-.eyebrow .dot {
-  @apply w-1.5 h-1.5 rounded-full bg-primary;
+  @apply bg-white text-ink border border-line-2 hover:border-ink/30;
 }
 
 .container-custom {
   @apply max-w-6xl mx-auto px-4 sm:px-6 md:px-8;
 }
 
-.section-custom {
-  @apply py-16 sm:py-24;
-}
-
-.section-head {
-  @apply max-w-2xl mx-auto mb-12 text-center px-4;
-}
-
-.section-head p {
-  @apply text-muted text-base sm:text-lg max-w-lg mx-auto mt-3;
-}
-
+/* Alternativas da questão */
 .option-btn {
-  @apply flex items-start p-4 sm:p-5 bg-white border border-line rounded-xl cursor-pointer hover:border-primary/50 hover:bg-primary-soft/10 transition-all duration-150 select-none;
+  @apply flex items-start bg-white border border-line rounded-xl cursor-pointer transition-colors duration-150 select-none;
 }
-
+.option-btn:not(.locked):hover {
+  @apply border-primary/60;
+}
 .option-btn.selected {
-  @apply bg-primary-soft/30 border-2 border-primary;
+  @apply bg-primary-soft border-primary;
 }
-
 .option-btn.correct {
-  @apply border-2 border-accent-green bg-emerald-50/40;
+  @apply border-accent-green bg-primary-soft;
 }
-
 .option-btn.incorrect {
-  @apply border-2 border-accent-coral bg-rose-50/40;
+  @apply border-accent-coral bg-coral-soft;
 }
-
+.option-btn.locked {
+  @apply cursor-default;
+}

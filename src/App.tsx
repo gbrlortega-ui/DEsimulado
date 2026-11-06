@@ -4,11 +4,12 @@
  */
 
 import { useState, useMemo } from 'react';
+import { MotionConfig } from 'motion/react';
 import { LandingPage } from './components/LandingPage';
 import { QuizSetup } from './components/QuizSetup';
 import { QuizSession } from './components/QuizSession';
 import { ResultsView } from './components/ResultsView';
-import { QuizSettings, QuizResults, UserAnswer } from './types';
+import { Module, QuizSettings, QuizResults, UserAnswer } from './types';
 import { QUESTIONS } from './data/questions';
 
 type AppState = 'landing' | 'setup' | 'quiz' | 'results';
@@ -18,6 +19,8 @@ export default function App() {
   const [settings, setSettings] = useState<QuizSettings | null>(null);
   const [results, setResults] = useState<QuizResults | null>(null);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
+  const [initialModule, setInitialModule] = useState<Module>('Misto');
+  const [round, setRound] = useState(0);
 
   const activeQuestions = useMemo(() => {
     if (!settings) return [];
@@ -39,12 +42,23 @@ export default function App() {
     }
     
     return shuffled.slice(0, settings.questionCount);
-  }, [settings]);
+  }, [settings, round]);
 
-  const handleStartSetup = () => setState('setup');
+  const handleStartSetup = (module?: Module) => {
+    setInitialModule(module ?? 'Misto');
+    setState('setup');
+    window.scrollTo(0, 0);
+  };
+
+  const handleQuickStart = () => {
+    setSettings({ questionCount: 10, module: 'Misto', immediateFeedback: true });
+    setRound(r => r + 1);
+    setState('quiz');
+  };
   
   const handleStartQuiz = (newSettings: QuizSettings) => {
     setSettings(newSettings);
+    setRound(r => r + 1);
     setState('quiz');
   };
 
@@ -75,11 +89,13 @@ export default function App() {
   };
 
   return (
-    <div className="antialiased text-medical-primary">
-      {state === 'landing' && <LandingPage onStart={handleStartSetup} />}
+    <MotionConfig reducedMotion="user">
+    <div className="antialiased">
+      {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} />}
       
       {state === 'setup' && (
         <QuizSetup 
+          initialModule={initialModule}
           onBack={handleGoHome} 
           onStart={handleStartQuiz} 
         />
@@ -103,6 +119,7 @@ export default function App() {
         />
       )}
     </div>
+    </MotionConfig>
   );
 }
 
