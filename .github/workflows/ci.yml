@@ -1,0 +1,24 @@
+name: Verificação
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    name: Tipos, banco de questões e build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Checagem de tipos (TypeScript)
+        run: npm run lint
+      - name: Validação do banco de questões
+        run: npm run validate
+      - name: Build de produção
+        run: npm run build

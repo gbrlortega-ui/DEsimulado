@@ -16,7 +16,7 @@ import {
   Image as ImageIcon
 } from 'lucide-react';
 import { Question, UserAnswer, QuizSettings, QuizResults, Module } from '../types';
-import { cn } from '../lib/utils';
+import { cn, stripOptionLetter } from '../lib/utils';
 import { Howl } from 'howler';
 
 interface QuizSessionProps {
@@ -221,7 +221,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
 
             {/* Question Text & Media Content */}
             <div className="space-y-4">
-              <p className="text-base sm:text-lg font-medium text-ink leading-relaxed">
+              <p className="text-base sm:text-lg font-medium text-ink leading-relaxed whitespace-pre-line">
                 {currentQuestion.text}
               </p>
               
@@ -272,7 +272,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
                       "text-xs sm:text-sm leading-relaxed flex-grow",
                       isSelected ? "text-primary font-bold" : "text-ink"
                     )}>
-                      {option}
+                      {stripOptionLetter(option)}
                     </span>
 
                     {showFeedback && isCorrectAnswer && (
@@ -300,14 +300,14 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
                   </div>
                   
                   <div className="space-y-3">
-                    <p className="text-xs sm:text-sm text-ink-2 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-ink-2 leading-relaxed whitespace-pre-line">
                       {currentQuestion.explanation}
                     </p>
                     
                     {currentQuestion.commentary && (
                       <div className="bg-bg-2 p-3.5 rounded-lg border border-line">
                         <span className="text-[10px] font-black text-primary uppercase tracking-wider block mb-1">Raciocínio Clínico</span>
-                        <p className="text-xs text-muted italic leading-relaxed">
+                        <p className="text-xs text-muted italic leading-relaxed whitespace-pre-line">
                           {currentQuestion.commentary}
                         </p>
                       </div>
