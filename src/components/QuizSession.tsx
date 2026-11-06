@@ -1,22 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Trophy, 
-  Clock, 
-  CheckCircle2, 
-  XCircle, 
+import {
+  Trophy,
+  Clock,
+  CheckCircle2,
+  XCircle,
   ChevronLeft,
   ChevronRight,
-  AlertCircle,
-  HelpCircle,
-  Timer,
-  Home,
-  Zap,
   LayoutGrid,
-  Image as ImageIcon
+  Maximize2
 } from 'lucide-react';
+import { Brand } from './Brand';
 import { Question, UserAnswer, QuizSettings, QuizResults, Module } from '../types';
-import { cn, stripOptionLetter } from '../lib/utils';
+import { cn, examLabel, stripOptionLetter } from '../lib/utils';
 import { Howl } from 'howler';
 
 interface QuizSessionProps {
@@ -26,19 +22,6 @@ interface QuizSessionProps {
   onExit: () => void;
 }
 
-const getExamInfo = (id: string) => {
-  const match = id.match(/^([a-zA-Z]+)(\d{4})-\d+$/);
-  if (match) {
-    const type = match[1].toUpperCase(); // e.g., 'TP'
-    const year = match[2]; // e.g., '2021'
-    return `${type} ${year}`;
-  }
-  const enamedMatch = id.match(/^enamed-(\d{4})-\d+$/i);
-  if (enamedMatch) {
-    return `ENAMED ${enamedMatch[1]}`;
-  }
-  return id.split('-')[0].toUpperCase();
-};
 
 export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, onFinish, onExit }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -85,7 +68,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
     if (currentAnswer && settings.immediateFeedback) return;
 
     const isCorrect = optionIndex === currentQuestion.correctAnswer;
-    
+
     if (settings.immediateFeedback) {
       if (isCorrect) successSound?.play();
       else errorSound?.play();
@@ -112,7 +95,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
   const calculateResults = (): QuizResults => {
     const correctCount = userAnswers.filter(a => a.isCorrect).length;
     const total = questions.length;
-    
+
     const modulePerf: Record<string, { correct: number; total: number }> = {};
     const moduleList: Module[] = ['Pediatria', 'Clínica Médica', 'Cirurgia', 'Ginecologia e Obstetrícia', 'Saúde Coletiva', 'Ciências Básicas', 'ENAMED'];
     moduleList.forEach(m => modulePerf[m] = { correct: 0, total: 0 });
@@ -146,30 +129,20 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
   return (
     <div className="bg-bg-2 text-ink font-sans antialiased overflow-hidden h-screen flex flex-col">
       {/* Header bar */}
-      <header className="sticky top-0 z-50 py-3 bg-white border-b border-line shadow-sm shrink-0">
+      <header className="sticky top-0 z-50 h-14 flex items-center bg-white border-b border-line shrink-0">
         <div className="w-full flex justify-between items-center px-4 sm:px-6 md:px-8">
-          <div className="flex items-center gap-2">
-            <button 
-              onClick={onExit}
-              className="p-2 text-muted hover:bg-bg rounded-lg transition-colors"
-              title="Voltar ao Início"
-            >
-              <Home className="w-5 h-5" />
-            </button>
-            <div className="w-0.5 h-4 bg-line hidden sm:block"></div>
-            <div className="text-sm font-heading font-extrabold text-ink hidden sm:block notranslate" translate="no">DEsimulados</div>
-          </div>
+          <Brand size="sm" onClick={onExit} />
 
           <div className="flex items-center gap-2 sm:gap-4">
             {/* Elegant tiny Timer */}
-            <div className="flex items-center gap-1.5 text-muted bg-bg px-2.5 py-1.5 rounded-lg border border-line">
-              <Clock className="w-3.5 h-3.5 text-primary shrink-0" />
-              <span className="font-bold font-mono text-xs sm:text-sm">{formatTime(timeElapsed)}</span>
+            <div className="flex items-center gap-1.5 text-ink-2 px-2 py-1.5" title="Tempo total">
+              <Clock className="w-4 h-4 text-muted shrink-0" />
+              <span className="font-semibold text-sm tabular-nums">{formatTime(timeElapsed)}</span>
             </div>
-            
-            <button 
+
+            <button
               onClick={() => setIsSubmitModalOpen(true)}
-              className="bg-primary text-white hover:bg-primary-2 px-3.5 py-1.5 sm:px-4.5 sm:py-2 rounded-lg font-bold text-xs sm:text-sm shadow-sm active:scale-95 transition-transform shrink-0"
+              className="bg-ink text-white hover:bg-ink-2 px-4 py-2 rounded-lg font-semibold text-sm transition-colors shrink-0"
             >
               Finalizar
             </button>
@@ -179,9 +152,9 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
 
       {/* Discrete Progress Bar */}
       <div className="w-full bg-line h-1 shrink-0">
-        <div 
+        <div
           style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
-          className="bg-primary h-full transition-all duration-300" 
+          className="bg-primary h-full transition-all duration-300"
         />
       </div>
 
@@ -190,53 +163,58 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
         {/* Scrollable Question Content */}
         <section className="flex-1 overflow-y-auto px-4 py-5 sm:px-8 sm:py-10 space-y-6">
           <div className="max-w-3xl mx-auto space-y-6">
-            
+
             {/* Header / Badges Row */}
             <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line pb-3">
               <div className="flex flex-wrap items-center gap-1.5">
-                <span className="bg-primary/10 text-primary px-2.5 py-0.5 rounded-md font-bold text-[10px] tracking-wider uppercase">
-                  QUESTÃO {String(currentIndex + 1).padStart(2, '0')}
+                <span className="font-heading font-bold text-ink mr-1.5">
+                  Questão {currentIndex + 1} <span className="text-muted font-sans font-medium">de {questions.length}</span>
                 </span>
                 {currentQuestion.module !== 'ENAMED' && (
-                  <span className="bg-bg text-ink border border-line px-2.5 py-0.5 rounded-md font-semibold text-[10px] tracking-wider uppercase">
+                  <span className="bg-white text-ink-2 border border-line px-2 py-0.5 rounded-md font-medium text-xs">
                     {currentQuestion.module}
                   </span>
                 )}
-                <span className="bg-amber-500/10 text-amber-700 border border-amber-100 px-2.5 py-0.5 rounded-md font-bold text-[10px] tracking-wider uppercase">
-                  {getExamInfo(currentQuestion.id)}
+                <span className="bg-primary-soft text-primary-ink px-2 py-0.5 rounded-md font-semibold text-xs">
+                  {examLabel(currentQuestion.id)}
                 </span>
               </div>
-              
+
               {/* Question Countdown */}
               <div className={cn(
-                "flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[10px] font-bold border shrink-0",
-                questionTimeLeft > 30 ? "bg-emerald-50 text-emerald-600 border-emerald-100" :
-                questionTimeLeft > 10 ? "bg-amber-50 text-amber-600 border-amber-100" :
-                "bg-rose-50 text-rose-600 border-rose-100 animate-pulse"
+                "flex items-center gap-1.5 px-2 py-0.5 rounded-md text-xs font-semibold tabular-nums shrink-0",
+                questionTimeLeft > 30 ? "text-muted" :
+                questionTimeLeft > 10 ? "text-accent-amber" :
+                "text-accent-coral"
               )}>
-                <Clock className="w-3 h-3" />
-                <span>{formatTime(questionTimeLeft)}</span>
+                <Clock className="w-3.5 h-3.5" />
+                <span title="Tempo sugerido por questão">{formatTime(questionTimeLeft)}</span>
               </div>
             </div>
 
             {/* Question Text & Media Content */}
             <div className="space-y-4">
-              <p className="text-base sm:text-lg font-medium text-ink leading-relaxed whitespace-pre-line">
+              <p className="text-[17px] sm:text-lg text-ink leading-[1.7] whitespace-pre-line">
                 {currentQuestion.text}
               </p>
-              
+
               {currentQuestion.image && (
-                <div className="bg-white border border-line rounded-xl p-3 shadow-sm max-w-lg mx-auto">
-                  <div className="flex items-center gap-1.5 text-muted text-[10px] uppercase font-bold mb-2">
-                    <ImageIcon size={12} />
-                    <span>Material clínico de apoio</span>
-                  </div>
-                  <img 
-                    alt="Anexo Médico" 
-                    className="w-full max-h-[160px] sm:max-h-[350px] object-contain rounded-lg mx-auto hover:scale-[1.02] transition-transform duration-200" 
-                    src={currentQuestion.image} 
+                <figure className="relative bg-white border border-line rounded-xl p-2 sm:p-3">
+                  <img
+                    alt={`Figura da questão ${currentIndex + 1}`}
+                    className="w-full max-h-[300px] sm:max-h-[440px] object-contain rounded-lg mx-auto"
+                    src={currentQuestion.image}
                   />
-                </div>
+                  <a
+                    href={currentQuestion.image}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="absolute top-3 right-3 sm:top-4 sm:right-4 flex items-center gap-1 text-xs font-semibold text-ink bg-white/90 border border-line rounded-md px-2 py-1 hover:border-line-2"
+                  >
+                    <Maximize2 size={12} />
+                    Ampliar
+                  </a>
+                </figure>
               )}
             </div>
 
@@ -249,39 +227,40 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
                 const showFeedback = settings.immediateFeedback && currentAnswer;
 
                 return (
-                  <div 
+                  <button
                     key={idx}
+                    type="button"
                     className={cn(
-                      "option-btn text-left flex items-start gap-3 p-3.5 sm:p-4 rounded-xl border transition-all cursor-pointer",
-                      showFeedback 
-                        ? (isCorrectAnswer ? "correct" : isSelected ? "incorrect" : "opacity-80 border-line bg-white")
-                        : (isSelected ? "selected" : "bg-white border-line")
+                      "option-btn w-full text-left gap-3 px-3.5 py-3.5 sm:px-4",
+                      showFeedback
+                        ? cn("locked", isCorrectAnswer ? "correct" : isSelected ? "incorrect" : "opacity-60")
+                        : (isSelected ? "selected" : "")
                     )}
                     onClick={() => handleSelectOption(idx)}
                   >
                     <div className={cn(
-                      "w-6 h-6 rounded-lg border flex items-center justify-center font-bold text-xs transition-all shrink-0 mt-0.5",
-                      showFeedback 
-                        ? (isCorrectAnswer ? "bg-accent-green border-accent-green text-white font-black" : isSelected ? "bg-accent-coral border-accent-coral text-white font-black" : "border-line text-muted")
-                        : (isSelected ? "bg-primary border-primary text-white font-black" : "border-line text-muted group-hover:border-primary/50")
+                      "w-7 h-7 rounded-md border flex items-center justify-center font-semibold text-sm transition-colors shrink-0",
+                      showFeedback
+                        ? (isCorrectAnswer ? "bg-accent-green border-accent-green text-white" : isSelected ? "bg-accent-coral border-accent-coral text-white" : "border-line-2 text-muted")
+                        : (isSelected ? "bg-primary border-primary text-white" : "border-line-2 text-muted")
                     )}>
                       {letter}
                     </div>
-                    
+
                     <span className={cn(
-                      "text-xs sm:text-sm leading-relaxed flex-grow",
-                      isSelected ? "text-primary font-bold" : "text-ink"
+                      "text-[15px] leading-relaxed flex-grow text-ink pt-0.5",
+                      isSelected && !showFeedback && "font-medium"
                     )}>
                       {stripOptionLetter(option)}
                     </span>
 
                     {showFeedback && isCorrectAnswer && (
-                      <CheckCircle2 className="w-4 h-4 text-accent-green shrink-0 ml-1.5 self-center" />
+                      <CheckCircle2 className="w-5 h-5 text-accent-green shrink-0 ml-1.5 mt-1" aria-label="Alternativa correta" />
                     )}
                     {showFeedback && isSelected && !isCorrectAnswer && (
-                      <XCircle className="w-4 h-4 text-accent-coral shrink-0 ml-1.5 self-center" />
+                      <XCircle className="w-5 h-5 text-accent-coral shrink-0 ml-1.5 mt-1" aria-label="Sua resposta" />
                     )}
-                  </div>
+                  </button>
                 );
               })}
             </div>
@@ -292,41 +271,52 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="p-5 bg-white rounded-xl border border-line space-y-4 shadow-sm"
+                  className={cn(
+                    "rounded-xl border bg-white overflow-hidden",
+                    currentAnswer.isCorrect ? "border-accent-green/40" : "border-accent-coral/40"
+                  )}
                 >
-                  <div className="flex items-center gap-1.5 text-primary border-b border-line pb-2.5">
-                    <HelpCircle className="w-4 h-4" />
-                    <span className="text-xs font-black uppercase tracking-wider">Discussão Técnica do Especialista</span>
-                  </div>
-                  
-                  <div className="space-y-3">
-                    <p className="text-xs sm:text-sm text-ink-2 leading-relaxed whitespace-pre-line">
-                      {currentQuestion.explanation}
-                    </p>
-                    
-                    {currentQuestion.commentary && (
-                      <div className="bg-bg-2 p-3.5 rounded-lg border border-line">
-                        <span className="text-[10px] font-black text-primary uppercase tracking-wider block mb-1">Raciocínio Clínico</span>
-                        <p className="text-xs text-muted italic leading-relaxed whitespace-pre-line">
-                          {currentQuestion.commentary}
-                        </p>
-                      </div>
-                    )}
-                    
-                    {currentQuestion.reference && (
-                      <div className="text-[11px] text-muted leading-relaxed">
-                        <span className="font-bold text-ink">Diretriz/Referência:</span> {currentQuestion.reference}
-                      </div>
-                    )}
+                  <div className={cn(
+                    "px-5 py-3 font-semibold text-[15px]",
+                    currentAnswer.isCorrect ? "bg-primary-soft text-primary-ink" : "bg-coral-soft text-accent-coral"
+                  )}>
+                    {currentAnswer.isCorrect
+                      ? 'Você acertou.'
+                      : `Resposta correta: ${String.fromCharCode(65 + currentQuestion.correctAnswer)}.`}
                   </div>
 
-                  {/* Question Tags */}
-                  <div className="flex flex-wrap gap-1.5 pt-1">
-                    {currentQuestion.tags.map(tag => (
-                      <span key={tag} className="text-[9px] font-bold bg-bg px-2 py-0.5 rounded-md border border-line text-muted">
-                        #{tag.toUpperCase()}
-                      </span>
-                    ))}
+                  <div className="p-5 space-y-5">
+                    <section>
+                      <h3 className="text-base font-bold">Comentário</h3>
+                      <p className="mt-1.5 text-[15px] text-ink-2 leading-relaxed whitespace-pre-line">
+                        {currentQuestion.explanation}
+                      </p>
+                    </section>
+
+                    {currentQuestion.commentary && (
+                      <section className="pl-4 border-l-2 border-line-2">
+                        <h3 className="text-sm font-sans font-semibold text-ink">Para aprofundar</h3>
+                        <p className="mt-1 text-sm text-ink-2 leading-relaxed whitespace-pre-line">
+                          {currentQuestion.commentary}
+                        </p>
+                      </section>
+                    )}
+
+                    {currentQuestion.reference && (
+                      <p className="text-xs text-muted leading-relaxed">
+                        <span className="font-semibold text-ink-2">Referência:</span> {currentQuestion.reference}
+                      </p>
+                    )}
+
+                    {currentQuestion.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5">
+                        {currentQuestion.tags.map(tag => (
+                          <span key={tag} className="text-xs bg-bg-2 px-2 py-0.5 rounded-md text-muted">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </motion.div>
               )}
@@ -334,37 +324,37 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
 
             {/* Navigation Actions Footer */}
             <div className="flex items-center justify-between gap-3 pt-6 pb-20 sm:pb-8">
-              <button 
+              <button
                 onClick={() => setCurrentIndex(prev => Math.max(0, prev - 1))}
                 disabled={currentIndex === 0}
-                className="flex items-center gap-1 px-3 py-2 text-muted font-bold text-xs hover:bg-white border border-transparent hover:border-line hover:text-ink transition-all rounded-lg disabled:opacity-30"
+                className="flex items-center gap-1 px-3 py-2.5 text-ink-2 font-semibold text-sm hover:bg-white border border-transparent hover:border-line transition-colors rounded-lg disabled:opacity-30"
               >
                 <ChevronLeft className="w-4 h-4" />
                 Anterior
               </button>
-              
+
               {/* Mobile Exam Map Drawer Button */}
               <button
                 type="button"
                 onClick={() => setIsMobileMapOpen(true)}
-                className="lg:hidden flex items-center gap-1.5 px-3 py-2 bg-white hover:bg-bg border border-line rounded-lg text-xs font-bold text-ink transition-all shadow-sm"
+                className="lg:hidden flex items-center gap-1.5 px-3 py-2.5 bg-white border border-line rounded-lg text-sm font-semibold text-ink"
               >
-                <LayoutGrid className="w-3.5 h-3.5 text-primary" />
-                <span>Mapa ({answeredCount}/{questions.length})</span>
+                <LayoutGrid className="w-4 h-4 text-muted" />
+                <span className="tabular-nums">{answeredCount}/{questions.length}</span>
               </button>
 
               {currentIndex < questions.length - 1 ? (
-                <button 
+                <button
                   onClick={() => setCurrentIndex(prev => prev + 1)}
-                  className="flex items-center gap-1 px-4.5 py-2 bg-primary text-white font-bold text-xs rounded-lg hover:bg-primary-2 transition-all active:scale-95 shadow-sm"
+                  className="flex items-center gap-1 px-5 py-2.5 bg-primary text-white font-semibold text-sm rounded-lg hover:bg-primary-2 transition-colors"
                 >
                   Próxima
                   <ChevronRight className="w-4 h-4" />
                 </button>
               ) : (
-                <button 
+                <button
                   onClick={() => setIsSubmitModalOpen(true)}
-                  className="flex items-center gap-1 px-4.5 py-2 bg-primary text-white font-bold text-xs rounded-lg hover:bg-primary-2 transition-all active:scale-95 shadow-sm"
+                  className="flex items-center gap-1 px-5 py-2.5 bg-primary text-white font-semibold text-sm rounded-lg hover:bg-primary-2 transition-colors"
                 >
                   Concluir
                   <Trophy className="w-4 h-4" />
@@ -377,30 +367,30 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
         {/* Exam Map Sidebar (Hidden on mobile/tablet) */}
         <aside className="w-72 bg-white border-l border-line hidden lg:flex flex-col shrink-0">
           <div className="p-5 border-b border-line space-y-3 shrink-0">
-            <h3 className="text-sm font-heading font-extrabold text-ink">Mapa da Prova</h3>
+            <h3 className="text-base font-bold text-ink">Suas respostas</h3>
             <div className="flex justify-between items-center text-xs font-semibold text-muted">
-              <span>Progresso</span>
-              <span className="text-primary font-black">{answeredCount}/{questions.length} ({Math.round(progressPercent)}%)</span>
+              <span>Respondidas</span>
+              <span className="text-ink font-semibold tabular-nums">{answeredCount} de {questions.length}</span>
             </div>
             <div className="w-full bg-bg h-1 rounded-full overflow-hidden">
               <div className="bg-primary h-full transition-all" style={{ width: `${progressPercent}%` }} />
             </div>
           </div>
-          
+
           <div className="flex-1 overflow-y-auto p-4">
             <div className="grid grid-cols-5 gap-1.5">
               {questions.map((q, idx) => {
                 const answer = userAnswers.find(a => a.questionId === q.id);
                 const isActive = currentIndex === idx;
-                
+
                 let btnStyle = "bg-bg text-muted border border-line";
                 if (answer) {
                   if (settings.immediateFeedback) {
-                    btnStyle = answer.isCorrect 
-                      ? "bg-accent-green/20 text-accent-green border-accent-green/30" 
-                      : "bg-accent-coral/20 text-accent-coral border-accent-coral/30";
+                    btnStyle = answer.isCorrect
+                      ? "bg-primary-soft text-primary-ink border-accent-green/40"
+                      : "bg-coral-soft text-accent-coral border-accent-coral/40";
                   } else {
-                    btnStyle = "bg-primary/25 text-primary border-primary/40";
+                    btnStyle = "bg-ink/10 text-ink border-ink/20";
                   }
                 }
 
@@ -412,10 +402,10 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
                     className={cn(
                       "w-10 h-10 flex items-center justify-center rounded-lg text-xs font-bold transition-all shrink-0",
                       btnStyle,
-                      isActive && "ring-2 ring-primary ring-offset-2 scale-105 font-black z-10 !bg-primary !text-white !border-primary shadow-sm"
+                      isActive && "ring-2 ring-ink ring-offset-2 z-10"
                     )}
                   >
-                    {String(idx + 1).padStart(2, '0')}
+                    {idx + 1}
                   </button>
                 );
               })}
@@ -423,8 +413,8 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
           </div>
 
           <div className="p-4 border-t border-line bg-bg-2 shrink-0">
-            <div className="text-[10px] font-bold text-muted uppercase tracking-wider block mb-1">MODALIDADE</div>
-            <div className="text-xs font-black text-ink">{settings.module}</div>
+            <div className="text-xs text-muted">Área</div>
+            <div className="text-sm font-semibold text-ink mt-0.5">{settings.module === 'Misto' ? 'Todas as áreas' : settings.module}</div>
           </div>
         </aside>
       </main>
@@ -447,28 +437,25 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
               className="relative w-full max-w-sm bg-white rounded-2xl shadow-xl p-6 overflow-hidden z-10"
             >
               <div className="text-center space-y-5">
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto text-primary">
-                  <AlertCircle className="w-7 h-7" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-black text-ink font-heading">Finalizar caderno?</h3>
-                  <p className="text-xs sm:text-sm text-muted font-medium leading-relaxed mt-1.5">
-                    Você respondeu <span className="font-bold text-primary">{userAnswers.length}</span> de <span className="font-bold text-primary">{questions.length}</span> questões do caderno. Deseja finalizar agora?
+                                <div>
+                  <h3 className="text-xl font-bold text-ink">Finalizar o simulado?</h3>
+                  <p className="text-sm text-ink-2 leading-relaxed mt-2">
+                    Você respondeu {userAnswers.length} de {questions.length} questões.{userAnswers.length < questions.length && ' As que ficaram em branco contam como não respondidas.'}
                   </p>
                 </div>
-                
+
                 <div className="flex flex-col gap-2 pt-2">
-                  <button 
+                  <button
                     onClick={() => onFinish(calculateResults(), userAnswers)}
                     className="w-full py-3 bg-primary hover:bg-primary-2 text-white font-bold rounded-lg text-xs sm:text-sm shadow-sm"
                   >
-                    Sim, finalizar simulado
+                    Finalizar e ver resultado
                   </button>
-                  <button 
+                  <button
                     onClick={() => setIsSubmitModalOpen(false)}
                     className="w-full py-3 bg-bg hover:bg-line text-ink font-bold rounded-lg text-xs sm:text-sm"
                   >
-                    Voltar às questões
+                    Continuar respondendo
                   </button>
                 </div>
               </div>
@@ -496,11 +483,11 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
               className="relative w-full bg-white rounded-t-2xl shadow-xl p-5 flex flex-col z-10 max-h-[80vh]"
             >
               <div className="w-10 h-1 bg-line-2 rounded-full mx-auto mb-4 shrink-0" />
-              
+
               <div className="flex justify-between items-center mb-4 shrink-0">
-                <h3 className="text-sm font-heading font-extrabold text-ink">Navegação do Caderno</h3>
-                <span className="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-md">
-                  {answeredCount}/{questions.length} Respondidas
+                <h3 className="text-base font-bold text-ink">Suas respostas</h3>
+                <span className="text-sm text-muted tabular-nums">
+                  {answeredCount} de {questions.length} respondidas
                 </span>
               </div>
 
@@ -510,15 +497,15 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
                   {questions.map((q, idx) => {
                     const answer = userAnswers.find(a => a.questionId === q.id);
                     const isActive = currentIndex === idx;
-                    
+
                     let btnStyle = "bg-bg text-muted border border-line";
                     if (answer) {
                       if (settings.immediateFeedback) {
-                        btnStyle = answer.isCorrect 
-                          ? "bg-accent-green/20 text-accent-green border-accent-green/30" 
-                          : "bg-accent-coral/20 text-accent-coral border-accent-coral/30";
+                        btnStyle = answer.isCorrect
+                          ? "bg-primary-soft text-primary-ink border-accent-green/40"
+                          : "bg-coral-soft text-accent-coral border-accent-coral/40";
                       } else {
-                        btnStyle = "bg-primary/25 text-primary border-primary/40";
+                        btnStyle = "bg-ink/10 text-ink border-ink/20";
                       }
                     }
 
@@ -533,10 +520,10 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
                         className={cn(
                           "w-11 h-11 flex items-center justify-center rounded-lg text-xs font-bold transition-all",
                           btnStyle,
-                          isActive && "ring-2 ring-primary ring-offset-2 scale-105 font-black z-10 !bg-primary !text-white !border-primary shadow-sm"
+                          isActive && "ring-2 ring-ink ring-offset-2 z-10"
                         )}
                       >
-                        {String(idx + 1).padStart(2, '0')}
+                        {idx + 1}
                       </button>
                     );
                   })}
@@ -548,7 +535,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
                 onClick={() => setIsMobileMapOpen(false)}
                 className="w-full py-3 bg-bg hover:bg-line text-ink font-bold rounded-lg text-xs sm:text-sm shrink-0"
               >
-                Voltar ao Caderno
+                Voltar à questão
               </button>
             </motion.div>
           </div>

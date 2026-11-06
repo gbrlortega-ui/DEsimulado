@@ -1,240 +1,261 @@
-import React from 'react';
-import { motion } from 'motion/react';
-import { 
-  ArrowRight,
-  TrendingUp,
-  Zap,
-  CheckCircle2,
-  BarChart3,
-  BookOpen
-} from 'lucide-react';
-import { MockQuestion } from './MockQuestion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { ChevronRight, RefreshCw, Check, X } from 'lucide-react';
+import { Brand } from './Brand';
+import { Module, Question } from '../types';
+import { AREAS, COUNT_BY_AREA, EDITIONS, TOTAL_QUESTIONS, randomSample } from '../data/stats';
+import { cn, examLabel, firstParagraph, stripOptionLetter } from '../lib/utils';
 
 interface LandingPageProps {
-  onStart: () => void;
+  onSetup: (module?: Module) => void;
+  onQuickStart: () => void;
 }
 
-export const LandingPage: React.FC<LandingPageProps> = ({ onStart }) => {
-  return (
-    <div className="flex flex-col min-h-screen bg-bg relative overflow-hidden">
-      {/* Subtle Ambient Light Gradient */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[400px] bg-gradient-to-b from-primary/5 to-transparent rounded-full blur-3xl pointer-events-none z-0" />
+const fmt = (n: number) => n.toLocaleString('pt-BR');
 
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 py-4 bg-bg/80 backdrop-blur-md border-b border-line">
-        <div className="container-custom flex justify-between items-center">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white shadow-sm shadow-primary/20">
-              <Zap size={16} />
-            </div>
-            <div className="text-lg font-heading font-extrabold text-ink tracking-tight notranslate" translate="no">DEsimulados</div>
-          </div>
-          <button 
-            onClick={onStart}
-            className="text-xs font-bold text-white bg-primary px-4 py-2 rounded-lg hover:bg-primary-2 transition-all active:scale-95"
+/* ---------- Questão de amostra: o visitante responde ali mesmo ---------- */
+const SampleQuestion: React.FC<{ onQuickStart: () => void }> = ({ onQuickStart }) => {
+  const [q, setQ] = useState<Question>(() => randomSample());
+  const [picked, setPicked] = useState<number | null>(null);
+  const answered = picked !== null;
+  const right = picked === q.correctAnswer;
+  const letter = (i: number) => String.fromCharCode(65 + i);
+
+  const next = () => {
+    setQ(randomSample(q.id));
+    setPicked(null);
+  };
+
+  return (
+    <div className="bg-white rounded-2xl border border-line-2 shadow-[0_24px_60px_-28px_oklch(30%_0.06_160/0.35)] overflow-hidden">
+      <div className="flex items-center justify-between gap-3 px-5 sm:px-6 pt-5">
+        <div className="flex flex-wrap items-center gap-1.5 text-xs">
+          <span className="px-2 py-0.5 rounded-md bg-primary-soft text-primary-ink font-semibold">{examLabel(q.id)}</span>
+          {q.module !== 'ENAMED' && <span className="px-2 py-0.5 rounded-md bg-bg-2 text-ink-2 font-medium">{q.module}</span>}
+        </div>
+        <button
+          type="button"
+          onClick={next}
+          className="flex items-center gap-1.5 text-xs font-semibold text-muted hover:text-ink transition-colors"
+        >
+          <RefreshCw size={13} />
+          Outra questão
+        </button>
+      </div>
+
+      <p className="px-5 sm:px-6 pt-4 text-[15px] leading-relaxed text-ink whitespace-pre-line">{q.text}</p>
+
+      <div className="px-5 sm:px-6 pt-4 space-y-2">
+        {q.options.map((opt, i) => {
+          const isRight = i === q.correctAnswer;
+          const isPicked = i === picked;
+          return (
+            <button
+              key={i}
+              type="button"
+              disabled={answered}
+              onClick={() => setPicked(i)}
+              className={cn(
+                'option-btn w-full text-left gap-3 px-3.5 py-3',
+                answered && 'locked',
+                answered && isRight && 'correct',
+                answered && isPicked && !isRight && 'incorrect',
+                answered && !isRight && !isPicked && 'opacity-60'
+              )}
+            >
+              <span
+                className={cn(
+                  'w-6 h-6 rounded-md border flex items-center justify-center text-xs font-semibold shrink-0',
+                  answered && isRight
+                    ? 'bg-accent-green border-accent-green text-white'
+                    : answered && isPicked
+                    ? 'bg-accent-coral border-accent-coral text-white'
+                    : 'border-line-2 text-muted'
+                )}
+              >
+                {answered && isRight ? <Check size={14} strokeWidth={3} /> : answered && isPicked ? <X size={14} strokeWidth={3} /> : letter(i)}
+              </span>
+              <span className="text-sm leading-snug text-ink pt-0.5">{stripOptionLetter(opt)}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      <AnimatePresence initial={false}>
+        {answered && (
+          <motion.div
+            key={q.id}
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="overflow-hidden"
           >
-            Começar
+            <div className="mx-5 sm:mx-6 mt-4 pt-4 border-t border-line">
+              <p className={cn('text-sm font-semibold', right ? 'text-primary-ink' : 'text-accent-coral')}>
+                {right ? 'Você acertou.' : `Resposta correta: ${letter(q.correctAnswer)}.`}
+              </p>
+              <p className="mt-1.5 text-sm leading-relaxed text-ink-2">{firstParagraph(q.explanation)}</p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <div className="mt-5 px-5 sm:px-6 py-4 bg-bg-2 border-t border-line flex items-center justify-between gap-3">
+        <span className="text-xs text-muted">{answered ? 'Gostou? Continue no mesmo ritmo.' : 'Escolha uma alternativa.'}</span>
+        <button
+          type="button"
+          onClick={onQuickStart}
+          className="text-sm font-semibold text-primary-ink hover:text-ink transition-colors flex items-center gap-1 shrink-0"
+        >
+          Fazer 10 questões
+          <ChevronRight size={16} />
+        </button>
+      </div>
+    </div>
+  );
+};
+
+/* ---------- Página ---------- */
+export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart }) => {
+  const tp = EDITIONS.filter((e) => e.kind === 'TP');
+  const enamed = EDITIONS.filter((e) => e.kind === 'ENAMED');
+  const years = (list: typeof EDITIONS) => (list.length ? `${list[0].year}–${list[list.length - 1].year}` : '');
+
+  return (
+    <div className="min-h-screen flex flex-col bg-bg">
+      <header className="sticky top-0 z-40 bg-bg/85 backdrop-blur-md border-b border-line">
+        <div className="container-custom h-16 flex items-center justify-between">
+          <Brand />
+          <button onClick={() => onSetup()} className="text-sm font-semibold px-4 py-2 rounded-lg bg-ink text-white hover:bg-ink-2 transition-colors">
+            Montar simulado
           </button>
         </div>
-      </nav>
+      </header>
 
-      <main className="relative z-10 flex-grow">
-        {/* Hero Section */}
-        <section className="pt-24 pb-12 sm:pt-36 sm:pb-20">
-          <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-              <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4 }}
-                  className="space-y-6"
-                >
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-mono text-[10px] tracking-wider uppercase font-bold">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-                    PROVAS DE RESIDÊNCIA & REVALIDA
-                  </div>
-                  
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-ink leading-[1.1] tracking-tight">
-                    A excelência na sua <br />
-                    <span className="text-primary relative inline-block">
-                      formação médica.
-                    </span>
-                  </h1>
-                  
-                  <p className="text-base sm:text-lg text-muted font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                    Estude com simulados realistas, resoluções comentadas de alto nível e gráficos de desempenho clínico.
-                  </p>
-
-                  <div className="pt-2 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                    <button 
-                      onClick={onStart}
-                      className="btn btn-primary w-full sm:w-auto shadow-sm shadow-primary/10"
-                    >
-                      COMEÇAR SIMULADO
-                      <ArrowRight size={16} />
-                    </button>
-                    <button 
-                      onClick={onStart}
-                      className="btn btn-ghost w-full sm:w-auto"
-                    >
-                      Personalizar Caderno
-                    </button>
-                  </div>
-
-                  {/* Highlights Grid */}
-                  <div className="pt-8 border-t border-line grid grid-cols-3 gap-4 sm:gap-8 text-left">
-                    <div>
-                      <div className="text-xl sm:text-3xl font-heading font-black text-ink leading-none">1.000+</div>
-                      <div className="text-[9px] sm:text-[10px] uppercase font-mono tracking-wider text-muted mt-1.5 font-bold leading-tight">Questões</div>
-                    </div>
-                    <div>
-                      <div className="text-xl sm:text-3xl font-heading font-black text-ink leading-none">100%</div>
-                      <div className="text-[9px] sm:text-[10px] uppercase font-mono tracking-wider text-muted mt-1.5 font-bold leading-tight">Comentadas</div>
-                    </div>
-                    <div>
-                      <div className="text-xl sm:text-3xl font-heading font-black text-ink leading-none">ENADE</div>
-                      <div className="text-[9px] sm:text-[10px] uppercase font-mono tracking-wider text-muted mt-1.5 font-bold leading-tight">Atualizado</div>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-              
-              <div className="lg:col-span-5 relative flex justify-center">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  className="relative z-10 w-full max-w-[380px] sm:max-w-[420px] aspect-square"
-                >
-                  <MockQuestion />
-                </motion.div>
-              </div>
+      <main className="flex-1">
+        {/* Abertura */}
+        <section className="container-custom pt-10 pb-16 sm:pt-20 sm:pb-24 grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+          <div className="lg:col-span-6">
+            <h1 className="text-[2.75rem] leading-[1] sm:text-[4.25rem] font-extrabold text-ink tracking-[-0.04em]">
+              Provas reais de Medicina, comentadas.
+            </h1>
+            <p className="mt-6 text-lg leading-relaxed text-ink-2 max-w-[34rem]">
+              {fmt(TOTAL_QUESTIONS)} questões do Teste de Progresso e do ENAMED, cada uma com gabarito, explicação e referência.
+              Sem cadastro: escolha a área e comece a responder.
+            </p>
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+              <button onClick={() => onSetup()} className="btn btn-primary">
+                Montar simulado
+              </button>
+              <button onClick={onQuickStart} className="btn btn-ghost">
+                Simulado rápido de 10 questões
+              </button>
             </div>
+            <dl className="mt-10 grid grid-cols-3 gap-3 sm:gap-6 max-w-md">
+              <div>
+                <dt className="text-xs text-muted">Questões</dt>
+                <dd className="font-heading text-xl sm:text-2xl font-bold text-ink mt-0.5 whitespace-nowrap tabular-nums">{fmt(TOTAL_QUESTIONS)}</dd>
+              </div>
+              <div>
+                <dt className="text-xs text-muted">Teste de Progresso</dt>
+                <dd className="font-heading text-xl sm:text-2xl font-bold text-ink mt-0.5 whitespace-nowrap tabular-nums">{years(tp)}</dd>
+              </div>
+              <div>
+                <dt className="text-xs text-muted">ENAMED</dt>
+                <dd className="font-heading text-xl sm:text-2xl font-bold text-ink mt-0.5 whitespace-nowrap tabular-nums">{years(enamed)}</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div className="lg:col-span-6">
+            <SampleQuestion onQuickStart={onQuickStart} />
           </div>
         </section>
 
-        {/* Features Section */}
-        <section className="py-16 sm:py-24 bg-white border-y border-line">
-          <div className="container-custom">
-            <div className="section-head">
-              <span className="eyebrow"><span className="dot"></span>Metodologia</span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-ink mt-3">Estude de forma inteligente</h2>
-              <p className="text-muted text-sm sm:text-base">Criamos um ecossistema projetado para simular o nível de dificuldade exigido nos grandes exames nacionais.</p>
+        {/* O que tem no banco */}
+        <section className="bg-white border-y border-line">
+          <div className="container-custom py-16 sm:py-20 grid lg:grid-cols-12 gap-12">
+            <div className="lg:col-span-7">
+              <h2 className="text-3xl sm:text-4xl font-extrabold">Escolha por onde começar</h2>
+              <p className="mt-3 text-ink-2 max-w-lg">Toque em uma área para montar um simulado só com ela.</p>
+              <ul className="mt-8 divide-y divide-line border-y border-line">
+                {AREAS.map((area) => {
+                  const n = COUNT_BY_AREA[area] ?? 0;
+                  return (
+                    <li key={area}>
+                      <button
+                        type="button"
+                        onClick={() => onSetup(area)}
+                        className="group w-full flex items-center justify-between gap-4 py-4 text-left"
+                      >
+                        <span className="font-semibold text-lg text-ink group-hover:text-primary-ink transition-colors">{area}</span>
+                        <span className="flex items-center gap-1 text-sm text-muted tabular-nums">
+                          {fmt(n)} questões
+                          <ChevronRight size={18} className="text-muted group-hover:text-primary-ink transition-colors" />
+                        </span>
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mt-12">
-              <div className="p-6 sm:p-8 rounded-2xl bg-bg border border-line flex flex-col space-y-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
-                  <Zap size={20} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-ink mb-2">Ciclos Dinâmicos</h3>
-                  <p className="text-muted text-xs sm:text-sm leading-relaxed">
-                    Simulados inteligentes que mapeiam seu desempenho de forma individual, gerando questões focadas nas suas áreas de maior oportunidade.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 sm:p-8 rounded-2xl bg-bg border border-line flex flex-col space-y-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
-                  <BarChart3 size={20} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-ink mb-2">Estatísticas Reais</h3>
-                  <p className="text-muted text-xs sm:text-sm leading-relaxed">
-                    Veja sua evolução detalhada por eixo temático, tempo médio por questão e nível de preparação geral antes de encarar as provas.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 sm:p-8 rounded-2xl bg-bg border border-line flex flex-col space-y-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
-                  <BookOpen size={20} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-ink mb-2">Comentários Clínicos</h3>
-                  <p className="text-muted text-xs sm:text-sm leading-relaxed">
-                    Não apenas gabaritos. Cada questão possui explicação conceitual detalhada com discussões sobre diagnósticos, condutas e diretrizes.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Insight Analytics Demo Section */}
-        <section className="py-16 sm:py-24">
-          <div className="container-custom">
-            <div className="bg-white rounded-2xl p-6 sm:p-12 border border-line shadow-sm">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div className="space-y-6">
-                  <div className="eyebrow">
-                    <span className="dot"></span>
-                    Mapeamento Inteligente
-                  </div>
-                  <h2 className="text-2xl sm:text-4xl font-extrabold text-ink leading-tight">
-                    Direcione seus esforços para as áreas de maior peso.
-                  </h2>
-                  <p className="text-muted text-xs sm:text-sm leading-relaxed">
-                    Identificamos as bancas e disciplinas onde você possui maior margem de evolução, orientando suas revisões através de estatísticas objetivas.
-                  </p>
-                  
-                  <div className="space-y-3.5 pt-2">
-                    {[
-                      'Análise preditiva por especialidade',
-                      'Taxa de acertos em tempo real',
-                      'Comentários conceituais referenciados'
-                    ].map((item, idx) => (
-                      <div key={idx} className="flex items-center gap-3 text-xs sm:text-sm font-bold text-ink">
-                        <div className="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 shrink-0">
-                          <CheckCircle2 size={12} />
-                        </div>
-                        {item}
+            <div className="lg:col-span-5">
+              <h2 className="text-2xl font-extrabold">Provas no banco</h2>
+              <p className="mt-3 text-ink-2">Edições completas, com o gabarito oficial de cada banca.</p>
+              {[
+                { title: 'Teste de Progresso', list: tp },
+                { title: 'ENAMED', list: enamed },
+              ].map(({ title, list }) => (
+                <div key={title} className="mt-7">
+                  <h3 className="text-sm font-semibold font-sans text-ink">{title}</h3>
+                  <div className="mt-3 grid grid-cols-3 sm:grid-cols-4 gap-2">
+                    {list.map((e) => (
+                      <div key={e.label} className="rounded-lg border border-line px-2.5 py-2">
+                        <div className="font-heading font-bold text-ink">{e.year}</div>
+                        <div className="text-xs text-muted tabular-nums whitespace-nowrap">{e.count} questões</div>
                       </div>
                     ))}
                   </div>
                 </div>
-
-                <div className="bg-bg rounded-xl border border-line p-4 sm:p-8 flex flex-col justify-between gap-6 shadow-sm">
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <span className="text-[10px] font-black uppercase text-muted tracking-wider">Histórico de Performance</span>
-                      <span className="text-emerald-600 font-bold text-xs bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-100">Meta atingida</span>
-                    </div>
-                    <div className="flex justify-between items-end gap-2 h-28 pt-2">
-                      {[30, 45, 40, 65, 55, 80, 72, 90].map((h, i) => (
-                        <motion.div 
-                          initial={{ height: 0 }}
-                          whileInView={{ height: `${h}%` }}
-                          key={i} 
-                          className={`flex-grow rounded-t-md ${i === 7 ? 'bg-primary' : 'bg-primary/20'}`}
-                        />
-                      ))}
-                    </div>
-                    <div className="flex justify-between text-[9px] uppercase font-mono font-bold text-muted px-1">
-                      <span>Sem 1</span><span>Sem 3</span><span>Sem 5</span><span>Sem 7</span>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-white p-4 rounded-lg border border-line flex items-center justify-between">
-                    <div className="flex items-center gap-3 text-xs font-bold text-ink">
-                      <div className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div>
-                      <span>Índice de Acertos Geral</span>
-                    </div>
-                    <span className="text-primary font-black text-sm">82.4%</span>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
+          </div>
+        </section>
+
+        {/* Como funciona */}
+        <section className="container-custom py-16 sm:py-20">
+          <h2 className="text-3xl sm:text-4xl font-extrabold">Como funciona</h2>
+          <ol className="mt-10 grid md:grid-cols-3 gap-8 md:gap-10">
+            {[
+              ['Escolha a área e a quantidade', 'De 10 a 100 questões, de uma área só ou misturando todas.'],
+              ['Responda e leia o comentário', 'Ao marcar, você vê o gabarito, a explicação e a referência da questão.'],
+              ['Veja onde precisa revisar', 'No final, o resultado mostra seus acertos por área e o tempo gasto.'],
+            ].map(([title, text], i) => (
+              <li key={title} className="flex gap-4">
+                <span className="w-9 h-9 rounded-full bg-primary-soft text-primary-ink font-heading font-bold flex items-center justify-center shrink-0">
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="text-lg font-bold">{title}</h3>
+                  <p className="mt-1.5 text-ink-2 leading-relaxed">{text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-12">
+            <button onClick={() => onSetup()} className="btn btn-primary">
+              Montar simulado
+            </button>
           </div>
         </section>
       </main>
 
-      {/* Footer - Elegant and Minimal */}
-      <footer className="py-8 border-t border-line bg-white/50">
-        <div className="container-custom text-center text-[11px] font-mono font-bold text-muted uppercase tracking-wider">
-          <span translate="no" className="notranslate">DEsimulados</span> · Preparação Inteligente para Medicina
+      <footer className="border-t border-line">
+        <div className="container-custom py-8 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <Brand size="sm" />
+          <p className="text-sm text-muted">Questões de provas públicas, organizadas e comentadas para estudo.</p>
         </div>
       </footer>
     </div>
