@@ -2259,5 +2259,330 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     commentary: 'A ansiedade não causa gosto metálico. A resposta vagal cursa com bradicardia e hipotensão. A alergia à clorexidina provocaria urticária e broncoespasmo.',
     reference: 'Brunton, L.L. Goodman & Gilman: As Bases Farmacológicas da Terapêutica. 12ª ed. Rio de Janeiro: McGraw-Hill, 2012',
     tags: ['cirurgia', 'anestesiologia', 'toxicidade']
+  },
+  // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
+  {
+    id: 'tp2020-101',
+    module: 'Cirurgia',
+    image: '/images/tp2020-101.PNG',
+    text: 'Paciente, 57 anos, masculino, branco, natural e residente da cidade São Paulo, classe média, queixa-se de dificuldade para engolir os alimentos, e que vem piorando nos últimos 3 meses. Refere que, de início, começou a ter dificuldades para engolir alimentos como carnes, pães e alimentos mais duros, necessitando tomar água para facilitar a deglutição, e que no último mês tem dificuldade para engolir até alimentos pastosos. Emagreceu de 15kg nos últimos 3 meses, fumante 10 cigarros dia, etilista social, hipertenso, hiperuricemia, já tendo feito tratamento para refluxo gastroesofágico várias vezes. Faz uso de Alopurinol 100 mg/dia, Losartana 100 mg/dia e Omeprazol 40 mg/dia de forma irregular. Mãe falecida por neoplasia de mama aos 58 anos e pai falecido de neoplasia de próstata aos 81 anos e história de infarto agudo do miocárdio aos 65 anos. Exame físico: descorado moderadamente, hidratado, eupneico, afebril, anictérico, acianótico. Aparelho cardiocirculatório com ausculta apresentando coração rítmico, com duas bulhas normofonetas. Aparelho respiratório com murmúrio vesicular presente bilateralmente, sem ruídos adventícios, tensão arterial de 140/90 mmHg, IMC = 30. Abdome plano, flácido, sem massas e sem dores à palpação superficial e profunda, com diástase de retos abdominais e cicatriz em região umbilical de cirurgia de herniorrafia umbilical, ausência de viceromegalias e adenopatias. Endoscopia relata neoplasia permeável ao aparelho de 32 a 36cm da Arcada Dentária Superior.\n\nAssinale a alternativa correta:',
+    options: [
+      '(A) Trata-se de Adenocarcinoma de Esôfago distal.',
+      '(B) O exame de Broncoscopia é necessário para se estabelecer o estadiamento.',
+      '(C) A esofagectomia distal é a cirurgia de escolha para este Paciente.',
+      '(D) Trata-se de Carcinoma Escamoso de Esôfago.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Disfagia progressiva, emagrecimento, tabagismo e etilismo, com tumor entre 32 e 36 cm da arcada dentária (esôfago médio/inferior): carcinoma de células escamosas (espinocelular) de esôfago, associado a tabaco e álcool e mais frequente nos terços médio e proximal.',
+    commentary: 'O adenocarcinoma ocorre no esôfago distal, associado a refluxo e Barrett. A broncoscopia é indicada para tumores de terço superior/médio próximos à via aérea, mas não é obrigatória no estadiamento. A cirurgia de escolha é a esofagectomia subtotal.',
+    reference: 'SABISTON – tratado de Cirurgia 19ª Edição.',
+    tags: ['cirurgia', 'câncer de esôfago']
+  },
+  {
+    id: 'tp2020-102',
+    module: 'Cirurgia',
+    text: 'Paciente de 64 anos procura atendimento médico com queixa de polaciúria (intervalo miccional a cada 3 horas), nictúria e com jato urinário médio. Qualidade de vida pouco afetada pelos sintomas urinários. Trouxe à consulta um ultrassom realizado há dois anos, demonstrando próstata de 55g e vias urinárias normais. Tem como antecedente familiar irmão com diagnóstico de câncer de próstata que se encontra em tratamento.\n\nQual o rastreamento mínimo recomendado para este paciente?',
+    options: [
+      '(A) Fosfatase alcalina e ultrassonografia via abdominal da próstata.',
+      '(B) PSA (antígeno prostático específico) e toque retal.',
+      '(C) PSA (antígeno prostático específico) e ultrassonografia transretal da próstata.',
+      '(D) Fosfatase ácida prostática e ultrassonografia transretal da próstata.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Homem de 64 anos com sintomas urinários e irmão com câncer de próstata: a avaliação mínima recomendada é o PSA associado ao toque retal.',
+    commentary: 'Fosfatase alcalina e fosfatase ácida não são usadas para rastreamento. A ultrassonografia transretal é reservada à biópsia guiada.',
+    reference: 'Urologia Brasil / AGUINALDO CRSAR NARDI, Carlos Alberto Bezerra, et al. Rio de Janeiro Planmark, 2013.',
+    tags: ['urologia', 'câncer de próstata', 'rastreamento']
+  },
+  {
+    id: 'tp2020-103',
+    module: 'Cirurgia',
+    text: 'Paciente de 30 anos, masculino, foi submetido a cirurgia para correção de hérnia inguinal bilateral. Na avaliação pré-operatória apresentava-se em bom estado geral, com sinais vitais dentro da normalidade, assim como os exames laboratoriais, com exceção da glicemia em jejum que constava valor de 130 mg/dL. Referiu que fazia uso de hipoglicemiante oral para o tratamento de diabetes mellitus tipo 2.\n\nApós exame clínico e análise dos exames laboratoriais, qual a classificação deste paciente com relação ao risco anestésico-cirúrgico (ASA - American Society of Anesthesiology)?',
+    options: [
+      '(A) ASA I',
+      '(B) ASA II',
+      '(C) ASA III',
+      '(D) ASA IV'
+    ],
+    correctAnswer: 1,
+    explanation: 'Diabetes tipo 2 controlado com hipoglicemiante oral, sem limitação funcional: doença sistêmica leve, ou seja, ASA II.',
+    commentary: 'ASA I é o paciente sadio. ASA III envolve doença sistêmica grave com limitação funcional. ASA IV, doença sistêmica grave com ameaça constante à vida.',
+    reference: 'Pollard BJ, Healty TE - Preoperative preparation, concurrent drug therapy and premedication. Em: Anaesthesia. Nimmo WS, Smith G - Blackwell Scientific Publications. London. 1990; 431-447. / Vandam LD, Desai SP - Evaluation of the patient and preoperative preparation. In Clinical Anesthesia. Barash PG, Cullen BF, Stoelting RK. Philadelphia. JB Lippincott Co, 1989; 407-438.',
+    tags: ['cirurgia', 'anestesiologia', 'avaliação pré-operatória']
+  },
+  {
+    id: 'tp2020-104',
+    module: 'Cirurgia',
+    text: 'Homem de 64 anos, previamente hígido e sem comorbidades, apresenta dor em fossa ilíaca esquerda e hematoquezia. Submetido a uma colonoscopia, deparou-se com uma lesão de crescimento lateral em cólon descendente, multilobulada, friável e sangrante ao toque do aparelho de colonoscopia, com cerca de 5cm de extensão, com uma área deprimida central e perfazendo cerca de 60% da circunferência da luz do órgão. Realizada biópsia que mostrou tratar-se de um adenoma tubular com displasia de baixo grau e alguns focos com displasia de alto grau.\n\nQual a conduta neste caso?',
+    options: [
+      '(A) Quimioterapia adjuvante.',
+      '(B) Repetir colonoscopia em 3 meses.',
+      '(C) Ressecção endoscópica.',
+      '(D) Colectomia esquerda por videolaparoscopia.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Lesão de crescimento lateral grande (5 cm), friável, com área deprimida e displasia de alto grau, ocupando 60% da circunferência: alto risco de carcinoma invasivo, com difícil abordagem endoscópica.\n\nA conduta é a ressecção cirúrgica oncológica — colectomia esquerda videolaparoscópica.',
+    commentary: 'Quimioterapia adjuvante só é decidida após a cirurgia e o estadiamento. Repetir colonoscopia atrasa o tratamento. Áreas deprimidas sugerem invasão da submucosa, contraindicando a ressecção endoscópica.',
+    reference: 'Averbach M et al. Tratado Ilustrado de Endoscopia Digestiva. Rio de Janeiro: Thieme Revinter; 2018, p 631-47. / Townsend CM et al. Sabiston Tratado de Cirurgia. Rio de Janeiro: Elsevier; 2015 p 3257-310.',
+    tags: ['cirurgia', 'câncer colorretal']
+  },
+  {
+    id: 'tp2020-105',
+    module: 'Cirurgia',
+    image: '/images/tp2020-105.PNG',
+    text: 'L.S., 26 anos, condutor de veículo pesado, vítima de colisão automotiva em rodovia. Condutor de outro veículo (carro) faleceu em cena. Admitido em pronto-socorro referenciado trazido por viatura de socorro básico. Respira espontaneamente. Frequência respiratória: 23 incursões por minuto, saturação de oxigênio de 90% pelo oxímetro de pulso, e a ausculta apresenta murmúrio vesicular diminuído difusamente associado a crepitação de parede torácica direita. Frequência cardíaca 110 batimentos por minuto, pressão arterial 105 x 67 mmHg. Escala de Coma de Glasgow de 13 pontos. Dermoabrasão em sentido oblíquo em parede anterior de tórax. Após administrar oxigênio complementar, obter acessos venosos e iniciar administração de cristaloides, foi solicitada tomografia de tórax sem contraste endovenoso.\n\nAvalie as imagens abaixo e assinale a alternativa que melhor corresponde ao diagnóstico e condutas adequadas:',
+    options: [
+      '(A) Pneumotórax hipertensivo. Punção de alívio.',
+      '(B) Enfisema subcutâneo. Escarotomia de parede torácica.',
+      '(C) Hemopneumotórax bilateral. Drenagem pleural bilateral (toracostomia) e conexão de drenos a sistema de selo d\'água.',
+      '(D) Tórax instável. Otimização de analgesia.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Trauma torácico de alta energia com dessaturação, murmúrio vesicular diminuído, crepitação de parede e tomografia mostrando ar e líquido em ambas as cavidades pleurais: hemopneumotórax bilateral.\n\nO tratamento é a drenagem pleural bilateral em selo d\'água.',
+    commentary: 'Não há sinais de pneumotórax hipertensivo (o paciente está estável e a tomografia foi feita). Enfisema subcutâneo não se trata com escarotomia. O tórax instável pode coexistir, mas não é a principal conduta.',
+    reference: 'Saad Junior, R; Carvalho, W.R.; Ximenes Netto, M.; Forte, V. Cirurgia Torácica Geral – 2ª Edição. / Marisco, G.A. Trauma Torácico – 1ª Edição.',
+    tags: ['cirurgia', 'trauma torácico']
+  },
+  {
+    id: 'tp2020-106',
+    module: 'Cirurgia',
+    image: '/images/tp2020-106.PNG',
+    text: 'Paciente J.P.S. de 60 anos, destro, caminhoneiro, apresenta dor crônica em ombro direito há 2 (dois) anos, com piora 5 (cinco) meses após trocar o pneu de um caminhão. Apresenta piora da dor à noite e queixa-se de dificuldade para levar a mão acima da cabeça. Ao exame físico na inspeção estática e dinâmica não apresenta alterações na pele como abaulamentos, equimoses, porém apresenta os testes de impacto de Neer e o teste de Jobe positivos. Realizou uma Ressonância Nuclear Magnética (RNM) conforme imagem abaixo, na qual foi confirmada a principal hipótese diagnóstica do caso.\n\nQual das alternativas abaixo NÃO é um diagnóstico diferencial desse caso?',
+    options: [
+      '(A) Radiculopatia cervical',
+      '(B) Tendinopatia Calcárea',
+      '(C) Artropatia do Manguito Rotador',
+      '(D) Luxação Acromioclavicular'
+    ],
+    correctAnswer: 3,
+    explanation: 'Dor no ombro com piora noturna, dificuldade de elevar o braço e testes de Neer e Jobe positivos: síndrome do impacto/lesão do manguito rotador (supraespinal). A questão pede o que NÃO é diagnóstico diferencial.\n\nA luxação acromioclavicular é lesão traumática aguda, com deformidade visível, e não se confunde com o quadro.',
+    commentary: 'Radiculopatia cervical (C5–C6), tendinopatia calcária e artropatia do manguito rotador são diagnósticos diferenciais clássicos da dor crônica no ombro.',
+    reference: 'Hebert, SK. et al Ortopedia e traumatologia: princípios e prática – Quinta Edição – Porto Alegre - Artmed, 2017. / Barros Filho, TEP; Lech, O. Exame físico em ortopedia – Terceira Edição - São Paulo: Sarvier, 2017. Vários colaboradores. / Motta, G; Barros Filho, TEP; Ortopedia e Traumatologia – Primeira Edição – Rio de Janeiro – Elsevier – 2018.',
+    tags: ['ortopedia', 'ombro', 'manguito rotador']
+  },
+  {
+    id: 'tp2020-107',
+    module: 'Cirurgia',
+    text: 'F.C., masculino, 60 anos, queixa-se do aparecimento de um “caroço” no pescoço há cerca de 3 meses. Está assintomático. Trouxe exames laboratoriais: TSH (hormônio estimulante da tireoide) de 2,3 µUI/L (valor de referência de 0,5 - 4,2 µUI/L); T4 (tiroxina) livre de 1,5 ng/dL (valor de referência de 0,8 - 1,9 ng/dL) e ultrassonografia cervical que descreve um nódulo tireoidiano de 2,5cm em lobo tireoidiano direito, bem delimitado, hipoecogênico e com presença de microcalcificações puntiformes de permeio.\n\nA sua conduta nesta situação seria:',
+    options: [
+      '(A) Tireoidectomia total.',
+      '(B) Tireoidectomia parcial à direita.',
+      '(C) Cintilografia de tireoide.',
+      '(D) Punção aspirativa por agulha fina (PAAF) do nódulo.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Nódulo tireoidiano de 2,5 cm, hipoecoico e com microcalcificações (características suspeitas), com função tireoidiana normal: está indicada a punção aspirativa por agulha fina (PAAF) para citologia.',
+    commentary: 'Cirurgia antes da citologia não é recomendada. A cintilografia é útil apenas com TSH suprimido, para identificar nódulo autônomo.',
+    reference: 'Vilar, L; Endocrinologia Clínica, 6ª ed, 2016; capítulo 23 - Nódulos Tireoidianos / Avaliação Diagnóstica e Manuseio.',
+    tags: ['cirurgia', 'endocrinologia', 'nódulo de tireoide']
+  },
+  {
+    id: 'tp2020-108',
+    module: 'Cirurgia',
+    text: 'Sr. Antônio, 66 anos, queixa-se de astenia, emagrecimento e perda de apetite há cerca de 30 dias, acompanhadas de febre intermitente e não aferida. Ao exame físico e à radiografia de tórax confirmou-se a presença de derrame pleural em base torácica direita. Após a pleurocentese confirmou-se o diagnóstico de tuberculose pleural.\n\nA análise de líquido pleural que corrobora esta hipótese é:',
+    options: [
+      '(A) Exsudato neutrofílico, com DHL (desidrogenase láctica) > 1.000 UI/L e glicose < 20 mg/dL.',
+      '(B) Exsudato linfocitário, com elevação de DHL (desidrogenase láctica – aumento de 0,6 x DHL sérico); alto número de células mesoteliais e ADA (adenosina deaminase) > 40.',
+      '(C) Exsudato linfocitário, com elevação de proteínas (aumento de 0,5 x proteína sérica); baixo número de células mesoteliais e ADA (adenosina deaminase) > 40.',
+      '(D) Exsudato neutrofílico, com aspecto macroscópico purulento e ADA (adenosina deaminase) < 40.'
+    ],
+    correctAnswer: 2,
+    explanation: 'O derrame pleural tuberculoso é um exsudato (proteína do líquido/sérica > 0,5) com predomínio linfocitário, poucas células mesoteliais (< 5%) e ADA elevada (> 40 U/L).',
+    commentary: 'Predomínio neutrofílico, glicose muito baixa e aspecto purulento sugerem empiema. Muitas células mesoteliais falam contra tuberculose.',
+    reference: 'Seiscento M, Conde M, Dalcolmo M. Tuberculose pleural. J Bras Pneumol. 2006;32(Supl 4): S174-S181. / Manual de recomendações para o controle da tuberculose no Brasil, 2ª edição. Ministério da Saúde, 2019.',
+    tags: ['pneumologia', 'tuberculose', 'derrame pleural']
+  },
+  {
+    id: 'tp2020-109',
+    module: 'Cirurgia',
+    image: '/images/tp2020-109.PNG',
+    text: 'ECM, 58 anos, chega ao Pronto Atendimento com quadro de distensão abdominal há 4 dias e dor abdominal em cólica. Relata parada de eliminação de gases e fezes há 7 dias e início de vômitos há 12 horas. Nega febre. Paciente portador de hipertensão arterial e tabagista. Ao exame: abdome globoso, com cicatriz de laparotomia prévia por úlcera péptica perfurada, com ruídos aumentados, dor à palpação profunda generalizada, sem sinais de peritonite; ao toque, ampola retal sem fezes. Exames laboratoriais com função renal e eletrólitos normais. Radiografia de abdome anteroposterior é a que segue:\n\nA partir da história, exame físico e radiografia, o diagnóstico e conduta são:',
+    options: [
+      '(A) Tumor de Colon; Laparotomia exploradora.',
+      '(B) Volvo de Sigmoide; Retossigmoidoscopia rígida.',
+      '(C) Bridas intestinais; medidas clínicas descompressivas.',
+      '(D) Apendicite; Apendicectomia.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Obstrução intestinal baixa (parada de gases e fezes, distensão, vômitos tardios, ampola retal vazia) com distensão de todo o cólon até o sigmoide, sem distensão de delgado e sem sinal do \'grão de café\': a banca considera tumor de cólon obstrutivo, com indicação de laparotomia exploradora.',
+    commentary: 'A ausência de distensão de delgado afasta bridas. Não há sinal do grão de café, o que afasta volvo de sigmoide. A evolução e o quadro obstrutivo excluem apendicite.',
+    reference: 'Sabiston Tratado de cirurgia. Courtney MTowsend et al. 18ª ed. Rio de Janeiro: Elsevier 2010. Lawrence, W.Way: Cirurgia, diagnóstico e tratamento. 9ª ed.',
+    tags: ['cirurgia', 'abdome agudo obstrutivo', 'câncer colorretal']
+  },
+  {
+    id: 'tp2020-110',
+    module: 'Cirurgia',
+    text: 'Helena, 18 anos, com 33 semanas de gestação (G1P0A0), admitida no hospital com dor epigástrica iniciada há dois dias, acompanhada de náuseas, vômitos e anorexia. Relata piora progressiva da dor e irradiação para o flanco direito. Ao exame apresentava-se corada, desidratada (1+/4+), frequência cardíaca de 110 batimentos por minuto, pressão arterial de 100 x 60 mmHg, temperatura axilar de 37,9ºC. Abdome gravídico doloroso em flanco direito e com descompressão brusca positiva. Altura uterina de 32cm e batimentos cardíacos fetais presentes. Aos exames complementares, sedimento de urina sem alterações e leucograma com 18.000 leucócitos/mL com 10% de bastões.\n\nA hipótese diagnóstica e o respectivo tratamento para Helena são:',
+    options: [
+      '(A) Apendicite Aguda; Apendicectomia na Urgência.',
+      '(B) Pancreatite Aguda; Internação e Jejum.',
+      '(C) Ureterolitíase; Ureterolitotripsia.',
+      '(D) Pielonefrite Crônica; Antibioticoterapia.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Gestante de 33 semanas com dor epigástrica que migra para o flanco direito, febre, náuseas, descompressão brusca positiva e leucocitose com desvio: apendicite aguda. O útero desloca o apêndice para cima, alterando a localização da dor.\n\nO tratamento é a apendicectomia de urgência, pelo alto risco de perfuração e perda fetal com o atraso.',
+    commentary: 'A pancreatite não causa peritonite localizada em flanco. O sedimento urinário normal afasta ureterolitíase e pielonefrite.',
+    reference: 'SABISTON; Tratado de Cirurgia Geral, 17ª ed.',
+    tags: ['cirurgia', 'abdome agudo', 'apendicite na gestação']
+  },
+  {
+    id: 'tp2020-111',
+    module: 'Cirurgia',
+    text: 'MTF, 48 anos, dona de casa, católica, tem antecedente de hipertensão em uso de losartana. Procurou o pronto-socorro municipal com o seguinte quadro: refere que estava em casa e logo após o almoço, há 2 horas, iniciou com dor tipo cólica no hipocôndrio direito, de forte intensidade, sem fatores de melhora, associado a náusea e um episódio de vômito alimentar em pequena quantidade. Nega febre. Fez uso de paracetamol, porém como os sintomas não melhoraram, optou por procurar o pronto atendimento. Na chegada, apresentava-se em regular estado geral, fácies álgica, pulso 96 batimentos por minuto, pressão arterial de 140 x 95 mmHg, peso de 86kg, altura de 1,45m, acianótica, anictérica e afebril. Ao exame abdominal: abdômen globoso, doloroso à palpação superficial e profunda na topografia do hipocôndrio direito, descompressão brusca negativa, ruídos hidroaéreos positivos. Cardiovascular, pulmonar e membros sem alterações.\n\nBaseado no caso exposto, qual a melhor conduta?',
+    options: [
+      '(A) Paciente com suspeita de quadro pulmonar deve ser submetida a RX de tórax e iniciar antibioticoterapia precocemente.',
+      '(B) O quadro pode corresponder a uma síndrome coronariana aguda, necessitando de ECG e medidas terapêuticas para isquemia cardíaca.',
+      '(C) Ministrar medicações sintomáticas como antiespasmódicos, analgésicos e antieméticos, além de solicitar exames laboratoriais para excluir possíveis diagnósticos diferenciais e ultrassom abdominal.',
+      '(D) Orientar a paciente retornar para a sua residência por se tratar de quadro leve, sem repercussão clínica e hemodinâmica e, caso apresente alguma piora, retornar ao hospital.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Dor em cólica no hipocôndrio direito após refeição, sem febre e sem peritonite, em mulher obesa: cólica biliar. A conduta é sintomática (antiespasmódico, analgésico, antiemético), com exames laboratoriais para excluir complicações e ultrassonografia de abdome.',
+    commentary: 'O quadro não sugere pneumonia nem síndrome coronariana como hipótese principal. A alta sem investigação é inadequada.',
+    reference: 'Courtney M. Townsend e Kenneth Mattox. SABISTON - Tratado de Cirurgia: a Base Biológica da Prática Cirúrgica Moderna. 20.ed. Editora Elsevier, 2019. / COELHO, J. C. Aparelho Digestivo: Clínica e Cirurgia. 4.ed. São Paulo: Atheneu, 2012.',
+    tags: ['cirurgia', 'vias biliares', 'colelitíase']
+  },
+  {
+    id: 'tp2020-112',
+    module: 'Cirurgia',
+    text: 'Criança de 3 anos de idade, masculino, vem ao Ambulatório de Especialidade com encaminhamento da Unidade Básica de Saúde para avaliação, devido a hipótese diagnóstica de testículo não descido. Ao exame físico, genitália adequada para o sexo masculino; testículo esquerdo tópico, e com volume adequado para a idade; testículo direito palpável em região inguinal, sem alcançar o escroto com as manobras realizadas e presença de espessamento de cordão inguinal sugerindo presença concomitante de hérnia inguinal esquerda; escroto sem sinais de hipoplasia. Aos exames complementares, níveis séricos normais de LH (hormônio luteinizante) e FSH (hormônio folículo estimulante), ultrassonografia de rins e vias urinárias sem alterações.\n\nQual a melhor conduta a ser tomada para o tratamento deste paciente?',
+    options: [
+      '(A) Realização de tomografia computadorizada ou ressonância magnética de região inguinoescrotal para visualizar a presença do testículo e seu real volume, a fim de saber se é viável a orquidopexia via inguinotomia ou laparoscopia.',
+      '(B) Com o diagnóstico concomitante de hérnia inguinal e a idade acima de 2 anos, o tratamento cirúrgico eletivo já pode ser proposto.',
+      '(C) A videolaparoscopia é o melhor método diagnóstico para este caso, uma vez que o testículo não alcança o escroto e verificar a possibilidade de infertilidade e malignização.',
+      '(D) A presença do testículo esquerdo tópico e adequado em volume possibilita a conduta expectante, porque não altera a possibilidade de infertilidade e malignidade.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Criança de 3 anos com testículo direito palpável no canal inguinal (não descido) e hérnia inguinal associada: a orquidopexia, idealmente feita entre 6 e 18 meses, está atrasada. Com hérnia concomitante e mais de 2 anos, o tratamento cirúrgico eletivo deve ser feito sem demora.',
+    commentary: 'O testículo é palpável, o que dispensa exames de imagem ou laparoscopia diagnóstica. Um testículo normal contralateral não justifica conduta expectante.',
+    reference: 'Maksoud JG, Cirurgia Pediátrica, vol II, 2ª. ed, Rio de janeiro: Revinter, 2003, 717-31. / Ashcraft: cirurgia pediátrica, tradução Adriana Siqueira et.al. 6ª. ed, Rio de Janeiro: Elsevier, 2017, 509-19.',
+    tags: ['cirurgia pediátrica', 'criptorquidia']
+  },
+  {
+    id: 'tp2020-113',
+    module: 'Cirurgia',
+    text: 'Paciente com 70 anos de idade, oriundo do interior de São Paulo, procura serviço médico com queixa de baixa de acuidade visual há 2 anos. Durante a anamnese refere visão turva que tem piorado progressivamente, tem percebido uma névoa na visão e que as paredes brancas estão mais amareladas nos últimos meses. Nega dor, hiperemia ocular e/ou trauma ocular. Fez exame refracional há 6 meses e não percebeu melhora da visão com os óculos novos. Nega cirurgias oculares prévias. Nega tabagismo e uso de álcool.\n\nDiante do quadro descrito, podemos afirmar:',
+    options: [
+      '(A) A ambliopia deve ser considerada como hipótese diagnóstica, pois a visão não melhora com a refração.',
+      '(B) O fato de o paciente não apresentar dor e hiperemia ocular afasta completamente o diagnóstico de glaucoma crônico simples.',
+      '(C) A baixa de visão progressiva nos leva a pensar em diagnósticos diferenciais como descolamento de retina, uveíte e catarata.',
+      '(D) Considerando a idade, a baixa de visão de forma lenta e progressiva e visão enevoada, a hipótese diagnóstica mais provável é catarata senil em evolução.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Idoso com perda visual lenta e progressiva, visão enevoada, alteração da percepção das cores (amarelamento) e sem melhora com óculos, sem dor ou hiperemia: catarata senil em evolução.',
+    commentary: 'A ambliopia surge na infância. O glaucoma crônico é assintomático, e a ausência de dor não o afasta. Descolamento de retina e uveíte têm outros sinais (súbito, dor, olho vermelho).',
+    reference: 'Reggi, JRA et al. Titulo: Compêndio de oftalmologia geral. Ediçao 1. Editora Ateneu, 27 de junho de 2016. / Riordan-Eva, P et al. Titulo: Oftalmologia Geral de Vaughan & Asbury. Tradução: Denise Costa Rodrigues [et al.]. - 17ª ed. – Dados eletrônicos. – Porto Alegre: AMGH, 2011. / Höffling-Lima, A. L. et al.Titulo: Manual de Condutas em oftalmologia -UNIFESP. Edição 1. Editora Atheneu, 2010.',
+    tags: ['oftalmologia', 'catarata']
+  },
+  {
+    id: 'tp2020-114',
+    module: 'Cirurgia',
+    text: 'Paciente de 60 anos procura ambulatório por queixa de tosse seca há 2 meses, sem febre. É tabagista de longa data e sem outras comorbidades. Ao Raio X de tórax apresenta imagem em pulmão direito de 3cm de diâmetro em região periférica tendo sido feita hipótese diagnóstica inicial de nódulo solitário de pulmão.\n\nDentre as alternativas abaixo, qual caracteriza o passo fundamental para instituir o tratamento?',
+    options: [
+      '(A) Tomografia computadorizada de tórax',
+      '(B) Punção com agulha fina transtorácica',
+      '(C) Broncoscopia com biopsia transbrônquica',
+      '(D) PET-CT'
+    ],
+    correctAnswer: 1,
+    explanation: 'Nódulo pulmonar periférico de 3 cm em tabagista: alta probabilidade de neoplasia. O passo fundamental para instituir o tratamento é o diagnóstico histológico — em lesão periférica, a punção transtorácica com agulha (guiada por TC) é o método indicado.',
+    commentary: 'Tomografia e PET-CT ajudam no estadiamento e na caracterização, mas não dão o diagnóstico histológico. A broncoscopia é melhor para lesões centrais.',
+    reference: 'Sabiston, tratado de cirurgia, 19ª edição, capítulo de pulmão, seção tórax.',
+    tags: ['cirurgia torácica', 'nódulo pulmonar']
+  },
+  {
+    id: 'tp2020-115',
+    module: 'Cirurgia',
+    text: 'Paciente masculino, 30 anos, dá entrada no pronto-socorro com quadro de dor lombar intensa, hematúria e febre. Tem antecedente pessoal de calculose renal. Foi feita a hipótese de cálculo ureteral e infecção do trato urinário.\n\nQual a alternativa mais adequada para confirmar o diagnóstico?',
+    options: [
+      '(A) Tomografia computadorizada de abdômen sem contraste e exame de sedimentos na urina com urocultura.',
+      '(B) Ressonância magnética de abdômen e pelve e exame de sedimentos na urina com urocultura.',
+      '(C) Cintilografia e sedimentos na urina com urocultura.',
+      '(D) Ultrassonografia e sedimentos na urina com urocultura.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Suspeita de cálculo ureteral com infecção: a tomografia de abdome sem contraste é o exame de eleição para confirmar a litíase (alta sensibilidade e especificidade). O sedimento urinário e a urocultura confirmam a infecção.',
+    commentary: 'A ressonância e a cintilografia não são exames de primeira linha. A ultrassonografia é útil em gestantes e crianças, mas tem menor sensibilidade para cálculos ureterais.',
+    reference: 'Schwartz’s, Manual of Surgery, eighth edition, Urology, pag. 1036-1060. Editora McGRAW-HILL. / EAU (European Association of Urology) in uroweb.org. Urolithiasis guidelines 2020, Diagnostic evaluation.',
+    tags: ['urologia', 'litíase urinária']
+  },
+  {
+    id: 'tp2020-116',
+    module: 'Cirurgia',
+    text: 'Paciente de 15 anos de idade apresenta quadro de dor inguinal direita há 3 dias, com piora do quadro nas últimas 24 horas. Apresenta parada de eliminação de gases e fezes há um dia e febre. Ao exame físico apresenta tumoração inguinal com dor à palpação e eritema importante da pele.\n\nQual o diagnóstico mais provável e a conduta?',
+    options: [
+      '(A) Hérnia inguinal estrangulada. Tentar reduzir manualmente.',
+      '(B) Hérnia inguinal encarcerada. Tentar reduzir manualmente.',
+      '(C) Hérnia inguinal estrangulada. Antibioticoterapia e cirurgia imediata.',
+      '(D) Hérnia inguinal encarcerada. Observação e analgesia.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Hérnia inguinal com dor, obstrução intestinal, febre e eritema da pele: hérnia estrangulada, com sofrimento isquêmico da alça. A conduta é antibioticoterapia e cirurgia de urgência.',
+    commentary: 'A redução manual é contraindicada na suspeita de estrangulamento (risco de reduzir alça necrótica). Observação e analgesia são inadequadas.',
+    reference: 'Sabiston, Tratado de cirurgia, 17ª edição. Hérnias, pag. 1199-1217. Editora Elsevier. / Schwartz’s, Manual of Surgery, eighth edition, Inguinal hernias, pag. 920-942. Editora McGRAW-HILL.',
+    tags: ['cirurgia', 'hérnias', 'abdome agudo']
+  },
+  {
+    id: 'tp2020-117',
+    module: 'Cirurgia',
+    text: 'Mulher de 42 anos, saudável exceto por ser portadora de obesidade Grau II, procura Unidade Saúde da Família solicitando encaminhamento para cirurgia bariátrica e apresenta pedido do médico privado, com quem passou em consulta há 1 mês para orçamento de cirurgia bariátrica, como fez sua vizinha que está ótima. Acrescenta ainda que após receber encaminhamento para serviço de cirurgia bariátrica pelo SUS, (peso de 95kg e altura de 1,57m) foi aconselhada a engordar “uns 5-6 kg”, chegando próximo aos 101kg.\n\nComo médico da Estratégia Saúde da Família, qual seria a conduta mais adequada para o caso acima?',
+    options: [
+      '(A) Independentemente do IMC atual e vislumbrando possível infração ética, encaminharia paciente para equipe multidisciplinar (NASF).',
+      '(B) De acordo com o índice de massa corporal, a paciente em questão possui um IMC igual a 36,95 kg/m².',
+      '(C) A relação peso/altura (IMC) é um critério dispensável para indicação de cirurgia bariátrica e você daria os encaminhamentos para serviço especializado (nível de assistência secundário) prontamente, conforme indicação do especialista.',
+      '(D) A relação peso/altura (IMC) é um critério indispensável para indicação de cirurgia bariátrica e você negaria a solicitação da paciente até ela atingir o peso ideal.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A paciente tem IMC de 38,6 kg/m² sem comorbidades: não há critério para cirurgia bariátrica (seria preciso IMC ≥ 40, ou ≥ 35 com comorbidade). Orientar ganho de peso para alcançar o critério é antiético.\n\nA banca indica encaminhar à equipe multidisciplinar de apoio (NASF) para tratamento não cirúrgico.',
+    commentary: 'O IMC calculado na alternativa B está errado (é 38,6). O IMC é critério indispensável, mas recusar e mandar a paciente aguardar não oferece cuidado. Observação: o NASF foi substituído pelas eMulti em 2023.',
+    reference: 'Ministerio da Saude> Atenção Especializada e Hospitalar> Obesidade > Tratamento e Reabilitação > Indicações para Cirurgia Bariátrica. Disponível em: https://www.saude.gov.br/atencao-especializada-e-hospitalar/especialidades/obesidade/tratamento-e-reabilitacao/indicacoes-para-cirurgia-bariatrica, acesso em 19/05/20.',
+    tags: ['cirurgia', 'obesidade', 'ética médica']
+  },
+  {
+    id: 'tp2020-118',
+    module: 'Cirurgia',
+    text: 'Homem com 60 anos, tabagista de um maço de cigarros ao dia por 40 anos, diabético sabidamente há 22 anos, hipertensão moderada controlada e dislipidemia. Apresenta sinais de doença arterial periférica, predominante no membro inferior esquerdo com classificação Fontaine Estágio III ou Rutherford categoria 4.\n\nQual a melhor conduta?',
+    options: [
+      '(A) Anticoagulantes orais e antiagregantes plaquetários.',
+      '(B) Estimular deambulação intercalada com repouso em posição de Trendelenburg.',
+      '(C) Solicitar arteriografia do membro.',
+      '(D) Cilostazol, Aspirina, Clopidogrel e Sinvastatina.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Fontaine III / Rutherford 4 significa dor isquêmica de repouso — isquemia crítica com risco de perda do membro. É indicada revascularização (cirúrgica ou endovascular), precedida de estudo arteriográfico.',
+    commentary: 'Tratamento clínico isolado e deambulação são para claudicação (Fontaine II). Anticoagulação não trata a doença arterial periférica aterosclerótica.',
+    reference: 'Cirurgia Vascular (Cirurgia endovascular e Angiologia) - José Carlos Brito. / Cirurgia Vascular – Rutherford. / Doenças Vasculares Periféricas - Francisco H. de abreu Maffei.',
+    tags: ['cirurgia vascular', 'doença arterial periférica']
+  },
+  {
+    id: 'tp2020-119',
+    module: 'Cirurgia',
+    text: 'A paciente MLA, do sexo feminino, 67 anos, é portadora de Coxartrose grave do lado direito. Em consulta médica com seu ortopedista, foi proposto o tratamento cirúrgico com artroplastia total de quadril. Durante a avaliação pré-operatória, foi observado pelo médico assistente que a paciente fazia uso de Rivaroxabana 20 mg/dia, devido a tromboembolismo pulmonar prévio.\n\nConsiderando que a paciente será submetida a anestesia raquidiana e que sua função renal é normal, a conduta correta no manejo pré-operatório para que a cirurgia possa ser realizada é:',
+    options: [
+      '(A) Suspender Rivaroxabana 24 horas antes do procedimento; reiniciar Rivaroxabana 10 mg/dia 48 horas após procedimento.',
+      '(B) Suspender Rivaroxabana 24 horas antes do procedimento; reiniciar Rivaroxabana 20 mg/dia 24 horas após procedimento.',
+      '(C) Suspender Rivaroxabana 7 dias antes do procedimento; reiniciar Rivaroxabana 10 mg/dia 24 horas após procedimento.',
+      '(D) Suspender Rivaroxabana 7 dias antes do procedimento; reiniciar Rivaroxabana 20 mg/dia 24 horas após procedimento.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A rivaroxabana é um inibidor do fator Xa de meia-vida curta. Pela banca, com função renal normal, pode ser suspensa 24 horas antes e retomada em dose plena 24 horas após o procedimento.',
+    commentary: 'ATENÇÃO — CONTROVÉRSIA RELEVANTE: para anestesia neuraxial (raquianestesia), as diretrizes de anestesia regional (ASRA, SBA) recomendam suspender a rivaroxabana em dose terapêutica 72 horas antes, pelo risco de hematoma espinhal. A suspensão de 24 horas da alternativa oficial (B) é insuficiente nesse contexto — questão passível de recurso.',
+    reference: 'Rev. Bras. Anestesiol. vol.64 no.1 Campinas Jan./Feb. 2014. / Rev Soc Cardiol Estado de São Paulo 2017;27(3):195-200. / Antithrombotic Therapy and Prevention of Thrombosis, 9th Ed: ACCP Guidelines.',
+    tags: ['cirurgia', 'anticoagulação', 'avaliação pré-operatória']
+  },
+  {
+    id: 'tp2020-120',
+    module: 'Cirurgia',
+    text: 'AMSP, 15 dias de vida, natural e procedente de Aparecida de Goiânia - GO, apresenta vômitos desde o nascimento. A mãe refere que o filho apresenta história de vômitos não-biliosos após as mamadas, de início no primeiro dia de vida, associados a perda de peso, irritação seguida de sonolência. Procurou postos de saúde por 3 vezes, no município de origem. Na última consulta foi encaminhado ao Hospital do município, onde foi diagnosticado Doença do Refluxo Gastroesofágico e prescrito domperidona e ranitidina. Não houve melhora do quadro clínico e a mãe, por recursos próprios, procurou o pronto-socorro de pediatria do hospital de referência da macrorregião. O pediatra avalia que a criança não tem febre, tosse, diarreia e eliminações fisiológicas preservadas. Mãe G1P1A0. Não fez o pré-natal. Parto normal e domiciliar. Avaliação do recém-nascido foi realizada com 7 dias de vida, quando seu peso foi aferido em 3.600g, perímetro cefálico de 38cm, estatura de 50cm. A mãe não possui sorologias. Em aleitamento materno desde o nascimento e há 5 dias iniciou mamadeira com fórmula infantil por achar que o filho não estava sendo sustentado com “seu leite”. Exame físico: peso: 2.600g, frequência cardíaca de 120 batimentos por minuto, frequência respiratória de 15 incursões por minuto (fazendo pausas). Saturação de oxigênio (oximetria pulso) de 82-95% em ar ambiente. Paciente em regular estado geral, desidratado moderado, hipocorado +/4+, acianótico, anictérico, afebril. Desnutrido grave. Hipoativo. Sem sinais meníngeos. Ausculta cardíaca com sopro sistólico +/6+ e respiratória sem alteração. Abdome escavado, com excesso de pele (diminuição do tecido subcutâneo), com ruído hidroaéreo presente, flácido, indolor. Pequena massa móvel em epigástrio. Sem visceromegalias. Foi colhida uma gasometria arterial com pH 7.57, pressão parcial de dióxido de carbono de 40.4 mmHg, pressão parcial de oxigênio de 47.7 mmHg, bicarbonato de 38 mEq/L e excesso de base (BE) de 14.3. Sódio sérico de 137 mEq/L, potássio 2.8 mEq/L, e Cloreto de 75 mEq/L. Hemograma completo normal para a idade. Proteína C reativa de 0,6.\n\nDiante do caso clínico exposto acima, assinale a principal hipótese diagnóstica:',
+    options: [
+      '(A) Alergia à proteína do leite de vaca.',
+      '(B) Alcalose metabólica hipoclorêmica e hipocalêmica.',
+      '(C) Doença do refluxo gastresofágico.',
+      '(D) Estenose hipertrófica de piloro.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Vômitos não biliosos progressivos, desnutrição, desidratação, oliva palpável no epigástrio e alcalose metabólica hipoclorêmica e hipocalêmica em neonato do sexo masculino: estenose hipertrófica do piloro.\n\nApós correção hidroeletrolítica, o tratamento é a piloromiotomia.',
+    commentary: 'A alcalose hipoclorêmica é consequência dos vômitos, não o diagnóstico principal. O refluxo e a alergia à proteína do leite de vaca não explicam a oliva pilórica e o distúrbio metabólico.',
+    reference: 'ALBUQUERQUE, Sílvio; SILVA, Eduardo. Diagnóstico por Imagem em Pediatria – Revisão de Casos. / BELIVACQUA, César e colaboradores. Emergências Pediátricas – Instituto de Puericultura e Pediatria Martagão Gesteira (IPPMG) – URFJ.',
+    tags: ['cirurgia pediátrica', 'estenose hipertrófica de piloro']
   }
 ];

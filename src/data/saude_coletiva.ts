@@ -2243,5 +2243,328 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     commentary: 'O transtorno de estresse agudo dura menos de 1 mês. O transtorno depressivo maior e o TAG não explicam as intrusões ligadas ao trauma.',
     reference: 'Organização Mundial da Saúde. CID-10 Classificação Estatística Internacional de Doenças e Problemas Relacionados à Saúde; 1997. / Dalgalarrondo P. Psicopatologia e semiologia dos transtornos mentais – 2a edição – Porto Alegre: Artmed, 2008. 9 23',
     tags: ['psiquiatria', 'violência sexual', 'TEPT']
+  },
+  // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
+  {
+    id: 'tp2020-21',
+    module: 'Saúde Coletiva',
+    text: 'O objetivo deste estudo foi verificar associação entre exposição precoce ao leite de vaca e ocorrência de Diabetes Mellitus tipo 1 entre menores de 18 anos atendidos em uma unidade de saúde. Foi selecionada uma amostra constituída por 128 indivíduos de ambos os sexos. Foram entrevistadas 64 mães com filhos de portadores de Diabetes Mellitus tipo 1 (DM Tipo 1) e 64 mães que não tiveram filhos DM Tipo 1. Os pesquisadores perguntaram a elas com qual idade os filhos tomaram leite de vaca pela primeira vez, se antes dos 4 meses ou não. Resultados: 84,4% dos indivíduos diabéticos foram expostos ao leite de vaca antes dos quatro meses de idade, enquanto no grupo controle este percentual foi de 64,1%. A análise univariada identificou uma associação estatisticamente significante entre exposição precoce ao leite de vaca e Diabetes (p = 0,01). Na análise multivariada, essa associação permaneceu e a razão de chances estimada foi de 4,09 (IC 95%: 1,19 - 14,04; p = 0,01).\n\nQue tipo de estudo foi realizado e qual a conclusão?',
+    options: [
+      '(A) Trata-se de um estudo transversal, pois as mães foram entrevistadas uma única vez e houve associação entre o consumo de leite precoce e a DM Tipo 1.',
+      '(B) Trata-se de um estudo epidemiológico com delineamento caso-controle. O cálculo do OR na análise univariada e multivariada mostrou que a exposição precoce ao leite de vaca associou-se significativamente à DM Tipo 1 entre os filhos das mães entrevistadas.',
+      '(C) Trata-se de coorte, pois os pesquisadores perguntaram às mães sobre quando ocorreu o diagnóstico de DM tipo1, do nascimento à adolescência. Não houve associação entre o consumo de leite precoce e a DM Tipo 1.',
+      '(D) Trata-se de um estudo ecológico, pois os resultados percentuais remetem ao total dos participantes da amostra, e não individualmente.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Os pesquisadores partiram de indivíduos com a doença (64 mães de filhos com DM1) e sem a doença (64 controles) e investigaram retrospectivamente a exposição (leite de vaca antes dos 4 meses): estudo caso-controle.\n\nA odds ratio de 4,09 com IC 95% que não inclui 1 indica associação estatisticamente significativa.',
+    commentary: 'Não é transversal (a seleção foi pelo desfecho), nem coorte (não houve seguimento a partir da exposição), nem ecológico (os dados são individuais).',
+    reference: 'ROUQUAYROL, Maria Zelia; SILVA, Marcelo Gurgel Carlos Da (Org.). Epidemiologia & saúde. 8ª ed. Rio de Janeiro: Medbook, 2018. 752 p.',
+    tags: ['saúde coletiva', 'epidemiologia', 'desenhos de estudo']
+  },
+  {
+    id: 'tp2020-22',
+    module: 'Saúde Coletiva',
+    text: 'Considerando as precauções indicadas para a assistência aos pacientes suspeitos ou confirmados de infecção pelo novo coronavírus, são indicados equipamentos de proteção individual (EPI).\n\nAssinale a alternativa correta:',
+    options: [
+      '(A) O uso de luvas de procedimento pelo paciente suspeito é uma medida de precaução de contato e para gotículas.',
+      '(B) A higiene das mãos com água e sabonete líquido não é considerada uma medida de precaução para aerossóis.',
+      '(C) O uso da máscara N95/PFF2 ou equivalente pelo profissional de saúde é uma medida de precaução para aerossóis.',
+      '(D) O uso de avental pelo profissional de saúde é uma medida de precaução para gotículas.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A máscara N95/PFF2 é a medida de precaução para aerossóis, indicada ao profissional em procedimentos geradores de aerossol em pacientes com COVID-19.',
+    commentary: 'Luvas são precaução de contato, e o paciente não as usa. A higiene das mãos é medida-padrão, presente em todas as precauções. O avental é precaução de contato.',
+    reference: 'Agência Nacional de Vigilância Sanitária. Nota técnica GVIMS/GGTES/ANVISA Nº 04/2020. Orientações para Serviços de Saúde: Medidas de prevenção e controle que devem ser adotadas durante a assistência aos casos suspeitos ou confirmados de infecção pelo novo Coronavírus (SARS-CoV-2). (Publicada em 30 de janeiro de 2020 e atualizada em 31/03/2020). 73p. Disponível em: http://portal.anvisa.gov.br; páginas 14, 15 e 19.',
+    tags: ['saúde coletiva', 'biossegurança', 'covid-19']
+  },
+  {
+    id: 'tp2020-23',
+    module: 'Saúde Coletiva',
+    text: '“R.V.T.R, nascido em 11/04/17, sexo masculino, falecido em 12/04/17. Filho de M.P.O., 28 anos, solteira, ensino médio completo e auxiliar de serviços gerais. Gestante desenvolveu toxemia severa com descolamento prematuro da placenta. RN nasceu de parto cesárea, IG 32 semanas, com a presença de circular de cordão umbilical, Apgar 2/7, sinais de sofrimento fetal com cianose +/++++. Recebeu os cuidados de reanimação na sala de parto e foi transferido para a UTI Neonatal, onde faleceu no dia seguinte. Declaração de Óbito apresentou as seguintes causas, conforme a descrição da declaração de óbito:\n\nParte I – a) P22.0 - Síndrome da angústia respiratório do recém-nascido; b) O60.1 - Trabalho de parto pré-termo com parto pré-termo; c) O14 - Hipertensão gestacional (induzida pela gravidez) com proteinúria significativa.” Com base no relatório acima, assinale a alternativa correta:',
+    options: [
+      '(A) Por outro lado, a causa da morte do RN foi O60.1 - Trabalho de parto pré-termo com parto pré-termo.',
+      '(B) Trata-se de um óbito neonatal tardio, pois ocorreu 24 horas após o nascimento do recém-nascido.',
+      '(C) A causa básica da morte do RN foi P22.0 - Síndrome da angústia respiratória do recém-nascido.',
+      '(D) Segundo o caso relatado, trata-se de um óbito evitável, reduzível por adequada atenção à mulher na gestação.'
+    ],
+    correctAnswer: 3,
+    explanation: 'O óbito ocorreu no primeiro dia de vida, em RN prematuro de mãe com pré-eclâmpsia grave e DPP — situação considerada evitável por adequada atenção à mulher na gestação (controle da hipertensão no pré-natal).\n\nA causa básica é a doença materna que iniciou a cadeia de eventos (O14 — hipertensão gestacional com proteinúria), e não a síndrome do desconforto respiratório.',
+    commentary: 'O óbito até 6 dias completos é neonatal precoce, não tardio. A causa básica não é o parto pré-termo nem a SDR, que são consequências.',
+    reference: 'BRASIL. Ministério da Saúde. Manual de vigilância do óbito infantil e fetal. Brasília: Editora do Ministério da Saúde, 2009. P. 15, 29, 34. / CLOHERTY, J.P, et al. Manual de neonatologia. 7. ed. - [Reimpr.] - Rio de Janeiro: Guanabara Koogan, 2019. P. 316-323.',
+    tags: ['saúde coletiva', 'mortalidade infantil', 'vigilância do óbito']
+  },
+  {
+    id: 'tp2020-24',
+    module: 'Saúde Coletiva',
+    image: '/images/tp2020-24.PNG',
+    text: 'Em consulta de acolhimento, você atende um homem de 45 anos, preocupado com uma mancha nas costas que ele acha que existe há quase três anos (imagem abaixo). Ele chegou a fazer exames em serviço de saúde de outra cidade, mas ao mudar-se para este bairro perdeu a consulta anterior. Traz exames que foram solicitados no serviço antigo. Ao exame físico, apresenta perda de sensibilidade na lesão.\n\n• Baciloscopia: negativa\n• Exame anatomopatológico: infiltrado inflamatório granulomatoso perineural e perianexial, com pesquisa de BAAR negativa\n• Reação de Mitsuda: positiva\n\nA partir do exame físico e complementar, indique a classificação da hanseníase e o tratamento corretos:',
+    options: [
+      '(A) Tuberculoide - Rifampicina 600mg e Dapsona 100mg.',
+      '(B) Dimorfa - Rifampicina 600mg, Dapsona 100mg e Clofazimina 300mg.',
+      '(C) Tuberculoide - Rifampicina 600mg, Dapsona 100mg e Clofazimina 300mg.',
+      '(D) Dimorfa - Rifampicina 600mg e Dapsona 100mg.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Lesão única em placa com borda bem delimitada, anestésica, baciloscopia negativa, granuloma perineural sem bacilos e Mitsuda positivo: hanseníase tuberculoide, paucibacilar.\n\nPelo esquema vigente em 2020, a forma paucibacilar era tratada com rifampicina e dapsona por 6 doses.',
+    commentary: 'ATENÇÃO — PROTOCOLO ATUALIZADO: desde 2021 o Ministério da Saúde adota a PQT-U (rifampicina, dapsona e clofazimina) para todos os casos, inclusive paucibacilares (6 meses). Pela regra atual, a alternativa C seria a correta; a resposta oficial de 2020 (A) foi mantida.',
+    reference: 'Guia prático sobre a hanseníase [recurso eletrônico] /Ministério da Saúde, Secretaria de Vigilância em Saúde, Departamento de Vigilância das Doenças Transmissíveis. – Brasília: Ministério da Saúde, 2017.',
+    tags: ['saúde coletiva', 'hanseníase', 'dermatologia']
+  },
+  {
+    id: 'tp2020-25',
+    module: 'Saúde Coletiva',
+    text: 'Dois testes diagnósticos foram realizados em 500 pessoas com suspeita de COVID-19; destes, 300 foram confirmados. Os resultados dos exames foram:\n\nTeste rápido COVID-19 tipo 1\n• Positivo: 210 doentes / 50 não doentes\n• Negativo: 70 doentes / 150 não doentes\n\nTeste rápido COVID-19 tipo 2\n• Positivo: 270 doentes / 40 não doentes\n• Negativo: 30 doentes / 160 não doentes\n\nComparado ao teste rápido tipo 1, o teste rápido tipo 2 apresenta:',
+    options: [
+      '(A) Maior sensibilidade e maior especificidade.',
+      '(B) Menor sensibilidade e menor especificidade.',
+      '(C) Menor sensibilidade e maior especificidade.',
+      '(D) Maior sensibilidade e menor especificidade.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Teste 1: sensibilidade = 210/280 = 75%; especificidade = 150/200 = 75%.\nTeste 2: sensibilidade = 270/300 = 90%; especificidade = 160/200 = 80%.\n\nO teste 2 tem maior sensibilidade e maior especificidade.',
+    commentary: 'Os totais diferem entre as tabelas (280 doentes no teste 1 versus 300 no teste 2), mas as proporções calculadas mostram superioridade do teste 2 nos dois parâmetros.',
+    reference: 'Gordis L. Epidemiologia. Editora Revinter; 4ª ed. 2010.',
+    tags: ['saúde coletiva', 'epidemiologia', 'testes diagnósticos']
+  },
+  {
+    id: 'tp2020-26',
+    module: 'Saúde Coletiva',
+    text: 'Um dos grandes desafios no Sistema de Saúde no Brasil é o estabelecimento de mecanismos regulatórios na relação público-privado. A criação da Agência Nacional de Saúde Suplementar (ANS), a partir na Lei Federal Nº 9.961/2000, foi uma iniciativa importante nessa direção. Várias medidas foram tomadas visando regular o Sistema Suplementar de Saúde, dentre elas destaca-se o “Ressarcimento ao SUS”.\n\nMarque a reposta correta:',
+    options: [
+      '(A) As operadoras de planos e seguros de saúde devem pagar aos hospitais públicos o atendimento dos pacientes com doenças crônicas não transmissíveis.',
+      '(B) Ressarcimento ao SUS é o pagamento pelo atendimento nos hospitais públicos aos beneficiários de planos e seguros privados de saúde, de acordo com os respectivos contratos.',
+      '(C) Os hospitais públicos devem atender sem restrições os pacientes das operadoras de planos e seguros de saúde sem ressarcimento posterior.',
+      '(D) A ANS estabelece uma pactuação com as operadoras de planos e seguros de saúde para os atendimentos necessários.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Pela Lei 9.656/1998 (art. 32), as operadoras de planos de saúde devem ressarcir o SUS pelos atendimentos prestados a seus beneficiários na rede pública, quando previstos nos respectivos contratos. A cobrança é operacionalizada pela ANS.',
+    commentary: 'O ressarcimento não se restringe a doenças crônicas, existe de fato e não depende de pactuação prévia com as operadoras.',
+    reference: 'Carneiro Junior N, Carvalho ALF. Sistema suplementar de saúde no Brasil. In.: Carneiro Junior N (ed). Saúde Coletiva e Atenção Primária à Saúde. Rio de Janeiro: Atheneu, 2018. Pp 27-30 (Série Concursos Médicos. Coordenador da Série: Irineu Francisco Delfino Silva Massaia).',
+    tags: ['saúde coletiva', 'saúde suplementar', 'SUS']
+  },
+  {
+    id: 'tp2020-27',
+    module: 'Saúde Coletiva',
+    text: 'Gestante, 25 anos, vem para consulta pré-natal. Traz uma ultrassonografia (USG) de 11 semanas e 2 dias, sem anormalidades. Não traz outros exames, não traz queixas. Ao exame, altura uterina, BCF, PA, FC e IMC estão adequados para a idade gestacional. Considere não haver anormalidades ao exame físico. São aventados os seguintes diagnósticos: Diagnóstico Obstétrico de Normalidade:1G 0P 0A. GT FUV IG: 32 semanas pela DUM e 31 semanas segundo USG de primeiro trimestre. Diagnóstico Obstétrico Patológico Atual: soropositiva para HIV, carga viral (CV) desconhecida, sem tratamento. Demais diagnósticos: sem anormalidades. A paciente questiona sobre via de parto mais adequada para evitar transmissão do HIV ao feto, caso o parto ocorra ao termo.\n\nSelecione a alternativa considerada correta:',
+    options: [
+      '(A) Caso a mulher entre em trabalho de parto espontâneo, ainda que esteja com carga viral comprovadamente indetectável e em uso adequado de antirretroviral, a via de parto deve obrigatoriamente ser convertida para cirúrgica e empelicado.',
+      '(B) Em mulheres com CV desconhecida ou maior que 1.000 cópias/mL após 34 semanas, a cesárea eletiva após 38 semanas NÃO reduz a transmissão vertical.',
+      '(C) A mulher pode optar por parto vaginal ou cirúrgico, independentemente de carga viral, idade gestacional ou uso de antirretroviral (TARV).',
+      '(D) Em mulheres com CV desconhecida ou maior que 1.000 cópias/mL após 34 semanas, a cesárea eletiva após 38 semanas reduz a transmissão vertical.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Pelo PCDT de transmissão vertical do HIV (2019), em gestantes com carga viral desconhecida ou ≥ 1.000 cópias/mL após 34 semanas, a cesárea eletiva a partir de 38 semanas, antes do trabalho de parto e com membranas íntegras, reduz a transmissão vertical.',
+    commentary: 'Com carga viral indetectável, a via de parto é obstétrica, sem obrigatoriedade de cesárea. A escolha não é livre quando a carga viral é alta ou desconhecida.',
+    reference: 'Protocolo Clínico e Diretrizes Terapêuticas para Prevenção da Transmissão Vertical do HIV, Sífilis e Hepatites Virais /Ministério da Saúde, Secretaria de Vigilância em Saúde, Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis - Brasília: Ministério da Saúde, 2019. 248 p.: il. ISBN 978-85-334-2630-6. Disponível em http://www.aids.gov.br/pt-br/search/content/protocolo%20cl%C3%ADnico.',
+    tags: ['obstetrícia', 'HIV', 'transmissão vertical']
+  },
+  {
+    id: 'tp2020-28',
+    module: 'Saúde Coletiva',
+    text: '“A Política Nacional de Humanização (PNH) deve estar inserida em todas as políticas e programas do SUS. A PNH busca transformar as relações de trabalho a partir da ampliação do grau de contato e da comunicação entre as pessoas e grupos, tirando-os do isolamento e das relações de poder hierarquizadas; reconhecer que as diferentes especialidades e práticas de saúde podem conversar com a experiência daquele que é assistido. Juntos, esses saberes podem produzir saúde de forma mais corresponsável”.\n\nO texto acima refere-se a qual princípio da Política Nacional de Humanização?',
+    options: [
+      '(A) Intersetorialidade',
+      '(B) Indissociabilidade entre atenção e gestão',
+      '(C) Clínica Ampliada e Compartilhada',
+      '(D) Transversalidade'
+    ],
+    correctAnswer: 3,
+    explanation: 'O texto descreve a transversalidade da PNH: ampliar a comunicação entre pessoas e grupos, romper o isolamento e as hierarquias e fazer dialogar os diferentes saberes, atravessando todas as políticas e programas do SUS.',
+    commentary: 'Indissociabilidade entre atenção e gestão, clínica ampliada e intersetorialidade são outros princípios/diretrizes, mas não correspondem à descrição.',
+    reference: 'Política Nacional de Humanização - https://www.saude.gov.br/saude-de-a-z/doacao-de-sangue/693-acoes-e-programas/40038-humanizasus',
+    tags: ['saúde coletiva', 'política nacional de humanização']
+  },
+  {
+    id: 'tp2020-29',
+    module: 'Saúde Coletiva',
+    text: 'Com base no conceito ampliado de saúde, definido na 8ª CNS – 1986, as determinações econômica e social da saúde tornam-se cada vez mais relevantes.\n\nConsiderando que a integralidade é um princípio do Sistema Único de Saúde que busca garantir ao indivíduo uma assistência à saúde que transcenda a prática curativa, pode-se afirmar que:',
+    options: [
+      '(A) A integralidade assegura aos usuários ações e serviços de todos os níveis de acordo com a complexidade que cada caso requeira, more o cidadão onde morar, sem privilégios e sem barreiras.',
+      '(B) A integralidade representa a exigência de que, quando um indivíduo busca o atendimento ou quando surge um problema de impacto coletivo sobre a saúde, o serviço correspondente esteja capacitado para enfrentá-lo e resolvê-lo até o nível da sua competência.',
+      '(C) A integralidade contempla o indivíduo em todos os níveis de atenção e considera o sujeito inserido em um contexto social, familiar e cultural.',
+      '(D) A integralidade é entendida como uma redistribuição das responsabilidades quanto às ações e serviços de saúde entre os vários níveis de governo.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Integralidade é considerar a pessoa como um todo, em todos os níveis de atenção (promoção, prevenção, tratamento e reabilitação), inserida em seu contexto social, familiar e cultural.',
+    commentary: 'A alternativa A descreve a equidade/universalidade. A B descreve a resolubilidade. A D descreve a descentralização.',
+    reference: 'Souza MC et al. Integralidade na atenção à saúde: um olhar da Equipe de Saúde da Família. O Mundo da Saúde, São Paulo - 2012;36(3):452-460/ABC do SUS: doutrinas e princípios. Brasil. Ministério da Saúde. Brasília; Brasília. Secretaria nacional de assistência à saúde; 1990. 20 p. (ABC do SUS, 1).',
+    tags: ['saúde coletiva', 'princípios do SUS']
+  },
+  {
+    id: 'tp2020-30',
+    module: 'Saúde Coletiva',
+    text: 'Tamara, 22 anos, vem em consulta à ESF queixando-se de disúria há 5 dias, associada a polaciúria e urgência miccional. Afirma ter vida sexual ativa, sem parceiro fixo. Como método contraceptivo, faz uso de anticoncepcional oral. Ao exame físico, não há presença de leucorreia e nem secreção uretral; o abdome está doloroso à palpação profunda do hipogástrio, sem sinais de irritação peritoneal, com sinal de Giordano ausente. Você consulta o prontuário e nota que a paciente já realizou 2 tratamentos prévios adequados para infecção do trato urinário este ano, uma vez em janeiro e outra em setembro.\n\nAssinale a assertiva correta sobre o caso:',
+    options: [
+      '(A) Por definição, não é possível afirmar que Tamara apresenta infecção do trato urinário de repetição, pois não apresentou 2 quadros em 6 meses consecutivos.',
+      '(B) Uma possibilidade terapêutica para Tamara é, após o tratamento da infecção atual, prescrever Nitrofurantoína dose única pós-coito e reavaliar se ainda haverá recorrência.',
+      '(C) Os uropatógenos da infecção do trato urinário recorrente na mulher jovem são diferentes dos quadros infecciosos não recorrentes.',
+      '(D) É mandatório solicitar urografia excretora e cistoscopia, uma vez que a principal causa de infecção do trato urinário de repetição é anormalidade anatômica.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Mulher jovem, sexualmente ativa, com cistites recorrentes relacionadas ao coito. Após tratar o episódio atual, uma estratégia de prevenção válida é a nitrofurantoína em dose única pós-coito.',
+    commentary: 'ITU de repetição é definida por 2 episódios em 6 meses ou 3 em 12 meses — a paciente terá 3 no ano. Os uropatógenos são os mesmos (E. coli predomina). Investigar anatomia não é obrigatório em mulher jovem sem sinais de complicação.',
+    reference: 'https://aps.bvs.br/aps/ha-evidencias-que-justificam-o-uso-de-antibioticoterapia-profilatica-em-pacientes-com-infeccao-do-trato-urinario-recidivante/ / https://portaldaurologia.org.br/medicos/wpcontent/uploads/201 5/09/infeccao_urinaria_de_repeticao.pdf',
+    tags: ['saúde coletiva', 'atenção primária', 'infecção urinária']
+  },
+  {
+    id: 'tp2020-31',
+    module: 'Saúde Coletiva',
+    text: 'Sr. José, 40 anos, diabético e hipertenso de longa data, com tratamento inadequado, morador de zona rural, comparece à UBS referindo sensação de “pressão” no peito, com irradiação para o ombro E, e falta de ar súbita e inexplicável. Ao exame físico encontra-se descorado 1+/4+, acianótico, anictérico, afebril, dispneico, com sudorese de extremidades; comunicativo, porém ansioso ao conversar.\n\nFrente à hipótese de Síndrome Coronariana Aguda, assinale a alternativa que contemple o atendimento integral da equipe de saúde:',
+    options: [
+      '(A) O monitoramento e a sequência do ABC é o fundamental para o prosseguimento do atendimento, assim como o médico deve estar preparado para aplicar RCP e possível uso de desfibrilador.',
+      '(B) A obtenção de ECG com 12 derivações dentro do ambiente de baixa complexidade não é obrigatória, visto que o tratamento adequado para este paciente com sintoma anginoso deva ocorrer em unidades de média ou alta complexidade, o que dispensa o exame em questão.',
+      '(C) As medicações administradas em UBS e orientadas por ato médico devem incluir AAS, oxigênio suplementar, clopidogrel, nitroglicerina e morfina para todos os casos anginosos antes de encaminhá-lo ao serviço de emergência.',
+      '(D) O monitoramento inicial e a avaliação pelo auxiliar de enfermagem devem incluir: verificação da pressão arterial, temperatura, saturação de oxigênio pelo oxímetro de pulso, frequência cardíaca e respiratória. Deverá ser ignorada a avaliação de glicose capilar, já que demanda tempo.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Diante de suspeita de síndrome coronariana aguda na UBS, a prioridade é monitorizar, seguir a sequência ABC e estar preparado para RCP e desfibrilação, pois arritmias ventriculares malignas podem ocorrer a qualquer momento.',
+    commentary: 'O ECG em até 10 minutos é obrigatório também na atenção primária. Oxigênio e morfina não são para todos os casos. A glicemia capilar deve ser aferida (a hipoglicemia é diagnóstico diferencial).',
+    reference: 'ESTADOS UNIDOS DA AMÉRICA. Suporte avançado de vida Cardiovascular. American Heart Associaton. A vida é o porquê. Manual do Profissional, 2016. / BRASIL. Ministério da Saúde. PROVAB. Dor Torácica. Brasília. UNASUS, 2014. Disponível em: https://ares.unasus.gov.br/acervo/html/ARES/13961/1/DorTora cicaPROVAB.pdf',
+    tags: ['saúde coletiva', 'atenção primária', 'síndrome coronariana aguda']
+  },
+  {
+    id: 'tp2020-32',
+    module: 'Saúde Coletiva',
+    text: 'Leia as asserções abaixo e responda:\n\nI. O Brasil vive uma situação epidemiológica com tripla carga de doenças, coexistindo: i) as doenças infecciosas e causas maternas e perinatais; ii) aumento das causas externas e iii) dominância das doenças crônicas e de seus fatores de risco.\n\nPORQUE\n\nII. O país passa por mudanças demográficas e epidemiológicas nos mesmos moldes e cronologias observados em países desenvolvidos. Essas mudanças pré-definidas possibilitam o ajuste das políticas públicas na área de saúde por parte dos governantes.',
+    options: [
+      '(A) As asserções I e II são proposições verdadeiras e a II é uma justificativa correta da I.',
+      '(B) As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.',
+      '(C) A asserção I é uma proposição verdadeira e a II é uma proposição falsa.',
+      '(D) A asserção I é uma proposição falsa e a II é uma proposição verdadeira.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A asserção I é verdadeira: o Brasil tem tripla carga de doenças (infecciosas/maternas/perinatais, causas externas e crônicas).\n\nA asserção II é falsa: a transição brasileira é \'atípica\' (polarizada e prolongada), com reemergência e persistência de doenças infecciosas, e não repete os moldes e a cronologia dos países desenvolvidos.',
+    commentary: 'Como a II é falsa, as alternativas que a consideram verdadeira estão incorretas.',
+    reference: 'Schramm, JMA; Oliveira, AF; Leite, IC; Valente, JG; Gadelha, AMJ; Portela, MC; Campos, MR. Transição epidemiológica e o estudo de carga de doença no Brasil Ciência & Saúde Coletiva, v. 9, n. 4, 2004. Disponível em: https://www.scielo.br/pdf/csc/v9n4/a11v9n4.pdf.',
+    tags: ['saúde coletiva', 'transição epidemiológica']
+  },
+  {
+    id: 'tp2020-33',
+    module: 'Saúde Coletiva',
+    text: 'O desenvolvimento e a consolidação do Sistema Único de Saúde (SUS) inclui a construção da Política Nacional de Atenção Básica (PNAB), que estabelece princípios e diretrizes que orientam a organização da Atenção Básica nos municípios.\n\nConsidere a relação médica com pacientes e familiares, o Código de Ética Médica de 2018 e os princípios e diretrizes estabelecidos no âmbito da atenção básica e assinale a alternativa correta:',
+    options: [
+      '(A) Considerando a necessidade de construção de vínculos técnicos e afetivos no âmbito da atenção primária em saúde e em observância ao atendimento centrado na pessoa, o código de ética médica veda expressamente o atendimento médico realizado à distância.',
+      '(B) Considerando a importância do papel do médico em construir vínculos humanistas e afetivos com seus pacientes, o médico tem o dever de fazer cumprir em seu cotidiano de trabalho a moral que impera socialmente para que possa orientar corretamente o paciente e sua família e integrá-los corretamente à comunidade em que vivem.',
+      '(C) O cuidado da atuação médica na atenção primária deve ser singularizado e centrado na pessoa e na busca pela sua cura, sendo vedado ao médico considerar a história de vida do paciente e o contexto da comunidade em que ele esteja inserido ao promover seu atendimento.',
+      '(D) Ocorrendo fatos que, a seu critério, prejudiquem o bom relacionamento com o paciente ou o pleno desempenho profissional, o médico tem o direito de renunciar ao atendimento, desde que comunique previamente ao paciente ou a seu representante legal, assegurando-se da continuidade dos cuidados e fornecendo todas as informações necessárias ao médico que o suceder.'
+    ],
+    correctAnswer: 3,
+    explanation: 'O Código de Ética Médica permite ao médico renunciar ao atendimento quando fatos prejudiquem a relação ou o desempenho profissional, desde que comunique previamente ao paciente ou ao representante legal, assegure a continuidade dos cuidados e forneça as informações ao sucessor.',
+    commentary: 'O código não veda o atendimento a distância (há regulamentação de telemedicina). O médico não deve impor a moral social. Considerar a história de vida e o contexto é parte essencial do cuidado centrado na pessoa.',
+    reference: 'CONSELHO Federal de Medicina. RESOLUÇÃO CFM Nº 2.217/2018. Código de Ética Médica. D.O.U, de 1º de novembro de 2018. Seção I, p. 179 2018. Disponível em <https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2018/2217>.',
+    tags: ['ética médica', 'atenção primária']
+  },
+  {
+    id: 'tp2020-34',
+    module: 'Saúde Coletiva',
+    text: 'Em uma USF, com população adscrita de aproximadamente 3 mil pessoas, existe uma alta prevalência de pacientes obesos. O que mais preocupa é a grande quantidade de crianças com IMC alterado seguindo o perfil epidemiológico para esta doença na comunidade descrita.\n\nSabendo da importância da participação popular nos rumos do SUS, e mediante uma possível intervenção da equipe de Saúde da Família daquele território, assinale a alternativa que melhor caracteriza como solução:',
+    options: [
+      '(A) Alinhar uma proposta junto ao Conselho Local de Saúde, trabalhando na sequência com rodas de conversa para trocas de experiência na luta contra a obesidade.',
+      '(B) Realizar um grupo com intervenção multiprofissional com o tema " Vida Saudável" objetivando a reeducação alimentar e consequente perda ponderal.',
+      '(C) Calcular IMC de todos os pacientes e, para os que apresentarem níveis de obesidade, agendar imediatamente consulta com o médico da USF.',
+      '(D) Promover trabalhos em grupos para pacientes, divididos por idade e sexo, sendo que receberão informações sobre os malefícios da obesidade por meio de palestras educativas.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A participação popular é diretriz do SUS. Construir a proposta com o Conselho Local de Saúde e desenvolver rodas de conversa e troca de experiências valoriza o protagonismo da comunidade na solução de um problema coletivo.',
+    commentary: 'As demais alternativas são intervenções verticais, centradas no profissional, que não envolvem a participação da comunidade.',
+    reference: 'Brasil. Ministério da Saúde. Conselho Nacional de Saúde. Diretrizes nacionais para o processo de educação permanente no controle social do SUS / Ministério da Saúde, Conselho Nacional de Saúde – Brasília: Editora do Ministério da Saúde, 2006. 40 p. – (Série A. Normas e Manuais Técnicos)',
+    tags: ['saúde coletiva', 'participação popular', 'obesidade']
+  },
+  {
+    id: 'tp2020-35',
+    module: 'Saúde Coletiva',
+    text: 'Paciente idosa, analfabeta, portadora de diabetes e insulino-dependente, com dificuldade para locomoção, apresenta dificuldade no manejo das doenças crônicas, estando sempre fora das metas terapêuticas. Mora com uma sobrinha, que sai para trabalhar após o café da manhã e só retorna na hora do jantar. Foi encontrada a receita abaixo com a paciente:\n\n1. Enalapril 10mg 1 cp 12/12h\n2. Metformina 500mg 1 cp 8/8h\n3. Amlodipina 5mg 1 cp após o café e o jantar\n4. Insulina NPH 20u cedo e 10u noite\n5. Sinvastatina 20mg 1 cp ao deitar\n\nSobre o caso, marque a alternativa correta:',
+    options: [
+      '(A) Mudar a posologia, mantendo 3 horários diários de uso dos medicamentos da lista acima, organizados em caixas do tipo café, almoço e jantar, com símbolos que a paciente entenda, sendo os da manhã e da noite supervisionados pela sobrinha, pode melhorar a aderência sem prejudicar a dinâmica familiar.',
+      '(B) Devemos suspeitar de má aderência e fazer com que a sobrinha dê os remédios, visto que o analfabetismo inviabiliza a tomada independente.',
+      '(C) Considerando os Critérios de Beers, as interações medicamentosas e o analfabetismo, a melhor estratégia é deixar enalapril dose plena, insulina com dose um pouco maior e a sinvastatina, retirar metformina e amlodipina e reforçar o automonitoramento com aparelho automático de pressão e glicosímetro.',
+      '(D) A receita é bastante clara quanto a como devem ser tomados os remédios e quais podem ser tomados juntos.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Idosa analfabeta, com mobilidade reduzida e polifarmácia, fora das metas por dificuldade de manejo. A estratégia é simplificar o esquema em três horários, organizar os medicamentos em caixas com símbolos (café, almoço, jantar) e envolver a sobrinha nos horários em que está em casa.',
+    commentary: 'Transferir toda a responsabilidade à sobrinha é inviável. Suspender fármacos indicados não resolve a adesão. A receita, como está, não é clara para uma paciente analfabeta.',
+    reference: 'Drug prescribing for older adults. Paula A Rochon, Kenneth E Schmader, Jane Givens, MD; www.uptodate.com. Literature review current through: Feb 2020. This topic last updated: Aug 15, 2019.',
+    tags: ['saúde coletiva', 'geriatria', 'adesão terapêutica']
+  },
+  {
+    id: 'tp2020-36',
+    module: 'Saúde Coletiva',
+    image: '/images/tp2020-36.PNG',
+    text: 'Abaixo, observa-se a evolução da taxa de mortalidade materna no brasil em anos recentes:\n\nAssinale a alternativa correta:',
+    options: [
+      '(A) A taxa de mortalidade materna no Brasil é maior quando comparada a países desenvolvidos (Europa e América do Norte), e é decorrente de causas evitáveis por uma boa assistência pré-natal, ao parto e puerpério, tais como Hemorragias, Hipertensão, Eclâmpsia e Infecções. A legislação que criminaliza o aborto colabora para sua manutenção em patamares não elevados, evitando que a mortalidade materna seja ainda maior.',
+      '(B) A taxa de mortalidade materna no Brasil é semelhante à de países desenvolvidos (Europa e América do Norte) e é decorrente de causas dificilmente evitáveis, tais como a Eclâmpsia.',
+      '(C) A taxa de mortalidade materna no Brasil é menor quando comparada a países desenvolvidos (Europa e América do Norte), e é decorrente de causas não evitáveis, tais como Eclâmpsia. A legislação que criminaliza o aborto provocado colabora para sua manutenção em patamares não elevados.',
+      '(D) A taxa de mortalidade materna no Brasil é maior quando comparada a países desenvolvidos (Europa e América do Norte), e é decorrente de causas evitáveis por adequada assistência pré-natal, ao parto e puerpério, tais como Hemorragias, Hipertensão, Eclâmpsia, Infecções. As complicações de abortos também são causa contribuinte importante, agravadas pela legislação que criminaliza o aborto provocado.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A razão de mortalidade materna no Brasil (cerca de 60–70 por 100 mil nascidos vivos) é muito maior que nos países desenvolvidos. A maior parte das mortes decorre de causas evitáveis (hemorragias, hipertensão/eclâmpsia, infecções), e as complicações de abortos inseguros são causa contribuinte importante.',
+    commentary: 'As alternativas que apresentam a mortalidade brasileira como semelhante ou menor que a dos países desenvolvidos, ou que atribuem efeito protetor à criminalização do aborto, contrariam os dados.',
+    reference: 'Datasus Informações de Saúde (TABNET) Estatísticas Vitais Óbitos de mulheres em idade fértil e óbitos maternos http://www2.datasus.gov.br/DATASUS/ / Martins MA et al. Clínica Médica Vol.1 - Medicina Preventiva – Manole 2009. / Ministério da Saúde (2009). 20 anos de pesquisas sobre aborto no Brasil. Brasília: Ministério da Saúde. ISBN 9788533415591.',
+    tags: ['saúde coletiva', 'mortalidade materna', 'indicadores de saúde']
+  },
+  {
+    id: 'tp2020-37',
+    module: 'Saúde Coletiva',
+    text: 'Durante a pandemia da Covid-19, o então Ministro da Saúde Nelson Teich manifestou o compromisso com o SUS, com a colegialidade de sua gestão e a disposição para o diálogo permanente com o Conselho Nacional de Secretarias Municipais de Saúde (Conasems) e com o Conselho Nacional de Secretários de Saúde (Conass) na condução desta emergência em saúde pública. Nesta oportunidade, declarou: “o sucesso na missão recebida no enfrentamento da pandemia necessita do espírito de cooperação, ajuda mútua e plena disposição dos secretários estaduais e municipais de saúde em participar do grande esforço para empreender, junto com toda a sociedade brasileira, no objetivo de vencer um inimigo comum: o coronavírus”. (Conass, 2020).\n\nConsiderando o texto acima e os princípios doutrinários e organizacionais do SUS, é correto afirmar:',
+    options: [
+      '(A) Cumprindo o processo de centralização e hierarquização do SUS, trata-se do princípio da integralização do sistema de saúde proposto nas Leis Orgânicas e nas Normas Operacionais Básicas da Saúde.',
+      '(B) A regionalização, tendo como pressuposto a noção de territorialidade, assume o papel do planejamento e gestão federal no cumprimento constitucional do princípio organizacional da equidade.',
+      '(C) O Ministro, nesta afirmação, reforça a importância da gestão tripartite na condução do enfrentamento da pandemia da Covid-19 no país, na definição de saúde pública, enquanto esforços organizados de toda a sociedade.',
+      '(D) Considerando que o então Ministro da Saúde realizou um discurso pragmático e político, os próximos passos estiveram voltados para a uniformidade das ações em atenções primária e secundária da saúde, cumprindo com os princípios doutrinários do SUS.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A declaração reforça a gestão tripartite (União, estados e municípios — Conass e Conasems) e a ideia de saúde pública como esforço organizado de toda a sociedade no enfrentamento da pandemia.',
+    commentary: 'O SUS é descentralizado, não centralizado. A regionalização é princípio organizativo e a equidade, doutrinário. O discurso não implicou uniformidade de ações entre níveis de atenção.',
+    reference: 'ROUQUAYROL, M. Z.; GURGEL M. Epidemiologia e saúde. 8. ed. Rio de Janeiro: Medbook, 2018. / PINHEIRO, R., CECCIM, R.B. & MATTOS, R.A. Ensinar Saúde: a integralidade e o SUS nos cursos de graduação na área da saúde. Rio de Janeiro: IMS/UERJ/CEPESQ/ABRASCO.2005.',
+    tags: ['saúde coletiva', 'gestão do SUS', 'covid-19']
+  },
+  {
+    id: 'tp2020-38',
+    module: 'Saúde Coletiva',
+    text: 'Caso Clínico: Mulher, 35 anos, saudável, diz ao médico que deseja realizar uma série de exames laboratoriais e de imagem, com a finalidade de garantir sua saúde. Diz que tem esta rotina anualmente desde os 30 anos de idade. Atualmente, em função da pandemia da Covid-19, ao realizar o teste rápido (sorológico), testou positivo. A pedido, solicitou prescrição de hidroxicloroquina.\n\nCom base no conceito de prevenção quaternária, como o médico deverá abordar esta situação?',
+    options: [
+      '(A) Em concordância com o Ministério da Saúde, utilizando o manual de enfrentamento da pandemia da Covid-19, o médico deverá acompanhar a paciente até as manifestações das formas graves da doença com posterior prescrição farmacológica, enquanto ato médico.',
+      '(B) Na prevenção quaternária, quando o tratamento for considerado pior que a própria doença, deve-se buscar uma alternativa a esse tratamento, envolvendo orientações, indicações médicas e riscos associados.',
+      '(C) Como não há evidenciação científica nas recomendações atuais de enfrentamento à pandemia do coronavírus, esta medida em nenhuma circunstância poderá ser utilizada, qualificando a prevenção quaternária saudável e a aliança terapêutica na relação médico-paciente.',
+      '(D) Considerando que a prevenção quaternária é o conjunto de ações que visam evitar danos associada às intervenções médicas e de outros profissionais da saúde, há orientação do Conselho Federal de Medicina (Parecer 04/2020) para a prescrição deste medicamento.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Prevenção quaternária é evitar danos causados por intervenções desnecessárias. Com uma paciente assintomática pedindo hidroxicloroquina — sem benefício comprovado e com riscos —, o médico deve explicar os riscos e oferecer alternativas, evitando a medicalização.',
+    commentary: 'Aguardar formas graves para prescrever, ou citar o parecer do CFM como respaldo à prescrição, contraria a prevenção quaternária. A alternativa C é categórica demais.',
+    reference: 'ROUQUAYROL, M. Z.; GURGEL M. Epidemiologia e saúde. 8. ed. Rio de Janeiro: Medbook, 2018. / CFM - Conselho Federal de Medicina. Portaria 04/2020. Endereço eletrônico: https://portal.cfm.org.br/',
+    tags: ['saúde coletiva', 'prevenção quaternária', 'covid-19']
+  },
+  {
+    id: 'tp2020-39',
+    module: 'Saúde Coletiva',
+    text: 'Em relação ao rastreio do câncer de próstata, assinale a alternativa correta:',
+    options: [
+      '(A) Pela incerteza do benefício, existem argumentos consistentes para recomendar o rastreamento populacional sistemático para Câncer de Próstata e indicar esta ação como estratégia de saúde pública.',
+      '(B) Recomendar o rastreamento individual de Câncer de Próstata em homens com fatores de risco para desenvolvimento da doença, como indivíduos com história familiar (irmãos e/ou pai) de Câncer de Próstata e/ou indivíduos de raça negra, apesar de os estudos que relacionam raça com Câncer de Próstata no Brasil serem inconsistentes, pode trazer melhor benefício.',
+      '(C) Os profissionais médicos não dispõem de estratégias baseadas em orientações e recomendações de sociedades médicas para individualizar a necessidade ou não de rastrear Câncer de Próstata para cada indivíduo específico.',
+      '(D) É recomendado o rastreio populacional, sendo que há necessidade de que homens com qualquer sintoma relacionado ao aparelho urinário procurem atendimento médico para rastreio.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Não há evidência que sustente o rastreamento populacional do câncer de próstata no Brasil. A decisão deve ser individualizada e compartilhada, especialmente em homens com maior risco (história familiar em parente de primeiro grau, raça negra).',
+    commentary: 'O rastreamento populacional sistemático não é recomendado. Existem orientações de sociedades médicas para individualizar. Homens com sintomas urinários devem ser investigados, o que não é rastreamento.',
+    reference: 'Telessaúde do Rio Grande do Sul (https://www.ufrgs.br/telessauders/noticias/nota-conjunta-sobre-rastreamento-de-cancer-de-prostata/)',
+    tags: ['saúde coletiva', 'rastreamento', 'câncer de próstata']
+  },
+  {
+    id: 'tp2020-40',
+    module: 'Saúde Coletiva',
+    text: 'Luísa é uma menina de 6 anos que mora em uma comunidade periférica de uma grande cidade brasileira. Encontra-se em sobrepeso, de acordo com o gráfico da Organização Mundial de Saúde e não tem seu cuidado médico acompanhado por uma equipe de saúde. Sua mãe diz que todas as vezes que vai à unidade de saúde do seu bairro ela está lotada, faltam medicamentos e por esse motivo ela prefere levar ao pronto atendimento (PA). Luísa não faz uso de nenhum medicamento e nos últimos meses ela foi frequentemente ao PA com crises de asma, em uma delas precisou ficar 2 dias internada.\n\nEm relação à situação acima, é mais correto afirmar que:',
+    options: [
+      '(A) A mãe de Luísa está errada, pois seu primeiro atendimento deveria ser realizado na unidade de saúde de seu bairro, respeitando o atributo da atenção primária do acesso. É necessário melhorar a educação em saúde na região para que o atendimento seja realizado no local adequado.',
+      '(B) A mãe de Luísa está correta em levá-la ao PA, pois crise de asma é uma urgência médica que necessita de recursos com os quais a unidade básica não conta.',
+      '(C) Crise de asma é um motivo de consulta sensível à atenção primária e seu atendimento deveria ser realizado na unidade de saúde do seu bairro, no entanto é preciso que isso seja viabilizado através de garantia principalmente dos atributos da atenção primária do acesso (vagas disponíveis no mesmo dia com médico/equipe de saúde) e da integralidade (recursos como medicamentos e equipamentos adequados disponíveis).',
+      '(D) Além do atendimento da crise, o atributo da atenção primária da equidade contribuiria para a observação de que essas crises têm sido frequentes e que pode ser necessário tratamento de manutenção, o que fica mais difícil quando o atendimento é centrado nos serviços de atenção secundária.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A crise de asma é condição sensível à atenção primária, que deveria resolvê-la e evitar internações. Isso exige garantir os atributos de acesso (vagas no mesmo dia) e integralidade (medicamentos e equipamentos disponíveis).\n\nO uso frequente do pronto atendimento reflete falha da APS, não da mãe.',
+    commentary: 'Culpar a mãe ignora as barreiras de acesso. A crise leve a moderada pode ser tratada na UBS. A coordenação e a longitudinalidade (não a equidade) seriam os atributos para perceber a necessidade de tratamento de manutenção.',
+    reference: 'Starfield B, Shi L, Macinko J. Contribution of primary care to health systems and health. Milbank Q. 2005; 83:457502. / Alfradique ME, Bonolo PF, Dourado I, Lima-Costa MF, Macinko J, Mendonça CS, Oliveira VB, Sampaio LFR, De Simoni C, Turci MA. Internações por condições sensíveis à atenção primária: a construção da lista brasileira como ferramenta para medir o desempenho do sistema de saúde (Projeto ICSAP - Brasil). Cad Saude Pública 2009; 25(6):1337-1349.',
+    tags: ['saúde coletiva', 'atenção primária', 'asma']
   }
 ];

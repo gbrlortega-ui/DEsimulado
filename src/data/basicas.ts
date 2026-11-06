@@ -2256,5 +2256,329 @@ export const BASICAS_QUESTIONS: Question[] = [
     commentary: 'O efluxo de K⁺ aumenta, não diminui. A hipocalemia não despolariza a membrana em repouso.',
     reference: 'HALL, J. E. Guyton & Hall Tratado de Fisiologia Médica. 12ª ed. Rio de Janeiro: Elsevier, 2011. / KOEPPEN, B. M.; STANTON, B. A. (Ed.). Berne & Levy Fisiologia. 6ª ed. Rio de Janeiro: Elsevier, 2009.',
     tags: ['fisiologia', 'eletrofisiologia', 'distúrbios hidroeletrolíticos']
+  },
+  // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
+  {
+    id: 'tp2020-1',
+    module: 'Ciências Básicas',
+    image: '/images/tp2020-1.PNG',
+    text: 'Uma mulher branca de 58 anos, de descendência norte-europeia, apresenta uma história de 2 meses de aumento de fadiga, dificuldade de deambulação e déficits de memória. A história familiar apresenta doença autoimune. Os achados laboratoriais destacam uma anemia macrocítica, uma redução acentuada na vitamina B12 sérica e a presença de anticorpos anticélulas parietais.\n\nAnalise a fotomicrografia abaixo e assinale a alternativa que estiver indicando a célula da mucosa gástrica associada à redução acentuada na vitamina B12 e aos anticorpos anticélulas parietais:',
+    options: [
+      '(A) Letra A',
+      '(B) Letra B',
+      '(C) Letra C',
+      '(D) Letra D'
+    ],
+    correctAnswer: 0,
+    explanation: 'Anemia macrocítica com deficiência de vitamina B12 e anticorpos anticélulas parietais caracteriza a anemia perniciosa (gastrite atrófica autoimune). As células parietais secretam HCl e o fator intrínseco, indispensável para a absorção da B12 no íleo.\n\nNa fotomicrografia, a seta A indica a célula parietal: grande, de citoplasma eosinofílico, situada no colo e no corpo das glândulas fúndicas.',
+    commentary: 'B indica a célula principal (pepsinogênio), C o epitélio de revestimento e D a célula mucosa do colo (mucina).',
+    reference: 'JUNQUEIRA, Luiz Uchoa, CARNEIRO, José. Histologia Básica, 12ª edição. Guanabara Koogan, 08/2013. / ROSS, Michael H., PAWLINA, Wojciech. Histologia - Texto e Atlas - Em Correlação com Biologia Celular e Molecular, 6ª edição. Guanabara Koogan, 05/2012.',
+    tags: ['histologia', 'estômago', 'anemia perniciosa']
+  },
+  {
+    id: 'tp2020-2',
+    module: 'Ciências Básicas',
+    image: '/images/tp2020-2.PNG',
+    text: '“A anatomia macroscópica subdivide o estômago em quatro regiões. A cárdia circunda o orifício esofágico; o fundo gástrico fica acima do nível de uma linha horizontal traçada através do óstio cárdico (orifício esofágico); o corpo gástrico fica abaixo dessa linha e a porção pilórica, a região em formato de funil que leva ao piloro. A porção pilórica é uma região distal estreita de esfíncter entre o estômago e o duodeno. Do ponto de vista histológico podemos dividir o estômago em apenas três regiões. Essas três regiões não consideram apenas a localização, mas também os tipos de glândulas que ocorrem na mucosa gástrica”.\n\nCom base nas informações do enunciado, analise a fotomicrografia abaixo e assinale a alternativa que estiver indicando a região da mucosa gástrica correspondente:',
+    options: [
+      '(A) Região do corpo',
+      '(B) Região do fundo',
+      '(C) Região cárdia',
+      '(D) Região pilórica'
+    ],
+    correctAnswer: 2,
+    explanation: 'A imagem mostra a transição esofagogástrica: à direita, epitélio estratificado pavimentoso do esôfago; à esquerda, mucosa gástrica com fossetas e glândulas curtas, tubulares e mucosas. Esse é o padrão da região da cárdia.',
+    commentary: 'Corpo e fundo têm glândulas longas e retas, ricas em células parietais e principais. A região pilórica tem fossetas profundas e glândulas mucosas enoveladas, sem transição com epitélio pavimentoso.',
+    reference: 'JUNQUEIRA, Luiz Uchoa, CARNEIRO, José. Histologia Básica, 12ª edição. Guanabara Koogan, 08/2013. / ROSS, Michael H., PAWLINA, Wojciech. Histologia - Texto e Atlas - Em Correlação com Biologia Celular e Molecular, 6ª edição. Guanabara Koogan, 05/2012.',
+    tags: ['histologia', 'estômago']
+  },
+  {
+    id: 'tp2020-3',
+    module: 'Ciências Básicas',
+    image: '/images/tp2020-3.PNG',
+    text: 'As células principais da mucosa gástrica são células típicas secretoras de proteínas, são responsáveis pela síntese de pepsinogênio, que em meio ácido é convertido em pepsina. A quantidade abundante de RER no citoplasma basal confere a essa parte da célula uma aparência basófila, enquanto o citoplasma apical é eosinófilo, devido à existência das vesículas secretoras, também denominadas grânulos de zimogênio, uma vez que contêm precursores enzimáticos.\n\nTomando como referência as informações do enunciado, identifique na fotomicrografia abaixo a célula principal:',
+    options: [
+      '(A) Célula indicada pela letra A.',
+      '(B) Célula indicada pela letra B.',
+      '(C) Célula indicada pela letra C.',
+      '(D) Célula indicada pela letra D.'
+    ],
+    correctAnswer: 1,
+    explanation: 'A célula principal tem citoplasma basal basófilo (abundante retículo endoplasmático rugoso) e apical com grânulos de zimogênio, localizando-se na base das glândulas gástricas. Na fotomicrografia, corresponde à seta B.',
+    commentary: 'A seta A indica a célula parietal, C o epitélio de revestimento e D a célula mucosa.',
+    reference: 'JUNQUEIRA, Luiz Uchoa, CARNEIRO, José. Histologia Básica, 12ª edição. Guanabara Koogan, 08/2013. / ROSS, Michael H., PAWLINA, Wojciech. Histologia - Texto e Atlas - Em Correlação com Biologia Celular e Molecular, 6ª edição. Guanabara Koogan, 05/2012.',
+    tags: ['histologia', 'estômago']
+  },
+  {
+    id: 'tp2020-4',
+    module: 'Ciências Básicas',
+    text: 'Clodoaldo, 66 anos, agricultor, é chagásico crônico há pelo menos 5 anos. Apesar da infecção ser acompanhada desde a fase aguda, foi obsevado apenas uma cardiomegalia leve que não interfere nas atividades diárias do paciente.\n\nComo podemos classificar a doença do paciente?',
+    options: [
+      '(A) Oligossintomática',
+      '(B) Determinada',
+      '(C) Assintomática',
+      '(D) Indeterminada'
+    ],
+    correctAnswer: 3,
+    explanation: 'Doença de Chagas crônica sem manifestações clínicas limitantes, com alteração cardíaca discreta que não interfere na vida diária: a banca a classifica como forma indeterminada.\n\nPela definição clássica, a forma indeterminada exige sorologia positiva com ECG e radiografias normais; cardiomegalia, mesmo leve, já indicaria forma cardíaca (determinada).',
+    commentary: 'Observação: pelo II Consenso Brasileiro de Doença de Chagas, qualquer cardiomegalia caracteriza forma cardíaca, o que torna a alternativa B defensável — questão passível de recurso.',
+    reference: 'REY, Luís. Parasitologia: parasitos e doenças parasitárias do homem nos trópicos ocidentais. 4. ed. Rio de Janeiro: Guanabara Koogan, 2008. / AMATO NETO, V. et al. Parasitologia: uma abordagem clínica. Rio de Janeiro: Elsevier, 2008.',
+    tags: ['parasitologia', 'doença de chagas']
+  },
+  {
+    id: 'tp2020-5',
+    module: 'Ciências Básicas',
+    text: 'Uma senhora de 62 anos de idade, IMS, previamente hígida, foi picada por uma abelha de uma colmeia em seu jardim, o que já havia acontecido várias vezes durante o verão. Alguns minutos após a última picada, ela começou a se queixar de coceira nas mãos, pés e virilha, acompanhada por cãibra abdominal. Logo após ela caiu desmaiada com respiração ofegante, entrou em colapso e perdeu a consciência. Seu marido, um médico, percebeu que a respiração estava taquipneica e apresentava edema em seus lábios e pálpebras; ela estava pálida e havia um eritema em seu pescoço e braços. Ao exame, seu batimento podia ser sentido, porém sua pulsação radial estava muito fraca. Seu marido imediatamente administrou adrenalina via I.M., um anti-histamínico (inibidor do receptor H1) I.V. e hidrocortisona. Ela recobrou a consciência e seu ritmo respiratório diminuiu. IMS não tinha história de reações adversas ao veneno de abelha, alimentos ou antibióticos; não havia também histórico de asma, rinite alérgica ou dermatite atópica. No dia seguinte ela estava completamente recuperada. Os resultados das investigações foram:\n\n• Células brancas: 7,5 x 10⁹/L (normalidade: 4 - 11)\n• Neutrófilos: 4,4 x 10⁹/L (normalidade: 2 - 7,5)\n• Eosinófilos: 0,40 x 10⁹/L (normalidade: 0,4 - 0,44)\n• Linfócitos: 2,4 x 10⁹/L (normalidade: 1,6 - 3,5)\n• Plaquetas: 296 x 10⁹/L (normalidade: 150 - 400)\n\nCom base no caso relatado, trata-se de um caso clássico de:',
+    options: [
+      '(A) Hipersensibilidade Retardada (tipo IV de Gel e Coombs), que deverá ser confirmado após a realização de teste cutâneo de exposição aos antígenos ou Patch Test.',
+      '(B) Doença do Soro, que deverá ser confirmado através da dosagem de IgG total no soro da paciente.',
+      '(C) Atopia mediado por IgE, que deve ser confirmado através da dosagem desta imunoglobulina e encaminhamento da paciente para realização de teste cutâneo contra alérgenos – Prick Test.',
+      '(D) Reação de Arthus com deposição de complexo antígeno-anticorpo e inflamação imediata.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Prurido, cólicas, edema de lábios e pálpebras, eritema, broncoespasmo e colapso minutos após picada de abelha, com resposta à adrenalina: anafilaxia, reação de hipersensibilidade tipo I mediada por IgE.\n\nA sensibilização se explica pelas picadas repetidas no verão. A confirmação é feita com IgE específica para o veneno e testes cutâneos.',
+    commentary: 'A tipo IV (patch test) é tardia, em 48–72 horas. A doença do soro (tipo III) surge dias depois, com febre, artralgia e urticária. A reação de Arthus é localizada.',
+    reference: 'Delves, Peter J.; Martin, Seamus J.; Roitt, Ivan M., Burton, Dennis R. In: - Fundamentos de Imunologia, Ed Guanabara Koogam, Rio de Janeiro. 13ª Ed. 2018.',
+    tags: ['imunologia', 'hipersensibilidade', 'anafilaxia']
+  },
+  {
+    id: 'tp2020-6',
+    module: 'Ciências Básicas',
+    text: 'Maria Paula, 45 anos, apresenta-se ao consultório médico relatando importante perda de peso (aproximadamente 7 quilos em 3 meses), fadiga, redução do pelo corporal nas axilas e regiões púbicas e ausência de menstruação nos últimos 3 meses, com teste de gravidez negativo. Ao exame físico apresentava-se emagrecida, olhos profundos e redução do turgor da pele. Em posição supina, a PA era de 90/60 mmHg e a FC era de 95 batim/min; na posição ereta a PA era de 70/35 mmHg e FC: 120 batim/min. Apresenta hiperpigmentação nos mamilos e nos vincos da palma da mão. Exames sanguíneos laboratoriais revelaram: Na⁺: 125 mEq/L (Ref. 140 mEq/L); K⁺: 5,7 mEq/L (Ref. 4,5 mEq/L); Osmolaridade: 265 mOsm/L (Ref. 290 mOsm/L); Glicose em jejum: 50 mg/dL (Ref. 70 – 100 mg/dL); Cortisol: reduzido; Aldosterona: reduzida; ACTH: elevado; pH arterial: 7,32 (Ref. 7,4); HCO₃⁻:18 mEq/L (Ref: 24 mEq/L).\n\nA disfunção em qual dos locais abaixo poderia justificar o quadro clínico?',
+    options: [
+      '(A) Córtex da adrenal',
+      '(B) Seguimentos distais do néfron',
+      '(C) Medula da adrenal',
+      '(D) Hipotálamo'
+    ],
+    correctAnswer: 0,
+    explanation: 'Hipotensão postural, hiperpigmentação, hiponatremia, hipercalemia, hipoglicemia e acidose metabólica, com cortisol e aldosterona baixos e ACTH elevado: insuficiência adrenal primária (doença de Addison), por destruição do córtex da adrenal.',
+    commentary: 'Na causa hipotalâmica (ou hipofisária), o ACTH estaria baixo e não haveria hiperpigmentação nem falta de aldosterona. A medula adrenal produz catecolaminas, não corticoides. Os segmentos distais do néfron não explicam o cortisol baixo.',
+    reference: 'Guyton, A. Tratado de fisiologia médica. 11ª Edição. Guanabara Koogan. Rio de Janeiro, RJ. 2006. Cap. 77 / Berne & Levy. Fisiologia. 6 ª Edição. Elsevier. Rio de Janeiro, RJ 2009. Cap. 42 / Aires, MM. Fisiologia. 3ª Edição. Guanabara Koogan. Rio de Janeiro, RJ. 2008. Cap.66.',
+    tags: ['fisiologia', 'endocrinologia', 'insuficiência adrenal']
+  },
+  {
+    id: 'tp2020-7',
+    module: 'Ciências Básicas',
+    text: 'Em relação às causas atribuídas para a infertilidade masculina, podemos afirmar:',
+    options: [
+      '(A) Microdeleções na região Yp são encontradas em uma proporção significativa dos homens com baixa contagem de espermatozoide, que vão desde casos de azoospermia até oligospermia grave.',
+      '(B) Deleções de novo de AZFc podem ser a causa da azoospermia não obstrutiva e da oligozoospermia severa.',
+      '(C) No braço longo do cromossomo Y (Yq), localizam-se duas regiões (AZFa e AZFb), importantes na fertilidade masculina por apresentar genes que são expressos na espermatogênese.',
+      '(D) As áreas do Yp, responsáveis pela espermatogênese, foram denominadas de Fatores de Azoospermia - AZF.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Os fatores de azoospermia (AZFa, AZFb e AZFc) estão no braço longo do cromossomo Y (Yq). Microdeleções de novo da região AZFc são a causa genética mais comum de azoospermia não obstrutiva e de oligozoospermia grave.',
+    commentary: 'As regiões AZF não estão em Yp, que contém o SRY (determinação testicular). Yq tem três regiões AZF, não duas.',
+    reference: 'NUSSBAUM, R.L.; MCLNNES, R.R.; WILLARD, H.F. Thompson & Thompson - Genética Médica. Oitava Edição. Editora Guanabara Koogan S.A., Rio de Janeiro, RJ, 2016. / BORGES, C.H.S.; MACEDO, L.C. Infertilidade Masculina Decorrente de Microdeleções no Cromossomo Y. Reprod. Clim., v. 31, n. 3, p. 169-174, 2016.',
+    tags: ['genética', 'infertilidade masculina']
+  },
+  {
+    id: 'tp2020-8',
+    module: 'Ciências Básicas',
+    text: 'Paciente do sexo feminino, 45 anos, apresenta-se em Unidade de Pronto Atendimento com queixa de perda da sensibilidade nas mãos. Ao exame físico foram evidenciados nódulos eritemato-acastanhados, com aspecto de queloides ou fibromas. Foi realizada uma biópsia com achados histopatológicos de macrófagos com citoplasma repleto de bacilos de Hansen, formando acúmulos denominados Globias.\n\nO diagnóstico definitivo é:',
+    options: [
+      '(A) Hanseníase Dimorfa',
+      '(B) Hanseníase Virchowiana',
+      '(C) Hanseníase Tuberculoide',
+      '(D) Hanseníase Indeterminada'
+    ],
+    correctAnswer: 1,
+    explanation: 'Macrófagos repletos de bacilos formando globias (aglomerados de bacilos) são achado típico da hanseníase virchowiana, o polo de baixa resposta imune celular, com nódulos e infiltração cutânea (hansenomas).',
+    commentary: 'Na forma tuberculoide há granulomas epitelioides bem formados, com poucos ou nenhum bacilo. A dimorfa tem padrão intermediário. A indeterminada tem infiltrado inespecífico.',
+    reference: 'KUMAR, V.; ABBAS, A. K.; FAUSTO, N.; MITCHELL, R. N. Robbins. Patologia básica. 8. ed. Rio de Janeiro: Elsevier, 2008.',
+    tags: ['patologia', 'hanseníase']
+  },
+  {
+    id: 'tp2020-9',
+    module: 'Ciências Básicas',
+    text: 'Paciente do sexo feminino, 45 anos, apresenta-se em Unidade de Pronto Atendimento com oligúria. Relata que está em tratamento para herpes simples com Aciclovir há quatro dias, e que há 48 horas não consegue urinar. Foram solicitados exames laboratoriais que sugeriram o diagnóstico de necrose tubular aguda.\n\nSobre o padrão de lesão encontrado na necrose tubular aguda, é correto afirmar que:',
+    options: [
+      '(A) São observados glomérulos fibrinóticos e com depósito de material purulento em alça capilar.',
+      '(B) Nos glomérulos são evidenciadas áreas de esteatonecrose e células com cariorrexe.',
+      '(C) Os túbulos são dilatados e hialinizados. Os glomérulos são atróficos e repletos de macrovesículas de colesterol.',
+      '(D) São evidenciadas áreas de isquemia glomerular e células necróticas, que são eliminadas sob a forma de cilindros.'
+    ],
+    correctAnswer: 3,
+    explanation: 'A necrose tubular aguda por nefrotoxicidade (aciclovir, por cristalúria e lesão tubular) cursa com necrose de células epiteliais, que se descamam e formam cilindros (granulosos, \'marrom-barrento\') no sedimento urinário.\n\nA alternativa aceita pela banca é a que fala em células necróticas eliminadas sob a forma de cilindros.',
+    commentary: 'As demais descrevem lesões glomerulares ou achados inexistentes na NTA. Observação: a lesão da NTA é essencialmente tubular, e a menção a \'isquemia glomerular\' na alternativa oficial é imprecisa.',
+    reference: 'ROBBINS. Patologia Estrutural e Funcional, 8ª edição.',
+    tags: ['patologia', 'nefrologia', 'necrose tubular aguda']
+  },
+  {
+    id: 'tp2020-10',
+    module: 'Ciências Básicas',
+    text: 'Dietas vegetarianas e veganas são compostas basicamente de frutas, folhas, legumes, cereais, leguminosas, nozes e sementes. Na dieta vegana não entra qualquer alimento de origem animal, incluindo mel. Na vegetariana não se come carne, aves, peixes e frutos do mar. Existem vitaminas praticamente inexistentes em alimentos de origem vegetal e, se não suplementadas, os indivíduos podem apresentar fraqueza, fadiga e anemia trazendo alterações metabólicas principalmente nos lipídeos.\n\nQual das vitaminas está associada a essas dietas?',
+    options: [
+      '(A) Vitamina B12',
+      '(B) Vitamina A',
+      '(C) Vitamina D',
+      '(D) Vitamina B1'
+    ],
+    correctAnswer: 0,
+    explanation: 'A vitamina B12 está presente quase exclusivamente em alimentos de origem animal. Veganos e vegetarianos estritos sem suplementação têm alto risco de deficiência, com anemia megaloblástica, fadiga e alterações neurológicas.',
+    commentary: 'As vitaminas A, D e B1 têm fontes vegetais ou síntese endógena (D) e não se associam tipicamente a essas dietas.',
+    reference: 'COZZOLINO Silvia. Biodisponibilidade de Nutrientes. 4º. Brasil: Manole Ltda, 2012, 513-525. / BAYNES, JW, DOMINICZAK, MH. Bioquímica médica, 4ª ed. Rio de Janeiro: Elsevier, 2015.',
+    tags: ['bioquímica', 'nutrição', 'vitamina b12']
+  },
+  {
+    id: 'tp2020-11',
+    module: 'Ciências Básicas',
+    text: 'Indivíduos submetidos a cirurgia bariátrica na técnica de bypass gástrico em Y-de-Roux (BGYR) têm vários benefícios metabólicos pós-cirurgia como: redução dos níveis de colesterol, LDL-colesterol, triglicerídeos e glicemia. Porém, com o passar do tempo há diminuição de absorção de micronutrientes (vitaminas e minerais) que consequentemente pode levar o paciente a uma diminuição da concentração de hemoglobina e eritropoiese ineficaz, com redução número de hemácias, levando o paciente à anemia.\n\nEssa anemia deve-se à deficiência de qual micronutriente?',
+    options: [
+      '(A) Cálcio e vitamina D',
+      '(B) Vitamina B1',
+      '(C) Magnésio',
+      '(D) Vitamina B12'
+    ],
+    correctAnswer: 3,
+    explanation: 'Após o bypass gástrico em Y de Roux, a menor secreção ácida e de fator intrínseco e a exclusão do estômago distal e do duodeno prejudicam a absorção de vitamina B12, levando a anemia megaloblástica — além do risco de deficiência de ferro.',
+    commentary: 'Cálcio, vitamina D, magnésio e tiamina também podem faltar após a bariátrica, mas não explicam a anemia por eritropoiese ineficaz descrita.',
+    reference: 'ZAGO, Marco Antônio; FALCÃO, Roberto Passetto; PASQUINI, Ricardo. Tratado de hematologia. São Paulo: Atheneu, 2013. In: cap 1” Carências de Folatos ou Vitamina B12. Anemias Megaloblásticas”. / TOLEDO, Fábio Martins Teodoro; RUIZ, Sandra Silva Datore. Alterações Nutricionais após Cirurgia Bariátrica. Revista Científica Multidisciplinar Núcleo do Conhecimento. Ano 03, Ed.05, Vol. 04, pp. 186-199, Maio de 2018. ISSN:2448-0959. / ROCHA, José Carlos Gomes. Deficiência de Vitamina B12 no pós-operatório de Cirurgia Bariátrica. International Journal of Nutrology, v.5, n.2, p. 82-89, mai/ago 2012.',
+    tags: ['bioquímica', 'cirurgia bariátrica', 'anemia']
+  },
+  {
+    id: 'tp2020-12',
+    module: 'Ciências Básicas',
+    text: 'Paciente com 55 anos de idade é encaminhado para hospital com queixas de apresentar nos últimos 5 dias tosse não produtiva, febre (superior a 38ºC, aferida pelo próprio paciente), inflamação de garganta, cansaço e dificuldades respiratórias. O paciente relata viagem à China há 20 dias. No exame clínico apresentou febre de 38,2ºC, pressão arterial normal, frequência respiratória de 30 rpm e crepitações na ausculta pulmonar. Foi solicitado hemograma, que apresentou linfopenia, e TC de tórax, que apresentou opacidades com atenuação em vidro-fosco multifocais, bilateralmente. Tendo em vista o quadro clínico e as informações epidemiológicas, o diagnóstico presuntivo de infecção por SARS-CoV-2 foi estabelecido. Sendo solicitado exame de material de mucosa nasal para confirmação.\n\nEm relação às características do vírus associado a essa infecção, assinale abaixo a alternativa correta:',
+    options: [
+      '(A) Trata-se de vírus da família Coronaviridae, não-envelopado, com RNA de dupla fita (dsRNA), cuja proteína de superfície S se liga ao receptor ACE2 da célula do hospedeiro.',
+      '(B) Trata-se de vírus da família Coronaviridae, envelopado, com RNA de simples fita (ssRNA), cuja proteína de superfície S se liga ao receptor ACE2 da célula do hospedeiro.',
+      '(C) Trata-se de vírus da família Coronaviridae, envelopado, com RNA de simples fita (ssRNA), cuja proteína de superfície S se liga à molécula de CD4 da célula do hospedeiro.',
+      '(D) Trata-se de vírus da família Coronaviridae, não-envelopado, com DNA de dupla fita (dsDNA), cuja proteína de superfície S se liga ao receptor ACE2 da célula do hospedeiro.'
+    ],
+    correctAnswer: 1,
+    explanation: 'O SARS-CoV-2 é um coronavírus envelopado, com genoma de RNA de fita simples e polaridade positiva. Sua proteína de superfície S (spike) se liga ao receptor ACE2 das células do hospedeiro.',
+    commentary: 'O vírus não é desnudo nem tem RNA ou DNA de fita dupla. A ligação ao CD4 é característica do HIV.',
+    reference: 'Walls, A.C. et al. Structure, Function, and Antigenicity of the SARS-CoV-2 Spike Glycoprotein. Cell, 181 (2):281-292, 2020. / Han R. et al. Early Clinical and CT manifestations of Coronavirus Disease 2019 (COVID-19) pneumonia. American Journal of Roentgenology, 215:1-6, 2020.',
+    tags: ['microbiologia', 'virologia', 'covid-19']
+  },
+  {
+    id: 'tp2020-13',
+    module: 'Ciências Básicas',
+    text: 'JFP, 25 anos, portador de Anemia Falciforme, iniciou quadro doloroso leve em MID. Não apresentava febre, queixas urinárias ou cardiorrespiratórias. Como a dor estava leve, iniciou Ibuprofeno 3x/dia, intercalando com paracetamol também 3x/dia. Por causa do calor achou melhor iniciar hidratação via oral.\n\nVocê acha que a conduta tomada é correta e tem base fisiopatológica?',
+    options: [
+      '(A) Sim, as crises dolorosas decorrem da falcização em microcirculação e consequente isquemia e processo inflamatório local. A desidratação é um importante fator desencadeante.',
+      '(B) Não, as crises dolorosas são causadas pela liberação de citocinas por agentes bacterianos e o tratamento correto é iniciar antibioticoterapia o mais breve possível.',
+      '(C) Não, as crises dolorosas são causadas por crises hiper hemolíticas e o tratamento correto é a transfusão de sangue.',
+      '(D) Não, o uso de anti-inflamatório é contraindicado, já que não tem nenhuma ação sobre as crises dolorosas.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A crise álgica decorre da falcização na microcirculação, com vaso-oclusão, isquemia e inflamação local. A desidratação favorece a polimerização da HbS e precipita crises.\n\nEm dor leve, analgesia com paracetamol e AINE (na ausência de contraindicações) associada a hidratação é conduta adequada.',
+    commentary: 'As crises não são causadas por infecção bacteriana nem por hiper-hemólise. O AINE tem ação sobre o componente inflamatório e pode ser usado com cautela.',
+    reference: 'Zago MA; Falcão RP, Pasquini R. Tratado de Hematologia. 1ª ed. Atheneu, 2013; 211-219.',
+    tags: ['hematologia', 'anemia falciforme']
+  },
+  {
+    id: 'tp2020-14',
+    module: 'Ciências Básicas',
+    text: 'A meningomielocele leva à exposição da medula ao ambiente externo. Trata-se de uma malformação de alta incidência em todo o mundo. Indivíduos afetados pela doença podem apresentar graus variados de déficit motor, incontinência fecal e urinária, além de alterações do sistema nervoso central decorrentes da herniação dos elementos da fossa posterior para o canal medular. Esse complexo de malformações do sistema nervoso central, conhecida como malformação de Arnold-Chiari do tipo 2, pode levar a uma dilatação progressiva dos ventrículos cerebrais, tornando necessária uma derivação ventrículo-peritoneal para tratamento da hidrocefalia.\n\nA malformação a que o texto se refere é proveniente de distúrbio em qual evento do desenvolvimento embrionário?',
+    options: [
+      '(A) Formação do canal neuroentérico',
+      '(B) Fechamento do processo notocordal',
+      '(C) Fechamento do tubo neural',
+      '(D) Gastrulação'
+    ],
+    correctAnswer: 2,
+    explanation: 'A meningomielocele é um defeito de fechamento do tubo neural (neuróporo posterior), que ocorre na quarta semana do desenvolvimento. Associa-se à malformação de Arnold-Chiari tipo II e à hidrocefalia.',
+    commentary: 'Canal neuroentérico, processo notocordal e gastrulação são eventos anteriores e não explicam o defeito do tubo neural.',
+    reference: 'Bevilacqua, NS; Pedreira, DAL. Cirurgia fetal endoscópica para correção de mielomeningocele: passado, presente e futuro. Einstein. 2015; 13(2):283-9. / Brasil. Ministério da Saúde. Departamento de Informática do Sistema Único de Saúde (DATASUS). Sistema de Informações Sobre Nascidos Vivos (SINASC). 1994. / Mathews TJ, Honein MA, Erickson JD. Spina bifida and anencephaly prevalence--United States, 1991-2001. MMWR Recomm Rep. 2002;51(RR-13):9-11.',
+    tags: ['embriologia', 'defeitos do tubo neural']
+  },
+  {
+    id: 'tp2020-15',
+    module: 'Ciências Básicas',
+    text: 'Infecções virais têm sido associadas ao desenvolvimento de doenças autoimunes como diabetes melito tipo 1 e esclerose múltipla. No caso da esclerose múltipla, há uma associação com infecção pelo vírus Epstein-Barr.\n\nA explicação para esta associação imunológica é:',
+    options: [
+      '(A) Neurônios infectados pelo vírus Epstein-Barr atraem células inflamatórias do sistema imune inato, como as dendríticas, que causam a desmielinização do neurônio.',
+      '(B) Neurônios infectados pelo vírus Epstein-Barr processam antígenos pela via do proteossomo e expressam antígenos virais que são reconhecidos por linfócitos T auxiliares, causando a morte destes neurônios.',
+      '(C) A semelhança da estrutura molecular entre antígenos do vírus Epstein-Barr e da bainha de mielina do neurônio e a presença de determinados genes MHC/HLA, facilitam a apresentação e reconhecimento de antígenos próprios pelo complexo TCR de linfócitos T citotóxicos.',
+      '(D) O vírus Epstein-Barr, durante seu ciclo de replicação, causa alterações em proteínas neuronais, transformando-as em neoantígenos.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A associação entre EBV e esclerose múltipla é explicada principalmente pelo mimetismo molecular: antígenos virais semelhantes a proteínas da mielina, apresentados por moléculas HLA de risco, ativam linfócitos T autorreativos que atacam a bainha de mielina.',
+    commentary: 'A desmielinização não é causada por infecção neuronal direta pelo EBV, e os neurônios não são o alvo primário (a lesão é da mielina/oligodendrócitos).',
+    reference: 'Roitt fundamentos de imunologia. - 13ª ed. - Rio de Janeiro: Guanabara Koogan, 2018. Capítulo 17, página 474.',
+    tags: ['imunologia', 'autoimunidade', 'esclerose múltipla']
+  },
+  {
+    id: 'tp2020-16',
+    module: 'Ciências Básicas',
+    text: 'As novas ferramentas moleculares de identificação de variantes genéticas associadas ao desenvolvimento de neoplasias, aliadas a novas abordagens terapêuticas mutação-dependente tornaram possível a identificação de indivíduos portadores de síndrome de câncer familial.\n\nDurante o aconselhamento oncogenético é possível:',
+    options: [
+      '(A) Aguardar o seguimento cirúrgico e adjuvante para a realização de análise molecular do paciente e seus familiares.',
+      '(B) Usar a técnica de FISH para identificar a síndrome de câncer familial através das características tumorais, na fase diagnóstica.',
+      '(C) Solicitar avaliação de painéis de genes selecionados na fase de comunicação de fatos médicos e com base na história familial de 3 gerações.',
+      '(D) Identificar indivíduos em risco e, através de análise molecular direcionada, realizar procedimentos terapêuticos profiláticos na fase de cálculo de risco e seguimento.'
+    ],
+    correctAnswer: 3,
+    explanation: 'No aconselhamento oncogenético, a fase de cálculo de risco e seguimento envolve identificar familiares em risco, fazer teste molecular direcionado à variante encontrada e oferecer medidas preventivas (rastreamento intensivo, cirurgias redutoras de risco).',
+    commentary: 'A análise molecular não deve aguardar o fim do tratamento. O FISH raramente é usado nesse contexto. Os painéis pertencem à fase diagnóstica, e o heredograma deve ter pelo menos 3–4 gerações.',
+    reference: 'INCA-Manual operacional sobre a Rede Nacional de Câncer Familial- Rede Nacional de Câncer Familial, disponível em https://www.inca.gov.br/publicacoes/manuais/rede-nacional-de-cancer-familial.',
+    tags: ['genética', 'oncogenética']
+  },
+  {
+    id: 'tp2020-17',
+    module: 'Ciências Básicas',
+    text: 'Durante a pandemia causada pelo Coronavírus, três tipos de testes para diagnóstico e/ou detecção de imunidade à COVID19 podem ser realizados: detecção de antígenos virais em material biológico do trato respiratório por RT-PCR (reverse transcription polymerase chain reverse) e detecção de anticorpos das classes IgM e IgG contra o vírus no sangue do paciente.\n\nBaseado nos resultados encontrados nas alternativas abaixo, assinale a mais provável:',
+    options: [
+      '(A) RT-PCR positivo; IgM positivo; IgG negativo: paciente nos estágios iniciais da infecção.',
+      '(B) RT-PCR positivo; IgM negativo e IgG negativo: paciente no estágio tardio da infecção.',
+      '(C) RT-PCR negativo; IgM negativo; IgG positivo: paciente com infecção ativa.',
+      '(D) RT-PCR positivo; IgM positivo; IgG positivo: paciente teve a infecção e está recuperado.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Na fase inicial da COVID-19, o RT-PCR detecta o RNA viral e o IgM começa a surgir; o IgG ainda é negativo. Com o tempo, o PCR negativa e o IgG se torna positivo (infecção pregressa).',
+    commentary: 'PCR positivo com sorologia negativa indica fase muito inicial, não tardia. IgG isolado indica infecção passada. PCR, IgM e IgG positivos indicam fase ativa/convalescença, não recuperação.',
+    reference: 'BRASIL, MINISTÉRIO DA SAÚDE, 2020. Secretaria Executiva (SE), Secretaria de Atenção Especializada à Saúde (SAES), Secretaria de Atenção Primária à Saúde (SAPS), Secretaria de Vigilância em Saúde (SVS), Secretaria de Gestão do Trabalho e da Educação na Saúde (SGTES), Secretaria de Ciência, Tecnologia e Insumos Estratégicos. Orientações para manejo de pacientes com Covid 19. / BRASIL, MINISTÉRIO DA SAÚDE, 2020. Secretaria de Vigilância em Saúde. Guia de Vigilância epidemiológica. Emergência de Saúde Pública de Importância Nacional pela Doença pelo Coronavírus 2019. Vigilância de Síndromes Respiratórias Agudas COVID-19.',
+    tags: ['imunologia', 'covid-19', 'testes diagnósticos']
+  },
+  {
+    id: 'tp2020-18',
+    module: 'Ciências Básicas',
+    text: '“A infecção pelo Helicobacter pylori tem sido associada a câncer gástrico, linfoma do tecido linfoide associado a mucosa gástrica (MALT) e úlcera péptica, e sua erradicação pode curar o linfoma MALT gástrico e prevenir a recorrência de úlcera péptica. A infecção apresenta alta prevalência em todo o mundo, principalmente em países em desenvolvimento. Doenças relacionadas ao H. pylori são raras em crianças, mas a maioria dos pacientes infectados contrai a infecção nesta idade. Apesar do fato de que a estratégia "testar e tratar" não seja recomendada em crianças com dor abdominal ou dispepsia funcional, se os sintomas forem recorrentes ou graves recomenda-se a endoscopia digestiva alta com biópsia.\n\nNão há consenso sobre se o tratamento do H. pylori é útil em crianças com distúrbios gastrointestinais funcionais, mas o tratamento é geralmente indicado se a infecção foi diagnosticada, principalmente devido à morbidade de longo prazo.” Em relação aos principais aspectos práticos dos medicamentos utilizados para doenças ácido-pépticas, assinale a alternativa correta abaixo:',
+    options: [
+      '(A) Os inibidores da bomba de prótons sofrem baixo metabolismo sistêmico e de primeira passagem, por este motivo podem ser administrados por via oral.',
+      '(B) Os fármacos antagonistas de receptores H2 são pouco prescritos devido à alta quantidade de efeitos colaterais (mais de 10% dos pacientes sofrem efeitos colaterais).',
+      '(C) A redução da acidez gástrica pode alterar a biodisponibilidade de fármacos que dependem deste parâmetro para serem absorvidos como o cetoconazol.',
+      '(D) A utilização frequente de Mg(OH)2 está associada a alcalose metabólica, devido à sua alta taxa de absorção intestinal.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Fármacos que dependem do pH ácido para dissolução e absorção, como o cetoconazol e o itraconazol (cápsulas), têm sua biodisponibilidade reduzida quando a acidez gástrica é suprimida por IBP ou antagonistas H2.',
+    commentary: 'Os IBP sofrem extenso metabolismo de primeira passagem (CYP2C19). Os antagonistas H2 são bem tolerados. O hidróxido de magnésio é pouco absorvido e causa diarreia, não alcalose metabólica significativa.',
+    reference: 'Machado, R. S. Silva, M. R., Viriato, A. Furazolidona, tetraciclina e omeprazol: uma alternativa de baixo custo para erradicação de Helicobacter pylori em crianças. J. Pediatr. (Rio J.) vol.84 no.2 Porto Alegre Mar./Apr. 2008. / KATZUNG, B. G.; MASTERS, S. B.; TREVOR, A. J. Farmacologia básica e clínica. 13. ed. Porto Alegre: McGraw Hill, 2017. / BRUNTON, L. L. As bases farmacológicas e terapêuticas de Goodman & Gilman. 13. ed. Rio de Janeiro: McGraw Hill/Artmed, 2018.',
+    tags: ['farmacologia', 'doença ácido-péptica']
+  },
+  {
+    id: 'tp2020-19',
+    module: 'Ciências Básicas',
+    text: 'Analise a artigo abaixo e assinale a alternativa correta: “Li-Fraumeni syndrome (LFS) is an autosomal dominant disorder occurring at a young age that predisposes individuals to multiple forms of cancer and to a heterogeneous spectrum of malignancies. We describe the clinical history of a patient who had 5 primary malignant cancers and a familiar history consistent with LFS. We analyzed the genomic DNA of the proband and her relatives by next-generation sequencing (NGS) technology using an enrichment protocol for the simultaneous sequencing of 94 genes involved in hereditary cancers. Genetic analysis of the proband revealed a TP53 germline mutation in exon 5 determining a nucleotide alteration at codon 175 (R175H), a hot spot mutation site related to LFS and a reported pathogenic mutation. The proband daughter\'s and brother\'s DNA did not carry the TP53 mutation but they had some rare variants in common with the proband, in addition to other variants with a still unclear role. In conclusion, we identified a TP53 mutation in a patient with multiple primary tumors and a family history characterized by a severe susceptibility to cancer. The genetic analysis by targeted NGS led to the identification of the genetic background and to the exclusion of a cancer risk for the family members.\n\nTargeted NGS represents an efficient approach for the identification of mutations in families with a heterogeneous phenotype.” (Zampiga et al., 2016 doi: 10.5301/jbm.5000227).',
+    options: [
+      '(A) As síndromes de câncer hereditário são causadas por mutações (alterações) em certos genes que são transmitidos dos pais para os filhos. Em uma síndrome hereditária do câncer, alguns padrões de tumores malignos podem ser vistos nas famílias e esses padrões incluem: ter vários membros próximos da família (como mãe, filha e irmã) com o mesmo tipo de câncer; desenvolver câncer em idade precoce ou desenvolver dois ou mais tipos de câncer na mesma pessoa. Exemplos de síndromes hereditárias de câncer incluem Esclerose Lateral Amiotrófica (ELA), Fenilcetonúria (PKU), Doença de Pompe e Fibrose Cística.',
+      '(B) O geneTP53 codifica uma proteína supressora de tumor que, em resposta a mutações ou danos causados ao DNA, desencadeia um programa de transcrição gênica que regula os mecanismos de reparo do DNA, progressão do ciclo celular e apoptose. Assim, TP53 é essencial para regular a divisão celular e prevenir a formação de tumores, além de atuar no envelhecimento, metabolismo, regulação da homeostase e função imunológica.',
+      '(C) A síndrome de Li-Fraumeni (LFS) é caracterizada por uma alta predisposição ao desenvolvimento de tumores malignos ao longo da vida do paciente. Os tipos de câncer observados em pacientes com LFS incluem: carcinomas gástricos, hepatocarcinomas, retinoblastoma, melanoma e linfomas.',
+      '(D) Mutações no gene supressor tumoral TP53 estão associadas à síndrome de Li-Fraumeni. A proteína TP53 é um tetrâmero e nos pacientes com LFS a maioria das mutações está localizada na região que codifica o domínio tetramerização da proteína e somente alguns poucos casos abrigam mutações TP53 fora deste local de hotspot.'
+    ],
+    correctAnswer: 1,
+    explanation: 'O TP53 codifica a proteína p53, supressora de tumor e \'guardiã do genoma\': diante de dano ao DNA, ativa genes de reparo, parada do ciclo celular e apoptose. Mutações germinativas causam a síndrome de Li-Fraumeni.',
+    commentary: 'ELA, fenilcetonúria, Pompe e fibrose cística não são síndromes de câncer. Os tumores típicos de Li-Fraumeni são sarcomas, câncer de mama, tumores de SNC e adrenocortical. As mutações concentram-se no domínio de ligação ao DNA, não no de tetramerização.',
+    reference: 'Zampiga V, Danesi R, Tedaldi G, Tebaldi M, Cangini I, Pirini F,Pittureri C, Amaducci E, Guidi L, Faedi M, Amadori D, Falcini F, Calistri D. Multiple primary tumors in a family with Li-Fraumeni syndrome with a TP53germline mutation identified by next-generation sequencing. Int J Biol Markers. 2016 Dec 23;31(4):e461-e465. doi: 10.5301/jbm.5000227. / Gargallo P, Yáñez Y, Segura V, Juan A, Torres B, Balaguer J, Oltra S Castel V, Cañete A. Li-Fraumeni syndrome heterogeneity. Clin Transl Oncol. 2019 Nov 5. doi: 10.1007/s12094-019-02236-2. [Epub ahead of print]',
+    tags: ['genética', 'oncologia', 'síndrome de li-fraumeni']
+  },
+  {
+    id: 'tp2020-20',
+    module: 'Ciências Básicas',
+    text: '“Homem de 49 anos de idade procurou atendimento médico por dispneia intensa. Apresentou dor epigástrica intensa de uma hora de duração, acompanhada de dispneia, sudorese e palidez, dez dias antes do atendimento. Tal sintoma foi seguido de outros episódios de dor precordial acompanhados de dispneia, desencadeados por esforços progressivamente menores. A dispneia isoladamente passou a ocorrer mesmo em repouso e em decúbito dorsal, e houve aparecimento de edema de membros inferiores, três dias antes do atendimento médico. O paciente era tabagista. O exame físico dessa consulta revelou paciente com dispneia ruidosa, pressão arterial 80/50 mmHg, pulso regular, frequência 110 bpm e sinais de vasoconstrição periférica. O exame dos pulmões revelou estertores e sibilos disseminados, até os ápices de ambos os hemitórax. A semiologia cardíaca revelou a presença de 3ª bulha. O exame do abdome foi normal. Havia edema discreto de membros inferiores. Foi feito o diagnóstico de edema agudo de pulmão”.\n\nConsiderando o caso clinico acima, a principal hipótese diagnóstica e a alteração anatomopatológica correspondente seriam, respectivamente:',
+    options: [
+      '(A) DPOC - Atrofia do tecido pulmonar resultante da hiperinsuflação pulmonar.',
+      '(B) Pneumonia - Inflamação (pneumonia) difusa com preenchimento das luzes alveolares por exsudato fibrino-purulento.',
+      '(C) Asma - Espessamento da lamina reticular associado ao aumento de colágeno tipos III e V.',
+      '(D) Insuficiência cardíaca - Aumento de colágeno entre as fibras musculares do miocárdio.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Dor epigástrica prolongada com sudorese seguida de angina progressiva, ortopneia, edema, B3, estertores difusos e choque: insuficiência cardíaca aguda pós-infarto.\n\nO remodelamento após o infarto envolve fibrose, com aumento de colágeno entre as fibras musculares do miocárdio.',
+    commentary: 'O quadro não é de DPOC, pneumonia ou asma: a B3, a estase e o antecedente isquêmico apontam para causa cardíaca.',
+    reference: 'GRAZILLO, Cibele Laprosa and BENVENUTI, Luiz Alberto. Caso 2/2007: homem de 49 anos de idade, com insuficiência cardíaca após infarto do miocárdio. Arq. Bras. Cardiol [online]. 2007, vol.88, n.3 [cited 2020-05-19], pp.361-366. / AZEVEDO, Paula S. et al. Remodelação Cardíaca: Conceitos, Impacto Clínico, Mecanismos Fisiopatológicos e Tratamento Farmacológico. Arq. Bras. Cardiol [online]. 2016, vol.106, n.1 [cited 2020-05-19], pp.62-69.',
+    tags: ['patologia', 'cardiologia', 'insuficiência cardíaca']
   }
 ];

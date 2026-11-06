@@ -2262,5 +2262,331 @@ export const CLINICA_QUESTIONS: Question[] = [
     commentary: 'Na DPOC a obstrução é pouco reversível. A bronquiectasia cursa com infecções de repetição e broncorreia. A fibrose pulmonar produz padrão restritivo.',
     reference: 'GINA (Global Initiative for Asthma): https://ginasthma.org/2018-gina/ / Diretrizes da Sociedade Brasileira de Pneumologia e Tisiologia para o Manejo da Asma – 2012. Jornal Brasileiro de Pneumologia, Vol. 38 - Supl. 1.',
     tags: ['pneumologia', 'asma', 'espirometria']
+  },
+  // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
+  {
+    id: 'tp2020-41',
+    module: 'Clínica Médica',
+    text: 'Paciente do sexo feminino, 22 anos, recém-divorciada e com dois filhos, procurou médico de família por sentir fadiga, apresentar ideias suicidas elaboradas e recorrentes, ganho de peso, insônia e agitação quase todos os dias há três meses, além de profundos sentimentos de inutilidade ou culpa excessiva ou inapropriada do tipo delirante. Houve prejuízo no funcionamento social e não há relato de uso de substâncias. Segundo informações da paciente e dos familiares, não houve surgimento de humor anormal e persistentemente elevado, expansivo ou irritável, bem como também não há relato prévio de distúrbios do sono.\n\nDetermine o diagnóstico:',
+    options: [
+      '(A) Transtorno bipolar.',
+      '(B) Transtorno acentuado do ciclo sono-vigília.',
+      '(C) Transtorno dissociativo.',
+      '(D) Transtorno depressivo maior.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Humor deprimido com fadiga, insônia, agitação, alteração de peso, culpa excessiva e ideação suicida recorrente há mais de 2 semanas, com prejuízo funcional e sem episódio maníaco ou hipomaníaco: transtorno depressivo maior.\n\nA ideação suicida elaborada exige avaliação de risco imediata.',
+    commentary: 'Sem história de humor elevado não há critérios de transtorno bipolar. Não há dissociação descrita, e a insônia é sintoma do episódio depressivo.',
+    reference: 'Manual Diagnóstico e Estatístico de Transtornos Mentais. American Psychiatric Association. DSM-V, 5ª Ed., 2014. Ed. Artmed, pg 155.',
+    tags: ['psiquiatria', 'depressão']
+  },
+  {
+    id: 'tp2020-42',
+    module: 'Clínica Médica',
+    text: 'ALM, 30 anos, sexo masculino, vítima de acidente de motocicleta com TCE grave, com múltiplos mecanismos (lesão axonal difusa, hematoma subdural, hematoma extradural e contusão cerebral), tendo sido submetido a drenagem de hematoma extradural e permanecendo internado durante 35 dias no hospital. Na alta, apresentava-se eupneico em ar ambiente pela cânula de traqueostomia, vigil, sem interação com o meio, com dupla hemiparesia, com espasticidade nos 4 membros, sinal de Babinski presente bilateralmente e sem ciclo sono-vigília. Iniciou acompanhamento com a Equipe de Saúde de Família dois meses após a alta. Na ocasião, a mãe relatava que o paciente permanecia com o mesmo quadro neurológico da alta hospitalar, em uso de sonda nasoenteral, com cânula de traqueostomia e sonda vesical de demora.\n\nIdentifique as orientações a serem priorizadas à família do paciente:',
+    options: [
+      '(A) Trata-se de um paciente em mutismo acinético e a família deverá ser orientada com relação à necessidade de tenotomia, visando melhora da espasticidade e prevenção de dor crônica.',
+      '(B) Trata-se de um paciente em estado de consciência mínima e a família deverá ser orientada sobre a irreversibilidade do quadro.',
+      '(C) Trata-se de um paciente em estado vegetativo persistente e a família deverá ser orientada sobre a possibilidade de realizar gastrostomia, tentativa de retirada da sonda vesical de demora e com relação aos riscos de infecções de repetição e tromboembolismo venoso.',
+      '(D) A família deve ser orientada que o paciente terá plena recuperação, uma vez que a neuroplasticidade é comumente observada em pacientes jovens.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Após TCE grave, o paciente abre os olhos e tem ciclo de vigília, mas não interage com o meio por mais de 1 mês: estado vegetativo persistente (síndrome da vigília sem resposta).\n\nAs orientações priorizam os cuidados: gastrostomia, tentativa de retirada da sonda vesical e prevenção de infecções e de tromboembolismo.',
+    commentary: 'No estado de consciência mínima há sinais intermitentes de percepção. No mutismo acinético há atenção visual preservada. Prometer recuperação plena seria inadequado.',
+    reference: 'Tratado de Neurologia da Academia Brasileira de Neurologia. Rubens J. Gagliardi & Osvaldo M. Takayanagui; 2 ᵃ Edição, 2019. Editora Elsevier, página 2519.',
+    tags: ['neurologia', 'traumatismo cranioencefálico', 'cuidados paliativos']
+  },
+  {
+    id: 'tp2020-43',
+    module: 'Clínica Médica',
+    text: 'Paciente do sexo masculino, 65 anos, refere dispneia aos esforços, progressiva, há 2 anos. Atualmente, a dispneia ocorre ao andar 100 metros no plano. No último ano, teve uma crise de piora dos sintomas, tratada ambulatorialmente com antibiótico e corticoide oral. É tabagista há 45 anos, um maço/dia. Exame físico: índice massa corpórea 20 kg/m², murmúrio vesicular reduzido bilateralmente sem ruídos adventícios. Exames complementares: Espirometria: distúrbio ventilatório obstrutivo. [Pré-broncodilatador: VEF1/CVF: 0,50; CVF: 2,4L (86%); VEF1: 1,19L (54%)]. [Pós-broncodilatador: VEF1/CVF: 0,52; CVF: 2,4L (86%); VEF1: 1,22L (55%)]. Hemograma: eosinófilos em sangue periférico: 70 células/microlitro.\n\nDefina o diagnóstico e a conduta:',
+    options: [
+      '(A) O diagnóstico é Doença Pulmonar Obstrutiva Crônica (DPOC). A prescrição é broncodilatador de ação prolongada para uso diário e broncodilatador de ação curta para uso, se necessário. O corticoide inalado provavelmente não beneficiará este paciente, pois há relato de apenas uma exacerbação moderada no último ano e eosinófilos em sangue periférico < 100 células/microlitro.',
+      '(B) O diagnóstico é Doença Pulmonar Obstrutiva Crônica (DPOC). A prescrição é broncodilatador de ação prolongada para uso diário e broncodilatador de ação curta para uso, se necessário. O diagnóstico é determinado pelos sintomas e exposição ao fator de risco. O tratamento farmacológico é guiado pela espirometria.',
+      '(C) O diagnóstico é Doença Pulmonar Obstrutiva Crônica (DPOC). A prescrição é broncodilatador de ação prolongada para uso diário e broncodilatador de ação curta para uso, se necessário. O tratamento farmacológico previne sintomas, exacerbações e reverte a obstrução observada na espirometria. Cessar o tabagismo tem grande impacto no prognóstico deste paciente.',
+      '(D) O diagnóstico é Doença Pulmonar Obstrutiva Crônica (DPOC). A prescrição é corticoide inalado associado a broncodilatador de ação prolongada para uso diário. Todo o paciente com DPOC com sintomas respiratórios deve usar esta combinação de fármacos. Avaliações adicionais recomendadas neste paciente são: radiografia de tórax em duas posições e oximetria.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Tabagista com dispneia progressiva e obstrução não reversível (VEF1/CVF pós-broncodilatador 0,52; VEF1 55%): DPOC.\n\nCom muitos sintomas e apenas uma exacerbação moderada no ano, o tratamento é broncodilatador de longa ação (com resgate de curta ação). O corticoide inalado não está indicado com eosinófilos < 100/µL.',
+    commentary: 'O tratamento é guiado por sintomas e exacerbações, não pela espirometria. Os broncodilatadores não revertem a obstrução. CI não é para todos os pacientes com DPOC.',
+    reference: 'GLOBAL INITIATIVE FOR CHRONIC OBSTRUCTIVE LUNG DISEASE (GOLD) 2020. Disponível em: https://goldcopd.org/wp-content/uploads/2019/12/GOLD-2020-FINAL-ver1.2-03Dec19_WMV.pdf',
+    tags: ['pneumologia', 'DPOC']
+  },
+  {
+    id: 'tp2020-44',
+    module: 'Clínica Médica',
+    text: 'J.A., sexo feminino, 35 anos, refere que há 2 meses sente tremores diários, batedeira, insônia, e que perdeu 6kg neste período, mesmo se alimentando normalmente. Ao exame físico, a paciente apresenta tremores finos de extremidades; FC = 120 bpm em repouso, PA = 140 x 90 mmHg. À palpação, apresenta aumento da tireoide em cerca de 3 vezes, sem nódulos palpáveis. Traz os exames laboratoriais: TSH = 0,02 mUI/L (VR: 0,5 - 4,2 mUI/L); T4 livre = 2,7 ng/dL (VR: 0,8 - 1,9 ng/dL); hemograma e transaminases normais.\n\nO diagnóstico é:',
+    options: [
+      '(A) Tireoidite subaguda linfocítica, e a paciente deve iniciar uso de droga antitireoidiana e beta-bloqueadores para alívio dos sintomas adrenérgicos.',
+      '(B) Hipotireoidismo, e a paciente deve iniciar reposição de levotiroxina 1,6 mcg/kg/dia.',
+      '(C) Tireoidite viral, e a paciente deve iniciar uso de anti-inflamatórios e beta-bloqueadores para alívio dos sintomas adrenérgicos.',
+      '(D) Doença de Graves, e a paciente deve iniciar uso de droga antitireoidiana e beta-bloqueadores para alívio dos sintomas adrenérgicos.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Tireotoxicose (TSH suprimido e T4 livre elevado) em mulher jovem, com bócio difuso e sintomas há 2 meses: doença de Graves.\n\nO tratamento inicial é a droga antitireoidiana (metimazol) associada a betabloqueador para os sintomas adrenérgicos.',
+    commentary: 'Tireoidites (subaguda ou viral) cursam com captação baixa e não se tratam com antitireoidianos. O perfil laboratorial não é de hipotireoidismo.',
+    reference: 'Vilar, L; Endocrinologia Clínica, 6ª ed, 2016; capítulo30 - Diagnóstico e Tratamento da Doença de Graves.',
+    tags: ['endocrinologia', 'tireoide', 'doença de graves']
+  },
+  {
+    id: 'tp2020-45',
+    module: 'Clínica Médica',
+    text: 'Paciente de 30 anos, sexo masculino, previamente hígido, apresentou quadro agudo de febre, mal-estar, linfonodomegalia cervical e lesões máculo-papulares pelo corpo, não pruriginosas, acometendo palmas das mãos e plantas dos pés. Refere relações sexuais desprotegidas. Foi realizado teste treponêmico: reagente, e teste não-treponêmico: reagente (VDRL 1/96).\n\nDefina o diagnóstico e o tratamento:',
+    options: [
+      '(A) Trata-se de um caso de sífilis primária. As lesões de pele são chamadas de cancro duro e regridem espontaneamente, sem necessidade de antibioticoterapia.',
+      '(B) O quadro clínico, associado a um teste treponêmico e VDRL reagentes, confirma o diagnóstico de sífilis secundária. Deve ser tratada com penicilina benzatina.',
+      '(C) Um teste treponêmico e não-treponêmico positivos, associados ao quadro clínico, indicam diagnóstico de sífilis latente tardia. Este caso deve ser tratado com cefalosporina de terceira geração.',
+      '(D) A sorologia, neste caso, apenas demonstra que o paciente teve sífilis previamente (cicatriz sorológica), sendo necessário, portanto, investigar outras hipóteses diagnósticas para este caso.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Febre, mal-estar, linfadenopatia e exantema maculopapular com acometimento palmoplantar após exposição sexual, com testes treponêmico e não treponêmico reagentes: sífilis secundária.\n\nO tratamento é penicilina benzatina 2,4 milhões UI IM em dose única.',
+    commentary: 'O cancro duro é a lesão genital da sífilis primária. A sífilis latente tardia é assintomática. Testes reagentes com títulos altos e clínica exuberante não são cicatriz sorológica.',
+    reference: 'Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST) - Ministério da Saúde (2018).',
+    tags: ['infectologia', 'sífilis', 'IST']
+  },
+  {
+    id: 'tp2020-46',
+    module: 'Clínica Médica',
+    text: 'Jovem de 17 anos refere o aparecimento de manchas roxas nas pernas e bolhas escuras na boca há cerca de 7 dias, além de sangramento nasal espontâneo há algumas horas. Nega patologias prévias ou uso de medicações. Ao exame físico, apresenta-se em bom estado geral, corada e hidratada. Exame pulmonar, cardiovascular e abdominal sem alterações; frequência cardíaca de 66 bpm. Membros inferiores com a presença de petéquias difusas, equimoses em coxa direita e braço esquerdo. Oroscopia evidencia uma bolha hemática em mucosa jugal. Resultado de hemograma realizado no dia anterior: hemoglobina: 12,4 g/dl; leucócitos: 4560/mm³ (diferencial normal); plaquetas: 6.000/mm³.\n\nO diagnóstico e a conduta inicial são:',
+    options: [
+      '(A) Aplasia de Medula. Encaminhar para internação hospitalar para realização de transfusão de concentrado de plaquetas.',
+      '(B) Púrpura Trombocitopênica Idiopática. Encaminhar para internação hospitalar para realização de transfusão de concentrado de plaquetas.',
+      '(C) Púrpura Trombocitopênica Idiopática. Encaminhar para internação hospitalar para realização de pulsoterapia com metilprednisolona.',
+      '(D) Leucemia Aguda. Encaminhar para internação hospitalar para realização de avaliação medular (mielograma, imunofenotipagem).'
+    ],
+    correctAnswer: 2,
+    explanation: 'Plaquetopenia isolada grave (6.000/mm³) em adolescente sem doenças, com hemoglobina e leucócitos normais: púrpura trombocitopênica imune.\n\nCom sangramento mucoso (bolha hemorrágica, epistaxe) e plaquetas < 20.000, está indicada internação e corticoterapia em altas doses (pulsoterapia). A transfusão de plaquetas é reservada a sangramento grave, com risco de vida.',
+    commentary: 'Na aplasia e na leucemia haveria comprometimento das outras séries. A transfusão isolada tem efeito fugaz na PTI, pela destruição imune das plaquetas.',
+    reference: 'Hoffbrand, A.V.; MOSS, P. A. H. Fundamentos em hematologia. 6. Ed. Porto Alegre: Artmed, 2013.',
+    tags: ['hematologia', 'púrpura trombocitopênica imune']
+  },
+  {
+    id: 'tp2020-47',
+    module: 'Clínica Médica',
+    image: '/images/tp2020-47.PNG',
+    text: 'Paciente de 52 anos, sexo masculino, tabagista, obeso, sedentário e portador de dislipidemia, chega ao setor de emergência com queixa de dor precordial em pontada, de forte intensidade e iniciada há poucos instantes, irradiada para a região epigástrica, acompanhada de sudorese fria e vômitos. O eletrocardiograma está representado a seguir:\n\nDetermine a hipótese diagnóstica e as medidas terapêuticas que devem ser tomadas pensando em diminuir a mortalidade da doença:',
+    options: [
+      '(A) Infarto agudo do miocárdio com supradesnivelamento do segmento ST. Realizar sedação, oxigênio, nitrato, AAS, Clopidogrel e encaminhar para sala de hemodinâmica imediatamente.',
+      '(B) Angina instável de alto risco. Realizar sedação, oxigênio, nitrato, AAS, clopidogrel e aguardar resultado de marcadores de necrose miocárdica (MNM) para determinar a conduta.',
+      '(C) Infarto agudo do miocárdio sem supradesnivelamento do segmento ST. Realizar sedação, oxigênio, nitrato, AAS, Clopidogrel e tratamento com trombolítico imediatamente.',
+      '(D) Infarto agudo do miocárdio com supradesnivelamento do segmento ST. Realizar sedação, oxigênio, nitrato sublingual, AAS, Clopidogrel e aguardar resultado de MNM para determinar a conduta.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Dor torácica típica de início recente com ECG mostrando supradesnivelamento do segmento ST: infarto agudo do miocárdio com supra.\n\nA medida que mais reduz a mortalidade é a reperfusão o mais rápido possível — preferencialmente angioplastia primária, encaminhando o paciente imediatamente à hemodinâmica — além de AAS e clopidogrel.',
+    commentary: 'Aguardar marcadores atrasa a reperfusão no IAM com supra. Trombolítico não é indicado no IAM sem supra. Observação: oxigênio é indicado apenas se SatO₂ < 90%.',
+    reference: 'Diretriz da Sociedade Brasileira de Cardiologia sobre Tratamento do Infarto Agudo do Miocárdio com Supradesnível do Segmento ST. Arq Bras Cardiol. 2015; 105(2):1-105.',
+    tags: ['cardiologia', 'infarto agudo do miocárdio']
+  },
+  {
+    id: 'tp2020-48',
+    module: 'Clínica Médica',
+    image: '/images/tp2020-48.PNG',
+    text: 'Paciente de 75 anos sofreu queda da própria altura e apresenta sintomas de confusão mental e dores de cabeça. Realizou tomografia computadorizado do crânio (a seguir).\n\nDetermine o diagnóstico:',
+    options: [
+      '(A) Abscesso cerebral',
+      '(B) Hematoma subdural agudo',
+      '(C) Metástase',
+      '(D) Meningioma'
+    ],
+    correctAnswer: 1,
+    explanation: 'Idoso com queda da própria altura, confusão e cefaleia. A tomografia mostra coleção extra-axial hiperdensa em forma de crescente, com efeito de massa: hematoma subdural agudo, comum em idosos pela atrofia cerebral e tração das veias-ponte.',
+    commentary: 'Abscesso e metástase são lesões intraparenquimatosas com realce anelar. O meningioma é tumor extra-axial de base dural, de crescimento lento.',
+    reference: 'Dewan MC, Rattani A, Gupta S et al.Estimating the global incidence of traumatic brain injury. J Neurosurg 2018:1-18 [Epub ahead of print], Disponível em: https://doi.org/10.3171/2017.10.JNS17352. Google Scholar / Link TW, Boddu S, Paine SM, Kamel H, Knopman J. Middle Meningeal Artery Embolization for Chronic Subdural Hematoma: A Series of 60 Cases. Neurosurgery 2018 Nov 9 [Epub ahead of print], Disponível em: https://doi.org/10.1093/neuros/nyy521. Google Scholar',
+    tags: ['neurologia', 'neurocirurgia', 'trauma']
+  },
+  {
+    id: 'tp2020-49',
+    module: 'Clínica Médica',
+    image: '/images/tp2020-49.PNG',
+    text: 'Homem, 23 anos, com diarreia há 3 meses (6 a 8 episódios por dia, inclusive noturnos), acompanhada de muco e cólicas abdominais, sendo que estas últimas são aliviadas com a evacuação. Refere piora da diarreia com o estresse. Relata emagrecimento não quantificado e fraqueza. Refere fazer uso “recreativo” de drogas (cigarro, maconha, ecstasy e álcool), nega uso de drogas injetáveis. Vida sexual ativa, heterossexual com várias parceiras, sem uso regular de preservativos. Pai falecido aos 48 anos de idade por neoplasia de cólon. Procurou gastroenterologista e foi solicitada uma colonoscopia para melhor elucidação diagnóstica (foto a seguir com a visão do íleo terminal):\n\nCom relação a este quadro, é correto afirmar que:',
+    options: [
+      '(A) Trata-se de diarreia por colite pseudomembranosa, e este paciente se beneficiará com o uso de metronidazol ou vancomicina.',
+      '(B) O diagnóstico mais provável é de síndrome do intestino irritável, devendo ser introduzida dieta e tratamento com antiespasmódicos.',
+      '(C) É necessária a realização de PPD, sorologia para HIV e hepatite virais, albumina sérica, PCR, calprotectina fecal e indicação de terapia biológica.',
+      '(D) É necessária uma dieta com a suspensão da ingestão de glúten e lactose para tratamento de Doença Celíaca.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Diarreia crônica com sintomas noturnos, emagrecimento e colonoscopia com úlceras no íleo terminal sugerem doença de Crohn.\n\nAntes de iniciar terapia biológica (anti-TNF), é necessário rastrear tuberculose latente (PPD), HIV e hepatites virais e avaliar a atividade da doença (albumina, PCR, calprotectina fecal).',
+    commentary: 'Diarreia noturna e emagrecimento são sinais de alarme que afastam intestino irritável. Não há uso de antibióticos sugerindo colite pseudomembranosa. As lesões não são compatíveis com doença celíaca.',
+    reference: 'Tratado de Gastroenterologia da graduação à pós-graduação, 2º edição, São Paulo: Editora Atheneu, 2016.',
+    tags: ['gastroenterologia', 'doença de crohn', 'imunobiológicos']
+  },
+  {
+    id: 'tp2020-50',
+    module: 'Clínica Médica',
+    text: 'Paciente do sexo feminino, 47 anos, realizou glicemia como exame de rotina, com resultado: 220 mg/dL, levando ao diagnóstico de diabetes mellitus. Assintomática, relata apenas preocupação com a glicemia elevada. Antecedentes familiares: pai com diabetes e hipertensão, falecido por Infarto Agudo do Miocárdio. Mãe viva, 74 anos. Irmão de 50 anos, com diabetes. Histórico de vida: consome álcool socialmente; nega tabagismo. Ao exame físico: IMC = 27 kg/m²; cintura abdominal = 94cm; ausculta cardíaca e pulmonar normais; PA = 130 x 75 mmHg; FC = 78 bpm. Abdome globoso com fígado palpável no rebordo costal. Sem edemas. Pés com xerodermia, sem feridas, pulsos adequados; exame do monofilamento normal.\n\nA conduta inicial mais adequada, considerando o ambiente da UBS, é:',
+    options: [
+      '(A) Plano alimentar, atividade física e 2 hipoglicemiantes orais em associação.',
+      '(B) Plano alimentar, atividade física e insulina.',
+      '(C) Plano alimentar, atividade física e um inibidor da SGLT2.',
+      '(D) Plano alimentar, atividade física e o hipoglicemiante oral metformina.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Diabetes tipo 2 recém-diagnosticado, assintomático, com glicemia de 220 mg/dL e sem sinais de descompensação: o tratamento inicial é mudança do estilo de vida associada a metformina.',
+    commentary: 'Terapia dupla e insulina são reservadas a HbA1c muito elevada ou a sintomas de hiperglicemia/catabolismo. O iSGLT2 não é o fármaco inicial de primeira escolha nesse cenário de UBS.',
+    reference: 'Oliveira M., Lyra R., Cavalcanti M. Abordagem geral no tratamento do Diabetes, em: Lyra R. Cavalcanti M: Diabetes Mellitus. 3ª Edição, GEN GRUPO EDITORIAL, Rio de Janeiro, 213-222; 2013. / Coopan R. Abordagem geral ao tratamento do Diabetes Mellitus, em Kahn R, Weir G, King G I, M. Jacobson A M, Moses A C, Smith R J: Joslin’ Diabetes Mellitus, 14ª Edição, Art Med, Porto Alegre: 599-608, 2008. / Jin HY, Lee KA, Park TS. The impact of glycemic variability on diabetic peripheral neuropathy. Endocrine. Sep;53(3):643-8; 2016. / Rosenstock J, et Al. Dual Add-on Therapy in Type 2 Diabetes Poorly Controlled with Metformin Monotherapy: A Randomized Double-Blind Trial of Saxagliptin Plus Dapagliflozin Addition Versus Single Addition of Saxagliptin or Dapagliflozin to Metformin. Diabetes Care; 38:376–83; 2015. / Garber AJ, et Al. Consensus Statement by The American Association of Clinical Endocrinologists and American College of Endocrinology on The Comprehensive T2DM Management Algorithm – 2017. / Ferrannini E et al. Dapagliflozin Monotherapy in Type 2 Diabetic Patients with Inadequate Glycemic Control by Diet and Exercise. Diabetes Care; 33(10):2217–2224; 2010. / Jahagirdar V et al. Empaglifozin for the treatment of Type 2 Diabetes. Expert Opinion on Pharmacotherapy; 15 :2419-2441. 2014.',
+    tags: ['endocrinologia', 'diabetes', 'atenção primária']
+  },
+  {
+    id: 'tp2020-51',
+    module: 'Clínica Médica',
+    image: '/images/tp2020-51.PNG',
+    text: 'PCR, 65 anos, portador de hipertensão arterial sistêmica e insuficiência cardíaca congestiva, faz uso de AAS, carvedilol 6,25 mg/dia, losartana 100 mg/dia e hidroclorotiazida 25 mg/dia. Tem edema de membros inferiores recorrente, porém há cerca de 3 dias apresentou lesão avermelhada acompanhada de dor para caminhar no membro inferior esquerdo, acompanhado de febre e calafrios. Ao exame físico, o paciente apresenta-se toxemiado, com temperatura de 38,2°C. Verifica-se lesão eritematosa com bordas bem demarcadas, conforme a figura, acompanhada de adenite regional.\n\nO diagnóstico, o agente etiológico e a conduta terapêutica são:',
+    options: [
+      '(A) Celulite devido a Staphylococcus aureus. O tratamento indicado é internação, Penicilina G Cristalina na dose de 5 a 10 milhões de unidades por via intravenosa ou intramuscular por 7 a 10 dias, manter elevação do membro afetado. É importante recomendar repouso prolongado após a alta e usar meias elásticas para não promover estase venosa no membro afetado.',
+      '(B) Erisipela devido a Estreptococo β-hemolítico. O tratamento indicado é internação, uso de Penicilina G Cristalina na dose de 5 a 10 milhões de unidades por via intravenosa ou intramuscular por 7 a 10 dias, manter elevação do membro afetado. Após a fase aguda, para prevenir recaída, evitar ficar em pé e deambular o máximo possível para evitar a recaída.',
+      '(C) Erisipela devido a Staphylococcus aureus. O tratamento indicado é azitromicina 500mg via oral por 3 dias em regime de ambulatório. Deve deambular o máximo possível e evitar o uso de meias elásticas no membro afetado para não promover microlesões na pele e oferecer porta de entrada para microorganismos.',
+      '(D) Celulite devido a Staphylococcus aureus. O tratamento indicado é internação, Penicilina G Cristalina na dose de 5 a 10 milhões de unidades por via intravenosa ou intramuscular por 7 a 10 dias, manter elevação do membro afetado. Após a fase aguda, recomendar evitar ficar em pé e deambular o máximo possível para evitar a recaída.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Placa eritematosa de bordas bem delimitadas e elevadas, com bolhas, febre e adenite, em membro com edema crônico: erisipela, causada principalmente por estreptococo β-hemolítico do grupo A.\n\nCom toxemia, indica-se internação, penicilina cristalina IV e elevação do membro.',
+    commentary: 'A celulite tem bordas mal definidas e acomete planos mais profundos. Azitromicina oral não é adequada para paciente toxemiado. Observação: a orientação da alternativa oficial (\'evitar ficar em pé e deambular o máximo possível\') é ambígua; o objetivo é reduzir a estase venosa.',
+    reference: 'Dermatologia - Sampaio E Rivitti, 4ª Edicão, Editora Artes Médicas. Capítulo 37, páginas: 616-617.',
+    tags: ['dermatologia', 'infectologia', 'erisipela']
+  },
+  {
+    id: 'tp2020-52',
+    module: 'Clínica Médica',
+    text: 'CAS, 15 anos, sexo masculino, iniciou subitamente quadro de febre, prostração, mialgia e exantema. Feito o diagnóstico de "dengue clássica", apresentou boa recuperação em alguns dias. Permaneceu assintomático até que, após 15 dias, passou a apresentar crises convulsivas, alteração do nível de consciência e parestesia ascendente com perda de força muscular de membros inferiores.\n\nIdentifique a afirmativa correta sobre o caso:',
+    options: [
+      '(A) Dentre os distúrbios pós-dengue são relatados epilepsia, tremores, amnésia, demência, psicose maníaca, paralisia de Bell, envolvimento de laringe, paralisia de extremidades inferiores, de palato, de nervo ulnar, de nervo torácico longo, de nervo peroneal, síndrome de Reye, síndrome de Guillain-Barré, meningoencefalomielite e mononeuropatias.',
+      '(B) A infecção do sistema nervoso central (SNC) pela dengue requer o conhecimento das três hipóteses de infecção viral sistêmica: a teoria da infecção sequencial, desenvolvida por Halstead; a teoria de hiperendemicidade de Rosen e a ocorrência de recombinação gênica, resultante de infecções simultâneas por sorotipos virais diferentes no hospedeiro humano, mas não no vetor.',
+      '(C) A partir da constatação de que os pacientes tinham história clínica compatível com dengue, devem ser solicitadas as tipagens virais apenas no líquor, cujos resultados confirmaram a hipótese diagnóstica.',
+      '(D) Infecções por dengue em indivíduos que já tiveram contato com outros sorotipos do vírus ou mesmo com outros flavivírus (como os vacinados contra a febre amarela), podem alterar o perfil da resposta imune, que passa a ser do tipo anamnésico ou de infecção secundária (reinfecção), com baixa produção de IgG e resposta aumentada precoce de IgM.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Manifestações neurológicas após dengue (encefalite, convulsões, síndrome de Guillain-Barré) são complicações descritas, e a alternativa A lista o amplo espectro de distúrbios neurológicos relatados após a doença.',
+    commentary: 'A recombinação ocorre no hospedeiro e no vetor. A pesquisa viral deve ser feita no soro e no líquor. Na infecção secundária, há resposta precoce e intensa de IgG, com IgM baixa.',
+    reference: 'Rosen L. Dengue hemorrhagic fever. Bull Soc Pathol Exot 1998;89:1-3. / Shepherd S, Hinfey P, Shoff WH. Dengue fever. Med J 2002;3:1-20. / Ferreira M. Brito L., Cavalcanti C. G., Coelho C. A., Mesquita S. D. Manifestação neurológicas de dengue. Estudos de 41 casos. Arq Neuropsiquiatr 2005;63(2-B):488-493.',
+    tags: ['infectologia', 'dengue', 'neurologia']
+  },
+  {
+    id: 'tp2020-53',
+    module: 'Clínica Médica',
+    text: 'Paciente de 34 anos com quadro súbito de cefaleia excruciante, holocraniana, ao realizar levantamento de peso na academia. Evoluiu com crise convulsiva tônico-clônica generalizada e liberação esfincteriana. À entrada no Pronto-Socorro, observou-se anisocoria, rigidez de nuca, ptose palpebral e estrabismo divergente. Sem comorbidades prévias.\n\nDetermine o provável diagnóstico e a lesão correspondente:',
+    options: [
+      '(A) Tumor cerebral (transformação hemorrágica) associado a herniação uncal e compressão do nervo abducente.',
+      '(B) Acidente vascular isquêmico evoluindo com hipertensão intracraniana e lesão do nervo abducente.',
+      '(C) Acidente vascular hemorrágico evoluindo com hipertensão intracraniana e compressão do nervo oculomotor.',
+      '(D) Esclerose múltipla em evolução justificando lesão de pares cranianos e crise convulsiva causada pela desmielinização neuronal.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Cefaleia súbita e excruciante durante esforço, convulsão e rigidez de nuca: hemorragia subaracnoide, provavelmente por rotura de aneurisma da artéria comunicante posterior.\n\nO aneurisma comprime o nervo oculomotor (III par), causando ptose, midríase (anisocoria) e estrabismo divergente.',
+    commentary: 'O nervo abducente (VI) causaria estrabismo convergente, sem ptose. O AVC isquêmico não causa cefaleia ictal com meningismo. A esclerose múltipla não explica o quadro súbito.',
+    reference: 'Rouanet Carolina, Silva Gisele Sampaio. Aneurysmal subarachnoid hemorrhage: current concepts and updates. Arq. Neuro-Psiquiatr. 2019 Nov [cited 2020 May 18]; 77(11): 806-814. Disponível em: http://dx.doi.org/10.1590/0004-282x20190112.',
+    tags: ['neurologia', 'hemorragia subaracnoide']
+  },
+  {
+    id: 'tp2020-54',
+    module: 'Clínica Médica',
+    text: 'R.L.N., sexo masculino, 22 anos, vegano há aproximadamente 3 anos, sem suplementação alimentar, com queixa de fraqueza, parestesias e hipoestesia nos membros inferiores. Ao exame físico, apresenta-se descorado 2+/4+, sem outras alterações. Realizou hemograma: Hb: 9,2 g/dL; Ht: 28%; VCM: 100fL; RDW: 16%; Leucócitos: 8.300/mm³ com diferencial normal. Plaquetas: 214.000/mm³; DHL: 1.500 U/L.\n\nDetermine a causa da anemia e do quadro clínico do paciente:',
+    options: [
+      '(A) Anemia megaloblástica, deficiência de vitamina B12.',
+      '(B) Anemia megaloblástica, deficiência de ácido fólico.',
+      '(C) Anemia falciforme, microinfartos em circulação de membro inferior.',
+      '(D) Anemia hemolítica autoimune pelo aumento do DHL.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Vegano sem suplementação, com anemia macrocítica, DHL elevada (eritropoiese ineficaz) e parestesias/hipoestesia em membros inferiores (lesão de cordões posteriores — degeneração combinada subaguda): deficiência de vitamina B12.',
+    commentary: 'A deficiência de folato causa anemia megaloblástica sem alterações neurológicas, e é improvável em vegano. Não há dados de anemia falciforme. A DHL alta reflete hemólise intramedular, não autoimune.',
+    reference: 'ZAGO, Marco Antônio; FALCÃO, Roberto Passetto; PASQUINI, Ricardo. Tratado de hematologia. São Paulo: Atheneu, 2013.',
+    tags: ['hematologia', 'anemia megaloblástica', 'neurologia']
+  },
+  {
+    id: 'tp2020-55',
+    module: 'Clínica Médica',
+    text: 'Paciente masculino, 60 anos, procura atendimento por ter despertado durante a madrugada com dor intensa no hálux direito acompanhado de rubor e inchaço local. Relata dificuldade para a deambulação porque os sintomas estão intensos. Refere ser hipertenso em uso de hidroclorotiazida e ter colesterol alto. Tem como hábitos alimentação rica em carne vermelha e ingesta de bebidas alcoólicas, em média duas cervejas ao dia. Nega outros sintomas associados.\n\nIdentifique a afirmativa correta em relação ao quadro:',
+    options: [
+      '(A) As provas inflamatórias como velocidade de hemossedimentação e proteína C reativa normais afastam o diagnóstico de Gota.',
+      '(B) A confirmação de hiperuricemia confirma o diagnóstico de Gota.',
+      '(C) Os achados de articulação inflamada observados na radiografia permitem a realização do diagnóstico.',
+      '(D) Os achados de cristais em formato de agulha, especialmente se fagocitados pelos leucócitos, são considerados patognomônicos da Gota.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Monoartrite aguda do hálux (podagra) em homem com hiperuricemia, uso de tiazídico e consumo de álcool e carne vermelha: crise de gota.\n\nO diagnóstico definitivo é a identificação de cristais de monourato de sódio em forma de agulha, com birrefringência negativa, sobretudo quando fagocitados por leucócitos.',
+    commentary: 'Provas inflamatórias normais não afastam gota. A hiperuricemia isolada não confirma o diagnóstico (o ácido úrico pode estar normal na crise). As alterações radiográficas surgem tardiamente.',
+    reference: 'H. Ralph Schumacher, Lan X. Chen. Medicina Interna de Harrison, Reumatologia 18a Edição. Editora AMGH, 2014; páginas 188-190. / Castelar G, Livro da Sociedade Brasileira de Reumatologia, Editor José Tupinambá Sousa Vasconcelos. Editora Manole, 2019; páginas 377-380.',
+    tags: ['reumatologia', 'gota']
+  },
+  {
+    id: 'tp2020-56',
+    module: 'Clínica Médica',
+    text: 'Paciente do sexo feminino, 35 anos, comparece em Estratégia Saúde da Família com queixa de cefaleia e turvação visual, associadas a fraqueza e episódios de formigamento e câimbras nas pernas, com 6 semanas de evolução e piora progressiva nos últimos 5 dias. Nega histórico patológico pessoal e informa antecedente familiar de hipertensão arterial. Ao exame físico, verificam-se: PA: 190 x 110 mmHg, FC: 74 bpm; ausculta cardiopulmonar sem alterações. Traz exames recentes: potássio: 2,4 mmol/L (valor de referência: 3,5 - 5,1 mmol/L) e sódio: 152 mmol/L (valor de referência: 135 - 148 mmol/L).\n\nConsiderando a principal hipótese diagnóstica, identifique os exames complementares pertinentes:',
+    options: [
+      '(A) TSH e T4 Livre',
+      '(B) Cortisol e ACTH (hormônio adrenocorticotrófico)',
+      '(C) Metanefrinas Urinárias e Plasmáticas',
+      '(D) Renina e Aldosterona'
+    ],
+    correctAnswer: 3,
+    explanation: 'Hipertensão grave em mulher jovem com hipocalemia espontânea e hipernatremia: a principal hipótese é hiperaldosteronismo primário.\n\nO rastreamento é feito com a relação aldosterona/renina (aldosterona alta e renina suprimida).',
+    commentary: 'TSH/T4 investigam hipertireoidismo, cortisol/ACTH a síndrome de Cushing e metanefrinas o feocromocitoma — nenhum explica a hipocalemia com hipernatremia tão bem.',
+    reference: 'Malachias MVB, Souza WKSB, Plavnik FL, Rodrigues CIS, Brandão AA, Neves MFT, et al. 7ª Diretriz Brasileira de Hipertensão Arterial. Arq Bras Cardiol 2016; 107(3Supl.3):1-83. Magalhães CC et al. Tratado de Cardiologia SOCESP. 3. Ed. Barueri/SP: Manole, 2015.',
+    tags: ['endocrinologia', 'hipertensão secundária', 'hiperaldosteronismo']
+  },
+  {
+    id: 'tp2020-57',
+    module: 'Clínica Médica',
+    text: 'Paciente masculino, 29 anos, branco, vem à consulta com quadro de fraqueza, emagrecimento progressivo e “pressão baixa”. Refere ser portador de HIV e ter feito tratamento de tuberculose no passado. Ao exame apresenta-se em regular estado geral, desidratado +/4+, afebril. PA: 110 x 80 mmHg (deitado) e 90 x 60 mmHg (em pé). Apresenta escurecimento da pele em região axilar e região posterior do pescoço, bem como de mucosa oral.\n\nDetermine o diagnóstico e a conduta:',
+    options: [
+      '(A) Insuficiência adrenal secundária à tuberculose de região selar, e deverá realizar-se uma ressonância magnética de sela túrcica.',
+      '(B) Insuficiência adrenal primária, e deve-se realizar a dosagem de ACTH, que deverá estar diminuído para a confirmação do diagnóstico.',
+      '(C) Doença de Addison, e o primeiro teste a ser solicitado para estes pacientes é a dosagem do cortisol basal às 8 horas.',
+      '(D) Hipercortisolismo, e deve ser submetido ao teste de cortrosina para a confirmação do diagnóstico.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Fraqueza, emagrecimento, hipotensão postural e hiperpigmentação de pele e mucosas em paciente com HIV e tuberculose prévia (causas de destruição adrenal): insuficiência adrenal primária (doença de Addison).\n\nO primeiro exame é o cortisol basal às 8 horas.',
+    commentary: 'A hiperpigmentação indica ACTH elevado, o que afasta causa secundária (selar). Na insuficiência primária o ACTH está aumentado, não diminuído. Não há hipercortisolismo.',
+    reference: 'O essencial em endocrinologia. Patrícia Sales, Alfredo Halpern, Cintia Cercato. – 1ª Edição, Editora Guanabara, 2016.',
+    tags: ['endocrinologia', 'insuficiência adrenal']
+  },
+  {
+    id: 'tp2020-58',
+    module: 'Clínica Médica',
+    text: 'Maria, 50 anos, doméstica, em acompanhamento há um ano (na ocasião com creatinina sérica: 1,8 mg/dL e ritmo de filtração glomerular estimado de 37 mL/minuto). Informa que não consegue manter a adesão à dieta porque come no emprego e seus patrões gostam de massas, frituras e todos os dias faz e come sobremesas variadas. Nos últimos dias, percebeu sua urina espumosa e em menor quantidade, fraqueza, seus pés não estão cabendo nos sapatos e até seus olhos estão inchados. Nesta noite, procurou o Pronto Atendimento com queixas de náuseas, falta de ar, palidez cutânea e edema generalizado. Realizados exames: Creatinina sérica: 5,4 mg/dL (a última era 2,4 mg/dL); Albumina sérica: 2,1 g/dL; Hb: 8 mg/dL e Hematócrito: 25%; Urina I: proteinúria 4+ (quantificada em 5,0g / 24 horas); leucocitúria: 24.000/mL, hemácias: 5.000/mL.\n\nCom relação aos achados diagnósticos de Dona Maria, é possível afirmar:',
+    options: [
+      '(A) A presença de leucocitúria é diagnóstica de infecção do trato urinário.',
+      '(B) O estágio de doença renal crônica da paciente era IIIb quando foi encaminhada para o especialista.',
+      '(C) A causa da hipoalbuminemia é a doença hepática gordurosa não alcoólica que acompanha a Síndrome Metabólica.',
+      '(D) A doença renal do diabetes costuma cursar com Síndrome Nefrótica e componente nefrítico.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Com TFG de 37 mL/min, a paciente estava no estágio G3b da doença renal crônica (30–44 mL/min) quando foi encaminhada.',
+    commentary: 'Leucocitúria sugere, mas não confirma, ITU (exige urocultura). A hipoalbuminemia decorre da proteinúria nefrótica (> 3,5 g/24h), não de doença hepática. A doença renal do diabetes cursa com proteinúria, tipicamente sem componente nefrítico.',
+    reference: 'Princípios de Nefrologia e Distúrbios Hidreletrolíticos. Miguel Carlos Riella. Editora Guanabara Koogan. 2018.',
+    tags: ['nefrologia', 'doença renal crônica']
+  },
+  {
+    id: 'tp2020-59',
+    module: 'Clínica Médica',
+    image: '/images/tp2020-59.PNG',
+    text: 'Observe atentamente a descrição dos sintomas de dois pacientes distintos:\n\nPaciente I: jovem, sexo masculino, há 4 dias com quadro de tosse inicialmente seca, que evoluiu para expectoração com secreção amarelada espessa e presença de laivos de sangue, associado a febre alta e discreta dor ventilatório-dependente dorsal à direita.\n\nPaciente II: idoso, tabagista, com perda de peso de 7kg em 2 meses, associada a tosse seca, dispneia aos grandes esforços e dor torácica ventilatório dependente em base direita. Verifique as imagens radiográficas a seguir (figuras A e B):\n\nCorrelacione os achados clínicos e radiológicos e selecione a afirmativa correta:',
+    options: [
+      '(A) A descrição de sintomas “II” associado ao radiograma “B” permite inferir um diagnóstico sindrômico de Derrame Pleural. Os sinais esperados no exame físico seriam na base direita: a palpação com diminuição da expansibilidade e do frêmito toraco vocal, percussão maciça e diminuição ou abolição da ausculta de murmúrio vesicular.',
+      '(B) A descrição de sintomas “I” associado ao radiograma “A” permite inferir um diagnóstico sindrômico de Consolidação Pulmonar com provável diagnóstico etiológico de Pneumonia. Os sinais esperados no exame físico seriam na base direita: palpação com diminuição da expansibilidade e do frêmito toraco vocal, percussão maciça e presença de estertores crepitantes na ausculta.',
+      '(C) A descrição de sintomas “I” associado ao radiograma “A” permite inferir um diagnóstico sindrômico de Tromboembolismo Pulmonar com consequente infarto do parênquima pulmonar. Os sinais esperados no exame físico seriam na base direita: palpação com diminuição da expansibilidade e aumento do fremito toracovocal, percussão timpânica e estertores crepitantes na ausculta.',
+      '(D) A descrição de sintomas “II” associado ao radiograma “A” permite inferir um diagnóstico sindrômico de Consolidação Pulmonar com provável diagnóstico etiológico de Pneumonia. Os sinais esperados no exame físico seriam na base direita: palpação com diminuição da expansibilidade e diminuição do frêmito toraco vocal, percussão maciça e estertores crepitantes na ausculta.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Paciente II (idoso, tabagista, emagrecido, dor pleurítica e dispneia) com a radiografia B, que mostra velamento da base direita com parábola de Damoiseau: derrame pleural.\n\nNo exame físico esperam-se, na base direita, expansibilidade e frêmito toracovocal diminuídos, macicez à percussão e murmúrio vesicular diminuído ou abolido.',
+    commentary: 'Na consolidação (paciente I), o frêmito toracovocal está aumentado, e não diminuído — por isso a alternativa B está errada. A radiografia A não mostra infarto pulmonar.',
+    reference: 'Atualização e reciclagem – Pneumologia. SPPT, 2008, 7ª Edição. Editora Roca. / Condutas em Pneumologia. Luis Carlos Corrêa, 2002, 1ª Edição. Editora Revinter.',
+    tags: ['pneumologia', 'semiologia', 'derrame pleural']
+  },
+  {
+    id: 'tp2020-60',
+    module: 'Clínica Médica',
+    text: 'Mulher, 35 anos, em tratamento de Artrite Reumatoide (AR) com metotrexato + anti-TNF. Clinicamente, a patologia inflamatória (AR) está em remissão, sem uso de corticoterapia há anos. Queixa-se de calafrios noturnos, emagrecimento e tosse há 3 meses. A radiografia de tórax mostra um infiltrado no ápice pulmonar direito.\n\nDefina a complicação demonstrada:',
+    options: [
+      '(A) Neoplasia pulmonar',
+      '(B) Tuberculose pulmonar',
+      '(C) Sarcoidose',
+      '(D) Acometimento pulmonar da AR'
+    ],
+    correctAnswer: 1,
+    explanation: 'Paciente em uso de anti-TNF e metotrexato com febre noturna, emagrecimento, tosse por 3 meses e infiltrado apical: tuberculose pulmonar, complicação classicamente associada ao bloqueio do TNF (essencial para a formação e manutenção do granuloma).',
+    commentary: 'Neoplasia, sarcoidose e acometimento pulmonar da AR são diferenciais, mas o contexto de imunobiológico e o quadro consumptivo com lesão apical apontam para tuberculose.',
+    reference: 'Treatment of rheumatoid arthritis with tumor necrosis factor inhibitors may predispose to significant increase in tuberculosis risk: a multicenter active-surveillance report. Arthritis Rheum. 2003 Aug; 48(8): 2122-7. doi: 10.1002/art.11137. / Tuberculosis and biologics in rheumatology: A special situation. Int J Rheum Dis. 2017 Oct; 20(10): 1313-1325. doi: 10.1111/1756-185X.13129. / Tuberculosis risk and anti-tumour necrosis factor agents in rheumatoid arthritis: a critical appraisal of national registry data. Int J Rheum Dis. 2014 Sep; 17(7):716-24. doi: 10.1111/1756-185X.12375. / The Risk of Tuberculosis in Patients with Rheumatoid Arthritis Treated with Tumor Necrosis Factor-α Antagonist: A Metaanalysis of Both Randomized Controlled Trials and Registry/Cohort Studies. J Rheumatol. 2015 Dec;42(12):2229-37. doi: 10.3899/jrheum.150057. Epub 2015 Oct 15.',
+    tags: ['pneumologia', 'tuberculose', 'imunobiológicos']
   }
 ];

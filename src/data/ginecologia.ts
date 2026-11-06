@@ -2250,5 +2250,328 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
     commentary: 'A colposcopia imediata é para lesões de alto grau. Observação: com a nova diretriz de rastreamento por DNA-HPV (INCA, 2024), a conduta passa a depender do resultado do teste de HPV nos locais que já a adotaram.',
     reference: 'Diretrizes brasileiras para o rastreamento do câncer do colo do útero / Instituto Nacional de Câncer. Coordenação Geral de Ações Estratégicas. Divisão de Apoio à Rede de Atenção Oncológica. – Rio de Janeiro: INCA, 2011. ISBN 978-85-7318-184-5',
     tags: ['ginecologia', 'rastreamento', 'câncer de colo uterino']
+  },
+  // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
+  {
+    id: 'tp2020-81',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Nas pacientes com massas anexiais é de suma importância a diferenciação entre as de etiologia benigna e maligna.\n\nNo exame ultrassonográfico de abordagem transvaginal, são fatores sugestivos de malignidade:',
+    options: [
+      '(A) Septos finos, conteúdo sem debris e sem áreas sólidas.',
+      '(B) Paredes e septos irregulares e grossos, projeções papilares e áreas sólidas.',
+      '(C) Ausência de fluxo ao Doppler, uniloculados, presença de sombra acústica.',
+      '(D) Tamanho menor que 100mm, ausência de septos, ausência de projeções papilares.'
+    ],
+    correctAnswer: 1,
+    explanation: 'São sinais ultrassonográficos de malignidade em massas anexiais: paredes e septos grossos e irregulares, projeções papilares, componentes sólidos e vascularização interna ao Doppler (critérios IOTA).',
+    commentary: 'Septos finos, conteúdo anecoico, ausência de fluxo, cisto unilocular e sombra acústica são características de benignidade.',
+    reference: 'Improving strategies for diagnosing ovarian cancer: a summary of the International Ovarian Tumor Analysis (IOTA) studies. Ultrasound Obstet Gynecol 2013; 41: 9-20. / Tratado de Ginecologia FEBRASGO 2019.',
+    tags: ['ginecologia', 'massas anexiais']
+  },
+  {
+    id: 'tp2020-82',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'A contracepção de longa duração (LARC – long-acting reversible contraception) que envolve implantes subdérmicos, DIU de cobre e SIU com levonorgestrel, são ultimamente recomendados pela OMS para mulheres mais jovens, devido maior falha dos métodos tradicionais, como ocorre com os contraceptivos hormonais orais quando usados nessa faixa etária, levando assim ao risco de gravidez indesejada.\n\nSobre os LARC, qual a alternativa correta dentre as abaixo relacionadas?',
+    options: [
+      '(A) O DIU de cobre pode ser inserido no intraparto, entretanto apresenta risco maior para expulsão, logo o ideal é ser inserido no 4º dia de puerpério.',
+      '(B) O uso de DIU ou SIU em adolescentes propicia maior risco de doença inflamatória pélvica, portanto seu uso será restrito para aquelas com relacionamento estável.',
+      '(C) O DIU de cobre e o SIU com levonorgestrel podem ser utilizados em mulheres nulíparas que desejam contracepção.',
+      '(D) O implante subdérmico com etonogestrel não deve ser indicado nas pacientes com história de cisto mamário.'
+    ],
+    correctAnswer: 2,
+    explanation: 'O DIU de cobre e o SIU de levonorgestrel podem ser usados por nulíparas e adolescentes (critérios de elegibilidade da OMS, categoria 2), com acompanhamento pelo maior risco de expulsão.',
+    commentary: 'O DIU pode ser inserido até 48 horas pós-parto ou após 4 semanas, não no 4º dia. O risco de DIP é maior apenas no momento da inserção, sem restrição a relacionamento estável. Cisto mamário não contraindica o implante.',
+    reference: 'Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Tratado de ginecologia. Rio de Janeiro: Revinter; 2000. / HOFFMAN, Barbara L. et al. Ginecologia de WILLIAMS. 2ª ed. Porto Alegre. Artmed. 2014. / BEREK, Jonathan S. Tratado de Ginecologia Berek & Novak. 14 ed. Rio de Janeiro. Guanabara Koogan. 2008.',
+    tags: ['ginecologia', 'contracepção']
+  },
+  {
+    id: 'tp2020-83',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Menina, 12 anos de idade, procura a Unidade Básica de Saúde acompanhada dos pais para consulta ginecológica de rotina, pois iniciou suas relações sexuais. Durante a consulta os pais apresentam dúvidas sobre a vacinação contra o vírus do HPV.\n\nVocê, conhecendo as recomendações do Ministério da Saúde e os benefícios da vacinação, deve assinalar a alternativa INCORRETA sobre essas orientações:',
+    options: [
+      '(A) Por já ter iniciado as relações sexuais, o esquema de dose recomendado será de dose inicial, seguido de 1º reforço com 2 meses e de 2º reforço após 6 meses.',
+      '(B) A vacina HPV quadrivalente está disponível no Brasil para meninas dos 9 aos 14 anos de idade e para os meninos dos 11 aos 14 anos de idade com esquema vacinal de duas doses.',
+      '(C) A indicação do esquema vacinal na população jovem apresenta melhor eficácia quando aplicada antes do contado com vírus HPV, e a vacinação proporciona níveis de anticorpos muito mais altos que a imunidade natural produzida pela infecção.',
+      '(D) Os efeitos colaterais da vacina HPV incluem predominantemente reações locais, sendo classificada por organizações oficiais de saúde (como a OMS e o Ministério da Saúde) como extremamente segura.'
+    ],
+    correctAnswer: 0,
+    explanation: 'A questão pede a alternativa INCORRETA. Pelo esquema vigente em 2020, meninas de 9 a 14 anos recebiam 2 doses (0 e 6 meses), mesmo já tendo iniciado a vida sexual. O esquema de 3 doses era para imunossuprimidos.\n\nPortanto, a alternativa A (três doses por já ter iniciado relações) é a incorreta.',
+    commentary: 'ATENÇÃO — ESQUEMA ATUALIZADO: desde 2024 o Ministério da Saúde adota a vacina HPV em dose única para a faixa etária de rotina, e a vacina passou a ser oferecida a ambos os sexos dos 9 aos 14 anos. As demais alternativas estavam corretas à época.',
+    reference: 'DE, M. Informe técnico da ampliação da oferta das vacinas papilomavírus humano 6, 11, 16 e 18 (recombinante) – vacina HPV quadrivalente e meningocócica C (conjugada). p. 39, [s.d.] / JOURA, E. A. et al. Human papillomavirus vaccination: The ESGO–EFC position paper of the European society of Gynaecologic Oncology and the European Federation for colposcopy. European Journal of Cancer, v. 116, p. 21–26, 1 jul. 2019.',
+    tags: ['ginecologia', 'imunização', 'HPV']
+  },
+  {
+    id: 'tp2020-84',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Em atendimento na UBS consulta-se mulher de 54 anos, com achado de “caroço” em sua mama esquerda há aproximadamente 1 mês, sem história de trauma, dor ou queixa de sinais flogísticos locais. No histórico ginecológico refere menarca aos 15 anos, teve seu primeiro filho aos 18 anos e todos os 4 filhos nasceram de parto cesariana, tendo amamentado todos por pelo menos 1 ano cada. Faz uso regular de anticoncepcional hormonal oral combinado devido ao medo de nova gravidez, já que no seu último parto o obstetra disse que seu útero estava “fino” e que agora com sua idade sabia que seria uma gestação de risco. Não tem histórico familiar de câncer de mama ou comorbidades. Última mamografia realizada 3 anos atrás, com laudo de BIRADS 0 devido a imagem arredondada de 2cm em QSL de mama esquerda. Ao exame físico nota-se: inspeção estática e dinâmica sem alterações, palpação de cadeias linfonodais sem anormalidades, palpação de nódulo móvel de consistência fibroelástica, indolor, não aderido a planos profundos, com aproximadamente 2cm de diâmetro em QSL de mama esquerda. Expressão mamária negativa. Em dúvida sobre a melhor conduta a ser tomada, você pede a opinião dos colegas do grupo da sala, que fizeram as seguintes considerações:\n\nI. A menarca tardia, juntamente com o histórico gestacional e lactacional desta paciente, são fatores protetores para câncer de mama.\nII. Com uma mamografia BIRADS 0, essa paciente já deveria ter sido submetida a ultrassonografia mamária para complementação diagnóstica.\nIII. O uso do anticoncepcional oral combinado é indispensável nessa situação, mas caso fosse uma terapia de reposição hormonal deveria ser suspensa imediatamente.\nIV. A ultrassonografia de mama com nódulo palpável no mínimo constaria como BIRADS 4, o que obrigaria a confirmação com ressonância magnética.\nV. Por tratar-se de nódulo em QSL, que é uma localidade com pouca ocorrência de lesões malignas, associado ao fato de o nódulo não ter crescido, dispensa qualquer conduta diagnóstica.\n\nAnalisando as afirmativas acima, assinale a alternativa correta:',
+    options: [
+      '(A) I e II estão corretas.',
+      '(B) I e III estão corretas.',
+      '(C) II e IV estão corretas.',
+      '(D) III e V não estão corretas.'
+    ],
+    correctAnswer: 0,
+    explanation: 'I está correta: menarca tardia, gestação precoce e amamentação prolongada são fatores protetores para câncer de mama.\nII está correta: mamografia BI-RADS 0 exige complementação imediata (ultrassonografia, incidências adicionais).\n\nIII está errada (o anticoncepcional combinado não é indispensável). IV está errada (nódulo palpável não é automaticamente BI-RADS 4, e RM não é obrigatória). V está errada (todo nódulo palpável deve ser investigado).',
+    commentary: 'As alternativas que incluem III, IV ou V como corretas estão erradas.',
+    reference: 'Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Tratado de Ginecolo-gia. Rio de Janeiro: Revinter; 2000. p. 927-34. / Freitas Jr R, Soares VF, Melo NF, Andrade ML, Philocreon GR. Fatores determinantes do conhecimento e prática do auto-exame da Mama. Rev Bras Ginecol Obstet.1996; (18): 387-91. / Souen J. Detecção precoce de câncer de mama: experiência pessoal. Rev Bras Ginecol Obstet. 1995; 17(3) :333-9.',
+    tags: ['ginecologia', 'mastologia', 'nódulo mamário']
+  },
+  {
+    id: 'tp2020-85',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Paciente de 41 anos procura atendimento médico com queixa de dor pélvica há mais de seis meses, com piora no período pré-menstrual, acompanhado de dismenorreia intensa que se intensificou nos últimos seis meses. Ela é nuligesta e está sem método contraceptivo há três anos, com desejo de engravidar. Exame físico geral normal, abdome doloroso à palpação de fossa ilíaca direita, sem sinais de irritação peritoneal. Ao exame ginecológico, colo de aspecto epitelizado e conteúdo vaginal normal. Paciente refere dor à palpação de anexos direitos no toque bimanual e dor à mobilização do útero. Anexos esquerdos indolores à palpação. Solicitado ultrassom pélvico transvaginal, que evidenciou cisto de conteúdo espesso em ovário direito de 2,8cm no seu maior diâmetro e nódulo em região de ureter direito, com hidronefrose discreta à direita.\n\nApós a análise do quadro clínico e o ultrassom, assinale a conduta correta entre as alternativas abaixo:',
+    options: [
+      '(A) Progestagênio oral contínuo, repetir ecografia em 6 meses.',
+      '(B) Análogo do GnRh por seis meses e repetir exame de imagem após.',
+      '(C) Ooforoplastia a direita e exérese do nódulo em região de ureter.',
+      '(D) Histerectomia com anexectomia bilateral.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Dor pélvica crônica, dismenorreia progressiva, endometrioma e nódulo de endometriose profunda em ureter com hidronefrose. O comprometimento ureteral com hidronefrose torna a cirurgia mandatória, para preservar o rim.\n\nComo a paciente deseja engravidar, a cirurgia deve ser conservadora: ooforoplastia e exérese do nódulo ureteral.',
+    commentary: 'O tratamento hormonal isolado não resolve a obstrução ureteral e impede a gestação. A histerectomia com anexectomia não respeita o desejo reprodutivo.',
+    reference: 'Clinical diagnosis of endometriosis: a call to action (Sanjay K. Agarwal, et al., 2019). / Chronic Niche Inflammation in Endometriosis-Associated Infertility: Current Understanding and Future Therapeutic Strategies (Yi-Heng Lin et al., 2018). / Endometriosis: diagnosis and management-NICE guideline (2017).',
+    tags: ['ginecologia', 'endometriose']
+  },
+  {
+    id: 'tp2020-86',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Você é o médico da UBS e atendeu a Sra. Maria, de 28 anos, com 2 filhos vivos, e que está acima do peso. Ela compareceu à consulta por ter um corrimento branco em grande quantidade com coceira associada a ardor quando urina. Também refere que esse corrimento piora no período pré-menstrual. Detalha que isso a incomoda há alguns meses e diz que o marido está se queixando de coceira no pênis há 2 dias, após coito vaginal recente.\n\nQual a sua hipótese diagnóstica provável e a conduta correta dentre as abaixo relacionadas?',
+    options: [
+      '(A) Vaginose Bacteriana. Realizar teste das aminas e aferir pH vaginal. Solicitar Microscopia Vaginal. Tratar o casal com Tinidazol em dose única.',
+      '(B) Infecção do Trato Urinário. Confirmar o diagnóstico com fita reagente para uroanálise. Tratar com Cefalexina por 7 dias.',
+      '(C) Tricomoníase genitourinária. Solicitar sorologia específica para T.vaginalis. Tratar com Metronidazol o casal por 7 dias.',
+      '(D) Candidíase vaginal. Realizar teste das aminas e aferir pH vaginal para melhorar a acurácia do diagnóstico. Tratar com Fluconazol em dose única.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Corrimento branco grumoso, prurido e ardor, com piora pré-menstrual e balanite no parceiro: candidíase vulvovaginal. O pH vaginal fica ≤ 4,5 e o teste das aminas é negativo, o que ajuda a diferenciar de vaginose e tricomoníase.\n\nO tratamento é fluconazol 150 mg em dose única. O parceiro sintomático também deve ser tratado.',
+    commentary: 'A vaginose bacteriana cursa com odor fétido e pouco prurido. A tricomoníase tem corrimento amarelo-esverdeado e bolhoso. A ITU não explica o corrimento.',
+    reference: 'Tratado de Ginecologia da FEBRASGO 2019. Cap 23. Vaginites e Vaginoses. / ISBN: 978-85-352-3302-5 e Infecções genitais femininas: Suporte teórico-prático. 2013. Gráfica DGA, UNICAMP. ISBN: 978-85-64762-046.',
+    tags: ['ginecologia', 'vulvovaginites']
+  },
+  {
+    id: 'tp2020-87',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'ANS, 55 anos, procura atendimento na Unidade Básica de Saúde queixando-se de fogachos eventuais de forte intensidade, principalmente no período noturno. Informa que a última menstruação ocorreu há 3 anos. Secundigesta, com dois partos cesárea. Laqueada. Nega patologias de base ou cirurgias prévias. O médico solicita exames de rotina como hemograma, colesterol e frações, triglicerídios, glicose, TSH, urina I. Todos se encontram sem alterações relevantes. A citologia do colo uterino igualmente está sem alterações. O ultrassom endovaginal demonstrou útero em retroversoflexão com volume de 100cm3, endométrio regular com 3mm de espessura, anexos sem alterações. Mamografia classificada como BIRADS categoria 2. A paciente está muito preocupada quanto ao envelhecimento causado pela “menopausa” e solicita a orientação quanto ao uso de terapia hormonal.\n\nA alternativa correta dentre as abaixo relacionadas é:',
+    options: [
+      '(A) Não está indicada a terapia hormonal, uma vez que a categoria da mamografia é Bi-Rads® 2, exigindo primeiro controle com ecografia mamária.',
+      '(B) Não há indicação de terapia hormonal, uma vez que a paciente está fora da janela de oportunidade.',
+      '(C) Indicação da terapia estrogênica exclusiva, por período de 6 meses, reavaliando então a necessidade de manutenção da terapêutica.',
+      '(D) Utilização da terapia estro-progestagênica, uma vez que os exames não demonstram qualquer contraindicação.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Mulher de 55 anos, com menopausa há 3 anos (dentro da janela de oportunidade: menos de 10 anos de menopausa e menos de 60 anos de idade), com fogachos intensos e sem contraindicações. Como tem útero, a terapia indicada é estroprogestativa, para proteger o endométrio.',
+    commentary: 'Mamografia BI-RADS 2 é benigna e não impede a TH. A paciente está dentro da janela. Estrogênio isolado só é indicado para histerectomizadas.',
+    reference: 'Novak & Berek, Tratado de Ginecologia, 15ª edição ed. Guanabara-Koogan.',
+    tags: ['ginecologia', 'climatério', 'terapia hormonal']
+  },
+  {
+    id: 'tp2020-88',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Maria tem 38 anos, é nuligesta, está casada com Joaquim há três anos, com quem teve a sexarca. Durante os dois primeiros anos de relacionamento usou anticoncepcional oral, mas está sem contracepção desde então. O seu esposo tem 2 filhos de outro relacionamento, sendo que o mais novo tem 4 anos. Ela procura atendimento em um consultório de ginecologia de convênio, com desejo de engravidar.\n\nSobre o caso acima, está correto afirmar:',
+    options: [
+      '(A) Na pesquisa básica para infertilidade não será necessário solicitar o espermograma de Joaquim, já que ele tem 2 filhos e, portanto, seria um gasto desnecessário para o convênio médico.',
+      '(B) A reserva ovariana (“pool folicular”) de Maria já perdeu tanto em qualidade quanto em quantidade, a pesquisa básica para infertilidade deve ser iniciada.',
+      '(C) A quantidade de oócitos de Maria está comprometida, mas a qualidade só é afetada após os 40 anos.',
+      '(D) A faixa etária de Maria leva a acreditar que a dificuldade em gestar deve-se à endometriose.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Aos 38 anos, a reserva ovariana já declinou em quantidade e qualidade dos oócitos. Por isso, após 6 meses sem gestar (em mulheres acima de 35 anos), a investigação básica de infertilidade do casal deve ser iniciada.',
+    commentary: 'O espermograma é obrigatório mesmo que o parceiro tenha filhos. A qualidade oocitária cai antes dos 40 anos. A idade não implica endometriose.',
+    reference: 'Ginecologia Hormonal. Tratado de Reprodução Humana SBRH. Badalotti, M; Fernandes, C. E: De Melo, N. R; Amaral, W.N. SBUS, 2013.',
+    tags: ['ginecologia', 'infertilidade']
+  },
+  {
+    id: 'tp2020-89',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Paciente aos 30 anos, hígida e assintomática, realizou Colpocitologia Oncótica (CCO) compatível com “Atipias Glandulares de Significado Indeterminado (AGC)”.\n\nA conduta correta é:',
+    options: [
+      '(A) Repetir CCO em 6 meses.',
+      '(B) Realizar colposcopia.',
+      '(C) Curetagem de canal endocervical.',
+      '(D) Realizar colposcopia e nova CCO com atenção ao canal endocervical.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Atipias glandulares de significado indeterminado (AGC) na citologia exigem colposcopia com nova coleta de citologia, com especial atenção ao canal endocervical. Acima de 35 anos ou com sangramento anormal, avalia-se também o endométrio.',
+    commentary: 'Repetir a citologia em 6 meses é inadequado para AGC. A curetagem isolada não substitui a colposcopia.',
+    reference: 'Martins, Nelson Valente. Patologia do trato genital inferior: diagnóstico e tratamento – 2. Ed. São Paulo, 2014. Pág.: 368-377 / https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/docu ment//diretrizesparaorastreamentodocancerdocolodoutero_20 16_corrigido.pdf',
+    tags: ['ginecologia', 'rastreamento', 'câncer de colo uterino']
+  },
+  {
+    id: 'tp2020-90',
+    module: 'Ginecologia e Obstetrícia',
+    image: '/images/tp2020-90.PNG',
+    text: 'Os números 1, 2, 3 e 4 identificam aleatoriamente hormônios esteroides ovarianos e gonadotrofinas.\n\nBaseado no comportamento dessas linhas ao longo do ciclo, refletidas no esquema abaixo, assinale a alternativa INCORRETA:',
+    options: [
+      '(A) O hormônio assinalado como 4 induz a célula da teca e granulosa a adquirir uma enzima aromatizante que fornece o passo essencial para a produção do hormônio assinalado como 1.',
+      '(B) O aparecimento de receptores para o hormônio assinalado como 2 nos folículos é responsável pela produção do hormônio assinalado como 3.',
+      '(C) O fator endócrino mais importante na fase lútea do ciclo menstrual é o marcante aumento da secreção do hormônio assinalado como 2.',
+      '(D) A seleção de um único folículo (folículo dominante) destinado à ovulação está intimamente relacionado com a sua capacidade para biossíntese do hormônio assinalado como 1.'
+    ],
+    correctAnswer: 2,
+    explanation: 'No esquema: 1 = estradiol, 2 = LH, 3 = progesterona e 4 = FSH. A questão pede a alternativa INCORRETA.\n\nNa fase lútea, o fator endócrino mais importante é o aumento da progesterona (3) produzida pelo corpo lúteo, e não do LH (2). Por isso, a alternativa C é a incorreta.',
+    commentary: 'As demais estão corretas: o FSH induz a aromatase (produção de estradiol); os receptores de LH nas células da granulosa permitem a produção de progesterona; o folículo dominante é o de maior capacidade de produzir estradiol.',
+    reference: 'Ovário - Cap. 4 Ross GT & Schreiber JR In: Endocrinologia Reprodutiva: fisiologia, fisiopatologia e tratamento clínico/ Yen S.S.C. and Jaffer R.B. São Paulo, Editora Roca, 1990.',
+    tags: ['ginecologia', 'fisiologia', 'ciclo menstrual']
+  },
+  {
+    id: 'tp2020-91',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Gestante com 36 anos, II Gesta I Para, compareceu à 1ª. consulta na UBS para acompanhamento pré-natal. A PA era de 120 x 80 mmHg, peso 84kg, estatura 1,65m. Trouxe exames realizados que foram pedidos pela enfermeira na ocasião do agendamento da consulta médica. Entre eles, uma glicemia de jejum de 94 mg/dL.\n\nFrente a essa informação, é correto afirmar que se trata de paciente:',
+    options: [
+      '(A) Com diabetes gestacional.',
+      '(B) De alto risco para diabetes gestacional, pois tem 36 anos e é obesa, devendo fazer TTGO com 100g de dextrosol na 28ª semana.',
+      '(C) De alto risco para diabetes gestacional, pois tem 36 anos e é obesa, devendo fazer TTGO com 75g de dextrosol entre a 24ª e 28ª semanas.',
+      '(D) Sem diagnóstico definido de diabetes, devendo repetir a glicemia de jejum e fazer a hemoglobina glicada com 24 semanas.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Na primeira consulta de pré-natal, glicemia de jejum entre 92 e 125 mg/dL já define diabetes mellitus gestacional, sem necessidade de repetir ou de fazer TOTG.',
+    commentary: 'O TOTG 75 g entre 24 e 28 semanas é indicado quando a glicemia de jejum inicial é < 92 mg/dL. O TOTG de 100 g não é o padrão no Brasil. A HbA1c não é usada para diagnóstico de DMG.',
+    reference: 'https://www.febrasgo.org.br/pt/noticias/item/530-protocolo-febrasgo-para-o-manejo-de-diabetes-gestacional',
+    tags: ['obstetrícia', 'diabetes gestacional']
+  },
+  {
+    id: 'tp2020-92',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'MSC, 32 anos, G2P1 com parto normal anterior, sem comorbidades na gravidez atual, negava qualquer tipo de alergia. Em gestação anterior apresentou colonização anal e vaginal positiva para Streptococcus agalactiae (EGB). Atualmente está com 34 5/7 sem, e apresenta gestação gemelar diamniótica e dicoriônica. Chegou ao plantão com queixa de perda de líquido há dois dias e dores abdominais que se intensificaram há 3 horas. Ao exame: PA: 120/80 mmHg; FC: 76 bpm; AU:40cm; BCF feto 1: 146 bpm e feto 2: 152 bpm; dinâmica uterina de 3 contrações em 10 minutos, de média intensidade e duração de 40 segundos. Ao exame especular, apresentava saída de líquido pelo orifício externo do colo, caracterizando uma rotura prematura de membranas ovulares pré-termo (RPMO-PT). Ao toque, colo dilatado com 5cm, médio, apresentação do feto 1 cefálico. MSC relata que ainda não havia coletado swab para EGB. Exames de vitalidade e ultrassonografia demonstravam boa oxigenação em ambos os fetos e pesos semelhantes.\n\nQual o melhor conjunto de condutas para este caso?',
+    options: [
+      '(A) Administrar antibiótico profilático (penicilina cristalina) para prevenção da sepse neonatal, usar tocolítico (terbutalina) para aumentar o período de latência do parto, porque trata-se de fetos prematuros.',
+      '(B) Administrar antibiótico profilático (penicilina cristalina) para prevenção de sepse neonatal, realizar cesariana por ser gemelar.',
+      '(C) Administrar antibiótico profilático (clindamicina) para prevenção de sepse neonatal e corticoterapia (betametasona 12mg IM) para estimular surfactante pulmonar fetal, manter condução do parto por via vaginal e técnicas de alívio da dor.',
+      '(D) Administrar antibiótico profilático (penicilina cristalina) para prevenção da sepse neonatal, manter assistência ao parto por via vaginal e técnicas de alívio da dor.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Gestação gemelar de 34 semanas e 5 dias, em trabalho de parto ativo (5 cm), com rotura prematura de membranas e EGB desconhecido (e colonização em gestação anterior): profilaxia com penicilina cristalina e assistência ao parto vaginal (primeiro gemelar cefálico), com medidas de alívio da dor.',
+    commentary: 'Tocólise é contraindicada com rotura de membranas e trabalho de parto ativo. Gemelaridade com primeiro feto cefálico não indica cesárea. Clindamicina é reservada a alérgicas, e o corticoide não é indicado após 34 semanas.',
+    reference: 'Naef R W et al. Prematurerupture of membranes at 34 to 37 weeks gestation:Agressive versus conservative management. Am J Obstet Gynecol 2008; 178:126-30. / American College of Obstetricians and Gynecologists. Premature rupture of membranes. ACOG Practice Bulletin. Obstet Gynecol 2013; 122: 918-30. / Galletta MAK. Rotura prematura das membranas ovulares: protocolo clínico. São Paulo: Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO); 2018. (Protocolo FEBRASGO Obstetrícia, no. 30/ Comissão Nacional Especializada em Assistência Pré-Natal).',
+    tags: ['obstetrícia', 'rotura prematura de membranas', 'estreptococo do grupo b']
+  },
+  {
+    id: 'tp2020-93',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Gestante, G2P1, atualmente com 38 semanas e com parto normal anterior. Relata história pregressa de óbito neonatal precoce por sepse. Dá entrada no pronto atendimento com queixa de perda líquida. Sem comorbidades na gestação atual. Realizou 7 consultas no pré-natal de risco habitual, com exames normais, inclusive com coleta de EGB negativa com 35 semanas. Negava alergias. Ao exame físico geral: corada, hidratada, eupneica, sem outros comemorativos ao exame. Ao exame obstétrico apresentava: feto em situação longitudinal e apresentação cefálica, com AU de 36cm, BCF de 140 bpm sem desacelerações. Exame especular com presença de secreção transparente em fundo de saco, com pH 8,0 ao teste da fita. Toque vaginal: colo grosso, posteriorizado com 01 polpa justa.\n\nQual a melhor conduta?',
+    options: [
+      '(A) Internação com início imediato de penicilina cristalina e preparo de colo para interrupção da gestação.',
+      '(B) Alta hospitalar, já que se trata de secreção fisiológica.',
+      '(C) Internação e parto cesáreo imediato, devido ao risco infeccioso.',
+      '(D) Internação e prescrição de penicilina cristalina após 18h de rotura de membranas.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Rotura de membranas a termo com antecedente de filho anterior com sepse neonatal (provável EGB): mesmo com swab negativo, há indicação de profilaxia intraparto com penicilina cristalina. A conduta é internar, iniciar o antibiótico e induzir o parto, com preparo do colo.',
+    commentary: 'Não é secreção fisiológica (pH alcalino de 8). A cesárea não está indicada. Não se deve esperar 18 horas para iniciar a profilaxia nessa situação de risco.',
+    reference: 'Gestação de Alto Risco, manual técnico - Ministério da Saúde - 2012. M. Zugaib; Bittar, R.E; Francisco, R.P.V - Protocolos Assistenciais. 5ª ed, 2015. / Naef R W et al. Prematurerupture of membranes at 34 to 37 weeks gestation:Agressive versus conservative management. Am J Obstet Gynecol 2008; 178:126-30. / American College of Obstetricians and Gynecologists. Premature rupture of membranes. ACOG Practice Bulletin. Obstet Gynecol 2013; 122: 918-30. / Galletta MAK. Rotura prematura das membranas ovulares: protocolo clínico. São Paulo: Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO); 2018. (Protocolo FEBRASGO Obstetrícia, no. 30/ Comissão Nacional Especializada em Assistência Pré-Natal).',
+    tags: ['obstetrícia', 'rotura prematura de membranas']
+  },
+  {
+    id: 'tp2020-94',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'JLS, 28 anos, procura atendimento na Unidade Básica de Saúde. Encontra-se em período de pós-parto normal ocorrido há 45 dias. Relata estar em amamentação exclusiva e que não foi orientada quanto ao método contraceptivo.\n\nEntre os métodos abaixo, qual poderia ser recomendado?',
+    options: [
+      '(A) Uso de contraceptivo hormonal oral combinado de estrogênio e progesterona.',
+      '(B) Utilização de contraceptivo hormonal oral com progesterona.',
+      '(C) Apenas tabelinha é recomendada no puerpério para não influenciar na lactação.',
+      '(D) Injetável mensal combinado.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Puérpera em aleitamento exclusivo: os métodos com estrogênio devem ser evitados nos primeiros 6 meses (redução da produção de leite e risco tromboembólico). Os métodos só de progestagênio são seguros e podem ser usados — pílula de progestagênio, injetável trimestral, implante ou DIU.',
+    commentary: 'Combinados orais e injetáveis mensais contêm estrogênio. A tabelinha não é recomendada no puerpério, pelos ciclos irregulares.',
+    reference: 'Novak & Berek, Tratado de Ginecologia, 15ª edição, Guanabara-Koogan.',
+    tags: ['obstetrícia', 'contracepção', 'puerpério']
+  },
+  {
+    id: 'tp2020-95',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'MML, 20 anos, primigesta com 40 semanas de gravidez, não está fazendo acompanhamento regular de pré-natal. É atendida no ambulatório de gestação de alto risco trazendo exames solicitados em consulta anterior. Os resultados para sífilis são apresentados na seguinte forma: VDRL 1:32 e FTA-Abs positivo. Paciente nega qualquer antecedente de sífilis, tratamentos prévios do casal, presença de lesões vulvares ou outras doenças sexualmente transmissíveis.\n\nA melhor conduta para este caso é:',
+    options: [
+      '(A) Utilizar penicilina benzatina 7.200.000 UI para o casal e, caso o tratamento seja feito até antes do parto, considerar o caso como adequadamente tratado.',
+      '(B) Iniciar tratamento do casal como sífilis de tempo desconhecido com 7.200.000 UI e orientar o serviço de pediatria quando do nascimento, como sífilis não adequadamente tratada.',
+      '(C) Levando-se em conta a idade da paciente, apenas tratamento com penicilina benzatina 2.400.000 UI para o casal, porque provavelmente é um caso de sífilis primária.',
+      '(D) Tratamento com penicilina benzatina 2.400.000 UI para o casal e comunicar o serviço de pediatria quando do nascimento como provável sífilis não adequadamente tratada.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Gestante com VDRL 1:32 e FTA-Abs positivo sem tempo de infecção conhecido: sífilis latente de duração indeterminada, tratada com penicilina benzatina 7,2 milhões UI (3 doses semanais) no casal.\n\nComo o tratamento não será concluído pelo menos 30 dias antes do parto (a gestante está com 40 semanas), a pediatria deve ser informada para conduzir o RN como exposto à sífilis não adequadamente tratada.',
+    commentary: 'Tratamento iniciado tão perto do parto não é considerado adequado. A dose de 2,4 milhões UI é para sífilis recente (primária ou secundária).',
+    reference: 'Zugaib Obstetrícia. Marcelo Zugaib e Rossana Pulcinelli, editora Manole, 3ª edição.',
+    tags: ['obstetrícia', 'sífilis', 'pré-natal']
+  },
+  {
+    id: 'tp2020-96',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'RBS, 29. Anos, IIIGIIPc0A, com dois partos prematuros anteriores em decorrência de mau controle pressórico, é encaminhada de pré-natal de UBS com 33 semanas de gestação e pico pressórico de 170 x 110. Paciente apresentando edema em membros inferiores e queixando-se de cefaleia, escotomas e epigastralgia.\n\nSobre este caso, é correto afirmar que:',
+    options: [
+      '(A) Trata-se de pré-eclâmpsia grave, podendo ser aplicada conduta expectante, com administração de sulfato de magnésio, anti-hipertensivos de ação rápida, corticoide-profilaxia e aguardar o exame de proteinúria de 24hs para definir melhor conduta.',
+      '(B) Trata-se de iminência de eclâmpsia, devendo a gestante ser preparada para interrupção da gestação imediatamente com urgência, com solicitação de exames no período pós-parto. Aplicação de hidralazina imediatamente e administração de sulfato de magnésio antes da resolução, estendendo-se por 24hs.',
+      '(C) Trata-se de iminência de eclâmpsia, sendo necessário administração de sulfato de magnésio, hipotensor de ação rápida e avaliação do quadro materno e fetal com exames laboratoriais e de vitalidade fetal após estabilização, para definir melhor conduta.',
+      '(D) Trata-se de pré-eclâmpsia grave, e após estabilização materna inicial, a gestante deve ser preparada para interrupção da gestação, com manutenção de sulfato de magnésio por 24hs após a resolução por cesariana devido à gravidade da doença.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Gestante de 33 semanas com crise hipertensiva (170 x 110 mmHg), cefaleia, escotomas e epigastralgia: iminência de eclâmpsia.\n\nA conduta é sulfato de magnésio, anti-hipertensivo de ação rápida e, após estabilização, avaliação laboratorial (síndrome HELLP) e da vitalidade fetal para decidir o momento e a via do parto.',
+    commentary: 'Não é necessário aguardar a proteinúria para conduzir. A resolução imediata sem estabilização e avaliação é inadequada. Iminência de eclâmpsia não é só \'pré-eclâmpsia grave\', e cesárea não é obrigatória.',
+    reference: 'Peraçoli JC, Borges VT, Ramos JG, Cavalli RC, Costa SH, Oliveira LG, et al. Pré-eclâmpsia/eclâmpsia. São Paulo: Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO); 2018. (Protocolo FEBRASGO - Obstetrícia, no. 8/ Comissão Nacional Especializada em Hipertensão na Gestação). / American College of Obstetricians and Gynecologists; Task Force on Hypertension in Pregnancy. Hypertension in pregnancy. Report of the American College of Obstetricians and Gynecologists’ Task Force on Hypertension in Pregnancy. Obstet Gynecol. 2013;122(5):1122–31. / Brown MA, Magee LA, Kenny LC, Karumanchi SA, McCarthy FP, Saito S, et al.; International Society for the Study of Hypertension in Pregnancy (ISSHP). Hypertensive Disorders of Pregnancy: ISSHP Classification, Diagnosis, and Management Recommendations for International Practice [Review]. Hypertension. 2018;72(1):24–43. / Committee on Obstetric Practice. Committee Opinion No. 692: Emergent Therapy for Acute-Onset, Severe Hypertension During Pregnancy and the Postpartum Period. Obstet Gynecol. 2017;129(4):e90–5.',
+    tags: ['obstetrícia', 'pré-eclâmpsia', 'síndromes hipertensivas']
+  },
+  {
+    id: 'tp2020-97',
+    module: 'Ginecologia e Obstetrícia',
+    image: '/images/tp2020-97.PNG',
+    text: 'J.M.S., 28 anos, secundigesta com 1 parto normal de termo, em trabalho de parto, com idade gestacional de 36 semanas e 3 dias, é internada em maternidade em franco trabalho de parto com 3cm de dilatação, colo médio, anterior, bolsa íntegra e apresentação cefálica. Ao internar, paciente é submetida a exame da figura 1 para avaliação de vitalidade fetal. Instalada em leito em centro obstétrico, é monitorada durante todo o trabalho de parto. Transcorridas 4 horas da internação, apresenta-se com dores em baixo ventre de moderada a forte intensidade, dinâmica uterina mantida 4 contrações em 10 minutos. Avaliado colo, este estava anterior, fino, previno para 5/6cm e a bolsa ainda encontrava-se íntegra. Solicitada nova avaliação, realizado exame da figura 2.\n\nSobre os exames, podemos concluir que:',
+    options: [
+      '(A) A figura 1 demonstra uma cardiotocografia categoria 1, normal, com acompanhamento normal do restante do trabalho de parto. Já a figura 2 demonstra um padrão de cardiotocografia indeterminado, ou categoria 3, fazendo com que medidas de suporte de reanimação intraútero sejam realizadas no transcorrer do acompanhamento.',
+      '(B) A figura 1 demonstra uma cardiotocografia categoria 1, permitindo que a equipe realize reavaliações contínuas durante todo o trabalho de parto. Já a figura 2 demonstra um padrão anormal, ou categoria 2, fazendo com que haja imediata avaliação e reanimação intraútero. A realização do parto cesariano pode ser considerada.',
+      '(C) A figura 1 demonstra uma cardiotocografia categoria 1, permitindo que a equipe assista com tranquilidade o trabalho de parto desta paciente. Já a figura 2 demonstra um padrão indeterminado, ou categoria 2, fazendo com que a equipe realize avaliações contínuas, podendo necessitar de outros métodos ou medidas de reanimação do intraútero.',
+      '(D) A figura 1 demonstra uma cardiotocografia de traçado indeterminado, ou categoria 2, sendo necessárias medidas de reanimação intraútero e reavaliações contínuas de vitalidade fetal. A figura 2 demonstra padrão anormal, ou categoria 3, em que a realização do parto pode ser considerada.'
+    ],
+    correctAnswer: 2,
+    explanation: 'A figura 1 é uma cardiotocografia categoria I (normal): linha de base normal, variabilidade moderada e sem desacelerações. A figura 2 é categoria II (indeterminada), o que exige avaliação contínua e, se necessário, medidas de reanimação intrauterina ou outros métodos de avaliação.',
+    commentary: 'A categoria III (anormal) exige intervenção imediata. A figura 2 não preenche critérios de categoria III, e a figura 1 não é indeterminada.',
+    reference: 'Macones et al. The 2008 National Institute of Child Helth and Human Development Workshop Report on Eletronic Fetal Monitoring. Obstet Gynecol, 2008; 112-661-6.',
+    tags: ['obstetrícia', 'cardiotocografia', 'vitalidade fetal']
+  },
+  {
+    id: 'tp2020-98',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'O médico pré-natalista deve ter em mente que a necessidade de ferro aumenta durante o período gestacional e a suplementação é recomendada tanto pela Organização Mundial da Saúde quanto pelo Ministério da Saúde.\n\nAssinale a alternativa correta quanto ao tema citado:',
+    options: [
+      '(A) A suplementação recomendada para a prevenção da anemia materna é de 30mg de ferro elementar por dia, para pacientes sem anemia e geralmente iniciando no segundo trimestre.',
+      '(B) A suplementação de ferro para pacientes não anêmicas deve ser iniciada logo que tiver início o pré-natal, de preferência antes das 8 semanas, nas doses de 60 mg/dia.',
+      '(C) A suplementação de ferro só deve ser realizada se a gestante apresentar hemoglobina inferior a 10 g/dL.',
+      '(D) Para que se tenha a absorção máxima de ferro é necessário que o ácido fólico seja também prescrito durante toda a gestação.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Para gestantes sem anemia, a suplementação recomendada (OMS/FEBRASGO) é de 30 a 60 mg/dia de ferro elementar, geralmente a partir do segundo trimestre, para prevenir anemia materna.',
+    commentary: 'O início precoce antes de 8 semanas não é obrigatório. A suplementação não depende de Hb < 10. O ácido fólico previne defeitos do tubo neural, mas não é necessário para absorver o ferro. Observação: o Ministério da Saúde recomenda 40 mg/dia de ferro elementar.',
+    reference: 'Protocolos Assistenciais, Quarta Edição. Zugaib, M; Bittar, E.B. Atheneu, 2013. / El Beitune P, Jiménez MF, Salcedo MM, Ayub AC, Cavalli RC, Duarte G. Nutrição durante a gravidez. São Paulo: Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO); 2018. (Protocolo FEBRASGO - Obstetrícia, nº 14/Comissão Nacional Especializada em Assistência Pré-Natal).',
+    tags: ['obstetrícia', 'pré-natal', 'anemia']
+  },
+  {
+    id: 'tp2020-99',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Em um plantão na maternidade, o Dr. João atende uma gestante com 33 semanas, queixando-se de sangramento vaginal intermitente, de pequena monta, há 2 meses que acentuou há 4 horas, após ela ter feito faxina em sua casa. Ela informa que morava na zona rural e ainda não iniciou o pré-natal. Ao exame físico apresenta-se hipocorada, com AU = 26cm, BCF = 133 bpm e PA = 110 x 70 mmHg; D.U = ausente e tônus uterino normal. Ao exame especular: sangue em moderada quantidade, coletado. Ele então solicita uma ultrassonografia com urgência, a qual evidencia uma gestação tópica, única, com feto vivo com biometria compatível com 32 semanas, líquido normal e placenta prévia centro-total.\n\nEntre as alternativas abaixo, a conduta correta a ser tomada pelo Dr. João é:',
+    options: [
+      '(A) Prescrever papa de hemácias, uterolítico, corticoide para a maturação pulmonar e realizar o toque vaginal para avaliar a dilatação.',
+      '(B) Prescrever hioscina e sulfato ferroso, orientar repouso em casa e encaminhar para o ambulatório de alto risco.',
+      '(C) Indicar a interrupção da gestação, porque pode ocorrer o descolamento placentário súbito e o feto obituar, já que se trata da forma mais grave de placenta prévia.',
+      '(D) Internar a paciente, solicitar hemograma e tipagem sanguínea; repouso no leito, avaliar sinais vitais, prescrever corticoide, observar sangramento e acompanhar a vitalidade fetal.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Placenta prévia centro-total com sangramento de moderada monta, mãe estável e feto pré-termo (33 semanas) sem comprometimento: a conduta é expectante, em ambiente hospitalar — internação, hemograma e tipagem, repouso, corticoide para maturação pulmonar e monitorização da vitalidade fetal.',
+    commentary: 'O toque vaginal é contraindicado na placenta prévia. O tratamento ambulatorial é inadequado com sangramento moderado. A interrupção imediata não é necessária com mãe e feto estáveis.',
+    reference: 'Protocolos Assistenciais, Quarta Edição. Zugaib, M; Bittar, E.B. Atheneu, 2013.',
+    tags: ['obstetrícia', 'hemorragia da segunda metade', 'placenta prévia']
+  },
+  {
+    id: 'tp2020-100',
+    module: 'Ginecologia e Obstetrícia',
+    text: 'Gestante de 25 anos, 35 semanas de amenorreia, pré-natal adequado, última consulta há 3 semanas. Procura UBS referindo dor em BV há 4 horas. Exame físico: bom estado geral, PA 120/80 mmHg, peso 52kg, ausência de edema em MMII. Exame obstétrico AU = 32cm; BCF 144 bpm; DU: 3 contrações moderadas de 10 minutos com toque vaginal de 2,0cm, esvaecido 60%, cefálico, plano-2 De Lee, bolsa íntegra.\n\nA conduta correta é:',
+    options: [
+      '(A) Investigar infecção urinária, soroterapia com antiespasmódico e alta com sintomáticos.',
+      '(B) Avaliar vitalidade fetal e encaminhar para unidade terciária.',
+      '(C) Antibiótico profilático, investigar infecção urinária, corticoterapia e encaminhar para unidade terciária.',
+      '(D) Corticoterapia, profilaxia do streptococcus do grupo B e encaminhar para unidade terciária.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Trabalho de parto prematuro a 35 semanas. Após 34 semanas não há indicação de tocólise nem, de rotina, de corticoide. A conduta na UBS é avaliar a vitalidade fetal e encaminhar a gestante à unidade terciária para assistência ao parto pré-termo.',
+    commentary: 'Alta com sintomáticos é inadequada. Corticoide e antibiótico profilático não são as condutas centrais na UBS nessa idade gestacional.',
+    reference: 'Montenegro, Carlos Antonio Barbosa Rezende, Obstetrícia Fundamental /Carlos Antonio Barbosa Montenegro, Jorge de Rezende Filho -11ª ed - Rio de Janeiro; Guanabara Koogan, 2008. / Luis Camano, Eduardo de Souza, Nelson Sass, Rosiane Mattar Guias de Medicina Ambulatorial e Hospitalar UNIFESP / EPM 1ª ed = São Paulo, Manole, 2003.',
+    tags: ['obstetrícia', 'trabalho de parto prematuro']
   }
 ];

@@ -2246,5 +2246,328 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     commentary: 'Hemograma, coagulograma, cálcio e vitamina D ajudam a excluir causas orgânicas, mas não elucidam a principal hipótese. A ultrassonografia de abdome não é o exame central.',
     reference: 'RevBras Ortop. 2013;48(1). Maus tratos infantis. Revisão da literatura. Bernardo B. Terra, Eduardo A. Figueiredo, Morena P E O L Terra, Carlos V. Andreoli, Benno Ejnisman',
     tags: ['pediatria', 'maus-tratos', 'ortopedia']
+  },
+  // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
+  {
+    id: 'tp2020-61',
+    module: 'Pediatria',
+    text: 'RN com 10 dias de vida é levado para primeira consulta na UBS. Mãe refere que o bebê chora muito e dorme pouco. Nega intercorrências neonatais. Durante toda a consulta, observa-se a mãe apática, referindo muito cansaço e dificuldade para amamentar o seu filho.\n\nDentre as alternativas abaixo, assinale a melhor conduta frente ao caso:',
+    options: [
+      '(A) Orientar amamentação livre demanda a fim de aumentar a produção de leite. Prescrever ansiolítico para a mãe e dosar T4 e TSH séricos do RN.',
+      '(B) Orientar a amamentação a cada 3 horas e solicitar retorno em 5 dias. Dosar TSH e T4 séricos na mãe e no RN.',
+      '(C) Incentivar a amamentação a fim de fortalecer o vínculo mãe-filho. Fornecer apoio psicológico para a mãe se necessário.',
+      '(D) Inspecionar a amamentação e as mamas durante a consulta. Dosar T4 e TSH séricos na mãe.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Na primeira consulta do recém-nascido, a mãe apática, cansada e com dificuldade de amamentar sugere tristeza ou depressão pós-parto. O pediatra deve incentivar e apoiar a amamentação, fortalecer o vínculo mãe-bebê e oferecer apoio psicológico, acompanhando a evolução.',
+    commentary: 'Não há indicação de dosar hormônios tireoidianos do RN (o teste do pezinho rastreia hipotireoidismo), de prescrever ansiolítico nem de impor horários rígidos às mamadas.',
+    reference: 'Saúde da Criança: aleitamento materno e alimentação complementar, 2015. Ministério da Saúde.',
+    tags: ['pediatria', 'aleitamento materno', 'puerpério']
+  },
+  {
+    id: 'tp2020-62',
+    module: 'Pediatria',
+    text: 'Escolar de sete anos, sexo feminino, está há dois dias em tratamento para provável infecção do trato urinário com sulfametoxazol-trimetoprim, na dose de 40mg/kg/dia de sulfa. No início do quadro, apresentava urgência, dor e dificuldade para urinar. No momento, a mãe refere melhora significativa das queixas, entretanto o resultado da urinocultura mostra 500.000 colônias de E.coli resistente ao antimicrobiano em uso.\n\nA conduta, neste caso, deverá ser:',
+    options: [
+      '(A) Trocar o antimicrobiano em uso de acordo com a sensibilidade in vitro.',
+      '(B) Trocar o antimicrobiano em uso por ácido nalidíxico.',
+      '(C) Trocar o antimicrobiano em uso por amoxicilina oral.',
+      '(D) Manter o esquema antimicrobiano em uso.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Na ITU baixa, a resposta clínica ao antimicrobiano é suficiente para mantê-lo, mesmo com resistência in vitro: a concentração urinária do fármaco costuma ser muito maior que a dos discos do antibiograma.',
+    commentary: 'Trocar o antibiótico em uma criança que já melhorou é desnecessário. Ácido nalidíxico e amoxicilina não estão indicados com base no antibiograma.',
+    reference: 'National Institute for Health and Clinical Excellence. UrinaryTractInfection in Children: Diagnosis, Tratament, and Longterm Management: Nice Clinical Guideline 54. London, England: National Institute for Health and Clinical Excellence; 2007. Available at: www.nice.org.uk/nicemedia/live/11819/36032/36032.pdf.',
+    tags: ['pediatria', 'infecção urinária']
+  },
+  {
+    id: 'tp2020-63',
+    module: 'Pediatria',
+    text: 'Menina de 9 anos é levada a um hospital do interior de São Paulo por sua mãe. Criança relata que machucou o tornozelo direito em um arbusto há 8 horas. Apresenta lesão com 2 orifícios em face lateral de perna direita com parestesia local e pouco edema. Ao exame físico está com diplopia, disartria, ptose palpebral bilateral, fácies miastênica, mal-estar, náuseas, cefaleia, mialgia generalizada e urina escurecida. Nega dispneia. Tem dosagem de creatinofosfoquinase: 1.800 (VR: 30 – 210 U/L) e hemoglobinúria.\n\nBaseado nas informações acima, assinale o acidente ofídico da paciente:',
+    options: [
+      '(A) Acidente elapídico',
+      '(B) Acidente botrópico',
+      '(C) Acidente crotálico',
+      '(D) Acidente laquético'
+    ],
+    correctAnswer: 2,
+    explanation: 'Pouca reação local, fácies miastênica (ptose bilateral), diplopia, mialgia, urina escura e CPK elevada (rabdomiólise com mioglobinúria): acidente crotálico (cascavel), cujo veneno é neurotóxico, miotóxico e coagulante.',
+    commentary: 'O botrópico tem dor e edema locais intensos. O elapídico é neurotóxico, sem rabdomiólise. O laquético se parece com o botrópico, acrescido de manifestações vagais.',
+    reference: 'Ministério da Saúde do Brasil: https://www.saude.gov.br/saude-de-a-z/acidentes-por-animais-peconhentos-serpentes [citado em 07/05/2020]',
+    tags: ['pediatria', 'toxicologia', 'acidentes por animais peçonhentos']
+  },
+  {
+    id: 'tp2020-64',
+    module: 'Pediatria',
+    text: 'Mãe de um lactante de quatro meses está preocupada, pois seu filho não sustenta a cabeça. História perinatal: parto vaginal, banhado em mecônio espesso, necessitando de reanimação na sala de parto, Apgar 1/4/7, peso: 2.800g, comprimento: 49cm. Exame físico: eleva momentaneamente a cabeça em posição de prono e sorri, faz semiflexão dos cotovelos e pronação do antebraço e flexão de punhos e dedos, reflexo tônico cervical assimétrico, reflexo de Moro exarcebado.\n\nNessa situação, deve-se informar à mãe que seu filho apresenta:',
+    options: [
+      '(A) Distúrbio neuropsicomotor pela asfixia perinatal e necessita de acompanhamento multiprofissional.',
+      '(B) Limites normais do desenvolvimento neuropsicomotor e necessita de estimulação em casa.',
+      '(C) Distúrbio neuropsicomotor pela asfixia perinatal e que terá um atraso físico e mental.',
+      '(D) Distúrbio neuropsicomotor temporário pela asfixia perinatal e que irá se desenvolver normalmente.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Aos 4 meses, o lactente deveria sustentar a cabeça e ter abandonado o reflexo tônico cervical assimétrico, além de levar as mãos à linha média. A persistência de reflexos primitivos e o Moro exacerbado após asfixia perinatal grave (Apgar 1/4/7) indicam distúrbio do desenvolvimento neuropsicomotor.\n\nA criança precisa de acompanhamento e estimulação multiprofissional precoce.',
+    commentary: 'Não é desenvolvimento normal. Não é possível prever, nesse momento, atraso mental definitivo nem evolução normal garantida.',
+    reference: 'Tratado de Pediatria Nelson 20ª edição / Pediatria Básica tomo 1 Marcondes 9ª edição / Tratado de Pediatria SBP 4ª edição',
+    tags: ['pediatria', 'desenvolvimento neuropsicomotor', 'asfixia perinatal']
+  },
+  {
+    id: 'tp2020-65',
+    module: 'Pediatria',
+    text: 'Criança de quatro anos chega ao ambulatório de Pediatria, acompanhada pela mãe, com história de febre intermitente há duas semanas, manchas arroxeadas pelo corpo e em membros superiores e inferiores, além de inapetência e perda de peso. Exame físico: Inspeção: Regular Estado Geral, descorada 3+/4+, eupneica, com presença de petéquias principalmente em MMII. Palpação: Linfonodomegalia cervical, supraclavicular e inguinal. Na palpação abdominal, presença de hepatoesplenomegalia. Exames Laboratoriais: Hemograma: Hb: 5,2 g/dL / Ht: 18% / Leucócitos: 57.200/mm³. Neutrófilos: 572 mm3 (1%) / Bastonetes: 0 mm3 (0%). Segmentados: 572 mm3 (1%) Linfócitos típicos: 16.016 mm3 (28%). Linfócitos atípicos: 0 mm3 (0%) Blastos: 39.468 mm3 (69%). Plaquetas: 49.000 mm3.\n\nO quadro clínico desta criança é compatível com:',
+    options: [
+      '(A) Leucemia Mieloide Aguda (LMA)',
+      '(B) Leucemia Linfoide Aguda (LLA)',
+      '(C) Artrite Reumatoide Juvenil (ARJ)',
+      '(D) Parvovirose'
+    ],
+    correctAnswer: 1,
+    explanation: 'Pré-escolar com febre, palidez, petéquias, linfadenopatia generalizada, hepatoesplenomegalia, hiperleucocitose com 69% de blastos, anemia e plaquetopenia: leucemia linfoblástica aguda, o câncer mais comum da infância (pico entre 2 e 5 anos).',
+    commentary: 'A LMA é menos frequente nessa idade. A artrite idiopática juvenil e a parvovirose não cursam com blastos no sangue.',
+    reference: 'Goodman JE, McGrath PJ. The epidemiology of pain in children and adolescents: a review. Pain 1991; 46:247-64. / Bowyer SL, Hollister RJ. Dores em membros em crianças. In: Levine MD. Clínicas Pediátricas da América do Norte 1984;5: 1105-35. / Trapani S, Grisolia F, Simonini G, Calabri GB, Falcini F. Incidence of occult cancer in children presenting with musculoskeletal symptoms: A 10-year survey in a pediatric rheumatology unit. Seminars in arthritis and rheumatism 2000; 29(6):348-59.',
+    tags: ['pediatria', 'hematologia', 'oncologia pediátrica']
+  },
+  {
+    id: 'tp2020-66',
+    module: 'Pediatria',
+    image: '/images/tp2020-66.PNG',
+    text: 'Laura, 18 meses de idade, chega ao Pronto-Socorro com quadro de febre há quatro dias, associada a vômitos e alternando irritabilidade e letargia há 1 dia. Tem antecedente pessoal de infecção urinária de repetição. Ao exame físico apresenta-se em mau estado geral, cianose de extremidades, anictérica, febril, dispneia leve (tiragem subcostal e intercostal leves), taquicárdica, pálida e letárgica. Aparelho respiratório e abdome com exames físicos normais. Aparelho cardíaco com BRNF em 2 tempos sem sopros. Pulsos periféricos filiformes e perfusão periférica de 7 segundos. Possui este traçado em monitorização cardíaca:\n\nOs diagnósticos mais prováveis são:',
+    options: [
+      '(A) Taquicardia supraventricular consequente a choque séptico.',
+      '(B) Taquicardia sinusal consequente a episódio de febre.',
+      '(C) Taquicardia ventricular com pulso consequente a choque obstrutivo.',
+      '(D) Taquicardia sinusal consequente a intoxicação.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Lactente com febre e ITU de repetição, letárgica, com pulsos filiformes e enchimento capilar de 7 segundos: choque séptico de provável foco urinário. O traçado mostra taquicardia de QRS estreito, regular e muito rápida, sem ondas P visíveis — taquicardia supraventricular.',
+    commentary: 'Taquicardia sinusal em lactente raramente ultrapassa 220 bpm e tem ondas P visíveis e variabilidade. O QRS é estreito, o que afasta taquicardia ventricular.',
+    reference: 'Identificação de Arritmias. In: Suporte de vida avançado em pediatria: Manual do Profissional. Guarulhos: Artes Gráficas e EditoraSesil LTDA – Gráfica Bandeirantes, 2017. P.239-245.',
+    tags: ['pediatria', 'emergência', 'arritmias']
+  },
+  {
+    id: 'tp2020-67',
+    module: 'Pediatria',
+    text: 'Paciente de dois anos de vida é levada à Unidade Básica de Saúde com história de diarreia desde os 9 meses, com padrão de evacuações amolecidas e às vezes líquidas. A mãe refere quadro de dor abdominal e distensão. No histórico alimentar recebeu aleitamento materno exclusivo até os 6 meses, quando iniciou com alimentação complementar. Atualmente mantém aleitamento materno associado a duas refeições, e nos intervalos oferece pães, bolachas e frutas. Há dois meses notou diminuição da aceitação dos alimentos e está perdendo peso, segundo informação da mãe. Exame físico: bom estado geral, hidratada, pálida e emagrecida, distensão abdominal importante e achatamento da região glútea.\n\nDetermine o diagnóstico sindrômico e a provável etiologia:',
+    options: [
+      '(A) Diarreia Crônica, com provável diagnóstico de Doença Inflamatória Intestinal.',
+      '(B) Diarreia Persistente, com intolerância a lactose e indicação de retirada do aleitamento materno devido à alta concentração de lactose.',
+      '(C) Diarreia Crônica sem má absorção intestinal, com provável diagnóstico etiológico de Síndrome do Intestino Irritável.',
+      '(D) Diarreia Crônica, com indicação de investigar má absorção intestinal como Doença Celíaca e parasitoses.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Diarreia há mais de 30 dias (crônica) com distensão abdominal, palidez, emagrecimento e atrofia glútea, iniciada após a introdução do glúten: síndrome de má absorção. É preciso investigar doença celíaca (anticorpo antitransglutaminase IgA com IgA total) e parasitoses.',
+    commentary: 'Diarreia persistente dura de 14 a 29 dias. Não há indicação de suspender o aleitamento. A síndrome do intestino irritável não cursa com má absorção e perda de peso. A DII é rara nessa idade.',
+    reference: 'Tratado de Pediatria - Sociedade Brasileira de Pediatria 3ª Edição; Editora Manole, 2014, volume 2; 1067 -1069.',
+    tags: ['pediatria', 'gastroenterologia', 'doença celíaca']
+  },
+  {
+    id: 'tp2020-68',
+    module: 'Pediatria',
+    text: 'O pediatra recebe em seu consultório um paciente do sexo masculino de 14 meses para consulta de rotina. Os pais referem estar preocupados, pois a criança fala muito pouco. Pais referem que a criança nasceu a termo, sem intercorrências pré e perinatais, alimenta-se bem e a vacinação encontra-se atualizada. Sentou-se aos seis meses, engatinhou aos 10 meses e andou com 13 meses. Nega cirurgias ou internações prévias. Passa o dia em casa com a babá, gosta de brincar no tablet. Ao exame, o pediatra observa que fala algumas sílabas, porém sem significado. Aponta para o que quer e imita gestos.\n\nNesta situação, o pediatra deveria:',
+    options: [
+      '(A) Realizar avaliação de triagem para transtorno do espectro autista e acompanhar clinicamente.',
+      '(B) Solicitar avaliação auditiva e encaminhar para a fonoaudiologia.',
+      '(C) Orientar os pais quanto à estimulação da criança e fazer acompanhamento clínico frequente.',
+      '(D) Solicitar tomografia de crânio e avaliação da neuropediatria.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Aos 14 meses, a criança tem desenvolvimento motor adequado e boa comunicação não verbal (aponta, imita gestos). A fala de palavras com significado ainda pode estar surgindo. A conduta é orientar a estimulação (mais interação, menos telas) e acompanhar de perto.',
+    commentary: 'Apontar e imitar gestos falam contra TEA. Avaliação auditiva e fonoaudiológica e exames de imagem não estão indicados nesse momento.',
+    reference: 'Burns DAR et al. Tratado de Pediatria. Sociedade Brasileira de Pediatria. 4 Ed, 2017. Seção2, Cap3 – Desenvolvimento normal. / Ministério da Saúde. Caderno de atenção Básica n.33, Saúde da criança: Crescimento de Desenvolvimento, p.119-30, Acompanhamento do Desenvolvimento.',
+    tags: ['pediatria', 'desenvolvimento', 'linguagem']
+  },
+  {
+    id: 'tp2020-69',
+    module: 'Pediatria',
+    text: 'Escolar, 6 anos, masculino, comparece à UBS com história de crises de chiado recorrentes desde os 2 anos de idade. No último mês nega crises ou necessidade de uso de medicação de alívio, mas toda vez que corre ou ri muito, apresenta tosse. Refere dois episódios de despertar noturno por tosse nesse período. Como antecedentes pessoais, nunca foi internado, mas já permaneceu em observação por algumas horas para realização de nebulizações com Fenoterol, sempre com boa resposta. Apresenta também queixas nasais de obstrução e coriza diariamente há três anos, o que traz prejuízo às suas atividades escolares. Tem prick test positivo para epitélio animal. De antecedentes familiares, a mãe refere ter asma.\n\nAssinale a alternativa que melhor representa os diagnósticos desse paciente e o tratamento de manutenção de primeira escolha para esses diagnósticos:',
+    options: [
+      '(A) Asma parcialmente controlada; rinite alérgica persistente moderada/grave. Corticosteroide inalado em dose baixa a moderada, associado a corticosteroide nasal.',
+      '(B) Asma não controlada; rinite alérgica persistente leve. Antagonista do receptor de leucotrieno e higiene nasal com soro fisiológico.',
+      '(C) Asma persistente moderada; rinite crônica. Corticosteroide inalado em dose baixa a moderada associado a corticosteroide nasal.',
+      '(D) Bronquite crônica, rinite alérgica persistente moderada/grave. Profilaxia ambiental e beta 2 agonista de curta duração, se crise de tosse.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Asma com sintomas aos esforços e despertares noturnos (parcialmente controlada) e rinite alérgica persistente, com prejuízo escolar (moderada/grave). O tratamento de manutenção é corticoide inalatório em dose baixa a moderada associado a corticoide nasal.',
+    commentary: 'O antileucotrieno é alternativa, não primeira escolha. Os termos \'bronquite crônica\' e \'persistente moderada\' não são a classificação atual de controle. Usar apenas broncodilatador de resgate é inadequado.',
+    reference: 'Diretrizes da Sociedade Brasileira de Pneumologia e Tisiologia para o Manejo da Asma – 2012 / Guideline Global Initiative for Asthma (GINA) update 2019 / IV Brazilian Consensus on Rhinitis - an update on allergic rhinitis 2018',
+    tags: ['pediatria', 'asma', 'rinite alérgica']
+  },
+  {
+    id: 'tp2020-70',
+    module: 'Pediatria',
+    text: 'A.C.S., 18 meses de idade, sexo masculino, é levado à Unidade Básica de Saúde para consulta de rotina. Mãe informa que durante atendimento em Pronto-Socorro há duas semanas por quadro de tosse e coriza foi informada que seu filho apresentava sopro cardíaco. Não havia qualquer queixa em antecedentes pessoais, exceto o fato de apresentar quadros de tosse, coriza e febre de repetição desde que entrou na creche. Nega internações. Desenvolvimento pondero estatural e desenvolvimento neuropsicomotor normal. Ao exame físico encontra-se em bom estado geral, hidratado, ativo, eupneico, acianótico, afebril, boa perfusão periférica, pulsos simétricos. Aparelho Cardiovascular: BRNF, com sopro sistólico suave 2+ em 6+, musical, melhor audível em bordo esternal esquerdo baixo e que diminui de intensidade ao exame, se paciente muda da posição deitado para sentado. FC: 100 bpm, SatO₂ de 95%. Restante do exame físico normal.\n\nFrente aos dados de história e exame físico, qual a principal hipótese diagnóstica e conduta inicial?',
+    options: [
+      '(A) Principal hipótese diagnóstica é CIV, por tratar-se de cardiopatia congênita acianótica de hiperfluxo pulmonar mais frequente em Pediatria, com clássico sopro sistólico suave, justificando os quadros respiratórios do lactente. Conduta inicial é solicitar ecocardiograma e eletrocardiograma, esperando evidenciar sobrecarga de ventrículo esquerdo.',
+      '(B) Principal hipótese diagnóstica é comunicação interatrial (CIA), por tratar-se de cardiopatia congênita cianótica com evolução silenciosa e baixo fluxo sistêmico. A conduta inicial é tranquilizar a mãe e solicitar eletrocardiograma e ecocardiograma.',
+      '(C) Principal hipótese diagnóstica é sopro inocente, clássico sopro de Still. A conduta inicial é tranquilizar a mãe, orientando o caráter benigno do provável sopro inocente, solicitar ecocardiograma e acompanhamento pediátrico na Unidade Básica de Saúde.',
+      '(D) Principal hipótese diagnóstica é persistência do canal arterial (PCA), cardiopatia congênita acianótica de hipofluxo pulmonar, com sopro sistólico em maquinaria, justificando os quadros respiratórios do lactente. Conduta inicial é solicitar eletrocardiograma, ecocardiograma e avaliação com cardiologista infantil.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Lactente assintomático, com bom desenvolvimento, sopro sistólico suave, musical, em borda esternal esquerda baixa, que diminui ao sentar: sopro de Still, o sopro inocente mais comum na infância.\n\nA conduta é tranquilizar a família e manter o acompanhamento; a banca inclui o ecocardiograma para confirmar.',
+    commentary: 'A CIV produz sopro holossistólico rude. A CIA é acianótica. A PCA tem sopro contínuo em maquinaria e é de hiperfluxo. As infecções respiratórias são explicadas pela creche.',
+    reference: 'Souza PG, Carvalho MF, Bresolin AC, Santos CCL, Afiune JY, Leite MFM, Barriodíaco PM. / SBP – Departamento Científico de Cardiologia.Avaliação da Criança com Sopro, novembro 2018. / Porto. Semiologia Médica, 8 ed, 2019.',
+    tags: ['pediatria', 'cardiologia', 'sopro inocente']
+  },
+  {
+    id: 'tp2020-71',
+    module: 'Pediatria',
+    text: 'Criança de quatro meses é levada ao Pronto-Socorro Infantil porque não para de chorar. Mãe relata que faz 7 dias que a lactente apresenta choro inconsolável e apresentou crise convulsiva. Nega febre, diarreia, coriza, desconforto respiratório. Faz aleitamento artificial, porque a mãe precisou voltar a trabalhar. O pediatra pergunta se fica na creche, mas a mãe responde que a lactente fica aos cuidados do namorado, que atualmente não trabalha. Ao exame clínico: regular estado geral, afebril, corada, hipoativa e chorosa à manipulação. Durante o exame apresentou uma crise convulsiva tônico-clônica, que cedeu com uso de Diazepam. Crânio: sem abaulamentos ou depressão. Aparelho cardiovascular e aparelho respiratório sem alterações. Abdome: doloroso à palpação, sem visceromegalias. Extremidades: pulso amplo, com perfusão adequada. O pediatra solicita o RX de corpo total: fratura de clavícula direita e alguns calos ósseos. O pediatra suspeita então de maus tratos.\n\nQual é o exame de eleição para fechar o diagnóstico?',
+    options: [
+      '(A) Líquido cefalorraquidiano',
+      '(B) Fundo de olho',
+      '(C) Hemograma completo',
+      '(D) Tomografia de crânio'
+    ],
+    correctAnswer: 1,
+    explanation: 'Lactente de 4 meses com choro inconsolável, convulsões e fraturas em diferentes estágios de consolidação: forte suspeita de maus-tratos, com possível síndrome do bebê sacudido. O exame de eleição para o diagnóstico é o fundo de olho, que mostra hemorragias retinianas bilaterais.',
+    commentary: 'A tomografia de crânio é complementar e deve ser feita, mas o achado característico para o diagnóstico é a hemorragia retiniana. Líquor e hemograma não fecham o diagnóstico.',
+    reference: 'SBP, SPSP, CFM, 2018',
+    tags: ['pediatria', 'maus-tratos', 'oftalmologia']
+  },
+  {
+    id: 'tp2020-72',
+    module: 'Pediatria',
+    text: 'Adolescente, 13 anos, com queixa de dor abdominal e vômitos ha 1 dia. Nega febre. Deu entrada no Pronto-Socorro Infantil em regular estado geral, afebril, hipoativo, desidratado ++/4+, com FR 40 rpm, FC 130 bpm, PA 100 x 60 mmHg. Coletado exames: HMG: Hb: 12,8; HT: 38; Leucócitos 9600 (1 bastonete / 40 segmentados / 50 linfócitos); Plaquetas 255.000; Glicemia 289; Na 136; K 5,0; Ureia 20; Creatinina 0,5; PCR 1,0.\n\nUrina 1: 5.000 leucócitos, 3.000 hemácias, proteínas +, corpos cetônicos ++ Gasometria venosa: pH: 7,15 / bicarbonato: 8 Diante deste caso, qual sua conduta inicial?',
+    options: [
+      '(A) Expansão com soro fisiológico 0,9% 20 mL/kg e insulina regular intramuscular 0,25 UI/kg.',
+      '(B) Expansão com soro fisiológico 0,9% 20 mL/kg e reposição de bicarbonato.',
+      '(C) Antiemético e analgésico intramuscular e posterior terapia de reidratação oral.',
+      '(D) Expansão com soro fisiológico 0,9% 20 mL/kg.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Glicemia de 289, cetonúria e acidose metabólica (pH 7,15 e bicarbonato 8): cetoacidose diabética, sem sinais de choque. A conduta inicial é a expansão com soro fisiológico 0,9% 20 mL/kg. A insulina vem depois da expansão.',
+    commentary: 'Insulina IM e bicarbonato não são condutas iniciais (o bicarbonato é reservado a pH < 6,9). Reidratação oral é inadequada na CAD.',
+    reference: 'Stape A, Bousso A, Troster EJ, et al. Manual de Normas: Terapia Intensiva Pediátrica, 2 ª edição, São Paulo, Savier, 2009, p 459-463 / Cesar RG, Oecchini R, Passareli MLB, Torre FPF, et al. Emergencias em Pediatria – Protocolos da Santa Casa, 1ª edição, São Paulo, Monole, 2011; 19:257- 268 / Roger´s Textbook of Pediatric Intensive care, 5ª edição, Wolters Kluwer, 2015, 106: 3228 - 3234',
+    tags: ['pediatria', 'endocrinologia', 'cetoacidose diabética']
+  },
+  {
+    id: 'tp2020-73',
+    module: 'Pediatria',
+    image: '/images/tp2020-73.PNG',
+    text: 'Paciente de três anos iniciou há duas semanas com febre baixa por dois dias, mal-estar, cefaleia e por cinco dias com lesões eritematosas maculo papulares que se confluíram em face e espalharam para braços, pernas e pouco em tronco (conforme foto). Todos os sintomas desapareceram e há um dia, após ter frequentado parque aquático por um dia, reapareceram as lesões na pele.\n\nA mãe, preocupada com a volta da doença, procurou o atendimento e o pediatra pôde presumir que o agente infeccioso dessa patologia é:',
+    options: [
+      '(A) Morbillivirus paramyxoviridae',
+      '(B) Parvovírus B19',
+      '(C) Herpes vírus 6 ou 7',
+      '(D) Varicela-zoster'
+    ],
+    correctAnswer: 1,
+    explanation: 'Exantema com eritema facial em \'face esbofeteada\', que se espalha em padrão rendilhado para membros e reaparece com calor, exercício ou sol após a resolução: eritema infeccioso (quinta doença), causado pelo parvovírus B19.',
+    commentary: 'O sarampo tem pródromo catarral e exantema craniocaudal com febre alta. O HHV-6/7 causa o exantema súbito. A varicela tem lesões vesiculares polimórficas.',
+    reference: 'Tratado de Pediatria da Sociedade Brasileira de Pediatria 4ª edição 2017 Campos Júnior, Dioclécio / Burns, Dennis Alexander Rabelo / Lopez, Fabio Ancona. / Belver, Natàlia Claver, et al. "Infecciones por Erythrovirus B19. Seis años de seguimiento en población adulta y pediátrica." Anales de Pediatría. Vol. 90. No. 5. Elsevier Doyma, 2019. / Xavier, Analucia R., et al. "Diagnóstico clínico, laboratorial e profilático do sarampo no Brasil." Jornal Brasileiro de Patologia e Medicina Laboratorial 55.4 (2019): 390-401.',
+    tags: ['pediatria', 'doenças exantemáticas', 'parvovírus b19']
+  },
+  {
+    id: 'tp2020-74',
+    module: 'Pediatria',
+    text: 'Pedro, de 6 meses, iniciou com febre e irritabilidade há 1 dia, sem outros sintomas. Procurou a emergência pediátrica e ao exame encontra-se afebril, em bom estado, hidratado, ativo e chorando frequentemente. Restante do exame normal. Foi solicitado sumário de urina, que mostrou leucocitúria, nitrito positivo e leucoesterase positiva. A amostra foi colhida por sonda vesical de alívio e a urocultura está em andamento.\n\nDesta forma, o socorrista deve proceder com a seguinte terapêutica baseada na hipótese diagnóstica inicial:',
+    options: [
+      '(A) Como se trata de infecção do trato urinário (ITU), o socorrista deve introduzir aminoglicosídeo endovenoso, solicitar ultrassom de rins e vias urinárias, aguardando urocultura para adequar antibiótico via oral.',
+      '(B) Como se trata de febre sem sinais localizatórios, o socorrista deve aguardar hemograma, PCR (proteína C reativa) para introduzir antibióticos confirmando sua conduta com o antibiograma.',
+      '(C) Como se trata de febre sem sinais localizatórios, o socorrista deve checar o status vacinal do paciente e se duas doses de pneumococo e hemófilos deve aguardar urocultura para introdução de antibiótico, visto que o diagnóstico de ITU se faz com urocultura.',
+      '(D) Como se trata de infecção do trato urinário (ITU), o socorrista deve introduzir amoxacilina com clavulanato de potássio via oral e retorno em 2 dias para resultado de urocultura e confirmar esquema antibiótico.'
+    ],
+    correctAnswer: 0,
+    explanation: 'Lactente febril com urina sugestiva de infecção (leucocitúria, nitrito e esterase positivos): ITU febril/pielonefrite. A banca indica antibiótico parenteral (aminoglicosídeo), ultrassonografia de vias urinárias e adequação para via oral após a urocultura e a melhora.',
+    commentary: 'Não se deve aguardar hemograma, PCR ou urocultura para iniciar antibiótico. Observação: lactentes acima de 2–3 meses, em bom estado e tolerando via oral, podem ser tratados por via oral (como na alternativa D), segundo várias diretrizes — o ponto é discutível.',
+    reference: 'Documento científico do departamento de nefrologia da Sociedade Brasileira de Pediatria dezembro 2016. Infecção do Trato urinário. Lipinski, RW; Garcia, CD; Kaufman, A; Uhmann, A; Silvestre, LC, Bresolin, NL. / Machado, Pâmela Araujo, Ethel Antunes Wilhelm, and Cristiane Luchese. "Prevalência de infecções do trato urinário e perfil de susceptibilidade a antimicrobianos de bactérias isoladas." Disciplinarum Scientia| Saúde 18.2 (2018): 271-287. / Marcdante, Karen. Nelson princípios de pediatria. Elsevier Brasil, 2016. Capítulo 114 Infecção do trato urinário.',
+    tags: ['pediatria', 'nefrologia', 'infecção urinária']
+  },
+  {
+    id: 'tp2020-75',
+    module: 'Pediatria',
+    text: 'Recém-nascido com 24 horas de vida, prematuro, peso de nascimento de 1200g, com diagnóstico de septicemia, é internato na Unidade de Tratamento Intensivo, com quadro de instabilidade térmica, irritabilidade e convulsão. Ao exame físico, apresenta abaulamento da fontanela anterior. Após admissão, o médico suspeitou de meningite e solicitou vários exames, além do líquor cefalorraquidiano.\n\nAssinale a alternativa correta em relação ao agente etiológico:',
+    options: [
+      '(A) Estreptococo do grupo B',
+      '(B) Haemophilus influenzae',
+      '(C) Estreptococo do grupo A',
+      '(D) Neisseria meningitidis'
+    ],
+    correctAnswer: 0,
+    explanation: 'Sepse e meningite neonatal precoce (primeiras 72 horas) em prematuro: os principais agentes são o estreptococo do grupo B (S. agalactiae), E. coli e outras enterobactérias, além de Listeria.',
+    commentary: 'Haemophilus influenzae e Neisseria meningitidis acometem lactentes maiores e crianças. O estreptococo do grupo A não é agente típico de meningite neonatal.',
+    reference: 'Infectologia pediatrica; Calil KairallaFarhat, Luiza Helena Fallerios Rodrigues Carvalho, Regina Celia de Menezes Succi, 3a edição 2007. / Terapêutica em pediatria; Fábio Ancona Lopes. Flávio Giribela, Túlio Kanstantyner. Manole, 2010. / Pediatria: Diagnostico e Tratamento; Murahovschi, Jayme. 4.ed. / rev. Ampl. São Paulo: Sarvier, 1990.',
+    tags: ['pediatria', 'neonatologia', 'meningite']
+  },
+  {
+    id: 'tp2020-76',
+    module: 'Pediatria',
+    text: 'Criança de 7 anos, sexo masculino, é trazida ao ambulatório de pediatria por dor na região inguinal esquerda com irradiação para o joelho há 2 semanas, associado a claudicação. Nega febre, dor ou edema em outras articulações. O exame físico é normal, exceto pela restrição da flexão, abdução e rotação interna do quadril esquerdo. Hemograma normal, VHS = 15 mmHg; proteína C reativa (PCR) = 12. Radiografia fragmentação parte anterior da epífise.\n\nQual sua hipótese diagnostica?',
+    options: [
+      '(A) Artrite séptica de quadril',
+      '(B) Epifisiólise',
+      '(C) Osteossarcoma',
+      '(D) Legg-Calvé-Perthes'
+    ],
+    correctAnswer: 3,
+    explanation: 'Menino de 7 anos com dor no quadril referida no joelho, claudicação, limitação de abdução e rotação interna, provas inflamatórias normais e radiografia com fragmentação da epífise femoral: doença de Legg-Calvé-Perthes (necrose avascular da cabeça femoral).',
+    commentary: 'A artrite séptica cursa com febre e provas inflamatórias elevadas. A epifisiólise ocorre em adolescentes obesos. O osteossarcoma acomete metáfises.',
+    reference: 'Tratado de pediatria, 4ª edição volume 2. Sessão 24, Capítulo 6 Dores nos Membros Inferiores da Criança, página 2025.',
+    tags: ['pediatria', 'ortopedia']
+  },
+  {
+    id: 'tp2020-77',
+    module: 'Pediatria',
+    text: 'Escolar de 8 anos com queixa de cefaleia holocraniana há alguns meses. Mãe refere que a criança chora com a dor de cabeça e está muito preocupada. Nega obstrução nasal, coriza e febre. Não acompanhada de náuseas ou vômitos. Apresenta melhora com analgésico, como dipirona ou paracetamol, e melhora também com o sono.\n\nAssinale a alternativa correta em relação ao provável diagnóstico dessa criança:',
+    options: [
+      '(A) Cefaleia tipo enxaqueca',
+      '(B) Cefaleia tipo tensional',
+      '(C) Cefaleia trigêmino-autonômica',
+      '(D) Cefaleia por hipertensão intracraniana'
+    ],
+    correctAnswer: 1,
+    explanation: 'Cefaleia holocraniana crônica, sem náuseas ou vômitos, que melhora com analgésicos simples e com o sono: cefaleia do tipo tensional.',
+    commentary: 'A enxaqueca na criança costuma ser pulsátil, com náuseas, foto/fonofobia e piora com atividade. A cefaleia trigêmino-autonômica tem sinais autonômicos. A hipertensão intracraniana causa cefaleia matinal com vômitos e não melhora com o sono.',
+    reference: 'Pediatria Básica. Pediatria Geral e Neonatologia; Eduardo Marcondes, Flávio Adolfo Costa Vaz, José Lauro Araujo Ramos, Yassuhiko Okay. 9ª edição. Sarvier, 2003. / Pediatria: Diagnostico e Tratamento; Murahovschi, Jayme. 4.ed. / rev. Ampl. São Paulo: Sarvier, 1990. / Terapêutica em pediatria; Fábio Ancona Lopes. Flávio Giribela, Túlio Konstantyner. Manole, 2010.',
+    tags: ['pediatria', 'neurologia', 'cefaleias']
+  },
+  {
+    id: 'tp2020-78',
+    module: 'Pediatria',
+    text: 'Lactente de 6 meses está em aleitamento materno exclusivo e vai iniciar introdução de frutas. Nasceu com 2.300g, 47cm, de 38 semanas de gestação.\n\nQuanto à suplementação de Ferro elementar, deve-se prescrever neste momento:',
+    options: [
+      '(A) Tratamento com 1 mg/kg de peso/dia de Ferro elementar.',
+      '(B) Profilaxia com 3 mg/kg de peso/dia de Fe elementar.',
+      '(C) Profilaxia com 2 mg/kg de peso/dia de Fe elementar.',
+      '(D) O aleitamento materno exclusivo não indica prescrição de ferro nessa faixa etária.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Lactente a termo, porém com baixo peso ao nascer (2.300 g), em aleitamento materno exclusivo: pela SBP, recém-nascidos com peso < 2.500 g devem receber ferro profilático na dose de 2 mg/kg/dia de ferro elementar.',
+    commentary: 'A dose de 1 mg/kg/dia é para RN a termo com peso adequado. 3 mg/kg/dia é para peso < 1.500 g. O aleitamento exclusivo não dispensa a profilaxia.',
+    reference: 'Manual de Nutrição da Sociedade Brasileira de Pediatria / Consenso de Anemia da Sociedade Brasileira de Pediatria / Diretrizes Anemia do Ministério da Saúde',
+    tags: ['pediatria', 'nutrição', 'anemia ferropriva']
+  },
+  {
+    id: 'tp2020-79',
+    module: 'Pediatria',
+    text: 'Escolar, 9 anos, apresenta quadro de fotofobia, ardor, hiperemia conjuntival e lacrimejamento ocular e cefaleia. É levado ao pediatra na unidade de pronto atendimento. A história clínica revela que sintomas apareceram desde o final do ano passado e que regrediram um pouco durante as férias, porém com o retorno das atividades escolares observou piora do quadro novamente. Mãe também observou que apresenta sonolência durante o dia, principalmente quando força os olhos (sic).\n\nResponda qual deve ser a provável hipótese diagnóstica e conduta do pediatra após examiná-lo:',
+    options: [
+      '(A) Enxaqueca, encaminhar para neurologista.',
+      '(B) Conjuntivite, prescrever colírio antibacteriano.',
+      '(C) Alergia, encaminhar para alergologista.',
+      '(D) Ametropia, encaminhar para oftalmologista.'
+    ],
+    correctAnswer: 3,
+    explanation: 'Fotofobia, ardor, lacrimejamento, cefaleia e sonolência que pioram com o esforço visual escolar e melhoram nas férias: ametropia (erro refrativo). A criança deve ser encaminhada ao oftalmologista para avaliação da acuidade visual e refração.',
+    commentary: 'Enxaqueca, conjuntivite bacteriana e alergia não explicam a relação com o esforço visual.',
+    reference: 'PROPED Programa de atualização em terapêutica Pediátrica. Ciclo 5, v. 1. 2018, p 11-49. / Revista de Pediatria SOPERJ - suplemento, p40-46, 2011 / PROMEF – Ciclo 15, vol 1, 2020. p 35-60.',
+    tags: ['pediatria', 'oftalmologia']
+  },
+  {
+    id: 'tp2020-80',
+    module: 'Pediatria',
+    text: 'Menor com 4 anos de idade é levada ao Pronto-Socoro devido a quadro de intensa dor abdominal, periumbilical e diarreia fétida há cerca de 7 dias. Mãe relata perda de apetite e muitos gases intestinais.\n\nApós exame físico normal, com ruídos hidroaéreos aumentados, sem visceromegalias, qual a hipótese diagnóstica mais provável?',
+    options: [
+      '(A) Alergia à proteína do leite de vaca',
+      '(B) Giardíase',
+      '(C) Infecção urinária',
+      '(D) Intoxicação alimentar'
+    ],
+    correctAnswer: 1,
+    explanation: 'Criança de 4 anos com dor abdominal periumbilical, diarreia fétida, flatulência e perda de apetite: giardíase, parasitose muito prevalente em crianças menores de 10 anos.',
+    commentary: 'Alergia à proteína do leite de vaca é mais comum no lactente. Infecção urinária e intoxicação alimentar não explicam o quadro arrastado com má absorção.',
+    reference: 'Projeto Diretrizes AMB - Abordagem das Parasitoses Intestinais mais Prevalentes na Infância. / Rev. APS, Juiz de Fora, v. 13, n. 2, p. 231-240, abr./jun. 2010. / Brasil - Secretaria de Vigilância em Saúde, 8. ed. rev. Brasília: Ministério da Saúde, 2010.',
+    tags: ['pediatria', 'parasitoses intestinais']
   }
 ];
