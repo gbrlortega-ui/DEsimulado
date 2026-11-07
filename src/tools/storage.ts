@@ -35,11 +35,12 @@ function load(): Store {
   return { users: {}, docs: {} };
 }
 
-function save(store: Store) {
+function save(store: Store): boolean {
   try {
     localStorage.setItem(KEY, JSON.stringify(store));
+    return true;
   } catch {
-    /* ignora */
+    return false; // geralmente: espaço do navegador cheio (imagens grandes)
   }
 }
 
@@ -108,14 +109,14 @@ export function listDocs(email: string): ToolDoc[] {
   return (load().docs[email] ?? []).slice().sort((a, b) => b.updatedAt - a.updatedAt);
 }
 
-export function saveDoc(email: string, doc: ToolDoc) {
+export function saveDoc(email: string, doc: ToolDoc): boolean {
   const store = load();
   const list = store.docs[email] ?? [];
   const i = list.findIndex((d) => d.id === doc.id);
   if (i >= 0) list[i] = doc;
   else list.push(doc);
   store.docs[email] = list;
-  save(store);
+  return save(store);
 }
 
 export function deleteDoc(email: string, id: string) {

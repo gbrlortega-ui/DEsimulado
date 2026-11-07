@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import {
   ArrowLeft,
   Check,
+  CheckSquare,
   Copy,
   FileDown,
   FlaskConical,
@@ -10,6 +11,7 @@ import {
   Plus,
   Save,
   Search,
+  Square,
   ShieldCheck,
   Trash2,
   TriangleAlert,
@@ -23,12 +25,14 @@ import {
   TOOLS,
   TOOL_ORDER,
   findIdentifiers,
+  showValue,
   toInitials,
   type Field,
   type PrivacyHit,
   type ToolKind,
 } from './forms';
 import { TOOL_ICONS } from './ToolsMenu';
+import { ImagePicker, PortfolioPrint, byActivityDate, readImages } from './Portfolio';
 import {
   currentSession,
   deleteDoc,
@@ -194,6 +198,8 @@ const FieldInput: React.FC<{ field: Field; value: string; onChange: (v: string) 
           <option key={o}>{o}</option>
         ))}
       </select>
+    ) : field.kind === 'date' ? (
+      <input className={cn(inputCls, 'mt-1.5')} type="date" value={value} onChange={(e) => onChange(e.target.value)} />
     ) : (
       <input className={cn(inputCls, 'mt-1.5')} value={value} placeholder={field.placeholder} onChange={(e) => onChange(e.target.value)} />
     )}
@@ -203,7 +209,11 @@ const FieldInput: React.FC<{ field: Field; value: string; onChange: (v: string) 
 /* ---------- Texto do documento (cópia, e-mail) ---------- */
 function docToText(doc: ToolDoc, hideInitials: boolean): string {
   const def = TOOLS[doc.kind];
-  const lines: string[] = [`${def.label.toUpperCase()} — ${doc.title || 'sem título'}`];
+  const lines: string[] = [
+    def.kind === 'portfolio'
+      ? `ATIVIDADE: ${doc.title || 'sem título'}`
+      : `${def.label.toUpperCase()} — ${doc.title || 'sem título'}`,
+  ];
   if (doc.temas.length) lines.push(`Temas: ${doc.temas.join(', ')}`);
   if (def.hasPatient) {
     const id = [
@@ -216,9 +226,9 @@ function docToText(doc: ToolDoc, hideInitials: boolean): string {
     const filled = s.fields.filter((f) => doc.data[f.key]?.trim());
     if (!filled.length) continue;
     lines.push('', s.title.toUpperCase());
-    for (const f of filled) lines.push(`${f.label}:`, doc.data[f.key].trim(), '');
+    for (const f of filled) lines.push(`${f.label}:`, showValue(f, doc.data[f.key].trim()), '');
   }
-  lines.push('', 'Documento anonimizado, registrado para fins de estudo no DEsimulados.');
+  if (readImages(doc).length) lines.push('(Esta ficha tem imagens na área livre — veja o PDF.)');
   return lines.join('\n');
 }
 
@@ -285,12 +295,19 @@ const Modal: React.FC<{ title: string; onClose: () => void; children: React.Reac
 );
 
 /* ---------- Compartilhar ---------- */
-const ShareModal: React.FC<{ doc: ToolDoc; onClose: () => void }> = ({ doc, onClose }) => {
+const ShareModal: React.FC<{ docs: ToolDoc[]; onClose: () => void; onPdf?: () => void }> = ({ docs, onClose, onPdf }) => {
   const [to, setTo] = useState('');
   const [hide, setHide] = useState(true);
   const [copied, setCopied] = useState(false);
-  const text = docToText(doc, hide);
-  const subject = `[DEsimulados] ${TOOLS[doc.kind].label}: ${doc.title || 'caso para discussão'}`;
+  const doc = docs[0];
+  const isPortfolio = doc.kind === 'portfolio';
+  const ordered = isPortfolio ? [...docs].sort(byActivityDate) : docs;
+  const text =
+    ordered.map((d, i) => (docs.length > 1 ? `— ${i + 1}/${docs.length} —\n` : '') + docToText(d, hide)).join('\n\n\n') +
+    '\n\nDocumento anonimizado, registrado para fins de estudo no DEsimulados.';
+  const subject = isPortfolio
+    ? `[DEsimulados] Portfólio reflexivo — ${docs.length} atividade${docs.length > 1 ? 's' : ''}`
+    : `[DEsimulados] ${TOOLS[doc.kind].label}: ${doc.title || 'caso para discussão'}`;
 
   const copy = async () => {
     try {
@@ -303,7 +320,18 @@ const ShareModal: React.FC<{ doc: ToolDoc; onClose: () => void }> = ({ doc, onCl
   };
 
   return (
-    <Modal title="Enviar para colega ou preceptor" onClose={onClose}>
+    <Modal title={docs.length > 1 ? `Enviar ${docs.length} atividades` : 'Enviar para colega ou preceptor'} onClose={onClose}>
+      {isPortfolio && onPdf && (
+        <div className="mb-5 rounded-xl bg-bg-2 p-4 text-sm text-ink-2 leading-relaxed">
+          <p>
+            Para enviar as fichas no modelo do portfólio, <strong className="text-ink">gere o PDF</strong> e anexe ao e-mail. Imagens da área
+            livre só aparecem no PDF.
+          </p>
+          <button type="button" onClick={onPdf} className="btn btn-ghost !py-2 !px-4 mt-3 text-sm">
+            <FileDown size={16} /> Gerar PDF {docs.length > 1 ? `das ${docs.length} fichas` : 'da ficha'}
+          </button>
+        </div>
+      )}
       <label className="block">
         <span className="text-sm font-semibold text-ink">E-mail do destinatário</span>
         <input className={cn(inputCls, 'mt-1.5')} type="email" value={to} onChange={(e) => setTo(e.target.value)} placeholder="colega@exemplo.com" />
@@ -405,7 +433,11 @@ const Editor: React.FC<{
 
   const persist = () => {
     const final = { ...doc, updatedAt: Date.now() };
-    saveDoc(session.email, final);
+    if (!saveDoc(session.email, final)) {
+      setHits(null);
+      alert('Não foi possível salvar: o espaço deste navegador acabou. Remova algumas imagens e tente de novo. (Na versão final isso não acontece.)');
+      return;
+    }
     setDoc(final);
     setSavedAt(final.updatedAt);
     setDirty(false);
@@ -433,7 +465,7 @@ const Editor: React.FC<{
 
         <input
           className="mt-5 w-full bg-transparent font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-ink placeholder:text-muted/50 focus:outline-none"
-          placeholder={def.kind === 'portfolio' ? 'Título da reflexão' : 'Título do caso — ex.: HAS descompensada'}
+          placeholder={def.kind === 'portfolio' ? 'Atividade — ex.: SAI – Agenda de atendimentos' : 'Título do caso — ex.: HAS descompensada'}
           value={doc.title}
           onChange={(e) => {
             setDoc((d) => ({ ...d, title: e.target.value }));
@@ -441,8 +473,10 @@ const Editor: React.FC<{
           }}
         />
 
+        {def.kind === 'portfolio' && <p className="mt-1 text-sm text-muted">Nome da atividade, como aparece no campo “Atividade” da ficha.</p>}
+
         {/* Temas */}
-        <div className="mt-4">
+        <div className={cn('mt-4', def.kind === 'portfolio' && 'hidden')}>
           <div className="flex flex-wrap gap-1.5 items-center">
             {doc.temas.map((t) => (
               <span key={t} className="inline-flex items-center gap-1 pl-2.5 pr-1.5 py-1 rounded-md bg-primary-soft text-primary-ink text-xs font-semibold">
@@ -519,6 +553,9 @@ const Editor: React.FC<{
               {s.fields.map((f) => (
                 <FieldInput key={f.key} field={f} value={doc.data[f.key] ?? ''} onChange={(v) => set(f.key, v)} />
               ))}
+              {def.kind === 'portfolio' && s.title === 'Área livre' && (
+                <ImagePicker images={readImages(doc)} onChange={(imgs) => set('imagens', JSON.stringify(imgs))} />
+              )}
             </div>
           </section>
         ))}
@@ -568,95 +605,190 @@ const Editor: React.FC<{
         </div>
       </div>
 
-      <PrintView doc={doc} author={session.name} />
+      {def.kind === 'portfolio' ? <PortfolioPrint docs={[doc]} author={session.name} /> : <PrintView doc={doc} author={session.name} />}
       {hits && <PrivacyModal hits={hits} onFix={() => setHits(null)} onSaveAnyway={persist} />}
-      {share && <ShareModal doc={doc} onClose={() => setShare(false)} />}
+      {share && (
+        <ShareModal
+          docs={[doc]}
+          onClose={() => setShare(false)}
+          onPdf={() => {
+            setShare(false);
+            setTimeout(() => window.print(), 50);
+          }}
+        />
+      )}
     </>
   );
 };
 
 /* ---------- Lista de documentos ---------- */
-const DocList: React.FC<{ kind: ToolKind; docs: ToolDoc[]; onNew: () => void; onOpen: (d: ToolDoc) => void }> = ({
+const DocList: React.FC<{ kind: ToolKind; docs: ToolDoc[]; author: string; onNew: () => void; onOpen: (d: ToolDoc) => void }> = ({
   kind,
   docs,
+  author,
   onNew,
   onOpen,
 }) => {
   const def = TOOLS[kind];
+  const isPortfolio = kind === 'portfolio';
   const [q, setQ] = useState('');
   const [tema, setTema] = useState('');
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [share, setShare] = useState(false);
   const mine = docs.filter((d) => d.kind === kind);
+  if (isPortfolio) mine.sort(byActivityDate);
   const temas = Array.from(new Set(mine.flatMap((d) => d.temas))).sort();
   const shown = mine.filter(
     (d) =>
       (!tema || d.temas.includes(tema)) &&
       (!q || (d.title + ' ' + Object.values(d.data).join(' ')).toLowerCase().includes(q.toLowerCase())),
   );
+  const chosen = mine.filter((d) => selected.has(d.id));
+  const allChosen = shown.length > 0 && shown.every((d) => selected.has(d.id));
+
+  const toggle = (id: string) =>
+    setSelected((cur) => {
+      const n = new Set(cur);
+      if (n.has(id)) n.delete(id);
+      else n.add(id);
+      return n;
+    });
+  const toggleAll = () => setSelected(allChosen ? new Set() : new Set(shown.map((d) => d.id)));
+
+  const subtitle = (d: ToolDoc) =>
+    isPortfolio
+      ? [d.data.data && showValue({ key: 'data', label: '', kind: 'date' }, d.data.data), d.data.local].filter(Boolean).join(' · ') || '—'
+      : [d.data.iniciais, d.data.sexo, d.data.idade].filter(Boolean).join(' · ') || '—';
 
   return (
-    <div className="container-custom py-8 sm:py-10">
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-        <div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold">{def.label}</h1>
-          <p className="mt-2 text-ink-2">{def.description}</p>
+    <>
+      <div className="print:hidden container-custom py-8 sm:py-10">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div>
+            <h1 className="text-3xl sm:text-4xl font-extrabold">{def.label}</h1>
+            <p className="mt-2 text-ink-2 max-w-xl">{def.description}</p>
+          </div>
+          <button type="button" onClick={onNew} className="btn btn-primary !py-3 self-start sm:self-auto">
+            <Plus size={18} /> {kind === 'anamnese' ? 'Nova anamnese' : kind === 'soap' ? 'Novo SOAP' : 'Nova atividade'}
+          </button>
         </div>
-        <button type="button" onClick={onNew} className="btn btn-primary !py-3 self-start sm:self-auto">
-          <Plus size={18} /> {kind === 'anamnese' ? 'Nova anamnese' : kind === 'soap' ? 'Novo SOAP' : 'Novo portfólio'}
-        </button>
+
+        {mine.length > 0 && (
+          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+            <div className="relative flex-1">
+              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
+              <input className={cn(inputCls, 'pl-9')} placeholder="Buscar" value={q} onChange={(e) => setQ(e.target.value)} />
+            </div>
+            {temas.length > 0 && (
+              <select className={cn(inputCls, 'sm:w-56')} value={tema} onChange={(e) => setTema(e.target.value)}>
+                <option value="">Todos os temas</option>
+                {temas.map((t) => (
+                  <option key={t}>{t}</option>
+                ))}
+              </select>
+            )}
+          </div>
+        )}
+
+        {isPortfolio && mine.length > 0 && (
+          <div className="mt-4 flex items-center justify-between gap-3 text-sm">
+            <button type="button" onClick={toggleAll} className="flex items-center gap-2 font-semibold text-ink-2 hover:text-ink">
+              {allChosen ? <CheckSquare size={18} className="text-primary-ink" /> : <Square size={18} />}
+              {allChosen ? 'Desmarcar todas' : 'Selecionar todas'}
+            </button>
+            <span className="text-muted">
+              {mine.length} atividade{mine.length > 1 ? 's' : ''}
+            </span>
+          </div>
+        )}
+
+        {mine.length === 0 ? (
+          <div className="mt-10 rounded-2xl border border-dashed border-line-2 bg-white p-10 text-center">
+            <p className="font-semibold text-ink">{isPortfolio ? 'Nenhuma atividade ainda.' : 'Nenhum documento ainda.'}</p>
+            <p className="mt-1 text-sm text-muted">
+              {isPortfolio
+                ? 'A cada atividade da prática, adicione uma ficha e faça a reflexão.'
+                : 'Cada paciente gera um documento novo e independente.'}
+            </p>
+          </div>
+        ) : (
+          <ul className={cn('mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3', isPortfolio && chosen.length > 0 && 'pb-24')}>
+            {shown.map((d) => {
+              const on = selected.has(d.id);
+              return (
+                <li key={d.id} className="relative">
+                  <button
+                    type="button"
+                    onClick={() => onOpen(d)}
+                    className={cn(
+                      'w-full h-full text-left bg-white rounded-xl border p-4 transition-colors',
+                      on ? 'border-primary ring-1 ring-primary' : 'border-line hover:border-primary/60',
+                      isPortfolio && 'pr-12',
+                    )}
+                  >
+                    <p className="font-semibold text-ink line-clamp-2">{d.title || 'Sem título'}</p>
+                    <p className="mt-1 text-xs text-muted">{subtitle(d)}</p>
+                    {isPortfolio && d.data.reflexao && <p className="mt-2 text-xs text-ink-2 line-clamp-2">{d.data.reflexao}</p>}
+                    {isPortfolio && !d.data.reflexao && <p className="mt-2 text-xs font-semibold text-accent-coral">Falta a reflexão</p>}
+                    {d.temas.length > 0 && (
+                      <div className="mt-3 flex flex-wrap gap-1">
+                        {d.temas.map((t) => (
+                          <span key={t} className="px-2 py-0.5 rounded bg-primary-soft text-primary-ink text-[11px] font-semibold">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    <p className="mt-3 text-[11px] text-muted">Atualizado em {fmtDate(d.updatedAt)}</p>
+                  </button>
+                  {isPortfolio && (
+                    <button
+                      type="button"
+                      onClick={() => toggle(d.id)}
+                      aria-pressed={on}
+                      aria-label={on ? 'Desmarcar atividade' : 'Selecionar atividade'}
+                      className="absolute top-3 right-3 p-1 text-muted hover:text-ink"
+                    >
+                      {on ? <CheckSquare size={22} className="text-primary-ink" /> : <Square size={22} />}
+                    </button>
+                  )}
+                </li>
+              );
+            })}
+            {shown.length === 0 && <li className="text-sm text-muted">Nada encontrado com esse filtro.</li>}
+          </ul>
+        )}
       </div>
 
-      {mine.length > 0 && (
-        <div className="mt-8 flex flex-col sm:flex-row gap-3">
-          <div className="relative flex-1">
-            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
-            <input className={cn(inputCls, 'pl-9')} placeholder="Buscar nos documentos" value={q} onChange={(e) => setQ(e.target.value)} />
-          </div>
-          {temas.length > 0 && (
-            <select className={cn(inputCls, 'sm:w-56')} value={tema} onChange={(e) => setTema(e.target.value)}>
-              <option value="">Todos os temas</option>
-              {temas.map((t) => (
-                <option key={t}>{t}</option>
-              ))}
-            </select>
-          )}
-        </div>
-      )}
-
-      {mine.length === 0 ? (
-        <div className="mt-10 rounded-2xl border border-dashed border-line-2 bg-white p-10 text-center">
-          <p className="font-semibold text-ink">Nenhum documento ainda.</p>
-          <p className="mt-1 text-sm text-muted">Cada paciente gera um documento novo e independente.</p>
-        </div>
-      ) : (
-        <ul className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {shown.map((d) => (
-            <li key={d.id}>
-              <button
-                type="button"
-                onClick={() => onOpen(d)}
-                className="w-full h-full text-left bg-white rounded-xl border border-line p-4 hover:border-primary/60 transition-colors"
-              >
-                <p className="font-semibold text-ink line-clamp-2">{d.title || 'Sem título'}</p>
-                <p className="mt-1 text-xs text-muted">
-                  {[d.data.iniciais, d.data.sexo, d.data.idade].filter(Boolean).join(' · ') || d.data.cenario || '—'}
-                </p>
-                {d.temas.length > 0 && (
-                  <div className="mt-3 flex flex-wrap gap-1">
-                    {d.temas.map((t) => (
-                      <span key={t} className="px-2 py-0.5 rounded bg-primary-soft text-primary-ink text-[11px] font-semibold">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                <p className="mt-3 text-[11px] text-muted">Atualizado em {fmtDate(d.updatedAt)}</p>
+      {isPortfolio && chosen.length > 0 && (
+        <>
+          <div className="print:hidden fixed bottom-0 inset-x-0 z-30 bg-white/95 backdrop-blur border-t border-line">
+            <div className="container-custom py-3 flex items-center gap-2">
+              <span className="text-sm font-semibold text-ink mr-auto">
+                {chosen.length} selecionada{chosen.length > 1 ? 's' : ''}
+              </span>
+              <button type="button" onClick={() => window.print()} className="btn btn-ghost !px-4 !py-2.5">
+                <FileDown size={17} /> PDF
               </button>
-            </li>
-          ))}
-          {shown.length === 0 && <li className="text-sm text-muted">Nada encontrado com esse filtro.</li>}
-        </ul>
+              <button type="button" onClick={() => setShare(true)} className="btn btn-primary !px-4 !py-2.5">
+                <Mail size={17} /> Enviar
+              </button>
+            </div>
+          </div>
+          <PortfolioPrint docs={chosen} author={author} />
+          {share && (
+            <ShareModal
+              docs={chosen}
+              onClose={() => setShare(false)}
+              onPdf={() => {
+                setShare(false);
+                setTimeout(() => window.print(), 50);
+              }}
+            />
+          )}
+        </>
       )}
-    </div>
+    </>
   );
 };
 
@@ -669,14 +801,22 @@ export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> 
 
   const refresh = (s: Session) => setDocs(listDocs(s.email));
 
-  const startNew = () =>
+  const startNew = () => {
+    // No portfólio, a nova ficha já vem com o cabeçalho e o professor da última atividade.
+    const data: Record<string, string> = {};
+    if (kind === 'portfolio') {
+      const last = docs.find((d) => d.kind === 'portfolio');
+      for (const k of ['disciplina', 'grupo', 'modulo', 'local', 'professor', 'horario']) if (last?.data[k]) data[k] = last.data[k];
+      if (!data.disciplina) data.disciplina = 'IESC';
+    }
     setEditing({
       isNew: true,
-      doc: { id: newId(), kind, title: '', temas: [], data: {}, createdAt: Date.now(), updatedAt: Date.now() },
+      doc: { id: newId(), kind, title: '', temas: [], data, createdAt: Date.now(), updatedAt: Date.now() },
     });
+  };
 
   return (
-    <div className="min-h-screen flex flex-col bg-bg">
+    <div className="min-h-screen flex flex-col bg-bg print:bg-white print:min-h-0">
       <header className="print:hidden sticky top-0 z-40 bg-bg/85 backdrop-blur-md border-b border-line">
         <div className="container-custom h-16 flex items-center justify-between gap-3">
           <Brand onClick={onHome} />
@@ -749,7 +889,7 @@ export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> 
             }}
           />
         ) : (
-          <DocList kind={kind} docs={docs} onNew={startNew} onOpen={(d) => setEditing({ doc: d, isNew: false })} />
+          <DocList key={kind} kind={kind} docs={docs} author={session.name} onNew={startNew} onOpen={(d) => setEditing({ doc: d, isNew: false })} />
         )}
       </main>
     </div>

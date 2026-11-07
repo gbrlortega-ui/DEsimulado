@@ -11,7 +11,7 @@ export type ToolKind = 'anamnese' | 'soap' | 'portfolio';
 export interface Field {
   key: string;
   label: string;
-  kind: 'text' | 'textarea' | 'select' | 'number';
+  kind: 'text' | 'textarea' | 'select' | 'number' | 'date';
   options?: string[];
   placeholder?: string;
   rows?: number;
@@ -125,26 +125,38 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
     kind: 'portfolio',
     label: 'Portfólio reflexivo',
     short: 'Portfólio',
-    description: 'Reflexão guiada pelo ciclo de Gibbs sobre uma vivência da prática.',
+    description: 'Uma ficha por atividade, no modelo do portfólio do IESC. Selecione as que quiser e envie juntas.',
     hasPatient: false,
     sections: [
       {
-        title: 'Contexto',
+        title: 'Cabeçalho',
         fields: [
-          { key: 'cenario', label: 'Cenário de prática', kind: 'text', placeholder: 'ex.: UBS – visita domiciliar com ACS' },
-          { key: 'dataVivencia', label: 'Data da vivência', kind: 'text', placeholder: 'dd/mm/aaaa' },
+          { key: 'disciplina', label: 'Disciplina', kind: 'text', placeholder: 'ex.: IESC' },
+          { key: 'grupo', label: 'Grupo', kind: 'text', placeholder: 'ex.: Grupo A' },
+          { key: 'modulo', label: 'Módulo', kind: 'text', placeholder: 'ex.: M13' },
         ],
       },
       {
-        title: 'Ciclo reflexivo de Gibbs',
+        title: 'Atividade',
         fields: [
-          { key: 'descricao', label: '1. Descrição', kind: 'textarea', rows: 5, wide: true, hint: 'O que aconteceu? Quem estava envolvido (sem nomes)?' },
-          { key: 'sentimentos', label: '2. Sentimentos', kind: 'textarea', rows: 4, wide: true, hint: 'O que você sentiu e pensou durante a situação?' },
-          { key: 'avaliacao', label: '3. Avaliação', kind: 'textarea', rows: 4, wide: true, hint: 'O que foi bom e o que foi ruim na experiência?' },
-          { key: 'analise', label: '4. Análise', kind: 'textarea', rows: 5, wide: true, hint: 'Por que aconteceu assim? Relacione com a literatura e as políticas de saúde.' },
-          { key: 'conclusao', label: '5. Conclusão', kind: 'textarea', rows: 4, wide: true, hint: 'O que você aprendeu? O que poderia ter feito diferente?' },
-          { key: 'plano', label: '6. Plano de ação', kind: 'textarea', rows: 4, wide: true, hint: 'O que fará da próxima vez numa situação parecida?' },
-          { key: 'referencias', label: 'Referências', kind: 'textarea', rows: 3, wide: true },
+          { key: 'local', label: 'Local', kind: 'text', placeholder: 'ex.: UBS Bonsucesso' },
+          { key: 'data', label: 'Data', kind: 'date' },
+          { key: 'professor', label: 'Professor(a)', kind: 'text', placeholder: 'ex.: Prof. Welder' },
+          { key: 'horario', label: 'Horário', kind: 'text', placeholder: 'ex.: 14h–17h' },
+          { key: 'descricao', label: 'Descrição da atividade', kind: 'textarea', rows: 6, wide: true, hint: 'O que foi feito, com quem e onde. Sem nomes de pacientes.' },
+        ],
+      },
+      {
+        title: 'Área livre',
+        fields: [
+          { key: 'areaLivre', label: 'Área livre (colagens, desenhos, charges, poemas, músicas, fotos etc.)', kind: 'textarea', rows: 4, wide: true, hint: 'Escreva aqui e, se quiser, adicione imagens abaixo.' },
+        ],
+      },
+      {
+        title: 'Reflexão',
+        fields: [
+          { key: 'reflexao', label: 'Reflexão sobre a atividade', kind: 'textarea', rows: 7, wide: true, hint: 'O que você sentiu, o que aprendeu, o que faria diferente.' },
+          { key: 'referencias', label: 'Referências bibliográficas / Assuntos a pesquisar', kind: 'textarea', rows: 3, wide: true },
         ],
       },
     ],
@@ -214,7 +226,7 @@ export function findIdentifiers(
     .filter((w) => w.length >= 3 && !CONECTIVOS.has(w.toLowerCase()));
 
   for (const [key, value] of Object.entries(data)) {
-    if (!value || key === 'iniciais') continue;
+    if (!value || key === 'iniciais' || key === 'imagens' || key === 'data') continue;
     const label = labels[key] ?? key;
 
     for (const part of nameParts) {
@@ -229,3 +241,12 @@ export function findIdentifiers(
   }
   return hits;
 }
+
+/** "2026-08-06" → "06/08/2026" (outros valores passam como estão). */
+export function fmtDateBR(v: string): string {
+  const m = v.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return m ? `${m[3]}/${m[2]}/${m[1]}` : v;
+}
+
+/** Valor de um campo pronto para exibir. */
+export const showValue = (f: Field, v: string) => (f.kind === 'date' ? fmtDateBR(v) : v);
