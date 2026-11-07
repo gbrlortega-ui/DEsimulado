@@ -1222,7 +1222,10 @@ export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> 
     const data: Record<string, string> = {};
     if (kind === 'portfolio') {
       const last = docs.find((d) => d.kind === 'portfolio');
-      for (const k of ['disciplina', 'grupo', 'modulo', 'local', 'professor', 'horario']) if (last?.data[k]) data[k] = last.data[k];
+      for (const k of ['disciplina', 'grupo', 'modulo', 'local', 'professor', 'horario', 'total']) if (last?.data[k]) data[k] = last.data[k];
+      // sugere o próximo número da sequência
+      const nums = docs.filter((d) => d.kind === 'portfolio').map((d) => parseInt(d.data.numero ?? '', 10)).filter((x) => x > 0);
+      if (nums.length) data.numero = String(Math.max(...nums) + 1);
       if (!data.disciplina) data.disciplina = 'IESC';
     }
     setEditing({

@@ -262,6 +262,8 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
           { key: 'disciplina', label: 'Disciplina', kind: 'text', placeholder: 'ex.: IESC' },
           { key: 'grupo', label: 'Grupo', kind: 'text', placeholder: 'ex.: Grupo A' },
           { key: 'modulo', label: 'Módulo', kind: 'text', placeholder: 'ex.: M13' },
+          { key: 'numero', label: 'Nº da atividade', kind: 'text', unit: 'nº', hint: 'Fixo: a atividade 5 sai sempre como 05/12.' },
+          { key: 'total', label: 'Total de atividades', kind: 'text', unit: 'total', hint: 'Do semestre/módulo, ex.: 12.' },
         ],
       },
       {

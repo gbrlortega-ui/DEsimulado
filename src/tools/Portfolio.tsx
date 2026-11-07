@@ -100,7 +100,14 @@ export const ImagePicker: React.FC<{ images: string[]; onChange: (imgs: string[]
 /* ---------- Ficha impressa (modelo do portfólio do IESC) ---------- */
 
 /** Ordena as atividades pela data (as sem data vão para o fim). */
+const num = (v?: string) => {
+  const x = parseInt(v ?? '', 10);
+  return Number.isFinite(x) && x > 0 ? x : null;
+};
+
+/** Ordena pelo nº fixo da atividade e, sem ele, pela data (as sem data vão para o fim). */
 export const byActivityDate = (a: ToolDoc, b: ToolDoc) =>
+  (num(a.data.numero) ?? 9999) - (num(b.data.numero) ?? 9999) ||
   (a.data.data || '9999').localeCompare(b.data.data || '9999') || a.createdAt - b.createdAt;
 
 const cell: React.CSSProperties = { border: '1px solid #000', padding: '4px 6px', verticalAlign: 'top' };
@@ -112,12 +119,16 @@ const Sheet: React.FC<{ doc: ToolDoc; n: number; total: number; author: string; 
   const imgs = readImages(doc);
   const head = ['PORTFÓLIO', d.disciplina, d.grupo, d.modulo].filter(Boolean);
   const pad = (x: number) => String(x).padStart(2, '0');
+  // Numeração fixa quando o aluno preencheu nº e total; senão, a posição na seleção.
+  const fixedN = num(d.numero);
+  const fixedTotal = num(d.total);
+  const label = fixedN ? `${pad(fixedN)}/${pad(fixedTotal ?? total)}` : `${pad(n)}/${pad(total)}`;
   const participantes = [d.grupo, d.professor && `Professor(a): ${d.professor}`, d.horario && `Horário: ${d.horario}`].filter(Boolean).join('  |  ');
 
   return (
     <section style={{ breakAfter: last ? 'auto' : 'page', fontFamily: 'Georgia, "Times New Roman", serif', fontSize: '10.5pt', color: '#000' }}>
       <p style={{ textAlign: 'right', fontSize: '8.5pt', margin: '0 0 6px' }}>
-        {[head.slice(0, 2).join(' '), ...head.slice(2)].join(' • ').toUpperCase()} • {pad(n)}/{pad(total)}
+        {[head.slice(0, 2).join(' '), ...head.slice(2)].join(' • ').toUpperCase()} • {label}
       </p>
       <table style={{ width: '100%', borderCollapse: 'collapse', tableLayout: 'fixed' }}>
         <colgroup>
