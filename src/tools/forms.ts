@@ -1,3 +1,4 @@
+import { ciapText } from './CiapPicker';
 /**
  * Modelos dos documentos de "Outras ferramentas" (Anamnese, SOAP, Portfólio reflexivo),
  * pensados para a prática na UBS. Cada atendimento gera um documento independente.
@@ -11,7 +12,7 @@ export type ToolKind = 'anamnese' | 'soap' | 'portfolio';
 export interface Field {
   key: string;
   label: string;
-  kind: 'text' | 'textarea' | 'select' | 'number' | 'date';
+  kind: 'text' | 'textarea' | 'select' | 'number' | 'date' | 'ciap';
   options?: string[];
   placeholder?: string;
   rows?: number;
@@ -214,6 +215,7 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
             wide: true,
             tip: 'Raciocine em etapas: diagnóstico sindrômico (qual síndrome?) → topográfico (onde está a lesão, qual órgão ou sistema?) → nosológico/etiológico (qual doença e causa?) → hipótese principal e diferenciais.',
           },
+          { key: 'ciap', label: 'Problemas avaliados — CIAP-2 / CID-10', kind: 'ciap', wide: true },
           {
             key: 'conduta',
             label: 'Conduta',
@@ -240,7 +242,7 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
           { key: 's', label: 'S — Subjetivo', kind: 'textarea', rows: 5, wide: true, placeholder: 'Motivo da consulta, queixas, evolução, adesão ao tratamento.' },
           { key: 'o', label: 'O — Objetivo', kind: 'textarea', rows: 5, wide: true, placeholder: 'Sinais vitais, exame físico, resultados de exames.' },
           { key: 'a', label: 'A — Avaliação', kind: 'textarea', rows: 4, wide: true, placeholder: 'Problemas avaliados e raciocínio clínico.' },
-          { key: 'ciap', label: 'CIAP-2 / CID-10', kind: 'text', wide: true, placeholder: 'ex.: K86 – Hipertensão sem complicações' },
+          { key: 'ciap', label: 'Problemas avaliados — CIAP-2 / CID-10', kind: 'ciap', wide: true },
           { key: 'p', label: 'P — Plano', kind: 'textarea', rows: 5, wide: true, placeholder: 'Conduta, prescrição, exames solicitados, orientações, retorno.' },
           { key: 'aprendizado', label: 'Pontos para estudar', kind: 'textarea', rows: 3, wide: true },
         ],
@@ -388,7 +390,7 @@ export function findIdentifiers(
     .filter((w) => w.length >= 3 && !CONECTIVOS.has(w.toLowerCase()));
 
   for (const [key, value] of Object.entries(data)) {
-    if (!value || key === 'iniciais' || key === 'imagens' || key === 'data' || key === 'exames') continue;
+    if (!value || key === 'iniciais' || key === 'imagens' || key === 'data' || key === 'exames' || key === 'ciap') continue;
     const label = labels[key] ?? key;
 
     for (const part of nameParts) {
@@ -411,7 +413,7 @@ export function fmtDateBR(v: string): string {
 }
 
 /** Valor de um campo pronto para exibir. */
-export const showValue = (f: Field, v: string) => (f.kind === 'date' ? fmtDateBR(v) : v);
+export const showValue = (f: Field, v: string) => (f.kind === 'date' ? fmtDateBR(v) : f.kind === 'ciap' ? ciapText(v) : v);
 
 /** Nome completo do campo para impressão e e-mail: "HMA — História da moléstia atual". */
 export const fullLabel = (f: Field) => (f.abbr ? `${f.abbr} — ${f.label}` : f.label);

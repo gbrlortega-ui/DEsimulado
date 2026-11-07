@@ -16,13 +16,13 @@ export function readImages(doc: ToolDoc): string[] {
   }
 }
 
-/** Reduz a imagem (máx. 1000 px, JPEG) para caber no armazenamento. */
+/** Reduz a imagem (máx. 900 px, JPEG) para caber no armazenamento. */
 function compress(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
     const img = new Image();
     const url = URL.createObjectURL(file);
     img.onload = () => {
-      const scale = Math.min(1, 1000 / Math.max(img.width, img.height));
+      const scale = Math.min(1, 900 / Math.max(img.width, img.height));
       const c = document.createElement('canvas');
       c.width = Math.round(img.width * scale);
       c.height = Math.round(img.height * scale);
@@ -32,7 +32,7 @@ function compress(file: File): Promise<string> {
       ctx.fillRect(0, 0, c.width, c.height);
       ctx.drawImage(img, 0, 0, c.width, c.height);
       URL.revokeObjectURL(url);
-      resolve(c.toDataURL('image/jpeg', 0.72));
+      resolve(c.toDataURL('image/jpeg', 0.68));
     };
     img.onerror = () => {
       URL.revokeObjectURL(url);

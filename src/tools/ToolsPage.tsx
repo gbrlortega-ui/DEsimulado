@@ -1,4 +1,4 @@
-import React, { useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowLeft,
   Check,
@@ -7,7 +7,8 @@ import {
   ChevronDown,
   Copy,
   FileDown,
-  FlaskConical,
+  Loader2,
+  MailCheck,
   Lightbulb,
   LogOut,
   Mail,
@@ -39,16 +40,20 @@ import {
   type ToolKind,
 } from './forms';
 import { TOOL_ICONS } from './ToolsMenu';
+import { CiapPicker } from './CiapPicker';
 import { ImagePicker, PortfolioPrint, byActivityDate, readImages } from './Portfolio';
 import {
-  currentSession,
+  authMessage,
   deleteDoc,
   listDocs,
   newId,
+  resendVerification,
+  resetPassword,
   saveDoc,
   signIn,
   signOut,
   signUp,
+  watchSession,
   type Session,
   type ToolDoc,
 } from './storage';
@@ -62,21 +67,40 @@ const fieldCls =
 const fmtDate = (t: number) =>
   new Date(t).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
 
-/* ---------- Faixa de "versão de teste" ---------- */
-const TestBanner = () => (
-  <div className="bg-accent-amber/15 border-b border-accent-amber/30 text-ink-2 text-xs">
-    <div className="container-custom py-2 flex items-center gap-2">
-      <FlaskConical size={14} className="shrink-0" />
-      <span>
-        <strong>Versão de teste.</strong> Conta e documentos ficam salvos só neste navegador. Na versão final, ficam na nuvem.
-      </span>
+/* ---------- Aviso de e-mail não verificado ---------- */
+const VerifyBanner: React.FC<{ email: string }> = ({ email }) => {
+  const [sent, setSent] = useState(false);
+  return (
+    <div className="bg-primary-soft border-b border-primary/20 text-ink-2 text-xs">
+      <div className="container-custom py-2 flex flex-wrap items-center gap-x-2 gap-y-1">
+        <MailCheck size={14} className="shrink-0 text-primary-ink" />
+        <span>
+          Confirme seu e-mail pelo link que enviamos para <strong className="text-ink">{email}</strong>.
+        </span>
+        <button
+          type="button"
+          disabled={sent}
+          onClick={async () => {
+            try {
+              await resendVerification();
+              setSent(true);
+            } catch {
+              /* ignora */
+            }
+          }}
+          className="font-semibold text-primary-ink hover:text-ink disabled:text-muted"
+        >
+          {sent ? 'Reenviado' : 'Reenviar'}
+        </button>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 /* ---------- Cadastro / login ---------- */
 const AuthScreen: React.FC<{ onDone: (s: Session) => void; onHome: () => void }> = ({ onDone, onHome }) => {
-  const [mode, setMode] = useState<'entrar' | 'cadastrar'>('cadastrar');
+  const [mode, setMode] = useState<'entrar' | 'cadastrar' | 'recuperar'>('cadastrar');
+  const [info, setInfo] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -87,6 +111,19 @@ const AuthScreen: React.FC<{ onDone: (s: Session) => void; onHome: () => void }>
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+    setInfo('');
+    if (mode === 'recuperar') {
+      setBusy(true);
+      try {
+        await resetPassword(email);
+        setInfo('Se houver uma conta com este e-mail, você vai receber um link para criar uma nova senha.');
+      } catch (err) {
+        setError(authMessage(err));
+      } finally {
+        setBusy(false);
+      }
+      return;
+    }
     if (mode === 'cadastrar') {
       if (password.length < 6) return setError('A senha precisa ter pelo menos 6 caracteres.');
       if (!accept) return setError('Para criar a conta, aceite o compromisso de anonimização.');
@@ -95,7 +132,7 @@ const AuthScreen: React.FC<{ onDone: (s: Session) => void; onHome: () => void }>
     try {
       onDone(mode === 'cadastrar' ? await signUp(name, email, password) : await signIn(email, password));
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Não foi possível continuar.');
+      setError(authMessage(err));
     } finally {
       setBusy(false);
     }
@@ -130,8 +167,9 @@ const AuthScreen: React.FC<{ onDone: (s: Session) => void; onHome: () => void }>
               onClick={() => {
                 setMode(m);
                 setError('');
+                setInfo('');
               }}
-              className={cn('py-2 rounded-md transition-colors', mode === m ? 'bg-white text-ink shadow-sm' : 'text-muted hover:text-ink')}
+              className={cn('py-2 rounded-md transition-colors', mode === m || (m === 'entrar' && mode === 'recuperar') ? 'bg-white text-ink shadow-sm' : 'text-muted hover:text-ink')}
             >
               {m === 'cadastrar' ? 'Criar conta' : 'Entrar'}
             </button>
@@ -156,8 +194,25 @@ const AuthScreen: React.FC<{ onDone: (s: Session) => void; onHome: () => void }>
               autoComplete="email"
             />
           </label>
-          <label className="block">
-            <span className="text-sm font-semibold text-ink">Senha</span>
+          {mode === 'recuperar' && (
+            <p className="text-sm text-ink-2">Digite o e-mail da sua conta. Vamos enviar um link para você criar uma nova senha.</p>
+          )}
+          {mode !== 'recuperar' && <label className="block">
+            <span className="flex items-center justify-between text-sm font-semibold text-ink">
+              Senha
+              {mode === 'entrar' && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMode('recuperar');
+                    setError('');
+                  }}
+                  className="text-xs font-semibold text-primary-ink hover:text-ink"
+                >
+                  Esqueci minha senha
+                </button>
+              )}
+            </span>
             <input
               className={cn(inputCls, 'mt-1.5')}
               type="password"
@@ -166,7 +221,7 @@ const AuthScreen: React.FC<{ onDone: (s: Session) => void; onHome: () => void }>
               required
               autoComplete={mode === 'cadastrar' ? 'new-password' : 'current-password'}
             />
-          </label>
+          </label>}
           {mode === 'cadastrar' && (
             <label className="flex gap-2.5 items-start text-sm text-ink-2 leading-relaxed">
               <input type="checkbox" checked={accept} onChange={(e) => setAccept(e.target.checked)} className="mt-1 accent-[var(--color-primary)]" />
@@ -179,10 +234,17 @@ const AuthScreen: React.FC<{ onDone: (s: Session) => void; onHome: () => void }>
         </div>
 
         {error && <p className="mt-4 text-sm font-medium text-accent-coral">{error}</p>}
+        {info && <p className="mt-4 text-sm font-medium text-primary-ink">{info}</p>}
 
         <button type="submit" disabled={busy} className="btn btn-primary w-full mt-6 disabled:opacity-60">
-          {mode === 'cadastrar' ? 'Criar conta e entrar' : 'Entrar'}
+          {busy && <Loader2 size={17} className="animate-spin" />}
+          {mode === 'cadastrar' ? 'Criar conta e entrar' : mode === 'recuperar' ? 'Enviar link' : 'Entrar'}
         </button>
+        {mode === 'recuperar' && (
+          <button type="button" onClick={() => setMode('entrar')} className="mt-3 w-full text-sm font-semibold text-muted hover:text-ink">
+            Voltar para entrar
+          </button>
+        )}
       </form>
     </div>
   );
@@ -251,6 +313,8 @@ const FieldInput: React.FC<{ field: Field; value: string; onChange: (v: string) 
               <option key={o}>{o}</option>
             ))}
           </select>
+        ) : field.kind === 'ciap' ? (
+          <CiapPicker id={id} value={value} onChange={onChange} />
         ) : field.kind === 'date' ? (
           <input id={id} className={control} type="date" value={value} onChange={(e) => onChange(e.target.value)} />
         ) : (
@@ -396,7 +460,7 @@ const PrintView: React.FC<{ doc: ToolDoc; author: string }> = ({ doc, author }) 
             {!s.compact && filled.map((f) => (
               <div key={f.key} className="mt-2 break-inside-avoid">
                 <p className="font-semibold">{fullLabel(f)}</p>
-                <p className="whitespace-pre-line">{doc.data[f.key]}</p>
+                <p className="whitespace-pre-line">{showValue(f, doc.data[f.key])}</p>
               </div>
             ))}
           </div>
@@ -676,12 +740,25 @@ const Editor: React.FC<{
     setDirty(true);
   };
 
-  const persist = () => {
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState('');
+
+  const persist = async () => {
     const final = { ...doc, updatedAt: Date.now() };
-    if (!saveDoc(session.email, final)) {
-      setHits(null);
-      alert('Não foi possível salvar: o espaço deste navegador acabou. Remova algumas imagens e tente de novo. (Na versão final isso não acontece.)');
+    setHits(null);
+    setSaving(true);
+    setSaveError('');
+    try {
+      await saveDoc(session.uid, final);
+    } catch (err) {
+      setSaveError(
+        (err as { code?: string })?.code === 'too-large'
+          ? 'O documento ficou grande demais por causa das imagens. Remova uma ou duas e salve de novo.'
+          : authMessage(err),
+      );
       return;
+    } finally {
+      setSaving(false);
     }
     setDoc(final);
     setSavedAt(final.updatedAt);
@@ -881,9 +958,10 @@ const Editor: React.FC<{
       {/* Barra de ações fixa */}
       <div className="print:hidden sticky bottom-0 z-30 bg-white/95 backdrop-blur border-t border-line">
         <div className="container-custom py-3 flex items-center gap-2">
-          <button type="button" onClick={trySave} className="btn btn-primary !px-5 !py-2.5">
-            <Save size={17} /> Salvar
+          <button type="button" onClick={trySave} disabled={saving} className="btn btn-primary !px-5 !py-2.5 disabled:opacity-70">
+            {saving ? <Loader2 size={17} className="animate-spin" /> : <Save size={17} />} {saving ? 'Salvando…' : 'Salvar'}
           </button>
+          {saveError && <span className="text-xs font-medium text-accent-coral max-w-xs">{saveError}</span>}
           <button
             type="button"
             onClick={() => window.print()}
@@ -1106,12 +1184,38 @@ const DocList: React.FC<{ kind: ToolKind; docs: ToolDoc[]; author: string; onNew
 
 /* ---------- Página ---------- */
 export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> = ({ initialKind, onHome }) => {
-  const [session, setSession] = useState<Session | null>(() => currentSession());
+  // undefined = ainda verificando se há alguém logado
+  const [session, setSession] = useState<Session | null | undefined>(undefined);
   const [kind, setKind] = useState<ToolKind>(initialKind);
-  const [docs, setDocs] = useState<ToolDoc[]>(() => (session ? listDocs(session.email) : []));
+  const [docs, setDocs] = useState<ToolDoc[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [loadError, setLoadError] = useState('');
   const [editing, setEditing] = useState<{ doc: ToolDoc; isNew: boolean } | null>(null);
 
-  const refresh = (s: Session) => setDocs(listDocs(s.email));
+  const refresh = async (s: Session) => {
+    setLoading(true);
+    setLoadError('');
+    try {
+      setDocs(await listDocs(s.uid));
+    } catch (err) {
+      setLoadError(authMessage(err));
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(
+    () =>
+      watchSession((s) => {
+        setSession(s);
+        if (s) refresh(s);
+        else {
+          setDocs([]);
+          setEditing(null);
+        }
+      }),
+    [],
+  );
 
   const startNew = () => {
     // No portfólio, a nova ficha já vem com o cabeçalho e o professor da última atividade.
@@ -1137,11 +1241,7 @@ export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> 
               <span className="hidden sm:block text-sm text-ink-2 truncate">Olá, {session.name.split(' ')[0]}</span>
               <button
                 type="button"
-                onClick={() => {
-                  signOut();
-                  setSession(null);
-                  setEditing(null);
-                }}
+                onClick={() => signOut()}
                 className="flex items-center gap-1.5 text-sm font-semibold text-muted hover:text-ink"
               >
                 <LogOut size={16} /> Sair
@@ -1170,19 +1270,19 @@ export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> 
           </nav>
         )}
       </header>
-      <div className="print:hidden">
-        <TestBanner />
-      </div>
+      {session && !session.verified && (
+        <div className="print:hidden">
+          <VerifyBanner email={session.email} />
+        </div>
+      )}
 
       <main className="flex-1">
-        {!session ? (
-          <AuthScreen
-            onHome={onHome}
-            onDone={(s) => {
-              setSession(s);
-              refresh(s);
-            }}
-          />
+        {session === undefined ? (
+          <div className="py-24 flex justify-center text-muted">
+            <Loader2 size={24} className="animate-spin" />
+          </div>
+        ) : !session ? (
+          <AuthScreen onHome={onHome} onDone={(s) => setSession(s)} />
         ) : editing ? (
           <Editor
             key={editing.doc.id}
@@ -1194,12 +1294,28 @@ export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> 
               setEditing(null);
               refresh(session);
             }}
-            onDelete={(id) => {
-              deleteDoc(session.email, id);
+            onDelete={async (id) => {
+              try {
+                await deleteDoc(id);
+              } catch (err) {
+                alert(authMessage(err));
+                return;
+              }
               setEditing(null);
               refresh(session);
             }}
           />
+        ) : loading && docs.length === 0 ? (
+          <div className="py-24 flex justify-center text-muted">
+            <Loader2 size={24} className="animate-spin" />
+          </div>
+        ) : loadError ? (
+          <div className="container-custom py-16 text-center">
+            <p className="font-semibold text-ink">{loadError}</p>
+            <button type="button" onClick={() => refresh(session)} className="btn btn-ghost !py-2.5 mt-4">
+              Tentar de novo
+            </button>
+          </div>
         ) : (
           <DocList key={kind} kind={kind} docs={docs} author={session.name} onNew={startNew} onOpen={(d) => setEditing({ doc: d, isNew: false })} />
         )}

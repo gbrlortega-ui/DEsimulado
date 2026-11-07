@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, lazy, Suspense } from 'react';
 import { MotionConfig } from 'motion/react';
 import { LandingPage } from './components/LandingPage';
 import { QuizSetup } from './components/QuizSetup';
@@ -11,7 +11,8 @@ import { QuizSession } from './components/QuizSession';
 import { ResultsView } from './components/ResultsView';
 import { Module, QuizSettings, QuizResults, UserAnswer } from './types';
 import { QUESTIONS } from './data/questions';
-import { ToolsPage } from './tools/ToolsPage';
+// Área de ferramentas (com login) carregada só quando alguém abre — não pesa nos simulados.
+const ToolsPage = lazy(() => import('./tools/ToolsPage').then((m) => ({ default: m.ToolsPage })));
 import type { ToolKind } from './tools/forms';
 
 type AppState = 'landing' | 'setup' | 'quiz' | 'results' | 'tools';
@@ -102,7 +103,11 @@ export default function App() {
     <div className="antialiased">
       {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} onTools={handleOpenTools} />}
 
-      {state === 'tools' && <ToolsPage initialKind={toolKind} onHome={handleGoHome} />}
+      {state === 'tools' && (
+        <Suspense fallback={<div className="min-h-screen bg-bg" />}>
+          <ToolsPage initialKind={toolKind} onHome={handleGoHome} />
+        </Suspense>
+      )}
       
       {state === 'setup' && (
         <QuizSetup 
