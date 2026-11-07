@@ -6,6 +6,7 @@ import {
   Copy,
   FileDown,
   FlaskConical,
+  Lightbulb,
   LogOut,
   Mail,
   Plus,
@@ -26,6 +27,8 @@ import {
   TOOL_ORDER,
   findIdentifiers,
   showValue,
+  sectionFields,
+  EXAMES,
   toInitials,
   type Field,
   type PrivacyHit,
@@ -203,6 +206,12 @@ const FieldInput: React.FC<{ field: Field; value: string; onChange: (v: string) 
     ) : (
       <input className={cn(inputCls, 'mt-1.5')} value={value} placeholder={field.placeholder} onChange={(e) => onChange(e.target.value)} />
     )}
+    {field.tip && (
+      <span className="mt-2 flex gap-2 rounded-lg bg-accent-amber/10 border border-accent-amber/25 px-3 py-2 text-xs leading-relaxed text-ink-2">
+        <Lightbulb size={14} className="shrink-0 mt-0.5 text-accent-amber" />
+        <span>{field.tip}</span>
+      </span>
+    )}
   </label>
 );
 
@@ -223,9 +232,13 @@ function docToText(doc: ToolDoc, hideInitials: boolean): string {
     if (id.length) lines.push('', 'IDENTIFICAÇÃO', id.join(' · '));
   }
   for (const s of def.sections) {
-    const filled = s.fields.filter((f) => doc.data[f.key]?.trim());
+    const filled = sectionFields(s, doc.data).filter((f) => doc.data[f.key]?.trim());
     if (!filled.length) continue;
     lines.push('', s.title.toUpperCase());
+    if (s.compact) {
+      lines.push(filled.map((f) => `${f.label}: ${doc.data[f.key].trim()}`).join(' · '), '');
+      continue;
+    }
     for (const f of filled) lines.push(`${f.label}:`, showValue(f, doc.data[f.key].trim()), '');
   }
   if (readImages(doc).length) lines.push('(Esta ficha tem imagens na área livre — veja o PDF.)');
@@ -255,12 +268,13 @@ const PrintView: React.FC<{ doc: ToolDoc; author: string }> = ({ doc, author }) 
         </div>
       )}
       {def.sections.map((s) => {
-        const filled = s.fields.filter((f) => doc.data[f.key]?.trim());
+        const filled = sectionFields(s, doc.data).filter((f) => doc.data[f.key]?.trim());
         if (!filled.length) return null;
         return (
           <div key={s.title} className="mt-4 text-sm">
             <h2 className="font-bold uppercase text-xs tracking-wide border-b border-black/30 mb-1">{s.title}</h2>
-            {filled.map((f) => (
+            {s.compact && <p>{filled.map((f) => `${f.label}: ${doc.data[f.key]}`).join(' · ')}</p>}
+            {!s.compact && filled.map((f) => (
               <div key={f.key} className="mt-2 break-inside-avoid">
                 <p className="font-semibold">{f.label}</p>
                 <p className="whitespace-pre-line">{doc.data[f.key]}</p>
@@ -388,6 +402,95 @@ const PrivacyModal: React.FC<{ hits: PrivacyHit[]; onFix: () => void; onSaveAnyw
   </Modal>
 );
 
+/* ---------- IMC calculado ---------- */
+const Imc: React.FC<{ peso?: string; altura?: string }> = ({ peso, altura }) => {
+  const p = parseFloat((peso ?? '').replace(',', '.'));
+  let a = parseFloat((altura ?? '').replace(',', '.'));
+  if (a > 3) a = a / 100; // digitou em cm
+  if (!p || !a) return null;
+  const imc = p / (a * a);
+  return (
+    <p className="col-span-2 sm:col-span-4 text-sm text-ink-2">
+      IMC: <strong className="text-ink tabular-nums">{imc.toFixed(1).replace('.', ',')} kg/m²</strong>
+    </p>
+  );
+};
+
+/* ---------- Exames físicos segmentares ---------- */
+const ExamAdder: React.FC<{
+  data: Record<string, string>;
+  onChange: (key: string, v: string) => void;
+  onSet: (ids: string[]) => void;
+}> = ({ data, onChange, onSet }) => {
+  const [open, setOpen] = useState(false);
+  let ids: string[] = [];
+  try {
+    ids = JSON.parse(data.exames || '[]');
+  } catch {
+    ids = [];
+  }
+  const available = EXAMES.filter((e) => !ids.includes(e.id));
+
+  return (
+    <>
+      {ids.map((id) => {
+        const e = EXAMES.find((x) => x.id === id);
+        if (!e) return null;
+        return (
+          <div key={id} className="sm:col-span-2 relative">
+            <FieldInput
+              field={{ key: `ef_${id}`, label: e.label, kind: 'textarea', rows: 4, wide: true, tip: e.tip }}
+              value={data[`ef_${id}`] ?? ''}
+              onChange={(v) => onChange(`ef_${id}`, v)}
+            />
+            <button
+              type="button"
+              onClick={() => {
+                if (data[`ef_${id}`]?.trim() && !confirm(`Remover o exame ${e.label.toLowerCase()} e o que foi escrito nele?`)) return;
+                onChange(`ef_${id}`, '');
+                onSet(ids.filter((x) => x !== id));
+              }}
+              className="absolute top-0 right-0 text-xs font-semibold text-muted hover:text-accent-coral"
+            >
+              Remover
+            </button>
+          </div>
+        );
+      })}
+      {available.length > 0 && (
+        <div className="sm:col-span-2">
+          <button
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            aria-expanded={open}
+            className="flex items-center gap-1.5 text-sm font-semibold text-primary-ink hover:text-ink"
+          >
+            <Plus size={16} /> Adicionar exame físico segmentar
+          </button>
+          {open && (
+            <div className="mt-3 flex flex-wrap gap-2">
+              {available.map((e) => (
+                <button
+                  key={e.id}
+                  type="button"
+                  onClick={() => {
+                    onSet([...ids, e.id]);
+                    setOpen(false);
+                  }}
+                  className="px-3 py-1.5 rounded-lg border border-line-2 bg-white text-sm text-ink hover:border-primary hover:bg-primary-soft transition-colors"
+                >
+                  {e.label}
+                </button>
+              ))}
+            </div>
+          )}
+          <p className="mt-2 text-xs text-muted">Escolha conforme a queixa: o exame cardiovascular na dor torácica, o abdominal na dispepsia, e assim por diante.</p>
+        </div>
+      )}
+    </>
+  );
+};
+
 /* ---------- Editor ---------- */
 const Editor: React.FC<{
   session: Session;
@@ -410,6 +513,7 @@ const Editor: React.FC<{
   const labels = useMemo(() => {
     const m: Record<string, string> = { title: 'Título' };
     [...IDENTIFICACAO, ...def.sections.flatMap((s) => s.fields)].forEach((f) => (m[f.key] = f.label));
+    EXAMES.forEach((e) => (m[`ef_${e.id}`] = e.label));
     return m;
   }, [def]);
 
@@ -549,10 +653,18 @@ const Editor: React.FC<{
         {def.sections.map((s) => (
           <section key={s.title} className="mt-6 bg-white rounded-2xl border border-line p-5 sm:p-6">
             <h2 className="text-lg font-bold">{s.title}</h2>
-            <div className="mt-4 grid sm:grid-cols-2 gap-4">
+            <div className={cn('mt-4 grid gap-4', s.compact ? 'grid-cols-2 sm:grid-cols-4' : 'sm:grid-cols-2')}>
               {s.fields.map((f) => (
                 <FieldInput key={f.key} field={f} value={doc.data[f.key] ?? ''} onChange={(v) => set(f.key, v)} />
               ))}
+              {s.compact && <Imc peso={doc.data.peso} altura={doc.data.altura} />}
+              {s.addExams && (
+                <ExamAdder
+                  data={doc.data}
+                  onChange={(key, v) => set(key, v)}
+                  onSet={(ids) => set('exames', JSON.stringify(ids))}
+                />
+              )}
               {def.kind === 'portfolio' && s.title === 'Área livre' && (
                 <ImagePicker images={readImages(doc)} onChange={(imgs) => set('imagens', JSON.stringify(imgs))} />
               )}

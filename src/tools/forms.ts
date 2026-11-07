@@ -18,11 +18,17 @@ export interface Field {
   /** ocupa a linha inteira na grade */
   wide?: boolean;
   hint?: string;
+  /** Dica para o estudante, mostrada abaixo do campo */
+  tip?: string;
 }
 
 export interface Section {
   title: string;
   fields: Field[];
+  /** Grade de 4 colunas (sinais vitais) */
+  compact?: boolean;
+  /** Permite adicionar exames físicos segmentares */
+  addExams?: boolean;
 }
 
 export interface ToolDef {
@@ -63,40 +69,152 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
     kind: 'anamnese',
     label: 'Anamnese',
     short: 'Anamnese',
-    description: 'Anamnese completa de atenção primária, com contexto familiar e social.',
+    description: 'Anamnese completa com dicas de semiologia em cada campo e exame físico segmentar conforme a queixa.',
     hasPatient: true,
     sections: [
       {
-        title: 'História clínica',
+        title: 'Queixa e história',
         fields: [
-          { key: 'qp', label: 'Queixa principal (QP)', kind: 'textarea', rows: 2, wide: true, placeholder: 'Nas palavras do paciente e com a duração.' },
-          { key: 'hda', label: 'História da doença atual (HDA)', kind: 'textarea', rows: 6, wide: true },
-          { key: 'isda', label: 'Interrogatório sobre os diversos aparelhos (ISDA)', kind: 'textarea', rows: 4, wide: true },
+          {
+            key: 'qd',
+            label: 'QD — Queixa e duração',
+            kind: 'textarea',
+            rows: 2,
+            wide: true,
+            tip: 'Nas palavras do paciente, com o tempo de evolução. Ex.: “dor de cabeça há 3 dias”.',
+          },
+          {
+            key: 'hma',
+            label: 'HMA — História da moléstia atual',
+            kind: 'textarea',
+            rows: 7,
+            wide: true,
+            tip: 'Use o CLEARAST para caracterizar o sintoma: Cronologia (início e duração) · Localização · Evolução · Agravantes e Atenuantes · Radiação (irradiação) · Associados (sintomas) · Severidade (intensidade, 0–10) · Tipo (característica). Feche com o que já foi feito e o motivo da procura hoje.',
+          },
+          {
+            key: 'isda',
+            label: 'ISDA — Interrogatório sobre os diversos aparelhos',
+            kind: 'textarea',
+            rows: 4,
+            wide: true,
+            tip: 'Percorra por sistemas: geral (febre, astenia, perda de peso), pele, cabeça e pescoço, cardiovascular, respiratório, digestivo, geniturinário, musculoesquelético, neurológico e psíquico. Registre também as negativas relevantes.',
+          },
         ],
       },
       {
         title: 'Antecedentes',
         fields: [
-          { key: 'app', label: 'Antecedentes pessoais', kind: 'textarea', rows: 4, wide: true, placeholder: 'Doenças crônicas, internações, cirurgias, alergias, vacinação, gestações…' },
-          { key: 'medicacoes', label: 'Medicações em uso', kind: 'textarea', rows: 3, wide: true, placeholder: 'Nome, dose e posologia.' },
-          { key: 'af', label: 'Antecedentes familiares', kind: 'textarea', rows: 3, wide: true, placeholder: 'Use parentesco, nunca nomes: "mãe – DM2", "irmão – IAM aos 50".' },
+          {
+            key: 'apFisiologico',
+            label: 'Antecedentes pessoais fisiológicos',
+            kind: 'textarea',
+            rows: 3,
+            wide: true,
+            tip: 'Gestação e parto, desenvolvimento neuropsicomotor. Na mulher: menarca, ciclo menstrual, DUM, G_P_A, método contraceptivo, menopausa.',
+          },
+          {
+            key: 'apPatologico',
+            label: 'Antecedentes pessoais patológicos',
+            kind: 'textarea',
+            rows: 3,
+            wide: true,
+            tip: 'Doenças da infância e crônicas (HAS, DM, DPOC…), internações, cirurgias, traumas, transfusões, ISTs e alergias (a quê e qual reação).',
+          },
+          {
+            key: 'medicamentos',
+            label: 'Medicamentos em uso',
+            kind: 'textarea',
+            rows: 3,
+            wide: true,
+            tip: 'Nome, dose, posologia, desde quando e adesão. Pergunte por automedicação, fitoterápicos e anticoncepcional.',
+          },
+          {
+            key: 'vacinacao',
+            label: 'Vacinação',
+            kind: 'textarea',
+            rows: 2,
+            wide: true,
+            tip: 'Confira a caderneta pelo calendário do PNI para a faixa etária (e para gestantes, se for o caso). Anote o que está em atraso.',
+          },
+          {
+            key: 'af',
+            label: 'Antecedentes familiares',
+            kind: 'textarea',
+            rows: 2,
+            wide: true,
+            tip: 'Use o parentesco, nunca nomes: “mãe – DM2”, “irmão – IAM aos 50 anos”.',
+          },
         ],
       },
       {
-        title: 'Contexto de vida',
+        title: 'Hábitos e contexto de vida',
         fields: [
-          { key: 'habitos', label: 'Hábitos de vida', kind: 'textarea', rows: 3, wide: true, placeholder: 'Alimentação, atividade física, tabagismo (anos-maço), álcool, outras substâncias, sono.' },
-          { key: 'familia', label: 'Composição familiar', kind: 'textarea', rows: 3, wide: true, placeholder: 'Só papéis e idades: "esposa, 55; neto, 8". Base para o genograma.' },
-          { key: 'socioeconomico', label: 'Condições socioeconômicas e de moradia', kind: 'textarea', rows: 3, wide: true, placeholder: 'Renda aproximada, saneamento, nº de cômodos, rede de apoio, acesso à UBS.' },
+          {
+            key: 'habitos',
+            label: 'Hábitos de vida',
+            kind: 'textarea',
+            rows: 3,
+            wide: true,
+            tip: 'Alimentação, atividade física, sono, tabagismo (anos-maço = maços por dia × anos de uso), etilismo (tipo, quantidade, CAGE) e outras substâncias.',
+          },
+          {
+            key: 'contexto',
+            label: 'Contexto familiar e social',
+            kind: 'textarea',
+            rows: 3,
+            wide: true,
+            tip: 'Com quem mora (papéis e idades, sem nomes), moradia e saneamento, renda, rede de apoio e acesso à UBS.',
+          },
         ],
       },
       {
-        title: 'Exame e raciocínio',
+        title: 'Sinais vitais e medidas',
+        compact: true,
         fields: [
-          { key: 'exameFisico', label: 'Exame físico', kind: 'textarea', rows: 6, wide: true, placeholder: 'Sinais vitais, antropometria, exame geral e segmentar.' },
-          { key: 'problemas', label: 'Lista de problemas / hipóteses diagnósticas', kind: 'textarea', rows: 3, wide: true },
-          { key: 'conduta', label: 'Conduta', kind: 'textarea', rows: 4, wide: true },
-          { key: 'aprendizado', label: 'Pontos para estudar', kind: 'textarea', rows: 3, wide: true, placeholder: 'O que este caso mostrou que você precisa revisar.' },
+          { key: 'pa', label: 'PA', kind: 'text', placeholder: 'mmHg' },
+          { key: 'fc', label: 'FC', kind: 'text', placeholder: 'bpm' },
+          { key: 'fr', label: 'FR', kind: 'text', placeholder: 'irpm' },
+          { key: 'sat', label: 'Saturação', kind: 'text', placeholder: '% SpO₂' },
+          { key: 'temp', label: 'Temperatura', kind: 'text', placeholder: '°C' },
+          { key: 'peso', label: 'Peso', kind: 'text', placeholder: 'kg' },
+          { key: 'altura', label: 'Altura', kind: 'text', placeholder: 'm' },
+          { key: 'hgt', label: 'Glicemia capilar', kind: 'text', placeholder: 'mg/dL' },
+        ],
+      },
+      {
+        title: 'Exame físico',
+        addExams: true,
+        fields: [
+          {
+            key: 'exameGeral',
+            label: 'Exame físico geral',
+            kind: 'textarea',
+            rows: 4,
+            wide: true,
+            tip: 'Estado geral, nível de consciência e orientação, hidratação, coloração, cianose, icterícia, febre, padrão respiratório, edema e linfonodos. Ex.: BEG, LOTE, corado, hidratado, acianótico, anictérico, afebril, eupneico.',
+          },
+        ],
+      },
+      {
+        title: 'Raciocínio clínico',
+        fields: [
+          {
+            key: 'hd',
+            label: 'HD — Hipóteses diagnósticas',
+            kind: 'textarea',
+            rows: 4,
+            wide: true,
+            tip: 'Raciocine em etapas: diagnóstico sindrômico (qual síndrome?) → topográfico (onde está a lesão, qual órgão ou sistema?) → nosológico/etiológico (qual doença e causa?) → hipótese principal e diferenciais.',
+          },
+          {
+            key: 'conduta',
+            label: 'Conduta',
+            kind: 'textarea',
+            rows: 4,
+            wide: true,
+            tip: 'Medidas não farmacológicas, prescrição (dose e posologia), exames, encaminhamentos, orientações e retorno.',
+          },
+          { key: 'aprendizado', label: 'Pontos para estudar', kind: 'textarea', rows: 3, wide: true, hint: 'O que este caso mostrou que você precisa revisar.' },
         ],
       },
     ],
@@ -163,6 +281,42 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
   },
 };
 
+/* ---------- Exames físicos segmentares (adicionados conforme a queixa) ---------- */
+
+export const EXAMES: { id: string; label: string; tip: string }[] = [
+  { id: 'cabeca', label: 'Cabeça e pescoço', tip: 'Inspeção, oroscopia, otoscopia, tireoide, linfonodos cervicais e jugulares.' },
+  { id: 'cardio', label: 'Cardiovascular', tip: 'Ictus (inspeção e palpação), ausculta nos focos: ritmo, bulhas, sopros (fase, foco, intensidade, irradiação). Pulsos, perfusão e edema.' },
+  { id: 'resp', label: 'Respiratório', tip: 'Inspeção (padrão, uso de musculatura acessória), expansibilidade, frêmito toracovocal, percussão e ausculta (MV e ruídos adventícios).' },
+  { id: 'abdome', label: 'Abdominal', tip: 'Inspeção → ausculta → percussão → palpação. RHA, visceromegalias, massas, sinais de irritação peritoneal (Blumberg), Murphy, Giordano.' },
+  { id: 'neuro', label: 'Neurológico', tip: 'Consciência (Glasgow), pares cranianos, força (0–5), tônus, reflexos, sensibilidade, coordenação, marcha e sinais meníngeos.' },
+  { id: 'osteo', label: 'Osteoarticular', tip: 'Inspeção, palpação, mobilidade ativa e passiva, força e testes especiais da articulação acometida.' },
+  { id: 'pele', label: 'Pele e fâneros', tip: 'Lesões elementares: tipo, cor, tamanho, distribuição e evolução. Unhas e cabelos.' },
+  { id: 'vascular', label: 'Vascular periférico', tip: 'Pulsos, perfusão, varizes, edema (cacifo), sinais de TVP. No diabético: pé (monofilamento, sensibilidade, pulsos).' },
+  { id: 'mamas', label: 'Mamas', tip: 'Inspeção estática e dinâmica, palpação, expressão papilar, axilas e fossas supraclaviculares.' },
+  { id: 'gineco', label: 'Ginecológico', tip: 'Inspeção da vulva, exame especular (colo e conteúdo vaginal), toque bimanual. Coleta do citopatológico quando indicado.' },
+  { id: 'obstetrico', label: 'Obstétrico', tip: 'Altura uterina, BCF, manobras de Leopold, movimentação fetal, edema e toque quando indicado.' },
+  { id: 'urologico', label: 'Genital masculino / urológico', tip: 'Inspeção, palpação testicular, pesquisa de hérnias e toque retal quando indicado.' },
+  { id: 'crianca', label: 'Crescimento e desenvolvimento', tip: 'Peso, estatura e perímetro cefálico nas curvas, fontanelas e marcos do desenvolvimento para a idade.' },
+  { id: 'mental', label: 'Exame do estado mental', tip: 'Aparência, consciência, orientação, atenção, memória, humor e afeto, pensamento, sensopercepção e juízo crítico.' },
+];
+
+/** Exames segmentares que o aluno adicionou neste documento, como campos. */
+export function examFields(data: Record<string, string>): Field[] {
+  let ids: string[] = [];
+  try {
+    ids = JSON.parse(data.exames || '[]');
+  } catch {
+    ids = [];
+  }
+  return ids
+    .map((id) => EXAMES.find((e) => e.id === id))
+    .filter((e): e is (typeof EXAMES)[number] => !!e)
+    .map((e) => ({ key: `ef_${e.id}`, label: e.label, kind: 'textarea' as const, rows: 4, wide: true, tip: e.tip }));
+}
+
+/** Campos de uma seção, incluindo os exames adicionados. */
+export const sectionFields = (s: Section, data: Record<string, string>) => (s.addExams ? [...s.fields, ...examFields(data)] : s.fields);
+
 export const TOOL_ORDER: ToolKind[] = ['anamnese', 'soap', 'portfolio'];
 
 export const TEMAS_SUGERIDOS = [
@@ -226,7 +380,7 @@ export function findIdentifiers(
     .filter((w) => w.length >= 3 && !CONECTIVOS.has(w.toLowerCase()));
 
   for (const [key, value] of Object.entries(data)) {
-    if (!value || key === 'iniciais' || key === 'imagens' || key === 'data') continue;
+    if (!value || key === 'iniciais' || key === 'imagens' || key === 'data' || key === 'exames') continue;
     const label = labels[key] ?? key;
 
     for (const part of nameParts) {
