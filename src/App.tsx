@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, lazy, Suspense } from 'react';
 import { MotionConfig } from 'motion/react';
 import { LandingPage } from './components/LandingPage';
 import { QuizSetup } from './components/QuizSetup';
@@ -11,8 +11,11 @@ import { QuizSession } from './components/QuizSession';
 import { ResultsView } from './components/ResultsView';
 import { Module, QuizSettings, QuizResults, UserAnswer } from './types';
 import { QUESTIONS } from './data/questions';
+// Área de ferramentas (com login) carregada só quando alguém abre — não pesa nos simulados.
+const ToolsPage = lazy(() => import('./tools/ToolsPage').then((m) => ({ default: m.ToolsPage })));
+import type { ToolKind } from './tools/forms';
 
-type AppState = 'landing' | 'setup' | 'quiz' | 'results';
+type AppState = 'landing' | 'setup' | 'quiz' | 'results' | 'tools';
 
 export default function App() {
   const [state, setState] = useState<AppState>('landing');
@@ -21,6 +24,13 @@ export default function App() {
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [initialModule, setInitialModule] = useState<Module>('Misto');
   const [round, setRound] = useState(0);
+  const [toolKind, setToolKind] = useState<ToolKind>('anamnese');
+
+  const handleOpenTools = (kind: ToolKind) => {
+    setToolKind(kind);
+    setState('tools');
+    window.scrollTo(0, 0);
+  };
 
   const activeQuestions = useMemo(() => {
     if (!settings) return [];
@@ -91,7 +101,13 @@ export default function App() {
   return (
     <MotionConfig reducedMotion="user">
     <div className="antialiased">
-      {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} />}
+      {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} onTools={handleOpenTools} />}
+
+      {state === 'tools' && (
+        <Suspense fallback={<div className="min-h-screen bg-bg" />}>
+          <ToolsPage initialKind={toolKind} onHome={handleGoHome} />
+        </Suspense>
+      )}
       
       {state === 'setup' && (
         <QuizSetup 
