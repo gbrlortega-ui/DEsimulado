@@ -11,8 +11,10 @@ import { QuizSession } from './components/QuizSession';
 import { ResultsView } from './components/ResultsView';
 import { Module, QuizSettings, QuizResults, UserAnswer } from './types';
 import { QUESTIONS } from './data/questions';
+import { ToolsPage } from './tools/ToolsPage';
+import type { ToolKind } from './tools/forms';
 
-type AppState = 'landing' | 'setup' | 'quiz' | 'results';
+type AppState = 'landing' | 'setup' | 'quiz' | 'results' | 'tools';
 
 export default function App() {
   const [state, setState] = useState<AppState>('landing');
@@ -21,6 +23,13 @@ export default function App() {
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [initialModule, setInitialModule] = useState<Module>('Misto');
   const [round, setRound] = useState(0);
+  const [toolKind, setToolKind] = useState<ToolKind>('anamnese');
+
+  const handleOpenTools = (kind: ToolKind) => {
+    setToolKind(kind);
+    setState('tools');
+    window.scrollTo(0, 0);
+  };
 
   const activeQuestions = useMemo(() => {
     if (!settings) return [];
@@ -91,7 +100,9 @@ export default function App() {
   return (
     <MotionConfig reducedMotion="user">
     <div className="antialiased">
-      {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} />}
+      {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} onTools={handleOpenTools} />}
+
+      {state === 'tools' && <ToolsPage initialKind={toolKind} onHome={handleGoHome} />}
       
       {state === 'setup' && (
         <QuizSetup 
