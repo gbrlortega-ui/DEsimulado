@@ -1,8 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowLeft,
   Check,
+  CheckCircle2,
   CheckSquare,
+  ChevronDown,
   Copy,
   FileDown,
   FlaskConical,
@@ -27,11 +29,13 @@ import {
   TOOL_ORDER,
   findIdentifiers,
   showValue,
+  fullLabel,
   sectionFields,
   EXAMES,
   toInitials,
   type Field,
   type PrivacyHit,
+  type Section,
   type ToolKind,
 } from './forms';
 import { TOOL_ICONS } from './ToolsMenu';
@@ -51,6 +55,9 @@ import {
 
 const inputCls =
   'w-full rounded-lg border border-line-2 bg-white px-3 py-2 text-[15px] text-ink placeholder:text-muted/70 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition';
+/* Campos do editor: um pouco mais compactos */
+const fieldCls =
+  'w-full rounded-lg border border-line bg-bg/60 px-3 py-2 text-sm text-ink placeholder:text-muted/60 hover:border-line-2 focus:bg-white focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition';
 
 const fmtDate = (t: number) =>
   new Date(t).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
@@ -181,39 +188,151 @@ const AuthScreen: React.FC<{ onDone: (s: Session) => void; onHome: () => void }>
   );
 };
 
+/* ---------- Texto que cresce conforme o conteúdo ---------- */
+const AutoTextarea: React.FC<React.TextareaHTMLAttributes<HTMLTextAreaElement> & { minRows?: number }> = ({ minRows = 2, className, value, ...rest }) => {
+  const ref = useRef<HTMLTextAreaElement>(null);
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    el.style.height = 'auto';
+    el.style.height = `${el.scrollHeight + 2}px`;
+  }, [value]);
+  return <textarea ref={ref} rows={minRows} value={value} className={cn(className, 'resize-none overflow-hidden leading-relaxed')} {...rest} />;
+};
+
 /* ---------- Campo genérico ---------- */
-const FieldInput: React.FC<{ field: Field; value: string; onChange: (v: string) => void }> = ({ field, value, onChange }) => (
-  <label className={cn('block', field.wide && 'sm:col-span-2')}>
-    <span className="text-sm font-semibold text-ink">{field.label}</span>
-    {field.hint && <span className="block text-xs text-muted mt-0.5">{field.hint}</span>}
-    {field.kind === 'textarea' ? (
-      <textarea
-        className={cn(inputCls, 'mt-1.5 resize-y leading-relaxed')}
-        rows={field.rows ?? 3}
-        value={value}
-        placeholder={field.placeholder}
-        onChange={(e) => onChange(e.target.value)}
-      />
-    ) : field.kind === 'select' ? (
-      <select className={cn(inputCls, 'mt-1.5')} value={value} onChange={(e) => onChange(e.target.value)}>
-        <option value="">Selecione…</option>
-        {field.options?.map((o) => (
-          <option key={o}>{o}</option>
-        ))}
-      </select>
-    ) : field.kind === 'date' ? (
-      <input className={cn(inputCls, 'mt-1.5')} type="date" value={value} onChange={(e) => onChange(e.target.value)} />
-    ) : (
-      <input className={cn(inputCls, 'mt-1.5')} value={value} placeholder={field.placeholder} onChange={(e) => onChange(e.target.value)} />
-    )}
-    {field.tip && (
-      <span className="mt-2 flex gap-2 rounded-lg bg-accent-amber/10 border border-accent-amber/25 px-3 py-2 text-xs leading-relaxed text-ink-2">
-        <Lightbulb size={14} className="shrink-0 mt-0.5 text-accent-amber" />
-        <span>{field.tip}</span>
-      </span>
-    )}
-  </label>
-);
+/**
+ * A dica aparece quando o campo está em uso (foco) ou quando o aluno fixa pelo botão "Dica";
+ * assim a ficha fica limpa e a orientação surge na hora certa.
+ */
+const FieldInput: React.FC<{ field: Field; value: string; onChange: (v: string) => void }> = ({ field, value, onChange }) => {
+  const id = useId();
+  const [pinned, setPinned] = useState(false);
+  const control = cn(fieldCls, field.unit && 'pr-14');
+  return (
+    <div className={cn('group', field.wide && 'col-span-full')}>
+      <div className="flex items-center justify-between gap-2 min-h-6">
+        <label htmlFor={id} className="flex items-center gap-2 text-[13px] font-semibold text-ink-2">
+          {field.abbr && (
+            <span className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-ink font-mono text-[11px] font-bold tracking-wide">{field.abbr}</span>
+          )}
+          {field.label}
+        </label>
+        {field.tip && (
+          <button
+            type="button"
+            onClick={() => setPinned((p) => !p)}
+            aria-expanded={pinned}
+            aria-controls={`${id}-tip`}
+            className={cn(
+              'flex items-center gap-1 text-[11px] font-semibold rounded-md px-1.5 py-0.5 transition-colors',
+              pinned ? 'text-ink bg-accent-amber/20' : 'text-muted hover:text-ink',
+            )}
+          >
+            <Lightbulb size={12} /> Dica
+          </button>
+        )}
+      </div>
+      {field.hint && <p className="text-xs text-muted mt-0.5">{field.hint}</p>}
+      <div className="relative mt-1.5">
+        {field.kind === 'textarea' ? (
+          <AutoTextarea
+            id={id}
+            className={control}
+            minRows={Math.min(field.rows ?? 2, 3)}
+            value={value}
+            placeholder={field.placeholder}
+            onChange={(e) => onChange(e.target.value)}
+          />
+        ) : field.kind === 'select' ? (
+          <select id={id} className={control} value={value} onChange={(e) => onChange(e.target.value)}>
+            <option value="">Selecione…</option>
+            {field.options?.map((o) => (
+              <option key={o}>{o}</option>
+            ))}
+          </select>
+        ) : field.kind === 'date' ? (
+          <input id={id} className={control} type="date" value={value} onChange={(e) => onChange(e.target.value)} />
+        ) : (
+          <input
+            id={id}
+            className={cn(control, field.unit && 'tabular-nums')}
+            value={value}
+            placeholder={field.placeholder ?? (field.unit ? '—' : undefined)}
+            onChange={(e) => onChange(e.target.value)}
+          />
+        )}
+        {field.unit && (
+          <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted">{field.unit}</span>
+        )}
+      </div>
+      {field.tip && (
+        <p
+          id={`${id}-tip`}
+          className={cn(
+            'mt-2 gap-2 rounded-lg bg-accent-amber/10 px-3 py-2 text-xs leading-relaxed text-ink-2',
+            pinned ? 'flex' : 'hidden group-focus-within:flex',
+          )}
+        >
+          <Lightbulb size={13} className="shrink-0 mt-0.5 text-accent-amber" />
+          <span>{field.tip}</span>
+        </p>
+      )}
+    </div>
+  );
+};
+
+/* ---------- Seção recolhível ---------- */
+const SectionCard: React.FC<{
+  id: string;
+  n: number;
+  title: string;
+  summary: string;
+  filled: number;
+  total: number;
+  open: boolean;
+  onToggle: () => void;
+  onNext?: () => void;
+  children: React.ReactNode;
+}> = ({ id, n, title, summary, filled, total, open, onToggle, onNext, children }) => {
+  const done = total > 0 && filled === total;
+  return (
+    <section id={id} className={cn('scroll-mt-28 bg-white rounded-xl border transition-colors', open ? 'border-line-2 shadow-sm' : 'border-line')}>
+      <button type="button" onClick={onToggle} aria-expanded={open} className="w-full flex items-center gap-3 px-4 sm:px-5 py-3.5 text-left">
+        <span
+          className={cn(
+            'w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0',
+            done ? 'bg-primary text-white' : filled > 0 ? 'bg-primary-soft text-primary-ink' : 'bg-bg-2 text-muted',
+          )}
+        >
+          {done ? <Check size={14} strokeWidth={3} /> : n}
+        </span>
+        <span className="flex-1 min-w-0">
+          <span className="block font-heading font-bold text-ink">{title}</span>
+          {!open && <span className="block text-xs text-muted truncate">{summary}</span>}
+        </span>
+        {total > 0 && (
+          <span className="text-xs tabular-nums text-muted shrink-0">
+            {filled}/{total}
+          </span>
+        )}
+        <ChevronDown size={18} className={cn('text-muted shrink-0 transition-transform', open && 'rotate-180')} />
+      </button>
+      {open && (
+        <div className="px-4 sm:px-5 pb-5 pt-1 border-t border-line">
+          {children}
+          {onNext && (
+            <div className="mt-5 flex justify-end">
+              <button type="button" onClick={onNext} className="text-sm font-semibold text-primary-ink hover:text-ink flex items-center gap-1">
+                Próxima seção <ChevronDown size={16} className="-rotate-90" />
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+    </section>
+  );
+};
 
 /* ---------- Texto do documento (cópia, e-mail) ---------- */
 function docToText(doc: ToolDoc, hideInitials: boolean): string {
@@ -236,10 +355,10 @@ function docToText(doc: ToolDoc, hideInitials: boolean): string {
     if (!filled.length) continue;
     lines.push('', s.title.toUpperCase());
     if (s.compact) {
-      lines.push(filled.map((f) => `${f.label}: ${doc.data[f.key].trim()}`).join(' · '), '');
+      lines.push(filled.map((f) => `${f.label}: ${doc.data[f.key].trim()}${f.unit ? ' ' + f.unit : ''}`).join(' · '), '');
       continue;
     }
-    for (const f of filled) lines.push(`${f.label}:`, showValue(f, doc.data[f.key].trim()), '');
+    for (const f of filled) lines.push(`${fullLabel(f)}:`, showValue(f, doc.data[f.key].trim()), '');
   }
   if (readImages(doc).length) lines.push('(Esta ficha tem imagens na área livre — veja o PDF.)');
   return lines.join('\n');
@@ -273,10 +392,10 @@ const PrintView: React.FC<{ doc: ToolDoc; author: string }> = ({ doc, author }) 
         return (
           <div key={s.title} className="mt-4 text-sm">
             <h2 className="font-bold uppercase text-xs tracking-wide border-b border-black/30 mb-1">{s.title}</h2>
-            {s.compact && <p>{filled.map((f) => `${f.label}: ${doc.data[f.key]}`).join(' · ')}</p>}
+            {s.compact && <p>{filled.map((f) => `${f.label}: ${doc.data[f.key]}${f.unit ? ' ' + f.unit : ''}`).join(' · ')}</p>}
             {!s.compact && filled.map((f) => (
               <div key={f.key} className="mt-2 break-inside-avoid">
-                <p className="font-semibold">{f.label}</p>
+                <p className="font-semibold">{fullLabel(f)}</p>
                 <p className="whitespace-pre-line">{doc.data[f.key]}</p>
               </div>
             ))}
@@ -422,7 +541,6 @@ const ExamAdder: React.FC<{
   onChange: (key: string, v: string) => void;
   onSet: (ids: string[]) => void;
 }> = ({ data, onChange, onSet }) => {
-  const [open, setOpen] = useState(false);
   let ids: string[] = [];
   try {
     ids = JSON.parse(data.exames || '[]');
@@ -431,60 +549,45 @@ const ExamAdder: React.FC<{
   }
   const available = EXAMES.filter((e) => !ids.includes(e.id));
 
+  const remove = (id: string, label: string) => {
+    if (data[`ef_${id}`]?.trim() && !confirm(`Remover o exame “${label}” e o que foi escrito nele?`)) return;
+    onChange(`ef_${id}`, '');
+    onSet(ids.filter((x) => x !== id));
+  };
+
   return (
     <>
       {ids.map((id) => {
         const e = EXAMES.find((x) => x.id === id);
         if (!e) return null;
         return (
-          <div key={id} className="sm:col-span-2 relative">
+          <div key={id} className="col-span-full">
             <FieldInput
-              field={{ key: `ef_${id}`, label: e.label, kind: 'textarea', rows: 4, wide: true, tip: e.tip }}
+              field={{ key: `ef_${id}`, label: e.label, kind: 'textarea', rows: 3, wide: true, tip: e.tip }}
               value={data[`ef_${id}`] ?? ''}
               onChange={(v) => onChange(`ef_${id}`, v)}
             />
-            <button
-              type="button"
-              onClick={() => {
-                if (data[`ef_${id}`]?.trim() && !confirm(`Remover o exame ${e.label.toLowerCase()} e o que foi escrito nele?`)) return;
-                onChange(`ef_${id}`, '');
-                onSet(ids.filter((x) => x !== id));
-              }}
-              className="absolute top-0 right-0 text-xs font-semibold text-muted hover:text-accent-coral"
-            >
-              Remover
+            <button type="button" onClick={() => remove(id, e.label)} className="mt-1 text-[11px] font-semibold text-muted hover:text-accent-coral">
+              Remover este exame
             </button>
           </div>
         );
       })}
       {available.length > 0 && (
-        <div className="sm:col-span-2">
-          <button
-            type="button"
-            onClick={() => setOpen((o) => !o)}
-            aria-expanded={open}
-            className="flex items-center gap-1.5 text-sm font-semibold text-primary-ink hover:text-ink"
-          >
-            <Plus size={16} /> Adicionar exame físico segmentar
-          </button>
-          {open && (
-            <div className="mt-3 flex flex-wrap gap-2">
-              {available.map((e) => (
-                <button
-                  key={e.id}
-                  type="button"
-                  onClick={() => {
-                    onSet([...ids, e.id]);
-                    setOpen(false);
-                  }}
-                  className="px-3 py-1.5 rounded-lg border border-line-2 bg-white text-sm text-ink hover:border-primary hover:bg-primary-soft transition-colors"
-                >
-                  {e.label}
-                </button>
-              ))}
-            </div>
-          )}
-          <p className="mt-2 text-xs text-muted">Escolha conforme a queixa: o exame cardiovascular na dor torácica, o abdominal na dispepsia, e assim por diante.</p>
+        <div className="col-span-full rounded-lg border border-dashed border-line-2 p-3">
+          <p className="text-[13px] font-semibold text-ink-2">Exame segmentar conforme a queixa</p>
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {available.map((e) => (
+              <button
+                key={e.id}
+                type="button"
+                onClick={() => onSet([...ids, e.id])}
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md border border-line bg-white text-xs font-medium text-ink-2 hover:border-primary hover:text-primary-ink hover:bg-primary-soft transition-colors"
+              >
+                <Plus size={12} /> {e.label}
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </>
@@ -509,6 +612,44 @@ const Editor: React.FC<{
   const [share, setShare] = useState(false);
   const [savedAt, setSavedAt] = useState<number | null>(isNew ? null : initial.updatedAt);
   const [dirty, setDirty] = useState(false);
+
+  // Blocos do formulário: identificação (se houver) + seções do modelo
+  type Block = { id: string; title: string; section?: Section };
+  const blocks: Block[] = [
+    ...(def.hasPatient ? [{ id: 'sec-id', title: 'Identificação' }] : []),
+    ...def.sections.map((sec, i) => ({ id: `sec-${i}`, title: sec.title, section: sec })),
+  ];
+  const [openIds, setOpenIds] = useState<Set<string>>(() => new Set([blocks[0]?.id]));
+  const blockFields = (b: Block) => (b.section ? sectionFields(b.section, doc.data) : IDENTIFICACAO);
+  const progress = (b: Block) => {
+    const fs = blockFields(b);
+    return { filled: fs.filter((f) => doc.data[f.key]?.trim()).length, total: fs.length };
+  };
+  const summary = (b: Block) => {
+    const fs = blockFields(b);
+    const first = fs.find((f) => doc.data[f.key]?.trim());
+    if (first) return showValue(first, doc.data[first.key]).replace(/\s+/g, ' ');
+    return fs.map((f) => f.abbr ?? f.label).join(' · ');
+  };
+  const toggle = (id: string) =>
+    setOpenIds((cur) => {
+      const n = new Set(cur);
+      if (n.has(id)) n.delete(id);
+      else n.add(id);
+      return n;
+    });
+  const goTo = (id: string) => {
+    setOpenIds((cur) => new Set(cur).add(id));
+    requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+  };
+  const totals = blocks.reduce(
+    (acc, b) => {
+      const p = progress(b);
+      return { filled: acc.filled + p.filled, total: acc.total + p.total };
+    },
+    { filled: 0, total: 0 },
+  );
+  const pct = totals.total ? Math.round((totals.filled / totals.total) * 100) : 0;
 
   const labels = useMemo(() => {
     const m: Record<string, string> = { title: 'Título' };
@@ -557,7 +698,7 @@ const Editor: React.FC<{
 
   return (
     <>
-      <div className="print:hidden container-custom py-6 sm:py-10 max-w-4xl">
+      <div className="print:hidden container-custom py-6 sm:py-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <button type="button" onClick={onBack} className="flex items-center gap-1.5 text-sm font-semibold text-muted hover:text-ink">
             <ArrowLeft size={16} /> Meus documentos
@@ -567,8 +708,11 @@ const Editor: React.FC<{
           </span>
         </div>
 
+        <div className="mt-5 flex items-center gap-2 text-xs font-semibold text-muted uppercase tracking-wider">
+          {React.createElement(TOOL_ICONS[def.kind], { size: 14 })} {def.label}
+        </div>
         <input
-          className="mt-5 w-full bg-transparent font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-ink placeholder:text-muted/50 focus:outline-none"
+          className="mt-1.5 w-full bg-transparent font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-ink placeholder:text-muted/40 focus:outline-none"
           placeholder={def.kind === 'portfolio' ? 'Atividade — ex.: SAI – Agenda de atendimentos' : 'Título do caso — ex.: HAS descompensada'}
           value={doc.title}
           onChange={(e) => {
@@ -619,68 +763,124 @@ const Editor: React.FC<{
           </div>
         </div>
 
-        {/* Identificação */}
-        {def.hasPatient && (
-          <section className="mt-8 bg-white rounded-2xl border border-line p-5 sm:p-6">
-            <h2 className="text-lg font-bold">Identificação</h2>
-            <div className="mt-4 rounded-xl border border-primary/30 bg-primary-soft/60 p-4">
-              <label className="block">
-                <span className="text-sm font-semibold text-ink">Nome do paciente</span>
-                <span className="block text-xs text-ink-2 mt-0.5">Opcional. Não é salvo: vira iniciais aqui no seu aparelho.</span>
-                <input
-                  className={cn(inputCls, 'mt-1.5')}
-                  value={patientName}
-                  onChange={(e) => onName(e.target.value)}
-                  placeholder="ex.: Maria Aparecida da Silva"
-                  autoComplete="off"
-                  spellCheck={false}
-                />
-              </label>
-              <div className="mt-3 flex items-center gap-2 text-sm">
-                <ShieldCheck size={16} className="text-primary-ink" />
-                <span className="text-ink-2">Será salvo como:</span>
-                <strong className="font-mono text-ink">{doc.data.iniciais || '—'}</strong>
-              </div>
+        <div className="mt-6 grid lg:grid-cols-[14.5rem_1fr] gap-6 lg:gap-10 items-start">
+          {/* Índice lateral */}
+          <nav aria-label="Seções" className="hidden lg:block sticky top-24">
+            <div className="flex items-center justify-between text-xs text-muted">
+              <span>Preenchimento</span>
+              <span className="tabular-nums font-semibold text-ink">{pct}%</span>
             </div>
-            <div className="mt-5 grid sm:grid-cols-2 gap-4">
-              {IDENTIFICACAO.map((f) => (
-                <FieldInput key={f.key} field={f} value={doc.data[f.key] ?? ''} onChange={(v) => set(f.key, v)} />
-              ))}
+            <div className="mt-1.5 h-1.5 rounded-full bg-bg-2 overflow-hidden">
+              <div className="h-full bg-primary rounded-full transition-[width] duration-300" style={{ width: `${pct}%` }} />
             </div>
-          </section>
-        )}
+            <ol className="mt-5 space-y-0.5">
+              {blocks.map((b, i) => {
+                const pr = progress(b);
+                return (
+                  <li key={b.id}>
+                    <button
+                      type="button"
+                      onClick={() => goTo(b.id)}
+                      className="w-full flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-left text-sm text-ink-2 hover:bg-bg-2 hover:text-ink transition-colors"
+                    >
+                      {pr.total && pr.filled === pr.total ? (
+                        <CheckCircle2 size={16} className="text-primary shrink-0" />
+                      ) : (
+                        <span
+                          className={cn(
+                            'w-4 h-4 rounded-full border-2 shrink-0',
+                            pr.filled ? 'border-primary bg-primary-soft' : 'border-line-2',
+                          )}
+                        />
+                      )}
+                      <span className="truncate">
+                        <span className="text-muted tabular-nums mr-1">{i + 1}.</span>
+                        {b.title}
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ol>
+          </nav>
 
-        {def.sections.map((s) => (
-          <section key={s.title} className="mt-6 bg-white rounded-2xl border border-line p-5 sm:p-6">
-            <h2 className="text-lg font-bold">{s.title}</h2>
-            <div className={cn('mt-4 grid gap-4', s.compact ? 'grid-cols-2 sm:grid-cols-4' : 'sm:grid-cols-2')}>
-              {s.fields.map((f) => (
-                <FieldInput key={f.key} field={f} value={doc.data[f.key] ?? ''} onChange={(v) => set(f.key, v)} />
-              ))}
-              {s.compact && <Imc peso={doc.data.peso} altura={doc.data.altura} />}
-              {s.addExams && (
-                <ExamAdder
-                  data={doc.data}
-                  onChange={(key, v) => set(key, v)}
-                  onSet={(ids) => set('exames', JSON.stringify(ids))}
-                />
-              )}
-              {def.kind === 'portfolio' && s.title === 'Área livre' && (
-                <ImagePicker images={readImages(doc)} onChange={(imgs) => set('imagens', JSON.stringify(imgs))} />
-              )}
-            </div>
-          </section>
-        ))}
-
-        <p className="mt-6 text-xs text-muted leading-relaxed">
+          <div className="space-y-3 min-w-0">
+            {blocks.map((b, i) => {
+              const pr = progress(b);
+              const next = blocks[i + 1];
+              const sec = b.section;
+              return (
+                <SectionCard
+                  key={b.id}
+                  id={b.id}
+                  n={i + 1}
+                  title={b.title}
+                  summary={summary(b)}
+                  filled={pr.filled}
+                  total={pr.total}
+                  open={openIds.has(b.id)}
+                  onToggle={() => toggle(b.id)}
+                  onNext={next ? () => goTo(next.id) : undefined}
+                >
+                  {!sec ? (
+                    <>
+                      <div className="mt-4 flex flex-col sm:flex-row sm:items-end gap-3 rounded-lg bg-primary-soft/50 border border-primary/20 p-3">
+                        <div className="flex-1">
+                          <label htmlFor="nome-paciente" className="text-[13px] font-semibold text-ink-2">
+                            Nome do paciente <span className="font-normal text-muted">(opcional, não é salvo)</span>
+                          </label>
+                          <input
+                            id="nome-paciente"
+                            className={cn(fieldCls, 'mt-1.5 bg-white')}
+                            value={patientName}
+                            onChange={(e) => onName(e.target.value)}
+                            placeholder="Digite o nome completo"
+                            autoComplete="off"
+                            spellCheck={false}
+                          />
+                        </div>
+                        <div className="flex items-center gap-2 text-sm sm:pb-2">
+                          <ShieldCheck size={16} className="text-primary-ink shrink-0" />
+                          <span className="text-ink-2">Salvo como</span>
+                          <strong className="font-mono text-ink">{doc.data.iniciais || '—'}</strong>
+                        </div>
+                      </div>
+                      <div className="mt-4 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3">
+                        {IDENTIFICACAO.map((f) => (
+                          <div key={f.key} className={cn(f.key === 'ocupacao' || f.key === 'procedencia' || f.key === 'naturalidade' ? 'col-span-2' : '')}>
+                            <FieldInput field={f} value={doc.data[f.key] ?? ''} onChange={(v) => set(f.key, v)} />
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <div className={cn('mt-4 grid gap-x-4 gap-y-4', sec.compact ? 'grid-cols-2 sm:grid-cols-4 gap-y-3' : 'sm:grid-cols-2')}>
+                      {sec.fields.map((f) => (
+                        <FieldInput key={f.key} field={f} value={doc.data[f.key] ?? ''} onChange={(v) => set(f.key, v)} />
+                      ))}
+                      {sec.compact && <Imc peso={doc.data.peso} altura={doc.data.altura} />}
+                      {sec.addExams && (
+                        <ExamAdder data={doc.data} onChange={(key, v) => set(key, v)} onSet={(ids) => set('exames', JSON.stringify(ids))} />
+                      )}
+                      {def.kind === 'portfolio' && sec.title === 'Área livre' && (
+                        <ImagePicker images={readImages(doc)} onChange={(imgs) => set('imagens', JSON.stringify(imgs))} />
+                      )}
+                    </div>
+                  )}
+                </SectionCard>
+              );
+            })}
+        <p className="pt-3 text-xs text-muted leading-relaxed">
           Antes de salvar, o texto é verificado em busca do nome digitado, CPF, Cartão SUS, telefone, endereço e expressões como “Dona
           Maria”.
         </p>
+          </div>
+        </div>
       </div>
 
       {/* Barra de ações fixa */}
       <div className="print:hidden sticky bottom-0 z-30 bg-white/95 backdrop-blur border-t border-line">
-        <div className="container-custom max-w-4xl py-3 flex items-center gap-2">
+        <div className="container-custom py-3 flex items-center gap-2">
           <button type="button" onClick={trySave} className="btn btn-primary !px-5 !py-2.5">
             <Save size={17} /> Salvar
           </button>

@@ -20,6 +20,10 @@ export interface Field {
   hint?: string;
   /** Dica para o estudante, mostrada abaixo do campo */
   tip?: string;
+  /** Sigla mostrada antes do nome (QD, HMA…) */
+  abbr?: string;
+  /** Unidade mostrada dentro do campo (mmHg, bpm…) */
+  unit?: string;
 }
 
 export interface Section {
@@ -77,7 +81,8 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
         fields: [
           {
             key: 'qd',
-            label: 'QD — Queixa e duração',
+            abbr: 'QD',
+            label: 'Queixa e duração',
             kind: 'textarea',
             rows: 2,
             wide: true,
@@ -85,7 +90,8 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
           },
           {
             key: 'hma',
-            label: 'HMA — História da moléstia atual',
+            abbr: 'HMA',
+            label: 'História da moléstia atual',
             kind: 'textarea',
             rows: 7,
             wide: true,
@@ -93,7 +99,8 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
           },
           {
             key: 'isda',
-            label: 'ISDA — Interrogatório sobre os diversos aparelhos',
+            abbr: 'ISDA',
+            label: 'Interrogatório sobre os diversos aparelhos',
             kind: 'textarea',
             rows: 4,
             wide: true,
@@ -171,14 +178,14 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
         title: 'Sinais vitais e medidas',
         compact: true,
         fields: [
-          { key: 'pa', label: 'PA', kind: 'text', placeholder: 'mmHg' },
-          { key: 'fc', label: 'FC', kind: 'text', placeholder: 'bpm' },
-          { key: 'fr', label: 'FR', kind: 'text', placeholder: 'irpm' },
-          { key: 'sat', label: 'Saturação', kind: 'text', placeholder: '% SpO₂' },
-          { key: 'temp', label: 'Temperatura', kind: 'text', placeholder: '°C' },
-          { key: 'peso', label: 'Peso', kind: 'text', placeholder: 'kg' },
-          { key: 'altura', label: 'Altura', kind: 'text', placeholder: 'm' },
-          { key: 'hgt', label: 'Glicemia capilar', kind: 'text', placeholder: 'mg/dL' },
+          { key: 'pa', label: 'PA', kind: 'text', unit: 'mmHg' },
+          { key: 'fc', label: 'FC', kind: 'text', unit: 'bpm' },
+          { key: 'fr', label: 'FR', kind: 'text', unit: 'irpm' },
+          { key: 'sat', label: 'SatO₂', kind: 'text', unit: '%' },
+          { key: 'temp', label: 'Temp.', kind: 'text', unit: '°C' },
+          { key: 'peso', label: 'Peso', kind: 'text', unit: 'kg' },
+          { key: 'altura', label: 'Altura', kind: 'text', unit: 'm' },
+          { key: 'hgt', label: 'HGT', kind: 'text', unit: 'mg/dL' },
         ],
       },
       {
@@ -200,7 +207,8 @@ export const TOOLS: Record<ToolKind, ToolDef> = {
         fields: [
           {
             key: 'hd',
-            label: 'HD — Hipóteses diagnósticas',
+            abbr: 'HD',
+            label: 'Hipóteses diagnósticas',
             kind: 'textarea',
             rows: 4,
             wide: true,
@@ -404,3 +412,6 @@ export function fmtDateBR(v: string): string {
 
 /** Valor de um campo pronto para exibir. */
 export const showValue = (f: Field, v: string) => (f.kind === 'date' ? fmtDateBR(v) : v);
+
+/** Nome completo do campo para impressão e e-mail: "HMA — História da moléstia atual". */
+export const fullLabel = (f: Field) => (f.abbr ? `${f.abbr} — ${f.label}` : f.label);
