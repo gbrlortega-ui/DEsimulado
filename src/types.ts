@@ -23,6 +23,8 @@ export interface Question {
   alert?: string;
   /** Outras alternativas aceitas como corretas (questões com duas respostas válidas). */
   alsoAccepted?: number[];
+  /** Bizu: dica curta para a tomada de decisão. */
+  tip?: string;
 }
 
 export interface QuizSettings {

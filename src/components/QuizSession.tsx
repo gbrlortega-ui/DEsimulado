@@ -319,6 +319,13 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, p
                       </section>
                     )}
 
+                    {currentQuestion.tip && (
+                      <div className="rounded-lg bg-primary-soft px-4 py-3">
+                        <h3 className="text-sm font-sans font-bold text-primary-ink">Bizu</h3>
+                        <p className="mt-1 text-sm text-ink leading-relaxed">{currentQuestion.tip}</p>
+                      </div>
+                    )}
+
                     {currentQuestion.reference && (
                       <p className="text-xs text-muted leading-relaxed">
                         <span className="font-semibold text-ink-2">Referência:</span> {currentQuestion.reference}

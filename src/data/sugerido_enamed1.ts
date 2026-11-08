@@ -1,6 +1,6 @@
 import { Question } from '../types';
 
-// Simulado "Sugerido ENAMED - 1" — 100 questões no formato ENAMED.
+// Simulado sugerido "ENAMED 1" — 100 questões no formato ENAMED.
 // As de nº 1, 4, 21, 53, 66, 69, 76 e 91 são inéditas, escritas para o DEsimulados.
 // Gabarito TÉCNICO, não oficial (nenhuma banca publicou gabarito para estes itens).
 // Questões provisórias (com * no material de origem) levam `alert`.
@@ -23,7 +23,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "cardiologia",
       "fibrilação atrial",
       "anticoagulação"
-    ]
+    ],
+    "tip": "FA estável com mais de 48 horas: controle a frequência e calcule o CHA₂DS₂-VA. Cardioversão sem anticoagulação prévia só se houver instabilidade."
   },
   {
     "id": "sug-enamed1-2",
@@ -36,8 +37,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Aumentar a FiO₂ para 60% e administrar surfactante, se necessário."
     ],
     "correctAnswer": 0,
-    "explanation": "Prematuro de 28 semanas ventilado invasivamente, com FiO₂ de 0,50 e padrão radiológico típico de deficiência de surfactante: há indicação de surfactante endotraqueal. A ventilação deve ser reavaliada e a extubação para suporte não invasivo considerada assim que for possível; não precisa permanecer ventilado obrigatoriamente.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Prematuridade de 28 semanas implica imaturidade de pneumócitos tipo II e deficiência de surfactante, favorecendo atelectasia difusa, baixa complacência e necessidade progressiva de oxigênio. O infiltrado reticulogranular em vidro fosco é compatível com síndrome do desconforto respiratório neonatal. Como já foi intubado e necessita FiO₂ 0,50, deve receber surfactante pelo tubo endotraqueal precocemente; a literatura atual recomenda surfactante logo após intubação de prematuro abaixo de 32 semanas quando há SDR.",
+    "commentary": "B e D adiam indevidamente o tratamento; C menciona via inalatória, que não representa a administração recomendada nesse neonato intubado. A está correta quanto ao surfactante endotraqueal; porém 'mantê-lo em ventilação mecânica' só se justifica enquanto houver necessidade, com tentativa de extubação precoce quando seguro.\n\nAtenção: Diretrizes europeias 2025: minimizar tempo de ventilação invasiva e usar suporte não invasivo quando possível.",
+    "tip": "Prematuro + vidro fosco difuso + FiO₂ elevada = pense em falta de surfactante. Se já está intubado, trate pelo tubo e reavalie a extubação o quanto antes.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -54,8 +56,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Acidose metabólica hiperclorêmica."
     ],
     "correctAnswer": 2,
-    "explanation": "A aspiração gástrica retira HCl, produzindo perda de hidrogênio e cloreto e alcalose metabólica hipoclorêmica. A contração de volume ativa aldosterona e favorece perda renal de potássio, resultando em hipocalemia.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "O estômago secreta HCl. A aspiração persistente de 700–1.000 mL/dia pela sonda remove H+ e Cl−, aumentando bicarbonato plasmático: alcalose metabólica hipoclorêmica. Hipovolemia e ativação do sistema renina-angiotensina-aldosterona aumentam reabsorção de sódio e excreção renal de potássio e hidrogênio, mantendo alcalose e produzindo hipocalemia. Hipotensão, taquicardia e mucosas secas reforçam a perda volêmica.",
+    "commentary": "A e B descrevem distúrbios respiratórios sem mecanismo compatível; D é associada a perda de bicarbonato por diarreia ou administração de cloreto, não à perda de ácido gástrico. Na prática, corrigir volemia, cloreto e potássio e reavaliar a necessidade da sonda.",
+    "tip": "Perdeu conteúdo gástrico por vômitos ou sonda? Perdeu HCl: pense em alcalose metabólica hipoclorêmica com hipocalemia.",
     "tags": [
       "cirurgia",
       "gabarito técnico"
@@ -78,7 +81,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "tags": [
       "climatério",
       "terapia hormonal"
-    ]
+    ],
+    "tip": "Tem útero? Estrogênio sempre com progestagênio. Menos de 60 anos ou menos de 10 anos de menopausa, sem contraindicação: a terapia hormonal é a escolha para fogachos intensos."
   },
   {
     "id": "sug-enamed1-5",
@@ -91,8 +95,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) 20 mL/kg de sais de reidratação oral, via oral, em 120 minutos."
     ],
     "correctAnswer": 0,
-    "explanation": "Letargia, oligúria, extremidades frias, enchimento capilar de 4 segundos e pulso filiforme caracterizam choque por dengue (grupo D). A reposição inicial é cristalóide isotônico intravenoso a 20 mL/kg em até 20 minutos, com reavaliações frequentes.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Na dengue, a fase crítica frequentemente coincide com a queda da febre. Letargia, anúria, tempo de enchimento capilar de 4 s, extremidades frias e pulso filiforme apontam choque por extravasamento plasmático (grupo D), mesmo quando a pressão arterial é difícil de medir. Esse quadro impõe expansão volêmica imediata com cristalóide isotônico 20 mL/kg IV em até 20 minutos, reavaliando perfusão, pressão, hematócrito e débito urinário.",
+    "commentary": "B oferece volume e velocidade insuficientes para choque estabelecido; C e D propõem reidratação enteral/oral incompatível com hipoperfusão grave. Atenção: após cada bolus, reavaliar para evitar tanto subtratamento quanto sobrecarga hídrica.",
+    "tip": "Na dengue, a piora pode começar justamente quando a febre cai. Extremidades frias, pulso fino e enchimento lento = choque: priorize cristalóide IV e reavaliação frequente.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -109,8 +114,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Articular cuidado com a rede intersetorial e abordar as interseccionalidades das mulheres."
     ],
     "correctAnswer": 2,
-    "explanation": "O diagnóstico territorial mostra sintomas do climatério associados a hipertensão e diabetes. A APS deve integrar cuidado multiprofissional, manejo das comorbidades e educação em saúde, sem encaminhamento indiscriminado a serviços especializados.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A análise territorial caracteriza mulheres no climatério com sintomas vasomotores/urogenitais e elevada prevalência de comorbidades. O princípio da atenção primária é cuidado integral: identificar intensidade dos sintomas, condições cardiovasculares, diabetes, saúde mental, sexualidade, demandas sociais e possibilidades de tratamento, com trabalho multiprofissional e atividades coletivas de educação.",
+    "commentary": "A encaminha desnecessariamente o grupo para saúde mental; B utiliza uma rede voltada à saúde materna, não ao climatério. D destaca intersetorialidade, importante em situações concretas de vulnerabilidade, mas não substitui abordagem clínica abrangente das comorbidades. C é a estratégia diretamente alinhada ao cenário e à população descrita.",
+    "tip": "Quando o problema é de um grupo do território, raciocine em duas frentes: cuidado clínico integral e ação coletiva; não transforme climatério em encaminhamento automático.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -127,8 +133,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Amitriptilina."
     ],
     "correctAnswer": 1,
-    "explanation": "Tristeza, anedonia/desânimo, hipersonia, dificuldade de concentração e alterações ponderais por 3 meses sugerem episódio depressivo. A fluoxetina é ISRS de primeira linha; a avaliação clínica deve incluir risco de suicídio e investigação de história de mania/hipomania.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Três meses de humor deprimido/desânimo, hipersonia, fadiga, dificuldade de concentração e ganho ponderal sugerem episódio depressivo maior; exames normais tornam causas como hipotireoidismo e anemia menos prováveis. Na ausência de história de mania/hipomania, um ISRS como fluoxetina é opção farmacológica de primeira linha, associado à psicoterapia e ao acompanhamento da resposta.",
+    "commentary": "Topiramato não trata depressão primária; lisdexanfetamina é estimulante, sem indicação de primeira linha nesse quadro; amitriptilina pode funcionar, mas seus efeitos anticolinérgicos, cardiovasculares e toxicidade em superdose reduzem a preferência inicial. Investigar risco suicida, transtorno bipolar e preferências da paciente antes de escolher o fármaco.",
+    "tip": "Tristeza com anedonia e prejuízo por semanas exige investigar depressão, suicídio e história de mania. Sem bipolaridade, um ISRS costuma ser opção inicial.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -145,8 +152,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Suspender temporariamente."
     ],
     "correctAnswer": 3,
-    "explanation": "Desidratação, hipotensão, lesão renal aguda, acidose e cetonemia durante uso de inibidor de SGLT2 exigem suspensão temporária. Deve-se investigar e tratar cetoacidose euglicêmica, que pode ocorrer mesmo com glicemia de 132 mg/dL.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Vômitos, diarreia e hipotensão levam à hipovolemia e aumento da creatinina de 2,4 para 3,9 mg/dL, compatível com lesão renal aguda sobre DRC. O uso de dapagliflozina durante jejum/doença aguda aumenta risco de cetogênese e cetoacidose euglicêmica: pH 7,33, bicarbonato 18, cetonas positivas e glicemia apenas 132 mg/dL tornam a hipótese relevante. Suspender temporariamente o SGLT2 até recuperação clínica, hidratação e resolução da cetose, com avaliação hospitalar e tratamento do distúrbio metabólico.",
+    "commentary": "A suspensão definitiva depende de avaliação posterior; B não resolve risco agudo; C perpetua a exposição. O achado de cetonemia isolada não confirma por si só cetoacidose diabética: é preciso caracterizar ânion gap, β-hidroxibutirato e critérios diagnósticos.",
+    "tip": "SGLT2 + jejum/vômitos + cetonas + acidose, mesmo com glicose normal, acende alerta para cetoacidose euglicêmica: suspenda temporariamente e investigue.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -163,8 +171,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Indicar isolamento domiciliar."
     ],
     "correctAnswer": 1,
-    "explanation": "Febre alta por 3 dias seguida de desaparecimento da febre e exantema róseo centrado no tronco indica exantema súbito (roséola, HHV-6/7). Em criança estável, a conduta é suporte sintomático; não requer exame viral rotineiro.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A sequência 'febre alta por 3 dias → desaparecimento da febre → exantema róseo centrado no tronco' é praticamente típica da roséola infantil/exantema súbito, relacionado a HHV-6/7. A criança permanece ativa e sem sinais de toxemia, portanto a abordagem é clínica, com hidratação, orientações e antitérmico se voltar a ter febre/desconforto.",
+    "commentary": "A não corresponde à notificação compulsória usual da roséola; C não é necessária em apresentação clássica; D não exige isolamento domiciliar específico após melhora, salvo orientação clínica individual. Diferenciar de sarampo, em que febre e sintomas respiratórios normalmente acompanham o início do exantema e há implicações para vigilância.",
+    "tip": "Febre alta que desaparece ANTES de surgir exantema rosado no tronco em lactente bem = roséola (exantema súbito).",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -181,8 +190,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Sondagem uretral."
     ],
     "correctAnswer": 1,
-    "explanation": "Sangue no meato uretral e hematoma escrotal após trauma pélvico sugerem lesão uretral. Deve-se investigar com uretrografia retrógrada antes de tentar sondagem uretral, evitando agravar possível ruptura.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Trauma pélvico de alta energia, sangue no meato e hematoma escrotal são sinais de lesão uretral, sobretudo posterior. A uretra possivelmente rompida não deve ser instrumentada às cegas: a uretrografia retrógrada demonstra extravasamento e permite definir se há lesão parcial ou completa antes de tentativa de sondagem.",
+    "commentary": "D pode agravar a lesão; A (derivação suprapúbica) poderá ser necessária após avaliação urológica, mas não substitui o exame diagnóstico em paciente estável; C não está indicada sem outra lesão abdominal sugestiva. O dado decisivo é sangue no meato uretral.",
+    "tip": "Sangue no meato após trauma de pelve é lesão uretral até prova em contrário: faça uretrografia antes de sondagem uretral às cegas.",
     "tags": [
       "cirurgia",
       "gabarito técnico"
@@ -199,8 +209,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Gestação ectópica."
     ],
     "correctAnswer": 3,
-    "explanation": "β-hCG positivo e imagem anexial extrauterina com halo hiperecogênico e pequeno líquido livre sugerem gestação ectópica tubária. A estabilidade hemodinâmica permite decidir entre tratamento clínico e cirúrgico conforme critérios específicos.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A gravidez está confirmada por β-hCG positivo (2.500 mUI/mL). A ultrassonografia não descreve gestação intrauterina e demonstra imagem anexial com halo hiperecogênico ('anel tubário'), associada a pequeno líquido livre e dor pélvica: conjunto fortemente sugestivo de gestação ectópica tubária. A estabilidade hemodinâmica permite avaliar metotrexato, cirurgia ou seguimento muito selecionado, dependendo de β-hCG, sinais de ruptura e critérios clínicos.",
+    "commentary": "Ameaça de aborto pressupõe gestação intrauterina e colo fechado; aborto incompleto sugere eliminação parcial de produtos/colo aberto; gestação anembrionada é saco gestacional intrauterino sem embrião. Dor intensa e líquido livre exigem avaliação urgente mesmo sem hipotensão.",
+    "tip": "β-hCG positivo, útero sem gestação visível e massa anexial com halo = ectópica até prova em contrário; cheque estabilidade e líquido livre.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -217,8 +228,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Insulina NPH."
     ],
     "correctAnswer": 2,
-    "explanation": "Diabetes não controlado com metformina, obesidade e TFG de 46 mL/min/1,73 m² favorecem a adição de inibidor de SGLT2, com benefício renal/cardiovascular. A queda glicêmica com TFG reduzida pode ser modesta; considerar também agonista de GLP-1 conforme acesso e perfil.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "HbA1c de 8,2% evidencia controle glicêmico insuficiente com metformina. A TFG de 46 mL/min/1,73 m² indica DRC G3a, situação em que SGLT2 (dapagliflozina) oferece proteção cardiorrenal além da redução da glicemia, desde que não haja contraindicações e seguindo critérios de prescrição. Com função renal reduzida, seu efeito hipoglicemiante pode ser menor, mas os benefícios renais/cardiovasculares permanecem relevantes.",
+    "commentary": "Gliclazida pode causar hipoglicemia e não oferece o mesmo benefício renal; pioglitazona pode causar edema/ganho de peso; insulina NPH não é primeira escolha se não há hiperglicemia sintomática ou descompensação grave. Avaliar albuminúria, pressão, adesão e necessidade posterior de agonista GLP-1.",
+    "tip": "Diabetes com TFG reduzida: escolha não apenas pela HbA1c; priorize medicamentos com proteção renal/cardiovascular quando indicados.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -235,8 +247,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Iniciar pré-natal, registrar a gestação no e-SUS e garantir acompanhamento multidisciplinar na atenção primária."
     ],
     "correctAnswer": 3,
-    "explanation": "Gestação na adolescência isoladamente não torna o pré-natal de alto risco obrigatório. A APS deve iniciar imediatamente o pré-natal, registrar no e-SUS, investigar corrimento e dor pélvica e organizar seguimento multidisciplinar, com encaminhamento conforme achados.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Adolescente de 17 anos com teste positivo e sem pré-natal precisa iniciar acompanhamento imediatamente na APS: confirmação/datação da gestação, avaliação de sinais vitais, exames de rotina, imunização, suplementação e registro e-SUS. Corrimento e dor abdominal exigem investigação de IST, cervicite ou doença pélvica/obstétrica, com avaliação de urgência conforme sintomas. A idade, isoladamente, não obriga encaminhamento a pré-natal de alto risco.",
+    "commentary": "A e C encaminham automaticamente sem indicação clara de alto risco; B encaminha diretamente à maternidade sem evidência de emergência no texto. A resposta D prioriza início do cuidado, vínculo e abordagem multiprofissional; sinais de gravidade modificariam o fluxo.",
+    "tip": "Gestante adolescente sem pré-natal: acolha e comece acompanhamento na APS hoje; investigue corrimento/dor e só estratifique alto risco por critério real.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -253,8 +266,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Comunidade Terapêutica."
     ],
     "correctAnswer": 2,
-    "explanation": "Trata-se de transtorno psicótico crônico com descontinuação de tratamento, sem risco iminente que determine internação. O CAPS é o serviço comunitário especializado apropriado para reestabelecer vínculo, cuidado intensivo e suporte psicossocial.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A interrupção de antipsicóticos há dois meses, com retorno de delírios e alucinações, aponta descompensação da esquizofrenia. Apesar da necessidade de reavaliação breve e reintrodução assistida de tratamento, o enunciado afasta risco iminente de auto/heteroagressão. O CAPS pode oferecer acompanhamento longitudinal especializado, busca ativa, equipe multiprofissional, reabilitação psicossocial e articulação com a UBS.",
+    "commentary": "Leito em hospital geral ou UPA são úteis em situação de urgência/risco ou incapacidade de cuidado comunitário, não como destino inicial obrigatório aqui. Comunidade terapêutica não substitui CAPS no tratamento da esquizofrenia.",
+    "tip": "Psicose crônica descompensada sem risco iminente: rearticule CAPS + APS. Emergência psiquiátrica/hospital é para risco ou gravidade que exige esse nível.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -271,8 +285,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Substituir a morfina por dipirona e introduzir fibras solúveis."
     ],
     "correctAnswer": 0,
-    "explanation": "Constipação induzida por opioide é frequente e não exige retirar analgesia eficaz. Mantém-se morfina e inicia-se laxativo, geralmente estimulante e/ou osmótico; avaliar fecaloma e obstrução se houver sinais sugestivos.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A morfina está controlando dor oncológica e não deve ser reduzida por constipação isolada. Opioides ativam receptores µ intestinais, diminuindo peristaltismo e secreção; a tolerância a esse efeito é pequena. O tratamento usual é manter analgesia e iniciar esquema laxativo (estimulante e/ou osmótico), além de verificar fecaloma, hidratação, fármacos associados e sinais de obstrução.",
+    "commentary": "B sacrifica analgesia sem corrigir prontamente a constipação; C e D trocam desnecessariamente o opioide e podem piorar dor. Distensão e ruídos diminuídos requerem vigilância para íleo/obstrução antes de intensificar laxantes.",
+    "tip": "Se o opioide controla a dor, não o retire apenas por constipação: associe prevenção e tratamento intestinal, sempre excluindo obstrução.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -289,8 +304,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Anomalia de Ebstein."
     ],
     "correctAnswer": 2,
-    "explanation": "Cianose aos esforços e melhora ao agachar são características da tetralogia de Fallot. A posição aumenta a resistência vascular sistêmica e reduz temporariamente o desvio direita-esquerda.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A tetralogia de Fallot combina comunicação interventricular, obstrução da via de saída do VD, aorta cavalgante e hipertrofia ventricular direita. Em crises hipóxicas, a diminuição da resistência sistêmica aumenta o shunt direita-esquerda. Agachar-se aumenta a resistência vascular sistêmica, reduz o desvio direita-esquerda e melhora transitoriamente a oxigenação, explicando a melhora da cianose.",
+    "commentary": "Transposição de grandes artérias costuma se manifestar com cianose intensa precoce; estenose aórtica isolada não explica crises que melhoram em cócoras; anomalia de Ebstein tem outro mecanismo anatômico. A pista clássica da questão é a posição genupeitoral/cócoras.",
+    "tip": "Cianose aos esforços que melhora ao agachar é pista clássica de tetralogia de Fallot: a cócoras eleva resistência sistêmica e reduz shunt direita-esquerda.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -307,14 +323,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Curativo oclusivo com fixação em três lados."
     ],
     "correctAnswer": 3,
-    "explanation": "Suspeita-se de ferida torácica aspirativa/pneumotórax aberto, mas o enunciado não descreve sucção de ar pela ferida. Curativo de três lados é a resposta tradicional. Na prática contemporânea prefere-se selo torácico ventilado, monitorização para pneumotórax hipertensivo e drenagem intercostal em sítio adequado quando indicada. Logo, D é resposta clássica, não a única providência definitiva.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Ferimento penetrante torácico com redução do murmúrio vesicular e dispneia levanta suspeita de pneumotórax traumático; a descrição de um defeito aberto no tórax sugere a possibilidade de pneumotórax aberto. Na formulação tradicional de provas, curativo oclusivo fixado em três lados funciona como válvula improvisada, permitindo saída de ar e reduzindo entrada na inspiração. Na prática atual, prefere-se selo torácico ventilado apropriado e considerar drenagem pleural em local distinto da ferida, com vigilância para tensão.",
+    "commentary": "A não deve utilizar o próprio ferimento como local do dreno; B pode reter ar e precipitar pneumotórax hipertensivo; C é procedimento definitivo para pneumotórax, mas a escolha como ação imediata depende de confirmar que não se trata de ferida aspirativa. O enunciado não descreve passagem de ar pela ferida, deixando D com ressalva.",
+    "tip": "Ferida que comunica pleura com ambiente: feche o fluxo de ar de modo seguro e prepare drenagem em local apropriado; evite drenar pela própria ferida.",
     "tags": [
       "cirurgia",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (ressalva de diretriz). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (ressalva de diretriz). Distinguir conduta de prova tradicional e protocolos modernos de trauma; um selo ventilado substitui o curativo improvisado quando disponível."
   },
   {
     "id": "sug-enamed1-18",
@@ -327,8 +344,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Mamografia de rotina em 2 anos."
     ],
     "correctAnswer": 1,
-    "explanation": "BI-RADS 0 significa avaliação mamográfica incompleta, e não resultado benigno ou indicação de retorno tardio. É necessário complementar a investigação, frequentemente com ultrassonografia e/ou incidências mamográficas adicionais.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "BI-RADS 0 não indica câncer nem exame normal: significa avaliação incompleta e necessidade de complementação diagnóstica. Isso pode incluir incidências mamográficas adicionais, comparação com exames prévios e/ou ultrassonografia direcionada conforme o achado. Entre as alternativas oferecidas, a ultrassonografia é o melhor complemento.",
+    "commentary": "BI-RADS 3 costuma motivar controle de curto intervalo, não BI-RADS 0; BI-RADS 1/2 voltam a rastreamento habitual. Ressonância não é a primeira complementação rotineira, e aguardar 2 anos com exame inconclusivo seria inadequado.",
+    "tip": "BI-RADS 0 não é resultado normal: é avaliação incompleta. Complemente com incidências mamográficas e/ou ultrassom, conforme o achado.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -345,8 +363,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Esquistossomose."
     ],
     "correctAnswer": 0,
-    "explanation": "Febre prolongada, emagrecimento, hepatoesplenomegalia, anemia/leucopenia e hipergamaglobulinemia policlonal, em área endêmica, sugerem leishmaniose visceral. Deve-se confirmar por teste específico e avaliar gravidade.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A leishmaniose visceral provoca infecção sistêmica por Leishmania com febre prolongada, perda ponderal, hepatoesplenomegalia, alterações hematológicas por comprometimento medular/esplênico e hipergamaglobulinemia policlonal pela ativação B. O trabalhador rural de região endêmica apresenta justamente esse conjunto, sem quadro típico de doença hepática isolada.",
+    "commentary": "Malária pode dar febre e esplenomegalia, mas o curso insidioso e a hipergamaglobulinemia favorecem leishmaniose; mononucleose costuma cursar com síndrome febril aguda e linfadenopatias; esquistossomose hepatoesplênica costuma ter história evolutiva distinta. Confirmar com teste rápido rK39, sorologia e/ou demonstração do parasita conforme protocolo.",
+    "tip": "Febre prolongada + perda ponderal + hepatoesplenomegalia + citopenias + hipergamaglobulinemia em área endêmica = leishmaniose visceral.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -363,8 +382,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Valor preditivo positivo."
     ],
     "correctAnswer": 0,
-    "explanation": "Ao ampliar a faixa classificada como pré-hipertensão, o critério inclui maior número de indivíduos. Em termos de rastreio, ampliar a positividade tende a aumentar a sensibilidade, com possível redução da especificidade.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "O ponto de corte de pré-hipertensão foi ampliado de PAS 130–139/PAD 85–89 para PAS 120–139/PAD 80–89 mmHg, passando a classificar mais pessoas como positivas para essa categoria de risco. Ao reduzir o limiar para identificar uma condição, tende-se a captar mais pessoas que futuramente apresentarão desfecho/risco, elevando a sensibilidade, à custa de possível queda de especificidade.",
+    "commentary": "Especificidade não costuma subir quando se torna o critério mais amplo; falsos negativos tendem a diminuir, não aumentar; valor preditivo positivo depende da prevalência e geralmente não melhora com classificação excessivamente abrangente. Nota conceitual: pré-hipertensão é categoria prognóstica, não teste binário formal de doença.",
+    "tip": "Ao reduzir o limiar para classificar positivo, você encontra mais pessoas: sensibilidade tende a subir e especificidade a cair.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -387,7 +407,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "tags": [
       "contracepção de emergência",
       "planejamento reprodutivo"
-    ]
+    ],
+    "tip": "Contracepção de emergência vale até 5 dias: quanto antes, melhor. Não exige teste de gravidez nem acompanhante."
   },
   {
     "id": "sug-enamed1-22",
@@ -400,14 +421,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Ecocardiograma transtorácico."
     ],
     "correctAnswer": 2,
-    "explanation": "Dor aos esforços aliviada com repouso sugere síndrome coronariana crônica. Um exame funcional com imagem, como cintilografia de perfusão, é defensável quando a interpretação do ECG de esforço pode estar prejudicada por alterações basais de ST-T/hipertrofia; porém o enunciado descreve apenas sobrecarga ventricular esquerda, sem especificar se ST-T impede teste ergométrico. Assim, A também pode ser admissível conforme avaliação clínica, probabilidade pré-teste e capacidade de exercício. Sem mais dados, NÃO há unicidade inequívoca entre A e C.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Dor precordial típica desencadeada por esforço e aliviada por repouso caracteriza angina estável/síndrome coronariana crônica. Após estratificar probabilidade clínica e avaliar ECG basal, pode-se investigar isquemia com teste ergométrico se o traçado for interpretável e o paciente conseguir exercitar-se; exame funcional com imagem (como cintilografia) costuma ser preferível quando há alterações de repolarização basais que prejudicam o teste convencional. O ECG relata sobrecarga ventricular esquerda, mas não detalha alterações ST-T.",
+    "commentary": "B (cineangiocoronariografia) costuma ser reservada a alto risco/indicação específica, não automaticamente à primeira avaliação; D (eco de repouso) avalia estrutura e função, mas isoladamente não demonstra isquemia induzível. A e C podem ser defensáveis segundo o contexto; não há dados suficientes para afirmar superioridade universal de C.",
+    "tip": "Dor típica aos esforços pede estratificação de doença coronária; ECG com HVE pode prejudicar teste ergométrico simples. Escolha exame pela probabilidade e interpretabilidade.",
     "tags": [
       "clínica médica",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (ambiguidade entre alternativas). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (ambiguidade entre alternativas). Sem saber se o ECG é interpretável para esforço e qual a probabilidade pré-teste, a unicidade A versus C fica prejudicada."
   },
   {
     "id": "sug-enamed1-23",
@@ -420,8 +442,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Conscientização das mães sobre o aleitamento materno exclusivo até os 6 meses, com a manutenção do aleitamento após a introdução alimentar."
     ],
     "correctAnswer": 3,
-    "explanation": "A amamentação exclusiva até 6 meses e continuada após a introdução alimentar previne infecções gastrointestinais. Sais de reidratação oral reduzem complicações e mortalidade durante os episódios, mas não a incidência da doença.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A pergunta é sobre reduzir INCIDÊNCIA de diarreia, isto é, prevenir novos episódios. O aleitamento materno exclusivo até 6 meses fornece proteção imunológica, reduz exposição a água/alimentos contaminados e protege contra infecções entéricas. Continuar o aleitamento após a introdução alimentar conserva parte dessa proteção, inclusive em comunidades vulneráveis.",
+    "commentary": "Sais de reidratação oral (A) e ensino sobre reidratação (B) reduzem desidratação, complicações e óbitos após a doença surgir, mas não são medidas de maior impacto sobre surgimento de novos casos. Uso racional de antibióticos (C) é importante, mas tem foco diferente.",
+    "tip": "SRO reduz desidratação e morte; aleitamento materno previne episódios de diarreia. A questão pede INCIDÊNCIA, não tratamento do caso.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -438,14 +461,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Fasciotomia em antebraço e redução cirúrgica da fratura."
     ],
     "correctAnswer": 0,
-    "explanation": "Fratura supracondiliana deslocada de úmero em criança com pulsos diminuídos exige avaliação neurovascular imediata, redução urgente e, em geral, fixação percutânea com fios de Kirschner, seguida de imobilização. A apenas cita redução incruenta com tala, insuficiente para a fratura deslocada; D exige síndrome compartimental, não demonstrada. Falta alternativa com redução e fixação percutânea: item potencialmente anulável.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A radiografia evidencia fratura supracondiliana do úmero deslocada, comum após queda com apoio na mão estendida. Pulsos radial e ulnar diminuídos constituem sinal de possível comprometimento arterial, exigindo reavaliação neurovascular imediata. Nas fraturas deslocadas, a conduta padrão é redução urgente, frequentemente fechada, com fixação percutânea por fios de Kirschner e imobilização subsequente; persistindo déficit vascular, avaliar exploração.",
+    "commentary": "A menciona apenas redução incruenta e tala, e não a fixação necessária em muitas fraturas desse grau; B não corrige desalinhamento e é inadequada; C não é técnica de escolha; D exige quadro de síndrome compartimental demonstrada para justificar fasciotomia. A é a mais próxima, mas incompleta.",
+    "tip": "Fratura supracondiliana deslocada + pulso diminuído = prioridade neurovascular. Reduza e estabilize urgentemente; talas isoladas podem ser insuficientes.",
     "tags": [
       "cirurgia",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (potencial recurso). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário.",
+    "alert": "Gabarito provisório, não oficial (potencial recurso). Nenhuma opção oferece redução urgente com estabilização percutânea e avaliação da perfusão arterial.",
     "image": "/images/sugenamed1-24.PNG"
   },
   {
@@ -459,8 +483,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Doxiciclina 100 mg de 12/12 horas, por via oral, por 21 dias."
     ],
     "correctAnswer": 2,
-    "explanation": "Úlcera genital única indolor, endurecida, de fundo limpo e adenopatia não supurativa é cancro duro da sífilis primária. Usa-se penicilina benzatina 2,4 milhões UI IM em dose única para sífilis recente.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Úlcera genital única, indolor, endurecida, com fundo limpo e linfadenopatia regional não supurativa é o padrão do cancro duro da sífilis primária por Treponema pallidum. O esquema para sífilis recente é benzilpenicilina benzatina 2,4 milhões UI IM em dose única (divididas entre sítios de aplicação segundo apresentação). Solicitar testes treponêmico e não treponêmico, testar outras IST e orientar avaliação de parceiros.",
+    "commentary": "Ceftriaxona em dose única trata gonorreia; azitromicina 1 g é alternativa para algumas IST, não o regime da sífilis; doxiciclina 21 dias não é o esquema indicado para sífilis primária. Atenção: não atrasar tratamento quando suspeita é alta, conforme protocolos.",
+    "tip": "Úlcera genital única, limpa, endurecida e indolor + ínguas não supurativas = cancro duro da sífilis primária; penicilina benzatina é padrão.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -477,8 +502,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Leptospirose."
     ],
     "correctAnswer": 2,
-    "explanation": "A chikungunya costuma cursar com febre alta e artralgia intensa, edema articular e limitação funcional importante, que podem persistir. Dengue costuma ter mialgia mais marcante; zika geralmente apresenta quadro mais brando.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Febre alta súbita associada a artralgias relevantes, edema articular e limitação incapacitante para marcha/trabalho constitui quadro típico de chikungunya, causada por alfavírus transmitido pelo Aedes. A dor articular pode persistir após cessar febre e demandar seguimento na fase subaguda/crônica.",
+    "commentary": "Dengue costuma ter febre, cefaleia e mialgia intensas com artralgia menos incapacitante; zika costuma dar exantema e conjuntivite com febre baixa ou ausente; leptospirose associa-se a exposição hídrica, mialgia intensa em panturrilhas e sinais sistêmicos. Na fase aguda, excluir dengue antes de prescrever anti-inflamatórios.",
+    "tip": "Chikungunya costuma dar dor articular mais intensa e incapacitante, com edema; dengue costuma destacar mialgia e sinais hemorrágicos.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -495,8 +521,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) 4."
     ],
     "correctAnswer": 3,
-    "explanation": "Com sensibilidade e especificidade constantes, quanto menor a prevalência, maior tende a ser o valor preditivo negativo. O município 4 tem a menor prevalência (1,8%).",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Valor preditivo negativo (VPN) é a probabilidade de não ter doença quando o teste é negativo: VPN = verdadeiros negativos/(verdadeiros negativos + falsos negativos). Mantidas sensibilidade e especificidade, o VPN aumenta à medida que a prevalência diminui, porque existem proporcionalmente menos doentes capazes de gerar falsos negativos.",
+    "commentary": "As prevalências são 3,0%, 2,0%, 2,5% e 1,8%; o município 4 tem a menor (1,8%), portanto maior VPN. Não confundir número absoluto de casos com prevalência, nem VPN com especificidade, que é propriedade intrínseca do teste.",
+    "tip": "Com sensibilidade/especificidade fixas, quanto MENOR a prevalência, MAIOR o valor preditivo negativo. Procure o município de menor prevalência.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -513,8 +540,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Transtorno depressivo misto."
     ],
     "correctAnswer": 2,
-    "explanation": "O período prévio de pelo menos 4 dias com energia elevada, pouco sono, fala aumentada e mudança observável, sem prejuízo grave, é sugestivo de hipomania. O episódio depressivo atual mais a hipomania aponta para transtorno bipolar tipo II, exigindo confirmação clínica.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "O episódio atual apresenta humor deprimido, anedonia, perda funcional, insônia, fadiga e hiporexia por cerca de 1 mês, compatível com episódio depressivo. Três meses antes houve pelo menos 5 dias de humor excessivamente elevado, energia aumentada, fala excessiva, múltiplos projetos e menor necessidade de sono, observáveis sem prejuízo grave ou psicose: descrição sugestiva de hipomania. Episódio depressivo maior + hipomania apontam para transtorno bipolar tipo II, se todos os critérios forem confirmados.",
+    "commentary": "Depressão unipolar (A) ignora a hipomania; ciclotimia (B) exige flutuações subclínicas prolongadas, não episódios plenos descritos; 'depressão mista' não explica melhor o episódio hipomaníaco prévio. Evitar antidepressivo isolado antes de avaliar bipolaridade.",
+    "tip": "Depressão atual + episódio prévio de energia elevada, menor necessidade de sono e mudança observável por vários dias = rastreie hipomania, não rotule como unipolar.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -531,8 +559,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Tuberculose intestinal."
     ],
     "correctAnswer": 0,
-    "explanation": "Diarreia crônica, emagrecimento, massa em fossa ilíaca direita e sobretudo fístula perianal são muito sugestivos de doença de Crohn. Pioderma gangrenoso é manifestação extraintestinal possível.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Doença de Crohn pode acometer qualquer segmento gastrointestinal e causar inflamação transmural, estenoses, massas inflamatórias e fístulas. Massa em fossa ilíaca direita sugere acometimento ileocecal; fístula perianal é particularmente sugestiva de Crohn. Emagrecimento acentuado e pioderma gangrenoso reforçam doença inflamatória intestinal com manifestação extraintestinal.",
+    "commentary": "Retocolite ulcerativa limita-se ao cólon e raramente causa fístulas complexas; câncer colorretal é menos provável pela idade e manifestações perianais; tuberculose intestinal entra no diferencial de acometimento ileocecal, mas não explica tão bem o conjunto. Confirmar por ileocolonoscopia com biópsias e avaliação de extensão.",
+    "tip": "Diarreia crônica + emagrecimento + fístula perianal + massa em fossa ilíaca direita aponta fortemente para doença de Crohn.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -549,8 +578,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Prescrição de albendazol."
     ],
     "correctAnswer": 2,
-    "explanation": "A criança está ativa, perfundida, com lágrimas e mucosa úmida: não apresenta desidratação significativa. A reidratação oral e manutenção da alimentação são adequadas; hidratação intravenosa é reservada a situações específicas.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A criança está ativa, aceita líquidos, chora com lágrimas, tem mucosa úmida, perfusão normal, TEC <2 segundos e fontanela plana: não há desidratação clinicamente relevante. Para diarreia aguda sem sangue, a conduta é manter alimentação/aleitamento e oferecer solução de reidratação oral após perdas para prevenir desidratação; zinco é considerado segundo política/local e idade.",
+    "commentary": "Antibióticos (A) não são rotineiros em gastroenterite aquosa sem sinais de invasão; via venosa (B) é reservada a desidratação grave, choque ou falha da via oral; antiparasitário (D) não tem indicação empírica nesse contexto. Orientar sinais de alarme e retorno.",
+    "tip": "Diarreia em lactente com lágrimas, mucosa úmida e boa perfusão: mantenha alimentação e use SRO; hidratação venosa é para gravidade/fracasso oral.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -567,8 +597,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Monitorização invasiva da pressão intracraniana."
     ],
     "correctAnswer": 1,
-    "explanation": "A TC mostra coleção extra-axial hiperdensa lentiforme/biconvexa, típica de hematoma epidural, com efeito de massa e piora neurológica. Está indicada avaliação neurocirúrgica imediata para evacuação do hematoma.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A tomografia apresenta coleção extra-axial hiperdensa de formato lentiforme/biconvexo, típica de hematoma epidural (extradural). O intervalo inicial com consciência relativamente preservada seguido de piora neurológica lembra o 'intervalo lúcido', decorrente da expansão do sangramento e aumento da pressão intracraniana. O efeito de massa somado à deterioração indica avaliação neurocirúrgica emergencial para evacuação.",
+    "commentary": "Hematoma subdural tende a ser crescente e em meia-lua, não lentiforme; observação isolada ou apenas monitorização de pressão intracraniana não tratam massa expansiva com piora neurológica. A prioridade é estabilizar ABC e providenciar neurocirurgia.",
+    "tip": "Após TCE, melhora relativa seguida de piora de consciência + hematoma biconvexo na TC é emergência neurocirúrgica por epidural.",
     "tags": [
       "cirurgia",
       "gabarito técnico"
@@ -586,8 +617,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Abortamento retido."
     ],
     "correctAnswer": 1,
-    "explanation": "Sangramento ativo e dor com colo uterino dilatado, mas sem expulsão de produtos, caracterizam abortamento inevitável. Na ameaça de aborto o colo permanece fechado.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Sangramento vaginal volumoso, cólica e colo uterino DILATADO antes de ocorrer eliminação dos produtos gestacionais caracterizam abortamento inevitável ou em curso. O colo aberto significa que a gestação não se mantém viável e a expulsão é esperada ou já começou, exigindo avaliação obstétrica de sangramento, estabilidade e conduta expectante, medicamentosa ou uterina conforme caso.",
+    "commentary": "Ameaça de abortamento exige colo fechado; abortamento completo ocorre após expulsão total e útero esvaziado; retido apresenta gestação inviável sem eliminação, em geral colo fechado. Não confundir estabilidade hemodinâmica com ausência de gravidade potencial do sangramento.",
+    "tip": "Sangramento na gestação inicial: colo FECHADO sugere ameaça; colo ABERTO sem expulsão do conteúdo sugere abortamento inevitável.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -604,8 +636,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Vacina antirrábica e contraindicação de soro antirrábico."
     ],
     "correctAnswer": 0,
-    "explanation": "Mordedura em dedos por gato não observável em região com raiva exige profilaxia pós-exposição com VACINA e imunização passiva, após limpeza adequada. A (soro antirrábico) e B (imunoglobulina antirrábica) representam modalidades alternativas de imunização passiva; diferem por origem e dose, mas ambas são agentes válidos conforme disponibilidade. Portanto há DUAS alternativas corretas na redação; forte argumento para recurso/anulação.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Ferimento transdérmico nos dedos por gato de rua não localizável é exposição relevante à raiva, especialmente em local com ocorrência recente confirmada em felinos. Deve-se lavar imediatamente com água e sabão, avaliar necessidade de antibiótico e antitetânica, e iniciar profilaxia antirrábica pós-exposição conforme classificação de risco. A imunização passiva pode ser feita por soro heterólogo antirrábico OU imunoglobulina humana antirrábica, enquanto a vacina produz proteção ativa.",
+    "commentary": "A e B trazem vacina associada a formas alternativas de imunização passiva, ambas clinicamente corretas quando indicadas; C omite vacina e duplica imunização passiva; D dispensa indevidamente anticorpos no contexto descrito. A redação não diferencia A e B.",
+    "tip": "Mordida de animal não observável em região com raiva + lesão na mão: lave, classifique exposição e avalie vacina COM imunização passiva; soro e imunoglobulina são alternativas.",
     "tags": [
       "clínica médica",
       "gabarito técnico",
@@ -614,7 +647,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "alsoAccepted": [
       1
     ],
-    "alert": "Gabarito provisório, não oficial (potencial anulação por duplicidade): A e B estão corretas, e as duas contam como acerto aqui."
+    "alert": "Gabarito provisório, não oficial (potencial anulação por duplicidade): A e B estão corretas, e as duas contam como acerto aqui. Duas alternativas descrevem modalidades aceitas de profilaxia passiva; verificar eventual critério de disponibilidade não informado no enunciado."
   },
   {
     "id": "sug-enamed1-34",
@@ -627,8 +660,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Disponibilizar laboratórios móveis para análise qualitativa da água destinada ao consumo humano."
     ],
     "correctAnswer": 0,
-    "explanation": "Em emergência associada a chuvas, a vigilância epidemiológica deve articular os níveis de gestão e instituir fluxos de notificação e informação para resposta coordenada. Análise da qualidade da água pertence principalmente à vigilância ambiental.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Chuvas intensas com ruptura de saneamento, deslocamento de moradores e elevação de diarreias exigem resposta coordenada da vigilância epidemiológica. Sua atribuição prioritária é articular comunicação, definição de casos, investigação de surtos e fluxos entre municípios, estado e União para orientar assistência e medidas preventivas. A rede de notificação e análise dos dados permite resposta proporcional à dimensão do evento.",
+    "commentary": "Suspender toda consulta de rotina (B) é medida desproporcional; hipoclorito para superfícies (C) é providência operacional específica, com concentração dependente de uso; análise de água (D) é eixo relevante da vigilância ambiental, mas não substitui a coordenação epidemiológica.",
+    "tip": "Surto após desastre exige informação rápida e articulada entre vigilâncias e esferas de gestão; a primeira decisão é organizar detecção, comunicação e resposta.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -645,8 +679,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Disponibilizar local reservado para o diálogo; explorar o que os familiares sabem sobre a situação; acolher as emoções que surgirem; e ofertar encaminhamento a serviços de saúde, em caso de sofrimento psíquico decorrente do luto."
     ],
     "correctAnswer": 3,
-    "explanation": "A comunicação de óbito deve ocorrer em local reservado, com linguagem clara, investigação do conhecimento prévio e acolhimento das reações emocionais. Oferecer suporte e acompanhamento no luto; medicamentos não são rotineiros.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A comunicação de óbito é uma intervenção clínica. Recomenda-se ambiente privado, identificação dos familiares, esclarecimento do que já sabem, informação clara sem eufemismos, pausa para reação emocional e oferta de apoio posterior. Como havia possível suicídio, evitar julgamentos, suposições sobre culpa ou divulgação indiscriminada de informações sigilosas.",
+    "commentary": "A propõe benzodiazepínicos profiláticos, não indicados de rotina no luto; B e C pretendem comunicar na recepção, local inadequado, e C expõe o prontuário sem critério. D corresponde à estrutura de comunicação acolhedora, próxima aos princípios do protocolo SPIKES.",
+    "tip": "Comunicar morte: ambiente privado, verificar o que a família sabe, notícia clara, acolhimento, silêncio e apoio. Não medicalize o luto automaticamente.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -663,8 +698,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Necrose tubular aguda."
     ],
     "correctAnswer": 1,
-    "explanation": "Proteinúria importante, hipoalbuminemia, hiperlipidemia, edema e ascite formam o conjunto característico de síndrome nefrótica. Ausência de hematúria favorece essa hipótese, embora PA elevada requeira avaliação urgente.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A síndrome nefrótica resulta de aumento da permeabilidade da barreira glomerular à albumina, levando a proteinúria intensa, hipoalbuminemia, redução da pressão oncótica e edema/ascite; o fígado aumenta síntese de lipoproteínas, justificando hipercolesterolemia e hipertrigliceridemia. A urina 3+ e a ausência de hematúria tornam esse mecanismo mais provável. A confirmação quantitativa requer relação proteína/creatinina ou proteinúria de 24 horas, além de investigar a causa glomerular.",
+    "commentary": "Síndrome nefrítica costuma causar hematúria, cilindros hemáticos, hipertensão e oligúria; nefropatia hipertensiva não costuma iniciar tão abruptamente com esse conjunto; necrose tubular aguda produz lesão renal, mas não a tríade de edema + hipoalbuminemia + hiperlipidemia. PA de 180/110 mmHg requer avaliação urgente de lesão de órgão-alvo.",
+    "tip": "Proteinúria importante + hipoalbuminemia + edema + hiperlipidemia = síndrome nefrótica, mesmo que a pressão esteja muito alta.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -681,8 +717,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Síndrome do QT longo devido à cardiopatia congênita."
     ],
     "correctAnswer": 1,
-    "explanation": "A morte súbita e inexplicada de lactente, após avaliação post-mortem e investigação das circunstâncias sem causa identificada, corresponde à síndrome da morte súbita do lactente. Compartilhamento da cama é fator de risco, mas não comprova asfixia.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Síndrome da morte súbita do lactente descreve morte súbita, inesperada e inexplicada de bebê menor de 1 ano após autópsia completa e investigação do cenário e da história. O pico de incidência ocorre entre 1 e 4 meses. Compartilhar cama com adultos aumenta risco, mas não permite afirmar asfixia mecânica sem evidência circunstancial ou anatomopatológica.",
+    "commentary": "Broncoaspiração e sufocação têm que ser identificadas por elementos específicos; síndrome do QT longo pode causar morte súbita, mas não foi demonstrada e não equivale obrigatoriamente a cardiopatia estrutural. Orientação preventiva: dormir de barriga para cima, superfície firme e no mesmo quarto, porém em berço separado.",
+    "tip": "Morte inesperada de lactente sem causa após investigação completa sugere síndrome da morte súbita; dormir na cama dos pais é fator de risco, não diagnóstico de asfixia.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -699,8 +736,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) 2.520 mL em 8 horas."
     ],
     "correctAnswer": 2,
-    "explanation": "Estimativa pela regra dos nove no adulto: tronco anterior 18%, ambos membros superiores INTEIROS 18% (mãos incluídas) e face anterior de uma perna 9% = 45%. Diretriz ABA 2024 recomenda iniciar ressuscitação com 2 mL/kg/%SCQ em adultos com queimaduras extensas: 2×70×45=6.300 mL nas primeiras 24 horas, ajustados conforme diurese e evolução. A antiga Parkland de 4 mL/kg/% gera 12.600 mL, mas não reflete a recomendação inicial mais recente. C defensável e alinhada com ABA.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Para estimar área corporal queimada (SCQ) no adulto, somam-se somente áreas de espessura parcial/profunda, excluindo eritema isolado. Regra dos nove: tronco anterior 18%, dois membros superiores completos 18%, face anterior de uma perna 9%: total 45%, considerando que a descrição inclui todo o segmento superior bilateral. A diretriz ABA 2024 sugere iniciar reposição com 2 mL × kg × %SCQ nas primeiras 24 h: 2 × 70 × 45 = 6.300 mL de Ringer lactato, ajustados à diurese e resposta hemodinâmica.",
+    "commentary": "A e D distribuem volumes/intervalos que não correspondem ao total da abordagem de 2 mL/kg/%; B superestima a necessidade. Fórmulas são PONTO DE PARTIDA, não prescrição fixa: iniciar a contagem a partir da queimadura, considerar perdas e titular por perfusão/diurese.\n\nAtenção: Se a banca usar fórmula antiga de Parkland (4 mL/kg/%), haverá outra dose inicial; diretriz ABA 2024 recomenda 2 mL/kg/% para adultos com queimadura extensa.",
+    "tip": "Queimadura: conte apenas áreas com espessura parcial/total. No adulto, regra dos nove; calcule 2 mL × kg × %SCQ como ponto de partida e titule à diurese.",
     "tags": [
       "cirurgia",
       "gabarito técnico"
@@ -717,8 +755,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Cesariana eletiva."
     ],
     "correctAnswer": 2,
-    "explanation": "Com 41 semanas e 5 dias, recomenda-se programar o parto; o colo posterior, firme e fechado é desfavorável para indução imediata com ocitocina. A maturação cervical é a etapa apropriada antes da indução.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A gestação de 41 semanas e 5 dias está próxima do pós-termo, momento em que aumentam riscos de insuficiência placentária e eventos perinatais, justificando planejar resolução em vez de prolongar indiscriminadamente. A avaliação fetal está tranquilizadora, o feto é cefálico e não há contraindicação relatada à via vaginal. O colo é posterior, firme, fechado e pouco apagado: Bishop desfavorável; inicia-se preparo/maturação cervical antes de induzir contrações.",
+    "commentary": "Amniotomia (B) exige colo acessível e condições obstétricas apropriadas; cesariana eletiva (D) não é obrigatória sem outra indicação; conduta expectante (A) não é a melhor opção nessa idade gestacional no cenário proposto. O método de maturação deve ser escolhido conforme protocolos e contraindicações.",
+    "tip": "Gestação avançando além de 41 semanas + colo desfavorável: planeje indução com maturação cervical, não cesárea automática.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -735,8 +774,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Prescrição de sertralina."
     ],
     "correctAnswer": 2,
-    "explanation": "TSH 7,1 com T4 livre normal indica hipotireoidismo subclínico leve. Em mulher de 40 anos sem sintomas atribuíveis à tireoide e anti-TPO negativo, costuma-se repetir TSH/T4 e acompanhar, em vez de iniciar levotiroxina de imediato.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "TSH 7,10 mUI/L com T4 livre normal define hipotireoidismo subclínico, não hipotireoidismo manifesto. Em mulher de 40 anos, assintomática do ponto de vista tireoidiano, anti-TPO negativo e TSH abaixo de 10, a conduta usual é repetir TSH/T4 em semanas/meses, confirmar persistência e individualizar necessidade de levotiroxina. A tristeza surgida há três semanas após luto não comprova episódio depressivo maior ou sintoma tireoidiano.",
+    "commentary": "Levotiroxina (A) não é automática nesse TSH; imagem da tireoide (B) depende de bócio/nódulos, ausentes; sertralina (D) não deve ser prescrita apenas por luto recente sem avaliação clínica. Considerar desejo reprodutivo, sintomas, anticorpos e risco cardiovascular no seguimento.",
+    "tip": "TSH discretamente elevado com T4 livre normal = hipotireoidismo subclínico; em pessoa não gestante e assintomática, confirme persistência antes de tratar.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -753,8 +793,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Doença mista do tecido conjuntivo."
     ],
     "correctAnswer": 3,
-    "explanation": "Anti-U1-RNP em altos títulos com Raynaud, mãos edemaciadas, artralgias e disfagia sugere doença mista do tecido conjuntivo. Reúne características de doenças do espectro de esclerose sistêmica, lúpus e miosite.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Doença mista do tecido conjuntivo é síndrome de sobreposição de manifestações de lúpus, esclerose sistêmica e miosite, fortemente associada a anti-U1-RNP em títulos altos. O conjunto Raynaud, mãos 'inchadas', artralgias e disfagia sugere componente vascular/inflamatório e possível dismotilidade esofágica. FAN pontilhado alto e anti-RNP positivo reforçam o diagnóstico, embora critérios clínicos formais precisem ser avaliados.",
+    "commentary": "Anti-Scl-70 negativo não exclui esclerose sistêmica, mas o conjunto de sobreposição e anti-RNP favorece D; anti-Sm/anti-DNA negativos diminuem evidência para lúpus clássico; anti-Jo-1 negativo e ausência de fraqueza proximal afastam polimiosite como hipótese principal. Monitorar pulmão, pressão pulmonar e órgãos-alvo.",
+    "tip": "Raynaud + mãos edemaciadas + disfagia + anti-U1-RNP muito alto = pense em doença mista do tecido conjuntivo.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -771,8 +812,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Traço falcêmico, esferocitose hereditária e anemia ferropriva."
     ],
     "correctAnswer": 2,
-    "explanation": "Anemia microcítica/hipocrômica com RDW elevado e ferritina muito baixa indica deficiência de ferro. Talassemias e anemia sideroblástica entram no diferencial de microcitose, ainda que os dados favoreçam claramente anemia ferropriva.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Hb 8,1 g/dL, VCM 66 fL e CHCM baixa configuram anemia microcítica hipocrômica. Ferritina de 9 é altamente sugestiva de deficiência absoluta de ferro, e RDW elevado indica grande variação de tamanho eritrocitário, frequentemente vista na ferropriva. Entre os diagnósticos diferenciais de microcitose estão talassemias e anemia sideroblástica, embora não sejam as mais prováveis neste paciente.",
+    "commentary": "Deficiência de B12 e folato produz classicamente macrocitose, tornando A/B menos apropriadas; anemia falciforme e esferocitose são mais comumente normocíticas; HbA2 de 3,0% não apoia β-talassemia menor típica. Avaliar dieta, perdas, suplementação preventiva e resposta ao ferro; não presumir talassemia apenas pelo VCM.",
+    "tip": "VCM baixo + RDW alto + ferritina baixa = ferropriva. Na investigação de microcitose, lembre de talassemias e anemia sideroblástica.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -789,8 +831,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Rotura de aorta ascendente."
     ],
     "correctAnswer": 2,
-    "explanation": "Turgência jugular, bulhas abafadas e pulso paradoxal após trauma torácico compõem quadro típico de tamponamento cardíaco. É urgência por comprometimento do enchimento ventricular.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "O choque obstrutivo do tamponamento acontece quando sangue no pericárdio eleva pressão intrapericárdica e limita enchimento ventricular. Após trauma torácico, o conjunto de turgência jugular, abafamento de bulhas e pulso paradoxal é típico; a tríade de Beck contém hipotensão (que pode ainda não estar estabelecida), turgência jugular e abafamento de bulhas. Ecografia à beira-leito pode apoiar diagnóstico sem atrasar tratamento quando instável.",
+    "commentary": "Pneumotórax hipertensivo costuma causar grande assimetria à ausculta, ausente; contusão miocárdica não explica tão bem a combinação de distensão jugular e pulso paradoxal; ruptura de aorta causa geralmente outra apresentação. Tamponamento traumático exige abordagem emergencial especializada.",
+    "tip": "Trauma torácico + jugulares túrgidas + bulhas abafadas + pulso paradoxal: pense em tamponamento, mesmo que PA ainda não esteja muito baixa.",
     "tags": [
       "cirurgia",
       "gabarito técnico"
@@ -807,14 +850,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Prescrever podofilotoxina."
     ],
     "correctAnswer": 0,
-    "explanation": "VIN/LSIL vulvar associada a HPV e excisada pode exigir seguimento. Áreas acetobrancas isoladas após ácido acético são inespecíficas e não autorizam diagnóstico de recidiva; porém, se forem lesões clínicas suspeitas ou persistentes, biópsia é indicada para excluir HSIL. A adequação de A depende da aparência detalhada das áreas; a redação deixa espaço para questionamento sobre C.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A lesão inicial é condiloma associado a HPV, com achado histológico de baixo grau, que já foi excisado. Áreas acetobrancas na vulva após ácido acético são inespecíficas e podem corresponder a inflamação, cicatrização ou HPV sem lesão relevante; não significam automaticamente neoplasia de alto grau. Na ausência de lesões clínicas novas ou suspeitas, seguimento clínico periódico é plausível.",
+    "commentary": "Genotipagem (B) não define conduta sobre pequenas áreas vulvares; podofilotoxina (D) trata verrugas visíveis, não coloração inespecífica; biópsia (C) passa a ser preferível se houver área persistente, elevada, pigmentada, ulcerada, endurecida ou suspeita de HSIL. O enunciado não descreve morfologia suficiente para excluir totalmente C.",
+    "tip": "HPV vulvar de baixo grau sem novas verrugas típicas exige avaliar significado das áreas acetobrancas; acetobranqueamento isolado não confirma lesão de alto grau.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (ponto discutível). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (ponto discutível). Critérios de biópsia dependem da inspeção detalhada; ácido acético sozinho tem baixa especificidade."
   },
   {
     "id": "sug-enamed1-45",
@@ -827,14 +871,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Prescrever sintomáticos para a gestante e observar surgimento de sintomas gripais na criança."
     ],
     "correctAnswer": 0,
-    "explanation": "A gestante com influenza confirmada é grupo de risco: iniciar oseltamivir sem aguardar ou excluir tratamento por ter passado de 48 horas. Criança domiciliar de 1 ano assintomática não recebe quimioprofilaxia automaticamente; a decisão depende de critérios específicos (risco, intensidade e momento de exposição). A é a melhor opção se não houver critério adicional para profilaxia do contato. Em caso de indicação individual, C poderia ser considerada.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Gestação é fator de risco para complicações da influenza, portanto oseltamivir deve ser iniciado o mais cedo possível mesmo com sintomas há mais de 48 h e sem hipóxia no momento. O bebê de 1 ano assintomático é contato domiciliar; recomenda-se monitorização cuidadosa e avaliação de critérios específicos de profilaxia, não profilaxia universal a todo contato saudável.",
+    "commentary": "B/D negam tratamento antiviral apropriado à gestante; C adiciona quimioprofilaxia automaticamente sem informar exposição de alto risco ou situação epidemiológica que justifique. Orientar sinais de agravamento em gestante e criança, isolamento e assistência se sintomas surgirem.",
+    "tip": "Influenza em gestante é grupo de risco: indique oseltamivir precocemente, mesmo após 48 h quando necessário. Contato assintomático não recebe profilaxia automaticamente.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (condicional). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (condicional). Indicação de quimioprofilaxia para contatos é individualizada por risco, tempo de exposição e protocolos locais."
   },
   {
     "id": "sug-enamed1-46",
@@ -847,8 +892,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Angiotomografia de artérias pulmonares."
     ],
     "correctAnswer": 2,
-    "explanation": "Piora após refeição e decúbito, alívio sentado e investigação cardíaca aguda negativa sugerem refluxo gastroesofágico. A pHmetria de 24 h documenta exposição ácida quando necessária para confirmar o diagnóstico; na prática, pode-se iniciar prova terapêutica em quadro típico sem sinais de alarme.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Queimação retroesternal pós-prandial, piora no decúbito e melhora ao sentar são típicos de doença do refluxo gastroesofágico (DRGE). A avaliação de síndrome coronariana aguda foi inicialmente negativa por ECG e troponina seriados, diminuindo a probabilidade de causa isquêmica aguda. Quando é necessário comprovar refluxo patológico, pHmetria esofágica ambulatorial (ou impedanciopHmetria, conforme indicação) quantifica exposição ácida e associação temporal com sintomas.",
+    "commentary": "TC sem contraste não confirma DRGE; eco com estresse investiga isquemia; angioTC pulmonar pesquisa embolia. Na prática, um quadro típico sem sinais de alarme pode receber inicialmente teste terapêutico com IBP; dor torácica requer sempre estratificação do risco cardíaco apropriada.",
+    "tip": "Queimação retroesternal pós-prandial e pior ao deitar sugere refluxo; após afastar causas graves, pHmetria pode documentar exposição ácida quando realmente indicada.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -865,8 +911,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Lavagem intestinal, com indicação de dieta isenta de resíduos e encaminhamento para posterior avaliação pediátrica."
     ],
     "correctAnswer": 2,
-    "explanation": "Constipação funcional com retenção e escape fecal indica impactação fecal. Polietilenoglicol é primeira linha para desimpactação e manutenção, associado a treino de toalete e hábitos alimentares.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Evacuação semanal, fezes endurecidas, dor, postura retentiva e escape involuntário sugerem constipação funcional com fecaloma e incontinência fecal por transbordamento. O reto distendido perde sensibilidade e deixa fezes líquidas passarem ao redor da massa fecal. É fundamental desimpactar antes de manutenção; polietilenoglicol por via oral é preferido em diretrizes pediátricas, seguido de dose de manutenção e rotina de sentar no vaso após refeições.",
+    "commentary": "Óleo mineral não é primeira escolha e oferece risco de aspiração; enemas fosfatados repetidos têm riscos eletrolíticos; dieta isenta de resíduos (D) piora o quadro. Apoio familiar sem punição e avaliação de sinais de alarme fazem parte do tratamento.",
+    "tip": "Constipação funcional + escape fecal = provável fecaloma. Primeiro desimpacte com PEG; depois mantenha hábito intestinal e prevenção.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -883,14 +930,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Intubação nasotraqueal."
     ],
     "correctAnswer": 1,
-    "explanation": "É um cenário não consigo intubar/não consigo oxigenar (apneia após tentativa de laringoscopia, trauma facial grave). A via aérea cirúrgica de escolha no ADULTO costuma ser cricotireoidostomia CIRÚRGICA, não oferecida. A cricotireoidostomia por punção é método temporário de oxigenação, e traqueostomia de emergência (B) é mais lenta e tecnicamente exigente. Nenhuma alternativa descreve de modo adequado o acesso cirúrgico preferencial: item ambíguo/potencialmente anulável; B não deve ser ensinada como padrão de primeira escolha.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Glasgow 8, trauma maxilofacial extenso, hemorragia, tentativa de laringoscopia malsucedida e evolução para apneia caracterizam emergência de via aérea. Quando não se consegue intubar nem oxigenar, é necessário acesso emergencial pela membrana cricotireóidea, preferencialmente cricotireoidostomia cirúrgica no adulto treinado, com equipe e material disponíveis. A cricotireoidostomia por punção fornece oxigenação temporária e não ventilação definitiva satisfatória.",
+    "commentary": "Traqueostomia de emergência (B) é mais demorada/tecnicamente complexa e não a primeira técnica recomendada no cenário CICO; máscara laríngea (C) pode ser ponte se viável, mas trauma facial/sangramento grave podem impedi-la; via nasal (D) é imprópria diante de suspeita de fratura de base/crânio e não atende à apneia em segurança. A opção A é uma via temporária possível, porém não substitui cricotireoidostomia cirúrgica.",
+    "tip": "Se não consegue intubar nem oxigenar, trata-se de via aérea cirúrgica de resgate. Em adulto, cricotireoidostomia cirúrgica é a referência, mesmo se não estiver nas opções.",
     "tags": [
       "cirurgia",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (potencial anulação). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (potencial anulação). Nenhuma alternativa apresenta a via aérea definitiva preferida; entre A e B há disputa de melhor resposta conforme contexto e treinamento."
   },
   {
     "id": "sug-enamed1-49",
@@ -903,8 +951,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Indicar laparoscopia exploradora."
     ],
     "correctAnswer": 3,
-    "explanation": "Massa anexial heterogênea dolorosa com ausência de fluxo ao Doppler levanta forte suspeita de torção anexial; é emergência cirúrgica. Laparoscopia permite confirmar e destorcer, priorizando preservação ovariana quando viável.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Dor pélvica que se torna contínua, massa anexial dolorosa, imagem heterogênea e ausência de vascularização ao Doppler levantam suspeita de torção anexial, especialmente no contexto de lesão como teratoma (sombra acústica pode refletir tecidos densos). A torção é uma emergência tempo-dependente: laparoscopia permite confirmar, destorcer e preservar o ovário quando viável. Doppler normal não exclui torção, assim como fluxo ausente aumenta suspeita.",
+    "commentary": "Antibiótico (A) trataria doença infecciosa, mas não a isquemia; aspiração de cisto (B) e punção de fundo de saco (C) não resolvem pedículo torcido e atrasam a conduta apropriada. β-hCG negativo reduz chance de gravidez ectópica.",
+    "tip": "Massa anexial dolorosa com imagem heterogênea, sombra acústica e pouco fluxo sugere torção de ovário/dermoide: não espere exames inconclusivos para explorar.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -921,8 +970,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Solicitar o fechamento da creche até que haja limpeza e desinfecção de todos os ambientes e utensílios com solução de hipoclorito."
     ],
     "correctAnswer": 2,
-    "explanation": "Vinte casos concentrados em creche exigem investigação do possível surto, busca de vínculo epidemiológico e comunicação à vigilância municipal. Medidas educativas são importantes, mas não substituem investigação inicial.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Vinte episódios de diarreia em uma única creche durante um mês sugerem agregação de casos possivelmente acima do esperado, com potencial surto. A ação inicial de vigilância é investigar pessoas, datas, exposições alimentares/água, hipóteses de transmissão e vínculos epidemiológicos, comunicando prontamente a vigilância municipal para orientar coleta e medidas de controle.",
+    "commentary": "A submete indiscriminadamente todos a exames; B é promoção de saúde pertinente, mas insuficiente antes de caracterizar evento; D determina fechamento sem investigação nem avaliação de proporcionalidade. A visita epidemiológica não impede iniciar higiene, água segura e afastamento individual dos sintomáticos conforme orientação sanitária.",
+    "tip": "Vinte diarreias relacionadas à mesma creche indicam possível surto: investigar ativamente e comunicar vigilância vem ANTES de medidas educativas isoladas.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -939,8 +989,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Hipercalemia."
     ],
     "correctAnswer": 1,
-    "explanation": "Vômitos autoinduzidos, diuréticos e laxantes provocam perdas de potássio e alcalose por vômitos, podendo causar hipocalemia grave e arritmias. O quadro sugere transtorno alimentar com comportamentos purgativos.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Episódios repetidos de comer em excesso associados a vômitos autoinduzidos, uso de laxantes e diurético sugerem transtorno alimentar com purgação, apesar do IMC normal. Vômitos causam perda de ácido gástrico, alcalose metabólica e depleção de cloreto; contração volêmica e aldosterona favorecem excreção renal de potássio. Furosemida e diarreia por laxantes acrescentam perda de potássio, tornando hipocalemia a alteração mais provável.",
+    "commentary": "Hiponatremia também pode ocorrer, mas é menos característica da soma de perdas e purgação; hipernatremia e hipercalemia não são as alterações mais esperadas. Avaliar ECG, potássio, magnésio, função renal e risco de arritmia; rastrear risco suicida e conduzir cuidado multiprofissional.",
+    "tip": "Vômitos autoinduzidos + laxantes + diuréticos geram perda de potássio: pense em hipocalemia e risco de arritmia, mesmo com IMC normal.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -957,8 +1008,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Encaminhar o paciente à cardiologia pediátrica."
     ],
     "correctAnswer": 2,
-    "explanation": "Sopro sistólico leve que diminui ao ficar em pé ou com Valsalva, no contexto de febre e sem sinais cardíacos associados, sugere sopro inocente de fluxo. Acompanhar após resolução do quadro febril; investigar se persistirem características patológicas.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Sopro sistólico de baixa intensidade, sem outros sinais cardiovasculares e que DIMINUI com manobra de Valsalva ou posição em pé é comportamento típico de sopro inocente de fluxo, que tende a ser mais audível em estados hiperdinâmicos como febre. Ele não apresenta sinais de insuficiência cardíaca, cianose, atraso de crescimento ou sopro diastólico.",
+    "commentary": "ECG e ecocardiograma não são de rotina para sopro com características inocentes inequívocas; encaminhamento especializado é necessário quando há achados patológicos, história preocupante ou dúvida clínica. O seguimento permite reavaliar o sopro depois que a febre se resolver.",
+    "tip": "Sopro sistólico leve que diminui com Valsalva e ortostatismo, sem sinais de doença cardíaca, favorece sopro inocente; acompanhar e reexaminar após febre.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -982,7 +1034,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "pneumologia",
       "derrame pleural",
       "pneumonia"
-    ]
+    ],
+    "tip": "Derrame parapneumônico com pH < 7,2, glicose < 60 ou pus = complicado: drene."
   },
   {
     "id": "sug-enamed1-54",
@@ -995,8 +1048,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Orientar a suspensão da amamentação até resolução do quadro."
     ],
     "correctAnswer": 1,
-    "explanation": "Ultrassom identifica coleção espessa de 4 cm compatível com abscesso mamário mesmo sem flutuação. A punção aspirativa guiada por ultrassom é opção inicial em muitos casos, associada a antibiótico e manutenção da lactação quando possível.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Febre alta no puerpério, hiperemia mamária e ultrassom com coleção delimitada de conteúdo espesso de 4 cm caracterizam abscesso mamário relacionado à lactação, mesmo sem flutuação palpável. O abscesso precisa ser esvaziado, com punção aspirativa guiada por US quando apropriada; muitas vezes são necessárias aspirações repetidas, drenagem por cateter ou intervenção cirúrgica conforme tamanho, loculações e resposta. Antibióticos direcionados a estafilococos e cultura do aspirado são considerados.",
+    "commentary": "Compressas isoladas não drenam uma coleção consolidada; suspender amamentação rotineiramente prejudica esvaziamento e pode agravar estase; drenagem cirúrgica com dreno pode ser necessária, mas não é obrigatória como primeira opção em toda coleção de 4 cm. Manter amamentação ou extração, conforme conforto e orientação clínica.",
+    "tip": "Febre puerperal + massa dolorosa + coleção líquida espessa ao US = abscesso mamário: antibiótico e drenagem por punção quando viável.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -1013,8 +1067,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Manutenção do esquema vacinal atual."
     ],
     "correctAnswer": 2,
-    "explanation": "Criança com vacinas em dia só até 12 meses perdeu a primeira dose de varicela, habitualmente aos 15 meses pelo PNI. Aplique dose de resgate agora aos 3 anos e prossiga com segunda dose aos 4 anos segundo calendário do PNI. A nota operacional sobre intervalos em situações especiais/campanhas pode requerer adaptação. Avaliar toda a carteira vacinal.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "No calendário de rotina do PNI, a primeira dose de varicela é administrada aos 15 meses (geralmente por tetraviral/tríplice viral + varicela conforme disponibilidade) e a segunda aos 4 anos. Como a criança estava vacinada somente até 12 meses, perdeu a primeira dose e deve ser atualizada agora, aos 3 anos, com seguimento para a dose de 4 anos. É indispensável revisar o restante da caderneta de vacinação.",
+    "commentary": "A sugere intervalo de 30 dias como rotina sem critério especial; B pressupõe que já recebeu a primeira dose; D mantém esquema incompleto. Em situação de surto, calendários operacionais podem definir ações adicionais, mas o enunciado não descreve mudança formal para esta criança.",
+    "tip": "Criança que perdeu visitas de vacina não reinicia tudo: atualize o esquema na idade atual e programe segunda dose de varicela conforme calendário vigente.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -1031,8 +1086,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) A vacina em dose única confere imunidade semelhante à de duas ou três doses em adolescentes saudáveis."
     ],
     "correctAnswer": 3,
-    "explanation": "Estudos de imunogenicidade e efetividade sustentam proteção comparável do esquema de dose única de HPV em adolescentes imunocompetentes, simplificando a oferta e ampliando cobertura. Grupos imunossuprimidos podem exigir esquema diferente.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "O esquema de dose única para HPV em adolescentes imunocompetentes foi sustentado por ensaios e dados de efetividade que mostram proteção robusta e não inferioridade prática frente a esquemas com mais doses em populações elegíveis. Simplificar doses melhora oportunidade de cobertura e reduz perdas de seguimento, mas a justificativa científica principal é a proteção demonstrada. Imunossuprimidos têm regimes específicos.",
+    "commentary": "A reduz indevidamente o efeito populacional da vacinação de meninos; B confunde uma vantagem programática com evidência principal de imunogenicidade/eficácia; C promete eliminação absoluta de verrugas, resultado não garantido. A comparação entre esquemas apoia D, nos grupos indicados.",
+    "tip": "Uma dose de HPV em adolescentes imunocompetentes pode produzir proteção robusta; diferencie evidência de não inferioridade de promessas de eliminação total da doença.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -1049,8 +1105,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Transtorno de simulação."
     ],
     "correctAnswer": 1,
-    "explanation": "A mãe acrescenta sangue à amostra urinária da criança, produzindo evidência falsa de doença para obter atenção médica. É transtorno factício imposto a outro, modalidade de violência contra criança que requer proteção.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "No transtorno factício imposto a outro, o cuidador falsifica ou induz sinais de doença em pessoa sob seus cuidados, apresentando-a como enferma, sem benefício externo evidente que explique o comportamento. A mãe contamina intencionalmente a urina da criança com sangue próprio, criando achado laboratorial e levando a exames e internações potencialmente prejudiciais. A prioridade é proteger a criança e comunicar equipe multiprofissional e instâncias legais cabíveis.",
+    "commentary": "Transtorno somático envolve sofrimento genuíno pela interpretação de sintomas, não fabricação de achados; simulação busca ganho externo identificável e não explica tão bem o padrão; transtorno dissociativo não corresponde. Não enfrentar o cuidador sozinho sem plano de segurança pediátrico.",
+    "tip": "Sintomas fabricados por cuidador, com adulteração objetiva das amostras, sugerem transtorno factício imposto a outro e risco de violência contra a criança.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -1067,8 +1124,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Inferior por tuberculose óssea e compressão medular."
     ],
     "correctAnswer": 3,
-    "explanation": "Febre crônica, emagrecimento, dorsalgia localizada, déficit motor, alterações sensitivas e disfunção esfincteriana sugerem espondilodiscite tuberculosa (mal de Pott) com compressão medular. Exige imagem urgente e avaliação especializada. A definição como neurônio motor inferior é simplificada e pode variar com a fase da compressão.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Febre prolongada, emagrecimento, dor focal em T9–T10, déficit bilateral em pernas, alterações sensitivas e disfunção esfincteriana configuram compressão medular ou doença infecciosa espinal até prova em contrário. Tuberculose vertebral (mal de Pott) pode comprometer corpos vertebrais e formar abscesso epidural com déficit neurológico progressivo, compatível com hipótese da letra D. É emergência: solicitar ressonância urgente de coluna, avaliação cirúrgica/infectológica e investigar etiologia.",
+    "commentary": "AVC por êmbolo cerebral (B) não explica síndrome medular bilateral com nível sensitivo; tabes dorsal (C) costuma abolir vibração/propriocepção e produzir ataxia, diferentemente do caso; mielorradiculopatia esquistossomótica (A) é diferencial regional. Rotular compressão medular como lesão do neurônio motor INFERIOR é simplificação: sinais podem ser flácidos na fase aguda e piramidais depois.\n\nAtenção: Endocardite/espondilodiscite bacteriana também são diferenciais devido ao sopro e febre; o agente não está comprovado pelo enunciado.",
+    "tip": "Dor vertebral + febre/emagrecimento + déficit motor + disfunção esfincteriana = compressão medular até prova em contrário: imagem urgente e avaliação especializada.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1085,14 +1143,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Expectante, afastando-se da creche as crianças acometidas até a remissão das lesões."
     ],
     "correctAnswer": 0,
-    "explanation": "A fotografia e o contexto são compatíveis com molusco contagioso, habitualmente autolimitado. Recomendações de saúde pública NÃO exigem afastar rotineiramente crianças da creche/escola: cobrir lesões quando possível, evitar manipulação e compartilhar objetos pessoais. A opção coerente com essa hipótese é A (expectante, sem afastar). Se a imagem representar outra doença transmissível, o gabarito deve ser revisto; conferir fotografia com atenção.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Pequenas pápulas agrupadas em crianças de creche, no tronco e axilas, são compatíveis com molusco contagioso por poxvírus, tipicamente papuloso, brilhante e às vezes umbilicado. A doença costuma remitir espontaneamente e a maioria dos casos não precisa de destruição das lesões. Recomendações do CDC e de serviços pediátricos não exigem afastamento de creche/escola apenas pelo molusco.",
+    "commentary": "B erra ao usar aciclovir, que não trata poxvírus; C propõe remoção traumática rotineira; D implica afastamento até remissão, o que pode durar meses ou anos e não é recomendado. Orientar cobrir lesões quando possível, higiene e não compartilhar toalhas.",
+    "tip": "Molusco contagioso em creche costuma ser autolimitado: não afastar por meses. Cobrir lesões e evitar compartilhamento de toalhas.",
     "tags": [
       "pediatria",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (gabarito corrigido). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário.",
+    "alert": "Gabarito provisório, não oficial (gabarito corrigido). Se o diagnóstico baseado na fotografia original for outro, a classificação precisa ser revisada; a visualização não substitui exame da lesão.",
     "image": "/images/sugenamed1-59.PNG"
   },
   {
@@ -1106,15 +1165,16 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Exploração cirúrgica e orquiectomia."
     ],
     "correctAnswer": 3,
-    "explanation": "Quadro clínico é fortemente sugestivo de torção testicular há cerca de 18 horas: exploração cirúrgica IMEDIATA, sem atrasar por Doppler. Na cirurgia, destorcer e avaliar viabilidade; orquiectomia SOMENTE se inviável, com orquidopexia contralateral. D inclui intervenção imediata, mas antecipa indevidamente remoção do testículo. B também é problemática ao impor Doppler antes da cirurgia. Nenhuma opção é plenamente correta.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Dor escrotal súbita e intensa, testículo alto, aumentado e em posição anômala são sinais típicos de torção testicular. O tempo total já se aproxima de 18 horas, mas pode existir tecido viável mesmo depois da janela ideal: a exploração cirúrgica não deve ser atrasada por Doppler se a suspeita clínica é alta. Na cirurgia realiza-se destorção e avaliação da perfusão; orquiectomia somente se testículo inviável, e orquidopexia contralateral.",
+    "commentary": "A e C negligenciam urgência vascular; B condiciona cirurgia a ultrassom Doppler, que pode atrasar atendimento, apesar de 'orquidopexia' ser o procedimento se viável; D acerta urgência de explorar, mas estabelece orquiectomia antecipadamente sem prova de necrose.",
+    "tip": "Dor escrotal súbita + testículo alto/fixo = torção; o relógio importa, mas não exclui resgate. Cirurgia imediata e decisão de viabilidade intraoperatória.",
     "tags": [
       "cirurgia",
       "gabarito técnico",
       "gabarito provisório"
     ],
     "reference": "EAU Paediatric Urology, acute scrotum",
-    "alert": "Gabarito provisório, não oficial (potencial anulação). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (potencial anulação). Nenhuma alternativa expressa exploração imediata com decisão intraoperatória de preservação versus orquiectomia."
   },
   {
     "id": "sug-enamed1-61",
@@ -1127,8 +1187,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Citologia."
     ],
     "correctAnswer": 0,
-    "explanation": "Derrame papilar sanguinolento unilateral e uniductal com nódulo palpável exige imagem diagnóstica, incluindo ultrassonografia direcionada (e mamografia diagnóstica segundo faixa etária). Biópsia virá se houver alvo suspeito.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Derrame papilar unilateral, uniductal e sanguinolento, ainda mais acompanhado de nódulo subareolar endurecido em mulher de 54 anos, é secreção patológica e deve ser investigado para papiloma intraductal, ectasia ductal e neoplasia. A abordagem inicial inclui mamografia diagnóstica e ultrassonografia direcionada ao retroaréolo; entre as opções oferecidas, o ultrassom é exame complementar pertinente.",
+    "commentary": "Citologia de secreção tem sensibilidade limitada e não substitui imagem; ressonância é considerada quando mamografia/US não esclarecem ou por indicação específica; biópsia depende da avaliação do nódulo/alvo suspeito, mas pode ser necessária precocemente. Não tranquilizar apenas por ausência de linfonodos palpáveis.",
+    "tip": "Derrame papilar espontâneo unilateral sanguinolento + nódulo subareolar = sinal de alerta: comece investigação por imagem e planeje biópsia se indicada.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -1145,8 +1206,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Deficiência de B12."
     ],
     "correctAnswer": 1,
-    "explanation": "Exposição ambiental a garimpo com alterações neurocognitivas e neuropatia periférica é sugestiva de intoxicação por mercúrio, especialmente metilmercúrio. Confirmar história de exposição e dosagens apropriadas; proteger contra exposição continuada.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Garimpo de ouro ilegal frequentemente libera mercúrio ambiental; o metal, especialmente metilmercúrio na cadeia alimentar, é neurotóxico. Irritabilidade, alteração comportamental, prejuízo do desenvolvimento, alteração de linguagem e neuropatia sensitiva podem decorrer de exposição crônica. A associação epidemiológica com garimpo e déficits neurológicos torna intoxicação por mercúrio hipótese principal, exigindo identificação de exposição e medidas de saúde ambiental.",
+    "commentary": "Hipotireoidismo e deficiência de B12 podem causar atraso e neuropatia, mas não explicam tão diretamente o cenário de exposição; desnutrição crônica pode coexistir e não deve ser ignorada. Solicitar avaliação toxicológica conforme forma de exposição, além de abordagem comunitária e proteção da criança.",
+    "tip": "Déficit neurocognitivo e parestesias em área de garimpo = pense em exposição ao mercúrio; a história ambiental é parte do diagnóstico.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -1163,8 +1225,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Iniciar campanha de vacinação contra influenza e pneumococo no território."
     ],
     "correctAnswer": 1,
-    "explanation": "Aumento abrupto de sibilância próximo a rodovia/polo industrial fora de sazonalidade sugere exposição ambiental. Ação prioritária é investigar fontes e articular vigilância ambiental, saúde e órgãos reguladores para reduzir riscos.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Aumento de 300% de crises de sibilância num território adjacente a rodovia e polo industrial, fora da estação de vírus, sugere desencadeantes ambientais, como material particulado, dióxido de nitrogênio e emissões industriais. A abordagem coletiva deve investigar temporalidade, mapas de exposição, fontes poluentes e fatores ocupacionais/ambientais, envolvendo vigilâncias, órgãos ambientais e gestores para reduzir a exposição.",
+    "commentary": "Notificação compulsória individual de toda crise de sibilância não é a estratégia central; mais consultas/bronco­dilatadores tratam eventos sem agir sobre a causa; vacina respiratória não resolve pico não sazonal ambiental. É importante também garantir assistência aos pacientes sintomáticos.",
+    "tip": "Crises respiratórias agrupadas perto de rodovia/polo industrial fora da sazonalidade = investigue exposição ambiental coletiva, não apenas prescreva broncodilatadores.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -1181,8 +1244,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Transtorno de Ansiedade de Doença."
     ],
     "correctAnswer": 1,
-    "explanation": "Crises abruptas recorrentes com palpitações/dor, dispneia, sudorese, despersonalização e medo de morrer, seguidas de preocupação persistente e esquiva, caracterizam transtorno de pânico após exclusão de causas clínicas.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "O transtorno de pânico envolve crises abruptas de medo intenso com sintomas físicos (dispneia, dor torácica, sudorese) e cognitivos (medo de morrer, despersonalização). A recorrência dos ataques associada a preocupação persistente e evitação de locais por receio de novos episódios sustenta transtorno de pânico. A duração de 40 dias já permite suspeita de alteração comportamental persistente, após investigar causas médicas/substâncias.",
+    "commentary": "Ansiedade generalizada gera preocupação crônica difusa por múltiplos temas; ansiedade de doença centra-se na convicção de estar doente; sintomas somáticos têm foco persistente em sintomas físicos, sem necessariamente ataques de pânico recorrentes. A resposta ao tratamento envolve TCC e, quando indicado, ISRS.",
+    "tip": "Crises abruptas de medo com palpitação, falta de ar e despersonalização, seguidas de medo de novas crises e evitação = transtorno do pânico.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1199,8 +1263,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Notificar as autoridades policiais."
     ],
     "correctAnswer": 1,
-    "explanation": "Suspeita de dependência de opioides é informação sensível protegida por sigilo profissional. Não se comunica automaticamente família, empregador ou polícia; exceções legais e risco concreto devem ser avaliados.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Dependência ou uso problemático de opioides é informação de saúde protegida pelo sigilo médico. O profissional deve avaliar critérios diagnósticos, risco de overdose, direção profissional de veículo e segurança, propor cuidado e orientar sem comunicar automaticamente a terceiros. O paciente está orientado e não há autorização nem exceção legal explicitada para divulgar seus dados.",
+    "commentary": "Informar familiares ou empregador sem consentimento pode violar confidencialidade; polícia não é destino rotineiro de suspeita de dependência. Exceções de sigilo são restritas e dependem de dever legal, justa causa e risco concreto, devendo ser avaliadas individualmente.",
+    "tip": "Suspeita de dependência em adulto não autoriza avisar família ou empregador: sigilo e cuidado longitudinal são o padrão, salvo exceções legais.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -1224,7 +1289,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "gastroenterologia pediátrica",
       "refluxo",
       "lactente"
-    ]
+    ],
+    "tip": "Regurgita, mas cresce bem e não tem sinal de alarme? É fisiológico: oriente e mantenha o leite materno. Nada de IBP."
   },
   {
     "id": "sug-enamed1-67",
@@ -1237,8 +1303,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Indicar shunt portossistêmico intra-hepático transjugular."
     ],
     "correctAnswer": 2,
-    "explanation": "Cirrótico com hematêmese volumosa sugere hemorragia varicosa. Após estabilização, endoscopia precoce com ligadura elástica, associada a vasoativo e antibioticoprofilaxia, é tratamento de escolha; TIPS é reservado a critérios selecionados.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Cirrótico Child-Pugh B com hematêmese maciça apresenta provável hemorragia digestiva alta varicosa por hipertensão portal. Após ressuscitação com metas de transfusão e estabilização das vias aéreas, a endoscopia precoce permite diagnosticar e tratar varizes esofágicas por ligadura elástica. Devem ser iniciados de forma precoce vasoativos (por exemplo, terlipressina ou octreotida conforme disponibilidade) e antibioticoprofilaxia, pois reduzem complicações e ressangramento.",
+    "commentary": "IBP sozinho não controla ruptura de variz; cirurgia de descompressão não é primeira linha; TIPS é reservado a ressangramento ou grupos selecionados de alto risco, após avaliação. Confusão/encefalopatia reforça necessidade de proteção da via aérea e evitar sedação desnecessária.",
+    "tip": "Cirrótico com hematêmese estabilizada: suspeite sangramento varicoso, use vasoativo/antibiótico e faça endoscopia terapêutica; TIPS é para situações selecionadas.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1255,15 +1322,16 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Tratar com espiramicina associada ao ácido folínico."
     ],
     "correctAnswer": 0,
-    "explanation": "Gestante com IgG e IgM positivos às 14 semanas e 2 dias: obter teste de avidez de IgG para ajudar a datar infecção e iniciar espiramicina enquanto investiga possível infecção aguda, conforme diretriz nacional de toxoplasmose gestacional. A interpretação de avidez colhida depois do primeiro trimestre exige cautela; teste de alta avidez pode NÃO excluir infecção no início da gestação. Amniocentese para PCR deve respeitar idade gestacional e tempo desde provável infecção.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "IgG e IgM reagentes em gestante de 14 semanas podem representar infecção recente ou IgM persistente de infecção anterior. A diretriz nacional recomenda iniciar espiramicina enquanto esclarece o momento da infecção, com teste de avidez de IgG obtido preferencialmente da amostra inicial. Alta avidez antes de 16 semanas tende a afastar aquisição durante a gestação; baixa/intermediária sustenta investigação e tratamento da gestante.",
+    "commentary": "Esquema tríplice com pirimetamina/sulfadiazina/ácido folínico depende da idade gestacional e confirmação/forte suspeita de infecção fetal, não é primeiro passo automático aqui. Amniocentese para PCR deve respeitar idade gestacional mínima e intervalo da provável infecção; ácido folínico não é componente habitual isolado da espiramicina.",
+    "tip": "Toxo IgM+ e IgG+ na gestação não define infecção aguda: investigue avidez conforme idade gestacional e inicie estratégia indicada enquanto esclarece.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico",
       "gabarito provisório"
     ],
     "reference": "MS NT 100/2022",
-    "alert": "Gabarito provisório, não oficial (cuidado na interpretação). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (cuidado na interpretação). Fonte: Ministério da Saúde, Nota Técnica nº 100/2022 e Manual de Gestação de Alto Risco."
   },
   {
     "id": "sug-enamed1-69",
@@ -1283,7 +1351,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "infectologia",
       "malária",
       "doenças tropicais"
-    ]
+    ],
+    "tip": "Malária grave por falciparum = artesunato endovenoso. Cloroquina + primaquina é esquema de vivax."
   },
   {
     "id": "sug-enamed1-70",
@@ -1296,8 +1365,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Apoiar o Centro de Referência em Saúde do Trabalhador na investigação e no acompanhamento dos casos."
     ],
     "correctAnswer": 3,
-    "explanation": "Suspeita de perda auditiva induzida por ruído ocupacional em centenas de trabalhadoras requer vigilância em saúde do trabalhador. O CEREST apoia a investigação do nexo, notificações e ações de prevenção e acompanhamento.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Centenas de costureiras com zumbido e hipoacusia em polo industrial levantam suspeita de perda auditiva induzida por ruído ocupacional (PAIR) e exposição coletiva. Cabe à vigilância em saúde do trabalhador, com apoio do CEREST, investigar ambiente e processos de trabalho, avaliar audiometrias, estabelecer nexo e articular medidas preventivas com os órgãos responsáveis, além de acompanhar as trabalhadoras.",
+    "commentary": "Encaminhar diretamente ao INSS não resolve a exposição; Conselho Municipal de Saúde não substitui fiscalização técnica; interditar automaticamente todas as empresas sem inspeção e procedimento adequado não é resposta proporcional. Ação territorial articulada é central.",
+    "tip": "Sintomas auditivos ligados a uma categoria profissional pedem investigação em saúde do trabalhador, com CEREST e avaliação de exposição ao ruído.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -1314,8 +1384,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Estado de delirium."
     ],
     "correctAnswer": 3,
-    "explanation": "Instalação abrupta em 24 horas, flutuação do nível de consciência, déficit de atenção e inversão sono-vigília caracterizam delirium sobreposto a possível demência prévia. Deve-se buscar causa aguda, como infecção, fármacos ou distúrbios metabólicos.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Delirium é síndrome aguda e flutuante de disfunção cerebral, caracterizada sobretudo por déficit de atenção, alteração da consciência, desorganização do pensamento e alteração do ciclo sono-vigília. O início em 24 horas e a flutuação diferenciam-no de demência progressiva; o Alzheimer prévio é fator predisponente, não explicação suficiente da piora súbita. A abordagem exige identificar precipitantes reversíveis como infecção, retenção urinária, distúrbios hidroeletrolíticos, dor ou medicamentos.",
+    "commentary": "Demência de Alzheimer avançada não surge em 24 h; demência com corpos de Lewy pode flutuar, mas costuma ter história de parkinsonismo/alucinações visuais e curso crônico; esquizofrenia tardia não explica desatenção aguda e nível de consciência flutuante. Preservar orientação ambiental e evitar contenção/sedação indiscriminadas.",
+    "tip": "Confusão que começou em 24 h e FLUTUA com desatenção = delirium, mesmo em paciente com demência prévia. Procure causa aguda precipitante.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1332,8 +1403,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Síndrome mielodisplásica."
     ],
     "correctAnswer": 0,
-    "explanation": "Anemia macrocítica grave, pancitopenia, hiperbilirrubinemia indireta, perda de sensibilidade vibratória e gastrite atrófica autoimune sugerem deficiência de B12 por anemia perniciosa. É associação conhecida com tireoidite de Hashimoto.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A tireoidite de Hashimoto é doença autoimune que pode coexistir com gastrite autoimune do corpo/fundo gástrico, destruindo células parietais e reduzindo fator intrínseco; isso compromete absorção ileal de vitamina B12 e provoca anemia perniciosa. VCM 114 fL, Hb 6,2, leucopenia e trombocitopenia são sinais de megaloblastose intensa. Hiperbilirrubinemia indireta indica eritropoiese ineficaz/hemólise intramedular; perda de sensibilidade vibratória sugere comprometimento neurológico por B12.",
+    "commentary": "Anemia de doença crônica geralmente é normocítica ou microcítica; colestase eleva sobretudo bilirrubina direta e enzimas canaliculares; mielodisplasia também causa citopenias/macrocitose, mas gastrite atrófica e neuropatia favorecem B12. Dosar B12, eventualmente MMA/homocisteína e anticorpos antifator intrínseco; tratar prontamente, sobretudo diante de déficit neurológico.",
+    "tip": "Macrocitose importante + pancitopenia + neuropatia vibratória + gastrite atrófica = deficiência de B12 por anemia perniciosa.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1350,8 +1422,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Rubéola."
     ],
     "correctAnswer": 0,
-    "explanation": "Febre alta, tosse, coriza, conjuntivite e exantema morbiliforme de progressão cefalocaudal são típicos de sarampo. Exige isolamento, notificação imediata e confirmação laboratorial, sem atrasar medidas de controle.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Sarampo provoca pródromo de febre alta, tosse, coriza e conjuntivite, seguido por exantema maculopapular que aparece atrás das orelhas/face e se dissemina no sentido cefalocaudal. Hiperemia conjuntival e fotofobia reforçam o diagnóstico. Um lactente de 11 meses com vacinação rotineira somente até 9 meses pode ainda não ter recebido a dose de rotina de tríplice viral, ficando suscetível.",
+    "commentary": "Varicela costuma ter vesículas em diferentes estágios; dengue tem outro padrão sistêmico; rubéola geralmente causa quadro mais brando e linfadenopatia retroauricular/occipital. Sarampo exige isolamento respiratório, notificação imediata, coleta específica e investigação de contatos sem aguardar confirmação para medidas de saúde pública.",
+    "tip": "Tríplice viral incompleta + febre, tosse, coriza, conjuntivite e exantema que começa retroauricular = sarampo: isole e notifique imediatamente.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -1368,14 +1441,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Inflamatório e perfurativo."
     ],
     "correctAnswer": 3,
-    "explanation": "Dor em fossa ilíaca esquerda, febre, peritonismo e progressão para dor difusa sugerem diverticulite aguda perfurada. Se radiografia mostra ar livre subdiafragmático, há pneumoperitônio, portanto abdome agudo inflamatório + perfurativo (D). A qualidade da imagem fotografada dificulta afirmação categórica de gás livre; a hipótese deve ser confirmada pela imagem em boa resolução/TC conforme estabilidade.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Dor inicialmente localizada na fossa ilíaca esquerda em idoso, febre e posteriormente dor difusa com descompressão brusca positiva sugerem diverticulite aguda do sigmoide complicada por perfuração e peritonite. A radiografia deve ser inspecionada em busca de ar livre subdiafragmático (pneumoperitônio), que mudaria o diagnóstico sindrômico para abdome agudo inflamatório e perfurativo. A instabilidade pode surgir rapidamente apesar de PA inicial preservada.",
+    "commentary": "Abdome obstrutivo costuma apresentar vômitos, distensão e níveis hidroaéreos conforme local; isquemia intestinal costuma cursar com dor intensa desproporcional e fatores vasculares. O diagnóstico definitivo e a extensão devem ser avaliados por tomografia quando houver condições, com antibiótico e equipe cirúrgica de urgência.",
+    "tip": "Dor em fossa ilíaca esquerda que vira peritonite difusa em idoso sugere diverticulite perfurada; ar livre subdiafragmático reforça abdome perfurativo.",
     "tags": [
       "cirurgia",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (dependente de imagem). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário.",
+    "alert": "Gabarito provisório, não oficial (dependente de imagem). Confirmar presença de pneumoperitônio na radiografia fotografada antes de assumir D como incontroversa.",
     "image": "/images/sugenamed1-74.PNG"
   },
   {
@@ -1389,8 +1463,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Rotura de seio marginal."
     ],
     "correctAnswer": 0,
-    "explanation": "Dor abdominal súbita contínua, hipertonia uterina, sangramento, hipertensão e bradicardia fetal caracterizam descolamento prematuro de placenta. É emergência obstétrica com risco materno-fetal.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Descolamento prematuro de placenta (DPP) é separação placentária antes do nascimento, frequentemente associada a hipertensão. A combinação de início súbito de dor forte que se torna contínua, útero hipertônico sem relaxamento entre contrações, sangramento vaginal e sofrimento fetal (FC 90 bpm) é clássica. Parte do sangramento pode ficar oculto atrás da placenta, e a gravidade fetal pode exceder o volume exteriorizado.",
+    "commentary": "Placenta prévia costuma sangrar sem dor e com útero relaxado; rotura uterina frequentemente altera contorno uterino/cessa atividade e associa-se a cicatriz anterior; rotura de seio marginal não explica tão bem hipertonia e bradicardia fetal. É emergência obstétrica com estabilização materna e definição imediata da via de parto.",
+    "tip": "Dor súbita contínua + hipertonia uterina + sangue vaginal + sofrimento fetal + hipertensão materna = descolamento prematuro da placenta.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -1414,7 +1489,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "atenção primária",
       "territorialização",
       "diagnóstico de saúde"
-    ]
+    ],
+    "tip": "Precisa conhecer o território rápido e com a comunidade? Estimativa rápida participativa: dados existentes + informantes-chave + observação."
   },
   {
     "id": "sug-enamed1-77",
@@ -1427,8 +1503,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) 0,5%."
     ],
     "correctAnswer": 2,
-    "explanation": "Letalidade considera óbitos entre casos da doença: 1/500 × 100 = 0,2%. Os 10 mil habitantes serviriam para calcular incidência, não letalidade.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Taxa de letalidade expressa a proporção de pessoas com uma doença que morrem por ela no período: óbitos entre casos ×100. Aqui há 1 óbito entre 500 casos confirmados, portanto 1/500 ×100 = 0,2%. É indicador de gravidade/desfecho entre doentes, não de risco populacional de adoecer.",
+    "commentary": "O denominador de 10.000 habitantes seria usado para incidência acumulada: 500/10.000 = 5% no período, uma grandeza diferente. A interpretação dos percentuais em A, B e D não se sustenta pelo denominador correto.",
+    "tip": "Letalidade usa ÓBITOS/CASOS da doença, não óbitos/população. Neste caso: 1 ÷ 500 × 100 = 0,2%.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -1445,8 +1522,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Bupropiona."
     ],
     "correctAnswer": 0,
-    "explanation": "Amitriptilina, antidepressivo tricíclico, pode causar diminuição da libido, disfunção erétil e alteração da ejaculação. Bupropiona geralmente apresenta menos efeitos sexuais adversos.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Amitriptilina é antidepressivo tricíclico com ações serotoninérgicas, noradrenérgicas e anticolinérgicas; pode causar redução de libido, disfunção erétil e ejaculatório/orgásmica. Como a alteração surgiu após introdução de várias medicações, a relação temporal e o perfil de efeitos adversos tornam amitriptilina a hipótese mais provável, sem excluir causas vasculares, endócrinas e psicossociais.",
+    "commentary": "Bupropiona tem baixa incidência de disfunção sexual e pode até ser usada em determinados contextos para esse problema; estatina e anlodipina podem ter relatos isolados, mas são menos característicos que tricíclicos. Rever indicação e dose, avaliar testosterona e risco cardiovascular conforme anamnese.",
+    "tip": "Antidepressivo tricíclico tem forte associação com efeitos sexuais adversos; bupropiona tende a causar menos disfunção sexual.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1463,8 +1541,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) pH 7,16; PaCO₂ 18,2 mmHg; e HCO₃⁻ 10,0 mmol/L."
     ],
     "correctAnswer": 3,
-    "explanation": "Hiperglicemia importante, desidratação, hálito cetônico e dor abdominal sugerem cetoacidose diabética. Espera-se acidose metabólica (pH e bicarbonato baixos) com hipocapnia compensatória por hiperventilação de Kussmaul.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Cetoacidose diabética combina deficiência efetiva de insulina, produção excessiva de corpos cetônicos e acidose metabólica com ânion gap elevado. Hálito cetônico, glicemia 450 mg/dL, desidratação e alteração de consciência sustentam o diagnóstico. Espera-se pH baixo e bicarbonato reduzido; a compensação respiratória ocorre por hiperventilação profunda, diminuindo PaCO₂. A alternativa D (pH 7,16, HCO₃ 10, PaCO₂ 18,2) reproduz esse padrão.",
+    "commentary": "A apresenta alcalose metabólica; B combina acidemia com hipercapnia e bicarbonato elevado, mais compatível com acidose respiratória; C é essencialmente normal. Fórmula de Winter para HCO₃ de 10 dá PaCO₂ esperada ≈ 1,5×10+8 = 23 ±2 mmHg; PaCO₂ de 18,2 sugere alcalose respiratória adicional, embora D seja a única que demonstra cetoacidose metabólica importante.\n\nAtenção: A compensação da alternativa D está mais intensa do que a prevista por Winter; pode haver distúrbio misto.",
+    "tip": "Cetoacidose: pH baixo, HCO₃ baixo e PaCO₂ baixa compensatória. Use a fórmula de Winter para checar se a compensação é adequada.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1481,8 +1560,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Relação aldosterona/renina plasmática."
     ],
     "correctAnswer": 0,
-    "explanation": "Hipertensão em membros superiores, pressão menor nos inferiores e pulsos femorais diminuídos sugerem coarctação de aorta. Ecocardiograma com Doppler é exame inicial para caracterização anatômica e hemodinâmica.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A coarctação da aorta é estreitamento congênito do istmo aórtico, habitualmente distal à subclávia esquerda. O estreitamento aumenta pressão antes da lesão (braços) e diminui depois dela (pernas), gerando pulsos femorais fracos/atrasados e diferença braço-perna. Criança de 11 anos com HAS de 150/90, PA de pernas significativamente menor e pulsos femorais diminuídos tem apresentação muito típica. Ecocardiograma com Doppler avalia anatomia e gradiente.",
+    "commentary": "Ultrassom renal Doppler (B), metanefrinas (C) e relação aldosterona/renina (D) são pertinentes para outras causas secundárias de HAS pediátrica, mas não explicam tão diretamente o gradiente de pulsos e pressão entre membros.",
+    "tip": "HAS nos braços + PA/pulsos menores nas pernas = coarctação de aorta. Solicite ecocardiograma com Doppler.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -1499,14 +1579,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Colocar o dedo em saco plástico estéril e acondicioná-lo em freezer a −10 °C."
     ],
     "correctAnswer": 1,
-    "explanation": "Reimplante exige resfriamento INDIRETO: envolver segmento em gaze estéril levemente umedecida com soro, colocar dentro de saco impermeável e então pôr esse saco em segundo recipiente com gelo/água gelada, sem contato direto com gelo ou congelamento. B é a mais próxima, mas omite barreira impermeável e admite contato inadequado com gelo se interpretada literalmente.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "O sucesso de reimplante de dedo amputado depende de preservar tecidos sem dano térmico e reduzir isquemia. Envolver o segmento em gaze estéril levemente umedecida com soro fisiológico, colocá-lo em saco impermeável fechado e acomodar esse saco em outro recipiente com gelo e água fria realiza resfriamento indireto, sem contato direto com o gelo. O dedo não deve ficar imerso em soro nem congelado; tratar coto e transferir rapidamente ao serviço de cirurgia da mão.",
+    "commentary": "A mantém o dedo potencialmente imerso em soro/antibiótico sem necessidade; C resfria insuficientemente e não protege adequadamente; D congela tecido e agrava necrose. B é a opção mais próxima, mas a redação omite uma barreira impermeável, indispensável para prevenir contato direto com gelo.",
+    "tip": "Dedo amputado: gaze umedecida + saco impermeável + gelo externo. Nunca ponha tecido direto no gelo nem congele.",
     "tags": [
       "cirurgia",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (ressalva técnica). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (ressalva técnica). O método completo requer invólucro impermeável entre o tecido e o gelo."
   },
   {
     "id": "sug-enamed1-82",
@@ -1519,8 +1600,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Iniciar tratamento com hormônios."
     ],
     "correctAnswer": 0,
-    "explanation": "Aos 40 anos e após 18 meses de relações com tentativa de concepção, está indicada avaliação de infertilidade do casal sem postergar mais 6 meses. Investiga-se simultaneamente fatores femininos e masculinos.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Infertilidade é investigada após 12 meses de tentativas em mulheres com menos de 35 anos; a partir de 35 anos costuma-se antecipar para 6 meses, e aos 40 anos pode-se iniciar investigação imediatamente. Essa paciente tem 40 anos e tenta há 18 meses, justificando encaminhar o casal sem novas postergações. É preciso avaliar reserva ovariana, ovulação, trompas/cavidade uterina e espermograma, porque fatores masculinos também são frequentes.",
+    "commentary": "Idade avançada não é contraindicação absoluta para gestação; apenas ácido fólico e esperar mais 6 meses desperdiçam tempo reprodutivo; iniciar hormônios sem investigação pode ser ineficaz ou inadequado. Prescrever folato como cuidado pré-concepcional pode ocorrer paralelamente, mas não substitui avaliação.",
+    "tip": "Infertilidade aos 40 anos não pode aguardar mais 6 meses. Investigue o CASAL já; a idade modifica o tempo de encaminhamento.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -1537,8 +1619,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Iniciar insulinoterapia."
     ],
     "correctAnswer": 1,
-    "explanation": "TOTG 75 g com glicemia de 190 mg/dL em 1 hora confirma diabetes mellitus gestacional (corte ≥180 mg/dL). Iniciar plano alimentar, atividade física quando segura e monitorização glicêmica; insulina se metas não forem atingidas ou conforme gravidade.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "No teste oral de tolerância à glicose com 75 g entre 24–28 semanas, um único valor alterado já permite diagnóstico de diabetes mellitus gestacional: jejum ≥92, 1 h ≥180 ou 2 h ≥153 mg/dL (observadas faixas que definem diabetes manifesto). Uma hora de 190 mg/dL excede 180 e confirma DMG. O primeiro passo é plano alimentar individualizado, atividade física adequada à gestação, educação e automonitorização de glicemias; se não alcançar metas, adicionar farmacoterapia, frequentemente insulina.",
+    "commentary": "Não é necessário repetir TOTG, nem pedir HbA1c para confirmar diagnóstico já definido; iniciar insulina imediatamente pode ser apropriado em hiperglicemia grave, mas não é obrigatório só com a medida de 1 h isolada. Metas usuais incluem jejum <95 e 1 h pós-prandial <140 mg/dL.",
+    "tip": "No TOTG 75 g da gestante, basta UM valor alterado (1 h ≥180 mg/dL) para diagnosticar DMG; comece dieta, exercício e monitorização.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -1555,8 +1638,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Do Conselho Nacional de Saúde, estando condicionada à complexidade do atendimento."
     ],
     "correctAnswer": 2,
-    "explanation": "A Agência Nacional de Saúde Suplementar (ANS) realiza a identificação dos atendimentos de beneficiários do setor privado ocorridos no SUS, confrontando registros e coberturas contratuais para apurar ressarcimento. A operadora efetua o pagamento quando devido. Portanto C trata da IDENTIFICAÇÃO; não confundir com obrigação de pagar.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Pela Lei 9.656/1998, quando beneficiário de plano privado utiliza no SUS serviço coberto pelo contrato, há mecanismo de ressarcimento ao SUS. A ANS identifica os atendimentos mediante cruzamento de sistemas assistenciais e cadastro de beneficiários, verifica cobertura e notifica as operadoras para eventual ressarcimento. O exemplo cita laparotomia de emergência coberta por contrato ambulatorial-hospitalar, enquadrando a lógica legal.",
+    "commentary": "A confunde agente pagador (operadora) com órgão que faz identificação regulatória; B e D atribuem a responsabilidade a órgãos que não executam esse processo. A resposta C identifica ANS e o requisito de cobertura contratual, mas a cobertura e elegibilidade precisam ser efetivamente verificadas.",
+    "tip": "Ressarcimento ao SUS: ANS identifica e regula; operadora paga quando há cobertura contratual e requisitos legais.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -1574,8 +1658,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Inibidor seletivo de recaptação de serotonina."
     ],
     "correctAnswer": 3,
-    "explanation": "Reexperiência traumática com pesadelos, evitação, hipervigilância e prejuízo funcional após violência sugere transtorno de estresse pós-traumático. ISRS, associados a psicoterapia focada no trauma, são opções farmacológicas de manutenção; avaliar risco suicida.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Pesadelos revivendo agressão, evitação de sair de casa, hipervigilância, mudanças persistentes de crenças e prejuízo funcional por 4 meses após violência sustentam transtorno de estresse pós-traumático (TEPT). O tratamento de primeira linha é psicoterapia focada no trauma quando acessível; ISRS, como sertralina/paroxetina, podem ser escolhidos para manejo farmacológico longitudinal, conforme avaliação e disponibilidade.",
+    "commentary": "Benzodiazepínicos não são recomendados como tratamento crônico e podem prejudicar recuperação; antipsicóticos e estabilizadores de humor são reservados a indicações específicas, não rotina do TEPT. A fala de 'querer desaparecer' impõe investigação cuidadosa de risco suicida mesmo sem ideação ativa.",
+    "tip": "Trauma + pesadelos + evitação + hipervigilância por mais de 1 mês = TEPT. Psicoterapia focada no trauma e ISRS são pilares.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1592,8 +1677,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Iniciar salmeterol associado a fluticasona com espaçador."
     ],
     "correctAnswer": 2,
-    "explanation": "Tabagismo crônico, tórax em barril, hipoxemia e aumento de expectoração sugerem exacerbação de DPOC. Broncodilatador de curta ação por nebulização é apropriado se não consegue usar inalador; oxigênio deve ser titulado em geral para SpO₂ 88–92%, com avaliação de hipercapnia.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Tabagismo intenso, tórax em barril, expectoração aumentada, roncos/sibilos, taquipneia e SpO₂ 87% sugerem exacerbação aguda de DPOC com hipoxemia e risco de retenção de CO₂. Broncodilatador β₂ de curta ação, como salbutamol nebulizado, é apropriado quando há dificuldade em usar inaladores; pode-se associar anticolinérgico de curta ação. Oxigênio é necessário, mas deve ser titulado geralmente à meta de SpO₂ 88–92%, com gasometria devido à sonolência.",
+    "commentary": "N-acetilcisteína isolada não trata broncoespasmo agudo; almejar saturação 95–98% indiscriminadamente pode piorar hipercapnia em DPOC; salmeterol/fluticasona é tratamento controlador, não resgate. Avaliar necessidade de corticoide sistêmico, antibióticos e ventilação não invasiva conforme gravidade.",
+    "tip": "Exacerbação de DPOC com SatO₂ 87% e sibilos: broncodilatador de ação curta, oxigênio TITULADO 88–92% e atenção à hipercapnia.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1610,8 +1696,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Hipercalciúria idiopática."
     ],
     "correctAnswer": 3,
-    "explanation": "Cólica renal, hematúria e punho-percussão positiva sugerem nefrolitíase. A alteração metabólica mais frequente na litíase pediátrica é hipercalciúria idiopática, embora hipocitratúria também seja fator importante.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Dor cólica em flanco com irradiação variável, inquietação, hematúria e punho-percussão positiva indicam nefrolitíase/ureterolitíase. Em crianças, hipercalciúria idiopática é uma das alterações metabólicas mais prevalentes associadas à formação de cálculos de cálcio, inclusive sem hipercalcemia sérica. A investigação inclui US renal, urina, relação cálcio/creatinina conforme idade e estudo metabólico se recorrente.",
+    "commentary": "Hipocitratúria também é fator importante, mas não é a causa mais frequentemente destacada em muitas séries pediátricas; cistinúria é menos prevalente e associa-se a cálculos específicos; acidose tubular renal distal predispõe a nefrocalcinose, porém não é a causa global mais comum. Febre/sinais de obstrução infectada mudam urgência.",
+    "tip": "Cólica renal pediátrica + hematúria sugere cálculo; hipercalciúria idiopática é causa metabólica frequente em crianças.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -1628,14 +1715,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Artéria vertebral."
     ],
     "correctAnswer": 3,
-    "explanation": "Fratura do processo transverso de C4, especialmente com envolvimento do forame transversário, está associada a lesão da artéria vertebral. Contudo, o enunciado não demonstra extensão ao forame e apresenta hematoma cervical expansivo, achado compatível também com outras lesões arteriais cervicais. D é a associação anatômica provável; não se pode inferir certeza sem angiotomografia/exploração.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A artéria vertebral atravessa os forames transversários das vértebras cervicais (classicamente de C6 a C1), tornando-se vulnerável em fraturas do processo transverso, especialmente quando atingem o forame transversário. Trauma cervical de alta energia com fratura de C4 sugere essa associação anatômica. Hematoma cervical expansivo demanda avaliação vascular urgente; angiotomografia cervical costuma ser exame relevante quando estabilidade permite.",
+    "commentary": "Veia jugular interna e carótida comum situam-se na bainha carotídea, mais anterolateral; veia subclávia relaciona-se à base cervical. Contudo, o enunciado não comprova envolvimento do forame nem especifica de onde vem o hematoma, de modo que D é associação mais provável, não certeza anatômica absoluta.",
+    "tip": "Fratura cervical que envolve processo/forame transversário levanta risco de lesão da artéria vertebral: avalie circulação cervical com urgência.",
     "tags": [
       "cirurgia",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (dependente de anatomia). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (dependente de anatomia). Hematoma expansivo é sinal de lesão vascular grave e exige abordagem rápida, independentemente da artéria identificada em prova."
   },
   {
     "id": "sug-enamed1-89",
@@ -1648,8 +1736,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Indicar parto instrumentalizado."
     ],
     "correctAnswer": 3,
-    "explanation": "Desacelerações tardias recorrentes e variabilidade reduzida indicam sofrimento fetal. Com dilatação completa, apresentação cefálica em +2 e posição conhecida, parto vaginal instrumentalizado pode abreviar o nascimento, se critérios técnicos e operador experiente estiverem presentes.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Desacelerações tardias repetidas após as contrações e variabilidade reduzida sugerem comprometimento da oxigenação fetal. O colo está completamente dilatado, a apresentação é cefálica, occipitopúbica e a cabeça está em estação +2 de DeLee, contexto em que o parto vaginal instrumental pode abreviar o nascimento quando não houver contraindicação e houver operador capacitado, com apoio neonatal. A decisão precisa considerar padrão cardiotocográfico e condições de execução segura.",
+    "commentary": "Ocitocina agravaria contrações e não resolve sofrimento fetal; manobra de Kristeller não é recomendada; cesariana pode ser necessária se parto instrumental não for seguro/viável ou não puder ser imediato. Consentimento, analgesia, bexiga vazia e avaliação da pelve são requisitos.",
+    "tip": "Cardiotocografia preocupante + colo total + cabeça baixa (+2) = considere acelerar nascimento por parto instrumental se critérios e equipe permitirem.",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -1666,8 +1755,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Longitudinalidade."
     ],
     "correctAnswer": 3,
-    "explanation": "A ESF conhece a paciente há 12 anos, mas não mantém seguimento efetivo de sua condição mental. Prioriza-se longitudinalidade: vínculo contínuo, busca ativa, acompanhamento e coordenação do cuidado ao longo do tempo.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Longitudinalidade é o atributo da APS relacionado a vínculo contínuo ao longo do tempo e acompanhamento das necessidades de saúde, mesmo quando há especialistas. A paciente está cadastrada há 12 anos, tem múltiplas perdas e vulnerabilidades e frequenta serviço psiquiátrico privado, mas a ESF não coordena nem mantém registro de seu cuidado em saúde mental. A busca ativa, plano compartilhado e continuidade do vínculo devem ser priorizados.",
+    "commentary": "Acesso é importante diante de faltas, mas não resume a falha principal; competência cultural lida com adequação a valores e crenças; orientação comunitária enfoca necessidades coletivas do território. O problema central é fragmentação do cuidado de uma pessoa conhecida da equipe.",
+    "tip": "Conhecer a família há anos não basta: longitudinalidade exige vínculo, busca ativa, registro e acompanhamento também quando há cuidado privado.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -1691,7 +1781,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "cardiologia",
       "taquicardia supraventricular",
       "emergência"
-    ]
+    ],
+    "tip": "Taquicardia regular de QRS estreito e estável: manobra vagal, depois adenosina. Cardioversão só se houver instabilidade."
   },
   {
     "id": "sug-enamed1-92",
@@ -1704,14 +1795,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Regular para internação breve em leito hospitalar e solicitar relatório escolar detalhado."
     ],
     "correctAnswer": 2,
-    "explanation": "Ideação suicida passada em adolescente exige avaliação imediata e estruturada de risco (intenção, plano, meios, tentativas, proteção), envolvimento seguro dos responsáveis, plano de segurança e acompanhamento próximo. C é a melhor alternativa SE a avaliação não identificar risco iminente. História de pensamentos suicidas não permite simplesmente aguardar acompanhamento, e comunicação à mãe deve preservar segurança e confidencialidade proporcional ao risco.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Queda do rendimento, retraimento, desesperança e relato de pensamento suicida prévio exigem avaliação estruturada da segurança na MESMA consulta, mesmo sem intenção suicida atual. Investigar plano, meios, tentativas, impulsividade, ambiente familiar e fatores protetores; envolver adulto responsável de modo seguro e pactuar plano de segurança e seguimento próximo. A equipe da APS pode coordenar o cuidado e acionar serviço especializado se o risco identificado exigir.",
+    "commentary": "Internação não é automática sem risco iminente; avaliação neuropsicológica não substitui triagem de suicídio; notificar violência não se justifica apenas pela ideação passada, sem história de violência/autolesão informada. C é aceitável somente se o risco for baixo após investigação, com comunicação e proteção adequadas.",
+    "tip": "Adolescente com relato de ideação suicida pregressa exige avaliação atual de risco, plano de segurança e inclusão protetiva da família.",
     "tags": [
       "clínica médica",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (atenção à segurança). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (atenção à segurança). ATENÇÃO À SEGURANÇA: história suicida sempre exige investigação imediata; não se limitar a agendar consulta futura."
   },
   {
     "id": "sug-enamed1-93",
@@ -1724,8 +1816,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Hipotensão."
     ],
     "correctAnswer": 3,
-    "explanation": "PA 80 × 50 mmHg com taquicardia e má perfusão após trauma indica choque hemorrágico persistente. Hipotensão sustenta a necessidade de ressuscitação hemostática com hemocomponentes e controle urgente do sangramento.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Após trauma grave, PA 80×50, FC 130, pulsos finos, TEC 4 segundos e confusão indicam choque hemorrágico persistente. A hipotensão confirma descompensação hemodinâmica e necessidade de reanimação hemostática com hemocomponentes, protocolos de transfusão maciça conforme avaliação e controle urgente da hemorragia intra-abdominal. FAST positivo aumenta a suspeita de hemoperitônio e orienta a busca de tratamento definitivo.",
+    "commentary": "Hematoma isolado não mede perda sanguínea sistêmica; FAST positivo indica provável líquido livre, mas transfusão é decidida sobretudo pelo quadro de choque; confusão é sinal de hipoperfusão, porém menos específico. No contexto deste paciente, a persistência da hipotensão torna D a melhor alternativa.",
+    "tip": "Trauma com PAS 80 mmHg, FC 130 e perfusão ruim = choque hemorrágico até prova contrária; não espere só pelo FAST para iniciar ressuscitação hemostática.",
     "tags": [
       "cirurgia",
       "gabarito técnico"
@@ -1742,8 +1835,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Anovulação crônica hiperandrogênica."
     ],
     "correctAnswer": 3,
-    "explanation": "Amenorreia prolongada com acne e hirsutismo, TSH/prolactina normais e FSH não elevado sugere anovulação crônica hiperandrogênica, frequentemente na síndrome dos ovários policísticos. Uso prévio de contraceptivo não explica isoladamente nove meses de amenorreia.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Nove meses sem menstruar após suspender contraceptivo, com acne e hirsutismo, sugerem hiperandrogenismo associado a anovulação crônica, frequentemente síndrome dos ovários policísticos. β-hCG negativo exclui gravidez atual, TSH e prolactina normais afastam duas causas frequentes, e FSH não elevado reduz probabilidade de insuficiência ovariana primária. A avaliação requer história de irregularidade menstrual prévia, dosagem androgênica e exclusão de outras causas.",
+    "commentary": "Insuficiência ovariana prematura costuma cursar com FSH elevado; hipogonadismo hipogonadotrófico pode causar amenorreia, mas não explica bem acne/hirsutismo; anticoncepcional prolongado geralmente mascarava o padrão ovulatório anterior em vez de causar nove meses de amenorreia por si só. Verificar sinais de virilização e causas raras de hiperandrogenismo.",
+    "tip": "Amenorreia persistente + acne/hirsutismo + gravidez/TSH/prolactina excluídos sugere anovulação crônica hiperandrogênica (SOP).",
     "tags": [
       "ginecologia e obstetrícia",
       "gabarito técnico"
@@ -1760,8 +1854,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Permanganato de Potássio."
     ],
     "correctAnswer": 0,
-    "explanation": "Prurido noturno intenso, pápulas interdigitais e casos entre contatos em instituição apontam para escabiose. Permetrina tópica é tratamento clássico; tratar contactantes e orientar cuidados com roupas/roupas de cama.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Escabiose é infestação por Sarcoptes scabiei, transmitida por contato prolongado e favorecida em instituições. Prurido noturno intenso, pápulas nos espaços interdigitais, punhos e abdome, com outros residentes também coçando, é apresentação muito típica. Permetrina tópica (habitualmente 5%) é tratamento de primeira linha, aplicada conforme idade/orientação; tratar simultaneamente contatos íntimos e orientar lavagem ou isolamento temporário de roupas/lençóis.",
+    "commentary": "Cetoconazol trata fungos, hidrocortisona não elimina o ácaro e permanganato não é escabicida. O prurido pode persistir semanas mesmo após erradicação, e retratamento deve considerar reinfestação, falha de aplicação ou dermatite pós-escabiótica.",
+    "tip": "Prurido noturno + pápulas entre os dedos + outros moradores coçando = escabiose; trate com permetrina e avalie contactantes.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -1778,8 +1873,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Encefalopatia secundária à deficiência de vitamina B1."
     ],
     "correctAnswer": 3,
-    "explanation": "Desnutrição, confusão, ataxia, diplopia e nistagmo formam quadro de encefalopatia de Wernicke por deficiência de tiamina (B1). Exige tiamina parenteral imediata; convulsão exige investigar causas adicionais, inclusive abstinência.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Confusão, ataxia de marcha e sinais oculomotores (nistagmo e diplopia) formam a tríade clássica da encefalopatia de Wernicke por deficiência de tiamina. A condição ocorre sobretudo em pessoas desnutridas, com uso problemático de álcool ou deficiência alimentar, e é emergência neurológica tratada empiricamente com tiamina parenteral, antes ou junto de glicose se houver hipoglicemia. A tríade completa nem sempre está presente e não se deve esperar exame confirmatório.",
+    "commentary": "Abstinência alcoólica pode causar convulsão, mas não explica isoladamente alterações oculomotoras e ataxia típica; AVC cerebelar é diferencial urgente, sobretudo se súbito/focal; crise epiléptica isolada não explica todo o quadro de desnutrição e sinais oculares persistentes. Investigar também eletrólitos, trauma e outras etiologias da convulsão.",
+    "tip": "Ataxia + confusão + oftalmoparesia/nistagmo em desnutrido = encefalopatia de Wernicke: tiamina parenteral imediata.",
     "tags": [
       "clínica médica",
       "gabarito técnico"
@@ -1796,8 +1892,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Iniciar tratamento para tuberculose ativa e solicitar culturas após o término."
     ],
     "correctAnswer": 1,
-    "explanation": "Criança contato domiciliar de tuberculose, assintomática, com radiografia normal e IGRA positivo deve receber tratamento de infecção latente depois de excluir doença ativa. Também se deve avaliar outros contatos.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A criança de 5 anos teve contato domiciliar com tuberculose pulmonar, não apresenta sintomas, tem radiografia normal e IGRA reagente. Após excluir doença ativa (incluindo avaliação clínica apropriada), isso define infecção latente por Mycobacterium tuberculosis e há indicação de tratamento preventivo conforme esquema do PNI/PNCT e idade, além de investigação de outros contatos.",
+    "commentary": "Repetir IGRA (A) é desnecessário se já reagente; fazer teste tuberculínico para 'confirmar' IGRA positivo (C) não é exigido; tratar como TB ativa (D) expõe indevidamente a esquema múltiplo sem evidência de doença. A notificação e organização do seguimento seguem norma local/nacional.",
+    "tip": "Contato com TB + criança assintomática + RX normal + IGRA positivo = infecção latente: trate após excluir doença ativa e investigue contatos.",
     "tags": [
       "pediatria",
       "gabarito técnico"
@@ -1814,14 +1911,15 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Erro médico."
     ],
     "correctAnswer": 2,
-    "explanation": "A posição cirúrgica errada foi executada (atingiu o paciente), mas o erro foi reconhecido e corrigido antes da incisão, sem lesão. Na classificação da OMS isso é INCIDENTE SEM DANO, e não mera circunstância notificável (condição com potencial de dano sem ocorrência de incidente) nem near miss puro (interceptado antes de alcançar paciente). Como “incidente sem dano” não consta das alternativas, C é apenas aproximação e há argumento consistente para ANULAÇÃO.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "A cirurgia foi preparada com o paciente posicionado para lado errado, mas o erro foi reconhecido antes da incisão. Houve falha de processo que alcançou o paciente, não houve dano e o procedimento ocorreu corretamente depois: na taxonomia da OMS, 'incidente sem dano' descreve melhor que 'circunstância notificável', que é condição potencialmente danosa sem incidente concreto. O checklist de cirurgia segura existe para identificar justamente esse tipo de falha antes de atingir estruturas operadas.",
+    "commentary": "Evento adverso (B) requer dano ao paciente; dano leve (A) também pressupõe lesão; erro médico (D) é expressão genérica que não corresponde à categoria da classificação pedida. Como 'incidente sem dano' está ausente, C é aproximação inadequada à nomenclatura.",
+    "tip": "Erro alcançou paciente, mas foi corrigido sem lesão = incidente sem dano. Circunstância notificável é risco que ainda não alcançou o paciente.",
     "tags": [
       "cirurgia",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (potencial anulação). A resposta marcada é a mais defensável, mas a questão tem ressalvas: leia o comentário."
+    "alert": "Gabarito provisório, não oficial (potencial anulação). Alternativa técnica correta ('incidente sem dano') não está oferecida."
   },
   {
     "id": "sug-enamed1-99",
@@ -1834,8 +1932,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Perito que prestou atendimento à paciente após confirmação da violência."
     ],
     "correctAnswer": 1,
-    "explanation": "A notificação de violência sexual deve ser feita pelo serviço/profissional de saúde que realizou atendimento, sem depender de boletim de ocorrência, autorização dos responsáveis ou confirmação pericial. Em criança/adolescente, também cabem medidas de proteção previstas em lei.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Violência sexual contra adolescente exige atendimento imediato e humanizado, profilaxias, contracepção de emergência quando pertinente, exames e proteção, independentemente de investigação policial. A notificação compulsória é obrigação do serviço de saúde e pode ser preenchida pelo profissional que prestou o primeiro atendimento, seguindo os prazos e protocolos de violência sexual. Não depende de boletim de ocorrência, autorização dos responsáveis ou laudo pericial confirmatório.",
+    "commentary": "A e D condicionam indevidamente notificação a polícia/perícia; C transfere responsabilidade à gerência e exige autorização, o que é incorreto. Pelo Estatuto da Criança e do Adolescente, também devem ser acionados fluxos de proteção, respeitando sigilo e evitando revitimização.",
+    "tip": "Violência sexual contra adolescente exige notificação pelo serviço de saúde, sem BO, perícia ou autorização familiar como condição.",
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
@@ -1852,8 +1951,9 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Clonazepam."
     ],
     "correctAnswer": 2,
-    "explanation": "Bupropiona é opção farmacológica disponível para cessação do tabagismo no SUS e pode reduzir fissura e sintomas de abstinência quando associada à abordagem comportamental. Verificar contraindicações, como predisposição a convulsões.",
-    "commentary": "Gabarito técnico, não oficial: esta questão não tem gabarito publicado por banca.",
+    "explanation": "Bupropiona é antidepressivo que modula noradrenalina e dopamina, reduz sintomas de abstinência e desejo intenso de fumar e integra opções farmacológicas de cessação disponíveis no SUS quando associada a apoio comportamental. Carga de 47 maços-ano e tentativas frustradas justificam abordagem estruturada com definição de data, avaliação de dependência, oferta de apoio e monitorização de recaídas. Investigar história de convulsões, transtornos alimentares e outras contraindicações antes de prescrever.",
+    "commentary": "Buspirona não é fármaco padrão para cessação; clonazepam traz risco de dependência sem tratar tabagismo; vareniclina pode ser eficaz, mas disponibilidade no SUS varia e não corresponde ao arsenal federal usual previsto na questão. Terapia de reposição de nicotina também é importante e pode ser combinada conforme protocolo.",
+    "tip": "Cessar tabagismo = apoio comportamental + fármaco adequado; bupropiona é opção, mas sempre avalie risco de convulsão e outras contraindicações.",
     "tags": [
       "clínica médica",
       "gabarito técnico"

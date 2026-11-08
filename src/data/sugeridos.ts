@@ -17,7 +17,7 @@ export interface SuggestedExam {
 export const SUGERIDOS: SuggestedExam[] = [
   {
     id: 'sugerido-enamed-1',
-    title: 'Sugerido ENAMED - 1',
+    title: 'ENAMED 1',
     description: 'Questões no formato do ENAMED, de todas as áreas, sempre na mesma ordem.',
     warning:
       'O gabarito deste simulado é técnico, não oficial: nenhuma banca publicou respostas para estas questões. ' +

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, Check, AlertTriangle } from 'lucide-react';
+import { ChevronLeft, Check } from 'lucide-react';
 import { Brand } from './Brand';
 import { Module, QuizSettings } from '../types';
 import { AREAS, COUNT_BY_AREA, TOTAL_QUESTIONS } from '../data/stats';
@@ -18,7 +18,6 @@ const fmt = (n: number) => n.toLocaleString('pt-BR');
 /** Cartão de um simulado sugerido: lista fixa de questões, feita na ordem. */
 const SuggestedCard: React.FC<{ exam: SuggestedExam; onStart: (settings: QuizSettings) => void }> = ({ exam, onStart }) => {
   const n = exam.questions.length;
-  const provisional = exam.questions.filter((q) => q.alert).length;
   const start = (immediateFeedback: boolean) =>
     onStart({ questionCount: n, module: 'Misto', immediateFeedback, presetId: exam.id });
   return (
@@ -28,13 +27,6 @@ const SuggestedCard: React.FC<{ exam: SuggestedExam; onStart: (settings: QuizSet
         <span className="text-sm text-muted tabular-nums">{n} questões</span>
       </div>
       <p className="mt-1.5 text-ink-2">{exam.description}</p>
-      <div role="note" className="mt-4 flex gap-3 rounded-xl border border-accent-amber/50 bg-amber-soft px-4 py-3 text-sm leading-relaxed text-ink">
-        <AlertTriangle className="w-5 h-5 text-accent-amber shrink-0 mt-0.5" aria-hidden />
-        <p>
-          {exam.warning}
-          {provisional > 0 && ` São ${provisional} questões com gabarito provisório.`}
-        </p>
-      </div>
       <div className="mt-5 flex flex-col sm:flex-row gap-3">
         <button type="button" onClick={() => start(true)} className="btn btn-primary">
           Fazer com gabarito a cada questão
