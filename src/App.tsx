@@ -6,6 +6,7 @@
 import { useState, useMemo, lazy, Suspense } from 'react';
 import { MotionConfig } from 'motion/react';
 import { LandingPage } from './components/LandingPage';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { QuizSetup } from './components/QuizSetup';
 import { QuizSession } from './components/QuizSession';
 import { ResultsView } from './components/ResultsView';
@@ -104,9 +105,11 @@ export default function App() {
       {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} onTools={handleOpenTools} />}
 
       {state === 'tools' && (
-        <Suspense fallback={<div className="min-h-screen bg-bg" />}>
-          <ToolsPage initialKind={toolKind} onHome={handleGoHome} />
-        </Suspense>
+        <ErrorBoundary onHome={handleGoHome}>
+          <Suspense fallback={<div className="min-h-screen bg-bg" />}>
+            <ToolsPage initialKind={toolKind} onHome={handleGoHome} />
+          </Suspense>
+        </ErrorBoundary>
       )}
       
       {state === 'setup' && (

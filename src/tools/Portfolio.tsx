@@ -111,7 +111,7 @@ export const byActivityDate = (a: ToolDoc, b: ToolDoc) =>
   (a.data.data || '9999').localeCompare(b.data.data || '9999') || a.createdAt - b.createdAt;
 
 const cell: React.CSSProperties = { border: '1px solid #000', padding: '4px 6px', verticalAlign: 'top' };
-const label: React.CSSProperties = { fontWeight: 700, display: 'block', marginBottom: 3 };
+const labelStyle: React.CSSProperties = { fontWeight: 700, display: 'block', marginBottom: 3 };
 const body: React.CSSProperties = { whiteSpace: 'pre-line' };
 
 const Sheet: React.FC<{ doc: ToolDoc; n: number; total: number; author: string; last: boolean }> = ({ doc, n, total, author, last }) => {
@@ -122,13 +122,13 @@ const Sheet: React.FC<{ doc: ToolDoc; n: number; total: number; author: string; 
   // Numeração fixa quando o aluno preencheu nº e total; senão, a posição na seleção.
   const fixedN = num(d.numero);
   const fixedTotal = num(d.total);
-  const label = fixedN ? `${pad(fixedN)}/${pad(fixedTotal ?? total)}` : `${pad(n)}/${pad(total)}`;
+  const seq = fixedN ? `${pad(fixedN)}/${pad(fixedTotal ?? total)}` : `${pad(n)}/${pad(total)}`;
   const participantes = [d.grupo, d.professor && `Professor(a): ${d.professor}`, d.horario && `Horário: ${d.horario}`].filter(Boolean).join('  |  ');
 
   return (
     <section style={{ breakAfter: last ? 'auto' : 'page', fontFamily: 'Georgia, "Times New Roman", serif', fontSize: '10.5pt', color: '#000' }}>
       <p style={{ textAlign: 'right', fontSize: '8.5pt', margin: '0 0 6px' }}>
-        {[head.slice(0, 2).join(' '), ...head.slice(2)].join(' • ').toUpperCase()} • {label}
+        {[head.slice(0, 2).join(' '), ...head.slice(2)].join(' • ').toUpperCase()} • {seq}
       </p>
       <table style={{ width: '100%', borderCollapse: 'collapse', tableLayout: 'fixed' }}>
         <colgroup>
@@ -139,31 +139,31 @@ const Sheet: React.FC<{ doc: ToolDoc; n: number; total: number; author: string; 
         <tbody>
           <tr>
             <td style={cell}>
-              <span style={label}>Atividade:</span>
+              <span style={labelStyle}>Atividade:</span>
               <span style={body}>{doc.title}</span>
             </td>
             <td style={cell}>
-              <span style={label}>Local:</span>
+              <span style={labelStyle}>Local:</span>
               <span style={body}>{d.local}</span>
             </td>
             <td style={cell}>
-              <span style={label}>Data:</span>
+              <span style={labelStyle}>Data:</span>
               <span style={body}>{d.data ? fmtDateBR(d.data) : ''}</span>
             </td>
           </tr>
           <tr>
             <td style={cell} colSpan={3}>
-              <span style={label}>Participantes:</span>
+              <span style={labelStyle}>Participantes:</span>
               <span style={body}>{participantes}</span>
             </td>
           </tr>
           <tr>
             <td style={{ ...cell, height: '78mm' }}>
-              <span style={label}>Descrição da atividade:</span>
+              <span style={labelStyle}>Descrição da atividade:</span>
               <span style={body}>{d.descricao}</span>
             </td>
             <td style={cell} colSpan={2}>
-              <span style={label}>Área livre (colagens, desenhos, charges, poemas, músicas, fotos etc.):</span>
+              <span style={labelStyle}>Área livre (colagens, desenhos, charges, poemas, músicas, fotos etc.):</span>
               {d.areaLivre && <span style={{ ...body, display: 'block' }}>{d.areaLivre}</span>}
               {imgs.map((src, i) => (
                 <img key={i} src={src} alt="" style={{ display: 'block', maxWidth: '100%', maxHeight: imgs.length > 1 ? '38mm' : '70mm', margin: '4px auto 0' }} />
@@ -172,14 +172,14 @@ const Sheet: React.FC<{ doc: ToolDoc; n: number; total: number; author: string; 
           </tr>
           <tr>
             <td style={{ ...cell, height: '62mm' }}>
-              <span style={label}>Reflexão sobre a atividade:</span>
+              <span style={labelStyle}>Reflexão sobre a atividade:</span>
               <span style={body}>{d.reflexao}</span>
             </td>
             <td colSpan={2} />
           </tr>
           <tr>
             <td style={{ ...cell, height: '36mm' }}>
-              <span style={label}>Referências bibliográficas/Assuntos a pesquisar:</span>
+              <span style={labelStyle}>Referências bibliográficas/Assuntos a pesquisar:</span>
               <span style={body}>{d.referencias}</span>
             </td>
             <td colSpan={2} />
