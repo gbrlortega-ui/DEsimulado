@@ -5,8 +5,10 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-/** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "enamed-2026-3" → "ENAMED 2026". */
+/** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "enamed-2026-3" → "ENAMED 2026"; "sug-enamed1-5" → "Sugerido ENAMED 1". */
 export function examLabel(id: string) {
+  const sug = id.match(/^sug-([a-z]+)(\d+)-\d+$/i);
+  if (sug) return `Sugerido ${sug[1].toUpperCase()} ${sug[2]}`;
   const tp = id.match(/^([a-zA-Z]+)(\d{4})-\d+$/);
   if (tp) return `${tp[1].toUpperCase()} ${tp[2]}`;
   const enamed = id.match(/^enamed-(\d{4})-\d+$/i);
@@ -22,4 +24,9 @@ export function firstParagraph(text: string) {
 /** Remove o prefixo "(A) " do texto da alternativa — a letra já é exibida no marcador ao lado. */
 export function stripOptionLetter(option: string) {
   return option.replace(/^\s*\([A-E]\)\s*/, '');
+}
+
+/** A alternativa conta como certa? (considera questões com mais de uma resposta válida) */
+export function isAccepted(q: { correctAnswer: number; alsoAccepted?: number[] }, option: number) {
+  return option === q.correctAnswer || (q.alsoAccepted?.includes(option) ?? false);
 }

@@ -12,6 +12,7 @@ import { QuizSession } from './components/QuizSession';
 import { ResultsView } from './components/ResultsView';
 import { Module, QuizSettings, QuizResults, UserAnswer } from './types';
 import { QUESTIONS } from './data/questions';
+import { findSugerido } from './data/sugeridos';
 // Área de ferramentas (com login) carregada só quando alguém abre — não pesa nos simulados.
 const ToolsPage = lazy(() => import('./tools/ToolsPage').then((m) => ({ default: m.ToolsPage })));
 import type { ToolKind } from './tools/forms';
@@ -35,7 +36,11 @@ export default function App() {
 
   const activeQuestions = useMemo(() => {
     if (!settings) return [];
-    
+
+    // Simulado sugerido: lista fixa, na ordem original.
+    const preset = findSugerido(settings.presetId);
+    if (preset) return preset.questions;
+
     let filtered = [...QUESTIONS];
     
     // Filter by module
@@ -124,6 +129,7 @@ export default function App() {
         <QuizSession 
           questions={activeQuestions} 
           settings={settings}
+          preset={findSugerido(settings.presetId)}
           onExit={handleGoHome}
           onFinish={handleFinishQuiz}
         />

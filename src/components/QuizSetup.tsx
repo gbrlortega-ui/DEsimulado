@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { ChevronLeft, Check } from 'lucide-react';
+import { ChevronLeft, Check, AlertTriangle } from 'lucide-react';
 import { Brand } from './Brand';
 import { Module, QuizSettings } from '../types';
 import { AREAS, COUNT_BY_AREA, TOTAL_QUESTIONS } from '../data/stats';
+import { SUGERIDOS, type SuggestedExam } from '../data/sugeridos';
 import { cn } from '../lib/utils';
 
 interface QuizSetupProps {
@@ -13,6 +14,38 @@ interface QuizSetupProps {
 
 const questionCounts = [10, 20, 30, 40, 50, 60, 80, 100];
 const fmt = (n: number) => n.toLocaleString('pt-BR');
+
+/** Cartão de um simulado sugerido: lista fixa de questões, feita na ordem. */
+const SuggestedCard: React.FC<{ exam: SuggestedExam; onStart: (settings: QuizSettings) => void }> = ({ exam, onStart }) => {
+  const n = exam.questions.length;
+  const provisional = exam.questions.filter((q) => q.alert).length;
+  const start = (immediateFeedback: boolean) =>
+    onStart({ questionCount: n, module: 'Misto', immediateFeedback, presetId: exam.id });
+  return (
+    <article className="rounded-2xl border border-line-2 bg-white p-5 sm:p-6">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+        <h3 className="text-xl font-extrabold">{exam.title}</h3>
+        <span className="text-sm text-muted tabular-nums">{n} questões</span>
+      </div>
+      <p className="mt-1.5 text-ink-2">{exam.description}</p>
+      <div role="note" className="mt-4 flex gap-3 rounded-xl border border-accent-amber/50 bg-amber-soft px-4 py-3 text-sm leading-relaxed text-ink">
+        <AlertTriangle className="w-5 h-5 text-accent-amber shrink-0 mt-0.5" aria-hidden />
+        <p>
+          {exam.warning}
+          {provisional > 0 && ` São ${provisional} questões com gabarito provisório.`}
+        </p>
+      </div>
+      <div className="mt-5 flex flex-col sm:flex-row gap-3">
+        <button type="button" onClick={() => start(true)} className="btn btn-primary">
+          Fazer com gabarito a cada questão
+        </button>
+        <button type="button" onClick={() => start(false)} className="btn btn-ghost">
+          Fazer em modo prova
+        </button>
+      </div>
+    </article>
+  );
+};
 
 export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', onBack, onStart }) => {
   const [settings, setSettings] = useState<QuizSettings>({
@@ -42,10 +75,22 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 pb-16">
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-[-0.03em]">Monte seu simulado</h1>
-        <p className="mt-3 text-ink-2 text-lg">As questões são sorteadas a cada simulado, então dá para repetir sem ver sempre as mesmas.</p>
+        <p className="mt-3 text-ink-2 text-lg">Comece por um simulado sugerido ou monte o seu. No seu, as questões são sorteadas a cada vez.</p>
 
-        <section className="mt-10">
-          <h2 className="text-base font-sans font-semibold">Área</h2>
+        {SUGERIDOS.length > 0 && (
+          <section className="mt-10">
+            <h2 className="text-base font-sans font-semibold">Simulados sugeridos</h2>
+            <p className="mt-1 text-sm text-muted">Prontos para fazer, com as mesmas questões para todos.</p>
+            <div className="mt-3 space-y-3">
+              {SUGERIDOS.map((exam) => (
+                <SuggestedCard key={exam.id} exam={exam} onStart={onStart} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        <section className="mt-12">
+          <h2 className="text-base font-sans font-semibold">Monte o seu: área</h2>
           <div className="mt-3 grid sm:grid-cols-2 gap-2">
             {options.map((o) => {
               const active = settings.module === o.value;

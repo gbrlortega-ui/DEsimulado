@@ -19,12 +19,18 @@ export interface Question {
   commentary?: string;
   tags: string[];
   image?: string;
+  /** Aviso destacado no comentário (ex.: gabarito provisório). */
+  alert?: string;
+  /** Outras alternativas aceitas como corretas (questões com duas respostas válidas). */
+  alsoAccepted?: number[];
 }
 
 export interface QuizSettings {
   questionCount: number;
   module: Module;
   immediateFeedback: boolean;
+  /** Simulado sugerido (lista fixa de questões, sem sorteio). */
+  presetId?: string;
 }
 
 export interface UserAnswer {

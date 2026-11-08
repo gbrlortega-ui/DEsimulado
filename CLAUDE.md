@@ -36,6 +36,10 @@ Formato em `src/types.ts` (`Question`). Convenções:
 - **Gabarito preliminar:** quando a fonte for gabarito preliminar do INEP, dizer isso no
   `commentary`. Questões com gabarito discutível são sinalizadas no comentário, sem alterar a
   resposta oficial.
+- **Simulados sugeridos:** listas fixas, feitas na ordem, em `src/data/sugeridos.ts` (cada uma
+  com arquivo próprio, ex.: `sugerido_enamed1.ts`). Ficam **fora** de `QUESTIONS` para não misturar
+  gabarito técnico com oficial. IDs `sug-enamed1-12`; `alert` = aviso de gabarito provisório;
+  `alsoAccepted` = outras alternativas aceitas como certas.
 - **Explicações:** `explanation` = raciocínio que leva à resposta; `commentary` = por que as
   outras alternativas estão erradas; `reference` = diretriz/manual; `tags` em minúsculas.
 

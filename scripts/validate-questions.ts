@@ -5,14 +5,17 @@
  */
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { QUESTIONS } from '../src/data/questions';
+import { QUESTIONS as BANK } from '../src/data/questions';
+import { SUGERIDOS } from '../src/data/sugeridos';
 import type { Module } from '../src/types';
 
 const MODULES: Module[] = [
   'Pediatria', 'Clínica Médica', 'Cirurgia', 'Ginecologia e Obstetrícia',
   'Saúde Coletiva', 'Ciências Básicas', 'ENAMED',
 ];
-const ID_PATTERN = /^(tp\d{4}-\d+|enamed-\d{4}-\d+)$/;
+const ID_PATTERN = /^(tp\d{4}-\d+|enamed-\d{4}-\d+|sug-[a-z]+\d+-\d+)$/;
+// Banco geral + simulados sugeridos (validados juntos para pegar IDs repetidos entre eles).
+const QUESTIONS = [...BANK, ...SUGERIDOS.flatMap((s) => s.questions)];
 const LETTERS = 'ABCDE';
 
 const errors: string[] = [];
@@ -24,7 +27,7 @@ QUESTIONS.forEach((q, i) => {
   const err = (m: string) => errors.push(`${where}: ${m}`);
   const warn = (m: string) => warnings.push(`${where}: ${m}`);
 
-  if (!ID_PATTERN.test(q.id)) err(`ID fora do padrão (tp2026-12 ou enamed-2026-12)`);
+  if (!ID_PATTERN.test(q.id)) err(`ID fora do padrão (tp2026-12, enamed-2026-12 ou sug-enamed1-12)`);
   seen.set(q.id, (seen.get(q.id) ?? 0) + 1);
   if (!MODULES.includes(q.module)) err(`módulo inválido: "${q.module}"`);
   if (!q.text?.trim()) err('enunciado vazio');
@@ -37,9 +40,12 @@ QUESTIONS.forEach((q, i) => {
   });
   if (!Number.isInteger(q.correctAnswer) || q.correctAnswer < 0 || q.correctAnswer >= q.options.length)
     err(`correctAnswer ${q.correctAnswer} fora do intervalo`);
+  q.alsoAccepted?.forEach((i) => {
+    if (i === q.correctAnswer || i < 0 || i >= q.options.length) err(`alsoAccepted inválido: ${i}`);
+  });
   if (!q.explanation?.trim()) err('sem explicação');
   if (!q.tags?.length) warn('sem tags');
-  if (!q.reference?.trim()) warn('sem referência');
+  if (!q.reference?.trim() && !q.id.startsWith('sug-')) warn('sem referência');
   if (q.image) {
     if (!q.image.startsWith('/images/')) err(`imagem fora de /images/: ${q.image}`);
     else if (!existsSync(join('public', q.image))) err(`imagem não encontrada: public${q.image}`);

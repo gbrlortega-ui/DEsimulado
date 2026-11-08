@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
+  AlertTriangle,
   Trophy,
   Clock,
   CheckCircle2,
@@ -12,18 +13,20 @@ import {
 } from 'lucide-react';
 import { Brand } from './Brand';
 import { Question, UserAnswer, QuizSettings, QuizResults, Module } from '../types';
-import { cn, examLabel, stripOptionLetter } from '../lib/utils';
+import { cn, examLabel, isAccepted, stripOptionLetter } from '../lib/utils';
+import type { SuggestedExam } from '../data/sugeridos';
 import { Howl } from 'howler';
 
 interface QuizSessionProps {
   questions: Question[];
   settings: QuizSettings;
+  preset?: SuggestedExam;
   onFinish: (results: QuizResults, answers: UserAnswer[]) => void;
   onExit: () => void;
 }
 
 
-export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, onFinish, onExit }) => {
+export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, preset, onFinish, onExit }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [startTime] = useState(Date.now());
@@ -67,7 +70,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
   const handleSelectOption = (optionIndex: number) => {
     if (currentAnswer && settings.immediateFeedback) return;
 
-    const isCorrect = optionIndex === currentQuestion.correctAnswer;
+    const isCorrect = isAccepted(currentQuestion, optionIndex);
 
     if (settings.immediateFeedback) {
       if (isCorrect) successSound?.play();
@@ -192,6 +195,13 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
               </div>
             </div>
 
+            {preset && currentIndex === 0 && (
+              <div role="note" className="flex gap-3 rounded-xl border border-accent-amber/50 bg-amber-soft px-4 py-3 text-sm leading-relaxed text-ink">
+                <AlertTriangle className="w-5 h-5 text-accent-amber shrink-0 mt-0.5" aria-hidden />
+                <p><span className="font-semibold">{preset.title}.</span> {preset.warning}</p>
+              </div>
+            )}
+
             {/* Question Text & Media Content */}
             <div className="space-y-4">
               <p className="text-[17px] sm:text-lg text-ink leading-[1.7] whitespace-pre-line">
@@ -223,7 +233,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
               {currentQuestion.options.map((option, idx) => {
                 const letter = String.fromCharCode(65 + idx);
                 const isSelected = currentAnswer?.selectedOption === idx;
-                const isCorrectAnswer = currentQuestion.correctAnswer === idx;
+                const isCorrectAnswer = isAccepted(currentQuestion, idx);
                 const showFeedback = settings.immediateFeedback && currentAnswer;
 
                 return (
@@ -286,6 +296,13 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
                   </div>
 
                   <div className="p-5 space-y-5">
+                    {currentQuestion.alert && (
+                      <div role="note" className="flex gap-3 rounded-lg border border-accent-amber/50 bg-amber-soft px-4 py-3 text-sm leading-relaxed text-ink">
+                        <AlertTriangle className="w-5 h-5 text-accent-amber shrink-0 mt-0.5" aria-hidden />
+                        <p>{currentQuestion.alert}</p>
+                      </div>
+                    )}
+
                     <section>
                       <h3 className="text-base font-bold">Comentário</h3>
                       <p className="mt-1.5 text-[15px] text-ink-2 leading-relaxed whitespace-pre-line">
@@ -413,8 +430,8 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, o
           </div>
 
           <div className="p-4 border-t border-line bg-bg-2 shrink-0">
-            <div className="text-xs text-muted">Área</div>
-            <div className="text-sm font-semibold text-ink mt-0.5">{settings.module === 'Misto' ? 'Todas as áreas' : settings.module}</div>
+            <div className="text-xs text-muted">{preset ? 'Simulado' : 'Área'}</div>
+            <div className="text-sm font-semibold text-ink mt-0.5">{preset ? preset.title : settings.module === 'Misto' ? 'Todas as áreas' : settings.module}</div>
           </div>
         </aside>
       </main>
