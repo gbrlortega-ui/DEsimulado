@@ -1,30 +1,30 @@
 import { Question } from '../types';
 
-// Simulado sugerido "ENAMED 1" — 100 questões no formato ENAMED.
-// As de nº 1, 4, 21, 53, 66, 69, 76 e 91 são inéditas, escritas para o DEsimulados.
+// Simulado "Sugerido ENAMED - 1" — 100 questões no formato ENAMED.
 // Gabarito TÉCNICO, não oficial (nenhuma banca publicou gabarito para estes itens).
 // Questões provisórias (com * no material de origem) levam `alert`.
 export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
   {
     "id": "sug-enamed1-1",
     "module": "Clínica Médica",
-    "text": "Mulher de 72 anos, hipertensa em uso de losartana, procura a Unidade de Pronto Atendimento com palpitações e cansaço aos esforços iniciados há cerca de 5 dias. Nega dor torácica, síncope ou dispneia em repouso.\n\nAo exame: lúcida e orientada; PA 134 × 82 mmHg; FC 128 bpm, irregular; SatO₂ 97% em ar ambiente; ausculta pulmonar sem estertores; sem edema de membros inferiores.\n\nO ECG mostra ritmo irregularmente irregular, sem ondas P identificáveis e com QRS estreito.\n\nQual é a conduta mais adequada neste momento?",
+    "text": "Homem de 66 anos, com hipertensão arterial sistêmica bem controlada, comparece à Unidade de Pronto Atendimento com palpitações de início súbito há cerca de 2 horas. Nega outros sintomas. O exame físico revela PA 128 × 78 mmHg, FC 135 bpm e SatO₂ 98% em ar ambiente. O ECG mostra o seguinte resultado:\n\nQual é a conduta adequada nesse caso?",
     "options": [
-      "(A) Cardioversão elétrica sincronizada imediata.",
-      "(B) Controle da frequência cardíaca com betabloqueador e início de anticoagulação oral.",
-      "(C) Amiodarona endovenosa e alta após reversão, sem anticoagulação.",
-      "(D) Encaminhamento para ablação por cateter em caráter de urgência."
+      "(A) Implantar marca-passo temporário.",
+      "(B) Proceder à cardioversão elétrica.",
+      "(C) Realizar ecocardiograma transesofágico.",
+      "(D) Iniciar anticoagulação plena."
     ],
     "correctAnswer": 1,
-    "explanation": "O quadro é de fibrilação atrial com resposta ventricular elevada, em paciente hemodinamicamente estável e com início há mais de 48 horas. Sem instabilidade, a prioridade é controlar a frequência (betabloqueador é a primeira escolha quando não há insuficiência cardíaca descompensada) e avaliar o risco tromboembólico.\n\nPelo CHA₂DS₂-VA, a paciente soma 2 pontos (idade entre 65 e 74 anos e hipertensão), o que indica anticoagulação oral, preferencialmente com anticoagulante oral direto, salvo contraindicação.",
-    "commentary": "Cardioversão imediata fica reservada à instabilidade hemodinâmica; com mais de 48 horas de evolução, reverter o ritmo sem anticoagulação prévia de pelo menos 3 semanas (ou ecocardiograma transesofágico) expõe a risco de AVC. A amiodarona com alta sem anticoagular ignora o mesmo risco, que independe do ritmo voltar ao sinusal. Ablação é estratégia eletiva de controle de ritmo, não conduta de urgência.\n\nQuestão inédita, escrita para o DEsimulados no formato do ENAMED.",
-    "reference": "Diretriz Brasileira de Fibrilação Atrial (SBC, 2025); Diretriz ESC de Fibrilação Atrial (2024)",
+    "explanation": "A primeira decisão é avaliar estabilidade: PA 128/78 mmHg, oxigenação preservada e ausência de choque, isquemia, edema pulmonar ou rebaixamento de consciência. Assim, a taquicardia não exige cardioversão de emergência. Deve-se confirmar no ECG se há taquicardia supraventricular regular, flutter atrial ou outro mecanismo. Para QRS estreito regular e estabilidade, o algoritmo AHA 2025 orienta manobras vagais e, conforme o ritmo, adenosina, betabloqueador ou bloqueador de canais de cálcio. Cardioversão sincronizada pode ser usada se essas estratégias forem ineficazes, contraindicadas ou se houver indicação de controle precoce do ritmo.",
+    "commentary": "A é incompatível com taquicardia sem bloqueio/bradicardia; C (ecocardiograma transesofágico) não é exame inicial rotineiro num episódio comprovadamente curto; D exige avaliação do ritmo, da indicação de cardioversão e do risco tromboembólico, não uma prescrição automática. A letra B é apenas a mais defensável entre opções incompletas.",
+    "tip": "Primeiro classifique a taquicardia: estável ou instável? Depois, QRS estreito ou largo, regular ou irregular. Não cardioverta por causa da frequência isoladamente.",
     "tags": [
-      "cardiologia",
-      "fibrilação atrial",
-      "anticoagulação"
+      "clínica médica",
+      "gabarito técnico",
+      "gabarito provisório"
     ],
-    "tip": "FA estável com mais de 48 horas: controle a frequência e calcule o CHA₂DS₂-VA. Cardioversão sem anticoagulação prévia só se houver instabilidade."
+    "alert": "Gabarito provisório, não oficial (alta controvérsia). A prova não oferece a conduta inicial usual para taquicardia de QRS estreito estável. Não ensinar B como cardioversão obrigatória por FC de 135 bpm.",
+    "image": "/images/sugenamed1-1.PNG"
   },
   {
     "id": "sug-enamed1-2",
@@ -67,22 +67,21 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
   {
     "id": "sug-enamed1-4",
     "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher de 49 anos procura a Unidade Básica de Saúde com ondas de calor intensas, várias vezes ao dia, que atrapalham o sono e o trabalho. Os ciclos menstruais ficaram irregulares no último ano e a última menstruação foi há 7 meses.\n\nNão tem antecedentes de câncer de mama, trombose venosa, doença coronariana, AVC ou doença hepática. Não fuma. Tem útero. Mamografia e citologia oncótica recentes, normais. PA 124 × 80 mmHg; IMC 25 kg/m².\n\nEla deseja tratar os sintomas. Qual é a conduta indicada?",
+    "text": "Mulher de 51 anos é atendida em Unidade Básica de Saúde com queixa de ondas de calor, principalmente no tronco e na face, acompanhadas de sudorese, vertigem, palpitações, cefaleia e insônia. Refere que essas crises acontecem por volta de 6 a 8 vezes por dia, especialmente à noite. A paciente relata, ainda, irritabilidade, diminuição da libido, esquecimento e ansiedade.\n\nSua última menstruação foi há 14 meses. Tem hipertensão, controlada com enalapril e hidroclorotiazida, e diabetes mellitus, tratado com dieta e exercícios. Sem outros sintomas, comorbidades ou cirurgias prévias.\n\nAo exame físico, apresenta PA 130 × 80 mmHg, FC 86 bpm e IMC 30,4 kg/m². Sem outras alterações.\n\nExames recentes: mamografia com BI-RADS 2 bilateralmente, citopatológico de colo uterino negativo para células malignas.\n\nQual é o tratamento indicado para controlar os sintomas dessa paciente?",
     "options": [
-      "(A) Estrogênio isolado por via oral, por tempo indeterminado.",
-      "(B) Terapia hormonal com estrogênio associado a progestagênio.",
-      "(C) Isoflavonas de soja como primeira linha, reservando hormônio para casos refratários.",
-      "(D) Contraindicar terapia hormonal, pois a paciente tem mais de 45 anos."
+      "(A) Etinilestradiol 0,020 mg e drospirenona 3 mg via oral, 24 comprimidos por mês.",
+      "(B) Valerato de estradiol 2 mg via oral, 1 comprimido por dia.",
+      "(C) Fluoxetina 20 mg via oral, 1 comprimido por dia.",
+      "(D) 17 β-estradiol gel percutâneo 0,5 mg, diário; e progesterona micronizada 200 mg, via oral, 12 comprimidos por mês."
     ],
-    "correctAnswer": 1,
-    "explanation": "Sintomas vasomotores moderados a intensos que comprometem a qualidade de vida são a principal indicação de terapia hormonal. Em mulher com menos de 60 anos ou com menos de 10 anos de menopausa, sem contraindicações, os benefícios superam os riscos.\n\nComo a paciente tem útero, o estrogênio precisa ser associado a um progestagênio, que protege o endométrio contra hiperplasia e câncer. A dose e a duração são individualizadas e reavaliadas periodicamente.",
-    "commentary": "Estrogênio isolado em mulher com útero aumenta o risco de hiperplasia e câncer de endométrio, e não se prescreve por tempo indeterminado sem reavaliação. Isoflavonas têm efeito pequeno e inconsistente sobre os fogachos. A idade de 49 anos está dentro da janela em que a terapia hormonal é mais segura, não é contraindicação.\n\nQuestão inédita, escrita para o DEsimulados no formato do ENAMED.",
-    "reference": "Posicionamento da North American Menopause Society sobre terapia hormonal (2022); Consenso Brasileiro de Terapêutica Hormonal da Menopausa (SOBRAC)",
+    "correctAnswer": 3,
+    "explanation": "Amenorreia por 14 meses em mulher de 51 anos estabelece menopausa clínica. Os fogachos frequentes e o prejuízo de sono justificam discutir terapia hormonal se não houver contraindicação. A via transdérmica do 17β-estradiol evita a primeira passagem hepática e costuma ser vantajosa frente à via oral em pacientes com fatores cardiometabólicos, como obesidade, hipertensão e diabetes. Como a paciente não foi histerectomizada, a progesterona é necessária para reduzir risco de hiperplasia/câncer endometrial.",
+    "commentary": "A é contraceptivo combinado, não o regime menopausal de escolha; B oferece estrogênio isolado, inadequado para mulher com útero; C pode ajudar em algumas pacientes, mas é menos efetiva para fogachos que terapia hormonal elegível. Confirmar antecedentes de trombose, neoplasia hormônio-dependente, sangramento genital e risco cardiovascular antes da prescrição.",
+    "tip": "Fogachos incapacitantes + menopausa + útero presente: estradiol acompanhado de proteção endometrial. Avalie contraindicações e prefira via transdérmica quando houver risco cardiometabólico.",
     "tags": [
-      "climatério",
-      "terapia hormonal"
-    ],
-    "tip": "Tem útero? Estrogênio sempre com progestagênio. Menos de 60 anos ou menos de 10 anos de menopausa, sem contraindicação: a terapia hormonal é a escolha para fogachos intensos."
+      "ginecologia e obstetrícia",
+      "gabarito técnico"
+    ]
   },
   {
     "id": "sug-enamed1-5",
@@ -393,22 +392,21 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
   {
     "id": "sug-enamed1-21",
     "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher de 19 anos procura a Unidade Básica de Saúde preocupada porque teve relação sexual sem preservativo há cerca de 60 horas. Não usa método contraceptivo regular. A última menstruação começou há 12 dias, com ciclos regulares. Não tem comorbidades nem usa medicamentos.\n\nNão há dispositivo intrauterino disponível na unidade. Qual é a conduta adequada?",
+    "text": "Mulher de 21 anos é atendida em consulta médica em Unidade Básica de Saúde, demonstrando sinais de ansiedade e preocupação com uma possível gravidez indesejada, falando baixo e mostrando-se evidentemente constrangida.\n\nApós o médico reforçar que o atendimento é sigiloso e que está ali para ajudá-la, a paciente conta que, durante o ato sexual, cerca de 16 horas atrás, percebeu que o rapaz retirou o preservativo sem seu consentimento.\n\nAlém da profilaxia pós-exposição e da contracepção de emergência, qual é a conduta no momento do atendimento?",
     "options": [
-      "(A) Prescrever levonorgestrel 1,5 mg por via oral, em dose única, e orientar contracepção regular.",
-      "(B) Aguardar o atraso menstrual e solicitar β-hCG antes de qualquer prescrição.",
-      "(C) Informar que a contracepção de emergência só é eficaz nas primeiras 24 horas e não está mais indicada.",
-      "(D) Exigir teste de gravidez negativo e a presença de um responsável antes da prescrição."
+      "(A) Investigar a ausência de proteção durante o sexo.",
+      "(B) Notificar o caso como violência interpessoal.",
+      "(C) Encaminhar a paciente para exame de corpo de delito.",
+      "(D) Prescrever benzodiazepínico."
     ],
-    "correctAnswer": 0,
-    "explanation": "A contracepção de emergência com levonorgestrel pode ser usada até 5 dias após a relação desprotegida, com eficácia maior quanto mais cedo for tomada; o esquema preferido é 1,5 mg em dose única. Com 60 horas, ainda está indicada.\n\nO atendimento é também a oportunidade de oferecer um método contraceptivo regular e testagem para infecções sexualmente transmissíveis. Onde houver, o DIU de cobre inserido em até 5 dias é o método de emergência mais eficaz.",
-    "commentary": "Esperar o atraso menstrual faz perder a janela em que o método funciona. A eficácia não se limita a 24 horas: ela diminui com o tempo, mas persiste até o quinto dia. A paciente é maior de idade, e o teste de gravidez não é pré-requisito, porque o levonorgestrel não interrompe uma gestação já implantada.\n\nQuestão inédita, escrita para o DEsimulados no formato do ENAMED.",
-    "reference": "Ministério da Saúde. Cadernos de Atenção Básica nº 26 — Saúde Sexual e Saúde Reprodutiva; OMS. Critérios Médicos de Elegibilidade para Uso de Contraceptivos",
+    "correctAnswer": 1,
+    "explanation": "A retirada deliberada do preservativo sem consentimento ('stealthing') viola o consentimento sexual e configura violência sexual. O acolhimento deve preservar confidencialidade, autonomia, registrar a história sem julgamento, ofertar contracepção de emergência, profilaxias e exames pertinentes, além de notificação compulsória pelos serviços de saúde nos prazos previstos.",
+    "commentary": "A pode gerar culpabilização e não é ação prioritária; exame de corpo de delito pode ser informado e disponibilizado, mas não é pré-requisito do cuidado nem da notificação; benzodiazepínicos não são resposta automática. Notificação sanitária e comunicação policial são processos diferentes, com regras próprias.",
+    "tip": "Retirar preservativo sem consentimento configura violência sexual. Cuide, ofereça profilaxias e notifique; não exija boletim de ocorrência.",
     "tags": [
-      "contracepção de emergência",
-      "planejamento reprodutivo"
-    ],
-    "tip": "Contracepção de emergência vale até 5 dias: quanto antes, melhor. Não exige teste de gravidez nem acompanhante."
+      "ginecologia e obstetrícia",
+      "gabarito técnico"
+    ]
   },
   {
     "id": "sug-enamed1-22",
@@ -1019,23 +1017,24 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
   {
     "id": "sug-enamed1-53",
     "module": "Clínica Médica",
-    "text": "Homem de 58 anos, etilista, está internado há 3 dias com pneumonia em base esquerda, em uso de ceftriaxona e azitromicina. Mantém febre de 38,6 °C e dor ventilatória à esquerda.\n\nA radiografia de controle mostra derrame pleural que ocupa cerca de um terço do hemitórax esquerdo. A ultrassonografia confirma derrame livre, com finos septos. A toracocentese diagnóstica obtém líquido turvo, não purulento, com os seguintes resultados:\n\n• pH: 7,05\n• Glicose: 32 mg/dL (glicemia simultânea: 110 mg/dL)\n• DHL: 1.450 U/L (DHL sérica: 230 U/L)\n• Bacterioscopia (Gram): negativa\n\nQual é a conduta indicada?",
+    "text": "Homem de 50 anos é atendido em emergência com quadro de dispneia, tosse produtiva e dor torácica à direita há 4 dias, com piora progressiva. Relata história pregressa de diabetes e hipertensão arterial compensados. Nega tabagismo.\n\nO exame físico revela paciente hemodinamicamente estável, descorado 2+/4+; FR 24 irpm; à ausculta pulmonar, murmúrio vesicular abolido no terço inferior do hemitórax direito.\n\nÉ realizada radiografia de tórax, cujas imagens são mostradas a seguir.\n\nQual é a conduta inicial nesse caso?",
     "options": [
-      "(A) Manter o antibiótico e repetir a radiografia em 7 dias.",
-      "(B) Drenagem torácica tubular, mantendo a antibioticoterapia.",
-      "(C) Pleurodese com talco na mesma internação.",
-      "(D) Suspender o antibiótico e iniciar furosemida."
+      "(A) Toracocentese com agulha.",
+      "(B) Drenagem pleural em selo d'água.",
+      "(C) Videotoracoscopia.",
+      "(D) Biópsia pleural com agulha."
     ],
     "correctAnswer": 1,
-    "explanation": "O líquido é um exsudato (DHL pleural muito acima de dois terços do limite superior sérico), e o pH abaixo de 7,2 com glicose baixa define derrame parapneumônico complicado, mesmo com Gram negativo. Esse derrame não se resolve só com antibiótico.\n\nA conduta é drenar o espaço pleural com dreno torácico e manter a antibioticoterapia. Se a drenagem for insuficiente por septações, considera-se fibrinolítico intrapleural ou abordagem cirúrgica (videotoracoscopia).",
-    "commentary": "Apenas manter o antibiótico deixa evoluir para empiema organizado e encarceramento pulmonar. Pleurodese é usada em derrames recorrentes, como os neoplásicos, e não em infecção ativa. O derrame não é transudato de congestão: diurético não tem papel e o antibiótico não deve ser suspenso.\n\nQuestão inédita, escrita para o DEsimulados no formato do ENAMED.",
-    "reference": "British Thoracic Society Guideline for Pleural Disease (2023)",
+    "explanation": "A radiografia mostra coleção pleural direita importante e a redução do murmúrio vesicular corresponde à ocupação do espaço pleural. Tosse produtiva, dor pleurítica e evolução rápida sugerem derrame parapneumônico; se a imagem comprovar gás pleural, nível hidroaéreo, loculação extensa ou coleção purulenta, drenagem intercostal em selo d'água passa a ser necessária. Porém, em paciente estável com derrame novo não caracterizado, a toracocentese diagnóstica é normalmente o primeiro passo para avaliar pH, glicose, LDH, Gram e cultura.",
+    "commentary": "Videotoracoscopia é reservada a casos selecionados/fracasso de drenagem; biópsia pleural investiga etiologias específicas, não costuma ser o primeiro ato na infecção aguda. A escolha entre A e B depende da qualidade e interpretação da imagem, não apenas do tamanho do derrame.",
+    "tip": "Derrame pleural + possível ar no espaço pleural exige ler a radiografia com atenção: nível hidroaéreo/coleção complicada favorece drenagem, líquido simples pede punção diagnóstica.",
     "tags": [
-      "pneumologia",
-      "derrame pleural",
-      "pneumonia"
+      "clínica médica",
+      "gabarito técnico",
+      "gabarito provisório"
     ],
-    "tip": "Derrame parapneumônico com pH < 7,2, glicose < 60 ou pus = complicado: drene."
+    "alert": "Gabarito provisório, não oficial (ponto discutível). CONTROVÉRSIA A × B: examinar imagem para confirmar nível pleural gás-líquido/empiema ou derrame simples antes de afirmar drenagem imediata.",
+    "image": "/images/sugenamed1-53.PNG"
   },
   {
     "id": "sug-enamed1-54",
@@ -1173,7 +1172,6 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "reference": "EAU Paediatric Urology, acute scrotum",
     "alert": "Gabarito provisório, não oficial (potencial anulação). Nenhuma alternativa expressa exploração imediata com decisão intraoperatória de preservação versus orquiectomia."
   },
   {
@@ -1274,23 +1272,21 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
   {
     "id": "sug-enamed1-66",
     "module": "Pediatria",
-    "text": "Lactente de 3 meses, nascido a termo, em aleitamento materno exclusivo, é levado à Unidade Básica de Saúde porque a mãe está preocupada com regurgitações após quase todas as mamadas, de pequeno volume, sem esforço. A criança mama bem, não chora durante as mamadas e dorme bem.\n\nAo exame: bom estado geral, hidratado, ativo. Ganho de peso de 30 g/dia desde a última consulta. Não há vômitos com sangue ou bile, febre, irritabilidade, recusa alimentar ou alterações neurológicas.\n\nQual é a conduta adequada?",
+    "text": "Lactente de 2 meses é levado para consulta de rotina em uma Unidade Básica de Saúde. Está em aleitamento materno exclusivo e há queixa de regurgitações e vômitos frequentes após as mamadas. A mãe questiona se o leite materno está sendo insuficiente para saciar a criança.\n\nAo exame: bom estado geral, sem sinais de desidratação ou desconforto respiratório; ganho ponderal médio de 33 gramas/dia.\n\nA conduta adequada nesse caso é:",
     "options": [
-      "(A) Orientar e tranquilizar a família, mantendo o aleitamento materno exclusivo.",
-      "(B) Prescrever omeprazol por 4 semanas e reavaliar.",
-      "(C) Substituir o leite materno por fórmula antirregurgitação.",
-      "(D) Solicitar pHmetria esofágica de 24 horas."
+      "(A) Orientar a mãe a complementar a amamentação com fórmula infantil e agendar retorno em 15 dias.",
+      "(B) Prescrever medicamento antirrefluxo e orientar a mãe a observar a resposta ao tratamento.",
+      "(C) Orientar a mãe sobre posicionamento adequado durante e após as mamadas e agendar retorno para acompanhamento.",
+      "(D) Indicar o uso de fórmula antirrefluxo e encaminhar a criança para gastroenterologia pediátrica."
     ],
-    "correctAnswer": 0,
-    "explanation": "Regurgitações frequentes, sem esforço, em lactente que cresce bem e não tem sinais de alarme caracterizam refluxo gastroesofágico fisiológico, muito comum até os 6 meses e que costuma desaparecer até o fim do primeiro ano.\n\nA conduta é explicar a evolução benigna, orientar posição e pega na mamada e manter o aleitamento materno exclusivo, reavaliando o crescimento nas consultas de rotina.",
-    "commentary": "Inibidor de bomba de prótons não melhora regurgitação em lactentes saudáveis e tem efeitos adversos, como maior risco de infecções. Trocar o leite materno por fórmula tira da criança o melhor alimento sem necessidade. pHmetria é reservada a casos com sinais de alarme ou dúvida diagnóstica, não ao refluxo fisiológico.\n\nQuestão inédita, escrita para o DEsimulados no formato do ENAMED.",
-    "reference": "Diretriz NASPGHAN/ESPGHAN de Refluxo Gastroesofágico Pediátrico (2018)",
+    "correctAnswer": 2,
+    "explanation": "Regurgitar após mamadas é comum aos 2 meses pela imaturidade do esfíncter esofagiano inferior, dieta líquida e decúbito. O lactente está ativo, hidratado e cresce cerca de 33 g/dia, evidência de ingestão suficiente e refluxo fisiológico, sem sinais de doença do refluxo gastroesofágico complicada. Orientar pega/posição durante alimentação, evitar oferta excessiva e manter vertical no colo por curto período enquanto acordado.",
+    "commentary": "Fórmulas complementares/antirrefluxo e fármacos não são necessários diante de crescimento adequado. Segurança do sono: bebê SEMPRE em decúbito dorsal, em superfície firme e plana, mesmo com regurgitação; não indicar prona ou elevação improvisada do berço. Vigiar falha ponderal, sangue, vômitos biliosos e engasgos importantes.",
+    "tip": "Lactente que regurgita, mas ganha 33 g/dia e está bem, geralmente tem refluxo fisiológico: oriente e acompanhe, sem retirar leite materno.",
     "tags": [
-      "gastroenterologia pediátrica",
-      "refluxo",
-      "lactente"
-    ],
-    "tip": "Regurgita, mas cresce bem e não tem sinal de alarme? É fisiológico: oriente e mantenha o leite materno. Nada de IBP."
+      "pediatria",
+      "gabarito técnico"
+    ]
   },
   {
     "id": "sug-enamed1-67",
@@ -1330,29 +1326,26 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "reference": "MS NT 100/2022",
     "alert": "Gabarito provisório, não oficial (cuidado na interpretação). Fonte: Ministério da Saúde, Nota Técnica nº 100/2022 e Manual de Gestação de Alto Risco."
   },
   {
     "id": "sug-enamed1-69",
     "module": "Clínica Médica",
-    "text": "Homem de 38 anos, garimpeiro em Roraima, é levado à Unidade de Pronto Atendimento com febre alta há 6 dias, calafrios, cefaleia e, desde ontem, confusão mental e urina escura.\n\nAo exame: sonolento, desorientado; ictérico (3+/4+); PA 100 × 60 mmHg; FC 116 bpm; temperatura axilar 39,4 °C.\n\nExames: hemoglobina 6,8 g/dL; plaquetas 38.000/mm³; creatinina 3,2 mg/dL; bilirrubina total 9,5 mg/dL; glicemia 64 mg/dL. A gota espessa mostra Plasmodium falciparum com parasitemia elevada.\n\nQual é o tratamento antimalárico de escolha?",
+    "text": "Homem de 32 anos, pardo, jangadeiro, residente no Amazonas, sem histórico de viagens recentes para fora do estado, deu entrada em uma Unidade de Pronto Atendimento com história de dor abdominal no hipocôndrio direito, icterícia, febre, calafrios e rebaixamento do nível de consciência.\n\nOs exames laboratoriais de admissão mostraram hiperbilirrubinemia de 45 mg/dL (VR: 0,2 a 1,1 mg/dL), acidose metabólica grave, trombocitopenia, creatinina 5,8 mg/dL (VR: 0,63 a 1,06 mg/dL) e leucocitose com desvio até metamielócitos. O escore APACHE II foi 37.\n\nConsiderando-se a principal hipótese diagnóstica para o quadro, que exame deve ser realizado para a confirmação diagnóstica?",
     "options": [
-      "(A) Cloroquina e primaquina por via oral.",
-      "(B) Artesunato por via endovenosa.",
-      "(C) Doxiciclina por via oral isolada.",
-      "(D) Arteméter + lumefantrina por via oral, em regime ambulatorial."
+      "(A) PCR em tempo real.",
+      "(B) Gota espessa.",
+      "(C) Sorologias.",
+      "(D) Esfregaço delgado."
     ],
     "correctAnswer": 1,
-    "explanation": "O paciente tem malária por P. falciparum com vários critérios de gravidade: alteração do nível de consciência, icterícia, anemia grave, insuficiência renal, hipoglicemia e parasitemia elevada.\n\nNa malária grave, o tratamento de escolha é o artesunato endovenoso, em ambiente hospitalar com suporte intensivo. Quando o paciente consegue tomar medicação oral, o tratamento é completado com um esquema combinado com derivado de artemisinina.",
-    "commentary": "Cloroquina com primaquina é o esquema para malária por P. vivax, e P. falciparum é resistente à cloroquina no Brasil. Doxiciclina isolada age devagar e só é usada em associação. Arteméter + lumefantrina oral trata a malária falciparum não complicada, e não um quadro grave que exige internação.\n\nQuestão inédita, escrita para o DEsimulados no formato do ENAMED.",
-    "reference": "Ministério da Saúde. Guia de Tratamento da Malária no Brasil (2021)",
+    "explanation": "Malária grave na Amazônia pode apresentar febre, icterícia acentuada, trombocitopenia, lesão renal aguda, acidose metabólica e alteração de consciência, mesmo sem história de viagem fora do estado: a área de residência já é endêmica. A gota espessa é exame parasitológico sensível, rápido e tradicionalmente de escolha para confirmação e pesquisa de formas do Plasmodium. Esfregaço delgado auxilia especiação e parasitemia.",
+    "commentary": "PCR pode ter maior sensibilidade em situações específicas, mas não é exame imediato de rotina em urgência; sorologia não confirma infecção ativa em tempo oportuno. Muito importante: colangite grave e leptospirose também são diferenciais, pelo padrão de icterícia e falência orgânica; avaliação e tratamento de sepse e malária não podem ser atrasados.",
+    "tip": "Febre, icterícia, insuficiência renal e rebaixamento de consciência em área de malária = quadro grave. Confirme rapidamente por gota espessa sem atrasar suporte.",
     "tags": [
-      "infectologia",
-      "malária",
-      "doenças tropicais"
-    ],
-    "tip": "Malária grave por falciparum = artesunato endovenoso. Cloroquina + primaquina é esquema de vivax."
+      "clínica médica",
+      "gabarito técnico"
+    ]
   },
   {
     "id": "sug-enamed1-70",
@@ -1474,23 +1467,21 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
   {
     "id": "sug-enamed1-76",
     "module": "Saúde Coletiva",
-    "text": "Uma médica de família assume uma equipe de Saúde da Família recém-implantada em um bairro periférico de uma capital, com crescimento recente de ocupações e poucos dados atualizados. Ela quer conhecer, em poucas semanas, os principais problemas de saúde e as condições de vida da população para planejar as ações da equipe junto com a comunidade.\n\nQual estratégia é a mais adequada para esse objetivo?",
+    "text": "Um médico de família acaba de assumir equipe em comunidade periférica de município de grande porte, com altos índices de violência e vulnerabilidade social. Devido à forte pressão assistencial na Unidade Básica de Saúde (UBS), ele decide iniciar seu planejamento pela priorização de ações emergenciais e realização de uma estimativa rápida no território.\n\nQue tipo de metodologias e estratégias esse médico deve utilizar para realizar essa estimativa?",
     "options": [
-      "(A) Inquérito domiciliar censitário com questionário padronizado aplicado a todas as famílias.",
-      "(B) Aguardar o próximo censo do IBGE para ter dados populacionais confiáveis.",
-      "(C) Estimativa rápida participativa, combinando dados já existentes, entrevistas com informantes-chave e observação do território.",
-      "(D) Planejar as ações apenas com base nas queixas dos usuários que procuram a unidade."
+      "(A) Dados epidemiológicos gerais disponíveis em sistemas de informação em saúde nacionais com foco na avaliação dos indicadores de saúde da região.",
+      "(B) Dados qualitativos de fontes primárias, como observação, documentos e informantes-chave da comunidade, e dados epidemiológicos locais.",
+      "(C) Entrevistas individuais por amostragem com os moradores da região e coleta de dados do censo do IBGE.",
+      "(D) Análise dos prontuários para verificar diagnósticos registrados em consulta médica dos pacientes do território atendidos na UBS."
     ],
-    "correctAnswer": 2,
-    "explanation": "A estimativa rápida participativa foi pensada para essa situação: obter, em pouco tempo e com baixo custo, um retrato dos problemas e recursos de um território. Combina dados secundários (registros da unidade, sistemas de informação), entrevistas com informantes-chave (lideranças, moradores antigos, profissionais) e observação direta do território pela equipe.\n\nAlém de rápida, envolve a comunidade na definição das prioridades, como propõe a Política Nacional de Atenção Básica.",
-    "commentary": "Um inquérito censitário é demorado e caro para o objetivo. Esperar o censo deixaria a equipe sem diagnóstico por anos, e os dados não teriam o detalhe local necessário. Planejar só pela demanda espontânea ignora quem não chega à unidade, justamente a população mais vulnerável.\n\nQuestão inédita, escrita para o DEsimulados no formato do ENAMED.",
-    "reference": "Política Nacional de Atenção Básica (Portaria nº 2.436/2017); OPAS. Estimativa rápida participativa",
+    "correctAnswer": 1,
+    "explanation": "Estimativa rápida participativa do território não pretende produzir censo exaustivo: busca reconhecer problemas prioritários mediante observação direta, entrevistas com informantes-chave, análise de documentos locais e indicadores epidemiológicos contextualizados. Combinar dados qualitativos de fontes primárias com informações secundárias permite compreender problemas de violência, vulnerabilidade, condições de vida e acesso e definir prioridades de intervenção.",
+    "commentary": "A usa somente agregados nacionais e ignora singularidades territoriais; C demanda inquérito amostral formal, mais lento; D restringe-se aos usuários que já acessaram a UBS e perde os invisibilizados pelo serviço. A questão exige método de diagnóstico situacional rápido.",
+    "tip": "Estimativa rápida combina ouvir informantes-chave, observar o território e consultar dados locais; censo sozinho não mostra a vida cotidiana.",
     "tags": [
-      "atenção primária",
-      "territorialização",
-      "diagnóstico de saúde"
-    ],
-    "tip": "Precisa conhecer o território rápido e com a comunidade? Estimativa rápida participativa: dados existentes + informantes-chave + observação."
+      "saúde coletiva",
+      "gabarito técnico"
+    ]
   },
   {
     "id": "sug-enamed1-77",
@@ -1644,8 +1635,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "tags": [
       "saúde coletiva",
       "gabarito técnico"
-    ],
-    "reference": "Lei 9.656/1998; ANS"
+    ]
   },
   {
     "id": "sug-enamed1-85",
@@ -1766,23 +1756,24 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
   {
     "id": "sug-enamed1-91",
     "module": "Clínica Médica",
-    "text": "Mulher de 34 anos, sem comorbidades, procura o pronto-socorro com palpitações de início e fim súbitos há 40 minutos, semelhantes a episódios curtos que já teve antes. Nega dor torácica, dispneia ou síncope.\n\nAo exame: PA 118 × 76 mmHg; FC 186 bpm; SatO₂ 99%; perfusão periférica preservada.\n\nO ECG mostra taquicardia regular com QRS estreito, sem ondas P visíveis.\n\nQual é a primeira medida terapêutica?",
+    "text": "Homem de 55 anos, piloto da aviação civil, procura unidade de emergência de hospital de grande porte com queixa de palpitações e mal-estar geral. Apresenta FC 160 bpm, apesar de encontrar-se hemodinamicamente estável, sem congestão pulmonar ou baixo débito.\n\nO ECG inicial revela a presença de taquiarritmia regular de complexos QRS estreitos. Após tratamento adequado, é revertida a arritmia cardíaca e o paciente é submetido a novo ECG, mostrado a seguir.\n\nQual foi a provável arritmia apresentada pelo paciente?",
     "options": [
-      "(A) Cardioversão elétrica sincronizada.",
-      "(B) Amiodarona endovenosa em bolus.",
-      "(C) Manobra vagal, como a manobra de Valsalva modificada.",
-      "(D) Anticoagulação plena antes de qualquer tentativa de reversão."
+      "(A) Taquicardia ventricular idiopática.",
+      "(B) Taquicardia supraventricular antidrômica.",
+      "(C) Síndrome de Wolff-Parkinson-White.",
+      "(D) Fibrilação atrial paroxística."
     ],
     "correctAnswer": 2,
-    "explanation": "Taquicardia regular de QRS estreito, de início súbito, em paciente jovem e estável sugere taquicardia por reentrada nodal ou por via acessória. A primeira medida é a manobra vagal; a Valsalva modificada (esforço seguido de elevação das pernas em decúbito dorsal) reverte uma proporção maior de casos que a manobra clássica.\n\nSe não reverter, o próximo passo é adenosina endovenosa em bolus rápido. Depois do episódio, a paciente deve ser encaminhada para avaliação de ablação, que costuma ser curativa.",
-    "commentary": "Cardioversão elétrica é para instabilidade ou falha das medidas farmacológicas. Amiodarona não é a escolha inicial na taquicardia supraventricular estável. Anticoagulação não se aplica, porque não se trata de fibrilação ou flutter atrial.\n\nQuestão inédita, escrita para o DEsimulados no formato do ENAMED.",
-    "reference": "American Heart Association. Adult Advanced Life Support — taquicardia com pulso (2025); Diretriz ESC de Taquicardia Supraventricular (2019)",
+    "explanation": "No ECG APÓS reversão, procura-se o padrão de pré-excitação ventricular: PR curto, início lentificado do QRS (onda delta) e QRS que pode estar alargado. Esse conjunto identifica síndrome de Wolff–Parkinson–White, substrato de vias acessórias capaz de produzir taquicardia por reentrada. Uma taquicardia REGULAR de QRS ESTREITO nesses pacientes costuma ser reentrada atrioventricular ortodrômica; a taquicardia antidrômica geralmente é de QRS largo.",
+    "commentary": "A taquicardia ventricular normalmente alarga QRS; B contradiz a descrição de QRS estreito inicial; FA paroxística é classicamente irregular. A alternativa C nomeia a síndrome de pré-excitação, não propriamente o mecanismo da arritmia inicial. Confirmar no traçado se delta e PR curto estão presentes.",
+    "tip": "Taquicardia regular estreita revertida + PR curto e onda delta no ECG basal = pré-excitação por via acessória (WPW).",
     "tags": [
-      "cardiologia",
-      "taquicardia supraventricular",
-      "emergência"
+      "clínica médica",
+      "gabarito técnico",
+      "gabarito provisório"
     ],
-    "tip": "Taquicardia regular de QRS estreito e estável: manobra vagal, depois adenosina. Cardioversão só se houver instabilidade."
+    "alert": "Gabarito provisório, não oficial (dependente do ecg). Classificação depende da leitura do ECG original; não inferir WPW apenas pela frequência de 160 bpm.",
+    "image": "/images/sugenamed1-91.PNG"
   },
   {
     "id": "sug-enamed1-92",

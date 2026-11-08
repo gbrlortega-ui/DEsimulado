@@ -21,7 +21,7 @@ export const SUGERIDOS: SuggestedExam[] = [
     description: 'Questões no formato do ENAMED, de todas as áreas, sempre na mesma ordem.',
     warning:
       'O gabarito deste simulado é técnico, não oficial: nenhuma banca publicou respostas para estas questões. ' +
-      'As questões com gabarito provisório têm um aviso no comentário, e as inéditas, escritas pelo DEsimulados, vêm indicadas no comentário.',
+      'As questões com gabarito provisório têm um aviso no comentário.',
     questions: SUGERIDO_ENAMED_1_QUESTIONS,
   },
 ];
