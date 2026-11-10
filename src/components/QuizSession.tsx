@@ -14,19 +14,19 @@ import {
 import { Brand } from './Brand';
 import { Question, UserAnswer, QuizSettings, QuizResults, Module } from '../types';
 import { cn, examLabel, isAccepted, stripOptionLetter } from '../lib/utils';
-import type { SuggestedExam } from '../data/sugeridos';
 import { Howl } from 'howler';
 
 interface QuizSessionProps {
   questions: Question[];
   settings: QuizSettings;
-  preset?: SuggestedExam;
+  /** Simulado sugerido ou por topografia: título e aviso opcional. */
+  info?: { title: string; warning?: string };
   onFinish: (results: QuizResults, answers: UserAnswer[]) => void;
   onExit: () => void;
 }
 
 
-export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, preset, onFinish, onExit }) => {
+export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, info, onFinish, onExit }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [startTime] = useState(Date.now());
@@ -195,10 +195,10 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, p
               </div>
             </div>
 
-            {preset && currentIndex === 0 && (
+            {info?.warning && currentIndex === 0 && (
               <div role="note" className="flex gap-3 rounded-xl border border-accent-amber/50 bg-amber-soft px-4 py-3 text-sm leading-relaxed text-ink">
                 <AlertTriangle className="w-5 h-5 text-accent-amber shrink-0 mt-0.5" aria-hidden />
-                <p><span className="font-semibold">{preset.title}.</span> {preset.warning}</p>
+                <p><span className="font-semibold">{info.title}.</span> {info.warning}</p>
               </div>
             )}
 
@@ -437,8 +437,8 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, p
           </div>
 
           <div className="p-4 border-t border-line bg-bg-2 shrink-0">
-            <div className="text-xs text-muted">{preset ? 'Simulado' : 'Área'}</div>
-            <div className="text-sm font-semibold text-ink mt-0.5">{preset ? preset.title : settings.module === 'Misto' ? 'Todas as áreas' : settings.module}</div>
+            <div className="text-xs text-muted">{info ? 'Simulado' : 'Área'}</div>
+            <div className="text-sm font-semibold text-ink mt-0.5">{info ? info.title : settings.module === 'Misto' ? 'Todas as áreas' : settings.module}</div>
           </div>
         </aside>
       </main>

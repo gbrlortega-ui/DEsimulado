@@ -7,6 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 /** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "enamed-2026-3" → "ENAMED 2026"; "sug-enamed1-5" → "ENAMED 1" (simulado sugerido). */
 export function examLabel(id: string) {
+  if (id.startsWith('topo-')) return 'Topografia';
   const sug = id.match(/^sug-([a-z]+)(\d+)-\d+$/i);
   if (sug) return `${sug[1].toUpperCase()} ${sug[2]}`;
   const tp = id.match(/^([a-zA-Z]+)(\d{4})-\d+$/);

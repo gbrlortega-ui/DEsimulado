@@ -7,15 +7,17 @@ import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { QUESTIONS as BANK } from '../src/data/questions';
 import { SUGERIDOS } from '../src/data/sugeridos';
+import { TOPOGRAPHY_QUESTIONS } from '../src/data/topografia_questoes';
+import { findTopographyGroup } from '../src/data/topografia';
 import type { Module } from '../src/types';
 
 const MODULES: Module[] = [
   'Pediatria', 'Clínica Médica', 'Cirurgia', 'Ginecologia e Obstetrícia',
   'Saúde Coletiva', 'Ciências Básicas', 'ENAMED',
 ];
-const ID_PATTERN = /^(tp\d{4}-\d+|enamed-\d{4}-\d+|sug-[a-z]+\d+-\d+)$/;
+const ID_PATTERN = /^(tp\d{4}-\d+|enamed-\d{4}-\d+|sug-[a-z]+\d+-\d+|topo-\d+(?:-\d+)+)$/;
 // Banco geral + simulados sugeridos (validados juntos para pegar IDs repetidos entre eles).
-const QUESTIONS = [...BANK, ...SUGERIDOS.flatMap((s) => s.questions)];
+const QUESTIONS = [...BANK, ...SUGERIDOS.flatMap((s) => s.questions), ...TOPOGRAPHY_QUESTIONS];
 const LETTERS = 'ABCDE';
 
 const errors: string[] = [];
@@ -27,7 +29,7 @@ QUESTIONS.forEach((q, i) => {
   const err = (m: string) => errors.push(`${where}: ${m}`);
   const warn = (m: string) => warnings.push(`${where}: ${m}`);
 
-  if (!ID_PATTERN.test(q.id)) err(`ID fora do padrão (tp2026-12, enamed-2026-12 ou sug-enamed1-12)`);
+  if (!ID_PATTERN.test(q.id)) err(`ID fora do padrão (tp2026-12, enamed-2026-12, sug-enamed1-12 ou topo-1-1-12)`);
   seen.set(q.id, (seen.get(q.id) ?? 0) + 1);
   if (!MODULES.includes(q.module)) err(`módulo inválido: "${q.module}"`);
   if (!q.text?.trim()) err('enunciado vazio');
@@ -40,6 +42,11 @@ QUESTIONS.forEach((q, i) => {
   });
   if (!Number.isInteger(q.correctAnswer) || q.correctAnswer < 0 || q.correctAnswer >= q.options.length)
     err(`correctAnswer ${q.correctAnswer} fora do intervalo`);
+  if (q.topography !== undefined) {
+    const g = findTopographyGroup(q.topography);
+    if (!g) err(`topografia desconhecida: ${q.topography}`);
+    else if (q.topic && !g.topics.some((t) => t.name === q.topic)) err(`assunto "${q.topic}" não existe em ${g.name}`);
+  } else if (q.id.startsWith('topo-')) err('questão de topografia sem `topography`');
   q.alsoAccepted?.forEach((i) => {
     if (i === q.correctAnswer || i < 0 || i >= q.options.length) err(`alsoAccepted inválido: ${i}`);
   });

@@ -25,6 +25,10 @@ export interface Question {
   alsoAccepted?: number[];
   /** Bizu: dica curta para a tomada de decisão. */
   tip?: string;
+  /** Especialidade no roteiro por topografia (ex.: "1.1" = Neurologia). */
+  topography?: string;
+  /** Assunto dentro da especialidade (ex.: "Cefaleias"). */
+  topic?: string;
 }
 
 export interface QuizSettings {
@@ -33,6 +37,8 @@ export interface QuizSettings {
   immediateFeedback: boolean;
   /** Simulado sugerido (lista fixa de questões, sem sorteio). */
   presetId?: string;
+  /** Simulado por topografia: id da especialidade ("1.1") ou da região ("1"). */
+  topography?: string;
 }
 
 export interface UserAnswer {

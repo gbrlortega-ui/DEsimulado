@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import { ChevronLeft, Check } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Check } from 'lucide-react';
 import { Brand } from './Brand';
 import { Module, QuizSettings } from '../types';
 import { AREAS, COUNT_BY_AREA, TOTAL_QUESTIONS } from '../data/stats';
 import { SUGERIDOS, type SuggestedExam } from '../data/sugeridos';
+import { TOPOGRAPHY_GROUPS } from '../data/topografia';
+import { TOPOGRAPHY_COUNT } from '../data/topografiaPool';
 import { cn } from '../lib/utils';
 
 interface QuizSetupProps {
   initialModule?: Module;
   onBack: () => void;
   onStart: (settings: QuizSettings) => void;
+  onTopography: () => void;
 }
 
 const questionCounts = [10, 20, 30, 40, 50, 60, 80, 100];
@@ -39,7 +42,7 @@ const SuggestedCard: React.FC<{ exam: SuggestedExam; onStart: (settings: QuizSet
   );
 };
 
-export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', onBack, onStart }) => {
+export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', onBack, onStart, onTopography }) => {
   const [settings, setSettings] = useState<QuizSettings>({
     questionCount: 20,
     module: initialModule,
@@ -80,6 +83,27 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
             </div>
           </section>
         )}
+
+        <section className="mt-10">
+          <h2 className="text-base font-sans font-semibold">Por topografia</h2>
+          <button
+            type="button"
+            onClick={onTopography}
+            className="group mt-3 w-full flex items-center justify-between gap-4 rounded-2xl border border-line-2 bg-white p-5 sm:p-6 text-left hover:border-primary transition-colors"
+          >
+            <span>
+              <span className="block text-xl font-extrabold font-heading text-ink group-hover:text-primary-ink transition-colors">Simulado por topografia</span>
+              <span className="block mt-1.5 text-ink-2">Cabeça e pescoço, tórax, abdome… Escolha a região do corpo e a especialidade.</span>
+              <span className="block mt-2 text-sm text-muted">
+                {(() => {
+                  const open = TOPOGRAPHY_GROUPS.filter((g) => (TOPOGRAPHY_COUNT[g.id] ?? 0) > 0).length;
+                  return open === 0 ? 'Novidade: as especialidades serão liberadas aos poucos.' : `${open} de ${TOPOGRAPHY_GROUPS.length} especialidades disponíveis.`;
+                })()}
+              </span>
+            </span>
+            <ChevronRight size={22} className="shrink-0 text-muted group-hover:text-primary-ink transition-colors" />
+          </button>
+        </section>
 
         <section className="mt-12">
           <h2 className="text-base font-sans font-semibold">Monte o seu: área</h2>
