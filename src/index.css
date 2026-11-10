@@ -88,3 +88,9 @@
 .option-btn.locked {
   @apply cursor-default;
 }
+
+/* Aviso de carregamento: só aparece se demorar (ver `Loading` em App.tsx). */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

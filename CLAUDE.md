@@ -7,12 +7,20 @@ automático a cada push na branch `main` deste repositório.
 ## Stack
 
 React 19 + Vite 6 + TypeScript + Tailwind 4. Não há backend: todas as questões ficam em
-`src/data/*.ts` e são empacotadas no bundle.
+`src/data/*.ts`.
+
+**Carregamento:** o banco de questões (~2,4 MB) fica num arquivo à parte (`src/data/bancoCompleto.ts`,
+carregado por `src/data/banco.ts`), baixado em segundo plano depois que a página inicial abre. As telas
+iniciais usam só `src/data/resumo.ts` (contagens, simulados sugeridos e amostras), **gerado** por
+`npm run gen`, que não deve ser editado à mão. Componentes de tela não devem importar `questions.ts`,
+`sugeridos.ts` ou `topografiaPool.ts` direto, senão o banco volta para o arquivo principal.
 
 ## Comandos
 
 - `npm run dev` — servidor local (porta 3000)
-- `npm run validate` — valida o banco de questões (IDs, alternativas, gabarito, imagens)
+- `npm run gen` — regenera `src/data/resumo.ts` (roda sozinho antes de `dev` e `build`)
+- `npm run validate` — valida o banco de questões (IDs, alternativas, gabarito, imagens) e
+  confere se o `resumo.ts` está em dia
 - `npm run check` — tipos + validação + build. **Rodar antes de todo push.**
 
 O GitHub Actions (`.github/workflows/ci.yml`) roda o mesmo `check` em cada push e pull request.
@@ -52,7 +60,8 @@ Formato em `src/types.ts` (`Question`). Convenções:
 
 ## Fluxo de alteração
 
-1. Fazer a mudança e rodar `npm run check`.
+1. Fazer a mudança e rodar `npm run check`. Se mexeu em questões, rodar `npm run gen` e commitar
+   o `resumo.ts` junto.
 2. Para mudanças de interface, conferir no navegador (`npm run build && npx vite preview`).
 3. Commit em português, descrevendo o que muda para o aluno.
 4. Push na `main` → a Vercel publica em ~1 minuto. Conferir o deploy.

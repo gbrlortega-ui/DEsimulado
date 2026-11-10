@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
+    "predev": "npm run gen",
+    "gen": "tsx scripts/gen-summary.ts",
     "build": "vite build",
+    "prebuild": "npm run gen",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
