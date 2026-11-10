@@ -40,3 +40,12 @@ export async function pickQuestions(settings: QuizSettings): Promise<Question[]>
   }
   return shuffled.slice(0, settings.questionCount);
 }
+
+/** Recupera as questões de um simulado salvo, na mesma ordem. Retorna null se alguma não existir mais. */
+export async function questionsByIds(ids: string[]): Promise<Question[] | null> {
+  const { QUESTIONS, SUGERIDOS, TOPOGRAPHY_QUESTIONS } = await loadBank();
+  const byId = new Map<string, Question>();
+  [...QUESTIONS, ...SUGERIDOS.flatMap((s) => s.questions), ...TOPOGRAPHY_QUESTIONS].forEach((q) => byId.set(q.id, q));
+  const found = ids.map((id) => byId.get(id));
+  return found.every(Boolean) ? (found as Question[]) : null;
+}

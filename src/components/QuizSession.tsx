@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   AlertTriangle,
@@ -14,7 +14,8 @@ import {
 import { Brand } from './Brand';
 import { Question, UserAnswer, QuizSettings, QuizResults, Module } from '../types';
 import { cn, examLabel, isAccepted, stripOptionLetter } from '../lib/utils';
-import { Howl } from 'howler';
+import { playCorrect, playWrong } from '../lib/sounds';
+import { clearProgress, progressFor, saveProgress } from '../lib/progress';
 
 interface QuizSessionProps {
   questions: Question[];
@@ -27,10 +28,15 @@ interface QuizSessionProps {
 
 
 export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, info, onFinish, onExit }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
-  const [startTime] = useState(Date.now());
-  const [timeElapsed, setTimeElapsed] = useState(0);
+  // Retoma o progresso salvo deste simulado (página recarregada ou botão "voltar").
+  const [restored] = useState(() => progressFor(questions.map((q) => q.id)));
+  const [currentIndex, setCurrentIndex] = useState(() =>
+    restored ? Math.min(Math.max(0, restored.currentIndex), questions.length - 1) : 0
+  );
+  const [userAnswers, setUserAnswers] = useState<UserAnswer[]>(() => restored?.answers ?? []);
+  const [startTime] = useState(() => Date.now() - (restored?.elapsed ?? 0) * 1000);
+  const [timeElapsed, setTimeElapsed] = useState(() => restored?.elapsed ?? 0);
+  const scrollRef = useRef<HTMLElement>(null);
   const [questionTimeLeft, setQuestionTimeLeft] = useState(90);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
   const [isMobileMapOpen, setIsMobileMapOpen] = useState(false);
@@ -38,15 +44,10 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
   const currentQuestion = questions[currentIndex];
   const currentAnswer = userAnswers.find(a => a.questionId === currentQuestion.id);
 
-  // Sound initialization wrapped safely
-  let successSound: Howl | null = null;
-  let errorSound: Howl | null = null;
-  try {
-    successSound = new Howl({ src: ['https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3'], volume: 0.15 });
-    errorSound = new Howl({ src: ['https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3'], volume: 0.15 });
-  } catch (e) {
-    console.warn("Audio Context could not be initialized directly", e);
-  }
+  // Salva a cada resposta, troca de questão e segundo do cronômetro.
+  useEffect(() => {
+    saveProgress({ settings, ids: questions.map((q) => q.id), answers: userAnswers, currentIndex, elapsed: timeElapsed });
+  }, [settings, questions, userAnswers, currentIndex, timeElapsed]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -55,8 +56,10 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
     return () => clearInterval(timer);
   }, [startTime]);
 
+  // Nova questão: cronômetro da questão recomeça e a leitura volta para o topo do enunciado.
   useEffect(() => {
     setQuestionTimeLeft(90);
+    scrollRef.current?.scrollTo({ top: 0 });
   }, [currentIndex]);
 
   useEffect(() => {
@@ -73,8 +76,8 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
     const isCorrect = isAccepted(currentQuestion, optionIndex);
 
     if (settings.immediateFeedback) {
-      if (isCorrect) successSound?.play();
-      else errorSound?.play();
+      if (isCorrect) playCorrect();
+      else playWrong();
     }
 
     const newAnswer: UserAnswer = {
@@ -164,7 +167,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
       {/* Main Layout Area */}
       <main className="flex-1 flex overflow-hidden min-h-0">
         {/* Scrollable Question Content */}
-        <section className="flex-1 overflow-y-auto px-4 py-5 sm:px-8 sm:py-10 space-y-6">
+        <section ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-5 sm:px-8 sm:py-10 space-y-6">
           <div className="max-w-3xl mx-auto space-y-6">
 
             {/* Header / Badges Row */}
@@ -470,7 +473,10 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
 
                 <div className="flex flex-col gap-2 pt-2">
                   <button
-                    onClick={() => onFinish(calculateResults(), userAnswers)}
+                    onClick={() => {
+                      clearProgress();
+                      onFinish(calculateResults(), userAnswers);
+                    }}
                     className="w-full py-3 bg-primary hover:bg-primary-2 text-white font-bold rounded-lg text-xs sm:text-sm shadow-sm"
                   >
                     Finalizar e ver resultado

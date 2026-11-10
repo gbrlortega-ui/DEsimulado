@@ -1,15 +1,55 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronRight, RefreshCw, Check, X } from 'lucide-react';
+import { ChevronRight, RefreshCw, Check, X, PlayCircle } from 'lucide-react';
 import { Brand } from './Brand';
 import { Module, Question } from '../types';
 import { AREAS, COUNT_BY_AREA, EDITIONS, TOTAL_QUESTIONS, randomSample } from '../data/stats';
 import { cn, examLabel, firstParagraph, stripOptionLetter } from '../lib/utils';
 
+interface ResumeInfo {
+  /** Nome do simulado sugerido, quando for o caso. */
+  title?: string;
+  answered: number;
+  total: number;
+  onResume: () => void;
+  onDiscard: () => void;
+}
+
 interface LandingPageProps {
   onSetup: (module?: Module) => void;
   onQuickStart: () => void;
+  /** Simulado em andamento salvo neste navegador. */
+  resume?: ResumeInfo;
 }
+
+/* ---------- Aviso de simulado em andamento ---------- */
+const ResumeBanner: React.FC<{ resume: ResumeInfo }> = ({ resume }) => (
+  <div className="container-custom pt-6">
+    <div
+      role="region"
+      aria-label="Simulado em andamento"
+      className="flex flex-col sm:flex-row sm:items-center gap-4 rounded-2xl border border-primary/40 bg-primary-soft px-5 py-4"
+    >
+      <PlayCircle className="hidden sm:block w-8 h-8 text-primary-ink shrink-0" aria-hidden />
+      <div className="flex-1">
+        <p className="font-semibold text-ink">
+          Você tem um simulado em andamento{resume.title ? `: ${resume.title}` : ''}.
+        </p>
+        <p className="text-sm text-ink-2 mt-0.5 tabular-nums">
+          {resume.answered} de {resume.total} questões respondidas.
+        </p>
+      </div>
+      <div className="flex gap-2 shrink-0">
+        <button type="button" onClick={resume.onResume} className="btn btn-primary flex-1 sm:flex-none">
+          Continuar
+        </button>
+        <button type="button" onClick={resume.onDiscard} className="btn btn-ghost flex-1 sm:flex-none">
+          Descartar
+        </button>
+      </div>
+    </div>
+  </div>
+);
 
 const fmt = (n: number) => n.toLocaleString('pt-BR');
 
@@ -117,7 +157,7 @@ const SampleQuestion: React.FC<{ onQuickStart: () => void }> = ({ onQuickStart }
 };
 
 /* ---------- Página ---------- */
-export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart }) => {
+export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart, resume }) => {
   const tp = EDITIONS.filter((e) => e.kind === 'TP');
   const enamed = EDITIONS.filter((e) => e.kind === 'ENAMED');
   const years = (list: typeof EDITIONS) => (list.length ? `${list[0].year}–${list[list.length - 1].year}` : '');
@@ -137,6 +177,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart 
       </header>
 
       <main className="flex-1">
+        {resume && <ResumeBanner resume={resume} />}
         {/* Abertura */}
         <section className="container-custom pt-10 pb-16 sm:pt-20 sm:pb-24 grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           <div className="lg:col-span-6">

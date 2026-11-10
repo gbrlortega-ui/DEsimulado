@@ -1,20 +1,19 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# DEsimulados
 
-# Run and deploy your AI Studio app
+Simulados gratuitos para estudantes de Medicina, com questões comentadas do Teste de Progresso e do
+ENAMED, sem cadastro: https://www.desimulados.com.br
 
-This contains everything you need to run your app locally.
+React 19 + Vite + TypeScript + Tailwind. Não há backend: as questões ficam em `src/data/`.
 
-View your app in AI Studio: https://ai.studio/apps/26337920-cf0d-47f8-a9d1-5b3d4c1bc178
+## Rodar localmente
 
-## Run Locally
+Requer Node.js 22.
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run check    # tipos + validação do banco + build (rodar antes de todo push)
+```
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Convenções do banco de questões, imagens e fluxo de publicação estão no [CLAUDE.md](CLAUDE.md).
+O deploy na Vercel é automático a cada push na `main`.

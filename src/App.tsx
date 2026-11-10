@@ -9,7 +9,8 @@ import { LandingPage } from './components/LandingPage';
 import { Module, Question, QuizSettings, QuizResults, UserAnswer } from './types';
 import { SUGERIDOS_INFO } from './data/resumo';
 import { findTopographyGroup, TOPOGRAPHY } from './data/topografia';
-import { loadBank, pickQuestions } from './data/banco';
+import { loadBank, pickQuestions, questionsByIds } from './data/banco';
+import { clearProgress, loadProgress, type SavedQuiz } from './lib/progress';
 
 // Telas carregadas sob demanda: a página inicial abre sem esperar por elas.
 const loadSetup = () => import('./components/QuizSetup');
@@ -77,6 +78,37 @@ export default function App() {
   const [initialModule, setInitialModule] = useState<Module>('Misto');
   const [starting, setStarting] = useState<QuizSettings | null>(null);
   const [loadError, setLoadError] = useState(false);
+  /** Simulado em andamento salvo no navegador (aparece na página inicial para continuar). */
+  const [saved, setSaved] = useState<SavedQuiz | null>(() => loadProgress());
+
+  /** Troca de tela registrando no histórico: o "voltar" do navegador/celular volta uma tela, sem sair do site. */
+  const go = (next: AppState, replace = false) => {
+    setState(next);
+    const entry = { tela: next };
+    if (replace) window.history.replaceState(entry, '');
+    else if (window.history.state?.tela !== next) window.history.pushState(entry, '');
+    window.scrollTo(0, 0);
+  };
+
+  // "Voltar"/"avançar" do navegador. O simulado em andamento fica salvo e pode ser retomado.
+  useEffect(() => {
+    const onPop = (e: PopStateEvent) => {
+      const tela = (e.state?.tela as AppState | undefined) ?? 'landing';
+      setStarting(null);
+      setState(tela);
+      if (tela === 'landing') setSaved(loadProgress());
+      window.scrollTo(0, 0);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  // Página recarregada no meio do simulado: volta direto para a questão em que o aluno estava.
+  useEffect(() => {
+    if (window.history.state?.tela === 'quiz' && saved) resumeQuiz(saved, true);
+    else window.history.replaceState({ tela: 'landing' }, '');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Depois que a página inicial aparece, baixa o resto em segundo plano.
   useEffect(() => {
@@ -94,14 +126,10 @@ export default function App() {
 
   const handleStartSetup = (module?: Module) => {
     setInitialModule(module ?? 'Misto');
-    setState('setup');
-    window.scrollTo(0, 0);
+    go('setup');
   };
 
-  const handleOpenTopography = () => {
-    setState('topography');
-    window.scrollTo(0, 0);
-  };
+  const handleOpenTopography = () => go('topography');
 
   /** Título e aviso mostrados durante o simulado (sugerido ou por topografia). */
   const sessionInfo = (() => {
@@ -119,13 +147,43 @@ export default function App() {
     setLoadError(false);
     try {
       const questions = await pickQuestions(newSettings);
+      clearProgress(); // um simulado novo substitui o que estava em andamento
+      setSaved(null);
       setSettings(newSettings);
       setActiveQuestions(questions);
-      setState('quiz');
+      go('quiz');
       setStarting(null);
     } catch {
       setLoadError(true);
     }
+  };
+
+  /** Continua o simulado salvo: mesmas questões, respostas e cronômetro. */
+  const resumeQuiz = async (progress: SavedQuiz, replace = false) => {
+    setStarting(progress.settings);
+    setLoadError(false);
+    try {
+      const questions = await questionsByIds(progress.ids);
+      if (!questions) {
+        // Alguma questão saiu do banco: não dá para retomar com segurança.
+        clearProgress();
+        setSaved(null);
+        setStarting(null);
+        if (replace) window.history.replaceState({ tela: 'landing' }, '');
+        return;
+      }
+      setSettings(progress.settings);
+      setActiveQuestions(questions);
+      go('quiz', replace);
+      setStarting(null);
+    } catch {
+      setLoadError(true);
+    }
+  };
+
+  const discardSaved = () => {
+    clearProgress();
+    setSaved(null);
   };
 
   const handleQuickStart = () => startQuiz({ questionCount: 10, module: 'Misto', immediateFeedback: true });
@@ -133,38 +191,59 @@ export default function App() {
   const handleFinishQuiz = (finalResults: QuizResults, answers: UserAnswer[]) => {
     setResults(finalResults);
     setUserAnswers(answers);
-    setState('results');
+    setSaved(null);
+    go('results', true); // "voltar" no resultado não reabre o simulado já entregue
   };
 
   // Refazer: mesmas questões, mesma ordem.
   const handleResetQuiz = () => {
     setUserAnswers([]);
     setResults(null);
-    setState('quiz');
+    go('quiz', true);
   };
 
   const handleNewQuiz = () => {
     setSettings(null);
     setUserAnswers([]);
     setResults(null);
-    setState('setup');
+    go('setup');
   };
 
   const handleGoHome = () => {
     setSettings(null);
     setUserAnswers([]);
     setResults(null);
-    setState('landing');
+    setSaved(loadProgress());
+    go('landing');
   };
+
+  // Tela sem os dados de que precisa (ex.: "avançar" do navegador depois de sair): mostra a inicial.
+  const screen: AppState = (state === 'quiz' && !settings) || (state === 'results' && !results) ? 'landing' : state;
 
   return (
     <MotionConfig reducedMotion="user">
     <div className="antialiased">
       <LoadBoundary>
       <Suspense fallback={<Loading />}>
-      {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} />}
+      {screen === 'landing' && (
+        <LandingPage
+          onSetup={handleStartSetup}
+          onQuickStart={handleQuickStart}
+          resume={
+            saved
+              ? {
+                  title: SUGERIDOS_INFO.find((s) => s.id === saved.settings.presetId)?.title,
+                  answered: saved.answers.length,
+                  total: saved.ids.length,
+                  onResume: () => resumeQuiz(saved),
+                  onDiscard: discardSaved,
+                }
+              : undefined
+          }
+        />
+      )}
 
-      {state === 'setup' && (
+      {screen === 'setup' && (
         <QuizSetup
           initialModule={initialModule}
           onBack={handleGoHome}
@@ -173,11 +252,11 @@ export default function App() {
         />
       )}
 
-      {state === 'topography' && (
+      {screen === 'topography' && (
         <TopographySetup onBack={() => handleStartSetup()} onHome={handleGoHome} onStart={startQuiz} />
       )}
 
-      {state === 'quiz' && settings && (
+      {screen === 'quiz' && settings && (
         <QuizSession
           // Nova chave a cada sorteio: o simulado começa do zero mesmo com as mesmas configurações.
           key={activeQuestions.map((q) => q.id).join()}
@@ -189,7 +268,7 @@ export default function App() {
         />
       )}
 
-      {state === 'results' && results && (
+      {screen === 'results' && results && (
         <ResultsView
           results={results}
           onReset={handleResetQuiz}
