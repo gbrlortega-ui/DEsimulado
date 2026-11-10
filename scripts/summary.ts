@@ -39,6 +39,7 @@ export function summarySource(): string {
   const pool = QUESTIONS.filter(
     (q) =>
       !q.image &&
+      !q.annulled &&
       q.text.length <= 460 &&
       q.options.every((o) => o.length <= 120) &&
       q.explanation.length >= 80

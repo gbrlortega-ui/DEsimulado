@@ -27,6 +27,11 @@ export function stripOptionLetter(option: string) {
   return option.replace(/^\s*\([A-E]\)\s*/, '');
 }
 
+/** Questões que entram na nota (as anuladas pela banca ficam de fora). */
+export function scored<T extends { annulled?: boolean }>(questions: T[]) {
+  return questions.filter((q) => !q.annulled);
+}
+
 /** A alternativa conta como certa? (considera questões com mais de uma resposta válida) */
 export function isAccepted(q: { correctAnswer: number; alsoAccepted?: number[] }, option: number) {
   return option === q.correctAnswer || (q.alsoAccepted?.includes(option) ?? false);

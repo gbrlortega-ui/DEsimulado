@@ -14,7 +14,7 @@ import {
 import { Brand } from './Brand';
 import { Explanation } from './Explanation';
 import { Question, UserAnswer, QuizSettings, QuizResults, Module } from '../types';
-import { cn, examLabel, isAccepted, stripOptionLetter } from '../lib/utils';
+import { cn, examLabel, isAccepted, scored, stripOptionLetter } from '../lib/utils';
 import { playCorrect, playWrong } from '../lib/sounds';
 import { clearProgress, progressFor, saveProgress } from '../lib/progress';
 
@@ -100,14 +100,18 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
   };
 
   const calculateResults = (): QuizResults => {
-    const correctCount = userAnswers.filter(a => a.isCorrect).length;
-    const total = questions.length;
+    // Anuladas pela banca ficam fora da nota, do total e do desempenho por área.
+    const counted = scored(questions);
+    const countedIds = new Set(counted.map(q => q.id));
+    const countedAnswers = userAnswers.filter(a => countedIds.has(a.questionId));
+    const correctCount = countedAnswers.filter(a => a.isCorrect).length;
+    const total = counted.length;
 
     const modulePerf: Record<string, { correct: number; total: number }> = {};
     const moduleList: Module[] = ['Pediatria', 'Clínica Médica', 'Cirurgia', 'Ginecologia e Obstetrícia', 'Saúde Coletiva', 'Ciências Básicas', 'ENAMED'];
     moduleList.forEach(m => modulePerf[m] = { correct: 0, total: 0 });
 
-    questions.forEach(q => {
+    counted.forEach(q => {
       if (!modulePerf[q.module]) modulePerf[q.module] = { correct: 0, total: 0 };
       modulePerf[q.module].total++;
       const ans = userAnswers.find(a => a.questionId === q.id);
@@ -115,10 +119,11 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
     });
 
     return {
-      score: (correctCount / total) * 100,
+      score: total ? (correctCount / total) * 100 : 0,
       totalQuestions: total,
       correctCount,
-      wrongCount: userAnswers.length - correctCount,
+      wrongCount: countedAnswers.length - correctCount,
+      annulledCount: questions.length - total,
       timeSpent: timeElapsed,
       modulePerformance: modulePerf
     };
@@ -185,6 +190,11 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                 <span className="bg-primary-soft text-primary-ink px-2 py-0.5 rounded-md font-semibold text-xs">
                   {examLabel(currentQuestion.id)}
                 </span>
+                {currentQuestion.annulled && (
+                  <span className="bg-amber-soft text-ink border border-accent-amber/50 px-2 py-0.5 rounded-md font-semibold text-xs" title="Anulada pela banca: não conta na nota">
+                    Anulada
+                  </span>
+                )}
               </div>
 
               {/* Question Countdown */}
@@ -287,14 +297,16 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                   animate={{ opacity: 1, y: 0 }}
                   className={cn(
                     "rounded-xl border bg-white overflow-hidden",
-                    currentAnswer.isCorrect ? "border-accent-green/40" : "border-accent-coral/40"
+                    currentQuestion.annulled ? "border-accent-amber/50" : currentAnswer.isCorrect ? "border-accent-green/40" : "border-accent-coral/40"
                   )}
                 >
                   <div className={cn(
                     "px-5 py-3 font-semibold text-[15px]",
-                    currentAnswer.isCorrect ? "bg-primary-soft text-primary-ink" : "bg-coral-soft text-accent-coral"
+                    currentQuestion.annulled ? "bg-amber-soft text-ink" : currentAnswer.isCorrect ? "bg-primary-soft text-primary-ink" : "bg-coral-soft text-accent-coral"
                   )}>
-                    {currentAnswer.isCorrect
+                    {currentQuestion.annulled
+                      ? `Questão anulada pela banca: não conta na sua nota. Alternativa mais aceita: ${String.fromCharCode(65 + currentQuestion.correctAnswer)}.`
+                      : currentAnswer.isCorrect
                       ? 'Você acertou.'
                       : `Resposta correta: ${String.fromCharCode(65 + currentQuestion.correctAnswer)}.`}
                   </div>
@@ -369,7 +381,9 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
 
                 let btnStyle = "bg-bg text-muted border border-line";
                 if (answer) {
-                  if (settings.immediateFeedback) {
+                  if (settings.immediateFeedback && q.annulled) {
+                    btnStyle = "bg-amber-soft text-ink border-accent-amber/50";
+                  } else if (settings.immediateFeedback) {
                     btnStyle = answer.isCorrect
                       ? "bg-primary-soft text-primary-ink border-accent-green/40"
                       : "bg-coral-soft text-accent-coral border-accent-coral/40";
@@ -487,7 +501,9 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
 
                     let btnStyle = "bg-bg text-muted border border-line";
                     if (answer) {
-                      if (settings.immediateFeedback) {
+                      if (settings.immediateFeedback && q.annulled) {
+                        btnStyle = "bg-amber-soft text-ink border-accent-amber/50";
+                      } else if (settings.immediateFeedback) {
                         btnStyle = answer.isCorrect
                           ? "bg-primary-soft text-primary-ink border-accent-green/40"
                           : "bg-coral-soft text-accent-coral border-accent-coral/40";

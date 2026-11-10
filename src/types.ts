@@ -23,6 +23,8 @@ export interface Question {
   alert?: string;
   /** Outras alternativas aceitas como corretas (questões com duas respostas válidas). */
   alsoAccepted?: number[];
+  /** Anulada pela banca: fica para estudo, mas não entra na nota do simulado. */
+  annulled?: boolean;
   /** Bizu: dica curta para a tomada de decisão. */
   tip?: string;
   /** Especialidade no roteiro por topografia (ex.: "1.1" = Neurologia). */
@@ -55,6 +57,8 @@ export interface QuizResults {
   totalQuestions: number;
   correctCount: number;
   wrongCount: number;
+  /** Questões anuladas pela banca no simulado (fora da nota e do total). */
+  annulledCount?: number;
   timeSpent: number; // in seconds
   modulePerformance: Record<string, { correct: number; total: number }>;
 }

@@ -639,67 +639,68 @@ export const SAMPLE_QUESTIONS: Question[] = [
     ]
   },
   {
-    "id": "enamed-2025-11",
+    "id": "enamed-2025-16",
     "module": "ENAMED",
-    "text": "Paciente de 25 anos, com duas gestações e um parto, no segundo trimestre de gestação, compareceu à primeira consulta de pré-natal sem queixas. Após orientações e realização dos testes rápidos, verificou-se que o teste para sífilis foi positivo e imediatamente a paciente recebeu 2,4 milhões UI de penicilina benzatina intramuscular. Paciente nega diagnóstico e tratamento prévios para sífilis.\n\nEm relação ao acompanhamento da paciente, é correto afirmar que",
+    "text": "Recém-nascido de 15 dias, a termo, Apgar 8/9, peso e comprimento ao nascer de 2.600 g e 46 cm, respectivamente, com síndrome de Down, e cuja gestação não apresentou outras intercorrências. Está na consulta de puericultura com peso e comprimento atuais de 2.900 g e 47 cm, respectivamente.\n\nPara o acompanhamento pôndero-estatural, os dados devem ser plotados nas",
     "options": [
-      "(A) com o tratamento instituído, o feto não terá sequelas.",
-      "(B) titulações menores ou iguais a um quarto indicarão cicatriz sorológica.",
-      "(C) a queda de duas titulações do VDRL indicará efetividade de tratamento.",
-      "(D) o exame de FTA-Abs reagente indicará doença ativa."
+      "(A) curvas de crescimento da OMS desde o nascimento até a adolescência.",
+      "(B) curvas de crescimento específicas para síndrome de Down desde o nascimento.",
+      "(C) curvas de crescimento da OMS, corrigindo o peso e o comprimento para síndrome de Down.",
+      "(D) curvas de crescimento da OMS até os dois anos e, a partir daí, em curvas específicas para síndrome de Down."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Crianças com síndrome de Down apresentam um padrão de crescimento diferente da população geral, com velocidade de crescimento, peso e estatura próprios. Por esse motivo, recomenda-se utilizar curvas de crescimento específicas para síndrome de Down desde o nascimento, permitindo uma avaliação mais precisa do desenvolvimento pôndero-estatural.",
+    "commentary": "As curvas da Organização Mundial da Saúde (OMS) continuam sendo úteis para comparação populacional, porém não refletem adequadamente o padrão esperado desses pacientes. Também não existe correção matemática do peso ou comprimento para síndrome de Down, tornando incorretas as demais alternativas.",
+    "reference": "Ministério da Saúde / Puericultura e acompanhamento da criança com Síndrome de Down",
+    "tags": [
+      "pediatria",
+      "puericultura",
+      "síndrome de down"
+    ]
+  },
+  {
+    "id": "enamed-2025-66",
+    "module": "ENAMED",
+    "text": "Homem de 24 anos comparece à Unidade Básica de Saúde (UBS) para avaliação de lesão ulcerada em pênis com cerca de 10 dias de evolução. Refere relação sexual desprotegida há aproximadamente 3 semanas. Ao exame físico, observa-se úlcera única, de bordas elevadas, endurecidas, indolor e com fundo limpo. Linfonodos inguinais discretamente aumentados, móveis e indolores.\n\nO diagnóstico mais provável e o tratamento indicado são, respectivamente,",
+    "options": [
+      "(A) Cancro mole; azitromicina 1 g VO em dose única.",
+      "(B) Herpes genital; aciclovir 400 mg VO por 7 dias.",
+      "(C) Sífilis primária; penicilina benzatina 2,4 milhões UI IM em dose única.",
+      "(D) Linfogranuloma venéreo; doxiciclina 100 mg VO por 21 dias."
     ],
     "correctAnswer": 2,
-    "explanation": "Embora a questão tenha sido anulada, o acompanhamento da sífilis durante a gestação é realizado principalmente por meio dos testes não treponêmicos, como o VDRL. Em geral, espera-se uma queda de duas diluições (quatro vezes) do título do VDRL após tratamento adequado, indicando resposta terapêutica.",
-    "commentary": "Observação: Esta questão foi anulada pelo ENAMED. A alternativa C é a que mais se aproxima do conceito correto, mas a forma como foi redigida gerou interpretação controversa, motivo pelo qual a banca optou pela anulação. A alternativa A é falsa porque o tratamento reduz de forma significativa, mas não zera o risco. B utiliza um conceito inadequado de cicatriz sorológica, que não é definida apenas por um título do VDRL. D é incorreta pois o FTA-Abs permanece reagente por muitos anos (frequentemente para toda a vida) e não indica atividade da doença.",
-    "reference": "Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST) / Ministério da Saúde",
+    "explanation": "A lesão descrita corresponde ao cancro duro, manifestação clássica da sífilis primária, causada pelo Treponema pallidum. Caracteriza-se por ser uma úlcera única, de bordas elevadas e endurecidas, indolor, de fundo limpo, frequentemente associada à linfadenomegalia inguinal indolor e bilateral. O tratamento de escolha recomendado pelo Ministério da Saúde é a penicilina G benzatina 2,4 milhões UI IM em dose única.",
+    "commentary": "O cancro mole (A) apresenta lesões múltiplas, dolorosas, com fundo purulento e linfadenite que fistuliza por orifício único (asclere). O herpes genital (B) cursa com múltiplas vesículas que evoluem para úlceras rasas dolorosas e recorrentes. O linfogranuloma venéreo (D) se manifesta por pápula/pústula efêmera seguida por adenopatia inguinal dolorosa com múltiplos orifícios de drenagem (bico de regador).",
+    "reference": "Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmitíveis (PCDT-IST) - Ministério da Saúde",
     "tags": [
+      "infectologia",
       "ginecologia",
-      "obstetrícia",
+      "urologia",
       "sífilis",
-      "gestação"
+      "IST"
     ]
   },
   {
-    "id": "enamed-2025-63",
+    "id": "enamed-2025-95",
     "module": "ENAMED",
-    "text": "Uma equipe de Saúde da Família percebeu aumento do número de casos complicados de diabetes mellitus. Entre 3.500 pacientes cadastrados, 280 possuem diabetes tipo 2. A equipe elaborou um projeto de intervenção coletiva com orientação nutricional e incentivo à atividade física para reduzir complicações.\n\nQual é o desenho de pesquisa mais adequado para avaliar o impacto desse projeto?",
+    "text": "Menina de 11 anos é levada pela mãe à Unidade Básica de Saúde por cansaço, palidez cutânea e baixo rendimento escolar há três meses. O hemograma mostra hemoglobina de 8,4 g/dL, VCM de 62 fL, HCM de 24 pg, CHCM de 28 g/dL, RDW de 22%, eosinofilia discreta e plaquetas de 480.000/mm³.\n\nQual é a conduta mais adequada?",
     "options": [
-      "(A) Estudo de caso-controle aninhado.",
-      "(B) Ensaio clínico não randomizado.",
-      "(C) Estudo de coorte retrospectivo.",
-      "(D) Ensaio clínico randomizado."
+      "(A) Dosar ferro sérico, por ser exame sensível e específico.",
+      "(B) Iniciar ferro elementar 4 mg/kg/dia, esperando aumento dos reticulócitos em 4 a 7 dias.",
+      "(C) Classificar a anemia como normocítica e solicitar esfregaço pela presença de anisocitose e eliptocitose.",
+      "(D) Encaminhar ao hematologista devido à eosinofilia e trombocitose."
     ],
-    "correctAnswer": 3,
-    "explanation": "Para avaliar com o maior rigor metodológico possível o impacto de uma intervenção ativa (projeto educativo de orientação nutricional e atividade física), eliminando vieses de confusão e seleção, o Ensaio Clínico Randomizado (ECR) é considerado o delineamento experimental padrão-ouro. Nele, os indivíduos (ou as microáreas/grupos) são aleatorizados entre receber a intervenção e o cuidado habitual, permitindo inferir relação de causalidade direta sobre a redução de complicações.",
-    "commentary": "Estudos observacionais como coorte retrospectivo (C) e caso-controle (A) apenas avaliam retrospectivamente associações de risco preexistentes, sem controle experimental ativo da intervenção. Ensaios não randomizados (B) sofrem com forte viés de seleção sistemático.",
-    "reference": "Epidemiologia Clínica: Elementos Essenciais / Fletcher / Medronho",
+    "correctAnswer": 1,
+    "explanation": "O hemograma revela uma anemia microcítica (VCM 62 fL) e hipocrômica (HCM 24 pg, CHCM 28 g/dL) com anisocitose acentuada (RDW de 22% - valor de referência < 14,5%), que é a apresentação laboratorial clássica da anemia ferropriva (deficiência de ferro). Diante de forte suspeita epidemiológica e laboratorial na infância/adolescência, a conduta recomendada na atenção básica é o teste terapêutico com reposição de ferro elementar (dose de 3 a 5 mg/kg/dia). O primeiro sinal de eficácia do tratamento é a resposta reticulocitária (aumento dos reticulócitos), observada entre o 4º e o 7º dia do início da terapia.",
+    "commentary": "O ferro sérico isolado (A) é um exame de baixa sensibilidade e especificidade devido à variação circadiana e influência da dieta. A anemia é francamente microcítica, não normocítica (C). A trombocitose (plaquetas 480.000/mm³) é reacional à deficiência de ferro (eritropoietina estimula a trombopoiese por homologia estrutural) e a eosinofilia discreta é comum e frequentemente associada a parasitoses intestinais na infância (causa de perda crônica de ferro), não justificando encaminhamento ao hematologista (D).",
+    "reference": "Tratado de Pediatria da Sociedade Brasileira de Pediatria (SBP) / Diretrizes de Anemia Ferropriva",
     "tags": [
-      "saúde coletiva",
-      "metodologia científica",
-      "epidemiologia",
-      "ensaio clínico"
-    ]
-  },
-  {
-    "id": "enamed-2025-93",
-    "module": "ENAMED",
-    "text": "Paciente de 45 anos é atendida na Unidade Básica de Saúde com dor ocular após acidente doméstico com alvejante, que atingiu seu olho direito. Ao exame físico, observa-se hiperemia intensa, opacidade de córnea e queimadura química da pálpebra superior.\n\nQual é o manejo correto?",
-    "options": [
-      "(A) Prescrever analgésico tópico e colírio lubrificante.",
-      "(B) Lavar os olhos com solução de água boricada e realizar curativo oclusivo.",
-      "(C) Lavagem ocular com solução fisiológica e avaliação imediata pelo especialista.",
-      "(D) Prescrever colírio de corticoide tópico e encaminhar precocemente ao especialista."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Queimaduras químicas oculares (por ácidos ou bases, como o alvejante) constituem emergências oftalmológicas absolutas. A conduta imediata e mais crítica, que deve ser iniciada ainda no local do acidente ou na primeira unidade de saúde atendida, é a lavagem ocular abundante com solução salina (fisiológica) ou água corrente por no mínimo 15 a 30 minutos, visando remover resíduos do agente químico e restaurar o pH fisiológico da superfície ocular. Em seguida, após a lavagem exaustiva, o paciente deve ser encaminhado com extrema urgência para avaliação por um oftalmologista para avaliação de lesão límbica, isquemia e conduta definitiva.",
-    "commentary": "Prescrever apenas analgésico e lubrificante (A) ou corticoides tópicos (D) sem lavagem imediata é incorreto e pode levar a sequelas cicatriciais graves e cegueira. A lavagem com água boricada (B) e a realização de curativo oclusivo imediato não são indicados, pois o curativo oclusivo em queimadura química aguda pode reter substâncias nocivas e piorar a isquemia da superfície ocular.",
-    "reference": "Manual de Urgências em Oftalmologia / Conselho Brasileiro de Oftalmologia (CBO)",
-    "tags": [
-      "oftalmologia",
-      "urgência e emergência",
-      "queimadura química",
-      "lavagem ocular",
-      "trauma ocular"
+      "pediatria",
+      "hematologia",
+      "anemia ferropriva",
+      "deficiência de ferro",
+      "ferro elementar",
+      "reticulócitos"
     ]
   }
 ];

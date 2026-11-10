@@ -58,6 +58,10 @@ QUESTIONS.forEach((q, i) => {
     if (!q.image.startsWith('/images/')) err(`imagem fora de /images/: ${q.image}`);
     else if (!existsSync(join('public', q.image))) err(`imagem não encontrada: public${q.image}`);
   }
+  const mentionsAnnulled = /quest[aã]o (foi )?(oficialmente )?(exclu[ií]da\/)?anulada|questão anulada/i.test(
+    [q.explanation, q.commentary, q.alert, ...(q.tags ?? [])].join(' ')
+  );
+  if (mentionsAnnulled && !q.annulled) err('comentário diz que a questão foi anulada, mas falta `annulled: true` (senão ela conta na nota)');
   if (/\b(SatO|SpO) \d/.test(q.text)) warn('"SatO"/"SpO" sem o ₂ (texto extraído de PDF?)');
   if (/QUESTÃO \d+|ÁREA LIVRE/.test(q.text)) err('resto de diagramação do PDF no enunciado');
 });

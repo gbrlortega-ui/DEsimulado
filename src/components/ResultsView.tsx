@@ -54,9 +54,10 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
       ? `Seu ponto mais fraco neste simulado foi ${weakest.name}: ${weakest.correct} de ${weakest.total}. Vale começar a revisão por ela.`
       : 'Antes do próximo simulado, volte aos temas das questões que você errou.';
 
-  const missed = questions.filter((q) => !answers.find((a) => a.questionId === q.id)?.isCorrect);
+  const missed = questions.filter((q) => !q.annulled && !answers.find((a) => a.questionId === q.id)?.isCorrect);
+  const annulled = results.annulledCount ?? 0;
 
-  const seg = (n: number) => `${(n / results.totalQuestions) * 100}%`;
+  const seg = (n: number) => (results.totalQuestions ? `${(n / results.totalQuestions) * 100}%` : "0%");
 
   return (
     <div className="min-h-screen bg-bg pb-16">
@@ -111,6 +112,13 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
               </div>
             ))}
           </dl>
+          {annulled > 0 && (
+            <p className="mt-4 text-sm text-muted">
+              {annulled === 1
+                ? '1 questão anulada pela banca ficou fora da nota.'
+                : `${annulled} questões anuladas pela banca ficaram fora da nota.`}
+            </p>
+          )}
         </section>
 
         {/* Por área */}

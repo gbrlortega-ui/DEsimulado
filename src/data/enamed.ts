@@ -109,6 +109,7 @@ export const ENAMED_QUESTIONS: Question[] = [
       '(D) Síndrome extrapiramidal; prometazina intramuscular.'
     ],
     correctAnswer: 0, // A
+    annulled: true,
     explanation: 'O quadro clínico é bastante sugestivo de distonia aguda induzida por haloperidol, caracterizada por contrações musculares involuntárias, principalmente em pescoço, mandíbula e musculatura ocular, surgindo poucos dias após o início de um antipsicótico típico. O tratamento mais recomendado consiste na administração de biperideno intramuscular (anticolinérgico de ação rápida).',
     commentary: 'Observação: Esta questão foi anulada pelo ENAMED devido à possibilidade de uso alternativo de prometazina intramuscular em alguns protocolos locais, gerando margem para dupla interpretação nas alternativas A e D.',
     reference: 'Diretrizes de Psiquiatria / Emergências Psiquiátricas',
@@ -141,6 +142,7 @@ export const ENAMED_QUESTIONS: Question[] = [
       '(D) síndrome da resposta inflamatória sistêmica.'
     ],
     correctAnswer: 0, // A
+    annulled: true,
     explanation: 'O caso descreve uma criança imunossuprimida com provável pneumonia e sinais laboratoriais de gravidade, como lactato elevado e acidose metabólica. Esses elementos sugerem sepse (disfunção orgânica decorrente de resposta desregulada do hospedeiro à infecção).',
     commentary: 'Observação: Esta questão foi anulada pelo ENAMED administrativamente devido a divergências de critérios diagnósticos em pediatria internacional versus nacional.',
     reference: 'Campanha de Sobrevivência à Sepse em Pediatria',
@@ -157,6 +159,7 @@ export const ENAMED_QUESTIONS: Question[] = [
       '(D) neoplasia de cólon obstrutiva.'
     ],
     correctAnswer: 2, // C
+    annulled: true,
     explanation: 'O quadro clínico é altamente sugestivo de hérnia femoral encarcerada, diagnóstico comum em mulheres idosas. O abaulamento inguinal doloroso, irredutível, associado a sintomas de oclusão intestinal (vômitos e diminuição de eliminação de flatos) sinaliza o encarceramento agudo.',
     commentary: 'Observação: Esta questão foi anulada oficialmente pelo ENAMED por erro material de digitação/redação divergente entre os cadernos de prova, mas o raciocínio diagnóstico permanece perfeitamente válido.',
     reference: 'Sabiston Tratado de Cirurgia',
@@ -173,6 +176,7 @@ export const ENAMED_QUESTIONS: Question[] = [
       '(D) o exame de FTA-Abs reagente indicará doença ativa.'
     ],
     correctAnswer: 2, // C
+    annulled: true,
     explanation: 'Embora a questão tenha sido anulada, o acompanhamento da sífilis durante a gestação é realizado principalmente por meio dos testes não treponêmicos, como o VDRL. Em geral, espera-se uma queda de duas diluições (quatro vezes) do título do VDRL após tratamento adequado, indicando resposta terapêutica.',
     commentary: 'Observação: Esta questão foi anulada pelo ENAMED. A alternativa C é a que mais se aproxima do conceito correto, mas a forma como foi redigida gerou interpretação controversa, motivo pelo qual a banca optou pela anulação. A alternativa A é falsa porque o tratamento reduz de forma significativa, mas não zera o risco. B utiliza um conceito inadequado de cicatriz sorológica, que não é definida apenas por um título do VDRL. D é incorreta pois o FTA-Abs permanece reagente por muitos anos (frequentemente para toda a vida) e não indica atividade da doença.',
     reference: 'Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST) / Ministério da Saúde',
@@ -637,6 +641,7 @@ export const ENAMED_QUESTIONS: Question[] = [
       '(D) Cloroquina.'
     ],
     correctAnswer: 1, // B
+    annulled: true,
     explanation: 'A questão foi excluída/anulada pela banca oficial do ENAMED devido a discordâncias epidemiológicas locais e falta de dados adicionais de resistência regional do Plasmodium no enunciado. Sob a ótica teórica geral, a doxiciclina é uma das alternativas de escolha reconhecidas para quimioprofilaxia em indivíduos que vão se expor a áreas de risco com circulação de Plasmodium falciparum resistente a múltiplos fármacos (incluindo cloroquina).',
     commentary: 'Observação: Esta questão foi oficialmente excluída/anulada pela banca realizadora do ENAMED 2025, não somando pontos para classificação. A alternativa B (doxiciclina) representa a droga profilática mais plausível em regimes de alta resistência.',
     reference: 'Guia de Vigilância em Saúde do Ministério da Saúde / Organização Mundial da Saúde (OMS)',
@@ -685,6 +690,7 @@ export const ENAMED_QUESTIONS: Question[] = [
       '(D) Drenagem percutânea guiada por tomografia.'
     ],
     correctAnswer: 3, // D
+    annulled: true,
     explanation: 'Embora a questão tenha sido anulada oficialmente pela banca do ENAMED devido a um erro material de grafia na unidade de medida (citou-se 100 mm³ em vez de 100 cm³ ou mL em algumas versões de prova, o que seria microscópico), teoricamente a conduta indicada para diverticulite aguda complicada por abscesso pélvico volumoso (Hinchey II, > 3-4 cm) é a drenagem percutânea guiada por imagem (TC ou US) associada a antibioticoterapia de amplo espectro.',
     commentary: 'Observação: Esta questão foi oficialmente anulada pela banca do ENAMED 2025 por imprecisões no enunciado (incluindo o volume do abscesso). A alternativa D (drenagem percutânea) é a conduta clássica para coleções volumosas e acessíveis na diverticulite aguda Hinchey II.',
     reference: 'Diretrizes da Sociedade Brasileira de Coloproctologia / ASCRS',
@@ -1214,6 +1220,7 @@ export const ENAMED_QUESTIONS: Question[] = [
       '(D) solicitar urocultura, colpocitologia oncótica e anti-HIV. Em caso de presença de Escherichia coli e Trichomonas vaginalis, prescrever ciprofloxacino e metronidazol vaginal.'
     ],
     correctAnswer: 0, // A
+    annulled: true,
     explanation: 'A banca anulou esta questão. Do ponto de vista técnico, a paciente apresenta exposição sexual de alto risco ocorrida há menos de 72 horas, com parceiro sabidamente HIV reagente, situação que indica profilaxia pós-exposição (PEP), além de investigação para outras infecções sexualmente transmissíveis (como sífilis, hepatites, etc.). Entretanto, havia inconsistências e imprecisões técnicas nas alternativas, principalmente com relação ao esquema terapêutico descrito e à abordagem inicial das ISTs, o que motivou a anulação oficial pela banca examinadora.',
     commentary: 'A alternativa A seria a mais próxima da conduta adequada ao contemplar a PEP (com TDF/3TC + DTG por 28 dias) e a triagem de ISTs, mas a formulação das diretrizes e o fluxo de manejo possuíam lacunas conceituais e inconsistências formais que justificaram a anulação.',
     reference: 'Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para PEP - Ministério da Saúde',
@@ -1406,6 +1413,7 @@ export const ENAMED_QUESTIONS: Question[] = [
       '(D) Tomografia de abdome com contraste e dosagem de CA 19-9.'
     ],
     correctAnswer: 3, // D
+    annulled: true,
     explanation: 'A banca examinadora excluiu esta questão do cálculo de pontos da prova por haver discussões e imprecisões metodológicas na formulação das alternativas. Do ponto de vista clínico, a principal suspeita diagnóstica diante de perda de peso marcante, dor epigástrica em faixa que irradia para o dorso e icterícia obstrutiva progressiva (colúria, acolia fecal, prurido) em paciente idoso, tabagista e diabético de longa data, é o adenocarcinoma de cabeça de pâncreas (tumor periampular). Para a investigação diagnóstica inicial dessa hipótese, a tomografia computadorizada multislice (TC) de abdome com contraste (protocolo pâncreas) é o exame de escolha para avaliar massa, invasão vascular, metástases e ressecabilidade, associada ao marcador tumoral CA 19-9 para monitorização.',
     commentary: 'Embora a alternativa D seja o par de exames mais adequado para o pâncreas, a questão foi anulada provavelmente porque o CA 19-9 não é um exame de triagem universal obrigatório inicial na primeira linha comparado à triagem inicial biliar por ultrassom e provas bioquímicas hepáticas gerais de padrão obstrutivo (presentes na A, que falha no diagnóstico definitivo).',
     reference: 'Sabiston Tratado de Cirurgia / Diretrizes de Câncer de Pâncreas do Ministério da Saúde',
@@ -1599,6 +1607,7 @@ export const ENAMED_QUESTIONS: Question[] = [
       '(D) Diabetes mellitus gestacional controlado apenas com dieta.'
     ],
     correctAnswer: 2, // C
+    annulled: true,
     explanation: 'A banca anulou oficialmente esta questão devido à possibilidade de múltiplas respostas corretas pautadas nas diretrizes nacionais e de diferentes estados do Brasil. Do ponto de vista técnico, a gestação gemelar (C) - mesmo a mais benigna das gemelaridades (dicoriônica e diamniótica) - é classificada em quase todos os protocolos nacionais como fator de risco que demanda encaminhamento para o pré-natal de alto risco. No entanto, a malária na gestação (A), sobretudo no terceiro trimestre, também é classificada como emergência ou de alto risco infeccioso e clínico grave, exigindo acompanhamento compartilhado ou de referência rápida. Essa sobreposição de critérios gerou ambiguidade e motivou a anulação.',
     commentary: 'Anemia moderada (hemoglobina de 9,5 g/dL - opção B) e diabetes mellitus gestacional bem controlado apenas com dieta e medidas de estilo de vida (opção D) são situações que, pelas diretrizes de atenção primária do Ministério da Saúde, podem ser manejadas integralmente no âmbito da Unidade Básica de Saúde, não demandando encaminhamento obrigatório ao alto risco caso estejam controladas e sem repercussões.',
     reference: 'Manual de Gestação de Alto Risco - Ministério da Saúde do Brasil / Diretrizes de Atenção Primária à Saúde (APS)',

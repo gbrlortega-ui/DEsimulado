@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { CheckCircle2, ChevronDown, CircleDashed, Maximize2, XCircle } from 'lucide-react';
+import { Ban, CheckCircle2, ChevronDown, CircleDashed, Maximize2, XCircle } from 'lucide-react';
 import { Explanation } from './Explanation';
 import { Question, UserAnswer } from '../types';
 import { cn, examLabel, isAccepted, stripOptionLetter } from '../lib/utils';
 
-type Status = 'correct' | 'wrong' | 'blank';
+type Status = 'correct' | 'wrong' | 'blank' | 'annulled';
 type Filter = 'all' | Status;
 
 interface Item {
@@ -20,6 +20,7 @@ const STATUS = {
   correct: { label: 'Acertou', Icon: CheckCircle2, color: 'text-accent-green' },
   wrong: { label: 'Errou', Icon: XCircle, color: 'text-accent-coral' },
   blank: { label: 'Em branco', Icon: CircleDashed, color: 'text-muted' },
+  annulled: { label: 'Anulada', Icon: Ban, color: 'text-accent-amber' },
 } as const;
 
 /** Uma questão da revisão: fechada mostra o resumo; aberta mostra alternativas e comentário. */
@@ -45,11 +46,12 @@ const ReviewItem: React.FC<{ item: Item }> = ({ item }) => {
             <span className="font-heading font-bold text-sm text-ink">Questão {n}</span>
             <span className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-ink font-semibold">{examLabel(q.id)}</span>
             {q.module !== 'ENAMED' && <span className="text-muted">{q.module}</span>}
+            {q.annulled && <span className="px-1.5 py-0.5 rounded bg-amber-soft text-ink font-semibold">Anulada · fora da nota</span>}
           </div>
           {!open && (
             <p className="mt-1 text-sm text-ink-2 line-clamp-2">{q.text}</p>
           )}
-          {!open && status !== 'correct' && (
+          {!open && (status === 'wrong' || status === 'blank') && (
             <p className="mt-1 text-xs text-muted">
               {picked !== null && <>Você marcou <b className="text-accent-coral">{letter(picked)}</b> · </>}
               Resposta: <b className="text-primary-ink">{letter(q.correctAnswer)}</b>
@@ -132,7 +134,9 @@ interface AnswerReviewProps {
 export const AnswerReview: React.FC<AnswerReviewProps> = ({ questions, answers }) => {
   const items: Item[] = questions.map((question, i) => {
     const answer = answers.find((a) => a.questionId === question.id);
-    const status: Status = !answer || answer.selectedOption === null ? 'blank' : answer.isCorrect ? 'correct' : 'wrong';
+    const status: Status = question.annulled
+      ? 'annulled'
+      : !answer || answer.selectedOption === null ? 'blank' : answer.isCorrect ? 'correct' : 'wrong';
     return { n: i + 1, question, answer, status };
   });
   const count = (s: Status) => items.filter((it) => it.status === s).length;
@@ -142,6 +146,7 @@ export const AnswerReview: React.FC<AnswerReviewProps> = ({ questions, answers }
     { id: 'wrong', label: 'Erradas', n: count('wrong') },
     { id: 'blank', label: 'Em branco', n: count('blank') },
     { id: 'correct', label: 'Acertadas', n: count('correct') },
+    { id: 'annulled', label: 'Anuladas', n: count('annulled') },
     { id: 'all', label: 'Todas', n: items.length },
   ];
   const shown = filter === 'all' ? items : items.filter((it) => it.status === filter);
