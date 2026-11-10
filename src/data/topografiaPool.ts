@@ -17,6 +17,12 @@ export const TOPOGRAPHY_POOL: Question[] = (() => {
 export const topographyQuestions = (id: string) =>
   TOPOGRAPHY_POOL.filter((q) => q.topography === id || q.topography!.startsWith(id + '.'));
 
+/** Quantas questões cada assunto tem, por chave "1.1|Cefaleias". */
+export const TOPIC_COUNT: Record<string, number> = TOPOGRAPHY_POOL.reduce<Record<string, number>>((acc, q) => {
+  if (q.topic) acc[`${q.topography}|${q.topic}`] = (acc[`${q.topography}|${q.topic}`] ?? 0) + 1;
+  return acc;
+}, {});
+
 export const TOPOGRAPHY_COUNT: Record<string, number> = TOPOGRAPHY_POOL.reduce<Record<string, number>>((acc, q) => {
   acc[q.topography!] = (acc[q.topography!] ?? 0) + 1;
   return acc;

@@ -45,7 +45,8 @@ Formato em `src/types.ts` (`Question`). Convenções:
   `topo-1-1-12` (especialidade 1.1, nº 12), `topography` = id da especialidade ("1.1"; regiões sem
   subdivisão usam "8") e `topic` = nome exato do assunto no roteiro. Questões do banco geral
   também entram se receberem `topography`. A especialidade sai de "Em breve" sozinha quando tem
-  questões; o validador recusa topografia ou assunto inexistente.
+  questões, e cada assunto vira um filtro marcável; o validador recusa topografia ou assunto
+  inexistente.
 - **Explicações:** `explanation` = raciocínio que leva à resposta; `commentary` = por que as
   outras alternativas estão erradas; `reference` = diretriz/manual; `tags` em minúsculas.
 

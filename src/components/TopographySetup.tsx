@@ -3,7 +3,7 @@ import { ChevronLeft, Check, Lock } from 'lucide-react';
 import { Brand } from './Brand';
 import { QuizSettings } from '../types';
 import { TOPOGRAPHY, findTopographyGroup } from '../data/topografia';
-import { TOPOGRAPHY_COUNT } from '../data/topografiaPool';
+import { TOPIC_COUNT, TOPOGRAPHY_COUNT } from '../data/topografiaPool';
 import { cn } from '../lib/utils';
 
 interface TopographySetupProps {
@@ -19,18 +19,29 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
   const [selected, setSelected] = useState<string | null>(null);
   const [count, setCount] = useState<number | 'all'>('all');
   const [feedback, setFeedback] = useState(true);
+  /** Assuntos marcados; vazio = todos os assuntos da especialidade. */
+  const [topics, setTopics] = useState<string[]>([]);
 
   const available = TOPOGRAPHY.flatMap((r) => r.groups).filter((g) => (TOPOGRAPHY_COUNT[g.id] ?? 0) > 0).length;
-  const pool = selected ? TOPOGRAPHY_COUNT[selected] ?? 0 : 0;
+  const pool = !selected
+    ? 0
+    : topics.length
+    ? topics.reduce((s, t) => s + (TOPIC_COUNT[`${selected}|${t}`] ?? 0), 0)
+    : TOPOGRAPHY_COUNT[selected] ?? 0;
   const chips = COUNTS.filter((c) => c < pool);
   const total = count === 'all' || count > pool ? pool : count;
   const group = findTopographyGroup(selected ?? undefined);
 
   const pick = (id: string) => {
+    if (id === selected) return;
     setSelected(id);
+    setTopics([]);
     const n = TOPOGRAPHY_COUNT[id] ?? 0;
     setCount(n > 20 ? 20 : 'all');
   };
+
+  const toggleTopic = (t: string) =>
+    setTopics((cur) => (cur.includes(t) ? cur.filter((x) => x !== t) : [...cur, t]));
 
   return (
     <div className="min-h-screen bg-bg">
@@ -68,8 +79,8 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
                   const open = n > 0;
                   const active = selected === g.id;
                   return (
+                    <div key={g.id}>
                     <button
-                      key={g.id}
                       type="button"
                       disabled={!open}
                       aria-pressed={active}
@@ -113,6 +124,51 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
                         )}
                       </span>
                     </button>
+                    {active && (
+                      <div className="mt-2 rounded-xl border border-line bg-white px-4 py-3.5">
+                        <p className="text-sm font-semibold text-ink">Assuntos</p>
+                        <p className="text-xs text-muted mt-0.5">Marque os que quer treinar. Sem nenhum marcado, entram todos.</p>
+                        <div className="mt-3 flex flex-wrap gap-2">
+                          <button
+                            type="button"
+                            aria-pressed={topics.length === 0}
+                            onClick={() => setTopics([])}
+                            className={cn(
+                              'px-3 py-1.5 rounded-full border text-sm font-semibold transition-colors',
+                              topics.length === 0 ? 'bg-ink border-ink text-white' : 'bg-white border-line text-ink hover:border-line-2'
+                            )}
+                          >
+                            Todos
+                          </button>
+                          {g.topics.map((t) => {
+                            const tn = TOPIC_COUNT[`${g.id}|${t.name}`] ?? 0;
+                            const on = topics.includes(t.name);
+                            return (
+                              <button
+                                key={t.name}
+                                type="button"
+                                disabled={tn === 0}
+                                aria-pressed={on}
+                                title={t.points}
+                                onClick={() => toggleTopic(t.name)}
+                                className={cn(
+                                  'px-3 py-1.5 rounded-full border text-sm transition-colors',
+                                  on
+                                    ? 'bg-primary border-primary text-white font-semibold'
+                                    : tn > 0
+                                    ? 'bg-white border-line text-ink hover:border-primary'
+                                    : 'bg-bg-2/60 border-line text-muted cursor-not-allowed'
+                                )}
+                              >
+                                {t.name}
+                                <span className={cn('ml-1.5 text-xs tabular-nums', on ? 'text-white/80' : 'text-muted')}>{tn > 0 ? tn : 'em breve'}</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+                    </div>
                   );
                 })}
               </div>
@@ -158,12 +214,15 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
             </label>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <p className="text-ink-2 text-sm">
-                <span className="font-semibold text-ink">{total} questões de {group.name}</span>, sorteadas entre {fmt(pool)}.
+                <span className="font-semibold text-ink">
+                  {total} questões de {topics.length === 0 ? group.name : topics.length === 1 ? topics[0] : `${topics.length} assuntos de ${group.name}`}
+                </span>, sorteadas entre {fmt(pool)}.
               </p>
               <button
                 type="button"
-                onClick={() => onStart({ questionCount: total, module: 'Misto', immediateFeedback: feedback, topography: group.id })}
-                className="btn btn-primary sm:px-8"
+                onClick={() => onStart({ questionCount: total, module: 'Misto', immediateFeedback: feedback, topography: group.id, topics: topics.length ? topics : undefined })}
+                disabled={total === 0}
+                className="btn btn-primary sm:px-8 disabled:opacity-50"
               >
                 Começar simulado
               </button>

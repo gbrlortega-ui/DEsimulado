@@ -45,6 +45,9 @@ export default function App() {
     if (preset) return preset.questions;
 
     let filtered = settings.topography ? topographyQuestions(settings.topography) : [...QUESTIONS];
+    if (settings.topography && settings.topics?.length) {
+      filtered = filtered.filter((q) => q.topic && settings.topics!.includes(q.topic));
+    }
     
     // Filter by module
     if (!settings.topography && settings.module !== 'Misto') {

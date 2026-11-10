@@ -39,6 +39,8 @@ export interface QuizSettings {
   presetId?: string;
   /** Simulado por topografia: id da especialidade ("1.1") ou da região ("1"). */
   topography?: string;
+  /** Assuntos escolhidos dentro da topografia (vazio = todos). */
+  topics?: string[];
 }
 
 export interface UserAnswer {
