@@ -38,7 +38,27 @@ export async function pickQuestions(settings: QuizSettings): Promise<Question[]>
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
-  return shuffled.slice(0, settings.questionCount);
+  // O TP repete questões entre edições (ex.: tp2021-59 = tp2025-59): não sortear o mesmo enunciado duas vezes.
+  const seen = new Set<string>();
+  const picked: Question[] = [];
+  for (const q of shuffled) {
+    const key = sameTextKey(q.text);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    picked.push(q);
+    if (picked.length === settings.questionCount) break;
+  }
+  return picked;
+}
+
+/** Chave para reconhecer o mesmo enunciado em provas diferentes (ignora maiúsculas, espaços e pontuação). */
+function sameTextKey(text: string) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .slice(0, 200);
 }
 
 /** Recupera as questões de um simulado salvo, na mesma ordem. Retorna null se alguma não existir mais. */
