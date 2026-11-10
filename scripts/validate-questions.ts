@@ -3,7 +3,8 @@
  * Uso: npm run validate
  * Sai com código 1 se houver erro (bloqueia a verificação automática).
  */
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
+import { SUMMARY_PATH, summarySource } from './summary';
 import { join } from 'node:path';
 import { QUESTIONS as BANK } from '../src/data/questions';
 import { SUGERIDOS } from '../src/data/sugeridos';
@@ -62,6 +63,10 @@ QUESTIONS.forEach((q, i) => {
 });
 
 seen.forEach((n, id) => n > 1 && errors.push(`${id}: ID duplicado (${n}x)`));
+
+// O resumo usado nas telas iniciais precisa refletir o banco atual.
+const summary = existsSync(SUMMARY_PATH) ? readFileSync(SUMMARY_PATH, 'utf8').replace(/\r\n/g, '\n') : '';
+if (summary !== summarySource()) errors.push(`${SUMMARY_PATH} desatualizado: rode \`npm run gen\``);
 
 const byModule = QUESTIONS.reduce<Record<string, number>>((acc, q) => {
   acc[q.module] = (acc[q.module] ?? 0) + 1; return acc;

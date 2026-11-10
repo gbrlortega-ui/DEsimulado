@@ -3,56 +3,94 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useMemo } from 'react';
+import { Component, lazy, Suspense, useEffect, useState, type ReactNode } from 'react';
 import { MotionConfig } from 'motion/react';
 import { LandingPage } from './components/LandingPage';
-import { QuizSetup } from './components/QuizSetup';
-import { QuizSession } from './components/QuizSession';
-import { ResultsView } from './components/ResultsView';
-import { Module, QuizSettings, QuizResults, UserAnswer } from './types';
-import { QUESTIONS } from './data/questions';
-import { findSugerido } from './data/sugeridos';
+import { Module, Question, QuizSettings, QuizResults, UserAnswer } from './types';
+import { SUGERIDOS_INFO } from './data/resumo';
 import { findTopographyGroup, TOPOGRAPHY } from './data/topografia';
-import { topographyQuestions } from './data/topografiaPool';
-import { TopographySetup } from './components/TopographySetup';
+import { loadBank, pickQuestions } from './data/banco';
+
+// Telas carregadas sob demanda: a página inicial abre sem esperar por elas.
+const loadSetup = () => import('./components/QuizSetup');
+const loadTopography = () => import('./components/TopographySetup');
+const loadSession = () => import('./components/QuizSession');
+const loadResults = () => import('./components/ResultsView');
+const QuizSetup = lazy(() => loadSetup().then((m) => ({ default: m.QuizSetup })));
+const TopographySetup = lazy(() => loadTopography().then((m) => ({ default: m.TopographySetup })));
+const QuizSession = lazy(() => loadSession().then((m) => ({ default: m.QuizSession })));
+const ResultsView = lazy(() => loadResults().then((m) => ({ default: m.ResultsView })));
+
+/** Se uma tela não carregar (sem internet ou depois de um deploy novo), oferece recarregar. */
+class LoadBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+  render() {
+    return this.state.failed ? <Loading error /> : this.props.children;
+  }
+}
+
 type AppState = 'landing' | 'setup' | 'topography' | 'quiz' | 'results';
+
+const reload = () => window.location.reload();
+
+/** Aparece só se o carregamento demorar (o atraso fica no CSS), para não piscar na tela. */
+function Loading({ error, onCancel }: { error?: boolean; onCancel?: () => void }) {
+  return (
+    <div
+      role="status"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-white/80 backdrop-blur-sm animate-[fade-in_200ms_300ms_both]"
+    >
+      {error ? (
+        <div className="text-center px-6">
+          <p className="font-semibold text-ink">Não foi possível carregar as questões.</p>
+          <p className="text-sm text-muted mt-1">Verifique sua conexão e recarregue a página.</p>
+          <div className="mt-4 flex justify-center gap-2">
+            <button type="button" onClick={reload} className="btn btn-primary">
+              Recarregar a página
+            </button>
+            {onCancel && (
+              <button type="button" onClick={onCancel} className="btn btn-ghost">
+                Voltar
+              </button>
+            )}
+          </div>
+        </div>
+      ) : (
+        <p className="flex items-center gap-3 text-ink-2">
+          <span className="w-5 h-5 rounded-full border-2 border-primary border-t-transparent animate-spin" aria-hidden />
+          Carregando questões…
+        </p>
+      )}
+    </div>
+  );
+}
 
 export default function App() {
   const [state, setState] = useState<AppState>('landing');
   const [settings, setSettings] = useState<QuizSettings | null>(null);
+  const [activeQuestions, setActiveQuestions] = useState<Question[]>([]);
   const [results, setResults] = useState<QuizResults | null>(null);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [initialModule, setInitialModule] = useState<Module>('Misto');
-  const [round, setRound] = useState(0);
+  const [starting, setStarting] = useState<QuizSettings | null>(null);
+  const [loadError, setLoadError] = useState(false);
 
-  const activeQuestions = useMemo(() => {
-    if (!settings) return [];
-
-    // Simulado sugerido: lista fixa, na ordem original.
-    const preset = findSugerido(settings.presetId);
-    if (preset) return preset.questions;
-
-    let filtered = settings.topography ? topographyQuestions(settings.topography) : [...QUESTIONS];
-    if (settings.topography && settings.topics?.length) {
-      filtered = filtered.filter((q) => q.topic && settings.topics!.includes(q.topic));
+  // Depois que a página inicial aparece, baixa o resto em segundo plano.
+  useEffect(() => {
+    const preload = () => {
+      loadBank().catch(() => {});
+      [loadSetup, loadTopography, loadSession, loadResults].forEach((load) => load().catch(() => {}));
+    };
+    if ('requestIdleCallback' in window) {
+      const id = window.requestIdleCallback(preload, { timeout: 3000 });
+      return () => window.cancelIdleCallback(id);
     }
-    
-    // Filter by module
-    if (!settings.topography && settings.module !== 'Misto') {
-      filtered = filtered.filter(q => q.module === settings.module);
-    }
-
-    // Fisher-Yates shuffle for a perfectly uniform distribution
-    const shuffled = [...filtered];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      const temp = shuffled[i];
-      shuffled[i] = shuffled[j];
-      shuffled[j] = temp;
-    }
-    
-    return shuffled.slice(0, settings.questionCount);
-  }, [settings, round]);
+    const id = setTimeout(preload, 1500);
+    return () => clearTimeout(id);
+  }, []);
 
   const handleStartSetup = (module?: Module) => {
     setInitialModule(module ?? 'Misto');
@@ -67,7 +105,7 @@ export default function App() {
 
   /** Título e aviso mostrados durante o simulado (sugerido ou por topografia). */
   const sessionInfo = (() => {
-    const preset = findSugerido(settings?.presetId);
+    const preset = SUGERIDOS_INFO.find((s) => s.id === settings?.presetId);
     if (preset) return { title: preset.title, warning: preset.warning };
     const t = settings?.topography;
     if (!t) return undefined;
@@ -75,17 +113,22 @@ export default function App() {
     return name ? { title: name } : undefined;
   })();
 
-  const handleQuickStart = () => {
-    setSettings({ questionCount: 10, module: 'Misto', immediateFeedback: true });
-    setRound(r => r + 1);
-    setState('quiz');
+  /** Sorteia as questões (o banco pode ainda estar chegando) e abre o simulado. */
+  const startQuiz = async (newSettings: QuizSettings) => {
+    setStarting(newSettings);
+    setLoadError(false);
+    try {
+      const questions = await pickQuestions(newSettings);
+      setSettings(newSettings);
+      setActiveQuestions(questions);
+      setState('quiz');
+      setStarting(null);
+    } catch {
+      setLoadError(true);
+    }
   };
-  
-  const handleStartQuiz = (newSettings: QuizSettings) => {
-    setSettings(newSettings);
-    setRound(r => r + 1);
-    setState('quiz');
-  };
+
+  const handleQuickStart = () => startQuiz({ questionCount: 10, module: 'Misto', immediateFeedback: true });
 
   const handleFinishQuiz = (finalResults: QuizResults, answers: UserAnswer[]) => {
     setResults(finalResults);
@@ -93,6 +136,7 @@ export default function App() {
     setState('results');
   };
 
+  // Refazer: mesmas questões, mesma ordem.
   const handleResetQuiz = () => {
     setUserAnswers([]);
     setResults(null);
@@ -116,41 +160,50 @@ export default function App() {
   return (
     <MotionConfig reducedMotion="user">
     <div className="antialiased">
+      <LoadBoundary>
+      <Suspense fallback={<Loading />}>
       {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} />}
 
       {state === 'setup' && (
-        <QuizSetup 
+        <QuizSetup
           initialModule={initialModule}
-          onBack={handleGoHome} 
-          onStart={handleStartQuiz} 
+          onBack={handleGoHome}
+          onStart={startQuiz}
           onTopography={handleOpenTopography}
         />
       )}
 
       {state === 'topography' && (
-        <TopographySetup onBack={() => handleStartSetup()} onHome={handleGoHome} onStart={handleStartQuiz} />
+        <TopographySetup onBack={() => handleStartSetup()} onHome={handleGoHome} onStart={startQuiz} />
       )}
-      
+
       {state === 'quiz' && settings && (
-        <QuizSession 
-          questions={activeQuestions} 
+        <QuizSession
+          // Nova chave a cada sorteio: o simulado começa do zero mesmo com as mesmas configurações.
+          key={activeQuestions.map((q) => q.id).join()}
+          questions={activeQuestions}
           settings={settings}
           info={sessionInfo}
           onExit={handleGoHome}
           onFinish={handleFinishQuiz}
         />
       )}
-      
+
       {state === 'results' && results && (
-        <ResultsView 
+        <ResultsView
           results={results}
           onReset={handleResetQuiz}
           onNew={handleNewQuiz}
           onHome={handleGoHome}
         />
       )}
+      </Suspense>
+      </LoadBoundary>
+
+      {starting && (
+<Loading error={loadError} onCancel={() => setStarting(null)} />
+      )}
     </div>
     </MotionConfig>
   );
 }
-

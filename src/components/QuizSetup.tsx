@@ -20,9 +20,8 @@ import {
 import { Brand } from './Brand';
 import { Module, QuizSettings } from '../types';
 import { AREAS, COUNT_BY_AREA, TOTAL_QUESTIONS } from '../data/stats';
-import { SUGERIDOS, type SuggestedExam } from '../data/sugeridos';
+import { SUGERIDOS_INFO, TOPOGRAPHY_COUNT, type SuggestedExamInfo } from '../data/resumo';
 import { TOPOGRAPHY, TOPOGRAPHY_GROUPS } from '../data/topografia';
-import { TOPOGRAPHY_COUNT } from '../data/topografiaPool';
 import { cn } from '../lib/utils';
 
 interface QuizSetupProps {
@@ -67,8 +66,8 @@ const Step: React.FC<{ n: number; title: string; hint?: string; children: React.
 );
 
 /** Cartão do simulado sugerido: lista fixa de questões, feita na ordem. */
-const SuggestedCard: React.FC<{ exam: SuggestedExam; onStart: (settings: QuizSettings) => void }> = ({ exam, onStart }) => {
-  const n = exam.questions.length;
+const SuggestedCard: React.FC<{ exam: SuggestedExamInfo; onStart: (settings: QuizSettings) => void }> = ({ exam, onStart }) => {
+  const n = exam.count;
   const start = (immediateFeedback: boolean) =>
     onStart({ questionCount: n, module: 'Misto', immediateFeedback, presetId: exam.id });
   return (
@@ -294,7 +293,7 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
           <h2 className="text-2xl sm:text-3xl font-extrabold">Outros jeitos de treinar</h2>
           <p className="mt-2 text-ink-2">Um simulado pronto para medir seu nível ou um treino focado em uma região do corpo.</p>
           <div className="mt-6 grid md:grid-cols-2 gap-4">
-            {SUGERIDOS.map((exam) => (
+            {SUGERIDOS_INFO.map((exam) => (
               <SuggestedCard key={exam.id} exam={exam} onStart={onStart} />
             ))}
             <TopographyCard onOpen={onTopography} />

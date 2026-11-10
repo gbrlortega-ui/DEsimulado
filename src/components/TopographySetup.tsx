@@ -3,7 +3,7 @@ import { ChevronLeft, Check, Lock } from 'lucide-react';
 import { Brand } from './Brand';
 import { QuizSettings } from '../types';
 import { TOPOGRAPHY, findTopographyGroup } from '../data/topografia';
-import { TOPIC_COUNT, TOPOGRAPHY_COUNT } from '../data/topografiaPool';
+import { TOPIC_COUNT, TOPOGRAPHY_COUNT } from '../data/resumo';
 import { cn } from '../lib/utils';
 
 interface TopographySetupProps {
