@@ -102,6 +102,14 @@ export async function resendVerification(): Promise<void> {
   }
 }
 
+/** Recarrega o usuário do Firebase (ex.: depois de confirmar o e-mail em outra aba). */
+export async function refreshSession(): Promise<Session | null> {
+  const u = auth.currentUser;
+  if (!u) return null;
+  await u.reload();
+  return toSession(u);
+}
+
 export function signOut() {
   return fbSignOut(auth);
 }

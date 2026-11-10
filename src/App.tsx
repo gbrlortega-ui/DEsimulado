@@ -18,12 +18,22 @@ import { topographyQuestions } from './data/topografiaPool';
 import { TopographySetup } from './components/TopographySetup';
 // Área de ferramentas (com login) carregada só quando alguém abre — não pesa nos simulados.
 const ToolsPage = lazy(() => import('./tools/ToolsPage').then((m) => ({ default: m.ToolsPage })));
+const AuthAction = lazy(() => import('./tools/AuthAction').then((m) => ({ default: m.AuthAction })));
 import type { ToolKind } from './tools/forms';
 
-type AppState = 'landing' | 'setup' | 'topography' | 'quiz' | 'results' | 'tools';
+type AppState = 'landing' | 'setup' | 'topography' | 'quiz' | 'results' | 'tools' | 'authAction';
+
+/** Link de e-mail do Firebase (confirmar e-mail, redefinir senha) — lido aqui para não carregar o Firebase à toa. */
+function readAuthAction() {
+  const p = new URLSearchParams(window.location.search);
+  const mode = p.get('mode');
+  const oobCode = p.get('oobCode');
+  return mode && oobCode ? { mode, oobCode } : null;
+}
 
 export default function App() {
-  const [state, setState] = useState<AppState>('landing');
+  const [authAction] = useState(readAuthAction);
+  const [state, setState] = useState<AppState>(authAction ? 'authAction' : 'landing');
   const [settings, setSettings] = useState<QuizSettings | null>(null);
   const [results, setResults] = useState<QuizResults | null>(null);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
@@ -129,6 +139,24 @@ export default function App() {
     <MotionConfig reducedMotion="user">
     <div className="antialiased">
       {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} onTools={handleOpenTools} />}
+
+      {state === 'authAction' && authAction && (
+        <ErrorBoundary onHome={handleGoHome}>
+          <Suspense fallback={<div className="min-h-screen bg-bg" />}>
+            <AuthAction
+              params={authAction}
+              onTools={() => {
+                window.history.replaceState(null, '', window.location.pathname);
+                handleOpenTools('anamnese');
+              }}
+              onHome={() => {
+                window.history.replaceState(null, '', window.location.pathname);
+                handleGoHome();
+              }}
+            />
+          </Suspense>
+        </ErrorBoundary>
+      )}
 
       {state === 'tools' && (
         <ErrorBoundary onHome={handleGoHome}>

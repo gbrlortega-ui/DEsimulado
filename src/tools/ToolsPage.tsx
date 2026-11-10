@@ -54,6 +54,7 @@ import {
   signOut,
   signUp,
   watchSession,
+  refreshSession,
   type Session,
   type ToolDoc,
 } from './storage';
@@ -1216,6 +1217,24 @@ export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> 
       }),
     [],
   );
+
+  // Confirmou o e-mail em outra aba? Ao voltar para esta, o aviso some sem precisar sair e entrar.
+  const awaitingVerification = !!session && !session.verified;
+  useEffect(() => {
+    if (!awaitingVerification) return;
+    const check = () => {
+      if (document.visibilityState !== 'visible') return;
+      refreshSession()
+        .then((s) => s?.verified && setSession(s))
+        .catch(() => undefined);
+    };
+    window.addEventListener('focus', check);
+    document.addEventListener('visibilitychange', check);
+    return () => {
+      window.removeEventListener('focus', check);
+      document.removeEventListener('visibilitychange', check);
+    };
+  }, [awaitingVerification]);
 
   const startNew = () => {
     // No portfólio, a nova ficha já vem com o cabeçalho e o professor da última atividade.
