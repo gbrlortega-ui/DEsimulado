@@ -10,7 +10,6 @@
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
-  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut as fbSignOut,
   updateProfile,
@@ -34,12 +33,14 @@ export interface Session {
   uid: string;
   email: string;
   name: string;
+  verified: boolean;
 }
 
 const toSession = (u: User): Session => ({
   uid: u.uid,
   email: u.email ?? '',
   name: u.displayName || (u.email ?? '').split('@')[0],
+  verified: u.emailVerified,
 });
 
 /** Mensagens do Firebase em português, para o aluno entender o que houve. */
@@ -55,6 +56,7 @@ export function authMessage(err: unknown): string {
     'auth/too-many-requests': 'Muitas tentativas. Aguarde alguns minutos e tente de novo.',
     'auth/network-request-failed': 'Sem conexão com a internet.',
     'permission-denied': 'Você não tem permissão para esta ação.',
+    'email-send-failed': 'Não conseguimos enviar o e-mail agora. Tente de novo em alguns minutos.',
     unavailable: 'Sem conexão com o servidor. Tente de novo em instantes.',
   };
   return map[code] ?? 'Não foi possível concluir. Tente de novo.';
@@ -73,6 +75,11 @@ export async function signUp(name: string, email: string, password: string): Pro
     acceptedAnonymization: true,
     createdAt: serverTimestamp(),
   });
+  try {
+    await sendVerificationEmail(cred.user);
+  } catch {
+    /* o cadastro segue mesmo se o e-mail de verificação falhar */
+  }
   return toSession(cred.user);
 }
 
@@ -81,9 +88,46 @@ export async function signIn(email: string, password: string): Promise<Session> 
   return toSession(cred.user);
 }
 
+/**
+ * Os e-mails de conta saem pelo próprio site (api/auth-email.ts), não pelo Firebase:
+ * o projeto não deixa editar os modelos e os links do Firebase chegam quebrados.
+ */
+async function callAuthEmail(payload: Record<string, string>, idToken?: string): Promise<void> {
+  let r: Response;
+  try {
+    r = await fetch('/api/auth-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...(idToken ? { Authorization: `Bearer ${idToken}` } : {}) },
+      body: JSON.stringify(payload),
+    });
+  } catch {
+    throw Object.assign(new Error('network'), { code: 'auth/network-request-failed' });
+  }
+  if (r.ok) return;
+  const code = r.status === 429 ? 'auth/too-many-requests' : r.status === 400 ? 'auth/invalid-email' : 'email-send-failed';
+  throw Object.assign(new Error(code), { code });
+}
+
+async function sendVerificationEmail(user: User): Promise<void> {
+  await callAuthEmail({ type: 'verify' }, await user.getIdToken());
+}
+
 export async function resetPassword(email: string): Promise<void> {
-  auth.languageCode = 'pt-BR';
-  await sendPasswordResetEmail(auth, email.trim());
+  await callAuthEmail({ type: 'reset', email: email.trim() });
+}
+
+export async function resendVerification(): Promise<void> {
+  if (auth.currentUser) {
+    await sendVerificationEmail(auth.currentUser);
+  }
+}
+
+/** Recarrega o usuário do Firebase (ex.: depois de confirmar o e-mail em outra aba). */
+export async function refreshSession(): Promise<Session | null> {
+  const u = auth.currentUser;
+  if (!u) return null;
+  await u.reload();
+  return toSession(u);
 }
 
 export function signOut() {

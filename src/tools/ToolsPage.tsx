@@ -8,6 +8,7 @@ import {
   Copy,
   FileDown,
   Loader2,
+  MailCheck,
   Lightbulb,
   LogOut,
   Mail,
@@ -46,12 +47,14 @@ import {
   deleteDoc,
   listDocs,
   newId,
+  resendVerification,
   resetPassword,
   saveDoc,
   signIn,
   signOut,
   signUp,
   watchSession,
+  refreshSession,
   type Session,
   type ToolDoc,
 } from './storage';
@@ -64,6 +67,36 @@ const fieldCls =
 
 const fmtDate = (t: number) =>
   new Date(t).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+/* ---------- Aviso de e-mail não verificado ---------- */
+const VerifyBanner: React.FC<{ email: string }> = ({ email }) => {
+  const [sent, setSent] = useState(false);
+  return (
+    <div className="bg-primary-soft border-b border-primary/20 text-ink-2 text-xs">
+      <div className="container-custom py-2 flex flex-wrap items-center gap-x-2 gap-y-1">
+        <MailCheck size={14} className="shrink-0 text-primary-ink" />
+        <span>
+          Confirme seu e-mail pelo link que enviamos para <strong className="text-ink">{email}</strong>.
+        </span>
+        <button
+          type="button"
+          disabled={sent}
+          onClick={async () => {
+            try {
+              await resendVerification();
+              setSent(true);
+            } catch {
+              /* ignora */
+            }
+          }}
+          className="font-semibold text-primary-ink hover:text-ink disabled:text-muted"
+        >
+          {sent ? 'Reenviado' : 'Reenviar'}
+        </button>
+      </div>
+    </div>
+  );
+};
 
 /* ---------- Cadastro / login ---------- */
 const AuthScreen: React.FC<{ onDone: (s: Session) => void; onHome: () => void }> = ({ onDone, onHome }) => {
@@ -1185,6 +1218,24 @@ export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> 
     [],
   );
 
+  // Confirmou o e-mail em outra aba? Ao voltar para esta, o aviso some sem precisar sair e entrar.
+  const awaitingVerification = !!session && !session.verified;
+  useEffect(() => {
+    if (!awaitingVerification) return;
+    const check = () => {
+      if (document.visibilityState !== 'visible') return;
+      refreshSession()
+        .then((s) => s?.verified && setSession(s))
+        .catch(() => undefined);
+    };
+    window.addEventListener('focus', check);
+    document.addEventListener('visibilitychange', check);
+    return () => {
+      window.removeEventListener('focus', check);
+      document.removeEventListener('visibilitychange', check);
+    };
+  }, [awaitingVerification]);
+
   const startNew = () => {
     // No portfólio, a nova ficha já vem com o cabeçalho e o professor da última atividade.
     const data: Record<string, string> = {};
@@ -1241,6 +1292,11 @@ export const ToolsPage: React.FC<{ initialKind: ToolKind; onHome: () => void }> 
           </nav>
         )}
       </header>
+      {session && !session.verified && (
+        <div className="print:hidden">
+          <VerifyBanner email={session.email} />
+        </div>
+      )}
 
       <main className="flex-1">
         {session === undefined ? (
