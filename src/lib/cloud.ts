@@ -9,6 +9,7 @@ import {
   GoogleAuthProvider,
   deleteUser,
   getAuth,
+  getRedirectResult,
   onAuthStateChanged,
   reauthenticateWithPopup,
   signInWithPopup,
@@ -23,7 +24,11 @@ import type { SavedQuiz } from './progress';
 // Configuração pública do app web (não é segredo: o acesso é controlado pelas regras do Firestore).
 const app = initializeApp({
   apiKey: 'AIzaSyChIUX9llvOWQoQLphbnClNYH2FjdeEpB4',
-  authDomain: 'desimulados-ferramentas.firebaseapp.com',
+  // No site oficial, o login passa pelo próprio domínio (/__/auth/*, repassado ao Firebase pelo
+  // vercel.json). Assim Safari/iOS e Chrome não bloqueiam o retorno do login por isolarem cookies.
+  authDomain: /(^|\.)desimulados\.com\.br$/.test(location.hostname)
+    ? location.host
+    : 'desimulados-ferramentas.firebaseapp.com',
   projectId: 'desimulados-ferramentas',
   storageBucket: 'desimulados-ferramentas.firebasestorage.app',
   messagingSenderId: '22202327683',
@@ -46,6 +51,8 @@ export interface CloudUser {
 export interface CloudData {
   historico: HistoryEntry[];
   emAndamento: SavedQuiz | null;
+  /** Quando o aluno apagou o histórico (ms): simulados anteriores não voltam de outros aparelhos. */
+  limpoEm: number;
 }
 
 export interface LoadedCloud extends CloudData {
@@ -60,11 +67,21 @@ const toUser = (u: User): CloudUser => ({
   photo: u.photoURL ?? undefined,
 });
 
+// Conclui um login feito pela própria aba (celular), se houver.
+getRedirectResult(auth).catch(() => {});
+
 export function watchUser(cb: (user: CloudUser | null) => void) {
   return onAuthStateChanged(auth, (u) => cb(u ? toUser(u) : null));
 }
 
+/** Celular/tablet: login na própria aba (janelas costumam ser bloqueadas). Computador: janela. */
+const prefersRedirect = () => window.matchMedia('(pointer: coarse)').matches;
+
 export async function signInWithGoogle() {
+  if (prefersRedirect()) {
+    await signInWithRedirect(auth, provider);
+    return;
+  }
   try {
     await signInWithPopup(auth, provider);
   } catch (err) {
@@ -90,6 +107,7 @@ export async function loadCloud(uid: string): Promise<LoadedCloud> {
     exists: snap.exists(),
     historico: Array.isArray(d?.historico) ? d.historico : [],
     emAndamento: d?.emAndamento ?? null,
+    limpoEm: typeof d?.limpoEm === 'number' ? d.limpoEm : 0,
   };
 }
 
@@ -108,16 +126,18 @@ export async function saveCloud(user: CloudUser, data: Partial<CloudData>, first
   );
 }
 
-/** Exclui os dados e a conta. Se o Google exigir login recente, pede para confirmar a conta. */
+/**
+ * Exclui os dados e a conta. Se o último login foi há mais de alguns minutos, o Google exige confirmar
+ * a conta antes — isso é feito PRIMEIRO, para não apagar os dados e deixar a conta para trás.
+ */
 export async function deleteAccount() {
   const u = auth.currentUser;
   if (!u) return;
-  await deleteDoc(ref(u.uid));
-  try {
-    await deleteUser(u);
-  } catch (err) {
-    if ((err as { code?: string }).code !== 'auth/requires-recent-login') throw err;
+  const last = Date.parse(u.metadata.lastSignInTime ?? '') || 0;
+  if (Date.now() - last > 4 * 60 * 1000) {
+    if (prefersRedirect()) throw Object.assign(new Error('reauth'), { code: 'auth/requires-recent-login' });
     await reauthenticateWithPopup(u, provider);
-    await deleteUser(u);
   }
+  await deleteDoc(ref(u.uid));
+  await deleteUser(u);
 }

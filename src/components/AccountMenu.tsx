@@ -43,6 +43,8 @@ export const AccountMenu: React.FC<AccountMenuProps> = ({ account, onPrivacy }) 
       <button
         type="button"
         onClick={account.signIn}
+        onPointerEnter={account.prefetch}
+        onFocus={account.prefetch}
         disabled={status === 'loading'}
         className="flex items-center gap-2 text-[13px] sm:text-sm font-semibold px-2.5 sm:px-3.5 py-2 rounded-lg border border-line-2 bg-white text-ink hover:border-ink/30 transition-colors whitespace-nowrap disabled:opacity-60"
       >
@@ -66,8 +68,12 @@ export const AccountMenu: React.FC<AccountMenuProps> = ({ account, onPrivacy }) 
       await account.deleteAccount();
       setOpen(false);
       window.alert('Sua conta e seus dados foram excluídos.');
-    } catch {
-      window.alert('Não foi possível excluir agora. Tente de novo ou escreva para gbrl.ortega@hotmail.com.');
+    } catch (err) {
+      window.alert(
+        (err as { code?: string }).code === 'auth/requires-recent-login'
+          ? 'Por segurança, o Google pede um login recente: toque em "Sair", entre de novo e repita a exclusão logo em seguida.'
+          : 'Não foi possível excluir agora. Tente de novo ou escreva para gbrl.ortega@hotmail.com.'
+      );
     } finally {
       setBusy(false);
     }
@@ -152,6 +158,8 @@ export const SaveHistoryCta: React.FC<{ account: Account; compact?: boolean }> =
       <button
         type="button"
         onClick={account.signIn}
+        onPointerEnter={account.prefetch}
+        onFocus={account.prefetch}
         disabled={loading}
         className="btn bg-white border border-line-2 text-ink hover:border-ink/30 shrink-0 disabled:opacity-60"
       >

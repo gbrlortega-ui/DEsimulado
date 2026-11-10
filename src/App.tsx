@@ -271,7 +271,7 @@ export default function App() {
           onClearHistory={() => {
             clearHistory();
             setHistory([]);
-            account.pushHistory([]); // com conta, apaga também na nuvem
+            account.clearCloudHistory(); // com conta, apaga também na nuvem (e não volta de outro aparelho)
           }}
           resume={
             saved
