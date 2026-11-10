@@ -11,6 +11,8 @@ interface ResultsViewProps {
   results: QuizResults;
   questions: Question[];
   answers: UserAnswer[];
+  /** Média de acerto nos simulados anteriores (null no primeiro). */
+  previousAverage?: number | null;
   onReset: () => void;
   /** Novo simulado só com as questões erradas e em branco. */
   onRetryMissed: (questions: Question[]) => void;
@@ -23,7 +25,7 @@ const formatDuration = (s: number) => {
   return m > 0 ? `${m} min ${s % 60} s` : `${s} s`;
 };
 
-export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, answers, onReset, onRetryMissed, onNew, onHome }) => {
+export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, answers, previousAverage, onReset, onRetryMissed, onNew, onHome }) => {
   const score = Math.round(results.score);
   const blank = Math.max(0, results.totalQuestions - results.correctCount - results.wrongCount);
   const answered = results.correctCount + results.wrongCount;
@@ -86,6 +88,14 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
           <div className="pb-3">
             <h1 className="text-3xl sm:text-4xl font-extrabold">{title}</h1>
             <p className="mt-3 text-ink-2 leading-relaxed">{advice}</p>
+            {previousAverage != null && answered > 0 && (
+              <p className="mt-2 text-sm text-muted">
+                Sua média nos simulados anteriores era {previousAverage}%
+                {score !== previousAverage &&
+                  ` — ${score > previousAverage ? '+' : '−'}${Math.abs(score - previousAverage)} ${Math.abs(score - previousAverage) === 1 ? 'ponto' : 'pontos'} neste`}
+                .
+              </p>
+            )}
           </div>
         </section>
 

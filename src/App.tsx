@@ -11,6 +11,7 @@ import { SUGERIDOS_INFO } from './data/resumo';
 import { findTopographyGroup, TOPOGRAPHY } from './data/topografia';
 import { loadBank, pickQuestions, questionsByIds } from './data/banco';
 import { clearProgress, loadProgress, type SavedQuiz } from './lib/progress';
+import { addToHistory, clearHistory, loadHistory, summarize, type HistoryEntry } from './lib/history';
 
 // Telas carregadas sob demanda: a página inicial abre sem esperar por elas.
 const loadSetup = () => import('./components/QuizSetup');
@@ -80,6 +81,10 @@ export default function App() {
   const [loadError, setLoadError] = useState(false);
   /** Simulado em andamento salvo no navegador (aparece na página inicial para continuar). */
   const [saved, setSaved] = useState<SavedQuiz | null>(() => loadProgress());
+  /** Simulados já feitos neste navegador (painel "Seu desempenho"). */
+  const [history, setHistory] = useState<HistoryEntry[]>(() => loadHistory());
+  /** Média de acerto antes do simulado atual, para comparar no resultado. */
+  const [previousAverage, setPreviousAverage] = useState<number | null>(null);
 
   /** Troca de tela registrando no histórico: o "voltar" do navegador/celular volta uma tela, sem sair do site. */
   const go = (next: AppState, replace = false) => {
@@ -189,6 +194,23 @@ export default function App() {
   const handleQuickStart = () => startQuiz({ questionCount: 10, module: 'Misto', immediateFeedback: true });
 
   const handleFinishQuiz = (finalResults: QuizResults, answers: UserAnswer[]) => {
+    const answered = finalResults.correctCount + finalResults.wrongCount;
+    setPreviousAverage(history.length ? summarize(history).perc : null);
+    if (answered > 0 && finalResults.totalQuestions > 0) {
+      setHistory(
+        addToHistory({
+          at: Date.now(),
+          title: sessionInfo?.title ?? (settings?.module === 'Misto' || !settings ? 'Todas as áreas' : settings.module),
+          score: finalResults.score,
+          correct: finalResults.correctCount,
+          total: finalResults.totalQuestions,
+          timeSpent: finalResults.timeSpent,
+          areas: Object.fromEntries(
+            Object.entries(finalResults.modulePerformance).filter(([, p]) => p.total > 0)
+          ),
+        })
+      );
+    }
     setResults(finalResults);
     setUserAnswers(answers);
     setSaved(null);
@@ -239,6 +261,11 @@ export default function App() {
         <LandingPage
           onSetup={handleStartSetup}
           onQuickStart={handleQuickStart}
+          history={history}
+          onClearHistory={() => {
+            clearHistory();
+            setHistory([]);
+          }}
           resume={
             saved
               ? {
@@ -283,6 +310,7 @@ export default function App() {
           results={results}
           questions={activeQuestions}
           answers={userAnswers}
+          previousAverage={previousAverage}
           onReset={handleResetQuiz}
           onRetryMissed={handleRetryMissed}
           onNew={handleNewQuiz}

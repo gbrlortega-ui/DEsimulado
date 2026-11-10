@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronRight, RefreshCw, Check, X, PlayCircle } from 'lucide-react';
 import { Brand } from './Brand';
+import { ProgressPanel } from './ProgressPanel';
+import type { HistoryEntry } from '../lib/history';
 import { Module, Question } from '../types';
 import { AREAS, COUNT_BY_AREA, EDITIONS, TOTAL_QUESTIONS, randomSample } from '../data/stats';
 import { cn, examLabel, firstParagraph, stripOptionLetter } from '../lib/utils';
@@ -20,6 +22,9 @@ interface LandingPageProps {
   onQuickStart: () => void;
   /** Simulado em andamento salvo neste navegador. */
   resume?: ResumeInfo;
+  /** Simulados já feitos neste navegador. */
+  history: HistoryEntry[];
+  onClearHistory: () => void;
 }
 
 /* ---------- Aviso de simulado em andamento ---------- */
@@ -157,7 +162,7 @@ const SampleQuestion: React.FC<{ onQuickStart: () => void }> = ({ onQuickStart }
 };
 
 /* ---------- Página ---------- */
-export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart, resume }) => {
+export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart, resume, history, onClearHistory }) => {
   const tp = EDITIONS.filter((e) => e.kind === 'TP');
   const enamed = EDITIONS.filter((e) => e.kind === 'ENAMED');
   const years = (list: typeof EDITIONS) => (list.length ? `${list[0].year}–${list[list.length - 1].year}` : '');
@@ -178,6 +183,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
 
       <main className="flex-1">
         {resume && <ResumeBanner resume={resume} />}
+        {history.length > 0 && <ProgressPanel history={history} onTrain={onSetup} onClear={onClearHistory} />}
         {/* Abertura */}
         <section className="container-custom pt-10 pb-16 sm:pt-20 sm:pb-24 grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           <div className="lg:col-span-6">
