@@ -22,8 +22,11 @@ iniciais usam só `src/data/resumo.ts` (contagens, simulados sugeridos e amostra
 - `npm run validate` — valida o banco de questões (IDs, alternativas, gabarito, imagens) e
   confere se o `resumo.ts` está em dia
 - `npm run check` — tipos + validação + build. **Rodar antes de todo push.**
+- `npm run imagens` — converte figuras PNG/JPG novas de `public/images` para WebP
 
 O GitHub Actions (`.github/workflows/ci.yml`) roda o mesmo `check` em cada push e pull request.
+O `vercel.json` define o cache: `/assets/*` (nomes com hash) por 1 ano; `/images/*` por 1 dia — ao
+corrigir uma figura, salve com outro nome para o aluno não ver a versão antiga.
 
 ## Banco de questões
 
@@ -39,8 +42,10 @@ Formato em `src/types.ts` (`Question`). Convenções:
 - **Quebras de linha:** use `\n\n` entre parágrafos e `• ` para listas de exames. A interface
   respeita as quebras (`whitespace-pre-line`). Tabelas do PDF viram listas
   "Exame: resultado (VR: …)".
-- **Imagens:** `public/images/<prova><ano>-<n>.PNG` (ex.: `enamed2026-29.PNG`), referenciadas
-  como `/images/...`. Comprimir antes de commitar (alvo < 400 KB).
+- **Imagens:** em WebP, `public/images/<prova><ano>-<n>.webp` (ex.: `enamed2026-29.webp`),
+  referenciadas como `/images/...`. Salve o recorte em PNG e rode `npm run imagens`: converte para
+  WebP (qualidade 85) e atualiza as referências no banco. O validador recusa imagem que não seja
+  WebP e avisa acima de 400 KB.
 - **Gabarito preliminar:** quando a fonte for gabarito preliminar do INEP, dizer isso no
   `commentary`. Questões com gabarito discutível são sinalizadas no comentário, sem alterar a
   resposta oficial.

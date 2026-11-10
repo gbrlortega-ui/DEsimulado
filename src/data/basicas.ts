@@ -405,7 +405,7 @@ export const BASICAS_QUESTIONS: Question[] = [
     id: 'tp2023-6',
     module: 'Ciências Básicas',
     text: 'A pneumonia adquirida na comunidade (PAC) é definida como uma infecção aguda do parênquima pulmonar, que o indivíduo adquire por transmissão na comunidade, distinguindo-a daquela adquirida no hospital. O tratamento proposto pelas diretrizes mais recentes para tratamento de PAC com necessidade de internação (enfermaria), elaboradas pela Sociedade Brasileira de Pneumologia e Tisiologia, é apresentado a seguir. Com relação às drogas antimicrobianas propostas, pode se afirmar que:',
-    image: '/images/tp2023-6.PNG',
+    image: '/images/tp2023-6.webp',
     options: [
       '(A) As cefalosporinas de terceira geração (ceftriaxona e cefotaxima) têm característica teratogênica, estando relacionadas a malformações neurológicas embrionárias e devem ser evitadas na gestação.',
       '(B) A associação entre ampicilina/sulbactam apresenta ótima cobertura para germes Gram negativos hospitalares, tais como o Pseudomonas aeruginosa.',
@@ -438,7 +438,7 @@ export const BASICAS_QUESTIONS: Question[] = [
     id: 'tp2023-8',
     module: 'Ciências Básicas',
     text: 'Uma mulher de 55 de anos queixa-se de dificuldade para engolir alguns tipos de alimentos nos últimos meses. Refere que teve problemas de azia e queimação há muitos anos e já tentou diferentes abordagens terapêuticas, como elevação da cabeceira da cama e uso de inibidores de bomba de prótons. Realizada uma biópsia endoscópica para investigação, esta revelou epitélio colunar com células caliciformes na mucosa esofágica, sem displasia associada. Uma resposta adaptativa semelhante a esta é encontrada também na seguinte situação:',
-    image: '/images/tp2023-8.PNG',
+    image: '/images/tp2023-8.webp',
     options: [
       '(A) Nos miocardiócitos em pacientes com hipertensão arterial sistêmica.',
       '(B) Nas células escamosas do colo uterino em pacientes com infecção por HPV.',
@@ -503,7 +503,7 @@ export const BASICAS_QUESTIONS: Question[] = [
     id: 'tp2023-12',
     module: 'Ciências Básicas',
     text: 'Paciente do sexo feminino, 65 anos, com hipertensão arterial não controlada e sintomas de cefaleias, mal-estar geral e flushing facial relacionados aos picos de pressão arterial elevada. Os exames realizados incluíram eletrocardiograma normal, radiografia de tórax sem alterações e tomografia computadorizada abdominal. Verificou-se um aumento da aldosterona sérica (798μmol/L; normal: 28 a 443μmol/L), com renina sérica, metanefrinas plasmáticas, cortisol, ácido vanilmandélico e ionograma dentro dos parâmetros normais. Como deve ser interpretado o distúrbio da pressão arterial apresentado pela paciente desse relato?',
-    image: '/images/tp2023-12.PNG',
+    image: '/images/tp2023-12.webp',
     options: [
       '(A) Síndrome de Cushing',
       '(B) Tumor associado a glândula adrenal',
@@ -664,7 +664,7 @@ export const BASICAS_QUESTIONS: Question[] = [
     id: 'tp2022-2',
     module: 'Ciências Básicas',
     text: 'Mulher, 35 anos, queixa-se de ardor ao urinar e desconforto durante o ato sexual. Exame físico normal. Ao exame ginecológico foi observado corrimento vaginal fino, de cor amarelo/esverdeado, bolhoso e de odor fétido. No exame colposcópico, a cérvice se apresentou levemente edemaciada, com eritemas e raros pontos hemorrágicos na mucosa vaginal. A paciente nega febre ou dores abdominais e não foram detectados sinais de infartamento ganglionar. Foi solicitada urinálise, que mostrou os seguintes resultados: urina turva, com hemácias, cilindros proteicos, células epiteliais e leucócitos em abundância, e a estrutura mostrada na imagem a seguir:',
-    image: '/images/tp2022-2.PNG',
+    image: '/images/tp2022-2.webp',
     options: [
       '(A) Gardnerella vaginalis',
       '(B) Clamídia trachomatis',
@@ -793,7 +793,7 @@ export const BASICAS_QUESTIONS: Question[] = [
     id: 'tp2022-10',
     module: 'Ciências Básicas',
     text: 'Com exceção das glândulas anexas do digestório, todos os órgãos do trato digestivo apresentam túnicas, constituídas por diferentes tecidos e estruturas com funções específicas. As lâminas A, B, C e D representam um corte histológico de estômago. Indique a classificação do tecido na respectiva túnica.',
-    image: '/images/tp2022-10.PNG',
+    image: '/images/tp2022-10.webp',
     options: [
       '(A) Seta 1 indica mucosa com epitélio simples cilíndrico, tecido conjuntivo frouxo, criptas e glândulas.',
       '(B) Seta 2 indica submucosa de tecido conjuntivo denso.',
@@ -826,7 +826,7 @@ export const BASICAS_QUESTIONS: Question[] = [
     id: 'tp2022-12',
     module: 'Ciências Básicas',
     text: 'Homem de 68 anos, hipertenso e dislipidêmico, há vários anos em tratamento, apresenta-se na clínica com queixa de piora de dispneia agora e aos pequenos esforços há várias semanas, e inchaço nos pés ao final do dia. Tem tosse noturna e, ultimamente, dificuldade para dormir, necessitando apoiar-se em 2 traveissoiros, acordando à noite, às vezes, com falta de ar, que melhora ao se sentar com as pernas para fora da cama. Em análises post mortem, observam-se alterações histopatológicas no miocárdio, assim como alterações estruturais e funcionais no ventrículo esquerdo, responsáveis pela insuficiência cardíaca. Identifique a melhor descrição das alterações encontradas na insuficiência cardíaca.',
-    image: '/images/tp2022-12.PNG',
+    image: '/images/tp2022-12.webp',
     options: [
       '(A) Hipertrofia dos miócitos, em decorrência do aumento da síntese de proteínas contráteis, com intuito de mecanismo adaptativo para compensar a demanda aumentada e normalizar o estresse parietal.',
       '(B) Expansão da matriz extracelular no miocárdio, constituída pela fibrose intersticial e acúmulo de colágeno entre os cardiomiócitos, devido à ação de miofibroblastos sob a influência de vários hormônios, como angiotensina II e aldosterona.',
@@ -875,7 +875,7 @@ export const BASICAS_QUESTIONS: Question[] = [
     id: 'tp2022-15',
     module: 'Ciências Básicas',
     text: 'A imagem a seguir é referente a biópsia cutânea de paciente do sexo masculino, 51 anos, que apresenta no tórax múltiplas lesões maculares, hipopigmentadas, acompanhadas de rarefação de pelos e perda de sensibilidade. Detecção precoce e tratamento adequado têm papel fundamental na prevenção de incapacidades provocadas por esta doença. O agente etiológico e a respectiva patologia são:',
-    image: '/images/tp2022-15.PNG',
+    image: '/images/tp2022-15.webp',
     options: [
       '(A) Mycobacterium tuberculosis; Tuberculose',
       '(B) Paracoccidioides brasiliensis; Paracoccidioidomicose',
@@ -1291,7 +1291,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2021-1',
     module: 'Ciências Básicas',
-    image: '/images/tp2021-1.PNG',
+    image: '/images/tp2021-1.webp',
     text: 'A tabela abaixo mostra os valores de Kd de 4 antipsicóticos típicos denominados drogas A, B, C e D a vários receptores (nenhuma droga possui qualquer atividade intrínseca nestes receptores). Kd é a constante de dissociação cuja concentração em nM reflete a ocupância de 50% dos receptores, ou seja, menor Kd significa maior afinidade pelo receptor.\n\nBaseado nisso, qual é o antipsicótico que provavelmente produzirá a menor incidência de efeitos sedativos?',
     options: [
       '(A) Droga A.',
@@ -1308,7 +1308,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2021-2',
     module: 'Ciências Básicas',
-    image: '/images/tp2021-2.PNG',
+    image: '/images/tp2021-2.webp',
     text: 'Homem, 40 anos, apresenta febre, lesão cutânea no braço esquerdo e à radiografia simples de tórax presença de adenomegalia hilar bilateral. A biópsia da pele mostrou acúmulo de células epitelioides na derme, formando granulomas “nus” (sem coroa linfocitária), contendo células gigantes multinucleadas e ausência de necrose. A pesquisa de microrganismos pelas colorações especiais foi negativa. Diante do quadro clínico e morfológico, a principal hipótese diagnóstica é:',
     options: [
       '(A) Sarcoidose.',
@@ -1533,7 +1533,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2021-16',
     module: 'Ciências Básicas',
-    image: '/images/tp2021-16.PNG',
+    image: '/images/tp2021-16.webp',
     text: 'Mulher de 60 anos internada com pneumonia lobar, em uso de tiazídico há 9 meses. O distúrbio ácido-básico esperado é:',
     options: [
       '(A) Distúrbio misto: alcalose respiratória e acidose metabólica.',
@@ -1550,7 +1550,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2021-17',
     module: 'Ciências Básicas',
-    image: '/images/tp2021-17.PNG',
+    image: '/images/tp2021-17.webp',
     text: 'FAST mostrando sangramento intra-abdominal no espaço de Morrison, região periesplênica e retrovesical. A alteração aparece como região:',
     options: [
       '(A) Anecoica.',
@@ -1567,7 +1567,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2021-18',
     module: 'Ciências Básicas',
-    image: '/images/tp2021-18.PNG',
+    image: '/images/tp2021-18.webp',
     text: 'As células principais da mucosa gástrica são responsáveis pela síntese de pepsinogênio. Na imagem histológica da glândula oxíntica gástrica, qual célula corresponde ao tipo citado?',
     options: [
       '(A) Célula indicada pela letra A, que é a célula parietal.',
@@ -1969,7 +1969,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2019-3',
     module: 'Ciências Básicas',
-    image: '/images/tp2019-3.PNG',
+    image: '/images/tp2019-3.webp',
     text: 'Mulher, 15 anos, procurou a UBS referindo edema de pálpebras bilateral, com prurido intenso, acompanhado de lesões avermelhadas no pescoço, também pruriginosas, que se repetem em intervalos variados nos últimos seis meses. Refere ainda que, anteriormente, as lesões apareciam no início da semana e desapareciam sem necessidade de tratamento, porém nas últimas semanas elas permanecem inalteradas.\n\nA resposta imune envolvida é:',
     options: [
       '(A) Hipersensibilidade tipo II ou citotóxica.',
@@ -2018,7 +2018,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2019-6',
     module: 'Ciências Básicas',
-    image: '/images/tp2019-6.PNG',
+    image: '/images/tp2019-6.webp',
     text: 'A figura abaixo representa uma condição em que a frequência cardíaca, gerada pelo principal marcapasso cardíaco (nó sinoatrial) é modificada.\n\nEste fato é decorrente de:',
     options: [
       '(A) A atividade da porção eferente simpática aumenta a permeabilidade da membrana ao íon Na⁺ e Ca²⁺, com isso, aumenta a frequência de despolarização do marcapasso.',
@@ -2051,7 +2051,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2019-8',
     module: 'Ciências Básicas',
-    image: '/images/tp2019-8.PNG',
+    image: '/images/tp2019-8.webp',
     text: 'Parturiente desenvolveu infecção hospitalar na incisão cirúrgica da cesariana, da qual foi isolado Staphylococcus aureus, cujo antibiograma é representado pela figura abaixo:\n\nEm Staphylococcus aureus, a resistência à oxacilina é:',
     options: [
       '(A) Determinada pelo gene mecA, localizado no cromossomo da bactéria, e geralmente é acompanhada por resistência aos demais antibióticos beta-lactâmicos.',
@@ -2261,7 +2261,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2020-1',
     module: 'Ciências Básicas',
-    image: '/images/tp2020-1.PNG',
+    image: '/images/tp2020-1.webp',
     text: 'Uma mulher branca de 58 anos, de descendência norte-europeia, apresenta uma história de 2 meses de aumento de fadiga, dificuldade de deambulação e déficits de memória. A história familiar apresenta doença autoimune. Os achados laboratoriais destacam uma anemia macrocítica, uma redução acentuada na vitamina B12 sérica e a presença de anticorpos anticélulas parietais.\n\nAnalise a fotomicrografia abaixo e assinale a alternativa que estiver indicando a célula da mucosa gástrica associada à redução acentuada na vitamina B12 e aos anticorpos anticélulas parietais:',
     options: [
       '(A) Letra A',
@@ -2278,7 +2278,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2020-2',
     module: 'Ciências Básicas',
-    image: '/images/tp2020-2.PNG',
+    image: '/images/tp2020-2.webp',
     text: '“A anatomia macroscópica subdivide o estômago em quatro regiões. A cárdia circunda o orifício esofágico; o fundo gástrico fica acima do nível de uma linha horizontal traçada através do óstio cárdico (orifício esofágico); o corpo gástrico fica abaixo dessa linha e a porção pilórica, a região em formato de funil que leva ao piloro. A porção pilórica é uma região distal estreita de esfíncter entre o estômago e o duodeno. Do ponto de vista histológico podemos dividir o estômago em apenas três regiões. Essas três regiões não consideram apenas a localização, mas também os tipos de glândulas que ocorrem na mucosa gástrica”.\n\nCom base nas informações do enunciado, analise a fotomicrografia abaixo e assinale a alternativa que estiver indicando a região da mucosa gástrica correspondente:',
     options: [
       '(A) Região do corpo',
@@ -2295,7 +2295,7 @@ export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2020-3',
     module: 'Ciências Básicas',
-    image: '/images/tp2020-3.PNG',
+    image: '/images/tp2020-3.webp',
     text: 'As células principais da mucosa gástrica são células típicas secretoras de proteínas, são responsáveis pela síntese de pepsinogênio, que em meio ácido é convertido em pepsina. A quantidade abundante de RER no citoplasma basal confere a essa parte da célula uma aparência basófila, enquanto o citoplasma apical é eosinófilo, devido à existência das vesículas secretoras, também denominadas grânulos de zimogênio, uma vez que contêm precursores enzimáticos.\n\nTomando como referência as informações do enunciado, identifique na fotomicrografia abaixo a célula principal:',
     options: [
       '(A) Célula indicada pela letra A.',

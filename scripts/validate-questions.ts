@@ -3,7 +3,7 @@
  * Uso: npm run validate
  * Sai com código 1 se houver erro (bloqueia a verificação automática).
  */
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, statSync } from 'node:fs';
 import { SUMMARY_PATH, summarySource } from './summary';
 import { join } from 'node:path';
 import { QUESTIONS as BANK } from '../src/data/questions';
@@ -56,7 +56,9 @@ QUESTIONS.forEach((q, i) => {
   if (!q.reference?.trim() && !q.id.startsWith('sug-')) warn('sem referência');
   if (q.image) {
     if (!q.image.startsWith('/images/')) err(`imagem fora de /images/: ${q.image}`);
+    else if (!q.image.endsWith('.webp')) err(`imagem em ${q.image.split('.').pop()}: rode \`npm run imagens\` para converter em WebP`);
     else if (!existsSync(join('public', q.image))) err(`imagem não encontrada: public${q.image}`);
+    else if (statSync(join('public', q.image)).size > 400 * 1024) warn(`imagem acima de 400 KB: ${q.image}`);
   }
   const mentionsAnnulled = /quest[aã]o (foi )?(oficialmente )?(exclu[ií]da\/)?anulada|questão anulada/i.test(
     [q.explanation, q.commentary, q.alert, ...(q.tags ?? [])].join(' ')

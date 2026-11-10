@@ -80,7 +80,7 @@ export const ENAMED_QUESTIONS: Question[] = [
     commentary: 'As demais alternativas não são compatíveis com o quadro clínico apresentado.',
     reference: 'Consenso Brasileiro de Esporotricose / Sociedade Brasileira de Infectologia',
     tags: ['infectologia', 'dermatologia', 'esporotricose'],
-    image: '/images/enamed2025-5.PNG'
+    image: '/images/enamed2025-5.webp'
   },
   {
     id: 'enamed-2025-6',
@@ -855,7 +855,7 @@ export const ENAMED_QUESTIONS: Question[] = [
     commentary: 'O hematoma subdural agudo (A) apresenta-se na TC como uma imagem em crescente (côncavo-convexa) e o curso costuma ser mais progressivo ou de imediato coma. Contusões e hematomas intraparenquimatosos (B e D) mostram padrão heterogêneo dentro do parênquima cerebral, sem o formato biconvexo típico.',
     reference: 'Diretrizes do ATLS (Advanced Trauma Life Support) / Tratado de Neurocirurgia',
     tags: ['cirurgia', 'neurocirurgia', 'traumatologia', 'TCE', 'emergência'],
-    image: '/images/enamed2025-53.PNG'
+    image: '/images/enamed2025-53.webp'
   },
   {
     id: 'enamed-2025-54',
@@ -1546,7 +1546,7 @@ export const ENAMED_QUESTIONS: Question[] = [
     commentary: 'A sorologia para Chlamydia trachomatis (A) refere-se ao linfogranuloma venéreo, que se manifesta tipicamente por linfadenite inguinal dolorosa fistulizada por múltiplos orifícios ("bico de regador"), sem úlcera genital ativa concomitante (que costuma ser efêmera e indolor). O VDRL reagente com penicilina benzatina (C) é o manejo clássico da sífilis primária (cancro duro), caracterizada por úlcera genital única, de base endurecida, limpa e indolor, acompanhada de linfonodomegalia regional indolor e não inflamatória.',
     reference: 'Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST) - Ministério da Saúde do Brasil',
     tags: ['infectologia', 'ginecologia', 'urologia', 'IST', 'cancro mole', 'penis'],
-    image: '/images/enamed2025-96.PNG'
+    image: '/images/enamed2025-96.webp'
   },
   {
     id: 'enamed-2025-97',

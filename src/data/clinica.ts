@@ -613,7 +613,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     id: 'tp2023-39',
     module: 'Clínica Médica',
     text: 'Paciente de 23 anos com queixa de tosse com expectoração amarelada e alguns episódios de expectoração com sangue há 4 semanas. Apresenta febre e sudorese noturna. Notou emagrecimento de 4kg nesse período. Consome bebidas alcoólicas diariamente há 5 anos, meia garrafa de pinga. Fuma 1 maço de cigarro por dia há 5 anos. Trouxe uma radiografia do tórax solicitada num atendimento há 5 dias, na emergência. Determine a hipótese diagnóstica e o exame laboratorial útil para o diagnóstico:',
-    image: '/images/tp2023-39.PNG',
+    image: '/images/tp2023-39.webp',
     options: [
       '(A) Pneumonia Adquirida na Comunidade. Solicitar hemograma, ureia e Proteína C Reativa.',
       '(B) Tuberculose Pleural. Solicitar Teste de Mantoux e toracocentese para exame do líquido pleural.',
@@ -646,7 +646,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     id: 'tp2022-21',
     module: 'Clínica Médica',
     text: 'Mulher, 72 anos, hipertensa e diabética, deu entrada no pronto-socorro com quadro de desvio de rima labial para a direita e hemiparesia à esquerda, que começou há 2 horas da admissão. Os sinais vitais da entrada eram PA: 174/104mmHg, FC: 82bpm, FR: 14ipm, SatO2: 95% em ar ambiente. Paciente realizou tomografia de crânio. Assinale a alternativa correta em relação ao diagnóstico provável e a melhor conduta:',
-    image: '/images/tp2022-21.PNG',
+    image: '/images/tp2022-21.webp',
     options: [
       '(A) Acidente vascular cerebral isquêmico. Trombólise química, se não houver contraindicações.',
       '(B) Acidente vascular cerebral hemorrágico. Craniectomia descompressiva.',
@@ -711,7 +711,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     id: 'tp2022-25',
     module: 'Clínica Médica',
     text: 'Paciente masculino, 50 anos, queixa de mal-estar, febre (38°C) e lesão eritematosa bem delimitada na perna. A principal hipótese diagnóstica e a conduta são:',
-    image: '/images/tp2022-25.PNG',
+    image: '/images/tp2022-25.webp',
     options: [
       '(A) Celulite - Antibioticoterapia com cobertura para gram negativos.',
       '(B) Erisipela - Antibioticoterapia com cobertura para Streptococcus do grupo A.',
@@ -728,7 +728,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     id: 'tp2022-26',
     module: 'Clínica Médica',
     text: 'Paciente masculino, 58 anos, apresenta lesão pigmentada no tronco com assimetria, bordas irregulares e variação de cores. Qual a principal hipótese diagnóstica?',
-    image: '/images/tp2022-26.PNG',
+    image: '/images/tp2022-26.webp',
     options: [
       '(A) Melanoma',
       '(B) Dermatofibrosarcoma',
@@ -825,7 +825,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     id: 'tp2022-32',
     module: 'Clínica Médica',
     text: 'Mauro, 22 anos, tosse seca, dor torácica ventilatório-dependente e febre. Radiografia com lesão de lobo médio. Sem comorbidades. Defina o diagnóstico e conduta.',
-    image: '/images/tp2022-32.PNG',
+    image: '/images/tp2022-32.webp',
     options: [
       '(A) Pneumonia com lesão de lobos médio e inferior; tratamento domiciliar com macrolídeo.',
       '(B) Tuberculose pulmonar com lesão de lobo inferior direito; tratamento hospitalar com esquema RIPE.',
@@ -922,7 +922,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     id: 'tp2022-38',
     module: 'Clínica Médica',
     text: 'Homem, 75 anos, queda há 2 meses, usuário de varfarina. TC mostra coleção hipodensa em crescente acompanhando a convexidade cerebral. Qual o diagnóstico?',
-    image: '/images/tp2022-38.PNG',
+    image: '/images/tp2022-38.webp',
     options: [
       '(A) Contusão cerebral',
       '(B) Hematoma epidural',
@@ -955,7 +955,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     id: 'tp2022-40',
     module: 'Clínica Médica',
     text: 'Homem, 72 anos, tosse seca há 6 meses, pior ao decúbito. Radiografia mostra nível hidroaéreo retrocardíaco (Hérnia de hiato). Qual exame é necessário?',
-    image: '/images/tp2022-40.PNG',
+    image: '/images/tp2022-40.webp',
     options: [
       '(A) Angiografia torácica',
       '(B) Broncoscopia com lavado',
@@ -983,7 +983,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     commentary: 'O IAM com supradesnivelamento do ST é uma emergência cardiovascular, e a estratégia de reperfusão deve ser imediata. O tratamento de escolha é a angioplastia primária, desde que possa ser realizada em até 90 minutos. A trombólise é alternativa se a angioplastia primária não estiver disponível.',
     reference: 'Diretriz de Síndromes Coronarianas Agudas da Sociedade Brasileira de Cardiologia (SBC)',
     tags: ['Cardiologia', 'Emergência'],
-    image: '/images/tp2025-21.PNG'
+    image: '/images/tp2025-21.webp'
   },
   {
     id: 'tp2025-22',
@@ -1048,7 +1048,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     commentary: 'Por se tratar de uma taquiarritmia de QRS estreito e intervalo RR regular, sem onda P (taquicardia paroxística supraventricular) em um paciente estável hemodinamicamente, segundo o algoritmo do ACLS, a melhor conduta para este paciente é realizar a manobra de Valsalva modificada ou qualquer outra manobra vagal. A cardioversão sincronizada seria para instabilidade.',
     reference: 'Manual do suporte avançado de vida ACLS',
     tags: ['Cardiologia', 'Emergência'],
-    image: '/images/tp2025-25.PNG'
+    image: '/images/tp2025-25.webp'
   },
   {
     id: 'tp2025-26',
@@ -1129,7 +1129,7 @@ export const CLINICA_QUESTIONS: Question[] = [
     commentary: 'Trata-se de paciente com quadro clínico de pielonefrite aguda (lombalgia, febre, náuseas, Giordano +), com laboratório de urina com cilindros leucocitários (patognomônicos de acometimento do parênquima renal). Devido a náuseas e risco de intolerância à via oral, a terapêutica empírica deve iniciar por via endovenosa com fluorquinolona.',
     reference: 'Martins; HC-FMUSP: Clínica Médica, Volume 3, Seção 3, Capítulo 17 (Infecções do Trato Urinário).',
     tags: ['Nefrologia', 'Infectologia', 'Urologia'],
-    image: '/images/tp2025-30.PNG'
+    image: '/images/tp2025-30.webp'
   },
   {
     id: 'tp2025-31',
@@ -1342,7 +1342,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2021-24',
     module: 'Clínica Médica',
-    image: '/images/tp2021-24.PNG',
+    image: '/images/tp2021-24.webp',
     text: 'Mulher, 18 anos, queixa-se de dor forte em membros superiores e mãos há 1 dia, sem fator desencadeante, com melhora parcial com dipirona. Refere que já sentiu dor semelhante várias vezes desde a infância. Nega edema, vermelhidão, trauma recente ou febre. Exame físico: bom estado geral, palidez cutâneo mucosa e icterícia (1+/4+). Murmúrio vesicular normal, simétrico e sem ruídos adventícios. Bulhas rítmicas taquicárdicas, com sopro holossistólico em focos tricúspide e mitral. Abdome e membros sem alteração. Hemograma: Hb = 8,3 g/dL; Ht = 26%; VCM = 91 fL; HCM = 29,6 pg; Leucócitos = 10,9 x 10⁶/μL (neutrófilos 72%, linfócitos 28%), Plaquetas = 480.000/mm³; Reticulócitos = 430.000/mm³. O diagnóstico mais provável é:',
     options: [
       '(A) Crise álgica por vaso-oclusão.',
@@ -1391,7 +1391,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2021-27',
     module: 'Clínica Médica',
-    image: '/images/tp2021-27.PNG',
+    image: '/images/tp2021-27.webp',
     text: 'Adolescente, 15 anos, atendido em Unidade Básica de Saúde por lesão assintomática na face, que surgiu há 1 ano e não regrediu com medicamentos tópicos. Exame: lesão arredondada na região mandibular esquerda, medindo 4,5 cm no maior eixo, com borda de 0,5 cm de largura, levemente elevada, contínua na maior extensão, entremeada por alguns tubérculos e pequenos trechos descontínuos, de coloração eritematosa-ferruginosa e centro mais claro e discretamente atrófico. O diagnóstico mais provável é:',
     options: [
       '(A) Tinea corporis.',
@@ -1456,7 +1456,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2021-31',
     module: 'Clínica Médica',
-    image: '/images/tp2021-31.PNG',
+    image: '/images/tp2021-31.webp',
     text: 'Homem, 70 anos, hipertenso, sedentário, dislipidêmico, com sobrepeso, tabagista, diabético, com dor torácica retroesternal em peso iniciada em repouso, de forte intensidade, sem irradiação, acompanhada de sudorese, há 3 horas. Foi admitido na emergência com sinais de congestão pulmonar e o eletrocardiograma a seguir. O diagnóstico mais provável é:',
     options: [
       '(A) Infarto agudo do miocárdio com supradesnivelamento do segmento ST.',
@@ -1697,7 +1697,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2026-26',
     module: 'Clínica Médica',
-    image: '/images/tp2026-26.PNG',
+    image: '/images/tp2026-26.webp',
     text: 'Mulher, 60 anos, com história de nefrolitíase, foi encaminhada ao nefrologista devido a redução do volume urinário, hematúria, dor lombar intermitente bilateral tipo cólica e vômitos quando apresenta dor. Fez uso de dipirona e escopolamina via oral. Exame de creatinina: 7mg/dL. Traz ultrassom de rins e vias urinárias, que evidencia dilatação pielocalicial bilateral. Diante do caso exposto, qual a etiologia da alteração de função renal?',
     options: [
       '(A) Lesão renal secundária a doença policística.',
@@ -1939,7 +1939,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-21',
     module: 'Clínica Médica',
-    image: '/images/tp2019-21.PNG',
+    image: '/images/tp2019-21.webp',
     text: 'Homem, 82 anos, 60kg, com hipertensão arterial sistêmica e diabetes melitus 2, vem ao pronto-socorro referindo dor torácica há um dia com duração de mais ou menos 20 minutos. Relata também dispneia ao deitar, edema nas pernas e diminuição da diurese. Refere ter “problema de coração”. Faz uso de furosemida 40mg (2x/dia), carvedilol 6,25mg (2x/dia), enalapril 20mg (2x/dia). Exame físico: estase jugular, edema de membros inferiores 2+/4+, PA = 140 x 90 mmHg e boa perfusão periférica. Eletrocardiograma a seguir:\n\nQual exame deve ser solicitado nesse momento e qual a primeira medicação a ser realizada?',
     options: [
       '(A) Troponina; trombolítico.',
@@ -1972,7 +1972,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-23',
     module: 'Clínica Médica',
-    image: '/images/tp2019-23.PNG',
+    image: '/images/tp2019-23.webp',
     text: 'Homem, 80 anos, admitido para avaliação no Pronto-Socorro por lombalgia intensa há duas horas. Nega história de trauma ou esforço. Queixa-se de dor localizada em região lombar alta, sem irradiação, sem outros sintomas. Histórico de nefrolitíase, gota e doença pulmonar obstrutiva crônica (DPOC) grave, com inúmeras crises de exacerbação, com necessidade de internação e corticoterapia sistêmica. Exame físico: dor à palpação local e à mobilização da coluna, porém com amplitude de movimento preservada. Radiografia de coluna a seguir:\n\nDiante desse quadro, o diagnóstico é:',
     options: [
       '(A) Osteoartrite',
@@ -1989,7 +1989,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-24',
     module: 'Clínica Médica',
-    image: '/images/tp2019-24.PNG',
+    image: '/images/tp2019-24.webp',
     text: 'Homem, 53 anos, lavrador, apresenta há oito meses lesão indolor e de crescimento lento, medindo 3cm, na região bucinadora esquerda (figura a seguir), associada a manchas hipercrômicas em áreas expostas ao sol.\n\nO diagnóstico, o tratamento e o prognóstico são:',
     options: [
       '(A) Carcinoma basocelular; excisão cirúrgica com margens de segurança; bom prognóstico por não causar metástases.',
@@ -2038,7 +2038,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-27',
     module: 'Clínica Médica',
-    image: '/images/tp2019-27.PNG',
+    image: '/images/tp2019-27.webp',
     text: 'Mulher, 25 anos, procura a Unidade Básica de Saúde por prurido no corpo todo há 10 dias. Trabalha em fábrica de peças para automóveis, manipulando graxa e solventes. Tem um filho de três anos que passa o dia na creche e que também está se coçando muito, principalmente à noite. As lesões são pápulas eritematosas, algumas encimadas por crostículas, outras em arranjo linear, com muita escoriação, distribuindo-se no abdome, mamas, axilas e face interna dos braços (foto a seguir).\n\nO diagnóstico e os achados clínicos que o definem são:',
     options: [
       '(A) Dermatofitose; caso semelhante em criança da família que frequenta creche.',
@@ -2103,7 +2103,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-31',
     module: 'Clínica Médica',
-    image: '/images/tp2019-31.PNG',
+    image: '/images/tp2019-31.webp',
     text: 'Homem, 68 anos, há 20 dias apresentou mal-estar, tosse com expectoração amarelada e febre de até 39°C. Foi tratado com amoxicilina e apresentou melhora do quadro. Há dois dias, surgiu dor no hemitórax direito, ventilatório-dependente, sem irradiação e sem fatores de melhora. Procurou novamente o serviço médico. Exame físico: bom estado geral, hidratado, eupneico. PA = 130 x 80 mmHg, SatO₂ em ar ambiente = 94%, FR = 14 ipm, FC = 100 bpm, T = 36,5°C. Bulhas rítmicas e normofonéticas sem sopros. Expansibilidade diminuída, redução do frêmito toracovocal, macicez à percussão e diminuição do murmúrio vesicular no terço inferior do hemitórax direito. Radiografia de tórax:\n\nA conduta mais adequada é:',
     options: [
       '(A) Drenagem torácica',
@@ -2120,7 +2120,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-32',
     module: 'Clínica Médica',
-    image: '/images/tp2019-32.PNG',
+    image: '/images/tp2019-32.webp',
     text: 'Homem, 60 anos, está em tratamento para psoríase sem controle adequado da doença. Há oito meses iniciou uso de imunobiológico (infliximabe) e obteve significativa melhora. Há três semanas começou a apresentar febre e tosse seca. Foi à Unidade de Pronto Atendimento há uma semana e foi tratado com azitromicina, sem melhora. Refere perda do apetite e diminuição do peso (3kg) no período. Exame físico: bom estado geral, hidratado, taquipneico e afebril. Exame respiratório, cardiovascular e abdominal sem alterações. FC = 90 bpm; PA = 120 x 70 mmHg, T = 38,6ºC. Radiografia de tórax:\n\nA hipótese diagnóstica mais provável é:',
     options: [
       '(A) Tuberculose miliar',
@@ -2249,7 +2249,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-40',
     module: 'Clínica Médica',
-    image: '/images/tp2019-40.PNG',
+    image: '/images/tp2019-40.webp',
     text: 'Mulher, 38 anos, tem crises de dispneia, sibilância e tosse produtiva, frequentes nos meses de clima frio, há cerca de oito anos. Tem rinite desde a infância e história de tabagismo de longa data. Radiografia do tórax: sinais de hiperinsuflação pulmonar. Espirometria:\n\nO melhor diagnóstico que se aplica a este caso é:',
     options: [
       '(A) Bronquiectasia',
@@ -2363,7 +2363,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-47',
     module: 'Clínica Médica',
-    image: '/images/tp2020-47.PNG',
+    image: '/images/tp2020-47.webp',
     text: 'Paciente de 52 anos, sexo masculino, tabagista, obeso, sedentário e portador de dislipidemia, chega ao setor de emergência com queixa de dor precordial em pontada, de forte intensidade e iniciada há poucos instantes, irradiada para a região epigástrica, acompanhada de sudorese fria e vômitos. O eletrocardiograma está representado a seguir:\n\nDetermine a hipótese diagnóstica e as medidas terapêuticas que devem ser tomadas pensando em diminuir a mortalidade da doença:',
     options: [
       '(A) Infarto agudo do miocárdio com supradesnivelamento do segmento ST. Realizar sedação, oxigênio, nitrato, AAS, Clopidogrel e encaminhar para sala de hemodinâmica imediatamente.',
@@ -2380,7 +2380,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-48',
     module: 'Clínica Médica',
-    image: '/images/tp2020-48.PNG',
+    image: '/images/tp2020-48.webp',
     text: 'Paciente de 75 anos sofreu queda da própria altura e apresenta sintomas de confusão mental e dores de cabeça. Realizou tomografia computadorizado do crânio (a seguir).\n\nDetermine o diagnóstico:',
     options: [
       '(A) Abscesso cerebral',
@@ -2397,7 +2397,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-49',
     module: 'Clínica Médica',
-    image: '/images/tp2020-49.PNG',
+    image: '/images/tp2020-49.webp',
     text: 'Homem, 23 anos, com diarreia há 3 meses (6 a 8 episódios por dia, inclusive noturnos), acompanhada de muco e cólicas abdominais, sendo que estas últimas são aliviadas com a evacuação. Refere piora da diarreia com o estresse. Relata emagrecimento não quantificado e fraqueza. Refere fazer uso “recreativo” de drogas (cigarro, maconha, ecstasy e álcool), nega uso de drogas injetáveis. Vida sexual ativa, heterossexual com várias parceiras, sem uso regular de preservativos. Pai falecido aos 48 anos de idade por neoplasia de cólon. Procurou gastroenterologista e foi solicitada uma colonoscopia para melhor elucidação diagnóstica (foto a seguir com a visão do íleo terminal):\n\nCom relação a este quadro, é correto afirmar que:',
     options: [
       '(A) Trata-se de diarreia por colite pseudomembranosa, e este paciente se beneficiará com o uso de metronidazol ou vancomicina.',
@@ -2430,7 +2430,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-51',
     module: 'Clínica Médica',
-    image: '/images/tp2020-51.PNG',
+    image: '/images/tp2020-51.webp',
     text: 'PCR, 65 anos, portador de hipertensão arterial sistêmica e insuficiência cardíaca congestiva, faz uso de AAS, carvedilol 6,25 mg/dia, losartana 100 mg/dia e hidroclorotiazida 25 mg/dia. Tem edema de membros inferiores recorrente, porém há cerca de 3 dias apresentou lesão avermelhada acompanhada de dor para caminhar no membro inferior esquerdo, acompanhado de febre e calafrios. Ao exame físico, o paciente apresenta-se toxemiado, com temperatura de 38,2°C. Verifica-se lesão eritematosa com bordas bem demarcadas, conforme a figura, acompanhada de adenite regional.\n\nO diagnóstico, o agente etiológico e a conduta terapêutica são:',
     options: [
       '(A) Celulite devido a Staphylococcus aureus. O tratamento indicado é internação, Penicilina G Cristalina na dose de 5 a 10 milhões de unidades por via intravenosa ou intramuscular por 7 a 10 dias, manter elevação do membro afetado. É importante recomendar repouso prolongado após a alta e usar meias elásticas para não promover estase venosa no membro afetado.',
@@ -2559,7 +2559,7 @@ export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-59',
     module: 'Clínica Médica',
-    image: '/images/tp2020-59.PNG',
+    image: '/images/tp2020-59.webp',
     text: 'Observe atentamente a descrição dos sintomas de dois pacientes distintos:\n\nPaciente I: jovem, sexo masculino, há 4 dias com quadro de tosse inicialmente seca, que evoluiu para expectoração com secreção amarelada espessa e presença de laivos de sangue, associado a febre alta e discreta dor ventilatório-dependente dorsal à direita.\n\nPaciente II: idoso, tabagista, com perda de peso de 7kg em 2 meses, associada a tosse seca, dispneia aos grandes esforços e dor torácica ventilatório dependente em base direita. Verifique as imagens radiográficas a seguir (figuras A e B):\n\nCorrelacione os achados clínicos e radiológicos e selecione a afirmativa correta:',
     options: [
       '(A) A descrição de sintomas “II” associado ao radiograma “B” permite inferir um diagnóstico sindrômico de Derrame Pleural. Os sinais esperados no exame físico seriam na base direita: a palpação com diminuição da expansibilidade e do frêmito toraco vocal, percussão maciça e diminuição ou abolição da ausculta de murmúrio vesicular.',

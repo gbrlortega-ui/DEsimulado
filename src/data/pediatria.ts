@@ -5,7 +5,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     id: 'tp2024-41',
     module: 'Pediatria',
     text: 'Menino de 2 anos e 3 meses é levado por sua mãe à consulta pediátrica com queixa de febre de até 38,5°C há 3 dias e irritabilidade. A mãe queixa-se também de que o filho “não come nada”. As imagens mostradas (descritas no exame físico) são vesículas na região da mão e boca. Qual é o agente etiológico responsável pelo quadro?',
-    image: '/images/tp2024-41.PNG',
+    image: '/images/tp2024-41.webp',
     options: [
       '(A) Varicela Zoster',
       '(B) Vírus Epstein Barr',
@@ -86,7 +86,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     id: 'tp2024-46',
     module: 'Pediatria',
     text: 'Menino de 7 anos com febre e odinofagia há 6 dias. Usou Amoxicilina há 3 dias e evoluiu com exantema maculopapular pruriginoso. Apresenta hepatoesplenomegalia e linfonodopatia generalizada. Qual a hipótese e conduta?',
-    image: '/images/tp2024-46.PNG',
+    image: '/images/tp2024-46.webp',
     options: [
       '(A) Infecção pelo Streptococcus pyogenes resistente à Amoxicilina. Prescrever Amoxicilina com clavulanato.',
       '(B) Infecção pelo Vírus Epstein-Barr. Prescrever repouso, hidratação e sintomáticos.',
@@ -199,7 +199,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     id: 'tp2024-53',
     module: 'Pediatria',
     text: 'RN 37 semanas (New Ballard). Peso 3920g. Mãe com DMG (dieta). Bolsa rota há 28 horas. Terceira gestação (2 cesáreas prévias). Classificação do RN?',
-    image: '/images/tp2024-53.PNG',
+    image: '/images/tp2024-53.webp',
     options: [
       '(A) Pré-termo, GIG, sem risco infeccioso.',
       '(B) Termo, GIG, com risco infeccioso.',
@@ -568,7 +568,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     id: 'tp2023-56',
     module: 'Pediatria',
     text: 'Na figura abaixo, observamos um paciente com Síndrome de Treacher Collins. O pai e os dois irmãos do paciente apresentam características similares. Assinale a alternativa que indica corretamente o padrão de herança, risco de recorrência e sinais clínicos:',
-    image: '/images/tp2023-56.PNG',
+    image: '/images/tp2023-56.webp',
     options: [
       '(A) Herança autossômica recessiva; risco de recorrência 50%; coloboma de pálpebras, microrretrognatia, hipoplasia malar.',
       '(B) Herança autossômica dominante; risco de recorrência 50%; microtia, microrretrognatia, fendas palpebrais oblíquas para baixo, hipoplasia malar.',
@@ -1784,7 +1784,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   {
     id: 'tp2026-52',
     module: 'Pediatria',
-    image: '/images/tp2026-52.PNG',
+    image: '/images/tp2026-52.webp',
     text: 'Criança, 2 anos, na sala de emergência em regular estado geral, cianótica, sonolenta, temperatura de 36ºC, taquipneia, frequência respiratória de 48irpm, tiragem intercostal e subcostal, saturação em ar ambiente de 88%, FC 220bpm, pressão arterial de 70x40mmHg e tempo de enchimento capilar de 4 segundos. Instalada monitorização, máscara não reinalante com 15 litros/minuto e puncionado acesso venoso periférico. É constatada no monitor a seguinte imagem, confirmada pelo ECG. Qual conduta deve ser realizada?',
     options: [
       '(A) Desfibrilação ventricular 1 Joule/kg',
@@ -2331,7 +2331,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-66',
     module: 'Pediatria',
-    image: '/images/tp2020-66.PNG',
+    image: '/images/tp2020-66.webp',
     text: 'Laura, 18 meses de idade, chega ao Pronto-Socorro com quadro de febre há quatro dias, associada a vômitos e alternando irritabilidade e letargia há 1 dia. Tem antecedente pessoal de infecção urinária de repetição. Ao exame físico apresenta-se em mau estado geral, cianose de extremidades, anictérica, febril, dispneia leve (tiragem subcostal e intercostal leves), taquicárdica, pálida e letárgica. Aparelho respiratório e abdome com exames físicos normais. Aparelho cardíaco com BRNF em 2 tempos sem sopros. Pulsos periféricos filiformes e perfusão periférica de 7 segundos. Possui este traçado em monitorização cardíaca:\n\nOs diagnósticos mais prováveis são:',
     options: [
       '(A) Taquicardia supraventricular consequente a choque séptico.',
@@ -2444,7 +2444,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-73',
     module: 'Pediatria',
-    image: '/images/tp2020-73.PNG',
+    image: '/images/tp2020-73.webp',
     text: 'Paciente de três anos iniciou há duas semanas com febre baixa por dois dias, mal-estar, cefaleia e por cinco dias com lesões eritematosas maculo papulares que se confluíram em face e espalharam para braços, pernas e pouco em tronco (conforme foto). Todos os sintomas desapareceram e há um dia, após ter frequentado parque aquático por um dia, reapareceram as lesões na pele.\n\nA mãe, preocupada com a volta da doença, procurou o atendimento e o pediatra pôde presumir que o agente infeccioso dessa patologia é:',
     options: [
       '(A) Morbillivirus paramyxoviridae',

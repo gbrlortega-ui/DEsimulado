@@ -24,7 +24,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "gabarito provisório"
     ],
     "alert": "Gabarito provisório, não oficial (alta controvérsia). A prova não oferece a conduta inicial usual para taquicardia de QRS estreito estável. Não ensinar B como cardioversão obrigatória por FC de 135 bpm.",
-    "image": "/images/sugenamed1-1.PNG"
+    "image": "/images/sugenamed1-1.webp"
   },
   {
     "id": "sug-enamed1-2",
@@ -468,7 +468,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "gabarito provisório"
     ],
     "alert": "Gabarito provisório, não oficial (potencial recurso). Nenhuma opção oferece redução urgente com estabilização percutânea e avaliação da perfusão arterial.",
-    "image": "/images/sugenamed1-24.PNG"
+    "image": "/images/sugenamed1-24.webp"
   },
   {
     "id": "sug-enamed1-25",
@@ -602,7 +602,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "cirurgia",
       "gabarito técnico"
     ],
-    "image": "/images/sugenamed1-31.PNG"
+    "image": "/images/sugenamed1-31.webp"
   },
   {
     "id": "sug-enamed1-32",
@@ -1034,7 +1034,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "gabarito provisório"
     ],
     "alert": "Gabarito provisório, não oficial (ponto discutível). CONTROVÉRSIA A × B: examinar imagem para confirmar nível pleural gás-líquido/empiema ou derrame simples antes de afirmar drenagem imediata.",
-    "image": "/images/sugenamed1-53.PNG"
+    "image": "/images/sugenamed1-53.webp"
   },
   {
     "id": "sug-enamed1-54",
@@ -1151,7 +1151,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "gabarito provisório"
     ],
     "alert": "Gabarito provisório, não oficial (gabarito corrigido). Se o diagnóstico baseado na fotografia original for outro, a classificação precisa ser revisada; a visualização não substitui exame da lesão.",
-    "image": "/images/sugenamed1-59.PNG"
+    "image": "/images/sugenamed1-59.webp"
   },
   {
     "id": "sug-enamed1-60",
@@ -1443,7 +1443,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "gabarito provisório"
     ],
     "alert": "Gabarito provisório, não oficial (dependente de imagem). Confirmar presença de pneumoperitônio na radiografia fotografada antes de assumir D como incontroversa.",
-    "image": "/images/sugenamed1-74.PNG"
+    "image": "/images/sugenamed1-74.webp"
   },
   {
     "id": "sug-enamed1-75",
@@ -1773,7 +1773,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "gabarito provisório"
     ],
     "alert": "Gabarito provisório, não oficial (dependente do ecg). Classificação depende da leitura do ECG original; não inferir WPW apenas pela frequência de 160 bpm.",
-    "image": "/images/sugenamed1-91.PNG"
+    "image": "/images/sugenamed1-91.webp"
   },
   {
     "id": "sug-enamed1-92",

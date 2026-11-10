@@ -577,7 +577,7 @@ export const ENAMED_2026_QUESTIONS: Question[] = [
       "arritmias",
       "fibrilação atrial"
     ],
-    "image": "/images/enamed2026-29.PNG"
+    "image": "/images/enamed2026-29.webp"
   },
   {
     "id": "enamed-2026-30",
@@ -737,7 +737,7 @@ export const ENAMED_2026_QUESTIONS: Question[] = [
       "queimaduras",
       "pediatria"
     ],
-    "image": "/images/enamed2026-37.PNG"
+    "image": "/images/enamed2026-37.webp"
   },
   {
     "id": "enamed-2026-38",
@@ -1038,7 +1038,7 @@ export const ENAMED_2026_QUESTIONS: Question[] = [
       "dermatologia",
       "infecções de pele"
     ],
-    "image": "/images/enamed2026-52.PNG"
+    "image": "/images/enamed2026-52.webp"
   },
   {
     "id": "enamed-2026-53",
@@ -1059,7 +1059,7 @@ export const ENAMED_2026_QUESTIONS: Question[] = [
       "cirurgia pediátrica",
       "neonatologia"
     ],
-    "image": "/images/enamed2026-53.PNG"
+    "image": "/images/enamed2026-53.webp"
   },
   {
     "id": "enamed-2026-54",
@@ -1338,7 +1338,7 @@ export const ENAMED_2026_QUESTIONS: Question[] = [
       "trauma",
       "fratura de pelve"
     ],
-    "image": "/images/enamed2026-67.PNG"
+    "image": "/images/enamed2026-67.webp"
   },
   {
     "id": "enamed-2026-68",
@@ -1499,7 +1499,7 @@ export const ENAMED_2026_QUESTIONS: Question[] = [
       "ultrassonografia",
       "massas anexiais"
     ],
-    "image": "/images/enamed2026-75.PNG"
+    "image": "/images/enamed2026-75.webp"
   },
   {
     "id": "enamed-2026-76",
@@ -1620,7 +1620,7 @@ export const ENAMED_2026_QUESTIONS: Question[] = [
       "gastroenterologia",
       "abscesso hepático"
     ],
-    "image": "/images/enamed2026-81.PNG"
+    "image": "/images/enamed2026-81.webp"
   },
   {
     "id": "enamed-2026-82",
@@ -1781,7 +1781,7 @@ export const ENAMED_2026_QUESTIONS: Question[] = [
       "oncologia",
       "câncer de vulva"
     ],
-    "image": "/images/enamed2026-89.PNG"
+    "image": "/images/enamed2026-89.webp"
   },
   {
     "id": "enamed-2026-90",

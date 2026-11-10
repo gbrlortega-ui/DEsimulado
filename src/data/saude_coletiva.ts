@@ -851,7 +851,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   {
     id: 'tp2022-114',
     module: 'Saúde Coletiva',
-    image: '/images/tp2022-114.PNG',
+    image: '/images/tp2022-114.webp',
     text: 'O método de cálculo da Razão de Mortalidade Materna é:',
     options: [
       '(A) (óbitos por causa materna / população estimada) x 10^5.',
@@ -868,7 +868,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   {
     id: 'tp2022-115',
     module: 'Saúde Coletiva',
-    image: '/images/tp2022-115.PNG',
+    image: '/images/tp2022-115.webp',
     text: 'Mulher de 37 anos com perda de peso, fadiga, nervosismo, sudorese excessiva e bócio. Qual o diagnóstico e conduta inicial prováveis?',
     options: [
       '(A) Hipotireoidismo; iniciar levotiroxina.',
@@ -1153,7 +1153,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     commentary: 'As Curvas de Nelson de Moraes avaliam proporcionalmente os perfis de óbito por ciclos etários divididos. O Padrão de Nível de Saúde Baixo caracteriza-se por manter altíssima mortalidade na faixa infantil de recém-nascidos e lactentes (< 1 ano) e modesto percentual de sobrevida entre os maduros tardios senis (óbitos de maiores de 50 anos inferiores a thresholds de 20%). Países desenvolvidos de Nível de Saúde Elevado ostentam curva tipo "U" ou tipo "J" tradicional em que mais de 70% dos óbitos ocorrem em idosos tardios com sobrevida avançada.',
     reference: 'Laurenti R, et al. Estudo da mortalidade e da morbidade perinatal em maternidades. Rev Saúde Pública, 18:436-47, 1984.',
     tags: ['Indicadores de Saúde', 'Epidemiologia'],
-    image: '/images/tp2025-112.PNG'
+    image: '/images/tp2025-112.webp'
   },
   {
     id: 'tp2025-113',
@@ -2296,7 +2296,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-24',
     module: 'Saúde Coletiva',
-    image: '/images/tp2020-24.PNG',
+    image: '/images/tp2020-24.webp',
     text: 'Em consulta de acolhimento, você atende um homem de 45 anos, preocupado com uma mancha nas costas que ele acha que existe há quase três anos (imagem abaixo). Ele chegou a fazer exames em serviço de saúde de outra cidade, mas ao mudar-se para este bairro perdeu a consulta anterior. Traz exames que foram solicitados no serviço antigo. Ao exame físico, apresenta perda de sensibilidade na lesão.\n\n• Baciloscopia: negativa\n• Exame anatomopatológico: infiltrado inflamatório granulomatoso perineural e perianexial, com pesquisa de BAAR negativa\n• Reação de Mitsuda: positiva\n\nA partir do exame físico e complementar, indique a classificação da hanseníase e o tratamento corretos:',
     options: [
       '(A) Tuberculoide - Rifampicina 600mg e Dapsona 100mg.',
@@ -2489,7 +2489,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-36',
     module: 'Saúde Coletiva',
-    image: '/images/tp2020-36.PNG',
+    image: '/images/tp2020-36.webp',
     text: 'Abaixo, observa-se a evolução da taxa de mortalidade materna no brasil em anos recentes:\n\nAssinale a alternativa correta:',
     options: [
       '(A) A taxa de mortalidade materna no Brasil é maior quando comparada a países desenvolvidos (Europa e América do Norte), e é decorrente de causas evitáveis por uma boa assistência pré-natal, ao parto e puerpério, tais como Hemorragias, Hipertensão, Eclâmpsia e Infecções. A legislação que criminaliza o aborto colabora para sua manutenção em patamares não elevados, evitando que a mortalidade materna seja ainda maior.',

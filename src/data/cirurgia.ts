@@ -101,7 +101,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2024-67',
     module: 'Cirurgia',
     text: 'Neonato masculino com malformação de parede abdominal extensa (vísceras expostas). Qual a conduta indicada?',
-    image: '/images/tp2024-67.PNG',
+    image: '/images/tp2024-67.webp',
     options: [
       '(A) Solução tópica de nitrato de prata.',
       '(B) Plastia umbilical com tela imediata.',
@@ -134,7 +134,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2024-69',
     module: 'Cirurgia',
     text: 'Homem, 54 anos, tabagista, perda ponderal e dispneia. RX com derrame pleural à direita. Qual procedimento e resultado esperado para neoplasia?',
-    image: '/images/tp2024-69.PNG',
+    image: '/images/tp2024-69.webp',
     options: [
       '(A) Paracentese; Critérios de Light; exsudato linfocítico.',
       '(B) Drenagem tubular; Critérios de Wells; exsudato linfocítico.',
@@ -439,7 +439,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2023-68',
     module: 'Cirurgia',
     text: 'Paciente masculino, 65 anos, vem ao hospital referindo dor progressiva e aumento do volume abdominal há 6 horas. Tem antecedente de constipação intestinal crônica, com piora progressiva com o passar dos anos. Realizou o exame de RX. Ao exame físico o abdome se encuentra distendido, timpânico, com dor à palpação superficial e profunda difusamente, com sinal de descompressão brusca dolorosa negativo. Qual hipótese diagnóstica se enquadra com a análise do quadro clínico e exame radiológico?',
-    image: '/images/tp2023-68.PNG',
+    image: '/images/tp2023-68.webp',
     options: [
       '(A) Fecaloma',
       '(B) Volvo de sigmoide',
@@ -472,7 +472,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2023-70',
     module: 'Cirurgia',
     text: 'Paciente de 43 anos, sexo masculino, no pós-operatório tardio (um ano) de uma laparotomia exploradora por ferimento (projétil de arma de fogo). Apresenta, há 2 dias, náuseas seguidas de vômitos, que se intensificaram nas últimas 6 horas, acompanhados por aumento do volume abdominal e dor tipo cólica. Ao exame físico encontra-se corado, desidratado ++/4+, acianótico, anictérico, afebril e eupneico. Frequência cardíaca de 98bpm, pressão arterial de 120x70mmHg. Ausculta pulmonar e cardíaca normais. Exame abdominal com distensão e dor na palpação superficial e profunda difusamente, com descompressão brusca dolorosa negativa. Realizou Raio X de abdome. Qual a hipótese diagnóstica e a conduta a ser adotada inicialmente?',
-    image: '/images/tp2023-70.PNG',
+    image: '/images/tp2023-70.webp',
     options: [
       '(A) Oclusão intestinal por torção de cólon; correção de distúrbios hidroeletrolíticos e laparotomia.',
       '(B) Abscesso intracavitário; tomografia de abdome e antibioticoterapia.',
@@ -505,7 +505,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2023-72',
     module: 'Cirurgia',
     text: 'Homem de 64 anos comparece ao ambulatório de urologia para avaliação de doenças da próstata, pois seu pai fora diagnosticado com câncer de próstata ainda jovem. No momento, não apresenta qualquer queixa espontânea e está contente com o jato urinário. Ao toque, foi encontrado um nódulo indolor em lobo esquerdo em uma próstata de volume normal. Ele também trouxe os exames anteriores registrados: 2020 (PSA total 0.9/livre 0.4), 2021 (1.1/0.3), 2022 (1.3/0.5) e 2023 (2.1/0.2). Com base no enunciado, podemos afirmar que:',
-    image: '/images/tp2023-72.PNG',
+    image: '/images/tp2023-72.webp',
     options: [
       '(A) Estamos diante de um possível caso de câncer de próstata e o próximo passo é a biópsia prostática.',
       '(B) A velocidade de crescimento do PSA já vinha dando indicações desde 2021 de que era um caso de câncer de próstata e a biopsia deveria ter sido solicitada anteriormente.',
@@ -570,7 +570,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2023-76',
     module: 'Cirurgia',
     text: 'Paciente de 52 anos, masculino, vitimado de queda de motocicleta a 60km/h. Dá entrada na unidade de urgência referenciada trazido pelo SAMU, com imobilização completa. Refere dor em hipocôndrio esquerdo, equimose em flanco. Está consciente, lúcido e orientado. Refere que utiliza 100mg de aspirina. Sinais vitais: tensão arterial de 100x65mmHg, pulso de 100bpm, frequência cardíaca de 100bpm, frequência respiratória de 16irpm, saturação de oxigênio de 96% em ar ambiente. Realizada tomografia de abdome com contraste, evidenciando lesão de baço grau II (AAST), com presença de sangue livre na cavidade. Realizado tromboelastograma, evidenciando redução da Amplitude Máxima (MA). O tratamento hemoterápico mais efetivo neste momento, baseado no tromboelastrograma, é:',
-    image: '/images/tp2023-76.PNG',
+    image: '/images/tp2023-76.webp',
     options: [
       '(A) Transfusão de concentrado de hemácias.',
       '(B) Infusão de 1000mL de ringer e plasma fresco congelado.',
@@ -635,7 +635,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2023-80',
     module: 'Cirurgia',
     text: 'Paciente de 30 anos, masculino, refere avulsão do terceiro molar inferior direito há 6 dias. O dentista receitou-lhe amoxicilina por 7 dias. Há 3 dias notou abaulamento na região submandibular direita, com dor local e febre. Procurou Unidade Básica de Saúde, sendo avaliado, mantido o uso de antibiótico, introduzido anti-inflamatório e foi dispensado. Hoje dá entrada no pronto-socorro de hospital de referência, queixando-se de piora da dor, picos febris, aumento da lesão cervical, acompanhada por hiperemia da pele, taquicardia, odinofagia, disfagia e elevação do soalho da boca. Qual é o diagnóstico e o exame de imagem para complementação diagnóstica?',
-    image: '/images/tp2023-80.PNG',
+    image: '/images/tp2023-80.webp',
     options: [
       '(A) Sialoadenite aguda; ressonância nuclear magnética do pescoço com contraste.',
       '(B) Angina de Ludwig (fasciíte necrotizante cervical); tomografia computadorizada do pescoço com contraste.',
@@ -748,7 +748,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2022-67',
     module: 'Cirurgia',
     text: 'Vítima de trauma automobilístico com dor torácica e falta de ar. Imagem radiológica evidencia velamento de base pulmonar com desvio de mediastino. Qual a conduta?',
-    image: '/images/tp2022-67.PNG',
+    image: '/images/tp2022-67.webp',
     options: [
       '(A) Punção torácica diagnóstica.',
       '(B) Drenagem torácica aberta.',
@@ -765,7 +765,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2022-68',
     module: 'Cirurgia',
     text: 'Trauma de tórax com murmúrio diminuído e saturação 88%. Imagem radiográfica mostra pneumotórax. Qual a conduta imediata?',
-    image: '/images/tp2022-68.PNG',
+    image: '/images/tp2022-68.webp',
     options: [
       '(A) Proceder drenagem de tórax em selo d’água.',
       '(B) Realizar radiografia de Laurel.',
@@ -926,7 +926,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     id: 'tp2022-78',
     module: 'Cirurgia',
     text: 'Cefaleia súbita durante relação sexual, Glasgow 4 e anisocoria. TC mostra imagem hiperdensa em parênquima e ventrículos. Diagnosis?',
-    image: '/images/tp2022-78.PNG',
+    image: '/images/tp2022-78.webp',
     options: [
       '(A) Hematoma apenas intraventricular.',
       '(B) Hematoma intraparenquimatoso e derrame intraventricular.',
@@ -1374,7 +1374,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2021-66',
     module: 'Cirurgia',
-    image: '/images/tp2021-66.PNG',
+    image: '/images/tp2021-66.webp',
     text: 'Paciente comparece ao ambulatório após realização de ponte de safena com o seguinte achado de exame físico: área de deiscência total de pele, com granulação no subcutâneo subjacente. Hiperemia leve ao redor da ferida e edema do membro. A enfermeira solicita avaliação em relação à ferida cirúrgica. Pode-se afirmar:',
     options: [
       '(A) O ferimento está em fase retardada de cicatrização, com risco elevado de desenvolver infecção secundária de ferida cirúrgica. Introduzir antibioticoterapia de largo espectro por 10 dias.',
@@ -1391,7 +1391,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2021-67',
     module: 'Cirurgia',
-    image: '/images/tp2021-67.PNG',
+    image: '/images/tp2021-67.webp',
     text: 'Homem, 57 anos, apresenta queixa de dor abdominal em hipocôndrio direito há cinco dias, associado a náuseas e vômitos. Comorbidades: hipertenso e diabético. Exame físico: mau estado geral, confuso, sudoreico, ictérico 2+/4+, T = 38 ºC, FC = 130 bpm, SaO2 ar ambiente = 95%, tempo de enchimento capilar > 2 segundos, PA = 70 x 45 mmHg. Abdome flácido, dolorido em hipocôndrio direito, ruídos hidroaéreos presentes. Exames laboratoriais e tomografia apresentados abaixo. O diagnóstico, a síndrome e a conduta são, respectivamente:',
     options: [
       '(A) Colecistite; síndrome colestática; colecistectomia videolaparoscopica de urgência.',
@@ -1456,7 +1456,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2021-71',
     module: 'Cirurgia',
-    image: '/images/tp2021-71.PNG',
+    image: '/images/tp2021-71.webp',
     text: 'Homem, 20 anos, deu entrada na Emergência 2 horas após acidente motociclístico, em que houve breve perda de consciência. Seguindo-se à avaliação inicial do paciente politraumatizado, a equipe da neurocirurgia foi contactada. O exame neurológico foi normal, exceto por queixa de dor cervical, recebendo o escore de 15 na Escala de Coma de Glasgow, além de equimose periorbital esquerda. Paciente permaneceu internado para observação hospitalar. Após 3 horas, o paciente estava sonolento, com discreta dilatação pupilar esquerda e movimentação simétrica dos membros. A imagem tomográfica compatível com a provável lesão do paciente é:',
     options: [
       '(A) Lesão axonal difusa.',
@@ -1473,7 +1473,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2021-72',
     module: 'Cirurgia',
-    image: '/images/tp2021-72.PNG',
+    image: '/images/tp2021-72.webp',
     text: 'Mulher, 68 anos, procura atendimento por quadro de dor abdominal em cólica há 3 dias, acompanhada de distensão, náuseas, hiporexia e parada de eliminação de flatos e fezes. Antecedentes pessoais: há seis meses apresenta emagrecimento e episódios de dores abdominais, associados a constipação intestinal. Exame físico: abdome distendido, globoso, hipertimpânico em andar superior, levemente doloroso, com massa endurecida palpável em hipogástrio. Radiografia de abdome: imagem abaixo. O diagnóstico e o achado de imagem são:',
     options: [
       '(A) Constipação intestinal crônica, distensão de cólon e intestino delgado e ar na ampola retal.',
@@ -1939,7 +1939,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-61',
     module: 'Cirurgia',
-    image: '/images/tp2019-61.PNG',
+    image: '/images/tp2019-61.webp',
     text: 'Mulher, 68 anos, procura atendimento por quadro de dor abdominal em cólica há 3 dias, acompanhada de distensão, náuseas, hiporexia e parada de eliminação de flatos e fezes. Antecedentes pessoais: há seis meses apresenta emagrecimento e episódios de dores abdominais, associados a constipação intestinal. Exame físico: abdome distendido, globoso, hipertimpânico em andar superior, levemente doloroso, com massa endurecida palpável em hipogástrio. Radiografia de abdome: imagem abaixo.\n\nO diagnóstico e o achado de imagem são:',
     options: [
       '(A) Abdome agudo obstrutivo, pneumoperitônio e ausência de ar na ampola retal.',
@@ -1972,7 +1972,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-63',
     module: 'Cirurgia',
-    image: '/images/tp2019-63.PNG',
+    image: '/images/tp2019-63.webp',
     text: 'Homem, 68 anos, apresenta há 4 meses dificuldade para engolir, inicialmente apenas alimentos mais sólidos e atualmente até para beber água. Refere perda de 8kg neste período e sensação de fraqueza. Antecedentes pessoais: tabagista (4 cigarros de palha ao dia, por mais de 20 anos), etilista (2 doses de pinga ao dia, parou logo que os sintomas se iniciaram), e morou em zona rural na infância. Realizado exame contrastado do esôfago, a seguir.\n\nA hipótese diagnóstica e a respectiva justificativa são:',
     options: [
       '(A) Divertículo de terço médio do esôfago; exame contrastado mostrando imagem sacular em terço médio com retração da luz do esôfago.',
@@ -2005,7 +2005,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-65',
     module: 'Cirurgia',
-    image: '/images/tp2019-65.PNG',
+    image: '/images/tp2019-65.webp',
     text: 'Homem, 63 anos, refere o aparecimento de tumoração localizada no flanco esquerdo, ligeiramente dolorosa, com aumento discreto, porém progressivo do seu volume há seis meses. Nega traumatismo local ou sinais inflamatórios. Foi realizada tomografia computadorizada (abaixo).\n\nO diagnóstico é:',
     options: [
       '(A) Hérnia na linha semilunar de Spiegel',
@@ -2022,7 +2022,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-66',
     module: 'Cirurgia',
-    image: '/images/tp2019-66.PNG',
+    image: '/images/tp2019-66.webp',
     text: 'Homem, 57 anos, apresenta queixa de dor abdominal em hipocôndrio direito há cinco dias, associado a náuseas e vômitos. Comorbidades: hipertenso e diabético. Exame físico: mau estado geral, confuso, sudoreico, ictérico 2+/4+, T = 38°C, FC = 130bpm, SaO₂ ar ambiente = 95%, tempo de enchimento capilar > 2 segundos, PA = 70 x 45 mmHg. Abdome flácido, dolorido em hipocôndrio direito, ruídos hidroaéreos presentes. Exames laboratoriais: Hb: 13,0 g/dL; leucócitos: 16.000/mm³ com 10% de bastonetes; ureia: 98 mg/dL; creatinina sérica: 3,2 mg/dL; bilirrubinas totais: 6,9 mg/dL (direta: 4,0 mg/dL); AST 150u/mL; ALT: 101 u/mL; Gama-GT 980 u/mL; fosfatase alcalina: 748 u/mL; amilase: 80 u/mL. Tomografia de abdome apresentada abaixo.\n\nO diagnóstico, a síndrome e a conduta são, respectivamente:',
     options: [
       '(A) Colecistite; síndrome colestática; colecistectomia videolaparoscopica de urgência.',
@@ -2264,7 +2264,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-101',
     module: 'Cirurgia',
-    image: '/images/tp2020-101.PNG',
+    image: '/images/tp2020-101.webp',
     text: 'Paciente, 57 anos, masculino, branco, natural e residente da cidade São Paulo, classe média, queixa-se de dificuldade para engolir os alimentos, e que vem piorando nos últimos 3 meses. Refere que, de início, começou a ter dificuldades para engolir alimentos como carnes, pães e alimentos mais duros, necessitando tomar água para facilitar a deglutição, e que no último mês tem dificuldade para engolir até alimentos pastosos. Emagreceu de 15kg nos últimos 3 meses, fumante 10 cigarros dia, etilista social, hipertenso, hiperuricemia, já tendo feito tratamento para refluxo gastroesofágico várias vezes. Faz uso de Alopurinol 100 mg/dia, Losartana 100 mg/dia e Omeprazol 40 mg/dia de forma irregular. Mãe falecida por neoplasia de mama aos 58 anos e pai falecido de neoplasia de próstata aos 81 anos e história de infarto agudo do miocárdio aos 65 anos. Exame físico: descorado moderadamente, hidratado, eupneico, afebril, anictérico, acianótico. Aparelho cardiocirculatório com ausculta apresentando coração rítmico, com duas bulhas normofonetas. Aparelho respiratório com murmúrio vesicular presente bilateralmente, sem ruídos adventícios, tensão arterial de 140/90 mmHg, IMC = 30. Abdome plano, flácido, sem massas e sem dores à palpação superficial e profunda, com diástase de retos abdominais e cicatriz em região umbilical de cirurgia de herniorrafia umbilical, ausência de viceromegalias e adenopatias. Endoscopia relata neoplasia permeável ao aparelho de 32 a 36cm da Arcada Dentária Superior.\n\nAssinale a alternativa correta:',
     options: [
       '(A) Trata-se de Adenocarcinoma de Esôfago distal.',
@@ -2329,7 +2329,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-105',
     module: 'Cirurgia',
-    image: '/images/tp2020-105.PNG',
+    image: '/images/tp2020-105.webp',
     text: 'L.S., 26 anos, condutor de veículo pesado, vítima de colisão automotiva em rodovia. Condutor de outro veículo (carro) faleceu em cena. Admitido em pronto-socorro referenciado trazido por viatura de socorro básico. Respira espontaneamente. Frequência respiratória: 23 incursões por minuto, saturação de oxigênio de 90% pelo oxímetro de pulso, e a ausculta apresenta murmúrio vesicular diminuído difusamente associado a crepitação de parede torácica direita. Frequência cardíaca 110 batimentos por minuto, pressão arterial 105 x 67 mmHg. Escala de Coma de Glasgow de 13 pontos. Dermoabrasão em sentido oblíquo em parede anterior de tórax. Após administrar oxigênio complementar, obter acessos venosos e iniciar administração de cristaloides, foi solicitada tomografia de tórax sem contraste endovenoso.\n\nAvalie as imagens abaixo e assinale a alternativa que melhor corresponde ao diagnóstico e condutas adequadas:',
     options: [
       '(A) Pneumotórax hipertensivo. Punção de alívio.',
@@ -2346,7 +2346,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-106',
     module: 'Cirurgia',
-    image: '/images/tp2020-106.PNG',
+    image: '/images/tp2020-106.webp',
     text: 'Paciente J.P.S. de 60 anos, destro, caminhoneiro, apresenta dor crônica em ombro direito há 2 (dois) anos, com piora 5 (cinco) meses após trocar o pneu de um caminhão. Apresenta piora da dor à noite e queixa-se de dificuldade para levar a mão acima da cabeça. Ao exame físico na inspeção estática e dinâmica não apresenta alterações na pele como abaulamentos, equimoses, porém apresenta os testes de impacto de Neer e o teste de Jobe positivos. Realizou uma Ressonância Nuclear Magnética (RNM) conforme imagem abaixo, na qual foi confirmada a principal hipótese diagnóstica do caso.\n\nQual das alternativas abaixo NÃO é um diagnóstico diferencial desse caso?',
     options: [
       '(A) Radiculopatia cervical',
@@ -2395,7 +2395,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-109',
     module: 'Cirurgia',
-    image: '/images/tp2020-109.PNG',
+    image: '/images/tp2020-109.webp',
     text: 'ECM, 58 anos, chega ao Pronto Atendimento com quadro de distensão abdominal há 4 dias e dor abdominal em cólica. Relata parada de eliminação de gases e fezes há 7 dias e início de vômitos há 12 horas. Nega febre. Paciente portador de hipertensão arterial e tabagista. Ao exame: abdome globoso, com cicatriz de laparotomia prévia por úlcera péptica perfurada, com ruídos aumentados, dor à palpação profunda generalizada, sem sinais de peritonite; ao toque, ampola retal sem fezes. Exames laboratoriais com função renal e eletrólitos normais. Radiografia de abdome anteroposterior é a que segue:\n\nA partir da história, exame físico e radiografia, o diagnóstico e conduta são:',
     options: [
       '(A) Tumor de Colon; Laparotomia exploradora.',

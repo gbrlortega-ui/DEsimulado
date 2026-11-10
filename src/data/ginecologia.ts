@@ -373,7 +373,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
     id: 'tp2023-84',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 23 anos, primigesta, Índice de Massa Corporal (IMC) 28kg/m2. Sem comorbidades prévias. Vem à segunda consulta de pré-natal com idade gestacional de 10 semanas e 5 dias. Traz exame de glicemia de jejum = 93mg/dL. Frente a este resultado do exame, qual a conduta para esta paciente? Parâmetros laboratoriais: Glicemia de jejum no pré-natal: Glicemia de jejum < 92mg/dL – normal; Glicemia de jejum - 92 a 125mg/dL – Diabetes Mellitus Gestacional; Glicemia de jejum ≥ 126mg/dL – Diabetes Mellitus',
-    image: '/images/tp2023-84.PNG',
+    image: '/images/tp2023-84.webp',
     options: [
       '(A) Encaminhar a paciente para iniciar insulinoterapia.',
       '(B) Prescrever medicação hipoglicemiante oral imediatamente.',
@@ -550,7 +550,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
     id: 'tp2023-95',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 74 anos, viúva, moradora de casa de repouso para idosos, apresenta queixa de sangramento vaginal em pequena quantidade há 7 dias. É hipertensa crônica e diabética. Menopausada desde os 50 anos, nega terapia de reposição hormonal, teve 5 gestações, sendo elas 4 partos vaginais e 1 aborto sem necessidade de curetagem. Conta que há mais de 10 anos tem a sensação de peso e bola na vagina, e que muitas vezes perde urina aos pequenos esforços. Seu último exame de “prevenção” foi em 2010. Ao exame físico, observa-se a seguinte imagem: A principal hipótese diagnóstica é:',
-    image: '/images/tp2023-95.PNG',
+    image: '/images/tp2023-95.webp',
     options: [
       '(A) Prolapso uterovaginal',
       '(B) Carcinoma de colo uterino',
@@ -599,7 +599,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
     id: 'tp2023-98',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 26 anos, G4P3A0, branca, desempregada, sem parceria sexual no momento, procura atendimento em Pronto-Socorro Ginecológico, devido ao aparecimento de “caroços" na vulva e odor na vagina há mais ou menos 5 dias. Ao exame ginecológico, observam-se as lesões abaixo e um corrimento vaginal mal-cheiroso, branco e abundante. Qual o método para confirmação diagnóstica e o tratamento correto?',
-    image: '/images/tp2023-98.PNG',
+    image: '/images/tp2023-98.webp',
     options: [
       '(A) VDRL e penicilina benzatina 2.400.000UI via intramuscular; repetir em 7 dias.',
       '(B) Teste rápido treponêmico e penicilina benzatina 2.400.000UI via intramuscular.',
@@ -995,7 +995,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
     commentary: 'O pólipo endometrial constitui uma proliferação exofítica focal local benigna do estroma e das glândulas endometriais, manifestando-se clinicamente com menorragia e, proeminentemente, sangramentos intermenstruais e spotting pós-coito (sinusorragia). À ultrassonografia, exibe-se como imagem polipoide bem delimitada e hiperecogênica no eco endometrial, cuja marcação sob Doppler colorido revela uma via arterial pediculada única de nutrição. Os miomas FIGO 3 assentam-se inteiramente intramurais no miométrio, a adenomiose exibe espessamento heterogêneo miometrial assimétrico difuso com cistos subendometriais, e o câncer exocervical manifesta-se no colo uterino distal.',
     reference: 'Simões RS, Soares Júnior JM, Pastore AR, Baracat EC. Importância do diagnóstico por imagem em pacientes com sangramento uterino anormal. Feminina. 2023;51(8):454-61.',
     tags: ['Ginecologia Geral', 'DIP'],
-    image: '/images/tp2025-82.PNG'
+    image: '/images/tp2025-82.webp'
   },
   {
     id: 'tp2025-83',
@@ -1172,7 +1172,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
     commentary: 'A estagnação gráfica do progresso cervical horizontal da dilatação nas anotações do partograma por 2 horas consecutivas consagra o quadro clínico de parada secundária da dilatação cervical. Este desvio decorre comumente de hipotonia dinâmica de fibra uterina. A conduta subsequente em fase ativa repousa na otimização dinâmica, recomendando-se deambulação livre ativa ou a administração venosa diluída calibrada de ocitocina exógena para amparar a regularidade e potência contrátil uterina, restabelecendo a progressão fisiológica do polo cefálico fetal.',
     reference: 'Diretriz Nacional de Assistência ao Parto Normal, Ministério da Saúde, 2016.',
     tags: ['Obstetrícia', 'Partograma'],
-    image: '/images/tp2025-93.PNG'
+    image: '/images/tp2025-93.webp'
   },
   {
     id: 'tp2025-94',
@@ -1253,7 +1253,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
     commentary: 'A Doença Trofoblástica Gestacional benigna em sua forma de Mola Hidatiforme Incompleta caracteriza-se histológica e macroscopicamente pela presença de fragmentos placentários e vilosidades hidrópicas vesicularmente dilatadas as quais se encontram entremescladas a porções de saco gestacional ou feto identificáveis (cariótipo triploide por fecundação dispermissiva). Diverge da mola completa na qual a degeneração é universal e total, destituída de quaisquer indícios de material conceptual embriofetal.',
     reference: 'Doença trofoblástica gestacional, Protocolo FEBRASGO-Obstetrícia, nº 24, 2021.',
     tags: ['Obstetrícia', 'Doença Trofoblástica'],
-    image: '/images/tp2025-98.PNG'
+    image: '/images/tp2025-98.webp'
   },
   {
     id: 'tp2025-99',
@@ -1578,7 +1578,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2021-99',
     module: 'Ginecologia e Obstetrícia',
-    image: '/images/tp2021-99.PNG',
+    image: '/images/tp2021-99.webp',
     text: 'Paciente de 55 anos com queixa de “sensação de bola na vagina” e dificuldade para urinar. Relata atividade sexual regular. O exame ginecológico revela prolapso uterino completo (estágio IV). Qual o tratamento cirúrgico mais indicado?',
     options: [
       '(A) Histerectomia vaginal.',
@@ -1819,7 +1819,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2026-94',
     module: 'Ginecologia e Obstetrícia',
-    image: '/images/tp2026-94.PNG',
+    image: '/images/tp2026-94.webp',
     text: 'Mulher de 31 anos, G2P1, com 39 semanas gestacionais, encontra-se em trabalho de parto no centro obstétrico, com evolução conforme o partograma abaixo:\n[Partograma mostra parada secundária da dilatação: ausência de progressão da dilatação cervical por 2 horas ou mais durante a fase ativa na presença de contrações adequadas]\nA conduta adequada para essa gestante é:',
     options: [
       '(A) Realizar amniotomia imediata para acelerar o trabalho de parto, independentemente da avaliação da dinâmica uterina e progressão cervical.',
@@ -2077,7 +2077,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2019-90',
     module: 'Ginecologia e Obstetrícia',
-    image: '/images/tp2019-90.PNG',
+    image: '/images/tp2019-90.webp',
     text: 'Secundigesta, 28 anos, fumante de 20 cigarros/dia, idade gestacional 38 semanas, apresenta-se em trabalho de parto com dinâmica uterina = 3 contrações de 40 segundos, moderadas, em 10min. Ao toque, colo uterino com 3cm de dilatação, esvaecido 80%, cefálico alto e fixo, com saída de líquido meconial. A monitorização fetal está representada na imagem a seguir:\n\nO tipo de desacelerações da frequência cardíaca fetal e a conduta neste caso são, respectivamente:',
     options: [
       '(A) Tardia, expectante.',
@@ -2399,7 +2399,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-90',
     module: 'Ginecologia e Obstetrícia',
-    image: '/images/tp2020-90.PNG',
+    image: '/images/tp2020-90.webp',
     text: 'Os números 1, 2, 3 e 4 identificam aleatoriamente hormônios esteroides ovarianos e gonadotrofinas.\n\nBaseado no comportamento dessas linhas ao longo do ciclo, refletidas no esquema abaixo, assinale a alternativa INCORRETA:',
     options: [
       '(A) O hormônio assinalado como 4 induz a célula da teca e granulosa a adquirir uma enzima aromatizante que fornece o passo essencial para a produção do hormônio assinalado como 1.',
@@ -2512,7 +2512,7 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2020-97',
     module: 'Ginecologia e Obstetrícia',
-    image: '/images/tp2020-97.PNG',
+    image: '/images/tp2020-97.webp',
     text: 'J.M.S., 28 anos, secundigesta com 1 parto normal de termo, em trabalho de parto, com idade gestacional de 36 semanas e 3 dias, é internada em maternidade em franco trabalho de parto com 3cm de dilatação, colo médio, anterior, bolsa íntegra e apresentação cefálica. Ao internar, paciente é submetida a exame da figura 1 para avaliação de vitalidade fetal. Instalada em leito em centro obstétrico, é monitorada durante todo o trabalho de parto. Transcorridas 4 horas da internação, apresenta-se com dores em baixo ventre de moderada a forte intensidade, dinâmica uterina mantida 4 contrações em 10 minutos. Avaliado colo, este estava anterior, fino, previno para 5/6cm e a bolsa ainda encontrava-se íntegra. Solicitada nova avaliação, realizado exame da figura 2.\n\nSobre os exames, podemos concluir que:',
     options: [
       '(A) A figura 1 demonstra uma cardiotocografia categoria 1, normal, com acompanhamento normal do restante do trabalho de parto. Já a figura 2 demonstra um padrão de cardiotocografia indeterminado, ou categoria 3, fazendo com que medidas de suporte de reanimação intraútero sejam realizadas no transcorrer do acompanhamento.',
