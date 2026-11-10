@@ -38,6 +38,9 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
   const [startTime] = useState(() => Date.now() - (restored?.elapsed ?? 0) * 1000);
   const [timeElapsed, setTimeElapsed] = useState(() => restored?.elapsed ?? 0);
   const scrollRef = useRef<HTMLElement>(null);
+  /** Quando a questão atual apareceu na tela (para medir o tempo real gasto nela). */
+  const questionShownAt = useRef(Date.now());
+  const finishButtonRef = useRef<HTMLButtonElement>(null);
   const [questionTimeLeft, setQuestionTimeLeft] = useState(90);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
   const [isMobileMapOpen, setIsMobileMapOpen] = useState(false);
@@ -60,6 +63,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
   // Nova questão: cronômetro da questão recomeça e a leitura volta para o topo do enunciado.
   useEffect(() => {
     setQuestionTimeLeft(90);
+    questionShownAt.current = Date.now();
     scrollRef.current?.scrollTo({ top: 0 });
   }, [currentIndex]);
 
@@ -85,7 +89,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
       questionId: currentQuestion.id,
       selectedOption: optionIndex,
       isCorrect,
-      timeTaken: 90 - questionTimeLeft
+      timeTaken: Math.round((Date.now() - questionShownAt.current) / 1000)
     };
 
     setUserAnswers(prev => {
@@ -98,6 +102,43 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
       return [...prev, newAnswer];
     });
   };
+
+  // Atalhos de teclado: A–E (ou 1–5) marcam, ← → navegam, Esc fecha janelas.
+  const onKey = (e: KeyboardEvent) => {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    const target = e.target as HTMLElement | null;
+    if (target?.closest('input, textarea, select, [contenteditable="true"]')) return;
+    if (e.key === 'Escape') {
+      setIsSubmitModalOpen(false);
+      setIsMobileMapOpen(false);
+      return;
+    }
+    if (isSubmitModalOpen || isMobileMapOpen) return;
+    const key = e.key.toUpperCase();
+    const option = 'ABCDE'.indexOf(key) !== -1 ? 'ABCDE'.indexOf(key) : '12345'.indexOf(key);
+    if (key.length === 1 && option !== -1 && option < currentQuestion.options.length) {
+      e.preventDefault();
+      handleSelectOption(option);
+    } else if (e.key === 'ArrowRight' && currentIndex < questions.length - 1) {
+      e.preventDefault();
+      setCurrentIndex((i) => i + 1);
+    } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
+      e.preventDefault();
+      setCurrentIndex((i) => i - 1);
+    }
+  };
+  const onKeyRef = useRef(onKey);
+  onKeyRef.current = onKey;
+  useEffect(() => {
+    const listener = (e: KeyboardEvent) => onKeyRef.current(e);
+    window.addEventListener('keydown', listener);
+    return () => window.removeEventListener('keydown', listener);
+  }, []);
+
+  // Ao abrir a confirmação, o foco vai para o botão principal (Enter confirma).
+  useEffect(() => {
+    if (isSubmitModalOpen) finishButtonRef.current?.focus();
+  }, [isSubmitModalOpen]);
 
   const calculateResults = (): QuizResults => {
     // Anuladas pela banca ficam fora da nota, do total e do desempenho por área.
@@ -139,7 +180,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
   const progressPercent = (answeredCount / questions.length) * 100;
 
   return (
-    <div className="bg-bg-2 text-ink font-sans antialiased overflow-hidden h-screen flex flex-col">
+    <div className="bg-bg-2 text-ink font-sans antialiased overflow-hidden h-screen h-dvh flex flex-col">
       {/* Header bar */}
       <header className="sticky top-0 z-50 h-14 flex items-center bg-white border-b border-line shrink-0">
         <div className="w-full flex justify-between items-center px-4 sm:px-6 md:px-8">
@@ -289,6 +330,11 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
               })}
             </div>
 
+            <p className="hidden lg:block text-xs text-muted">
+              Atalhos: <kbd className="font-mono">A</kbd>–<kbd className="font-mono">E</kbd> marcam a alternativa ·{' '}
+              <kbd className="font-mono">←</kbd> <kbd className="font-mono">→</kbd> trocam de questão
+            </p>
+
             {/* Explanations & Technical Commentary */}
             <AnimatePresence>
               {settings.immediateFeedback && currentAnswer && (
@@ -432,11 +478,14 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
               initial={{ opacity: 0, scale: 0.95, y: 15 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 15 }}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="finalizar-titulo"
               className="relative w-full max-w-sm bg-white rounded-2xl shadow-xl p-6 overflow-hidden z-10"
             >
               <div className="text-center space-y-5">
                                 <div>
-                  <h3 className="text-xl font-bold text-ink">Finalizar o simulado?</h3>
+                  <h3 id="finalizar-titulo" className="text-xl font-bold text-ink">Finalizar o simulado?</h3>
                   <p className="text-sm text-ink-2 leading-relaxed mt-2">
                     Você respondeu {userAnswers.length} de {questions.length} questões.{userAnswers.length < questions.length && ' As que ficaram em branco contam como não respondidas.'}
                   </p>
@@ -444,6 +493,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
 
                 <div className="flex flex-col gap-2 pt-2">
                   <button
+                    ref={finishButtonRef}
                     onClick={() => {
                       clearProgress();
                       onFinish(calculateResults(), userAnswers);
@@ -481,7 +531,10 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: "100%" }}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="relative w-full bg-white rounded-t-2xl shadow-xl p-5 flex flex-col z-10 max-h-[80vh]"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Suas respostas"
+              className="relative w-full bg-white rounded-t-2xl shadow-xl p-5 flex flex-col z-10 max-h-[80vh] max-h-[80dvh]"
             >
               <div className="w-10 h-1 bg-line-2 rounded-full mx-auto mb-4 shrink-0" />
 
