@@ -24,10 +24,6 @@
     {
       "source": "/__/auth/:path*",
       "destination": "https://desimulados-ferramentas.firebaseapp.com/__/auth/:path*"
-    },
-    {
-      "source": "/__/firebase/:path*",
-      "destination": "https://desimulados-ferramentas.firebaseapp.com/__/firebase/:path*"
     }
   ]
 }
