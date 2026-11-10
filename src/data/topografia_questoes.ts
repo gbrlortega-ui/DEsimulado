@@ -6,780 +6,780 @@ import { Question } from '../types';
  * Questões do banco geral também entram na topografia se tiverem `topography` preenchido.
  */
 
-// 1.1 Neurologia — Cefaleias (40 questões, caderno "Dia 1", revisão de fontes em 10/11/2026)
+// 1.1 Neurologia — Cefaleias (40 questões inéditas, nível residência, versão revisada de 10/11/2026)
 const NEURO_CEFALEIAS: Question[] = [
   {
     "id": "topo-1-1-1",
     "module": "Clínica Médica",
-    "text": "Mulher, 27 anos, apresenta episódios recorrentes de cefaleia há cinco anos. Refere dor unilateral, pulsátil, moderada a forte, associada a náuseas, fotofobia e fonofobia. Os episódios duram entre 8 e 24 horas e pioram durante atividades físicas habituais. Exame neurológico normal. Qual é o diagnóstico mais provável?",
+    "text": "Mulher, 29 anos, relata seis episódios de cefaleia nos últimos dez meses, com duração de 8 a 18 horas. A dor é unilateral em quatro episódios, pulsátil, moderada a intensa e piora ao subir escadas. Em todas as crises há náusea; em algumas, fotofobia e fonofobia. Exame neurológico normal e ausência de sinais de alarme. Qual é a classificação mais provável?",
     "options": [
-      "(A) Cefaleia do tipo tensional episódica",
+      "(A) Cefaleia do tipo tensional episódica provável",
       "(B) Migrânea sem aura",
-      "(C) Cefaleia em salvas",
-      "(D) Neuralgia do trigêmeo",
-      "(E) Cefaleia secundária à hipertensão intracraniana"
+      "(C) Migrânea crônica",
+      "(D) Cefaleia em salvas episódica",
+      "(E) Cefaleia atribuída a distúrbio cervical"
     ],
     "correctAnswer": 1,
-    "explanation": "O conjunto de achados atende ao fenótipo típico de migrânea sem aura: crises recorrentes de 4–72 horas, dor com caráter pulsátil, intensidade moderada ou forte e piora com atividade física habitual. Náuseas e a associação de fotofobia com fonofobia são sintomas acompanhantes característicos. A migrânea é um diagnóstico clínico; exame neurológico normal e padrão estável apoiam uma cefaleia primária, mas a presença de sinais de alarme mudaria a investigação. A unilateralidade é frequente, porém não obrigatória em todas as crises.",
+    "explanation": "Os critérios ICHD-3 para migrânea sem aura exigem pelo menos cinco crises com duração de 4–72 horas, pelo menos duas características da dor (unilateralidade, caráter pulsátil, intensidade moderada/grave ou piora com atividade física) e náusea/vômito ou associação de fotofobia e fonofobia. O caso preenche esses elementos. Migrânea crônica exige ≥15 dias de cefaleia por mês por mais de três meses, com ≥8 dias migranosos. Salvas tem crises mais curtas, dor orbitária muito intensa e sintomas autonômicos ipsilaterais.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "migrânea sem aura"
+      "migrânea sem aura: aplicação dos critérios diagnósticos"
     ],
-    "tip": "Quando houver dor pulsátil, náuseas, fotofobia e piora com movimentação em pessoa jovem, pense em migrânea. A ausência de sinais de alarme e o exame neurológico normal reforçam o diagnóstico clínico.",
+    "tip": "Organize a hipótese em três blocos: número e duração das crises; características da dor; sintomas associados. Aura não é necessária para diagnosticar migrânea.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-2",
     "module": "Clínica Médica",
-    "text": "Homem, 31 anos, relata pontos luminosos e linhas em zigue-zague que começam pequenos e se expandem gradualmente pelo campo visual, desaparecendo após 25 minutos. Em seguida, inicia cefaleia pulsátil unilateral, com náuseas e fotofobia. Qual mecanismo melhor explica os sintomas visuais?",
+    "text": "Homem, 32 anos, apresenta fenômeno visual que começa como pequeno escotoma cintilante, aumenta progressivamente em 10 minutos e se transforma em linhas em zigue-zague. O fenômeno desaparece completamente após 25 minutos e é seguido por cefaleia pulsátil e náuseas. Qual mecanismo fisiopatológico explica melhor esse fenômeno?",
     "options": [
-      "(A) Isquemia retiniana transitória por embolização arterial",
-      "(B) Aumento agudo da pressão intracraniana",
-      "(C) Depressão alastrante cortical",
-      "(D) Desmielinização aguda do nervo óptico",
-      "(E) Vasoconstrição persistente da artéria cerebral média"
+      "(A) Oclusão transitória da artéria central da retina",
+      "(B) Despolarização neuronal cortical propagada, seguida de supressão da atividade neuronal",
+      "(C) Vasoespasmo persistente da artéria cerebral média",
+      "(D) Aumento agudo da pressão intracraniana",
+      "(E) Descarga epileptiforme occipital sustentada"
     ],
-    "correctAnswer": 2,
-    "explanation": "A aura visual típica decorre de fenômeno de depressão alastrante cortical: uma onda propagada de alteração da atividade neuronal e glial, acompanhada de mudanças transitórias no fluxo sanguíneo cortical. O padrão costuma começar com fenômenos positivos (luzes, zigue-zagues ou cintilações), expandir-se gradualmente e resolver-se por completo, em geral em 5–60 minutos. Isso difere do déficit isquêmico frequentemente súbito e predominantemente negativo, embora haja sobreposição clínica. Um primeiro episódio, sintomas persistentes ou fatores vasculares exigem avaliação para excluir AVC ou outra causa secundária.",
+    "correctAnswer": 1,
+    "explanation": "A aura visual típica está associada à depressão alastrante cortical, fenômeno de despolarização neuronal e glial que se propaga pelo córtex, seguido por período de redução da atividade. A progressão gradual, os fenômenos visuais positivos e a reversibilidade em 5–60 minutos favorecem aura. Isquemia tende a produzir déficit súbito e frequentemente negativo, mas há sobreposição clínica: primeiro episódio, sintomas atípicos, déficit persistente ou fatores vasculares exigem investigação de AVC/AIT. Crises epilépticas occipitais tendem a ser mais breves e estereotipadas.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "migrânea com aura"
+      "aura visual: distinção entre aura e evento isquêmico"
     ],
-    "tip": "A progressão gradual de sintomas positivos, com duração usual de 5 a 60 minutos, sugere aura. Déficit súbito deve levantar suspeita de evento vascular; não descarte AVC apenas pela história de migrânea.",
+    "tip": "Fenômeno positivo que se espalha gradualmente e regride em até 60 minutos sugere aura. Déficit súbito ou persistente deve ser tratado como possível evento vascular até avaliação adequada.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-3",
     "module": "Clínica Médica",
-    "text": "Mulher, 34 anos, apresenta crise de migrânea intensa, com dor pulsátil unilateral, náuseas e fotofobia. Anti-inflamatórios não tiveram resposta satisfatória em crises anteriores. Não apresenta doença cardiovascular ou contraindicações a triptanos. Qual opção é adequada?",
+    "text": "Mulher, 35 anos, com migrânea episódica, procura atendimento durante crise incapacitante. Fez uso precoce de naproxeno em dose adequada, sem resposta. Apresenta náuseas, mas não vomitou. Não tem doença cardiovascular, doença cerebrovascular ou hipertensão não controlada. Qual estratégia específica é mais apropriada?",
     "options": [
-      "(A) Morfina intravenosa como primeira escolha",
-      "(B) Sumatriptana, podendo ser associada a anti-inflamatório não esteroidal",
-      "(C) Propranolol intravenoso para interromper a crise",
-      "(D) Verapamil associado a ácido acetilsalicílico",
-      "(E) Amitriptilina em dose única durante a crise"
+      "(A) Iniciar propranolol e aguardar efeito durante a crise",
+      "(B) Prescrever sumatriptana, considerando associação a AINE em crises selecionadas",
+      "(C) Utilizar opioide parenteral como primeira linha após falha do AINE",
+      "(D) Iniciar verapamil para abortar a crise",
+      "(E) Prescrever amitriptilina em dose única"
     ],
     "correctAnswer": 1,
-    "explanation": "Triptanos, como a sumatriptana, são agonistas 5‑HT1B/1D e constituem opção para crises moderadas ou graves, especialmente quando analgésicos/AINEs foram ineficazes ou quando a intensidade já justifica terapia específica. A associação de triptano com AINE pode melhorar a resposta e reduzir recorrência em alguns pacientes. Náuseas e vômitos podem comprometer a absorção oral; nesses casos, considerar via não oral e antiemético. Antes de prescrever, pesquisar doença coronariana, doença vascular periférica, AVC/AIT prévio e hipertensão não controlada, situações em que triptanos devem ser evitados. No protocolo brasileiro de urgência publicado pela Sociedade Brasileira de Cefaleia/Academia Brasileira de Neurologia, a abordagem inclui ambiente tranquilo, antiemético quando indicado, hidratação apenas se houver desidratação e tratamento parenteral conforme resposta. Opioides não são recomendados para a crise de migrânea.",
+    "explanation": "Triptanos são opções para crises moderadas ou graves, sobretudo quando AINEs são ineficazes. A associação de triptano e AINE pode aumentar a eficácia e reduzir recorrência em pacientes selecionados. Náusea sem vômito não impede necessariamente a via oral; vômitos ou gastroparesia podem favorecer via não oral e antiemético. Propranolol, verapamil e amitriptilina são empregados principalmente na prevenção, não como resgate. Opioides não são recomendados rotineiramente por baixa adequação terapêutica, risco de recorrência, dependência e cronificação.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "tratamento da crise de migrânea"
+      "tratamento abortivo da migrânea com falha a aine"
     ],
-    "tip": "Separe tratamento abortivo de profilaxia. Na crise: analgésicos, AINEs, triptanos e antieméticos conforme o caso. Propranolol e amitriptilina são preventivos, não medicamentos de resgate.",
+    "tip": "Separe tratamento da crise de prevenção. Triptano é opção abortiva; propranolol, topiramato e amitriptilina são exemplos de preventivos.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-4",
     "module": "Clínica Médica",
-    "text": "Mulher, 36 anos, apresenta cerca de 10 dias de cefaleia por mês, com episódios incapacitantes de migrânea e prejuízo no trabalho. Utiliza frequentemente medicamentos abortivos. Não possui contraindicações a betabloqueadores. Qual medicamento é opção adequada para prevenção?",
+    "text": "Mulher, 33 anos, apresenta 8–10 dias de cefaleia por mês, com pelo menos seis dias de características migranosas e importante prejuízo laboral. O tratamento agudo oferece alívio incompleto e ela utiliza medicação sintomática em frequência crescente. Não apresenta asma, bradicardia ou bloqueio atrioventricular. Qual conduta é mais apropriada?",
     "options": [
-      "(A) Sumatriptana diária",
-      "(B) Morfina em baixa dose",
-      "(C) Propranolol",
-      "(D) Metoclopramida contínua",
-      "(E) Dipirona diária"
+      "(A) Manter exclusivamente tratamento abortivo, pois a profilaxia só é indicada em cefaleia diária",
+      "(B) Iniciar estratégia preventiva, podendo-se considerar propranolol após avaliação individual",
+      "(C) Prescrever triptano diariamente para evitar a instalação das crises",
+      "(D) Indicar opioide de liberação prolongada",
+      "(E) Orientar suspensão de toda atividade física durante os períodos sintomáticos"
     ],
-    "correctAnswer": 2,
-    "explanation": "A profilaxia é indicada quando a frequência, a incapacidade, a resposta incompleta ao tratamento agudo ou o risco de uso excessivo justificam reduzir a carga da doença. Propranolol é uma opção preventiva estabelecida; topiramato, amitriptilina, candesartana e terapias anti-CGRP podem ser consideradas conforme comorbidades, contraindicações, acesso e preferência. O objetivo é reduzir frequência, intensidade e incapacidade, não apenas tratar a dor de cada crise. A resposta deve ser reavaliada após período adequado em dose tolerada, com diário de cefaleia e revisão de efeitos adversos.",
+    "correctAnswer": 1,
+    "explanation": "A profilaxia deve ser considerada quando há crises frequentes, incapacidade, resposta insuficiente ao tratamento agudo, contraindicações às opções abortivas ou risco de uso excessivo de medicamentos. Propranolol é uma opção preventiva estabelecida, desde que não haja contraindicações. A escolha deve considerar comorbidades, potencial reprodutivo, efeitos adversos, preferências e acesso. Triptanos não devem ser usados diariamente como prevenção convencional; opioides favorecem danos e cronificação.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "profilaxia da migrânea"
+      "indicação de profilaxia da migrânea"
     ],
-    "tip": "Crises frequentes, incapacitantes e consumo recorrente de medicação abortiva devem levar à avaliação de profilaxia. Sumatriptana é usada principalmente para tratar a crise.",
+    "tip": "Não espere a cefaleia se tornar diária para discutir prevenção. Frequência, incapacidade e consumo de medicação aguda são determinantes.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-5",
     "module": "Clínica Médica",
-    "text": "Homem, 39 anos, apresenta cefaleia bilateral, em pressão ou aperto frontal e occipital, leve a moderada. Não piora com caminhada e não há náuseas ou vômitos. Piora após jornadas prolongadas de trabalho. Diagnóstico mais provável?",
+    "text": "Homem, 42 anos, apresenta cefaleia bilateral em pressão, de intensidade leve a moderada, com duração de várias horas. Não piora ao caminhar, não há náuseas ou vômitos e apenas um entre fotofobia e fonofobia está presente. Palpação dos músculos pericranianos reproduz desconforto. Qual diagnóstico é mais provável?",
     "options": [
       "(A) Migrânea sem aura",
-      "(B) Cefaleia em salvas",
-      "(C) Cefaleia do tipo tensional",
-      "(D) Neuralgia occipital",
-      "(E) Hipertensão intracraniana idiopática"
+      "(B) Cefaleia do tipo tensional",
+      "(C) Cefaleia em salvas",
+      "(D) Hemicrania contínua",
+      "(E) Neuralgia do trigêmeo"
     ],
-    "correctAnswer": 2,
-    "explanation": "A cefaleia tensional costuma ser bilateral, em pressão ou aperto, leve a moderada, não agravada por atividade física habitual e sem náuseas ou vômitos. Pode haver fotofobia ou fonofobia isoladamente, mas a presença conjunta das duas ou náuseas favorece migrânea. Sensibilidade pericraniana pode estar presente. Analgésicos simples ou AINE podem ser usados em episódios selecionados, evitando frequência excessiva; na forma crônica, amitriptilina é uma opção preventiva, associada a medidas comportamentais e de sono.",
+    "correctAnswer": 1,
+    "explanation": "A cefaleia tensional caracteriza-se por dor bilateral, em pressão ou aperto, leve a moderada, sem piora com atividade física habitual e sem náuseas ou vômitos. Pode haver fotofobia ou fonofobia isolada, mas não ambas simultaneamente nos critérios típicos. Sensibilidade pericraniana é frequente. A migrânea costuma apresentar maior intensidade, caráter pulsátil, piora com atividade e náusea ou associação de foto e fonofobia.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia do tipo tensional"
+      "cefaleia do tipo tensional: diagnóstico diferencial"
     ],
-    "tip": "Pulsátil, náuseas e fotofobia sugerem migrânea; aperto bilateral sem náuseas sugere tensional; dor orbital unilateral extrema com sintomas autonômicos sugere salvas.",
+    "tip": "Pressão bilateral, intensidade leve/moderada, ausência de náusea e ausência de piora com atividade favorecem cefaleia tensional.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-6",
     "module": "Clínica Médica",
-    "text": "Homem, 35 anos, apresenta dor extremamente intensa na região orbitária direita, com duração de 60 minutos, lacrimejamento, hiperemia conjuntival, congestão nasal e inquietação. As crises ocorrem diariamente, geralmente no mesmo horário, há três semanas. Diagnóstico provável?",
+    "text": "Homem, 37 anos, relata crises de dor excruciante orbitária esquerda, com duração aproximada de 45–90 minutos, duas vezes ao dia. Durante os episódios apresenta lacrimejamento, hiperemia conjuntival e congestão nasal ipsilaterais, além de inquietação motora. Os episódios ocorrem em períodos de várias semanas, separados por meses sem sintomas. Qual diagnóstico é mais provável?",
     "options": [
-      "(A) Migrânea com aura",
-      "(B) Cefaleia tensional crônica",
-      "(C) Cefaleia em salvas",
-      "(D) Neuralgia do trigêmeo",
-      "(E) Sinusite bacteriana aguda"
+      "(A) Migrânea com sintomas autonômicos",
+      "(B) Cefaleia em salvas episódica",
+      "(C) Hemicrania paroxística",
+      "(D) SUNCT",
+      "(E) Cefaleia do tipo tensional episódica"
     ],
-    "correctAnswer": 2,
-    "explanation": "A cefaleia em salvas é uma cefaleia trigêmino-autonômica: dor unilateral muito intensa, orbitária, supraorbitária ou temporal, com duração de 15–180 minutos e sintomas autonômicos ipsilaterais, como lacrimejamento, hiperemia conjuntival, congestão nasal, rinorreia, ptose ou miose. A inquietação durante a crise é uma pista útil; pacientes com migrânea frequentemente procuram repouso, enquanto quem tem salvas pode caminhar ou balançar-se. A recorrência em horários semelhantes e em períodos agrupados é típica, mas não obrigatória.",
+    "correctAnswer": 1,
+    "explanation": "A cefaleia em salvas é uma cefaleia trigêmino-autonômica caracterizada por dor unilateral muito intensa, orbitária/supraorbitária/temporal, com duração de 15–180 minutos e sintomas autonômicos ipsilaterais ou inquietação. A periodicidade em surtos com remissões prolongadas favorece a forma episódica. Hemicrania paroxística tem crises mais curtas e frequentes, com resposta absoluta à indometacina; SUNCT tem ataques de segundos a minutos, muito frequentes.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia em salvas"
+      "cefaleia em salvas: reconhecimento do fenótipo"
     ],
-    "tip": "Dor orbital unilateral intensa, sintomas autonômicos do mesmo lado e crises recorrentes em horários semelhantes formam uma combinação altamente sugestiva de salvas.",
+    "tip": "Dor orbitária unilateral intensa + sinais autonômicos do mesmo lado + inquietação: pense em salvas. A duração da crise ajuda a diferenciá-la das outras trigêmino-autonômicas.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-7",
     "module": "Clínica Médica",
-    "text": "Homem, 42 anos, com diagnóstico estabelecido de cefaleia em salvas, chega durante crise de dor orbitária unilateral intensa, lacrimejamento e congestão nasal. Qual é a melhor conduta abortiva?",
+    "text": "Homem, 41 anos, com diagnóstico prévio de cefaleia em salvas, chega ao pronto-socorro durante crise típica iniciada há 15 minutos. Está inquieto, com lacrimejamento e congestão nasal à direita. Saturação de oxigênio em ar ambiente é normal e não há contraindicação conhecida a triptanos. Qual tratamento oferece maior probabilidade de abortar rapidamente a crise?",
     "options": [
-      "(A) Dipirona oral e repouso domiciliar",
-      "(B) Oxigênio a 100% em alto fluxo por máscara não reinalante e/ou sumatriptana subcutânea",
-      "(C) Amitriptilina intravenosa",
-      "(D) Propranolol oral",
-      "(E) Prednisona como único tratamento de resgate imediato"
+      "(A) Oxigênio a 100% em alto fluxo por máscara não reinalante ou sumatriptana subcutânea",
+      "(B) Dipirona oral associada a repouso em ambiente escuro",
+      "(C) Verapamil por via oral em dose de ataque",
+      "(D) Prednisona isolada como resgate imediato",
+      "(E) Amitriptilina oral associada a metoclopramida"
     ],
-    "correctAnswer": 1,
-    "explanation": "A cefaleia em salvas exige tratamento abortivo de início rápido, pois a crise costuma durar apenas 15–180 minutos. O protocolo nacional de urgência disponibilizado pela Sociedade Brasileira de Cefaleia e pela Academia Brasileira de Neurologia recomenda oxigênio a 100% por máscara sem recirculação, com fluxo de 10–12 L/min durante 20 minutos, ou sumatriptana 6 mg por via subcutânea, se disponível e sem contraindicação. Diretrizes internacionais frequentemente descrevem fluxos de pelo menos 12 L/min e duração aproximada de 15 minutos; por isso, a questão privilegia o protocolo brasileiro. Analgésicos comuns e opioides têm início/eficácia inadequados para abortar essas crises. Verapamil é preventivo, não abortivo, e exige ECG basal e durante titulação.",
+    "correctAnswer": 0,
+    "explanation": "O tratamento abortivo de primeira linha inclui oxigênio a 100% em alto fluxo por máscara não reinalante e sumatriptana subcutânea, quando não contraindicada. O protocolo brasileiro de urgência descreve oxigênio a 10–12 L/min por cerca de 20 minutos ou sumatriptana 6 mg SC. Verapamil é preventivo e exige ECG basal e durante titulação. Corticoide pode ser utilizado como tratamento de transição em casos selecionados, não como substituto do resgate imediato. Analgésicos orais têm início lento para a duração das crises.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "tratamento agudo da cefaleia em salvas"
+      "tratamento abortivo da cefaleia em salvas"
     ],
-    "tip": "Memorize: crise de salvas — oxigênio e sumatriptana subcutânea; prevenção — verapamil.",
+    "tip": "Na crise de salvas, pense em oxigênio e sumatriptana subcutânea. Verapamil previne; não aborta a crise em curso.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-8",
     "module": "Clínica Médica",
-    "text": "Homem, 48 anos, apresenta cefaleia súbita e extremamente intensa durante atividade física, atingindo intensidade máxima em menos de um minuto. Descreve como a pior cefaleia da vida e apresenta náuseas e rigidez de nuca. Qual hipótese deve ser investigada imediatamente?",
+    "text": "Homem, 49 anos, previamente hígido, apresenta cefaleia abrupta durante relação sexual, atingindo intensidade máxima em menos de um minuto. Refere vômitos e rigidez cervical. Está hemodinamicamente estável e sem déficit focal. Qual é a hipótese prioritária e a abordagem inicial?",
     "options": [
-      "(A) Migrânea sem aura",
-      "(B) Cefaleia tensional episódica",
-      "(C) Hemorragia subaracnóidea",
-      "(D) Cefaleia em salvas",
-      "(E) Neuralgia do trigêmeo"
+      "(A) Migrânea desencadeada por atividade sexual; iniciar triptano e observar",
+      "(B) Hemorragia subaracnóidea; realizar avaliação emergencial com TC de crânio sem contraste",
+      "(C) Cefaleia primária do esforço; iniciar indometacina sem investigação",
+      "(D) Cefaleia em salvas; administrar oxigênio e liberar",
+      "(E) Meningite viral; solicitar sorologia ambulatorial"
     ],
-    "correctAnswer": 2,
-    "explanation": "Cefaleia em trovoada é aquela que atinge intensidade máxima abruptamente, em segundos ou poucos minutos, e deve ser tratada como emergência até exclusão de causas graves. Hemorragia subaracnóidea aneurismática é diagnóstico prioritário, mas também se consideram vasoconstrição cerebral reversível, dissecção arterial e trombose venosa cerebral. A tomografia sem contraste é o exame inicial habitual; se negativa, a necessidade de punção lombar e/ou estudo vascular depende do tempo desde o início, qualidade da tomografia e probabilidade clínica residual. Exame neurológico sem déficit não exclui hemorragia.",
+    "correctAnswer": 1,
+    "explanation": "Cefaleia em trovoada deve ser considerada emergência até exclusão de causas secundárias. Hemorragia subaracnóidea é prioritária, embora também devam ser consideradas síndrome de vasoconstrição cerebral reversível, dissecção arterial e trombose venosa cerebral. A TC sem contraste é habitualmente o exame inicial; se negativa, a necessidade de punção lombar e/ou imagem vascular depende do tempo desde o início, qualidade do exame e probabilidade clínica residual. Exame neurológico normal não exclui hemorragia.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia em trovoada"
+      "cefaleia em trovoada: investigação inicial"
     ],
-    "tip": "A expressão \"pior cefaleia da vida\", com início explosivo, é sinal de alarme. Não classifique como migrânea antes de excluir causas potencialmente fatais.",
+    "tip": "Início explosivo, pico em menos de um minuto e 'pior cefaleia da vida' exigem investigação emergencial, mesmo sem déficit focal.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-9",
     "module": "Clínica Médica",
-    "text": "Mulher, 72 anos, apresenta cefaleia temporal recente, sensibilidade do couro cabeludo, dor mandibular durante mastigação e episódios de visão borrada. Artéria temporal espessada e dolorosa. Qual conduta é mais adequada?",
+    "text": "Mulher, 74 anos, procura atendimento por cefaleia temporal inédita há dez dias, dor ao pentear o cabelo e claudicação mandibular. Desde a manhã apresenta episódios de amaurose fugaz no olho esquerdo. VHS e PCR estão elevados. Qual é a melhor conduta?",
     "options": [
-      "(A) Analgésicos e reavaliação em 30 dias",
-      "(B) Iniciar corticosteroide sistêmico imediatamente e providenciar investigação confirmatória",
-      "(C) Triptano e ressonância eletiva",
-      "(D) Antibiótico de amplo espectro",
-      "(E) Punção lombar antes de qualquer tratamento"
+      "(A) Aguardar biópsia da artéria temporal para iniciar tratamento",
+      "(B) Iniciar corticosteroide sistêmico imediatamente e organizar confirmação diagnóstica sem atrasar a terapia",
+      "(C) Prescrever triptano e reavaliar após 48 horas",
+      "(D) Realizar punção lombar antes de qualquer intervenção",
+      "(E) Iniciar antiagregante isolado e solicitar ultrassonografia eletiva"
     ],
     "correctAnswer": 1,
-    "explanation": "A combinação de idade acima de 50 anos, cefaleia temporal nova, hipersensibilidade do couro cabeludo e claudicação mandibular é altamente sugestiva de arterite de células gigantes. VHS e PCR frequentemente se elevam, mas resultados normais não excluem totalmente a doença. Ultrassonografia de artérias temporais e biópsia podem confirmar; a investigação não deve atrasar corticosteroide quando a suspeita é relevante, sobretudo diante de sintomas visuais. A ameaça central é isquemia do nervo óptico e perda visual irreversível.",
+    "explanation": "O quadro é altamente sugestivo de arterite de células gigantes, especialmente pela idade, cefaleia nova, claudicação mandibular e sintomas visuais. O tratamento com corticosteroide deve ser iniciado imediatamente quando a suspeita é relevante, sobretudo diante de ameaça visual; ultrassonografia e/ou biópsia ajudam na confirmação, mas não devem atrasar a terapia. VHS e PCR são úteis, porém valores normais não excluem completamente a doença. A principal complicação temida é perda visual irreversível por isquemia.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "arterite de células gigantes"
+      "arterite de células gigantes: conduta tempo-dependente"
     ],
-    "tip": "Idoso com cefaleia nova, claudicação mandibular e alteração visual: pense em arterite temporal. Trate imediatamente quando a suspeita for relevante.",
+    "tip": "Idoso com cefaleia nova + claudicação mandibular + alteração visual: trate como arterite de células gigantes até esclarecimento. Não espere a biópsia para proteger a visão.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-10",
     "module": "Clínica Médica",
-    "text": "Mulher, 41 anos, com migrânea desde a adolescência, apresenta cefaleia quase diária há seis meses. Utiliza analgésicos simples em cerca de 20 dias por mês, com alívio temporário e retorno da dor. Qual mecanismo explica melhor a manutenção do quadro?",
+    "text": "Mulher, 44 anos, com história de migrânea episódica, apresenta cefaleia em 20 dias por mês há cinco meses. Utiliza combinação analgésica com cafeína em 12–15 dias mensais e relata alívio transitório, seguido de recorrência. Qual interpretação é mais adequada?",
     "options": [
-      "(A) Hipertensão intracraniana por retenção de sódio",
-      "(B) Cefaleia por uso excessivo de medicamentos",
-      "(C) Transformação em cefaleia em salvas",
-      "(D) Neuralgia do trigêmeo secundária",
-      "(E) Vasculite cerebral induzida por analgésicos"
+      "(A) Migrânea crônica isolada, sem relação com o uso de medicação",
+      "(B) Cefaleia por uso excessivo de medicamentos, possivelmente coexistente com migrânea crônica",
+      "(C) Cefaleia em salvas crônica",
+      "(D) Cefaleia tensional episódica",
+      "(E) Hipertensão intracraniana idiopática"
     ],
     "correctAnswer": 1,
-    "explanation": "Cefaleia por uso excessivo de medicamentos pode se desenvolver em pessoas com cefaleia primária preexistente, quando o uso frequente de medicação aguda passa a contribuir para a manutenção da dor. O diagnóstico exige cefaleia em pelo menos 15 dias/mês e uso excessivo regular por mais de três meses; os limiares variam por classe: em geral, 15 dias/mês para analgésicos simples e 10 dias/mês para triptanos, opioides ou combinações. A abordagem envolve explicar o ciclo, planejar redução/retirada do fármaco, tratar a cefaleia de base e oferecer prevenção quando indicada.",
+    "explanation": "Cefaleia por uso excessivo de medicamentos ocorre em paciente com cefaleia preexistente, com cefaleia em ≥15 dias/mês e uso excessivo regular de medicação aguda por mais de três meses. Para combinações analgésicas, triptanos e opioides, o limiar usual é ≥10 dias/mês; para analgésicos simples isolados, ≥15 dias/mês. Pode coexistir com migrânea crônica. A abordagem inclui educação, plano de retirada/redução, prevenção da cefaleia de base e seguimento.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
       "cefaleia por uso excessivo de medicamentos"
     ],
-    "tip": "Quando a dor fica mais frequente e o paciente usa analgésicos quase diariamente, considere que o próprio tratamento pode perpetuar a cefaleia. Avalie retirada orientada e prevenção da doença de base.",
+    "tip": "Conte dias de cefaleia e dias de uso separadamente. O limiar depende da classe: combinações/triptanos geralmente ≥10 dias/mês; analgésicos simples, ≥15.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-11",
     "module": "Clínica Médica",
-    "text": "Mulher, 29 anos, com obesidade, apresenta cefaleia diária, escurecimentos visuais transitórios e zumbido pulsátil. Há papiledema bilateral. Ressonância não mostra massa ou hidrocefalia e venografia não demonstra trombose venosa. Qual achado é fundamental para confirmar a hipótese?",
+    "text": "Mulher, 28 anos, com obesidade, relata cefaleia diária, zumbido pulsátil e episódios breves de escurecimento visual ao levantar-se. Fundoscopia revela papiledema bilateral. RM de encéfalo e venografia não identificam massa, hidrocefalia ou trombose venosa. Após avaliação de segurança, qual achado liquórico apoia o diagnóstico?",
     "options": [
-      "(A) Pressão de abertura do líquor elevada, com composição liquórica normal",
-      "(B) Hipoglicorraquia e pleocitose neutrofílica",
-      "(C) Hemácias no líquor",
-      "(D) Hipertensão arterial persistente",
-      "(E) Pressão de abertura do líquor reduzida"
+      "(A) Pressão de abertura elevada, com composição liquórica normal",
+      "(B) Pressão de abertura normal e pleocitose linfocitária",
+      "(C) Hipoglicorraquia isolada",
+      "(D) Xantocromia com predomínio de hemácias",
+      "(E) Proteína liquórica muito elevada como critério obrigatório"
     ],
     "correctAnswer": 0,
-    "explanation": "A hipertensão intracraniana idiopática (HII) deve ser considerada diante de papiledema, cefaleia, obscurecimentos visuais transitórios e zumbido pulsátil. O diagnóstico é de exclusão: é necessário afastar lesão expansiva, hidrocefalia e trombose venosa cerebral com neuroimagem apropriada, incluindo venografia. Após excluir contraindicações à punção, mede-se a pressão de abertura com o paciente em decúbito lateral, relaxado e com técnica adequada; em adultos, valor acima de 25 cmH₂O, associado a composição liquórica normal e ao contexto clínico, apoia o diagnóstico. Obesidade é fator associado, mas não basta para diagnosticar. Perda ponderal, acetazolamida em pacientes selecionados e acompanhamento oftalmológico com avaliação de campos visuais são centrais para preservar a visão.",
+    "explanation": "A hipertensão intracraniana idiopática é diagnóstico de exclusão. Após neuroimagem apropriada, incluindo venografia para excluir trombose venosa, a punção lombar deve ser realizada em decúbito lateral, com técnica adequada. Em adultos, pressão de abertura acima de 25 cmH₂O e composição liquórica normal apoiam o diagnóstico no contexto clínico. Obesidade é fator associado, mas não confirma a doença. É essencial acompanhar papiledema e campos visuais; perda ponderal e acetazolamida podem ser consideradas conforme gravidade e avaliação especializada.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "hipertensão intracraniana idiopática"
+      "hipertensão intracraniana idiopática: confirmação diagnóstica"
     ],
-    "tip": "Mulher jovem com obesidade, papiledema e zumbido pulsátil: pense em hipertensão intracraniana idiopática. Exclua massa e trombose venosa antes da punção lombar.",
+    "tip": "Papiledema exige investigação. Exclua massa e trombose venosa antes da punção; pressão de abertura elevada com líquor normal apoia HII.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-12",
     "module": "Clínica Médica",
-    "text": "Homem, 22 anos, apresenta cefaleia intensa, febre de 39 °C, vômitos, fotofobia e rigidez de nuca. Está consciente, porém prostrado. Qual conduta inicial é mais adequada diante da suspeita de meningite bacteriana?",
+    "text": "Homem, 23 anos, apresenta febre de 39 °C, cefaleia intensa, rigidez de nuca e fotofobia. Está sonolento, mas desperta ao chamado, sem déficit focal evidente. A equipe considera meningite bacteriana. Qual estratégia reduz o risco de atraso terapêutico?",
     "options": [
-      "(A) Aguardar cultura do líquor antes de antibióticos",
-      "(B) Tomografia obrigatória antes de qualquer tratamento",
-      "(C) Coletar hemoculturas, realizar punção lombar se segura e iniciar antibioticoterapia empírica imediatamente, sem atrasos",
-      "(D) Analgesia e observação por 24 horas",
-      "(E) Corticoide oral isolado"
+      "(A) Realizar TC e aguardar o laudo antes de colher culturas ou iniciar antibiótico em todos os casos",
+      "(B) Colher hemoculturas rapidamente e iniciar antibioticoterapia empírica sem atraso; realizar punção lombar quando segura",
+      "(C) Realizar punção lombar e aguardar cultura do líquor antes do tratamento",
+      "(D) Administrar corticosteroide isolado e observar evolução",
+      "(E) Solicitar apenas hemograma e proteína C reativa para definir etiologia"
     ],
-    "correctAnswer": 2,
-    "explanation": "Febre, cefaleia, rigidez de nuca e fotofobia exigem suspeita de meningite e tratamento tempo-dependente. O Ministério da Saúde considera a meningite uma emergência médica e orienta que o tratamento não seja atrasado para aguardar exames de identificação etiológica. Colhem-se hemoculturas rapidamente e realiza-se punção lombar quando segura e sem atraso relevante. Neuroimagem antes da punção não é rotina para todos: é considerada quando há sinais que levantem risco de lesão expansiva/hipertensão intracraniana, como déficit focal, papiledema, rebaixamento importante da consciência, convulsão recente ou imunossupressão, conforme avaliação clínica e protocolo. Se a punção ou a imagem atrasarem, iniciar antibioticoterapia empírica após hemoculturas, sem esperar. A OMS publicou diretriz abrangente para diagnóstico e manejo da meningite em 2025; o esquema antimicrobiano deve seguir idade, fatores de risco, epidemiologia e protocolo local.",
+    "correctAnswer": 1,
+    "explanation": "Meningite bacteriana é emergência tempo-dependente. Hemoculturas devem ser colhidas rapidamente, desde que isso não atrase o antibiótico. A punção lombar é realizada quando segura; neuroimagem antes da punção não é rotina para todos, sendo indicada diante de fatores como déficit focal, papiledema, rebaixamento importante da consciência, convulsão recente ou imunossupressão, conforme protocolo. Se imagem ou punção atrasarem, iniciar tratamento empírico após hemoculturas. O esquema depende de idade, fatores de risco e epidemiologia.",
     "reference": "Ministério da Saúde — Meningite: diagnóstico e tratamento; OMS. WHO guidelines on meningitis diagnosis, treatment and care (2025)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia e meningite"
+      "suspeita de meningite bacteriana: sequência de condutas"
     ],
-    "tip": "Não atrase antibiótico para aguardar exames. Avalie se a punção é segura, colha culturas quando possível e trate rapidamente.",
+    "tip": "Não atrase antibiótico para esperar TC, punção ou cultura quando houver suspeita relevante. Faça culturas rapidamente e trate; imagem pré-punção é seletiva.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-13",
     "module": "Clínica Médica",
-    "text": "Mulher, 32 anos, no sexto dia após cesariana, apresenta cefaleia intensa e progressiva, náuseas e visão borrada, sem história prévia semelhante. Qual condição secundária deve ser especialmente considerada?",
+    "text": "Puérpera no oitavo dia após cesariana apresenta cefaleia progressiva há 48 horas, piora ao decúbito, vômitos e episódio convulsivo focal. A TC sem contraste não mostra hemorragia ou lesão expansiva. Qual exame deve ser priorizado para investigar uma causa vascular venosa?",
     "options": [
-      "(A) Cefaleia tensional episódica",
-      "(B) Trombose venosa cerebral",
-      "(C) Cefaleia em salvas",
-      "(D) Neuralgia do trigêmeo",
-      "(E) Migrânea sem aura obrigatoriamente"
+      "(A) Angiotomografia arterial de carótidas",
+      "(B) Venografia por TC ou venografia por RM",
+      "(C) Ultrassonografia Doppler de carótidas",
+      "(D) Eletroencefalograma como exame confirmatório",
+      "(E) Radiografia simples de crânio"
     ],
     "correctAnswer": 1,
-    "explanation": "O puerpério aumenta o risco de trombose venosa cerebral, que pode se manifestar com cefaleia progressiva, papiledema, convulsões, déficits focais ou alteração de consciência. Tomografia sem contraste normal não exclui o diagnóstico; é necessário estudo venoso por angiotomografia venosa ou venografia por ressonância. O diferencial no puerpério inclui pré-eclâmpsia/eclâmpsia, síndrome de vasoconstrição cerebral reversível, cefaleia pós-punção dural e causas primárias. Uma cefaleia nova, intensa ou atípica nesse contexto deve ser investigada, não presumida como migrânea.",
+    "explanation": "O puerpério é estado pró-trombótico e aumenta o risco de trombose venosa cerebral. Cefaleia progressiva, convulsão e sinais de hipertensão intracraniana são apresentações compatíveis. TC sem contraste pode ser normal ou inespecífica; a investigação exige venografia por TC ou RM. O diferencial inclui pré-eclâmpsia/eclâmpsia, síndrome de vasoconstrição cerebral reversível e cefaleia pós-punção dural. Uma cefaleia nova e atípica no puerpério não deve ser presumida como migrânea.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia no puerpério"
+      "cefaleia no puerpério: trombose venosa cerebral"
     ],
-    "tip": "Gestante ou puérpera com cefaleia nova não deve receber automaticamente diagnóstico de migrânea. Investigue causas vasculares e hipertensivas.",
+    "tip": "No puerpério, cefaleia progressiva com convulsão ou papiledema pede estudo venoso cerebral. TC simples normal não exclui trombose venosa.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-14",
     "module": "Clínica Médica",
-    "text": "Mulher, 26 anos, submetida à raquianestesia durante cesariana, apresenta cefaleia iniciada 24 horas após o procedimento. A dor piora ao sentar ou ficar em pé e melhora ao deitar. Qual mecanismo é mais provável?",
+    "text": "Mulher, 30 anos, submetida à raquianestesia para cesariana, desenvolve cefaleia 36 horas após o procedimento. A dor é intensa quando permanece sentada ou em pé e melhora significativamente após alguns minutos em decúbito. Refere também náuseas e zumbido. Qual mecanismo explica melhor o quadro?",
     "options": [
-      "(A) Aumento da produção de líquor",
-      "(B) Vasoconstrição das artérias cerebrais",
-      "(C) Perda de líquor pelo local da punção dural, com redução da pressão liquórica",
-      "(D) Trombose arterial cerebral",
-      "(E) Inflamação infecciosa das meninges"
+      "(A) Vasoconstrição cerebral reversível induzida pelo anestésico",
+      "(B) Perda de líquor pelo defeito dural, com redução do volume liquórico e tração de estruturas sensíveis à dor",
+      "(C) Trombose arterial por hipercoagulabilidade puerperal",
+      "(D) Elevação sustentada da pressão intracraniana",
+      "(E) Inflamação meníngea bacteriana relacionada ao procedimento"
     ],
-    "correctAnswer": 2,
-    "explanation": "A cefaleia pós-punção dural decorre de vazamento de líquor por defeito na dura-máter, com redução do volume/pressão liquórica e tração de estruturas intracranianas sensíveis à dor. O padrão ortostático — piora em pé e melhora ao deitar — é característico; pode haver dor cervical, náuseas, zumbido e sintomas auditivos. Medidas conservadoras e analgesia podem ser tentadas em casos leves; cafeína pode aliviar temporariamente em pacientes selecionados. Dor persistente ou incapacitante pode exigir tampão sanguíneo epidural, após avaliação anestésica. Se o padrão mudar ou surgirem déficits, reavaliar diagnósticos alternativos.",
+    "correctAnswer": 1,
+    "explanation": "A cefaleia pós-punção dural decorre de fuga de líquor pelo defeito na dura-máter, com redução do volume/pressão liquórica e tração de estruturas intracranianas. O padrão ortostático é característico, podendo haver náuseas, dor cervical, zumbido e sintomas auditivos. Casos leves podem receber medidas conservadoras e analgesia; sintomas persistentes ou incapacitantes podem exigir tampão sanguíneo epidural após avaliação anestésica. Mudança do padrão ou sinais neurológicos exigem reavaliação.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
       "cefaleia pós-punção dural"
     ],
-    "tip": "Cefaleia postural após raquianestesia ou punção lombar sugere cefaleia pós-punção dural. A característica postural é a pista central.",
+    "tip": "Piora em pé e melhora ao deitar após raquianestesia sugere cefaleia pós-punção dural. Se a evolução for atípica, reabra o diagnóstico diferencial.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-15",
     "module": "Clínica Médica",
-    "text": "Mulher, 38 anos, apresenta cefaleia em 18 dias por mês há seis meses. Em pelo menos 10 dias, a dor tem características de migrânea, com náuseas e fotofobia. Nos demais dias, é mais leve e bilateral. Qual classificação é mais adequada?",
+    "text": "Mulher, 39 anos, apresenta cefaleia em 18 dias por mês há oito meses. Em dez dias mensais a dor tem caráter pulsátil, piora com atividade e associa-se a náuseas ou foto/fonofobia. Nos demais dias, descreve pressão bilateral leve. Qual classificação é mais apropriada?",
     "options": [
-      "(A) Migrânea episódica",
-      "(B) Cefaleia tensional episódica",
-      "(C) Migrânea crônica",
+      "(A) Migrânea episódica de alta frequência",
+      "(B) Migrânea crônica",
+      "(C) Cefaleia tensional crônica isolada",
       "(D) Cefaleia em salvas crônica",
-      "(E) Neuralgia occipital"
+      "(E) Cefaleia por uso excessivo de medicamentos obrigatoriamente"
     ],
-    "correctAnswer": 2,
-    "explanation": "Migrânea crônica é definida por cefaleia em pelo menos 15 dias/mês por mais de três meses, em pessoa com história de migrânea, sendo pelo menos oito dias/mês com características migranosas, aura ou resposta a medicamento específico, conforme critérios ICHD-3. Nem todos os dias precisam ser pulsáteis ou acompanhados de náuseas: pode haver dias com fenótipo semelhante à cefaleia tensional. Deve-se investigar cefaleia por uso excessivo, que pode coexistir e agravar o quadro. Diário de cefaleia ajuda a quantificar dias, sintomas e uso de medicação.",
+    "correctAnswer": 1,
+    "explanation": "Migrânea crônica exige cefaleia em ≥15 dias/mês por mais de três meses, em pessoa com história de migrânea, com características migranosas ou resposta a tratamento específico em ≥8 dias/mês. Nem todos os dias precisam ter fenótipo migranoso; alguns podem parecer cefaleia tensional. Cefaleia por uso excessivo deve ser investigada, mas não pode ser afirmada sem dados sobre frequência e classe de medicação.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "migrânea crônica"
+      "migrânea crônica: aplicação dos critérios"
     ],
-    "tip": "Memorize: pelo menos 15 dias de cefaleia por mês e pelo menos 8 dias com características de migrânea, por mais de três meses.",
+    "tip": "Memorize o corte: ≥15 dias de cefaleia/mês e ≥8 dias migranosos, por mais de três meses. Os dias restantes podem ter fenótipo tensional.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-16",
     "module": "Clínica Médica",
-    "text": "Homem, 61 anos, apresenta dor facial unilateral em choque elétrico, na região maxilar direita. As crises duram segundos e são desencadeadas ao escovar os dentes, falar ou tocar a face. Qual diagnóstico é mais provável?",
+    "text": "Homem, 63 anos, apresenta paroxismos de dor facial direita em choque elétrico, com duração de poucos segundos, desencadeados ao escovar os dentes e tocar a região nasolabial. Entre as crises permanece assintomático. Não há déficit sensitivo ao exame. Qual é a hipótese e a abordagem inicial mais apropriadas?",
     "options": [
-      "(A) Cefaleia em salvas",
-      "(B) Neuralgia do trigêmeo",
-      "(C) Migrânea com aura",
-      "(D) Cefaleia tensional",
-      "(E) Sinusite maxilar crônica"
+      "(A) Migrânea com aura; iniciar triptano",
+      "(B) Neuralgia do trigêmeo; considerar carbamazepina ou oxcarbazepina e investigar sinais de possível causa secundária",
+      "(C) Cefaleia em salvas; iniciar oxigênio domiciliar",
+      "(D) Disfunção temporomandibular; indicar antibiótico",
+      "(E) Hemicrania contínua; iniciar indometacina sem investigação"
     ],
     "correctAnswer": 1,
-    "explanation": "Neuralgia do trigêmeo causa paroxismos unilaterais de dor facial em choque elétrico, pontada ou facada, geralmente com duração de frações de segundo até dois minutos, precipitados por estímulos inócuos em zonas-gatilho. Entre as crises, o paciente pode ficar assintomático. Carbamazepina ou oxcarbazepina são opções de primeira linha, com atenção a interações, hiponatremia, alterações hematológicas e hepáticas. Déficit sensitivo persistente, idade jovem ou outros sinais neurológicos são atípicos e exigem investigação de causa secundária, frequentemente com ressonância.",
+    "explanation": "A neuralgia do trigêmeo causa dor paroxística unilateral em choque, geralmente com duração de frações de segundo a dois minutos, precipitada por estímulos inócuos em zonas-gatilho. Carbamazepina ou oxcarbazepina são opções farmacológicas de primeira linha, com monitorização de efeitos adversos e interações. Déficit sensitivo persistente, bilateralidade, idade atípica ou outros sinais neurológicos aumentam a suspeita de causa secundária e justificam RM.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "neuralgia do trigêmeo"
+      "neuralgia do trigêmeo: reconhecimento e investigação"
     ],
-    "tip": "Dor breve em choque, unilateral e desencadeada por toque na face aponta para neuralgia do trigêmeo. Salvas dura mais e tem sintomas autonômicos.",
+    "tip": "Dor em choque, muito breve, desencadeada por toque na face é neuralgia do trigêmeo. Déficit sensitivo não é típico e exige investigação de causa secundária.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-17",
     "module": "Clínica Médica",
-    "text": "Homem, 46 anos, previamente assintomático, apresenta cefaleia durante atividade física vigorosa. A dor começa subitamente e atinge intensidade máxima em 30 segundos. Qual conduta é mais adequada?",
+    "text": "Homem, 47 anos, sem história prévia de cefaleia, apresenta dor occipital intensa durante levantamento de peso. A dor atinge o pico em 40 segundos e dura cerca de duas horas. Exame neurológico inicial sem déficits. Qual é a conduta mais apropriada?",
     "options": [
-      "(A) Diagnosticar cefaleia primária do esforço e liberar",
-      "(B) Propranolol e retorno em 30 dias",
-      "(C) Investigar causas secundárias, especialmente hemorragia subaracnóidea e doenças vasculares",
-      "(D) Sumatriptana sem investigação",
-      "(E) Radiografia de crânio isolada"
+      "(A) Diagnosticar cefaleia primária do exercício com base no gatilho",
+      "(B) Investigar imediatamente causas secundárias, incluindo hemorragia subaracnóidea e síndrome de vasoconstrição cerebral reversível",
+      "(C) Iniciar propranolol e liberar sem neuroimagem",
+      "(D) Tratar como cefaleia tensional por ser occipital",
+      "(E) Solicitar radiografia simples de crânio e reavaliar em uma semana"
     ],
-    "correctAnswer": 2,
-    "explanation": "Cefaleia precipitada por esforço, tosse, atividade sexual ou manobra de Valsalva pode ser primária, mas a primeira apresentação — sobretudo com intensidade máxima em menos de um minuto — exige excluir causas secundárias. O protocolo do Ministério da Saúde para encaminhamento da APS inclui dor desencadeada por esforço, tosse ou Valsalva entre as situações que indicam investigação por neuroimagem, mesmo quando não há critérios de emergência imediata. Se o início for explosivo ou houver sinais neurológicos/sistêmicos, a avaliação é emergencial. Entre as hipóteses estão hemorragia subaracnóidea, síndrome de vasoconstrição cerebral reversível, dissecção arterial, trombose venosa cerebral e lesões da fossa posterior. Só se classifica como cefaleia primária do esforço após avaliação adequada.",
+    "correctAnswer": 1,
+    "explanation": "Cefaleia precipitada por esforço pode ser primária, mas a primeira apresentação com pico abrupto exige excluir causas secundárias. Hemorragia subaracnóidea, síndrome de vasoconstrição cerebral reversível, dissecção arterial, trombose venosa cerebral e lesões da fossa posterior integram o diferencial. A investigação deve seguir o contexto de emergência, com TC sem contraste e exames adicionais conforme o tempo de início e a hipótese. Só se estabelece cefaleia primária após avaliação adequada.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia desencadeada por esforço"
+      "cefaleia desencadeada por esforço: quando investigar"
     ],
-    "tip": "Cefaleia durante esforço não significa necessariamente forma primária. Se explosiva, exclua primeiro causas vasculares potencialmente graves.",
+    "tip": "O gatilho não define benignidade. Primeira cefaleia explosiva durante esforço é emergência diagnóstica até exclusão de causas vasculares.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-18",
     "module": "Clínica Médica",
-    "text": "Mulher, 54 anos, apresenta cefaleia progressiva há dois meses, com piora recente, mais intensa pela manhã e episódios de vômitos. Nunca teve cefaleia semelhante. Qual característica representa o principal sinal de alerta?",
+    "text": "Mulher, 56 anos, sem história prévia de cefaleia, apresenta dor diária progressiva há seis semanas, mais intensa ao despertar, associada a vômitos ocasionais. Exame neurológico sem déficit focal. Qual aspecto do caso mais justifica investigação de causa secundária?",
     "options": [
-      "(A) Dor bilateral",
-      "(B) Idade acima de 50 anos associada a cefaleia nova e progressiva",
-      "(C) Ausência de fotofobia",
-      "(D) Intensidade moderada",
-      "(E) Melhora parcial após analgésicos"
+      "(A) A localização bilateral da dor",
+      "(B) O início de cefaleia nova após os 50 anos, com progressão e vômitos",
+      "(C) A ausência de fotofobia",
+      "(D) A resposta parcial a analgésico comum",
+      "(E) A ausência de déficit focal"
     ],
     "correctAnswer": 1,
-    "explanation": "Cefaleia nova após os 50 anos, especialmente progressiva e acompanhada de vômitos, exige investigação de causas secundárias. O protocolo do Ministério da Saúde destaca padrão novo ou mudança recente, início após 50 anos, evolução progressiva, dor que desperta do sono e dor desencadeada por esforço/tosse/Valsalva como motivos para considerar neuroimagem e avaliação especializada. Para encaminhamento urgente, o protocolo brasileiro lista, entre outros, início súbito intenso, trauma recente, febre/rigidez de nuca/confusão, neoplasia ou HIV com padrão novo, anticoagulação/discrasia sanguínea, papiledema e déficit focal. A idade isolada não define diagnóstico; é o conjunto clínico e a presença de sinais de alerta que orientam a urgência.",
+    "explanation": "Cefaleia nova após os 50 anos, padrão progressivo e vômitos são sinais de alerta para causas secundárias, incluindo lesão expansiva e alterações de pressão intracraniana. Exame neurológico normal não exclui doença estrutural. A decisão sobre TC ou RM depende da urgência e da hipótese clínica. A localização bilateral, ausência de fotofobia ou resposta parcial a analgésico não neutralizam os sinais de alerta.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "sinais de alarme em cefaleia"
+      "sinais de alarme: cefaleia nova após os 50 anos"
     ],
-    "tip": "Pergunte se a dor é igual às anteriores ou se é nova. Padrão novo, progressivo ou acompanhado de sinais neurológicos exige investigação.",
+    "tip": "Valorize mudança de padrão: cefaleia nova, progressiva, após os 50 anos ou acompanhada de vômitos requer investigação, mesmo com exame neurológico normal.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-19",
     "module": "Clínica Médica",
-    "text": "Homem, 58 anos, hipertenso, apresenta cefaleia leve e inespecífica. PA 178/104 mmHg. Está consciente, sem déficit neurológico, dor torácica, dispneia ou sinais de lesão aguda de órgão-alvo. Qual interpretação é mais adequada?",
+    "text": "Homem, 60 anos, hipertenso, comparece por cefaleia leve após noite mal dormida. PA inicial de 186/108 mmHg, repetida após repouso em 174/102 mmHg. Está lúcido, sem déficit focal, dor torácica, dispneia, alteração visual ou sinais de lesão aguda de órgão-alvo. Qual interpretação é mais adequada?",
     "options": [
-      "(A) Toda cefaleia com pressão elevada caracteriza emergência hipertensiva",
-      "(B) O quadro estabelece encefalopatia hipertensiva",
-      "(C) Elevação pressórica isolada não comprova causalidade nem caracteriza, por si só, emergência hipertensiva",
-      "(D) É obrigatório anti-hipertensivo intravenoso imediato",
-      "(E) Cefaleia isolada exige UTI"
+      "(A) O valor pressórico isolado define emergência hipertensiva",
+      "(B) Cefaleia isolada comprova encefalopatia hipertensiva",
+      "(C) É necessário avaliar lesão aguda de órgão-alvo; a elevação pressórica isolada não estabelece emergência hipertensiva",
+      "(D) Deve-se reduzir a pressão imediatamente com anti-hipertensivo intravenoso",
+      "(E) A cefaleia exclui a possibilidade de hipertensão arterial crônica não controlada"
     ],
     "correctAnswer": 2,
-    "explanation": "Pressão arterial elevada pode acompanhar dor e ansiedade, mas cefaleia isolada não estabelece emergência hipertensiva nem prova que a pressão seja a causa da dor. Emergência hipertensiva requer lesão aguda de órgão-alvo, como encefalopatia, edema pulmonar, síndrome coronariana, dissecção aórtica ou lesão renal aguda. A conduta é confirmar medidas, avaliar sintomas e sinais de lesão aguda e tratar conforme o contexto; redução intravenosa rápida sem indicação pode causar dano. Cefaleia intensa com alteração neurológica ou visual exige investigação própria.",
+    "explanation": "Emergência hipertensiva requer elevação pressórica associada a lesão aguda de órgão-alvo. Cefaleia isolada não comprova encefalopatia hipertensiva nem estabelece causalidade entre pressão e dor. Deve-se confirmar a medida, avaliar contexto e sinais de lesão aguda e ajustar tratamento conforme o caso. Redução intravenosa rápida sem indicação pode causar hipoperfusão e dano. Sintomas neurológicos, visuais ou alteração de consciência mudariam a avaliação.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia e hipertensão arterial"
+      "cefaleia e pressão arterial elevada"
     ],
-    "tip": "A pergunta decisiva não é apenas o valor da pressão, mas se existe lesão aguda de órgão-alvo.",
+    "tip": "Não trate o número isoladamente. A pergunta central é: há lesão aguda de órgão-alvo? Cefaleia isolada não define emergência hipertensiva.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-20",
     "module": "Clínica Médica",
-    "text": "Mulher, 25 anos, apresenta episódios recorrentes de cefaleia pulsátil unilateral, náuseas e fotofobia, com padrão estável há quatro anos. Exame neurológico normal e ausência de sinais de alarme. Qual conduta é adequada quanto à neuroimagem?",
+    "text": "Mulher, 26 anos, apresenta crises recorrentes de cefaleia pulsátil, associadas a náuseas e fotofobia, com padrão estável há cinco anos. Exame neurológico normal, sem mudança recente, sinais sistêmicos ou sinais de alarme. Qual é a conduta mais adequada quanto à neuroimagem?",
     "options": [
-      "(A) Tomografia em todos os episódios",
-      "(B) Ressonância obrigatória para confirmar migrânea",
-      "(C) Não solicitar neuroimagem de rotina em quadro típico, estável e com exame neurológico normal",
-      "(D) Angiorressonância para excluir aneurisma em todos",
-      "(E) Punção lombar para confirmar diagnóstico"
+      "(A) Solicitar RM de encéfalo para confirmar migrânea",
+      "(B) Solicitar TC anual para rastrear aneurisma",
+      "(C) Não solicitar neuroimagem de rotina, mantendo avaliação clínica e reavaliando se houver mudança do padrão",
+      "(D) Realizar punção lombar para confirmar cefaleia primária",
+      "(E) Solicitar angio-RM em toda paciente com fotofobia"
     ],
     "correctAnswer": 2,
-    "explanation": "Migrânea típica, estável, com exame neurológico normal e ausência de sinais de alarme é diagnóstico clínico; neuroimagem de rotina não é necessária apenas para confirmar o diagnóstico. Isso não significa que exames nunca sejam indicados: o protocolo do Ministério da Saúde recomenda considerar TC ou RM diante de cefaleia com padrão novo/mudança recente, início após 50 anos, evolução insidiosa e progressiva, dor que acorda o paciente ou desencadeada por esforço/tosse/Valsalva. Sinais como início explosivo, febre com rigidez de nuca, papiledema, déficit focal, trauma recente ou alteração de consciência exigem avaliação urgente. A modalidade depende da hipótese e da disponibilidade: TC é frequentemente a primeira escolha na emergência hemorrágica; RM e estudos angiográficos/venográficos são úteis em outras suspeitas.",
+    "explanation": "Migrânea típica, estável, com exame neurológico normal e ausência de sinais de alarme é diagnóstico clínico. Neuroimagem não é necessária apenas para confirmar migrânea. Exames são indicados quando há mudança do padrão, início abrupto, déficit focal, papiledema, febre/meningismo, trauma, câncer, imunossupressão ou outros sinais de alerta. A modalidade depende da hipótese: TC é frequentemente inicial em suspeita hemorrágica aguda; RM pode ser superior em diversas causas estruturais.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
       "neuroimagem na migrânea típica"
     ],
-    "tip": "Nem toda cefaleia precisa de tomografia ou ressonância. Solicite neuroimagem quando houver uma pergunta clínica que justifique o exame.",
+    "tip": "Não peça imagem por reflexo. Pergunte qual hipótese secundária o exame pretende excluir e se há sinais clínicos que justifiquem a investigação.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-21",
     "module": "Clínica Médica",
-    "text": "Mulher, 29 anos, relata cinco crises semelhantes nos últimos oito meses. Cada episódio dura cerca de 12 horas, com dor unilateral, pulsátil, moderada a forte, piora ao subir escadas e associação com náuseas. O exame neurológico é normal. Qual elemento adicional é compatível com os critérios clínicos de migrânea sem aura?",
+    "text": "Mulher, 30 anos, relata quatro crises de cefaleia nos últimos seis meses, cada uma com duração de 6–12 horas. A dor é unilateral, pulsátil, moderada, piora ao caminhar e associa-se a náuseas. Não há aura. Qual afirmação é mais correta em relação aos critérios diagnósticos formais?",
     "options": [
-      "(A) Dor exclusivamente em pontada, com duração de 5 segundos",
-      "(B) Presença obrigatória de aura visual antes de todas as crises",
-      "(C) Fotofobia e fonofobia, ou náuseas/vômitos, durante as crises",
-      "(D) Dor sempre bilateral e sem piora com atividade",
-      "(E) Febre e rigidez de nuca durante os episódios"
+      "(A) O diagnóstico definitivo exige obrigatoriamente aura visual",
+      "(B) O número de crises ainda não alcança o mínimo de cinco para migrânea sem aura definida pelos critérios ICHD-3",
+      "(C) A presença de náusea exclui migrânea",
+      "(D) A duração é incompatível com migrânea, pois deve superar 72 horas",
+      "(E) A unilateralidade isolada estabelece o diagnóstico"
     ],
-    "correctAnswer": 2,
-    "explanation": "Os critérios ICHD-3 para migrânea sem aura combinam frequência e duração das crises, características da dor e sintomas associados. Em geral, exigem pelo menos cinco crises de 4–72 horas, duas ou mais características entre unilateralidade, caráter pulsátil, intensidade moderada/grave e agravamento por atividade física, além de náusea/vômito ou fotofobia e fonofobia. O diagnóstico não depende de aura. Uma descrição estruturada evita confundir migrânea com cefaleia tensional ou neuralgias; sinais de alarme sempre prevalecem sobre a classificação de cefaleia primária.",
+    "correctAnswer": 1,
+    "explanation": "Os critérios formais de migrânea sem aura exigem pelo menos cinco crises, duração de 4–72 horas, pelo menos duas características da dor e sintomas associados compatíveis. A paciente apresenta fenótipo migranoso, mas quatro episódios não alcançam o número mínimo para a classificação definitiva; pode ser considerada migrânea provável, conforme avaliação completa. Aura não é requisito. A duração de 6–12 horas é compatível.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "critérios diagnósticos de migrânea sem aura"
+      "migrânea sem aura: critérios em caso limítrofe"
     ],
-    "tip": "Em prova, organize o diagnóstico em três blocos: número/duração das crises, características da dor e sintomas associados. Aura não é requisito para migrânea.",
+    "tip": "Em questão de critério formal, conte as crises. Fenótipo compatível não significa que todos os critérios diagnósticos estejam preenchidos.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-22",
     "module": "Clínica Médica",
-    "text": "Mulher, 33 anos, apresenta crises de migrânea que começam de dois dias antes até o terceiro dia após o início da menstruação, em pelo menos dois de cada três ciclos. Também apresenta crises em outros períodos do mês. Qual classificação é mais adequada?",
+    "text": "Mulher, 34 anos, apresenta crises migranosas entre dois dias antes e três dias após o início do fluxo menstrual em pelo menos dois de três ciclos. Também apresenta crises em outros períodos do mês. Qual classificação corresponde ao padrão descrito?",
     "options": [
       "(A) Migrânea menstrual pura",
       "(B) Migrânea relacionada à menstruação",
       "(C) Cefaleia tensional crônica",
-      "(D) Cefaleia em salvas episódica",
-      "(E) Cefaleia por uso excessivo de medicamentos, obrigatoriamente"
+      "(D) Migrânea com aura obrigatória",
+      "(E) Cefaleia por uso excessivo de medicamentos"
     ],
     "correctAnswer": 1,
-    "explanation": "Migrânea menstrual pura ocorre quando as crises se restringem à janela perimenstrual; migrânea relacionada à menstruação ocorre nessa janela, mas também em outros momentos do ciclo. A janela diagnóstica usual vai de dois dias antes a três dias após o início do sangramento, em pelo menos dois de três ciclos. Diário prospectivo de cefaleia e menstruação melhora a precisão. A estratégia terapêutica pode incluir tratamento agudo otimizado e, em casos selecionados, prevenção perimenstrual breve, considerando contraindicações e risco de uso excessivo.",
+    "explanation": "Migrânea relacionada à menstruação ocorre quando as crises aparecem na janela perimenstrual e também em outros momentos do ciclo. Na forma menstrual pura, as crises se restringem à janela de dois dias antes a três dias após o início do sangramento, em pelo menos dois de três ciclos. Diário prospectivo de cefaleia e menstruação ajuda a documentar o padrão. Estratégias preventivas perimenstruais podem ser consideradas em casos selecionados.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "migrânea menstrual"
+      "migrânea relacionada à menstruação"
     ],
-    "tip": "Se há crises perimenstruais e também fora desse período, pense em migrânea relacionada à menstruação, não na forma pura. O diário ajuda a confirmar o padrão.",
+    "tip": "Se ocorre na janela menstrual e fora dela, é relacionada à menstruação; se ocorre apenas na janela, é menstrual pura.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-23",
     "module": "Clínica Médica",
-    "text": "Mulher, 37 anos, com migrânea conhecida, apresenta crise contínua e incapacitante há 80 horas, semelhante às crises habituais, mas mais prolongada. Não há febre, déficit focal ou sinais de alarme. Qual conceito melhor descreve o quadro?",
+    "text": "Mulher, 36 anos, com migrânea conhecida, apresenta crise contínua e incapacitante há 84 horas, semelhante às crises habituais, com náuseas e redução da ingesta hídrica. Não há febre, déficit focal ou alteração do padrão neurológico. Qual é a interpretação mais adequada?",
     "options": [
-      "(A) Aura típica",
-      "(B) Estado migranoso",
+      "(A) Aura persistente",
+      "(B) Estado migranoso, após reavaliar sinais de alarme e fatores que possam perpetuar a crise",
       "(C) Cefaleia em salvas crônica",
       "(D) Neuralgia do trigêmeo",
       "(E) Cefaleia pós-punção dural"
     ],
     "correctAnswer": 1,
-    "explanation": "Estado migranoso é uma crise debilitante e contínua por mais de 72 horas, em pessoa com migrânea, frequentemente com náuseas, vômitos e incapacidade funcional. Antes de atribuir a persistência à migrânea, reavalie sinais de alarme, uso excessivo de medicamentos, desidratação e causas secundárias, sobretudo se o padrão for diferente do habitual. O manejo pode exigir hidratação quando indicada, antieméticos e terapias parenterais específicas, conforme protocolo e comorbidades. Opioides não são estratégia de rotina, pois podem perpetuar o problema.",
+    "explanation": "Estado migranoso é uma crise debilitante, contínua por mais de 72 horas, em paciente com migrânea. Pode estar associado a náuseas, vômitos, desidratação e incapacidade funcional. Antes de atribuir a persistência à migrânea, é necessário reavaliar sinais de alarme, uso excessivo de medicamentos e causas secundárias, sobretudo se houver mudança do padrão. O tratamento pode exigir antieméticos e terapias parenterais; hidratação é indicada quando há desidratação, não automaticamente.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "estado migranoso"
+      "estado migranoso: definição e reavaliação"
     ],
-    "tip": "Crise de migrânea contínua por mais de 72 horas sugere estado migranoso. A duração prolongada não dispensa reavaliar sinais de alarme e diagnósticos alternativos.",
+    "tip": "Crise incapacitante contínua >72 horas sugere estado migranoso, mas não dispensa reavaliar diagnóstico e sinais de alarme.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-24",
     "module": "Clínica Médica",
-    "text": "Mulher, 24 anos, apresenta episódios reversíveis de parestesia que se dissemina pela mão e face, seguida de fraqueza unilateral e cefaleia pulsátil. Os sintomas evoluem gradualmente e desaparecem completamente. Qual é a principal conduta diagnóstica?",
+    "text": "Mulher, 25 anos, apresenta parestesias que se disseminam da mão para a face ao longo de 15 minutos, seguidas de fraqueza unilateral reversível e cefaleia pulsátil. É o primeiro episódio com fraqueza motora. Qual é a conduta mais segura?",
     "options": [
-      "(A) Assumir migrânea hemiplégica sem excluir outras causas",
-      "(B) Considerar migrânea com aura motora, mas realizar avaliação urgente para excluir AVC e outras causas secundárias, sobretudo em primeiro episódio",
-      "(C) Tratar como cefaleia tensional",
-      "(D) Diagnosticar epilepsia sem investigação",
-      "(E) Indicar anticoagulação empírica"
+      "(A) Diagnosticar migrânea hemiplégica e dispensar investigação vascular pela progressão gradual",
+      "(B) Ativar avaliação urgente para AVC e investigar causas vasculares; considerar migrânea hemiplégica após exclusão adequada",
+      "(C) Prescrever triptano e liberar após melhora da dor",
+      "(D) Iniciar anticoagulação empírica sem neuroimagem",
+      "(E) Classificar como cefaleia tensional com sintomas sensitivos"
     ],
     "correctAnswer": 1,
-    "explanation": "Fraqueza motora reversível pode ocorrer na migrânea hemiplégica, mas um primeiro episódio de déficit motor deve ser tratado como possível AVC até investigação adequada. A evolução gradual, sintomas positivos que se disseminam e resolução completa favorecem aura, mas não são suficientes para excluir isquemia. Avalie tempo de início, fatores vasculares, exame neurológico e neuroimagem conforme protocolo de AVC. Persistência do déficit, início súbito ou apresentação atípica reforçam a necessidade de investigação urgente.",
+    "explanation": "Migrânea hemiplégica pode produzir fraqueza motora reversível, frequentemente acompanhada de sintomas sensitivos graduais. Entretanto, primeiro episódio de déficit motor deve ser avaliado como possível AVC até investigação adequada. Progressão gradual e sintomas positivos favorecem aura, mas não excluem isquemia. A decisão sobre neuroimagem e tratamento deve seguir protocolo de AVC e janela terapêutica. Não se deve atribuir automaticamente déficit focal à migrânea.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "aura com sintomas motores"
+      "migrânea hemiplégica versus avc"
     ],
-    "tip": "Aura motora pode imitar AVC. Em primeiro episódio, déficit persistente ou apresentação atípica, priorize protocolo de avaliação vascular; não atribua automaticamente à migrânea.",
+    "tip": "Primeiro déficit motor é AVC até prova em contrário. A história de migrânea e a progressão gradual não substituem avaliação vascular urgente.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-25",
     "module": "Clínica Médica",
-    "text": "Homem, 28 anos, apresenta episódios reversíveis de vertigem, disartria, zumbido e diplopia, seguidos de cefaleia migranosa. Não há fraqueza motora durante os episódios. Qual diagnóstico deve ser considerado após excluir causas vasculares?",
+    "text": "Homem, 29 anos, relata episódios reversíveis de vertigem, diplopia, disartria e zumbido, com instalação gradual e resolução completa. Em seguida, apresenta cefaleia com características migranosas. Não há fraqueza motora. Após excluir causas vasculares, qual diagnóstico pode explicar o quadro?",
     "options": [
       "(A) Migrânea com aura de tronco encefálico",
-      "(B) Cefaleia tensional",
-      "(C) Cefaleia em salvas",
-      "(D) Neuralgia do trigêmeo",
-      "(E) Hipertensão intracraniana idiopática"
+      "(B) Migrânea hemiplégica",
+      "(C) Neuralgia do trigêmeo",
+      "(D) Cefaleia em salvas",
+      "(E) Hemicrania contínua"
     ],
     "correctAnswer": 0,
-    "explanation": "Migrânea com aura de tronco encefálico envolve pelo menos dois sintomas reversíveis de tronco encefálico — por exemplo, disartria, vertigem, zumbido, hipoacusia, diplopia, ataxia ou redução do nível de consciência — sem sintomas motores ou retinianos. É diagnóstico clínico após excluir isquemia da circulação posterior, epilepsia e outras causas. Vertigem isolada não basta para estabelecer o diagnóstico. A primeira apresentação, especialmente em pessoa com fatores de risco vascular, exige investigação cuidadosa.",
+    "explanation": "A migrânea com aura de tronco encefálico envolve pelo menos dois sintomas reversíveis atribuídos ao tronco encefálico, como disartria, vertigem, zumbido, hipoacusia, diplopia, ataxia ou redução do nível de consciência, sem sintomas motores ou retinianos. Vertigem isolada não é suficiente. A primeira apresentação exige excluir isquemia da circulação posterior e outras causas. Fraqueza motora direcionaria a classificação para outro subtipo de aura ou diagnóstico diferencial.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "aura de tronco encefálico"
+      "migrânea com aura de tronco encefálico"
     ],
-    "tip": "Vertigem isolada é inespecífica. A combinação de sintomas reversíveis de tronco encefálico, seguida de cefaleia migranosa, pode apontar para essa entidade, mas exige excluir isquemia posterior.",
+    "tip": "Não confunda vertigem isolada com aura de tronco. São necessários pelo menos dois sintomas reversíveis compatíveis e exclusão de isquemia posterior.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-26",
     "module": "Clínica Médica",
-    "text": "Homem, 59 anos, com migrânea, apresenta doença arterial coronariana documentada e angina prévia. Procura tratamento para crise moderada a grave. Qual afirmação sobre triptanos é correta?",
+    "text": "Homem, 61 anos, com migrânea moderada a grave, tem antecedente de infarto agudo do miocárdio e doença arterial coronariana estável. Solicita medicação abortiva específica. Qual afirmação orienta corretamente a escolha terapêutica?",
     "options": [
-      "(A) São preferidos por promoverem vasodilatação coronariana",
-      "(B) Podem ser usados livremente se associados a AINE",
-      "(C) Devem ser evitados em doença arterial coronariana por seus efeitos vasoconstritores",
-      "(D) São obrigatórios em toda crise grave",
-      "(E) Não possuem contraindicações cardiovasculares"
+      "(A) Sumatriptana é preferível por reduzir a resistência coronariana",
+      "(B) Triptanos devem ser evitados em doença arterial coronariana por seu potencial vasoconstritor",
+      "(C) A associação com AINE elimina o risco cardiovascular dos triptanos",
+      "(D) A contraindicação existe apenas durante a crise de angina",
+      "(E) A dose subcutânea é segura porque reduz a exposição sistêmica"
     ],
-    "correctAnswer": 2,
-    "explanation": "Triptanos ativam receptores 5‑HT1B/1D e podem produzir vasoconstrição; por isso, são contraindicados em doença coronariana, doença vascular periférica, AVC/AIT prévio e hipertensão não controlada, entre outras condições. Em paciente com doença arterial coronariana, a intensidade da crise não justifica ignorar o risco. Deve-se escolher alternativa não vasoconstritora adequada ao contexto e considerar tratamento antiemético e analgésico individualizado. Sempre revisar comorbidades e medicamentos antes de prescrever.",
+    "correctAnswer": 1,
+    "explanation": "Triptanos são agonistas 5-HT1B/1D e podem produzir vasoconstrição. Devem ser evitados em doença coronariana, doença vascular periférica, AVC/AIT prévio e hipertensão não controlada, entre outras condições. A associação com AINE não elimina a contraindicação. Deve-se selecionar alternativa não vasoconstritora conforme disponibilidade, comorbidades e avaliação clínica. A via subcutânea não torna o fármaco seguro em paciente com doença coronariana.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "contraindicação a triptanos"
+      "triptanos: contraindicação cardiovascular"
     ],
-    "tip": "Antes de prescrever triptano, procure doença vascular e hipertensão não controlada. Uma crise intensa não elimina contraindicações.",
+    "tip": "Antes de prescrever triptano, revise doença coronariana, vascular periférica, AVC/AIT e hipertensão não controlada. A via de administração não remove a contraindicação.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-27",
     "module": "Clínica Médica",
-    "text": "Gestante de 10 semanas, com história de migrânea, apresenta crise semelhante às anteriores, sem sinais de alarme. Qual abordagem farmacológica costuma ser considerada inicialmente, após avaliação individual?",
+    "text": "Gestante de 11 semanas, com história de migrânea sem aura, apresenta crise semelhante às habituais, sem hipertensão, febre, déficit focal ou sinais de alarme. Após avaliação clínica, qual opção farmacológica costuma ser considerada inicialmente?",
     "options": [
-      "(A) Ergotamina como primeira escolha",
-      "(B) Paracetamol, na menor dose eficaz e pelo menor tempo necessário",
-      "(C) Valproato para abortar a crise",
+      "(A) Ergotamina em dose única",
+      "(B) Paracetamol na menor dose eficaz e pelo menor tempo necessário",
+      "(C) Valproato como terapia abortiva",
       "(D) Topiramato em dose de ataque",
-      "(E) Uso irrestrito de anti-inflamatório em qualquer trimestre"
+      "(E) Anti-inflamatório não esteroidal em qualquer trimestre, sem restrições"
     ],
     "correctAnswer": 1,
-    "explanation": "Na gestação, a abordagem deve ponderar benefício materno e risco fetal e, antes de atribuir a dor à migrânea, excluir causas obstétricas e vasculares quando houver cefaleia nova, intensa, hipertensão, sintomas visuais, déficit focal ou convulsão. Paracetamol costuma ser opção inicial para crise, na menor dose eficaz e pelo menor tempo necessário, após avaliação individual. AINEs têm restrições por idade gestacional — devem ser evitados a partir de 20 semanas salvo indicação excepcional e são contraindicados no terceiro trimestre, conforme orientação regulatória e clínica. Ergotamínicos e valproato devem ser evitados. Não há PCDT específico do SUS para migrânea na gestação identificado na listagem oficial consultada; por isso, essa questão utiliza recomendações de segurança farmacológica complementares.",
+    "explanation": "Na gestação, o tratamento deve considerar idade gestacional e balanço materno-fetal. Paracetamol costuma ser opção inicial para crise, na menor dose eficaz e pelo menor tempo necessário, após avaliação individual. Ergotamínicos e valproato devem ser evitados. AINEs têm restrições específicas por idade gestacional, com riscos a partir de 20 semanas e contraindicação no terceiro trimestre. Cefaleia nova ou atípica na gestação exige investigação de causas obstétricas e vasculares.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "migrânea e gravidez"
+      "tratamento da migrânea na gestação"
     ],
-    "tip": "Gestação muda o balanço risco-benefício. Evite ergotamínicos e valproato; não extrapole recomendações de AINEs entre os trimestres.",
+    "tip": "Gestação muda a escolha do fármaco. Paracetamol costuma ser opção inicial; evite ergotamínicos e valproato e respeite as restrições gestacionais dos AINEs.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-28",
     "module": "Clínica Médica",
-    "text": "Mulher, 30 anos, com migrânea frequente, apresenta obesidade e história de nefrolitíase recorrente. Está sendo considerada profilaxia farmacológica. Qual medicamento exige cautela especial por poder favorecer cálculos renais?",
+    "text": "Mulher, 31 anos, com migrânea frequente e necessidade de profilaxia, apresenta antecedente de nefrolitíase recorrente por cálculos de oxalato de cálcio. Qual medicamento exige cautela especial por aumentar o risco de formação de cálculos?",
     "options": [
-      "(A) Topiramato",
-      "(B) Propranolol",
+      "(A) Propranolol",
+      "(B) Topiramato",
       "(C) Amitriptilina",
       "(D) Candesartana",
       "(E) Anticorpo monoclonal anti-CGRP"
     ],
-    "correctAnswer": 0,
-    "explanation": "Topiramato pode ser eficaz na prevenção da migrânea, mas aumenta risco de nefrolitíase por alterações na composição urinária e pode causar parestesias, lentificação cognitiva, perda de peso e acidose metabólica. História de cálculos renais recorrentes torna a escolha menos atraente e exige ponderar alternativas. A seleção preventiva deve considerar comorbidades, efeitos adversos, potencial reprodutivo, preferências e acesso. Não existe profilático universalmente melhor para todos os pacientes.",
+    "correctAnswer": 1,
+    "explanation": "Topiramato é eficaz na prevenção da migrânea, mas pode favorecer nefrolitíase por alterações metabólicas e urinárias, além de causar parestesias, lentificação cognitiva e acidose metabólica. Em paciente com história recorrente de cálculos, a escolha exige ponderação de risco e alternativas. A seleção preventiva deve ser individualizada e considerar comorbidades, efeitos adversos, potencial reprodutivo e acesso.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "profilaxia e comorbidades"
+      "profilaxia da migrânea: topiramato e nefrolitíase"
     ],
-    "tip": "Não escolha profilaxia apenas pela eficácia média. Associe o medicamento ao perfil do paciente: topiramato pode ser desfavorável em quem tem história de cálculos renais.",
+    "tip": "Não escolha preventivo apenas pela eficácia. Topiramato pode ser desfavorável em pacientes com nefrolitíase recorrente.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-29",
     "module": "Clínica Médica",
-    "text": "Mulher de 26 anos com migrânea frequente deseja iniciar topiramato preventivo. Não utiliza contracepção e planeja engravidar nos próximos meses. Qual consideração é mais importante?",
+    "text": "Mulher, 27 anos, com migrânea frequente, deseja iniciar topiramato preventivo. Não utiliza método contraceptivo e pretende engravidar em três a seis meses. Qual aspecto deve orientar a decisão?",
     "options": [
-      "(A) Topiramato é isento de risco fetal",
-      "(B) Topiramato deve ser discutido com cautela devido ao risco fetal, incluindo malformações, e deve-se planejar alternativa apropriada",
-      "(C) Topiramato é indicado para prevenção durante toda a gestação",
-      "(D) A dose baixa elimina qualquer risco fetal",
-      "(E) Apenas a função hepática precisa ser monitorada"
+      "(A) Topiramato não apresenta risco fetal em doses utilizadas para migrânea",
+      "(B) É necessário discutir risco fetal e planejar alternativa preventiva antes da concepção",
+      "(C) A dose baixa elimina o risco teratogênico",
+      "(D) O medicamento deve ser mantido durante toda a gestação para evitar estado migranoso",
+      "(E) Apenas função hepática precisa ser considerada"
     ],
     "correctAnswer": 1,
-    "explanation": "Topiramato está associado a risco fetal, incluindo malformações congênitas e possíveis efeitos sobre crescimento e neurodesenvolvimento. Em pessoa com potencial reprodutivo que planeja gestação, é essencial discutir risco, contracepção eficaz e alternativa preventiva antes de iniciar; se já estiver em uso, a mudança deve ser planejada com o médico, sem interrupção abrupta ou autônoma. A prevenção da migrânea precisa ser individualizada e reavaliada diante de planos gestacionais.",
+    "explanation": "Topiramato está associado a risco fetal, incluindo malformações congênitas e possíveis efeitos sobre crescimento e neurodesenvolvimento. Em pessoa com potencial reprodutivo que planeja gestação, é necessário discutir riscos, contracepção eficaz e alternativa preventiva antes de iniciar. Se já estiver em uso, a mudança deve ser planejada com o médico, sem suspensão abrupta ou autônoma. O plano reprodutivo é parte da escolha farmacológica.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "profilaxia com topiramato e gestação potencial"
+      "topiramato e potencial reprodutivo"
     ],
-    "tip": "Em paciente que pode engravidar, pergunte sobre planos reprodutivos antes de escolher profilaxia. A eficácia não compensa ignorar teratogenicidade.",
+    "tip": "Pergunte sobre possibilidade e planejamento de gestação antes de escolher profilaxia. A eficácia não compensa ignorar risco fetal conhecido.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-30",
     "module": "Clínica Médica",
-    "text": "Homem, 40 anos, apresenta crises diárias de cefaleia orbitária unilateral por seis semanas, seguidas de remissão completa por oito meses. O padrão se repetiu em dois anos consecutivos. Como classificar mais provavelmente?",
+    "text": "Homem, 42 anos, apresenta crises diárias de dor orbitária unilateral durante seis semanas. Após o período, permanece completamente assintomático por oito meses. O padrão se repetiu no ano seguinte. Como classificar a cefaleia em salvas?",
     "options": [
-      "(A) Cefaleia em salvas episódica",
-      "(B) Cefaleia em salvas crônica",
-      "(C) Migrânea crônica",
-      "(D) Hemicrania contínua",
-      "(E) Cefaleia tensional episódica"
+      "(A) Forma crônica, pois houve crises diárias",
+      "(B) Forma episódica, pois os períodos ativos são separados por remissão superior a três meses",
+      "(C) Hemicrania paroxística",
+      "(D) SUNCT",
+      "(E) Migrânea crônica"
     ],
-    "correctAnswer": 0,
-    "explanation": "Na classificação ICHD-3, a cefaleia em salvas episódica apresenta períodos de salvas com duração de 7 dias a 1 ano, separados por remissões sem dor de pelo menos 3 meses. Na forma crônica, as crises ocorrem por 1 ano ou mais sem remissão ou com remissões inferiores a 3 meses. A distinção depende do padrão longitudinal, não apenas da intensidade ou da frequência diária. Diário de crises e períodos de remissão ajuda a classificar e planejar a prevenção. O protocolo nacional brasileiro de urgência descreve surtos e períodos de remissão, mas os limites formais de classificação devem seguir a ICHD-3.",
+    "correctAnswer": 1,
+    "explanation": "Na ICHD-3, a cefaleia em salvas episódica ocorre em períodos de salvas com duração de 7 dias a 1 ano, separados por remissões sem dor de pelo menos três meses. A forma crônica persiste por um ano ou mais sem remissão ou com remissões inferiores a três meses. A classificação depende do padrão longitudinal, não apenas da frequência diária ou intensidade.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia em salvas: padrão episódico"
+      "cefaleia em salvas: classificação episódica ou crônica"
     ],
-    "tip": "Na classificação das salvas, observe a duração dos períodos ativos e, principalmente, o intervalo livre de dor. Remissão de oito meses favorece forma episódica.",
+    "tip": "Na salvas, observe o intervalo livre de dor: remissão ≥3 meses favorece forma episódica; remissões menores ou ausentes por ≥1 ano sugerem forma crônica.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-31",
     "module": "Clínica Médica",
-    "text": "Homem, 43 anos, inicia verapamil para prevenção de cefaleia em salvas. Qual cuidado é particularmente importante durante a titulação?",
+    "text": "Homem, 45 anos, inicia verapamil para prevenção de cefaleia em salvas. Durante a titulação, relata tontura e frequência cardíaca de 48 bpm. Qual é a principal preocupação e qual monitorização é recomendada?",
     "options": [
-      "(A) Monitorização eletrocardiográfica devido ao risco de bradicardia e bloqueio atrioventricular",
-      "(B) Dosagem diária de amilase",
-      "(C) Tomografia semanal",
-      "(D) Suspender toda atividade física",
-      "(E) Monitorização de INR em todos os pacientes"
+      "(A) Hipoglicemia; glicemia capilar diária",
+      "(B) Bradicardia e bloqueio atrioventricular; ECG basal e repetido durante titulação",
+      "(C) Nefrolitíase; ultrassonografia renal mensal",
+      "(D) Hepatotoxicidade; transaminases semanais",
+      "(E) Hemorragia intracraniana; TC semanal"
     ],
-    "correctAnswer": 0,
-    "explanation": "Verapamil é uma das principais opções preventivas para cefaleia em salvas, mas pode prolongar a condução atrioventricular, causar bradicardia e bloqueios. Deve-se obter ECG basal e repetir a monitorização durante a titulação, sobretudo em doses elevadas ou diante de sintomas. A dose é individualizada por especialista e protocolo; não se deve aumentar rapidamente sem controle. Oxigênio e sumatriptana são opções abortivas e não substituem a prevenção.",
+    "correctAnswer": 1,
+    "explanation": "Verapamil é uma das principais opções preventivas para cefaleia em salvas, mas pode causar bradicardia e prolongamento da condução atrioventricular, inclusive bloqueios. Recomenda-se ECG basal e monitorização durante a titulação, especialmente em doses elevadas ou diante de sintomas. Bradicardia sintomática exige reavaliação da dose e da segurança. Oxigênio e sumatriptana permanecem opções abortivas, não preventivas.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia em salvas: prevenção e ecg"
+      "verapamil na prevenção da cefaleia em salvas"
     ],
-    "tip": "Verapamil para salvas não é simplesmente prescrever e esquecer: lembre do ECG basal e da vigilância durante titulação.",
+    "tip": "Verapamil exige ECG. Bradicardia, tontura ou síncope durante a titulação não devem ser ignoradas.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-32",
     "module": "Clínica Médica",
-    "text": "Paciente com cefaleia em salvas episódica apresenta crises diárias e inicia verapamil, cuja titulação pode demorar a atingir dose eficaz. Qual estratégia pode ser usada como tratamento de transição em casos selecionados?",
+    "text": "Paciente com cefaleia em salvas episódica apresenta várias crises diárias. O neurologista inicia verapamil, mas prevê que a titulação levará alguns dias até atingir dose preventiva eficaz. Qual estratégia pode ser utilizada como ponte em pacientes selecionados?",
     "options": [
       "(A) Corticosteroide sistêmico por curto período ou bloqueio do nervo occipital maior",
-      "(B) Opioide contínuo por meses",
+      "(B) Opioide de liberação prolongada durante todo o surto",
       "(C) Antibiótico profilático",
       "(D) Anticoagulação plena",
-      "(E) Apenas paracetamol diário"
+      "(E) Dipirona diária como prevenção de manutenção"
     ],
     "correctAnswer": 0,
-    "explanation": "O tratamento de transição reduz as crises enquanto o preventivo principal, como verapamil, ainda está sendo titulado. Corticosteroide sistêmico por curto período ou bloqueio do nervo occipital maior podem ser considerados em pacientes selecionados, avaliando contraindicações e efeitos adversos. Não são substitutos do tratamento preventivo de manutenção e não devem ser prolongados indiscriminadamente. Opioides e analgésicos comuns não são estratégias adequadas para abortar salvas.",
+    "explanation": "O tratamento de transição busca reduzir crises enquanto o preventivo principal, como verapamil, ainda está sendo titulado. Corticosteroide sistêmico por curto período ou bloqueio do nervo occipital maior podem ser considerados em pacientes selecionados, avaliando contraindicações e efeitos adversos. Não substituem a prevenção de manutenção e não devem ser prolongados indiscriminadamente. Opioides e analgésicos comuns não são estratégias adequadas para abortar salvas.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
       "tratamento de transição na cefaleia em salvas"
     ],
-    "tip": "Na salvas, diferencie abortivo, transição e prevenção: oxigênio/triptano abortam; corticoide ou bloqueio podem fazer ponte; verapamil previne.",
+    "tip": "Diferencie as três funções: oxigênio/triptano abortam; corticoide ou bloqueio podem fazer ponte; verapamil previne.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-33",
     "module": "Clínica Médica",
-    "text": "Mulher, 35 anos, apresenta crises muito intensas de dor orbitária unilateral, com lacrimejamento e congestão nasal. Cada episódio dura cerca de 15 minutos e ocorre 15 vezes ao dia. Qual diagnóstico deve ser considerado?",
+    "text": "Mulher, 36 anos, apresenta dor orbitária unilateral muito intensa, associada a lacrimejamento e congestão nasal ipsilaterais. As crises duram 10–20 minutos e ocorrem 12–18 vezes ao dia. Qual diagnóstico deve ser considerado e qual característica terapêutica é marcante?",
     "options": [
-      "(A) Hemicrania paroxística",
-      "(B) Migrânea sem aura",
-      "(C) Cefaleia tensional",
-      "(D) Neuralgia occipital",
-      "(E) Cefaleia pós-traumática"
+      "(A) Cefaleia em salvas; resposta absoluta a oxigênio",
+      "(B) Hemicrania paroxística; resposta absoluta à indometacina",
+      "(C) SUNCT; resposta absoluta a triptano oral",
+      "(D) Migrânea; resposta absoluta a verapamil",
+      "(E) Hemicrania contínua; resposta absoluta a corticosteroide"
     ],
-    "correctAnswer": 0,
-    "explanation": "Hemicrania paroxística é uma cefaleia trigêmino-autonômica com crises unilaterais orbitárias ou temporais de 2–30 minutos, geralmente mais de cinco por dia, associadas a sintomas autonômicos ipsilaterais ou inquietação. A resposta absoluta à indometacina é característica e faz parte do diagnóstico. Antes e durante o uso, é necessário considerar risco gastrointestinal, renal e cardiovascular, podendo ser necessária proteção gástrica. A frequência alta e a curta duração ajudam a distingui-la da cefaleia em salvas.",
+    "correctAnswer": 1,
+    "explanation": "Hemicrania paroxística é uma cefaleia trigêmino-autonômica com crises unilaterais de 2–30 minutos, geralmente mais de cinco por dia, associadas a sintomas autonômicos ipsilaterais ou inquietação. A resposta absoluta à indometacina é característica e integra o diagnóstico. É necessário considerar toxicidade gastrointestinal, renal e cardiovascular, com proteção gástrica quando indicada. A salvas costuma ter crises mais longas e menos frequentes.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
       "hemicrania paroxística"
     ],
-    "tip": "Crises autonômicas muito frequentes e curtas, com resposta absoluta à indometacina, apontam para hemicrania paroxística.",
+    "tip": "Crises autonômicas muito frequentes e curtas, com resposta completa à indometacina, apontam para hemicrania paroxística.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-34",
     "module": "Clínica Médica",
-    "text": "Homem, 44 anos, apresenta dor estritamente unilateral contínua há cinco meses, com exacerbações intensas e lacrimejamento ipsilateral. Refere resposta completa e sustentada à indometacina. Qual diagnóstico é mais provável?",
+    "text": "Homem, 46 anos, relata dor estritamente unilateral, contínua há cinco meses, com exacerbações intensas e lacrimejamento ipsilateral. A investigação inicial não identifica causa secundária. Após introdução de indometacina, ocorre desaparecimento completo da dor. Qual diagnóstico é mais provável?",
     "options": [
       "(A) Hemicrania contínua",
       "(B) Cefaleia em salvas episódica",
-      "(C) Migrânea com aura",
-      "(D) Cefaleia tensional crônica",
-      "(E) Neuralgia do trigêmeo"
+      "(C) Neuralgia do trigêmeo",
+      "(D) Migrânea crônica",
+      "(E) Cefaleia tensional crônica"
     ],
     "correctAnswer": 0,
-    "explanation": "Hemicrania contínua caracteriza-se por dor estritamente unilateral e contínua por mais de três meses, com exacerbações de intensidade variável e possíveis sintomas autonômicos ipsilaterais. A resposta completa à indometacina é elemento diagnóstico central; resposta apenas parcial exige reconsiderar o diagnóstico. O uso de indometacina demanda atenção a toxicidade gastrointestinal, renal e cardiovascular. Diferentemente da salvas, a dor basal permanece presente entre as exacerbações.",
+    "explanation": "Hemicrania contínua caracteriza-se por dor estritamente unilateral e contínua por mais de três meses, com exacerbações e possíveis sintomas autonômicos ipsilaterais. A resposta completa à indometacina é elemento diagnóstico central. Diferentemente da salvas, a dor basal persiste entre as exacerbações. O uso de indometacina exige atenção à toxicidade gastrointestinal, renal e cardiovascular.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
@@ -793,138 +793,138 @@ const NEURO_CEFALEIAS: Question[] = [
   {
     "id": "topo-1-1-35",
     "module": "Clínica Médica",
-    "text": "Homem, 52 anos, apresenta ataques de dor orbitária unilateral em pontadas, com duração de 20 a 40 segundos, várias dezenas de vezes ao dia. Durante as crises há hiperemia conjuntival e lacrimejamento ipsilateral. Qual síndrome é mais compatível?",
+    "text": "Homem, 53 anos, apresenta dezenas de ataques diários de dor orbitária unilateral em pontada, com duração de 20–40 segundos. Durante cada ataque há hiperemia conjuntival e lacrimejamento ipsilaterais. Qual síndrome é mais compatível?",
     "options": [
       "(A) SUNCT",
-      "(B) Cefaleia tensional",
-      "(C) Migrânea menstrual",
-      "(D) Hemicrania contínua",
-      "(E) Cefaleia pós-punção dural"
+      "(B) Hemicrania contínua",
+      "(C) Cefaleia em salvas",
+      "(D) Migrânea sem aura",
+      "(E) Cefaleia do tipo tensional"
     ],
     "correctAnswer": 0,
-    "explanation": "SUNCT apresenta ataques muito breves e frequentes de dor unilateral, com hiperemia conjuntival e lacrimejamento ipsilaterais; SUNA apresenta sintomas autonômicos cranianos, mas não necessariamente ambos os sinais oculares simultaneamente. A duração de segundos e a frequência elevada diferenciam essas síndromes da salvas, cujas crises são mais longas. É importante avaliar causas estruturais em apresentações atípicas e individualizar o tratamento preventivo, frequentemente especializado.",
+    "explanation": "SUNCT caracteriza-se por ataques breves e frequentes de dor unilateral, acompanhados simultaneamente por hiperemia conjuntival e lacrimejamento ipsilaterais. SUNA apresenta sintomas autonômicos cranianos, mas não necessariamente ambos os sinais oculares. A duração de segundos e a frequência elevada diferenciam essas síndromes da cefaleia em salvas, cujas crises duram 15–180 minutos. Apresentações atípicas podem exigir investigação estrutural.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "sunct/suna"
+      "sunct: identificação pela duração e sintomas autonômicos"
     ],
-    "tip": "Ataques de segundos, muito frequentes, com olho vermelho e lacrimejamento são pistas para SUNCT. Compare duração e frequência com salvas e hemicranias.",
+    "tip": "Ataques de segundos, muito frequentes, com olho vermelho e lacrimejamento sugerem SUNCT. Compare duração e frequência com salvas.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-36",
     "module": "Clínica Médica",
-    "text": "Mulher, 32 anos, refere pressão frontal e dor facial durante resfriado, com obstrução nasal e secreção purulenta. A dor varia paralelamente à congestão e melhora conforme os sintomas nasais resolvem. Qual interpretação é mais adequada?",
+    "text": "Mulher, 33 anos, apresenta pressão facial durante episódio de rinossinusite aguda, com obstrução nasal e secreção purulenta. A dor começou junto dos sintomas nasais e melhora paralelamente à resolução do quadro. Qual interpretação é mais adequada?",
     "options": [
-      "(A) Toda dor frontal é sinusite bacteriana",
-      "(B) A associação temporal com sinais de rinossinusite pode sustentar cefaleia atribuída à rinossinusite, mas exige critérios clínicos e avaliação da evolução",
-      "(C) Migrânea está excluída pela localização frontal",
-      "(D) A presença de secreção nasal prova complicação intracraniana",
-      "(E) É indicação automática de tomografia"
+      "(A) Dor frontal isolada confirma rinossinusite bacteriana",
+      "(B) A relação temporal entre doença sinonasal documentada e evolução da dor sustenta cefaleia atribuída à rinossinusite",
+      "(C) A localização facial exclui migrânea",
+      "(D) A presença de secreção purulenta indica obrigatoriamente complicação intracraniana",
+      "(E) Todo quadro exige tomografia dos seios da face"
     ],
     "correctAnswer": 1,
-    "explanation": "Atribuir cefaleia à rinossinusite exige evidência de doença sinonasal e relação causal temporal: a dor começa ou piora com a rinossinusite e melhora paralelamente à resolução, entre outros critérios. Dor frontal ou pressão facial isolada não confirma sinusite bacteriana. Migrânea pode causar pressão facial, congestão nasal e lacrimejamento, sendo frequentemente confundida com 'cefaleia sinusal'. Antibiótico ou tomografia não são automáticos; a decisão depende de critérios clínicos de rinossinusite e sinais de complicação.",
+    "explanation": "Atribuir cefaleia à rinossinusite exige evidência de doença sinonasal e relação causal temporal: a dor começa ou piora com a rinossinusite e melhora paralelamente à resolução, entre outros critérios. Dor frontal ou pressão facial isolada não confirma sinusite bacteriana. Migrânea pode causar pressão facial, congestão nasal e lacrimejamento, sendo frequentemente confundida com 'cefaleia sinusal'. Antibiótico e tomografia dependem dos critérios clínicos e de sinais de complicação.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia atribuída à sinusite"
+      "cefaleia atribuída à rinossinusite"
     ],
-    "tip": "Não diagnostique sinusite apenas pela localização da dor. Procure sintomas nasais e relação temporal; migrânea frequentemente é rotulada incorretamente como sinusite.",
+    "tip": "Não diagnostique sinusite pela localização da dor. Procure sintomas nasais objetivos e relação temporal; migrânea pode simular 'dor sinusal'.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-37",
     "module": "Clínica Médica",
-    "text": "Mulher, 42 anos, apresenta cefaleia ortostática diária há três semanas, sem punção lombar ou procedimento recente. A dor piora após permanecer em pé e melhora ao deitar, acompanhada de dor cervical e zumbido. Qual hipótese deve ser considerada?",
+    "text": "Mulher, 43 anos, apresenta cefaleia ortostática diária há quatro semanas, sem punção lombar, raquianestesia ou trauma recente. A dor piora após permanecer em pé e melhora ao deitar, acompanhada de cervicalgia e zumbido. Qual hipótese deve ser investigada?",
     "options": [
-      "(A) Hipotensão intracraniana espontânea por fuga liquórica",
-      "(B) Cefaleia em salvas",
-      "(C) Arterite de células gigantes",
-      "(D) Neuralgia do trigêmeo",
-      "(E) Cefaleia tensional episódica"
+      "(A) Hipertensão intracraniana idiopática",
+      "(B) Hipotensão intracraniana espontânea por fuga liquórica",
+      "(C) Cefaleia pós-punção dural",
+      "(D) Cefaleia em salvas",
+      "(E) Arterite de células gigantes"
     ],
-    "correctAnswer": 0,
-    "explanation": "A hipotensão intracraniana espontânea pode decorrer de fuga espontânea de líquor, mesmo sem punção ou procedimento prévio. A cefaleia costuma ser ortostática — piora após ficar em pé e melhora ao deitar — e pode acompanhar dor cervical, náuseas, zumbido e sintomas auditivos. A investigação geralmente inclui ressonância de encéfalo com contraste e avaliação da coluna para localizar a fuga; a pressão de abertura pode não estar reduzida em todos os casos, portanto um valor isolado normal não exclui a hipótese. Cefaleia ortostática persistente merece avaliação especializada e não deve ser rotulada como pós-punção sem antecedente de punção.",
+    "correctAnswer": 1,
+    "explanation": "A hipotensão intracraniana espontânea pode decorrer de fuga liquórica sem procedimento prévio. A cefaleia costuma ser ortostática e pode acompanhar cervicalgia, náuseas, zumbido e sintomas auditivos. A investigação geralmente inclui RM de encéfalo com contraste e avaliação da coluna para localizar a fuga. A pressão de abertura pode não estar reduzida em todos os casos; portanto, um valor isolado normal não exclui a hipótese.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia por hipotensão liquórica espontânea"
+      "hipotensão intracraniana espontânea"
     ],
-    "tip": "Cefaleia ortostática sem punção prévia não é automaticamente pós-punção. Considere fuga espontânea de líquor e investigue quando o padrão for persistente.",
+    "tip": "Cefaleia ortostática sem punção prévia não é pós-punção por definição. Considere fuga espontânea de líquor e investigue se persistente.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-38",
     "module": "Clínica Médica",
-    "text": "Puérpera, 29 anos, apresenta cefaleia progressiva, convulsão e papiledema. Tomografia sem contraste não mostra alteração conclusiva. Qual exame é mais apropriado para investigar trombose venosa cerebral?",
+    "text": "Puérpera, 30 anos, apresenta cefaleia progressiva, papiledema e crise convulsiva focal. A TC sem contraste não demonstra alteração conclusiva. Qual exame é mais apropriado para confirmar ou excluir trombose venosa cerebral?",
     "options": [
-      "(A) Radiografia simples de crânio",
+      "(A) Angio-TC arterial intracraniana isolada",
       "(B) Venografia por tomografia ou ressonância magnética",
-      "(C) Eletroencefalograma isolado",
-      "(D) Ultrassonografia de carótidas",
-      "(E) Punção lombar como único exame"
+      "(C) Doppler de carótidas",
+      "(D) Eletroencefalograma isolado",
+      "(E) Radiografia de crânio"
     ],
     "correctAnswer": 1,
-    "explanation": "A trombose venosa cerebral pode causar cefaleia progressiva, convulsões, papiledema e déficits focais, especialmente no puerpério, gestação, trombofilias, neoplasia ou infecção. Tomografia simples pode ser normal ou inespecífica; a confirmação exige venografia por tomografia ou ressonância, demonstrando trombo ou alteração do fluxo venoso. Diante de suspeita clínica, não encerre a investigação com TC sem contraste normal. O tratamento costuma incluir anticoagulação, inclusive em muitos casos com infarto venoso hemorrágico, mas a decisão deve ser feita em ambiente hospitalar por equipe especializada.",
+    "explanation": "A trombose venosa cerebral pode manifestar-se com cefaleia progressiva, convulsões, papiledema e déficits focais, especialmente no puerpério, gestação, trombofilias, neoplasia ou infecção. A TC simples pode ser normal ou inespecífica; a confirmação exige venografia por TC ou RM. A suspeita clínica não deve ser encerrada por TC sem contraste normal. O tratamento, geralmente com anticoagulação, requer avaliação hospitalar especializada.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "trombose venosa cerebral e exame"
+      "trombose venosa cerebral: exame confirmatório"
     ],
-    "tip": "Tomografia simples normal não exclui trombose venosa cerebral. Diante de puerpério, convulsão e papiledema, solicite estudo venoso cerebral.",
+    "tip": "TC simples normal não exclui trombose venosa cerebral. Puerpério + cefaleia progressiva + convulsão/papiledema pede estudo venoso.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-39",
     "module": "Clínica Médica",
-    "text": "Homem, 67 anos, em uso de anticoagulante, sofre queda da própria altura e apresenta cefaleia progressiva nas horas seguintes. Está acordado e sem déficit focal. Qual é a conduta mais adequada?",
+    "text": "Homem, 68 anos, em uso de apixabana por fibrilação atrial, sofre queda da própria altura com impacto craniano. Duas horas depois, apresenta cefaleia progressiva, embora permaneça lúcido e sem déficit focal. Qual conduta é mais apropriada?",
     "options": [
-      "(A) Liberar sem exames porque não há déficit focal",
-      "(B) Solicitar avaliação urgente e neuroimagem, especialmente tomografia de crânio sem contraste",
-      "(C) Tratar como migrânea habitual",
-      "(D) Solicitar apenas radiografia cervical",
-      "(E) Aguardar 72 horas para observar"
+      "(A) Alta após analgésico, pois o exame neurológico está normal",
+      "(B) Avaliação urgente e TC de crânio sem contraste para excluir hemorragia intracraniana",
+      "(C) Solicitar radiografia de crânio e observar em casa",
+      "(D) Suspender anticoagulante por conta própria e reavaliar em 72 horas",
+      "(E) Tratar como migrânea e solicitar RM eletiva"
     ],
     "correctAnswer": 1,
-    "explanation": "Trauma craniano em paciente anticoagulado associado a cefaleia nova ou progressiva exige avaliação urgente para excluir hemorragia intracraniana, mesmo sem déficit focal ou alteração inicial da consciência. Tomografia de crânio sem contraste é o exame inicial habitual. A decisão sobre observação, repetição de imagem, reversão da anticoagulação e suspensão temporária depende do achado radiológico, fármaco, risco trombótico e avaliação especializada. Não é seguro liberar apenas porque o exame neurológico inicial está normal.",
+    "explanation": "Trauma craniano em paciente anticoagulado associado a cefaleia nova ou progressiva exige avaliação urgente para excluir hemorragia intracraniana, mesmo sem déficit focal ou alteração inicial da consciência. TC de crânio sem contraste é o exame inicial habitual. Observação, repetição de imagem, reversão da anticoagulação e suspensão temporária dependem dos achados, do anticoagulante, do risco trombótico e da avaliação especializada. Exame neurológico inicial normal não exclui sangramento.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia após trauma"
+      "cefaleia após trauma em paciente anticoagulado"
     ],
-    "tip": "Trauma + anticoagulação + cefaleia nova ou progressiva é combinação de alto risco. Não tranquilize apenas pelo exame neurológico inicial normal.",
+    "tip": "Trauma + anticoagulação + cefaleia nova/progressiva é combinação de alto risco. Não libere apenas porque o exame neurológico inicial está normal.",
     "topography": "1.1",
     "topic": "Cefaleias"
   },
   {
     "id": "topo-1-1-40",
     "module": "Clínica Médica",
-    "text": "Homem, 45 anos, relata cefaleia occipital desencadeada por tosse e esforço evacuatório, com piora progressiva. Qual atitude é mais apropriada?",
+    "text": "Homem, 44 anos, apresenta cefaleia occipital desencadeada imediatamente por tosse e esforço evacuatório, com piora progressiva nas últimas semanas. Não há febre ou déficit focal. Qual é a conduta mais adequada?",
     "options": [
-      "(A) Classificar como cefaleia tensional sem exames",
-      "(B) Investigar causa estrutural da fossa posterior ou outra causa secundária com neuroimagem",
-      "(C) Prescrever triptano e encerrar avaliação",
+      "(A) Classificar como cefaleia primária da tosse sem investigação",
+      "(B) Solicitar neuroimagem para investigar lesão de fossa posterior, malformação de Chiari ou outra causa secundária",
+      "(C) Iniciar triptano e reavaliar em três meses",
       "(D) Diagnosticar cefaleia em salvas",
-      "(E) Indicar antibiótico"
+      "(E) Prescrever antibiótico para sinusite"
     ],
     "correctAnswer": 1,
-    "explanation": "Cefaleia precipitada por tosse, esforço ou manobra de Valsalva é um sinal de alerta, principalmente quando nova ou progressiva. Entre as causas secundárias estão malformação de Chiari tipo I, lesões da fossa posterior, hidrocefalia e alterações de pressão liquórica; início explosivo também exige excluir causas vasculares. A ressonância é frequentemente útil para avaliar fossa posterior e junção craniocervical, mas a escolha do exame depende da urgência e da hipótese. Cefaleia primária da tosse só deve ser diagnosticada após excluir causas secundárias.",
+    "explanation": "Cefaleia precipitada por tosse, esforço ou manobra de Valsalva é sinal de alerta, principalmente quando nova ou progressiva. Entre as causas secundárias estão malformação de Chiari tipo I, lesões da fossa posterior, hidrocefalia e alterações de pressão liquórica; início explosivo exige também excluir causas vasculares. RM é frequentemente útil para avaliar fossa posterior e junção craniocervical. Cefaleia primária da tosse só deve ser diagnosticada após excluir causas secundárias.",
     "reference": "ICHD-3 (Sociedade Internacional de Cefaleia, 2018; tradução da Sociedade Brasileira de Cefaleia); Protocolo nacional de cefaleias nas unidades de urgência (ABN/SBCe, 2018); Consenso brasileiro para tratamento da crise migranosa (2016); Protocolos de encaminhamento — Neurologia (MS/UFRGS, 2022)",
     "tags": [
       "neurologia",
       "cefaleias",
-      "cefaleia associada a hipertensão intracraniana e valsalva"
+      "cefaleia desencadeada por tosse e valsalva"
     ],
-    "tip": "Cefaleia provocada por Valsalva merece investigação estrutural, sobretudo quando nova ou progressiva.",
+    "tip": "Cefaleia desencadeada por Valsalva merece investigação estrutural, especialmente quando nova, progressiva ou occipital.",
     "topography": "1.1",
     "topic": "Cefaleias"
   }
