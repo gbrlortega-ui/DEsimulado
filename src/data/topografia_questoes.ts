@@ -930,4 +930,968 @@ const NEURO_CEFALEIAS: Question[] = [
   }
 ];
 
-export const TOPOGRAPHY_QUESTIONS: Question[] = [...NEURO_CEFALEIAS];
+// 1.1 Neurologia — AVC (40 questões inéditas, Ciclo 1 · Dia 02; 12 intermediárias, 20 residência, 8 avançadas)
+const NEURO_AVC: Question[] = [
+  {
+    "id": "topo-1-1-41",
+    "module": "Clínica Médica",
+    "text": "Um homem de 68 anos, hipertenso e tabagista, estava conversando normalmente às 8h15. Às 8h40, a esposa percebeu assimetria facial à direita, fala incompreensível e incapacidade de elevar o braço direito. Na chegada do SAMU, às 9h05, está acordado, PA 166/94 mmHg e glicemia capilar 118 mg/dL. Qual é a conduta mais adequada?",
+    "options": [
+      "(A) Observar por 60 minutos e encaminhar somente se o déficit persistir",
+      "(B) Oferecer ácido acetilsalicílico no domicílio antes de excluir hemorragia",
+      "(C) Acionar imediatamente o protocolo de AVC, registrar a última vez em que estava bem e transportar à referência pactuada para neuroimagem e reperfusão",
+      "(D) Orientar transporte por veículo particular sem pré-notificação do hospital",
+      "(E) Aguardar eletrocardiograma e troponina para só depois acionar o hospital"
+    ],
+    "correctAnswer": 2,
+    "explanation": "O déficit focal súbito com alteração facial, motora e de linguagem impõe suspeita de AVC. O tempo relevante é a última vez comprovadamente sem sintomas (8h15), e a condução pré-hospitalar deve antecipar a equipe receptora e selecionar o destino segundo a rede local de AVC. A glicemia inicial auxilia a excluir hipoglicemia simuladora; não há indicação de aguardar melhora em casa.",
+    "commentary": "(A) Incorreta. A resolução pode ocorrer, mas observar atrasa reperfusão e a avaliação de AIT.\n\n(B) Incorreta. Antiagregação antes da neuroimagem pode ser perigosa em AVC hemorrágico.\n\n(D) Incorreta. Reduz a coordenação e pode atrasar a porta-imagem.\n\n(E) Incorreta. Investigação cardíaca é relevante, mas não deve retardar o fluxo agudo.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "triagem pré-hospitalar e ativação da linha de cuidado"
+    ],
+    "tip": "Déficit focal súbito = código AVC. Anote a última vez sem sintomas, cheque glicemia e não perca tempo com medidas que atrasem a TC.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-42",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 74 anos, com diabetes em uso de insulina, é encontrada confusa, com desvio da comissura labial e hemiparesia esquerda há cerca de 30 minutos. Glicemia capilar: 38 mg/dL. PA 148/82 mmHg. Depois de correção intravenosa da glicose, a glicemia sobe para 126 mg/dL e o déficit focal desaparece completamente. Qual interpretação é a melhor?",
+    "options": [
+      "(A) O quadro é compatível com hipoglicemia simulando AVC; o desaparecimento completo após correção orienta a investigação da causa metabólica",
+      "(B) Realizar trombólise antes da correção, pois toda hemiparesia abrupta é isquêmica",
+      "(C) Concluir AVC hemorrágico apenas porque havia confusão e hemiparesia",
+      "(D) Prescrever anticonvulsivante continuamente mesmo sem crise convulsiva",
+      "(E) Prescrever AAS imediatamente e dispensar avaliação metabólica"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hipoglicemia pode produzir déficits neurológicos focais e mimetizar isquemia cerebral. Deve ser pesquisada imediatamente em todo suspeito de AVC, pois o tratamento pode reverter o quadro. É importante confirmar recuperação clínica e investigar a causa, sem negligenciar AVC concomitante se persistirem déficits. Nesta vinheta, o desaparecimento completo após normalização da glicose favorece a causa metabólica.",
+    "commentary": "(B) Incorreta. Hipoglicemia grave deve ser corrigida antes de determinar elegibilidade.\n\n(C) Incorreta. A apresentação não permite distinguir hemorragia de isquemia sem imagem.\n\n(D) Incorreta. Não há evidência de convulsão nem indicação de profilaxia.\n\n(E) Incorreta. O problema agudo identificado é hipoglicemia; AAS não é intervenção apropriada.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "hipoglicemia como simulador de avc"
+    ],
+    "tip": "Glicemia capilar faz parte do primeiro minuto. Corrija hipoglicemia e REEXAMINE; déficit persistente mantém investigação de AVC.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-43",
+    "module": "Clínica Médica",
+    "text": "Um homem de 63 anos foi visto sem déficits às 22h, ao se deitar. Acordou às 6h30 com afasia e fraqueza do braço direito. Chega ao hospital às 7h10. TC sem contraste não mostra hemorragia. Ao estabelecer a cronologia para elegibilidade à reperfusão, qual informação deve orientar inicialmente o cálculo do tempo de AVC?",
+    "options": [
+      "(A) Acordar às 6h30 é sempre o início oficial do AVC",
+      "(B) Chegar às 7h10 define o início porque a TC foi feita na sequência",
+      "(C) O ponto médio entre dormir e acordar substitui sempre o último momento bem",
+      "(D) Não registrar horário algum porque existe seleção por perfusão",
+      "(E) A última vez em que o paciente foi comprovadamente visto sem sintomas, às 22h, sem confundir esse marco com a hora em que acordou"
+    ],
+    "correctAnswer": 4,
+    "explanation": "Em AVC ao despertar, a hora de descoberta do déficit não é a hora presumida de início. O marco inicial é o “last known well”, 22h. Apesar de não estar dentro da janela cronológica convencional para trombólise sem seleção avançada, o paciente não deve ser automaticamente excluído de toda reperfusão: protocolos especializados permitem selecionar candidatos por imagem DWI–FLAIR ou perfusão, inclusive para trombectomia em contextos apropriados.",
+    "commentary": "(A) Incorreta. Acordar apenas indica quando o déficit foi percebido.\n\n(B) Incorreta. Hora de chegada não é início dos sintomas.\n\n(C) Incorreta. O ponto médio pode compor critérios específicos de estudos, mas não substitui universalmente o last known well.\n\n(D) Incorreta. O tempo permanece essencial à escolha do tratamento e documentação.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "último momento assintomático e janela terapêutica"
+    ],
+    "tip": "AVC ao acordar: calcule a partir da última vez bem; depois pergunte se a imagem permite seleção em janela estendida.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-44",
+    "module": "Clínica Médica",
+    "text": "Uma professora de 42 anos apresenta afasia expressiva súbita, sem paresia. Ela compreende comandos simples, mas não consegue produzir frases úteis. NIHSS total de 3. Último momento sem sintomas há 90 minutos; TC exclui hemorragia, PA 154/92 mmHg, sem contraindicações reconhecidas à reperfusão. Qual interpretação é correta?",
+    "options": [
+      "(A) Não trombolisar porque a NIHSS é inferior a 6 em qualquer cenário",
+      "(B) A NIHSS baixa não exclui trombólise se o déficit de linguagem for claramente incapacitante e houver elegibilidade",
+      "(C) Oferecer apenas ansiolítico porque não há fraqueza motora",
+      "(D) Aguardar 24 horas para confirmar infarto em TC de controle",
+      "(E) Prescrever antiagregante e excluir reperfusão porque toda afasia é não incapacitante"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A escala NIHSS quantifica déficits, mas não substitui avaliação funcional. Afasia impeditiva da comunicação é incapacitante mesmo com pontuação baixa. A diretriz AHA/ASA de 2026 reforça trombólise em déficits incapacitantes dentro de 4,5 horas, independentemente de um escore NIHSS baixo; deve-se usar avaliação individual e imagem sem hemorragia. No SUS, seguir critérios do PCDT e protocolo institucional de trombólise.",
+    "commentary": "(A) Incorreta. Esse limiar é usado em algumas seleções de trombectomia, não regra geral de trombólise.\n\n(C) Incorreta. Afasia é sinal cortical vascular, não sintoma psiquiátrico por exclusão.\n\n(D) Incorreta. Retarda tratamento tempo-dependente.\n\n(E) Incorreta. Afasia relevante é um déficit tipicamente incapacitante.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "nihss e impacto funcional do déficit"
+    ],
+    "tip": "NIHSS pequeno não significa “AVC pequeno”. Pergunte: esse déficit impede falar, andar, enxergar ou desempenhar atividades essenciais?",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-45",
+    "module": "Clínica Médica",
+    "text": "Um homem destro de 71 anos evolui subitamente com desvio do olhar para a esquerda, hemiparesia direita mais acentuada em face e braço, afasia global e hemianopsia homônima direita. Qual território vascular é mais provável?",
+    "options": [
+      "(A) Artéria cerebral anterior direita",
+      "(B) Artéria cerebral posterior direita",
+      "(C) Pequeno vaso profundo capsular direito",
+      "(D) Artéria cerebral média esquerda, no hemisfério dominante para linguagem",
+      "(E) Artéria cerebelar posteroinferior esquerda"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Veja a combinação de sinais corticais (afasia, desvio conjugado do olhar, hemianopsia) com déficit motor predominante em face e braço. O território da artéria cerebral média dominante, em geral à esquerda, integra a melhor localização. AVC lacunar puro não explica afasia nem alteração conjugada do olhar. Localizar o território permite antecipar oclusão de grande vaso e priorizar angiotomografia quando disponível.",
+    "commentary": "(A) Incorreta. A cerebral anterior acomete sobretudo perna contralateral e sintomas frontais.\n\n(B) Incorreta. A posterior costuma causar fenômenos visuais e talâmicos; não explica tão bem afasia global e paresia braquiofacial.\n\n(C) Incorreta. Lesão lacunar não justifica afasia global com outros sinais corticais.\n\n(E) Incorreta. Território cerebelar/bulbar produz sinais de tronco e cerebelo, não síndrome cortical de ACM.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "localização cortical: artéria cerebral média dominante"
+    ],
+    "tip": "Afasia + face/braço > perna + desvio do olhar para a lesão: pense em ACM dominante.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-46",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 66 anos, com dislipidemia, apresenta início abrupto de fraqueza importante da perna esquerda, dificuldade para iniciar ações, abulia e incontinência urinária recente. Força no braço esquerdo está discretamente reduzida; não há afasia. Qual território é mais sugerido?",
+    "options": [
+      "(A) Artéria cerebral média direita, divisão inferior",
+      "(B) Artéria cerebral posterior direita",
+      "(C) Artéria cerebral anterior direita",
+      "(D) Artéria cerebelar superior esquerda",
+      "(E) Artéria cerebral média esquerda, tronco M1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A artéria cerebral anterior irriga áreas mediais do lobo frontal e parietal, incluindo representação motora predominante da perna e circuitos executivos. Paresia crural contralateral, abulia, apatia e possível incontinência favorecem esse território. Em comparação, a artéria cerebral média tende a acometer face e braço; a posterior, o campo visual; e as síndromes de tronco apresentam sinais cruzados.",
+    "commentary": "(A) Incorreta. Sua apresentação costuma envolver manifestações corticais parietotemporais, negligência ou alterações visuais.\n\n(B) Incorreta. Alterações de campo visual são mais esperadas que déficit crural frontal.\n\n(D) Incorreta. Esperaríamos ataxia e manifestações cerebelares, não abulia com paresia da perna.\n\n(E) Incorreta. Tipicamente déficit braquiofacial direito e manifestações corticais esquerdas.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "localização vascular: artéria cerebral anterior"
+    ],
+    "tip": "Perna > braço, abulia e incontinência agudas = território da cerebral anterior.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-47",
+    "module": "Clínica Médica",
+    "text": "Um homem de 59 anos, com hipertensão, apresenta perda súbita do hemicampo visual esquerdo em ambos os olhos, sem dor ocular nem alteração de força. Ao exame, hemianopsia homônima esquerda consistente, pupilas fotorreagentes e fundo de olho sem alterações explicativas. Qual território é mais provável?",
+    "options": [
+      "(A) Artéria cerebral posterior direita, envolvendo o córtex occipital",
+      "(B) Oclusão da artéria central da retina esquerda",
+      "(C) Lesão do nervo óptico direito",
+      "(D) Artéria cerebral anterior esquerda",
+      "(E) Artéria cerebelar anteroinferior esquerda"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Perda homônima de um hemicampo visual indica lesão retroquiasmática contralateral. O córtex visual occipital é irrigado predominantemente pela artéria cerebral posterior. Preservação das pupilas e fundo de olho sem causa ocular reforçam origem central. O déficit visual isolado pode parecer leve em NIHSS, mas pode ser incapacitante e requer avaliação de reperfusão quando em janela.",
+    "commentary": "(B) Incorreta. Provocaria perda visual monocular, não hemianopsia homônima binocular.\n\n(C) Incorreta. Alteração pré-quiasmática geralmente compromete um olho.\n\n(D) Incorreta. A principal síndrome seria crural/frontal, não campo visual homônimo.\n\n(E) Incorreta. Comprometimento vestibulococlear e cerebelar seria mais típico.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "localização vascular: artéria cerebral posterior"
+    ],
+    "tip": "Hemianopsia homônima = lesão após quiasma, do lado oposto ao campo perdido; pense em ACP occipital.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-48",
+    "module": "Clínica Médica",
+    "text": "Um homem de 64 anos, diabético e fumante, apresenta vertigem contínua de início súbito, vômitos, incapacidade de andar sem apoio e diplopia. Exame: nistagmo que muda de direção conforme o olhar, dismetria direita e paresia facial discreta. PA 172/98 mmHg. Qual é a prioridade diagnóstica?",
+    "options": [
+      "(A) Diagnosticar VPPB pelo sintoma de vertigem e realizar Epley isoladamente",
+      "(B) Diagnosticar neurite vestibular, pois a TC pode ser normal no início",
+      "(C) Dar alta se a escala de Cincinnati for negativa",
+      "(D) Aguardar três dias para confirmar infarto em imagem",
+      "(E) Suspeitar de AVC vertebrobasilar e realizar avaliação neurológica/vascular urgente, sem reduzir o quadro a vertigem periférica"
+    ],
+    "correctAnswer": 4,
+    "explanation": "A combinação de vertigem contínua com diplopia, ataxia incapacitante, nistagmo evocável de direção variável e sinais de pares cranianos aponta para causa central. A escala de Cincinnati pode ser negativa em AVC posterior, e TC inicial normal não o exclui. Requer imagem urgente e, conforme possibilidade de oclusão basilar, estudo vascular. Testes como HINTS só têm interpretação confiável quando realizados por examinador treinado em síndrome vestibular aguda apropriada.",
+    "commentary": "(A) Incorreta. VPPB causa episódios breves posicionais, não síndrome contínua com sinais de tronco.\n\n(B) Incorreta. A presença de sinais neurológicos centrais contraria neurite isolada.\n\n(C) Incorreta. Cincinnati tem sensibilidade limitada para síndromes posteriores.\n\n(D) Incorreta. Perde janela de terapias tempo-dependentes.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "avc de circulação posterior e vertigem central"
+    ],
+    "tip": "Vertigem + diplopia, ataxia grave ou sinais focais = AVC posterior até prova em contrário.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-49",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 70 anos, hipertensa há 25 anos e com diabetes, desenvolve hemiparesia direita proporcional em face, braço e perna, sem afasia, negligência, desvio do olhar ou déficit visual. TC inicial sem sangramento. Qual síndrome etiológica e localização são mais prováveis?",
+    "options": [
+      "(A) Infarto extenso do córtex temporal dominante",
+      "(B) Síndrome motora pura por pequeno vaso, possivelmente cápsula interna esquerda",
+      "(C) Oclusão da artéria cerebral anterior direita",
+      "(D) Infarto occipital esquerdo",
+      "(E) Hemorragia cerebelar direita"
+    ],
+    "correctAnswer": 1,
+    "explanation": "O fenótipo motor puro sem sinais corticais é clássico de infarto lacunar, associado à doença de pequenos vasos por hipertensão e diabetes. A cápsula interna reúne fibras corticoespinais compactas, permitindo comprometimento de face, braço e perna. Isso não exclui totalmente oclusão proximal, porém a hipótese de pequeno vaso fica fortalecida. A reperfusão continua dependendo de janela e incapacidade; classificação etiológica definitiva pode requerer imagem e investigação adicional.",
+    "commentary": "(A) Incorreta. Provavelmente produziria alteração de linguagem e outros sinais corticais.\n\n(C) Incorreta. Paresia crural predominante seria mais esperada.\n\n(D) Incorreta. Produziria principalmente hemianopsia homônima.\n\n(E) Incorreta. Esperaríamos cefaleia, vertigem, ataxia ou deterioração, não síndrome motora pura típica.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "avc lacunar e ausência de sinais corticais"
+    ],
+    "tip": "Paresia proporcional sem afasia, negligência ou hemianopsia: lembre cápsula interna e lacunar.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-50",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 78 anos, com palpitações há meses e sem anticoagulante, apresenta afasia e hemiplegia direita de início máximo instantâneo. ECG na emergência mostra fibrilação atrial com resposta ventricular de 98 bpm. Angiotomografia identifica oclusão de M1 esquerda. Qual mecanismo é mais provável, sem prejuízo de investigar outras etiologias?",
+    "options": [
+      "(A) Doença de pequenos vasos como causa mais provável da oclusão de M1",
+      "(B) Hipoperfusão global isolada sem embolização",
+      "(C) Vasculite primária do SNC como primeira causa",
+      "(D) Embolia de origem cardíaca associada à fibrilação atrial",
+      "(E) Cefaleia com aura migranosa como explicação da angiotomografia"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A fibrilação atrial favorece formação de trombos no átrio esquerdo/apêndice atrial, com embolização para a circulação cerebral. Início abrupto de déficit cortical grande e oclusão proximal é compatível com mecanismo cardioembólico. A etiologia influencia prevenção secundária (anticoagulação quando segura), mas a prioridade aguda continua avaliar reperfusão e controlar riscos. ECG documentado fortalece a hipótese; pesquisa de doença carotídea e outras fontes pode ser necessária.",
+    "commentary": "(A) Incorreta. Lacunas envolvem ramos perfurantes, não a típica obstrução proximal cortical.\n\n(B) Incorreta. A oclusão documentada de M1 favorece mecanismo arterial focal.\n\n(C) Incorreta. Sem sinais sistêmicos ou padrão multifocal, é menos provável do que FA documentada.\n\n(E) Incorreta. Oclusão arterial real e déficit incapacitante não são explicados por aura.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "etiologia cardioembólica e investigação"
+    ],
+    "tip": "FA + instalação máxima no início + déficit cortical importante = forte hipótese cardioembólica.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-51",
+    "module": "Clínica Médica",
+    "text": "Um homem de 62 anos apresenta afasia e fraqueza direita há 50 minutos. Glicemia 124 mg/dL. A tomografia sem contraste é descrita como “sem hemorragia, sem hipodensidade territorial estabelecida”. Qual interpretação é mais adequada?",
+    "options": [
+      "(A) Uma TC inicial normal exclui infarto cerebral",
+      "(B) Todo paciente precisa de RM antes de trombólise convencional",
+      "(C) A TC pode estar normal no AVC isquêmico hiperagudo; sua principal função imediata é excluir hemorragia e identificar sinais relevantes de isquemia extensa",
+      "(D) A ausência de hipodensidade torna trombólise contraindicada",
+      "(E) A tomografia normal indica necessariamente crise psicogênica"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A isquemia muito recente pode não gerar hipodensidade evidente na TC convencional. A ausência de hemorragia é decisiva para avaliar trombólise, juntamente com janela, déficit e contraindicações. Dizer “TC normal, logo sem AVC” é erro de prova. Ressonância com difusão é mais sensível para infarto precoce, mas não se deve atrasar trombólise elegível apenas para obter RM em cenário típico.",
+    "commentary": "(A) Incorreta. A sensibilidade para isquemia nas primeiras horas é limitada.\n\n(B) Incorreta. RM não é pré-requisito para muitos pacientes em janela convencional.\n\n(D) Incorreta. A falta de grande infarto estabelecido é frequentemente favorável à avaliação de reperfusão.\n\n(E) Incorreta. O diagnóstico se sustenta em clínica e investigação, não em ausência de alteração inicial na TC.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "tomografia sem contraste na fase hiperaguda"
+    ],
+    "tip": "TC normal não exclui AVCI no início; primeiro exclua sangue, depois avalie reperfusão.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-52",
+    "module": "Clínica Médica",
+    "text": "Um paciente de 69 anos tem oclusão da artéria cerebral média direita na angiotomografia. A TC simples mostra sinais isquêmicos precoces em parte do território da ACM, com ASPECTS 7. O neurologista discute trombectomia. Qual interpretação do escore é correta?",
+    "options": [
+      "(A) ASPECTS 7 sugere alterações isquêmicas precoces em três das dez regiões avaliadas, sem significar por si só exclusão da trombectomia",
+      "(B) ASPECTS 7 indica hemorragia intracraniana em sete regiões",
+      "(C) ASPECTS 7 significa obrigatoriamente trombectomia proibida",
+      "(D) ASPECTS é equivalente à NIHSS e mede déficit neurológico",
+      "(E) ASPECTS 7 significa acometimento exato de 70% do território vascular"
+    ],
+    "correctAnswer": 0,
+    "explanation": "O ASPECTS começa em 10 e subtrai um ponto para cada uma das dez regiões do território de ACM com sinais isquêmicos precoces. Escore 7 indica três regiões envolvidas, não 70% exatos do volume cerebral. A seleção para trombectomia considera localização da oclusão, tempo, independência prévia e imagem. Diretrizes 2026 ampliaram o tratamento em alguns núcleos maiores; ASPECTS não deve ser interpretado isoladamente.",
+    "commentary": "(B) Incorreta. A escala avalia alterações isquêmicas precoces, não hemorragia.\n\n(C) Incorreta. O escore deve ser contextualizado com oclusão, janela e outros critérios.\n\n(D) Incorreta. NIHSS é clínica; ASPECTS é radiológica.\n\n(E) Incorreta. É pontuação regional, não medida percentual do volume.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "aspects e extensão de isquemia"
+    ],
+    "tip": "ASPECTS: 10 é melhor; quanto menor, maior a extensão de lesão precoce em regiões da ACM.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-53",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 67 anos chega 2 horas após início de hemiplegia esquerda, desvio do olhar e negligência. TC sem contraste não mostra hemorragia. NIHSS 17. Há disponibilidade de angiotomografia imediata sem atrasar a trombólise. Qual a melhor estratégia de imagem?",
+    "options": [
+      "(A) Solicitar somente RM de encéfalo e ignorar avaliação vascular",
+      "(B) Aguardar creatinina em todos os pacientes antes de qualquer angiotomografia, mesmo que isso atrase reperfusão",
+      "(C) Realizar Doppler de carótidas como único exame vascular na emergência",
+      "(D) Tratar com AAS e dispensar imagem vascular pela idade",
+      "(E) Realizar angiotomografia de cabeça e pescoço para identificar oclusão de grande vaso enquanto se avalia prontamente a trombólise"
+    ],
+    "correctAnswer": 4,
+    "explanation": "Déficit cortical grave sugere oclusão proximal de grande vaso, cuja identificação por angiotomografia direciona trombectomia. A avaliação vascular deve ocorrer rapidamente, sem atrasar trombólise endovenosa elegível. A TC simples exclui sangramento, mas não esclarece com segurança o ponto de oclusão; estudos de perfusão são reservados a indicações específicas de seleção tardia ou incerteza.",
+    "commentary": "(A) Incorreta. Pode atrasar detecção de oclusão tratável e não é o fluxo preferencial em emergência típica.\n\n(B) Incorreta. Em candidato com forte suspeita de oclusão, não se recomenda atraso sistemático por creatinina, ponderando riscos.\n\n(C) Incorreta. Não detecta adequadamente todas as oclusões intracranianas proximais.\n\n(D) Incorreta. Idade isolada não exclui reperfusão e não substitui estudo vascular.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "angiotomografia para pesquisar oclusão de grande vaso"
+    ],
+    "tip": "Suspeita clínica de grande vaso = TC sem contraste + angiotomografia, sem atrasar trombolítico se elegível.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-54",
+    "module": "Clínica Médica",
+    "text": "Um homem de 58 anos chega 11 horas após a última vez bem, com NIHSS 14 e oclusão de M1 esquerda. A TC de perfusão identifica pequeno núcleo de tecido irreversivelmente lesado e área extensa hipoperfundida potencialmente recuperável. Qual é a implicação clínica principal?",
+    "options": [
+      "(A) Toda hipoperfusão corresponde a infarto irreversível e impede reperfusão",
+      "(B) Existe tecido potencialmente salvável; o padrão de mismatch pode sustentar seleção para reperfusão endovascular em janela estendida",
+      "(C) O mismatch confirma hemorragia ativa",
+      "(D) O exame elimina a necessidade de identificar o vaso ocluído",
+      "(E) Qualquer mismatch obriga trombólise convencional independentemente do tempo e das contraindicações"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Núcleo isquêmico (“core”) corresponde à área de lesão grave presumivelmente estabelecida; penumbra é tecido hipoperfundido ameaçado, mas potencialmente viável após reperfusão. A discrepância entre eles (mismatch), associada a critérios clínicos e anatômicos, permite selecionar pacientes para trombectomia além de 6 horas e, em protocolos específicos, para trombólise avançada. Não basta um número isolado de perfusão; é preciso considerar oclusão arterial, volume, imagem e risco.",
+    "commentary": "(A) Incorreta. Hipoperfusão pode conter penumbra recuperável.\n\n(C) Incorreta. É conceito de perfusão de isquemia, não diagnóstico de sangue.\n\n(D) Incorreta. Anatomia vascular é central à decisão de trombectomia.\n\n(E) Incorreta. A seleção tardia depende de critérios específicos; não é regra universal.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "perfusão e distinção entre núcleo e penumbra"
+    ],
+    "tip": "Na janela tardia, a pergunta muda de “quantas horas?” para “ainda há cérebro salvável?”",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-55",
+    "module": "Clínica Médica",
+    "text": "Um homem de 60 anos chega 2h20 após início de hemiparesia direita e afasia, NIHSS 12. Glicemia 136 mg/dL, PA 162/88 mmHg, plaquetas conhecidas normais, sem anticoagulante ou sangramento; TC simples sem hemorragia e sem sinais extensos de infarto. Qual é a conduta farmacológica mais adequada no fluxo de AVCI agudo do SUS?",
+    "options": [
+      "(A) Aguardar 24 horas para confirmar a área de infarto em nova tomografia",
+      "(B) Iniciar heparina plena na emergência para recanalizar a ACM",
+      "(C) Administrar AAS antes da trombólise para aumentar a recanalização",
+      "(D) Iniciar trombólise intravenosa com alteplase conforme PCDT vigente, após checar critérios e sem atraso desnecessário",
+      "(E) Não trombolisar porque a TC ainda não mostra hipodensidade"
+    ],
+    "correctAnswer": 3,
+    "explanation": "O PCDT do Ministério da Saúde, aprovado em 2023 e disponibilizado em 2025, prevê alteplase IV em pacientes elegíveis até 4h30, com TC sem hemorragia e ausência de contraindicações. O benefício é tempo-dependente. Embora a diretriz AHA/ASA 2026 também admita tenecteplase 0,25 mg/kg, o fármaco explicitamente listado no PCDT nacional consultado é alteplase; não se deve confundir inovação internacional com incorporação automática ao SUS.",
+    "commentary": "(A) Incorreta. Atrasaria tratamento com maior benefício precoce.\n\n(B) Incorreta. Heparina não substitui trombólise e não é reperfusão de primeira linha.\n\n(C) Incorreta. Antiagregação não substitui reperfusão e aumenta risco se associada precocemente à fibrinólise.\n\n(E) Incorreta. TC normal nas primeiras horas é comum no AVCI.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "trombólise em até 4,5 horas"
+    ],
+    "tip": "AVCI incapacitante + <4h30 + TC sem sangue + sem contraindicações = avalie alteplase imediatamente no PCDT SUS.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-56",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 73 anos, com AVCI incapacitante há 2h10, tem PA 194/112 mmHg na triagem. TC sem hemorragia; demais critérios favorecem alteplase. Após medicação IV titulável, PA estabiliza em 176/98 mmHg. Qual é a melhor decisão?",
+    "options": [
+      "(A) Infundir alteplase imediatamente mantendo PA 194/112 mmHg",
+      "(B) Desistir definitivamente de trombólise pelo primeiro valor aferido",
+      "(C) Considerar trombólise após redução sustentada para valores inferiores a 185/110 mmHg e monitorização rigorosa",
+      "(D) Reduzir sistematicamente PAS para menos de 120 mmHg antes do bolus",
+      "(E) Usar somente anti-hipertensivo oral de ação lenta e esperar o dia seguinte"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Para trombólise, é necessário controlar a PA antes da infusão, em geral abaixo de 185/110 mmHg. Hipertensão inicialmente elevada não impede automaticamente reperfusão se puder ser corrigida com segurança; pressão persistente acima dos limites apesar de tratamento adequado impede trombólise endovenosa naquele momento. Após fibrinólise, a meta usual é manter PA ≤180/105 mmHg nas primeiras 24 horas, evitando hipotensão e quedas bruscas.",
+    "commentary": "(A) Incorreta. PA acima do limiar aumenta risco de hemorragia associada.\n\n(B) Incorreta. Pode ser elegível após controle pressórico sustentado.\n\n(D) Incorreta. Queda excessiva pode reduzir perfusão da penumbra.\n\n(E) Incorreta. Não atende à urgência da janela terapêutica.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "controle da pressão arterial antes da trombólise"
+    ],
+    "tip": "185/110 antes; 180/105 depois. Hipertensão corrigível não é exclusão automática.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-57",
+    "module": "Clínica Médica",
+    "text": "Um paciente de 80 kg, com AVCI incapacitante há 2 horas e elegível para trombólise, receberá alteplase IV conforme o PCDT do SUS. Qual esquema corresponde à dose correta?",
+    "options": [
+      "(A) 72 mg no total: 7,2 mg em bolus inicial e 64,8 mg em infusão por 60 minutos",
+      "(B) 80 mg no total, todos em bolus imediato",
+      "(C) 72 mg no total, todos administrados em infusão de 10 minutos",
+      "(D) 64 mg no total, com 10% em bolus e restante em 60 minutos",
+      "(E) 90 mg no total, pois esse é o valor utilizado em todos os adultos"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A dose de alteplase para AVCI agudo é 0,9 mg/kg, máxima de 90 mg; administra-se 10% em bolus IV inicial e os outros 90% durante 60 minutos. Para 80 kg: 0,9 × 80 = 72 mg; bolus = 7,2 mg; infusão = 64,8 mg. Esse cálculo é frequentemente cobrado e deve estar integrado à checagem de contraindicações, peso correto e monitorização.",
+    "commentary": "(B) Incorreta. Confunde mg/kg com dose e a via de administração.\n\n(C) Incorreta. Não corresponde ao esquema padrão de alteplase.\n\n(D) Incorreta. A dose total está subestimada para 80 kg.\n\n(E) Incorreta. 90 mg é teto, não dose fixa de todos os pacientes.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "cálculo de dose da alteplase"
+    ],
+    "tip": "Faça a conta: 0,9 mg/kg (máximo 90), depois 10% bolus + 90% em 1 hora.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-58",
+    "module": "Clínica Médica",
+    "text": "Em discussão de protocolo institucional, o neurologista compara o PCDT brasileiro de AVCI aprovado em 2023 com a diretriz AHA/ASA de janeiro de 2026. Uma paciente de 70 kg chega em janela de 2 horas, com déficit incapacitante e TC sem hemorragia. Qual afirmação está correta quanto à tenecteplase?",
+    "options": [
+      "(A) A diretriz AHA/ASA 2026 recomenda tenecteplase de 0,4 mg/kg preferencialmente",
+      "(B) A tenecteplase é administrada em infusão contínua de 60 minutos como alteplase",
+      "(C) O PCDT brasileiro consultado determina tenecteplase para todos os pacientes, em substituição compulsória",
+      "(D) A dose correta em 70 kg é de 70 mg de tenecteplase",
+      "(E) A AHA/ASA 2026 recomenda tenecteplase 0,25 mg/kg (máximo 25 mg) como opção à alteplase em elegíveis até 4,5 horas, enquanto o PCDT nacional consultado lista alteplase como fármaco do esquema"
+    ],
+    "correctAnswer": 4,
+    "explanation": "A AHA/ASA 2026 elevou a tenecteplase 0,25 mg/kg (dose única em bolus, máximo 25 mg) ao mesmo patamar de escolha da alteplase 0,9 mg/kg em pacientes elegíveis até 4,5 horas. Para 70 kg, a dose de tenecteplase seria 17,5 mg. O PCDT do SUS aprovado em 2023 discute evidências sobre tenecteplase, porém a seção de fármaco e esquema de administração consultada elenca alteplase; adoção e financiamento de tenecteplase dependem da regulamentação e do protocolo local, e não devem ser presumidos.",
+    "commentary": "(A) Incorreta. A dose de 0,4 mg/kg não é recomendada, por ausência de benefício e possível dano.\n\n(B) Incorreta. Sua vantagem operacional é o bolus único.\n\n(C) Incorreta. O documento federal consultado lista alteplase no esquema terapêutico.\n\n(D) Incorreta. A dose recomendada internacionalmente é 0,25 mg/kg, não 1 mg/kg.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026); PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "tenecteplase: avanço internacional versus pcdt brasileiro"
+    ],
+    "tip": "Faça duas perguntas: “o que a evidência de 2026 recomenda?” e “o que o PCDT do SUS efetivamente prevê?”",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-59",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 75 anos com fibrilação atrial usa varfarina e apresenta AVCI incapacitante há 2h30. TC não mostra sangramento, PA 152/84 mmHg, plaquetas 190.000/µL; o INR colhido na emergência é 2,3. Qual é a melhor conduta quanto à alteplase?",
+    "options": [
+      "(A) Trombolisar, pois a TC normal afasta risco hemorrágico da varfarina",
+      "(B) Não administrar alteplase IV com INR 2,3; avaliar outras terapias, inclusive trombectomia se houver oclusão elegível",
+      "(C) Trombolisar sem considerar INR porque o paciente está em janela",
+      "(D) Reverter varfarina com vitamina K e trombolisar rotineiramente após 10 minutos",
+      "(E) Administrar dose dobrada de alteplase para superar anticoagulação"
+    ],
+    "correctAnswer": 1,
+    "explanation": "No PCDT nacional, INR acima de 1,7 em paciente anticoagulado com antagonista da vitamina K é contraindicação à trombólise IV. Diferentemente do paciente sem suspeita de coagulopatia, quem usa varfarina necessita aguardar o INR. O fato de não haver sangramento na TC não elimina risco hemorrágico do fibrinolítico. A contraindicação à trombólise não representa contraindicação automática à trombectomia, cuja seleção é própria.",
+    "commentary": "(A) Incorreta. Coagulopatia relevante permanece apesar da TC sem sangramento.\n\n(C) Incorreta. O valor de INR é decisivo nesta situação.\n\n(D) Incorreta. Reversão para permitir fibrinólise não é estratégia padrão simples e segura.\n\n(E) Incorreta. Aumentaria gravemente o risco sem respaldo.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "varfarina e inr na elegibilidade à trombólise"
+    ],
+    "tip": "Varfarina: confira INR. >1,7 afasta trombólise IV convencional; não afasta automaticamente trombectomia.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-60",
+    "module": "Clínica Médica",
+    "text": "Um homem de 69 anos em uso de apixabana por fibrilação atrial tomou a última dose há 5 horas. Chega com afasia incapacitante, última vez bem há 2 horas; TC sem sangue, PA 154/86 mmHg, função renal preservada. Não há dosagem específica de atividade anti-Xa disponível e os testes usuais não excluem efeito do anticoagulante. Qual a conduta mais adequada?",
+    "options": [
+      "(A) Trombolisar porque o INR de rotina costuma ser normal na apixabana",
+      "(B) Administrar alteplase em dose reduzida para compensar a apixabana",
+      "(C) Descartar trombectomia pelo simples uso de anticoagulante oral direto",
+      "(D) Evitar trombólise IV convencional neste momento e pesquisar oclusão de grande vaso para possível trombectomia, com avaliação especializada",
+      "(E) Aguardar 48 horas sem imagem vascular para reavaliar força"
+    ],
+    "correctAnswer": 3,
+    "explanation": "O uso recente de anticoagulante oral direto, como apixabana, coloca risco de sangramento com trombólise. O PCDT brasileiro trata uso nas últimas 48 horas como restrição quando não há demonstração confiável de ausência de atividade anticoagulante; ensaios específicos podem modificar a decisão, mas PT/INR normais isolados não garantem ausência de efeito dos inibidores de Xa. A trombectomia em oclusão proximal elegível permanece possível, mesmo quando fibrinólise está contraindicada.",
+    "commentary": "(A) Incorreta. INR não quantifica adequadamente atividade anti-Xa dos DOACs.\n\n(B) Incorreta. Não é esquema validado e não elimina risco de hemorragia.\n\n(C) Incorreta. As decisões de trombólise e trombectomia são diferentes.\n\n(E) Incorreta. Pode perder janela de terapia endovascular.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "anticoagulantes diretos e janela de 48 horas"
+    ],
+    "tip": "DOAC recente: pergunte última dose, rim e teste específico. INR normal não “libera” automaticamente apixabana.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-61",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 58 anos chega 80 minutos após início de parestesia leve na mão direita. NIHSS 1, sem limitação motora, de linguagem ou de atividades essenciais. TC exclui hemorragia e angiotomografia não identifica oclusão de grande vaso. Não usa anticoagulante e a hipótese é AVCI não cardioembólico menor. Qual conduta é mais alinhada à diretriz AHA/ASA 2026?",
+    "options": [
+      "(A) Trombolisar todos os AVCs com NIHSS 0–2, independentemente do impacto",
+      "(B) Anticoagular com heparina IV independentemente da etiologia",
+      "(C) Não fazer trombólise para déficit claramente não incapacitante e considerar dupla antiagregação de curta duração se preencher critérios",
+      "(D) Aguardar lesão aparecer em TC de controle para então iniciar qualquer prevenção",
+      "(E) Tratar como migrânea porque há apenas parestesia"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Ensaios não demonstraram benefício consistente da trombólise em AVC leve não incapacitante, com risco hemorrágico. A diretriz AHA/ASA 2026 privilegia antiagregação, frequentemente dupla por curto período em AVC menor não cardioembólico elegível, iniciada após excluir hemorragia e considerando riscos. A decisão distingue déficit não incapacitante de sintomas leves porém incapacitantes, para os quais o raciocínio é diferente.",
+    "commentary": "(A) Incorreta. Falta benefício demonstrado em déficits não incapacitantes.\n\n(B) Incorreta. Não é tratamento inicial padrão para AVC menor não cardioembólico.\n\n(D) Incorreta. A TC inicial sem sangramento permite planejar antiagregação conforme elegibilidade.\n\n(E) Incorreta. Sintoma focal súbito em paciente vascular exige investigação de AVC.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "déficit leve não incapacitante: escolha de tratamento"
+    ],
+    "tip": "NIHSS baixa: primeiro classifique INCAPACITANTE vs NÃO INCAPACITANTE; não use a nota isoladamente.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-62",
+    "module": "Clínica Médica",
+    "text": "Um homem de 56 anos foi visto normal às 23h e acordou às 6h com hemiparesia direita e afasia. Às 7h, a RM mostra lesão aguda em difusão (DWI positiva), sem alteração correspondente em FLAIR, compatível com descompasso DWI–FLAIR. Não há sangue nem contraindicações. Qual interpretação se alinha às recomendações internacionais atuais?",
+    "options": [
+      "(A) O mismatch DWI–FLAIR pode identificar paciente com AVC de início desconhecido elegível à trombólise mediante critérios especializados de imagem e protocolo",
+      "(B) Trombolisar todos os pacientes que acordam sintomáticos sem imagem, pois despertaram há menos de 4,5h",
+      "(C) Excluir qualquer reperfusão porque o início é desconhecido",
+      "(D) FLAIR negativo prova que não ocorreu infarto",
+      "(E) O mismatch DWI–FLAIR é diagnóstico de sangramento e contraindica reperfusão"
+    ],
+    "correctAnswer": 0,
+    "explanation": "O descompasso DWI positiva/FLAIR negativa é marcador indireto de lesão potencialmente recente. A diretriz AHA/ASA 2026 admite trombólise selecionada em AVC ao despertar ou início desconhecido com critérios avançados de imagem; há também seleção por perfusão em janelas específicas. Isso não significa que qualquer AVC ao despertar possa receber trombolítico, nem que a hora de despertar substitua a última vez bem. O PCDT brasileiro contém critérios próprios e a oferta deve respeitar habilitação e rede.",
+    "commentary": "(B) Incorreta. O horário de acordar não define início e não dispensa seleção.\n\n(C) Incorreta. Há estratégias por imagem para casos selecionados.\n\n(D) Incorreta. DWI positiva documenta lesão aguda apesar de ausência de sinal FLAIR.\n\n(E) Incorreta. É ferramenta de avaliação temporal da isquemia, não de hemorragia.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "avc ao despertar: mismatch dwi–flair"
+    ],
+    "tip": "Wake-up: último momento bem costuma estar fora de 4,5h; a imagem avançada pode reabrir uma janela de elegibilidade selecionada.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-63",
+    "module": "Clínica Médica",
+    "text": "Um homem de 72 anos, independente previamente (mRS 0), chega 3 horas após início de hemiplegia esquerda e negligência. NIHSS 18. TC sem hemorragia, ASPECTS 8; angiotomografia confirma oclusão de M1 direita. Já foi iniciada trombólise IV por elegibilidade. Qual é a próxima medida terapêutica?",
+    "options": [
+      "(A) Aguardar duas horas para saber se a alteplase recanaliza antes do procedimento",
+      "(B) Suspender qualquer reperfusão após iniciar alteplase, pois as terapias são mutuamente excludentes",
+      "(C) Indicar apenas endarterectomia carotídea emergencial",
+      "(D) Solicitar punção lombar para comprovar isquemia antes do cateterismo",
+      "(E) Encaminhar imediatamente para trombectomia mecânica, sem aguardar resposta clínica à trombólise"
+    ],
+    "correctAnswer": 4,
+    "explanation": "Oclusão proximal de ACM (M1) com déficit incapacitante, boa funcionalidade prévia e pequeno núcleo estabelecido na janela precoce é indicação clássica de trombectomia endovascular. O PCDT do SUS recomenda trombectomia para oclusões de carótida intracraniana/M1 em janela apropriada, e a AHA/ASA 2026 reforça a recomendação. Se houve trombólise elegível, não se deve aguardar melhora clínica para começar a terapia endovascular: reperfusão rápida melhora desfechos.",
+    "commentary": "(A) Incorreta. Atraso reduz benefício da trombectomia.\n\n(B) Incorreta. A estratégia combinada é recomendada em elegíveis.\n\n(C) Incorreta. Não é procedimento de escolha para oclusão intracraniana M1.\n\n(D) Incorreta. Não é necessária nem apropriada ao cenário.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023); 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "trombectomia em oclusão proximal na janela precoce"
+    ],
+    "tip": "M1/ACI ocluída + NIHSS elevada + ASPECTS favorável = trombectomia. Trombólise não substitui retirar o trombo.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-64",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 64 anos, independente antes do evento, é encontrada com afasia e hemiplegia direita. Último momento bem às 23h; avaliada às 12h (13 horas depois), NIHSS 17. Angiotomografia: oclusão da carótida interna terminal esquerda. Perfusão: núcleo pequeno e grande área de tecido em risco. Qual conduta é mais adequada?",
+    "options": [
+      "(A) Excluir automaticamente reperfusão porque passaram mais de 4,5 horas",
+      "(B) Encaminhar para trombectomia mecânica com seleção por imagem e critérios clínicos, apesar da janela maior que 6 horas",
+      "(C) Indicar AAS isoladamente sem avaliar trombectomia",
+      "(D) Administrar alteplase convencional, sem seleção especial, aos 13h do último momento bem",
+      "(E) Indicar cirurgia descompressiva profilática antes de avaliar recanalização"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A trombectomia não está limitada às seis primeiras horas. O PCDT brasileiro recomenda o procedimento até 24 horas em pacientes selecionados por critérios clínicos, anatômicos e de imagem; a AHA/ASA 2026 também respalda janelas tardias. O alvo é salvar penumbra e restaurar fluxo em oclusão de grande vaso. A hora isolada não basta, e o procedimento exige centro habilitado e equipe endovascular.",
+    "commentary": "(A) Incorreta. A janela da trombólise convencional não determina a janela da trombectomia.\n\n(C) Incorreta. Tratamento clínico pode ser insuficiente diante de oclusão elegível.\n\n(D) Incorreta. Fora da janela IV convencional; seleção tardia para trombólise é específica.\n\n(E) Incorreta. A principal opção terapêutica com tecido salvável é reperfusão.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "trombectomia tardia de 6 a 24 horas"
+    ],
+    "tip": "Até 24h não significa “tarde demais” para todo paciente; procure oclusão proximal e mismatch favorável.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-65",
+    "module": "Clínica Médica",
+    "text": "Um homem de 61 anos, previamente mRS 0, chega 4 horas após início de AVCI grave, NIHSS 20. Angiotomografia: oclusão de M1 esquerda; TC: ASPECTS 4, sem grande efeito de massa. O plantonista considera o núcleo extenso motivo absoluto para negar intervenção. À luz da AHA/ASA 2026, qual conclusão é correta?",
+    "options": [
+      "(A) ASPECTS abaixo de 6 é contraindicação absoluta em todas as diretrizes atuais",
+      "(B) A extensão inicial dispensa avaliar independência funcional anterior",
+      "(C) A trombectomia é indicada em qualquer ASPECTS e qualquer efeito de massa",
+      "(D) O ASPECTS 4 não exclui automaticamente trombectomia; pacientes selecionados com oclusão proximal e núcleo maior podem se beneficiar",
+      "(E) AAS em dose alta recanaliza de forma equivalente a trombectomia de M1"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Ensaios recentes expandiram a evidência para trombectomia em pacientes com core maior, inclusive ASPECTS 3–5 sob critérios clínicos, anatômicos e temporais. A AHA/ASA 2026 recomenda EVT em oclusão anterior proximal com ASPECTS 3–10 na janela 0–6 horas em perfis elegíveis, não apenas ASPECTS 6–10. Contudo, isso não significa benefício universal com qualquer volume, dano estabelecido ou efeito de massa. O PCDT brasileiro 2023 é anterior a parte dessa expansão; trata-se de atualização internacional que pode exigir adequação institucional.",
+    "commentary": "(A) Incorreta. A atualização 2026 incorpora evidência de benefício em pacientes selecionados.\n\n(B) Incorreta. mRS prévia e outros critérios continuam importando.\n\n(C) Incorreta. Há seleção criteriosa; isquemia devastadora ou edema importante alteram risco-benefício.\n\n(E) Incorreta. Antiagregação não remove mecanicamente um trombo proximal.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "trombectomia em núcleo isquêmico maior"
+    ],
+    "tip": "Não decore “ASPECTS ≤5 = proibido”. A evidência de trombectomia mudou; use critérios atuais e equipe especializada.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-66",
+    "module": "Clínica Médica",
+    "text": "Um homem de 65 anos chega 9 horas após início de diplopia, disartria e tetraparesia progressiva. NIHSS 22, mRS prévio 0; angiotomografia mostra oclusão da artéria basilar, e TC/RM sugerem lesão isquêmica posterior limitada (PC-ASPECTS 8). Qual conduta é recomendada pela AHA/ASA 2026 em centro capacitado?",
+    "options": [
+      "(A) Descartar trombectomia porque passaram mais de 6 horas",
+      "(B) Indicar apenas manobra de Epley porque o sintoma inicial foi diplopia",
+      "(C) Considerar trombectomia mecânica urgente, pois a oclusão basilar elegível pode ser tratada até 24 horas",
+      "(D) Trombolisar por via IV convencional obrigatoriamente na nona hora sem seleção adicional",
+      "(E) Aguardar aparecimento de extensa hipodensidade cerebelar antes de tratar"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AVC basilar pode provocar coma, tetraplegia e morte. A diretriz AHA/ASA 2026 confere recomendação forte à trombectomia em adultos selecionados com oclusão basilar, NIHSS ≥10, mRS basal 0–1 e PC-ASPECTS ≥6, até 24 horas. Esse recorte evita extrapolar benefício para toda alteração vascular posterior. O PCDT brasileiro 2023 privilegia recomendações de trombectomia anterior, portanto é importante discriminar a fonte e o contexto assistencial.",
+    "commentary": "(A) Incorreta. Oclusão basilar em selecionados pode ser tratada até 24h pela AHA/ASA 2026.\n\n(B) Incorreta. Diplopia e tetraparesia indicam tronco encefálico, não VPPB.\n\n(D) Incorreta. A janela IV convencional é diferente; decisões tardias exigem critérios.\n\n(E) Incorreta. Isso perde tecido recuperável e aumenta dano.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "trombectomia na oclusão da artéria basilar"
+    ],
+    "tip": "Basilar ocluída, déficit grave e pouca lesão irreversível = janela endovascular pode chegar a 24h.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-67",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 60 anos apresenta AVCI incapacitante há 1h40, NIHSS 16; TC sem sangue e angiotomografia confirma oclusão de carótida intracraniana. Está elegível tanto para alteplase quanto para trombectomia e o centro tem equipe endovascular de prontidão. Qual estratégia é mais adequada?",
+    "options": [
+      "(A) Iniciar trombólise IV conforme elegibilidade e conduzir imediatamente à trombectomia, sem esperar o efeito do fibrinolítico",
+      "(B) Omitir sempre trombólise só porque há trombectomia disponível",
+      "(C) Esperar 90 minutos após alteplase para decidir por EVT",
+      "(D) Prescrever heparina plena antes de trombectomia para impedir novos êmbolos",
+      "(E) Cancelar trombectomia porque a TC inicial está normal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A AHA/ASA 2026 não recomenda omitir trombólise IV elegível apenas para “ir direto ao cateter”, nem adiar EVT para observar a resposta. As intervenções podem ser complementares: o fibrinolítico pode recanalizar ou favorecer reperfusão, e a trombectomia trata a oclusão proximal persistente. Tempo, segurança e fluxo assistencial são determinantes. O PCDT brasileiro também reconhece ambas como modalidades de reperfusão em selecionados.",
+    "commentary": "(B) Incorreta. Não é estratégia geral recomendada quando IVT é elegível.\n\n(C) Incorreta. Atraso pode piorar desfechos.\n\n(D) Incorreta. Não é ponte rotineira e eleva risco de sangramento.\n\n(E) Incorreta. TC sem sangue pode ser compatível com AVCI muito recente.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "trombólise-ponte antes da trombectomia"
+    ],
+    "tip": "Quando ambos são indicados, faça as duas etapas em paralelo no fluxo: bolus sem atraso, cateter sem espera.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-68",
+    "module": "Clínica Médica",
+    "text": "Um homem de 76 anos chega 10 horas após o início de hemiparesia leve, sem oclusão de grande vaso elegível, e não receberá trombólise ou trombectomia. PA 208/112 mmHg, está estável, sem dor torácica, dissecção, edema agudo de pulmão ou outra emergência hipertensiva associada. Qual conduta pressórica inicial é mais apropriada?",
+    "options": [
+      "(A) Reduzir imediatamente a PAS para 110 mmHg com nitroprussiato",
+      "(B) Manter PA >240/140 mmHg sem reavaliar risco em qualquer circunstância",
+      "(C) Aplicar a meta pós-trombólise 180/105 como limite obrigatório neste paciente",
+      "(D) Administrar diurético de alça em altas doses apenas para baixar a PA",
+      "(E) Evitar redução rápida e excessiva da pressão arterial; monitorar e reservar queda cautelosa para valores muito elevados ou indicações específicas"
+    ],
+    "correctAnswer": 4,
+    "explanation": "No AVCI sem reperfusão, a autorregulação cerebral está prejudicada e a pressão pode sustentar fluxo colateral à penumbra. Em geral, aceita-se hipertensão permissiva se PA não supera cerca de 220/120 mmHg e não há outra condição que demande controle urgente. Se níveis forem maiores, costuma-se considerar redução discreta, aproximadamente 15% nas primeiras 24 horas, individualizada. Uma queda intensa para níveis normais pode agravar isquemia.",
+    "commentary": "(A) Incorreta. Queda acentuada pode diminuir perfusão cerebral.\n\n(B) Incorreta. Hipertensão muito grave e comorbidades podem requerer controle.\n\n(C) Incorreta. As metas diferem conforme recebimento de reperfusão.\n\n(D) Incorreta. Não é rotina para controlar PA no AVCI e pode piorar volemia/perfusão.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026); PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "hipertensão permissiva no avci sem reperfusão"
+    ],
+    "tip": "Sem reperfusão: não “normalize” a PA na emergência; pense em limiar 220/120 e perfusão colateral.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-69",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 69 anos recebeu alteplase por AVCI e, em seguida, trombectomia com reperfusão bem-sucedida. Está estável, PA 168/94 mmHg. Um membro da equipe propõe reduzir PAS intensivamente para 115 mmHg durante as primeiras horas porque “quanto menor, melhor”. Qual orientação é a melhor?",
+    "options": [
+      "(A) Buscar PAS <120 mmHg em todos os pacientes com reperfusão completa",
+      "(B) Manter controle seguro, usualmente ≤180/105 mmHg após trombólise, evitando alvo intensivo de PAS <140 mmHg sem indicação específica",
+      "(C) Aceitar PAS persistente >220 mmHg porque a artéria já foi aberta",
+      "(D) Administrar trombólise novamente se PA ultrapassar 180 mmHg",
+      "(E) Suspender monitorização de PA após recanalização bem-sucedida"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Após IVT, o controle pressórico é fundamental para reduzir risco de hemorragia, mas redução intensa pode ser nociva. A AHA/ASA 2026 destaca que perseguir PAS <140 mmHg sistematicamente após trombólise ou trombectomia, mesmo com recanalização completa, não melhora desfechos e pode causar dano. A meta usual após trombólise é até 180/105 mmHg nas primeiras 24h, com estabilidade hemodinâmica e individualização conforme cenário.",
+    "commentary": "(A) Incorreta. Pode reduzir perfusão e não melhora desfechos.\n\n(C) Incorreta. PA muito alta aumenta risco hemorrágico e exige abordagem.\n\n(D) Incorreta. Não é tratamento de hipertensão e eleva risco hemorrágico.\n\n(E) Incorreta. A vigilância é necessária no período pós-tratamento.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "metas de pressão após trombólise/trombectomia"
+    ],
+    "tip": "Pós-reperfusão ≠ “PA mais baixa possível”. Evite extremos; 180/105 é referência usual após IVT.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-70",
+    "module": "Clínica Médica",
+    "text": "Um homem de 61 anos recebeu alteplase IV há 4 horas por AVCI. Evolui com melhora de NIHSS 13 para 3; não apresenta piora ou sangramento evidente. O plantonista sugere iniciar AAS agora para evitar reoclusão. Qual conduta é mais adequada?",
+    "options": [
+      "(A) Prescrever AAS imediatamente porque a NIHSS melhorou",
+      "(B) Associar AAS e clopidogrel nas primeiras seis horas após IVT em todos os casos",
+      "(C) Iniciar heparina plena IV para prevenir reoclusão",
+      "(D) Evitar antiagregantes nas primeiras 24 horas após trombólise e realizar neuroimagem de controle antes de iniciá-los",
+      "(E) Não iniciar qualquer prevenção secundária durante toda a internação"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A administração precoce de AAS durante ou logo após fibrinólise aumenta risco de sangramento e não demonstrou melhora clínica. Em pacientes trombolisados, costuma-se aguardar pelo menos 24 horas e verificar imagem sem hemorragia antes de iniciar antiagregação, salvo circunstâncias excepcionais avaliadas por equipe especializada. A melhora de NIHSS não afasta transformação hemorrágica. A prevenção secundária deve ser planejada após estabilização e definição etiológica.",
+    "commentary": "(A) Incorreta. Melhora clínica não elimina risco hemorrágico precoce.\n\n(B) Incorreta. A dupla antiagregação precoce após IVT não é rotina e aumenta risco.\n\n(C) Incorreta. Anticoagulação imediata após trombólise aumenta risco hemorrágico.\n\n(E) Incorreta. A prevenção deve ser instituída assim que for seguro e indicado.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "antiagregação nas primeiras 24 horas após trombólise"
+    ],
+    "tip": "Alteplase hoje: sem AAS/heparina de rotina por 24h; confira a imagem antes de iniciar antitrombótico.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-71",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 62 anos apresenta AVCI menor não cardioembólico, NIHSS 2, sem déficit incapacitante e sem trombólise; TC excluiu sangue. O evento ocorreu há 8 horas e não há alto risco hemorrágico nem indicação de anticoagulação. Qual estratégia é recomendada para reduzir recorrência precoce?",
+    "options": [
+      "(A) AAS e clopidogrel por tempo indefinido em todo paciente",
+      "(B) Varfarina sem investigar fibrilação atrial ou fonte cardioembólica",
+      "(C) AAS associado a clopidogrel por cerca de 21 dias, seguido de antiagregante único",
+      "(D) Apenas heparina plena por 21 dias, seguida de suspensão",
+      "(E) Nenhum antitrombótico porque a NIHSS é baixa"
+    ],
+    "correctAnswer": 2,
+    "explanation": "No AVC isquêmico menor não cardioembólico elegível, a dupla antiagregação de curta duração (tipicamente AAS + clopidogrel por 21 dias) reduz recorrência inicial. A associação prolongada aumenta sangramento e não deve ser mantida indefinidamente. Em quem recebeu trombólise, as regras de início diferem; neste caso não houve IVT. A escolha exige confirmar mecanismo não cardioembólico, ausência de hemorragia e baixo risco de sangramento.",
+    "commentary": "(A) Incorreta. O benefício é sobretudo precoce e o uso prolongado eleva sangramento.\n\n(B) Incorreta. Anticoagulação não é primeira escolha para evento não cardioembólico.\n\n(D) Incorreta. Não substitui antiagregação indicada.\n\n(E) Incorreta. O risco de recorrência existe mesmo no AVC menor.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "dupla antiagregação no avc menor não cardioembólico"
+    ],
+    "tip": "AVC menor não cardioembólico, sem trombólise: pense em DAPT curta, geralmente 21 dias; depois monoterapia.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-72",
+    "module": "Clínica Médica",
+    "text": "Um homem de 76 anos, com fibrilação atrial sem anticoagulação, apresenta AVCI de pequeno volume no córtex parietal esquerdo, NIHSS 3, sem transformação hemorrágica. Está clinicamente estável 48 horas após início. Qual é a melhor interpretação para iniciar anticoagulante oral?",
+    "options": [
+      "(A) Pode ser razoável iniciar anticoagulação relativamente cedo em paciente selecionado com infarto pequeno e sem sangramento, individualizando risco de transformação hemorrágica",
+      "(B) Iniciar heparina plena IV imediatamente em qualquer AVCI por FA",
+      "(C) Proibir anticoagulação oral por três meses em qualquer infarto",
+      "(D) Manter dupla antiagregação como equivalente permanente à anticoagulação na FA",
+      "(E) Iniciar anticoagulação na mesma hora em todo paciente com infarto extenso e transformação hemorrágica"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A prevenção do AVC cardioembólico por FA demanda anticoagulação oral quando não há contraindicação. A decisão de quando iniciar depende do tamanho e gravidade do infarto, hemorragia, idade, comorbidades e risco embólico. Ensaios recentes e a AHA/ASA 2026 sustentam que estratégias mais precoces podem ser seguras em casos selecionados leves, sem fixar um dia único para todos. Em AVC extenso, transformação hemorrágica ou alto risco hemorrágico, costuma-se adiar e reavaliar.",
+    "commentary": "(B) Incorreta. Anticoagulação plena imediata de rotina pode aumentar hemorragia sem benefício claro.\n\n(C) Incorreta. Adiar de forma fixa pode expor a recorrência embólica.\n\n(D) Incorreta. Antiagregação é inferior para prevenção cardioembólica em FA.\n\n(E) Incorreta. O risco hemorrágico impõe individualização e frequentemente adiamento.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "fibrilação atrial: tempo de anticoagulação após avc"
+    ],
+    "tip": "FA requer anticoagulação para prevenção; o “quando” depende de tamanho do infarto e sangramento, não de um calendário universal.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-73",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 80 anos, internada após AVCI com disartria e paresia facial, solicita água antes da avaliação fonoaudiológica. Está acordada, mas apresenta tosse ao tentar engolir a própria saliva. Qual é a conduta mais apropriada?",
+    "options": [
+      "(A) Liberar líquidos finos porque a paciente está acordada",
+      "(B) Oferecer dieta pastosa livre sem teste, pois é sempre segura",
+      "(C) Prescrever antibiótico profilático para toda possível aspiração",
+      "(D) Aguardar ocorrer pneumonia para solicitar avaliação fonoaudiológica",
+      "(E) Manter sem alimentação ou medicações por via oral até rastreio formal de disfagia e definição de via segura"
+    ],
+    "correctAnswer": 4,
+    "explanation": "Disfagia pós-AVC aumenta aspiração, pneumonia e mortalidade. O PCDT brasileiro determina rastreamento de disfagia antes da primeira alimentação em todos os pacientes com AVC, tratados ou não com reperfusão. Tosse, voz molhada, disartria importante e paresia facial reforçam risco. Evitar oferecer água para “testar por conta própria”; aplicar protocolo treinado e solicitar fonoaudiologia, com via alternativa temporária quando necessária.",
+    "commentary": "(A) Incorreta. Consciência preservada não garante deglutição segura.\n\n(B) Incorreta. Consistência adequada depende de avaliação específica.\n\n(C) Incorreta. Não previne pneumonia de rotina e não substitui segurança de deglutição.\n\n(D) Incorreta. Intervenção preventiva deve ocorrer precocemente.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "disfagia e prevenção de pneumonia aspirativa"
+    ],
+    "tip": "Antes de água, comida ou comprimido: rastrear deglutição. Tosse ao engolir = alerta de aspiração.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-74",
+    "module": "Clínica Médica",
+    "text": "Um homem de 73 anos com AVCI reperfundido apresenta glicemia persistente de 232 mg/dL e temperatura de 38,2°C nas primeiras 12 horas. Não há hipoxemia. A equipe propõe infusão de insulina para glicemia 90–110 mg/dL e ignorar febre até que surjam sinais infecciosos. Qual estratégia é mais adequada?",
+    "options": [
+      "(A) Buscar glicemia de 80–100 mg/dL por insulina IV em todos os pacientes",
+      "(B) Corrigir hiperglicemia evitando metas excessivamente estritas e investigar/tratar febre, pois ambas se associam a pior evolução",
+      "(C) Não monitorar glicose porque a reperfusão já ocorreu",
+      "(D) Deixar febre persistente sem investigação nas primeiras 48 horas",
+      "(E) Tratar febre exclusivamente com antiagregante plaquetário"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A diretriz AHA/ASA 2026 não recomenda controle glicêmico intensivo para 80–130 mg/dL no AVCI por falta de benefício funcional e maior risco de hipoglicemia. Hiperglicemia significativa deve ser tratada com alvo hospitalar seguro individualizado, evitando hipoglicemia. Temperatura elevada demanda busca de causa e tratamento; o PCDT brasileiro orienta monitorar glicemia e temperatura, tratando hipertermia a partir de 37,5°C. Suporte fisiológico reduz complicações, embora não substitua reperfusão.",
+    "commentary": "(A) Incorreta. Controle excessivamente estrito aumenta hipoglicemia e não melhora desfechos.\n\n(C) Incorreta. Metabolismo influencia prognóstico pós-AVC.\n\n(D) Incorreta. Febre requer avaliação e manejo.\n\n(E) Incorreta. Antiagregantes não tratam causa ou controle de hipertermia de modo apropriado.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026); PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "glicemia e temperatura no cuidado agudo"
+    ],
+    "tip": "AVC agudo: controle o que piora o cérebro (febre, hipo/hiperglicemia), mas nunca provoque hipoglicemia para “normalizar”.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-75",
+    "module": "Clínica Médica",
+    "text": "Um homem de 49 anos apresenta infarto extenso de ACM direita, inicialmente NIHSS 20. Após 36 horas, piora do nível de consciência, pupila direita mais lenta e TC com edema importante, apagamento de sulcos e desvio da linha média. Qual é a medida específica de salvamento a considerar urgentemente?",
+    "options": [
+      "(A) Administrar dexametasona como tratamento definitivo do edema isquêmico",
+      "(B) Realizar punção lombar para aliviar a hipertensão intracraniana",
+      "(C) Aguardar uma semana para avaliar cirurgia, pois o edema sempre regride",
+      "(D) Avaliação neurocirúrgica imediata para hemicraniectomia descompressiva em candidato apropriado, além do manejo neurointensivo",
+      "(E) Administrar AAS em dose dobrada para reduzir edema cerebral"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Infarto maligno de ACM pode produzir edema progressivo, hipertensão intracraniana e herniação. Em pacientes selecionados, particularmente mais jovens e com evolução precoce, hemicraniectomia descompressiva reduz mortalidade, com necessidade de discutir prognóstico funcional com familiares. O desvio de linha média e a piora de consciência exigem suporte intensivo e avaliação neurocirúrgica emergente, não apenas analgesia ou espera. Corticoides não são terapia de edema citotóxico do AVCI.",
+    "commentary": "(A) Incorreta. Corticoide não demonstrou benefício para edema do infarto.\n\n(B) Incorreta. Pode precipitar herniação em efeito de massa.\n\n(C) Incorreta. O período de deterioração é precoce e tempo-dependente.\n\n(E) Incorreta. AAS não trata hipertensão intracraniana ou efeito de massa.",
+    "reference": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA, Stroke 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "edema maligno de acm e hemicraniectomia"
+    ],
+    "tip": "Grande infarto ACM + piora nas primeiras 48h + edema/desvio = pense em descompressão, não em dexametasona.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-76",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 67 anos, com hipertensão crônica, apresenta hemiparesia esquerda e cefaleia súbitas. TC: hemorragia putaminal direita de 18 mL, sem hidrocefalia. Glasgow 14, PA 186/104 mmHg. Não usa anticoagulantes. Qual manejo pressórico se aproxima da diretriz brasileira de hemorragia intracerebral de 2026 para um caso leve a moderado?",
+    "options": [
+      "(A) Permitir PAS de 220 mmHg porque hipertensão permissiva vale para todos os AVC",
+      "(B) Reduzir PAS imediatamente a 90 mmHg para interromper sangramento",
+      "(C) Reduzir PAS com agente intravenoso titulável de maneira suave e precoce, buscando aproximadamente 130–140 mmHg e evitando quedas excessivas",
+      "(D) Iniciar alteplase porque há déficit focal de início súbito",
+      "(E) Aguardar 72 horas antes de iniciar controle pressórico"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A diretriz SBAVC/ABN 2026 destaca redução precoce e sustentada da PAS para faixa de cerca de 130–140 mmHg em hemorragia intracerebral de leve a moderada gravidade, com vigilância de perfusão e variabilidade, não em comas profundos ou hematomas maciços. O controle reduz risco de expansão hematomal; PAS abaixo de 130 mmHg em protocolos tradicionais pode ser nociva, por isso é importante individualizar e evitar reduções abruptas. Em AVC hemorrágico, a meta não é a hipertensão permissiva típica do AVC isquêmico não reperfundido.",
+    "commentary": "(A) Incorreta. A estratégia de AVCI não se extrapola à hemorragia.\n\n(B) Incorreta. Hipotensão e queda extrema prejudicam perfusão.\n\n(D) Incorreta. Hemorragia na TC contraindica trombólise.\n\n(E) Incorreta. O risco de expansão é maior precocemente.",
+    "reference": "Diretriz brasileira de hemorragia intracerebral espontânea (Sociedade Brasileira de AVC/Academia Brasileira de Neurologia, Arq Neuropsiquiatr 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "hemorragia intraparenquimatosa: controle pressórico"
+    ],
+    "tip": "AVCh leve/moderado ≠ AVCI sem reperfusão. Controle de PA precoce e suave, sem despencar a pressão.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-77",
+    "module": "Clínica Médica",
+    "text": "Um homem de 74 anos em uso de varfarina por fibrilação atrial chega com disartria e hemiparesia. TC mostra hemorragia talâmica de 25 mL com extensão ventricular. INR 3,4, PA 174/96 mmHg. Qual intervenção hemostática é a melhor escolha?",
+    "options": [
+      "(A) Suspender varfarina e reverter urgentemente com concentrado de complexo protrombínico de quatro fatores associado a vitamina K IV",
+      "(B) Administrar alteplase para dissolver o hematoma",
+      "(C) Aplicar apenas vitamina K oral e reavaliar INR em três dias",
+      "(D) Manter varfarina até completar investigação etiológica",
+      "(E) Prescrever AAS porque há hemiparesia, sem tratar INR"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Na hemorragia intracerebral relacionada a antagonistas da vitamina K, reversão imediata é prioridade. A diretriz brasileira SBAVC/ABN 2026 recomenda concentrado de complexo protrombínico de quatro fatores (CCP4) com vitamina K para correção rápida do INR, quando disponível. Vitamina K isolada tem início lento; plasma pode ser alternativa em ausência de CCP, porém exige maior volume e corrige mais lentamente. A neuro-UTI acompanha pressão, expansão hematomal e hidrocefalia.",
+    "commentary": "(B) Incorreta. Fibrinólise agravaria o sangramento.\n\n(C) Incorreta. A reversão precisa ser rápida e a via oral não atende à urgência.\n\n(D) Incorreta. Persistir anticoagulação aumenta expansão do hematoma.\n\n(E) Incorreta. O AVC é hemorrágico, e a prioridade é reverter coagulopatia.",
+    "reference": "Diretriz brasileira de hemorragia intracerebral espontânea (Sociedade Brasileira de AVC/Academia Brasileira de Neurologia, Arq Neuropsiquiatr 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "hemorragia intracerebral em uso de varfarina"
+    ],
+    "tip": "Hemorragia + varfarina = CCP4 + vitamina K IV, não apenas “suspender e observar”.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-78",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 62 anos chega com vertigem intensa, vômitos, ataxia e rebaixamento progressivo do nível de consciência. TC: hematoma cerebelar de 22 mL, compressão do IV ventrículo e hidrocefalia obstrutiva. PA 176/98 mmHg. Qual é a conduta prioritária?",
+    "options": [
+      "(A) Apenas observar porque o cerebelo é um território de menor risco",
+      "(B) Administrar trombolítico para acelerar reabsorção da hemorragia",
+      "(C) Prescrever corticosteroide como tratamento definitivo e dar alta",
+      "(D) Aguardar 24 horas para repetir TC antes de chamar neurocirurgia",
+      "(E) Avaliação neurocirúrgica emergencial para evacuação do hematoma e manejo da hidrocefalia, com drenagem ventricular externa quando indicada"
+    ],
+    "correctAnswer": 4,
+    "explanation": "Hematoma cerebelar volumoso é ameaça vital por compressão de tronco e bloqueio de fluxo liquórico. A diretriz brasileira de hemorragia intracerebral 2026 recomenda abordagem cirúrgica urgente em casos como volume >15 mL com hidrocefalia/compressão, associando drenagem ventricular externa conforme o cenário. O tratamento não se resume a baixar pressão: a fossa posterior tem pouco espaço para acomodar hematoma e edema. DVE isolada sem considerar evacuação pode ser insuficiente em compressão importante.",
+    "commentary": "(A) Incorreta. A fossa posterior é crítica para compressão de tronco.\n\n(B) Incorreta. É contraindicado e perigoso.\n\n(C) Incorreta. Não resolve efeito de massa/hidrocefalia.\n\n(D) Incorreta. A deterioração exige resposta imediata.",
+    "reference": "Diretriz brasileira de hemorragia intracerebral espontânea (Sociedade Brasileira de AVC/Academia Brasileira de Neurologia, Arq Neuropsiquiatr 2026)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "hemorragia cerebelar, hidrocefalia e neurocirurgia"
+    ],
+    "tip": "Hematoma cerebelar + hidrocefalia + queda da consciência = emergência neurocirúrgica, não simples observação.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-79",
+    "module": "Clínica Médica",
+    "text": "Um homem de 53 anos apresenta cefaleia “a pior da vida” que atingiu intensidade máxima em segundos, acompanhada de vômitos e rigidez de nuca. TC mostra hemorragia subaracnóidea difusa em cisternas basais; angiotomografia sugere aneurisma de comunicante anterior. Após estabilização, qual estratégia é correta?",
+    "options": [
+      "(A) Trombolisar por via endovenosa devido ao déficit neurológico associado",
+      "(B) Encaminhar rapidamente a centro neurovascular para oclusão do aneurisma e iniciar medidas específicas, incluindo nimodipina enteral quando apropriada",
+      "(C) Prescrever apenas analgesia e repetir tomografia ambulatorial em um mês",
+      "(D) Usar AAS e clopidogrel para prevenir isquemia antes de tratar o aneurisma, como rotina",
+      "(E) Considerar nimodipina substituto suficiente para tratar o aneurisma"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ruptura aneurismática causa hemorragia subaracnóidea e risco de ressangramento, hidrocefalia e isquemia cerebral tardia. A diretriz AHA/ASA 2023 recomenda tratamento precoce do aneurisma por abordagem endovascular ou microcirúrgica conforme anatomia e equipe, e nimodipina enteral para reduzir isquemia cerebral tardia e melhorar desfechos. A TC confirma sangue; não há indicação de trombólise e a punção lombar não é necessária quando a TC já demonstrou HSA.",
+    "commentary": "(A) Incorreta. Hemorragia contraindica fibrinólise.\n\n(C) Incorreta. Há risco agudo de ressangramento e complicações.\n\n(D) Incorreta. Antiagregação não é tratamento de HSA aneurismática não protegida.\n\n(E) Incorreta. Nimodipina não exclui o aneurisma da circulação.",
+    "reference": "2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA, Stroke 2023)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "hemorragia subaracnóidea aneurismática"
+    ],
+    "tip": "Trovoada + sangue nas cisternas = HSA. Depois de estabilizar: proteger aneurisma e pensar em nimodipina.",
+    "topography": "1.1",
+    "topic": "AVC"
+  },
+  {
+    "id": "topo-1-1-80",
+    "module": "Clínica Médica",
+    "text": "Uma mulher de 65 anos teve AVCI não cardioembólico há 12 dias, sem transformação hemorrágica. Angiotomografia mostrou estenose carotídea esquerda sintomática de 80%; LDL 158 mg/dL e hipertensão mal controlada. NIHSS atual 2, mRS 2. Qual plano global é mais apropriado após estabilização e discussão com equipe vascular?",
+    "options": [
+      "(A) Manter somente AAS e ignorar estenose carotídea sintomática",
+      "(B) Anticoagular plenamente todas as estenoses carotídeas como padrão",
+      "(C) Adiar estatina e reabilitação por seis meses até desaparecer qualquer déficit",
+      "(D) Instituir antiagregação apropriada e estatina de alta intensidade, controlar fatores de risco, avaliar revascularização carotídea precoce e iniciar reabilitação multidisciplinar",
+      "(E) Indicar trombólise IV 12 dias após o AVC para corrigir estenose"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Prevenção secundária de AVC aterosclerótico envolve antiagregação, redução intensiva de LDL, controle de pressão, cessação de tabaco e atividade/reabilitação conforme capacidade. Estenose carotídea extracraniana sintomática importante pode demandar endarterectomia ou intervenção, idealmente sem atraso desnecessário em selecionados; a decisão depende de grau, anatomia, sexo, risco cirúrgico e tempo do evento. Reabilitação física, fonoaudiológica e ocupacional é parte do tratamento. Anticoagulação plena não é primeira escolha para evento não cardioembólico sem outra indicação.",
+    "commentary": "(A) Incorreta. A lesão de alto grau pode ser tratável para reduzir recorrência.\n\n(B) Incorreta. Mecanismo aterosclerótico costuma requerer antiagregação e avaliação de revascularização.\n\n(C) Incorreta. Prevenção e reabilitação devem começar de forma organizada e oportuna.\n\n(E) Incorreta. Fibrinólise é terapia de fase hiperaguda e não trata placa carotídea crônica.",
+    "reference": "PCDT do Acidente Vascular Cerebral Isquêmico Agudo (Ministério da Saúde, Portaria Conjunta SAES/SECTICS nº 29/2023); Diretrizes brasileiras de reabilitação após AVC (Sociedade Brasileira de AVC, 2022)",
+    "tags": [
+      "neurologia",
+      "avc",
+      "prevenção secundária e reabilitação após avc"
+    ],
+    "tip": "Após o AVCI: não pare no AAS. Determine mecanismo, trate LDL/PA, procure carótida sintomática e reabilite.",
+    "topography": "1.1",
+    "topic": "AVC"
+  }
+];
+
+export const TOPOGRAPHY_QUESTIONS: Question[] = [...NEURO_CEFALEIAS, ...NEURO_AVC];
