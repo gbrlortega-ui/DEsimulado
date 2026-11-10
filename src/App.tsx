@@ -202,6 +202,16 @@ export default function App() {
     go('quiz', true);
   };
 
+  // Refazer só o que errou ou deixou em branco, na mesma ordem.
+  const handleRetryMissed = (missed: Question[]) => {
+    if (!settings) return;
+    setSettings({ ...settings, questionCount: missed.length });
+    setActiveQuestions(missed);
+    setUserAnswers([]);
+    setResults(null);
+    go('quiz', true);
+  };
+
   const handleNewQuiz = () => {
     setSettings(null);
     setUserAnswers([]);
@@ -271,7 +281,10 @@ export default function App() {
       {screen === 'results' && results && (
         <ResultsView
           results={results}
+          questions={activeQuestions}
+          answers={userAnswers}
           onReset={handleResetQuiz}
+          onRetryMissed={handleRetryMissed}
           onNew={handleNewQuiz}
           onHome={handleGoHome}
         />

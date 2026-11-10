@@ -161,7 +161,7 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
 
   const modes = [
     { value: true, icon: BookOpenCheck, title: 'Modo estudo', text: 'Gabarito e comentário logo após cada questão.' },
-    { value: false, icon: ClipboardCheck, title: 'Modo prova', text: 'Responda tudo e veja o desempenho só no final.' },
+    { value: false, icon: ClipboardCheck, title: 'Modo prova', text: 'Responda tudo e veja o gabarito comentado só no final.' },
   ];
 
   return (

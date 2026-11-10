@@ -275,7 +275,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
             {[
               ['Escolha a área e a quantidade', 'De 10 a 100 questões, de uma área só ou misturando todas.'],
               ['Responda e leia o comentário', 'Ao marcar, você vê o gabarito, a explicação e a referência da questão.'],
-              ['Veja onde precisa revisar', 'No final, o resultado mostra seus acertos por área e o tempo gasto.'],
+              ['Veja onde precisa revisar', 'No final, veja seus acertos por área, revise o gabarito comentado e refaça só as que errou.'],
             ].map(([title, text], i) => (
               <li key={title} className="flex gap-4">
                 <span className="w-9 h-9 rounded-full bg-primary-soft text-primary-ink font-heading font-bold flex items-center justify-center shrink-0">

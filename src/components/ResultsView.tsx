@@ -1,14 +1,19 @@
 import React, { useEffect } from 'react';
 import { motion } from 'motion/react';
-import { RefreshCcw, Plus, Home } from 'lucide-react';
+import { RefreshCcw, Plus, Home, RotateCcw } from 'lucide-react';
 import confeti from 'canvas-confetti';
 import { Brand } from './Brand';
-import { QuizResults } from '../types';
+import { AnswerReview } from './AnswerReview';
+import { Question, QuizResults, UserAnswer } from '../types';
 import { cn } from '../lib/utils';
 
 interface ResultsViewProps {
   results: QuizResults;
+  questions: Question[];
+  answers: UserAnswer[];
   onReset: () => void;
+  /** Novo simulado só com as questões erradas e em branco. */
+  onRetryMissed: (questions: Question[]) => void;
   onNew: () => void;
   onHome: () => void;
 }
@@ -18,7 +23,7 @@ const formatDuration = (s: number) => {
   return m > 0 ? `${m} min ${s % 60} s` : `${s} s`;
 };
 
-export const ResultsView: React.FC<ResultsViewProps> = ({ results, onReset, onNew, onHome }) => {
+export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, answers, onReset, onRetryMissed, onNew, onHome }) => {
   const score = Math.round(results.score);
   const blank = Math.max(0, results.totalQuestions - results.correctCount - results.wrongCount);
   const answered = results.correctCount + results.wrongCount;
@@ -48,6 +53,8 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, onReset, onNe
       : weakest
       ? `Seu ponto mais fraco neste simulado foi ${weakest.name}: ${weakest.correct} de ${weakest.total}. Vale começar a revisão por ela.`
       : 'Antes do próximo simulado, volte aos temas das questões que você errou.';
+
+  const missed = questions.filter((q) => !answers.find((a) => a.questionId === q.id)?.isCorrect);
 
   const seg = (n: number) => `${(n / results.totalQuestions) * 100}%`;
 
@@ -134,16 +141,24 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, onReset, onNe
         )}
 
         {/* Ações */}
-        <section className="mt-12 pt-8 border-t border-line flex flex-col sm:flex-row gap-3">
+        <section className="mt-12 pt-8 border-t border-line flex flex-col sm:flex-row sm:flex-wrap gap-3">
           <button onClick={onNew} className="btn btn-primary sm:flex-1">
             <Plus size={18} />
             Novo simulado
           </button>
+          {missed.length > 0 && missed.length < questions.length && (
+            <button onClick={() => onRetryMissed(missed)} className="btn btn-ghost sm:flex-1">
+              <RotateCcw size={17} />
+              Refazer erradas e em branco ({missed.length})
+            </button>
+          )}
           <button onClick={onReset} className="btn btn-ghost sm:flex-1">
             <RefreshCcw size={17} />
-            Refazer as mesmas questões
+            Refazer todas
           </button>
         </section>
+
+        {questions.length > 0 && <AnswerReview questions={questions} answers={answers} />}
       </main>
     </div>
   );

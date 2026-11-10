@@ -12,6 +12,7 @@ import {
   Maximize2
 } from 'lucide-react';
 import { Brand } from './Brand';
+import { Explanation } from './Explanation';
 import { Question, UserAnswer, QuizSettings, QuizResults, Module } from '../types';
 import { cn, examLabel, isAccepted, stripOptionLetter } from '../lib/utils';
 import { playCorrect, playWrong } from '../lib/sounds';
@@ -298,52 +299,8 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                       : `Resposta correta: ${String.fromCharCode(65 + currentQuestion.correctAnswer)}.`}
                   </div>
 
-                  <div className="p-5 space-y-5">
-                    {currentQuestion.alert && (
-                      <div role="note" className="flex gap-3 rounded-lg border border-accent-amber/50 bg-amber-soft px-4 py-3 text-sm leading-relaxed text-ink">
-                        <AlertTriangle className="w-5 h-5 text-accent-amber shrink-0 mt-0.5" aria-hidden />
-                        <p>{currentQuestion.alert}</p>
-                      </div>
-                    )}
-
-                    <section>
-                      <h3 className="text-base font-bold">Comentário</h3>
-                      <p className="mt-1.5 text-[15px] text-ink-2 leading-relaxed whitespace-pre-line">
-                        {currentQuestion.explanation}
-                      </p>
-                    </section>
-
-                    {currentQuestion.commentary && (
-                      <section className="pl-4 border-l-2 border-line-2">
-                        <h3 className="text-sm font-sans font-semibold text-ink">Para aprofundar</h3>
-                        <p className="mt-1 text-sm text-ink-2 leading-relaxed whitespace-pre-line">
-                          {currentQuestion.commentary}
-                        </p>
-                      </section>
-                    )}
-
-                    {currentQuestion.tip && (
-                      <div className="rounded-lg bg-primary-soft px-4 py-3">
-                        <h3 className="text-sm font-sans font-bold text-primary-ink">Bizu</h3>
-                        <p className="mt-1 text-sm text-ink leading-relaxed">{currentQuestion.tip}</p>
-                      </div>
-                    )}
-
-                    {currentQuestion.reference && (
-                      <p className="text-xs text-muted leading-relaxed">
-                        <span className="font-semibold text-ink-2">Referência:</span> {currentQuestion.reference}
-                      </p>
-                    )}
-
-                    {currentQuestion.tags.length > 0 && (
-                      <div className="flex flex-wrap gap-1.5">
-                        {currentQuestion.tags.map(tag => (
-                          <span key={tag} className="text-xs bg-bg-2 px-2 py-0.5 rounded-md text-muted">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    )}
+                  <div className="p-5">
+                    <Explanation question={currentQuestion} />
                   </div>
                 </motion.div>
               )}
