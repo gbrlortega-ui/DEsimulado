@@ -3,10 +3,13 @@ import { ChevronRight, TrendingUp } from 'lucide-react';
 import { Module } from '../types';
 import { AREAS } from '../data/stats';
 import { HistoryEntry, summarize } from '../lib/history';
+import type { Account } from '../lib/account';
+import { SaveHistoryCta } from './AccountMenu';
 import { cn } from '../lib/utils';
 
 interface ProgressPanelProps {
   history: HistoryEntry[];
+  account: Account;
   onTrain: (area: Module) => void;
   onClear: () => void;
 }
@@ -19,7 +22,7 @@ const band = (perc: number) => (perc >= 60 ? 'bg-accent-green' : perc >= 40 ? 'b
 const LAST = 12;
 
 /** Painel "Seu desempenho": evolução das notas e acerto acumulado por área. */
-export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, onTrain, onClear }) => {
+export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, account, onTrain, onClear }) => {
   const { correct, total, perc, areas } = summarize(history);
   const recent = history.slice(-LAST);
   const byArea = AREAS.filter((a) => areas[a]?.total)
@@ -40,7 +43,7 @@ export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, onTrain, 
             Seu desempenho
           </h2>
           <p className="text-xs text-muted">
-            Salvo só neste navegador ·{' '}
+            {account.status === 'in' ? 'Salvo na sua conta' : 'Salvo só neste navegador'} ·{' '}
             <button type="button" onClick={clear} className="underline underline-offset-2 hover:text-ink">
               apagar histórico
             </button>
@@ -137,6 +140,12 @@ export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, onTrain, 
             )}
           </div>
         </div>
+
+        {account.status !== 'in' && (
+          <div className="mt-7">
+            <SaveHistoryCta account={account} compact />
+          </div>
+        )}
       </div>
     </section>
   );

@@ -15,6 +15,22 @@ iniciais usam só `src/data/resumo.ts` (contagens, simulados sugeridos e amostra
 `npm run gen`, que não deve ser editado à mão. Componentes de tela não devem importar `questions.ts`,
 `sugeridos.ts` ou `topografiaPool.ts` direto, senão o banco volta para o arquivo principal.
 
+## Conta opcional (Firebase)
+
+O site funciona sem conta (histórico e simulado em andamento no `localStorage`). Quem entra com
+Google sincroniza tudo no Firestore, em `alunos/{uid}` — projeto Firebase `desimulados-ferramentas`
+(nome de exibição "DEsimulados"), app web "DEsimulados Web".
+
+- `src/lib/cloud.ts`: SDK do Firebase. **Só é importado dinamicamente** (por `src/lib/account.ts`),
+  para não pesar para quem não entra — nunca importe `firebase/*` em outro arquivo.
+- `src/lib/account.ts`: hook `useAccount` (login, junção do histórico local com o da conta,
+  envio do simulado em andamento ao esconder a aba, exclusão de conta).
+- `firestore.rules`: cada aluno só lê/grava o próprio documento; o resto é fechado. Publicar com
+  `npx firebase-tools deploy --only firestore,auth` (precisa de `firebase login`).
+- Gravações são poucas de propósito (plano gratuito: 20 mil/dia): na entrega do simulado e ao sair
+  da aba, nunca a cada clique.
+- Política de privacidade: `src/components/PrivacyPolicy.tsx` — atualizar se mudar o que é salvo.
+
 ## Comandos
 
 - `npm run dev` — servidor local (porta 3000)

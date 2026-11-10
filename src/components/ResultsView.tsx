@@ -4,6 +4,8 @@ import { RefreshCcw, Plus, Home, RotateCcw } from 'lucide-react';
 import confeti from 'canvas-confetti';
 import { Brand } from './Brand';
 import { AnswerReview } from './AnswerReview';
+import { SaveHistoryCta } from './AccountMenu';
+import type { Account } from '../lib/account';
 import { Question, QuizResults, UserAnswer } from '../types';
 import { cn } from '../lib/utils';
 
@@ -13,6 +15,7 @@ interface ResultsViewProps {
   answers: UserAnswer[];
   /** Média de acerto nos simulados anteriores (null no primeiro). */
   previousAverage?: number | null;
+  account: Account;
   onReset: () => void;
   /** Novo simulado só com as questões erradas e em branco. */
   onRetryMissed: (questions: Question[]) => void;
@@ -25,7 +28,7 @@ const formatDuration = (s: number) => {
   return m > 0 ? `${m} min ${s % 60} s` : `${s} s`;
 };
 
-export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, answers, previousAverage, onReset, onRetryMissed, onNew, onHome }) => {
+export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, answers, previousAverage, account, onReset, onRetryMissed, onNew, onHome }) => {
   const score = Math.round(results.score);
   const blank = Math.max(0, results.totalQuestions - results.correctCount - results.wrongCount);
   const answered = results.correctCount + results.wrongCount;
@@ -98,6 +101,12 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
             )}
           </div>
         </section>
+
+        {answered > 0 && account.status !== 'in' && (
+          <div className="mt-8">
+            <SaveHistoryCta account={account} />
+          </div>
+        )}
 
         {/* Distribuição */}
         <section className="mt-10">

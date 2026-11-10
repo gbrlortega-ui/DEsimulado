@@ -40,6 +40,22 @@ export function addToHistory(entry: HistoryEntry): HistoryEntry[] {
   return next;
 }
 
+/** Substitui o histórico deste navegador (usado ao juntar com o da conta). */
+export function saveHistory(list: HistoryEntry[]) {
+  try {
+    localStorage.setItem(KEY, JSON.stringify(list.slice(-MAX)));
+  } catch {
+    // ignora
+  }
+}
+
+/** Junta dois históricos sem repetir simulados (mesmo horário de entrega), em ordem cronológica. */
+export function mergeHistories(a: HistoryEntry[], b: HistoryEntry[]): HistoryEntry[] {
+  const byTime = new Map<number, HistoryEntry>();
+  [...a, ...b].forEach((e) => byTime.set(e.at, e));
+  return [...byTime.values()].sort((x, y) => x.at - y.at).slice(-MAX);
+}
+
 export function clearHistory() {
   try {
     localStorage.removeItem(KEY);

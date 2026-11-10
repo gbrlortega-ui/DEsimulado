@@ -12,6 +12,7 @@ import { findTopographyGroup, TOPOGRAPHY } from './data/topografia';
 import { loadBank, pickQuestions, questionsByIds } from './data/banco';
 import { clearProgress, loadProgress, type SavedQuiz } from './lib/progress';
 import { addToHistory, clearHistory, loadHistory, summarize, type HistoryEntry } from './lib/history';
+import { useAccount } from './lib/account';
 
 // Telas carregadas sob demanda: a página inicial abre sem esperar por elas.
 const loadSetup = () => import('./components/QuizSetup');
@@ -22,6 +23,7 @@ const QuizSetup = lazy(() => loadSetup().then((m) => ({ default: m.QuizSetup }))
 const TopographySetup = lazy(() => loadTopography().then((m) => ({ default: m.TopographySetup })));
 const QuizSession = lazy(() => loadSession().then((m) => ({ default: m.QuizSession })));
 const ResultsView = lazy(() => loadResults().then((m) => ({ default: m.ResultsView })));
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy').then((m) => ({ default: m.PrivacyPolicy })));
 
 /** Se uma tela não carregar (sem internet ou depois de um deploy novo), oferece recarregar. */
 class LoadBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
@@ -34,7 +36,7 @@ class LoadBoundary extends Component<{ children: ReactNode }, { failed: boolean 
   }
 }
 
-type AppState = 'landing' | 'setup' | 'topography' | 'quiz' | 'results';
+type AppState = 'landing' | 'setup' | 'topography' | 'quiz' | 'results' | 'privacy';
 
 const reload = () => window.location.reload();
 
@@ -85,6 +87,8 @@ export default function App() {
   const [history, setHistory] = useState<HistoryEntry[]>(() => loadHistory());
   /** Média de acerto antes do simulado atual, para comparar no resultado. */
   const [previousAverage, setPreviousAverage] = useState<number | null>(null);
+  /** Conta opcional (login com Google): sincroniza histórico e simulado em andamento. */
+  const account = useAccount({ onHistory: setHistory, onProgress: setSaved });
 
   /** Troca de tela registrando no histórico: o "voltar" do navegador/celular volta uma tela, sem sair do site. */
   const go = (next: AppState, replace = false) => {
@@ -197,8 +201,7 @@ export default function App() {
     const answered = finalResults.correctCount + finalResults.wrongCount;
     setPreviousAverage(history.length ? summarize(history).perc : null);
     if (answered > 0 && finalResults.totalQuestions > 0) {
-      setHistory(
-        addToHistory({
+      const updated = addToHistory({
           at: Date.now(),
           title: sessionInfo?.title ?? (settings?.module === 'Misto' || !settings ? 'Todas as áreas' : settings.module),
           score: finalResults.score,
@@ -208,8 +211,9 @@ export default function App() {
           areas: Object.fromEntries(
             Object.entries(finalResults.modulePerformance).filter(([, p]) => p.total > 0)
           ),
-        })
-      );
+      });
+      setHistory(updated);
+      account.pushHistory(updated);
     }
     setResults(finalResults);
     setUserAnswers(answers);
@@ -262,9 +266,12 @@ export default function App() {
           onSetup={handleStartSetup}
           onQuickStart={handleQuickStart}
           history={history}
+          account={account}
+          onPrivacy={() => go('privacy')}
           onClearHistory={() => {
             clearHistory();
             setHistory([]);
+            account.pushHistory([]); // com conta, apaga também na nuvem
           }}
           resume={
             saved
@@ -311,12 +318,14 @@ export default function App() {
           questions={activeQuestions}
           answers={userAnswers}
           previousAverage={previousAverage}
+          account={account}
           onReset={handleResetQuiz}
           onRetryMissed={handleRetryMissed}
           onNew={handleNewQuiz}
           onHome={handleGoHome}
         />
       )}
+      {screen === 'privacy' && <PrivacyPolicy onHome={handleGoHome} />}
       </Suspense>
       </LoadBoundary>
 

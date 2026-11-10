@@ -4,6 +4,8 @@ import { ChevronRight, RefreshCw, Check, X, PlayCircle } from 'lucide-react';
 import { Brand } from './Brand';
 import { ProgressPanel } from './ProgressPanel';
 import type { HistoryEntry } from '../lib/history';
+import type { Account } from '../lib/account';
+import { AccountMenu } from './AccountMenu';
 import { Module, Question } from '../types';
 import { AREAS, COUNT_BY_AREA, EDITIONS, TOTAL_QUESTIONS, randomSample } from '../data/stats';
 import { cn, examLabel, firstParagraph, stripOptionLetter } from '../lib/utils';
@@ -25,6 +27,8 @@ interface LandingPageProps {
   /** Simulados já feitos neste navegador. */
   history: HistoryEntry[];
   onClearHistory: () => void;
+  account: Account;
+  onPrivacy: () => void;
 }
 
 /* ---------- Aviso de simulado em andamento ---------- */
@@ -162,7 +166,7 @@ const SampleQuestion: React.FC<{ onQuickStart: () => void }> = ({ onQuickStart }
 };
 
 /* ---------- Página ---------- */
-export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart, resume, history, onClearHistory }) => {
+export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart, resume, history, onClearHistory, account, onPrivacy }) => {
   const tp = EDITIONS.filter((e) => e.kind === 'TP');
   const enamed = EDITIONS.filter((e) => e.kind === 'ENAMED');
   const years = (list: typeof EDITIONS) => (list.length ? `${list[0].year}–${list[list.length - 1].year}` : '');
@@ -173,6 +177,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
         <div className="container-custom h-16 flex items-center justify-between">
           <Brand />
           <div className="flex items-center gap-1.5 sm:gap-2">
+            <AccountMenu account={account} onPrivacy={onPrivacy} />
             <button onClick={() => onSetup()} className="text-[13px] sm:text-sm font-semibold px-2.5 sm:px-4 py-2 rounded-lg bg-ink text-white hover:bg-ink-2 transition-colors whitespace-nowrap">
               <span className="hidden sm:inline">Montar simulado</span>
               <span className="sm:hidden">Simulado</span>
@@ -183,7 +188,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
 
       <main className="flex-1">
         {resume && <ResumeBanner resume={resume} />}
-        {history.length > 0 && <ProgressPanel history={history} onTrain={onSetup} onClear={onClearHistory} />}
+        {history.length > 0 && <ProgressPanel history={history} account={account} onTrain={onSetup} onClear={onClearHistory} />}
         {/* Abertura */}
         <section className="container-custom pt-10 pb-16 sm:pt-20 sm:pb-24 grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           <div className="lg:col-span-6">
@@ -305,7 +310,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
       <footer className="border-t border-line">
         <div className="container-custom py-8 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <Brand size="sm" />
-          <p className="text-sm text-muted">Questões de provas públicas, organizadas e comentadas para estudo.</p>
+          <p className="text-sm text-muted">
+            Questões de provas públicas, organizadas e comentadas para estudo. ·{' '}
+            <button type="button" onClick={onPrivacy} className="underline underline-offset-2 hover:text-ink">
+              Política de privacidade
+            </button>
+          </p>
         </div>
       </footer>
     </div>

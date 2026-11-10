@@ -41,6 +41,15 @@ export function saveProgress(data: Omit<SavedQuiz, 'v' | 'savedAt'>) {
   }
 }
 
+/** Grava um simulado salvo tal como veio (da conta), sem mudar a data. */
+export function writeProgress(data: SavedQuiz) {
+  try {
+    localStorage.setItem(KEY, JSON.stringify(data));
+  } catch {
+    // ignora
+  }
+}
+
 export function clearProgress() {
   try {
     localStorage.removeItem(KEY);
