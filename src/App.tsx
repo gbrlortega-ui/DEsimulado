@@ -3,10 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useMemo, lazy, Suspense } from 'react';
+import { useState, useMemo } from 'react';
 import { MotionConfig } from 'motion/react';
 import { LandingPage } from './components/LandingPage';
-import { ErrorBoundary } from './components/ErrorBoundary';
 import { QuizSetup } from './components/QuizSetup';
 import { QuizSession } from './components/QuizSession';
 import { ResultsView } from './components/ResultsView';
@@ -16,36 +15,15 @@ import { findSugerido } from './data/sugeridos';
 import { findTopographyGroup, TOPOGRAPHY } from './data/topografia';
 import { topographyQuestions } from './data/topografiaPool';
 import { TopographySetup } from './components/TopographySetup';
-// Área de ferramentas (com login) carregada só quando alguém abre — não pesa nos simulados.
-const ToolsPage = lazy(() => import('./tools/ToolsPage').then((m) => ({ default: m.ToolsPage })));
-const AuthAction = lazy(() => import('./tools/AuthAction').then((m) => ({ default: m.AuthAction })));
-import type { ToolKind } from './tools/forms';
-
-type AppState = 'landing' | 'setup' | 'topography' | 'quiz' | 'results' | 'tools' | 'authAction';
-
-/** Link de e-mail do Firebase (confirmar e-mail, redefinir senha) — lido aqui para não carregar o Firebase à toa. */
-function readAuthAction() {
-  const p = new URLSearchParams(window.location.search);
-  const mode = p.get('mode');
-  const oobCode = p.get('oobCode');
-  return mode && oobCode ? { mode, oobCode } : null;
-}
+type AppState = 'landing' | 'setup' | 'topography' | 'quiz' | 'results';
 
 export default function App() {
-  const [authAction] = useState(readAuthAction);
-  const [state, setState] = useState<AppState>(authAction ? 'authAction' : 'landing');
+  const [state, setState] = useState<AppState>('landing');
   const [settings, setSettings] = useState<QuizSettings | null>(null);
   const [results, setResults] = useState<QuizResults | null>(null);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [initialModule, setInitialModule] = useState<Module>('Misto');
   const [round, setRound] = useState(0);
-  const [toolKind, setToolKind] = useState<ToolKind>('anamnese');
-
-  const handleOpenTools = (kind: ToolKind) => {
-    setToolKind(kind);
-    setState('tools');
-    window.scrollTo(0, 0);
-  };
 
   const activeQuestions = useMemo(() => {
     if (!settings) return [];
@@ -138,34 +116,8 @@ export default function App() {
   return (
     <MotionConfig reducedMotion="user">
     <div className="antialiased">
-      {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} onTools={handleOpenTools} />}
+      {state === 'landing' && <LandingPage onSetup={handleStartSetup} onQuickStart={handleQuickStart} />}
 
-      {state === 'authAction' && authAction && (
-        <ErrorBoundary onHome={handleGoHome}>
-          <Suspense fallback={<div className="min-h-screen bg-bg" />}>
-            <AuthAction
-              params={authAction}
-              onTools={() => {
-                window.history.replaceState(null, '', window.location.pathname);
-                handleOpenTools('anamnese');
-              }}
-              onHome={() => {
-                window.history.replaceState(null, '', window.location.pathname);
-                handleGoHome();
-              }}
-            />
-          </Suspense>
-        </ErrorBoundary>
-      )}
-
-      {state === 'tools' && (
-        <ErrorBoundary onHome={handleGoHome}>
-          <Suspense fallback={<div className="min-h-screen bg-bg" />}>
-            <ToolsPage initialKind={toolKind} onHome={handleGoHome} />
-          </Suspense>
-        </ErrorBoundary>
-      )}
-      
       {state === 'setup' && (
         <QuizSetup 
           initialModule={initialModule}

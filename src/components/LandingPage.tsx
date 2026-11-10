@@ -5,13 +5,10 @@ import { Brand } from './Brand';
 import { Module, Question } from '../types';
 import { AREAS, COUNT_BY_AREA, EDITIONS, TOTAL_QUESTIONS, randomSample } from '../data/stats';
 import { cn, examLabel, firstParagraph, stripOptionLetter } from '../lib/utils';
-import { ToolsMenu } from '../tools/ToolsMenu';
-import type { ToolKind } from '../tools/forms';
 
 interface LandingPageProps {
   onSetup: (module?: Module) => void;
   onQuickStart: () => void;
-  onTools: (kind: ToolKind) => void;
 }
 
 const fmt = (n: number) => n.toLocaleString('pt-BR');
@@ -120,7 +117,7 @@ const SampleQuestion: React.FC<{ onQuickStart: () => void }> = ({ onQuickStart }
 };
 
 /* ---------- Página ---------- */
-export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart, onTools }) => {
+export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart }) => {
   const tp = EDITIONS.filter((e) => e.kind === 'TP');
   const enamed = EDITIONS.filter((e) => e.kind === 'ENAMED');
   const years = (list: typeof EDITIONS) => (list.length ? `${list[0].year}–${list[list.length - 1].year}` : '');
@@ -131,7 +128,6 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
         <div className="container-custom h-16 flex items-center justify-between">
           <Brand />
           <div className="flex items-center gap-1.5 sm:gap-2">
-            <ToolsMenu onOpen={onTools} />
             <button onClick={() => onSetup()} className="text-[13px] sm:text-sm font-semibold px-2.5 sm:px-4 py-2 rounded-lg bg-ink text-white hover:bg-ink-2 transition-colors whitespace-nowrap">
               <span className="hidden sm:inline">Montar simulado</span>
               <span className="sm:hidden">Simulado</span>
