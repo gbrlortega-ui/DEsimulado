@@ -133,7 +133,7 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "O paciente apresenta pubarca, associado a odor axilar, acne e sinais de virilização rapidamente progressiva, devemos pensar em uma disfunção da glândula adrenal, pela rapidez do quadro, um tumor de adrenal é o diagnóstico mais provável. Portanto, o exame mais adequado é a tomografia de adrenal. LH e FSH devem ser pedidos na suspeita de puberdade e essa menina não apresenta sinal puberal já que não tem mama palpável. USg pélvico deve ser pedido na puberdade precoce periférica, quando há suspeita de tumor ovariano. Rx idade óssea deve ser pedido para avaliar o prognóstico estatural do paciente, não faz diagnóstico de nenhuma patologia.",
     "reference": "Tratado de pediatria / organização Sociedade Brasileira de Pediatria. - 5. ed. - Barueri [SP]: Manole, 2022. Seção 16 endocrinologia. Endocrinologia pediátrica / Crésio de Aragão Dantas Alves. - 1. ed. - Barueri [SP]: Manole, 2019.",
     "tags": [
-      "Endocrinologia"
+      "endocrinologia"
     ]
   },
   {
@@ -151,7 +151,7 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "A concentração de hemoglobina A2 aumenta no traço talassêmico ou ß talassemia minor. Os pacientes tem um único gene anormal para a cadeia beta da hemoglobina e habitualmente não tem problemas a não ser uma discreta anemia microcítica. A talassemia homozigota evoluiria de forma mais tempestuosa com anemia severa, hepatoesplenomegalia , necessidade de múltiplas transfusões, presença de RDW (a medida da anisocitose) normal, com microcitia, alerta para este diagnóstico, um vez que ele está aumentado, devido à anisocitose, na anemia ferropriva. Na anemia ferropriva severa a hemoglobina A2 está diminuída e na anemia ferropriva leve ou moderada a hemoglobina A2 está normal.O nível de hemoglobina A2 também está normal na anemia falciforme e na anemia da doença crônica.",
     "reference": "Hay et al pp, 844-845; Kliegman et al pp, 2033-2037; Mc Millan et al pp, 1699-1700; Rudolph et al, pp 1536-1538.",
     "tags": [
-      "Hematologia"
+      "hematologia"
     ]
   },
   {
@@ -169,8 +169,8 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "O protocolo orienta evitar a revitimização. O prontuário deve ser detalhado e o exame físico completo (não restrito à genitália) para buscar outros sinais de violência.",
     "reference": "Protocolo de Atenção Integral - UNICEF/MS.",
     "tags": [
-      "Violência",
-      "Ética"
+      "violência",
+      "ética"
     ]
   },
   {
@@ -188,8 +188,8 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "Os critérios de Hanifin e Rajka constituem o padrão diagnótico na Dermatite Atópica. Exigem a preexistência de critérios maiores (prurido intenso, distribuição típica flexural na infância/liquenificação, cronicidade recidivante e história familiar de atopia). Entre os critérios secundários/menores estão achados de hipersensibilidade cutânea e exames laboratoriais como reatividade imunoespecífica e títulos elevados de IgE circulante.",
     "reference": "Consenso de Dermatite Atópica da SBP/SBD.",
     "tags": [
-      "Dermatologia",
-      "Alergia e Imunologia"
+      "dermatologia",
+      "alergia e imunologia"
     ]
   },
   {
@@ -226,8 +226,8 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "Esta questão caracteriza a síndrome da mononucleose: jovem com febre aguda, linfonodos cervicais fibroelásticos bilaterais e linfocitose com atipia.",
     "reference": "Infectologia. Bases clínicas e tratamento Reinaldo Salomão, edição 2017",
     "tags": [
-      "Infectologia",
-      "Hematologia"
+      "infectologia",
+      "hematologia"
     ]
   },
   {
@@ -245,8 +245,8 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "Os achados do exame físico (telangiectasias, esplenomegalia) e do laboratório (plaquetopenia, hipoalbuminemia e transaminases alteradas) traduzem evolução crônica para cirrose com hipertensão portal já estabelecida. Como o paciente não apresenta ascite rebelde, encefalopatia de repetição ou sangramentos, classifica-se em cirrose compensada neste momento.",
     "reference": "HARRISON'S Principles of Internal Medicine. 21. ed. McGraw-Hill. Sociedade Brasileira de Hepatologia, 2019.",
     "tags": [
-      "Hepatologia",
-      "Infectologia"
+      "hepatologia",
+      "infectologia"
     ]
   },
   {
@@ -264,10 +264,10 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "A rabdomiólise tem como complicação temida a necrose tubular aguda obstrutiva por depósito de mioglobina. A nefropatia de base impõe restrição no uso de IECA/BRA (antiproteinúrico sugerido) pela hipercalemia existente. Diuréticos devem ser indicados com prudência apenas na vigência de hipervolemia refratária pós-volume. A conduta padrão assenta-se na hidratação, suspensão da estatina e estabilização da calemia.",
     "reference": "FAUCI, AS et al. Harrison Medicina Interna. 18ªed. Rio de Janeiro: McGraw-Hill, 2013.",
     "tags": [
-      "Nefrologia",
-      "Cardiologia",
-      "Farmacologia",
-      "Emergência"
+      "nefrologia",
+      "cardiologia",
+      "farmacologia",
+      "emergência"
     ]
   },
   {
@@ -305,8 +305,8 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "O álcool e o tabaco são fatores de risco significativos para câncer esofágico. A progressão rápida dos sintomas disfágicos, a perda de peso e os antecedentes de tabagismo e etilismo sugerem um carcinoma esofágico, especialmente carcinoma espinocelular, que é mais comumente associado a esses fatores.",
     "reference": "Engel LS, Chow WH, Vaughan TL, et al. Riscos atribuíveis à população de câncer de esôfago e gástrico. J Natl Cancer Inst. 2003;95(18):1404.",
     "tags": [
-      "Oncologia",
-      "Gastroenterologia"
+      "oncologia",
+      "gastroenterologia"
     ]
   },
   {
@@ -324,8 +324,8 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "O fechamento temporário da pelve (lençol/cinta) é parte do controle de danos no \"C\" do trauma.",
     "reference": "ATLS 10ª Edição.",
     "tags": [
-      "Trauma",
-      "Emergência"
+      "trauma",
+      "emergência"
     ]
   },
   {
@@ -343,7 +343,7 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "Este caso exibe traços nítidos de tromboflebite superficial da via venosa subcutânea (safena magna), favorecida na mulher jovem sob terapia de anticoncepção oral combinada. Por constituir enfermidade eminentemente imunológica local autolimitada e estéril, o plano de frente abjura o repouso estrito (contra-indicado pelo aumento do estase e risco subsequente de TVP). O alívio decorre de anti-inflamatórios (AINEs), compressão graduada e mobilidade física regular. Anticoagulação formal estaria balizada em caso de proximidade direta ao sistema venoso profundo (< 3-5 cm da crossa de safena) ou lesões com extensão superior a 5 cm.",
     "reference": "Diretrizes do American College of Chest Physicians (ACCP); Sociedade Brasileira de Angiologia e Cirurgia Vascular (SBACV) - Projeto Diretrizes.",
     "tags": [
-      "Cirurgia Vascular"
+      "cirurgia vascular"
     ]
   },
   {
@@ -361,9 +361,9 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "O abscesso cutâneo ou muscular profundo forma uma coleção purulenta envolta por uma pseudocápsula de fibrina e tecido colágeno inflamatório. Essa barreira vascularizada externamente mas avascular internamente cria um ambiente com baixíssima perfusão central, pH ácido e altíssima carga bacteriana ativa e dormente. Como resultado, os antibióticos circulantes não penetram no interior do abscesso em quantidade suficiente, o que dita o antigo aforismo cirúrgico: \"ubi pus, ibi evacua\" (onde há pus, esvazie/drene). Sobre os distratores: (B, C, D) Embora vasoconstrição tecidual periférica, toxinas bacterianas e biofilmes bacterianos desempenhem papéis em infecções, a barreira mecânica e biológica da cápsula do abscesso é o fator fisiopatológico primário reconhecido na falha da terapia medicamentosa isolada.",
     "reference": "Stevens DL et al. Practice Guidelines for Skin and Soft Tissue Infections. Clin Infect Dis. 2014. Miller JM et al. Guide to Microbiology Laboratory Utilization. Clin Infect Dis. 2024. Seidelman JL et al. Surgical Site Infection Prevention. JAMA. 2023.",
     "tags": [
-      "Abscesso",
-      "Fisiopatologia",
-      "Infecção"
+      "abscesso",
+      "fisiopatologia",
+      "infecção"
     ]
   },
   {
@@ -400,7 +400,7 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "Segundo o Ministério da Saúde o tratamento proposto para gestante diante de um teste rápido positivo para a sífilis é: • Tratamento imediato com penicilina benzatina na dose compatível com o estadio da doença, que no caso é desconhecido, então, deve ser tratado com a dose de 7,2 milhões. • Coleta de novo teste para confirmação. • Tratar o parceiro sempre. • Notificar a vigilância sanitária • Acompanhar com teste não treponêmico mensal para verificar aumento de titulação.",
     "reference": "Protocolo clínico e diretrizes terapêuticas para a prevenção da transmissão vertical de HIV, sífilis e hepatites virais Ministério da Saúde 2022",
     "tags": [
-      "Obstetrícia",
+      "obstetrícia",
       "IST"
     ]
   },
@@ -419,8 +419,8 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "ASC-US em mulheres >= 30 anos exige repetição semestral. Se houver dois resultados consecutivos de ASC-US ou pior, encaminha-se para colposcopia.",
     "reference": "Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, INCA 2016.",
     "tags": [
-      "Ginecologia Geral",
-      "Rastreamento"
+      "ginecologia geral",
+      "rastreamento"
     ]
   },
   {
@@ -438,7 +438,7 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "O ILA normal não afasta bolsa rota. Com 36 semanas, a conduta é resolução da gravidez e profilaxia para GBS se indicado (sem necessidade de corticoide após 34 semanas).",
     "reference": "Cartilha Ministério da Saúde, 2021.",
     "tags": [
-      "Obstetrícia"
+      "obstetrícia"
     ]
   },
   {
@@ -456,9 +456,9 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "A suspeita clínica de DPP é essencialmente clínica (dor abdominal súbita intensa contínua + hipertonia uterina + sangramento escuro). Sendo o feto vivo, e na presença de sofrimento fetal agudo sem parto vaginal iminente (no caso o colo está impérvio e fechado), a conduta prioritária é a resolução cirúrgica por cesariana rápida, precedida de amniotomia que reduz a hipertensão intraútero e evita infiltração miometrial (útero de Couvelaire) e coagulação intravascular disseminada.",
     "reference": "Fernandes CE, Silva de Sá MF. Tratado de Obstetrícia FEBRASGO. São Paulo: Elsevier, 2018; Montenegro CABR. Rezende Obstetrícia. 13ª ED. Rio de Janeiro: Guanabara Koogan, 2017.",
     "tags": [
-      "Obstetrícia",
-      "Descolamento de Placenta",
-      "Urgência"
+      "obstetrícia",
+      "descolamento de placenta",
+      "urgência"
     ]
   },
   {
@@ -476,9 +476,9 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "O protocolo clínico brasileiro estabelece que a determinação da via de parto na gestante infectada pelo HIV baseia-se na aferição da Carga Viral (CV) colhida na idade gestacional de 34 semanas ou mais. Se a CV for maior ou igual a 1.000 cópias/mL (ou desconhecida), a via preferencial obrigatória de eleição é a cesariana eletiva (programada, realizada antes do início do trabalho de parto e de qualquer ruptura de membranas), devendo-se infundir o AZT venoso contínuo desde 3 horas antes da incisão cirúrgica até o clampeamento do cordão. Sobre os distratores: (B) O parto vaginal só é seguro e elegível quando a Carga Viral do terceiro trimestre encontra-se comprovadamente indetectável ou < 1.000 cópias/mL. (C) O fórceps de alívio e outros procedimentos invasivos (como amniotomia ou episiotomia) devem ser evitados devido ao risco de sangramento e infecção cruzada. (D) A TARV materna jamais deve ser suspensa, sendo somada à profilaxia infundida.",
     "reference": "BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Protocolo clínico e diretrizes terapêuticas para prevenção da transmissão vertical de HIV, sífilis e hepatites virais. Brasília: Ministério da Saúde, 2022.",
     "tags": [
-      "HIV e Gestação",
-      "Transmissão Vertical",
-      "Cesariana Eletiva"
+      "HIV e gestação",
+      "transmissão vertical",
+      "cesariana eletiva"
     ]
   },
   {
@@ -496,9 +496,9 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "A substituição do enalapril por um BRA (bloqueador do receptor da angiotensina) pode reduzir a tosse persistente. A redução ou descontinuação do zolpidem pode diminuir a sonolência diurna, lapsos de memória e fadiga. A introdução de estratégias não farmacológicas para insônia, como a terapia cognitivocomportamental, pode melhorar a qualidade do sono sem os efeitos adversos do zolpidem. As outras opções não abordam adequadamente os problemas relacionados à polifarmácia e podem introduzir novos riscos ou não resolver os sintomas atuais.",
     "reference": "Fick, D. M., et al. (2019). \"2019 American Geriatrics Society Beers Criteria® Update Expert Panel.\" Journal of the American Geriatrics Society, 67(4), 674-694. Maher, R. L., Hanlon, J., & Hajjar, E. R. (2014). \"Clinical consequences of polypharmacy in elderly.\" Expert Opinion on Drug Safety, 13(1), 57-65. Katzung, B. G., Masters, S. B., & Trevor, A. J. (2012). \"Basic & Clinical Pharmacology.\" 12ª ed. New York: McGraw-Hill Medical.",
     "tags": [
-      "Polifarmácia",
-      "Geriatria",
-      "Farmacologia"
+      "polifarmácia",
+      "geriatria",
+      "farmacologia"
     ]
   },
   {
@@ -516,8 +516,8 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "Durante a fase inicial da transição demográfica, as principais causas de morte e morbidade são dominadas por doenças infecciosas, como doenças respiratórias, diarreia e outras infecções transmissíveis. No entanto, à medida que as condições socioeconômicas melhoram, o acesso aos cuidados de saúde se amplia e ocorrem mudanças no estilo de vida e no ambiente, ocorre a transição para a fase avançada.\n\nNessa fase, a prevalência das dcnts começa a aumentar, enquanto a incidência de doenças infecciosas diminui. as dcnts, como doenças cardiovasculares, diabetes, doenças respiratórias crônicas e certos tipos de câncer, estão relacionadas principalmente a fatores de risco não transmissíveis, como tabagismo, alimentação inadequada, inatividade física, consumo excessivo de álcool e exposição a poluentes ambientais.\n\nPortanto, quando uma população entra na fase avançada da transição demográfica epidemiológica, a baixa prevalência de dcnts é uma característica observada. isso indica que a população está enfrentando uma menor carga de doenças infecciosas e está vivendo por mais tempo, mas também destaca a importância de enfrentar os fatores de risco relacionados às DCNTs para garantir a saúde e o bem-estar a longo prazo.",
     "reference": "Duarte Elisabeth Carmen, Barreto Sandhi Maria. Transição demográfica e epidemiológica: a Epidemiologia e Serviços de Saúde revisita e atualiza o tema. Epidemiol. Serv. Saúde [Internet]. 2012 Dez [citado 2023 Jun 29] ; 21( 4 ): 529-532. Oliveira AS. TRANSIÇÃO DEMOGRÁFICA, TRANSIÇÃO EPIDEMIOLÓGICA E ENVELHECIMENTO POPULACIONAL NO BRASIL. Hygeia [Internet];15(32):69-7. Goldani MZ, Mosca PRF, Portela AK, Silveira PP, Silva CH da. O impacto da transição demográfico-epidemiológica na saúde da criança e do adolescente do Brasil. Clin Biomed Res [Internet]. 27º de abril de 2012 ;32(1).",
     "tags": [
-      "Saúde Coletiva",
-      "Demografia"
+      "saúde coletiva",
+      "demografia"
     ]
   },
   {
@@ -535,7 +535,7 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "Diferente de algumas outras doenças, a notificação de sífilis pressupõe a confirmação (teste treponêmico + não treponêmico ou histórico de tratamento).",
     "reference": "Protocolo Transmissão Vertical HIV/Sífilis, 2022.",
     "tags": [
-      "Vigilância Epidemiológica",
+      "vigilância epidemiológica",
       "IST"
     ]
   },
@@ -554,9 +554,9 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "As causas externas constituem a grande e alarmante epidemia na saúde dos jovens brasileiros, superando infinitamente patologias infecciosas transmissíveis ou crônicas na faixa etária juvenil. Por tal característica, o amparo a este público transborda o espectro estrito de atuação do setor de saúde, demandando políticas territoriais intersetoriais articuladas de segurança, assistência social, lazer e redução de violência.",
     "reference": "BEAGLEHOLE, R.; BONITA, R.; KJELLSTRÖM, T. Epidemiologia básica. 2 ed. São Paulo: Santos / OMS, 2010.",
     "tags": [
-      "Saúde do Adolescente",
-      "Causas Externas",
-      "Vulnerabilidade Social"
+      "saúde do adolescente",
+      "causas externas",
+      "vulnerabilidade social"
     ]
   },
   {
@@ -594,8 +594,8 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "O déficit motor no lado direito do corpo indica uma lesão no hemisfério cerebral esquerdo devido à decussação das pirâmides. A dificuldade de fala e fraqueza na face e membro superior sugerem acometimento da face superolateral do giro pré-central, território da artéria cerebral média esquerda (ramo da carótida interna).",
     "reference": "MOORE, K. L. Anatomia orientada para a clínica. 7. ed. Rio de Janeiro: Guanabara Koogan, 2014.",
     "tags": [
-      "Anatomia",
-      "Neurologia"
+      "anatomia",
+      "neurologia"
     ]
   },
   {
@@ -613,9 +613,9 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "A rejeição crônica é patologicamente definida por lesão vascular arterial progressiva (íntima espessada secundária a proliferação celular), fibrose intersticial crônica e perda insidiosa de função glomerular renal. A rejeição hiperaguda ocorre em minutos por anticorpos pré-formados, e a aguda desenvolve infiltrado inflamatório túbulo-intersticial em semanas.",
     "reference": "SEMENTILLI, A. et al. Renal transplant pathology: main morphological findings and how to sign out biopsies. J. Bras. Patol. Med. Lab. Aug. 2008",
     "tags": [
-      "Patologia",
-      "Nefrologia",
-      "Cirurgia"
+      "patologia",
+      "nefrologia",
+      "cirurgia"
     ]
   },
   {
@@ -633,9 +633,9 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "commentary": "Comentários sobre a resposta correta:\n(B) O quadro clínico-laboratorial é compatível com hiperaldosteronismo primário. A aldosterona atua promovendo reabsorção distal de Na⁺ (expansão volêmica/hipertensão), secreção tubular ativa de K⁺ (hipocalemia) e secreção de H⁺ pelas células intercaladas alfa, promovendo alcalose metabólica com elevação de HCO₃⁻.\n\nComentários sobre os distratores:\n(A) A aldosterona aumenta, e não reduz, a reabsorção de sódio e a eliminação de K⁺ e H⁺.\n(C) Contradiz o papel de retenção de Na e espoliação de K clássica da aldosterona.\n(D) No hiperaldosteronismo a secreção de K⁺ e de H⁺ está aumentada, e a excreção de Na⁺ reduzida distalmente.",
     "reference": "HALL, John E.; HALL, Michael E. Guyton & Hall - Tratado de Fisiologia Médica. 14. ed. Rio de Janeiro: GEN Guanabara Koogan, 2021. Capítulo 28.",
     "tags": [
-      "Fisiologia",
-      "Nefrologia",
-      "Endocrinologia"
+      "fisiologia",
+      "nefrologia",
+      "endocrinologia"
     ]
   },
   {

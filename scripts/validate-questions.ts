@@ -53,6 +53,11 @@ QUESTIONS.forEach((q, i) => {
   });
   if (!q.explanation?.trim()) err('sem explicação');
   if (!q.tags?.length) warn('sem tags');
+  q.tags?.forEach((t) => {
+    // Tags em minúsculas; siglas (HIV, SUS) e nomes próprios no meio (doença de Crohn) podem ter maiúscula.
+    if (/^[A-ZÀ-Ý][a-zà-ÿ]+(\s|$)/.test(t)) err(`tag com inicial maiúscula: "${t}" (use minúsculas, exceto siglas e nomes próprios)`);
+  });
+  if (q.tags && new Set(q.tags.map((t) => t.toLowerCase())).size !== q.tags.length) warn('tag repetida');
   if (!q.reference?.trim() && !q.id.startsWith('sug-')) warn('sem referência');
   if (q.image) {
     if (!q.image.startsWith('/images/')) err(`imagem fora de /images/: ${q.image}`);

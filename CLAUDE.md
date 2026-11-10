@@ -61,7 +61,8 @@ Formato em `src/types.ts` (`Question`). Convenções:
   questões, e cada assunto vira um filtro marcável; o validador recusa topografia ou assunto
   inexistente.
 - **Explicações:** `explanation` = raciocínio que leva à resposta; `commentary` = por que as
-  outras alternativas estão erradas; `reference` = diretriz/manual; `tags` em minúsculas.
+  outras alternativas estão erradas; `reference` = diretriz/manual; `tags` em minúsculas, mantendo siglas (`HIV`, `SUS`) e
+  nomes próprios (`doença de Crohn`) — o validador recusa tag que comece com maiúscula.
 
 ## Fluxo de alteração
 

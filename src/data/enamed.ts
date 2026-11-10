@@ -1047,7 +1047,7 @@ export const ENAMED_QUESTIONS: Question[] = [
     explanation: 'O histórico pessoal e familiar marcante de tromboembolismo venoso (TEV) de repetição em parentes de primeiro grau jovens sugere uma desordem de hipercoagulabilidade hereditária (trombofilia hereditária). A causa hereditária mais comum de trombofilia é a mutação do Fator V de Leiden (gerando resistência à degradação pela Proteína C Ativada).',
     commentary: 'Níveis aumentados de Proteína S (B) e Antitrombina III (C) são fatores protetores que reduzem a coagulação, de modo que a trombofilia se associa à deficiência (níveis reduzidos) destas proteínas regulatórias. Níveis reduzidos de Fator de von Willebrand (D) cursam com distúrbio hemorrágico (Doença de von Willebrand), e não trombótico.',
     reference: 'Hematologia Clínica / Zago / Sociedade Brasileira de Hematologia e Hemoterapia (SBHH)',
-    tags: ['clínica médica', 'hematologia', 'trombofilia', 'tromboembolismo', 'Fator V de Leiden']
+    tags: ['clínica médica', 'hematologia', 'trombofilia', 'tromboembolismo', 'fator V de Leiden']
   },
   {
     id: 'enamed-2025-66',

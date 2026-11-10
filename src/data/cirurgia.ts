@@ -15,7 +15,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O queloide ultrapassa os limites da ferida original, ao contrário da cicatriz hipertrófica.',
     commentary: 'A cicatrização queloide ocorre quando o tecido cicatricial cresce além dos limites da ferida original, resultando em uma área elevada, rígida e frequentemente mais escura. Este tipo de cicatriz pode causar sintomas como prurido e dor, como descrito no quadro clínico de Maria. Diferente da cicatriz hipertrófica, que também é elevada, mas se mantém dentro dos limites da ferida original, a cicatriz queloide se estende para além desses limites.',
     reference: 'Sabiston - Tratado de Cirurgia - Townsend, Courtney; Beauchamp, Daniel - 2 Volumes - 18ª Ed. Cirurgia Vascular: Doenças Vasculares Periféricas, 4ª edição, volume 01 e 02 Maffei, Lastória, Yoshida, Rollo, Giannini, Moura.',
-    tags: ['Cirurgia Geral', 'Cicatrização']
+    tags: ['cirurgia geral', 'cicatrização']
   },
   {
     id: 'tp2024-62',
@@ -31,7 +31,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Não há necessidade de exames pré-operatórios de rotina em pacientes saudáveis menores de 45 anos submetidos a cirurgias de baixo risco.',
     commentary: 'Segundo estudos, não há necessidade de exames préoperatórios de rotina em pacientes saudáveis menores de 40 anos de idade, submetidos a cirurgias de baixo risco.',
     reference: 'Associação Americana de Anestesiologia. Questionário préanestésico. Disponível em: [link](https://www.aana.com/patients/pre-anesthesiaquestionnaire) (Acessado em 31 de janeiro de 2022). Utilidade do eletrocardiograma de rotina antes da cirurgia e na internação hospitalar geral. Revisão crítica e novas orientações. UA, Goldberger AL, O\'Konski M. Testes pré-operatórios (atualização): Testes pré-operatórios de rotina para cirurgias eletivas, National Guideline Center (Reino Unido). (Ed), National Institute for Health and Care Excellence (NICE), Londres 2016. Colégio Brasileiro de Cirurgiões – Programa de autoavaliação em Cirurgia – Pré-operatórios. TCBC Guilherme Pinto Bravo Neto; TCBC Manuel Domingos da Cruz Gonçalves',
-    tags: ['Cirurgia Geral', 'Pré-operatório']
+    tags: ['cirurgia geral', 'pré-operatório']
   },
   {
     id: 'tp2024-63',
@@ -47,7 +47,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Hérnias diretas ocorrem por fraqueza da parede posterior (Triângulo de Hesselbach), associadas a fatores que aumentam a pressão intra-abdominal.',
     commentary: 'Neste caso, o esforço físico criando uma pressão maior no triângulo de Hesselbach, associado à perfusão diminuída em razão da DPOC, são os principais fatores para a formação da hérnia, que, no caso, é uma hérnia direta. A hiperplasia prostática também é um fator importante, mas não representa isoladamente importância tão significativa. A hérnia em questão é direta, as indiretas são as que se exteriorizam pelo anel inguinal. O tratamento padrão-ouro para os adultos com hérnias inguinais é a hernioplastia inguinal.',
     reference: 'Hérnias de Parede Abdominal – Diagnóstico e Tratamento, 2ª Edição 2009. Juan Carlos M. Gonzáles, Capítulo 13.',
-    tags: ['Cirurgia Geral', 'Hérnias']
+    tags: ['cirurgia geral', 'hérnias']
   },
   {
     id: 'tp2024-64',
@@ -63,7 +63,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Megacólon tóxico com falha ao tratamento clínico exige colectomia subtotal com ileostomia.',
     commentary: 'Enquanto a maioria dos pacientes que desenvolvem megacólon tóxico relacionado à DII apresenta colite ulcerativa, alguns apresentam colite de Crohn ou colite indeterminada. Como essas três entidades podem não ser facilmente distinguíveis durante um surto agudo, como o megacólon tóxico, sugere-se tratar todos os megacólons tóxicos relacionados à DII com a mesma abordagem. Pacientes com megacólon tóxico relacionado à DII que não respondem aos glicocorticoides intravenosos dentro de três dias devem ser considerados para um teste de infliximabe ou ciclosporina como terapia de segunda linha. Pacientes que não respondem a um dos agentes de segunda linha (infliximabe ou ciclosporina) após mais três dias necessitam de cirurgia. Pacientes que desenvolvem megacólon tóxico enquanto tomam infliximabe ou ciclosporina devem ser submetidos à cirurgia sem demora, de colectomia subtotal com ileostomia terminal em vez de uma proctocolectomia de estágio único.',
     reference: 'Etiologia e Tratamento Cirúrgico do Megacólon Tóxico. Ausch C, Madoff RD, Gnant M, Rosen HR, Garcia-Aguilar J, Hölbling N, Herbst F, Buxhofer V, Holzer B, Rothenberger DA, Schiessel R; Doença Colorretal. 2006;8(3):195.',
-    tags: ['Coloproctologia', 'Emergência']
+    tags: ['coloproctologia', 'emergência']
   },
   {
     id: 'tp2024-65',
@@ -79,7 +79,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A tríade de Charcot (dor, febre e icterícia) é clássica de colangite aguda.',
     commentary: 'Os sintomas apresentados pelo paciente, incluindo dor abdominal no quadrante superior direito, febre, icterícia, calafrios e náuseas/vômitos, sugerem fortemente colangite aguda. A presença de múltiplos cálculos na via biliar comum, conforme observado na ultrassonografia abdominal, é consistente com o diagnóstico de colangite aguda por coledocolitíase. Esta é uma condição de emergência que requer tratamento imediato, incluindo antibioticoterapia e drenagem biliar, seguida por colecistectomia e remoção dos cálculos biliares.',
     reference: 'Sabiston - Tratado de Cirurgia - Townsend, Courtney; Beauchamp, Daniel - 2 Volumes - 18ª Ed. Cirurgia Vascular: Doenças Vasculares Periféricas, 4ª edição, volume 01 e 02 Maffei, Lastória, Yoshida, Rollo, Giannini, Moura.',
-    tags: ['Cirurgia Biliar', 'Gastroenterologia']
+    tags: ['cirurgia biliar', 'gastroenterologia']
   },
   {
     id: 'tp2024-66',
@@ -95,7 +95,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A colonoscopia é o exame inicial para HDB em pacientes estáveis. A DDC é a principal causa nesta faixa etária.',
     commentary: 'Na hemorragia digestiva baixa em paciente estável, deve-se seguir o algoritmo da situação. Em questão, HAD paciente estável = Colonoscopia. A tomografia não trará resposta adequada, visto que se trata de sangramento e não infecção. A doença hemorroidária tem como seu principal sintoma o sangramento, porém na grande maioria das vezes repetitivos e de pequena monta.',
     reference: 'Management of the Adult Patient with Acute Lower Gastrointestinal Bleeding. American College of Gastroenterology. Practice Parameters Committee. Zuccaro G Jr; Am J Gastroenterol. 1998;93(8):1202. Department of Gastroenterology, Cleveland Clinic Foundation, Ohio 44195, USA. PMID 9707037',
-    tags: ['Coloproctologia', 'HDB']
+    tags: ['coloproctologia', 'HDB']
   },
   {
     id: 'tp2024-67',
@@ -112,7 +112,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Defeitos extensos de parede abdominal (como gastrosquise/onfalocele gigante) exigem fechamento estagiado com silo.',
     commentary: 'Trata-se de um defeito extenso demais para fazer a correção em um único tempo cirúrgico. Nessas situações, o mais indicado é a instalação de um silo, evitando assim a ocorrência de síndrome compartimental.',
     reference: 'Handbook of Pediatric Surgery, Second Edition – Springer',
-    tags: ['Cirurgia Pediátrica']
+    tags: ['cirurgia pediátrica']
   },
   {
     id: 'tp2024-68',
@@ -128,7 +128,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A presença de serviço trófico define isquemia crítica, exigindo investigação para revascularização.',
     commentary: 'Paciente com quadro de insuficiência arterial crônica devido ao quadro de claudicação para aclives, evoluindo para isquemia crítica, que é definida como lesão trófica e/ou dor de repouso, sendo o critério para indicação de tratamento cirúrgico para revascularização. Isso aprofunda o diagnóstico com ultrassom Doppler e/ou angiotomografia. A claudicação intermitente é caracterizada por dor muscular durante a caminhada, geralmente com distâncias parecidas, com necessidade de repouso para melhora. A presença de lesão trófica é critério de indicação de tratamento cirúrgico, com tentativa de revascularização do membro, mesmo com ultrassom Doppler de ondas contínuas sem fluxo arterial, pois a avaliação de leito distal se dá através de algum exame de imagem, como ultrassom Doppler pulsado, angiotomografia ou angiografia. A amputação primária só é indicada para os casos de ausência de leito distal para revascularização. A claudicação neurológica é dor em membro inferior durante a caminhada com distância variável, associada com sintomas neurológicos, podendo apresentar posição antálgica para melhora. A ausência de fluxo arterial ao Doppler de ondas contínuas impossibilita o cálculo do índice tornozelo-braço, mas não é um critério para a indicação de tratamento cirúrgico, e sim para diagnóstico e acompanhamento de doença arterial crônica.',
     reference: 'BRITO, Carlos José de. Cirurgia Vascular: Cirurgia Endovascular, Angiologia. In: Cirurgia Vascular: Cirurgia Endovascular, Angiologia. 2019.',
-    tags: ['Cirurgia Vascular']
+    tags: ['cirurgia vascular']
   },
   {
     id: 'tp2024-69',
@@ -145,7 +145,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Derrames pleurais neoplásicos são exsudatos (Light) com predomínio linfocítico.',
     commentary: 'O critério diagnóstico de Light é composto por 5 critérios. Tem por objetivo diferenciar derrame pleural transudativo de exsudativo. Define-se derrame pleural exsudativo se pelo menos um dos seguintes for verdadeiro: ⦁ Relação Proteína do líquido pleural / Proteína sérica > 0,5 ⦁ Relação DHL líquido pleural / DHL sérico > 0,6 ⦁ DHL do líquido pleural > 2/3 do limite superior da normalidade de DHL sérico (limite normal 246 U/L) Os Writérios de Wells leva em consideração os principais fatores de risco para o desenvolvimento Tromboembolismo pulmonar.',
     reference: 'J, D., Meyerson, S. L., A, P. (Ed.), & JD, C. (Ed.) (2008). Pearson\'s Thoracic and Esophageal Surgery 3rd edition. Churchill Livingstone. SAAD Jr, Roberto ET AL. Cirurgia Torácica Geral. 2.ed. São Paulo: Atheneu, 2010. Medicina intensiva: abordagem prática. Universidade de São Paulo / Luciano César Pontes de Azevedo et al. 2. ed. Barueri, SP: Manole, 2015.',
-    tags: ['Cirurgia Torácica', 'Oncologia']
+    tags: ['cirurgia torácica', 'oncologia']
   },
   {
     id: 'tp2024-70',
@@ -161,7 +161,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Em crianças < 10 anos, o tratamento conservador com redução fechada e gesso tem excelentes resultados.',
     commentary: 'O tratamento conservador é o tratamento padrão para fraturas abaixo de 10 anos, com resultados excelentes. Os desvios angulares aceitáveis variam de acordo com a idade da criança e o nível da fratura. Em crianças até 8 anos de idade são considerados aceitáveis desvios inferiores a 15 graus de angulação na incidência AP e 20 graus em perfil.',
     reference: 'Beaty JH, Kasser JR. In Rockwood and Wilkins (ed). Fractures in Children. Baltimore: Lippincott Williams and Wilkins, 2001. Manual de trauma ortopédico / SBOT - Sociedade Brasileira de Ortopedia e Traumatologia; coordenadores, Isabel Pozzi... [et al.] - São Paulo: SBOT - Sociedade Brasileira de Ortopedia e Traumatologia, 2011.',
-    tags: ['Ortopedia', 'Cirurgia Pediátrica']
+    tags: ['ortopedia', 'cirurgia pediátrica']
   },
   {
     id: 'tp2024-71',
@@ -177,7 +177,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A Tríade de Cushing (HI, Bradicardia, Bradipneia) indica iminência de herniação. IOT é prioritária.',
     commentary: 'Idoso abre o quadro com mal-estar e após 30 minutos o quadro muda drasticamente: Glasgow de 7, midríase fixa unilateral, além de bradipneia, bradicardia e hipertensão. Esses três últimos dados compõem a tríade de Cushing, achado que indica a presença de hipertensão intracraniana. Nesse momento, a prioridade é a intubação orotraqueal como medida emergencial.',
     reference: 'Tratado de Neurologia da Academia Brasileira de Neurologia, 2ª edição.',
-    tags: ['Neurocirurgia', 'Emergência']
+    tags: ['neurocirurgia', 'emergência']
   },
   {
     id: 'tp2024-72',
@@ -193,7 +193,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'SCQ = 18 + 9 + 9 + 1 = 37%. Parkland (2ml/kg/%): 2 * 70 * 37 = 5180mL.',
     commentary: 'As queimaduras representam uma condição médica grave, exigindo uma abordagem cuidadosa e multidisciplinar. Além da avaliação inicial da extensão e profundidade das queimaduras, a reposição volêmica desempenha um papel crítico na gestão desses pacientes, especialmente nas queimaduras extensas que podem levar a um estado de choque hipovolêmico. O protocolo ATLS (Suporte Avançado de Vida no Trauma) fornece diretrizes valiosas para a abordagem inicial desses casos, enfatizando a priorização da via aérea, respiração e circulação. A reposição volêmica é parte integrante do manejo inicial, visando restaurar a perfusão tecidual adequada e prevenir complicações graves. Utiliza-se a regra de Parkland: 2x SCQ x Peso, com o resultado sendo o volume a ser infundido em 24 horas, de preferência Ringer Lactato, por diminuir o risco de acidose metabólica. A implementação adequada do protocolo ATLS pode melhorar significativamente os resultados clínicos em pacientes com queimaduras graves.',
     reference: 'American College of Surgeons. Advanced Trauma Life Support: Student Course Manual. 10th ed. Chicago, IL: American College of Surgeons; 2018. Schaefer TJ, Omar Nunez Lopez. Burn Resuscitation And Management [Internet]. Nih.gov. StatPearls Publishing; 2019. Galvagno SM, Nahmias JT, Young DA. Advanced Trauma Life Support® Update 2019. Anesthesiology Clinics. 2019 Mar;37(1):13–32. Hudspith J, Rayatt S. First aid and treatment of minor burns. BMJ. 2004 Jun 17;328(7454):1487–9.',
-    tags: ['Queimados', 'Emergência']
+    tags: ['queimados', 'emergência']
   },
   {
     id: 'tp2024-73',
@@ -209,7 +209,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Tumores de epiglote (supraglote) têm voz abafada ("hot potato voice"), enquanto glóticos causam rouquidão.',
     commentary: 'Tumores malignos da região supraglótica apresentam-se com alteração da voz, desconforto faríngeo, disfagia e/ou linfonodo cervical. A voz geralmente é descrita como "abafada". A rouquidão é típica de tumores glóticos ou lesões mais avançadas, devido à fixação de prega vocal por invasão da aritenóide ou articulação cricoaritenoidea.',
     reference: 'Cirurgia de Cabeça e Pescoço - Fundamentos para a Graduação Médica. Lenine Garcia Brandão & Marilia D’Elboux Guimarães, Sarvier, 2011.',
-    tags: ['Cirurgia de Cabeça e Pescoço', 'Oncologia']
+    tags: ['cirurgia de cabeça e pescoço', 'oncologia']
   },
   {
     id: 'tp2024-74',
@@ -225,7 +225,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Queimaduras químicas oculares são emergências que exigem lavagem copiosa imediata.',
     commentary: 'Trata-se de um quadro de queimadura química da córnea levando a grave desepitelização (ceratite). Nestes casos, a conduta correta é a lavagem intensa da córnea com soro fisiológico para retirar os resíduos da substância agressora, instilação tópica de antibioticotico e lubrificantes oculares e oclusão para estimular o processo de reepitelização.',
     reference: 'Oftalmologia Geral - Vaughan & Asbury, 17ª ed.',
-    tags: ['Oftalmologia', 'Emergência']
+    tags: ['oftalmologia', 'emergência']
   },
   {
     id: 'tp2024-75',
@@ -241,7 +241,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O bloqueio simpático da anestesia somado à compressão da veia cava pelo útero causa hipotensão.',
     commentary: 'A compressão aorto-cava em gestantes é uma realidade com início precoce, que promove redução do retorno venoso ao coração, causando hipotensão arterial e favorecendo que essas busquem o decúbito lateral. A anestesia regional (raqui ou peridural) promove bloqueio simpático com redução da pressão arterial. Durante a gestação, ocorre redução dos volumes residuais e de reserva expiratório e aumento do volume de ar corrente e de reserva inspiratória, assim como redução da capacidade residual funcional e aumento da capacidade inspiratória.',
     reference: 'Cavalcante FS. Alterações fisiológicas da gravidez em: Cangiani LM, Carmona MJC, Ferez D, Bastos CO, Duarte LTD, Cangiani LH, et al. Tratado de Anestesiologia, 9ª ed, Editora dos Editores, 2021; 2461-98. Bastos CO, Castro LFC. Anestesia para cesariana em: Cangiani LM, Carmona MJC, Ferez D, Bastos CO, Duarte LTD, Cangiani LH, et al. Tratado de Anestesiologia, 9ª ed, Editora dos Editores, 2021; 2537-64.',
-    tags: ['Anestesiologia', 'Obstetrícia']
+    tags: ['anestesiologia', 'obstetrícia']
   },
   {
     id: 'tp2024-76',
@@ -257,7 +257,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Choque Grau III (perda 30-40%) caracteriza-se por hipotensão, taquicardia (>120) e alteração do sensório.',
     commentary: 'De acordo com a classificação do choque hipovolêmico abaixo, fica claro que se trata de um paciente em choque grau III.',
     reference: 'Advanced Trauma Life Support (ATLS), 9ª Ed 2014. MARTINS, H. S.; DAMASCENO, M. C. T.; AWADA, S. Pronto Socorro: Medicina de emergência; 3ª Ed. Nicholas H, Tyler JA. Hemorrhagic Shock. Treasure Island (FL): StatPearls [Internet]. 2022.',
-    tags: ['Trauma', 'Choque']
+    tags: ['trauma', 'choque']
   },
   {
     id: 'tp2024-77',
@@ -273,7 +273,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Paciente instável com FAST positivo para líquido livre exige cirurgia imediata para controle de danos.',
     commentary: 'O paciente apresenta sinais de hemoperitônio traumático, uma condição que requer intervenção cirúrgica imediata. A laparotomia exploratória é o próximo passo mais apropriado no manejo deste paciente, pois permite uma avaliação direta da cavidade abdominal para identificar e controlar a fonte de sangramento, além de possibilitar a realização de procedimentos de controle de danos, se necessário. As outras opções (A, B e D) podem ser consideradas em situações específicas, mas não são apropriadas como próximo passo primário no manejo de um paciente com suspeita de hemoperitônio traumático.',
     reference: 'Sabiston - Tratado de Cirurgia - Townsend, Courtney; Beauchamp, Daniel - 2 Volumes - 18ª Ed. Cirurgia Vascular: Doenças Vasculares Periféricas, 4ª edição, volume 01 e 02 Maffei, Lastória, Yoshida, Rollo, Giannini, Moura.',
-    tags: ['Trauma', 'Emergência']
+    tags: ['trauma', 'emergência']
   },
   {
     id: 'tp2024-78',
@@ -289,7 +289,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O tabaco e álcool são os principais fatores de risco para o carcinoma espinocelular (CEC) de esôfago.',
     commentary: 'O álcool e o tabaco são fatores de risco significativos para câncer esofágico. A progressão rápida dos sintomas disfágicos, a perda de peso e os antecedentes de tabagismo e etilismo sugerem um carcinoma esofágico, especialmente carcinoma espinocelular, que é mais comumente associado a esses fatores.',
     reference: 'Engel LS, Chow WH, Vaughan TL, et al. Riscos atribuíveis à população de câncer de esôfago e gástrico. J Natl Cancer Inst. 2003;95(18):1404.',
-    tags: ['Oncologia', 'Gastroenterologia']
+    tags: ['oncologia', 'gastroenterologia']
   },
   {
     id: 'tp2024-79',
@@ -305,7 +305,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'ASA 4 é um paciente com doença sistêmica que ameaça a vida constantemente.',
     commentary: 'A classificação ASA avalia o estado físico e o risco anestésicocirúrgico. A ASA 4 é para pacientes com doença sistêmica grave que representa um risco constante para a vida. ASA 1 é para pacientes saudáveis, ASA 2 para pacientes com doença sistêmica leve, ASA 3 para doença sistêmica grave, ASA 5 para moribundos e ASA 6 para pacientes com morte cerebral cuja morte está sendo realizada para doação de órgãos.',
     reference: 'Sociedade de Anestesiologia do Estado de São Paulo. Tratado de Anestesiologia. 7ª ed. São Paulo: SAESP; 2011.',
-    tags: ['Anestesiologia']
+    tags: ['anestesiologia']
   },
   {
     id: 'tp2024-80',
@@ -321,7 +321,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O manejo da via aérea (A) é a primeira prioridade no ABCDE do trauma.',
     commentary: 'Independentemente de outras lesões visíveis, a sequência ABCDE deve ser rigorosamente seguida, iniciando pela via aérea e proteção cervical.',
     reference: 'ATLS 10ª ed.',
-    tags: ['Trauma', 'Emergência']
+    tags: ['trauma', 'emergência']
   },
   {
     id: 'tp2023-61',
@@ -337,7 +337,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Paciente com colite grave em uso de infliximabe com provável megacólon tóxico tem indicação cirúrgica de colectomia subtotal.',
     commentary: 'A TC abdominal é mais confiável para avaliar a extensão e a gravidade da colite e a presença de dilatação colônica do que as radiografias abdominais, a TC pode ser capaz de distinguir megacólon tóxico, distensão de ar acima de 6 cm com padrão austral anormal, pseudopólipos nodulares espessamentos difusos da parede colônica, edema submucoso.\n\nApenas uma minoria de pacientes é elegível para uma colonoscopia, talvez uma retossigmoidoscopia seja mais indicada.\n\nCerca de 50% dos pacientes se beneficiarão com o tratamento clínico, porém não uma paciente medicada recentemente com infliximabe.',
     reference: 'Megacólon tóxico: papel da TC na avaliação e detecção de complicações. Imbriaco m, Balthazar ej clin imaging. 2001;25(5):349. Colonoscopy during an attack of severe ulcerative colitis is a safe procedure and of great value in clinical decision making. alemayehu g, järnerot g am j gastroenterol. 1991;86(2):187. Megacólon tóxico na colite ulcerativa e na colite de crohn. fazio vw Clin gastroenterol. 1980;9(2):389. Aetiology and surgical management of toxic megacolon. Ausch c, madoff rd, gnant m, rosen hr, garcia-aguilar j, hölbling n, herbst f, buxhofer v, holzer b, rothenberger da, schiessel r colorectal dis. 2006;8(3):195.',
-    tags: ['Coloproctologia', 'Emergência']
+    tags: ['coloproctologia', 'emergência']
   },
   {
     id: 'tp2023-62',
@@ -353,7 +353,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O Nylon é um fio monofilamentar não absorvível, ideal para síntese de aponeurose em pacientes com risco de má cicatrização (diabéticos).',
     commentary: 'O nylon é um fio sintético monofilamentar não absorvível ideal para suturas que exigem resistência permanente e pouca reação tecidual. Todos os outros citados são absorvíveis.',
     reference: 'Skandalakis, JE; Anatomia e técnica cirúrgica - manual prático, segunda edição, 2007 , editora Revinter',
-    tags: ['Cirurgia Geral', 'Suturas']
+    tags: ['cirurgia geral', 'suturas']
   },
   {
     id: 'tp2023-63',
@@ -369,7 +369,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Trauma esplênico em paciente estável tem como padrão o tratamento conservador (não-operatório).',
     commentary: 'Como o paciente está estável hemodinamicamente e o trauma tendo sido há seis horas supõe-se que não há mais sangramento ativo e o tratamento pode ser conservador sem laparotomias e em observação rigorosa em uti',
     reference: 'Sabiston: textbook of surgery; 21 edition, 2022; editora Elsevier',
-    tags: ['Trauma']
+    tags: ['trauma']
   },
   {
     id: 'tp2023-64',
@@ -385,7 +385,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A raiz L4 é responsável pelo reflexo patelar e pela sensibilidade na face medial da perna.',
     commentary: 'A raiz l4 é responsável pelo reflexo patelar, da inervação do músculo tibial anterior e a sensibilidade na face medial da perna e pé. A raiz l5 é responsável pelo reflexo do tibial posterior, inervação do músculo extensor longo do hálux e sensibilidade na face lateral da perna e dorso do pé. A raiz de s1 e responsável pelo reflexo aquileu, da musculatura do músculo fibular longo e curto e sensibilidade na face lateral do pé.',
     reference: 'Propedeutica ortopédica e traumatológica, Nelson mattioli leit, flávio faloppa- porto alegre artmed, 2013. Manual básico de ortopedia da sbot.2010 , coordenadores. Gerra m i p, fucks r. Cec sbot.',
-    tags: ['Ortopedia', 'Neurocirurgia']
+    tags: ['ortopedia', 'neurocirurgia']
   },
   {
     id: 'tp2023-65',
@@ -401,7 +401,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Obstruções altas (gástricas) causam vômitos precoces, logo após a alimentação.',
     commentary: 'Como a obstrução é gástrica os sintomas são de vômitos precoces logo após a alimentação já que o alimento não passa para o intestino delgado',
     reference: 'Sabiston: textbook of surgery; 21 edition, 2022 ; editora Elsevier',
-    tags: ['Gastroenterologia', 'Oncologia']
+    tags: ['gastroenterologia', 'oncologia']
   },
   {
     id: 'tp2023-66',
@@ -417,7 +417,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A TC com contraste é o padrão-ouro no abdome agudo obstrutivo para definir causa e nível da obstrução.',
     commentary: 'A Tomografia computadorizada com contraste é o método diagnóstico preferencial na suspeita de abdome agudo obstrutivo, com sensibilidade e especificidade superiores a 90%\n\nA Tomografia computadorizada desempenha um papel fundamental na triagem de emergência, tratamento adequado e tomada de decisão e fornece alta sensibilidade, especificidade e precisão na detecção de obstrução intestinal em estágio inicial e comprometimento vascular intestinal agudo. A tc também pode diferenciar entre várias etiologias, que é considerado um critério importante na triagem de pacientes para tratamento cirúrgico versus não cirúrgico.',
     reference: 'Curr med imaging, 2022;18(3):275-284. Doi:10.2174/1573405617666210628154218.',
-    tags: ['Gastroenterologia', 'Emergência']
+    tags: ['gastroenterologia', 'emergência']
   },
   {
     id: 'tp2023-67',
@@ -433,7 +433,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A tríade de dor súbita em adolescente, testículo elevado/horizontalizado e ausência de reflexo cremastérico é torção testicular.',
     commentary: 'Paciente jovem com dor unilateral súbita com história de atividade física prévia sempre se deve considerar torção testicular. O exame físico demonstra sinais clássicos de torção com elevação e angulação secundária a torção no próprio eixo e ausência de reflexo cremastérico.\n\nTrauma testicular é uma hipótese plausível pela história de prática de esportes, mas a história deixaria claro que o início foi durante o esporte e no exame físico não teríamos o achado de elevação e angulação.\n\nOrquite é um quadro também de escroto agudo, mas apresenta melhora da dor à elevação testicular (sinal de Prehn) e não apresenta os achados de exame físico desse paciente. O quadro também é mais arrastado, não súbito.\n\nNeoplasia não se apresenta com dor, em geral é indolor com crescimento progressivo podendo apresentar síndromes paraneoplásicas como ginecomastia e hipertireoidismo.',
     reference: 'Campbell-walsh urologia. Gen guanabara koogan; 11ª edição. 2018',
-    tags: ['Urologia', 'Emergência']
+    tags: ['urologia', 'emergência']
   },
   {
     id: 'tp2023-68',
@@ -450,7 +450,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O volvo de sigmoide é uma causa comum de obstrução baixa em idosos e apresenta imagem radiológica típica de "U invertido" ou "grão de café".',
     commentary: 'A imagem radiológica e o quadro clínico são clássicos de volvo de sigmoide.',
     reference: 'Schuwartz. Tratado de cirurgia. 9 edição. Sabiston. Tratado de cirurgia. A base biológica da prática cirúrgica moderna. 20a.',
-    tags: ['Coloproctologia', 'Emergência']
+    tags: ['coloproctologia', 'emergência']
   },
   {
     id: 'tp2023-69',
@@ -466,7 +466,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A associação de uso de estrogênio (ACO) e edema unilateral com sinal de Homans positivo sugere TVP.',
     commentary: 'A paciente acima além de a história do uso de hormônios anticoncepcional oral que podem interferir na tríade de Virchow (hipercoagulabilidade) apresenta ao exame físico: edema, aumento da panturrilha em relação ao outro membro, sinal de romans positivo, veias superficiais ingurgitadas demonstrando uma provável trombose do sistema profundo.',
     reference: 'Maffei doenças vasculares periféricas. Rutherford,vascular disease',
-    tags: ['Cirurgia Vascular']
+    tags: ['cirurgia vascular']
   },
   {
     id: 'tp2023-70',
@@ -483,7 +483,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Aderências (bridas) são a principal causa de obstrução de delgado em pacientes com cirurgia prévia; o tratamento inicial costuma ser conservador.',
     commentary: 'O RX mostra um padrão de obstrução de intestino delgado. relacionando a imagem com o histórico do paciente chegamos a hipótese de brida (aderência intestinal), sendo a correção dos distúrbios hidroeletrolíticos e o tratamento conservador as primeiras medidas a serem adotadas. abscesso intracavitário não se enquadra no tempo de pós-operatório do paciente. Não existe sinal de pneumoperitônio no RX apresentado e a história clínica associada ao exame físico, também não são compatíveis com perfuração intestinal. a radiografia mostra um padrão de distensão de alças de intestino delgado e não de cólon, não sendo característica da torção de cólon.',
     reference: 'Schuwartz. Tratado de cirurgia. 9 edição. Sabiston. Tratado de cirurgia. A base biológica da prática cirúrgica moderna. 20 edição',
-    tags: ['Gastroenterologia', 'Emergência']
+    tags: ['gastroenterologia', 'emergência']
   },
   {
     id: 'tp2023-71',
@@ -499,7 +499,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O desbridamento cirúrgico é a medida mais importante para prevenir a infecção em fraturas expostas.',
     commentary: 'A fratura exposta é uma lesão considerada contaminada e não infectada. As fraturas provocadas por projétil de arma de fogo são consideradas expostas pois levam à comunicação do hematoma fraturário com o ambiente externo. Fraturas expostas classificadas até o grau 3b podem ser fixadas com fixação interna e em todos os graus podem ser fixadas com fixação externa. Os intuitos do debridamento cirúrgico são retirar corpos estranhos, retirar tecidos desvitalizados e reduzir a contaminação bacteriana.',
     reference: 'Hebert, Sizínio et al. Ortopedia e traumatologia: princípios e prática. São Paulo: Artmed.',
-    tags: ['Ortopedia', 'Emergência']
+    tags: ['ortopedia', 'emergência']
   },
   {
     id: 'tp2023-72',
@@ -516,7 +516,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Qualquer nódulo ao toque retal ou alteração significativa na velocidade do PSA exige biópsia, independente do valor absoluto do PSA.',
     commentary: 'O paciente deste relato deve ser biopsiado devido aos seguintes fatores: toque sugestivo, velocidade de progressão maior que 0,75ng/dl e relação PSA livre/PSA total menor que 20%. Note que o valor atual do PSA total não atinge o nível teto de referência que é 2,5ng/dl, porém não há valor de PSA completamente seguro. Além disso o histórico familiar é fator de realce.',
     reference: 'Nardozza Júnior, A.; Zerati Filho, M.; Reis, RB. Urologia fundamental. São Paulo: Planmark, 2010.',
-    tags: ['Urologia', 'Oncologia']
+    tags: ['urologia', 'oncologia']
   },
   {
     id: 'tp2023-73',
@@ -532,7 +532,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O manejo inicial de qualquer sangramento digestivo grave prioriza a estabilização hemodinâmica e proteção de via aérea.',
     commentary: 'O paciente em questão apresenta hematêmese em grande volume, com sinais de sangramento digestivo grave (rebaixamento do nível de consciência e hipotensão arterial), necessitando de tratamento urgente.\n\nO primeiro passo é garantir a via aérea do paciente. Isso pode ser feito com uma intubação endotraqueal, garantindo que a via aérea esteja segura, a seguir o paciente deve receber reposição volêmica.\n\nO uso de terlipressina, um medicamento que contrai os vasos sanguíneos diminuído a pressão portal, ele pode ser usado para tratar sangramento de varizes esofágicas. O antibiótico deve ser utilizado para prevenção de infeções bacterianas em cirróticos com hemorragia digestiva. Todavia, eles são medicamentos que devem ser utilizados na sequência do tratamento após garantir a proteção das vias aéreas e reposição volêmica.\n\nApós a estabilização do paciente, ele deve ser encaminhado para uma endoscopia digestiva alta. O que permite identificar o ponto de sangramento e realizar o tratamento adequado.\n\nO inibidor de bomba de prótons é um medicamento que reduz a produção de ácido gástrico. Ele não é eficaz no tratamento de sangramento de varizes esofágicas, sendo recomendado para o tratamento de sangramento secundário doenças pépticas.',
     reference: 'Hepatology, vol. 65, no. 1, 2017. Portal hypertensive bleeding in cirrhosis: risk stratification, diagnosis, and management: 2016 practice guidance by the american association for the study of liver diseases.',
-    tags: ['Gastroenterologia', 'Emergência']
+    tags: ['gastroenterologia', 'emergência']
   },
   {
     id: 'tp2023-74',
@@ -548,7 +548,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Hemorroidas internas originam-se acima da linha denteada, enquanto as externas originam-se abaixo.',
     commentary: 'A linha denteada é o limite anatômico utilizado para classificar as hemorroidas em Externas (abaixo) e internas (acima). As hemorroidas internas cursam mais comumente com sangramento e prolapso e as externas, com dor, prurido, cicatrização secundaria (plicomas), podendo desenvolver processo trombótico. As hemorroidas internas são classificadas em:\n\n• 1° grau: somente sangram.\n• 2° grau: sangram e desenvolvem prolapso de redução espontânea.\n• 3° grau: sangram e desenvolvem prolapso com redução manual\n• 4° grau: sangramento e prolapso permanente',
     reference: 'American society for gastrointestinal endoscopy. Asge guideline: endoscopy in the diagnosis and treat mento f inflammatory bowel disease. Gastrointestinal endoscopy. 2006; 63(4):558-65. Dani r. Gastroenterologia essencial. 2. Ed. Rio de janeiro: guanabara koogan; 2001. P. 336-44. Galvão-alves j, rodrigues rhr. Constipação intestinal. In: galvão-alves j. Temas de atualização em gastroenterologia. Rio de janeiro: rubio; 2006. P. 81-8. Kudo s, kashida h, tamura t, kogure e, imai y, yamano h et al. Colonoscopic diagnosis and management of nonpolypoid early colorectal cancer. Word j surg. 2000; 24(9):1081-90.',
-    tags: ['Coloproctologia']
+    tags: ['coloproctologia']
   },
   {
     id: 'tp2023-75',
@@ -564,7 +564,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A angiotomografia permite avaliar o diâmetro da parede aórtica e a anatomia para planejamento cirúrgico.',
     commentary: 'Como o aneurisma é uma doença de parede e não de luz do vaso a angiotomografia avalia melhor a parede do que a arteriografia (avalia melhor a luz do vaso).',
     reference: 'Maffei, doença vascular periferia. Rutherford - vascular dissesse.',
-    tags: ['Cirurgia Vascular']
+    tags: ['cirurgia vascular']
   },
   {
     id: 'tp2023-76',
@@ -581,7 +581,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'No TEG, a Máxima Amplitude (MA) reflete a contribuição plaquetária na formação do coágulo.',
     commentary: 'A tromboelastograma (TEG) é um exame que analisa como um todo coagulação sanguínea. Sua interpretação deriva de análise dos seguintes seguimentos:\n\nTime - r - "tempo de reação" até formas iniciais do coágulo. Se o tempo r for aumentado, o paciente precisa de flama fresco congelado ou preservado.\n\nTime - k - "tempo cinético" para coágulo alcance 20 mm; reflete fibrinogênio e níveis de plaquetas; se k tem o tempo aumentou, o paciente pode precisar crio precipitado ou plaquetas.\n\nÂngulo ∝ - ângulo de inclinação que indica velocidade do coágulo formação; reflete fibrinogênio e níveis de plaquetas.\n\nMáxima amplitude: amplitude máxima de rastreamento, reflete a contribuição das plaquetas na formação do coágulo; se diminuído, o paciente tem plaquetas disfunção e necessidades plaquetas.\n\nLy-30: porcentagem de redução da amplitude 30 minutos após a máxima amplitude; ly-30 elevado significa que o coágulo também está sendo quebrado rapidamente.\n\nNo caso analisado, temos uma alteração de máxima amplitude (ma), sendo necessário transfusão de plaquetas.',
     reference: 'AMERICAN COLLEGE OF SURGIONS COMMITTEE ON TRAUMA. Advanced Trauma Life Suport - ATLS. 10 edição',
-    tags: ['Trauma', 'Hematologia']
+    tags: ['trauma', 'hematologia']
   },
   {
     id: 'tp2023-77',
@@ -597,7 +597,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Pacientes com hepatocarcinoma dentro dos critérios de Milão (nódulos < 3cm) e cirrose têm indicação de transplante.',
     commentary: 'Paciente cirrótico com bom perfil clinico, tem dois nódulos (hepatocarcinoma). Esta dentro de critério de Milão. Alfafetoproteína é menor que 1000. Portanto a conduta é transplante hepático em situação especial devido hepatocarcinoma',
     reference: 'Sabiston: textbook of surgery; 21 edition, 2022; editora Elsevier',
-    tags: ['Oncologia', 'Gastroenterologia']
+    tags: ['oncologia', 'gastroenterologia']
   },
   {
     id: 'tp2023-78',
@@ -613,7 +613,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Esôfago Grau III de Rezende (calibre entre 7-10cm) tem como tratamento de escolha a cirurgia de Heller-Pinotti.',
     commentary: 'Trata-se de um paciente com disfagia progressiva, com epidemiologia positiva para chagas, com esôfago aumentado, com ondas terciárias e estase alimentar – quadro compatível com megaesôfago por chagas. O esôfago de 7cm configura grau 3 de Rezende e a melhora conduta terapêutica é a cardiomiotomia a Heller-Pinotti',
     reference: 'Sabiston: textbook of surgery; 21 edition, 2022; editora Elsevier',
-    tags: ['Gastroenterologia']
+    tags: ['gastroenterologia']
   },
   {
     id: 'tp2023-79',
@@ -629,7 +629,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Hérnias diretas ocorrem por fraqueza da parede posterior e são agravadas por doenças que aumentam a pressão abdominal (DPOC, prostatismo).',
     commentary: 'Das tramas do colágeno em decorrentes da idade (alterações bioquímicas e metabólicas), associada a DPOC e a hiperplasia prostática e esforço físico (fatores mecânicos), são os fatores mais importantes para a formação das hernias inguinais diretas, que se exteriorizam pelo anel inguinal externo, a hiperplasia prostática colabora porem não de maneira significativa para o quadro em questão, e o tratamento é a hernioplastia inguinal.',
     reference: 'Hernias de parede abdominal – diagnóstico e tratamento 2ª edição 2009. Juan Carlos M Gonzáles capítulo 13.',
-    tags: ['Cirurgia Geral', 'Hérnias']
+    tags: ['cirurgia geral', 'hérnias']
   },
   {
     id: 'tp2023-80',
@@ -646,7 +646,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A Angina de Ludwig é uma celulite grave dos espaços submandibulares, geralmente de origem odontogênica.',
     commentary: 'Angina de Ludwig: infecção nos espaços submandibular, submentoniano e sublingual. De origem dentária e com rápida evolução para obstrução de vias aéreas superiores. O termo angina deriva do termo grego, que significa “estrangulamento”, revelando o acometimento da via aérea em questão. O exame mais adequado para o diagnóstico e programação terapêutica é a tomografia computadorizada, preferencialmente com contraste, que deve incluir planos da face, do pescoço e do tórax. As imagens permitem avaliação da real extensão da loja, se é única ou múltipla, situação dos tecidos adjacentes, previsão de via aérea difícil e extensão para o tórax.',
     reference: 'Lenine gb & guimarães md. Cirurgia de cabeça e pescoço- fundamentos para a graduação médica. Sarvier, 2011. Araujo fo. V j., cemea cr, brandão lg. Manual do residente de cirurgia de cabeça e pescoço - 2.ed.-barueri, sp: manole. 2013. Rev col bras cir 47:e20202524. Doi: 10.1590/0100-6991e-20202524',
-    tags: ['Cirurgia de Cabeça e Pescoço', 'Emergência']
+    tags: ['cirurgia de cabeça e pescoço', 'emergência']
   },
   {
     id: 'tp2022-61',
@@ -662,7 +662,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Algodão para vasos superficiais, PDS (fio de longa absorção) para aponeurose e Monocryl para sutura intradérmica na pele.',
     commentary: 'Para ligaduras superficiais, o algodão é tradicional. A aponeurose exige um fio que suporte tração por tempo prolongado (PDS). Na pele, o monocryl evita cicatrizes exageradas.',
     reference: 'Sabiston - Tratado de Cirurgia - 18ª Ed.',
-    tags: ['Cirurgia Geral', 'Suturas']
+    tags: ['cirurgia geral', 'suturas']
   },
   {
     id: 'tp2022-62',
@@ -678,7 +678,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Sinais flogísticos (vermelhidão, calor) sobre o saco herniário sugerem encarceramento com sofrimento de alça (estrangulamento).',
     commentary: 'A dor intensa associada a sinais inflamatórios na pele indica complicação da hérnia, exigindo urgência cirúrgica para evitar necrose intestinal.',
     reference: 'Sabiston - Tratado de Cirurgia - 18ª Ed.',
-    tags: ['Cirurgia Geral', 'Hérnias']
+    tags: ['cirurgia geral', 'hérnias']
   },
   {
     id: 'tp2022-63',
@@ -694,7 +694,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Murphy positivo e febre definem colecistite aguda; o US é o exame inicial e a colecistectomia precoce é o padrão.',
     commentary: 'Os fatores de risco (4Fs: female, fat, forty, fertile) e o sinal de Murphy sugerem colecistite. O US confirma e o tratamento é cirúrgico (videolaparoscopia).',
     reference: 'Coelho, Júlio Cezar - Aparelho Digestivo - 4ª Ed.',
-    tags: ['Gastroenterologia', 'Cirurgia Biliar']
+    tags: ['gastroenterologia', 'cirurgia biliar']
   },
   {
     id: 'tp2022-64',
@@ -710,7 +710,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O adenocarcinoma (habitual no terço distal) associa-se ao Barrett/DRGE e obesidade.',
     commentary: 'O adenocarcinoma de esôfago distal está intimamente ligado ao esôfago de Barrett (metaplasia intestinal secundaria ao refluxo crônico).',
     reference: 'Sabiston - Tratado de Cirurgia - 18ª Ed.',
-    tags: ['Oncologia', 'Gastroenterologia']
+    tags: ['oncologia', 'gastroenterologia']
   },
   {
     id: 'tp2022-65',
@@ -726,7 +726,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O tratamento inicial da cefaleia pós-raqui é conservador; o blood-patch reserva-se a casos refratários.',
     commentary: 'Repouso e hidratação costumam resolver a maioria dos casos. O blood-patch é invasivo e realizado por anestesiologista em ambiente controlado.',
     reference: 'Manica, James - Anestesiologia - 4ª Ed.',
-    tags: ['Anestesiologia']
+    tags: ['anestesiologia']
   },
   {
     id: 'tp2022-66',
@@ -742,7 +742,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'AO 2 + RM 4 + RV 1 = GCS 7. Pacientes com GCS < 8 exigem via aérea definitiva (IOT).',
     commentary: 'A hipotensão com frequência cardíaca normal sugere choque neurogênico (distributivo). Independente do tipo de choque, o GCS de 7 obriga a proteção da via aérea.',
     reference: 'ATLS 10ª Edição.',
-    tags: ['Trauma', 'Neurocirurgia']
+    tags: ['trauma', 'neurocirurgia']
   },
   {
     id: 'tp2022-67',
@@ -759,7 +759,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O tratamento de escolha para o hemotórax no trauma é a drenagem torácica fechada.',
     commentary: 'A drenagem em selo d\'água permite a reexpandir o pulmão e monitorar o débito hemático.',
     reference: 'ATLS 10ª Edição.',
-    tags: ['Trauma', 'Cirurgia Torácica']
+    tags: ['trauma', 'cirurgia torácica']
   },
   {
     id: 'tp2022-68',
@@ -776,7 +776,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O pneumotórax sintomático no trauma exige drenagem imediata (selo d\'água).',
     commentary: 'O diagnóstico de pneumotórax é clínico no trauma e a drenagem não deve ser retardada por exames complexos se o paciente estiver sintomático.',
     reference: 'Sabiston - Tratado de Cirurgia - 19ª Ed.',
-    tags: ['Trauma', 'Cirurgia Torácica']
+    tags: ['trauma', 'cirurgia torácica']
   },
   {
     id: 'tp2022-69',
@@ -792,7 +792,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Em suspeitas clínicas reais de TVP, o US Doppler é o exame de escolha inicial.',
     commentary: 'O escore de Wells ajuda a estratificar. Se a probabilidade for alta, parte-se direto para o exame de imagem.',
     reference: 'ESVS 2021 Clinical practice guidelines on venous thrombosis.',
-    tags: ['Cirurgia Vascular']
+    tags: ['cirurgia vascular']
   },
   {
     id: 'tp2022-70',
@@ -808,7 +808,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O ABCDE exige: A (via aérea definitiva pela obstrução/consciência), B (drenagem pelo pneumo hipertensivo), C (pelve e restrição de cristaloides).',
     commentary: 'O fechamento temporário da pelve (lençol/cinta) é parte do controle de danos no "C" do trauma.',
     reference: 'ATLS 10ª Edição.',
-    tags: ['Trauma', 'Emergência']
+    tags: ['trauma', 'emergência']
   },
   {
     id: 'tp2022-71',
@@ -824,7 +824,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Na isquemia crítica, deve-se revascularizar antes de qualquer desbridamento/amputação para garantir cicatrização.',
     commentary: 'Amputar um membro isquêmico sem revascularização leva à necrose da ferida cirúrgica e perda do nível de amputação.',
     reference: 'Maffei - Doenças Vasculares Periféricas.',
-    tags: ['Cirurgia Vascular']
+    tags: ['cirurgia vascular']
   },
   {
     id: 'tp2022-72',
@@ -840,7 +840,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A TC sem contraste é o padrão-ouro para litíase; febre indica litíase infectada (emergência urológica).',
     commentary: 'A litíase obstrutiva febril exige drenagem imediata da via urinária (duplo J ou nefrostomia) para evitar choque séptico.',
     reference: 'Diretrizes SBU - Urolitíase.',
-    tags: ['Urologia', 'Emergência']
+    tags: ['urologia', 'emergência']
   },
   {
     id: 'tp2022-73',
@@ -856,7 +856,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A doença diverticular é a principal causa de HDB vultosa em idosos; exige internação para investigação.',
     commentary: 'A estabilização hemodinâmica e a colonoscopia após preparo são os passos fundamentais.',
     reference: 'British Society of Gastroenterology - HDB Guidelines.',
-    tags: ['Coloproctologia', 'HDB']
+    tags: ['coloproctologia', 'HDB']
   },
   {
     id: 'tp2022-74',
@@ -872,7 +872,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Novos anticoagulantes orais (DOACs) devem ser suspensos 48h antes de cirurgia de grande porte.',
     commentary: 'Não há necessidade de ponte com heparina (bridging) para DOACs na maioria dos cenários de risco cirúrgico alto.',
     reference: 'Med Clin North Am. 2020.',
-    tags: ['Hematologia', 'Cirurgia Geral']
+    tags: ['hematologia', 'cirurgia geral']
   },
   {
     id: 'tp2022-75',
@@ -888,7 +888,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Em homens jovens, a clínica de apendicite é soberana e permite indicação cirúrgica direta (Escore de Alvarado ≥ 7).',
     commentary: 'A migração da dor e o sinal de Blumberg são altamente específicos para apendicite aguda.',
     reference: 'JAMA 2021 - Acute Appendicitis Review.',
-    tags: ['Gastroenterologia', 'Emergência']
+    tags: ['gastroenterologia', 'emergência']
   },
   {
     id: 'tp2022-76',
@@ -904,7 +904,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Na hidrocefalia aguda pós-meningite (ambiente infectado), a DVE é preferível à DVP definitiva.',
     commentary: 'A DVE permite o controle da pressão intracraniana enquanto se trata o processo infeccioso liquórico.',
     reference: 'Nitrini - A Neurologia que todo médico deve saber.',
-    tags: ['Neurocirurgia', 'Pediatria']
+    tags: ['neurocirurgia', 'pediatria']
   },
   {
     id: 'tp2022-77',
@@ -920,7 +920,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Infecção superficial de incisão trata-se com drenagem e curativos; antibióticos são reservados para celulite extensa.',
     commentary: 'A drenagem do pus e a limpeza mecânica são fundamentais na ISC superficial.',
     reference: 'Surgical Infection Society Guidelines - 2016.',
-    tags: ['Cirurgia Geral', 'Infectologia']
+    tags: ['cirurgia geral', 'infectologia']
   },
   {
     id: 'tp2022-78',
@@ -937,7 +937,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A hipertensão súbita pode causar hematomas parenquimatosos com inundação ventricular associada.',
     commentary: 'O rebaixamento brusco do nível de consciência sugere evento hemorrágico central.',
     reference: 'Tratado de Neurologia e Neurocirurgia - Giacomelli.',
-    tags: ['Neurocirurgia', 'Emergência']
+    tags: ['neurocirurgia', 'emergência']
   },
   {
     id: 'tp2022-79',
@@ -953,7 +953,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Testículos criptorquídicos têm risco significativamente maior de seminoma e outros tumores germinativos.',
     commentary: 'A orquidopexia precoce visa preservar a fertilidade e facilitar o autoexame para detecção de tumores.',
     reference: 'Urologia Fundamental - SBU.',
-    tags: ['Urologia', 'Pediatria']
+    tags: ['urologia', 'pediatria']
   },
   {
     id: 'tp2022-80',
@@ -969,7 +969,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Membro superior total = 9%. Face anterior = 4.5%. Eritema no rosto é 1º grau (não conta na Parkland/SCQ).',
     commentary: 'Apenas queimaduras de 2º e 3º grau entram no cálculo da superfície corpórea queimada.',
     reference: 'Neligan - Cirurgia Plástica - Vol 6.',
-    tags: ['Queimados', 'Emergência']
+    tags: ['queimados', 'emergência']
   },
   {
     id: 'tp2025-61',
@@ -985,7 +985,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A úlcera péptica perfurada é uma emergência cirúrgica clássica com dor de início súbito e pneumoperitônio, cujo tratamento definitivo é a cirurgia precoce, associada a antibioticoterapia.',
     commentary: 'A úlcera péptica perfurada é uma emergência cirúrgica que se manifesta, classicamente, com dor abdominal súbita, intensa e sinais de peritonite. O pneumoperitônio, na radiografia de abdome, reforça a suspeita diagnóstica. O tratamento definitivo envolve cirurgia para fechamento da perfuração, preferencialmente por laparoscopia, associada a suporte clínico com antibióticos de amplo espectro e reposição volêmica. O manejo conservador é reservado para casos excepcionais (por exemplo, Taylor). A demora na intervenção aumenta expressivamente a morbimortalidade. Na vigência de peritonite e pneumoperitônio clássico, a TC não é obrigatória antes da indicação cirúrgica.',
     reference: 'Soreide, K., Thorsen, K., Harrison, E. M., Bingener, J., Moller, M. H., Ohene-Yeboah, M., & Søreide, J. A. (2015). Perforated peptic ulcer. The Lancet, 386(10000), 1288-1298.',
-    tags: ['Gastroenterologia', 'Emergência']
+    tags: ['gastroenterologia', 'emergência']
   },
   {
     id: 'tp2025-62',
@@ -1001,7 +1001,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O colangiocarcinoma peri-hilar (Tumor de Klatskin) é o tumor biliar primário mais comum no hilo hepático, fortemente associado à colangite esclerosante primária.',
     commentary: 'O colangiocarcinoma peri-hilar, ou hilar (chamado tumor de Klatskin), é um tumor maligno da árvore biliar, frequentemente associado à colangite esclerosante primária. Os achados clínicos incluem icterícia progressiva indolor, perda de peso e prurido, além de exames de imagem demonstrando estenose irregular da via biliar com dilatação dos ductos intra-hepáticos. O hepatocarcinoma está usualmente associado a cirrose e nódulos parenquimatosos. O adenocarcinoma pancreático cursa com massa pancreática e sinal de Courvoisier. A colelitíase cursa com quadro febril e álgico mais agudo.',
     reference: 'Rizvi, S., & Gores, G. J. (2013). Pathogenesis, diagnosis, and management of cholangiocarcinoma. Gastroenterology, 145(6), 1215-1229; Khan, S. A., Davidson, B. R. et al. (2012). Guidelines for the diagnosis and treatment of cholangiocarcinoma. Gut, 61(12), 1657-1669.',
-    tags: ['Oncologia', 'Gastroenterologia']
+    tags: ['oncologia', 'gastroenterologia']
   },
   {
     id: 'tp2025-63',
@@ -1017,7 +1017,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A associação de dor em faixa no epigástrio, náuseas/vômitos e elevação acentuada de amilase e lipase maior que 3 vezes o valor de referência é diagnóstica de pancreatite aguda.',
     commentary: 'A pancreatite aguda é caracterizada por dor epigástrica de forte intensidade irradiando para o dorso, frequentemente associada a etiologias como etilismo crônico e litíase biliar. A elevação expressiva da amilase e lipase séricas (> 3 vezes o limite superior da normalidade) reforça o diagnóstico. A tomografia computadorizada confirma o acometimento pancreático, evidenciando edema e inflamação peripancreática sem necrose relevante na fase precoce (pancreatite edematosa intersticial).',
     reference: 'Banks, P. A., Bollen, T. L., Dervenis, C., Gooszen, H. G., Johnson, C. D., Sarr, M. G., ... & Vege, S. S. (2013). Classification of acute pancreatitis—2012. Gut, 62(1), 102-111; Tenner, S., Baillie, J., DeWitt, J., & Vege, S. S. (2013). ACG guideline: management of acute pancreatitis. Am J Gastroenterol, 108(9), 1400-1415.',
-    tags: ['Gastroenterologia', 'Emergência']
+    tags: ['gastroenterologia', 'emergência']
   },
   {
     id: 'tp2025-64',
@@ -1033,7 +1033,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Pacientes estáveis hemodinamicamente com trauma hepático fechado grau III sem extravasamento ativo de contraste (blush) têm indicação de manejo conservador.',
     commentary: 'O trauma hepático deste paciente classifica-se como grau III de acordo com a AAST. O índice de falha do tratamento não-operatório (conservador) para esses graus é muito baixo (< 2%) em pacientes com estabilidade hemodinâmica e sem outros achados cirúrgicos. O debridamento ou empacotamento cirúrgico precipitado pode violar o tamponamento natural e piorar o prognóstico. A intervenção com embolização ou cirurgia estaria indicada se existissem sinais de sangramento ativo com extravasamento de contraste ou instabilidade hemodinâmica refratária.',
     reference: 'Coccolini, F., Coimbra, R., Ordonez, C. et al. Liver trauma: WSES 2020 guidelines. World J Emerg Surg 15, 24 (2020).',
-    tags: ['Trauma']
+    tags: ['trauma']
   },
   {
     id: 'tp2025-65',
@@ -1049,7 +1049,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A Endoscopia Digestiva Alta (EDA) é o passo primordial no manejo diagnóstico e terapêutico duma suspeita de hemorragia por varizes esofágicas.',
     commentary: 'A realização precoce da endoscopia digestiva alta (idealmente em menos de 12 horas pós-admissão) é mandatória para identificar a fonte de sangramento (varizes de esôfago) e realizar terapia hemostática (como a ligadura elástica), que possui forte evidência no controle de recidivas imediatas. A antibioticoterapia faz parte do manejo padrão preventivo de PBE, mas a conduta diagnóstica e terapêutica prioritária após estabilização é a EDA. A TC não tem utilidade imediata e a derivação porto-sistêmica é terapia de resgate secundário.',
     reference: 'FELDMAN, Mark et al. Sleisenger and Fordtran’s Gastrointestinal and Liver Disease. 11ª ed. Elsevier, 2021.',
-    tags: ['Gastroenterologia', 'Emergência']
+    tags: ['gastroenterologia', 'emergência']
   },
   {
     id: 'tp2025-66',
@@ -1065,7 +1065,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O estadiamento sistêmico completo com tomografias é mandatório antes da definição terapêutica no câncer de cólon.',
     commentary: 'Após a confirmação diagnóstica do adenocarcinoma de cólon por colonoscopia com biópsia, a conduta imperiosa imediata consiste na realização das TCs de tórax, abdome e pelve para estadiamento do tumor. O estadiamento define o prognóstico e a estratégia terapêutica subsequente (ressecção oncológica curativa vs paliativa). Terapias sistêmicas sistêmicas neoadjuvantes ou adjuvantes não devem ser implementadas sem a avaliação prévia de metástases à distância.',
     reference: 'NCCN Clinical Practice Guidelines in Oncology: Colon Cancer, 2023.',
-    tags: ['Oncologia', 'Coloproctologia']
+    tags: ['oncologia', 'coloproctologia']
   },
   {
     id: 'tp2025-67',
@@ -1081,7 +1081,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O megacólon tóxico é uma complicação inflamatória grave de RCU, caracterizado clinicamente por toxicidade sistêmica associada a dilatação colônica severa (> 6 cm) sem ponto de obstrução.',
     commentary: 'O megacólon tóxico constitui uma complicação com alta taxa de morbimortalidade consequente a doenças inflamatórias intestinais (como a retocolite ulcerativa). Caracteriza-se clinicamente por manifestações de toxicidade grave (febre alta, taquicardia persistente, leucocitose significativa) e evidência imagológica de grande dilatação intestinal, acometendo o cólon ascendente e transverso de modo difuso, na ausência de distúrbio mecânico obstrutor ou perfurativo evidente. Os critérios diagnósticos clássicos apoiam-se no estigma sistêmico delineado por Jalan e colaboradores.',
     reference: 'PROACI – Programa de Atualização em Cirurgia, ciclo 8, volume 1; Tratado de Cirurgia Sabiston 2023.',
-    tags: ['Coloproctologia', 'Emergência']
+    tags: ['coloproctologia', 'emergência']
   },
   {
     id: 'tp2025-68',
@@ -1097,7 +1097,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A fraqueza da parede posterior do canal inguinal (fáscia transversalis no triângulo de Hesselbach) predispõe à protrusão do conteúdo peritoneal, provocando a hérnia inguinal direta.',
     commentary: 'As hérnias inguinais diretas são adquiridas, fundamentando-se no enfraquecimento tissular crônico da fáscia transversalis que delineia a parede posterior do canal inguinal. Fatores de esforço repetitivos exercem estresse direto sob essa fragilidade mecânica. Diverge da hérnia inguinal indireta, que possui caráter congênito por permeabilidade do conduto peritônio-vaginal (falha na oclusão do processo vaginalis). A neuropatia ilioinguinal provoca dor, sem desencadear fraqueza de parede causadora de hérnias.',
     reference: 'ZINNER, Michael J.; ASHLEY, Stanley W. Maingot’s Abdominal Operations. 13ª ed. McGraw-Hill, 2018.',
-    tags: ['Hérnias']
+    tags: ['hérnias']
   },
   {
     id: 'tp2025-69',
@@ -1113,7 +1113,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Paciente com IMC maior ou igual a 40 kg/m² com longo histórico documentado de falha de tratamento clínico possui indicação direta e protocolar para cirurgia bariátrica, independente de comorbidades.',
     commentary: 'De acordo com as normas emanadas pela diretriz da SBCBM e das sociedades internacionais, o critério estrito de IMC baseia-se na indicação soberana para cirurgia bariátrica em doentes de IMC ≥ 40 kg/m², dispensando a obrigatoriedade da persistência de comorbidades para o avanço operatório. Na faixa entre 35-39,9 kg/m², requer-se a documentação de agravos sistêmicos específicos (que esta doente de fato preenche, vide HAS refratária e apneia do sono). Diante do insucesso mantido por quase dez anos, a liberação para o ato cirúrgico é recomendada.',
     reference: 'Sociedade Brasileira de Cirurgia Bariátrica e Metabólica (SBCBM). Diretrizes para Indicação da Cirurgia Bariátrica, 2021; American Society for Metabolic and Bariatric Surgery (ASMBS) Guidelines, 2022.',
-    tags: ['Bariátrica']
+    tags: ['bariátrica']
   },
   {
     id: 'tp2025-70',
@@ -1129,7 +1129,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Na suspeita clínica de oclusão arterial aguda de membro (isquemia com viabilidade preservada), a conduta imediata consiste em heparinização plena (para cessar propagação do trombo) e angiotomografia urgente.',
     commentary: 'O doente apresenta quadro clássico de Oclusão Arterial Aguda de membro inferior, de importante etiologia provável embólica, sugerida pela associação de dor súbita severa e ritmo cardíaco arrítmico (sugestivo de fibrilamento atrial). A imediata heparinização sistêmica é indispensável para obstar a progressão de novos coágulos na vasculatura. A angiotomografia cervical/abdominal/ilíaco-femoral é fundamental na urgência para programar o desfecho operatório (trombectomia aberta, embolectomia de Fogarty ou terapia endovascular). Medidas conservadoras puras com repouso, sem o tratamento reconstrutivo imediato, estendem o tempo de anóxia tecidual à necrose irrecuperável.',
     reference: 'Rutherfords Vascular Surgery and Endovascular Therapy, 9ª ed., 2018.',
-    tags: ['Cirurgia Vascular', 'Emergência']
+    tags: ['cirurgia vascular', 'emergência']
   },
   {
     id: 'tp2025-71',
@@ -1145,7 +1145,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A tríade clássica de dor dor abdominal/lombar súbita, hipotensão e palpação de massa abdominal pulsátil expansiva em idoso com fatores de risco cardiovasculares é patognomônica de aneurisma de aorta abdominal roto.',
     commentary: 'O Aneurisma de Aorta Abdominal (AAA) roto constitui emergência urológica e vascular de altíssimo risco de mortalidade imediata. O quadro clínico clássico combina o choque hemodinâmico por hemorragia retroperitoneal maciça com a dor referida na região lombar posterior e o achado palpável de massa pulsátil. A isquemia de mesentério, as dissecções isoladas proximais ou as inflamações agudas do pâncreas não costumam gerar massas pulsáteis expansíveis de caráter perivascular.',
     reference: 'Sociedade Brasileira de Angiologia e Cirurgia Vascular (SBACV) - Projeto Diretrizes; Rutherford’s Vascular Surgery and Endovascular Therapy.',
-    tags: ['Cirurgia Vascular', 'Emergência']
+    tags: ['cirurgia vascular', 'emergência']
   },
   {
     id: 'tp2025-72',
@@ -1161,7 +1161,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A tromboflebite superficial estéril é tratada preferencialmente com medidas conservadoras e sintomáticas: AINEs, terapia compressiva elástica de suporte e estímulo à deambulação ativa.',
     commentary: 'Este caso exibe traços nítidos de tromboflebite superficial da via venosa subcutânea (safena magna), favorecida na mulher jovem sob terapia de anticoncepção oral combinada. Por constituir enfermidade eminentemente imunológica local autolimitada e estéril, o plano de frente abjura o repouso estrito (contra-indicado pelo aumento do estase e risco subsequente de TVP). O alívio decorre de anti-inflamatórios (AINEs), compressão graduada e mobilidade física regular. Anticoagulação formal estaria balizada em caso de proximidade direta ao sistema venoso profundo (< 3-5 cm da crossa de safena) ou lesões com extensão superior a 5 cm.',
     reference: 'Diretrizes do American College of Chest Physicians (ACCP); Sociedade Brasileira de Angiologia e Cirurgia Vascular (SBACV) - Projeto Diretrizes.',
-    tags: ['Cirurgia Vascular']
+    tags: ['cirurgia vascular']
   },
   {
     id: 'tp2025-73',
@@ -1177,7 +1177,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A contusão pulmonar resulta do colapso e consolidação hemática alveolar progressiva subsequente ao trauma mecânico volumoso direto sob a caixa torácica, manifestando-se clinicamente no intervalo de 4 a 6 horas.',
     commentary: 'A contusão pulmonar consolida a principal explicação para o desgaste de oxigenação pulmonar nas primeiras horas subsequentes ao ferimento fechado de energia elevada do tórax. Conforme o edema intersticial e a instilação hemática transudativa de alvéolos progride, a troca gasosa degrada-se rumo à insuficiência respiratória aguda hipoxêmica ou hipercápnica. A embolia gordurosa desenha latência de doze a setenta e duas horas após fraturas de esqueleto apendicular (fêmur) com manifestação petequial característica; o TEP clássico exige tempos maiores de estase clínica.',
     reference: 'Advanced Trauma Life Support (ATLS), 10ª edição (2018).',
-    tags: ['Trauma', 'Emergência']
+    tags: ['trauma', 'emergência']
   },
   {
     id: 'tp2025-74',
@@ -1193,7 +1193,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Em parada cardiorrespiratória traumática por tamponamento decorrente de penetração precordial, a toracotomia anterolateral esquerda emergencial é o procedimento imediato de escolha.',
     commentary: 'A toracotomia anterolateral de urgência constitui indicação absoluta na PCR traumática com sinais recentes de vitalidade, pelo rápido acesso que concede para realizar a descompressão imediata do tamponamento cardíaco (janela pericárdica direta), pinçar temporariamente a aorta descendente distal para direcionar fluxo ao cérebro e realizar massagem cardíaca aberta interna de sustentação. A esternotomia mediana exige serras mecânicas e maior tática temporal; a abertura mediana subxifoide não concede acessibilidade reconstrutiva adequada e a punção tem papel apenas temporário propedêutico.',
     reference: 'Hromalik LR Jr, Wall MJ Jr, Mattox KL, Tsai PI. Penetrating cardiac injury: a narrative review. Mediastinum. 2023.',
-    tags: ['Trauma', 'Emergência']
+    tags: ['trauma', 'emergência']
   },
   {
     id: 'tp2025-75',
@@ -1209,7 +1209,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A litíase obstrutiva renal complicada com infecção sistêmica ativa (pielonefrite obstrutiva) impõe descompressão renal imediata por cateter duplo “J” ou nefrostomia percutânea combinada a antibioticoterapia venosa para conter o choque séptico.',
     commentary: 'Este caso delineia quadro de Pielonefrite Obstrutiva por cálculo aprisionado na JUV. A existência de febre, taquicardia severa e leucocitose com desvio esquerdo traduz a vigência de infecção sistêmica ativa em parênquima renal aprisionado. A retardo da drenagem ou pretensão de remoção endoscópica imediata do cálculo (ureterolitotripsia) com bombas de irrigação hídrica positiva propicia translocação bacteriana bacterêmica direta do urotélio. A conduta salvadora reside na implantação imediata de cateter descompressivo Duplo J sob antibioticoterapia de amplo espectro, reprogramando a fragmentação do cálculo para oclusão tardia pós-infecciosa.',
     reference: 'Assimos D, Krambeck A, Miller NL, Monga M, Murad MH, Nelson CP, et al. Surgical Management of Stones: American Urological Association/Endourological Society Guideline, PART II. Journal of Urology. 2016.',
-    tags: ['Urologia', 'Emergência']
+    tags: ['urologia', 'emergência']
   },
   {
     id: 'tp2025-76',
@@ -1225,7 +1225,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Em homens jovens, a suspeita clínica inequívoca de torção testicular impõe a imediata exploração cirúrgica emergencial para tentativa de preservação biológica da gônada, abdicando de tardar por exames de imagem.',
     commentary: 'A instalação de dor testicular súbita violenta, no paciente jovem, acompanhada de retração anatômica para ápice escrotal e horizontalização (sinal de Angel clássico positivo) consolida o diagnóstico de Torção Testicular (isquemia arterial testicular). Trata-se de uma emergência cirúrgica máxima com margem de ouro inferior a 6-12 horas da dor para resgatar a fertilidade. Diante da apresentação descrita, o médico deve guiar a indicação cirúrgica aberta direta, ignorando exames propedêuticos longitudinais (como o Ultrassom com Doppler) sob pena de agravar a isquemia e inviabilizar o desfecho.',
     reference: 'Manual de Residência em Urologia; Marcos Dall’Oglio; Editora Manole - 2021; Campbell-Walsh Urologia; 12ª edição, 2018.',
-    tags: ['Urologia', 'Emergência']
+    tags: ['urologia', 'emergência']
   },
   {
     id: 'tp2025-77',
@@ -1241,7 +1241,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A Síndrome de Fournier consiste em uma fasciite bacteriana necrotizante altamente invasiva que acomete o tecido celular subcutâneo do abdome e períneo, apresentando-se com crepitação ao toque e febre em doentes vulneráveis (diabéticos descompensados).',
     commentary: 'A Síndrome de Fournier (gangrena sinérgica necrotizante perineal) é uma emergência infecciosa em cirurgia. É potenciada por desequilíbrio imunossupressor do diabetes mellitus em portadores de focos proctológicos profundos invisíveis (como abscessos de fossas isquiorretais). O indicativo físico patognomônico é a crepitação tecidual local, reflexo da produção de hidrogênio e compostos moleculares gasosos por bacilos anaeróbias. Impõe ampla ressecção tecidual desbridante mecânica com antibioticoterapia agressiva de amplo espectro.',
     reference: 'Rev. Bras. Cir. Plást. 2012;27(4):600-4; Adson, Ciências da Saúde, Volume 29 - Edição 142/JAN 2025.',
-    tags: ['Infectologia', 'Emergência']
+    tags: ['infectologia', 'emergência']
   },
   {
     id: 'tp2025-78',
@@ -1257,7 +1257,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O tratamento inicial para Enterocolite Necrotizante (Estágio II de Bell pela pneumatose sem pneumoperitônio) baseia-se em jejum restritivo de repouso alçar, NPT, sonda descompressora e dorgas bactericidas.',
     commentary: 'A detecção radiológica de pneumatose intestinal (presença de gás circunscrito na submucosa ou subserosa de alças do cólon/íleo) consolidada pelos sinais de distensão e emese biliar no prematuro é diagnóstica da Enterocolite Necrotizante (ECN). Para o Estágio Bell II (doença moderada sem perfuração mecânica constatada via pneumoperitônio), a abordagem prioritária padrão assenta-se no tratamento clínico rigoroso preservando o coto por intermédio do repouso entérico (jejum por 7 a 14 dias), administração de coloides parenterais e terapia por antibióticos empíricos amplos. Resoluções cirúrgicas (laparotomia/drenagem) são exclusivas de ocorrência de peritonites severas ou pneumoperitônio franco.',
     reference: 'Tratado de pediatria / organização Sociedade Brasileira de Pediatria. - 6. ed. - Barueri [SP]: Manole, 2025; Xiong T, Maheshwari A, Neu J, Ei-Saie A, Pammi M. An overview of systematic reviews for preventing necrotizing enterocolitis. Neonatology. 2020.',
-    tags: ['Cirurgia Pediátrica', 'Neonatologia']
+    tags: ['cirurgia pediátrica', 'neonatologia']
   },
   {
     id: 'tp2025-79',
@@ -1273,7 +1273,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Na suspeição de malformação anorretal, a conduta clínica inicial assenta-se no despiste sindrómico de defeitos congênitos adicionais e na feitura do invertograma após 12-24 horas do nascimento para avaliar o nível do coto retal.',
     commentary: 'A hipótese recai sobre uma Malformação Anorretal (MAR) com ânus imperfurado. Exames de imagem diagnósticos iniciais como o invertograma (radiografia na posição invertida com referencial radiopaco metálico em ranhura perineal) ou a ecografia transperineal permitem classificar a altura da fístula anorretal (alta vs média vs baixa) e estruturar a conduta (anoplastia primária imediata no períneo nas baixas ou colostomia de proteção proximal antes da cirurgia corretiva definitiva nas altas). O uso de laxantes na vigência de obstrução digestiva é proscrito.',
     reference: 'Cirurgia pediátrica volume II, 2ª. Edição, João Gilberto Maksoud cap.73; Tratado de Clínica Pediátrica. 3ª edição. Lisboa: Círculo Médico, 2022.',
-    tags: ['Cirurgia Pediátrica', 'Neonatologia']
+    tags: ['cirurgia pediátrica', 'neonatologia']
   },
   {
     id: 'tp2025-80',
@@ -1289,7 +1289,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A tríade clássica de vômitos gástricos frequentes (em jato não bilioso), ondas de peristaltismo estomacal visíveis e palpação de oliva pilórica em lactente de poucas semanas é diagnóstica de Estenose Hipertrófica do Piloro.',
     commentary: 'A Estenose Hipertrófica do Piloro (EHP) é uma desordem de obstrução esvaziadora gástrica na infância (com predileção por primogênitos do sexo masculino na 2ª à 6ª semana). A clínica reside sob a expressão clássica de vômitos repetitivos profusos (não biliosos pela barreira pilórica pré-duodenal) e palpação da glândula pilórica hipertrofiada ("oliva pilórica") no epigástrio. O tratamento baseia-se na estabilização de distúrbio metabólico (alcalose hipoclorêmica e hipopotassêmica) seguido de cirurgia (piloromiotomia de Fredet-Ramstedt).',
     reference: 'Tratado de pediatria / organização Sociedade Brasileira de Pediatria. - 6. ed. - Barueri [SP] : Manole, 2025.',
-    tags: ['Cirurgia Pediátrica', 'Neonatologia']
+    tags: ['cirurgia pediátrica', 'neonatologia']
   },
   {
     id: 'tp2021-61',
@@ -1305,7 +1305,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Recém-nascido com atraso na eliminação de mecônio, distensão abdominal progressiva, vômitos biliosos e saída explosiva de mecônio após toque retal tem quadro clássico de Doença de Hirschsprung. A conduta inicial é o alívio obstrutivo com enteroclisma.',
     commentary: 'A principal hipótese diagnóstica para este caso é a Doença de Hirschsprung (ou aganglionose congênita do cólon). Esta malformação congênita, caracterizada pela ausência das células ganglionares dos plexos nervosos do intestino terminal, acomete tipicamente recém-nascidos a termo, levando a um quadro clínico de obstrução intestinal baixa (uma das principais causas de obstrução intestinal no período neonatal). Na história clínica, encontramos elementos que sugerem fortemente este diagnóstico, tais como o atraso na eliminação do mecônio (>48 horas), evacuações em pequena quantidade e em menor frequência, eliminação de fezes explosivas após estímulo retal (sinal clínico clássico desta doença), além da progressiva evolução para obstrução intestinal (baixa aceitação da dieta, distensão abdominal progressiva e vômitos). A conduta neste momento deve ser a realização de lavagem intestinal com SF0,9% morno, para o alívio da obstrução intestinal. Após isto, inicia-se a investigação diagnóstica através de exames complementares específicos (manometria anorretal, enema opaco e biópsia retal). Após a confirmação diagnóstica, o tratamento cirúrgico é indicado, através da técnica cirúrgica de abaixamento de colonendorretaltransanal (procedimento de De La Torre-Mondragon). A atresia duodenal cursa com vômitos bilaterais desde as primeiras horas; a enterocolite acomete marcadamente prematuros graves com descompensação sistêmica e fezes hemorrágicas; a estenose de piloro manifesta-se entre a 3ª e 6ª semana com vômitos não-biliosos.',
     reference: 'Cirurgia Pediátrica – Teoria e Prática. João Carlos Ketzer de Souza. 1ª edição – Ed. Roca – 2008. Cirurgia Pediátrica – João Gilberto Maksoud. 2ª edição – Ed. Revinter – 2003.',
-    tags: ['Cirurgia Pediátrica', 'Neonatologia']
+    tags: ['cirurgia pediátrica', 'neonatologia']
   },
   {
     id: 'tp2021-62',
@@ -1321,7 +1321,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Criança de 2 anos com distopia testicular unilateral persistente (criptorquidia palpável na região inguinal) apresenta indicação formal de correção cirúrgica o mais breve possível por já ter passado da idade limiar de descida espontânea.',
     commentary: 'A distopia testicular pode se manifestar de várias maneiras, como testículo palpável em região inguinal, testículos retráteis e testículo não palpável, podendo ter abordagens diferentes de acordo com a idade da criança e os achados de exame físico. A literatura mais recente mostra a indicação cirúrgica ideal a partir de 6 meses de vida, de modo que aos 2 anos de idade, a correção cirúrgica por orquidopexia deve ser estabelecida o quanto antes para prevenir danos à linhagem celular germinativa, infertilidade futura e malignização das células germinativas. A terapia hormonal para casos de criptorquidia é controversa, com discrepância nos resultados apresentados, e com poucas indicações, não sendo usada rotineiramente. Alguns dos hormônios, que apresentam resultados variáveis na literatura, são: Gonadotrofina Coriônica humana (hCG), hormônio liberador de hormônio luteinizante (LHRH), análogo sintético LHRH - spray nasal. Ultrassonografia não altera a necessidade de exploração e posicionamento cirúrgico de testículo nitidamente palpável no canal inguinal.',
     reference: 'Carnevale, J; Miranda E.G; Silveira A.E; Tiburcio, M.A. Tratado de Urologia Pediátrica. Editora Sparta. Holcomb, G. Ascraft Cirurgia Pediátrica. 6ª edição. Elsevier 2017. Maksoud, J.G. Cirurgia Pediátrica / vol II. 2ª Edição. RJ: Revinter 2003.',
-    tags: ['Urologia Pediátrica', 'Cirurgia Pediátrica']
+    tags: ['urologia pediátrica', 'cirurgia pediátrica']
   },
   {
     id: 'tp2021-63',
@@ -1337,7 +1337,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A progressão clássica de sinais neurológicos excitatórios (inquietação, vertigem, zumbido, fala arrastada) seguidos de convulsão tônico-clônica generalizada durante ou logo após infiltração de lidocaína é patognomônica de toxicidade sistêmica / sobredose de anestésico local.',
     commentary: 'O aumento das concentrações plasmáticas de anestésicos locais por absorção rápida sistêmica ou injeção intravascular acidental direta está associado inicialmente com inquietação e vertigem, zumbido, fala arrastada culminando em convulsões tônico-clônicas de difícil controle. As convulsões podem ser seguidas de severa depressão do sistema nervoso central (apneia) e colapso cardiocirculatório/morte, caso não ocorra intervenção rápida com ventilação com oxigênio a 100%, anticonvulsivantes e emulsão lipídica. Não se trata de reação ao antibiótico (que geraria rash, broncoespasmo ou anafilaxia) ou efeito isolado do uso crônico regular de fluoxetina.',
     reference: 'MILLER, RD. Bases da anestesia, 7ª ed. Ed. Elsevier, 2019.',
-    tags: ['Anestesiologia', 'Emergência']
+    tags: ['anestesiologia', 'emergência']
   },
   {
     id: 'tp2021-64',
@@ -1353,7 +1353,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Idoso ou criança em pós-operatório sob jejum com perdas por vômitos volumosos, exibindo letargia, turgor cutâneo pastoso, oligúria concentrada e taquicardia compensatória na vigência de pressão arterial mantida preenche critérios de desidratação aguda.',
     commentary: 'Desidratação aguda é uma complicação pós-operatória bastante comum. Neste caso, tanto a resposta inflamatória do processo abdominal, levando à perda de líquido para o compartimento extravascular, quanto os vômitos apresentados pelo paciente, explicam esta complicação. Além disso, o paciente encontra-se em jejum desde a cirurgia, possivelmente com reposição hídrica endovenosa insuficiente. São sinais clínicos da desidratação, a sonolência e a hipoatividade, a desidratação das mucosas, a taquicardia e a urina em pequeno volume e de aspecto concentrado. Apesar de apresentar taquicardia, o paciente não apresenta taquipneia, nem hipotensão arterial, afastando o diagnóstico de choque, tanto hemorrágico, quanto séptico. Além disso, a criança não apresenta reação peritoneal ao exame abdominal ou febre exuberante, afastando o diagnóstico de abscesso intracavitário precoce. Apesar dos vômitos esverdeados e da ausência de evacuações desde a cirurgia, há a presença de ruídos hidroaéreos propulsivos e eliminação de flatos, afastando o diagnóstico de abdome agudo obstrutivo.',
     reference: 'Carlotti APCP. Choque em crianças. Medicina (Ribeirão Preto) 2012; 45(2):197-207. Spadella CT. Pós-operatório. In: Cataneo AJM, Kobayasi S. Clínica cirúrgica. Faculdade de Medicina de Botucatu – UNESP. Elsevier 2003. 254-61.',
-    tags: ['Cirurgia Pediátrica', 'Pós-Operatório']
+    tags: ['cirurgia pediátrica', 'pós-operatório']
   },
   {
     id: 'tp2021-65',
@@ -1369,7 +1369,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A úlcera com hiperpigmentação ocre ao redor em região maleolar com pulsos distais preservados representa insuficiência venosa crônica. O pilar terapêutico para reverter a hipertensão venosa é a terapia elastocompressiva (elasto-compressão).',
     commentary: 'As características apresentadas para a lesão são compatíveis com úlcera de origem venosa. O mecanismo fisiopatológico consiste em hipertensão venosa nos capilares cutâneos, devido à insuficiência venosa (refluxo venoso pelas veias insuficientes), com subsequente edema, translocação de hemácias com deposição de hemossiderina (hiperpigmentação em bota), processo inflamatório cutâneo crônico e lesão. Para regressão do quadro deve-se reduzir a pressão através de elasto-compressão da perna e curativos locais. A paciente precisa evitar quaisquer posições que dificultem o retorno venoso, pois contribuirão para a manutenção do edema e, consequente, piora do quadro (por isso o céfalo-aclive ou posições declives prolongadas são proscritos). A paciente não apresenta dados que sugiram infecção (dor aguda forte, calor, hiperemia local franca em ascensão e secreção fétida), portanto não há indicação imediata para antibioticoterapia sistêmica.',
     reference: 'BRITO, C.J. et al. Cirurgia Vascular: Cirurgia Endovascular, Angiologia. 4ª ed. Rio de Janeiro: Dilivros, 2020.',
-    tags: ['Cirurgia Vascular']
+    tags: ['cirurgia vascular']
   },
   {
     id: 'tp2021-66',
@@ -1386,7 +1386,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Deiscência crônica de ferida de safenectomia apresentando leito composto exclusivamente por tecido de granulação vermelho maduro e plano, sem secreção purulenta grosseira e sem sinais inflamatórios sistêmicos, deve ser tratada conservadoramente apenas com curativos oclusivos protetores.',
     commentary: 'Deiscência profunda (pele e subcutâneo) após cirurgia de retirada de safena. Já se percebe completa granulação do subcutâneo, sem exsudação importante e sem sinais inflamatórios ao redor da ferida. Nestes casos o tratamento é manter limpeza adequada e curativos oclusivos, preferencialmente os de longa duração entre as trocas, como as placas de hidrocoloide e permitir a completa cicatrização por segunda intenção. A boa granulação do leito mostra que o ferimento não é recente, não há exsudação, coleções purulentas ou restos necróticos e por se tratar de fase tardia de cicatrização por segunda intenção não há necessidade de retornar ao centro cirúrgico e ressutura, como seria feito se a deiscência fosse precoce, cruenta e limpa.',
     reference: 'Sabiston - Cap 13 - Surgical Complications, p. 282-288.',
-    tags: ['Pós-Operatório', 'Cirurgia Geral']
+    tags: ['pós-operatório', 'cirurgia geral']
   },
   {
     id: 'tp2021-67',
@@ -1403,7 +1403,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A ocorrência conjunta de transtorno obstrutivo biliar agudo com febre, icterícia, dor em hipocôndrio direito (tríade de Charcot) associados a hipotensão refratária e alteração do nível de consciência compõe a Pêntade de Reynolds (colangite grave supurada). A conduta é suporte circulatório hemodinâmico urgente e desobstrução rápida biliar por CPER.',
     commentary: 'Paciente com dor abdominal, febre e icterícia (tríade de Charcot) apresenta os sinais clássicos de colangite aguda ascendente obstrutiva, ocasionada na imensa maioria das vezes por cálculo impactado em colédoco distal, gerando estase e proliferação bacteriana. Com a evolução sistêmica rápida da infecção, o paciente cursa com confusão mental e instabilidade hemodinâmica severa (choque séptico / tempo de enchimento prolongado), preenchendo todos os cinco critérios diagnósticos da Pêntade de Reynolds. Nesses casos de extrema gravidade, a conduta iminente deve ser a estabilização hemodinâmica robusta e a desobstrução imediata de via biliar através de drenagem biliar endoscópica ou colangiopancreatografia endoscópica retrógrada (CPER) de urgência para descompressão local.',
     reference: 'SABISTON. Tratado de cirurgia: a base biológica da prática cirúrgica moderna. 19. ed. Elsevier, 2014. 2240p.',
-    tags: ['Vias Biliares', 'Gastroenterologia', 'Emergência']
+    tags: ['vias biliares', 'gastroenterologia', 'emergência']
   },
   {
     id: 'tp2021-68',
@@ -1419,7 +1419,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Idoso com histórico de atividade laboral repetitiva acima da cabeça (pintor/pedreiro) que apresenta dor no ombro com irradiação mecânica lateral, dor de predomínio noturno e fraqueza focal na abdução do membro apresenta lesão compatível com a Síndrome do Manguito Rotador.',
     commentary: 'A dor na articulação do ombro é uma das queixas mais frequentes nos consultórios ortopédicos e pode ser causada por diversas patologias, provenientes dos componentes da cintura escapular (osso, cartilagem, músculo, tendão, bolsa sinovial ou ligamento) ou irradiadas de outras regiões (como radiculopatia). O manguito rotador do ombro é formado por quatro músculos (supraespinhal, infraespinhal, redondo menor e subescapular) e os seus respectivos tendões, que se originam na escápula e se inserem na região proximal do úmero. Atuam na estabilização e movimentação ativa da articulação do ombro. A lesão de um tendão ou mais deste conjunto é chamada de síndrome do manguito rotador, caracterizada clinicamente por dor exacerbada com mobilidade ativa e noturna, e perda de força específica (como no teste de Job que avalia o supraespinhal). Patologias como artrose ou capsulite adesiva causam perda generalizada de mobilidade ativa e passiva uniforme.',
     reference: 'Sella GV, Miyazaki AN, Checchia SL. Lesão do Manguito Rotador. In: Reis FBD, Santili C, Barros Filho TEPD. Série Ortopedia e Traumatologia Fundamentos e Prática: Ortopedia do Adulto. 1. ed. São Paulo: Atheneu, 2019. p. 127-134.',
-    tags: ['Ortopedia', 'Medicina do Trabalho']
+    tags: ['ortopedia', 'medicina do trabalho']
   },
   {
     id: 'tp2021-69',
@@ -1435,7 +1435,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Na hemorroida interna que prolapsa sob esforço mas recua de forma redutível manualmente (Grau III), aliada a sangramento episódico vermelho vivo na evacuação, o tratamento ambulatorial intervencionista preferencial de primeira linha é a ligadura elástica.',
     commentary: 'Na doença hemorroidária, o sangramento é o sintoma mais comum e, na grande maioria das vezes, não é volumoso e sim intermitente e de pequena monta. O aumento crônico do esforço evacuatório aumenta a possibilidade de surgimento do prolapso hemorroidário devido à flacidez e relaxamento do tecido conjuntivo de fixação do canal anal. Quando há dor aguda persistente, deve-se afastar trombose hemorroidária. Existem várias formas de tratamento ambulatorial para hemorróidas internas: ligadura elástica, escleroterapia, crioterapia, coagulação infravermelha e laser. A ligadura elástica como método de escolha para o tratamento de hemorróidas internas, é o procedimento mais seguro e aceito na literatura médica para o tratamento do sangramento de repetição e prolapso nos graus I, II e III, mostrando melhores resultados consolidados a longo prazo, menor dor pós-procedimento quando comparado ao cirúrgico completo e baixas taxas de recidiva.',
     reference: 'TOWNSEND, CM et al. Sabiston, tratado de Cirurgia: a base biológica da moderna prática cirúrgica. 20ª ed. Rio de Janeiro: Elsevier, 2019.',
-    tags: ['Coloproctologia', 'Ambulatório']
+    tags: ['coloproctologia', 'ambulatório']
   },
   {
     id: 'tp2021-70',
@@ -1451,7 +1451,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Idoso cardiopata arrítmico (FA crônica) evoluindo com quadro súbito de dor abdominal de extrema intensidade desproporcional ao exame físico, e cuja tomografia revela o binômio grave de pneumatose na parede de alças delgadas e aeroportia (gás portal), tem diagnóstico de Isquemia Mesentérica.',
     commentary: 'O cenário clínico descreve de forma fidedigna um quadro de Isquemia Mesentérica Aguda, comumente provocada por embolismo da artéria mesentérica superior potencializada pela vigência de arritmia cardíaca (fibrilação atrial). A gravidade evolutiva de isquemia avançada com sofrimento transmural de alças é firmada nos exames de imagem da TC de abdômen pela pneumatose intestinal (ar na parede de alça de delgado) e imagens lineares gasosas no fígado que se ramificam até a periferia (gás na veia porta / aeroportia). A pancreatite aguda não causaria isquemia parietal em alça sem achados inflamatórios na glândula pancreática; a enterocolite é típica da infância com diarreias exuberantes; e a diverticulite não causaria pneumatose seletiva do delgado e gás portal sistêmico nestas bases.',
     reference: 'Ronald A Squires, Russell G. Postier. Acute abdomen In: Sabiston Textbook of Surgery. The biological basis of modern surgical practice. Elsevier, 19th. Ed. 2012. Townsend CM, Beuchamp RD, Evers BM, Mattos KL. P. 1141-1159.',
-    tags: ['Cirurgia Vascular', 'Gastroenterologia', 'Emergência']
+    tags: ['cirurgia vascular', 'gastroenterologia', 'emergência']
   },
   {
     id: 'tp2021-71',
@@ -1468,7 +1468,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Trauma cranioencefálico com perda de consciência, seguido por plena recuperação (escore de Glasgow 15) e deterioração rápida de consciência associada a anisocoria anisocórnica pupilar ipsilateral (midríase unilateral / dilatação pupilar), representa a clássica evolução em "intervalo lúcido" do hematoma extradural agudo.',
     commentary: 'O quadro clínico descreve a evolução característica do intervalo lúcido de um hematoma extradural (ou epidural agudo). A associação com a equimose periorbital (olho de guaxinim unilateral) traduz a presença de fratura na base do crânio (geralmente temporal-esfenoidal com laceração associada da artéria meníngea média). Na tomografia, esta lesão é visível como uma área hiperdensa de contornos biconvexos (lente biconvexa). A lesão axonal difusa cursa tipicamente com coma inicial duradouro sem lesões expansivas focais; o hematoma intraparenquimatoso possui outra conformação histológica traumática; e o hematoma subdural exibe imagem em formato de crescente sem a caracterização cirúrgica estrita do intervalo lúcido no TCE moderado.',
     reference: 'WINN, HR. Youmans & Winn Neurological Surgery. 6th ed. Philadelphia: Saunders, 2011.',
-    tags: ['Trauma', 'Neurocirurgia', 'Emergência']
+    tags: ['trauma', 'neurocirurgia', 'emergência']
   },
   {
     id: 'tp2021-72',
@@ -1485,7 +1485,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Idosa com perda de peso crônica, constipação intestinal progressiva e distensão de cólon (com massa palpável). O quadro radiológico de distensão massiva confinada ao arco cólico sem distensão do delgado indica obstrução intestinal crônica baixa com válvula ileocecal competente.',
     commentary: 'O doente apresenta quadro clínico característico de Obstrução Intestinal Baixa de caráter progressivo neoplásico de cólon esquerdo / retossigmoide (evidenciado por emagrecimento, dor crônica prévia e toque de massa palpável). Na radiografia de abdômen da obstrução colônica, se a válvula ileocecal for competente (o que ocorre em cerca de 70% dos casos), há sequestro mecânico de ar gasoso de alça fechada, poupando a distensão volumosa do jejuno e íleo proximal. Isto magnifica a tensão sob a parede cecal de acordo com a Lei de Laplace, aumentando vertiginosamente as chances de isquemia transmural e perfuração do ceco, exigindo intervenção cirúrgica desobstrutiva imediata.',
     reference: 'Sabiston – Tratado de Cirurgia – 2 Volumes – 18ª Ed. Beauchamp; Townsend; Courtney, Mary. Elsevier / Medicina Nacionais.',
-    tags: ['Gastroenterologia', 'Oncologia', 'Emergência']
+    tags: ['gastroenterologia', 'oncologia', 'emergência']
   },
   {
     id: 'tp2021-73',
@@ -1501,7 +1501,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A vigência de obstrução ureteral aguda por cálculo associada a infecção em via excretora alta (febre, dor lombar e leucocitose expressiva com desvio esquerdo - urosepse) configura situação de emergência urológica absoluta. A prioridade máxima é a desobstrução mecânica urgente com implante de cateter duplo J ou nefrostomia percutânea sob terapia antibiótica venosa.',
     commentary: 'A pileonefrite aguda obstrutiva representa uma infecção de alto potencial septicêmico. Diante da vigência de infecção grave com borramento e disfunção renal associada (leucocitose com desvio esquerdo importante, bastões 15%, e aumento da creatinina), o doente necessita de internação, início tempestivo de drogas bactericidas venosas e desobstrução mecânica de urgência (implantação de cateter ureteral duplo J ou confecção de nefrostomia percutânea para drenagem de urina purulenta sob pressão). Qualquer manipulação direta invasiva para fragmentação do cálculo por ureterolitotripsia ou litotripsia neste momento eleva a pressão intracalicial, potencializando inundação bacteriana de vasos e choque cardiogênico / séptico, sendo proscrita.',
     reference: 'Pearle MS, Antonelli JA, Lotan Y. Urinary Lithiasis. In: Campbell-Walsh Urology, 11th ed. Local: Philadelphia, 2016. Elsevier. Türk C, Neisius A, Petrik A, Seitz C, Skolarikos A, Tepeler A, Thomas K. Guidelines on Urolithiasis, 2016 (atualização 2017). European Association of Urology.',
-    tags: ['Urologia', 'Infectologia', 'Emergência']
+    tags: ['urologia', 'infectologia', 'emergência']
   },
   {
     id: 'tp2021-74',
@@ -1517,7 +1517,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Paciente com sintomas miccionais obstrutivos moderados, próstata de textura normal elástica ao toque, porém exibindo cinética de elevação rápida do PSA (ultrapassando velocidade limite aceitável de 0,75 ng/mL ao ano) tem indicação inicial de afastar adenocarcinoma por Ressonância Magnética Multiparamétrica (RMmp).',
     commentary: 'Apesar de exibir valor absoluto do PSA atual abaixo de 4,0 ng/mL, o paciente em tela apresenta critério de alta suspeição pela taxa de velocidade anual de ascensão sérica do antígeno prostático (que saltou de 1,2 para 2,6 ng/mL em apenas doze meses, um ganho bem acima do limite aceitável anualizado de 0,75 ng/mL). A conduta atual recomendada pelas sociedades de urologia e oncologia indica a feitura prévia de Ressonância Magnética Multiparamétrica (RMmp) para detecção de sítios suspeitos e cálculo do PI-RADS, permitindo orientar com precisão a posterior biópsia prostática dirigida. Tomografia e ultrassonografia simples de vias não dispõem de resolução ou acurácia estrutural fina para diagnóstico precoce de câncer intraprostático.',
     reference: 'Campbells Urology. 9th Edition. New York: Saunders Company, 2007. Zerati Filho M, Nardozza Jr A, Reis RB. Urologia fundamental. São Paulo: Planmark, 2010.',
-    tags: ['Urologia', 'Oncologia', 'Ambulatório']
+    tags: ['urologia', 'oncologia', 'ambulatório']
   },
   {
     id: 'tp2021-75',
@@ -1533,7 +1533,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A tuberculose pleural é a causa principal de derrame pleural exsudativo linfocitário (relação de proteínas pleural/sérica > 0,5), com marcante escassez de células mesoteliais (< 5%) e níveis elevados de Adenosina Deaminase (ADA) superiores a 40 U/L.',
     commentary: 'O derrame biliar ou pleural por infecção de M. tuberculosis decorre de uma reação celular imunológica do tipo IV (hipersensibilidade tardia retardada) na cavidade pleural. Laboratorialmente, o painel liquórico exibe um exsudato límpido, com predomínio franco de leucócitos mononucleares (linfócitos), aumento robusto de proteínas no líquido de modo que a divisão de teor de proteína pleural/sérica supere o fator de reabsorção 0,5. Por se tratar de agressão imune com forte fibrina inflamatória adjacente ao mesotélio, a celularidade mesotelial na lâmina é muito desfavorável (usualmente < 5%). O achado clínico fidedigno para firmar a hipótese reside sob a taxa de ADA (adenosina deaminase) seletiva no líquido pleural com valores superiores a 40 U/L.',
     reference: 'Seiscento M, Conde M, Dalcolmo M. Tuberculose pleural. J Bras Pneumol. 2006;32(Supl 4): S174-S181. Manual de recomendações para o controle da tuberculose no Brasil, 2ª edição. Ministério da Saúde, 2019.',
-    tags: ['Pneumologia', 'Infectologia']
+    tags: ['pneumologia', 'infectologia']
   },
   {
     id: 'tp2021-76',
@@ -1549,7 +1549,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Paciente com queimadura térmica de segundo grau (presença de bolhas/flictenas) de pequena extensão (~ 4-5% da superfície corporal) e imunização antitetânica atualizada deve receber manejo puramente ambulatorial (analgesia, limpeza, cobertura com AGE e revisão em 48 horas).',
     commentary: 'O caso acima descreve uma lesão queimada de espessura parcial (segundo grau) em aproximadamente 4 a 5% da superfície corporal em um adulto. Conforme as regras da Sociedade Brasileira de Queimaduras e manuais de atenção básica da APS, o tratamento é conduzido na UBS de forma ambulatorial por não preencher critérios de internação hospitalar (extensão inferior a 20% da SC em adultos, ausência de lesões de 3º grau ou acometimento de áreas especiais como períneo, mãos, pés, face e olhos). A conduta clínica padrão envolve analgesia robusta, higiene estéril local com clorexidina, remoção de tecidos desprendidos frouxos preservando teto das bolhas se íntegras e aplicação de curativo oclusivo farto não aderente enriquecido com Ácidos Graxos Essenciais (AGE) ou pomada de sulfadiazina de prata a 1%, progredindo com troca e avaliação de granulação em 48 horas.',
     reference: 'BRASIL. MINISTÉRIO DA SAÚDE. Atenção à demanda espontânea na APS. Brasília: Ministério da Saúde, 2010. p. 186-194.',
-    tags: ['Atenção Primária', 'Urgência e Emergência']
+    tags: ['atenção primária', 'urgência e emergência']
   },
   {
     id: 'tp2021-77',
@@ -1565,7 +1565,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Mulher idosa (72 anos) com baixa visual insidiosa bilateral assimétrica e alteração repetitiva com miopização refracional sob tonometria intraocular normal tem quadro altamente condizente com a evolução fisiopatológica da Catarata Senil.',
     commentary: 'A queixa de baixa gradual de acuidade visual para focar detalhes próximos (como costurar no idoso), associada à miopização refracional típica (melhora visual temporária relatada por endurecimento central de núcleo do cristalino) e pressão intraocular normal afasta diagnósticos graves imediatos de glaucoma agudo ou uveítes inflamatórias crônicas. O diagnóstico mais prevalente no idoso reside sob a Catarata Senil (opacificação progressiva do cristalino). O glaucoma de ângulo aberto é sorrateiro por anos com perda de campo periférico inicial e pressão ocular elevada ao tonômetro; a uveíte por toxoplasmose cursa de forma unilateral no jovem; e a catarata associada à atividade imunológica de Lúpus ou induzida por corticoide é uma entidade oftalmológica rara perto do volumoso espectro senil.',
     reference: 'Centurion B et al. Catarata: Diagnóstico e Tratamento. Projeto Diretrizes Associação Médica Brasileira. 2003. Lauretti CR, Lauretti Filho A. Glaucomas. Medicina, Ribeirão Preto, 30:56-65. 1997.',
-    tags: ['Oftalmologia', 'Ambulatório']
+    tags: ['oftalmologia', 'ambulatório']
   },
   {
     id: 'tp2021-78',
@@ -1581,7 +1581,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Vítima de trauma sob impacto volante com hipotensão arterial, taquicárdica, dispneia intensa associada a desvio contralateral traqueal, turgência de jugular e murmúrio ausente hipertimpânico apresenta Pneumotórax Hipertensivo. A conduta imediata mandatória é a descompressão cirúrgica por toracostomia digital ou punção por agulha calibrosa de alívio.',
     commentary: 'O pneumotórax hipertensivo é uma emergência extrema no trauma e causa rápida deterioração respiratória e colapso cardíaco circulatório imediato pelo desvio restritivo de vasos do mediastino. Seu diagnóstico é estritamente clínico e físico, e impede taxativamente qualquer bloqueio para confirmação de imagem por raio X ou tomografia. O achado de murmúrio ausente com hipertimpanismo unilateral sob desvio contralateral traqueal e hipotensão dita a conduta imediata: descompressão torácica imediata (em geral por toracostomia cortocontundente com agulha no quinto espaço intercostal na linha axilar anterior no adulto) seguido de drenagem torácica fechada sob selo d’água.',
     reference: 'Advanced Trauma Life Support – Student Course Manual – 10th. American College of Surgeons. TOWNSEND, CM et al. Sabiston, tratado de Cirurgia: a base biológica da moderna prática cirúrgica. 20ª ed. Rio de Janeiro: Elsevier, 2019.',
-    tags: ['Trauma', 'Emergência']
+    tags: ['trauma', 'emergência']
   },
   {
     id: 'tp2021-79',
@@ -1597,7 +1597,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Em doente estável pós-atropelamento, a presença seletiva de ar/gás aprisionado no espaço retroperitoneal ao exame de imagem aponta obrigatoriamente para a rotura de uma víscera oca digestiva retroperitoneal, cujo sítio anatômico clássico é o duodeno (segunda e terceira porções).',
     commentary: 'A constatação de retro-pneumoperitônio (ar/gás livre no retroperitônio) após lesão por trauma mecânico contuso em abdômen direciona a hipótese diagnóstica de imediato para a rotura de segmento de víscera oca localizado anatomicamente nesse recesso profundo. De todos os órgãos citados, o único que se comporta como uma víscera oca essencialmente retroperitoneal é o duodeno (em sua porção infragástrica retroperitoneal, especificamente o arco de segunda colatitude e terceira porções transcolônicas). Lesões de baço ou de órgãos essencialmente de fâneros intraperitoneais como o sigmoide resultariam prioritariamente em hemoperitônio maciço livre ou pneumoperitônio clássico em espaço perito-peritoneal alto.',
     reference: 'GRAY, H.; GOSS, C.M. Anatomia. 29. ed. Rio de Janeiro: Guanabara Koogan, 1988. MOORE, L.K.; DALLEY, A.F.; AGUR, A.M.R. Anatomia Aplicada para a Clínica, Rio de Janeiro: Guanabara Koogan, 11 r.ed., 2011.',
-    tags: ['Trauma', 'Emergência']
+    tags: ['trauma', 'emergência']
   },
   {
     id: 'tp2021-80',
@@ -1613,7 +1613,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Nódulo de tireoide eutireoidiano medindo 1,0 cm com padrões de alta classificação de risco (TIRADS V/VI - hipoecoico, limites irregulares e microcalcificações) indica a feitura imediata de punção aspirativa por agulha fina (PAAF) guiada por USG.',
     commentary: 'Nódulo de 1,0 cm de diâmetro com padrões ultrassonográficos suspeitos (formato sólido, hipoecogênico, limites microlobulados ou irregulares e com presença de microcalcificações de cálcio pontual) manifesta critérios diagnósticos consistentes com malignização (carcinoma papilífero de tireoide). Em pacientes eutireoidianos (com TSH e hormônios tieroidenos devidamente em faixa normal), a imediata investigação citológica por Punção Aspirativa com Agulha Fina (PAAF) dirigida é soberana. O rastreio por cintilografia é restrito a nódulos quentes ou hiperfuncionantes em vigência de TSH suprimido. Esperar seis meses ou lobectomia cirúrgica direta prévia sem estudo citopatológico são imprudentes.',
     reference: 'Towsend, CM; Beauchamp, RD; Evans, BM; Sabiston - Tratado de Cirurgia, 20ª edição, Editora Guanabara-Koogan, 2019.',
-    tags: ['Cabeça e Pescoço', 'Endocrinologia', 'Oncologia']
+    tags: ['cabeça e pescoço', 'endocrinologia', 'oncologia']
   },
   {
     id: 'tp2026-61',
@@ -1629,7 +1629,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O evento inicial na fisiopatologia da pancreatite aguda é a ativação intrapancreática precoce de zimogênios proteolíticos (como a conversão do tripsinogênio em tripsina) no interior das células acinares, levando à autodigestão do tecido pancreático.',
     commentary: 'O evento inicial da pancreatite aguda é a falha nos mecanismos de proteção celular que mantêm as enzimas digestivas em sua forma inativa (zimogênios). A ativação precoce da tripsina dentro do ácino pancreático desencadeia uma cascata de ativação de outras enzimas (fosfolipases, elastases), causando a autodigestão do parênquima, edema, hemorragia e resposta inflamatória local e sistêmica. Sobre os distratores: (A) A translocação bacteriana e a infecção da necrose pancreática são complicações tardias (segunda/terceira semana); nas primeiras 12-24 horas, a inflamação é estéril. (B) O refluxo biliar para os hepatócitos causaria colestase/hepatite e não pancreatite. (D) A pancreatite é primariamente do pâncreas exócrino; a falência endócrina é sequela tardia, não evento inicial.',
     reference: 'SABISTON, David C. Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna. Rio de Janeiro: Elsevier. KUMAR, Vinay et al. Robbins & Cotran: Patologia Estrutural e Funcional. 10ª ed. Rio de Janeiro: Elsevier, 2021.',
-    tags: ['Pancreatite Aguda', 'Fisiopatologia', 'Pâncreas']
+    tags: ['pancreatite aguda', 'fisiopatologia', 'pâncreas']
   },
   {
     id: 'tp2026-62',
@@ -1645,7 +1645,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A principal hipótese diagnóstica é uma gastrite hemorrágica ou úlcera péptica decorrente do uso crônico de AAS. Retirar o agente agressor (AAS) e otimizar a proteção gástrica com IBP (omeprazol 40mg VO) constitui a conduta inicial ideal.',
     commentary: 'A principal hipótese para o quadro crônico do paciente (epigastralgia, melena - disfarçada/confundida pelo escurecimento de fezes atribuído incorretamente ao omeprazol, fraqueza, anemia leve) é gastrite hemorrágica ou úlcera induzida por AAS. Retirar o agente lesivo (AAS) e iniciar IBP em dose terapêutica (omeprazol 40mg VO) é a conduta inicial adequada. Sobre os distratores: (B) O paciente está hemodinamicamente estável, sem sangramento ativo agudo, logo não há indicação de EDA de urgência. (C) O escurecimento das fezes (melena) indica hemorragia digestiva alta e não colonoscopia como abordagem primária. (D) A arteriografia se reserva a sangramentos maciços com instabilidade hemodinâmica sem foco definido.',
     reference: 'FELDMAN, Mark; FRIEDMAN, Lawrence S.; BRANDT, Lawrence J. Sleisenger and Fordtran\'s gastrointestinal and liver disease: pathophysiology, diagnosis, management. 11. ed. Philadelphia: Elsevier, 2021. TOWNSEND, Courtney M. et al. Sabiston textbook of surgery: the biological basis of modern surgical practice. 21. ed. Philadelphia: Elsevier, 2022. BARKUN, Alan N. et al. Management of nonvariceal upper gastrointestinal bleeding: guideline recommendations. Annals of Internal Medicine, Philadelphia, v. 171, n. 11, p. 805-822, 2019.',
-    tags: ['Hemorragia Digestiva Alta', 'AAS', 'Farmacologia']
+    tags: ['hemorragia digestiva alta', 'AAS', 'farmacologia']
   },
   {
     id: 'tp2026-63',
@@ -1661,7 +1661,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O quadro de dor abdominal em facada com abdome em tábua e pneumoperitônio configura abdome agudo perfurativo por úlcera péptica. O tratamento consiste em reposição volêmica, antibioticoterapia de amplo espectro, IBP venoso e cirurgia de urgência.',
     commentary: 'O quadro é altamente compatível com úlcera péptica perfurada, uma emergência cirúrgica clássica (abdome agudo perfurativo). O manejo inicial deve priorizar a ressuscitação volêmica, cobertura antibiótica contra flora gastrointestinal, supressão ácida com IBP intravenoso e encaminhamento imediato para cirurgia de urgência. Sobre os distratores: (A) A endoscopia digestiva alta é formalmente contraindicada na suspeita de perfuração livre por risco de aumentar o pneumoperitônio e a contaminação. (B) Analgesia isolada e conduta expectante retardam o tratamento cirúrgico definitivo de uma sepse abdominal iminente. (D) O tratamento ambulatorial é totalmente inadequado e fatal no contexto de abdome agudo perfurativo.',
     reference: 'SAGES/World Society of Emergency Surgery. Guidelines for the management of perforated peptic ulcer. 2020',
-    tags: ['Abdome Agudo', 'Urgência e Emergência', 'Perfurativo']
+    tags: ['abdome agudo', 'urgência e emergência', 'perfurativo']
   },
   {
     id: 'tp2026-64',
@@ -1677,7 +1677,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Paciente com trauma abdominal contuso, instabilidade hemodinâmica persistente (choque) e FAST positivo com líquido livre intraperitoneal tem indicação direta e imediata de laparotomia exploradora.',
     commentary: 'O paciente apresenta sinais claros de choque hipovolêmico classe III/IV (FC 128 bpm, PA 85/55 mmHg) e o FAST revelou líquido livre intraperitoneal (espaço de Morrison e recesso esplenorrenal). Pelas diretrizes do ATLS, um paciente instável hemodinamicamente com FAST positivo após trauma contuso tem indicação formal imediata de laparotomia exploradora. Sobre os distratores: (A) A Tomografia Computadorizada é contraindicada em pacientes hemodinamicamente instáveis, pois o deslocamento e o tempo do exame colocam a vida em risco. (C) O LPD é desnecessário porque o FAST já diagnosticou o líquido livre (hemoperitônio). (D) Esperar 30 minutos para repetir o FAST em um paciente chocado e com sangramento ativo evidente é um erro grave.',
     reference: 'ATLS – Advanced Trauma Life Support, 11ª ed., American College of Surgeons',
-    tags: ['Trauma', 'Urgência e Emergência', 'ATLS']
+    tags: ['trauma', 'urgência e emergência', 'ATLS']
   },
   {
     id: 'tp2026-65',
@@ -1693,7 +1693,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'No trauma abdominal contuso, o paciente que se apresenta hemodinamicamente ESTÁVEL com FAST positivo tem indicação de realizar Tomografia Computadorizada (TC) de abdome com contraste para identificar e estadiar as lesões viscerais.',
     commentary: 'Diferente do caso anterior, esta paciente apresenta estabilidade hemodinâmica (PA 120x75, FC 94). No contexto do trauma abdominal fechado, a estabilidade hemodinâmica associada ao FAST positivo indica a realização de tomografia computadorizada (TC) com contraste para delimitar a lesão visceral e planejar o tratamento (que frequentemente pode ser conservador). Sobre os distratores: (A) A laparotomia imediata está indicada apenas se houvesse instabilidade hemodinâmica refratária. (C) O LPD já foi superado pelo FAST positivo e não traria novos dados anatômicos. (D) Observação com curva laboratorial isolada e FAST tardio sem TC atrasaria o diagnóstico de lesões esplênicas ou hepáticas graves que necessitam de estadiamento imediato.',
     reference: 'Sabiston Textbook of Surgery. Philadelphia: Elsevier; 2021. ATLS – Advanced Trauma Life Support, 11ª ed., American College of Surgeons',
-    tags: ['Trauma', 'Urgência e Emergência', 'ATLS']
+    tags: ['trauma', 'urgência e emergência', 'ATLS']
   },
   {
     id: 'tp2026-66',
@@ -1709,7 +1709,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A presença de trauma torácico unilateral associado a choque (hipotensão e taquicardia), abolição do murmúrio vesicular e maciez à percussão (indicando líquido/sangue no espaço pleural) é diagnóstica de hemotórax maciço à esquerda.',
     commentary: 'O diagnóstico de hemotórax maciço é fundamentado na anamnese de trauma torácico associada ao choque hipovolêmico (hipotensão, taquicardia, ausência de turgência jugular devido à hipovolemia) e no exame físico do tórax: murmúrio vesicular abolido ipsilateralmente e macicez à percussão (sangue livre no espaço pleural). Sobre os distratores: (A) A contusão pulmonar não se apresenta com macicez pleural significativa e choque imediato. (B) No tamponamento cardíaco há turgência jugular e bulhas abafadas, sem abolição de murmúrio vesicular. (C) No pneumotórax hipertensivo a percussão seria hipertimpânica e haveria turgência jugular pelo desvio mediastinal.',
     reference: 'Sabiston Textbook of Surgery. Philadelphia: Elsevier; 2021. ATLS – Advanced Trauma Life Support, 11ª ed., American College of Surgeons',
-    tags: ['Trauma', 'Tórax', 'Hemotórax']
+    tags: ['trauma', 'tórax', 'hemotórax']
   },
   {
     id: 'tp2026-67',
@@ -1725,7 +1725,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Diante de uma infecção de sítio cirúrgico incisional com saída de secreção purulenta, a conduta imediata é a drenagem mediante abertura de pontos da ferida, associada à exploração digital para verificar se há deiscência aponeurótica oculta.',
     commentary: 'O diagnóstico de infecção do sítio cirúrgico (ISC) incisional é clínico, definido pela presença de drenagem purulenta e sinais inflamatórios locais. O tratamento de escolha absoluto é mecânico: abertura dos pontos (drenagem) para esvaziamento e exploração digital cuidadosa da ferida para avaliar a integridade da aponeurose e excluir deiscência profunda. Sobre os distratores: (A) Coleta de swab de ferida aberta tem baixíssimo valor preditivo, pois identifica colonizadores habituais da pele. (B) A ISC é um diagnóstico puramente clínico, não havendo necessidade de ultrassonografia rotineira quando há saída óbvia de pus; além disso, antibióticos sistêmicos só são iniciados em caso de celulite extensa ou repercussão sistêmica, sendo a drenagem a medida principal. (D) Conduta expectante com compressas mornas em vigência de abscesso ou secreção purulenta ativa é negligência.',
     reference: 'TOWNSEND, Courtney M. et al. Sabiston: Tratado de Cirurgia. 21. ed. Rio de Janeiro: Elsevier, 2023. ISBN 978-8535292412.',
-    tags: ['Infecção de Sítio Cirúrgico', 'Pós-operatório', 'Complicações']
+    tags: ['infecção de sítio cirúrgico', 'pós-operatório', 'complicações']
   },
   {
     id: 'tp2026-68',
@@ -1741,7 +1741,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Na presença de hérnia inguinal encarcerada recente (<24h) sem sinais de sofrimento de alça (estrangulamento, peritonite ou resposta inflamatória sistêmica), a conduta inicial consiste na tentativa de redução manual (taxis) assistida por analgesia/sedação.',
     commentary: 'Para casos de hérnia inguinal encarcerada aguda (8 horas de evolução) na ausência de manifestações clínicas de estrangulamento (sem peritonite, febre, taquicardia ou obstrução intestinal), a abordagem inicial recomendada é a tentativa de redução manual guiada (taxis) sob analgesia sistêmica e sedação leve. Isso pode converter uma cirurgia de emergência em um procedimento eletivo programado. Sobre os distratores: (A) A mera observação clínica com analgésicos é perigosa devido ao risco de estrangulamento iminente. (B) A cirurgia urgente está indicada apenas em caso de falha da taxis ou se houvesse sinais francos de isquemia/estrangulamento. (C) Exames laboratoriais não devem retardar a intervenção de redução da hérnia.',
     reference: 'Fitzgibbons RJ, Forse RA. Groin Hernias in Adults. N Engl J Med. 2015. Sartelli M et al. WSES Guidelines for Emergency Repair of Complicated Hernias. World J Emerg Surg. 2013. Pawlak M et al. Management of Incarcerated Inguinal Hernia with Taxis. Hernia. 2021.',
-    tags: ['Hérnias', 'Urgência e Emergência', 'Hérnia Inguinal']
+    tags: ['hérnias', 'urgência e emergência', 'hérnia inguinal']
   },
   {
     id: 'tp2026-69',
@@ -1757,7 +1757,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O abscesso estabelece uma cavidade encapsulada espessa contendo pus e detritos necróticos, criando uma barreira física com baixa perfusão interna. Isso impede que os antibióticos sistêmicos atinjam concentrações terapêuticas eficazes no local infectado, exigindo drenagem cirúrgica.',
     commentary: 'O abscesso cutâneo ou muscular profundo forma uma coleção purulenta envolta por uma pseudocápsula de fibrina e tecido colágeno inflamatório. Essa barreira vascularizada externamente mas avascular internamente cria um ambiente com baixíssima perfusão central, pH ácido e altíssima carga bacteriana ativa e dormente. Como resultado, os antibióticos circulantes não penetram no interior do abscesso em quantidade suficiente, o que dita o antigo aforismo cirúrgico: "ubi pus, ibi evacua" (onde há pus, esvazie/drene). Sobre os distratores: (B, C, D) Embora vasoconstrição tecidual periférica, toxinas bacterianas e biofilmes bacterianos desempenhem papéis em infecções, a barreira mecânica e biológica da cápsula do abscesso é o fator fisiopatológico primário reconhecido na falha da terapia medicamentosa isolada.',
     reference: 'Stevens DL et al. Practice Guidelines for Skin and Soft Tissue Infections. Clin Infect Dis. 2014. Miller JM et al. Guide to Microbiology Laboratory Utilization. Clin Infect Dis. 2024. Seidelman JL et al. Surgical Site Infection Prevention. JAMA. 2023.',
-    tags: ['Abscesso', 'Fisiopatologia', 'Infecção']
+    tags: ['abscesso', 'fisiopatologia', 'infecção']
   },
   {
     id: 'tp2026-70',
@@ -1773,7 +1773,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A claudicação intermitente na Doença Arterial Obstrutiva Periférica (DAOP) decorre do descompasso entre a oferta e a demanda de oxigênio muscular. A estenose aterosclerótica limita o fluxo arterial e impede o seu aumento durante o exercício físico.',
     commentary: 'A claudicação intermitente é a manifestação clínica clássica da DAOP. Sob repouso, o fluxo de sangue é suficiente para a taxa metabólica do músculo. Durante a deambulação, a musculatura da panturrilha demanda maior fluxo sanguíneo e suprimento de O2. Diante de estenoses arteriais fixas por placas ateroscleróticas, ocorre uma incapacidade de vasodilatação compensatória proporcional, resultando em isquemia tecidual temporária com acúmulo de lactato e dor, que cessa rapidamente com o repouso. Sobre os distratores: (A) A insuficiência venosa crônica cursa com dor em peso, edema e varizes, piorando ao ortostatismo e melhorando ao repouso elevado (e não ao simples repouso em pé). (C) Síndromes de aprisionamento arterial são anomalias raras do jovem e não o mecanismo típico da DAOP do idoso/tabagista. (D) A etiologia é degenerativa/aterosclerótica crônica e não uma arterite inflamatória infecciosa aguda.',
     reference: 'McDermott MM. Peripheral Artery Disease in the Legs. New England Journal of Medicine. 2026;394:486-496. Gornik HL et al. 2024 ACC/AHA Guideline for the Management of Lower Extremity Peripheral Artery Disease. JACC, 2024. Kullo IJ, Rooke TW. Peripheral Artery Disease. NEJM. 2016;374:861-871.',
-    tags: ['Vascular', 'DAOP', 'Fisiopatologia']
+    tags: ['vascular', 'DAOP', 'fisiopatologia']
   },
   {
     id: 'tp2026-71',
@@ -1789,7 +1789,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A ultrassonografia venosa com Doppler é o método de escolha (padrão-ouro não invasivo) para o diagnóstico e avaliação anatomofuncional da insuficiência venosa crônica.',
     commentary: 'A ultrassonografia venosa com Doppler (duplex scan) é o exame complementar de primeira linha. Permite a avaliação anatômica (presença de trombos, calibres venosos) e funcional (mapeamento do refluxo valvular no sistema venoso superficial, profundo e perfurante) com excelente acurácia, de forma não invasiva e sem contraste. Sobre os distratores: (A) A venografia retrógrada contrastada é invasiva e hoje reservada apenas para fins terapêuticos de exceção ou anatomia complexa. (B) A pletismografia avalia a hemodinâmica global do esvaziamento venoso, mas não provê detalhes anatômicos estruturais específicos. (C) A angiotomografia venosa é reservada para investigação de eixos venosos ilíaco-cavais (ex: Síndrome de May-Thurner) e não como exame inicial estrutural periférico.',
     reference: 'Eberhardt RT, Raffetto JD. Chronic Venous Insufficiency. Circulation. 2014;130:333-346. Wittens C et al. Management of Chronic Venous Disease: Clinical Practice Guidelines of the European Society for Vascular Surgery. Eur J Vasc Endovasc Surg. 2015. Gloviczki P et al. The care of patients with varicose veins and associated chronic venous diseases. J Vasc Surg. 2011.',
-    tags: ['Vascular', 'Insuficiência Venosa', 'Exames']
+    tags: ['vascular', 'insuficiência venosa', 'exames']
   },
   {
     id: 'tp2026-72',
@@ -1805,7 +1805,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Para cálculos ureterais distais menores que 10 mm em pacientes estáveis, sem infecção, sem obstrução bilateral ou rim único e com dor controlada, a conduta ideal é a Terapia Expulsiva Médica (MET) com alfa-bloqueador (tansulozina) e analgesia.',
     commentary: 'Trata-se de cólica nefrética por cálculo ureteral distal pequeno (4mm). Uma vez obtido o controle da dor com analgésicos e na ausência de fatores de complicação (infecção, insuficiência renal, hidronefrose grave, anúria ou obstrução bilateral), a conduta padrão é o manejo conservador/expulsivo. O uso de alfabloqueadores como a tansulozina reduz o espasmo do músculo liso ureteral distal, acelerando significativamente a eliminação espontânea do cálculo (MET). Sobre os distratores: (B) A ureterolitotripsia cirúrgica de urgência não se justifica dada a alta taxa de eliminação espontânea de cálculos < 5 mm estáveis. (C) Antibioticoprofilaxia não tem papel em litíase não infectada. (D) A litotripsia extracorpórea por ondas de choque (LEOC) é preferida para cálculos renais pequenos e ureterais proximais, não se aplicando de rotina como primeira linha para ureter distal de 4 mm.',
     reference: 'Campbell-Walsh-Wein Urology. 11ª ed. Elsevier.',
-    tags: ['Urologia', 'Litíase Urinária', 'Conduta']
+    tags: ['urologia', 'litíase urinária', 'conduta']
   },
   {
     id: 'tp2026-73',
@@ -1821,7 +1821,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A associação de obstrução do trato urinário (cálculo ureteral com hidronefrose) e infecção sistêmica (febre, leucocitose, prostração) caracteriza uma Pielonefrite Aguda Complicada (Urosepse obstrutiva), constituindo uma emergência urológica absoluta que exige internação, antibioticoterapia e desobstrução cirúrgica urgente.',
     commentary: 'O quadro clínico combina dor lombar obstrutiva (litíase com hidronefrose), infecção bacteriana urinária ativa (nitrito+, leucocitúria) e sinais sistêmicos graves (febre, prostração, leucocitose, disfunção renal aguda com creatinina elevada). Esta é uma "via urinária obstruída e infectada", uma verdadeira urgência urológica de alto risco de choque séptico e óbito. Exige internação imediata para antibioticoterapia de amplo espectro venosa e desobstrução ureteral urgente (via passagem de cateter duplo J retrógrado ou nefrostomia percutânea). Sobre os distratores: (A, B) Há infecção sistêmica grave e obstrução mecânica evidente, impossibilitando conduta conservadora simples ou diagnóstico de colonização. (C) A disfunção renal (creatinina de 1,4) decorre diretamente da hidronefrose aguda somada à sepse renal (lesão renal aguda obstrutiva/infecciosa) e não de descompensação crônica primária isolada.',
     reference: 'RIELLA, M. C. Princípios de Nefrologia e Distúrbios Hidroeletrolíticos. 2024. JOHNSON, R. Nefrologia Clínica – Abordagem Abrangente. 5ª ed. Elsevier, 2016. SOCIEDADE BRASILEIRA DE UROLOGIA. Diretrizes em infecção do trato urinário. Disponível em: www.sbu.org.br',
-    tags: ['Urologia', 'Infecção Urinária', 'Urgência e Emergência']
+    tags: ['urologia', 'infecção urinária', 'urgência e emergência']
   },
   {
     id: 'tp2026-74',
@@ -1837,7 +1837,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Na intussuscepção intestinal, a invaginação de um segmento do intestino no outro traciona o mesentério associado, comprimindo inicialmente os vasos linfáticos e as veias (baixa pressão). Isso gera edema local que, ao aumentar a pressão tecidual, obstrui o fluxo arterial secundariamente, levando à isquemia, descamação e sangramento mucoso (fezes em geleia de morango).',
     commentary: 'O mecanismo fisiopatológico da intussuscepção intestinal envolve a penetração de um segmento intestinal proximal (geralmente o íleo terminal) no lúmen do segmento distal (geralmente o cólon cecal), levando consigo o mesentério e seus vasos. O primeiro efeito mecânico é a oclusão dos vasos de baixa pressão (veias e linfáticos), o que desencadeia congestão venosa, estase linfática e rápido edema na parede intestinal. Conforme o edema se acentua, a pressão tecidual intersticial ultrapassa a pressão de perfusão arterial, interrompendo o aporte sanguíneo (isquemia arterial secundária). Isso leva a infarto hemorrágico da mucosa, descamação celular e produção excessiva de muco misturado com hemácias, gerando o sinal clássico das fezes em "geleia de morango". Sobre os distratores: (A) A compressão do plexo mioentérico gera distúrbios de motilidade (como no megacólon), mas não sofrimento vascular isquêmico agudo primário. (B) A torção global do pedículo vascular é característica do volvo e não da invaginação. (D) A translocação bacteriana e peritonite são consequências finais tardias da necrose transmural e não o mecanismo gerador inicial do sangramento e isquemia.',
     reference: 'Maksoud, João Gilberto. Cirurgia Pediatrica 2ª Edição 2017 volume II',
-    tags: ['Pediatria', 'Cirurgia Pediátrica', 'Fisiopatologia']
+    tags: ['pediatria', 'cirurgia pediátrica', 'fisiopatologia']
   },
   {
     id: 'tp2026-75',
@@ -1853,7 +1853,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A principal suspeita clínica é de atresia de esôfago. A confirmação inicial é feita pela radiografia simples de tórax e abdome com uma sonda radiopaca ou preenchida com contraste injetado até o ponto de obstrução esofágica, o que demonstrará o fundo de saco cego.',
     commentary: 'A apresentação clínica de sialorreia abundante ao nascimento, engasgos e cianose na primeira mamada, somada à incapacidade de progressão de sonda gástrica, é patognomônica de atresia de esôfago. O exame padrão para confirmar a suspeita é a radiografia simples de tórax e abdome após inserção de sonda de aspiração radiopaca (ou preenchida com contraste radiopaco solúvel em água) até o ponto de resistência esofágica, que revelará o esôfago proximal terminando em fundo de saco cego (sonda enrolada). A radiografia de abdome também ajuda na classificação (a presença de gás no estômago revela fístula traqueoesofágica distal [Tipo C, a mais comum]; a ausência total de gás abdominal indica atresia isolada sem fístula distal [Tipo A]). Sobre os distratores: (B) A EDA neonatal é desnecessariamente invasiva, de baixa disponibilidade no berçário e associada a riscos anestésicos elevados. (C) O sulfato de bário é formalmente contraindicado pelo alto risco de pneumonia química grave por aspiração para a árvore traqueobrônquica se houver fístula. (D) A TC de tórax envolve alta exposição à radiação e não é o exame diagnóstico inicial preconizado.',
     reference: 'Maksoud, João Gilberto. Cirurgia Pediatrica 2ª Edição 2017 volume I',
-    tags: ['Pediatria', 'Cirurgia Pediátrica', 'Diagnóstico']
+    tags: ['pediatria', 'cirurgia pediátrica', 'diagnóstico']
   },
   {
     id: 'tp2026-76',
@@ -1869,7 +1869,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Para crianças com criptorquidia unilateral persistente após os 6 a 12 meses de idade, a conduta recomendada é o encaminhamento para cirurgia de orquidopexia, para prevenir infertilidade futura e reduzir o risco de malignização/torção.',
     commentary: 'A descida testicular espontânea raramente ocorre após os 6 meses de vida pós-natal. No menino de 2 anos com testículo direito persistentemente impalpável e hemi-escroto hipodesenvolvido (confirmando criptorquidia verdadeira), a cirurgia de orquidopexia eletiva deve ser programada de imediato (preferencialmente idealizada entre os 6 e 18 meses de vida). A correção precoce preserva a espermatogênese residual, facilita o acompanhamento para detecção precoce de malignização e previne torções ou hérnias associadas. Sobre os distratores: (A) Aguardar até a puberdade é incorreto e resulta em atrofia testicular irreversível e esterilidade. (C) Dosagens hormonais não são necessárias rotineiramente para criptorquidia unilateral em paciente hígido. (D) O tratamento clínico com hCG tem baixíssima taxa de eficácia a longo prazo e não é indicado como primeira linha.',
     reference: 'American Urological Association Guidelines. ASHCRAFT, Keith W.; HOLCOMB, George W.; MURPHY, J. Patrick. Pediatric Surgery. 7. ed. Philadelphia: Elsevier, 2020.',
-    tags: ['Pediatria', 'Cirurgia Pediátrica', 'Criptorquidia']
+    tags: ['pediatria', 'cirurgia pediátrica', 'criptorquidia']
   },
   {
     id: 'tp2026-77',
@@ -1885,7 +1885,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'Diante de um quadro de abdome agudo obstrutivo total (com sinais de sofrimento de alça/peritonite, desidratação e taquicardia) secundário a uma neoplasia obstrutiva de sigmoide, a conduta imediata e mandatória é a cirurgia de urgência.',
     commentary: 'A paciente apresenta quadro típico de abdome agudo obstrutivo baixo (parada de eliminação de gases e fezes, vômitos feculoides tardios) com sinais de gravidade sistêmica e complicação local (taquicardia, dor abdominal intensa com descompressão dolorosa positiva, sugerindo isquemia ou perfuração iminente de alça). A tomografia confirma obstrução mecânica por massa em sigmoide (provável adenocarcinoma colorretal obstrutivo). Neste cenário de oclusão total com sinais de sofrimento abdominal, medidas conservadoras estão contraindicadas, exigindo-se cirurgia de urgência (laparotomia com ressecção tumoral e colostomia terminal à Hartmann ou anastomose primária com estoma de proteção). Sobre os distratores: (B) O tratamento conservador é inútil e perigoso na oclusão neoplásica total mecânica com peritonite. (C, D) A quimioterapia e radioterapia neoadjuvantes necessitam de estadiamento prévio e não têm papel no tratamento agudo de uma emergência cirúrgica obstrutiva com abdome agudo.',
     reference: 'SOCIEDADE BRASILEIRA DE ONCOLOGIA CLÍNICA (SBOC). Diretrizes SBOC: câncer colorretal. São Paulo: SBOC, [2024 ou 2025].',
-    tags: ['Oncologia', 'Urgência e Emergência', 'Abdome Agudo']
+    tags: ['oncologia', 'urgência e emergência', 'abdome agudo']
   },
   {
     id: 'tp2026-78',
@@ -1901,7 +1901,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A fisiopatologia da doença hemorroidária envolve a degeneração do tecido conjuntivo de sustentação dos coxins vasculares (como o ligamento de Parks) e a dilatação progressiva dos plexos venosos anorretais, promovendo o deslocamento e prolapso desses coxins através do canal anal.',
     commentary: 'A fisiopatologia mais aceita para a doença hemorroidária baseia-se na teoria do deslizamento/deslocamento dos coxins anales. Os coxins hemorroidários são estruturas anatômicas normais compostas por anastomoses arteriovenosas e tecido conjuntivo elástico de suporte (estroma de sustentação). Com o envelhecimento, gestações sucessivas, esforço evacuatório repetido e obstipação, ocorre a degeneração e frouxidão do colágeno e das fibras de sustentação muscular desses coxins (desintegração do tecido de suporte). Consequentemente, esses coxins dilatam-se e deslizam canal anal abaixo, manifestando-se como sangramento e prolapso hemorroidário. Sobre os distratores: (A) Não há hiperplasia celular verdadeira ou hipertrofia tumoral. (B) Embora a hipertensão venosa participe da congestão, estudos mostram que a constipação/esforço crônico não causa hemorroidas isoladamente na ausência de degeneração do tecido colágeno de suporte anal (muitos obstipados crônicos têm canal anal normal e vice-versa). (D) A inflamação local é um evento secundário ao trauma e engasgamento das hemorroidas prolapsadas, não a causa primária.',
     reference: 'Coelho, Júlio Cezar Uili. Aparelho digestivo: clínica e cirurgia/Júlio Coelho. 4a edição - São Paulo: Editora Atheneu, 2012.',
-    tags: ['Coloproctologia', 'Hemorroidas', 'Fisiopatologia']
+    tags: ['coloproctologia', 'hemorroidas', 'fisiopatologia']
   },
   {
     id: 'tp2026-79',
@@ -1917,7 +1917,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'A Angiotomografia Computadorizada (AngioTC) de abdômen e pelve (com contraste venoso em fases arterial e portal) é o padrão-ouro não invasivo e exame de escolha imediato para o diagnóstico de Isquemia Mesentérica Aguda.',
     commentary: 'O quadro clássico de dor abdominal aguda desproporcional aos achados físicos num paciente com fibrilação atrial (fator cardioembólico) é altamente sugestivo de Isquemia Mesentérica Aguda (IMA), secundária a embolia da artéria mesentérica superior. O exame padrão-ouro imediato é a AngioTC abdominal. Esse exame permite identificar diretamente falhas de enchimento vascular (trombos/êmbolos), avaliar sinais de sofrimento de parede de alça (pneumatose intestinal, espessamento de parede, falha de realce de contraste) e orientar o planejamento cirúrgico reconstrutor ou de ressecção. Sobre os distratores: (A) O ultrassom com Doppler tem baixa acurácia na emergência devido ao meteorismo intestinal obstrutivo que impede a visibilização das artérias mesentéricas distais. (C) A RNM é demorada, de baixa disponibilidade na urgência e incompatível com o diagnóstico célere necessário na IMA. (D) A radiografia simples só revela alterações em fases extremamente tardias de perfuração ou necrose avançada (como pneumoperitônio ou pneumatose), não auxiliando no diagnóstico precoce.',
     reference: 'Sabiston Textbook of Surgery. Philadelphia: Elsevier; 2021.',
-    tags: ['Vascular', 'Isquemia Mesentérica', 'Urgência e Emergência']
+    tags: ['vascular', 'isquemia mesentérica', 'urgência e emergência']
   },
   {
     id: 'tp2026-80',
@@ -1933,7 +1933,7 @@ export const CIRURGIA_QUESTIONS: Question[] = [
     explanation: 'O quadro clínico de trauma temporal seguido de perda transitória de consciência, "intervalo lúcido", e posterior deterioração neurológica súbita com midríase ipsilateral (herniação uncal) é clássico do Hematoma Epidural (Extradural), cujo achado tomográfico é uma imagem hiperdensa em formato de lente biconvexa.',
     commentary: 'O hematoma epidural (extradural) decorre do sangramento arterial (frequentemente da artéria meníngea média) entre a dura-máter e a tábua óssea interna do crânio, comumente após fratura do osso temporal. Apresenta o clássico padrão de "intervalo lúcido": trauma inicial seguido de desmaio breve, recuperação neurológica completa e posterior declínio neurológico catastrófico devido à rápida expansão do hematoma e compressão cerebral. A midríase ipsilateral é decorrente da herniação do uncus do lobo temporal que comprime o terceiro par craniano (oculomotor) ipsilateral. Na TC de crânio, observa-se uma coleção de sangue hiperdensa limitada pelas suturas cranianas, formando o aspecto de lente biconvexa. Sobre os distratores: (A) A LAD cursa com coma imediato desde o impacto, sem intervalo lúcido. (B) O hematoma subdural agudo tem formato em crescente (côncavo-convexo) e decorre tipicamente de ruptura de veias em ponte, com pior prognóstico e evolução menos focal/lúcida. (C) A HSA traumática cursa com cefaleia súbita e sangue nas cisternas e sulcos, sem o efeito de massa biconvexo agudo descrito.',
     reference: 'ATLS (Advanced Trauma Life Support). 11ª Edição. American College of Surgeons. Sabiston Textbook of Surgery: The Biological Basis of Modern Surgical Practice. 21st Edition. Manual MSD - Versão para Profissionais de Saúde: Traumatismo Cranioencefálico (TCE).',
-    tags: ['Trauma', 'Neurocirurgia', 'TCE']
+    tags: ['trauma', 'neurocirurgia', 'TCE']
   },
   // ---- Teste de Progresso 2019 (gabarito oficial) ----
   {

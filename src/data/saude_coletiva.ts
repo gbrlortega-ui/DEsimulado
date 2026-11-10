@@ -15,7 +15,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Mudanças comportamentais associadas a melhores condições econômicas são eficazes na redução da concentração interior de MP.',
     commentary: 'De acordo com as referências citadas foram comprovadas que mudanças comportamentais no estilo de vida tais como: verificação da qualidade do ar; uso de purificador de ar domiciliar; abrir as janelas da casa, para promover uma melhor ventilação do ambiente; verificar os filtros do ar condicionado; abster-se de sair quando a concentração de MP externo estiver alta e o uso de máscara ao sair quando associadas a melhores condições econômicas são eficazes na redução da concentração interior de MP.',
     reference: 'Hajeong Kim, Geunjoo Na, Shinhee Park, Seung Won Ra, Sung-Yoon Kang, Ho Cheol Kim, Hwan-Cheol Kim, Sei Won Lee,The impact of life behavior and environment on particulate matter in chronic obstructive pulmonary disease,Environmental Research, Volume 198,2021,111265,ISSN 0013-9351, https://doi.org/10.1016/j.envres.2021.111265; Kim, H., Huh, JY., Na, G. et al. Lifestyle practices that reduce seasonal PM2.5 exposure and their impact on COPD. Sci Rep 13, 11822 (2023). https://doi.org/10.1038/s41598-023-38714-5',
-    tags: ['Saúde Ambiental', 'DPOC']
+    tags: ['saúde ambiental', 'DPOC']
   },
   {
     id: 'tp2024-102',
@@ -31,7 +31,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A notificação de violência é compulsória para profissionais de saúde e não depende de autorização da vítima ou registro policial.',
     commentary: '(A) Está incorreta porque a pessoa tem o direito de registrar o Boletim de Ocorrência junto às autoridades policiais, mas não existe esta obrigatoriedade, principalmente, quando existe manifestação contrária por parte da pessoa agredida. (B) Está incorreta porque afirma que existe a obrigatoriedade da confirmação do caso e necessidade de equipe para registrar o envio da Ficha de Notificação de agravo o que contraria as orientações do Art. 8º reproduzido acima. (C) É a alternativa correta porque a Lei 6.259 de 30 de outubro de 1975 em seu Art 8º retrata que “É dever de todo cidadão comunicar à autoridade sanitária local a ocorrência de fato, comprovado ou presumível, de caso de doença transmissível, sendo obrigatória a médicos e outros profissionais de saúde no exercício da profissão, bem como aos responsáveis por organizações e estabelecimentos públicos e particulares de saúde e ensino a notificação de casos suspeitos ou confirmados das doenças relacionadas em conformidade com o artigo 7º”. A periodicidade do envio está presente na Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública atualizada em 19/02/2024. (D) Está incorreta porque à comunicação à Autoridade de Saúde deve ocorrer conforme a Lei 6259/75',
     reference: 'BRASIL, SINANWEB. Brasília. 09 de janeiro de 2020. Link disponível em: https://portalsinan.saude.gov.br/doencas-eagravos; BRASIL. Ficha de Notificação de SINAN SISTEMA DE INFORMAÇÃO DE AGRAVOS DE NOTIFICAÇÃO FICHA DE NOTIFICAÇÃO INDIVIDUAL. Brasília. Link disponível em: http://portalsinan.saude.gov.br/images/documentos/Agravos/via/violencia_v5.pdf. Acesso em 11 de junho de 2024; BRASIL. Portal SINAN. Brasília. 25 de julho de 2022. Link disponível em: http://portalsinan.saude.gov.br/violenciainterpessoal-autoprovocada. Acesso em 11 de junho de 2024; CASA CIVIL. L6259.Brasília. Link disponível: https://www.planalto.gov.br/ccivil_03/leis/l6259.htm; MINISTÉRIO DA SAÚDE. Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública. Brasília. 19 de fevereiro de 2024.',
-    tags: ['Ética Médica', 'Vigilância em Saúde']
+    tags: ['ética médica', 'vigilância em saúde']
   },
   {
     id: 'tp2024-103',
@@ -47,7 +47,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A coordenação do cuidado refere-se à sincronização da assistência entre diferentes pontos da rede.',
     commentary: 'Correta: A coordenação do cuidado implica adequada e eficiente troca de informações nos casos de referência e contrarreferências, e é melhor desempenhada por meio de um sistema de informação de base eletrônica que integre os pontos assistenciais e que permita aos serviços de APS acompanhar e avaliar se a atenção recebida nos demais pontos foi adequada às necessidades dos pacientes. Além disso, a realização de interconsultas entre profissionais de diferentes pontos assistenciais, estratégias de apoio matricial, encontros para discussão de casos clínicos com profissionais de diferentes pontos de atenção e ferramentas de comunicação entre esses pontos – uso rotineiro de contato telefônico, ampliação do uso de tecnologias de comunicação e informação, como as teleconsultorias – são fundamentais para que a coordenação do cuidado realizada pelos serviços de APS se consolide. Incorretas: A capacidade que detém uma equipe de saúde de identificar e lidar com o leque das necessidades de saúde apresentadas pelos indivíduos, seja resolvendo-as ou restando orientações para que recebam os serviços dos demais pontos de atenção à saúde, é a Integralidade. A essência do conceito de longitudinalidade é a duração, no tempo, de uma relação de confiança de base pessoal que se estabelece entre indivíduos e um médico e uma equipe de saúde, independentemente do tipo de problema de saúde apresentado ou mesmo de sua presença pontual. Essa relação possibilita que os profissionais conheçam os usuários do serviço e que estes conheçam a equipe de saúde. A longitudinalidade pressupõe a existência de uma fonte regular de atenção e a recorrência a ela ao longo do tempo, o que implica a Adscrição da população a equipes de saúde. Um serviço é considerado a porta de entrada ao sistema de saúde quando é identificado pela população e pela equipe como o primeiro recurso a ser buscado, em caso de uma necessidade em saúde. Em uma situação ideal, sempre que um indivíduo apresenta uma necessidade em saúde, o primeiro contato é feito nesse serviço, que deve ser de fácil acesso e disponível; se isso não acontecer, a procura será adiada, talvez a ponto de afetar negativamente a saúde. O conceito “porta de entrada ao sistema de saúde” refere-se tanto à acessibilidade quanto à utilização do serviço pela população, seja em caso de um novo evento de saúde ou de um novo episódio de uma condição antiga.',
     reference: 'Medicina ambulatorial: condutas de atenção primária baseadas em evidências [recurso eletrônico] / Organizadores, Bruce B. Duncan ... [et al.]. – 5. ed. – Porto Alegre: Artmed, 2022. Capítulo 3 - A ORGANIZAÇÃO DE SERVIÇOS DE ATENÇÃO PRIMÁRIA À SAÚDE, Takeda, Silvia.',
-    tags: ['APS', 'Políticas de Saúde', 'Gestão']
+    tags: ['APS', 'políticas de saúde', 'gestão']
   },
   {
     id: 'tp2024-104',
@@ -63,7 +63,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A avaliação multidimensional é uma ferramenta de triagem oportunística para detectar declínios funcionais comuns no envelhecimento.',
     commentary: '(D) CORRETA. O instrumento de avaliação multidimensional do idoso foi desenvolvido para ser usado em ambulatório de APS, de forma complementar a uma consulta médica e de maneira oportunística. A abordagem proposta resume-se à checagem de um limitado número de funções-chave que podem estar alteradas, mas que, com frequência, não são pesquisadas quando uma história e um exame físico convencional são utilizados na avaliação de pacientes idosos. (A) INCORRETA. A funcionalidade é avaliada pela dimensão funcional. A dimensão psicossocial avalia tanto os fatores sociais, incluindo os culturais, bem como a saúde mental do indivíduo idoso. (B) INCORRETA. As dimensões avaliadas são visão, audição, função dos membros superiores e inferiores, função cognitiva, humor, risco domiciliar para quedas, atividades da vida diária básica e instrumentada, incontinência urinária, perda de peso e suporte social. (C) INCORRETA. A saúde mental do idoso é avaliada pela dimensão psicossocial.',
     reference: 'Ministério da Saúde. Nota técnica 01/2019 – Esclarecimento aos gestores sobre a avaliação multidimensional do idoso. Disponível em: https://atencaobasica.saude.rs.gov.br/upload/arquivos/201904/ 25085725-nt-01-avaliacao-multi.pdf; GUSSO, Gustavo; LOPES, José M C.; DIAS, Lêda C. Tratado de medicina de família e comunidade - 2 volumes: princípios, formação e prática. Grupo A, 2019., Capítulo 89',
-    tags: ['Geriatria', 'APS', 'Saúde do Idoso']
+    tags: ['geriatria', 'APS', 'saúde do idoso']
   },
   {
     id: 'tp2024-105',
@@ -79,7 +79,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A gestação não contraindica o rastreamento do câncer de colo de útero.',
     commentary: 'Recomendações da coleta do exame citopatológico do colo do útero diante de situações especiais: Seguir as recomendações de periodicidade e faixa etária como para as demais mulheres. Há recomendações conflitantes quanto à coleta de material endocervical em grávidas. Apesar de não haver evidências de que a coleta de espécime endocervical aumente o risco sobre a gestação quando utilizada uma técnica adequada, outras fontes recomendam evitá-la devido ao risco em potencial. Recomenda-se análise caso a caso, pesando riscos e benefícios da ação. Gestantes aderentes ao programa de rastreamento com últimos exames normais podem ser acompanhadas de forma segura sem a coleta endocervical durante a gravidez. Por outro lado, para mulheres com vínculo frágil ao serviço e/ou não aderentes ao programa de rastreamento, o momento da gestação se mostra como valiosa oportunidade para a coleta do exame, devendo, portanto, ser completa.',
     reference: 'Protocolos da Atenção Básica: Saúde das Mulheres / Ministério da Saúde, Instituto Sírio-Libanês de Ensino e Pesquisa – Brasília: Ministério da Saúde, 2016.',
-    tags: ['Rastreamento', 'Saúde da Mulher', 'Gestação']
+    tags: ['rastreamento', 'saúde da mulher', 'gestação']
   },
   {
     id: 'tp2024-106',
@@ -95,7 +95,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A ESF atua sobre o território e suas condições de vida, abordando os determinantes sociais.',
     commentary: 'A Estratégia de Saúde da Família (ESF), um dos pilares do SUS, objetiva consolidar a atenção básica no brasil a partir dos elementos que compõem os DSS. busca-se, assim, alcançar a saúde, entendida de forma coletiva e holística. isto é, por meio da atenção integral, das atividades de educação em saúde, do vínculo humanizado entre profissionais da saúde e usuários, da abordagem intersetorial, do acesso universal e equitativo entre outros procedimentos que contribuirão para a redução das desigualdades sociais. A saúde complementar, entre ela os planos privados de saúde, não são caracterizados pelos princípios da saúde pública e coletiva, portanto, apenas podem ser acessados por aqueles que podem pagar, ou seja, por uma minoria. Por sua vez, o desenvolvimento tecnológico médico e as campanhas de vacinação, apesar de serem essenciais para a prevenção e a promoção da saúde, não estão diretamente relacionados com, por exemplo, as condições sociais e econômicas que determinam estruturalmente a saúde de uma população.',
     reference: 'BUSS, P. M.; PELLEGRINI FILHO, A. A Saúde e seus Determinantes Sociais. Physis: Revista de Saúde Coletiva, p. 77-93, 2007. PAIM, J. S. Atenção Primária à Saúde no Brasil: fundamentos e perspectivas. Saúde em Debate, p. 633-646, 2020.',
-    tags: ['DSS', 'SUS', 'Saúde da Família']
+    tags: ['DSS', 'SUS', 'saúde da família']
   },
   {
     id: 'tp2024-107',
@@ -111,7 +111,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A tosse pode ser efeito colateral do Enalapril e a sonolência/lapsos de memória do Zolpidem.',
     commentary: 'A substituição do enalapril por um BRA (bloqueador do receptor da angiotensina) pode reduzir a tosse persistente. A redução ou descontinuação do zolpidem pode diminuir a sonolência diurna, lapsos de memória e fadiga. A introdução de estratégias não farmacológicas para insônia, como a terapia cognitivocomportamental, pode melhorar a qualidade do sono sem os efeitos adversos do zolpidem. As outras opções não abordam adequadamente os problemas relacionados à polifarmácia e podem introduzir novos riscos ou não resolver os sintomas atuais.',
     reference: 'Fick, D. M., et al. (2019). "2019 American Geriatrics Society Beers Criteria® Update Expert Panel." Journal of the American Geriatrics Society, 67(4), 674-694. Maher, R. L., Hanlon, J., & Hajjar, E. R. (2014). "Clinical consequences of polypharmacy in elderly." Expert Opinion on Drug Safety, 13(1), 57-65. Katzung, B. G., Masters, S. B., & Trevor, A. J. (2012). "Basic & Clinical Pharmacology." 12ª ed. New York: McGraw-Hill Medical.',
-    tags: ['Polifarmácia', 'Geriatria', 'Farmacologia']
+    tags: ['polifarmácia', 'geriatria', 'farmacologia']
   },
   {
     id: 'tp2024-108',
@@ -127,7 +127,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Acesso garantido (Universalidade) e assistência farmacêutica como parte do cuidado (Integralidade).',
     commentary: 'De acordo com o artigo 196 da constituição, a saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal e igualitário às ações e serviços para sua promoção, proteção e recuperação. O acesso universal significa que todos podem alcançar uma ação/serviço de saúde sem qualquer barreira legal, econômica, física ou cultural. Além disso, de acordo com a Lei 8.080/1990, um dos princípios do SUS é a universalidade de acesso aos serviços de saúde em todos os níveis de assistência e outro princípio é integralidade de assistência, ou seja, o conjunto articulado e contínuo das ações e serviços preventivos e curativos, individuais e coletivos, exigidos para cada caso em todos os níveis de complexidade do sistema.',
     reference: 'BRASIL. Constituição da República Federativa do Brasil. 18.ed. Brasília, DF: Senado, 1988. BRASIL. Lei 8.080, de 19 de setembro de 1990. Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. Diário Oficial da União, Brasília, DF, 19 set. 1990a. Seção 1.',
-    tags: ['SUS', 'Princípios', 'Bioética']
+    tags: ['SUS', 'princípios', 'bioética']
   },
   {
     id: 'tp2024-109',
@@ -143,7 +143,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Barreiras geográficas e organizacionais que impedem o acesso efetivo comprometem a Universalidade.',
     commentary: '• Universalidade é o princípio que significa que todos podem alcançar uma ação ou serviço de saúde sem qualquer barreira legal, econômica, física ou cultural. • A participação é uma diretriz que aborda o controle social no SUS, ou seja, participação social nas instâncias previstas, como conselhos e conferências de saúde. • A descentralização político-administrativa significa a descentralização dos serviços e divisão de responsabilidades nas três esferas de governo; e serviços de referência mais especializados do SUS, não se localizam em municípios de pequeno porte, mas em cidades maiores que são referências em suas regionais de saúde. • A equidade é o princípio que trata da compreensão da igualdade da assistência à saúde, sem preconceitos ou privilégios de qualquer espécie, mas levando em consideração as desigualdades para seu melhor direcionamento; o princípio estaria correto para a situação descrita, contudo a justificativa trata da integralidade e de forma incorreta, pois não compete à UBS oferecer exames mais especializados.',
     reference: 'BRASIL. Constituição da República Federativa do Brasil. 18.ed. Brasília, DF: Senado, 1988. BRASIL. Lei 8.080, de 19 de setembro de 1990. Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. Diário Oficial da União, Brasília, DF, 19 set. 1990a. Seção 1.',
-    tags: ['SUS', 'Acesso', 'Saúde Rural']
+    tags: ['SUS', 'acesso', 'saúde rural']
   },
   {
     id: 'tp2024-110',
@@ -159,7 +159,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Abordar barreiras socioeconômicas e culturais é chave para a justiça social na distribuição de vacinas.',
     commentary: 'A alternativa correta (B), haja vista que esta alternativa reconhece a complexidade das barreiras que impedem o acesso equitativo à imunização e busca promover a justiça social na distribuição de vacinas, abordando questões socioeconômicas e culturais que influenciam a adesão vacinal. De acordo com o artigo 196 da constituição, a saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal e igualitário às ações e serviços para sua promoção, proteção e recuperação. O acesso universal significa que todos podem alcançar uma ação/serviço de saúde sem qualquer barreira legal, econômica, física ou cultural. Além disso, de acordo com a Lei 8.080/1990, um dos princípios do SUS é a universalidade de acesso aos serviços de saúde em todos os níveis de assistência e outro princípio é integralidade de assistência, ou seja, o conjunto articulado e contínuo das ações e serviços preventivos e curativos, individuais e coletivos, exigidos para cada caso em todos os níveis de complexidade do sistema.',
     reference: 'BRASIL. Constituição da República Federativa do Brasil. 18.ed. Brasília, DF: Senado, 1988. BRASIL. Lei 8.080, de 19 de setembro de 1990. Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. Diário Oficial da União, Brasília, DF, 19 set. 1990a. Seção 1. GUSSO, Gustavo et al. Tratado de medicina de família e comunidade: princípios, formação e prática. 2. ed. V. 1 e 2. Porto Alegre: Artmed, 2019, xxii, 938. p',
-    tags: ['Imunização', 'Saúde Pública', 'Equidade']
+    tags: ['imunização', 'saúde pública', 'equidade']
   },
   {
     id: 'tp2024-111',
@@ -175,7 +175,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Abordagens holísticas e coordenadas são mais abrangentes.',
     commentary: 'A resposta correta é a alternativa (C), pois a implementação de um programa integrado de saúde ocupacional é a estratégia mais abrangente e eficaz para proteger os trabalhadores da saúde. Este programa deve incluir a avaliação contínua dos riscos ocupacionais, treinamento regular dos profissionais, ajustes ergonômicos no local de trabalho, suporte psicossocial para lidar com o estresse e o uso adequado de Equipamentos de Proteção Individual (EPIs). Uma abordagem integrada garante que todos os tipos de riscos sejam mitigados de maneira holística e coordenada, promovendo um ambiente de trabalho mais seguro e saudável.',
     reference: 'BRASIL. Ministério da Saúde. (2012). Programa de Melhoria da Qualidade de Vida e Saúde no Trabalho (PMQVST). Brasília: Ministério da Saúde. Disponível em: http://bvsms.saude.gov.br/bvs/publicacoes/programa_qualidade_vida_saude_trabalho.pdf Santos, A. P., & Oliveira, R. A. (2013). Avaliação dos fatores de risco ocupacionais e medidas de prevenção para trabalhadores da saúde. Revista Brasileira de Saúde Ocupacional, 38(127), 172-182. Disponível em: https://www.scielo.br/j/rbso/a/ZrHP88HPdD9sL7P5tHPb8vF/?lang=pt',
-    tags: ['Saúde do Trabalhador', 'Gestão Hospitalar']
+    tags: ['saúde do trabalhador', 'gestão hospitalar']
   },
   {
     id: 'tp2024-112',
@@ -191,7 +191,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Secreção purulenta e sangramento pós-coito (sinusorragia) são sinais clássicos de cervicite.',
     commentary: 'A hipótese que mais se encaixa devido aos sintomas é cervicite. (A) Não é a primeira hipótese a ser pensada no momento. (B) Não pode ser, pois a paciente apresenta sinais e sintomas como dor e secreção amarelada. (C) Também não pode devido a coloração da secreção.',
     reference: 'GUSSO, Gustavo et al. Tratado de medicina de família e comunidade: princípios, formação e prática. 2. ed. V. 1 e 2. Porto Alegre: Artmed, 2019, xxii, 938. p',
-    tags: ['Saúde da Mulher', 'IST', 'Cervicite']
+    tags: ['saúde da mulher', 'IST', 'cervicite']
   },
   {
     id: 'tp2024-113',
@@ -207,7 +207,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A lei brasileira exige capacidade civil plena e idade mínima ou prole mínima.',
     commentary: 'A indicação de contracepção definitiva é que a paciente tenha mais de 25 anos de idade ou dois filhos vivos. independente do desejo da paciente se ela não cumprir os critérios não haverá a contracepção definitiva.',
     reference: 'GUSSO, Gustavo et al. Tratado de medicina de família e comunidade: princípios, formação e prática. 2. ed. V. 1 e 2. Porto Alegre: Artmed, 2019, XXII, 938. p LEI Nº 14.443, DE 2 DE SETEMBRO DE 2022, Diário Oficial da União, Publicado em: 05/09/2022 | Edição: 169 | Seção: 1 | Página: 5',
-    tags: ['Ética Médica', 'Saúde Reprodutiva', 'Legislação']
+    tags: ['ética médica', 'saúde reprodutiva', 'legislação']
   },
   {
     id: 'tp2024-114',
@@ -223,7 +223,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Revisão periódica (Medication Review) é fundamental para reduzir iatrogenias em polifarmácia.',
     commentary: '(A) Está correta pois a partir de cinco fármacos é necessário revisão regular de medicamentos. a letra. (B) Está errada pois sempre precisamos pensar em um medicamento que dê para ser usado para resolver dois ou mais problemas de saúde para evitar a polifarmácia. a letra. (C) Está errada pois nunca devemos piorar a saúde do paciente. (D) Está errada pois as preferências consideradas serão do paciente e não do prescritor.',
     reference: 'GUSSO, Gustavo et al. Tratado de medicina de família e comunidade: princípios, formação e prática. 2. ed. V. 1 e 2. Porto Alegre: Artmed, 2019, XXII, 938. p',
-    tags: ['Geriatria', 'Polifarmácia', 'Segurança do Paciente']
+    tags: ['geriatria', 'polifarmácia', 'segurança do paciente']
   },
   {
     id: 'tp2024-115',
@@ -239,7 +239,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Rastreios populacionais devem ter evidência de benefício; check-ups exaustivos em jovens saudáveis geram sobrediagnóstico.',
     commentary: '(A) Glicemia não é um exame indicado de rastreamento nesta paciente pela sua faixa etária (<45 anos) e sem outros fatores de risco em sua história. (B) TSH não é exame de rastreamento. (D) TSH não é exame de rastreamento.',
     reference: 'https://bvsms.saude.gov.br/bvs/publicacoes/caderno_atencao_primaria_29_rastreamento.pdf',
-    tags: ['Rastreamento', 'Saúde da Mulher', 'Prevenção']
+    tags: ['rastreamento', 'saúde da mulher', 'prevenção']
   },
   {
     id: 'tp2024-116',
@@ -255,7 +255,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O MCCP busca integrar a doença (disease) com a experiência de estar doente (illness).',
     commentary: '(A) O Sendo realista é o quarto componente. (B) SIFE – Sentimentos, Ideias, Funcionalidade e Expectativa. (C) Não é necessário seguir a ordem dos componentes, podendo as consultas abordar os temas de forma mais natural e de acordo com o decorrer e confiança da relação médico-pessoa.',
     reference: 'Consulta centrada na pessoa, José Mauro Ceratti Lopes; Lêda Chaves Dias, Tratado de Medicina de Família e Comunidade, Capítulo 15, 2ª edição, Gustavo Gusso, 2019. Método clínico centrado na pessoa, Marcelo Garcia Kolling, Medicina Ambulatorial – Condutas de Atenção Primária baseadas em Evidências, Cap 11, 5ª edição, Artmed, 2022',
-    tags: ['MCCP', 'Relação Médico-Paciente', 'APS']
+    tags: ['MCCP', 'relação médico-paciente', 'APS']
   },
   {
     id: 'tp2024-117',
@@ -270,7 +270,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     correctAnswer: 1,
     explanation: 'Adolescentes têm direito ao sigilo se tiverem capacidade de discernimento e ausência de riscos graves.',
     reference: 'Estatuto da Criança e do Adolescente, Lei Federal nº 8.069, de 13 de julho de 1990, artigo 227 da Constituição Federal',
-    tags: ['Ética Médica', 'Adolescência', 'Sigilo']
+    tags: ['ética médica', 'adolescência', 'sigilo']
   },
   {
     id: 'tp2024-118',
@@ -286,7 +286,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Tratamento sindrômico para Gonococo (resistente a quinas) e Clamídia.',
     commentary: 'Devido à possibilidade de coinfecção sem a identificação dessas bactérias, o ministério da saúde recomenda o uso de ceftriaxona intramuscular para o gonococo, associada à azitromicina oral para o tratamento dos outros agentes causadores de uretrites. cabe ressaltar que, devido ao aumento da resistência do gonococo às quinolonas, as mesmas não são mais indicadas como a primeira opção de tratamento de uritrite gonocócica, sendo substituídas pela ceftriaxona.',
     reference: 'Ministério da Saúde. Guia de vigilância em Saúde: volume 2 [recurso eletrônico] / Ministério da Saúde, Departamento de Ações Estratégicas de Epidemiologia e Vigilância em Saúde e Ambiente. – 6. ed. rev. – Brasília: Ministério da Saúde, 2024.',
-    tags: ['IST', 'Tratamento Sindrômico', 'Uretrite']
+    tags: ['IST', 'tratamento sindrômico', 'uretrite']
   },
   {
     id: 'tp2024-119',
@@ -302,7 +302,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Apoio ao aleitamento materno exclusivo até os 6 meses é a intervenção de maior impacto em mortalidade infantil.',
     commentary: 'Em uma comunidade onde os recursos financeiros são escassos, é fundamental oferecer apoio emocional à mãe e orientação sobre técnicas de amamentação eficazes. Isso pode ajudar a mãe a superar desafios e dificuldades relacionados à amamentação, como problemas de posicionamento ou pega incorreta, permitindo que ela continue a amamentar exclusivamente nos primeiros seis meses de vida do bebê. Além disso, oferecer apoio emocional pode ajudar a mãe a se sentir mais confiante e capacitada para enfrentar os desafios associados à amamentação em uma situação de vulnerabilidade econômica.',
     reference: 'Ministério da Saúde (Brasil). "Saúde da Criança: Nutrição Infantil - Aleitamento Materno e Alimentação Complementar." Cadernos de Atenção Básica, n. 33. Brasília: Ministério da Saúde, 2015. Rede IBFAN Brasil. "Manual de Aconselhamento em Amamentação." São Paulo: IBFAN Brasil, 2012. Sociedade Brasileira de Pediatria (SBP). "Aleitamento Materno: Manual de Orientação." 4ª edição, 2018. World Health Organization (WHO) e Fundo das Nações Unidas para a Infância (UNICEF). "Estratégia Global para a Alimentação de Lactentes e Crianças de Primeira Infância." Brasília: Ministério da Saúde, 2003.',
-    tags: ['Aleitamento Materno', 'Saúde da Criança', 'Puericultura']
+    tags: ['aleitamento materno', 'saúde da criança', 'puericultura']
   },
   {
     id: 'tp2024-120',
@@ -318,7 +318,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Rastreio foca em fatores de risco cardiovascular e hábitos de vida nesta faixa etária.',
     commentary: 'A alternativa correta (B) apresenta os exames de rastreamento adequados à faixa etária e contexto do usuário. PSA, TGO e TGP, Potássio não fazem parte dos exames de rastreamento recomendados.',
     reference: 'https://bvsms.saude.gov.br/bvs/publicacoes/caderno_atencao_primaria_29_rastreamento.pdf',
-    tags: ['Rastreamento', 'Saúde do Homem', 'Prevenção']
+    tags: ['rastreamento', 'saúde do homem', 'prevenção']
   },
   {
     id: 'tp2023-101',
@@ -334,7 +334,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'As Regiões de Saúde devem garantir um conjunto mínimo de ações para assegurar a integralidade na própria região.',
     commentary: 'A atenção primária; urgência e emergência; atenção psicossocial; atenção ambulatorial especializada e hospitalar; e vigilância em saúde; devem ser garantidos minimamente na instituição das Regiões de Saúde justamente para que os usuários possam receber os serviços e ações de saúde de forma integral, sem a necessidade de grandes deslocamentos ou referenciamentos de difícil atendimento.',
     reference: 'Brasil. Conselho Nacional de Secretários de Saúde. A Gestão do SUS / Conselho Nacional de Secretários de Saúde. Brasília: CONASS, 2015. Brasil. Decreto nº 7.508, 28 de junho de 2011. Regulamenta a Lei nº 8.080 de 19 de setembro de 1990, para dispor sobre a organização do Sistema Único de Saúde – SUS, o planejamento da saúde, a assistência à saúde e a articulação interfederativa, e dá outras providências.',
-    tags: ['Políticas de Saúde', 'SUS']
+    tags: ['políticas de saúde', 'SUS']
   },
   {
     id: 'tp2023-102',
@@ -350,7 +350,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Estudos transversais (seccionais) medem a prevalência de uma condição em um determinado momento.',
     commentary: 'Prevalência em um local de trabalho é um indicador claro de que o estudo é transversal.',
     reference: 'PEREIRA, M. G. Epidemiologia: teoria e prática. Rio de Janeiro: Guanabara Koogan, 2013.',
-    tags: ['Epidemiologia', 'Bioestatística']
+    tags: ['epidemiologia', 'bioestatística']
   },
   {
     id: 'tp2023-103',
@@ -366,7 +366,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Em áreas endêmicas de febre amarela, a vacinação contra a doença é prioridade; vacinas de vírus vivos atenuados (como SCR e FA) devem ter intervalo de 30 dias se não aplicadas no mesmo dia.',
     commentary: '(A) Pneumocócica 10 valente, meningocócica C, tetra viral (SCRV) e febre amarela concomitantes. Não pode aplicar no mesmo dia as vacinas compostas por vírus vivos atenuados, portanto, não poderia aplicar tetra viral (SCRV) e febre amarela concomitantes.\n\n(B) Tríplice viral (SCR), meningocócica C e pneumocócica 10 valente concomitantes; febre amarela após 30 dias. Deve dar prioridade para a vacina contra Febre Amarela porque a proteção só inicia a partir de 10 dias de sua aplicação.\n\n(C) Tríplice bacteriana (DPT), meningocócica C e tríplice viral (SCR) concomitantes; varicela após 30 dias. Não poderá faltar a vacina contra Febre Amarela.\n\n(D) Pneumocócica 10 valente, meningocócica C e febre amarela concomitantes; sarampo, caxumba e rubéola após 30 dias. Deve dar prioridade para Febre Amarela porque o Pará é zona endêmica para essa doença e, portanto, adiar as outras vacinas compostas de vírus vivos atenuados.',
     reference: 'Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. Manual de Normas e Procedimentos para Vacinação / Ministério da Saúde, Secretaria de Vigilância em Saúde, Departamento de Vigilância das Doenças Transmissíveis. – Brasília: Ministério da Saúde, 2014. Kfouri RA, et al. Febre amarela: Nota Informativa. Departamento Científico de Imunizações/Sociedade Brasileira de Pediatria, Nº 3, fevereiro de 2017.',
-    tags: ['Imunização', 'Pediatria']
+    tags: ['imunização', 'pediatria']
   },
   {
     id: 'tp2023-104',
@@ -382,7 +382,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Prevenção primária visa remover as causas ou aumentar a resistência a doenças antes que ocorram.',
     commentary: 'Ações de prevenção primária são definidas como intervenções que impedem a ocorrência da doença antes de seu aparecimento, enquanto as que diagnosticam precocemente, detém ou retardam a progressão da doença ou suas sequelas em qualquer momento da identificação são classificadas como secundária.\n\nA oferta de espaços para atividade física auxilia no fortalecimento das condições cardiovasculares, osteomusculares e reduzem chances de complicações associadas com doenças cardiovasculares, ósseas, ou relacionadas à resistência à insulina.\n\nDosagem de substâncias, como no caso o psa, auxiliam parcialmente no rastreio de alterações patológicas antes que elas possam agravar a saúde da pessoa, sendo açao de prevenção secundária.\n\nO uso de medicamentos para hipertensão e/ou diabetes configura ação de tratamento da doença já instalada, com objetivo de evitar sua progressão, sendo também secundária.\n\nA notificação de casos de violência contra homens é peça importante na compreensão do perfil epidemiológico da violencia, mas não é capaz, por si só de evitar que a violencia ocorra.',
     reference: 'Política nacional de atenção integral a saúde do homem [recurso eletrônico] / Elza Berger Salema Coelho... [et al] — Florianópolis : Universidade Federal de Santa Catarina, 2018.',
-    tags: ['Prevenção', 'Saúde do Homem']
+    tags: ['prevenção', 'saúde do homem']
   },
   {
     id: 'tp2023-105',
@@ -398,7 +398,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Prevenção primária atua nos fatores de risco para evitar o surgimento da patologia.',
     commentary: 'A resposta correta destaca a importância da prevenção primária, ou seja, adotar medidas de estilo de vida saudável, como alimentação adequada e atividade física regular, para evitar o desenvolvimento de condições cardiovasculares, medidas que fazem parte de ações de atenção primária, uma vez que são medidas adotadas para evitar o adoecimento.',
     reference: 'Epidemiologia básica / R. Bonita, R. Beaglehole, T. Kjellström; [tradução e revisão científica Juraci A. Cesar]. - 2.ed. - São Paulo, Santos. 2010. Disponivel em https://apps.who.int/iris/bitstream/handle/10665/43541/9788572888394_por.pdf;sequence=6',
-    tags: ['Prevenção', 'Saúde Cardiovascular']
+    tags: ['prevenção', 'saúde cardiovascular']
   },
   {
     id: 'tp2023-106',
@@ -414,7 +414,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Ensaios clínicos são longitudinais, envolvem intervenção do pesquisador e análise individual.',
     commentary: 'Nos ensaios clínicos o investigador controla a exposição; portanto, são estudos de intervenção, tem-se os dados de cada indivíduo (individual), e como numa coorte, esta população é acompanhada ao longo de determinado tempo (longitudinal).\n\nOs estudos caso-controle são observacionais (o investigador não intervém, só observa desfecho/exposição), tem-se os dados de cada indivíduo e não da população (característica esta, dos estudos ecológicos ou ensaios comunitários).\n\nNo estudo transversal tem-se os dados de cada indivíduo e a informação é coletada no mesmo momento (exposição/desfecho); portanto, não são longitudinais e sim instantâneos (como se fosse um corte transversal, um retrato do momento).\n\nOs estudos de coorte são longitudinais (seguimento – exposição/desfecho).',
     reference: 'MEDRONHO, R.A (ed) Epidemiologia. 2 ed. São Paulo: Atheneu, 2011.',
-    tags: ['Epidemiologia', 'Bioestatística']
+    tags: ['epidemiologia', 'bioestatística']
   },
   {
     id: 'tp2023-107',
@@ -430,7 +430,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A investigação básica de TB pulmonar utiliza exames de escarro (TRM-TB e baciloscopia) e imagem (RX).',
     commentary: 'O diagnóstico da tuberculose pulmonar é preferencialmente clínico-epidemiológico e bacteriológico. Assim, a partir dos sintomas em pessoas dos grupos de risco, a recomendação é o diagnóstico bacteriológico. Dentre os exames de escarro, a baciloscopia e o teste molecular rápido são específicos. Porém a baciloscopia não apresenta alta sensibilidade, sendo o Teste Molecular Rápido o exame de escolha. A cultura para micobactérias é específica e sensível sendo considerada exame padrão ouro, reservado aos casos de dúvida ou em suspeita de resistência bacteriana. Os exames radiológicos são exames de suspeição para tuberculose, uma vez que a doença pode apresentar diversas alterações relacionadas tanto com a doença ativa como sequelas.',
     reference: 'Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. Manual de Recomendações para o Controle da Tuberculose no Brasil / Ministério da Saúde, Secretaria de Vigilância em Saúde, Departamento de Vigilância das Doenças Transmissíveis. – Brasília: Ministério da Saúde, 2019. 364 p.: il. ISBN 978-85-334-2696-2.',
-    tags: ['Vigilância em Saúde', 'Infectologia']
+    tags: ['vigilância em saúde', 'infectologia']
   },
   {
     id: 'tp2023-108',
@@ -446,7 +446,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A transição demográfica caracteriza-se pelo envelhecimento populacional e aumento da longevidade.',
     commentary: 'Durante a fase inicial da transição demográfica, as principais causas de morte e morbidade são dominadas por doenças infecciosas, como doenças respiratórias, diarreia e outras infecções transmissíveis. No entanto, à medida que as condições socioeconômicas melhoram, o acesso aos cuidados de saúde se amplia e ocorrem mudanças no estilo de vida e no ambiente, ocorre a transição para a fase avançada.\n\nNessa fase, a prevalência das dcnts começa a aumentar, enquanto a incidência de doenças infecciosas diminui. as dcnts, como doenças cardiovasculares, diabetes, doenças respiratórias crônicas e certos tipos de câncer, estão relacionadas principalmente a fatores de risco não transmissíveis, como tabagismo, alimentação inadequada, inatividade física, consumo excessivo de álcool e exposição a poluentes ambientais.\n\nPortanto, quando uma população entra na fase avançada da transição demográfica epidemiológica, a baixa prevalência de dcnts é uma característica observada. isso indica que a população está enfrentando uma menor carga de doenças infecciosas e está vivendo por mais tempo, mas também destaca a importância de enfrentar os fatores de risco relacionados às DCNTs para garantir a saúde e o bem-estar a longo prazo.',
     reference: 'Duarte Elisabeth Carmen, Barreto Sandhi Maria. Transição demográfica e epidemiológica: a Epidemiologia e Serviços de Saúde revisita e atualiza o tema. Epidemiol. Serv. Saúde [Internet]. 2012 Dez [citado 2023 Jun 29] ; 21( 4 ): 529-532. Oliveira AS. TRANSIÇÃO DEMOGRÁFICA, TRANSIÇÃO EPIDEMIOLÓGICA E ENVELHECIMENTO POPULACIONAL NO BRASIL. Hygeia [Internet];15(32):69-7. Goldani MZ, Mosca PRF, Portela AK, Silveira PP, Silva CH da. O impacto da transição demográfico-epidemiológica na saúde da criança e do adolescente do Brasil. Clin Biomed Res [Internet]. 27º de abril de 2012 ;32(1).',
-    tags: ['Saúde Coletiva', 'Demografia']
+    tags: ['saúde coletiva', 'demografia']
   },
   {
     id: 'tp2023-109',
@@ -462,7 +462,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O rastreio deve ser voltado para condições de alta prevalência e impacto onde o tratamento precoce é eficaz.',
     commentary: 'A prevenção secundária é a ação realizada para detectar um problema de saúde em estágio inicial, muitas vezes em estágio subclínico, no indivíduo ou na população, facilitando o diagnóstico definitivo, o tratamento e reduzindo ou prevenindo sua disseminação e os efeitos de longo prazo. Para o caso específico o rastreamento mais adequado inclui a verificação da PA, sorologia de ISTs, coleta do citopatológico e incentivo ao abandono do tabagismo.',
     reference: 'Brasil. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica. Rastreamento / Ministério da Saúde, Secretaria de Atenção à Saúde, Departamento de Atenção Básica. – Brasília : Ministério da Saúde, 2010.',
-    tags: ['Rastreamento', 'Saúde da Mulher']
+    tags: ['rastreamento', 'saúde da mulher']
   },
   {
     id: 'tp2023-110',
@@ -478,7 +478,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O princípio da Justiça foca no bem-estar coletivo e na equidade, justificando a quebra de sigilo por risco à saúde pública.',
     commentary: 'Na situação descrita, o princípio ético mais relevante para orientar a decisão do profissional de saúde é a letra a) Justiça. Ao lidar com questões de privacidade e compartilhamento de informações de saúde, o profissional precisa considerar tanto o respeito à autonomia do paciente quanto os princípios de beneficência e não maleficência. No entanto, quando há o risco de disseminação de uma doença que faz parte da lista de agravos de notificação compulsória imediata, a divulgação das informações é necessária para proteger a saúde pública, o princípio ético da justiça ganha destaque. A justiça envolve a busca pela equidade e pelo bem-estar coletivo. Nesse contexto, o profissional deve ponderar os direitos e interesses individuais do paciente em relação ao bem-estar e à segurança da comunidade em geral, tomando uma decisão que busque encontrar um equilíbrio ético entre esses aspectos.',
     reference: 'Código de Ética Médica: Resolução CFM no 2.217, de 27 de setembro de 2018, modificada pelas Resoluções CFM no 2.222/2018 e 2.226/2019 / Conselho Federal de Medicina – Brasília: Conselho Federal de Medicina, 2019. 108 p. 15. https://www.gov.br/saude/pt-br/composicao/svsa/notificacao-compulsoria/lista-nacional-de-notificacao-compulsoria-de-doencas-agravos-e-eventos-de-saude-publica',
-    tags: ['Ética Médica', 'Saúde Pública']
+    tags: ['ética médica', 'saúde pública']
   },
   {
     id: 'tp2023-111',
@@ -494,7 +494,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A longitudinalidade foca na relação temporal e no vínculo entre equipe e usuário.',
     commentary: 'A relação pessoal de longa duração entre os profissionais de saúde e os pacientes em suas unidades de saúde é denominada longitudinalidade, que se caracteriza pelo cuidado ao longo do tempo. A integralidade diz respeito à articulação das ações de promoção e prevenção, atenção nos três níveis de complexidade da assistência médica, articulação das ações de promoção, proteção e prevenção e abordagem integral do indivíduo e das famílias. A coordenação do cuidado consiste na atribuição da APS em articular serviços dos diversos serviços e ações de saúde, de forma que estejam sincronizados e voltados ao alcance de um objetivo comum, independentemente do local onde sejam prestados. Acesso de primeiro contato consiste na APS como porta de entrada dos serviços de saúde, sendo acessível quando há uma necessidade ou problema de saúde.',
     reference: 'OLIVEIRA, M. A. C.; PEREIRA, I.C. Atributos essenciais da Atenção Primária e a Estratégia Saúde da Família. Rev Bras Enferm.66(esp):158-64; 2013. Portaria 2436/17 PNAB- Política Nacional de Atenção Básica',
-    tags: ['APS', 'Políticas de Saúde']
+    tags: ['APS', 'políticas de saúde']
   },
   {
     id: 'tp2023-112',
@@ -510,7 +510,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A prevenção quaternária visa identificar pacientes em risco de sobremedicalização ou intervenções diagnósticas/terapêuticas abusivas.',
     commentary: 'A prevenção quaternária busca evitar intervenções médicas desnecessárias ou prejudiciais aos indivíduos afetados pela febre maculosa, promovendo, assim, a manutenção da saúde e da qualidade de vida dos pacientes. Identificar e tratar precocemente os casos de febre maculosa é uma medida importante nos níveis de prevenção primária e secundária, portanto, essa alternativa não é a correta para a prevenção quaternária. A redução da carga da doença na população afetada é importante para a prevenção primária e secundária, porém não é a finalidade principal da prevenção quaternária. Embora a redução da exposição ao vetor transmissor possa ser uma medida importante de prevenção da febre maculosa, essa alternativa não é a principal finalidade da prevenção quaternária.',
     reference: 'ALMEIDA, L. M. Da prevenção primordial à prevenção quaternária. Revista Portuguesa de Saúde Pública, Lisboa, vol. 23, 1, p. 91-96, 2005. LEAVELL, H.; CLARK, E. G. Preventive medicine for the doctor in his community NY: Macgraw Hill, 1965.',
-    tags: ['Prevenção', 'Saúde Coletiva']
+    tags: ['prevenção', 'saúde coletiva']
   },
   {
     id: 'tp2023-113',
@@ -526,7 +526,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A Vigilância Sanitária possui poder de polícia administrativa para intervir em serviços e eventos que ofereçam risco sanitário.',
     commentary: 'A Vigilância Sanitária atua (com poder de polícia), fiscalizando e multando quando há situações de risco à saúde, como o de aglomerações no Covid-19.\n\nA investigação de casos e óbitos é mais afeita à Vigilância Epidemiológica.\n\nO controle de vetores de doenças nos ambientes de risco como a fazenda em Campinas (evento) é de maior competência da Vigilância Ambiental.\n\nA orientação do uso de equipamentos de proteção individual para profissionais de saúde é uma ação da Saúde do Trabalhador, nos ambientes de trabalho.',
     reference: 'BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Articulação Estratégica de Vigilância em Saúde. Guia de Vigilância em Saúde [recurso eletrônico]. 5. ed. rev. e atual. – Brasília: Ministério da Saúde, 2022. 1.126 p. : il. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/guia_vigilancia_saude_5ed_rev_atual.pdf',
-    tags: ['Vigilância em Saúde']
+    tags: ['vigilância em saúde']
   },
   {
     id: 'tp2023-114',
@@ -558,7 +558,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A detecção de novos casos em um período de tempo define a incidência da doença.',
     commentary: 'O relato fala em redução na taxa de detecção, ou seja, nos casos novos diagnosticados (Incidência), não fazendo menção aos casos cumulativos (Prevalência). Quanto a Taxa de Ataque, é um termo mais utilizado para referir-se à incidência de eventos agudos, para verificar logo a eclosão de um possível surto epidemiólico, mas no caso da Hanseníase trata-se de uma doença crônica, insidiosa. Quanto à Taxa de Letalidade, ela é uma medida da gravidade da doença, refletindo o seu potencial de causar a morte.',
     reference: 'BRASIL. Ministério da Saúde. Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis, da Secretaria de Vigilância em Saúde, do Ministério da Saúde (DCCI/SVS/ MS). Boletim Epidemiológico de Hanseníase. nº especial. Jan. 2022. ROUQUAYROL, M.Z.; ALMEIDA FILHO, N.; LUZ, F.A. Epidemiologia e Saúde. Ed. Artes Médicas: 7ª ed. 2013.',
-    tags: ['Epidemiologia', 'Bioestatística']
+    tags: ['epidemiologia', 'bioestatística']
   },
   {
     id: 'tp2023-116',
@@ -574,7 +574,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O VPN é a probabilidade de não ter a doença dado um teste negativo; ele aumenta quando a prevalência da doença diminui.',
     commentary: 'A prevalencia da doença no país a é de 10% (80/800 = 0,10 ou 10%) e no país b é de 20% (160/800 = 0,2 ou 20%)\n\nVPN = (especificidade * não afetados) / (especificidade * não afetados + falsos negativos)\n\nVPN no país a: (0,70*720)/(0,70*720 + 0,15*80) = 0,9767*100 = 97,67%\n\nVPN no país b: (0,85*640)/(0,85*640 + 0,30*160) = 0,9189*100 = 91,89%',
     reference: 'MEDRONHO, R. A. et al. Epidemiologia. 2. ed. São Paulo: Atheneu, 2010.',
-    tags: ['Epidemiologia', 'Bioestatística']
+    tags: ['epidemiologia', 'bioestatística']
   },
   {
     id: 'tp2023-117',
@@ -590,7 +590,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Letalidade = (Número de óbitos por uma causa / Total de doentes por essa causa) x 100.',
     commentary: 'O coeficiente de letalidade da tuberculose nesse município no ano de 2022 é igual ao número total de óbitos por tuberculose no período (15 óbitos), multiplicado por 100 e dividido pelo total de casos por tuberculose no mesmo período (100 + 15 casos no ano), portanto, o coeficiente de letalidade é de 13%.\n\nInterpretação: o percentual de mortes por tuberculose em relação aos pacientes diagnosticados pela doença no mesmo período.',
     reference: 'ROUQUAYROL, Maria Zélia; SILVA, Marcelo Gurgel Carlos da. Epidemiologia & saúde. 7.ed. Rio de Janeiro: Medbook, 2013. Capítulo: Medida da Saúde coletiva, páginas 108 a 201.',
-    tags: ['Epidemiologia', 'Bioestatística']
+    tags: ['epidemiologia', 'bioestatística']
   },
   {
     id: 'tp2023-118',
@@ -606,7 +606,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A educação popular baseia-se no diálogo e na valorização da cultura e saberes da comunidade.',
     commentary: 'Correta: a educação popular em saúde parte do pressuposto de que todas as pessoas, têm uma busca criativa de melhoria de suas vidas, acumulando saberes e experiências, cultura, os quais necessitam ser valorizados e considerados no fazer educativo.\n\nIncorreta: os valores e crenças da população são relevantes na educação popular em saúde.\n\nIncorreta: a educação popular em saúde não tem o profissional de saúde como detentor e repasse do conhecimento, mas sim uma construção do conhecimento compartilhada.\n\nIncorreta: o objetivo da educação popular em saúde é o fortalecimento do conhecimento e práticas para a população.',
     reference: 'GUSSO, Gustavo; LOPES, José M C.; DIAS, Lêda C. Tratado de medicina de família e comunidade - 2 volumes: princípios, formation e prática. Porto Alegre : Artmed, 2019',
-    tags: ['Saúde Coletiva', 'Promoção da Saúde']
+    tags: ['saúde coletiva', 'promoção da saúde']
   },
   {
     id: 'tp2023-119',
@@ -622,7 +622,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A mortalidade infantil é um indicador sensível do desenvolvimento socioeconômico e qualidade da assistência à saúde.',
     commentary: 'A incidência é calculada pela relação entre casos novos da doença no período considerado e a população exposta ao risco de adoecer no mesmo período, portanto, não são agregados casos antigos.\n\nA razão de mortalidade materna tem em seu numerador o número de óbitos de mulheres por causas ligadas a gravidez, parto e puerpério e não de mulheres em idade fértil.\n\nOs fatores citados na questão contribuem para diminuir a taxa de prevalência da doença (casos existentes).',
     reference: 'ROUQUAYROL, M. Z.; GURGEL, M. Epidemiologia & saúde. 7. ed. Rio de Janeiro: Medbook, 2013.',
-    tags: ['Epidemiologia', 'Saúde Coletiva']
+    tags: ['epidemiologia', 'saúde coletiva']
   },
   {
     id: 'tp2023-120',
@@ -638,7 +638,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Exposição ocupacional ocorre no exercício do trabalho e envolve riscos físicos, químicos ou biológicos no ambiente laboral.',
     commentary: 'Esta questão aborda o tema da saúde ambiental e do trabalhador, focando na identificação de um exemplo de exposição ocupacional relacionada a esse campo. A resposta correta destaca um cenário em que os trabalhadores estão expostos a gases tóxicos provenientes da queima de combustíveis fósseis.\n\nEssa alternativa ilustra um exemplo de exposição ocupacional relacionada à saúde ambiental e do trabalhador, onde os trabalhadores estão expostos a gases tóxicos resultantes da queima de combustíveis fósseis. A inalação de gases tóxicos provenientes da queima de combustíveis fósseis é um problema comum em várias indústrias e ambientes de trabalho, representando um risco significativo para a saúde dos trabalhadores expostos. Essa exposição pode levar a uma série de problemas respiratórios, cardiovasculares e até mesmo câncer, destacando a importância de medidas de prevenção e proteção para garantir um ambiente de trabalho saudável.',
     reference: 'Peres, Frederico. Epidemiologia e Saúde. 2ª edição. Atheneu, 2017. Gomes, Maria Angélica de Salles. Saúde Ambiental e Trabalho: Guia para Estudo em Saúde Coletiva. Editora Fiocruz, 2015.',
-    tags: ['Saúde do Trabalhador', 'Saúde Ambiental']
+    tags: ['saúde do trabalhador', 'saúde ambiental']
   },
   {
     id: 'tp2022-101',
@@ -654,7 +654,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Dengue classicamente apresenta leucopenia e trombocitopenia acentuadas, com dor retrorbitária marcante.',
     commentary: 'As alterações laboratoriais na dengue incluem leucopenia, neutropenia e trombocitopenia. A dor retrorbitária é um sintoma muito característico que ajuda no diagnóstico diferencial.',
     reference: 'Brasil. Ministério da Saúde. Dengue: diagnóstico e manejo clínico. 5. ed. 2016.',
-    tags: ['Infectologia', 'Vigilância Epidemiológica']
+    tags: ['infectologia', 'vigilância epidemiológica']
   },
   {
     id: 'tp2022-102',
@@ -670,7 +670,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Epidemias de fonte comum costumam ter progressão rápida e explosiva, afetando muitas pessoas simultaneamente.',
     commentary: 'Diferente das epidemias propagadas (pessoa a pessoa), a fonte comum gera um pico rápido de casos (explosividade) pois todos se expõem ao mesmo tempo ao veículo contaminado.',
     reference: 'Rouquayrol, M. Z. Epidemiologia & Saúde. 7. ed. 2013.',
-    tags: ['Epidemiologia']
+    tags: ['epidemiologia']
   },
   {
     id: 'tp2022-103',
@@ -686,7 +686,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O acesso à UBS (Universalidade) e o cuidado que vai da atenção primária à especializada (Integralidade) exemplificam esses princípios.',
     commentary: 'A universalidade garante o acesso. A integralidade é vista no atendimento que considera todas as necessidades da paciente, articulando diferentes níveis de complexidade.',
     reference: 'Lei nº 8.080/1990.',
-    tags: ['SUS', 'Políticas de Saúde']
+    tags: ['SUS', 'políticas de saúde']
   },
   {
     id: 'tp2022-104',
@@ -702,7 +702,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A CF/88 institucionalizou o SUS, mudando o paradigma da saúde como direito de todos e dever do Estado.',
     commentary: 'Antes da CF/88, a assistência médica era restrita aos previdenciários. O SUS universalizou o direito à saúde.',
     reference: 'Constituição Federal de 1988.',
-    tags: ['SUS', 'História da Saúde']
+    tags: ['SUS', 'história da saúde']
   },
   {
     id: 'tp2022-105',
@@ -718,7 +718,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Prevenção primária atua antes da doença; secundária no diagnóstico precoce; terciária na reabilitação.',
     commentary: 'Prevenção primária: evitar o surgimento (vacinas). Secundária: diagnóstico precoce (rastreio). Terciária: limitar sequelas (reabilitação).',
     reference: 'Rouquayrol, M. Z. Epidemiologia & Saúde. 8. ed. 2018.',
-    tags: ['Prevenção', 'Saúde Pública']
+    tags: ['prevenção', 'saúde pública']
   },
   {
     id: 'tp2022-106',
@@ -734,7 +734,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A integralidade exige ver o paciente como um todo, considerando aspectos biológicos, psicológicos e sociais.',
     commentary: 'Integralidade pressupõe um olhar multidimensional sobre o sujeito, não apenas focado na patologia biológica isolada.',
     reference: 'Lei nº 8.080/1990.',
-    tags: ['SUS', 'Atenção Primária']
+    tags: ['SUS', 'atenção primária']
   },
   {
     id: 'tp2022-107',
@@ -750,7 +750,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Em idosos frágeis, as metas devem ser flexíveis para evitar hipoglicemia e o tratamento deve ser adaptado à rede de apoio.',
     commentary: 'Flexibilizar metas e adaptar o horário da medicação à presença do cuidador são estratégias de segurança e adesão para o paciente idoso.',
     reference: 'Diretrizes SBD 2019-2020.',
-    tags: ['Geriatria', 'Saúde da Família']
+    tags: ['geriatria', 'saúde da família']
   },
   {
     id: 'tp2022-108',
@@ -766,7 +766,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A busca ativa e exames completos (incluindo ISTs) são prioridade em populações vulneráveis com sintomatologia respiratória.',
     commentary: 'Não se deve impor barreiras (como endereço ou abstinência) para o cuidado. O foco é o diagnóstico rápido e a redução de danos.',
     reference: 'Manual de Recomendações para o Controle da Tuberculose no Brasil, 2019.',
-    tags: ['Vulnerabilidade Social', 'Tuberculose', 'IST']
+    tags: ['vulnerabilidade social', 'tuberculose', 'IST']
   },
   {
     id: 'tp2022-109',
@@ -782,7 +782,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'CV desconhecida ou > 1000 cópias em gestantes com 34+ semanas indica cesárea eletiva e profilaxia com AZT injetável.',
     commentary: 'A cesárea eletiva (fora do trabalho de parto) e o AZT endovenoso são cruciais para reduzir a transmissão vertical quando a carga viral não está controlada.',
     reference: 'Protocolo Transmissão Vertical HIV/Sífilis/Hepatites, 2022.',
-    tags: ['Obstetrícia', 'Infectologia']
+    tags: ['obstetrícia', 'infectologia']
   },
   {
     id: 'tp2022-110',
@@ -798,7 +798,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'ECR é o padrão-ouro para intervenção/eficácia; Coorte acompanha a história natural para determinar prognóstico.',
     commentary: 'Ensaio Clínico Randomizado controla variáveis para testar tratamentos. Coorte observa a evolução temporal de um grupo exposto ou doente.',
     reference: 'Medicina Baseada em Evidências, Stein e Grade, 2014.',
-    tags: ['Epidemiologia', 'Bioestatística']
+    tags: ['epidemiologia', 'bioestatística']
   },
   {
     id: 'tp2022-111',
@@ -814,7 +814,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A resposta (B) contempla os três pilares: doença crônica (DM), causa externa (queda) e infecciosa (COVID).',
     commentary: 'O Brasil vive a transição epidemiológica com a coexistência de problemas antigos (infecto) e modernos (crônicas e violência).',
     reference: 'Eugênio Vilaça Mendes - As Redes de Atenção à Saúde.',
-    tags: ['Saúde Coletiva', 'Gestão']
+    tags: ['saúde coletiva', 'gestão']
   },
   {
     id: 'tp2022-112',
@@ -830,7 +830,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O paciente ou representante legal tem direito à segunda opinião e o médico deve colaborar.',
     commentary: 'O Código de Ética Médica (Art. 34 e 39) garante o direito à informação e proíbe o médico de impedir juntas médicas ou segundas opiniões.',
     reference: 'Código de Ética Médica (2019).',
-    tags: ['Ética Médica', 'Direito do Paciente']
+    tags: ['ética médica', 'direito do paciente']
   },
   {
     id: 'tp2022-113',
@@ -846,7 +846,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Pelas diretrizes de vigilância, a notificação de sífilis deve ocorrer após a confirmação diagnostica.',
     commentary: 'Diferente de algumas outras doenças, a notificação de sífilis pressupõe a confirmação (teste treponêmico + não treponêmico ou histórico de tratamento).',
     reference: 'Protocolo Transmissão Vertical HIV/Sífilis, 2022.',
-    tags: ['Vigilância Epidemiológica', 'IST']
+    tags: ['vigilância epidemiológica', 'IST']
   },
   {
     id: 'tp2022-114',
@@ -863,7 +863,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A Razão de Mortalidade Materna usa o número de nascidos vivos no denominador por ser o fator de risco real.',
     commentary: 'Indicador fundamental para avaliar a qualidade da assistência obstétrica. A base 10^5 (100.000 nascidos vivos) é o padrão internacional.',
     reference: 'Rouquayrol, M. Z. Epidemiologia & saúde. 2013.',
-    tags: ['Epidemiologia', 'Saúde Materna']
+    tags: ['epidemiologia', 'saúde materna']
   },
   {
     id: 'tp2022-115',
@@ -880,7 +880,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Os sintomas cardinais são de tireotoxicose; metimazol é a droga anti-tireoidiana de primeira escolha.',
     commentary: 'Bradicardia e ganho de peso indicariam hipo. Taquicardia, perda de peso e sudorese indicam hiper. Levotiroxina é reposição (para Hipotiroidismo).',
     reference: 'Consenso Brasileiro de Hipertireoidismo, 2013.',
-    tags: ['Endocrinologia', 'Atenção Primária']
+    tags: ['endocrinologia', 'atenção primária']
   },
   {
     id: 'tp2022-116',
@@ -896,7 +896,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Mordidas de mamíferos domésticos (exceto cão/gato observáveis) em ferimentos graves exigem soro + vacina antirrábica. É necessário também iniciar esquema para tétano.',
     commentary: 'O ferimento dilacerante é considerado grave. Como o paciente não é vacinado, precisa do soro (passiva) e vacina (ativa) para raiva e dT/dupla adulto (tétano).',
     reference: 'Nota Técnica Profilaxia da Raiva Humana, SES-SP, 2020.',
-    tags: ['Imunização', 'Emergência']
+    tags: ['imunização', 'emergência']
   },
   {
     id: 'tp2022-117',
@@ -912,7 +912,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A notificação é obrigatória para a saúde; a denúncia policial é um direito da vítima que deve ser orientado/incentivado.',
     commentary: 'A notificação compulsória para fins epidemiológicos é dever do médico. A denúncia criminal cabe à vítima em crimes de ação penal privada/condicionada.',
     reference: 'Manual Atendimento Vítimas Violência, SES/DF.',
-    tags: ['Violência Doméstica', 'Ética Médica']
+    tags: ['violência doméstica', 'ética médica']
   },
   {
     id: 'tp2022-118',
@@ -928,7 +928,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A execução direta dos serviços de saúde e o planejamento local cabem ao município.',
     commentary: 'O município é o principal executor da atenção básica. A União formula políticas gerais e a ANVISA é autarquia federal.',
     reference: 'Lei nº 8.080/1990.',
-    tags: ['SUS', 'Gestão']
+    tags: ['SUS', 'gestão']
   },
   {
     id: 'tp2022-119',
@@ -944,7 +944,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A longitudinalidade foca na continuidade do cuidado ao longo do tempo pela mesma equipe.',
     commentary: 'O vínculo profissional-usuário é a base da APS, permitindo um acompanhamento mais profundo das condições crônicas e da vida do sujeito.',
     reference: 'Política Nacional de Atenção Básica (PNAB).',
-    tags: ['Atenção Primária', 'Princípios']
+    tags: ['atenção primária', 'princípios']
   },
   {
     id: 'tp2022-120',
@@ -960,7 +960,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A tríade da MBE envolve: evidência externa, expertise clínica e valores/preferências do paciente.',
     commentary: 'Evidência sem expertise é fria; expertise sem evidência é perigosa. A individualização é o pilar final da aplicação da MBE.',
     reference: 'Medicina Baseada em Evidências aplicada à prática do MFC, Stein, 2019.',
-    tags: ['MBE', 'Bioética']
+    tags: ['MBE', 'bioética']
   },
   {
     id: 'tp2025-101',
@@ -976,7 +976,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Uma abordagem integral e centrada na família na Atenção Domiciliar deve identificar as necessidades de ambos (idoso e cuidadora), avaliar a rede de suporte social e mobilizar uma equipe multidisciplinar para intervenção clínica e psicossocial conjunta.',
     commentary: 'Focar exclusivamente no componente biomédico (adesão estrita aos remédios) ou encaminhar ao hospital de maneira prematura desrespeita os propósitos da assistência domiciliar. A sobrecarga da cuidadora requer coordenação de cuidados, educação em saúde e acionamento de redes de suporte, em vez de mera sugestão de terceirização de custos.',
     reference: 'Caderno de Atenção Domiciliar - Volumes 1 e 2, Ministério da Saúde, 2012; Gestão do Cuidado no SUS, Ministério da Saúde, 2020.',
-    tags: ['Atenção Domiciliar', 'Atenção Primária']
+    tags: ['atenção domiciliar', 'atenção primária']
   },
   {
     id: 'tp2025-102',
@@ -992,7 +992,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A complexidade de um quadro depressivo grave com sintomas psicóticos exige o planejamento de um Projeto Terapêutico Singular (PTS) no âmbito do CAPS, integrando farmacoterapia psiquiátrica e psicoterapia.',
     commentary: 'O diagnóstico é de episódio depressivo grave com sintomas psicóticos (F32.3). Devido à gravidade, a paciente se beneficia enormemente do suporte multidisciplinar comunitário do CAPS, inviabilizando manejo puramente psicoterápico preliminar ou encaminhamento exclusivo ao clínico geral. Não há indicação para internação psiquiátrica imediata uma vez que não são relatados riscos de auto ou heteroagressão nem ideação suicida.',
     reference: 'NARDI, Antonio E. et al. Tratado de Psiquiatria da Associação Brasileira de Psiquiatria. Porto Alegre: ArtMed, 2021.',
-    tags: ['Saúde Mental', 'Caps', 'PTS']
+    tags: ['saúde mental', 'caps', 'PTS']
   },
   {
     id: 'tp2025-103',
@@ -1008,7 +1008,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O rastreamento do câncer de colo do útero por citologia oncótica possui evidência máxima de benefício para a faixa etária compreendida de 25 a 64 anos, com intervalo trienal após dois exames anuais normais sucessivos.',
     commentary: 'As diretrizes oficiais do Ministério da Saúde e do INCA estipulam a colpocitologia oncológica para mulheres de 25 a 64 anos que já iniciaram vida sexual. O intervalo padrão é de 3 anos, condicionado à obtenção prévia de dois resultados anuais normais seguidos, evitando intervenções iatrogênicas desnecessárias decorrentes sobre a zona de transformação do colo uterino.',
     reference: 'Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, INCA, 2016; OMS Global Strategy for Cervical Cancer, 2020.',
-    tags: ['Rastreamento', 'Oncologia', 'Atenção Primária']
+    tags: ['rastreamento', 'oncologia', 'atenção primária']
   },
   {
     id: 'tp2025-104',
@@ -1024,7 +1024,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'As quatro prioridades de Doenças Crônicas Não Transmissíveis (DCNT) de maior impacto epidemiológico global e nacional compreendem os agravos cardiovasculares, as neoplasias, as doenças respiratórias crônicas e o diabetes mellitus.',
     commentary: 'De acordo com a OMS e o Plano Governamental para Enfretamento das DCNT no Brasil (2021-2030), estas quatro categorias representam os maiores coeficientes de mortalidade prematura e anos de vida perdidos por incapacidade (DALYs), justificando o foco prioritário de políticas de estilo de vida, controle de tabagismo, alimentação e imunização.',
     reference: 'Plano de Ações Estratégicas para o Enfrentamento das Doenças Crônicas e Agravos Não Transmissíveis no Brasil 2021-2030, Ministério da Saúde.',
-    tags: ['DCNT', 'Epidemiologia']
+    tags: ['DCNT', 'epidemiologia']
   },
   {
     id: 'tp2025-105',
@@ -1040,7 +1040,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O princípio da Universalidade estatui que a saúde constitui um direito fundamental de todos os cidadãos brasileiros e um dever constitucional do Estado, assegurando acesso livre e irrestrito.',
     commentary: 'Embora todos os princípios sejam indissociáveis, cada um possui foco distinto: a Universalidade foca no acesso ao sistema de saúde sem pré-requisitos; a Integralidade enfatiza a amplitude do cuidado biopsicossocial prestado; e a Equidade trata da partilha diferenciada de recursos baseada em vulnerabilidade para atenuar as desigualdades existentes.',
     reference: 'Constituição Federal de 1988 (Art. 196 a 198); Lei Orgânica da Saúde (Lei nº 8.080/1990).',
-    tags: ['SUS', 'Legislação']
+    tags: ['SUS', 'legislação']
   },
   {
     id: 'tp2025-106',
@@ -1056,7 +1056,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A omissão do preenchimento da ficha de notificação compulsória para casos suspeitos de agravos listados configura subnotificação, gerando impactos severos no planejamento público de controle e combate epidemiológico.',
     commentary: 'A notificação sistemática de casos de dengue é compulsória frente à simples suspeita clínica de manifestação, independentemente de consolidação por exames complementares de sorologia ou biologia molecular, inclusive durante pandemias ou cenários de epidemia declarada. A notificação subsidia o monitoramento geoespacial vetorial e a adoção de ações ágeis de bloqueio por parte das equipes de vigilância sanitária local.',
     reference: 'Portaria de Consolidação nº 4 de 2017, Anexo (Ministério da Saúde); Sistema de Informação de Agravos de Notificação – Sinan.',
-    tags: ['Vigilância Epidemiológica', 'Notificação Compulsória']
+    tags: ['vigilância epidemiológica', 'notificação compulsória']
   },
   {
     id: 'tp2025-107',
@@ -1072,7 +1072,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'De acordo com referenciais clássicos da Medicina de Família sobre níveis preventivos, a prevenção secundária visa à detecção precoce de lesões assintomáticas e ao tratamento de base imediato para conter o avanço ao espectro clínico desfavorável.',
     commentary: 'Embora o manejo de complicações estabelecidas de longo prazo seja classificado sob o crivo preventivo terciário (focado em reabilitação e limitação de incapacidades), a conduta ativa diagnóstica multiprofissional periódica voltada a interceptar manifestações ainda subclínicas em fase latente (como a busca ativa precoce por microalbuminúria ou retinopatia diabética inicial incipiente em paciente diagnosticado) assenta-se sob o escopo preventivo secundário.',
     reference: 'Lopes JM, Gusso G. Tratado de Medicina de Família e Comunidade, 2a ed. Porto Alegre: Artmed, 2019.',
-    tags: ['Prevenção', 'Atenção Primária']
+    tags: ['prevenção', 'atenção primária']
   },
   {
     id: 'tp2025-108',
@@ -1088,7 +1088,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Paciente com hipertensão grave estágio 3 e alto risco cardiovascular exige imediato acoplamento de tríplice terapia sinérgica de mecanismos distintos (IECA, BCC e diurético tiazídico), deferindo práticas de esforço físico agudo até otimizar os níveis pressóricos.',
     commentary: 'A obtenção de cifras pressóricas em níveis de Estágio 3 (PA ≥ 180 / 110) impõe o emprego ágil de complementações farmacológicas sinérgicas compostas por um IECAs ou BRA, um Bloqueador de Canal de Cálcio (BCC) e um diurético tiazídico em doses harmônicas. Betabloqueadores como o Metoprolol ficam restritos a indicações cardíacas e a associação de IECA direto com BRA (Enalapril + Losartana) é formalmente proibida pelo elevado risco de lesão renal crônica / hipercalemia aguda secundária. Exercício físico extenuante agudo deve ser postergado temporariamente até a redução dos picos de emergência mecânica vascular.',
     reference: 'Barroso et al. Diretrizes Brasileiras de Hipertensão Arterial – 2020.',
-    tags: ['Atenção Primária', 'Hipertensão']
+    tags: ['atenção primária', 'hipertensão']
   },
   {
     id: 'tp2025-109',
@@ -1104,7 +1104,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Diante de mau controle glicêmico residual (HbA1c 8,6%) em vigência de tratamento com monoterapia de metformina em dose plena, as diretrizes vigentes contraindicam prolongamento inútil e recomendam a associação guiada de um segundo antidiabético oral.',
     commentary: 'As metas gerais de controle glicêmico preconizam HbA1c < 7,0% na grande maioria dos pacientes adultos. Diante de falha de monoterapia estável sob metformina, deve-se instituir terapia combinada de modo progressivo (escalonamento). As classes preferenciais para o acréscimo oral na atenção primária envolvem os inibidores de SGLT2, agonistas de GLP-1, inibidores de DPP-4 ou sulfonilureias. A insulinização direta é reservada para marcante descompensação metabólica franca catabólica (glicada ≥ 9,0% ou com sintomas de perda ponderal aguda severa cetonúrica).',
     reference: 'Diretrizes da Sociedade Brasileira de Diabetes 2022-2023; ADA Standards of Care in Diabetes, 2023.',
-    tags: ['Atenção Primária', 'Diabetes']
+    tags: ['atenção primária', 'diabetes']
   },
   {
     id: 'tp2025-110',
@@ -1120,7 +1120,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O Projeto Terapêutico Singular (PTS) constitui um dispositivo de co-construção terapêutica interdisciplinar focada em um sujeito de alta vulnerabilidade, família ou território multiprofissionalmente planejado.',
     commentary: 'O PTS opõe-se à conduta linear vertical hegemônica: ele envolve o próprio sujeito na tomada coparticipativa de decisões de cuidado. Destina-se singularmente às conjunturas complexas em que as abordagens padronizadas habituais demonstram ineficácia ou ineficiência, não sendo, portanto, aplicável de modo extensivo obrigatório indistintamente para a totalidade absoluta de acolhimentos epidemiológicos cotidianos de uma UBS.',
     reference: 'Slomp Júnior H, Franco TB, Merhy EE. Projeto terapêutico como dispositivo para o cuidado compartilhado. Editora Rede Unida, 2022.',
-    tags: ['PTS', 'Gestão do Cuidado']
+    tags: ['PTS', 'gestão do cuidado']
   },
   {
     id: 'tp2025-111',
@@ -1136,7 +1136,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Os exames de triagem e rastreamento de espectro populacional inicial exigem priorizar alta sensibilidade diagnóstica para minimizar a evasão de verdadeiros doentes (falsos negativos).',
     commentary: 'Um teste de triagem epidemiológica populacional ideal visa a englobar e "capturar" a totalidade de portadores potenciais da desordem em fase pré-clínica assintomática (daí o primado de Alta Sensibilidade). Os indivíduos que acusarem reações positivas complementares deverão ser encaminhados a posteriori para exames diagnósticos de confirmação dotados de Alta Especificidade (responsáveis por expurgar falsos positivos indesejáveis antes do início de intervenções agressivas sistêmicas).',
     reference: 'Eluf-Neto J. Rastreamento. In: Martins MA et al (Org). Clínica Médica. Manole, 2ed, 2015; Ferreira JC, Patino CM. Entendendo testes diagnósticos. J Bras Pneumol, 2017.',
-    tags: ['Epidemiologia', 'Rastreamento']
+    tags: ['epidemiologia', 'rastreamento']
   },
   {
     id: 'tp2025-112',
@@ -1152,7 +1152,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A curva com padrão de decréscimo linear íngreme tipo J invertido ou com picos concentrados em menores de um ano configura o padrão típico da Curva de Nelson de Moraes indicando nível de saúde baixo.',
     commentary: 'As Curvas de Nelson de Moraes avaliam proporcionalmente os perfis de óbito por ciclos etários divididos. O Padrão de Nível de Saúde Baixo caracteriza-se por manter altíssima mortalidade na faixa infantil de recém-nascidos e lactentes (< 1 ano) e modesto percentual de sobrevida entre os maduros tardios senis (óbitos de maiores de 50 anos inferiores a thresholds de 20%). Países desenvolvidos de Nível de Saúde Elevado ostentam curva tipo "U" ou tipo "J" tradicional em que mais de 70% dos óbitos ocorrem em idosos tardios com sobrevida avançada.',
     reference: 'Laurenti R, et al. Estudo da mortalidade e da morbidade perinatal em maternidades. Rev Saúde Pública, 18:436-47, 1984.',
-    tags: ['Indicadores de Saúde', 'Epidemiologia'],
+    tags: ['indicadores de saúde', 'epidemiologia'],
     image: '/images/tp2025-112.webp'
   },
   {
@@ -1169,7 +1169,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O padrão sintomático agudo típico (febre, cefaleia, mialgia e exantema) atrelado a nichos geográficos com acúmulo hídrico orienta o alerta de surto por arboviroses (dengue), exigindo pronta notificação e controle de vetores.',
     commentary: 'O acúmulo de detritos em terreno adjacente compõe criatório abundante para ovos do vetor Aedes aegypti. A hipótese primordial é arbovirose. A vigilância epidemiológica ágil proíbe postergar ações de eliminação ou bloqueio à espera de resultados laboratoriais tardios; impõe-se a emissão do alerta de surto e a varredura física entomológica territorial urbana de eliminação de nichos de reprodução do mosquito.',
     reference: 'Ministério da Saúde. Guia de Vigilância em Saúde. Brasília: MS, 2022; Investigação de surtos de arboviroses, OPAS, 2021.',
-    tags: ['Vigilância Epidemiológica', 'Infectologia']
+    tags: ['vigilância epidemiológica', 'infectologia']
   },
   {
     id: 'tp2025-114',
@@ -1185,7 +1185,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A otimização de equipes exauridas sob demandas crônicas deve utilizar matrizes de estratificação de risco e vulnerabilidade territorial, reorganizando as ordens prioritárias de fluxo de visitas e conexões com a rede intersetorial.',
     commentary: 'Abandonar ou preterir visitas aos pacientes sob dor paliativa agride frontalmente determinantes éticos de dignidade de vida. Estender de forma desordenada a totalidade de escalas sem governança inviabiliza a conservação física funcional de recursos da unidade. Recomenda-se, portanto, a estratificação ativa de risco, definindo prioridades clínico-sociais compartilhadas continuamente com toda a equipe multiprofissional e integrando o suporte de cuidadores comunitários.',
     reference: 'Atenção Domiciliar no SUS: guia orientador, Ministério da Saúde, 2021; PNAB (Portaria nº 2.436/2017).',
-    tags: ['Atenção Primária', 'Gestão']
+    tags: ['atenção primária', 'gestão']
   },
   {
     id: 'tp2025-115',
@@ -1201,7 +1201,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A suspeita clínica fundamentada de Doença Meningocócica constitui uma emergência de saúde pública relevante, exigindo notificação compulsória imediata em janela de até 24 horas.',
     commentary: 'As meningites bacterianas agudas (como a cepa meningocócica) espalham-se celeremente por sprays aéreos de secreções orofaríngeas, exigindo profilaxia medicamentosa ágil de contatos domiciliares próximos com rifampicina/ceftriaxona. Portanto, a emissão do alerta da ficha de suspeita epidemiológica deve ocorrer em até 24 horas a partir do acolhimento original suspeito e independe de qualquer validação prévia de testes em laboratório.',
     reference: 'Ministério da Saúde, Guia de Vigilância em Saúde: Volume 1, 2024; Artigo 269 do Código Penal Brasileiro.',
-    tags: ['Notificação Compulsória', 'Infectologia']
+    tags: ['notificação compulsória', 'infectologia']
   },
   {
     id: 'tp2025-116',
@@ -1217,7 +1217,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A imposição de filtros limitantes que impedem o acesso rotineiro de grupos específicos (gestantes e infância) à atenção básica fere o princípio ético-doutrinário da Universalidade do SUS.',
     commentary: 'O princípio da Universalidade exige assegurar que a totalidade da comunidade adscrita desfrute de canais acessíveis sem barreiras discriminatórias administrativas. Embora a Equidade endosse focar atenção qualificada sobre grupos de risco mais complexos sob estratificação de vulnerabilidades, ela jamais valida extinguir ou restringir as necessidades preventivas de outras coortes básicas comunitárias essenciais.',
     reference: 'Lei Orgânica da Saúde (Lei nº 8.080/1990); Política Nacional de Atenção Básica (PNAB).',
-    tags: ['SUS', 'Legislação']
+    tags: ['SUS', 'legislação']
   },
   {
     id: 'tp2025-117',
@@ -1233,7 +1233,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O período sazonal brasileiro de maiores índices de temperatura e pluviosidade (dezembro a maio) amplifica as populações vetoriais, favorecendo a expansão geográfica e o derramamento viral para novas populações suscetíveis.',
     commentary: 'As arboviroses transmitidas por vetores florestais (como os mosquitos dos gêneros Haemagogus e Sabethes) estão intimamente associadas a condições tropicais úmidas de alto calor e umidade, as quais aumentam a sobrevida e velocidade replicativa do vírus nos insetos vetores. A vigilância atenta de epizootias e altas taxas vacinais protegem a população de surtos expansivos urbanos (Aedes aegypti).',
     reference: 'Guia de Vigilância em Saúde, 6ª ed, Ministério da Saúde, 2023.',
-    tags: ['Vigilância Epidemiológica', 'Zoologia e Arboviroses']
+    tags: ['vigilância epidemiológica', 'zoologia e arboviroses']
   },
   {
     id: 'tp2025-118',
@@ -1249,7 +1249,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A Atenção Primária constituirá a coordenadora principal do cuidado crônico do diabetes, exigindo plano integrado de ajustes de metas terapêuticas, aconselhamento multiprofissional alimentar e revisões curtas frequentes regulares.',
     commentary: 'Como o paciente mantem-se assintomático na ausência de sintomas cetoacidóticos graves evidentes, inexiste justificativa técnica para internação hospitalar ou encaminhamento precoce automático à média complexidade (endocrinologia), devendo a intervenção ocorrer integralmente na UBS. Um retorno distante em 6 meses com início isolado de insulina é perigoso em virtude do risco de hipoglicemia severa subitamente induzida e falta de acompanhamento de perto.',
     reference: 'Portaria nº 2.436/2017 (PNAB); Diretrizes SBD 2024 - Tratamento do DM2 no SUS.',
-    tags: ['Atenção Primária', 'Diabetes']
+    tags: ['atenção primária', 'diabetes']
   },
   {
     id: 'tp2025-119',
@@ -1265,7 +1265,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O manejo médico-ocupacional eficaz associa o monitoramento epidemiológico clínico regular periódico individual dos trabalhadores à atuação nas melhorias de engenharia e controles sanitários dos ambientes laborais.',
     commentary: 'As normas legais regulamentadoras federais do trabalho (como a NR-7 PCMSO) impõem o controle e vigilância biológica contínua por indicadores analíticos em trabalhadores expostos a substâncias tóxicas. Condutas limitadas puramente à entrega de informativos ou reações médicas esporádicas apenas surgidos sinais tardios negligenciam a ocorrência crônica silenciosa de agravos profissionais de relevância legal e biomédica severa.',
     reference: 'Área Técnica de Saúde do Trabalhador, Ministério da Saúde; Norma Regulamentadora nº 7 (MTE - PCMSO).',
-    tags: ['Saúde do Trabalhador', 'Medicina Ocupacional']
+    tags: ['saúde do trabalhador', 'medicina ocupacional']
   },
   {
     id: 'tp2025-120',
@@ -1281,7 +1281,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Em mortes domiciliares naturais ocorridas fora da assistência médica e em cidades sem SVO, o médico do socorro que confirmou o falecimento deve atestar fisicamente o óbito, podendo preencher a Declaração de Óbito (D.O.) ou acionar o encaminhamento à polícia civil para emissão do obituário por médico de serviço público municipal.',
     commentary: 'O IML possui competência restrita ao diagnóstico necroscópico pericial das mortes ocasionadas por causas externas (traumáticas ou violentas suspicazes). Em episódios naturais de doente sem assistência em município desprovido de rede de SVO, o preenchimento da Declaração de Óbito (D.O.) recai idealmente sobre o médico que constatou presencialmente o óbito (inclusive do SAMU), sendo vedada qualquer cobrança pecuniária adicional por emissão de atestados de falecimentos públicos. Caso subsistam questionamentos, orienta-se o encaminhamento oficial do cadáver à autoridade policial para exames complementares de perícia básica por peritos indicados municipais.',
     reference: 'Portaria MS nº 116 de 2009; Manual de Preenchimento da Declaração de Óbito, CREMESP, 2023; Resolução SS nº 229, 2024.',
-    tags: ['Medicina Legal', 'Bioética']
+    tags: ['medicina legal', 'bioética']
   },
   {
     id: 'tp2021-101',
@@ -1297,7 +1297,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A conduta prioritária e mais adequada de acordo com as políticas do Ministério da Saúde para pessoas em situação de rua com tuberculose é realizar o Tratamento Diretamente Observado (TDO) compartilhado com as equipes de Consultório na Rua (eCR) e a Unidade Básica de Saúde, buscando o vínculo com o usuário, sem imposição de abstinência de álcool ou drogas.',
     commentary: 'O tratamento diretamente observado (TDO) é recomendado para todas as pessoas em situação de rua (PSR) e pode ser realizado na unidade de saúde, in loco e nos equipamentos sociais, pelas equipes de consultório na rua e/ou das UBSs. Não se deve subordinar o tratamento à internação compulsória ou à exigência/imposição de abstinência, o que viola as abordagens de Redução de Danos e rompe o vínculo de cuidado.',
     reference: 'Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Manual de Recomendações para o Controle da Tuberculose no Brasil. Brasília: Ministério da Saúde, 2019.',
-    tags: ['Tuberculose', 'Consultório na Rua', 'Redução de Danos']
+    tags: ['tuberculose', 'consultório na rua', 'redução de danos']
   },
   {
     id: 'tp2021-102',
@@ -1313,7 +1313,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O Caso A descreve o quadro sindrômico clássico suspeito de Sarampo (febre + exantema maculopapular acompanhados de sintomas respiratórios/oculares). O Caso B descreve a Varicela ou catapora (febre moderada de início súbito com erupção papulovesicular polimórfica que se inicia na face, couro cabeludo ou tronco).',
     commentary: 'Caso suspeito de sarampo: febre e exantema maculopapular, acompanhados de tosse/coriza/conjuntivite. Caso suspeito de varicela: febre moderada, pródromos inespecíficos seguidos de erupção papulovesicular típica (vesículas com halo eritematoso, que evoluem para crostas). Caso suspeito de rubéola envolve febre, exantema e linfoadenopatia retroauricular/occipital/cervical.',
     reference: 'Guia de Vigilância em Saúde, Ministério da Saúde.',
-    tags: ['Vigilância Epidemiológica', 'Doenças Exantemáticas']
+    tags: ['vigilância epidemiológica', 'doenças exantemáticas']
   },
   {
     id: 'tp2021-103',
@@ -1329,7 +1329,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Na elaboração do Projeto Terapêutico Singular (PTS), após o diagnóstico inicial (avaliação orgânica, psicológica e social), a etapa imediata subsequente consiste na definição de metas (propostas de curto, médio e longo prazo) e na divisão de responsabilidades/tarefas específicas de cada membro da equipe de saúde e do próprio usuário.',
     commentary: 'O PTS é estruturado tradicionalmente em quatro momentos: 1) Diagnóstico (análise da situação singular e de vulnerabilidades); 2) Definição de metas (negociação de propostas com o sujeito); 3) Divisão de responsabilidades (atribuição de tarefas claras para cada integrante); 4) Reavaliação periódica (discussão da evolução e mudanças no plano de cuidado). O passo subsequente ao diagnóstico engloba a definição de metas e responsabilidades.',
     reference: 'BRASIL. Ministério da Saúde. Clínica ampliada, equipe de referência e projeto terapêutico singular. 2. ed. Brasília: Ministério da Saúde, 2007.',
-    tags: ['Atenção Primária', 'PTS', 'Projeto Terapêutico Singular']
+    tags: ['atenção primária', 'PTS', 'projeto terapêutico singular']
   },
   {
     id: 'tp2021-104',
@@ -1345,7 +1345,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Visto que a paciente possui diagnóstico estabelecido de diabetes mellitus associado a uma lesão em órgão-alvo em consequência de evento cardiovascular prévio (Infarto Agudo do Miocárdio), o seu risco cardiovascular é obrigatoriamente estratificado como Alto. Portanto, as diretrizes vigentes apontam para a implementação imediata de mudanças de estilo de vida (tratamento não medicamentoso) associada ao tratamento medicamentoso apropriado.',
     commentary: 'A classificação de Alto Risco Cardiovascular é compulsória na presença de doença cardiovascular clinicamente manifesta (como infarto prévio), lesão de órgão-alvo ou diabetes complicado. O plano de atenção à saúde para portadores de risco cardiovascular elevado deve, indubitavelmente, coordenar ampla intervenção farmacológica contínua em paralelo a mudanças dietéticas e de atividade física.',
     reference: 'Diretrizes Brasileiras de Hipertensão Arterial, SBC, 2020; Caderno de Atenção Básica nº 14, Prevenção Clínica de Doenças Cardiovasculares, Ministério da Saúde.',
-    tags: ['Risco Cardiovascular', 'Hipertensão', 'Diabetes']
+    tags: ['risco cardiovascular', 'hipertensão', 'diabetes']
   },
   {
     id: 'tp2021-105',
@@ -1361,7 +1361,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A vacina contra febre amarela é produzida a partir de virus vivo atenuado. Portanto, tem contraindicação formal e absoluta em pacientes com imunossupressão grave, incluindo indivíduos portadores de HIV com contagem de linfocitos T-CD4+ inferior a 200 células/mm³.',
     commentary: 'Pacientes assintomáticos com infecção pelo vírus HIV e reserva imunológica mantida (CD4+ > 350 ou > 200 de forma ponderada) podem receber a imunização de febre amarela quando em áreas com recomendação ou trânsito necessário. A imunodeficiência grave (CD4 < 200) impõe restrição imediata pela possibilidade teórica de replicação vacinal descontrolada (doença viscero- ou neurotrópica pós-vacinação).',
     reference: 'Brasil. Ministério da Saúde. Secretaria de Atenção à Saúde. Febre amarela: guia para profissionais de saúde. Brasília: Ministério da Saúde, 2018.',
-    tags: ['Imunização', 'Contraindicações', 'Febre Amarela']
+    tags: ['imunização', 'contraindicações', 'febre amarela']
   },
   {
     id: 'tp2021-106',
@@ -1377,7 +1377,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O acolhimento é um dos eixos mais substanciais da Política Nacional de Humanização (PNH) e constitui o mecanismo e postura prioritários para a identificação, recepção qualificada e superação das condições de vulnerabilidade no SUS.',
     commentary: 'De acordo com as diretrizes de humanização do Ministério da Saúde, o acolhimento não se restringe a uma triagem de recepção, mas sim a uma postura ética e estética de compromisso com a fragilidade humana e a superação da vulnerabilidade social ou clínica, amparando os indivíduos e promovendo a integralidade nas relações no SUS.',
     reference: 'Brasil. Ministério da Saúde. Acolhimento na gestão e o trabalho em saúde. Brasília: Ministério da Saúde, 2016.',
-    tags: ['Humanização', 'Acolhimento', 'PNH']
+    tags: ['humanização', 'acolhimento', 'PNH']
   },
   {
     id: 'tp2021-107',
@@ -1393,7 +1393,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O processo de percorrer e mapear a área geográfica delimitada de atuação da equipe (definindo barreiras, vulnerabilidades e recursos) e identificar e cadastrar os habitantes da localidade caracteriza de maneira explícita os princípios norteadores de territorialização e adscrição da clientela.',
     commentary: 'No âmbito organizacional da Atenção Primária no Brasil, a territorialização define a área geográfica de corresponsabilidade da ESF e o mapeamento locorregional. Conectado a ela, a adscrição consagra o vínculo e responsabilidade permanente sobre uma população específica descrita (indivíduos cadastrados vinculados ao serviço no território demarcado).',
     reference: 'PNAB - Política Nacional de Atenção Básica, Portaria nº 2.436/2017.',
-    tags: ['Estratégia Saúde da Família', 'Territorialização', 'Princípios do SUS']
+    tags: ['estratégia saúde da família', 'territorialização', 'princípios do SUS']
   },
   {
     id: 'tp2021-108',
@@ -1409,7 +1409,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'As taxas calculadas em porcentagem (base de 100 indivíduos) são:\n1) Taxa de ataque (incidência no surto) = (20 casos / 500 expostos) * 100 = 4%.\n2) Taxa de mortalidade = (5 óbitos / 500 indivíduos sob risco) * 100 = 1%.\n3) Taxa de letalidade = (5 óbitos / 20 doentes) * 100 = 25%.',
     commentary: 'Os coeficientes epidemiológicos medem distintos atributos da doença:\n- Taxa de Ataque estima a incidência cumulativa numa população exposta síncrona durante período epidêmico: 20/500 = 0,04 (ou 4%).\n- Taxa de Mortalidade estima a proporção absoluta sobre a população exposta total de quem veio a morrer daquela causa: 5/500 = 0,01 (ou 1%).\n- Taxa de Letalidade avalia o potencial de gravidade ou agressividade clínica do agravo (óbitos entre os doentes aferidos): 5/20 = 0,25 (ou 25%).',
     reference: 'ROUQUAYROL, M. Z. & GURGEL, M. Epidemiologia & saúde. 7. ed. Rio de Janeiro: Medbook, 2013.',
-    tags: ['Epidemiologia', 'Coeficientes de Saúde', 'Febre Amarela']
+    tags: ['epidemiologia', 'coeficientes de saúde', 'febre amarela']
   },
   {
     id: 'tp2021-109',
@@ -1425,7 +1425,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A pesquisa parte de um fator de exposição documentado (IMC) de uma base de indivíduos inicialmente sem desfecho oncológico e os acompanha de maneira longitudinal ao longo de um intervalo temporal definido, estimando e comparando o risco de sobrevida/diagnóstico do desfecho (vários subtipos de câncer). Trata-se, portanto, de um estudo de Coorte.',
     commentary: 'Na epidemiologia, o estudo de coorte é observacional e tipicamente longitudinal prospectivo ou histórico. A sua marca conceitual essencial e inconteste é a cronologia metodológica fundada na seleção de participantes pautada no status de exposição (exposição inicial etc.) com posterior monitoramento para documentar incidência diferencial de desfechos na comparação dos grupos.',
     reference: 'MEDRONHO, R.A. Epidemiologia. Rio de Janeiro: Atheneu, 2a Ed. 2009.',
-    tags: ['Metodologia Científica', 'Estudo de Coorte', 'Epidemiologia']
+    tags: ['metodologia científica', 'estudo de coorte', 'epidemiologia']
   },
   {
     id: 'tp2021-110',
@@ -1441,7 +1441,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O evento descrito ilustra uma epidemia por fonte comum de caráter pontual (intoxicação alimentar clássica ocorrendo simultaneamente em indivíduos expostos sincronicamente a uma refeição restrita compartilhada contaminada em intervalo brevíssimo e localizado de tempo).',
     commentary: 'As epidemias temporais distinguem-se em dois principais perfis formativos:\n- Fonte Comum Pontual: os expostos deparam-se simultaneamente com um mesmo agente transmissor num mesmo lapso temporal (ex: maionese contaminada em restaurante).\n- Epidemia Progressiva/Propagada: a transmissão decorre no encadeamento de pessoa para pessoa por via respiratória, de contato ou vetorial, sem origem pontual simultânea única compartilhada de alimento/exposição.',
     reference: 'ROUQUAYROL, M. Z. & ALMEIDA, N. Epidemiologia e Saúde. 7ª Edição, p. 110-112.',
-    tags: ['Vigilância Epidemiológica', 'Surtos', 'Doenças de Veiculação Alimentar']
+    tags: ['vigilância epidemiológica', 'surtos', 'doenças de veiculação alimentar']
   },
   {
     id: 'tp2021-111',
@@ -1457,7 +1457,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A coordenação do cuidado refere-se à habilidade da APS de exercer a integração das informações dos pacientes e coordenar os fluxos entre diferentes serviços, integrando alta hospitalar, readequação medicamentosa unificada e referenciamento articulado à rede especializada.',
     commentary: 'O atributo da Coordenação do Cuidado é essencialmente exemplificado no ajuste integrado de condutas prescritas por equipes terciárias ou secundárias de saúde, unificação de receitas farmacológicas conflitantes a fim de evitar interações deletérias e gerenciamento eficaz do retorno à UBS com novos encaminhamentos direcionados (ex: oftalmologista da rede pública).',
     reference: 'STARFIELD, B. Atenção Primária: equilíbrio entre necessidades de saúde, tecnologia e insumos. Brasília: UNESCO/Ministério da Saúde, 2002.',
-    tags: ['Atenção Primária', 'Atributos da APS', 'Qualidade de Assistência']
+    tags: ['atenção primária', 'atributos da APS', 'qualidade de assistência']
   },
   {
     id: 'tp2021-112',
@@ -1473,7 +1473,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A principal causa de mortalidade em jovens e adolescentes masculinos no meio urbano brasileiro é constituída por causas externas (homicídios, acidentes de trânsito violento e violências interpessoais). Intervenções intersetoriais integradas direcionadas ao controle da criminalidade, violência urbana e consumo abusivo de entorpecentes/drogas são, portanto, as opções com maior ptencial de retorno e impacto imediato.',
     commentary: 'As causas externas constituem a grande e alarmante epidemia na saúde dos jovens brasileiros, superando infinitamente patologias infecciosas transmissíveis ou crônicas na faixa etária juvenil. Por tal característica, o amparo a este público transborda o espectro estrito de atuação do setor de saúde, demandando políticas territoriais intersetoriais articuladas de segurança, assistência social, lazer e redução de violência.',
     reference: 'BEAGLEHOLE, R.; BONITA, R.; KJELLSTRÖM, T. Epidemiologia básica. 2 ed. São Paulo: Santos / OMS, 2010.',
-    tags: ['Saúde do Adolescente', 'Causas Externas', 'Vulnerabilidade Social']
+    tags: ['saúde do adolescente', 'causas externas', 'vulnerabilidade social']
   },
   {
     id: 'tp2021-113',
@@ -1489,7 +1489,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Eliminação significa que a transmissão da doença foi interrompida em uma área geográfica ampla específica devido a medidas contínuas, contudo, ainda subsiste o risco persistente de reintrodução de casos externos (importados), demandando a manutenção contínua de ações de vigilância epidemiológica e profilaxia.',
     commentary: 'Diferentemente da Erradicação (que define o encerramento em âmbito global e permanente dos casos e do próprio patógeno do planeta, possibilitando descontinuidade total de medidas preventivas, como vacinas, a exemplo histórico da varíola), a eliminação demanda que o complexo de vigilância e prevenção persista de maneira vigilante, face ao risco residual do retorno do patógeno a partir de nações limítrofes.',
     reference: 'WALDMAN, E.A. Vigilância em saúde pública. São Paulo: Fundação Petrópolis, 1998.',
-    tags: ['Transmissão e Controle de Doenças', 'Erradicação e Eliminação']
+    tags: ['transmissão e controle de doenças', 'erradicação e eliminação']
   },
   {
     id: 'tp2021-114',
@@ -1505,7 +1505,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Diante de diagnóstico sorológico de sífilis assintomática de duração desconhecida (latente tardia ou latente indeterminada), o tratamento padrão do Ministério da Saúde consiste na administração intramuscular de Penicilina G Benzatina na dosagem total de 7.200.000 UI, dividida em três doses semanais consecutivas de 2.400.000 UI.',
     commentary: 'O VDRL reagente quantitativo associado a teste confirmatório treponêmico (teste rápido ou FTA-Abs) em adulto assintomático sem histórico de exames prévios ou lesões recentes enquadra-se no diagnóstico de Sífilis Latente Tardia/Indeterminada. O tratamento de 3 semanas é preconizado devido ao desconhecimento e provável persistência cronológica do patógeno Treponema pallidum nos compartimentos corpóreos.',
     reference: 'Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST), Ministério da Saúde, 2020.',
-    tags: ['IST', 'Sífilis', 'PCDT']
+    tags: ['IST', 'sífilis', 'PCDT']
   },
   {
     id: 'tp2021-115',
@@ -1521,7 +1521,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O período pós-neonatal (compreendido entre o 28º dia e o 364º dia completo de vida da criança) é marcadamente influenciado por determinantes sociais e ambientais modificáveis, no qual as infecções imunopreveníveis (coqueluche, meningite, diarreias etc.) têm elevadíssima taxa histórica. Portanto, os impactos do PNI e ampliação de coberturas vacinais reduzem com maior fidedignidade a mortalidade pós-neonatal.',
     commentary: 'A mortalidade infantil fraciona-se em períodos determinantes:\n- Período Perinatal ou Neonatal Precoce (até o 6º dia): depende de forma mais expressiva de amparo de ginecologia-obstetrícia intraparto, genética, prematuridade ao nascimento, pré-natal, etc.\n- Período Pós-Neonatal: reflete as condições básicas sanitárias de vida familiar, oferta nutricional, acesso hospitalar primário e, decisivamente, cobertura vacinal protetiva contra infecções infantis endêmicas.',
     reference: 'Guia de Indicadores de Saúde e IDB, Ministério da Saúde/DATASUS.',
-    tags: ['Mortalidade Infantil', 'Imunização', 'Saúde da Criança']
+    tags: ['mortalidade infantil', 'imunização', 'saúde da criança']
   },
   {
     id: 'tp2021-116',
@@ -1537,7 +1537,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Pelo PNI e diretrizes de saúde do idoso do Brasil, a imunização anual preventiva contra o vírus Influenza (Gripe) é indicada para toda a população de idosos com idade igual ou superior a 60 anos.',
     commentary: 'A vacina de influenza é de ampla escala populacional universal. Diferentemente, a vacina antipneumocócica possui indicações mais restritas a subgrupos de risco específicos ou imunocomprometidos. O rastreio universal de osteoporose por densitometria óssea é recomendado somente a mulheres após os 65 anos ou de forma baseada em riscos individuais de fraturas antes dessa idade.',
     reference: 'Diretrizes para o Cuidado das Pessoas Idosas no SUS, Ministério da Saúde.',
-    tags: ['Saúde do Idoso', 'Imunização', 'Ações Preventivas']
+    tags: ['saúde do idoso', 'imunização', 'ações preventivas']
   },
   {
     id: 'tp2021-117',
@@ -1553,7 +1553,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A utilização de benzodiazepínicos (como o Diazepam) de meia-vida longa em idosos de faixa etária avançada é fator de risco clássico e modificável de maior relevância para ocorrência de episódios graves de instabilidade postural, sonolência residual, comprometimento cognitivo e quedas recorrentes. A conduta preventiva imediata e mais efetiva consiste no desmame gradual do psicotrópico.',
     commentary: 'De acordo com os Critérios de Beers para prescrições potencialmente inapropriadas em idosos, os benzodiazepínicos de longa duração devem ser proscritos pelo aumento drástico de quedas e confusão. Prescrever medicamentos para conter efeitos deletérios do diazepam sem sua retirada prévia gera o fenômeno de Cascata Iatrogênica.',
     reference: 'Critérios de Beers, American Geriatrics Society (AGS); FREITAS, E. V. & PY, L. Tratado de Geriatria e Gerontologia. 3ª Ed.',
-    tags: ['Saúde do Idoso', 'Polifarmácia', 'Segurança do Paciente']
+    tags: ['saúde do idoso', 'polifarmácia', 'segurança do paciente']
   },
   {
     id: 'tp2021-118',
@@ -1569,7 +1569,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A perda ponderal do bebê de 10 dias (2.610 g em relação ao peso de nascimento de 2.900 g) representa um decréscimo de exatos 10%, o que situa-se estritamente no intervalo fisiológico máximo aceito para os primeiros 10 dias de vida pós-natal. Visando preservar a barreira imunológica e os benefícios nutricionais exclusivos, deve-se orientar e manter o aleitamento materno exclusivo, revisando e corrigindo eventuais falhas nas técnicas de pega e posicionamento no peito.',
     commentary: 'O aleitamento sob livre demanda em mamas túrgidas na perimenarca materna pode cursar com fadiga ou choro do recém-nascido se a apojadura e a pega/posicionamento não estiverem gerando esvaziamento efetivo e saciedade do lactente. Não há indicações clínicas que justifiquem fórmulas infantis substitutas, visto que o decréscimo ponderal é inteiramente fisiológico até 10 dias de vida (esperando-se recuperação ponderal de nascimento até 14 dias).',
     reference: 'Guia Alimentar para Crianças Brasileiras Menores de 2 anos, Ministério da Saúde, 2021.',
-    tags: ['Puericultura', 'Aleitamento Materno', 'Desenvolvimento Infantil']
+    tags: ['puericultura', 'aleitamento materno', 'desenvolvimento infantil']
   },
   {
     id: 'tp2021-119',
@@ -1585,7 +1585,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Na Declaração de Óbito (D.O.), a Parte I é destinada à cadeia causal direta em ordem retrógrada (causa imediata na linha superior \'a\', causas intervenientes nas linhas intermediárias \'b\'/\'c\' e a causa básica determinante na linha inferior \'d\'). Na paciente, a sequência causal fisiopatológica imediata é: \'a\' Insuficiência respiratória aguda, causada por \'b\' Tuberculose pulmonar de aspecto militar, decorrente de imunodeficiência severa causada por \'c\' Infecção por HIV/AIDS em virtude de abandono terapêutico antirretroviral. A condição gravídica atual do falecimento, embora importante, não faz parte da cadeia patológica direta determinante do óbito, devendo, obrigatoriamente, figurar como causa contribuinte menor no bloco da Parte II.',
     commentary: 'O correto preenchimento estatístico do obituário nacional é regulado por normas rigorosas. A causa imediata (insuficiência respiratória) estabelece o desfecho terminal na linha superior \'a\'. O processo inicial básico motivador de todo o declínio clínico progressivo (infecção crônica severa por HIV/AIDS) encerra a cadeia etiológica na base da Parte I. Por fim, a condição fisiológica coexistente gravídica puerperal de 35 semanas, que influi no risco sistêmico geral de deterioração pulmonar e que constitui morte materna indireta clássica, é inserida na Parte II da D.O.',
     reference: 'Manual de Instruções para o Preenchimento da Declaração de Óbito, Ministério da Saúde, 2011.',
-    tags: ['Medicina Legal', 'Declaração de Óbito', 'HIV/AIDS na Gestação']
+    tags: ['medicina legal', 'declaração de óbito', 'HIV/AIDS na gestação']
   },
   {
     id: 'tp2021-120',
@@ -1601,7 +1601,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Os cálculos de desempenho do teste diagnóstico definem:\n- Especificidade (Verdadeiros Negativos / Total de Não Portadores) = (328 - 30) / 328 = 298 / 328 = 90,85%.\n- Valor Preditivo Positivo (Verdadeiros Positivos / Total de Testados Positivos) = 254 / (254 + 30) = 254 / 284 = 89,43%.\n- Acurácia (Verdadeiros Resultados Corretos / População Total) = (254 + 298) / (342 + 328) = 552 / 670 = 82,38%.',
     commentary: 'Portadores da doença (N = 342) -> 254 Positivos (VP) e 88 Negativos (FN).\nNão Portadores da doença (N = 328) -> 30 Positivos (FP) e 298 Negativos (VN).\n- Sensibilidade = VP / Total Portadores = 254 / 342 = 74,2%.\n- Especificidade = VN / Total Não Portadores = 298 / 328 = 90,8%.\n- VPP = VP / Total de Positivos = 254 / 284 = 89,4%.\n- Acurácia = (VP + VN) / Total Geral = 552 / 670 = 82,4%.',
     reference: 'Gordis L. Epidemiologia. Editora Revinter; 4 ed. 2010.',
-    tags: ['Metodologia Científica', 'Epidemiologia', 'Testes Diagnósticos']
+    tags: ['metodologia científica', 'epidemiologia', 'testes diagnósticos']
   },
   {
     id: 'tp2026-101',
@@ -1617,7 +1617,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Respeitar a autonomia expressa pelo paciente, evitar medidas invasivas e priorizar o controle de sintomas e conforto.',
     commentary: 'O desejo previamente manifestado pelo paciente por meio de diretivas antecipadas de vontade é soberano em relação à vontade de familiares e equipe de saúde, possuindo pleno amparo legal, ético e normativo (Resolução CFM nº 1.995/2012). Cuidados paliativos priorizam a beneficência, a não maleficência e o conforto em detrimento da distanásia.',
     reference: 'Instituto Nacional de Câncer (INCA). Diretrizes para a organização dos cuidados paliativos no Brasil; Resolução CFM nº 1.995/2012.',
-    tags: ['Bioética', 'Cuidados Paliativos', 'Autonomia do Paciente']
+    tags: ['bioética', 'cuidados paliativos', 'autonomia do paciente']
   },
   {
     id: 'tp2026-102',
@@ -1633,7 +1633,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Reorganizar o processo de trabalho com estratificação de risco, priorização de microáreas críticas, integração vigilância-assistência, busca ativa, ações intersetoriais e fortalecimento do vínculo e da participação social.',
     commentary: 'De acordo com a PNAB, o planejamento das ações em uma UBS de território vulnerável deve integrar a vigilância em saúde e a assistência clínica, baseando-se na estratificação de risco, no fortalecimento do vínculo comunitário e em ações intersetoriais de promoção de saúde no território.',
     reference: 'BRASIL. Ministério da Saúde. Política Nacional de Atenção Básica (PNAB), 2017.',
-    tags: ['Atenção Primária', 'PNAB', 'Planejamento Territorial']
+    tags: ['atenção primária', 'PNAB', 'planejamento territorial']
   },
   {
     id: 'tp2026-103',
@@ -1649,7 +1649,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Fazer avaliação multifatorial de risco de quedas, revisão medicamentosa e orientação de exercício físico.',
     commentary: 'A prevenção secundária de quedas recorrentes no idoso demanda avaliação clínica abrangente e multifatorial (visão, equilíbrio, marcha, análise ambiental e revisão da polifarmácia) e estímulo à prática de atividade física direcionada de força e equilíbrio, evitando encaminhamentos setoriais sem abordagem primária.',
     reference: 'Ministério da Saúde. Caderneta de Saúde da Pessoa Idosa; Sociedade Brasileira de Geriatria e Gerontologia (SBGG).',
-    tags: ['Saúde do Idoso', 'Prevenção de Quedas', 'Multifatorialidade']
+    tags: ['saúde do idoso', 'prevenção de quedas', 'multifatorialidade']
   },
   {
     id: 'tp2026-104',
@@ -1665,7 +1665,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Realizar avaliação estruturada do risco, fortalecer vínculo e organizar plano de cuidado na UBS.',
     commentary: 'A ideação de morte sutil exige da equipe de APS uma escuta ativa e qualificada imediata, com avaliação estruturada do grau de risco suicida (ferramentas como Columbia), pactuação de plano de crise e fortalecimento do acompanhamento longitudinal.',
     reference: 'Ministério da Saúde. Prevenção do Suicídio: Manual dirigido a profissionais da APS.',
-    tags: ['Saúde Mental', 'Prevenção do Suicídio', 'Acolhimento']
+    tags: ['saúde mental', 'prevenção do suicídio', 'acolhimento']
   },
   {
     id: 'tp2026-105',
@@ -1681,7 +1681,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Iniciar estabilizador de humor, como lítio, e acompanhar na APS, em articulação com saúde mental.',
     commentary: 'Estabilizadores de humor (como o carbonato de lítio) constituem a base indispensável da terapia preventiva de manutenção no transtorno bipolar tipo I. A suspensão medicamentosa ou uso isolado de antidepressivos precipitariam novos episódios de virada maníaca.',
     reference: 'Diretrizes da CANMAT; Ministério da Saúde. Caderno de Atenção Básica - Saúde Mental.',
-    tags: ['Saúde Mental', 'Transtorno Bipolar', 'Farmacoterapia']
+    tags: ['saúde mental', 'transtorno bipolar', 'farmacoterapia']
   },
   {
     id: 'tp2026-106',
@@ -1697,7 +1697,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Aplicar ferramentas validadas para confirmação diagnóstica e para quantificação, solicitar TSH, hemograma, ECG Holter (se crises > 3/semana) e descartar orgânico (cafeína, tireotoxicose), com estratificação de risco e plano terapêutico stepwise.',
     commentary: 'O planejamento diagnóstico na APS deve ser baseado em evidências (stepwise), utilizando escalas padronizadas para confirmação diagnóstica de ansiedade/pânico, descartando distúrbios orgânicos subjacentes (tireotoxicose, anemia, arritmias) e estratificando o risco clínico.',
     reference: 'American Psychiatric Association. DSM-5-TR; Cadernos de Atenção Básica nº 34: Saúde Mental.',
-    tags: ['Saúde Mental', 'Ansiedade', 'Diagnóstico Stepwise']
+    tags: ['saúde mental', 'ansiedade', 'diagnóstico stepwise']
   },
   {
     id: 'tp2026-107',
@@ -1713,7 +1713,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Estruturar busca territorial, vínculo longitudinal e fluxos flexíveis de acesso ao rastreamento.',
     commentary: 'O cuidado ético de populações altamente vulneráveis sob a lógica da saúde coletiva demanda a aplicação prática do princípio da equidade. Isso se traduz na flexibilização de fluxos burocráticos, busca territorial ativa e estabelecimento de vínculos longitudinais de confiança que removam barreiras de acesso.',
     reference: 'Decreto Federal nº 7.053/2009 (Política Nacional para População em Situação de Rua); Manual de Tuberculose, Ministério da Saúde.',
-    tags: ['Bioética', 'População em Situação de Rua', 'Equidade']
+    tags: ['bioética', 'população em situação de rua', 'equidade']
   },
   {
     id: 'tp2026-108',
@@ -1729,7 +1729,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Equidade e regionalização.',
     commentary: 'A alocação desigual de recursos em benefício de áreas de maior vulnerabilidade extrema reflete a Equidade (princípio doutrinário). O pacto cooperativo intermunicipal para compartilhamento de leitos de terapia intensiva neonatal em um município-polo consubstancia a Regionalização (diretriz organizativa).',
     reference: 'FALK, J. W.; ROSA, R. S. O Sistema de Saúde no Brasil; Lei nº 8.080/1990.',
-    tags: ['SUS', 'Diretrizes do SUS', 'Princípios do SUS']
+    tags: ['SUS', 'diretrizes do SUS', 'princípios do SUS']
   },
   {
     id: 'tp2026-109',
@@ -1745,7 +1745,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A redução do dimensionamento da população por equipe promove o acesso efetivo e aumenta a qualidade no atendimento, equilibrando a demanda e viabilizando o manejo eficaz de doenças agudas e crônicas, assim como ações intersetoriais e de vigilância em saúde.',
     commentary: 'A adscrição de um contingente menor por equipe (média de 2.500 pessoas na atualização da PNAB) visa equacionar a carga assistencial diária, permitindo dedicação à prevenção, ao manejo integral qualificado de doenças crônicas complexas, às ações territoriais e intersetoriais.',
     reference: 'Portaria GM/MS nº 3.493/2024; Tratado de Medicina de Família e Comunidade (Gusso & Lopes).',
-    tags: ['Organização da APS', 'PNAB 2024', 'Dimensionamento de Equipes']
+    tags: ['organização da APS', 'PNAB 2024', 'dimensionamento de equipes']
   },
   {
     id: 'tp2026-110',
@@ -1761,7 +1761,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'O maior acesso aos serviços de atendimento pré-natal e puericultura e à assistência especializada durante o trabalho de parto contribui de maneira significativa para redução da mortalidade infantil e materna.',
     commentary: 'A cobertura robusta de pré-natal de qualidade e o acompanhamento de puericultura na rede de atenção primária são determinantes centrais estabelecidos para a queda sustentada da mortalidade infantil pós-neonatal. Fatores ambientais, econômicos e regionais mantêm fortes disparidades territoriais.',
     reference: 'RIBEIRO, G. S. Problemas de Saúde da População Brasileira e seus Determinantes. In: Saúde Coletiva: Teoria e Prática (2022).',
-    tags: ['Mortalidade Infantil', 'Indicadores de Saúde', 'Saúde da Criança']
+    tags: ['mortalidade infantil', 'indicadores de saúde', 'saúde da criança']
   },
   {
     id: 'tp2026-111',
@@ -1777,7 +1777,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'A prevalência da doença diminuiu devido à redução da duração da doença, enquanto a incidência permaneceu estável.',
     commentary: 'A incidência permaneceu estável (número anual de novos casos constante). Como o rastreio e tratamento precoce curam mais rapidamente os doentes, reduz-se o tempo de duração da moléstia (D). Pela relação Prevalência ≈ Incidência × Duração, a prevalência diminuiu substancialmente.',
     reference: 'ROTHMAN, K. J. Modern Epidemiology (4th ed., 2021); Princípios de Epidemiologia.',
-    tags: ['Indicadores Epidemiológicos', 'Prevalência', 'Incidência']
+    tags: ['indicadores epidemiológicos', 'prevalência', 'incidência']
   },
   {
     id: 'tp2026-112',
@@ -1793,7 +1793,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Notificar o agravo relacionado ao trabalho e iniciar investigação epidemiológica no ambiente laboral, com adoção de medidas de controle do risco ocupacional.',
     commentary: 'A suspeita ou confirmação de intoxicação ocupacional por metais pesados (saturnismo) constitui agravo de notificação compulsória relacionada ao trabalho. Demanda imediata intervenção da Vigilância em Saúde do Trabalhador (VISAT) no ambiente fabril para neutralização de fontes de risco.',
     reference: 'Ministério da Saúde. Vigilância em Saúde do Trabalhador no SUS: orientações básicas.',
-    tags: ['Saúde do Trabalhador', 'VISAT', 'Doenças Ocupacionais']
+    tags: ['saúde do trabalhador', 'VISAT', 'doenças ocupacionais']
   },
   {
     id: 'tp2026-113',
@@ -1809,7 +1809,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Acidente comum, porque a parada para atender interesse pessoal descaracteriza o percurso habitual entre trabalho e residência.',
     commentary: 'O acidente de trajeto exige linearidade habitual do percurso residencial-laboral. Desvios e interrupções significativas motivadas por interesse particular do obreiro rompem o nexo previdenciário de equiparação ao acidente laboral, enquadrando o evento como sinistro de natureza comum.',
     reference: 'Brasil. Lei nº 8.213/1991, Artigo 21, IV, "d"; Decreto nº 3.048/1999.',
-    tags: ['Medicina Legal', 'Acidente de Trabalho', 'Previdência Social']
+    tags: ['medicina legal', 'acidente de trabalho', 'previdência social']
   },
   {
     id: 'tp2026-114',
@@ -1825,7 +1825,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Realizar o manejo clínico imediato das manifestações colinérgicas, providenciar a notificação compulsória no SINAN e orientar o afastamento imediato da exposição, investigando se outros familiares também foram expostos.',
     commentary: 'O dever de intervir clinicamente (antídotos/suporte) e a obrigação de notificar o agravo compulsório de intoxicação exógena pelo trabalho sobrepõem-se à solicitação de recusa de registro do paciente. Na saúde coletiva e medicina de família, estende-se a análise clínica de risco aos coabitantes do lar agrícola.',
     reference: 'Ministério da Saúde. Cadernos de Atenção Básica, n. 41: Saúde do Trabalhador e da Trabalhadora.',
-    tags: ['Saúde do Trabalhador', 'Notificação Compulsória', 'Agrotóxicos']
+    tags: ['saúde do trabalhador', 'notificação compulsória', 'agrotóxicos']
   },
   {
     id: 'tp2026-115',
@@ -1841,7 +1841,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Incentivar a manutenção do peso corporal adequado e a prática regular de atividade física, explicando a relação entre tecido adiposo e estrogênio.',
     commentary: 'O laudo BI-RADS 2 refere-se a achados estritamente benignos, mantendo o rastreamento bianual regular. A prevenção primária foca em fatores modificáveis, como obesidade pós-menopausa (tecido adiposo periférico converte andrógenos em estrogênios pela aromatase, elevando o risco de tumores estrogênio-dependentes).',
     reference: 'INCA. Controle do câncer de mama no Brasil: dados e números 2025; Diretrizes de Rastreamento.',
-    tags: ['Saúde da Mulher', 'Rastreamento', 'Prevenção Primária']
+    tags: ['saúde da mulher', 'rastreamento', 'prevenção primária']
   },
   {
     id: 'tp2026-116',
@@ -1857,7 +1857,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Realizar o compartilhamento de decisões (Decisão Compartilhada), discutindo os potenciais riscos e benefícios do rastreamento, respeitando a identidade de gênero e mantendo a vigilância do órgão presente.',
     commentary: 'Mulheres trans mantêm a glândula prostática mesmo sob hormonioterapia feminilizante (que atrofia o órgão mas não extingue integralmente o risco carcinogênico). O rastreamento deve seguir o princípio da Decisão Compartilhada de forma personalizada, evitando abordagens puramente compulsórias ou negligentes.',
     reference: 'Sociedade Brasileira de Urologia (SBU). Recomendações em Saúde Urológica de Pessoas Transgênero; Ministério da Saúde.',
-    tags: ['Saúde LGBT', 'Decisão Compartilhada', 'Câncer de Próstata']
+    tags: ['saúde LGBT', 'decisão compartilhada', 'câncer de próstata']
   },
   {
     id: 'tp2026-117',
@@ -1873,7 +1873,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Solicitar monitorização ambulatorial ou residencial da pressão arterial.',
     commentary: 'Valores elevados aferidos de forma isolada no estágio 1 requerem confirmação fora do consultório por meio de MAPA ou MRPA de modo a afastar a hipertensão do avental branco, exceto se houver indício imediato de emergência hipertensiva ou lesão aguda de órgão-alvo.',
     reference: 'Diretrizes Brasileiras de Hipertensão Arterial, Sociedade Brasileira de Cardiologia (SBC), 2020.',
-    tags: ['Hipertensão Arterial', 'Diretrizes Clínicas', 'Diagnóstico']
+    tags: ['hipertensão arterial', 'diretrizes clínicas', 'diagnóstico']
   },
   {
     id: 'tp2026-118',
@@ -1889,7 +1889,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Gabapentina',
     commentary: 'A polineuropatia periférica simétrica distal dolorosa do paciente diabético crônico deve ser tratada prioritariamente com classes medicamentosas com atuação direta sobre a dor neuropática (como gabapentinoides [gabapentina, pregabalina] ou antidepressivos tricíclicos/duais [amitriptilina, duloxetina]). Anti-inflamatórios e corticoide não trazem benefício e oferecem sério risco de toxicidade sistêmica e descompensação glicêmica.',
     reference: 'Diretrizes da Sociedade Brasileira de Diabetes (SBD), 2023.',
-    tags: ['Diabetes Mellitus', 'Neuropatia Diabética', 'Dor Neuropática']
+    tags: ['diabetes mellitus', 'neuropatia diabética', 'dor neuropática']
   },
   {
     id: 'tp2026-119',
@@ -1905,7 +1905,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Aplicar as vacinas inativadas e avaliar contraindicação de vacinas vivas.',
     commentary: 'Pacientes sob imunossupressão crônica ativa têm contraindicação absoluta ao recebimento de vacinas contendo patógenos vivos atenuados, pelo perigo de indução de patogênese infecciosa vacinal. Vacinas compostas por microrganismos inativados ou componentes purificados são seguras e devem ser prontamente ministradas para imunoproteção robusta.',
     reference: 'Manual de Imunização para Pacientes Especiais (CRIE), Ministério da Saúde.',
-    tags: ['Imunização', 'Imunossuprimido', 'Corticoterapia Crônica']
+    tags: ['imunização', 'imunossuprimido', 'corticoterapia crônica']
   },
   {
     id: 'tp2026-120',
@@ -1921,7 +1921,7 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
     explanation: 'Repetir teste conforme protocolo de rastreamento, com seguimento organizado e monitoramento periódico da paciente.',
     commentary: 'A presença do DNA do papilomavírus humano de alto risco (HPV oncogênico) com citologia normal (ausência de lesão intraepitelial) não requer conização ou intervenções ablativas maiores imediatas na ausência de achado histológico/colposcópico precursor. Indica-se repetição do teste em 12 meses. A vacinação prévia, por fim, não isenta a paciente de realizar o rastreamento citopatológico de rotina.',
     reference: 'Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, INCA/Ministério da Saúde.',
-    tags: ['Saúde da Mulher', 'Rastreamento de Colo do Útero', 'HPV']
+    tags: ['saúde da mulher', 'rastreamento de colo do útero', 'HPV']
   },
   // ---- Teste de Progresso 2019 (gabarito oficial) ----
   {

@@ -16,7 +16,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A síndrome mão-pé-boca, caracterizada por febre e vesículas típicas, é causada pelo Coxsackievírus.',
     commentary: 'A questão aborda um paciente com febre e vesículas na região da mão e boca, caracterizando a síndrome mão pé boca, causada pelo vírus Coxsackie. O vírus Epstein Barr cursaria com odinofagia, hepatoesplenomegalia, adenomegalia cervical. Varicela Zoster é caracterizado por lesões polimórficas disseminadas pelo corpo. O parvovírus B19 apresenta eritema de bochechas.',
     reference: 'Tratado de pediatria / organização Sociedade Brasileira de Pediatria. - 5. ed. - Barueri [SP]: Manole, 2022. Seção 20. Infectologia',
-    tags: ['Infectologia', 'Exantemáticas']
+    tags: ['infectologia', 'exantemáticas']
   },
   {
     id: 'tp2024-42',
@@ -32,7 +32,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Sinais de virilização rápida sem telarca sugerem puberdade precoce periférica de origem adrenal (como tumor).',
     commentary: 'O paciente apresenta pubarca, associado a odor axilar, acne e sinais de virilização rapidamente progressiva, devemos pensar em uma disfunção da glândula adrenal, pela rapidez do quadro, um tumor de adrenal é o diagnóstico mais provável. Portanto, o exame mais adequado é a tomografia de adrenal. LH e FSH devem ser pedidos na suspeita de puberdade e essa menina não apresenta sinal puberal já que não tem mama palpável. USg pélvico deve ser pedido na puberdade precoce periférica, quando há suspeita de tumor ovariano. Rx idade óssea deve ser pedido para avaliar o prognóstico estatural do paciente, não faz diagnóstico de nenhuma patologia.',
     reference: 'Tratado de pediatria / organização Sociedade Brasileira de Pediatria. - 5. ed. - Barueri [SP]: Manole, 2022. Seção 16 endocrinologia. Endocrinologia pediátrica / Crésio de Aragão Dantas Alves. - 1. ed. - Barueri [SP]: Manole, 2019.',
-    tags: ['Endocrinologia']
+    tags: ['endocrinologia']
   },
   {
     id: 'tp2024-43',
@@ -48,7 +48,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Reflexo vermelho negativo (ausente) em recém-nascido é uma emergência oftalmológica para descartar retinoblastoma ou catarata.',
     commentary: 'O reflexo vermelho negativo no olho E significa que está alterado. O reflexo positivo significa normalidade. Trata-se de retinoblastoma em olho E, doença que pode ser de causa genética em uma porcentagem dos casos. A solicitação de oftalmologista é fundamental para confirmação diagnóstica feita pelo FO. O retinoblastoma é o câncer ocular mais comum em crianças, mas é raro e responde por 3% dos cânceres infantis. Entre 60% e 75% dos casos de retinoblastoma são esporádicos, isto é, uma célula sofre mutação e passa a se multiplicar descontroladamente. Essa forma de retinoblastoma geralmente aparece em crianças com mais de 1 ano de idade. Os demais casos são hereditários e a criança tem uma mutação num gene supressor de tumor chamado RB1, que está presente em todas as células de seu corpo, inclusive nas que vão dar origem a óvulos ou espermatozoides. Geralmente, essa mutação é herdada de um dos pais, embora possa ser também uma mutação nova que comece com o paciente, que vai transmiti-la aos descendentes. Nesses casos, o retinoblastoma se desenvolve no bebê, antes de 1 ano de idade.',
     reference: 'https://accamargo.org.br/sobre-o-cancer/tipos-decancer/retinoblastoma',
-    tags: ['Oftalmologia', 'Oncologia']
+    tags: ['oftalmologia', 'oncologia']
   },
   {
     id: 'tp2024-44',
@@ -64,7 +64,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Isoimunização ABO (mãe O, filho B) com níveis críticos de bilirrubina (25 mg/dL) exige exsanguineotransfusão (ET).',
     commentary: 'Trata-se de diagnóstico confirmado de isoimunização BO, pois apresenta eluato anti B positivo. O coombs pode ser positivo na isoimunização BO. Os microesferócitos também podem ser encontrados no caso de hemólise intensa, levando a anemia e icterícia grave que não respondeu somente com a fototerapia. Neste caso, com níveis de 22mg/dL de BI, a melhor conduta é a exsanguineotransfusão o mais rápido que for possível. O exame para confirmar Esferocitose Hereditária: curva de fragilidade osmótica e história materna ou paterna de terem Esferocitose, visto que é doença autossômica dominante. A presença de microesferócitos no sangue periférico não diagnostica Esferocitose.',
     reference: 'Cloherty and Stark\'s Manual of Neonatal Care, 9th Edition, 2023',
-    tags: ['Neonatologia', 'Icterícia']
+    tags: ['neonatologia', 'icterícia']
   },
   {
     id: 'tp2024-45',
@@ -80,7 +80,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A abordagem inicial da obesidade grave foca em mudança de estilo de vida e triagem de comorbidades metabólicas.',
     commentary: 'Trata-se de um caso de obesidade grave. A abordagem inicial da adolescente envolve mudança de estilo de vida para a criança e família. Alimentação à base de alimentos in natura e minimamente processados, redução do sedentarismo, investigação de dislipidemia e tolerância à glicose. Não se recomenda jejum intermitente, alimentos diet e light de forma rotineira, restrição de glúten, lactose, gordura poli-insaturada.',
     reference: 'Brasil. Ministério da Saúde. Instrutivo para o cuidado da criança e do adolescente com sobrepeso e obesidade no âmbito da Atenção Primária à Saúde [recurso eletrônico] / Ministério da Saúde, Universidade do Estado do Rio de Janeiro. – Brasília: Ministério da Saúde, 2022. 201 p.: il. Tratado de Pediatria. Sociedade Brasileira de Pediatria. 5ª Edição, 2021.',
-    tags: ['Nutrologia', 'Hebiatria']
+    tags: ['nutrologia', 'hebiatria']
   },
   {
     id: 'tp2024-46',
@@ -97,7 +97,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O exantema após o uso de amoxicilina/ampicilina em quadros de faringite é clássico da Mononocleose Infecciosa (VEB).',
     commentary: 'Em crianças, a infecção pelo VEB apresenta-se geralmente na forma de febre baixa prolongada, com ou sem linfadenopatia, tosse, rinorreia e faringite, podendo também apresentar cansaço e hepatoesplenomegalia. A febre é geralmente menor que 39°C, de início abrupto, podendo persistir por 1 a 2 semanas. A faringite ocorre na 1ª semana de doença, variando de quadros leves a sintomas que podem ser confundidos com a faringotonsilite por Streptococcus pyogenes. Cinquenta por cento dos pacientes apresentam esplenomegalia, que pode chegar a 80% dos casos em crianças pequenas. Pode ser observado o exantema maculopapular pruriginoso, geralmente desencadeado pelo uso de ampicilina ou amoxicilina como no caso acima.',
     reference: 'Tratado de Pediatria. Sociedade Brasileira de Pediatria. 5ª edição. Volume 1. 2022. Capítulo 5, página 4131, Vírus Epstein-Barr.',
-    tags: ['Infectologia', 'Mononucleose']
+    tags: ['infectologia', 'mononucleose']
   },
   {
     id: 'tp2024-47',
@@ -113,7 +113,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Infecções virais são a causa mais comum de urticária aguda na infância (até 40% dos casos).',
     commentary: 'Resposta D (correta): Em 30% a 50% dos casos, não é possível identificar uma causa específica para a urticária aguda, sendo esta classificada como idiopática. A prevalência de diferentes etiologias varia entre diferentes grupos etários. Na infância é comum a associação da urticária aguda com alimentos e/ou medicamentos, levando frequentemente a restrições alimentares e suspensão das medicações. No entanto, em mais de 40% dos casos são infecções virais leves do trato respiratório superior as causas mais frequentes de urticária aguda em crianças. Nas demais alternativas: apesar da causa poder ser desconhecida, o tratamento sempre deve ser feito com um anti-histamínico de 2ª geração, evitando os efeitos colaterais dos anti-histamínicos de 1ª geração. Não devem ser feitas dietas de restrição, principalmente porque no enunciado indica que não houve ingestão que justifique essa conduta. O encaminhamento ao alergista é desnecessário.',
     reference: 'Alcântara CT, Raeder DFT, Campinhos FL, et al. Guia prático para urticária aguda. Arq Asma Alerg Imunol. 2022;6(2):214- 24. Zuberbier T, Latiff AHA, Abuzakouk M, Aquilina S, et al. The international EAACI/GA LEN/EuroGuiDerm/APAAACI guideline for the definition, classification, diagnosis, and management of urticaria. Allergy 2022 Mar;77(3):734-766. doi: 10.1111/all.15090. Epub 2021 Oct 2',
-    tags: ['Alergia e Imunologia']
+    tags: ['alergia e imunologia']
   },
   {
     id: 'tp2024-48',
@@ -129,7 +129,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Pacientes com AIJ oligoarticular e FAN positivo têm alto risco de desenvolver uveíte anterior crônica assintomática.',
     commentary: '40% das crianças com AIJ tipo oligoarticular AAN positivo evoluem com uveíte anterior crônica, não é o quadro clínico de sarcoidose, uveíte anterior aguda é uma complicação de AIJ tipo ERA, mais comum em meninos adolescentes HLAb27+, anquilose seria uma complicação de AIJ FR+',
     reference: 'https://www.gov.br/conitec/ptbr/midias/protocolos/resumidos/PCDTResumidoAIJ.pdf Cassidy JT, Petty RE. Juvenile rheumatoid arthritis. In: Cassidy JT, Petty RE, editors. Textbook of pediatric rheumatology. 8th ed. Philadelphia: WB Saunders; 2021. p. 218-321.',
-    tags: ['Reumatologia']
+    tags: ['reumatologia']
   },
   {
     id: 'tp2024-49',
@@ -145,7 +145,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Válvula de uretra posterior (VUP) é a causa mais comum de obstrução infravesical e hidronefrose bilateral em meninos.',
     commentary: 'Válvula de uretra posterior é uma patologia exclusiva do sexo masculino, de diagnóstico pelo US pré-natal. É o defeito congênito mais comum no RN masculino.',
     reference: 'Cascio, S., Coyle, D., Nappo, S., Caione, P. (2023). Posterior Urethral Valves. In: Puri, P., Höllwarth, M.E. (eds) Pediatric Surgery. Springer, Cham. https://doi.org/10.1007/978-3-030- 81488-5_94',
-    tags: ['Nefrologia', 'Urologia']
+    tags: ['nefrologia', 'urologia']
   },
   {
     id: 'tp2024-50',
@@ -161,7 +161,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Em 2024, a vacina COVID-19 entrou no calendário básico infantil e a vacina HPV passou a ser dose única.',
     commentary: 'A vacina Covid-19 está recomendada com esquema de 03 doses (aos 06, 07 e 09 meses de idade). Caso não tenha iniciado e/ou completado o esquema primário até os 09 meses de idade, a vacina poderá ser administrada até 04 anos, 11 meses e 29 dias, conforme histórico vacinal, respeitando os intervalos mínimos recomendados (04 semanas entre a 1ª e 2ª dose; e 08 semanas entre a 2ª e 3ª dose). Vacina da febre amarela aos 5 anos para crianças que não receberam as duas doses anteriormente. Vacina pneumocócica 23 valente está indicada apenas para a população indígena.',
     reference: 'https://www.gov.br/saude/pt-br/vacinacao/calendario',
-    tags: ['Imunização']
+    tags: ['imunização']
   },
   {
     id: 'tp2024-51',
@@ -177,7 +177,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Sinais de fratura de base de crânio (Battle, hemotímpano) ou queda de altura significativa em crianças exigem TC imediata.',
     commentary: 'Realizar tomografia de crânio imediatamente, pela possibilidade de fratura de base de crânio devido sinal de battle e hemotímpano, assim como queda maior de 1,5 metro.',
     reference: 'Bressan S, Eapen N, Phillips N, Gilhotra Y, Kochar A, Dalton S, Cheek JA, Furyk J, Neutze J, Williams A, Hearps S, Donath S, Oakley E, Singh S, Dalziel SR, Borland ML, Babl FE; Paediatric Research in Emergency Departments International Collaborative (PREDICT). PECARN algorithms for minor head trauma: Risk stratification estimates from a prospective PREDICT cohort study. Acad Emerg Med. 2021 Oct;28(10):1124-1133. doi: 10.1111/acem.14308. Epub 2021 Jul 8. PMID: 34236116.',
-    tags: ['Emergência', 'Trauma']
+    tags: ['emergência', 'trauma']
   },
   {
     id: 'tp2024-52',
@@ -193,7 +193,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A profilaxia de ISTs e gravidez deve ser iniciada o mais rápido possível (preferencialmente nas primeiras 72 horas).',
     commentary: 'O protocolo de atendimento às vítimas de estupro do Ministério da saúde estabelece que o atendimento médico realizado pelo socorrista deve incluir as profilaxias das Infecções sexualmente transmissíveis e da gravidez indesejada o quanto antes para que a eficácia seja maior. Também deve ser coletado o material de interesse forense para realizar a identificação do abusador no primeiro atendimento para que não se perca essa oportunidade, pois quanto mais se retarda essa coleta, menos chance de material genético presente no corpo da vítima. O boletim de IML é uma determinação da delegacia de polícia e não do médico. A notificação compulsória é obrigatória para os profissionais da saúde e, portanto, não depende de autorização de vítimas ou seus responsáveis legais para serem feitas.',
     reference: 'Ministério da Saúde. Secretaria de Vigilância em Saúde. Notificação de violências interpessoais e autoprovocadas [recurso eletrônico]. Brasília: Ministério da Saúde, 2017. Ministério da Saúde. Ministério da Justiça. Secretaria de Políticas para as Mulheres. Norma Técnica Atenção Humanizadas às Pessoas em Situação de Violência Sexual com Registro de Informações e Coleta de Vestígios. 1ª Ed.Brasília-DF, 2015. https://bvsms.saude.gov.br/bvs/publicacoes/atencao_humaniz ada_pessoas_violencia_sexual_norma_tecnica.pdf Brasil. Ministério da Saúde. Programa Nacional de DST/AIDS. Protocolo Clínico e Diretrizes Terapêuticas para Manejo da Infecção pelo HIV em Crianças e Adolescentes- Brasília, 2014. Ministério da Saúde. Portaria 1271 de 06 de junho de 2014. Define a Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública nos serviços de saúde públicos e privados em todo o território nacional, nos termos do anexo, e dá outras providências. Disponível em: http://dtr2004.saude.gov.br/sinanweb/novo/Documentos/Portar ia_1271_06jun2014.pdf. Acesso em 04 nov.2014.',
-    tags: ['Heabiaria', 'Violência']
+    tags: ['heabiaria', 'violência']
   },
   {
     id: 'tp2024-53',
@@ -210,7 +210,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'RN com 37 semanas é termo. Peso > p90 é GIG. Ruptura de membranas > 18h é fator de risco infeccioso.',
     commentary: 'Neste caso o recém-nascido apresenta a idade gestacional de 37 semanas pelo New Ballard, escore que avalia as características físicas e neurológicas do neonato determinando sua Idade Gestacional. Recém-nascido com idade gestacional de 37 semanas à 41 semanas e 6dias são classificados como a termo. Quanto ao peso de nascimento e idade gestacional, temos um bebê de 37 semanas com peso de 3920 gramas, ficando acima do percentil 90% da curva de adequação peso/idade gestacional do gráfico, o que é considerado um recém-nascido grande para idade gestacional (GIG). O risco infeccioso para este bebê se faz presente pelo tempo de rotura da bolsa com líquido amniótico por mais de 18 horas. E por fim, a Cesárea é indicada por Iteratividade, ou seja, por já ter sido submetida à duas ou mais cesáreas anteriores.',
     reference: 'Brasil. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Ações Programáticas Estratégicas. Área Técnica de Saúde da Mulher. Pré-natal e Puerpério: atenção qualificada e humanizada – manual técnico. Brasília, 2005.',
-    tags: ['Neonatologia']
+    tags: ['neonatologia']
   },
   {
     id: 'tp2024-54',
@@ -226,7 +226,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Anemia microcítica e hipocrômica com RDW aumentado sugere ferropenia, sendo o sulfato ferroso oral o tratamento de escolha.',
     commentary: 'A resposta à prova terapêutica com sulfato ferroso via oral é um método apropriado e de baixo custo no diagnóstico da anemia por deficiência de ferro, desde que exista hipocromia, microcitose e anisocitose (RDW, a medida da anisocitose, aumentado). Uma reticulocitose imediata e aumento da hemoglobina e hematócrito em 1 mês, seguem a administração de uma preparação oral de sultado terroso. Ferro dextrano intramuscular deve ser reservado para situações especiais como ressecções altas intestinais, impossibilidade de via enteral uma vez que este tratamento é caro, doloroso e não mais eficaz que o ferro oral. O ferro intramuscular pode saturar de maneira inadequada a transferrina, uma vez que não há o bloco de mucosa e predispor a quadros infecciosos. Modificações dietéticas, como adequar a ingesta de leite à faixa etária, incluir alimentos com alta biodisponibilidade de ferro como o ferro heme das carnes, aves, peixes e vísceras além de promover a ingestão de alimentos fortificados com ferro são adequadas, porém de longo prazo, insuficientes para repor os depósitos de ferro. O início gradual da anemia por deficiência de ferro permite que uma criança se adapte a níveis surpreendentemente baixos de concentrações de hemoglobina. A transfusão não é indicada, a menos que a criança se apresente sintomática, hemodinamicamente instável ou com o estado geral comprometido.',
     reference: 'Hay et al, pp 837-838, Kliegman et al, pp 2014-2017, McMillan et al, pp 1692-1694, Rudolph et al, pp 1525-1528.',
-    tags: ['Hematologia', 'Nutrição']
+    tags: ['hematologia', 'nutrição']
   },
   {
     id: 'tp2024-55',
@@ -242,7 +242,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A tríade de anemia hemolítica microangiopática, trombocitopenia e insuficiência renal aguda após diarreia sanguinolenta define SHU.',
     commentary: 'A Síndrome Hemolítico-urêmica é mais comum em crianças menores do que 4 anos e é caracterizada por anemia hemolítica microangiopática, trombocitopenia por aumento de utilização de plaquetas e insuficiência renal, por lesão endotelial vascular e depósito local de fibrina. As alterações isquêmicas resultam em necrose cortical renal e dano a outros órgãos, tais como, colón, fígado, coração, cérebro e adrenal. Uma acentuada redução na função renal leva a oligúria/anuria. Sangramento gastrointestinal, ascite e sintomas de sistema nervoso central tais como, sonolência, convulsões e coma podem ocorrer. Os achados laboratoriais incluem, baixos níveis de hemoglobina, plaquetopenia, e aumento nos níveis de ureia e creatinina, hipoalbuminemia e evidencias de hemólise do esfregaço periférico. O sedimento urinário mostra hematúria e proteinúria. A infecção por E coli 0157:H7 produtora de verotoxicina tem sido implicada como causa de surtos associados com ingestão de alimentos contaminados como carne mal cozida, leite de vaca e vegetais. O teste de Coombs não é positivo neste tipo de anemia hemolítica. A Purpura de Henoch-Schönlein é uma vasculite que se apresenta com rash petequial em membros inferiores (mas a contagem de plaquetas é normal); e não é usualmente associada com febre, mas sim com sangramento microscópico nas fezes e urina e dor abdominal. A nefropatia por IgA pode causar hematúria, mas nenhum dos outros achados descritos é encontrado na nefropatia por IgA.',
     reference: 'Hay et al, pp 694-695, Kliegman et al, pp 2181-2182, McMillan et al, pp 2600-2602, Rudolph et al, pp 1696-1698.',
-    tags: ['Nefrologia', 'Gastroenterologia']
+    tags: ['nefrologia', 'gastroenterologia']
   },
   {
     id: 'tp2024-56',
@@ -258,7 +258,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'No Brasil, HIV e HTLV são contraindicações absolutas e permanentes ao aleitamento materno.',
     commentary: 'Em relação à covid-19, FEBRASGO, SBP e Ministério da Saúde recomendam que a amamentação seja mantida, desde que a mãe deseje amamentar e tenha condições clínicas para fazê-lo. Os seguintes cuidados devem ser tomados para tal: • Lavar as mãos com água e sabão antes e após amamentar por, pelo menos, 20 segundos; usar desinfetante para as mãos com álcool a 60%, no mínimo, se não houver água e sabão disponíveis; • Usar máscara facial para cobrir a boca e o nariz durante a amamentação; • Evitar que o RN toque o rosto da mãe, especialmente boca, nariz, olhos e cabelos; • Após a mamada, os cuidados com o RN (banhos, sono, troca de fraldas) devem ser realizados por outra pessoa na casa que não tenha sintomas ou que não seja também um caso confirmado de COVID-19. Em caso de troca de fraldas, recomenda-se o uso de luvas cirúrgicas ou de procedimento descartáveis; Sugere-se respeitar a distância de 2 metros entre o leito da mãe e o berço do RN; • Em ambiente hospitalar, visando à proteção do RN, podem ser consideradas algumas alternativas, como utilização de incubadoras, ao invés de berços, ou barreiras físicas entre a mãe e o RN, como cortinas. Na infecção herpética quando há vesículas localizado na pele da mama contraindica-se a amamentação nesta mama, estando liberada aquela sem lesões. O HIV é uma contraindicação absoluta à amamentação. O risco de transmissão vertical pelo leite materno é de 14-22%. Independentemente da tarv, carga viral ou profilaxia anteparto, a amamentação é sempre contraindicada.',
     reference: 'Aleitamento Materno em tempos de COVID-19 – recomendações na maternidade e após a alta – Sociedade Brasileira de Pediatria (22/05/2020) – Disponível em <https://www.sbp.com.br/index.php?eID=cw_filedownload&file=717> Yamamoto AY, Mussi-Pinhata MM. Herpes neonatal: diagnóstico e tratamento. In: Sociedade Brasileira de Pediatria; Procianoy RS, Leone CR, organizadores. PRORN Programa de Atualização em Neonatologia: Ciclo 14. Porto Alegre: Artmed Panamericana; 2017. P. 87–108. (Sistema de Educação Continuada a Distância, v. 2).',
-    tags: ['Saúde Pública', 'Nutrição']
+    tags: ['saúde pública', 'nutrição']
   },
   {
     id: 'tp2024-57',
@@ -274,7 +274,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Níveis muito elevados de TSH no teste do pezinho (> 40 ou 100 dependendo do protocolo) exigem início imediato do tratamento após coleta do confirmatório.',
     commentary: 'A maioria das crianças que tem o diagnóstico precoce de Hipotiroidismo congênito estabelecido não deverá apresentar sintomatologia clínica, desde que a terapia de reposição hormonal com a administração oral de levotiroxina, seja iniciada no tempo oportuno. O momento ideal para o diagnóstico do Hipotireoidismo Congênito é, sem dúvida, o período neonatal, pois é sabido que a partir da segunda semana de vida a deficiência de hormônios tireóideos poderá causar alguma lesão neurológica levando ao retardo mental grave. Neste caso, a manifestação clínica que pode estar associada ao hipotiroidismo congênito é a icterícia prolongada. Após o resultado positivo inicial no Programa de Triagem Neonatal, deve ser realizada a dosagem do T4 (total e livre) e do TSH em amostra de sangue venoso, para que haja a efetiva confirmação diagnóstica. Seguindo essa estratégia, a média de detecção dos casos suspeitos estará ao redor de 90%. Os 10% restantes não são detectáveis por TSH até a idade de 2 a 6 semanas. Cabe ressaltar que, estes últimos, serão menos gravemente afetados.',
     reference: 'Brasil MdS, Saúde. SdAà, Temática. DdAEe. Triagem Neonatal biológica: manual técnico. http://bvsms.saude.gov.br/bvs/publicacoes/triagemneonatalbiol ogicamanualtécnico.pdf: Brasília: Ministério da Saúde.; 2016.',
-    tags: ['Endocrinologia', 'Neonatologia']
+    tags: ['endocrinologia', 'neonatologia']
   },
   {
     id: 'tp2024-58',
@@ -290,7 +290,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A asfixia neonatal causa vasoconstrição pulmonar refletiva à hipóxia, levando à hipertensão pulmonar persistente neonatal (HPPN).',
     commentary: 'O boletim de Apgar baixo, a presença de líquido amniótico espesso e o desconforto respiratório, sugerem que asfixia perinatal tenha ocorrido. Durante o período de asfixia, ocorre hipoxemia, acidose e perfusão tecidual diminuída que leva a disfunção de múltiplos órgãos (cérebro, coração, rins, fígado e pulmões). As anormalidades clínicas resultantes incluem: edema cerebral, irritabilidade, convulsões, cardiomegalia, insuficiência cardíaca, insuficiência renal, disfunção hepática e Síndrome do Desconforto Respiratório (SDR). Existe aumento de pressão na artéria pulmonar e simultaneamente a pressão arterial sistêmica começa a cair, resultando em shunt persistente da direita para a esquerda através do ducto arterioso patente e foramen oval.',
     reference: 'Hay et al, pp 551-552, Kliegman et al, p 1727, McMillan et al, pp 315-319.',
-    tags: ['Neonatologia']
+    tags: ['neonatologia']
   },
   {
     id: 'tp2024-59',
@@ -306,7 +306,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A TTRN (síndrome do pulmão úmido) é comum em cesáreas eletivas devido ao retardo na reabsorção do líquido pulmonar.',
     commentary: 'A causa da TTRN é a presença de líquido nos pulmões do recém-nascido, enquanto o trabalho de parto, sobretudo as contrações, favorece a reabsorção do líquido dos pulmões, a cesariana sem o trabalho de parto aumenta o risco de taquipnéia. No RX de tórax evidencia-se: Aumento da trama peri-hilar; Cardiomegalia leve a moderada; Densidades algodoadas e grosseiras decorrentes de alvéolos cheios de líquido; Derrame pleural, líquido na fissura menor e alargamento das fissuras interlobares;Hiperinsuflação; Rebaixamento do diafragma.',
     reference: 'LOPES, M. E. S.; ONUKI DE MENDONÇA, B. T.; GUIMARÃES, P. J. R.; ALMEIDA, R. B. de A. de; OLIVEIRA, D. L. C. de; OLIVEIRA, S. G. de. FISIOPATOLOGIA DA TAQUIPNEIA TRANSITÓRIA DO RECÉM-NASCIDO',
-    tags: ['Neonatologia']
+    tags: ['neonatologia']
   },
   {
     id: 'tp2024-60',
@@ -322,7 +322,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O briefing é essencial para coordenar funções e preparar o material antes da recepção do RN.',
     commentary: 'A primeira ação da equipe que irá cuidar do RN é realizar o “briefing”, que inclui anamnese materna, preparo do ambiente e do material para uso imediato na sala de parto e divisão das funções de cada membro da equipe, deixando claro a quem caberá o papel de liderança dos procedimentos de reanimação. O briefing consiste em uma rápida reunião entre os membros da equipe para planejar o atendimento neonatal, antes do nascimento. A divisão de tarefas e responsabilidades de cada membro da equipe, com a definição de quem será o líder antes do nascimento, permite a atuação coordenada e a comunicação efetiva em alça fechada, o que confere um atendimento com qualidade e segurança ao RN.',
     reference: 'Sociedade Brasileira de Pediatria. Programa de Reanimação Neonatal [homepage on the Internet]. Recomendações para assistência ao recém-nascido na sala de parto de mãe com COVID-19 suspeita ou confirmada – Atualização 2. Mai 2020 [Cited 2022 Mar 17]. Available from: www.sbp. com.br/reanimacao.',
-    tags: ['Neonatologia', 'Reanimação']
+    tags: ['neonatologia', 'reanimação']
   },
   {
     id: 'tp2023-41',
@@ -338,7 +338,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Febre prolongada, dor articular e exantema evanescente (que some com a febre) são clássicos da forma sistêmica da Artrite Idiopática Juvenil.',
     commentary: 'A artrite idiopática juvenil é uma doença comum em pacientes após 5 anos de idade, com prevalencia no sexo feminino. acompanhado de febre vespertina ou noturna, com exantema evanescente e padrão oligoarticular na maioria dos casos. A leucemia linfobástica aguda a perda de peso é mais acentuada, além de presença de sangramento e petéquias. A febre reumática tem antecedente de infecção streptococcica. A artrite séptica de joelho apresenta-se com sinais flogísticos mais acentuados.',
     reference: 'Sheila Knupp Feitosa de Oliveira & Eneida Correia Lima Azevedo. Reumatologia Pediátrica. 2ª edição. Editora Revinter',
-    tags: ['Reumatologia']
+    tags: ['reumatologia']
   },
   {
     id: 'tp2023-42',
@@ -354,7 +354,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Anemia microcítica com RDW normal e aumento de HbA2 é característica do traço talassêmico (beta-talassemia minor).',
     commentary: 'A concentração de hemoglobina A2 aumenta no traço talassêmico ou ß talassemia minor. Os pacientes tem um único gene anormal para a cadeia beta da hemoglobina e habitualmente não tem problemas a não ser uma discreta anemia microcítica. A talassemia homozigota evoluiria de forma mais tempestuosa com anemia severa, hepatoesplenomegalia , necessidade de múltiplas transfusões, presença de RDW (a medida da anisocitose) normal, com microcitia, alerta para este diagnóstico, um vez que ele está aumentado, devido à anisocitose, na anemia ferropriva. Na anemia ferropriva severa a hemoglobina A2 está diminuída e na anemia ferropriva leve ou moderada a hemoglobina A2 está normal.O nível de hemoglobina A2 também está normal na anemia falciforme e na anemia da doença crônica.',
     reference: 'Hay et al pp, 844-845; Kliegman et al pp, 2033-2037; Mc Millan et al pp, 1699-1700; Rudolph et al, pp 1536-1538.',
-    tags: ['Hematologia']
+    tags: ['hematologia']
   },
   {
     id: 'tp2023-43',
@@ -370,7 +370,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A hipertensão arterial grave em crianças pode se manifestar com cefaleia, zumbido e distúrbios visuais.',
     commentary: 'É obrigatória a aferição da pressão arterial anualmente em crianças maiores do que 3 anos e adolescentes e naquelas com idade inferior a esta, em todas as consultas que apresentarem algumas das seguintes condições: prematuridade, baixo peso ao nascer, cardiopatias congênitas, diabetes, obesidade, doença renal, doença falciforme, transplantados, coarctação da aorta, em uso de medicamentos para hipertensão arterial. A hipertensão arterial na infância e adolescência, é definida como valores de pressão arterial sistólica e/ou diastólica iguais ou superiores ao percentil 95 para gênero, idade e percentil da altura, aferidas em três ou mais ocasiões distintas. A maioria das vezes é assintomática, porém com sintomas ou grave (estadio 2), como neste caso, deve ser referenciada, imediatamente para tratamento. Os sintomas ou sinais podem incluir cefaleia, zumbido, distúrbios visuais ou despertar noturno. A hipertrofia de ventrículo esquerdo constitui a “lesão de órgão alvo” detectada por ecocardiograma, cuja pesquisa é obrigatória nos estadios 1 e 2 da hipertensão arterial sistêmica na infância, não se constituindo sinal ou sintoma.',
     reference: 'Kliegman et al, pp 2223-2227. National High Blood Pressure Education Program Working Group on High Blood Pressure in Children and Adolescents. Pediatrics. 1996; 98;649-658. The Fourth Report on the Diagnosis, Evaluation, and Treatment of the High Blood Pressure in Children and Adolescents. Pediatrics, 2004;114;555-576. Flynn JT et al. Pediatrics. 2017 Sep;140(3).',
-    tags: ['Nefrologia', 'Cardiologia']
+    tags: ['nefrologia', 'cardiologia']
   },
   {
     id: 'tp2023-44',
@@ -386,7 +386,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O estágio puberal P2G2 aos 14 anos indica que a puberdade já se iniciou, sendo um achado normal de maturação lenta.',
     commentary: 'O conhecimento da estatura dos pais, de seu padrão de crescimento e maturação sexual seriam muito úteis, uma vez que estes padrões de maturação frequentemente são familiares. Chamamos de “atraso puberal”, no gênero masculino, quando os caracteres sexuais secundários aparecem depois dos 14 anos, o que também não ocorre neste caso, pois o adolescente é Tanner G2P2, ou seja já tem crescimento da bolsa escrotal e do testículo mas não do pênis, com pelos longos e macios e ligeiramente pigmentados na base do pênis. Uma criança com baixa estatura e atraso puberal terá seu crescimento em estatura abaixo do recomendado para sua própria idade, crescendo em curva paralela a esta, o que não ocorre neste caso. Adolescentes com problemas orgânicos de crescimento, apresentam um padrão de crescimento em estatura não seguem determinado percentil ou z escore desviando-se progressivamente destes. É importante assegurar aos familiares que o desenvolvimento sexual normal irá ocorrer e que atingirá, na idade adulta, se não ocorreram agravos nutricionais graves no período pós-natal, uma média da estatura de ambos os pais. Portanto não se trata de atraso puberal, e a dosagem de gonadotrofinas hipofisárias também é indicada.',
     reference: 'www. sbp.com.br. Hay et al, p 938-964. Kliegman et al, p 2297. Mc Millan et al, pp 2085-2090.',
-    tags: ['Endocrinologia', 'Hebiatria']
+    tags: ['endocrinologia', 'hebiatria']
   },
   {
     id: 'tp2023-45',
@@ -402,7 +402,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Paciente com desidratação clínica (olhos fundos, boca seca, sinal da prega) deve receber TRO na unidade de saúde até reidratação.',
     commentary: 'Trata-se de um quadro de diarréia aguda aquosa, de provável etiologia viral, com desidratação de algum grau, portanto sem instabilidade hemodinâmica. Nessa situação, a indicação é de terapia de reidratação oral que deve ser realizada no próprio local de atendimento. A hidratação endovenosa é contraindicada por não haver complicações que impeçam a administração de soro de reidratação oral.',
     reference: 'HTTPS://BVSMS.SAUDE.GOV.BR/BVS/CARTAZES/MANEJO_PACIENTE_DIARREIA_CARTAZ.PDF',
-    tags: ['Gastroenterologia']
+    tags: ['gastroenterologia']
   },
   {
     id: 'tp2023-46',
@@ -418,7 +418,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'GCS <= 8 exige via aérea definitiva; o choque hipovolêmico/neurogênico exige expansão volêmica e controle térmico/eletrolítico.',
     commentary: 'O atendimento inicial ao traumatismo crânio encefálico grave pressupõe estabilização hemodinâmica e prevenção das lesões secundárias que são responsáveis por graves sequelas. Dessa forma, a orientação será manter o paciente dentro de condições no mais proximo possível da normalidade: garantir a ventilação e aporte adequado de oxigênio, temperatura corpórea normal, evitar grandes oscilações glicêmicas, e corrigir distúrbios eletrolíticos',
     reference: 'Traumatismo cranioencefálico em pediatria J. pediatr. (Rio J.). 1999; 75 (Supl.2): S279-S293. Guidelines for the Management of Pediatric Severe Traumatic Brain Injury, Third Edition, 2019. https://protocolos.hcrp.usp.br/exportar-pdf.php?idVersao=1076',
-    tags: ['Emergência', 'Trauma']
+    tags: ['emergência', 'trauma']
   },
   {
     id: 'tp2023-47',
@@ -434,7 +434,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O teste do coraçãozinho é normal quando a saturação é >= 95% em ambos os membros e a diferença é <= 3%.',
     commentary: 'O diagnóstico precoce das cardiopatias congênitas críticas no RN é crucial visto que o atraso no diagnóstico está relacionado a aumento de morbidade e mortalidade nesta população. Sabemos também que RN com cardiopatias congênitas críticas e graves podem estar assintomáticos nas primeiras 48 horas de vida, podendo até mesmo receber alta hospitalar sem que se faça a suspeita clínica de cardiopatia, o que pode ocorrer em até 30% dos casos como demonstrado em estudos prévios. A utilização da oximetria de pulso como ferramenta de triagem neonatal para detecção destas cardiopatias pode ajudar a detectar a hipoxemia presente na maioria destas cardiopatias, em uma fase em que o exame clínico ainda não consegue detectar. Considera-se como normal a SpO2 maior ou igual a 95% e uma diferença de SpO2 entre o membro superior direito e um dos membros inferiores menor ou igual a 3%, sendo que alterações dessas medidas mostraram que podem ser utilizadas para a suspeita de cardiopatia congênita crítica no recém-nascido, apresentando uma sensibilidade de 76% e especificidade de 99% para o diagnóstico definitivo. Devemos realizar este teste de forma rotineira em todos os RN com idade gestacional igual ou maior que 35 semanas e que se encontram clinicamente bem, assintomáticos, em ambiente de alojamento conjunto. O teste deve ser feito preferencialmente entre 24 e 48 horas de vida. Esta estratégia mostrou reduzir a taxa de falso positivo ao mesmo tempo em que não retarda o diagnóstico nos casos patológicos. A taxa de falso positivo do teste quando realizado após 24 horas de vida é de apenas 0,05%, bem menor que a taxa observada quanto realizado antes das 24 horas de vida que é de 0,5%. As medidas de oximetria devem ser realizadas em dois sítios: na mão direita (medida pré-ductal) e em um dos membros inferiores (medida pós-ductal). Os valores obtidos devem ser analisados da seguinte forma: Teste negativo: SpO2 maior ou igual a 95% e a diferença entre as medidas no membro superior direito e o membro inferior deve ser menor ou igual a 3%. Nessa situação, a probabilidade de cardiopatia congênita crítica é pequena e o RN deve seguir os cuidados habituais da maternidade. Vale ressaltar que um teste do coraçãozinho negativo não exclui completamente a presença de cardiopatia congênita. Caso o RN apresente diagnóstico fetal ou sinais clínicos sugestivos de cardiopatia congênita, a avaliação cardiológica deverá ser realizada. Teste positivo: SpO2 menor ou igual a 89% no membro superior direito ou no membro inferior. Nessa situação, o RN deverá ser reavaliado de forma minuciosa pelo médico pediatra/ neonatologista e a avaliação cardiológica e ecocardiográfica deverá também ser realizada para confirmação diagnóstica. É importante ressaltar que este RN não deveria receber alta hospitalar antes que seja realizada esta avaliação cardiológica. Teste duvidoso: SpO2 entre 90% e 94% ou uma diferença entre as medidas do membro superior direito e o membro inferior maior ou igual a 4%. Nesta situação, o teste deve ser realizado novamente após uma hora por até duas vezes. Caso as medidas de oximetria se mantenham nestes valores mesmo após a terceira avaliação, o teste será considerado positivo e o RN deverá ser submetido à avaliação cardiológica/ecocardiográfica. A realização do reteste nesta situação mostrou-se importante por reduzir consideravelmente o número de falsos positivo com o teste.',
     reference: 'Documento Científico da Sociedade Brasileira de Pediatria: Sistematização do atendimento ao recém-nascido com suspeita ou diagnóstico de cardiopatia congênita. Departamento Científico de Cardiologia e Neonatologia (2019-2021) publicado em 11 de agosto de 2022.',
-    tags: ['Neonatologia', 'Cardiologia']
+    tags: ['neonatologia', 'cardiologia']
   },
   {
     id: 'tp2023-48',
@@ -450,7 +450,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A tríade de frequência reduzida, fezes duras e comportamento de retenção define constipação funcional pelos critérios de Roma.',
     commentary: 'Definição de constipação funcional: deve ser identificada pela escala de Bristol que descreve a consistência das fezes (fezes em cíbalos) e pelos critérios ROMA IV (postura retentiva e número de evacuações) que descreve as dificuldades evacuatórias. Constipação funcional: indicar o uso de laxativos e manter por tempo prolongado nesse caso. Existe uma heterogeneidade nos critérios para caracterizar a constipação, não entanto, esse caso se trata de constipação e o uso de laxativos está indicado. O óleo mineral não é a primeira escolha nesse caso. Não é possível fazer o diagnóstico de constipação crônica secundária.',
     reference: 'Morais, MB et al. Constipação intestinal Jornal de Pediatria - Vol. 76, Supl.2, 2000 S149. Bresolin, NL et al. Disfunção Vesical e Intestinal na Infância. SBP. Nº 03, maio de 2019. MARCONDES, E. et al. Pediatria Básica: pediatria geral e neonatal. 9. ed. São Paulo: Sarvier, 2003.',
-    tags: ['Gastroenterologia']
+    tags: ['gastroenterologia']
   },
   {
     id: 'tp2023-49',
@@ -466,7 +466,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Sinais de insuficiência cardíaca no primeiro mês e sopro holossistólico em borda esternal esquerda baixa são clássicos de CIV.',
     commentary: 'Trata-se de um paciente que apresenta, já no primeiro mês de vida, sinais sugestivos de insuficiência cardíaca: déficit de ganho ponderal, cansaço às mamadas, frequência cardíaca elevada. Ao exame verifica-se a presença de um sopro sistólico em borda esternal esquerda baixa e de baixa intensidade. Não há cianose. A associação de quadro clínico e achados de exame físico sugerem a presença de uma comunicação interventricular – CIV, a malformação cardíaca mais comum e responsável por 25% dos casos de cardiopatia congênita. Alguns dados são sugestivos de uma lesão ampla: a presença de manifestações de falência cardíaca já no primeiro mês, a baixa intensidade do sopro e a ausência de sopro no exame do recém-nascido. A ausência de sopro nessa fase sugere que o shunt através do defeito era mínimo, demonstrando uma queda lenta da pressão pulmonar após o nascimento, o que ocorre quando há uma grande comunicação entre as cavidades ventriculares direita e esquerda. A persistência do canal arterial também pode se apresentar clinicamente sob a forma de insuficiência cardíaca no primeiro mês de vida em defeitos amplos. Entretanto, nessa cardiopatia o sopro, sistólico ou contínuo, é mais audível no segundo espaço intercostal esquerdo e os pulsos são caracteristicamente descritos como amplos.',
     reference: 'MARCONDES, E. et al. Pediatria básica ed. São Paulo: Sarvier, 2003.',
-    tags: ['Cardiologia']
+    tags: ['cardiologia']
   },
   {
     id: 'tp2023-50',
@@ -482,7 +482,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Acidentes leves com animais de baixo risco (conhecidos/saudáveis) permitem apenas a observação do animal.',
     commentary: 'Condições do Animal Agressor Cão ou Gato sem Suspeita de Raiva no Momento da Agressão. Acidentes Leves ferimentos superficiais, pouco extensos, geralmente únicos, em tronco e membros (exceto mãos e polpas digitais e planta dos pés); podem acontecer em decorrência de mordeduras ou arranhaduras causadas por unha ou dente lambedura de pele com lesões superficiais: lavar com água e sabão, observar o animal durante 10 dias após a exposição, se o animal permanecer sadio no período de observação, encerrar o caso, se o animal morrer, desaparecer ou se tornar raivoso, administrar cinco doses de vacina (dias 0, 3, 7, 14 e 28)',
     reference: 'Normas técnicas Profilaxia Raiva – MS 2011',
-    tags: ['Infectologia', 'Saúde Pública']
+    tags: ['infectologia', 'saúde pública']
   },
   {
     id: 'tp2023-51',
@@ -498,7 +498,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O teste tria qualquer opacidade ou massa no eixo visual que impeça a reflexão da luz na retina.',
     commentary: 'O teste do reflexo vermelho permite identificar e tratar precocemente o retinoblastoma, a catarata congênita e o glaucoma congênito. A identificação precoce destas patologias melhora o prognóstico dos bebês.',
     reference: 'Grupo de trabalho em Oftalmologia Pediátrica (2019-2021). Sociedade Brasileira de Pediatria. Teste do reflexo vermelho – Atualização: 27 abril de 2022.',
-    tags: ['Oftalmologia']
+    tags: ['oftalmologia']
   },
   {
     id: 'tp2023-52',
@@ -514,7 +514,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Lactente febril, toxemiado e com ITU de repetição deve ser internado para tratamento parenteral.',
     commentary: 'Trata-se de uma criança com alta probabilidade de má formação associada a ITU, também risco de urosepse, além de recusa alimentar (sólidos e líquidos), por isso deve ser internado e iniciado tratamento endovenoso, o mais rápido possível. O ceftriaxone seria uma boa escolha terapêutica.',
     reference: 'TRATADO DE PEDIATRIA: Sociedade Brasileira de Pediatria, 4º edição, Barueri, SP: Manole, 2017.',
-    tags: ['Infectologia', 'Nefrologia']
+    tags: ['infectologia', 'nefrologia']
   },
   {
     id: 'tp2023-53',
@@ -530,7 +530,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Obesidades sindrômicas e endócrinas geralmente cursam com redução do crescimento linear, ao contrário da obesidade exógena.',
     commentary: 'As síndromes genéticas podem envolver múltiplos genes, mas as síndromes citadas se associam a baixa estatura, atraso cognitivo e obesidade em pacientes que apresentam hiperfagia. A obesidade tem sua prevalência aumentada e muitas vezes se inicia na infância. Quando seu início é muito precoce , a partir do primeiro ano de vida, mesmo que não esteja associada a fatores ambientais, deve-se pensar em obesidade monogênica, sendo seu diagnóstico confirmado através de pesquisa molecular das mutações em genes do sistema leptina-melanocortina que estão envolvidos no controle do balanço energético, e podem apresentar as seguintes características: hiperfagia intensa, incapacidade de sentir saciedade, obesidade grave início no primeiro ano de vida, hipogonadismo hipogonadrotófico, hipotireoidismo hipotalâmico e baixa estatura final. A obesidade associada a endocrinopatias apresenta a característica de redução na velocidade de crescimento associada ao aumento de peso corporal, geralmente decorrente de desbalanço no gasto metabólico e ingesta alimentar, sendo que o metabolismo basal está menor, inclusive por redução do crescimento linear. A obesidade exógena tem etiologia multifatorial, sendo que o excesso de nutriente promove alterações metabólicas que aumentam a velocidade de crescimento, avanço do amadurecimento puberal e antecipação da puberdade, mas geralmente terminam com estatura final dentro do padrão genético familiar.',
     reference: 'Departamento Científico de Endocrinologia. SBP. Quando suspeitar que a obesidade “não é comum”: orientações para o pediatra Nº 9, Outubro de 2020. Kochi, C.; Siviero-Miachon A.A. Do Pediatra ao Endocrinologista Pediátrico: quando encaminhar? SPSP, Ed Atheneu 2016, p117. Longui , C. A. et al. Endocrinologia Pediátrica. Manole 2021 cap 13.1- 13.5.',
-    tags: ['Endocrinologia', 'Genética']
+    tags: ['endocrinologia', 'genética']
   },
   {
     id: 'tp2023-54',
@@ -546,7 +546,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Quadro típico de migrânea sem sinais de alerta em paciente com exame físico normal dispensa neuroimagem.',
     commentary: 'O quadro descreve um quadro de enxaqueca ou migrânea sem sinais de alarme ou mudança de padrão não sendo indicadas investigações complementares. O manejo inclui orientação psicoeducacional com identificação de fatores desencadeantes e uso de analgesia. Dentre as medidas gerais a serem realizadas pode-se citar: evitar, quando possível, fatores referidos pelos pacientes como desencadeantes de suas crises; tratar de doenças concomitantes, particularmente hipertensão arterial e depressão; uso de técnicas de relaxamento físico e mental, regular o padrão de sono e aconselhar a prática de atividades físicas. É importante evitar o uso abusivo desses analgésicos sob risco de desencadear cefaleia resultante do uso excessivo de medicações abortivas de crise. A solicitação de exames complementares nesse paciente não encontra justificativa clínica já que não foram apresentados sinais de alarme e o paciente apresenta os critérios diagnósticos para o quadro de migrânea. As cefaleias primárias dispensam a investigação complementar, uma vez que seu diagnóstico é clínico.',
     reference: 'Tratado de Pediatria: Sociedade Brasileira de Pediatria, 5ª edição, Barueri, SP: Manole,2021. Greene K, Irwin SL, Gelfand AA. Pediatric Migraine: An Update. Neurol Clin. 2019 Nov;37(4):815-833.',
-    tags: ['Neurologia']
+    tags: ['neurologia']
   },
   {
     id: 'tp2023-55',
@@ -562,7 +562,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O afogamento causa lesão direta da barreira alvéolo-capilar (SDRA), aumentando a permeabilidade e gerando edema não-cardiogênico.',
     commentary: 'A aspiração de fluido resulta em vários graus de injúria pulmonar. Tanto a água salgada quanto a água doce lava e destrói o surfactante, levando a disrupção da membrana álveolo-capilar e aumentando a sua permeabilidade. O desvio de líquido geralmente resulta em um edema pulmonar não-cardiogênico e na síndrome do desconforto respiratório agudo. A hipoxemia é decorrente da diminuição da complacência pulmonar, desequilíbrio da ventilação-perfusão e do shunt intrapulmonar. Tanto a água salgada quanto a água doce podem causar a lesão pulmonar aguda.',
     reference: 'CHANDY, Dipak; WEINHOUSE, Gerald L. Drowning (submersion injuries). UpToDate, 2019.',
-    tags: ['Emergência', 'Pneumologia']
+    tags: ['emergência', 'pneumologia']
   },
   {
     id: 'tp2023-56',
@@ -579,7 +579,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A herança dominante se manifesta em sucessivas gerações (vertical); cada gestação tem 50% de chance de afetar o filho.',
     commentary: 'Trata-se de uma doença autossômica dominante, com risco de recorrência de 50% para os descendentes de todo indivíduo portador do gene. Os sinais clínicos evidenciados na figura são: fendas palpebrais obliquas para baixo, coloboma de pálpebras inferiores, microtia, microrretrognatia, hipoplasia malar. Não pode ser a alternativa B e nem a C porque não é uma doença recessiva, pois repete gerações, onde pai e filhos são afetados. A alternativa D não pode ser porque o risco de recorrência é de 50% e não 25%.',
     reference: 'Lodovichi FF et al. Ciência & Saúde Coletiva, v. 23, p. 4311-4318, 2018. Thompson & Thompson: Genética Médica, 8ª Edição, 2016.',
-    tags: ['Genética']
+    tags: ['genética']
   },
   {
     id: 'tp2023-57',
@@ -595,7 +595,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Déficit na comunicação social, padrões restritos/repetitivos de comportamento e hiperfoco são a base do diagnóstico de TEA.',
     commentary: 'O diagnóstico do transtorno do espectro do autismo (TEA) deve seguir critérios definidos internacionalmente, com avaliação completa e uso de escalas validadas. A SBP orienta o pediatra ao uso do instrumento de triagem M-CHAT, validado e traduzido para o português em 2008, com a recomendação em crianças entre 16 e 30 meses, revisado, com Entrevista de Seguimento (M-CHAT-R/F). O diagnóstico é clínico. Deve-se identificar possíveis fatores de risco para TEA: idade dos pais, gravidez espontânea ou induzida, uso de medicamentos, consumo de drogas ilícitas, álcool e tabagismo durante a gestação. São de relevante importância dados do recém-nascido no momento do nascimento, a época em que os pais ou cuidadores notaram perda de habilidades já adquiridas ou alterações no comportamento da criança (contato visual, sorriso social, atraso na linguagem, ecolalia, pouco interesse em pessoas, etc).',
     reference: 'Sociedade Brasileira de Pediatria (SBP). Manual de orientação: Transtorno do Espectro do Autismo, n. 5, 2019.',
-    tags: ['Psiquiatria', 'Desenvolvimento']
+    tags: ['psiquiatria', 'desenvolvimento']
   },
   {
     id: 'tp2023-58',
@@ -611,7 +611,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'No recém-nascido, a presença de Hemoglobina Fetal (F), Adulta (A) e S (S) indica o portador sadio (traço).',
     commentary: 'A Doença falciforme é uma alteração genética caracterizada por um tipo de hemoglobina mutante designada como hemoglobina S (ou Hb S), que provoca a distorção dos eritrócitos. O padrão genético do traço falciforme é representado pela Hemoglobina A (HbA) associada à Hemoglobina S (HbS) e cuja representação universal é HbAs. O diagnóstico é feito pela eletroforese de Hb, onde pacientes com HbS ≥50% são doentes falciforme e aqueles com HbS <50% são traço falciforme. O recém-nascido com traço falciforme apresenta Hemoglobina Fetal (F), Hemoglobina adulto (A) e algumas hemoglobinas falcizadas (S), sendo assim o perfil na triagem neonatal encontrado é o FAS. O traço falciforme não é anêmico e não necessita de tratamento.',
     reference: 'Brasil. Ministério da Saúde. Doença falciforme: condutas básicas para tratamento, Brasília: Ministério da Saúde, 2012.',
-    tags: ['Hematologia', 'Triagem Neonatal']
+    tags: ['hematologia', 'triagem neonatal']
   },
   {
     id: 'tp2023-59',
@@ -627,7 +627,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A associação de rinite, dermatite atópica e sintomas respiratórios de esforço define a marcha atópica da asma.',
     commentary: 'A fisiopatologia da asma possui estreita relação com outras doenças alérgicas como rinite alérgica e dermatite atópica. Esta relação é conhecida como a marcha atópica, onde a criança apresenta sequencialmente manifestações alérgicas em diferentes órgãos.',
     reference: 'Marcha atópica Rev. bras. alerg. imunopatol. – Vol. 31, Nº 4, 2008. Asma grave em crianças e adolescentes – Chong-Neto HJ et al - Arq Asma Alerg Imunol – Vol. 4, N° 1, 2020. Evidências da relação entre a dermatite atópica e o desenvolvimento da marcha atópica: revisão integrativa https://doi.org/10.34119fa/bjhrv2n4-125',
-    tags: ['Pneumologia', 'Alergia']
+    tags: ['pneumologia', 'alergia']
   },
   {
     id: 'tp2023-60',
@@ -643,7 +643,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Coração em tamanco/bota, cianose que piora no choro (crise de hipóxia) e hipofluxo pulmonar são patognomônicos de Fallot.',
     commentary: '(A) Na Tetralogia de Fallot a maioria dos bebês é sintomática com cianose, dispnéia aos esforços, adoção da posição de cócoras ou crises de hipóxia. Achados na ausculta cardíaca click ejetivo de origem aórtica, B2 única e hiperfonética, sopro sistólico 3+ a 5+/6+ na borda esternal esquerda superior e média. Eletrocardiograma com desvio do eixo para a direita e hipertrofia ventricular direita. Na radiografia de tórax área cardíaca normal, trama vascular pulmonar diminuída, coração em formato de bota, com tronco pulmonar escavado. As crises de hipóxia são caracerizadas por hiperpnéia, irritabilidade e choro prolongado, aumento da cianose, diminuição da intensidade do sopro cardíaco. Crises graves pode levar a déficit muscular, convulsão, acidente vascular cerebral e óbito. Pico de incidência entre 2 a 4 meses de idade. As crises precisam ser tratadas com oxigenioterapia e beta bloqueador pela ação estabilizadora sobre a reatividade vascular periférica ou na prevenção do espasmo da via de saída do ventrículo direito.\n\n(B) Na Transposição das Grandes Artérias cianose e sinais de insuficiência cardíaca se desenvolvem no período neonatal. Hipóxia arterial grave não responsiva à oxigenioterapia e acidose estão presentes nos neonatos com mistura insuficiente. Achados da ausculta inespecíficos, B2 única e hiperfonética. Eletrocardiograma com desvio do eixo para a direita e hipertrofia ventricular direita. Radiografia de tórax com cardiomegalia, aumento da trama vascular pulmonar e mediastino superior estreito com silhueta cardíaca em formato de ovo. Nestes bebês a melhora da oxigenação ocorre com a infusão de prostaglandina ou após septostomia atrial por balão.\n\n(C) Na Atresia Pulmonar com septo íntegro há necessidade de uma comunicação entre os átrios e persistência do canal arterial para sobrevida. A cianose é importante e progressiva presente desde o nascimento. B2 única, geralmente não há sopro, um sopro contínuo de canal arterial pode ser audível. Eletrocardiograma hipertrofia ventricular direita ou esquerda, hipertrofia atrial direita. Radiografia de tórax com cardiomegalia ou não dilatação do átrio direito, redução importante da trama vascular pulmonar e segmento do tronco pulmonar e concavo.\n\n(D) Na Atresia Tricúspide com atresia pulmonar há cianose importante, taquipneia, B2 única, sopro sistólico regurgitante 2+/6+ em borda esternal esquerda inferior, sopro continuo de canal arterial ocasionalmente audível. Eletrocardiograma com sobrecarga biatrial e hipertrofia ventricular esquerda. Radiografia de tórax com área cardíaca normal ou discretamente aumentada, redução da trama vascular pulmonar e segmento do tronco pulmonar escavado. Nestes bebês a infusão de prostaglandina esta indicada.',
     reference: 'Park, Myung K. Manual Park de cardiologia pediátrica. 5.ed.-Rio de Janeiro: Elsevier,2016.',
-    tags: ['Cardiologia', 'Neonatologia']
+    tags: ['cardiologia', 'neonatologia']
   },
   {
     id: 'tp2022-41',
@@ -659,7 +659,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Febre prolongada, exantema perineal, língua em morango e adenopatia sugerem Kawasaki/SIM-P, com risco de coronariopatia.',
     commentary: 'Trata-se de Síndrome inflamatória multissistêmica (Kawasaki-like), justificada pela febre prolongada, rash com exacerbação perineal, adenopatia unilateral e língua em morango. A principal complicação é a arterite de coronárias.',
     reference: 'Tratado de Pediatria SBP - 4ª Ed.',
-    tags: ['Infectologia', 'Reumatologia']
+    tags: ['infectologia', 'reumatologia']
   },
   {
     id: 'tp2022-42',
@@ -675,7 +675,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Aos 18 meses, a ausência de frases com marcos motores normais indica orientação de estímulo e reavaliação em 30 dias.',
     commentary: 'A criança apresenta marcos esperados, exceto a fala fluida. Segundo o Ministério da Saúde, a conduta inicial é orientar estimulação e reavaliar em 30 dias.',
     reference: 'Caderneta de Saúde da Criança, Ministério da Saúde, 2020.',
-    tags: ['Desenvolvimento']
+    tags: ['desenvolvimento']
   },
   {
     id: 'tp2022-43',
@@ -691,7 +691,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A vacina de febre amarela não deve ser dada junto com a tríplice viral em menores de 2 anos (intervalo de 30 dias).',
     commentary: 'Como a criança vai para área endêmica, a FA é prioridade. As vacinas de 12 meses (Pneumo 10 e Meningo C) podem ser dadas juntas. Deve-se aguardar 30 dias para a tríplice viral.',
     reference: 'Norma Técnica do Programa de Imunização, SES-SP, 2021.',
-    tags: ['Imunização']
+    tags: ['imunização']
   },
   {
     id: 'tp2022-44',
@@ -707,7 +707,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Diferença de saturação > 3% entre MSD e MI exige repetição do teste em 1 hora.',
     commentary: 'Se a diferença entre MSD e MI for > 3% ou saturação < 95% em qualquer membro, deve-se repetir em 1h. Se persistir, solicita-se o ecocardiograma.',
     reference: 'Diretrizes SBP - Triagem Neonatal de Cardiopatias.',
-    tags: ['Neonatologia', 'Cardiologia']
+    tags: ['neonatologia', 'cardiologia']
   },
   {
     id: 'tp2022-45',
@@ -723,7 +723,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Sinais de congestão sistêmica (hepatomegalia) e hiperfluxo pulmonar em Down sugerem cardiopatia congênita (como DSAV).',
     commentary: 'O quadro de ICC em RN com estigmas de Down sugere cardiopatia estrutural (comum nesta síndrome). O ecocardiograma é essencial para definição diagnóstica.',
     reference: 'Das BB. Current State of Pediatric Heart Failure. 2018.',
-    tags: ['Neonatologia', 'Cardiologia']
+    tags: ['neonatologia', 'cardiologia']
   },
   {
     id: 'tp2022-46',
@@ -739,7 +739,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A tireoidite de Hashimoto é a principal causa de hipotireoidismo adquirido e associa-se a outras doenças autoimunes (alopecia).',
     commentary: 'Hashimoto é a causa mais comum na adolescência. A associação com alopecia areata reforça a natureza autoimune do quadro.',
     reference: 'Tratado de Pediatria 4ª edição.',
-    tags: ['Endocrinologia']
+    tags: ['endocrinologia']
   },
   {
     id: 'tp2022-47',
@@ -755,7 +755,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Hipertiroidismo com TRAb positivo define Doença de Graves.',
     commentary: 'A presença do TRAb (anti-receptor de TSH) é patognomônica da Doença de Graves, causa mais comum de hipertiroidismo na infância.',
     reference: 'Tratado de Pediatria 4ª edição.',
-    tags: ['Endocrinologia']
+    tags: ['endocrinologia']
   },
   {
     id: 'tp2022-48',
@@ -771,7 +771,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Choque hipovolêmico por diarreia exige expansão rápida; a perda de bicarbonato e K+ pelas fezes causa acidose e hipocalemia.',
     commentary: 'O choque exige expansão com cristaloides. A acidose metabólica é esperada pela perda de base nas fezes e má perfusão. A hipocalemia justifica a fraqueza muscular.',
     reference: 'Guia Prático SBP - Diarreia Aguda. 2017.',
-    tags: ['Gastroenterologia', 'Emergência']
+    tags: ['gastroenterologia', 'emergência']
   },
   {
     id: 'tp2022-49',
@@ -787,7 +787,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Termos em AME devem iniciar suplementação de ferro (1mg/kg/dia) aos 6 meses, conforme SBP.',
     commentary: 'Segundo o consenso da SBP, lactentes a termo em aleitamento exclusivo devem iniciar a suplementação com 1mg de ferro elementar/kg/dia aos 6 meses (ou quando for introduzida a dieta complementar).',
     reference: 'Consenso sobre Anemia Ferropriva SBP.',
-    tags: ['Nutrição', 'Hematologia']
+    tags: ['nutrição', 'hematologia']
   },
   {
     id: 'tp2022-50',
@@ -803,7 +803,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'GBS e E. coli são os principais agentes da sepse neonatal precoce (transmissão vertical).',
     commentary: 'Em quadros de sepse precoce (contato no canal de parto), o GBS (S. agalactiae) e a E. coli são os patógenos mais comuns.',
     reference: 'Diretrizes de Neonatologia.',
-    tags: ['Neonatologia', 'Infectologia']
+    tags: ['neonatologia', 'infectologia']
   },
   {
     id: 'tp2022-51',
@@ -819,7 +819,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Sopros inocentes são comuns na infância e tornam-se audíveis em estados hiperdinâmicos (febre).',
     commentary: 'O sopro fisiológico (inocente) pode estar presente em até 85% das crianças. Ele se exacerba com a febre (estado circulatório hipercinético) e não possui cliques ou alterações de bulhas.',
     reference: 'Tratado de Pediatria Burns - 4ª Ed.',
-    tags: ['Cardiologia']
+    tags: ['cardiologia']
   },
   {
     id: 'tp2022-52',
@@ -835,7 +835,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A pancitopenia associada a organomegalia e febre em criança deve levantar suspeita imediata de Leucemia (LLA).',
     commentary: 'A presença de falha em múltiplas linhagens (anemia, plaquetopenia, leucopenia) associada a hepatoesplenomegalia e dor óssea/articular indica urgência para investigação de leucemia aguda.',
     reference: 'Protocolo de Diagnóstico Precoce do Câncer Pediátrico - MS 2017.',
-    tags: ['Hematologia', 'Oncologia']
+    tags: ['hematologia', 'oncologia']
   },
   {
     id: 'tp2022-53',
@@ -851,7 +851,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A escuta especializada visa evitar que a criança repita a narrativa traumática múltiplas vezes (revitimização).',
     commentary: 'O protocolo orienta evitar a revitimização. O prontuário deve ser detalhado e o exame físico completo (não restrito à genitália) para buscar outros sinais de violência.',
     reference: 'Protocolo de Atenção Integral - UNICEF/MS.',
-    tags: ['Violência', 'Ética']
+    tags: ['violência', 'ética']
   },
   {
     id: 'tp2022-54',
@@ -867,7 +867,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Problemas de audição por otite secretora (efusão) são causas frequentes de falsa suspeita de TDAH.',
     commentary: 'A visualização de bolhas e retração timpânica indica OME (otite média com efusão). Isso causa perda auditiva condutiva, prejudicando o aprendizado.',
     reference: 'Tratado de Pediatria SBP - 4ª Ed.',
-    tags: ['Otorrinolaringologia', 'Educação']
+    tags: ['otorrinolaringologia', 'educação']
   },
   {
     id: 'tp2022-55',
@@ -883,7 +883,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Crises generalizadas curtas (< 15 min) em vigência de febre são crises febris simples, de prognóstico benigno.',
     commentary: 'Crise febril simples é autolimitada e não requer anticonvulsivante contínuo ou exames invasivos se houver foco infeccioso claro e exame neurológico normal.',
     reference: 'Machado MR, Residência Pediátrica 2018.',
-    tags: ['Neurologia']
+    tags: ['neurologia']
   },
   {
     id: 'tp2022-56',
@@ -899,7 +899,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Pneumonia afebril do lactente com conjuntivite e eosinofilia é clássica de Chlamydia (contato no canal de parto).',
     commentary: 'A pneumonia por Chlamydia trachomatis ocorre via transmissão vertical. Caracteriza-se por tosse, eosinofilia e pode haver conjuntivite prévia. O tratamento é com macrolídeos (Azitromicina ou Eritromicina).',
     reference: 'Tratado de Pediatria SBP - 4ª Ed.',
-    tags: ['Infectologia', 'Pneumologia']
+    tags: ['infectologia', 'pneumologia']
   },
   {
     id: 'tp2022-57',
@@ -915,7 +915,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Uveíte anterior crônica (muitas vezes assintomática) é o maior risco na AIJ oligoarticular com FAN+.',
     commentary: 'Pacientes com AIJ oligoarticular e FAN positivo devem realizar triagem periódica com lâmpada de fenda para detectar uveíte anterior crônica, que pode ser assintomática mas levar à cegueira.',
     reference: 'Sen ES, Ramanan AV. Juvenile idiopathic arthritis. 2020.',
-    tags: ['Reumatologia', 'Oftalmologia']
+    tags: ['reumatologia', 'oftalmologia']
   },
   {
     id: 'tp2022-58',
@@ -931,7 +931,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Acolia e colúria são sinais patognomônicos de colestase (aumento de BD).',
     commentary: 'A icterícia colestática (BD elevada) indica obstrução (ex: atresia de vias biliares). GGT e transaminases costumam estar elevadas pelo dano biliar/hepático.',
     reference: 'Cloherty, 2015. Manual de Neonatologia.',
-    tags: ['Gastroenterologia', 'Neonatologia']
+    tags: ['gastroenterologia', 'neonatologia']
   },
   {
     id: 'tp2022-59',
@@ -947,7 +947,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Com Coombs e Eluato negativos, afasta-se isoimunização; BI elevada aos 2 dias sem precocidade extrema sugere fisiologia.',
     commentary: 'Como não há evidência laboratorial de hemólise imune (Coombs/Eluato neg), trata-se de icterícia fisiológica, comum após 24h de vida.',
     reference: 'Manual de Neonatologia Cloherty.',
-    tags: ['Neonatologia']
+    tags: ['neonatologia']
   },
   {
     id: 'tp2022-60',
@@ -963,7 +963,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O refluxo que causa repercussão sistêmica (baixo peso) ou respiratória (chiado) é considerado doença (DRGE).',
     commentary: 'Diferente do refluxo fisiológico ("regurgitador feliz"), a DRGE causa prejuízo ponderal, sintomas respiratórios ou dor. O baixo ganho de peso aqui sela o diagnóstico clínico.',
     reference: 'Guia Prático SBP - DRGE 2021.',
-    tags: ['Gastroenterologia']
+    tags: ['gastroenterologia']
   },
   {
     id: 'tp2025-41',
@@ -979,7 +979,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A Transposição das Grandes Artérias (TGA) é a cardiopatia congênita cianótica mais comum no período neonatal. A hipoxemia grave e refratária à oxigenoterapia é um achado clássico, e o diagnóstico é confirmado pelo ecocardiograma.',
     commentary: 'A Transposição das Grandes Artérias (TGA) é a cardiopatia congênita cianótica mais comum no período neonatal. A hipoxemia grave e refratária à oxigenoterapia é um achado clássico, e o diagnóstico é confirmado pelo ecocardiograma. A Coarctação da Aorta pode se manifestar com insuficiência cardíaca e pulsos reduzidos em membros inferiores, mas não costuma causar cianose significativa como no caso apresentado. A Tetralogia de Fallot can cause cianose, mas geralmente não se manifesta de forma tão precoce. A Comunicação Interatrial (CIA) é uma cardiopatia acianogênica com hiperfluxo pulmonar, não sendo compatível com o quadro descrito.',
     reference: 'Pediatria SBD. Tratado de pediatria. (6a edição). Barueri - SP: Editora Manole; 2024.',
-    tags: ['Cardiologia', 'Neonatologia']
+    tags: ['cardiologia', 'neonatologia']
   },
   {
     id: 'tp2025-42',
@@ -995,7 +995,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O quadro clínico de insuficiência respiratória em paciente prematuro associado a sopro em maquinaria em região infraclavicular esquerda é compatível com a persistência do canal arterial, sendo o exame diagnóstico para cardiopatias congênitas o ecocardiograma com Doppler.',
     commentary: 'O quadro clínico de insuficiência respiratória em paciente prematuro associado a sopro em maquinaria em região infraclavicular esquerda é compatível com a persistência do canal arterial, sendo o exame diagnóstico para cardiopatias congênitas o ecocardiograma com Doppler. Apesar de o ecocardiograma com Doppler ser o exame complementar indicado, o quadro clínico não é compatível com comunicação interatrial (CIA), que costuma dar repercussão em crianças mais velhas e sopro em foco pulmonar, e não em região infraclavicular. O quadro clínico é compatível com persistência do canal arterial (PCA), porém o exame para diagnóstico é o ecocardiograma, e não a radiografia de tórax.',
     reference: 'Pediatria SBD. Tratado de pediatria. (6a edição). Barueri - SP: Editora Manole; 2024.',
-    tags: ['Cardiologia', 'Neonatologia']
+    tags: ['cardiologia', 'neonatologia']
   },
   {
     id: 'tp2025-43',
@@ -1011,7 +1011,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O quadro é compatível com Bronquiolite Viral Aguda - principal causa de infecção de vias aéreas nesta faixa etária, e como a criança não apresenta critérios de gravidade ou fatores de risco, pode ser realizado seguimento ambulatorial e orientações gerais.',
     commentary: 'O quadro é compatível com Bronquiolite Viral Aguda - principal causa de infecção de vias aéreas nesta faixa etária, e como a criança não apresenta critérios de gravidade ou fatores de risco – não é menor que 3 meses, não foi prematura, sem patologias prévias, sem cardiopatia, com diminuição leve da aceitação da dieta e sem alterações clínicas importantes, pode ser realizado seguimento ambulatorial e orientações gerais e sobre sinais de gravidade ou alerta. O diagnóstico de pneumonia pode ser clínico, mas envolve febre alta e presença de estertores crepitantes. Criança sem episódios semelhantes anteriores, ainda muito jovem, sem critérios para diagnóstico de asma.',
     reference: 'Tratado de Pediatria da SBP – 5º edição - 2024; Ministério da Saúde - 2022; Manejo clínico da Bronquiolite viral em lactentes – Portal de boas práticas (25/10/2024)',
-    tags: ['Pneumologia', 'Atenção Primária']
+    tags: ['pneumologia', 'atenção primária']
   },
   {
     id: 'tp2025-44',
@@ -1027,7 +1027,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A conduta mais adequada é o manejo sintomático, incluindo hidratação, antitérmicos e lavagem nasal com solução salina, suficientes para aliviar os sintomas e permitir a evolução natural do quadro autolimitado de IVAS viral.',
     commentary: 'A conduta mais adequada é o manejo sintomático, incluindo hidratação, antitérmicos (como paracetamol ou ibuprofeno) e lavagem nasal com solução salina. Essas medidas são suficientes para aliviar os sintomas e permitir a evolução natural do quadro, que é autolimitado na maioria dos casos de IVAS viral. A ausência de sinais de alarme e o bom estado geral da criança reforçam essa conduta. Exames complementares como radiografia de tórax e hemograma não são indicados em casos de infecção de vias aéreas superiores (IVAS) sem sinais de complicações.',
     reference: 'SOCIEDADE BRASILEIRA DE PEDIATRIA (SBP). Tratado de Pediatria. 6 ed. Barueri: Manole, 2025.',
-    tags: ['Atenção Primária', 'Pneumologia']
+    tags: ['atenção primária', 'pneumologia']
   },
   {
     id: 'tp2025-45',
@@ -1043,7 +1043,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O paciente apresenta sinais de desidratação leve (mucosas secas, olhos levemente encovados, redução de peso inferior a 5-10% do habitual). O manejo adequado inclui reidratação oral com SRO, manutenção da alimentação habitual e orientações de alerta.',
     commentary: 'O paciente apresenta sinais de desidratação leve (mucosas secas, olhos levemente encovados, redução de peso inferior a 10% do habitual). O manejo adequado inclui reidratação oral com SRO, manutenção da alimentação habitual (incluindo o aleitamento materno, se presente) e orientações sobre sinais de alerta. O jejum não é recomendado, pois pode agravar o estado nutricional. A maioria das gastroenterites agudas é viral, de modo que antibióticos não são indicados de rotina. A hidratação venosa está indicada apenas em casos de desidratação grave ou choque.',
     reference: 'BRASIL. Ministério da Saúde. Manejo das Doenças Diarreicas Infecciosas em Crianças. Brasília, 2023.',
-    tags: ['Gastroenterologia', 'Atenção Primária']
+    tags: ['gastroenterologia', 'atenção primária']
   },
   {
     id: 'tp2025-46',
@@ -1059,7 +1059,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O quadro clínico é clássico de Kwashiorkor, caracterizado por desnutrição proteica grave com edema provocado pela redução de albumina plasmática.',
     commentary: 'O quadro clínico de João é altamente sugestivo de Kwashiorkor, caracterizado por desnutrição proteica severa, edema, pele descamativa e alterações capilares. A fisiopatologia envolve a deficiência de proteínas, levando à redução da síntese de albumina hepática e consequente edema por diminuição da pressão oncótica plasmática. O marasmo se caracteriza por desnutrição global com depleção de gordura e massa muscular, mas sem edema. A doença celíaca apresenta diarreia crônica importante.',
     reference: 'Sociedade Brasileira de Pediatria. Tratado de Pediatria. 6ª ed. Barueri, SP: Manole; 2024.',
-    tags: ['Nutrologia', 'Atenção Primária']
+    tags: ['nutrologia', 'atenção primária']
   },
   {
     id: 'tp2025-47',
@@ -1075,7 +1075,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A presença de febre alta, sintomas respiratórios/oculares (coriza, conjuntivite, tosse) e manchas de Koplik (lesões esbranquiçadas em mucosa jugal) seguidas por exantema craniocaudal é patognomônica de Sarampo. Em menores de 6 meses, há alto risco de complicações e a hospitalização é recomendada.',
     commentary: 'O sarampo em lactentes menores de 6 meses é raro, mas em bebês de mães não vacinadas ou com falha vacinal pode ocorrer. O quadro clínico clássico inclui febre alta, tosse, conjuntivite e coriza, seguidos pelo exantema morbiliforme craniocaudal. As manchas de Koplik são patognomônicas e antecedem o exantema. A hospitalização é recomendada em lactentes jovens devido ao alto risco de complicações graves, como pneumonia e encefalite. No eritema infeccioso, o exantema tem aspecto de "face esbofeteada" e ocorre sem pródomo gripal exuberante; no exantema súbito, a febre cede antes do aparecimento do exantema.',
     reference: 'Ministério da Saúde. Guia de Vigilância em Saúde (3ª edição). Brasília: Ministério da Saúde, 2019.',
-    tags: ['Infectologia', 'Exantemáticas']
+    tags: ['infectologia', 'exantemáticas']
   },
   {
     id: 'tp2025-48',
@@ -1091,7 +1091,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A avaliação da curva de crescimento é fundamental na puericultura. Padrão alterado e persistente de baixo ganho estatural-ponderal desde os 6 meses exige investigação inicial completa com recordatório alimentar, história e antecedentes.',
     commentary: 'A avaliação da curva de crescimento é fundamental na puericultura, permitindo a identificação precoce de desvios. No caso apresentado, a criança apresenta peso e estatura abaixo do percentil 3 desde os 6 meses, o que sugere um possível comprometimento crônico do crescimento. A conduta correta é analisar o padrão de crescimento desde o nascimento, buscar antecedentes familiares e investigar o recordatório alimentar, e não simplesmente aguardar ou suplementar empiricamente de forma cega.',
     reference: 'Sociedade Brasileira de Pediatria. Tratado de Pediatria. 6ª ed. Barueri, SP: Manole; 2024.',
-    tags: ['Atenção Primária', 'Puericultura']
+    tags: ['atenção primária', 'puericultura']
   },
   {
     id: 'tp2025-49',
@@ -1107,7 +1107,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A mãe recebeu tratamento adequado (adequação materna não depende mais do tratamento do parceiro). O RN deve ser investigado e, caso o VDRL do RN seja 2 diluições maior que o materno (1:16 -> 1:64), deve-se colher LCR para guiar o esquema de penicilina.',
     commentary: 'O tratamento da mãe está adequado (3 doses de penicilina benzatina com 1 semana de intervalo, finalizado pelo menos 30 dias antes do parto). O tratamento do parceiro não define mais a adequação do tratamento materno na diretriz atual. O acompanhamento do RN inclui o VDRL; se maior ou igual a 2 diluições do VDRL materno (ou seja, 1:64), a triagem necessita da avaliação de LCR (líquor) para caracterizar o envolvimento neurológico e escolher o tipo de Penicilina (cristalina ou procaína).',
     reference: 'Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com IST - Ministério da Saúde, 2022.',
-    tags: ['Infectologia', 'Neonatologia']
+    tags: ['infectologia', 'neonatologia']
   },
   {
     id: 'tp2025-50',
@@ -1123,7 +1123,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A presença de bom contato visual, imitação de gestos e interesse social responsivo descarta o TEA, apontando para atraso secundário a fatores ambientais (exposição a telas e falta de estímulo).',
     commentary: 'Crianças com exposição excessiva a telas e pouca interação social estimulada podem apresentar atraso de linguagem e dificuldades na comunicação. No entanto, ao contrário de crianças com TEA, as competências de contato visual, imitação e resposta a comandos simples estão preservadas. Reduzindo o tempo de tela e aumentando o estímulo interativo, o prognóstico é excelente.',
     reference: 'Zimmerman FJ et al. J Pediatr, 2007; Rowe ML et al. J Child Lang, 2014.',
-    tags: ['Atenção Primária', 'Puericultura']
+    tags: ['atenção primária', 'puericultura']
   },
   {
     id: 'tp2025-51',
@@ -1139,7 +1139,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'De acordo com as atualizações do PNI 2025, o reforço contra poliomielite aos 15 meses de vida passa a ser feito exclusivamente com a VIP (injetável), substituindo a VOP (gotinha). As vacinas devidas aos 15 meses são: VIP, DTP, tríplice viral (2ª dose) e varicela.',
     commentary: 'De acordo com o PNI de 2025, a VOP foi integralmente descontinuada e substituída pela VIP injetável nos reforços aos 15 meses. Com a carteira vacinal completa até o 12º mês, a criança chega com atraso das vacinas de 15 meses, devendo receber nesta data: Reforço de VIP, reforço de DTP, reforço da tríplice viral (SCR) e a 1ª dose da varicela (a dose de reforço da varicela ocorre apenas aos 4 anos).',
     reference: 'PNI 2025 - Ministério da Saúde - Calendário da Criança.',
-    tags: ['Imunizações', 'Atenção Primária']
+    tags: ['imunizações', 'atenção primária']
   },
   {
     id: 'tp2025-52',
@@ -1155,7 +1155,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'RN prematuro <34 semanas com FC < 100 bpm após passos iniciais exige Ventilação com Pressão Positiva (VPP) com FiO2 ajustada de início em 30% por 30 segundos, monitorando-se a oximetria de pulso e o traçado cardíaco.',
     commentary: 'O RN prematuro de 33 semanas (<34 semanas), tendo apresentado FC < 100 bpm após passos iniciais, tem indicação absoluta de Ventilação com Pressão Positiva (VPP) sob frequência de 40-60 movimentos por minuto por 30 segundos. Por ser prematuro de moderado a limiar, a FiO2 recomendada de partida é 30% (não 21%), concomitante à instalação do oxímetro de pulso e monitor de eletrocardiograma (ECG) contínuo.',
     reference: 'WHO recommendations on newborn health: guidelines approved by the WHO Guidelines Review Committee, 2017.',
-    tags: ['Neonatologia']
+    tags: ['neonatologia']
   },
   {
     id: 'tp2025-53',
@@ -1171,7 +1171,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A perda de peso excedeu o limite de 10% aos 7 dias de vida. Diante de queixas de mamas túrgidas, dor e fissuras, a conduta é preservar o aleitamento exclusivo e proceder à correção técnica imediata de pega/posição, agendando retorno rápido em 3 dias.',
     commentary: 'O lactente perdeu 11,4% do peso, ultrapassando os 10% esperados para a primeira semana de vida. O choro e a baixa diurese evidenciam esvaziamento inefetivo, corroborado pela presença de dor e fissuras decorrentes de má técnica na amamentação. É fundamental manter o aleitamento exclusivo corrigindo a posição (corpo alinhado) e a pega (boca bem aberta, lábio inferior evertido, nariz livre), reavaliando a evolução ponderal e hidratativa em 3 dias.',
     reference: 'Sociedade Brasileira de Pediatria. Guia prático de aleitamento materno atualizado 2024.',
-    tags: ['Aleitamento Materno', 'Atenção Primária']
+    tags: ['aleitamento materno', 'atenção primária']
   },
   {
     id: 'tp2025-54',
@@ -1187,7 +1187,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Em neonatos, a etiologia típica da parada cardiopulmonar é respiratória/asfíxica. A priorização absoluta inicial deve ser direcionada à ventilação com pressão positiva (VPP).',
     commentary: 'A reanimação neonatal e manejo de PCR em sala de parto priorizam maciçamente a ventilação alveolar (VPP), pois nela repousa a reversão da asfixia secundária na imensa maioria dos casos. Compressões torácicas só são indicadas se, após 30 segundos de VPP bem executada com oxigênio, a FC se mantiver menor que 60 bpm. A epinefrina é uma medida tardia no algoritmo.',
     reference: 'Diretrizes 2022 da Sociedade Brasileira de Pediatria – Programa de Reanimação Neonatal.',
-    tags: ['Neonatologia']
+    tags: ['neonatologia']
   },
   {
     id: 'tp2025-55',
@@ -1203,7 +1203,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O quadro clínico e de sedimento urinário com edema, hipertensão, congestão circulatória (estertores, hepatomegalia) e lesão de pele ativa/recente (impetigo) descreve a Síndrome Nefrítica Clássica (Glomerulonefrite Pós-Estreptocócica - GNPE). O manejo inclui monitoração de C3 sérico e terapia de suporte e controle volêmico.',
     commentary: 'O quadro descreve manifestações cardinais da síndrome nefrítica pós-estreptocócica (GNPE) decorrente de piodermite prévia. Manifesta-se com hematúria, hipertensão grave e sobrecarga volumétrica (congestão cardíaca e pulmonar demonstradas pelos estertores e cardiomegalia leve). A conduta envolve a restrição rigorosa hidrossalina, administração de diuréticos de alça (furosemida) e controle tensor, com solicitação da dosagem do complemento C3 (que se encontra caracteristicamente consumido).',
     reference: 'Recomendações: atualização de Condutas em Pediatria (síndrome nefrítica) - SPSP, 2019.',
-    tags: ['Nefrologia']
+    tags: ['nefrologia']
   },
   {
     id: 'tp2025-56',
@@ -1219,7 +1219,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A ocorrência de infecções pulmonares bacterianas repetidas associada a sinais de insuficiência pancreática exócrina (diarreia de odor fétido e com esteatorreia) e desnutrição secundária é típica de Fibrose Cística (mucoviscidose). O teste do suor com dosagem de cloro é o método confirmatório preferencial.',
     commentary: 'A fibrose cística deve ser investigada em crianças com a combinação de manifestações digestivas de má absorção de gorduras (fezes volumosas, brilhantes, fétidas e de baixa densidade, que boiam) e quadros infecciosos pulmonares de repetição. O teste de eleição para o diagnóstico inicial é o teste do suor, que demonstrará valores elevados de cloro devido ao defeito no canal regulador CFTR.',
     reference: 'Nelson, W. Tratado de Pediatria. 21ª edição. Elsevier, 2020.',
-    tags: ['Pneumologia', 'Gastroenterologia']
+    tags: ['pneumologia', 'gastroenterologia']
   },
   {
     id: 'tp2025-57',
@@ -1235,7 +1235,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Em crianças com mais de 5 anos (escolares), o quadro clínico sistêmico (conjuntivite, tosse seca, artromialgia) combinado com infiltrado intersticial bilateral no RX de tórax aponta para pneumonia atípica (Mycoplasma/Chlamydia pneumoniae). A escolha terapêutica é o antibiótico macrolídeo.',
     commentary: 'As pneumonias atípicas são bastante prevalentes em escolares e adolescentes (acima de 5 anos de idade). Podem cursar com queixas extrapulmonares (como conjuntivite, cefaleia, febre moderada e mialgia) e padrão de imagem de acometimento intersticial retículo-nodular bilateral. O agente bacteriano atípico desprovido de parede celular clássica demanda uso terapêutico de macrolídeos (Ex: Claritromicina, Azitromicina).',
     reference: 'Pneumonia adquirida na comunidade na infância - Dept. Científico SBP, 2018; Lopez, FA; Junior, DC. Tratado de Pediatria, 2ª ed.',
-    tags: ['Pneumologia', 'Infectologia']
+    tags: ['pneumologia', 'infectologia']
   },
   {
     id: 'tp2025-58',
@@ -1251,7 +1251,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O desenvolvimento de caracteres sexuais secundários secundário a aumento bilateral do volume testicular (estágio de Tanner G3P3) antes dos 9 anos em meninos caracteriza puberdade precoce central/verdadeira, necessitando de triagem hormonal-radiológica.',
     commentary: 'No sexo masculino, o limite inferior normal para início puberal é de 9 anos. O surgimento de pubarca, estirão e aumento bilateral de volume testicular em menino de 8 anos aponta para ativação verdadeira do eixo HHG (puberdade precoce central) no estágio G3P3 de Tanner, devendo-se iniciar investigação diagnóstica profunda. Na puberdade periférica ou adrenarca isolada, não se observa aumento testicular bilateral associado.',
     reference: 'Nelson, Tratado de Pediatria - Elsevier, 2017; Boletim da Sociedade de Pediatria de SP, 2021.',
-    tags: ['Endocrinologia']
+    tags: ['endocrinologia']
   },
   {
     id: 'tp2025-59',
@@ -1267,7 +1267,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A combinação de choque hemodinâmico (hipotensão, perfusão lenta), vômitos intratáveis com desidratação grave no recém-nascido e genitália com virilização (clitoromegalia) sem gônadas palpáveis é patognomônica de Hiperplasia Adrenal Congênita (HAC) na forma clássica perdedora de sal.',
     commentary: 'O quadro clínico descreve uma crise adrenal com choque circulatório hipovolêmico-salino resultante da deficiência de 21-hidroxilase na Hiperplasia Adrenal Congênita (HAC), forma perdedora de sal. A deficiência na biossíntese de cortisol e aldosterona cursa com perda maciça renal de sódio, hipotensão e choque em meados de 7-14 dias de vida. No sexo feminino, a virilização da genitália externa (clitoromegalia) facilita o raciocínio diagnóstico de forma precoce.',
     reference: 'HAC due to steroid 21-hydroxylase deficiency: an Endocrine Society clinical practice guideline, 2010.',
-    tags: ['Endocrinologia', 'Neonatologia']
+    tags: ['endocrinologia', 'neonatologia']
   },
   {
     id: 'tp2025-60',
@@ -1283,7 +1283,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O achado de hematomas e equimoses em múltiplas fases temporais distintas de evolução de cicatrização correlacionado a edema periorbital e sonolência, incoerente com história de queda única de escada, denota alta probabilidade de injúrias físicas não-acidentais provocadas por lesões repetidas de abuso físico.',
     commentary: 'A despeito do relato materno de queda de escada acidental há 2 dias, múltiplos elementos sugerem fortemente agressão física e violência doméstica continuada (síndrome de maus-tratos infantis): a existência de equimoses multiformes espalhadas em diferentes estados evolutivos de reabsorção (múltiplos traumas no tempo) e o severo padrão de "olho de guaxinim" (hematoma periorbital bilateral) sem fatores hereditários visíveis. Deve-se notificar amplamente as esferas protetivas obrigatórias.',
     reference: 'Critérios diagnósticos da violência física ou trauma intencional contra crianças e adolescentes - Nota de alerta nº 180, SBP, 2024.',
-    tags: ['Atenção Primária', 'Urgência e Emergência']
+    tags: ['atenção primária', 'urgência e emergência']
   },
   {
     id: 'tp2021-41',
@@ -1299,7 +1299,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Apesar do tratamento adequado no início da gestação, o aumento do título de VDRL coletado na internação para o parto indica que houve uma reinfecção, portanto o RN deverá ser submetido aos seguintes exames: hemograma completo, radiografia de ossos longos e líquor. Apesar de assintomático, deverá ser instituído tratamento com penicilina cristalina ou procaína, dependendo do resultado do líquor. Como o VDRL do RN é reagente, não será tratado com penicilina benzatina, mas sim, com penicilina cristalina ou penicilina procaína.',
     commentary: 'Apesar do tratamento adequado no início da gestação, o aumento do título de VDRL coletado na internação para o parto indica que houve uma reinfecção, portanto o RN deverá ser submetido aos seguintes exames: hemograma completo, radiografia de ossos longos e líquor. Apesar de assintomático, deverá ser instituído tratamento com penicilina cristalina ou procaína, dependendo do resultado do líquor. Como o VDRL do RN é reagente, não será tratado com penicilina benzatina, mas sim, com penicilina cristalina ou penicilina procaína.',
     reference: 'Ministério da Saúde - Protocolo Clínico e Diretrizes Terapêuticas para Prevenção da Transmissão Vertical de HIV, Sífilis e Hepatites Virais, junho/2020',
-    tags: ['Infectologia', 'Neonatologia']
+    tags: ['infectologia', 'neonatologia']
   },
   {
     id: 'tp2021-42',
@@ -1315,7 +1315,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A doença de Legg-Calvé-Perthes é um transtorno no quadril de etiologia desconhecida associada a uma interrupção temporária do suprimento sanguíneo na epífise femoral proximal, levando a osteonecrose e deformidade da cabeça do fêmur. Acomete mais meninos na idade entre 4 e 8 anos. O sinal clínico cardeal é a limitação de abdução e rotação interna.',
     commentary: 'A doença de Legg-Calvé-Perthes é um transtorno no quadril de etiologia desconhecida associada a uma interrupção temporária do suprimento sanguíneo na epífise femoral proximal, levando a osteonecrose e deformidade da cabeça do fêmur. Acomete mais meninos (proporção de 4:1) na idade entre 4 e 8 anos de idade. Em geral a apresentação clínica mais frequente é a claudicação de duração variável. A dor, quando presente, se manifesta na virilha ou na região anteromedial da coxa ou na região do joelho e relacionada a atividade. Ao exame pode ou não haver encurtamento, mas o principal sinal é a limitação da rotação interna do quadril. A “dor do crescimento” é uma dor geralmente bilateral e noturna sem limitação física. A doença de Osgood-Schlatter se manifesta na tuberosidade anterior da tíbia e a sinovite transitória do quadril dura menos que 15 dias.',
     reference: 'Reumatologia para pediatras, Sheila Knupp Feitosa de Oliveira, 2ª ed, 2014.',
-    tags: ['Reumatologia', 'Ortopedia']
+    tags: ['reumatologia', 'ortopedia']
   },
   {
     id: 'tp2021-43',
@@ -1331,7 +1331,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Os sinais clínicos indicam uma desidratação leve a moderada, mas a paciente está tolerando via oral e bebe avidamente, o que possibilita e indica a hidratação oral supervisionada baseada no Plano B da OMS.',
     commentary: 'Os sinais clínicos indicam uma desidratação leve cujo tratamento preconizado inicialmente é a reidratação oral na unidade de saúde sob supervisão (Plano B), e apesar da história de vômitos, o lactente está aceitando líquido por via oral e não apresenta sinais de gravidade extrema ou choque que indicassem expansão intravenosa (Plano C).',
     reference: 'Manejo da Diarreia Aguda OMS – 2016. SBP - Diarreia aguda: diagnóstico e tratamento, 2017.',
-    tags: ['Gastroenterologia', 'Atenção Primária']
+    tags: ['gastroenterologia', 'atenção primária']
   },
   {
     id: 'tp2021-44',
@@ -1347,7 +1347,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O acidente ocorreu ao anoitecer seguido de dor excruciante e rápida progressão para sintomas autonômicos sistêmicos (sudorese, vômitos profusos, taquicardia, manifestações cardiorrespiratórias), indicando escorpionismo grave. A conduta imediata consiste em soro antiescorpiônico e cuidados intensivos pelo risco cardiogênico.',
     commentary: 'O escorpião é animal peçonhento de hábitos noturnos quando sai para se alimentar. Sua picada causa descarga autonômica maciça adrenérgica e colinérgica, levando, na dependência da intensidade, a falência cardiocirculatória (choque cardiogênico e edema pulmonar agudo) que é a principal causa de mortalidade. Exige aplicação rápida de soro escorpiônico.',
     reference: 'Martin JG, Fioretto JR, Carpi MF. In: Emergências Pediátricas, Atheneu, 2019.',
-    tags: ['Toxicologia', 'Urgência e Emergência']
+    tags: ['toxicologia', 'urgência e emergência']
   },
   {
     id: 'tp2021-45',
@@ -1363,7 +1363,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O sigilo sobre as preferências e relações afetivas (o namoro) deve ser integralmente preservado. Porém, um transtorno alimentar grave que causou desidratação grave com choque hipovolêmico representa risco iminente de graves danos e óbito à menor, justificando a quebra de sigilo apenas referente a essa patologia.',
     commentary: 'Conforme Código de Ética Médica: “É vedado ao médico revelar sigilo profissional relacionado a paciente menor de idade, inclusive a seus pais, desde que o menor tenha capacidade de discernimento, salvo quando a não revelação possa acarretar dano ao paciente.” No quadro relatado, o transtorno alimentar acarreta nítido perigo de dano somático severo devido aos episódios de choque e laxantes, exigindo ciência parental para manejo de segurança. Informações sobre namoro continuam sob sigilo.',
     reference: 'Conselho Federal de Medicina - Código de Ética Médica.',
-    tags: ['Ética Médica', 'Psiquiatria']
+    tags: ['ética médica', 'psiquiatria']
   },
   {
     id: 'tp2021-46',
@@ -1379,7 +1379,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Lactente saudável, em aleitamento, apresentando regurgitações ou vômitos pós-prandiais indolores, sem engasgos incapacitantes ou cianose, e mantendo ótimo desenvolvimento pondero-estatural (Z-score 0), é classificado como "regurgitador feliz" (refluxo gastroesofágico fisiológico). A conduta consiste apenas em suporte educativo e tranquilização familiar.',
     commentary: 'O lactente apresenta bom ganho de peso e estatura, bom estado geral e ausência de complicações, caracterizando o clássico refluxo fisiológico do lactente. Não há indicação para investigações ou exames diagnósticos invasivos (como pHmetria ou REED) e nenhuma terapia medicamentosa está sugerida.',
     reference: 'SOCIEDADE BRASILEIRA DE PEDIATRIA. Tratado de Pediatria. Editora Manole, 2017.',
-    tags: ['Gastroenterologia', 'Puericultura']
+    tags: ['gastroenterologia', 'puericultura']
   },
   {
     id: 'tp2021-47',
@@ -1395,7 +1395,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A instalação insidiosa de edema generalizado (anasarca) associada a níveis tensionais normais em pré-escolar é o protótipo clínico da Síndrome Nefrótica Idiopática (geralmente por doença de lesão mínima). Laboratorialmente, caracteriza-se por proteinúria massiva e hipercolesterolemia com hipoalbuminemia.',
     commentary: 'O quadro clínico descreve paciente com fenótipo sugestivo de Síndrome Nefrótica. A proteinúria intensa leva a hipoalbuminemia acentuada, a qual reduz a pressão oncótica capilar gerando edema volumoso. Em resposta, há aumento reflexo da síntese hepática de lipoproteínas, elevando sobremaneira o colesterol urinário e circulante. Hematúria e consumo de complemento apontariam para diagnóstico nefrítico.',
     reference: 'Nefrologia Pediátrica - Prática Clínica, SBP.',
-    tags: ['Nefrologia']
+    tags: ['nefrologia']
   },
   {
     id: 'tp2021-48',
@@ -1411,7 +1411,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Quadro clínico de Crupe Viral Aguda (Laringoesofagite/laringite estridulosa) marcada por disfonia, estridor respiratório e desconforto de vias superiores, mas com oximetria excelente (97%). Exige laringificação de urgência com inalação de adrenalina (vasoconstritor) e corticoterapia sistêmica (geralmente dexametasona).',
     commentary: 'O estridor associado à obstrução laringotraqueal alta sugere inflamação glótica de etiologia viral (laringite). Nos quadros de crupe em que há desconforto moderado evidenciado pelas tiragens, as intervenções comprovadamente eficazes são o uso de adrenalina inalatória nebulizada (para redução local rápida da estenose por vasoconstrição capilar) e corticoide de ação prolongada.',
     reference: 'Programa de Atualização em Laringites Agudas — Sociedade Brasileira de Pediatria.',
-    tags: ['Pneumologia', 'Urgência e Emergência']
+    tags: ['pneumologia', 'urgência e emergência']
   },
   {
     id: 'tp2021-49',
@@ -1427,7 +1427,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O quadro de parada de crescimento estatural, bócio, xerose/queda de cabelos, irregularidade menstrual e constipação em adolescente com predileção autoimune (área despigmentada sugestiva de vitiligo vulvar e primo com DM1) é indicativo de hipotireoidismo autoimune, cuja forma principal é a Tireoidite de Hashimoto.',
     commentary: 'A tireoidite crônica linfocítica (Hashimoto) é a principal etiologia do bócio e do hipotireoidismo adquirido na população infantojuvenil. Seus fatores predisponentes envolvem herança autoimune poligênica (associação descrita com vitiligo e diabetes tipo 1 na linhagem familiar). O diagnóstico hormonal de hipotireoidismo primário estabelece baixos níveis de hormônios periféricos (T4 livre) sob maciça estimulação hipofisária (TSH elevado).',
     reference: 'Nelson Tratado de Pediatria. Editora Elsevier, 20ª ed.',
-    tags: ['Endocrinologia']
+    tags: ['endocrinologia']
   },
   {
     id: 'tp2021-50',
@@ -1443,7 +1443,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Cefaleia de caráter subagudo e progressivo, com despertares noturnos bem marcados por dor exuberante, acompanhada por alterações de comportamento (irritabilidade) e vômitos espontâneos constitui sinal clássico de alerta cerebral para hipertensão intracraniana. Demanda imediata realização de exame de imagem (TC de crânio) para descartar neoplasias do SNC.',
     commentary: 'Presença de sinais de alarme ("red flags") em cefaleias na infância (padrão progressivo em semanas, dor noturna relevante ou logo ao levantar, vômitos em jato, manifestações comportamentais) exigem de pronto a exclusão de lesão expansiva estrutural craniana, como meduloblastoma ou astrocitoma. A tomografia computadorizada craniocerebral é o exame mais ágil disponível para esse escopo de urgência.',
     reference: 'Cefaleias na Infância—Diretrizes do Departamento Científico de Neurologia Pediátrica, SBP.',
-    tags: ['Neurologia', 'Oncologia', 'Urgência e Emergência']
+    tags: ['neurologia', 'oncologia', 'urgência e emergência']
   },
   {
     id: 'tp2021-51',
@@ -1459,7 +1459,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A dermatite atópica clássica flexural (lesões pruriginosas localizadas em dobras cutâneas antecubitais e poplíteas) associada a xerodermia e pitiríase alba facial é guiada pelos critérios clínicos estabelecidos por Hanifin e Rajka. Entre os dados menores aceitos, a elevação sérica de IgE destaca-se como critério imunológico clássico.',
     commentary: 'Os critérios de Hanifin e Rajka constituem o padrão diagnótico na Dermatite Atópica. Exigem a preexistência de critérios maiores (prurido intenso, distribuição típica flexural na infância/liquenificação, cronicidade recidivante e história familiar de atopia). Entre os critérios secundários/menores estão achados de hipersensibilidade cutânea e exames laboratoriais como reatividade imunoespecífica e títulos elevados de IgE circulante.',
     reference: 'Consenso de Dermatite Atópica da SBP/SBD.',
-    tags: ['Dermatologia', 'Alergia e Imunologia']
+    tags: ['dermatologia', 'alergia e imunologia']
   },
   {
     id: 'tp2021-52',
@@ -1475,7 +1475,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Choque séptico clássico na infância em fase descompensada de perfusão (hipotensão acentuada, pulsos ausentes, livedo reticular/mosqueamento cutâneo e letargia). A ação prioritária absoluta para manutenção de perfusão de órgãos é a infusão rápida e agressiva de solução cristaloide isotônica isotônica (Soro Fisiológico ou Ringer Lactato).',
     commentary: 'O choque séptico representa uma emergência pediátrica onde o tempo dita o prognóstico ventilatório e vital. Sinais de hipotensão severa numa criança toxemiada exigem imediato acesso vascular intraósseo ou periférico calibroso e início tempestivo de infusão isotônica de volume sob pressão em frações de 20mL/kg. Glicose não serve para fins de expansão intravascular imediata.',
     reference: 'Suporte Avançado de Vida em Pediatria (PALS), Diretrizes American Heart Association / SBP.',
-    tags: ['Urgência e Emergência', 'Infectologia']
+    tags: ['urgência e emergência', 'infectologia']
   },
   {
     id: 'tp2021-53',
@@ -1491,7 +1491,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Lactentes nascidos a termo e com bom peso de nascimento, que recebem leite materno em regime predominante ou alimentação cujo aporte diário de fórmula de transição seja inferior a 500mL/dia (paciente ingere apenas 250mL) devem manter suplementação preventiva de Ferro (1mg/kg/dia) até completar os 24 meses.',
     commentary: 'Conforme diretrizes atualizadas da Sociedade Brasileira de Pediatria, menores nascidos no termo e peso favorável em regime de aleitamento completo (ou misto que tome <500mL de fórmula esterificada por dia) recebem aporte profilático de ferro complementar visando prevenção de anemia ferropênica em períodos de estirão puberal. A profilaxia clássica prossegue de forma regular durante todo o primeiro e segundo anos de vida.',
     reference: 'Consenso Preventivo de Anemia Ferropriva e Micronutrientes, SBP (Nutrologia/Hematologia).',
-    tags: ['Puericultura', 'Nutrologia']
+    tags: ['puericultura', 'nutrologia']
   },
   {
     id: 'tp2021-54',
@@ -1507,7 +1507,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Quadro clínico de sepse/meningite neonatal de instalação precoce (primeiras 72-96h), com antecedente gravídico de rotura prematura e prolongada de membranas (bolsa rota >18h) associada a líquor infeccioso exibindo cocos Gram-positivos purificados. O patógeno mais prevalente nessas condições é o Streptococcus agalactiae (Estreptococo do Grupo B).',
     commentary: 'O Streptococcus agalactiae (EGB) e a E. coli representam os pilares das infecções bacterianas precoces no âmbito neonatal. A colonização do canal vaginal materno coloca o feto sob risco de aspiração ascensional intraparto, amplificado pelo cenário de bolsa rota duradoura (24 horas). O diagnóstico de cocos Gram-positivos no sedimento liquórico fecha o canal para exclusão de bacilos Gram-negativos (como a E. coli).',
     reference: 'Guia de Condutas de Assistência ao Recém-Nascido — SBP/Ministério da Saúde.',
-    tags: ['Neonatologia', 'Infectologia']
+    tags: ['neonatologia', 'infectologia']
   },
   {
     id: 'tp2021-55',
@@ -1523,7 +1523,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A tríade de sintomas pulmonares recorrentes, infiltrados migratórios e fugazes (que mudam de localização nos lobos sem padrão anatômico definido) e intensa eosinofilia periférica (21%) constitui o quadro patognomônico da Síndrome de Löffler, decorrente do ciclo pulmonar (ciclo de Loss) executado por larvas de helmintos (como Ascaris lumbricoides ou ancilostomídeos).',
     commentary: 'A pneumonite eosinofílica autolimitada (Löffler) ocorre pela passagem transalveolar larvária de parasitas intestinais específicos. Causa resposta imune rica em eosinófilos originando as consolidationes radiológicas fugazes, erradamente manejadas com cursos repetitivos inócuos de antibióticos por serem confundidas com pneumonias bacterianas primárias.',
     reference: 'Infectologia e Doenças Parasitárias na Infância - Sociedade Brasileira de Pediatria.',
-    tags: ['Pneumologia', 'Infectologia']
+    tags: ['pneumologia', 'infectologia']
   },
   {
     id: 'tp2021-56',
@@ -1539,7 +1539,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Cenário clínico exuberante em lactente de 2 anos combinando sinais de virilização androgênica grave (pubarca no limite P3, clitoromegalia severa e acne) com marcadores cardinais de excesso de glicocorticoides/Cushing (obesidade rápida, hiperfagia, estrias vinhosas e hipertensão arterial grave). Essa hipersecreção mista adrenocortical é típica de neoplasias corticais (tumor de supra-renal).',
     commentary: 'Os tumores adrenocorticais na infância respondem por quadros de puberdade precoce periférica isossexual ou heterossexual de instalação agressiva. O achado misto de sintomas de Cushing e virilização acelerada decorre da produção aberrante simultânea de esteroides sexuais e cortisol livre pelas células adrenocorticais neoplásicas. A hiperplasia adrenal congênita se manifestaria mais precocemente ou não virilizaria em tal intensidade mista em fase de 2 anos com o Cushing concomitante.',
     reference: 'Oncologia Pediátrica — SBP; Nelson Tratado de Pediatria.',
-    tags: ['Endocrinologia', 'Oncologia']
+    tags: ['endocrinologia', 'oncologia']
   },
   {
     id: 'tp2021-57',
@@ -1555,7 +1555,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A síndrome de mononucleose infecciosa clássica caracteriza-se por faringoamigdalite hipertrófica, febre de padrão linfático crônico, exantema cutâneo eventual, linfadenopatia generalizada com nítido compromisso de cadeias cervicais posteriores/occipitais e visceromegalia (esplenomegalia inflamatória palpável). Doença causada predominantemente pelo vírus Epstein-Barr.',
     commentary: 'O acometimento linfático difuso cervical, splenomegalia inflamatória e irritabilidade em pré-escola na presença de faringe congestionada mímica a mononucleose infecciosa típica (Epstein-Barr - EBV). O Togavírus (rubéola) e Parvovírus (eritema face esbofeteada) cursam com pródomos mais curtos, exantemas específicos e padrão linfadenopático distinto ou ausente de baço palpável duradouro.',
     reference: 'Tratado de Pediatria SBP — Seção de Doenças Infecciosas.',
-    tags: ['Infectologia']
+    tags: ['infectologia']
   },
   {
     id: 'tp2021-58',
@@ -1571,7 +1571,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A manifestação súbita de dor violenta em hemiescroto durante atividade desportiva em adolescente puberal, com dor inguinal irradiada e perda unilateral do reflexo cremastérico (Sinal de Rabinowitz), é indicativa de Torção do Cordão Espermático (urgência urológica absoluta).',
     commentary: 'É a principal urgência urológica, mais frequente em adolescentes. A história é fundamental: história anterior de crise semelhante, fazendo exercício físico, em puberdade. Exame físico: Ausência do reflexo cremastérico (Sinal de Rabinowitz). Pode haver piora da dor com a elevação do testículo. O diagnóstico dita conduta cirúrgica reconstrutiva imediata ou orquidopexia exploradora nas primeiras 6 horas de isquemia glandular.',
     reference: 'Urgências Urológicas em Pediatria — Departamento Científico de Cirurgia Pediátrica, SBP.',
-    tags: ['Urgência e Emergência', 'Urologia']
+    tags: ['urgência e emergência', 'urologia']
   },
   {
     id: 'tp2021-59',
@@ -1587,7 +1587,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A gravidade hemodinâmica no recém-nascido (choque circulatório desidratativo/salino) associada a vômitos recorrentes e clitoromegália sem testículos palpáveis é indicativo de puberdade heterossexual precoce periférica provocada pela forma clássica perdedora de sal da Hiperplasia Adrenal Congênita.',
     commentary: 'A síndrome perdedora de sal na Hiperplasia Adrenal Congênita decorre comumente do defeito na enzima 21-hidroxilase. Provoca perda volumétrica renal grave de sódio por falta de aldosterona, originando hiponatremia extrema, hipercalemia e choque de 7 a 14 dias de vida. A virilização física em recém-nascido feminino de genitália típica (clitoromegalia) auxilia fortemente o raciocínio clínico emergencial.',
     reference: 'Consenso em Hiperplasia Adrenal Congênita, Sociedade Brasileira de Endocrinologia e Metabologia / SBP.',
-    tags: ['Endocrinologia', 'Neonatologia']
+    tags: ['endocrinologia', 'neonatologia']
   },
   {
     id: 'tp2021-60',
@@ -1603,7 +1603,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O aparecimento de sequelas hemorrágicas multiformes em diferentes fases de reabsorção (equimoses de colorações temporais distintas na pele) correlacionado a hematoma periorbital em TCE grave suspeito e incoerência com história de trauma acidental isolado, denota alta probabilidade de abuso físico (trauma não-acidental continuado).',
     commentary: 'A disparidade entre o mecanismo presumido do acidente (queda tardia sem aviso médico) e as marcas cutâneas disseminadas em fases discrepantes cronológicas de cicatrização são o marco da Síndrome de Maus-Tratos Físicos. Sinais de hipertensão craniana traumática concomitante necessitam de internação protetiva e notificação oficial.',
     reference: 'Critérios diagnósticos da violência física ou trauma intencional infantil — Notificação e Alerta SBP, 2024.',
-    tags: ['Atenção Primária', 'Urgência e Emergência']
+    tags: ['atenção primária', 'urgência e emergência']
   },
   {
     id: 'tp2026-41',
@@ -1619,7 +1619,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O quadro é compatível com Bronquiolite Viral Aguda (BVA), cujo tratamento é de suporte, focado em manter a hidratação adequada e oxigenoterapia se a saturação estiver abaixo de 90-92%.',
     commentary: 'Comentários sobre a resposta correta:\n(D) Para lactentes com Bronquiolite Viral Aguda (BVA) previamente saudáveis, as principais intervenções terapêuticas são de suporte, incluindo a garantia de uma hidratação adequada (vias oral, enteral ou endovenosa, se necessário) e suporte de oxigênio (por cânula nasal de O2 ou cateter de alto fluxo) quando a saturação estiver persistentemente baixa (abaixo de 90% ou 92% dependendo do protocolo).\n\nComentários sobre os distratores:\n(A) Corticosteroides sistêmicos não têm eficácia clínica comprovada e não são recomendados rotineiramente em lactentes com BVA sem comorbidades.\n(B) Antibióticos não são indicados rotineiramente na BVA, uma vez que a etiologia é essencialmente viral (geralmente vírus sincicial respiratório - VSR).\n(C) O salbutamol inalatório (broncodilatador) e a corticoterapia sistêmica não demonstraram benefício consistente na BVA e não devem ser usados rotineiramente em lactentes de 4 meses em primeiro episódio.',
     reference: 'Tratamento da bronquiolite viral aguda (Revista de Residência Pediátrica da SBP) | FUNDAÇÃO OSWALDO CRUZ. Portal de Boas Práticas em Saúde da Mulher, da Criança e do Adolescente. Manejo Clínico da Bronquiolite em Lactentes. 2024.',
-    tags: ['Pneumologia', 'Infectologia', 'Emergência']
+    tags: ['pneumologia', 'infectologia', 'emergência']
   },
   {
     id: 'tp2026-42',
@@ -1635,7 +1635,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O quadro é compatível com constipação funcional segundo os critérios de Roma IV (frequência evacuatória reduzida, fezes endurecidas, dor e escape fecal na ausência de sinais de doença orgânica).',
     commentary: 'Comentários sobre a resposta correta:\n(C) A constipação funcional é diagnosticada clinicamente pelos critérios de Roma IV. A paciente apresenta frequência de evacuações ≤ 2 vezes por semana, fezes endurecidas e volumosas, dor à evacuação e episódios de escape fecal (incontinência fecal por transbordamento), sem sinais de alerta que sugiram causas orgânicas.\n\nComentários sobre os distratores:\n(A) Não há sinais de alerta (perda de peso, febre, sangramento retal macroscópico ativo, atraso no desenvolvimento pôndero-estatural) que justifiquem suspeitar de causa orgânica intestinal primária.\n(B) A Síndrome do Intestino Irritável (SII) exige dor abdominal recorrente relacionada à alteração do hábito intestinal por pelo menos 2 meses, o que não descreve o padrão clínico de retenção voluntária e escape fecal apresentados.\n(D) A adenite mesentérica cursa tipicamente com dor abdominal aguda, frequentemente associada a infecção de vias aéreas superiores recente, não se relacionando à queixa crônica de constipação e escape fecal.',
     reference: 'PEDIATRIA, Sociedade Brasileira de. Tratado de pediatria. 6. ed. Barueri: Manole, 2024.',
-    tags: ['Gastroenterologia']
+    tags: ['gastroenterologia']
   },
   {
     id: 'tp2026-43',
@@ -1651,7 +1651,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Sinais sistêmicos de alerta associados a onfalite e lesões cutâneas vesico-bolhosas em recém-nascido caracterizam sepse neonatal tardia, impondo internação imediata, culturas e antibioticoterapia empírica parenteral.',
     commentary: 'Comentários sobre a resposta correta:\n(A) O paciente apresenta manifestações sistêmicas graves (recusa alimentar, irritabilidade, taquipneia, palidez cutânea e desidratação) associadas a focos de infecção ativa localizados no coto umbilical (onfalite) e pele (lesões vesico-bolhosas tipo impetigo neonatal/síndrome da pele escaldada estafilocócica). Essa constelação clínica caracteriza sepse neonatal tardia, uma emergência médica que exige internação imediata, coleta de exames e culturas (sangue, líquor, urina) e pronto início de antibioticoterapia intravenosa de amplo espectro combinada a cuidados intensivos de suporte.\n\nComentários sobre os distratores:\n(B, D) Prescrever antibioticoterapia oral e manejo ambulatorial são condutas de extremo risco e incorretas diante de um recém-nascido com evidente comprometimento sistêmico e sinais flogísticos infecciosos cutâneo-umbilicais.\n(C) Embora a internação e a coleta de hemocultura estejam corretas, é formalmente proibido e clinicamente perigoso postergar o início da antibioticoterapia empírica até a liberação dos resultados das culturas.',
     reference: 'PEDIATRIA, Sociedade Brasileira de. Tratado de pediatria. 6. ed. Barueri: Manole, 2024.',
-    tags: ['Infectologia', 'Neonatologia', 'Emergência']
+    tags: ['infectologia', 'neonatologia', 'emergência']
   },
   {
     id: 'tp2026-44',
@@ -1667,7 +1667,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'RN com FC < 60 bpm após VPP com técnica corretiva eficaz necessita do início imediato de massagem cardíaca coordenada com a VPP (relação 3:1) com oxigênio a 100% e preparação de via aérea avançada/acesso venoso.',
     commentary: 'Comentários sobre a resposta correta:\n(A) De acordo com as Diretrizes da Sociedade Brasileira de Pediatria de Reanimação Neonatal (2022), se após 30 segundos de VPP com técnica corrigida e via aérea garantida a FC do recém-nascido permanece menor que 60 bpm, está indicado o início imediato de compressões torácicas (massagem cardíaca) coordenadas com a ventilação na proporção de 3:1. Nessa fase, a concentração de oxigênio na ventilação deve ser elevada para 100%, e a equipe deve preparar o acesso vascular (veia umbilical) para eventual infusão de adrenalina se a FC se mantiver < 60 bpm após 60 segundos de massagem cardíaca eficaz coordenada com a ventilação.\n\nComentários sobre os distratores:\n(B) A intubação traqueal pode ser considerada para facilitar a coordenação da massagem cardíaca, porém o uso de adrenalina sérica requer antes a realização de pelo menos 60 segundos de massagem cardíaca adequada conjunta com ventilação.\n(C) Aguardar mais tempo com FC < 60 bpm sem iniciar compressões é incorreto e perpetua a hipóxia miocárdica.\n(D) Nunca se deve suspender a VPP durante a massagem cardíaca; a ventilação e as compressões devem atuar de forma rigorosamente coordenada.',
     reference: 'Diretrizes de Reanimação do recém-nascido ≥ 34 semanas em sala de parto da Sociedade Brasileira de Pediatria, maio 2022.',
-    tags: ['Neonatologia', 'Emergência', 'Reanimação']
+    tags: ['neonatologia', 'emergência', 'reanimação']
   },
   {
     id: 'tp2026-45',
@@ -1683,7 +1683,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A síndrome do desconforto respiratório (doença da membrana hialina) no recém-nascido prematuro tem como base fisiopatológica a deficiência quantitativa e qualitativa de surfactante pulmonar.',
     commentary: 'Comentários sobre a resposta correta:\n(B) A história clínica (prematuro de 32 semanas exposto à pré-eclâmpsia sem trabalho de parto) associada ao quadro clínico-radiológico típico (início precoce, gemência, padrão reticulogranular difuso, broncogramas aéreos e redução volumétrica pulmonar) é patognomônica da Síndrome do Desconforto Respiratório (SDR), ou Doença da Membra Hialina. A base fisiopatológica primária da SDR é a deficiência de surfactante pulmonar devido à imaturidade pneumocitária tipo II, elevando a tensão superficial nos alvéolos, o que gera colapso alveolar progressivo (atelectasias), redução acentuada da complacência pulmonar e distúrbio ventilação-perfusão por shunt intrapulmonar.\n\nComentários sobre os distratores:\n(A) Descreve a fisiopatologia da Taquipneia Transitória do Recém-Nascido (TTRN), que cursa com pulmões hiperinsuflados e congestão hilar ao raio-X, sem padrão reticulogranular difuso ou broncogramas.\n(C) Descreve a apneia da prematuridade, que cursa com pausas respiratórias puras e sem desconforto respiratório e gemência contínuos ou alterações estruturais radiográficas.\n(D) Embora houvesse líquido meconial discreto, a Síndrome de Aspiração Meconial é típica do RN a termo ou pós-termo e sua radiografia reveals hiperinsuflação e infiltrado heterogêneo grosseiro por obstrução de pequenas vias aéreas.',
     reference: 'BUENO, A. C. et al. Neonatologia - Série Pediatria SOPERJ. 1. ed. Barueri (SP): Manole, 2021. | Tratado de Pediatria (SBP). Barueri (SP): Manole, 2025.',
-    tags: ['Neonatologia', 'Pneumologia']
+    tags: ['neonatologia', 'pneumologia']
   },
   {
     id: 'tp2026-46',
@@ -1699,7 +1699,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A deficiência do hormônio do crescimento (GH) reduz a produção hepática e tecidual de IGF-1, o principal estimulador da proliferação condrocitária na placa de crescimento.',
     commentary: 'Comentários sobre a resposta correta:\n(D) O hormônio de crescimento (GH), secretado de forma pulsátil pela adenohipófise, atua estimulando os hepatócitos a produzirem e secretarem o fator de crescimento semelhante à insulina tipo 1 (IGF-1), que circula ligado a proteínas transportadoras. O IGF-1 é o principal mediador endócrino e parácrino do crescimento linear, agindo na placa epifisária (cartilagem de crescimento) ao estimular a proliferação, hipertrofia e diferenciação dos condrócitos. A deficiência de GH ou de sua sinalização resulta em baixos níveis de IGF-1, comprometendo a ossificação endocondral e levando à velocidade de crescimento reduzida e baixa estatura proporcional.\n\nComentários sobre os distratores:\n(A) O crescimento na infância e período escolar é fortemente dependente do eixo GH-IGF-1 e dos hormônios tireoidianos, não dependendo exclusivamente de TSH ou somente de aporte nutricional em crianças previamente hígidas.\n(B) A redução de GH leva à diminuição de IGF-1 (e não aumento), além de osteoporose juvenil não ser a manifestação característica primária desse eixo.\n(C) O IGF-1 não inibe a placa epifisária; ao contrário, ele é o principal fator estimulador da proliferação condrocitária no disco epifisário.',
     reference: 'KLIEGMAN, R. M; ST. GEME III, J. W. et al. Nelson Tratado de Pediatria. 21. ed. Rio de Janeiro: GEN Guanabara Koogan, 2022. | SBP. Tratado de Pediatria. 6. ed. Barueri: Manole, 2024.',
-    tags: ['Endocrinologia']
+    tags: ['endocrinologia']
   },
   {
     id: 'tp2026-47',
@@ -1715,7 +1715,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A febre alta prolongada que desaparece repentinamente (defervescência em crise) concomitante com o surgimento imediato de exantema maculopapular róseo em tronco é característica do exantema súbito.',
     commentary: 'Comentários sobre a resposta correta:\n(B) O exantema súbito (roséola infantil), causado pelos herpesvírus humanos 6 e 7 (HHV-6 e HHV-7), é caracterizado classicamente por febre alta contínua ou remitente por 3 a 5 dias, sem causa aparente e com bom estado geral preservado na maior parte do tempo. De forma súbita, ocorre a defervescência da febre (queda da temperatura) e, no mesmo momento ou poucas horas depois, surge um exantema maculopapular róseo não pruriginoso, que se inicia em tronco e se espalha para o pescoço e membros, sumindo em poucas horas ou dias.\n\nComentários sobre os distratores:\n(A) O sarampo cursa com sintomas respiratórios e oculares marcantes (tosse, coriza, conjuntivite com fotofobia, manchas de Koplik), e o exantema surge no pico da febre, sem melhora imediata desta.\n(C) A rubéola manifesta-se com febre baixa concomitante ao exantema, acompanhada de linfadenopatia retroauricular, occipital e cervical proeminentes.\n(D) O eritema infeccioso (parvovírus B19) se caracteriza pelo exantema trifásico, iniciando com a face esbofeteada, sem pródromos febris elevados seguidos de cura imediata.',
     reference: 'Ministério da Saúde. Doenças Exantemáticas. 2022 | Sociedade Brasileira de Pediatria. 2021.',
-    tags: ['Infectologia', 'Exantemáticas']
+    tags: ['infectologia', 'exantemáticas']
   },
   {
     id: 'tp2026-48',
@@ -1731,7 +1731,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Aos 4 anos, os marcos normais de desenvolvimento incluem pular em um pé só, copiar um círculo, vestir-se sozinho (com auxílio para sapatos) e falar frases completas.',
     commentary: 'Comentários sobre a resposta correta:\n(C) Aos 4 anos de idade, os marcos típicos do desenvolvimento neuropsicomotor (DNPM) esperados incluem: no aspect motor grosseiro, pular em um pé só e alternar os pés ao descer escadas; no motor fino, conseguir copiar formas geométricas simples como um círculo; na linguagem, formar frases completas utilizando pronomes e conectivos; e na socialização/independência, vestir-se com autonomia para a maioria das peças (com exceção de tarefas complexas como laço/cadarço).\n\nComentários sobre os distratores:\n(A) Amarrar sapatos, escrever o próprio nome e desenhar figura humana detalhada são marcos do final do 5º ou 6º ano de vida (5 a 6 anos).\n(B) Construir torres de apenas 3 a 5 cubos e vocabulário limitado a 50 palavras sem formar frases são marcos típicos de crianças menores, entre 18 e 24 meses.\n(D) Copiar um losango, andar de bicicleta de duas rodas sem rodinhas e domínio inicial de leitura/escrita funcional são marcos esperados a partir dos 6 a 7 anos.',
     reference: 'SOCIEDADE BRASILEIRA DE PEDIATRIA. Tratado de Pediatria. 5. ed. Barueri: Manole, 2022.',
-    tags: ['Desenvolvimento', 'Atenção Primária']
+    tags: ['desenvolvimento', 'atenção primária']
   },
   {
     id: 'tp2026-49',
@@ -1747,7 +1747,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O M-CHAT-R/F é um instrumento de rastreamento para Transtorno do Espectro Autista (TEA); um resultado de alto risco indica forte suspeita clínica e impõe encaminhamento para avaliação especializada.',
     commentary: 'Comentários sobre a resposta correta:\n(A) O M-CHAT-R/F (Modified Checklist for Autism in Toddlers, Revised with Follow-Up) é uma ferramenta de rastreio/triagem do desenvolvimento validada para identificar riscos de Transtorno do Espectro Autista (TEA) em crianças entre 16 e 30 meses. Um resultado classificado como "alto risco" (pontuação ≥ 8) não sela um diagnóstico definitivo isoladamente, mas indica alta probabilidade de desvio no desenvolvimento sociocomunicativo e impõe encaminhamento prioritário para avaliação médica e multidisciplinar especializada para confirmação diagnóstica clínica.\n\nComentários sobre os distratores:\n(B) O M-CHAT-R/F foca em sinais de comunicação social e comportamentos estereotipados, não se destinando à avaliação de quociente de inteligência ou diagnóstico de deficiência intelectual.\n(C) O questionário SNAP IV é um instrumento de triagem para Transtorno do Déficit de Atenção com Hiperatividade (TDAH), não sendo aplicável para o diagnóstico ou acompanhamento inicial do risco de TEA nesta faixa etária.\n(D) Embora a criança com TEA possa necessitar de fonoaudiologia e psicologia, o teste M-CHAT-R/F não avalia especificamente marcos de desenvolvimento motor grosseiro ou fino para determinar atraso motor global.',
     reference: 'American Academy of Pediatrics. Identification, evaluation, and management of children with autism spectrum disorder. Pediatrics. 2020.',
-    tags: ['Desenvolvimento', 'Atenção Primária', 'Psiquiatria']
+    tags: ['desenvolvimento', 'atenção primária', 'psiquiatria']
   },
   {
     id: 'tp2026-50',
@@ -1763,7 +1763,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A crise febril simples é uma entidade benigna, autolimitada e de diagnóstico clínico; a conduta baseia-se em observação clínica curta, busca do foco febril infeccioso e tranquilização familiar.',
     commentary: 'Comentários sobre a resposta correta:\n(D) O paciente apresenta um quadro clássico de crise convulsiva febril simples (crise única, generalizada do tipo tônico-clônica, com duração < 15 minutos, sem déficit neurológico pós-ictal prolongado e ocorrendo na vigência de febre - T 38,3°C). Diante de uma crise febril simples em criança com exame físico e neurológico completamente normais após o evento, o diagnóstico é estritamente clínico. Não há indicação para exames complementares invasivos (punção lombar), de imagem (TC de crânio) ou eletroencefalograma. A conduta adequada consiste em observação clínica breve na unidade, busca ativa pelo foco infeccioso extracraniano (infecção viral de vias aéreas superiores) e orientação à família sobre o caráter benigno, autolimitado da condição e do risco de recorrência em picos febris futuros.\n\nComentários sobre os distratores:\n(A, B, C) Investigações invasivas ou de imagem (punção lombar, TC de crânio) estão indicadas apenas se houver sinais meníngeos, rebaixamento persistente de consciência, crises focais repetidas, crise febril complexa ou em menores de 6 a 12 meses sem vacinação adequada, o que não se aplica ao caso.',
     reference: 'Alencar SP. Convulsão febril: aspectos clínicos e terapêuticos. Rev Med UFC. 2015. | SBP. Crise convulsiva febril na infância, 2021.',
-    tags: ['Neurologia', 'Emergência', 'Atenção Primária']
+    tags: ['neurologia', 'emergência', 'atenção primária']
   },
   {
     id: 'tp2026-51',
@@ -1779,7 +1779,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A proctocolite alérgica por alergia à proteína do leite de vaca (APLV) é a principal suspeita para sangramento retal isolado em lactente; a conduta é a exclusão da proteína intacta através de fórmula extensamente hidrolisada.',
     commentary: 'Comentários sobre a resposta correta:\n(B) A presença de sangramento retal isolado (raias de sangue nas fezes) em um lactente de 2 meses com excelente ganho de peso, sem sintomas sistêmicos (como febre ou vômitos) e com exame físico normal é altamente sugestiva de proctocolite alérgica induzida pela proteína do leite de vaca (APLV não IgE-mediada). A conduta inicial em crianças em uso de fórmula infantil é a substituição da fórmula láctea regular por uma fórmula extensamente hidrolisada (onde as proteínas são quebradas em peptídeos pequenos, reduzindo a antigenicidade). Deve-se avaliar a resposta clínica em 2 a 4 semanas de exclusão e, havendo melhora, realizar o teste de provocação oral (TPO) para confirmação diagnóstica definitiva.\n\nComentários sobre os distratores:\n(A) A lactose é o açúcar do leite; a restrição de lactose não trata a APLV (que é uma reação imunológica a proteínas) e intolerância primária à lactose é extremamente rara nesta faixa etária e não causa sangramento nas fezes.\n(C) Fórmulas de aminoácidos livres (elementares) são caras e reservadas para casos de anafilaxia, recusa alimentar grave, sangramento persistente com repercussão sistêmica ou falha no uso de fórmula extensamente hidrolisada.\n(D) Na ausência de sinais de enterocolite infecciosa ativa (febre, diarreia, queda do estado geral), o uso de antibióticos empíricos é contraindicado.',
     reference: 'Vandenplas Y, et al. An ESPGHAN position paper on the diagnosis, management, and prevention of cow\'s milk allergy. J Pediatr Gastroenterol Nutr. 2024. | Oliveira LCL et al. Atualização em alergia alimentar 2025: posicionamento conjunto ASBAI/SBP.',
-    tags: ['Gastroenterologia', 'Alergia e Imunologia']
+    tags: ['gastroenterologia', 'alergia e imunologia']
   },
   {
     id: 'tp2026-52',
@@ -1796,7 +1796,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Criança com Taquicardia Supraventricular (TSV) e sinais de instabilidade hemodinâmica (choque cardiogênico) com acesso venoso disponível deve receber adenosina IV imediata ou cardioversão elétrica sincronizada.',
     commentary: 'Comentários sobre a resposta correta:\n(C) O quadro clínico (frequência cardíaca de 220 bpm, ausência de onda P, taquicardia de complexo estreito regular) é típico de Taquicardia Supraventricular (TSV) na infância. A paciente exibe sinais francos de choque circulatório/instabilidade (tempo de enchimento capilar de 4s, PA limítrofe de 70x40 mmHg, sonolência, cianose, má perfusão). Pelo algoritmo do PALS (Pediatric Advanced Life Support), se o paciente com TSV instável já possui um acesso venoso periférico puncionado e viável, a conduta medicamentosa inicial é a infusão rápida de adenosina na dose de 0,1 mg/kg em bólus (seguido de flush de soro fisiológico). Se não houver acesso venoso imediato ou se a adenosina falhar, deve-se proceder à cardioversão elétrica sincronizada (e não desfibrilação) com 0,5 a 1 J/kg.\n\nComentários sobre os distratores:\n(A) A desfibrilação (choque não sincronizado) está indicada apenas em ritmos de parada cardiorrespiratória chocáveis (Fibrilação Ventricular e Taquicardia Ventricular sem pulso), não se aplicando a arritmias estáveis ou instáveis com pulso.\n(B) Adrenalina endovenosa não é tratamento para TSV de complexo estreito regular estável ou instável com pulso.\n(D) Como a criança está em choque cardiogênico secundário a uma arritmia extrema, a expansão volêmica vigorosa com soro fisiológico pode desencadear ou agravar congestão pulmonar aguda e insuficiência cardíaca.',
     reference: 'Pediatric Advanced Life Support (PALS) Guidelines - AHA 2020.',
-    tags: ['Cardiologia', 'Emergência']
+    tags: ['cardiologia', 'emergência']
   },
   {
     id: 'tp2026-53',
@@ -1812,7 +1812,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Lactentes e pré-escolares com sibilância episódica viral devem ser manejados com broncodilatador de resgate durante as crises, sem indicação imediata de corticoide de controle na ausência de sintomas intercrises ou atopia.',
     commentary: 'Comentários sobre a resposta correta:\n(C) A paciente apresenta um fenótipo de sibilância induzida por vírus (sibilância episódica associada exclusivamente a resfriados), caracterizado por crises espaçadas com intervalos assintomáticos, boa resposta a broncodilatadores e ausência de atopia pessoal ou familiar de asma. Na atenção primária, a conduta correta consiste no tratamento sintomático das crises com broncodilatadores de curta ação (salbutamol) por via inalatória (espaçador) e acompanhamento longitudinal clínico para mapear a frequência e a gravidade das exacerbações antes de cogitar terapia preventiva diária.\n\nComentários sobre os distratores:\n(A) A espirometria não é viável ou confiável em crianças menores de 5-6 anos, e radiografia de tórax de rotina é dispensada em crises típicas não complicadas.\n(B) Corticoide inalatório contínuo diário é indicado para o fenótipo de sibilador persistente (múltiplos desencadeantes, sintomas frequentes intercrises) ou com alto risco de asma (Índice Preditivo de Asma positivo), o que não é o caso do pré-escolar em tela.\n(D) O uso empírico e repetido de corticoide oral a cada episódio de sibilância viral não previne a progressão para asma, devendo ser evitado pelos potenciais efeitos colaterais sistêmicos.',
     reference: 'Global Initiative for Asthma (GINA). 2025. | SBP. Diretrizes para manejo de sibilância na infância.',
-    tags: ['Pneumologia', 'Atenção Primária']
+    tags: ['pneumologia', 'atenção primária']
   },
   {
     id: 'tp2026-54',
@@ -1828,7 +1828,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Nas situações de suspeita ou confirmação de relação sexual envolvendo menores de 14 anos (vulneráveis), configura-se crime de estupro de vulnerável, obrigando a quebra de sigilo e notificação de maus-tratos/violência.',
     commentary: 'Comentários sobre a resposta correta:\n(A) Conforme o Código Penal Brasileiro, a conjunção carnal ou ato libidinoso com menor de 14 anos caracteriza o crime de Estupro de Vulnerável (Art. 217-A). Trata-se de uma situação de violência sexual presumida pela lei, onde o consentimento da vítima é legalmente irrelevante. Nessas circunstâncias de violência infanto-juvenil confirmada ou suspeitada, o médico tem a obrigação legal e o dever ético de quebrar o sigilo profissional para acionar as redes de proteção social (Conselho Tutelar) e notificar compulsoriamente os órgãos de vigilância em saúde para resguardar a integridade física e psíquica da adolescente.\n\nComentários sobre os distratores:\n(B, D) Manter sigilo absoluto diante de um crime de estupro de vulnerável em andamento contra um menor de 14 anos é uma infração ética e legal grave do profissional.\n(C) Embora estimular o diálogo familiar seja importante, a conduta protetiva obrigatória de notificação e acionamento dos órgãos competentes não pode ser postergada ou condicionada à decisão da família.',
     reference: 'Brasil. Estatuto da Criança e do Adolescente - ECA. | SBP. Manual de atendimento ao adolescente vítima de violência.',
-    tags: ['Atenção Primária', 'Ética Médica', 'Saúde Pública']
+    tags: ['atenção primária', 'ética médica', 'saúde pública']
   },
   {
     id: 'tp2026-55',
@@ -1844,7 +1844,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A posição genupeitoral eleva a resistência vascular sistêmica, reduzindo o shunt direita-esquerda no ventrículo e otimizando o fluxo sanguíneo pulmonar durante crises hipercianóticas.',
     commentary: 'Comentários sobre a resposta correta:\n(B) A crise de hipoxemia (ou crise hipercianótica) na Tetralogia de Fallot ocorre devido a um espasmo do infundíbulo pulmonar ou queda na resistência vascular sistêmica (RVS), o que desvia massivamente o sangue desoxigenado do ventrículo direito para a aorta através da ampla CIV (shunt direita-esquerda). A posição genupeitoral (knee-chest) ou o agachamento provoca a flexão dos membros inferiores sobre o tronco, o que acarreta a compressão mecânica das artérias femorais, elevando agudamente a RVS. Esse aumento de resistência dificulta a saída do sangue pela aorta, forçando um maior fluxo em direção à artéria pulmonar, reduzindo o shunt D-E e atenuando rapidamente a hipoxemia sistêmica.\n\nComentários sobre os distratores:\n(A) A posição de Trendelenburg melhora o retorno venoso, mas não atua aumentando a resistência vascular sistêmica para mitigar o shunt cardíaco primário.\n(C, D) Manter os membros inferiores estendidos reduz a resistência vascular sistêmica periférica, o que agrava o fluxo de shunt direita-esquerda e piora a hipoxemia.',
     reference: 'SOCIEDADE BRASILEIRA DE PEDIATRIA. Diretrizes em Cardiopatias Congênitas. | Kliegman, R. M. et al. Nelson Textbook of Pediatrics.',
-    tags: ['Cardiologia', 'Emergência']
+    tags: ['cardiologia', 'emergência']
   },
   {
     id: 'tp2026-56',
@@ -1860,7 +1860,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'O aparecimento de caracteres sexuais secundários em meninas antes dos 8 anos caracteriza puberdade precoce, cuja triagem laboratorial inicial avalia a ativação do eixo hipotálamo-hipófise-gonadal por LH e FSH.',
     commentary: 'Comentários sobre a resposta correta:\n(D) O desenvolvimento de mamas (telarca) antes dos 8 anos de idade em meninas preenche critérios para o diagnóstico de Puberdade Precoce. O avanço concomitante da velocidade de crescimento apoia o diagnóstico clínico de puberdade verdadeira. A primeira etapa da investigação visa a diferenciar a etiologia central (dependente de gonadorofinas - ativação do eixo hipotálamo-hipófise-gônadas) da periférica (independente de gonadotrofinas). Dessa forma, a dosagem basal sérica de LH (hormônio luteinizante) e FSH (hormônio folículo-estimulante) - idealmente por ensaios ultrassensíveis de quimioluminescência - é a triagem hormonal padrão inicial recomendada.\n\nComentários sobre os distratores:\n(A) O paratormônio (PTHi) regula o metabolismo do cálcio e fósforo, sem papel na investigação de desvios puberais.\n(B) TSH avalia a função tireoidiana; embora o hipotireoidismo primário severo possa causar puberdade precoce (Síndrome de Van Wyk-Grumbach), este cursa com parada do crescimento, e não aceleração do crescimento linear.\n(C) Embora o GH e IGF-1 atuem no crescimento linear, a aceleração da velocidade de crescimento na puberdade precoce é secundária ao estirão induzido pelo aumento de esteroides sexuais (estrógeno) que otimizam a secreção de GH, sendo o LH/FSH as dosagens prioritárias.',
     reference: 'Endocrine Society Guidelines on Gonadotropins. | SBP. Puberdade precoce feminina e masculina, 2021.',
-    tags: ['Endocrinologia']
+    tags: ['endocrinologia']
   },
   {
     id: 'tp2026-57',
@@ -1876,7 +1876,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A ultrassonografia de rins e vias urinárias é o exame não invasivo inicial indicado para rastrear malformações estruturais ou sinais obstrutivos em crianças com infecção urinária febril de repetição.',
     commentary: 'Comentários sobre a resposta correta:\n(A) Em crianças com infecções recorrentes do trato urinário febris (sugestivas de pielonefrite de repetição), a avaliação de imagem inicial não invasiva recomendada por diretrizes nacionais e internacionais (como AAP e SBP) é a ultrassonografia (US) de rins e vias urinárias. A US é excelente para detectar anomalias estruturais grosseiras do trato urinário, rins duplicados, hidronefrose acentuada ou dilatação ureteral que predisponham à estase urinária e infecção.\n\nComentários sobre os distratores:\n(B) A tomografia computadorizada é reservada para suspeitas de complicações agudas graves (como abscesso renal) refratárias ao tratamento antimicrobiano, não sendo exame de triagem de repetição.\n(C) A cintilografia renal com DMSA avalia a presença de cicatrizes renais parenquimatosas tardias e disfunção focal renal, sendo comumente solicitada após o resultado da ultrassonografia ou uretrocistografia.\n(D) A uretrocistografia miccional seriada (UCM) é o padrão ouro para diagnosticar Refluxo Vesicoureteral (RVU), porém é um exame invasivo que costuma ser agendado como etapa posterior após triagem inicial ou na vigência de alterações na US ou no DMSA.',
     reference: 'American Academy of Pediatrics (AAP) Guidelines on UTI. | SBP. Departamento de Nefrologia Pediátrica: Infecção do Trato Urinário.',
-    tags: ['Nefrologia', 'Urologia']
+    tags: ['nefrologia', 'urologia']
   },
   {
     id: 'tp2026-58',
@@ -1892,7 +1892,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Crianças com infecções bacterianas recorrentes de vias aéreas e de pele associadas a déficit pôndero-estatural devem ser investigadas para erros inatos da imunidade (imunodeficiências primárias) com triagem básica e especialista.',
     commentary: 'Comentários sobre a resposta correta:\n(C) A ocorrência de infecções bacterianas de repetição e com gravidade (pneumonias, otites purulentas e infecções de pele de repetição exigindo internações e antibioticoterapia sistêmica) associada ao déficit de ganho de peso constitui um importante sinal de alerta para Erros Inatos da Imunidade (Imunodeficiências Primárias). A conduta correta inicial consiste na realização de exames laboratoriais básicos de triagem (hemograma completo para avaliar neutrófilos e linfócitos, dosagem de imunoglobulinas séricas IgG, IgA e IgM) concomitante ao encaminhamento ao pediatra especialista em alergia/imunologia para investigação pormenorizada.\n\nComentários sobre os distratores:\n(A, B) Suplementação vitamínica isolada ou antibioticoterapia profilática empírica sem um diagnóstico de base definido são inócuas e atrasam o tratamento curativo ou preventivo adequado.\n(D) Embora episódios de infecções virais simples e benignas possam ocorrer em pré-escolares em creches, infecções bacterianas sistêmicas profundas associadas a falha no crescimento pôndero-estatural nunca devem ser minimizadas ou consideradas normais.',
     reference: 'RICH, Robert R. et al. Clinical Immunology: Principles and Practice. 5. ed. Philadelphia: Elsevier, 2019. | SBP. Sinais de Alerta para Erros Inatos da Imunidade.',
-    tags: ['Alergia e Imunologia', 'Atenção Primária']
+    tags: ['alergia e imunologia', 'atenção primária']
   },
   {
     id: 'tp2026-59',
@@ -1908,7 +1908,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'A mononucleose infecciosa é autolimitada e o tratamento é de suporte, sendo indispensável a suspensão de atividades físicas e esportes de contato por semanas devido ao risco de ruptura esplênica.',
     commentary: 'Comentários sobre a resposta correta:\n(D) A paciente apresenta um quadro clínico clássico de Mononucleose Infecciosa (febre prolongada, faringotonsilite exsudativa membranosa, linfadenopatia generalizada, esplenomegalia e linfocitose com atipia linfocitária expressiva de 20%). Em pacientes imunocompetentes, o curso da doença é habitualmente autolimitado e o tratamento é estritamente sintomático e de suporte (analgesia, antipiréticos e hidratação). O planejamento do cuidado impõe restrição relativa e suspensão formal de atividades físicas vigorosas e esportes de contato nas primeiras 2 a 4 semanas da doença pelo risco agudo de ruptura esplênica, complicação mecânica potencialmente fatal decorrente da esplenomegalia inflamatória.\n\nComentários sobre os distratores:\n(A) Corticosteroides sistêmicos (dexametasona, prednisona) não devem ser usados rotineiramente na mononucleose, ficando reservados para complicações como obstrução iminente de vias aéreas por hipertrofia amigdaliana severa, plaquetopenia grave ou anemia hemolítica.\n(B) Antivirais como o aciclovir não reduzem significativamente o tempo de doença ou o tamanho da esplenomegalia e não estão recomendados.\n(C) A faringite exsudativa na mononucleose é viral; o uso inadvertido de amoxicilina induz o surgimento de um exantema maculopapular em até 80-90% das crianças afetadas, não tendo indicação e não prevenindo febre reumática (que é desencadeada por Streptococcus pyogenes).',
     reference: 'SOCIEDADE BRASILEIRA DE PEDIATRIA. Mononucleose infecciosa. In: Tratado de Pediatria, 6. ed. Barueri: Manole, 2024.',
-    tags: ['Infectologia', 'Pneumologia']
+    tags: ['infectologia', 'pneumologia']
   },
   {
     id: 'tp2026-60',
@@ -1924,7 +1924,7 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
     explanation: 'Na artrite idiopática juvenil (AIJ), a inflamação sinovial crônica leva a hiperplasia celular e à formação de pannus, um tecido proliferativo inflamatório que invade e destrói progressivamente a cartilagem e o osso subcondral.',
     commentary: 'Comentários sobre a resposta correta:\n(B) O quadro clínico (menina de 4 anos com artrite crônica ≥ 6 semanas, rigidez matinal, febre persistente e exantema macular evanescente compatível com a forma sistêmica de Artrite Idiopática Juvenil - AIJ) tem como mecanismo central de destruição articular a sinovite proliferativa crônica. O processo inflamatório estimula a angiogênese e a hiperplasia das células sinoviais, dando origem ao "pannus" — um tecido de granulação inflamatório invasivo rico em macrófagos, fibroblastos e linfócitos. O pannus adere firmemente e invade a cartilagem articular e o osso subcondral adjacente, liberando metaloproteinases e citocinas pró-inflamatórias (como TNF-alfa, IL-1 e IL-6) que degradam progressivamente a matriz extracelular, causando o dano articular estrutural e irreversível típico da doença descontrolada.\n\nComentários sobre os distratores:\n(A) Descreve a fisiopatologia da osteoartrite (doença degenerativa articular), incomum na infância, que não possui a base inflamatória autoimune sistêmica da AIJ.\n(C) Embora haja mecanismos imunológicos humorais e celulares envolvidos na AIJ, a deposição de imunocomplexos isoladamente na cápsula não é o mecanismo anatômico primário do dano articular invasivo que leva a erosões.\n(D) Na artrite inflamatória ocorre efusão articular ativa (aumento do líquido sinovial com características inflamatórias), e não redução deste.',
     reference: 'PETTY, R. E. et al. Textbook of Pediatric Rheumatology. 8. ed. Philadelphia: Elsevier, 2021. | Nelson Textbook of Pediatrics, 22. ed. 2024.',
-    tags: ['Reumatologia']
+    tags: ['reumatologia']
   },
   // ---- Teste de Progresso 2019 (gabarito oficial) ----
   {
