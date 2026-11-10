@@ -10,7 +10,6 @@
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
-  sendEmailVerification,
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut as fbSignOut,
@@ -35,14 +34,12 @@ export interface Session {
   uid: string;
   email: string;
   name: string;
-  verified: boolean;
 }
 
 const toSession = (u: User): Session => ({
   uid: u.uid,
   email: u.email ?? '',
   name: u.displayName || (u.email ?? '').split('@')[0],
-  verified: u.emailVerified,
 });
 
 /** Mensagens do Firebase em português, para o aluno entender o que houve. */
@@ -76,12 +73,6 @@ export async function signUp(name: string, email: string, password: string): Pro
     acceptedAnonymization: true,
     createdAt: serverTimestamp(),
   });
-  try {
-    auth.languageCode = 'pt-BR';
-    await sendEmailVerification(cred.user);
-  } catch {
-    /* o cadastro segue mesmo se o e-mail de verificação falhar */
-  }
   return toSession(cred.user);
 }
 
@@ -93,21 +84,6 @@ export async function signIn(email: string, password: string): Promise<Session> 
 export async function resetPassword(email: string): Promise<void> {
   auth.languageCode = 'pt-BR';
   await sendPasswordResetEmail(auth, email.trim());
-}
-
-export async function resendVerification(): Promise<void> {
-  if (auth.currentUser) {
-    auth.languageCode = 'pt-BR';
-    await sendEmailVerification(auth.currentUser);
-  }
-}
-
-/** Recarrega o usuário do Firebase (ex.: depois de confirmar o e-mail em outra aba). */
-export async function refreshSession(): Promise<Session | null> {
-  const u = auth.currentUser;
-  if (!u) return null;
-  await u.reload();
-  return toSession(u);
 }
 
 export function signOut() {
