@@ -2,14 +2,14 @@
 // O build e o servidor local regeneram este arquivo sozinhos; o `npm run validate` acusa se ficar desatualizado.
 import type { Question } from '../types';
 
-export const TOTAL_QUESTIONS = 1459;
+export const TOTAL_QUESTIONS = 1534;
 
 export const COUNT_BY_AREA: Record<string, number> = {
-  "Pediatria": 259,
-  "Clínica Médica": 291,
-  "Cirurgia": 244,
-  "Ginecologia e Obstetrícia": 251,
-  "Saúde Coletiva": 254,
+  "Pediatria": 274,
+  "Clínica Médica": 306,
+  "Cirurgia": 259,
+  "Ginecologia e Obstetrícia": 266,
+  "Saúde Coletiva": 269,
   "Ciências Básicas": 160
 };
 
@@ -95,6 +95,12 @@ export const EDITIONS: ExamEdition[] = [
     "count": 100
   },
   {
+    "label": "SCM-BH 2026",
+    "kind": "Residência",
+    "year": 2026,
+    "count": 75
+  },
+  {
     "label": "HOS-BOS 2027",
     "kind": "Residência",
     "year": 2027,
@@ -141,6 +147,13 @@ export const SOURCES: ExamSource[] = [
     "count": 100
   },
   {
+    "key": "SCM-BH",
+    "label": "SCM-BH",
+    "kind": "Residência",
+    "years": "2026",
+    "count": 75
+  },
+  {
     "key": "HOS-BOS",
     "label": "HOS-BOS",
     "kind": "Residência",
@@ -176,7 +189,12 @@ export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
   "Saúde Coletiva|USP-RP": 13,
   "Clínica Médica|USP-RP": 25,
   "Ginecologia e Obstetrícia|USP-RP": 21,
-  "Cirurgia|USP-RP": 20
+  "Cirurgia|USP-RP": 20,
+  "Cirurgia|SCM-BH": 15,
+  "Clínica Médica|SCM-BH": 15,
+  "Ginecologia e Obstetrícia|SCM-BH": 15,
+  "Saúde Coletiva|SCM-BH": 15,
+  "Pediatria|SCM-BH": 15
 };
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */
@@ -227,377 +245,353 @@ export const SAMPLE_QUESTIONS: Question[] = [
     ]
   },
   {
-    "id": "tp2023-50",
+    "id": "tp2023-51",
     "module": "Pediatria",
-    "text": "Menino com 4 anos com mordida de cachorro conhecido e vacinado, ferimento único e superficial no braço. Foi feita limpeza. Qual a conduta?",
+    "text": "O teste do reflexo vermelho ou “teste do olhinho” é um exame simples, rápido, indolor e de baixo custo realizado em recém-nascidos, e seu objetivo é a detecção precoce de problemas oculares congênitos que comprometem a transparência dos meios oculares e que podem impedir o desenvolvimento visual cortical. Tem como objetivo detectar algumas patologias oculares. Assinale a alternativa que apresenta estas patologias:",
     "options": [
-      "(A) Manter o cão em observação durante 10 dias.",
-      "(B) Encaminhar a criança para vacinação antirrábica imediatamente.",
-      "(C) Aplicar soro antirrábico imediatamente.",
-      "(D) Se o cão não for vacinado, a criança deve receber vacina antirrábica."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Mordedura por cão é exposição ao vírus da raiva, mas a conduta depende do animal e da lesão. Aqui o cão é conhecido, vacinado, está sem sinais de raiva e pode ser observado, e o ferimento é único e superficial em braço, o que é classificado como acidente leve.\n\nNesse caso, o Ministério da Saúde orienta lavar bem a ferida com água e sabão e observar o animal por 10 dias. Se ele continuar saudável, o caso é encerrado sem vacina. Se o animal morrer, sumir ou apresentar sinais de raiva nesse período, inicia-se o esquema de vacina antirrábica. O período de 10 dias se explica porque o cão só transmite o vírus pela saliva poucos dias antes dos sintomas e morre logo depois.",
-    "commentary": "Vacinação imediata (B): em acidente leve com cão observável e sadio, a vacina só é iniciada se o animal adoecer, morrer ou desaparecer durante a observação.\n\nSoro antirrábico imediato (C): é indicado em acidentes graves (ferimentos profundos, múltiplos ou em cabeça, mãos e pés) quando o animal é suspeito ou não pode ser observado, sempre junto com a vacina.\n\nVacinar se o cão não for vacinado (D): o que define a conduta é poder observar o animal e ele permanecer sadio, e não só a vacinação dele; mesmo um cão não vacinado pode ser observado por 10 dias.",
-    "tip": "Cão ou gato sadio e observável + acidente leve = lavar com água e sabão e observar o animal por 10 dias.",
-    "reference": "Normas técnicas Profilaxia Raiva – MS 2011",
-    "tags": [
-      "infectologia",
-      "saúde pública"
-    ]
-  },
-  {
-    "id": "tp2022-57",
-    "module": "Pediatria",
-    "text": "Menina de 6 anos com AIJ oligoarticular e FAN positivo. Qual a complicação crônica mais esperada?",
-    "options": [
-      "(A) Uveíte anterior aguda.",
-      "(B) Uveíte anterior crônica.",
-      "(C) Síndrome de ativação macrofágica.",
-      "(D) Síndrome inflamatória sistêmica."
+      "(A) Inflamações intraoculares da retina e vítreo e telecanto.",
+      "(B) Catarata congênita, glaucoma congênito, retinoblastoma.",
+      "(C) Retinopatia da prematuridade no estágio 1 e retinose pigmentar.",
+      "(D) Descolamento de retina, vascularização fetal persistente e telecanto."
     ],
     "correctAnswer": 1,
-    "explanation": "Menina pequena com artrite crônica que começou em um joelho e, ao longo do tempo, atingiu poucas grandes articulações, com FAN positivo em título alto e fator reumatoide negativo: é artrite idiopática juvenil (AIJ) oligoarticular.\n\nNesse subtipo, sobretudo em meninas pequenas com FAN positivo, a complicação mais temida é a uveíte anterior crônica. Ela é silenciosa, sem olho vermelho ou dor, e pode levar a catarata, glaucoma e perda visual se não for detectada. Por isso essas crianças precisam de avaliação oftalmológica periódica com lâmpada de fenda, mesmo sem queixas, com intervalo mais curto (a cada 3 meses) no grupo de maior risco.",
-    "commentary": "Uveíte anterior aguda (A): é sintomática (olho vermelho, dor, fotofobia) e típica da AIJ relacionada a entesite, em meninos maiores com HLA-B27.\n\nSíndrome de ativação macrofágica (C): complicação grave associada principalmente à forma sistêmica da AIJ, com febre, exantema e serosite, não à oligoarticular.\n\nMIS-C (D): síndrome inflamatória multissistêmica pós-covid-19, sem relação com o quadro crônico descrito.",
-    "tip": "AIJ oligoarticular + menina pequena + FAN positivo = uveíte anterior crônica silenciosa: lâmpada de fenda periódica.",
-    "reference": "Sen ES, Ramanan AV. Juvenile idiopathic arthritis-associated uveitis. Clin Immunol. 2020;211:108322.",
+    "explanation": "O teste do reflexo vermelho (teste do olhinho) usa um oftalmoscópio para ver o reflexo da luz que volta do fundo do olho. Para que ele seja vermelho e simétrico, a córnea, o cristalino e o vítreo precisam estar transparentes. Qualquer coisa que bloqueie a passagem da luz faz o reflexo ficar ausente, opaco ou branco (leucocoria).\n\nAs doenças que ele ajuda a detectar cedo são a catarata congênita, o glaucoma congênito (que deixa a córnea turva) e o retinoblastoma, além de outras opacidades. A SBP recomenda fazer o teste antes da alta da maternidade e repetir algumas vezes nos primeiros anos de vida. Reflexo alterado ou duvidoso pede encaminhamento rápido ao oftalmologista.",
+    "commentary": "Inflamações de retina e vítreo e telecanto (A): telecanto é aumento da distância entre os cantos internos dos olhos, uma característica da face, que não muda o reflexo vermelho.\n\nRetinopatia da prematuridade estágio 1 e retinose pigmentar (C): são alterações da retina que exigem mapeamento de retina com oftalmoscopia indireta; não opacificam os meios do olho no início.\n\nDescolamento de retina, vascularização fetal persistente e telecanto (D): as duas primeiras podem alterar o reflexo, mas a inclusão do telecanto, que não tem relação com o teste, torna a alternativa errada.",
+    "tip": "Teste do olhinho alterado (leucocoria) = pensar em catarata congênita, glaucoma congênito e retinoblastoma.",
+    "reference": "Grupo de trabalho em Oftalmologia Pediátrica (2019-2021). Sociedade Brasileira de Pediatria. Teste do reflexo vermelho – Atualização: 27 abril de 2022.",
     "tags": [
-      "reumatologia",
       "oftalmologia"
     ]
   },
   {
-    "id": "tp2026-55",
+    "id": "tp2022-59",
     "module": "Pediatria",
-    "text": "Criança de 2 anos e 4 meses, com tetralogia de Fallot, dá entrada na UBS com \"crise de hipoxemia\". Considerando a fisiopatologia da doença em questão, qual a melhor posição para acomodar a criança na maca de exame físico visando melhorar a hipoxemia?",
+    "text": "Recém-nascido a termo (3530g), tipagem O- (mãe) e B+ (filho), Coombs e Eluato negativos. Icterícia Zona 4 com 48h (BI 15.5). Diagnóstico:",
     "options": [
-      "(A) Posição de Trendelemburg.",
-      "(B) Posição genupeitoral.",
-      "(C) Decúbito dorsal com as pernas esticadas.",
-      "(D) Decúbito ventral com as pernas esticadas."
+      "(A) Icterícia por isoimunização ABO.",
+      "(B) Icterícia por deficiência de G6PD.",
+      "(C) Icterícia fisiológica do RN.",
+      "(D) Icterícia precoce por incompatibilidade."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Com Coombs e Eluato negativos, afasta-se isoimunização; BI elevada aos 2 dias sem precocidade extrema sugere fisiologia.",
+    "commentary": "Como não há evidência laboratorial de hemólise imune (Coombs/Eluato neg), trata-se de icterícia fisiológica, comum após 24h de vida.",
+    "reference": "Manual de Neonatologia Cloherty.",
+    "tags": [
+      "neonatologia"
+    ]
+  },
+  {
+    "id": "tp2019-45",
+    "module": "Pediatria",
+    "text": "Recém-nascido (RN) nascido a termo, sem queixas e sem alterações ao exame físico.\n\nConsiderando-se que os exames pré-natais ao final da gestação apontaram infecção materna pelo vírus da imunodeficiência humana, a recomendação correta em relação à alimentação desse RN é:",
+    "options": [
+      "(A) Indicar aleitamento materno em regime de livre demanda.",
+      "(B) Contraindicar a amamentação e prescrever fórmula láctea.",
+      "(C) Indicar aleitamento materno com leite ordenhado após congelamento.",
+      "(D) Contraindicar a amamentação e indicar aleitamento humano cruzado."
     ],
     "correctAnswer": 1,
-    "explanation": "A posição genupeitoral eleva a resistência vascular sistêmica, reduzindo o shunt direita-esquerda no ventrículo e otimizando o fluxo sanguíneo pulmonar durante crises hipercianóticas.",
-    "commentary": "Comentários sobre a resposta correta:\n(B) A crise de hipoxemia (ou crise hipercianótica) na Tetralogia de Fallot ocorre devido a um espasmo do infundíbulo pulmonar ou queda na resistência vascular sistêmica (RVS), o que desvia massivamente o sangue desoxigenado do ventrículo direito para a aorta através da ampla CIV (shunt direita-esquerda). A posição genupeitoral (knee-chest) ou o agachamento provoca a flexão dos membros inferiores sobre o tronco, o que acarreta a compressão mecânica das artérias femorais, elevando agudamente a RVS. Esse aumento de resistência dificulta a saída do sangue pela aorta, forçando um maior fluxo em direção à artéria pulmonar, reduzindo o shunt D-E e atenuando rapidamente a hipoxemia sistêmica.\n\nComentários sobre os distratores:\n(A) A posição de Trendelenburg melhora o retorno venoso, mas não atua aumentando a resistência vascular sistêmica para mitigar o shunt cardíaco primário.\n(C, D) Manter os membros inferiores estendidos reduz a resistência vascular sistêmica periférica, o que agrava o fluxo de shunt direita-esquerda e piora a hipoxemia.",
-    "reference": "SOCIEDADE BRASILEIRA DE PEDIATRIA. Diretrizes em Cardiopatias Congênitas. | Kliegman, R. M. et al. Nelson Textbook of Pediatrics.",
+    "explanation": "No Brasil, a infecção materna pelo HIV é contraindicação ao aleitamento materno, pelo risco de transmissão vertical. O recém-nascido deve receber fórmula láctea, fornecida pelo SUS, e a lactação da mãe deve ser inibida.",
+    "commentary": "Leite ordenhado congelado não elimina o vírus. O aleitamento cruzado (por outra mulher) não é recomendado.",
+    "reference": "Tratado de Pediatria – Sociedade Brasileira de Pediatria 4ª Edição / Ministério da Saúde. Protocolo clínico e diretrizes terapêuticas para manejo da infecção pelo HIV em crianças e adolescentes. Brasília, 2018.",
     "tags": [
-      "cardiologia",
+      "pediatria",
+      "aleitamento materno",
+      "HIV"
+    ]
+  },
+  {
+    "id": "tp2023-28",
+    "module": "Clínica Médica",
+    "text": "JM está em situação de rua e na primeira vez em que experimentou cocaína teve uma sensação de intensa euforia, bem-estar, desinibição, perda de apetite e aumento da energia e libido; porém, com o uso prolongado da droga, passou a ter que usar cada vez mais a cocaína para obter esses mesmos efeitos. O nome que corresponde a esse efeito causado pelo consumo prolongado de drogas é:",
+    "options": [
+      "(A) Abuso",
+      "(B) Abstinência",
+      "(C) Tolerância",
+      "(D) Overdose"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Precisar de doses cada vez maiores para obter o mesmo efeito, ou ter efeito menor com a mesma dose, é a definição de tolerância. Ela surge com o uso repetido, por adaptação do organismo à substância (mudanças nos receptores, na neurotransmissão e no metabolismo).\n\nA tolerância é um dos critérios do transtorno por uso de substâncias e costuma andar junto com a abstinência e a perda de controle sobre o consumo, por isso é peça central na evolução para a dependência.",
+    "commentary": "Abuso (A): designa um padrão de uso que traz prejuízos (sociais, legais, de saúde), não a necessidade de aumentar a dose; o DSM-5 substituiu abuso e dependência por transtorno por uso de substâncias.\n\nAbstinência (B): são os sintomas que surgem ao parar ou reduzir o uso; na cocaína, disforia, cansaço, sonolência, aumento do apetite e fissura.\n\nOverdose (D): é a intoxicação grave por dose excessiva, com risco de arritmia, infarto, convulsão e hipertermia.",
+    "tip": "Mais droga para o mesmo efeito = tolerância. Sintomas ao parar = abstinência.",
+    "reference": "DIEHL, A.; CORDEIRO, D. C.; LARANJEIRA, R. (Orgs.). Dependência química: prevenção, tratamento e políticas públicas. 2. ed. Porto Alegre: Artmed, 2018. 554 p.",
+    "tags": [
+      "psiquiatria"
+    ]
+  },
+  {
+    "id": "tp2025-36",
+    "module": "Clínica Médica",
+    "text": "Adolescente de 16 anos é levado ao pronto-socorro com febre alta, cefaleia intensa, rigidez de nuca e rebaixamento do nível de consciência. Apresenta ainda vômitos em jato e pressão arterial de 150/100mmHg. O exame de fundo de olho revela papiledema. A conduta inicial mais apropriada é:",
+    "options": [
+      "(A) Administrar corticoide isolado para reduzir a resposta inflamatória.",
+      "(B) Coletar hemoculturas e aguardar o resultado antes de iniciar antibiótico.",
+      "(C) Realizar punção lombar imediatamente para análise do líquido cefalorraquidiano.",
+      "(D) Iniciar antibioticoterapia empírica e solicitar tomografia de crânio."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Os sinais de hipertensão intracraniana grave (papiledema, rebaixamento e vômitos) contraindicam formalmente a realização de punção lombar imediata por risco de herniação. Deve-se iniciar antibioterapia e solicitar tomografia.",
+    "commentary": "Na meningite bacteriana presumível com sinais focais ou de hipertensão intracraniana (HIC), a punção lombar cega é proscrita sob alto risco de herniação. Coleta-se hemocultura e institui-se de modo imediato antibioticoterapia empírica concomitante a corticoide, procedendo após à neuroimagem craniana de controle.",
+    "reference": "Medicina Interna de Harrison. 21ª ed. Porto Alegre: Artmed; 2023.",
+    "tags": [
+      "infectologia",
+      "neurologia",
       "emergência"
     ]
   },
   {
-    "id": "tp2024-32",
+    "id": "tp2026-29",
     "module": "Clínica Médica",
-    "text": "Homem de 32 anos procura a UBS, relatando ter apresentado primeira crise convulsiva há 1 mês, quando procurou o hospital. Na ocasião, foram descartadas causas agudas por meio de anamnese, exame físico, exames laboratoriais e de tomografia de crânio. Foi introduzido valproato em baixa dose (10mg/kg/dia). Evoluiu assintomático desde então. Exame físico sem alterações. A conduta adequada, de acordo com o protocolo do Ministério da Saúde, é:",
+    "text": "Mulher de 32 anos procura pronto atendimento por cefaleia hemicraniana pulsátil há 10 horas, associada a náuseas, fotofobia e piora com esforços habituais. Refere episódios semelhantes nos últimos dois anos, com melhora espontânea entre as crises, sem febre, déficit focal ou alteração do nível de consciência. Indique a investigação diagnóstica:",
     "options": [
-      "(A) Otimizar dose de valproato e reavaliar em 3 meses.",
-      "(B) Manter dose de valproato e reavaliar em 3 meses.",
-      "(C) Descontinuar valproato e reavaliar em 3 meses.",
-      "(D) Manter valproato e realizar ressonância magnética de encéfalo."
+      "(A) Realizar o diagnóstico clínico de enxaqueca.",
+      "(B) Solicitar tomografia computadorizada de crânio.",
+      "(C) Indicar punção lombar para afastar causas secundárias.",
+      "(D) Solicitar eletroencefalograma."
     ],
-    "correctAnswer": 2,
-    "explanation": "O rapaz teve uma crise única, investigada sem causa aguda, tem exame físico normal e não há relato de lesão cerebral prévia, alteração no EEG nem crise durante o sono. Nessa situação, o risco de nova crise é relativamente baixo, e o protocolo do Ministério da Saúde não recomenda manter antiepiléptico após uma única crise sem fatores de risco.\n\nO valproato foi iniciado sem indicação clara e ainda traz efeitos adversos relevantes (ganho de peso, tremor, toxicidade hepática e teratogenicidade). A conduta é retirá-lo e reavaliar, orientando o paciente a procurar atendimento se houver nova crise; uma segunda crise não provocada define epilepsia e indica tratamento.",
-    "commentary": "Otimizar a dose de valproato (A): não há indicação de tratar, então aumentar a dose expõe o paciente a efeitos adversos sem benefício.\n\nManter a dose (B): manter o fármaco sem indicação também não é recomendado após primeira crise sem fatores de risco.\n\nManter valproato e pedir ressonância (D): a ressonância pode completar a investigação, mas não justifica manter o antiepiléptico em um paciente sem critérios para tratamento.",
-    "tip": "Primeira crise sem causa e sem fator de risco (EEG, lesão, exame, sono): não trate; espere a segunda.",
-    "reference": "Tratado de Neurologia da Academia Brasileira de Neurologia, 2ª edição.",
+    "correctAnswer": 0,
+    "explanation": "A enxaqueca é diagnosticada clinicamente com base em critérios estabelecidos (IHS), dispensando exames de imagem e laboratoriais na ausência de sinais de alerta (red flags).",
+    "commentary": "Comentários sobre a resposta correta:\n(A) A enxaqueca (migrânea) típica apresenta sintomas clássicos (hemicraniana, pulsátil, associada a náuseas e fotofobia, recidivante há anos). Na ausência completa de sinais de alarme (\"red flags\", como febre, déficit focal, início súbito em trovão, edema de papila), o diagnóstico é estritamente clínico e exames complementares de imagem são desnecessários.\n\nComentários sobre os distratores:\n(B) A tomografia computadorizada de crânio não deve ser solicitada em cefaleias recorrentes típicas sem sinais de alerta ou mudança de padrão álgico.\n(C) A punção lombar é indicada na investigação de suspeitas infecciosas (meningite), hemorragia subaracnoidea de TC normal, ou hipertensão intracraniana, não se aplicando à crise migranosa típica.\n(D) O eletroencefalograma não possui sensibilidade, especificidade ou utilidade no diagnóstico da enxaqueca ou outras cefaleias primárias.",
+    "reference": "INTERNATIONAL HEADACHE SOCIETY. The International Classification of Headache Disorders, 3rd edition. Cephalalgia, 2018. | HARRISON’S Principles of Internal Medicine. 21st ed. New York: McGraw-Hill, 2022.",
     "tags": [
       "neurologia"
     ]
   },
   {
-    "id": "tp2025-28",
-    "module": "Clínica Médica",
-    "text": "Paciente do sexo masculino, 55 anos, tabagista ativo acumulando carga tabágica de 60 anos-maço. Em tomografia de tórax de baixa dose, lesão sólida, em brônquio principal direito, expansiva, com padrão de crescimento concêntrico e atelectasia do segmento broncopulmonar correspondente. Escolha o método diagnóstico mais indicado para esse caso:",
-    "options": [
-      "(A) Encaminhamento para serviço de apoio diagnóstico e terapêutico para realizar PET Scan, para definição diagnóstica.",
-      "(B) Encaminhamento para equipe de radiologia intervencionista para biopsia pulmonar transtorácica.",
-      "(C) Exame de escarro e encaminhamento para laboratório de apoio da atenção primária para citologia.",
-      "(D) Encaminhamento para serviço especializado de broncoscopia para escovado e biópsia brônquica."
-    ],
-    "correctAnswer": 3,
-    "explanation": "A broncoscopia com escovado e biópsia brônquica é o método de escolha para lesão pulmonar central/proximal de crescimento concêntrico e atelectasia.",
-    "commentary": "Trata-se de uma lesão proximal de brônquio principal direito com alto risco de origem epidermoide. Nestas condições, a abordagem endobrônquica via broncoscopia é preferencial e mais sensível/segura que punção transtorácica.",
-    "reference": "Recomendações da Sociedade Brasileira de Cirurgia Torácica, Sociedade Brasileira de Pneumologia e Tisiologia e Colégio Brasileiro de Radiologia e Diagnóstico por Imagem para o rastreamento do câncer de pulmão no Brasil – 2024",
-    "tags": [
-      "pneumologia",
-      "oncologia"
-    ]
-  },
-  {
-    "id": "tp2021-38",
-    "module": "Clínica Médica",
-    "text": "Homem, 58 anos, com antecedente de dislipidemia e tabagismo, apresenta dor epigástrica em queimação irradiada para região precordial, associada à náusea e sudorese há 7 horas. ECG: supradesnivelamento de ST em DII, DIII e AVF e infradesnivelamento em V1-V2. Evoluiu com hipotensão, dispneia intensa, sopro sistólico em foco mitral e crepitações pulmonares. A localização do IAM e possível complicação são:",
-    "options": [
-      "(A) Parede lateral; ruptura de septo interventricular.",
-      "(B) Parede ínfero-dorsal; ruptura de músculo papilar.",
-      "(C) Parede anterior; ruptura de músculo papilar.",
-      "(D) Parede inferior; ruptura de septo interventricular."
-    ],
-    "correctAnswer": 1,
-    "explanation": "O supradesnivelamento em DII, DIII e aVF representa infarto inferior do miocárdio, e o infradesnivelamento em espelho nas precordiais V1-V2 traduz acometimento dorsal concomitante (infarto ínfero-dorsal). A congestão súbita com hipotensão e o aparecimento de sopro de regurgitação mitral sela a complicação mecânica de insuficiência mitral aguda por isquemia/ruptura do músculo papilar.",
-    "commentary": "A parede inferior e dorsal recebe irrigação habitual pela coronária direita ou pela artéria circunflexa, as quais são também as exclusivas condutoras de fluxo do músculo papilar posteromedial. Sendo assim, o infarto ínfero-dorsal predispõe fortemente a lesões agudas desse músculo papilar, induzindo insuficiência mitral aguda com congestão retrógrada catastrófica na monta descrita.",
-    "reference": "ZIPES, MDP et al. Braunwald – Tratado de Doenças Cardiovasculares. 9ª ed. Rio de Janeiro: Elsevier, 2013",
-    "tags": [
-      "cardiologia",
-      "emergência"
-    ]
-  },
-  {
-    "id": "tp2020-60",
-    "module": "Clínica Médica",
-    "text": "Mulher, 35 anos, em tratamento de Artrite Reumatoide (AR) com metotrexato + anti-TNF. Clinicamente, a patologia inflamatória (AR) está em remissão, sem uso de corticoterapia há anos. Queixa-se de calafrios noturnos, emagrecimento e tosse há 3 meses. A radiografia de tórax mostra um infiltrado no ápice pulmonar direito.\n\nDefina a complicação demonstrada:",
-    "options": [
-      "(A) Neoplasia pulmonar",
-      "(B) Tuberculose pulmonar",
-      "(C) Sarcoidose",
-      "(D) Acometimento pulmonar da AR"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Paciente em uso de anti-TNF e metotrexato com febre noturna, emagrecimento, tosse por 3 meses e infiltrado apical: tuberculose pulmonar, complicação classicamente associada ao bloqueio do TNF (essencial para a formação e manutenção do granuloma).",
-    "commentary": "Neoplasia, sarcoidose e acometimento pulmonar da AR são diferenciais, mas o contexto de imunobiológico e o quadro consumptivo com lesão apical apontam para tuberculose.",
-    "reference": "Treatment of rheumatoid arthritis with tumor necrosis factor inhibitors may predispose to significant increase in tuberculosis risk: a multicenter active-surveillance report. Arthritis Rheum. 2003 Aug; 48(8): 2122-7. doi: 10.1002/art.11137. / Tuberculosis and biologics in rheumatology: A special situation. Int J Rheum Dis. 2017 Oct; 20(10): 1313-1325. doi: 10.1111/1756-185X.13129. / Tuberculosis risk and anti-tumour necrosis factor agents in rheumatoid arthritis: a critical appraisal of national registry data. Int J Rheum Dis. 2014 Sep; 17(7):716-24. doi: 10.1111/1756-185X.12375. / The Risk of Tuberculosis in Patients with Rheumatoid Arthritis Treated with Tumor Necrosis Factor-α Antagonist: A Metaanalysis of Both Randomized Controlled Trials and Registry/Cohort Studies. J Rheumatol. 2015 Dec;42(12):2229-37. doi: 10.3899/jrheum.150057. Epub 2015 Oct 15.",
-    "tags": [
-      "pneumologia",
-      "tuberculose",
-      "imunobiológicos"
-    ]
-  },
-  {
-    "id": "tp2023-63",
+    "id": "tp2024-70",
     "module": "Cirurgia",
-    "text": "No trauma esplênico grau I, com estabilidade hemodinâmica e líquido na cavidade estimado em 500mL, que ocorreu 6 horas antes do atendimento, qual o tratamento recomendado?",
+    "text": "João, 7 anos, queda de bicicleta com fratura diafisária de rádio e ulna. Desvio angular pequeno (<10-15 graus). Pulsos e nervos OK. Qual a conduta?",
     "options": [
-      "(A) Tratamento não-operatório em leito intensivo.",
-      "(B) Punção abdominal.",
-      "(C) Laparotomia com esplenectomia.",
-      "(D) Laparoscopia diagnóstica e esplenectomia, se necessário."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Paciente com lesão esplênica grau I (hematoma ou laceração pequenos e superficiais), estável hemodinamicamente, avaliado 6 horas após o trauma, com cerca de 500 mL de líquido livre. Em pacientes estáveis, a maioria das lesões de baço para de sangrar sozinha, e o tratamento não operatório é o padrão, preservando o órgão e sua função imunológica.\n\nEsse tratamento exige vigilância: internação em local com monitorização (UTI ou unidade semi-intensiva), exames seriados (hemoglobina e exame abdominal), repouso e centro cirúrgico disponível. Se o paciente ficar instável ou tiver sinais de peritonite, indica-se a cirurgia; em casos selecionados com extravasamento de contraste, a angioembolização é uma alternativa.",
-    "commentary": "Punção abdominal (B): a paracentese ou o lavado peritoneal só mostram que há sangue, o que a imagem já mostrou; não tratam nem mudam a conduta em paciente estável.\n\nLaparotomia com esplenectomia (C): é indicada em paciente instável ou com peritonite, não em lesão grau I estável.\n\nLaparoscopia com esplenectomia (D): procedimento invasivo sem indicação em paciente estável com lesão leve; a esplenectomia desnecessária ainda expõe a infecções graves por germes encapsulados.",
-    "tip": "Trauma de baço com paciente estável = tratamento não operatório com monitorização; instabilidade = cirurgia.",
-    "reference": "Sabiston: textbook of surgery; 21 edition, 2022; editora Elsevier",
-    "tags": [
-      "trauma"
-    ]
-  },
-  {
-    "id": "tp2022-75",
-    "module": "Cirurgia",
-    "text": "Homem de 18 anos com dor no epigástrio que migrou para FID, defesa abdominal e descompressão brusca positiva. Leucocitose 17.000. Próximo passo?",
-    "options": [
-      "(A) Tomografia de abdome.",
-      "(B) Indicar apendicectomia.",
-      "(C) Ultrassonografia de abdome.",
-      "(D) Antibiótico e observação."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Homem jovem com dor que começou no epigástrio e migrou para a fossa ilíaca direita, náuseas, hiporexia, febre, defesa e descompressão brusca dolorosa na FID, leucocitose de 17.000 com desvio: é apendicite aguda clássica.\n\nPelo escore de Alvarado, ele soma pelo menos 8 pontos (migração da dor, anorexia, náuseas, dor em FID, descompressão, febre e leucocitose), o que torna o diagnóstico clínico muito provável. Em homem jovem com quadro típico, exames de imagem não acrescentam e só atrasam a cirurgia; a conduta é apendicectomia, com antibiótico profilático.\n\nA imagem fica para os casos duvidosos (escore intermediário), mulheres em idade fértil, idosos, crianças e suspeita de complicação.",
-    "commentary": "Tomografia de abdome (A): tem ótima acurácia, mas é desnecessária quando a clínica já confirma o diagnóstico; atrasa a cirurgia e irradia o paciente.\n\nUltrassonografia (C): útil em crianças, gestantes e casos duvidosos; aqui não muda a conduta.\n\nAntibiótico e observação (D): o tratamento só com antibiótico é opção estudada para apendicite não complicada confirmada por imagem, com maior recorrência; com peritonismo e sem imagem, não é a conduta indicada.",
-    "tip": "Homem jovem, dor migratória para FID, peritonismo e leucocitose (Alvarado alto): cirurgia, sem precisar de imagem.",
-    "reference": "JAMA 2021 - Acute Appendicitis Review.",
-    "tags": [
-      "gastroenterologia",
-      "emergência"
-    ]
-  },
-  {
-    "id": "tp2021-74",
-    "module": "Cirurgia",
-    "text": "Homem, 68 anos, refere jato urinário fraco e entrecortado, esforço para iniciar micção e noctúria há 6 meses. Antígeno prostático específico (PSA) do ano anterior de 1,2 ng/mL. PSA atual = 2,6 ng/mL. Toque retal: próstata com dimensões de aproximadamente 40 g de peso e consistência fibroelástica. Para descartar neoplasia maligna da próstata, deve-se solicitar inicialmente:",
-    "options": [
-      "(A) Tomografia computadorizada de abdome total.",
-      "(B) Ressonância magnética multiparamétrica.",
-      "(C) Ultrassom de abdome total e fosfatase alcalina.",
-      "(D) Cintilografia com gálio-67."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Paciente com sintomas miccionais obstrutivos moderados, próstata de textura normal elástica ao toque, porém exibindo cinética de elevação rápida do PSA (ultrapassando velocidade limite aceitável de 0,75 ng/mL ao ano) tem indicação inicial de afastar adenocarcinoma por Ressonância Magnética Multiparamétrica (RMmp).",
-    "commentary": "Apesar de exibir valor absoluto do PSA atual abaixo de 4,0 ng/mL, o paciente em tela apresenta critério de alta suspeição pela taxa de velocidade anual de ascensão sérica do antígeno prostático (que saltou de 1,2 para 2,6 ng/mL em apenas doze meses, um ganho bem acima do limite aceitável anualizado de 0,75 ng/mL). A conduta atual recomendada pelas sociedades de urologia e oncologia indica a feitura prévia de Ressonância Magnética Multiparamétrica (RMmp) para detecção de sítios suspeitos e cálculo do PI-RADS, permitindo orientar com precisão a posterior biópsia prostática dirigida. Tomografia e ultrassonografia simples de vias não dispõem de resolução ou acurácia estrutural fina para diagnóstico precoce de câncer intraprostático.",
-    "reference": "Campbells Urology. 9th Edition. New York: Saunders Company, 2007. Zerati Filho M, Nardozza Jr A, Reis RB. Urologia fundamental. São Paulo: Planmark, 2010.",
-    "tags": [
-      "urologia",
-      "oncologia",
-      "ambulatório"
-    ]
-  },
-  {
-    "id": "tp2019-70",
-    "module": "Cirurgia",
-    "text": "Homem, 20 anos, vítima de capotamento de automóvel há 30 minutos, com escore de Glasgow = 7, com equimose periorbitária bilateral e trauma complexo de face com sangramento intenso.\n\nPA = 120 x 90 mmHg, FC = 100 bpm e FR = 18 ipm, saturação em ar ambiente de 96%. A conduta é:",
-    "options": [
-      "(A) Pela dificuldade de intubação e riscos envolvidos, a melhor opção é a cricotiroidostomia.",
-      "(B) Como o paciente está estável, pelo risco da intubação poderá receber oxigênio em máscara ou cateter.",
-      "(C) Pelo risco de lesão da coluna cervical, a intubação nasotraqueal deverá ser realizada cuidadosamente.",
-      "(D) Para garantir uma via aérea definitiva, deve-se realizar a traqueostomia de emergência."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Trauma grave com Glasgow 7 exige via aérea definitiva. Há trauma complexo de face com sangramento intenso e sinais de fratura de base de crânio (equimose periorbitária bilateral): a intubação orotraqueal é difícil e a nasotraqueal está contraindicada.\n\nNessa situação, a via aérea cirúrgica indicada na emergência é a cricotireoidostomia.",
-    "commentary": "Oxigênio por máscara não protege a via aérea com Glasgow ≤ 8. A intubação nasotraqueal é contraindicada na suspeita de fratura de base de crânio. A traqueostomia não é procedimento de emergência no adulto.",
-    "reference": "Advanced Trauma Life Support. 10ª ed. 2018",
-    "tags": [
-      "cirurgia",
-      "trauma",
-      "via aérea"
-    ]
-  },
-  {
-    "id": "tp2024-91",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Puérpera (45 dias) com COVID-19 leve. Preocupada com a amamentação exclusiva. Qual a orientação?",
-    "options": [
-      "(A) Interromper amamentação; usar fórmula.",
-      "(B) Continuar amamentando com precauções de higiene (máscara e lavagem das mãos).",
-      "(C) Amamentar apenas se estiver vacinada.",
-      "(D) Amamentar apenas se o bebê já tiver sido exposto."
-    ],
-    "correctAnswer": 1,
-    "explanation": "O leite materno não é considerado meio de passagem do SARS-CoV-2 para o bebê, e amamentar continua trazendo benefícios ao bebê, inclusive anticorpos. Por isso Ministério da Saúde, OMS e sociedades de pediatria recomendam que a mãe com COVID-19, suspeita ou confirmada, continue amamentando.\n\nO cuidado é evitar a transmissão por gotículas: usar máscara durante as mamadas, higienizar as mãos antes de pegar a criança e higienizar superfícies. Essa orientação vale independentemente de a mãe estar vacinada.",
-    "commentary": "Interromper e usar fórmula (A): suspender o aleitamento não protege o bebê, já que o leite não transmite o vírus, e o priva dos benefícios da amamentação.\n\nAmamentar só se vacinada (C): a recomendação de manter o aleitamento não depende do estado vacinal da mãe.\n\nAmamentar só se o bebê já foi exposto (D): não há base para essa restrição; com as medidas de higiene, a amamentação deve continuar em qualquer caso.",
-    "tip": "Mãe com COVID-19: continua amamentando, com máscara e mãos lavadas.",
-    "reference": "Centers for Disease Control and Prevention. (2021). Care for Breastfeeding People: Interim Guidance on Breastfeeding and Breast Milk Feeds in the Context of COVID-19. CDC. World Health Organization. (2020). Breastfeeding and COVID19: Scientific Brief. WHO. American Academy of Pediatrics. (2021). Breastfeeding During the COVID-19 Pandemic. AAP. Ministério da Saúde do Brasil (2021) Campanha incentiva o aleitamento materno no Brasil",
-    "tags": [
-      "puerpério",
-      "aleitamento"
-    ]
-  },
-  {
-    "id": "tp2022-83",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher na menacme com ciclos regulares apresenta: Estradiol 300pg/mL, Progesterona 450ng/dL (fase lútea ref: 183-2390), LH 8,0 UI/L, FSH 8,0 UI/L. Podemos afirmar que ela:",
-    "options": [
-      "(A) Está menstruada.",
-      "(B) Está grávida.",
-      "(C) Teve ovulação.",
-      "(D) Está no climatério pré-menopausal."
+      "(A) Imobilização com tipoia simples.",
+      "(B) Redução aberta e placas.",
+      "(C) Redução fechada e imobilização gessada axilopalmar.",
+      "(D) Redução fechada e haste intramedular."
     ],
     "correctAnswer": 2,
-    "explanation": "A chave está na progesterona: 450 ng/dL fica na faixa da fase lútea (183 a 2390 ng/dL), muito acima do valor da fase folicular. A progesterona alta só é produzida pelo corpo lúteo, que se forma a partir do folículo depois da ovulação. Então essa mulher ovulou e está na segunda metade do ciclo.\n\nOs demais exames combinam: estradiol dentro do esperado para a fase lútea e LH e FSH baixos (8 UI/L), sem pico ovulatório e sem a elevação típica da falência ovariana.",
-    "commentary": "Está menstruada (A): na menstruação, estradiol e progesterona estão baixos, por causa da queda do corpo lúteo; aqui a progesterona está em nível lúteo.\n\nEstá grávida (B): a progesterona alta não basta para afirmar gravidez, que é feita pela dosagem do beta-hCG, não informada.\n\nClimatério pré-menopausal (D): a perda da função ovariana eleva as gonadotrofinas, principalmente o FSH; com FSH de 8 UI/L e ciclos regulares, não há indício de climatério.",
-    "tip": "Progesterona em nível de fase lútea = houve ovulação (só o corpo lúteo produz progesterona em quantidade).",
-    "reference": "Tratado de Ginecologia FEBRASGO, 2019.",
+    "explanation": "Criança de 7 anos com fratura diafisária dos dois ossos do antebraço, fechada, sem lesão vascular ou nervosa e com pouca angulação (5 graus em AP e 10 graus em perfil). Em crianças pequenas, o osso tem grande capacidade de remodelação, e desvios desse tamanho estão dentro do limite aceitável para a idade.\n\nPor isso, o tratamento é conservador: redução fechada, se necessário, para alinhar a rotação e a angulação, e imobilização com gesso axilopalmar (braquiopalmar), com o cotovelo fletido, para bloquear a pronação e a supinação. O seguimento com radiografias nas primeiras semanas confirma que o alinhamento se mantém. A cirurgia fica para fraturas expostas, instáveis ou com desvio inaceitável após redução.",
+    "commentary": "Tipoia simples (A): não imobiliza a fratura dos dois ossos nem controla a rotação; o desvio pode aumentar e consolidar em posição ruim.\n\nRedução aberta com placas (B): é reservada a adolescentes, fraturas expostas ou que não se mantêm reduzidas; numa criança de 7 anos com desvio aceitável, expõe a riscos sem benefício.\n\nRedução fechada com haste intramedular (D): a haste flexível é a opção cirúrgica para fraturas instáveis ou com desvio inaceitável, o que não é o caso.",
+    "tip": "Fratura de antebraço em criança com pouco desvio: redução fechada e gesso axilopalmar; a remodelação corrige o resto.",
+    "reference": "Beaty JH, Kasser JR. In Rockwood and Wilkins (ed). Fractures in Children. Baltimore: Lippincott Williams and Wilkins, 2001. Manual de trauma ortopédico / SBOT - Sociedade Brasileira de Ortopedia e Traumatologia; coordenadores, Isabel Pozzi... [et al.] - São Paulo: SBOT - Sociedade Brasileira de Ortopedia e Traumatologia, 2011.",
     "tags": [
-      "endocrinologia"
+      "ortopedia",
+      "cirurgia pediátrica"
     ]
   },
   {
-    "id": "tp2025-86",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher de 33 anos, nuligesta, teve a menarca aos 13 anos. Refere vida sexual activa, em uso regular de preservativo. Relata que apresentava cólicas menstruais leves que melhoravam com analgésicos, mas há 2 anos as dores pioraram e atualmente não melhoram nem com anti-inflamatórios. Apresenta queixa de dispareunia de profundidade, que se iniciou há 1 ano. Diante do quadro descrito, assinale a conduta correta:",
+    "id": "tp2022-61",
+    "module": "Cirurgia",
+    "text": "Paciente de 25 anos, masculino, será submetido a correção de hérnia inguinal direita por via convencional - inguinotomia. Visando a ligadura dos vasos superficiais do subcutâneo, o fechamento da aponeurose e o fechamento da pele, quais seriam os fios utilizados, respectivamente?",
     "options": [
-      "(A) Ultrassonografia transvaginal",
-      "(B) Introdução de anticoncepcional oral",
-      "(C) Videolaparoscopia diagnóstica",
-      "(D) Tomografia computadorizada de pelve"
+      "(A) Algodão, PDS (polidioxanona), monocryl (poliglecaprona 25).",
+      "(B) Vicryl (poliglactina 370), nylon, monocryl (poliglecaprona 25).",
+      "(C) PDS (polidioxanona), monocryl (poligecaprina 25), algodão.",
+      "(D) Catgut, monocryl (poliglecaprona 25), nylon."
     ],
     "correctAnswer": 0,
-    "explanation": "A Ultrassonografia Transvaginal (com preparo intestinal prévio) consagra-se como o método propedêutico não invasivo de primeira escolha para iniciar a propedêutica de dismenorreia secundária refratária.",
-    "commentary": "A progressão severa adquirida de dismenorreia refratária aos analgésicos e anti-inflamatórios em associação com dispareunia de profundidade sugere fortemente a hipótese de endometriose profunda infiltrativa (dismenorreia secundária). No itinerário de investigação diagnóstica inicial, a Ultrassonografia Transvaginal especializada com preparo intestinal constitui o primeiro exame complementar de imagem de escolha, dotado de alta sensibilidade diagnóstica. Métodos puramente empíricos terapêuticos ou videolaparoscopia direta ficam preteridos até o término do estudo por imagem.",
-    "reference": "HOFFMAN, Barbara L. et al. Ginecologia de Williams. Grupo A, 2014; ACOG Practice Bulletin: Diagnosis and Management of Endometriosis, 2021.",
+    "explanation": "Algodão para vasos superficiais, PDS (fio de longa absorção) para aponeurose e Monocryl para sutura intradérmica na pele.",
+    "commentary": "Para ligaduras superficiais, o algodão é tradicional. A aponeurose exige um fio que suporte tração por tempo prolongado (PDS). Na pele, o monocryl evita cicatrizes exageradas.",
+    "reference": "Sabiston - Tratado de Cirurgia - 18ª Ed.",
     "tags": [
-      "ginecologia geral",
-      "dor pélvica"
+      "cirurgia geral",
+      "suturas"
     ]
   },
   {
-    "id": "tp2021-93",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher, 34 anos, veio à consulta médica de rotina. Na anamnese, referiu que seu pai havia apresentado câncer de mama aos 40 anos de idade. O exame das mamas foi normal. A conduta é indicar:",
+    "id": "tp2025-70",
+    "module": "Cirurgia",
+    "text": "Homem, cisgênero, 60 anos, hipertenso, comparece ao serviço de urgência com dor intensa e súbita em membro inferior direito há 6 horas. Ao exame: ausculta cardíaca com bulhas arrítmicas; membro inferior direito com extremidade fria, pálida, sem pulsos palpáveis e sem alteração de trofismo. Qual conduta mais adequada?",
     "options": [
-      "(A) Mamografia imediatamente e controle anual.",
-      "(B) Mamografia anual a partir de 40 anos.",
-      "(C) Mamografia bianual a partir dos 40 anos.",
-      "(D) Ultrassom de mamas imediatamente."
-    ],
-    "correctAnswer": 0,
-    "explanation": "A presença de câncer de mama em parente masculino de primeiro grau, independentemente da idade do diagnóstico de parentesco, eleva de maneira acentuada a susceptibilidade familiar a mutações hereditárias (ex: genes BRCA1/2), enquadrando a paciente no grupo de alto risco. O rastreamento de alto risco com mamografia deve iniciar aos 30 anos de idade, ou 10 anos antes do tumor do parente jovem mais próximo (nunca antes dos 25 anos). Como a paciente tem 34 anos, deve iniciar mamografia anual imediatamente.",
-    "commentary": "Grupos populacionais de alto risco para neoplasia de mama devem receber rastreamento anual individualizado antecipado e diferenciado. O câncer de mama no pai (masculino) confere alto risco hereditário para a prole. Recomenda-se iniciar a mamografia anual retrospectivamente aos 30 anos ou estimando dez anos antes do aparecimento do câncer familiar primário de maior juventude relevante. Tendo o pai recebido o diagnóstico aos 40 anos, a paciente deve iniciar sua mamografia agora (imediatamente), aos 34 anos, de forma anual.",
-    "reference": "Diretrizes para a detecção precoce do câncer de mama no Brasil, INCA, 2015; Cadernos de Atenção Básica de Controle dos Cânceres nº 13, Ministério da Saúde.",
-    "tags": [
-      "mastologia",
-      "rastreamento",
-      "câncer de mama"
-    ]
-  },
-  {
-    "id": "tp2019-100",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher, 33 anos de idade, apresenta citologia cervical compatível com lesão intraepitelial de baixo grau (LIEBG/LSIL).\n\nDe acordo com as orientações do Instituto Nacional do Câncer (INCA), como deve ser o seguimento desta mulher?",
-    "options": [
-      "(A) Repetir a citologia imediatamente e, se persistir a alteração, encaminhar para colposcopia.",
-      "(B) Repetir a citologia em 6 meses e, se persistir a alteração, encaminhar para colposcopia.",
-      "(C) Ser encaminhada para a colposcopia imediata.",
-      "(D) Colher exame de detecção de DNA-HPV."
+      "(A) Analgesia e anti-inflamatórios, aguardando melhora clínica para posterior avaliação cirúrgica.",
+      "(B) Heparinização plena e angiotomografia do membro para decisão terapêutica com urgência.",
+      "(C) Doppler arterial e fasciotomia profilática do membro para evitar síndrome compartimental.",
+      "(D) Repouso físico e anticoagulação plena por três meses."
     ],
     "correctAnswer": 1,
-    "explanation": "Pelas diretrizes do INCA (2016) para rastreamento citológico, a lesão intraepitelial de baixo grau em mulheres com 25 anos ou mais deve ser seguida com repetição da citologia em 6 meses. Se a alteração persistir, a paciente é encaminhada para colposcopia.",
-    "commentary": "A colposcopia imediata é para lesões de alto grau. Observação: com a nova diretriz de rastreamento por DNA-HPV (INCA, 2024), a conduta passa a depender do resultado do teste de HPV nos locais que já a adotaram.",
-    "reference": "Diretrizes brasileiras para o rastreamento do câncer do colo do útero / Instituto Nacional de Câncer. Coordenação Geral de Ações Estratégicas. Divisão de Apoio à Rede de Atenção Oncológica. – Rio de Janeiro: INCA, 2011. ISBN 978-85-7318-184-5",
+    "explanation": "Na suspeita clínica de oclusão arterial aguda de membro (isquemia com viabilidade preservada), a conduta imediata consiste em heparinização plena (para cessar propagação do trombo) e angiotomografia urgente.",
+    "commentary": "O doente apresenta quadro clássico de Oclusão Arterial Aguda de membro inferior, de importante etiologia provável embólica, sugerida pela associação de dor súbita severa e ritmo cardíaco arrítmico (sugestivo de fibrilamento atrial). A imediata heparinização sistêmica é indispensável para obstar a progressão de novos coágulos na vasculatura. A angiotomografia cervical/abdominal/ilíaco-femoral é fundamental na urgência para programar o desfecho operatório (trombectomia aberta, embolectomia de Fogarty ou terapia endovascular). Medidas conservadoras puras com repouso, sem o tratamento reconstrutivo imediato, estendem o tempo de anóxia tecidual à necrose irrecuperável.",
+    "reference": "Rutherfords Vascular Surgery and Endovascular Therapy, 9ª ed., 2018.",
     "tags": [
-      "ginecologia",
-      "rastreamento",
-      "câncer de colo uterino"
+      "cirurgia vascular",
+      "emergência"
     ]
   },
   {
-    "id": "tp2024-119",
-    "module": "Saúde Coletiva",
-    "text": "Em comunidades pobres, qual a melhor intervenção para apoiar uma mãe com dificuldades na amamentação?",
+    "id": "tp2026-71",
+    "module": "Cirurgia",
+    "text": "Uma mulher de 63 anos, obesa (IMC 32kg/m²), procura atendimento na UBS com queixa de dor, sensação de peso e edema em membros inferiores ao final do dia, com melhora ao elevar as pernas. Ao exame físico observam-se varizes bilaterais, edema maleolar e hiperpigmentação na região do tornozelo. Diante deste quadro clínico, qual o exame complementar mais indicado para avaliar a causa estrutural da doença?",
     "options": [
-      "Oferecer apoio emocional e orientação sobre técnicas de amamentação.",
-      "Introduzir alimentos sólidos precocemente (antes dos 6 meses).",
-      "Fornecer fórmulas infantis industrializadas como primeira opção.",
-      "Substituir o leite materno por leite de vaca in natura."
+      "(A) Venografia contrastada dos membros inferiores.",
+      "(B) Pletismografia venosa dos membros inferiores.",
+      "(C) Angiotomografia venosa dos membros inferiores.",
+      "(D) Ultrassonografia venosa com Doppler dos membros inferiores."
     ],
-    "correctAnswer": 0,
-    "explanation": "A maior parte das dificuldades na amamentação (pega incorreta, posição inadequada, dor mamilar, sensação de pouco leite, insegurança) é resolvida com aconselhamento: ouvir a mãe, observar a mamada, corrigir a técnica e reforçar a confiança dela.\n\nEm comunidades com poucos recursos, manter o aleitamento exclusivo até os 6 meses é ainda mais valioso: o leite materno é gratuito, sempre disponível, sem risco de contaminação na preparação e protege contra diarreia e infecções respiratórias. Por isso a intervenção indicada é apoio emocional somado a orientação prática, de preferência com acompanhamento pela equipe da atenção básica.",
-    "commentary": "Introduzir sólidos antes dos 6 meses (B): diminui a sucção e, com ela, a produção de leite, e aumenta o risco de infecções e de alergias; a alimentação complementar começa aos 6 meses.\n\nFórmula como primeira opção (C): desestimula o aleitamento, é cara para a família e, em locais com água e higiene precárias, aumenta o risco de diluição errada e contaminação.\n\nLeite de vaca no lugar do leite materno (D): não é adequado para o lactente pequeno, pois tem excesso de proteína e sódio e pouco ferro, favorecendo anemia e sobrecarga renal.",
-    "tip": "Dificuldade para amamentar: o tratamento é aconselhamento (pega, posição e confiança), não fórmula.",
-    "reference": "Ministério da Saúde (Brasil). \"Saúde da Criança: Nutrição Infantil - Aleitamento Materno e Alimentação Complementar.\" Cadernos de Atenção Básica, n. 33. Brasília: Ministério da Saúde, 2015. Rede IBFAN Brasil. \"Manual de Aconselhamento em Amamentação.\" São Paulo: IBFAN Brasil, 2012. Sociedade Brasileira de Pediatria (SBP). \"Aleitamento Materno: Manual de Orientação.\" 4ª edição, 2018. World Health Organization (WHO) e Fundo das Nações Unidas para a Infância (UNICEF). \"Estratégia Global para a Alimentação de Lactentes e Crianças de Primeira Infância.\" Brasília: Ministério da Saúde, 2003.",
+    "correctAnswer": 3,
+    "explanation": "A ultrassonografia venosa com Doppler é o método de escolha (padrão-ouro não invasivo) para o diagnóstico e avaliação anatomofuncional da insuficiência venosa crônica.",
+    "commentary": "A ultrassonografia venosa com Doppler (duplex scan) é o exame complementar de primeira linha. Permite a avaliação anatômica (presença de trombos, calibres venosos) e funcional (mapeamento do refluxo valvular no sistema venoso superficial, profundo e perfurante) com excelente acurácia, de forma não invasiva e sem contraste. Sobre os distratores: (A) A venografia retrógrada contrastada é invasiva e hoje reservada apenas para fins terapêuticos de exceção ou anatomia complexa. (B) A pletismografia avalia a hemodinâmica global do esvaziamento venoso, mas não provê detalhes anatômicos estruturais específicos. (C) A angiotomografia venosa é reservada para investigação de eixos venosos ilíaco-cavais (ex: Síndrome de May-Thurner) e não como exame inicial estrutural periférico.",
+    "reference": "Eberhardt RT, Raffetto JD. Chronic Venous Insufficiency. Circulation. 2014;130:333-346. Wittens C et al. Management of Chronic Venous Disease: Clinical Practice Guidelines of the European Society for Vascular Surgery. Eur J Vasc Endovasc Surg. 2015. Gloviczki P et al. The care of patients with varicose veins and associated chronic venous diseases. J Vasc Surg. 2011.",
     "tags": [
-      "aleitamento materno",
-      "saúde da criança",
-      "puericultura"
+      "vascular",
+      "insuficiência venosa",
+      "exames"
     ]
   },
   {
-    "id": "tp2022-109",
-    "module": "Saúde Coletiva",
-    "text": "Gestante de 32 semanas com HIV positivo recém-descoberto. CV desconhecida. Sobre as recomendações do Ministério da Saúde para o parto:",
+    "id": "tp2024-83",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Mulher negra, 54 anos, menopausa há 15 anos. Asma grave (corticoide crônico), hipertensa (tiazídico), insônia (benzodiazepínico). Tabagista, sedentária. Mãe/avó com osteoporose. Fatores de risco para osteoporose presentes:",
     "options": [
-      "(A) Parto natural induzido na 34ª semana.",
-      "(B) Cesárea eletiva após a 38ª semana e AZT injetável 3h antes.",
-      "(C) Parto induzido apenas se ultrapassar a 40ª semana com AZT injetável.",
-      "(D) Cesárea eletiva após 34 semanas."
+      "(A) Raça negra, uso de benzodiazepínico e sedentarismo.",
+      "(B) Menopausa precoce, antecedente familiar de osteoporose, tabagismo.",
+      "(C) Uso de benzodiazepínico, antecedente familiar e obesidade.",
+      "(D) História familiar de câncer de mama, sedentarismo e uso crônico de corticoide."
     ],
     "correctAnswer": 1,
-    "explanation": "Gestante com HIV descoberto com 32 semanas e sem carga viral: a via de parto é decidida pela carga viral a partir de 34 semanas. Se nesse momento ela não é conhecida, ou passa de 1.000 cópias/mL, o Ministério da Saúde indica cesárea eletiva a partir de 38 semanas, antes do início do trabalho de parto e com bolsa íntegra, porque isso reduz a transmissão vertical.\n\nNessas gestantes, o AZT (zidovudina) intravenoso é iniciado pelo menos 3 horas antes da cesárea (ou no início do trabalho de parto) e mantido até o clampeamento do cordão. Ao mesmo tempo, ela deve começar já a terapia antirretroviral e colher a carga viral, que pode mudar o planejamento se vier baixa a tempo.",
-    "commentary": "Parto natural induzido com 34 semanas (A): indução prematura não tem indicação, e o parto vaginal só é opção com carga viral abaixo de 1.000 cópias/mL; o dolutegravir oral não substitui o AZT intravenoso no parto.\n\nIndução só após 40 semanas (C): com carga viral desconhecida, a via indicada é a cesárea eletiva, não a espera pelo trabalho de parto.\n\nCesárea eletiva após 34 semanas (D): antecipar a cesárea traria riscos de prematuridade; ela é programada a partir de 38 semanas.",
-    "tip": "HIV na gestação com carga viral desconhecida ou acima de 1.000 após 34 semanas: cesárea eletiva com 38 semanas + AZT IV 3 h antes.",
-    "reference": "Protocolo Transmissão Vertical HIV/Sífilis/Hepatites, 2022.",
+    "explanation": "A paciente tem 54 anos e está na menopausa há 15 anos, ou seja, parou de menstruar por volta dos 39 anos: menopausa precoce (antes dos 40), que expõe o osso a longo período sem estrogênio. Somam-se o tabagismo e a história de osteoporose na mãe e na avó, todos fatores de risco reconhecidos.\n\nO uso crônico de corticoide sistêmico também é fator de risco importante, mas a única alternativa que reúne apenas fatores verdadeiros é a que cita menopausa precoce, história familiar e tabagismo. Ela tem indicação de densitometria óssea.",
+    "commentary": "Raça negra e benzodiazepínico (A): mulheres negras têm, em média, maior massa óssea, o que é proteção, não risco. O benzodiazepínico aumenta o risco de quedas e fraturas, mas não é fator de risco para baixa massa óssea; sedentarismo também não completa a alternativa.\n\nObesidade (C): o caso não descreve obesidade, e o baixo peso (IMC abaixo de 18,5) é que se associa a osteoporose; o benzodiazepínico, como dito, não entra na lista.\n\nHistória familiar de câncer de mama (D): não tem relação com a massa óssea; o corticoide crônico é fator de risco, mas a alternativa traz um item errado.",
+    "tip": "Menopausa antes dos 40, cigarro, corticoide, baixo peso e osteoporose ou fratura de quadril na família: fatores de risco para osteoporose.",
+    "reference": "Manual brasileiro de osteoporose: orientações práticas para os profissionais de saúde / organização Adriana Orcesi Pedro , Perola Grinberg Plapler , Vera Lúcia Szejnfeld - 1. ed. - São Paulo: Editora Clannad, 2021, ISBN 978-65-89832-00-3",
+    "tags": [
+      "climatério",
+      "osteoporose"
+    ]
+  },
+  {
+    "id": "tp2023-88",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "26 anos, secundigesta com 1 abortamento anterior há 3 anos, portadora do vírus HIV, em uso regular de tenofovir, lamivudina e dolutegravir. Apresenta carga viral menor que 1000 cópias/mL com 36 semanas, tendo indicação de zidovudina intravenosa até o clampeamento do cordão. Apresentação cefálica. A conduta em relação ao parto é:",
+    "options": [
+      "(A) Interromper por cesárea com 39 semanas.",
+      "(B) Induzir com ocitocina na 37ª semana.",
+      "(C) Aguardar pelo parto vaginal.",
+      "(D) Iniciar prostaglandina via vaginal com 37 semanas."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pelo protocolo do Ministério da Saúde para prevenção da transmissão vertical do HIV, a via de parto é decidida pela carga viral medida a partir de 34 semanas. Quando ela está inferior a 1.000 cópias/mL, a cesariana eletiva não reduz de forma relevante a transmissão, e a via de parto segue a indicação obstétrica.\n\nEsta gestante usa a terapia antirretroviral corretamente, tem carga viral inferior a 1.000 cópias/mL com 36 semanas e feto cefálico, então o correto é aguardar o trabalho de parto espontâneo e o parto vaginal. A cesariana nas mulheres vivendo com HIV tem mais complicações pós-operatórias e só é eletiva quando a carga viral é igual ou maior que 1.000 cópias/mL ou desconhecida.",
+    "commentary": "Cesárea com 39 semanas (A): a cesariana eletiva por HIV fica para carga viral igual ou maior que 1.000 cópias/mL ou desconhecida após 34 semanas (nesse caso, programada com 38 semanas), não para esta paciente.\n\nIndução com ocitocina na 37ª semana (B): não há indicação obstétrica para antecipar o parto; o HIV controlado não justifica indução.\n\nProstaglandina vaginal com 37 semanas (D): da mesma forma, não há motivo para preparar o colo e induzir; o caminho é esperar o trabalho de parto espontâneo.",
+    "tip": "HIV na gestação: carga viral abaixo de 1.000 após 34 semanas = parto vaginal; acima ou desconhecida = cesárea eletiva.",
+    "reference": "Ministério da saúde. Protocolo clínico e diretrizes terapêuticas para prevenção da transmissão vertical de hiv, sífilis e hepatites virais. Página 108. 2022. Disponível em https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_hiv_sifilis_hepatites.pdf",
     "tags": [
       "obstetrícia",
-      "infectologia"
+      "infecções"
     ]
   },
   {
-    "id": "tp2021-108",
-    "module": "Saúde Coletiva",
-    "text": "No primeiro mês de epidemia de febre amarela, registraram-se 20 casos numa comunidade indígena composta por 500 indivíduos. No mesmo período, 5 índios morreram em consequência da doença. As taxas de ataque/incidência, de mortalidade e de letalidade dessa doença neste período, considerando a base de 100 indivíduos, foram respectivamente de:",
+    "id": "tp2022-96",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Após a ovulação, o corpo lúteo produz progesterona. Na evolução da gestação, qual estrutura assume essa produção a partir da 12ª semana?",
     "options": [
-      "(A) 4; 1; 25",
-      "(B) 25; 1; 4",
-      "(C) 4; 25; 1",
-      "(D) 25; 4; 1"
+      "(A) Ovário.",
+      "(B) Placenta.",
+      "(C) Cordão umbilical.",
+      "(D) Colo uterino."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A placenta torna-se o principal local de produção de progesterona após o primeiro trimestre (transição lúteo-placentária).",
+    "commentary": "A partir da 12ª semana, a placenta assume a produção hormonal necessária para a manutenção da gravidez.",
+    "reference": "Febrasgo.",
+    "tags": [
+      "obstetrícia",
+      "fisiologia"
+    ]
+  },
+  {
+    "id": "tp2021-88",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Mulher, com idade gestacional de 32 semanas, chega à emergência com dor abdominal de início súbito, contínua, associada a sangramento transvaginal de coloração escura. Traz ultrassom do dia anterior mostrando feto vivo e placenta corporal posterior. Exame físico: PA = 160 x 90 mmHg, feto longitudinal, pélvico, BCF = 110 bpm constante, útero hipertônico, colo fechado. A conduta é:",
+    "options": [
+      "(A) Cesárea imediata.",
+      "(B) Conduta expectante.",
+      "(C) Inibição de trabalho de parto.",
+      "(D) Indução do trabalho de parto."
     ],
     "correctAnswer": 0,
-    "explanation": "As taxas calculadas em porcentagem (base de 100 indivíduos) são:\n1) Taxa de ataque (incidência no surto) = (20 casos / 500 expostos) * 100 = 4%.\n2) Taxa de mortalidade = (5 óbitos / 500 indivíduos sob risco) * 100 = 1%.\n3) Taxa de letalidade = (5 óbitos / 20 doentes) * 100 = 25%.",
-    "commentary": "Os coeficientes epidemiológicos medem distintos atributos da doença:\n- Taxa de Ataque estima a incidência cumulativa numa população exposta síncrona durante período epidêmico: 20/500 = 0,04 (ou 4%).\n- Taxa de Mortalidade estima a proporção absoluta sobre a população exposta total de quem veio a morrer daquela causa: 5/500 = 0,01 (ou 1%).\n- Taxa de Letalidade avalia o potencial de gravidade ou agressividade clínica do agravo (óbitos entre os doentes aferidos): 5/20 = 0,25 (ou 25%).",
-    "reference": "ROUQUAYROL, M. Z. & GURGEL, M. Epidemiologia & saúde. 7. ed. Rio de Janeiro: Medbook, 2013.",
+    "explanation": "O quadro de dor abdominal contínua súbita, hipertonia uterina (útero lenhoso), elevação da pressão arterial e sofrimento fetal agudo (BCF 110 bpm fixo) com sangramento escuro é típico de Descolamento Prematuro de Placenta (DPP). Sendo um feto vivo com sofrimento agudo e sem parto vaginal iminente, indica-se a cesariana imediata.",
+    "commentary": "A suspeita clínica de DPP é essencialmente clínica (dor abdominal súbita intensa contínua + hipertonia uterina + sangramento escuro). Sendo o feto vivo, e na presença de sofrimento fetal agudo sem parto vaginal iminente (no caso o colo está impérvio e fechado), a conduta prioritária é a resolução cirúrgica por cesariana rápida, precedida de amniotomia que reduz a hipertensão intraútero e evita infiltração miometrial (útero de Couvelaire) e coagulação intravascular disseminada.",
+    "reference": "Fernandes CE, Silva de Sá MF. Tratado de Obstetrícia FEBRASGO. São Paulo: Elsevier, 2018; Montenegro CABR. Rezende Obstetrícia. 13ª ED. Rio de Janeiro: Guanabara Koogan, 2017.",
     "tags": [
-      "epidemiologia",
-      "coeficientes de saúde",
-      "febre amarela"
+      "obstetrícia",
+      "descolamento de placenta",
+      "urgência"
+    ]
+  },
+  {
+    "id": "tp2019-86",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Primigesta, 28 anos de idade, gestação de 11 semanas, apresenta queixa de cólica em baixo ventre e sangramento vaginal de moderada intensidade há dois dias. Ao exame, encontra-se febril (37,8°C), PA: 110 x 70 mmHg e FC: 108bpm. Ao exame especular, observa-se grande quantidade de sangue vivo em fundo de saco vaginal, com odor fétido e orifício interno do colo uterino pérvio para 1 polpa digital.\n\nNesse caso, a conduta é:",
+    "options": [
+      "(A) Realizar esvaziamento uterino e antibioticoterapia.",
+      "(B) Solicitar ultrassonografia e manter observação.",
+      "(C) Iniciar antibioticoterapia e manter observação.",
+      "(D) Realizar apenas aspiração manual intrauterina."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Abortamento com colo pérvio, sangramento, febre, taquicardia e odor fétido: abortamento infectado.\n\nA conduta é antibioticoterapia de amplo espectro e esvaziamento uterino (após o início dos antibióticos), para remover o foco infeccioso.",
+    "commentary": "Observação expectante é inadequada diante da infecção. Antibiótico sem esvaziamento mantém o foco. Aspiração sem antibiótico expõe ao risco de sepse.",
+    "reference": "Zugaib, M & Francisco RP. Obstetrícia. Editora Manole, 2017 Duarte G, et al. Protocolos de Conduta em Gestação de Alto Risco, 2003",
+    "tags": [
+      "obstetrícia",
+      "abortamento"
+    ]
+  },
+  {
+    "id": "tp2024-116",
+    "module": "Saúde Coletiva",
+    "text": "Sobre o Método Clínico Centrado na Pessoa (MCCP), é correto afirmar:",
+    "options": [
+      "O componente \"Sendo Realista\" foca apenas nos recursos financeiros do paciente.",
+      "O acrônimo SIFE refere-se à anamnese técnica por sistemas.",
+      "Deve-se seguir rigidamente a ordem dos quatro componentes em todas as consultas.",
+      "O primeiro componente foca em entender a experiência da doença para o indivíduo (ideias, sentimentos, expectativas)."
+    ],
+    "correctAnswer": 3,
+    "explanation": "O Método Clínico Centrado na Pessoa organiza a consulta em quatro componentes: explorar a saúde, a doença e a experiência de adoecer; entender a pessoa como um todo (história de vida, família, contexto); elaborar um plano conjunto de manejo; e intensificar a relação médico-pessoa.\n\nO primeiro componente vai além do diagnóstico biomédico: busca saber como a pessoa vive aquele problema. Para isso usa-se o acrônimo SIFE — Sentimentos, Ideias, Funcionalidade (o impacto no dia a dia) e Expectativas em relação à consulta. É essa compreensão que permite chegar a um plano que a pessoa aceite e consiga seguir.",
+    "commentary": "Sendo realista restrito ao dinheiro do paciente (A): a ideia de ser realista diz respeito ao uso sensato do tempo, dos recursos do serviço e da equipe e das próprias habilidades do médico, e não só às finanças da pessoa.\n\nSIFE como anamnese por sistemas (B): o SIFE explora a experiência subjetiva da doença (sentimentos, ideias, funcionalidade e expectativas); o interrogatório sobre os diversos aparelhos é outra ferramenta.\n\nOrdem rígida dos componentes (C): os componentes se entrelaçam e são retomados conforme a conversa e o vínculo evoluem; não existe sequência obrigatória em cada consulta.",
+    "tip": "MCCP, 1º componente = SIFE: Sentimentos, Ideias, Funcionalidade e Expectativas do paciente sobre a doença.",
+    "reference": "Consulta centrada na pessoa, José Mauro Ceratti Lopes; Lêda Chaves Dias, Tratado de Medicina de Família e Comunidade, Capítulo 15, 2ª edição, Gustavo Gusso, 2019. Método clínico centrado na pessoa, Marcelo Garcia Kolling, Medicina Ambulatorial – Condutas de Atenção Primária baseadas em Evidências, Cap 11, 5ª edição, Artmed, 2022",
+    "tags": [
+      "MCCP",
+      "relação médico-paciente",
+      "APS"
+    ]
+  },
+  {
+    "id": "tp2022-107",
+    "module": "Saúde Coletiva",
+    "text": "Idosa de 90 anos, analfabeta, diabética com dificuldade de locomoção. Mora com sobrinha que trabalha o dia todo. Qual o Plano Terapêutico Singular (PTS) mais seguro?",
+    "options": [
+      "(A) Insulina à noite com a sobrinha; exercícios em casa; metas glicêmicas mais flexíveis.",
+      "(B) Insulina de manhã com a sobrinha; dieta restritiva; metas glicêmicas rigorosas.",
+      "(C) Insulina antes do almoço com a vizinha; evitar atividade física devido a risco de queda.",
+      "(D) Insulina à noite com a sobrinha; dieta restritiva; metas glicêmicas restritivas."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Em idosos frágeis, as metas devem ser flexíveis para evitar hipoglicemia e o tratamento deve ser adaptado à rede de apoio.",
+    "commentary": "Flexibilizar metas e adaptar o horário da medicação à presença do cuidador são estratégias de segurança e adesão para o paciente idoso.",
+    "reference": "Diretrizes SBD 2019-2020.",
+    "tags": [
+      "geriatria",
+      "saúde da família"
+    ]
+  },
+  {
+    "id": "tp2021-107",
+    "module": "Saúde Coletiva",
+    "text": "Foi instalada uma nova equipe de Estratégia de Saúde da família em uma área de risco. A equipe iniciou o trabalho percorrendo área, fazendo o levantamento dos recursos disponíveis, possíveis barreiras ao acesso e cadastrando os residentes da área. Que princípios norteadores da Estratégia de Saúde da Família foram utilizados nesse trabalho?",
+    "options": [
+      "(A) Territorialização e adscrição da clientela.",
+      "(B) Hierarquização e integralidade.",
+      "(C) Equidade e caráter substitutivo.",
+      "(D) Referência e contrarreferência."
+    ],
+    "correctAnswer": 0,
+    "explanation": "O processo de percorrer e mapear a área geográfica delimitada de atuação da equipe (definindo barreiras, vulnerabilidades e recursos) e identificar e cadastrar os habitantes da localidade caracteriza de maneira explícita os princípios norteadores de territorialização e adscrição da clientela.",
+    "commentary": "No âmbito organizacional da Atenção Primária no Brasil, a territorialização define a área geográfica de corresponsabilidade da ESF e o mapeamento locorregional. Conectado a ela, a adscrição consagra o vínculo e responsabilidade permanente sobre uma população específica descrita (indivíduos cadastrados vinculados ao serviço no território demarcado).",
+    "reference": "PNAB - Política Nacional de Atenção Básica, Portaria nº 2.436/2017.",
+    "tags": [
+      "estratégia saúde da família",
+      "territorialização",
+      "princípios do SUS"
     ]
   },
   {
@@ -621,187 +615,207 @@ export const SAMPLE_QUESTIONS: Question[] = [
     ]
   },
   {
-    "id": "tp2022-18",
+    "id": "tp2022-19",
     "module": "Ciências Básicas",
-    "text": "Criança de 4 anos é atendida no pronto-socorro com história de um dia de febre alta e cefaleia intensa. Ao exame, nota-se rigidez de nuca. A amostra colhida do líquor apresenta conteúdo turvo e na bacterioscopia visualizam-se diplococos Gram-negativos. O provável patógeno é:",
+    "text": "Homem de 55 anos, em situação de rua e etilista, foi internado devido a pneumonia multilobar grave. Desenvolveu quadro de insuficiência respiratória grave. Foi solicitada uma baciloscopia de escarro, que revelou bastonetes gram-negativos encapsulados. O organismo é fermentador de lactose em ágar de MacConkey e é muito mucoide. O agente etiológico mais provável é:",
     "options": [
-      "(A) Streptococcus pneumoniae",
-      "(B) Staphylococcus aureus",
-      "(C) Neisseria meningitidis",
-      "(D) Haemophilus influenzae"
+      "(A) Nocardia abscessos",
+      "(B) Clostridium difficile",
+      "(C) Streptococcus pneumoniae",
+      "(D) Klebsiella pneumoniae"
     ],
-    "correctAnswer": 2,
-    "explanation": "Febre alta, cefaleia intensa e rigidez de nuca com líquor turvo indicam meningite bacteriana. A bacterioscopia com diplococos Gram-negativos aponta para Neisseria meningitidis, o meningococo, que também pode causar meningococcemia com petéquias e choque.\n\nNa prática: iniciar ceftriaxona sem atraso, notificar imediatamente e fazer quimioprofilaxia dos contatos próximos (rifampicina é a opção mais usada).",
-    "commentary": "Streptococcus pneumoniae (A): também causa meningite, mas aparece como diplococo Gram-positivo (lanceolado).\n\nStaphylococcus aureus (B): é coco Gram-positivo em cachos e é causa rara de meningite fora de contexto de neurocirurgia, trauma ou derivação.\n\nHaemophilus influenzae (D): causa meningite em crianças pequenas (hoje rara com a vacina), mas é cocobacilo Gram-negativo, não diplococo.",
-    "tip": "Líquor com diplococo Gram-negativo = meningococo; Gram-positivo = pneumococo; cocobacilo Gram-negativo = Haemophilus.",
-    "reference": "JAWETZ, E. et al. Microbiologia médica. 21. ed. Rio de Janeiro: Guanabara Koogan, 2000.",
+    "correctAnswer": 3,
+    "explanation": "Klebsiella pneumoniae é um bacilo Gram-negativo encapsulado, fermentador de lactose, associado a pneumonias graves em etilistas.",
+    "commentary": "A Klebsiella pneumoniae (família Enterobacteriaceae) é um bastonete Gram-negativo, lactose positivo e apresenta uma cápsula proeminente que resulta em colônias muito mucoides. O S. pneumoniae é Gram-positivo. Clostridium é anaeróbio.",
+    "reference": "TRABULSI, L. R.; ALTERTHUM, F. (Ed.). Microbiologia. 5. ed. São Paulo: Atheneu, 2010.",
     "tags": [
       "microbiologia",
-      "pediatria",
+      "pneumologia",
       "infectologia"
     ]
   },
   {
-    "id": "tp2021-15",
+    "id": "tp2021-20",
     "module": "Ciências Básicas",
-    "text": "A fibrose cística é causada por mutações no gene CFTR. Algumas substituições de bases não resultam em doença. Isso é explicado por mutações:",
+    "text": "Homem, 44 anos, apresentou oclusão do ramo circunflexo da artéria coronária esquerda. Pode sofrer infarto do miocárdio prioritariamente em qual região cardíaca?",
     "options": [
-      "(A) De sentido trocado.",
-      "(B) Compensadoras.",
-      "(C) Sem sentido.",
-      "(D) Silenciosas."
+      "(A) Ventrículos direito e esquerdo.",
+      "(B) Átrio e ventrículo esquerdo.",
+      "(C) Átrios direito e esquerdo.",
+      "(D) Septo interventricular."
     ],
-    "correctAnswer": 3,
-    "explanation": "Mutações silenciosas caracterizam-se por substituições de nucleotídeos que mantêm a codificação do mesmo aminoácido original devido ao código genético degenerativo.",
-    "commentary": "Sendo o código genético degenerativo/redundante, múltiplos códons de trincas de nucleotídeos especificam o mesmo aminoácido. Uma mutação silenciosa altera a base mas gera o mesmo aminoácido residual na proteína CFTR, preservando sua integridade funcional e biológica.",
-    "reference": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson. Genética Médica, 7a. Ed., Guanabara Koogan, Rio de Janeiro, 2008.",
-    "tags": [
-      "genética",
-      "biologia molecular"
-    ]
-  },
-  {
-    "id": "tp2019-16",
-    "module": "Ciências Básicas",
-    "text": "Paciente com quadro de coágulo migratório (êmbolo) na veia femoral profunda direita, associado a trombo no ventrículo esquerdo.\n\nOs destinos finais dos fenômenos tromboembólicos podem ser, respectivamente:",
-    "options": [
-      "(A) Átrio direito e artéria cerebral anterior direita.",
-      "(B) Ventrículo esquerdo e artéria cerebral posterior direita.",
-      "(C) Pulmão direito e artéria cerebral média direita.",
-      "(D) Ventrículo direito e artéria cerebral anterior esquerda."
-    ],
-    "correctAnswer": 2,
-    "explanation": "O êmbolo da veia femoral segue pela cava inferior até o coração direito e se impacta na circulação pulmonar (tromboembolismo pulmonar). O trombo do ventrículo esquerdo vai para a circulação sistêmica; pela carótida, atinge mais frequentemente a artéria cerebral média, continuação direta da carótida interna.",
-    "commentary": "Átrio e ventrículo direito são locais de passagem, não destino final do êmbolo venoso. A artéria cerebral posterior deriva do sistema vertebrobasilar, menos atingido por êmbolos cardíacos.",
-    "reference": "Moore KL. Anatomia Orientada para a Clínica. 6a ed. Rio de Janeiro: Guanabara Koogan; 2011.",
+    "correctAnswer": 1,
+    "explanation": "A artéria circunflexa, ramo da artéria coronária esquerda, é responsável prioritariamente por nutrir a parede lateral do ventrículo esquerdo e porções do átrio esquerdo.",
+    "commentary": "A oclusão do ramo circunflexo da coronária esquerda (Cx) acarreta isquemia aguda (infarto) na parede lateral do ventrículo esquerdo e no átrio esquerdo. O septo interventricular e parede anterior são comumente nutridos pela interventricular anterior (ADA), enquanto o ventrículo direito é domínio da coronária direita (CD).",
+    "reference": "Drake RL, Vogl AW, Mitchell AWM. Gray’s Anatomy for students. 2nd edition. Churchill Livingstone, Elsevier, Philadelphia, 2005.",
     "tags": [
       "anatomia",
-      "tromboembolismo",
-      "circulação"
+      "cardiologia"
     ]
   },
   {
-    "id": "enamed-2025-52",
-    "module": "Pediatria",
-    "text": "Mãe de menina de 11 meses, em consulta de puericultura, relata que não há queixas específicas no momento e refere que a criança está começando a trocar passos de maneira independente. Apresenta marcos do desenvolvimento anteriores a 11 meses dentro da normalidade e bom ganho pôndero-estatural. Gestação e parto sem intercorrências.\n\nO reflexo primitivo usualmente presente nessa faixa etária é o",
+    "id": "tp2020-4",
+    "module": "Ciências Básicas",
+    "text": "Clodoaldo, 66 anos, agricultor, é chagásico crônico há pelo menos 5 anos. Apesar da infecção ser acompanhada desde a fase aguda, foi obsevado apenas uma cardiomegalia leve que não interfere nas atividades diárias do paciente.\n\nComo podemos classificar a doença do paciente?",
     "options": [
-      "(A) reflexo plantar.",
-      "(B) reflexo de Moro.",
-      "(C) reflexo de procura.",
-      "(D) reflexo tônico cervical."
+      "(A) Oligossintomática",
+      "(B) Determinada",
+      "(C) Assintomática",
+      "(D) Indeterminada"
     ],
-    "correctAnswer": 0,
-    "explanation": "O reflexo plantar (Babinski fisiológico) é um reflexo primitivo que normalmente permanece presente em lactentes e crianças pequenas, podendo persistir de forma fisiológica até aproximadamente 12 a 24 meses de idade devido à incompleta mielinização do trato corticoespinal (via piramidal).",
-    "commentary": "Os demais reflexos primitivos desaparecem bem mais cedo no desenvolvimento do lactente normal: o reflexo de procura (C) some com 3 a 4 meses; o reflexo de Moro (B) desaparece entre 4 e 6 meses; e o reflexo tônico-cervical assimétrico (D) desaparece por volta dos 6 meses de idade.",
-    "reference": "Nelson Tratado de Pediatria / Sociedade Brasileira de Pediatria (SBP)",
+    "correctAnswer": 3,
+    "explanation": "Doença de Chagas crônica sem manifestações clínicas limitantes, com alteração cardíaca discreta que não interfere na vida diária: a banca a classifica como forma indeterminada.\n\nPela definição clássica, a forma indeterminada exige sorologia positiva com ECG e radiografias normais; cardiomegalia, mesmo leve, já indicaria forma cardíaca (determinada).",
+    "commentary": "Observação: pelo II Consenso Brasileiro de Doença de Chagas, qualquer cardiomegalia caracteriza forma cardíaca, o que torna a alternativa B defensável — questão passível de recurso.",
+    "reference": "REY, Luís. Parasitologia: parasitos e doenças parasitárias do homem nos trópicos ocidentais. 4. ed. Rio de Janeiro: Guanabara Koogan, 2008. / AMATO NETO, V. et al. Parasitologia: uma abordagem clínica. Rio de Janeiro: Elsevier, 2008.",
     "tags": [
-      "pediatria",
-      "puericultura",
-      "desenvolvimento infantil",
-      "reflexos primitivos"
+      "parasitologia",
+      "doença de chagas"
     ]
   },
   {
-    "id": "enamed-2025-85",
-    "module": "Clínica Médica",
-    "text": "Mulher de 42 anos é levada pelo irmão à Unidade de Pronto Atendimento (UPA) com fala alterada, lentificação, tontura e sonolência após relatar ingestão intencional de grande quantidade de clonazepam pouco tempo antes. A paciente evolui com hipotensão, rebaixamento do nível de consciência, coma e necessidade de ventilação mecânica.\n\nQual medicação é indicada nessa situação?",
-    "options": [
-      "(A) N-acetilcisteína.",
-      "(B) Flumazenil.",
-      "(C) Naloxona.",
-      "(D) Atropina."
-    ],
-    "correctAnswer": 1,
-    "explanation": "O clonazepam pertence à classe dos benzodiazepínicos. O flumazenil é um antagonista competitivo específico dos receptores benzodiazepínicos e pode ser utilizado para reverter a sedação e depressão do sistema nervoso central induzidas por essas substâncias em casos de intoxicação aguda grave (como coma e depressão respiratória).",
-    "commentary": "A N-acetilcisteína (A) é o antídoto específico para a intoxicação por paracetamol. A naloxona (C) reverte os efeitos de opioides. A atropina (D) é indicada no tratamento de intoxicações por organofosforados/carbamatos (síndrome colinérgica). Nota clínica: na prática real, o flumazenil deve ser usado com extrema cautela devido ao risco de desencadear convulsões refratárias em usuários crônicos de benzodiazepínicos ou em co-ingestão de agentes pró-convulsivantes.",
-    "reference": "Medicina de Emergência / Toxicologia Clínica",
-    "tags": [
-      "clínica médica",
-      "toxicologia",
-      "emergência",
-      "intoxicação",
-      "benzodiazepínicos",
-      "flumazenil"
-    ]
-  },
-  {
-    "id": "enamed-2026-63",
+    "id": "enamed-2025-63",
     "module": "Saúde Coletiva",
-    "text": "Uma equipe técnica do Ministério da Saúde está avaliando os efeitos da redução do ponto de corte da medida de PA sistólica de 130 mmHg para 120 mmHg para o diagnóstico de hipertensão arterial (HA).\n\nConsiderando-se as mudanças nos valores de referência, o que se espera em relação ao diagnóstico de HA?",
+    "text": "Uma equipe de Saúde da Família percebeu aumento do número de casos complicados de diabetes mellitus. Entre 3.500 pacientes cadastrados, 280 possuem diabetes tipo 2. A equipe elaborou um projeto de intervenção coletiva com orientação nutricional e incentivo à atividade física para reduzir complicações.\n\nQual é o desenho de pesquisa mais adequado para avaliar o impacto desse projeto?",
     "options": [
-      "(A) Aumento na detecção da HA e redução na frequência de falsos positivos.",
-      "(B) Aumento na detecção da HA e aumento na frequência de falsos positivos.",
-      "(C) Redução na detecção da HA e redução na frequência de falsos positivos.",
-      "(D) Redução na detecção da HA e aumento na frequência de falsos positivos."
+      "(A) Estudo de caso-controle aninhado.",
+      "(B) Ensaio clínico não randomizado.",
+      "(C) Estudo de coorte retrospectivo.",
+      "(D) Ensaio clínico randomizado."
     ],
-    "correctAnswer": 1,
-    "explanation": "Reduzir o ponto de corte para o diagnóstico (de 130 para 120 mmHg) aumenta a sensibilidade e diminui a especificidade do critério.\n\nAssim, mais pessoas serão classificadas como hipertensas (aumento da detecção), mas também haverá mais falsos positivos.",
-    "commentary": "Toda mudança de ponto de corte gera um trade-off: não é possível aumentar a detecção e reduzir falsos positivos ao mesmo tempo apenas deslocando o limiar. (Gabarito preliminar do INEP.)",
-    "reference": "Fletcher RH. Epidemiologia Clínica — Testes diagnósticos e pontos de corte",
+    "correctAnswer": 3,
+    "explanation": "Para avaliar com o maior rigor metodológico possível o impacto de uma intervenção ativa (projeto educativo de orientação nutricional e atividade física), eliminando vieses de confusão e seleção, o Ensaio Clínico Randomizado (ECR) é considerado o delineamento experimental padrão-ouro. Nele, os indivíduos (ou as microáreas/grupos) são aleatorizados entre receber a intervenção e o cuidado habitual, permitindo inferir relação de causalidade direta sobre a redução de complicações.",
+    "commentary": "Estudos observacionais como coorte retrospectivo (C) e caso-controle (A) apenas avaliam retrospectivamente associações de risco preexistentes, sem controle experimental ativo da intervenção. Ensaios não randomizados (B) sofrem com forte viés de seleção sistemático.",
+    "reference": "Epidemiologia Clínica: Elementos Essenciais / Fletcher / Medronho",
     "tags": [
       "saúde coletiva",
+      "metodologia científica",
       "epidemiologia",
-      "hipertensão"
+      "ensaio clínico"
     ]
   },
   {
-    "id": "unifesp2025-14",
-    "module": "Cirurgia",
-    "text": "Mulher, 32 anos, vem ao ambulatório com tubo T devido estenose traqueal. Refere que está com esta órtese há 7 meses. Durante investigação complementar é realizada uma broncoscopia que evidencia estenose fixa, compreendendo 1º e 2º anéis traqueais sem processo inflamatório local.\n\nQual a conduta mais adequada?",
+    "id": "enamed-2026-3",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Gestante de 32 semanas é socorrida por equipe de atendimento pré-hospitalar após sofrer acidente automobilístico. A paciente está conversando. Apresenta: escala de Glasgow 12; FC 108 bpm; PA 90 x 60 mmHg. É imobilizada em prancha rígida com colar cervical.\n\nQual é a conduta indicada para otimizar o retorno venoso materno, durante o transporte, sem risco de comprometer a estabilização da coluna vertebral da paciente?",
     "options": [
-      "(A) Realizar a troca do tubo T.",
-      "(B) Programar traqueoplastia.",
-      "(C) Corticoterapia.",
-      "(D) Cânula metálica."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Estenose traqueal fixa, curta (1º e 2º anéis), sem atividade inflamatória e já tratada com órtese (tubo T) por 7 meses: lesão cicatricial madura.\n\nSem inflamação e com segmento curto, a paciente é candidata ao tratamento definitivo com ressecção do segmento estenótico e anastomose término-terminal (traqueoplastia), que tem altas taxas de cura. O tubo T é uma medida temporária enquanto a lesão amadurece ou quando o paciente não pode ser operado.",
-    "commentary": "Troca do tubo T (A): perpetua o tratamento paliativo em uma paciente candidata à correção definitiva.\n\nCorticoterapia (C): útil na fase inflamatória; não age sobre estenose fibrótica madura.\n\nCânula metálica (D): é uma traqueostomia definitiva, que não trata a estenose e compromete a fonação.",
-    "reference": "Grillo HC — Surgery of the Trachea and Bronchi / Diretrizes da SBCT",
-    "tags": [
-      "cirurgia torácica",
-      "estenose traqueal"
-    ]
-  },
-  {
-    "id": "unifesp2025-51",
-    "module": "Saúde Coletiva",
-    "text": "Para determinar se, de fato, um programa de rastreamento de câncer de próstata é benéfico para aumento da longevidade de homens (\"prolongar vidas\"), qual dos seguintes desfechos clínicos é o mais adequado?",
-    "options": [
-      "(A) Redução na mortalidade geral.",
-      "(B) Redução na mortalidade específica por câncer de próstata.",
-      "(C) Aumento na sobrevida em 5 anos."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Para saber se o rastreamento 'prolonga vidas', o desfecho mais adequado é a mortalidade geral (por todas as causas).\n\nA mortalidade específica pode cair sem ganho real de longevidade se o rastreamento e o tratamento (biópsias, prostatectomia, radioterapia) causarem mortes por outras causas, ou se houver erro na atribuição da causa do óbito. A mortalidade geral capta o efeito líquido.",
-    "commentary": "Mortalidade específica (B): é o desfecho usual dos ensaios de rastreamento, mas não demonstra aumento da longevidade, pois ignora mortes causadas pela própria intervenção.\n\nSobrevida em 5 anos (C): sujeita aos vieses de tempo de antecipação (lead time), de duração (length bias) e de sobrediagnóstico; aumenta mesmo que ninguém viva mais.",
-    "reference": "Fletcher — Epidemiologia Clínica (Prevenção) / USPSTF Prostate Cancer Screening",
-    "tags": [
-      "epidemiologia",
-      "rastreamento",
-      "câncer de próstata",
-      "vieses"
-    ]
-  },
-  {
-    "id": "unifesp2025-86",
-    "module": "Pediatria",
-    "text": "Menino, 10 anos de idade, joga futebol desde pequeno; queixa-se de que há 5 meses vem apresentando dificuldade para correr, há um mês não consegue terminar a partida devido a crises de tosse seca e falta de ar. Há 2 semanas, com resfriado, piorou da tosse, principalmente na madrugada e pela manhã. Tem diagnóstico de rinite alérgica.\n\nQual dos exames abaixo confirma a principal hipótese diagnóstica para sua queixa?",
-    "options": [
-      "(A) PHmetria",
-      "(B) Rx de tórax",
-      "(C) Prova de função pulmonar",
-      "(D) IgE específicos para aeroalérgenos"
+      "(A) Colocá-la em posição de Trendelemburg.",
+      "(B) Imobilizá-la na prancha em decúbito lateral esquerdo.",
+      "(C) Realizar o deslocamento manual do útero para a esquerda.",
+      "(D) Elevar os membros inferiores."
     ],
     "correctAnswer": 2,
-    "explanation": "Escolar com rinite alérgica, tosse seca e dispneia desencadeadas por exercício e infecção viral, com piora noturna e matinal: asma (com broncoespasmo induzido por exercício).\n\nA confirmação é funcional: espirometria (prova de função pulmonar) com obstrução reversível ao broncodilatador. Se a espirometria for normal, faz-se broncoprovocação (por exemplo, por exercício).",
-    "commentary": "pHmetria (A): investiga doença do refluxo, que não é a hipótese principal.\n\nRadiografia de tórax (B): geralmente normal na asma; não confirma o diagnóstico.\n\nIgE para aeroalérgenos (D): documenta sensibilização (atopia), não a doença das vias aéreas.",
-    "reference": "GINA 2024 / Diretrizes da SBPT para o manejo da asma (2020)",
+    "explanation": "A partir da 20ª semana, o útero gravídico em decúbito dorsal comprime a veia cava inferior, reduzindo o retorno venoso e o débito cardíaco (síndrome da hipotensão supina). A paciente está imobilizada em prancha com colar cervical e já tem PA limítrofe e taquicardia.\n\nO deslocamento manual do útero para a esquerda alivia a compressão aortocava sem mobilizar a coluna, preservando a imobilização. Se não houver quem faça o deslocamento manual, a alternativa é inclinar toda a prancha (15–30°) para a esquerda, mantendo o alinhamento.",
+    "commentary": "Trendelemburg e elevação de membros não descomprimem a cava. Imobilizar em decúbito lateral esquerdo fora da prancha comprometeria a estabilização da coluna. (Gabarito preliminar do INEP.)",
+    "reference": "ATLS 10ª edição — trauma na gestante",
+    "tags": [
+      "obstetrícia",
+      "trauma",
+      "atendimento pré-hospitalar"
+    ]
+  },
+  {
+    "id": "enamed-2026-92",
+    "module": "Pediatria",
+    "text": "Lactente de 3 meses é levado a uma Unidade Básica de Saúde por apresentar crises de tosse intensa há 15 dias, acentuando-se há 10 dias em crises sucessivas, com associação de vômitos. Durante as crises, apresenta cianose, hemorragia conjuntival, petéquias e rubor facial. Foi realizada imunização somente ao nascimento.\n\nQual exame deve ser realizado para confirmação da hipótese diagnóstica nesse caso?",
+    "options": [
+      "(A) Bacterioscopia pelo Gram em amostra de swab de nasofaringe.",
+      "(B) Hemograma com contagem de plaquetas.",
+      "(C) Reação em cadeia da polimerase em amostra de swab de nasofaringe.",
+      "(D) Sorologia para toxina em amostra de sangue."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lactente de 3 meses com vacinação incompleta (sem pentavalente) e tosse paroxística com vômitos, cianose, hemorragia conjuntival e petéquias: coqueluche (Bordetella pertussis).\n\nA confirmação é feita por PCR em tempo real em swab de nasofaringe (ou cultura), coletados idealmente antes do antibiótico.",
+    "commentary": "O Gram não identifica B. pertussis. O hemograma pode mostrar leucocitose com linfocitose, mas não confirma o diagnóstico. A sorologia não é usada para diagnóstico em lactentes. (Gabarito preliminar do INEP.)",
+    "reference": "Ministério da Saúde. Guia de Vigilância em Saúde — Coqueluche",
     "tags": [
       "pediatria",
-      "asma",
-      "espirometria",
-      "broncoespasmo induzido por exercício"
+      "infectologia",
+      "coqueluche"
+    ]
+  },
+  {
+    "id": "unifesp2025-28",
+    "module": "Clínica Médica",
+    "text": "Homem, 27 anos de idade, previamente hígido, foi vítima de acidente automobilístico com sangramentos. Apresenta, à avaliação, PA = 94/52 mmHg, oligúria, creatinina = 1,9 mg/dL (VR 0,7 a 1,3 mg/dL), ureia = 96 mg/dL (VR 20 a 50 mg/dL), K = 6,1 mEq/L (VR 3,5 a 5,1 mEq/L), densidade urinária = 1036 (VR 1005 a 1030), fração de excreção de ureia = 27% e urina I com presença de cilindros hialinos abundantes.\n\nQual é o tratamento mais adequado neste momento?",
+    "options": [
+      "(A) Diálise de urgência.",
+      "(B) Reposição de volume.",
+      "(C) Droga inotrópica.",
+      "(D) Furosemida intravenosa."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lesão renal aguda em politraumatizado hipotenso por sangramento, com urina concentrada (densidade 1036), fração de excreção de ureia de 27% (< 35% sugere causa pré-renal) e cilindros hialinos (sedimento 'inocente'): LRA pré-renal por hipovolemia.\n\nO tratamento é a reposição volêmica (com controle do sangramento), que deve reverter a azotemia. O K de 6,1 sem descrição de alterações eletrocardiográficas não justifica, por si só, diálise de urgência.",
+    "commentary": "Diálise de urgência (A): indicada para hipercalemia refratária, acidose grave, hipervolemia refratária ou uremia sintomática, ausentes aqui.\n\nInotrópico (C): o choque é hipovolêmico; a primeira medida é repor volume.\n\nFurosemida (D): agrava a hipovolemia e piora a lesão pré-renal.",
+    "reference": "KDIGO Clinical Practice Guideline for Acute Kidney Injury",
+    "tags": [
+      "nefrologia",
+      "lesão renal aguda",
+      "pré-renal",
+      "fração de excreção de ureia"
+    ]
+  },
+  {
+    "id": "unifesp2025-67",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Mulher, 44 anos de idade, multípara, realizou a primeira mamografia da vida (quatro incidências básicas) que mostrou mamas lipossubstituídas com presença de calcificações heterogêneas localizadas na região retroareolar da mama esquerda, BI-RADS 0.\n\nQual é o complemento mamográfico adicional necessário para a classificação adequada?",
+    "options": [
+      "(A) Compressão localizada",
+      "(B) Incidência craniocaudal exagerada",
+      "(C) Ampliação",
+      "(D) Incidência em perfil absoluto"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Calcificações classificadas como BI-RADS 0 precisam de avaliação adicional da morfologia e da distribuição para serem categorizadas (benignas, suspeitas ou altamente suspeitas).\n\nO complemento específico para calcificações é a magnificação (ampliação), em geral associada a compressão localizada, que mostra o formato, o número e a distribuição das partículas.",
+    "commentary": "Compressão localizada (A): indicada principalmente para assimetrias e nódulos, para diferenciar sobreposição de tecido de lesão real.\n\nCraniocaudal exagerada (B): usada para lesões nas porções lateral ou medial posteriores não incluídas na CC padrão.\n\nPerfil absoluto (D): ajuda a localizar a lesão e a identificar calcificações em 'leite de cálcio', mas não substitui a ampliação para estudar a morfologia.",
+    "reference": "ACR BI-RADS Atlas, 5ª ed. / Colégio Brasileiro de Radiologia",
+    "tags": [
+      "mastologia",
+      "mamografia",
+      "BI-RADS",
+      "microcalcificações"
+    ]
+  },
+  {
+    "id": "hosbos2027-27",
+    "module": "Clínica Médica",
+    "text": "Homem de 58 anos apresenta vômitos incoercíveis há 4 dias e, nas últimas 12 horas, confusão mental e taquipneia. AP: etilista crônico. Exame físico: PA: 90 x 58 mmHg, FC: 116 bpm, FR: 28 irpm e desidratação 3+/4+. Gasometria arterial: pH: 7,42, PaCO₂: 30 mmHg, bicarbonato: 19 mEq/L, sódio: 138 mEq/L, cloro: 92 mEq/L, potássio: 3,1 mEq/L, albumina: 3,0 g/dL.\n\nOs diagnósticos são",
+    "options": [
+      "(A) Acidose metabólica com ânion gap elevado, alcalose metabólica e alcalose respiratória.",
+      "(B) Acidose metabólica com ânion gap normal, alcalose metabólica e acidose respiratória.",
+      "(C) Alcalose metabólica e respiratória.",
+      "(D) Acidose metabólica com ânion gap elevado, acidose metabólica com ânion gap normal e alcalose respiratória.",
+      "(E) Alcalose respiratória e acidose respiratória."
+    ],
+    "correctAnswer": 0,
+    "explanation": "pH normal não significa equilíbrio. Passo a passo:\n\n• Ânion-gap = 138 – (92 + 19) = 27; corrigido pela albumina de 3,0: cerca de 29,5. Está elevado: acidose metabólica de AG alto (cetoacidose alcoólica, lactato)\n• Delta-delta: o AG subiu cerca de 17 e o bicarbonato caiu só cerca de 5, indicando alcalose metabólica associada (vômitos, cloro baixo)\n• pCO₂ esperada para HCO₃⁻ de 19 = 1,5 × 19 + 8 ≈ 36,5; a medida é 30, logo há alcalose respiratória associada (taquipneia)\n\nSão três distúrbios: acidose metabólica de AG elevado, alcalose metabólica e alcalose respiratória.",
+    "commentary": "AG normal e acidose respiratória (B): o AG está elevado e a pCO₂ está abaixo do esperado.\n\nSó alcalose metabólica e respiratória (C): ignora a acidose de AG alto.\n\nDuas acidoses metabólicas (D): não há acidose de AG normal; o delta-delta mostra alcalose metabólica.\n\nAlcalose e acidose respiratórias (E): é impossível ter as duas ao mesmo tempo.",
+    "reference": "Harrison — Distúrbios ácido-base / Berend K et al. — Physiological approach to acid-base disturbances (NEJM 2014)",
+    "tags": [
+      "nefrologia",
+      "distúrbios ácido-base",
+      "ânion-gap",
+      "delta-delta"
+    ]
+  },
+  {
+    "id": "hosbos2027-90",
+    "module": "Saúde Coletiva",
+    "text": "Uma doença X tem taxa de letalidade maior do que a doença Y.\n\nAssinale a alternativa correta sobre essa informação.",
+    "options": [
+      "(A) A doença X é aguda e a doença Y é crônica.",
+      "(B) Morrem mais pessoas com a doença X na sua fase inicial do que pessoas com a doença Y.",
+      "(C) A doença X é uma doença infecciosa e a doença Y não.",
+      "(D) Morrem mais pessoas pela doença X em relação a pessoas que tiveram ou têm a doença.",
+      "(E) A doença X acomete pessoas de mais idade."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Letalidade = número de óbitos pela doença dividido pelo número de doentes (casos), em determinado período. Expressa a gravidade da doença, ou seja, a proporção de doentes que morrem dela.\n\nSe X tem letalidade maior que Y, entre as pessoas que têm ou tiveram X, morre proporcionalmente mais gente do que entre os doentes de Y. Não confundir com mortalidade, que usa a população total no denominador.",
+    "commentary": "X aguda e Y crônica (A): a letalidade não informa a evolução temporal da doença.\n\nMortes na fase inicial (B): a letalidade não indica em que fase os óbitos ocorrem.\n\nX infecciosa (C): a medida não define a natureza da doença.\n\nX acomete mais idosos (E): a letalidade não informa a faixa etária acometida.",
+    "reference": "Rouquayrol — Epidemiologia & Saúde / Medronho — Epidemiologia",
+    "tags": [
+      "epidemiologia",
+      "letalidade",
+      "indicadores de saúde"
     ]
   }
 ];
