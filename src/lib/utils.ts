@@ -17,6 +17,25 @@ export function examLabel(id: string) {
   return id.split('-')[0].toUpperCase();
 }
 
+/** Origem da prova a partir do ID: "tp2024-21" → "TP"; "enamed-2026-3" → "ENAMED"; "unifesp2025-4" → "UNIFESP". */
+export function examSource(id: string) {
+  return examLabel(id).split(' ')[0];
+}
+
+/** Áreas e origens efetivas de um simulado (inclui simulados antigos com module 'ENAMED'). */
+export function settingsFilters(s: { module: string; areas?: string[]; sources?: string[] }) {
+  const areas = s.areas?.length ? s.areas : s.module !== 'Misto' && s.module !== 'ENAMED' ? [s.module] : [];
+  const sources = s.sources?.length ? s.sources : s.module === 'ENAMED' ? ['ENAMED'] : [];
+  return { areas, sources };
+}
+
+/** Título do simulado montado: "Pediatria · ENAMED", "Todas as áreas", "3 áreas · TP + UNIFESP". */
+export function settingsTitle(s: { module: string; areas?: string[]; sources?: string[] }) {
+  const { areas, sources } = settingsFilters(s);
+  const area = !areas.length ? 'Todas as áreas' : areas.length <= 2 ? areas.join(' + ') : `${areas.length} áreas`;
+  return sources.length ? `${area} · ${sources.join(' + ')}` : area;
+}
+
 /** Primeiro parágrafo de um texto (para resumos curtos). */
 export function firstParagraph(text: string) {
   return text.split(/\n\s*\n/)[0];

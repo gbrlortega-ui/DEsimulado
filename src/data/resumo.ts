@@ -5,13 +5,12 @@ import type { Question } from '../types';
 export const TOTAL_QUESTIONS = 1259;
 
 export const COUNT_BY_AREA: Record<string, number> = {
-  "Pediatria": 179,
-  "Clínica Médica": 186,
-  "Cirurgia": 179,
-  "Ginecologia e Obstetrícia": 177,
-  "Saúde Coletiva": 178,
-  "Ciências Básicas": 160,
-  "ENAMED": 200
+  "Pediatria": 218,
+  "Clínica Médica": 246,
+  "Cirurgia": 204,
+  "Ginecologia e Obstetrícia": 210,
+  "Saúde Coletiva": 221,
+  "Ciências Básicas": 160
 };
 
 export interface ExamEdition {
@@ -90,6 +89,59 @@ export const EDITIONS: ExamEdition[] = [
     "count": 99
   }
 ];
+
+export interface ExamSource {
+  key: string; // sigla usada no filtro: "TP", "ENAMED", "UNIFESP"
+  label: string; // "Teste de Progresso", "ENAMED", "UNIFESP"
+  kind: 'TP' | 'ENAMED' | 'Residência';
+  years: string; // "2019–2026" ou "2025"
+  count: number;
+}
+
+/** Origens da prova disponíveis no filtro do simulado. */
+export const SOURCES: ExamSource[] = [
+  {
+    "key": "TP",
+    "label": "Teste de Progresso",
+    "kind": "TP",
+    "years": "2019–2026",
+    "count": 960
+  },
+  {
+    "key": "ENAMED",
+    "label": "ENAMED",
+    "kind": "ENAMED",
+    "years": "2025–2026",
+    "count": 200
+  },
+  {
+    "key": "UNIFESP",
+    "label": "UNIFESP",
+    "kind": "Residência",
+    "years": "2025",
+    "count": 99
+  }
+];
+
+/** Questões por área e origem, na chave "Pediatria|ENAMED". */
+export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
+  "Pediatria|TP": 160,
+  "Clínica Médica|TP": 160,
+  "Cirurgia|TP": 160,
+  "Ginecologia e Obstetrícia|TP": 160,
+  "Saúde Coletiva|TP": 160,
+  "Ciências Básicas|TP": 160,
+  "Clínica Médica|ENAMED": 60,
+  "Pediatria|ENAMED": 39,
+  "Cirurgia|ENAMED": 25,
+  "Ginecologia e Obstetrícia|ENAMED": 33,
+  "Saúde Coletiva|ENAMED": 43,
+  "Cirurgia|UNIFESP": 19,
+  "Saúde Coletiva|UNIFESP": 18,
+  "Clínica Médica|UNIFESP": 26,
+  "Ginecologia e Obstetrícia|UNIFESP": 17,
+  "Pediatria|UNIFESP": 19
+};
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */
 export const TOPOGRAPHY_COUNT: Record<string, number> = {};
@@ -613,7 +665,7 @@ export const SAMPLE_QUESTIONS: Question[] = [
   },
   {
     "id": "enamed-2025-32",
-    "module": "ENAMED",
+    "module": "Ginecologia e Obstetrícia",
     "text": "Paciente G5P3C1, 35 anos, idade gestacional de 15 semanas por ecografia realizada com 8 semanas, hipertensa crônica em uso de enalapril, antecedente de pré-eclâmpsia. Comparece à consulta de pré-natal na Unidade Básica de Saúde (UBS) com pressão arterial de 140 × 90 mmHg.\n\nQual é a conduta medicamentosa indicada para essa paciente?",
     "options": [
       "(A) Captopril, varfarina e ácido acetilsalicílico.",
@@ -634,7 +686,7 @@ export const SAMPLE_QUESTIONS: Question[] = [
   },
   {
     "id": "enamed-2025-74",
-    "module": "ENAMED",
+    "module": "Cirurgia",
     "text": "Paciente de 47 anos, sexo feminino, atendida no ambulatório de cirurgia geral. A paciente havia sido submetida à tireoidectomia total há 60 dias devido a carcinoma folicular de tireoide, restrito à glândula. No pós-operatório imediato apresentou rouquidão, que persistiu durante todo o acompanhamento ambulatorial.\n\nCom base no quadro clínico apresentado, qual foi o nervo lesionado durante a cirurgia?",
     "options": [
       "(A) Laríngeo recorrente.",
@@ -656,7 +708,7 @@ export const SAMPLE_QUESTIONS: Question[] = [
   },
   {
     "id": "enamed-2026-42",
-    "module": "ENAMED",
+    "module": "Pediatria",
     "text": "Lactente de 5 meses, prematuro de 32 semanas, com antecedente de displasia broncopulmonar, é levado pela mãe a uma Unidade de Pronto Atendimento, com relato de que, há 3 dias, iniciou quadro de coriza e tosse, com piora progressiva do estado geral e dificuldade para mamar nas últimas 24 horas. O exame físico mostra: FR 65 irpm; tiragem subcostal, sibilos e roncos à ausculta; SpO₂ 90% em ar ambiente.\n\nA conduta inicial nesse caso consiste em",
     "options": [
       "(A) oxigenoterapia e amoxicilina oral.",

@@ -35,7 +35,12 @@ export interface Question {
 
 export interface QuizSettings {
   questionCount: number;
+  /** Área única escolhida ou 'Misto'. Mantido para simulados salvos antes dos filtros. */
   module: Module;
+  /** Áreas escolhidas (vazio ou ausente = todas). */
+  areas?: Module[];
+  /** Origens da prova pela sigla do ID: "TP", "ENAMED", "UNIFESP"… (vazio ou ausente = todas). */
+  sources?: string[];
   immediateFeedback: boolean;
   /** Simulado sugerido (lista fixa de questões, sem sorteio). */
   presetId?: string;

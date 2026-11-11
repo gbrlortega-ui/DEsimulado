@@ -54,7 +54,12 @@ Formato em `src/types.ts` (`Question`). Convenções:
 - **Arquivos:** questões do TP ficam no arquivo da área (`clinica.ts`, `pediatria.ts`…);
   cada edição do ENAMED tem seu arquivo (`enamed.ts` = 2025, `enamed2026.ts` = 2026),
   registrado em `src/data/questions.ts`. Provas de residência também têm arquivo próprio
-  (`unifesp2025.ts`), com `module` da área de cada questão para entrarem nos simulados por área.
+  (`unifesp2025.ts`). Em todas as provas, `module` é a **área** da questão (Clínica, Cirurgia,
+  Pediatria, GO, Saúde Coletiva, Ciências Básicas) — nunca "ENAMED"; o validador recusa.
+- **Filtros do simulado:** o aluno combina áreas (`QuizSettings.areas`) e origem da prova
+  (`QuizSettings.sources`: "TP", "ENAMED", "UNIFESP"…, tirada do prefixo do ID por `examSource`).
+  As opções de origem e as contagens área × origem vêm do `resumo.ts`, então uma prova nova aparece
+  no filtro sozinha.
 - **Alternativas:** o prefixo `(A) ` no texto é opcional — a interface remove e mostra a letra
   no marcador (`stripOptionLetter` em `src/lib/utils.ts`). `correctAnswer` é o índice (0 = A).
 - **Quebras de linha:** use `\n\n` entre parágrafos e `• ` para listas de exames. A interface

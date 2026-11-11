@@ -14,7 +14,7 @@ import {
 import { Brand } from './Brand';
 import { Explanation } from './Explanation';
 import { Question, UserAnswer, QuizSettings, QuizResults, Module } from '../types';
-import { cn, examLabel, isAccepted, scored, stripOptionLetter } from '../lib/utils';
+import { cn, examLabel, isAccepted, scored, settingsTitle, stripOptionLetter } from '../lib/utils';
 import { playCorrect, playWrong } from '../lib/sounds';
 import { clearProgress, progressFor, saveProgress } from '../lib/progress';
 
@@ -458,7 +458,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
 
           <div className="p-4 border-t border-line bg-bg-2 shrink-0">
             <div className="text-xs text-muted">{info ? 'Simulado' : 'Área'}</div>
-            <div className="text-sm font-semibold text-ink mt-0.5">{info ? info.title : settings.module === 'Misto' ? 'Todas as áreas' : settings.module}</div>
+            <div className="text-sm font-semibold text-ink mt-0.5">{info ? info.title : settingsTitle(settings)}</div>
           </div>
         </aside>
       </main>

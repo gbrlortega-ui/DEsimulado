@@ -1,4 +1,5 @@
 import type { QuizSettings, Question } from '../types';
+import { examSource, settingsFilters } from '../lib/utils';
 
 /**
  * O banco de questões (mais de 2 MB) fica num arquivo separado, baixado só quando precisa:
@@ -28,8 +29,10 @@ export async function pickQuestions(settings: QuizSettings): Promise<Question[]>
   if (settings.topography && settings.topics?.length) {
     filtered = filtered.filter((q) => q.topic && settings.topics!.includes(q.topic));
   }
-  if (!settings.topography && settings.module !== 'Misto') {
-    filtered = filtered.filter((q) => q.module === settings.module);
+  if (!settings.topography) {
+    const { areas, sources } = settingsFilters(settings);
+    if (areas.length) filtered = filtered.filter((q) => areas.includes(q.module));
+    if (sources.length) filtered = filtered.filter((q) => sources.includes(examSource(q.id)));
   }
 
   // Fisher-Yates: distribuição uniforme.

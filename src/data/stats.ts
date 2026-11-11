@@ -2,7 +2,7 @@ import { Module, Question } from '../types';
 import { SAMPLE_QUESTIONS } from './resumo';
 
 // Números das telas iniciais vêm do resumo gerado, para não carregar o banco inteiro no primeiro acesso.
-export { COUNT_BY_AREA, EDITIONS, TOTAL_QUESTIONS, type ExamEdition } from './resumo';
+export { COUNT_BY_AREA, COUNT_BY_AREA_SOURCE, EDITIONS, SOURCES, TOTAL_QUESTIONS, type ExamEdition, type ExamSource } from './resumo';
 
 export const AREAS: Module[] = [
   'Clínica Médica',
@@ -11,7 +11,6 @@ export const AREAS: Module[] = [
   'Ginecologia e Obstetrícia',
   'Saúde Coletiva',
   'Ciências Básicas',
-  'ENAMED',
 ];
 
 export function randomSample(exceptId?: string): Question {

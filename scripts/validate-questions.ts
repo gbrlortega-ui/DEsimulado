@@ -14,8 +14,9 @@ import type { Module } from '../src/types';
 
 const MODULES: Module[] = [
   'Pediatria', 'Clínica Médica', 'Cirurgia', 'Ginecologia e Obstetrícia',
-  'Saúde Coletiva', 'Ciências Básicas', 'ENAMED',
+  'Saúde Coletiva', 'Ciências Básicas',
 ];
+// 'ENAMED' continua no tipo Module só para simulados salvos antigos; toda questão precisa de uma área.
 // tp2026-12 (Teste de Progresso), unifesp2025-12 (provas de residência: sigla + ano), enamed-2026-12…
 const ID_PATTERN = /^([a-z]+\d{4}-\d+|enamed-\d{4}-\d+|sug-[a-z]+\d+-\d+|topo-\d+(?:-\d+)+)$/;
 // Banco geral + simulados sugeridos (validados juntos para pegar IDs repetidos entre eles).

@@ -13,6 +13,7 @@ import { loadBank, pickQuestions, questionsByIds } from './data/banco';
 import { clearProgress, loadProgress, type SavedQuiz } from './lib/progress';
 import { addToHistory, clearHistory, loadHistory, summarize, type HistoryEntry } from './lib/history';
 import { useAccount } from './lib/account';
+import { settingsTitle } from './lib/utils';
 
 // Telas carregadas sob demanda: a página inicial abre sem esperar por elas.
 const loadSetup = () => import('./components/QuizSetup');
@@ -204,7 +205,7 @@ export default function App() {
     if (answered > 0 && finalResults.totalQuestions > 0) {
       const updated = addToHistory({
           at: Date.now(),
-          title: sessionInfo?.title ?? (settings?.module === 'Misto' || !settings ? 'Todas as áreas' : settings.module),
+          title: sessionInfo?.title ?? (settings ? settingsTitle(settings) : 'Todas as áreas'),
           score: finalResults.score,
           correct: finalResults.correctCount,
           total: finalResults.totalQuestions,

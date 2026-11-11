@@ -28,7 +28,7 @@ import type { HistoryEntry } from '../lib/history';
 import type { Account } from '../lib/account';
 import { AccountMenu } from './AccountMenu';
 import { Module, Question } from '../types';
-import { AREAS, COUNT_BY_AREA, EDITIONS, TOTAL_QUESTIONS, randomSample } from '../data/stats';
+import { AREAS, COUNT_BY_AREA, EDITIONS, SOURCES, TOTAL_QUESTIONS, randomSample } from '../data/stats';
 import { TOPOGRAPHY_COUNT } from '../data/resumo';
 import { cn, examLabel, firstParagraph, stripOptionLetter } from '../lib/utils';
 
@@ -345,7 +345,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
                 {[
                   ['Teste de Progresso', years(tp)],
                   ['ENAMED', years(enamed)],
-                  ['Áreas', String(AREAS.length - 1)],
+                  ['Áreas', String(AREAS.length)],
                 ].map(([label, value]) => (
                   <div key={label}>
                     <dt className="text-xs text-muted">{label}</dt>
@@ -478,7 +478,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
         <section id="areas" className="bg-white border-y border-line scroll-mt-16">
           <div className="container-custom py-20 sm:py-28">
             <motion.div {...fadeUp()} className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-              <SectionTitle eyebrow="Áreas" title="Escolha por onde começar" text="Toque numa área para montar um simulado só com ela." />
+              <SectionTitle eyebrow="Áreas" title="Escolha por onde começar" text="Toque numa área para montar um simulado com ela e, se quiser, filtre pela prova de origem." />
               <button onClick={() => onSetup()} className="btn btn-ghost self-start md:self-auto">
                 Todas as áreas misturadas
                 <ArrowRight size={17} />
@@ -488,31 +488,49 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
             <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               {AREAS.map((area, i) => {
                 const { Icon, tint, ink } = AREA_STYLE[area] ?? AREA_STYLE.ENAMED;
-                const featured = area === 'ENAMED';
                 return (
                   <motion.button
                     key={area}
                     {...fadeUp(i * 0.04)}
                     type="button"
                     onClick={() => onSetup(area)}
-                    className={cn(
-                      'group text-left rounded-3xl p-5 sm:p-6 border transition-all hover:-translate-y-1 hover:shadow-[0_22px_45px_-28px_oklch(30%_0.06_160/0.5)]',
-                      featured ? 'bg-ink border-ink text-white col-span-2 lg:col-span-1' : 'bg-bg border-line hover:border-primary/50'
-                    )}
+                    className="group text-left rounded-3xl p-5 sm:p-6 border transition-all hover:-translate-y-1 hover:shadow-[0_22px_45px_-28px_oklch(30%_0.06_160/0.5)] bg-bg border-line hover:border-primary/50"
                   >
-                    <span className={cn('w-11 h-11 rounded-2xl flex items-center justify-center', featured ? 'bg-white/10 text-primary' : cn(tint, ink))}>
+                    <span className={cn('w-11 h-11 rounded-2xl flex items-center justify-center', tint, ink)}>
                       <Icon size={21} />
                     </span>
-                    <span className={cn('mt-6 block font-heading text-lg sm:text-xl font-extrabold leading-tight', featured ? 'text-white' : 'text-ink')}>
+                    <span className="mt-6 block font-heading text-lg sm:text-xl font-extrabold leading-tight text-ink">
                       {area}
                     </span>
-                    <span className={cn('mt-2 flex items-center justify-between gap-2 text-sm tabular-nums', featured ? 'text-white/65' : 'text-muted')}>
+                    <span className="mt-2 flex items-center justify-between gap-2 text-sm tabular-nums text-muted">
                       {fmt(COUNT_BY_AREA[area] ?? 0)} questões
-                      <ArrowRight size={16} className={cn('transition-transform group-hover:translate-x-1', featured ? 'text-primary' : 'text-primary-ink')} />
+                      <ArrowRight size={16} className="transition-transform group-hover:translate-x-1 text-primary-ink" />
                     </span>
                   </motion.button>
                 );
               })}
+              <motion.button
+                {...fadeUp(AREAS.length * 0.04)}
+                type="button"
+                onClick={() => onSetup()}
+                className="group text-left rounded-3xl p-5 sm:p-6 border bg-ink border-ink text-white col-span-2 transition-all hover:-translate-y-1 hover:shadow-[0_22px_45px_-28px_oklch(30%_0.06_160/0.5)]"
+              >
+                <span className="w-11 h-11 rounded-2xl flex items-center justify-center bg-white/10 text-primary">
+                  <GraduationCap size={21} />
+                </span>
+                <span className="mt-6 block font-heading text-lg sm:text-xl font-extrabold leading-tight text-white">Filtre pela prova</span>
+                <span className="mt-2 flex flex-wrap gap-1.5">
+                  {SOURCES.map((src) => (
+                    <span key={src.key} className="px-2.5 py-1 rounded-full bg-white/10 text-xs font-semibold text-white/85">
+                      {src.key}
+                    </span>
+                  ))}
+                </span>
+                <span className="mt-3 flex items-center justify-between gap-2 text-sm tabular-nums text-white/65">
+                  Combine área e origem no simulado
+                  <ArrowRight size={16} className="transition-transform group-hover:translate-x-1 text-primary" />
+                </span>
+              </motion.button>
             </div>
           </div>
         </section>

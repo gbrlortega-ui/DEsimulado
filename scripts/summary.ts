@@ -6,7 +6,7 @@
 import { QUESTIONS } from '../src/data/questions';
 import { SUGERIDOS } from '../src/data/sugeridos';
 import { TOPOGRAPHY_POOL } from '../src/data/topografiaPool';
-import { examLabel } from '../src/lib/utils';
+import { examLabel, examSource } from '../src/lib/utils';
 import type { Question } from '../src/types';
 
 export const SUMMARY_PATH = 'src/data/resumo.ts';
@@ -36,6 +36,23 @@ export function summarySource(): string {
   const EDITIONS = [...editions.values()].sort((a, b) =>
     a.kind === b.kind ? a.year - b.year || a.label.localeCompare(b.label) : ORDER.indexOf(a.kind) - ORDER.indexOf(b.kind)
   );
+
+  // Origens da prova (TP, ENAMED e cada prova de residência), na ordem das edições.
+  const SOURCES: { key: string; label: string; kind: Kind; years: string; count: number }[] = [];
+  for (const e of EDITIONS) {
+    const key = e.label.split(' ')[0];
+    let s = SOURCES.find((x) => x.key === key);
+    if (!s) {
+      const label = key === 'TP' ? 'Teste de Progresso' : key;
+      s = { key, label, kind: e.kind, years: '', count: 0 };
+      SOURCES.push(s);
+    }
+    s.count += e.count;
+  }
+  for (const s of SOURCES) {
+    const ys = EDITIONS.filter((e) => e.label.startsWith(s.key + ' ')).map((e) => e.year);
+    s.years = ys.length > 1 ? `${ys[0]}–${ys[ys.length - 1]}` : String(ys[0]);
+  }
 
   // Questões curtas, sem imagem, que cabem bem como amostra na página inicial.
   // Escolhidas em intervalos regulares para o arquivo só mudar quando o banco mudar.
@@ -70,6 +87,20 @@ export interface ExamEdition {
 
 /** Provas presentes no banco, em ordem cronológica (TP, depois ENAMED, depois residência). */
 export const EDITIONS: ExamEdition[] = ${json(EDITIONS)};
+
+export interface ExamSource {
+  key: string; // sigla usada no filtro: "TP", "ENAMED", "UNIFESP"
+  label: string; // "Teste de Progresso", "ENAMED", "UNIFESP"
+  kind: 'TP' | 'ENAMED' | 'Residência';
+  years: string; // "2019–2026" ou "2025"
+  count: number;
+}
+
+/** Origens da prova disponíveis no filtro do simulado. */
+export const SOURCES: ExamSource[] = ${json(SOURCES)};
+
+/** Questões por área e origem, na chave "Pediatria|ENAMED". */
+export const COUNT_BY_AREA_SOURCE: Record<string, number> = ${json(countBy(QUESTIONS, (q) => `${q.module}|${examSource(q.id)}`))};
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */
 export const TOPOGRAPHY_COUNT: Record<string, number> = ${json(countBy(TOPOGRAPHY_POOL, (q) => q.topography))};

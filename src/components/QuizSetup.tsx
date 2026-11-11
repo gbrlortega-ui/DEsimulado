@@ -3,9 +3,11 @@ import {
   ArrowRight,
   Baby,
   BookOpenCheck,
+  Building2,
   Check,
   ChevronLeft,
   ClipboardCheck,
+  ClipboardList,
   GraduationCap,
   Layers,
   Map,
@@ -19,10 +21,10 @@ import {
 } from 'lucide-react';
 import { Brand } from './Brand';
 import { Module, QuizSettings } from '../types';
-import { AREAS, COUNT_BY_AREA, TOTAL_QUESTIONS } from '../data/stats';
+import { AREAS, COUNT_BY_AREA_SOURCE, SOURCES, type ExamSource } from '../data/stats';
 import { SUGERIDOS_INFO, TOPOGRAPHY_COUNT, type SuggestedExamInfo } from '../data/resumo';
 import { TOPOGRAPHY, TOPOGRAPHY_GROUPS } from '../data/topografia';
-import { cn } from '../lib/utils';
+import { cn, settingsTitle } from '../lib/utils';
 
 interface QuizSetupProps {
   initialModule?: Module;
@@ -52,6 +54,47 @@ const AREA_ICON: Partial<Record<Module, LucideIcon>> = {
   'Saúde Coletiva': Users,
   'Ciências Básicas': Microscope,
   ENAMED: GraduationCap,
+};
+
+/** Cartão marcável dos filtros (área ou origem da prova). */
+const FilterCard: React.FC<{
+  active: boolean;
+  disabled?: boolean;
+  icon: LucideIcon;
+  title: string;
+  detail: string;
+  onClick: () => void;
+}> = ({ active, disabled, icon: Icon, title, detail, onClick }) => (
+  <button
+    type="button"
+    aria-pressed={active}
+    disabled={disabled && !active}
+    onClick={onClick}
+    className={cn(
+      'relative flex flex-col items-start gap-3 p-3.5 sm:p-4 rounded-2xl border text-left transition-colors',
+      active ? 'border-primary bg-primary-soft' : 'border-line bg-white hover:border-line-2 hover:bg-bg',
+      disabled && !active && 'opacity-45 cursor-not-allowed hover:bg-white hover:border-line'
+    )}
+  >
+    <span className={cn('w-9 h-9 rounded-xl flex items-center justify-center', active ? 'bg-primary text-white' : 'bg-bg-2 text-ink-2')}>
+      <Icon size={18} aria-hidden />
+    </span>
+    <span>
+      <span className={cn('block font-semibold leading-snug', active ? 'text-primary-ink' : 'text-ink')}>{title}</span>
+      <span className="block text-xs text-muted mt-0.5 tabular-nums">{detail}</span>
+    </span>
+    {active && (
+      <span className="absolute top-3 right-3 w-5 h-5 rounded-full bg-primary text-white flex items-center justify-center">
+        <Check size={12} strokeWidth={3} />
+      </span>
+    )}
+  </button>
+);
+
+const SOURCE_ICON: Record<ExamSource['kind'], LucideIcon> = {
+  TP: ClipboardList,
+  ENAMED: GraduationCap,
+  Residência: Building2,
 };
 
 const Step: React.FC<{ n: number; title: string; hint?: string; children: React.ReactNode }> = ({ n, title, hint, children }) => (
@@ -146,18 +189,32 @@ const TopographyCard: React.FC<{ onOpen: () => void }> = ({ onOpen }) => {
 };
 
 export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', onBack, onStart, onTopography }) => {
-  const [settings, setSettings] = useState<QuizSettings>({
-    questionCount: 20,
-    module: initialModule,
-    immediateFeedback: true,
-  });
+  const [areas, setAreas] = useState<Module[]>(initialModule !== 'Misto' && AREAS.includes(initialModule) ? [initialModule] : []);
+  const [sources, setSources] = useState<string[]>(initialModule === 'ENAMED' ? ['ENAMED'] : []);
+  const [questionCount, setQuestionCount] = useState(20);
+  const [immediateFeedback, setImmediateFeedback] = useState(true);
 
-  const options: { value: Module; label: string; count: number }[] = [
-    { value: 'Misto', label: 'Todas as áreas', count: TOTAL_QUESTIONS },
-    ...AREAS.map((a) => ({ value: a, label: a, count: COUNT_BY_AREA[a] ?? 0 })),
-  ];
-  const pool = settings.module === 'Misto' ? TOTAL_QUESTIONS : COUNT_BY_AREA[settings.module] ?? 0;
-  const areaText = settings.module === 'Misto' ? 'de todas as áreas' : settings.module === 'ENAMED' ? 'do ENAMED' : `de ${settings.module}`;
+  const allSources = SOURCES.map((s) => s.key);
+  const countFor = (as: Module[], ss: string[]) =>
+    (as.length ? as : AREAS).reduce(
+      (sum, a) => sum + (ss.length ? ss : allSources).reduce((n, s) => n + (COUNT_BY_AREA_SOURCE[`${a}|${s}`] ?? 0), 0),
+      0
+    );
+  const pool = countFor(areas, sources);
+
+  /** Marca/desmarca; marcar todas equivale a "Todas". */
+  const toggle = <T,>(list: T[], item: T, all: T[]) => {
+    const next = list.includes(item) ? list.filter((x) => x !== item) : [...list, item];
+    return next.length === all.length ? [] : next;
+  };
+
+  const settings: QuizSettings = {
+    questionCount,
+    immediateFeedback,
+    module: areas.length === 1 ? areas[0] : 'Misto',
+    areas: areas.length ? areas : undefined,
+    sources: sources.length ? sources : undefined,
+  };
 
   const modes = [
     { value: true, icon: BookOpenCheck, title: 'Modo estudo', text: 'Gabarito e comentário logo após cada questão.' },
@@ -179,56 +236,74 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20">
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-[-0.03em]">Monte seu simulado</h1>
         <p className="mt-3 text-ink-2 text-lg max-w-2xl">
-          Escolha a área, a quantidade e o jeito de responder. As questões são sorteadas a cada vez, então dá para repetir sem ver sempre as mesmas.
+          Escolha as áreas, a origem das provas, a quantidade e o jeito de responder. As questões são sorteadas a cada vez, então dá para repetir sem ver sempre as mesmas.
         </p>
 
         {/* Monte o seu */}
         <div className="mt-9 rounded-3xl border border-line-2 bg-white shadow-[0_30px_70px_-45px_oklch(30%_0.06_160/0.45)] overflow-hidden">
           <div className="p-5 sm:p-8 divide-y divide-line [&>section]:pb-7 [&>section:last-child]:pb-0">
-            <Step n={1} title="Área" hint="toque para escolher">
+            <Step n={1} title="Áreas" hint="escolha uma ou mais">
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
-                {options.map((o) => {
-                  const active = settings.module === o.value;
-                  const Icon = AREA_ICON[o.value] ?? Layers;
+                <FilterCard
+                  active={!areas.length}
+                  icon={Layers}
+                  title="Todas as áreas"
+                  detail={`${fmt(countFor([], sources))} questões`}
+                  onClick={() => setAreas([])}
+                />
+                {AREAS.map((a) => {
+                  const n = countFor([a], sources);
                   return (
-                    <button
-                      key={o.value}
-                      type="button"
-                      aria-pressed={active}
-                      onClick={() => setSettings({ ...settings, module: o.value })}
-                      className={cn(
-                        'relative flex flex-col items-start gap-3 p-3.5 sm:p-4 rounded-2xl border text-left transition-colors',
-                        active ? 'border-primary bg-primary-soft' : 'border-line bg-white hover:border-line-2 hover:bg-bg'
-                      )}
-                    >
-                      <span className={cn('w-9 h-9 rounded-xl flex items-center justify-center', active ? 'bg-primary text-white' : 'bg-bg-2 text-ink-2')}>
-                        <Icon size={18} aria-hidden />
-                      </span>
-                      <span>
-                        <span className={cn('block font-semibold leading-snug', active ? 'text-primary-ink' : 'text-ink')}>{o.label}</span>
-                        <span className="block text-xs text-muted mt-0.5 tabular-nums">{fmt(o.count)} questões</span>
-                      </span>
-                      {active && (
-                        <span className="absolute top-3 right-3 w-5 h-5 rounded-full bg-primary text-white flex items-center justify-center">
-                          <Check size={12} strokeWidth={3} />
-                        </span>
-                      )}
-                    </button>
+                    <FilterCard
+                      key={a}
+                      active={areas.includes(a)}
+                      disabled={n === 0}
+                      icon={AREA_ICON[a] ?? Layers}
+                      title={a}
+                      detail={n === 0 ? 'Sem questões nessa origem' : `${fmt(n)} questões`}
+                      onClick={() => setAreas(toggle(areas, a, AREAS))}
+                    />
                   );
                 })}
               </div>
             </Step>
 
-            <Step n={2} title="Quantidade de questões">
+            <Step n={2} title="Origem da prova" hint="escolha uma ou mais">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
+                <FilterCard
+                  active={!sources.length}
+                  icon={Layers}
+                  title="Todas as provas"
+                  detail={`${fmt(countFor(areas, []))} questões`}
+                  onClick={() => setSources([])}
+                />
+                {SOURCES.map((src) => {
+                  const n = countFor(areas, [src.key]);
+                  return (
+                    <FilterCard
+                      key={src.key}
+                      active={sources.includes(src.key)}
+                      disabled={n === 0}
+                      icon={SOURCE_ICON[src.kind]}
+                      title={src.label}
+                      detail={`${src.kind === 'Residência' ? 'Residência ' : ''}${src.years} · ${fmt(n)} questões`}
+                      onClick={() => setSources(toggle(sources, src.key, allSources))}
+                    />
+                  );
+                })}
+              </div>
+            </Step>
+
+            <Step n={3} title="Quantidade de questões">
               <div className="grid grid-cols-4 sm:grid-cols-8 gap-2">
                 {questionCounts.map((count) => {
-                  const active = settings.questionCount === count;
+                  const active = questionCount === count;
                   return (
                     <button
                       key={count}
                       type="button"
                       aria-pressed={active}
-                      onClick={() => setSettings({ ...settings, questionCount: count })}
+                      onClick={() => setQuestionCount(count)}
                       className={cn(
                         'py-3 rounded-xl border font-heading font-bold tabular-nums transition-colors',
                         active ? 'bg-ink border-ink text-white' : 'bg-white border-line text-ink hover:border-line-2'
@@ -241,20 +316,20 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
               </div>
               <p className="mt-2.5 flex items-center gap-1.5 text-sm text-muted">
                 <Timer size={14} aria-hidden />
-                Cerca de {duration(settings.questionCount)} de prova
+                Cerca de {duration(questionCount)} de prova
               </p>
             </Step>
 
-            <Step n={3} title="Como responder">
+            <Step n={4} title="Como responder">
               <div className="grid sm:grid-cols-2 gap-2">
                 {modes.map((m) => {
-                  const active = settings.immediateFeedback === m.value;
+                  const active = immediateFeedback === m.value;
                   return (
                     <button
                       key={m.title}
                       type="button"
                       aria-pressed={active}
-                      onClick={() => setSettings({ ...settings, immediateFeedback: m.value })}
+                      onClick={() => setImmediateFeedback(m.value)}
                       className={cn(
                         'flex items-start gap-3 p-4 rounded-2xl border text-left transition-colors',
                         active ? 'border-primary bg-primary-soft' : 'border-line bg-white hover:border-line-2 hover:bg-bg'
@@ -276,12 +351,23 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
 
           <div className="px-5 sm:px-8 py-5 bg-bg-2 border-t border-line flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <p className="text-ink-2">
-              <span className="font-semibold text-ink">
-                {settings.questionCount} questões {areaText}
-              </span>
-              , sorteadas entre {fmt(pool)} · {settings.immediateFeedback ? 'modo estudo' : 'modo prova'}
+              {pool === 0 ? (
+                <span className="font-semibold text-ink">Nenhuma questão nessa combinação de área e prova.</span>
+              ) : (
+                <>
+                  <span className="font-semibold text-ink">
+                    {Math.min(questionCount, pool)} questões · {settingsTitle(settings)}
+                  </span>
+                  , sorteadas entre {fmt(pool)} · {immediateFeedback ? 'modo estudo' : 'modo prova'}
+                  {pool < questionCount && <span className="block text-sm text-muted mt-0.5">Essa combinação tem só {fmt(pool)} questões.</span>}
+                </>
+              )}
             </p>
-            <button onClick={() => onStart(settings)} className="btn btn-primary sm:px-10 flex items-center justify-center gap-2">
+            <button
+              onClick={() => onStart(settings)}
+              disabled={pool === 0}
+              className="btn btn-primary sm:px-10 flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed"
+            >
               Começar simulado
               <ArrowRight size={18} aria-hidden />
             </button>
