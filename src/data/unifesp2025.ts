@@ -5,6 +5,8 @@ import { Question } from '../types';
 export const UNIFESP_2025_QUESTIONS: Question[] = [
   {
     "id": "unifesp2025-1",
+    "topography": "16",
+    "topic": "Pré-operatório",
     "module": "Cirurgia",
     "text": "Mulher, 27 anos de idade, 55 kg e 1,65 m, submetida a raquianestesia e anestesia geral para tratamento cirúrgico de endometriose. Durante avaliação pré-anestésica foi identificado alto risco para náusea e vômito no pós-operatório.\n\nCom objetivo de reduzir o risco de ocorrência de complicação no pós-operatório, qual é a conduta mais adequada?",
     "options": [
@@ -25,6 +27,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-2",
+    "topography": "16",
+    "topic": "Obstrução intestinal",
     "module": "Cirurgia",
     "text": "75 anos de idade, apresenta dor abdominal em cólica de forte intensidade e com 36 horas de evolução, de localização difusa, acompanhado de náuseas e vômitos. Nas últimas 24 horas, nega eliminação de gases e fezes. Exame físico: REG, descorada, FC 90 bpm, PA 150 x 95 mm Hg, temperatura 37,5 °C; abdômen globoso, distendido, ruídos hidroaéreos aumentados, hipertimpanismo difuso e doloroso à palpação, mas sem sinais de irritação peritoneal. A sequência do Rx de abdome em três posições evidenciou estômago e alças intestinais difusamente dilatadas, níveis hidroaéreos e pneumocolangiograma presente.\n\nQual é o diagnóstico mais provável?",
     "options": [
@@ -46,6 +50,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-3",
+    "topography": "14",
+    "topic": "Trauma",
     "module": "Cirurgia",
     "text": "Homem, 24 anos de idade, é admitido no PS por acidente automobilístico. Exame físico: via aérea pérvia, pneumotórax esquerdo com fratura linear da 3ª, 4ª e 5ª costelas, estável hemodinamicamente, sinais de trauma raquimedular em L3-L4, múltiplas fraturas em membros superiores e inferiores. Exames de imagem: ausência de outras lesões no abdômen e na pelve.\n\nCom relação à drenagem da via urinária, qual é a conduta mais adequada?",
     "options": [
@@ -67,6 +73,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-4",
+    "topography": "7.1",
+    "topic": "Dissecção de aorta",
     "module": "Cirurgia",
     "text": "Homem, 48 anos de idade, previamente assintomático, comparece ao PS com dor torácica de forte intensidade, em aperto, com início súbito e irradiação para dorso e região interescapular, há 2 horas. Exame físico: sudoreico, FC 100 bpm, PA 190 x 100 mm Hg nos quatro membros, pulsos rítmicos e presença de sopro diastólico suave, 4+/6+, no foco aórtico.\n\nApós análise do eletrocardiograma, qual é a conduta mais adequada?",
     "options": [
@@ -89,6 +97,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-5",
+    "topography": "3.4",
+    "topic": "Pancreatite aguda",
     "module": "Cirurgia",
     "text": "Mulher, 47 anos de idade, antecedente de colelitíase, dá entrada no PS com queixa de dor epigástrica há 8 horas. Exame físico: estável hemodinamicamente, com abdômen distendido, doloroso difusamente no andar superior e DB negativa. Exames laboratoriais: leucograma 14.120 células/mm³ (80% de neutrófilos), PCR 32 mcg/dL e amilase 1.340 mcg/dL.\n\nQual é a conduta nutricional mais adequada?",
     "options": [
@@ -109,6 +119,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-6",
+    "topography": "16",
+    "topic": "Obstrução intestinal",
     "module": "Cirurgia",
     "text": "Um recém-nascido de 48 horas de vida apresenta vômitos biliosos e grande distensão abdominal. Eliminou mecônio 16 horas após o nascimento. Rx abdominal: intensa distensão de alças.\n\nQual é o diagnóstico mais provável?",
     "options": [
@@ -152,6 +164,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-8",
+    "topography": "16",
+    "topic": "Feridas",
     "module": "Cirurgia",
     "text": "Homem, 18 anos de idade, vítima de acidente por queda de moto, apresenta lesão na face posterior do antebraço direito. Exame físico: lesão de aproximadamente 25 x 7 cm, com sangramento e sujidade local, exposição da musculatura e gordura e sem exposição de vasos, nervos, tendões ou osso. Radiografia: ausência de fraturas. Submeteu-se a lavagem com desbridamento pela equipe da Cirurgia Geral. Após 10 dias, foi solicitada uma interconsulta para a equipe de Cirurgia Plástica.\n\nQual é a conduta mais adequada para a cobertura?",
     "options": [
@@ -172,6 +186,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-9",
+    "topography": "7.1",
+    "topic": "Aneurisma de aorta abdominal",
     "module": "Cirurgia",
     "text": "Homem, 78 anos de idade, realizou ultrassonografia abdominal que evidenciou dilatação da aorta abdominal abaixo das artérias renais de 4,5 cm de diâmetro e 10 cm de extensão.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -191,6 +207,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-10",
+    "topography": "15",
+    "topic": "Estudos epidemiológicos",
     "module": "Saúde Coletiva",
     "text": "Um ensaio clínico randomizado é considerado \"duplo-cego\" quando são mascarados para o desfecho em questão:",
     "options": [
@@ -211,6 +229,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-11",
+    "topography": "3.1",
+    "topic": "Diverticulose/diverticulite",
     "module": "Cirurgia",
     "text": "Homem, 70 anos de idade, com doença diverticular do cólon, apresenta-se estável hemodinamicamente, com dor abdominal intensa, febre e leucócitose. A tomografia computadorizada mostra um abscesso pericólico de 5 cm associado a diverticulite aguda.\n\nQual é a conduta inicial mais adequada?",
     "options": [
@@ -231,6 +251,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-12",
+    "topography": "2.1",
+    "topic": "Derrame pleural",
     "module": "Cirurgia",
     "text": "Homem, 35 anos de idade, foi submetido à descorticação pulmonar devido empiema pleural em fase fibrinopurulenta. No pós-operatório, permaneceu com febre e a radiografia de tórax mostrou uma coleção pleural septada e única. O débito do dreno permanece com aspecto purulento.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -251,6 +273,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-13",
+    "topography": "2.1",
+    "topic": "Câncer de pulmão",
     "module": "Cirurgia",
     "text": "Homem, 70 anos de idade, apresenta adenocarcinoma em lobo superior do pulmão esquerdo. Durante estadiamento da neoplasia observou-se comprometimento dos linfonodos das cadeias 4 ipsilateral e 7. Não foram identificadas metástases no PET-CT.\n\nQual a conduta mais adequada?",
     "options": [
@@ -290,6 +314,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-15",
+    "topography": "4.2",
+    "topic": "Câncer de bexiga",
     "module": "Cirurgia",
     "text": "Homem, 65 anos de idade, apresenta sangramento na urina há 6 meses. Exame físico: BEG, FC 80 bpm, PA 120x80 mm Hg, T 36,5 °C, e abdômen indolor à palpação. Exames: Hb 12,3 g/dL, leucócitos 9.000 células/mm³, plaquetas 170.000/mm³, Na 144 mEq/L, K 4,0 mEq/L, U 30 mg/dL, C 1,2 mg/dL, TGO 30 U/L, TGP 40 U/L, FA 30 U/L, GGT 50 U/L. Ultrassonografia do abdômen: lesão polipoide da bexiga de 3 cm na parede lateral direita, com presença de fluxo ao estudo Doppler. Submeteu-se à ressecção transuretral da lesão vesical.\n\nQual é o diagnóstico mais provável?",
     "options": [
@@ -310,6 +336,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-16",
+    "topography": "4.2",
+    "topic": "Retenção urinária",
     "module": "Cirurgia",
     "text": "Homem, 74 anos de idade, apresenta dor abdominal supra-púbica de forte intensidade, com última micção há 16 horas e perda urinária em gotas, em pouco volume. Exame físico: REG, afebril, globo vesical palpável. Exames laboratoriais: C 1,3 mg/dL, U 60 mg/dL, hemograma sem alteração. Realizado sondagem vesical de alívio, com saída de 1.300 mL de urina concentrada, e alívio do desconforto.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -350,6 +378,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-18",
+    "topography": "3.1",
+    "topic": "Úlcera péptica",
     "module": "Cirurgia",
     "text": "Homem, 60 anos de idade, realizou endoscopia digestiva alta por melena sem repercussão hemodinâmica. O laudo apresenta lesão ulcerada bem delimitada de 8 mm na pequena curvatura do antro, com fundo recoberto por fibrina. A biópsia revelou gastrite crônica e presença de Helicobacter pylori.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -372,6 +402,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-19",
+    "topography": "1.3",
+    "topic": "Vertigem",
     "module": "Clínica Médica",
     "text": "Mulher, 44 anos de idade, apresenta quadro súbito de vertigem rotatória intensa há 3 horas, associada a náuseas, vômitos, sudorese profusa e mal-estar, que pioram à movimentação cefálica. Nega sintomas auditivos associados. Antecedentes: diabetes tipo 1 em uso de insulina, dislipidemia em uso de atorvastatina, hipertensão arterial em uso de anlodipino. Refere cefaleia por abuso de analgésico, em seguimento. Exame físico: PA 100x60 mmHg, FC 98 bpm, SatO₂ 98% em ar ambiente, dextro 113 mg/dL, REG, descorada (1+/4+), desidratada (2+/4+), eupneica. Nistagmo: espontâneo horizontal para a direita, semi espontâneo presente ao olhar para a direita (horizontal para a direita) e ao olhar para a esquerda (horizontal para a direita), sendo mais intenso com o olhar para a direita e ausente com o olhar para cima e para baixo. HIT (head impulse test): presença de sacada corretiva ao virar a cabeça para a esquerda. Otoscopia: membranas timpânicas íntegras e translúcidas, meato acústico externo livre. Paciente não tolerou testes de Romberg, Fukuda e manobras posicionais por quadro de vômitos e mal-estar.\n\nQual é o diagnóstico mais provável?",
     "options": [
@@ -393,6 +425,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-20",
+    "topography": "6.2",
+    "topic": "Lesão do ligamento cruzado anterior",
     "module": "Cirurgia",
     "text": "Homem, 35 anos de idade, vem ao ambulatório de joelho após 3 semanas de acidente de carro no qual sofreu trauma direto no seu joelho esquerdo contra o painel do carro. Refere que na ocasião percebeu grande hematoma, inchaço e dor no joelho. Foi ao pronto socorro e realizou radiografias sem fraturas, sendo recomendado anti-inflamatórios e crioterapia. Exame físico: aumento da translação posterior do joelho esquerdo e deslizamento posterior da tíbia.\n\nQual é o diagnóstico mais provável?",
     "options": [
@@ -413,6 +447,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-21",
+    "topography": "2.2",
+    "topic": "Infarto agudo do miocárdio",
     "module": "Clínica Médica",
     "text": "Homem, 65 anos de idade, apresentou dor precordial no domicílio, de forte intensidade, com irradiação para membro superior esquerdo e sudorese, porém só procurou atendimento médico 14 horas após o quadro, quando a dor já havia cessado. O exame cardíaco inicial não mostrou alterações significativas. ECG: supradesnivelamento do segmento ST de aproximadamente 1 mm nas derivações D2, D3 e aVF, com inversão de onda T e onda Q patológica nas mesmas derivações. Após 48 horas, notou-se um sopro holossistólico em ápice, irradiado para axila, associado a hipotensão arterial e má perfusão periférica.\n\nQual é a explicação mais provável para o quadro?",
     "options": [
@@ -434,6 +470,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-22",
+    "topography": "8",
+    "topic": "Distúrbios do cálcio",
     "module": "Clínica Médica",
     "text": "Mulher, 70 anos de idade, com hipertensão, osteoartrose e osteoporose em coluna lombar (T-score -2,9), realiza investigação laboratorial com os seguintes resultados: creatinina = 0,9 mg/dL (VR 0,6 a 1,1 mg/dL), TSH = 3,0 mUI/L (VR 0,44 a 5,4 mUI/L), PTH = 15 pg/mL (VR 22 a 84 pg/mL), cálcio total = 10,7 mg/dL (VR 8,6 a 10,3 mg/dL).\n\nQual medicamento listado abaixo pode causar a alteração laboratorial observada?",
     "options": [
@@ -455,6 +493,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-23",
+    "topography": "14",
+    "topic": "Parada cardiorrespiratória",
     "module": "Clínica Médica",
     "text": "Homem, 55 anos de idade, com histórico de doença pulmonar obstrutiva crônica sofre uma parada cardiorrespiratória em atividade elétrica sem pulso enquanto estava na UTI. A equipe inicia as manobras de ressuscitação cardiopulmonar (RCP) imediatamente, mas não há retorno da circulação espontânea após 5 minutos. Durante a ressuscitação, o monitor de capnografia mostra um valor de dióxido de carbono ao final da expiração (ETCO₂) de 8 mmHg e a pressão arterial diastólica (PAD) é registrada como 15 mmHg durante as compressões torácicas.\n\nQual deve ser a próxima ação para melhorar a qualidade da RCP?",
     "options": [
@@ -476,6 +516,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-24",
+    "topography": "8",
+    "topic": "Prolactinoma",
     "module": "Clínica Médica",
     "text": "Mulher, 60 anos de idade, em amenorreia há quatro anos, foi recentemente diagnosticada com anemia e na investigação apresenta os seguintes exames: TSH = 1,97 mUI/mL (VR 0,45 a 4,5 mUI/mL), T4 livre = 0,3 ng/dL (VR 0,9 a 1,8 ng/dL), FSH = 4,0 mUI/mL (VR 3,6 a 16,6 mUI/mL), LH = 1,6 mUI/mL (VR 1,1 a 11,1 mUI/mL), cortisol = 6,6 mcg/dL (VR 5,0 a 25 mcg/dL), ACTH = 12,6 pg/mL (VR < 46 pg/mL), IGF-1 = 64 ng/mL (VR 83 a 241 ng/mL), prolactina = 80 ng/dL (VR 5 a 25 ng/dL). A ressonância magnética da sela túrcica evidenciou lesão hipofisária de 3,5 x 2,8 x 3,1 cm em região selar compatível com adenoma hipofisário.\n\nQual é a alternativa mais adequada?",
     "options": [
@@ -496,6 +538,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-25",
+    "topography": "2.2",
+    "topic": "Insuficiência cardíaca",
     "module": "Clínica Médica",
     "text": "Homem, 70 anos de idade, com diagnóstico de miocardiopatia dilatada por doença de Chagas é admitido no PS por piora da dispneia, ortopneia, dispneia paroxística noturna, edema de membros inferiores bilateralmente até a região escrotal e ganho de peso. Exame físico: sonolência, PA = 90/50 mmHg, FC = 100 bpm em ritmo sinusal, FR = 30 rpm, SpO₂ = 90% em ar ambiente, tempo de enchimento capilar = 4 s, ausculta cardíaca com presença de terceira bulha e sopro holossistólico de foco mitral 3+/6+, ausculta pulmonar reduzida em campos médio-inferiores bilateralmente.\n\nQual é o perfil clínico-hemodinâmico da insuficiência cardíaca e a estratégia terapêutica inicial mais adequada?",
     "options": [
@@ -517,6 +561,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-26",
+    "topography": "1.1",
+    "topic": "Demências",
     "module": "Clínica Médica",
     "text": "Mulher, 87 anos de idade, viúva, mora com a filha. A paciente apresenta quadro de perambulação noturna, choro fácil, agressividade verbal. Há 4 anos, apresenta perda de memória recente gradual e lentamente e, há 1 ano, piora da funcionalidade, com necessidade de ajuda para banho, higiene pessoal, alimentação e uso de fraldas.\n\nDiante da principal hipótese diagnóstica, quais são as escalas mais indicadas para avaliação do estágio da doença?",
     "options": [
@@ -538,6 +584,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-27",
+    "topography": "10",
+    "topic": "Infecções relacionadas à assistência",
     "module": "Clínica Médica",
     "text": "Homem, 66 anos de idade, portador de doença renal crônica, evoluiu com febre durante sessão de hemodiálise. Foi coletada hemocultura que mostrou crescimento de Staphylococcus aureus resistente à oxacilina.\n\nQual é a opção terapêutica mais adequada para o caso de bacteremia?",
     "options": [
@@ -559,6 +607,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-28",
+    "topography": "14",
+    "topic": "Choque",
     "module": "Clínica Médica",
     "text": "Homem, 27 anos de idade, previamente hígido, foi vítima de acidente automobilístico com sangramentos. Apresenta, à avaliação, PA = 94/52 mmHg, oligúria, creatinina = 1,9 mg/dL (VR 0,7 a 1,3 mg/dL), ureia = 96 mg/dL (VR 20 a 50 mg/dL), K = 6,1 mEq/L (VR 3,5 a 5,1 mEq/L), densidade urinária = 1036 (VR 1005 a 1030), fração de excreção de ureia = 27% e urina I com presença de cilindros hialinos abundantes.\n\nQual é o tratamento mais adequado neste momento?",
     "options": [
@@ -580,6 +630,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-29",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "Mulher, 65 anos de idade, é viúva, tem diagnóstico de artrite reumatoide e é atendida em uma UBS. Ela mora com sua filha de 25 anos que não trabalha porque apresenta um quadro de depressão grave. A paciente nunca teve um emprego formal, nunca contribuiu com a Previdência Social e, na última consulta, foi atendida pela assistente social que a orientou a buscar um benefício.\n\nQual é o benefício no qual a paciente se enquadra?",
     "options": [
@@ -601,6 +653,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-30",
+    "topography": "10",
+    "topic": "Sepse",
     "module": "Clínica Médica",
     "text": "A sepse é uma disfunção orgânica com risco de morte, causada por uma resposta à infecção. O diagnóstico precoce e o atendimento sistematizado ao paciente séptico têm grande impacto no prognóstico.\n\nQual é a conduta que comprovadamente aumenta a chance de sobrevida do paciente?",
     "options": [
@@ -621,6 +675,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-31",
+    "topography": "4.1",
+    "topic": "Nefropatia diabética",
     "module": "Clínica Médica",
     "text": "Mulher, 66 anos de idade, é atendida em consulta de rotina por diabetes tipo 2 e hipertensão arterial. Exame físico: PA = 140/96 mmHg. Exames laboratoriais: taxa de filtração glomerular estimada = 28 mL/min/1,73 m², proteinúria = 1,9 g/24h.\n\nQual é a conduta mais apropriada?",
     "options": [
@@ -643,6 +699,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-32",
+    "topography": "2.2",
+    "topic": "Choque cardiogênico",
     "module": "Clínica Médica",
     "text": "Mulher, 70 anos de idade, com histórico de insuficiência cardíaca, foi admitida na UTI com choque cardiogênico após um infarto agudo do miocárdio. Exame físico: PA = 95/60 mmHg, FC = 110 bpm, FR = 25 irpm, SpO₂ = 90% com máscara de oxigênio; extremidades frias, pele úmida e distensão jugular.\n\nQual é a escolha mais adequada de agente inotrópico para esta paciente?",
     "options": [
@@ -664,6 +722,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-33",
+    "topography": "4.1",
+    "topic": "Distúrbios ácido-base",
     "module": "Clínica Médica",
     "text": "Mulher, 37 anos de idade, é admitida no PS com febre, disúria e lombalgia à direita. Exame físico: paciente torporosa, T = 38,4 °C, tempo de enchimento capilar de 4 segundos, PA = 88/46 mmHg, FC = 108 bpm, FR = 10 irpm, SpO₂= 83%. Exames laboratoriais: creatinina = 1,4 mg/dL; sódio = 145 mEq/L; potássio = 4,7 mEq/L; cloro = 105 mmol/L; gasometria arterial com pH = 7,19, pCO₂= 40 mmHg, pO₂ = 79 mmHg, bicarbonato = 10 mEq/L.\n\nQual é o distúrbio ácido-base observado?",
     "options": [
@@ -685,6 +745,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-34",
+    "topography": "6.1",
+    "topic": "Artrite reumatoide",
     "module": "Clínica Médica",
     "text": "Mulher, 28 anos de idade, refere dor e edema em mãos, punhos e tornozelos há 6 meses. Nega outras queixas em outros órgãos ou sistemas. Exame físico: edema e dor à palpação em punhos e articulações metacarpofalângicas bilateralmente.\n\nConsiderando a principal hipótese diagnóstica, qual dos exames abaixo apresenta melhor valor preditivo positivo para o diagnóstico da doença?",
     "options": [
@@ -706,6 +768,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-35",
+    "topography": "7.2",
+    "topic": "Hanseníase",
     "module": "Clínica Médica",
     "text": "Homem, 40 anos de idade, está em tratamento para hanseníase dimorfo-virchowiana há 2 meses com poliquimioterapia multibacilar. Refere, há três dias, “caroços” dolorosos na face, tronco e membros, associados a febre de 38,5°C, edema nas mãos e pés, e dor no trajeto dos nervos ulnares bilateralmente.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -727,6 +791,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-36",
+    "topography": "2.1",
+    "topic": "Embolia pulmonar",
     "module": "Clínica Médica",
     "text": "Mulher transgênero, 35 anos de idade, realizou cirurgia plástica há 3 semanas. Procura PS após síncope, dor torácica e dispneia. Faz uso de estrogênio nos últimos 10 anos e há 3 meses trocou para injetável. Exame físico: REG, T = 37,1°C, PA = 90/50 mmHg, FC = 110 bpm, FR = 22 irpm, SpO₂ = 94% (ar ambiente). Ausculta pulmonar e cardíaca normais.\n\nConsiderando a hipótese diagnóstica mais provável, qual é a conduta mais apropriada?",
     "options": [
@@ -748,6 +814,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-37",
+    "topography": "14",
+    "topic": "Sepse e choque séptico",
     "module": "Clínica Médica",
     "text": "Mulher, 30 anos de idade, previamente hígida, é admitida no PS com dor torácica, expectoração amarelada e febre há cinco dias, apresentando hoje dispneia. Na triagem, foi constatado: PA = 85/40 mmHg, FC = 130 bpm, FR = 28 irpm e SpO₂ =85%. A paciente foi levada à sala de emergência. Exames: gasometria arterial pH = 7,23, PaCO₂ = 30 mmHg, PaO₂ = 55 mmHg, bicarbonato = 16 mEq/L e lactato = 35 mg/L.\n\nDe acordo com a Campanha de Sobrevivência à Sepse, qual é a alternativa correta?",
     "options": [
@@ -769,6 +837,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-38",
+    "topography": "2.1",
+    "topic": "Pneumonia comunitária",
     "module": "Clínica Médica",
     "text": "Homem, 67 anos de idade, procurou PS com quadro de três dias febre, dor torácica em base direita ventilatório-dependente e tosse produtiva com expectoração esverdeada. Exame físico: REG, orientado, T axilar = 38 °C, PA = 110/70 mmHg, FC = 110 bpm, FR = 32 irpm, SpO₂ = 95% em ar ambiente; expansibilidade torácica discretamente diminuída em hemitórax direito; na base direita, observa-se frêmito toracovocal aumentado, som respiratório abolido e broncofonia aumentada. Exames: glicemia = 420 mg/dL; ureia = 70 mg/dL; creatinina = 1,3 mg/dL; TGO = 24 U/L; TGP = 20 U/L; hemograma com 14.000 leucócitos com desvio à esquerda; PCR = 35 mg/dL.\n\nAplique o escore de gravidade CURB-65 e indique o local de tratamento recomendado.",
     "options": [
@@ -789,6 +859,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-39",
+    "topography": "6.1",
+    "topic": "Artrite séptica",
     "module": "Clínica Médica",
     "text": "Mulher, 32 anos de idade, previamente hígida procura pronto atendimento com queixas de poliartralgia migratória de grandes e pequenas articulações há 10 dias, após viagem de férias. No momento refere dor e limitação de movimento em punho direito. Nega trauma e febre. Exame físico: edema, eritema e dor em punho direito. Ultrassom: tenossinovite em punho direito.\n\nConsiderando o diagnóstico mais provável, qual é a conduta mais adequada?",
     "options": [
@@ -830,6 +902,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-41",
+    "topography": "1.1",
+    "topic": "AVC",
     "module": "Clínica Médica",
     "text": "Homem, 63 anos de idade, com histórico de hipertensão arterial crônica e uso ocasional de álcool, é trazido ao PS após sua esposa encontrá-lo caído no chão do banheiro. Ele está confuso, queixando-se de dor de cabeça intensa e apresenta fraqueza no lado direito do corpo. Exame Físico: PA = 190/110 mmHg, FC = 88 bpm; hemiparesia direita e afasia parcial. Não há sinais de trauma externo. Tomografia computadorizada de crânio realizada à admissão: hematoma intracerebral de aproximadamente 40 mL localizado no lobo temporal esquerdo, sem sinais de herniação ou edema cerebral significativo.\n\nQual é a conduta mais adequada, considerando que está dentro de 3 horas do início dos sintomas?",
     "options": [
@@ -851,6 +925,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-42",
+    "topography": "15",
+    "topic": "Bioestatística",
     "module": "Saúde Coletiva",
     "text": "Em um estudo randomizado, controlado, que investigou os efeitos da tração controlada do cordão umbilical na terceira fase do trabalho de parto sobre a hemorragia pós-parto, a redução do risco associada à intervenção foi não significante (RR = 0,95; IC95% = 0,79 a 1,15).\n\nCom base neste resultado, qual é a alternativa correta?",
     "options": [
@@ -871,6 +947,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-43",
+    "topography": "15",
+    "topic": "Vigilância epidemiológica",
     "module": "Saúde Coletiva",
     "text": "Criança, 10 anos de idade, refugiada, é atendida no pronto-socorro apresentando febre e deficiência motora flácida de início súbito. A situação vacinal é ignorada.\n\nConsiderando a(s) hipótese(s) diagnóstica(s) mais provável(eis), a conduta adequada neste momento, em relação à vigilância epidemiológica, é notificar o caso às autoridades de saúde:",
     "options": [
@@ -892,6 +970,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-44",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "Nos anos 90, após a criação do SUS e a partir da luta do movimento indígena, foi regulamentada a Lei Arouca, que instituiu o Subsistema de Atenção à Saúde dos Povos Indígenas (SasiSUS), com o objetivo de garantir aos povos indígenas o acesso à atenção integral à saúde e contemplando a diversidade social, cultural, geográfica, histórica e política.\n\nComo é estruturado o atendimento aos povos indígenas dentro do SasiSUS?",
     "options": [
@@ -913,6 +993,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-45",
+    "topography": "15",
+    "topic": "Estudos epidemiológicos",
     "module": "Saúde Coletiva",
     "text": "Um estudo clínico está investigando a eficácia de um novo medicamento para reduzir o risco de determinada doença em pacientes de alto risco. O estudo envolveu 1000 pacientes, divididos igualmente em dois grupos: um grupo recebeu o novo medicamento e o outro grupo recebeu um placebo. Após um ano de acompanhamento, 100 pacientes no grupo do novo medicamento e 250 pacientes no grupo do placebo foram acometidos pela doença.\n\nPodemos concluir que a eficácia do novo medicamento foi de:",
     "options": [
@@ -934,6 +1016,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-46",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "Gestores municipais e estaduais de saúde em todo o país contratam cada vez mais Organizações Sociais de Saúde (OSS) para a gestão de serviços de saúde.\n\nSobre este modelo de gestão, qual é a alternativa correta?",
     "options": [
@@ -955,6 +1039,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-47",
+    "topography": "15",
+    "topic": "Vigilância epidemiológica",
     "module": "Saúde Coletiva",
     "text": "A notificação de gestantes diagnosticadas com HIV no Sistema de Informação de Agravos de Notificação (SINAN) é uma etapa fundamental para a vigilância epidemiológica, visando o controle da transmissão vertical do vírus.\n\nCom base nos protocolos de notificação e seguimento de gestantes com HIV no Brasil, qual das alternativas está correta?",
     "options": [
@@ -977,6 +1063,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-48",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "O Plano Municipal de Saúde (PMS) constitui-se no instrumento central de planejamento para definição e implementação de todas as iniciativas no âmbito da saúde na gestão municipal do SUS, sendo a base para a execução, acompanhamento e avaliação da gestão do sistema de saúde local para o período de quatro anos.\n\nA qual instância o PMS deve ser submetido para apreciação e aprovação?",
     "options": [
@@ -998,6 +1086,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-49",
+    "topography": "15",
+    "topic": "Atenção Primária",
     "module": "Saúde Coletiva",
     "text": "No atendimento dentro da Unidade Básica de Saúde, cada profissional faz um recorte, um destaque de sintomas e informações, de acordo com seu núcleo de conhecimento profissional. A discussão de casos clínicos em equipe, principalmente os mais complexos, é um recurso clínico e gerencial importante.\n\nEste modelo corresponde a:",
     "options": [
@@ -1019,6 +1109,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-50",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "O SUS está organizado de forma regionalizada e hierarquizada para formar as Redes de Atenção à Saúde no âmbito de Regiões de Saúde.\n\nQual é o serviço necessário para que um território seja reconhecido como Região de Saúde?",
     "options": [
@@ -1040,6 +1132,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-51",
+    "topography": "15",
+    "topic": "Rastreamento",
     "module": "Saúde Coletiva",
     "text": "Para determinar se, de fato, um programa de rastreamento de câncer de próstata é benéfico para aumento da longevidade de homens (\"prolongar vidas\"), qual dos seguintes desfechos clínicos é o mais adequado?",
     "options": [
@@ -1060,6 +1154,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-52",
+    "topography": "15",
+    "topic": "Testes diagnósticos",
     "module": "Saúde Coletiva",
     "text": "Você quer diagnosticar hipertensão arterial (PA ≥ 140/90 mmHg) e está usando um esfigmomanômetro que, por um defeito, sempre marca 140/90 mmHg ou mais, indicando corretamente as pressões acima destas. Indique o ponto da curva ROC (imagem a seguir) que representa a sensibilidade e a especificidade desse instrumento.",
     "options": [
@@ -1083,6 +1179,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-53",
+    "topography": "15",
+    "topic": "Estudos epidemiológicos",
     "module": "Saúde Coletiva",
     "text": "Em um estudo observacional, prospectivo, analítico foi avaliada a relação entre fumar e a incidência de acidente vascular cerebral (AVC) em mulheres com idade entre 30-55 anos, acompanhadas por um período de 10 anos que, no início do estudo, não tinham história de doença coronariana, AVC ou câncer. Os pesquisadores calcularam a incidência de AVC em mulheres fumantes e em mulheres não fumantes, resultando em uma força de associação de 2,8 IC95% (2,4-3,9).\n\nCom esse resultado podemos afirmar que:",
     "options": [
@@ -1104,6 +1202,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-54",
+    "topography": "8",
+    "topic": "Diabetes mellitus tipo 1 e 2",
     "module": "Clínica Médica",
     "text": "Mulher, 65 anos de idade, faz acompanhamento ambulatorial devido a hipertensão arterial sistêmica há 20 anos, diabetes mellitus tipo 2 há 15 anos, sem outros antecedentes patológicos. Faz uso de anlodipino 10 mg 1x/dia, losartana 50 mg 2x/dia, hidroclorotiazida 25mg 1x/dia, metformina 500 mg 3x/dia, ácido acetil salicílico 100 mg 1x/dia. Queixa-se de edema de membros inferiores iniciado há 3 meses. Exame físico: PA = 118/78 mmHg, edema de membros inferiores +/4, frio, mole, indolor, pulsos cheios e simétricos, panturrilhas livres, sem outras alterações. Exames: hemoglobina glicada = 7,8%, relação albumina/creatinina em amostra isolada de urina = 210 mg/g (VR < 30 mg/g).\n\nConsiderando efeitos adversos de medicamentos, a renoproteção e a prevenção de eventos cardiovasculares, quais são as condutas mais adequadas?",
     "options": [
@@ -1126,6 +1226,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-55",
+    "topography": "8",
+    "topic": "Diabetes mellitus tipo 1 e 2",
     "module": "Clínica Médica",
     "text": "Homem, 66 anos de idade, é avaliado em consulta ambulatorial com queixa de prurido na glande, hiperemia local e aumento da produção de esmegma. Trata-se de paciente com antecedente de obesidade, dislipidemia, diabetes mellitus tipo 2, doença renal crônica, estágio 4 A2 filtração glomerular estimada de 28 mL/min/1,73 m² e relação albumina/creatinina em amostra isolada de urina de 200 mg/g (VR < 30 mg/g). Faz uso de metformina 850mg 3x/dia e dapagliflozin 10 mg/dia.\n\nQual é a conduta mais adequada neste momento em relação ao tratamento do diabetes?",
     "options": [
@@ -1148,6 +1250,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-56",
+    "topography": "15",
+    "topic": "Rastreamento",
     "module": "Saúde Coletiva",
     "text": "A Força Tarefa Americana para Serviços Preventivos (US Preventive Service Task Force) atualizou sua recomendação para rastreamento de câncer de mama em mulheres, sugerindo mamografias bienais a partir dos 40 anos de idade, ao invés dos 50 anos de idade.\n\nConsiderando que a prevalência de câncer de mama é menor em mulheres jovens, qual é o impacto esperado desta nova Recomendação na performance do teste diagnóstico?",
     "options": [
@@ -1190,6 +1294,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-58",
+    "topography": "6.2",
+    "topic": "Fraturas",
     "module": "Cirurgia",
     "text": "Homem, 63 anos de idade, diabético tipo 2 bem controlado, apresentou queda ao solo há 3 horas, com trauma lateral do quadril direito, evoluindo com dor intensa, encurtamento aparente e rotação externa do membro inferior direito e sem alterações neurovasculares agudas.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1211,6 +1317,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-59",
+    "topography": "15",
+    "topic": "Rastreamento",
     "module": "Saúde Coletiva",
     "text": "Considerando adultos acima de 40 anos de idade, não gestantes, assintomáticos, independentemente da presença de outros fatores de risco, para quais condições é recomendado o rastreamento populacional?",
     "options": [
@@ -1234,6 +1342,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-60",
+    "topography": "15",
+    "topic": "Estudos epidemiológicos",
     "module": "Saúde Coletiva",
     "text": "Durante a epidemia de Zika no nordeste do Brasil, um estudo foi conduzido para investigar a associação entre a infecção congênita pelo vírus Zika e a microcefalia em recém-nascidos. Os pesquisadores selecionaram neonatos com microcefalia e neonatos sem microcefalia. Em seguida, eles investigaram retrospectivamente a exposição materna à infecção pelo vírus Zika confirmada por testes laboratoriais em ambos os grupos.\n\nQual é o desenho de estudo utilizado neste caso?",
     "options": [
@@ -1295,6 +1405,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-63",
+    "topography": "1.1",
+    "topic": "AVC",
     "module": "Clínica Médica",
     "text": "Mulher, 45 anos de idade, hipertensa e diabética dá entrada no pronto-socorro com rebaixamento do nível de consciência há 4 horas. Familiares relatam que ela se queixou de forte cefaleia repentina há 6 horas. Exame oftalmológico: fundo de olho com hemorragia vítrea e sub-hialoidea.\n\nO diagnóstico mais provável é:",
     "options": [
@@ -1315,6 +1427,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-64",
+    "topography": "5.1",
+    "topic": "Câncer de endométrio",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher, 54 anos de idade, refere sangramento genital progressivo há 2 anos. Biopsia endometrial: adenocarcinoma endometrial do tipo seroso. Estudo imuno-histoquímico: expressão anormal para p53. Ressonância Magnética da Pelve: doença restrita ao útero, ausência de linfonodomegalias pélvicas e para-aórticas. Tomografia de abdome superior e tórax: sem alterações.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1336,6 +1450,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-65",
+    "topography": "4.2",
+    "topic": "Incontinência urinária",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher, 54 anos de idade, 4G 4P (partos normais), refere perda urinária aos grandes esforços (tosse e atividade física) há 3 meses. Nega outras queixas. Ao exame físico observou-se o seguinte POP-Q: Aa=-1 Ba=-1 C=-7 HG=5 CP=2 CVT=10 Ap=-1 Bp=-1 D= -9.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1357,6 +1473,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-66",
+    "topography": "5.1",
+    "topic": "Câncer de colo uterino",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher, 48 anos de idade, submeteu-se à histerectomia total abdominal por mioma uterino há 4 meses. Refere ter realizado conização por NIC 3 com margens livres há 8 anos.\n\nSegundo as Diretrizes Brasileiras para o rastreamento do câncer do colo do útero a conduta é:",
     "options": [
@@ -1399,6 +1517,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-68",
+    "topography": "5.1",
+    "topic": "Climatério e menopausa",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher, 61 anos de idade, refere aumento progressivo e intenso de pelos pelo corpo, queda de cabelos importante, engrossamento da voz e aumento do clitóris há 6 meses.\n\nQual é a hipótese mais provável?",
     "options": [
@@ -1422,6 +1542,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-69",
+    "topography": "5.1",
+    "topic": "Contracepção",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher, 26 anos de idade, 3G 3 partos normais, vem ao ambulatório solicitar método contraceptivo. Refere fluxo menstrual abundante com 10 dias de duração acompanhado de cólica menstrual forte nos 3 primeiros dias. Ultrassonografia pélvica: útero com volume 180 mL, presença de nódulo intramural medindo 35x30 mm com distorção do eco endometrial de 10 mm, ovário direito volume 8 mL e ovário esquerdo com cisto simples 20x25 mm e volume 15mL.\n\nQual dos métodos contraceptivos é o mais adequado?",
     "options": [
@@ -1443,6 +1565,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-70",
+    "topography": "5.1",
+    "topic": "Climatério e menopausa",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher, 41 anos de idade, nuligesta, refere que não menstrua há 8 meses e apresenta ondas de calor eventuais e sudorese noturna duas vezes por mês. Como método contraceptivo utiliza pílula contendo 4mg de drospirenona. Realizou duas coletas sanguíneas com 14 dias de intervalo, respectivamente: 1ª. Coleta FSH= 87 mUI/mL; estradiol= 2 pg/mL e 2ª coleta FSH 61mUI/mL; estradiol 4 pg/mL.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1464,6 +1588,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-71",
+    "topography": "5.2",
+    "topic": "Diabetes gestacional",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher, 32 anos de idade, primigesta, na 12ª semana de gestação, está realizando pré-natal em Unidade Básica de Saúde. Exame físico: PA 120 x 80 mmHg, ausência de edemas. Exame obstétrico: útero aumentado para 12 semanas, batimentos cardíacos fetais = 144 bpm ao sonar. A glicemia de jejum apresenta resultado de 90 mg/dL.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1485,6 +1611,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-72",
+    "topography": "5.1",
+    "topic": "Infertilidade",
     "module": "Ginecologia e Obstetrícia",
     "text": "Um casal formado por um homem de 28 anos de idade e uma mulher nuligesta de 27 anos idade, refere 2 anos de tentativas de gestação. Ele, com histórico de uretrite tratada, exame físico sem alterações e espermograma normal. Ela, saudável, com ciclos menstruais regulares, sem queixas de dismenorreia ou dispareunia e com exame físico sem alterações.\n\nQual é o próximo exame na investigação da infertilidade desse casal?",
     "options": [
@@ -1506,6 +1634,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-73",
+    "topography": "5.2",
+    "topic": "Isoimunização Rh",
     "module": "Ginecologia e Obstetrícia",
     "text": "Gestante, 25 anos de idade, apresenta tipagem sanguínea B negativo e o esposo O positivo. Na 21ª semana, após realizar exames laboratoriais de rotina, apresentou pela primeira vez o coombs indireto positivo e com titulação inicial de 1:32, que passou para 1:128 após 3 semanas.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1527,6 +1657,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-74",
+    "topography": "5.2",
+    "topic": "Abortamento",
     "module": "Ginecologia e Obstetrícia",
     "text": "Gestante, 32 anos de idade, III G, IP, idade gestacional de 10 semanas pela DUM, apresentou sangramento vaginal, submetendo-se à curetagem uterina com diagnóstico de abortamento incompleto. O aspecto macroscópico e o resultado do exame histopatológico do material da cavidade uterina é de mola hidatiforme completa. Exames laboratoriais: hCG: 250.000 UI/L antes da curetagem, 50.000 UI/L após 7 dias, 70.000 UI/L após 14 dias e 85.000UI/L após 21 dias do procedimento. Nessa última avaliação, observou-se o aparecimento de lesão arroxeada na parede vaginal posterior, com 2 cm de diâmetro.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1548,6 +1680,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-75",
+    "topography": "5.2",
+    "topic": "Pré-natal",
     "module": "Ginecologia e Obstetrícia",
     "text": "Secundigesta, 39 anos de idade, 26 semanas, diabética gestacional controlada com dieta, vem à consulta de pré-natal. Hemoglobina de 10,9 g/dL, hematócrito 32%, VCM 78 fL, HCM 25 pg, ferritina 10 ng/mL, eletroforese de hemoglobina normal.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1569,6 +1703,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-76",
+    "topography": "5.2",
+    "topic": "Diabetes gestacional",
     "module": "Ginecologia e Obstetrícia",
     "text": "Gestante 38 anos, primigesta, com 36 semanas de gestação, com diagnóstico de diabetes mellitus gestacional estabelecido com 13 semanas tendo sido iniciada Insulinização com 25 semanas e desde então vem mantendo cerca de 80 a 85% dos valores do controle glicosimétrico dentro do normal. Exame físico: IMC = 32 Kg/m², altura uterina= 35 cm. Ultrassom: peso estimado = 2890 gramas e o maior bolsão de líquido amniótico: 5 cm.\n\nQual é a conduta mais adequada em relação à resolução da gravidez?",
     "options": [
@@ -1590,6 +1726,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-77",
+    "topography": "5.2",
+    "topic": "Abortamento",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher 40 anos de idade, IIIG, IP, IIA com o mesmo parceiro. Os abortamentos ocorreram entre 7 e 8 semanas de gestação. Os cariótipos do casal são normais. Exames laboratoriais: anticorpo anticardiolipina IgA = 22 mg/dL que se manteve positivo após 12 semanas de intervalo, mutação em heterozigose G20210 A da protrombina, reação para Citomegalovírus com IgG positivo e IgM negativo. Chega ao pré-natal com 6 semanas de atraso menstrual.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1612,6 +1750,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-78",
+    "topography": "5.2",
+    "topic": "Pré-natal",
     "module": "Ginecologia e Obstetrícia",
     "text": "Gestante, 36 anos de idade, IG 38 semanas e 3 dias, com gestação gemelar dicoriônica, apresenta diabetes mellitus gestacional. Possui bom controle glicêmico, alcançado com orientação dietética. Exames: taxas de hemoglobina glicada que variaram entre 4,9 e 5,4% e ultrassonografia recente mostrando o feto I em apresentação cefálica e peso estimado no percentil 35, e o feto II em apresentação pélvica e peso estimado no percentil 38 da curva própria para gestação gemelar.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1632,6 +1772,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-79",
+    "topography": "5.2",
+    "topic": "Assistência ao parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "Parturiente de risco habitual, 26 anos de idade, 38 semanas de gestação, primigesta, encontra-se em trabalho de parto espontâneo, sem bloqueio neuraxial. Exame obstétrico: frequência cardíaca fetal basal de 136 batimentos por minuto e com desacelerações precoces repetitivas à cardiotocografia, apresentação cefálica em OP e plano +3 de DeLee. Após 4 horas na fase ativa do período expulsivo, refere estar exausta e não consegue mais realizar puxos.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1653,6 +1795,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-80",
+    "topography": "5.1",
+    "topic": "Câncer de colo uterino",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher, 33 anos de idade, nulípara, deseja engravidar. Realizou cirurgia de alta frequência no colo do útero. Anatomia patológica: neoplasia intraepitelial escamosa de alto grau extensa, com foco de invasão de 4mm, presença de êmbolos carcinomatosos em vasos linfáticos, margens livres para componente invasor e intraepitelial.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1674,6 +1818,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-81",
+    "topography": "10",
+    "topic": "Tuberculose",
     "module": "Pediatria",
     "text": "Menina, 4 anos de idade, é contato domiciliar da mãe recentemente diagnosticada com tuberculose pulmonar. A criança está assintomática e apresentou teste tuberculínico de 6 mm. O exame de RX de tórax da criança não apresentou anormalidades.\n\nQual é a conduta mais adequada para essa criança?",
     "options": [
@@ -1695,6 +1841,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-82",
+    "topography": "11",
+    "topic": "Calendário vacinal",
     "module": "Pediatria",
     "text": "Menino, 7 meses de idade, hígido, foi levado à Unidade Básica de Saúde para atualização vacinal. Ele tinha recebido apenas a vacina para hepatite B ao nascimento.\n\nEm relação às vacinas que devem ser administradas, assinale a alternativa correta.",
     "options": [
@@ -1716,6 +1864,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-83",
+    "topography": "11",
+    "topic": "Aleitamento materno",
     "module": "Pediatria",
     "text": "Menino, 45 dias de vida, há 15 dias apresenta eliminação de fezes com raios de sangue em todas as evacuações. Evacua de 6 a 8 vezes ao dia desde o nascimento e não houve mudança na frequência ou consistência das fezes. Recebe fórmula láctea de partida desde a segunda semana de vida. Não apresenta outros sintomas e não tem alterações ao exame físico.\n\nConsiderando o diagnóstico mais provável, qual é o mecanismo fisiopatológico envolvido?",
     "options": [
@@ -1737,6 +1887,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-84",
+    "topography": "3.1",
+    "topic": "DRGE",
     "module": "Pediatria",
     "text": "Menino, 7 anos de idade, apresenta queixa de refluxo, queimação retroesternal e dor epigástrica há 1 ano, que não melhoram com uso de inibidor da bomba de prótons. Tem antecedente de alergia à proteína do leite de vaca quando era lactente.\n\nConsiderando o diagnóstico mais provável, qual é o exame recomendado para a confirmação diagnóstica?",
     "options": [
@@ -1758,6 +1910,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-85",
+    "topography": "11",
+    "topic": "Desidratação",
     "module": "Pediatria",
     "text": "Menino, 1 ano e 8 meses de idade, comparece à UBS com história de diarreia por 3 dias com eliminação de vermes nas fezes há 4 dias. Há 1 dia parou de evacuar, apresenta vômitos, dor abdominal; não está aceitando a alimentação e a mãe notou que a criança está com o abdômen inchado e urinando pouco.\n\nQual é a conduta recomendada?",
     "options": [
@@ -1779,6 +1933,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-86",
+    "topography": "11",
+    "topic": "Asma infantil",
     "module": "Pediatria",
     "text": "Menino, 10 anos de idade, joga futebol desde pequeno; queixa-se de que há 5 meses vem apresentando dificuldade para correr, há um mês não consegue terminar a partida devido a crises de tosse seca e falta de ar. Há 2 semanas, com resfriado, piorou da tosse, principalmente na madrugada e pela manhã. Tem diagnóstico de rinite alérgica.\n\nQual dos exames abaixo confirma a principal hipótese diagnóstica para sua queixa?",
     "options": [
@@ -1800,6 +1956,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-87",
+    "topography": "3.1",
+    "topic": "Constipação intestinal",
     "module": "Pediatria",
     "text": "Lactente de 8 meses, bem nutrido, há 2 meses, desde o início da alimentação complementar, evacua fezes endurecidas e muito calibrosas, a cada 4 a 5 dias, com muito esforço e dor (choro). Mãe aumentou fibra na dieta, sem melhora. Nega atraso de eliminação de mecônio e apresenta exame físico sem alterações.\n\nConsiderando o diagnóstico mais provável, qual é o tratamento recomendado?",
     "options": [
@@ -1821,6 +1979,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-88",
+    "topography": "14",
+    "topic": "Emergências pediátricas",
     "module": "Pediatria",
     "text": "Ao nascimento, um recém-nascido a termo, filho de mãe multipara com período expulsivo prolongado, estava hipotônico e em apneia. O recém-nascido foi levado à mesa de reanimação sob fonte de calor radiante e foi iniciada a ventilação com balão e máscara e ar ambiente, mas o paciente mantinha-se em apneia e bradicárdico. Após ajuste da técnica da ventilação e aumento da concentração de oxigênio, o recém-nascido não melhorou.\n\nQual é o próximo passo indicado na reanimação?",
     "options": [
@@ -1842,6 +2002,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-89",
+    "topography": "9",
+    "topic": "Anemia hemolítica",
     "module": "Pediatria",
     "text": "Menino, 15 dias de vida, apresentou triagem neonatal positiva para deficiência de G6PD e foi convocado para repetição do exame. Na avaliação pediátrica, a mãe não tem queixas e o exame físico é normal.\n\nQual é a conduta mais adequada neste momento?",
     "options": [
@@ -1862,6 +2024,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-90",
+    "topography": "1.5",
+    "topic": "Hipotireoidismo",
     "module": "Pediatria",
     "text": "Menino, 1 ano de idade, iniciou tratamento para hipotireoidismo congênito com 15 dias de vida, sem elucidação etiológica. Apresenta bom crescimento e ganho de peso, além de desenvolvimento neuropsicomotor normal, com dosagens de TSH e hormônios tireoidianos normais e boa aderência ao tratamento. Ultrassonografia de tireoide: glândula tópica de dimensões normais.\n\nSegundo o Manual Técnico da Triagem Neonatal Biológica do Ministério da Saúde (2016), qual é a conduta recomendada?",
     "options": [
@@ -1883,6 +2047,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-91",
+    "topography": "2.2",
+    "topic": "Febre reumática",
     "module": "Pediatria",
     "text": "Menina, 7 anos de idade, apresentou artrite em joelho direito há 20 dias com duração de 3 dias, em tornozelo esquerdo há 15 dias com duração de 4 dias e em cotovelo esquerdo há 10 dias com duração de 3 dias. Exame físico: sem sinais de artrite ou outras alterações significativas. A ausculta torácica é normal.\n\nQual é a necessidade de solicitar um ecocardiograma neste caso?",
     "options": [
@@ -1904,6 +2070,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-92",
+    "topography": "11",
+    "topic": "Síndrome do desconforto respiratório neonatal",
     "module": "Pediatria",
     "text": "Recém-nascido (RN) com 28 semanas de idade gestacional, peso de nascimento de 1000g, nasceu vigoroso, mas apresentou desconforto respiratório com 3 minutos de vida, com piora progressiva. Na UTI, RX de tórax apresenta infiltrado reticulogranular.\n\nConsiderando o diagnóstico mais provável, qual é a conduta recomendada?",
     "options": [
@@ -1925,6 +2093,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-93",
+    "topography": "11",
+    "topic": "Icterícia neonatal",
     "module": "Pediatria",
     "text": "Recém-nascido com 36 semanas de idade gestacional, peso ao nascer de 2850 gramas, filho de mãe secundigesta, hígida, sem intercorrências na gestação, nasceu de parto normal com boa vitalidade. Com 48 horas de vida, está em alojamento conjunto, em aleitamento moderno exclusivo, com diurese e evacuação presentes e normais. Exame físico: ictérico zona II, sem outras alterações.\n\nQual é a conduta recomendada?",
     "options": [
@@ -1946,6 +2116,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-94",
+    "topography": "12",
+    "topic": "Cuidados paliativos",
     "module": "Pediatria",
     "text": "Os pais de Paulo de 7 anos chegam à consulta ambulatorial com os exames do filho que demonstram um quadro sugestivo de leucemia mieloide aguda. Você deverá comunicar o diagnóstico à família.\n\nCom base nos principais passos do Protocolo SPIKES de comunicação de más notícias, além de preparar um ambiente privado para conversar com a família, quais seriam suas principais atitudes, em sequência?",
     "options": [
@@ -1967,6 +2139,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-95",
+    "topography": "11",
+    "topic": "Desnutrição",
     "module": "Pediatria",
     "text": "Menino, 15 meses de idade, mantém crescimento abaixo de -2DP (Peso, Estatura e IMC). A família se queixa de baixa aceitação alimentar. Lactente nasceu com 36 semanas de gestação, peso abaixo do Percentil 10 em curvas de crescimento intrauterino, sem intercorrências na evolução neonatal. Mãe fez tratamento para hipotireoidismo na gestação e ultrassom gestacional com 33 semanas identificou oligoidrâmnio. Previsão de estatura final = 167 cm. Exame físico sem alterações.\n\nQual é a conduta mais adequada para a elucidação diagnóstica?",
     "options": [
@@ -1988,6 +2162,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-96",
+    "topography": "11",
+    "topic": "Maus-tratos infantis",
     "module": "Pediatria",
     "text": "Menino, 7 anos de idade, é trazido à UBS pela mãe com história de desobediência e agressividade em casa e na escola. Durante a consulta, ele revela sofrer agressões frequentes por parte do pai, inclusive com uso de objetos como cinto e chinelo. Exame físico: bom estado geral, duas equimoses de 3 cm de diâmetro no dorso, sem outras alterações. A criança parece tranquila na consulta e colabora com o exame.\n\nAlém de orientar a mãe sobre as consequências da violência, quais as condutas recomendadas para o caso?",
     "options": [
@@ -2031,6 +2207,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-98",
+    "topography": "10",
+    "topic": "Toxoplasmose",
     "module": "Pediatria",
     "text": "Recém-nascida (RN) de 7 dias de vida, é levada à UBS para a primeira consulta pediátrica. Sua mãe foi diagnosticada com toxoplasmose aguda no terceiro trimestre da gestação e iniciou tratamento com espiramicina. O USG fetal identificou calcificações intracranianas. O exame físico da RN é normal, o USG transfontanelar não revelou novas lesões além das já detectadas e sua sorologia é IgG positivo e IgM negativo para toxoplasmose.\n\nCom base no protocolo de manejo de toxoplasmose congênita, qual é a conduta mais apropriada?",
     "options": [
@@ -2051,6 +2229,8 @@ export const UNIFESP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "unifesp2025-99",
+    "topography": "5.2",
+    "topic": "Infecções na gestação",
     "module": "Pediatria",
     "text": "Menino, 5 dias de vida, apresenta icterícia colestática, púrpura, hepatomegalia e esplenomegalia. Emissão otoacústica: resposta ausente bilateral. Tomografia de crânio: atrofia cortical, dilatação ventricular e calcificações periventriculares.\n\nConsiderando o diagnóstico mais provável, qual exame é o mais recomendado para identificar o agente etiológico da doença?",
     "options": [

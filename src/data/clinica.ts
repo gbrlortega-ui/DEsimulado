@@ -3,6 +3,8 @@ import { Question } from '../types';
 export const CLINICA_QUESTIONS: Question[] = [
   {
     id: 'tp2024-21',
+    topography: '10',
+    topic: 'Dengue',
     module: 'Clínica Médica',
     text: 'A dengue é uma doença endêmica no Brasil, com ocorrência de casos o ano todo com um padrão sazonal, coincidente com períodos chuvosos e quentes, quando são observados o aumento do número de casos e um maior risco para epidemias. Do ponto de vista clínico é um desafio. Em relação ao diagnóstico laboratorial da dengue, podemos afirmar que:',
     options: [
@@ -20,6 +22,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-22',
+    topography: '10',
+    topic: 'Dengue',
     module: 'Clínica Médica',
     text: 'Paciente do sexo feminino, 30 anos, admitida no prontosocorro com queixa de febre há 3 dias, associada a cefaleia, dor retro-orbitária, prostração e mialgia. Nega náuseas e vômitos. Foi diagnosticada como dengue e classificada como grupo A, com tratamento ambulatorial e orientada a retornar caso apresentasse sinais de alarme. É considerado um sinal de alarme:',
     options: [
@@ -37,6 +41,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-23',
+    topography: '4.1',
+    topic: 'Distúrbios hidroeletrolíticos',
     module: 'Clínica Médica',
     text: 'Homem, 78 anos, com antecedente de Hipertensão Arterial Sistêmica e Diabetes Mellitus tipo 2 de longa data, é admitido no pronto-socorro com quadro de confusão mental, dispneia, náusea, diminuição do volume urinário e edema de membros inferiores. Familiar refere que o paciente faz uso de Losartana 50mg/dia, Atenolol 50mg/dia, Gliclazida 60mg/dia e fez uso de Cetoprofeno 150mg/dia por 5 dias, devido a dor nas costas. Exame físico: mau estado geral, confuso, taquipneico, acianótico, anictérico, afebril, PA 161/102mmHg, FC 92 bpm, ausculta pulmonar com estertores bilaterais, presença de edema de MMII 2+/4+ e demais sistemas sem alterações. Exames laboratoriais: creatinina = 5,9mg/dL (VR: 0,5 a 1,2mg/dL); ureia = 186mg/dL (VR: 10 a 50mg/dL); potássio = 7,6mEq/L (VR: 3,5 a 5,0mEq/L); sódio = 137mEq/L (VR: 136 a 145mEq/L); Urina tipo I: densidade = 1.010, proteína = 1+/5, nitrito = negativo, leucócitos = 25.000/mL, hemácias = 35.000/mL (VR: densidade = 1.005 a 1.030; proteína = negativa; nitrito = negativo; leucócitos = até 10.000/mL; hemácias = até 5.000/mL); eletrocardiograma = presença de onda T apiculada, mesmo após medidas contra hipercalemia. Qual a conduta correta?',
     options: [
@@ -54,6 +60,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-24',
+    topography: '4.1',
+    topic: 'Lesão renal aguda',
     module: 'Clínica Médica',
     text: 'A definição de injúria renal aguda (IRA) passou, nos últimos anos, por uma longa lista de discussões envolvendo critérios RIFLE, AKIN, até que em 2012 um grupo de experts no tema, através dos critérios KDIGO (Kidney Disease to Improve Global Outcomes), definiu os critérios atualmente aceitos como IRA. Assinale a alternativa correta:',
     options: [
@@ -71,6 +79,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-25',
+    topography: '8',
+    topic: 'Diabetes mellitus tipo 1 e 2',
     module: 'Clínica Médica',
     text: 'Mulher de 56 anos, obesa, sem tratamento específico, hipertensa, em uso de losartana 100mg/dia e com diabetes tipo 2 em uso de metformina 1500mg/dia, queixa-se de dor em joelhos ao subir escadas e após varrer a casa há uns 2 anos. Nega febre e parestesias. Nega lesões de pele. Refere rigidez matinal de curta duração. No exame físico osteoarticular apresenta crepitação grosseira patelofemorais e limitação de amplitude articular em ambos os joelhos. O diagnóstico mais provável é osteoartrite e a conduta a ser seguida é:',
     options: [
@@ -88,6 +98,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-26',
+    topography: '1.1',
+    topic: 'Demências',
     module: 'Clínica Médica',
     text: 'Paciente de 84 anos apresenta, há cerca de 9 meses, quadro de flutuação cognitiva com variação acentuada da atenção, dificuldade em dirigir e estacionar seu carro, além do relato por parte da esposa de sono muito agitado e alucinações visuais. Ao exame físico apresenta rigidez axial e bradicinesia em membros inferiores e superiores. A avaliação geriátrica ampla evidencia: Mini-exame do estado mental: 19/30 com escolaridade de 4 anos, Lawton: 18/27, Katz: 6/6 e Geriatric Depression Scale: 3/15. Ressonância magnética de encéfalo mostra atrofia cerebral difusa com escores MTA (Medial Temporal Lobe Atroph) 2 e Escala Fazekas 1. O diagnóstico mais provável é:',
     options: [
@@ -105,6 +117,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-27',
+    topography: '6.1',
+    topic: 'Lúpus eritematoso sistêmico',
     module: 'Clínica Médica',
     text: 'Paciente, sexo feminino, 40 anos, encaminhada ao ambulatório de reumatologia devido a queixa de “dores nas juntas” e “arroxeamento dos dedos” quando exposta ao frio. Ao exame físico nota-se cianose em dedos das mãos enquanto o arcondicionado da sala estava ligado, além de edema generalizado e discreto espessamento cutâneo também em mãos. Pensando na principal hipótese diagnóstica, quais exames auxiliariam na confirmação?',
     options: [
@@ -122,6 +136,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-28',
+    topography: '1.1',
+    topic: 'Demências',
     module: 'Clínica Médica',
     text: 'Paciente evoluindo com perda de memória importante acompanhado de incontinência urinária e quedas frequentes concomitantes ao início do déficit cognitivo. Qual a causa mais provável destas alterações?',
     options: [
@@ -139,6 +155,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-29',
+    topography: '1.1',
+    topic: 'Epilepsia',
     module: 'Clínica Médica',
     text: 'Homem de 70 anos deu entrada no PS devido a quadro de crise convulsiva, que aconteceu durante o sono. Tem antecedente de acidente vascular cerebral em território da artéria cerebral média direita, que aconteceu há 1 ano. Qual o diagnóstico mais provável e a conduta?',
     options: [
@@ -156,6 +174,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-30',
+    topography: '8',
+    topic: 'Insuficiência adrenal',
     module: 'Clínica Médica',
     text: 'Paciente masculino, 74 anos, chega ao Pronto Atendimento após um episódio de lipotimia. Família conta que vem apresentando emagrecimento há 6 meses de 8kg, com piora importante nos últimos 10 dias com inapetência, náuseas, alguns episódios de vômitos e febre há 2 dias. Está em tratamento para infecção urinária. Ao redor de um mês teve piora da dor abdominal e foi observado escurecimento da pele. Ao exame físico apresentase desidratado, com distensão abdominal, escurecimento da pele em dobras e da gengiva. Está em acompanhamento por carcinoma de próstata metastático e já realizou, há um ano, adrenalectomia à D, por metástase. Quanto às hipóteses diagnósticas, alterações laboratoriais esperadas nos exames a serem solicitados e conduta inicial, assinale a alternativa mais correta:',
     options: [
@@ -173,6 +193,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-31',
+    topography: '10',
+    topic: 'Tuberculose',
     module: 'Clínica Médica',
     text: 'A tuberculose é a segunda causa de morte por doenças infecciosas em todo o mundo, perdendo apenas para a AIDS. Não obstante, a incidência de tuberculose e resistência aos medicamentos está aumentando em algumas partes do mundo. A resistência bacilar ocorre devido ao uso inadequado de antimicrobianos. Segundo dados do Ministério da Saúde, 96% dos casos brasileiros de resistência bacilar são adquiridos por tratamentos irregulares e abandono de tratamento. Para o diagnóstico da tuberculose é utilizado o teste rápido molecular que, além de detectar o DNA do bacilo, também avalia a resistência a um antibiótico utilizado no tratamento, sendo este:',
     options: [
@@ -190,6 +212,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-32',
+    topography: '1.1',
+    topic: 'Epilepsia',
     module: 'Clínica Médica',
     text: 'Homem de 32 anos procura a UBS, relatando ter apresentado primeira crise convulsiva há 1 mês, quando procurou o hospital. Na ocasião, foram descartadas causas agudas por meio de anamnese, exame físico, exames laboratoriais e de tomografia de crânio. Foi introduzido valproato em baixa dose (10mg/kg/dia). Evoluiu assintomático desde então. Exame físico sem alterações. A conduta adequada, de acordo com o protocolo do Ministério da Saúde, é:',
     options: [
@@ -207,6 +231,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-33',
+    topography: '9',
+    topic: 'Trombocitopenias',
     module: 'Clínica Médica',
     text: 'Paciente jovem, 23 anos, sexo masculino, refere que há 8 meses iniciou quadro de petéquias em membros inferiores e gengivorragia, e há cerca de 2 meses sem manifestação hemorrágica até o momento, mesmo sem tratamento específico. Hemograma demonstra plaquetas = 65.000/mm3 de sangue. Mielograma com celularidade normal e discreto aumento do número de megacariócitos. Diagnóstico de púrpura trombocitopênica idiopática. Qual seria a conduta terapêutica mais adequada?',
     options: [
@@ -224,6 +250,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-34',
+    topography: '2.1',
+    topic: 'DPOC',
     module: 'Clínica Médica',
     text: 'O tratamento de doença pulmonar obstrutiva crônica envolve medidas preventivas, farmacológicas e não farmacológicas. Em relação à escolha das opções terapêuticas, assinale a alternativa correta:',
     options: [
@@ -241,6 +269,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-35',
+    topography: '10',
+    topic: 'Sífilis',
     module: 'Clínica Médica',
     text: 'A sífilis terciária é um importante diagnóstico diferencial das síndromes demenciais no Brasil. Assinale a alternativa correta quanto à interpretação dos exames diagnósticos:',
     options: [
@@ -258,6 +288,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-36',
+    topography: '8',
+    topic: 'Síndrome de Cushing',
     module: 'Clínica Médica',
     text: 'Mulher, 37 anos, apresenta obesidade centrípeta, depósitos de gordura na região da coluna cervicotorácica (“giba de búfalo”) e na região supraclavicular, assim como rosto arredondado ("face de lua cheia"). Outros achados clínicos relevantes foram pele fina, estrias violáceas no abdômen e hipertensão arterial. Os exames laboratoriais revelaram cortisol urinário = 507-773µg/24h (normal = 30 a 300µg/24h), e uma tomografia computadorizada do abdome indicou hiperplasia macronodular bilateral das adrenais, com dois nódulos grandes, proeminentes, bilaterais, de 3 e 3,5cm no maior diâmetro. O estudo anatomopatológico demonstrou que os nódulos eram compostos por células claras que apresentavam monotonia nuclear, achado típico de células do córtex adrenal. A hipótese diagnóstica mais condizente é:',
     options: [
@@ -292,6 +324,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-38',
+    topography: '9',
+    topic: 'Anemia ferropriva',
     module: 'Clínica Médica',
     text: 'Paciente masculino, 42 anos, vem ao consultório com queixa de fraqueza, queda de cabelo e indisposição. Apresenta-se ao exame descorado ++/4 com queilite angular. Refere, quando indagado, que os hábitos alimentares mudaram e recentemente adquiriu gosto por grãos crus, em particular arroz. Refere ainda ter recentemente iniciado sertralina por diagnóstico de depressão, e tônicos capilares sob recomendação do dermatologista para controle da queda de cabelo. Nega dores osteomusculares. Quando questionado mais a fundo sobre a mudança alimentar, refere que observou sensível perda de peso, de cerca de 12kg no período (peso atual 74kg). Exames resultam em hemoglobina de 8,2g/dL, leucócitos de 11300cel/mm³ com diferencial preservado e plaquetas de 560.000/mm³. A anemia apresenta VCM de 69fL (VR 80-100fL), HCM 20pg/célula (VR 27-35pg/célula), RDW de 17,5% (VR 11-15%). O diagnóstico mais provável e os respectivos exames fundamentais a serem solicitados são:',
     options: [
@@ -309,6 +343,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-39',
+    topography: '3.2',
+    topic: 'Hepatites virais',
     module: 'Clínica Médica',
     text: 'Mulher de 63 anos, natural e procedente de Manaus, apresenta cansaço, dor no corpo e discreta icterícia. Trabalha em serviços domésticos. Internou em hospital local para investigação diagnóstica. Ao exame clínico, foi observado discreto aumento do fígado (1,5cm do rebordo costal direito), de consistência endurecida; icterícia ++/4. Em análise laboratorial, foi constatado TGO de 200U/L (VR: inferior a 34U/L), TGP de 130U/L (VR: Mulheres: 10-37U/L), anti-HCV (+) com carga viral de 300.000UI. Desta forma:',
     options: [
@@ -326,6 +362,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-40',
+    topography: '2.2',
+    topic: 'Dislipidemia',
     module: 'Clínica Médica',
     text: 'Homem, 72 anos, diabético, hipertenso e dislipidêmico, com histórico de infarto do miocárdio há 6 meses, doença arterial periférica sintomática e doença renal crônica (ClCr estimado de 53mL/min/1,73m² – Valor de referência do clearance de creatinina: 75 a 115mL/min/1,73m²). Apresentou rabdomiólise em uso de estatinas. Qual estatina deve ser recomendada no tratamento de dislipidemia em pacientes com disfunção renal?',
     options: [
@@ -343,6 +381,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-21',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Clínica Médica',
     text: 'A insuficiência cardíaca (IC) é uma síndrome na qual o coração é incapaz de bombear sangue de forma a atender às necessidades metabólicas tissulares e pode ser causada por alterações estruturais ou funcionais cardíacas. Determine a afirmativa correta sobre o tratamento da IC:',
     options: [
@@ -360,6 +400,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-22',
+    topography: '2.2',
+    topic: 'Hipertensão arterial sistêmica',
     module: 'Clínica Médica',
     text: 'Mulher, 54 anos, faz acompanhamento na Unidade Básica de Saúde há seis anos por hipertensão arterial, em uso de losartana 100mg/dia. Seu peso é normal, não fuma e pratica caminhada de 40 minutos durante cinco dias da semana. Os exames de laboratório solicitados, de acordo com as Diretrizes Brasileiras de Hipertensão Arterial, estão normais. Porém, nos últimos três meses, os níveis pressóricos estão em elevação. As duas últimas medidas chegaram a 160x100mmHg. O médico optou então por acrescentar uma segunda droga ao esquema terapêutico. Dos grupos farmacológicos listados e disponíveis na Unidade de Saúde, qual o mais apropriado?',
     options: [
@@ -377,6 +419,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-23',
+    topography: '9',
+    topic: 'Leucemias',
     module: 'Clínica Médica',
     text: 'Paciente feminina de 25 anos, apresentando quadro de gengivorragia e hiperplasia gengival há 20 dias, hoje deu entrada no Pronto-Socorro com metrorragia e febre. Hemograma: Hb 7,6g/dL (VN 12 a 16g/dL); Ht 22% (VN 36 a 50%); leucometria 18.000/mm3 (VN 6.000 a 10.000/mm3) - neutrófilos 900; linfócitos 1.000; eosinófilos 100 e plaquetas 89.000/mm3 (VN 150.000 a 300.000/mm3). Obs: presença de células com característica presença de blastos (16.000 células imaturas) com intensa granulação. Qual o provável diagnóstico?',
     options: [
@@ -394,6 +438,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-24',
+    topography: '9',
+    topic: 'Trombocitopenias',
     module: 'Clínica Médica',
     text: 'Paciente feminina, 25 anos, utilizando contraceptivo oral, deu entrada no Pronto-Socorro há 3 dias com diagnóstico de Trombose Venosa Profunda, quando iniciou uso de heparina. No exame laboratorial de hoje a contagem de plaquetas está em 85.000/mm3, repetidas e confirmadas (VN 150.000 a 300.000/mm3). A dosagem de plaquetas ao início do tratamento era de 180.000/mm3. Qual o provável diagnóstico?',
     options: [
@@ -411,6 +457,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-25',
+    topography: '4.1',
+    topic: 'Cistite',
     module: 'Clínica Médica',
     text: 'Paciente, 25 anos, sexo feminino, vem em consulta com queixa de dor abdominal em hipogástrio, indisposição, diminuição do apetite e disúria há 2 dias. Nega febre e diarreia, nega outras patologias prévias ou comorbidades. Ao exame físico, apresenta-se em bom estado geral, afebril. Dados vitais: FC 70bpm, PA 120x70mmHg. Abdome flácido, doloroso à palpação profunda em hipogástrico, descompressão brusca negativa, ruídos hidroaéreos presentes e punho-percussão lombar negativa. Sem alterações em outros aspectos do exame físico. Realizados exames: hemograma normal; Elementos Anormais do Sedimento (urina): leucócitos 150.000/campo (VN até 10.000/campo); hemácias 5.000/campo (VN até 5.000/campo), nitrito positivo e bactérias presentes (urocultura em andamento). Determine a conduta:',
     options: [
@@ -428,6 +476,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-26',
+    topography: '10',
+    topic: 'Sífilis',
     module: 'Clínica Médica',
     text: 'Homem de 25 anos, soropositivo para HIV, em uso de terapia antirretroviral há cerca de dois anos, com carga viral indetectável e CD4 de 820 células, procura o ambulatório de infectologia para relatar que há cerca de 4 dias notou o aparecimento de manchas arredondadas, numulares, de coloração avermelhada por todo o corpo. Refere que essas manchas não possuíam características pruriginosas e que notou ainda a presença de alguns pequenos nódulos no pescoço nessa mesma época. Considerando apenas o que foi até aqui relatado, qual das hipóteses pode estar possivelmente relacionada ao diagnóstico clínico dessa doença?',
     options: [
@@ -445,6 +495,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-27',
+    topography: '1.5',
+    topic: 'Hipertireoidismo',
     module: 'Clínica Médica',
     text: 'Paciente do sexo feminino, 45 anos, com quadro de insônia, irritabilidade e palpitações há 2 meses. Relata ter perdido 4kg no período, mesmo sem alterar a alimentação. Nega comorbidades ou uso contínuo de medicações. Ao exame físico geral, apresenta-se em bom estado, com frequência cardíaca de 126bpm, PA 120x70mmHg, presença de tremores finos de extremidades, exoftalmia bilateral, simétrica. Tireoide aumentada à palpação, sem nódulos. Foram solicitados os seguintes exames complementares: TSH 0,01mUI/mL (VN 0,4 - 4,5mUI/mL) e T4L 2,7ng/dL (VN 0,8 - 1,7ng/dL). Mediante o diagnóstico mais provável, podemos afirmar que:',
     options: [
@@ -462,6 +514,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-28',
+    topography: '13',
+    topic: 'Dependência química',
     module: 'Clínica Médica',
     text: 'JM está em situação de rua e na primeira vez em que experimentou cocaína teve uma sensação de intensa euforia, bem-estar, desinibição, perda de apetite e aumento da energia e libido; porém, com o uso prolongado da droga, passou a ter que usar cada vez mais a cocaína para obter esses mesmos efeitos. O nome que corresponde a esse efeito causado pelo consumo prolongado de drogas é:',
     options: [
@@ -479,6 +533,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-29',
+    topography: '3.2',
+    topic: 'Hepatites virais',
     module: 'Clínica Médica',
     text: 'Paciente do sexo feminino, 32 anos, procedente de São Paulo/SP, foi admitida na UTI por quadro de hepatite fulminante pelo vírus da hepatite B, com indicação de transplante hepático. Tem antecedente de hepatite C, tratada com resposta virológica sustentada (cura). Assinale a alternativa que melhor reflete seu estado sorológico atual:',
     options: [
@@ -496,6 +552,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-30',
+    topography: '3.1',
+    topic: 'DRGE',
     module: 'Clínica Médica',
     text: 'Paciente do sexo feminino, 27 anos, sem antecedentes mórbidos relevantes, queixa-se de azia e regurgitação há alguns meses, com sensação de queimação retroesternal e gosto amargo na boca. Esses sintomas aconteciam ocasionalmente, mas se intensificaram após ela ter ganho mais 8kg devido a estresse no trabalho e interrupção de suas atividades físicas. Feito diagnóstico clínico de doença do refluxo gastroesofágico, procedidas as orientações dietéticas, como perda de peso. A prescrição médica deverá conter:',
     options: [
@@ -513,6 +571,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-31',
+    topography: '6.1',
+    topic: 'Lúpus eritematoso sistêmico',
     module: 'Clínica Médica',
     text: 'Paciente do sexo feminino, 23 anos, queixa-se de “dor nas juntas e inchaço nas pernas” há cerca de 15 dias e “urina espumando”. Ao exame físico, apresenta-se em bom estado geral, PA 150x100mmHg, saturação periférica de O2 98% em ar ambiente, com edema de membros inferiores (2+/4+ bilateral), sem evidência de artrite. Presença de eritema em região malar, que a paciente correlaciona com viagem à praia há 1 mês. Qual exame deve ser solicitado para auxílio diagnóstico?',
     options: [
@@ -530,6 +590,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-32',
+    topography: '1.1',
+    topic: 'Cefaleias',
     module: 'Clínica Médica',
     text: 'Paciente do sexo masculino, 23 anos, queixa-se de cefaleia pulsátil hemicraniana, acompanhada de fotofobia, fonofobia e náuseas, de início há mais de 10 anos. Relata que houve piora da intensidade das dores há cerca de 6 meses, agora com a ocorrência de despertares noturnos pela dor. Identifique a afirmativa correta:',
     options: [
@@ -547,6 +609,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-33',
+    topography: '2.1',
+    topic: 'Asma',
     module: 'Clínica Médica',
     text: 'Homem, 23 anos, em consulta de rotina; relata que há 3 meses vem apresentando crises de dispneia com sintomas diurnos (mais de 2 vezes por semana) e despertares noturnos frequentes. No mesmo período, faltou ao trabalho por 3 vezes devido ao quadro. Está em uso de beclometasona inalada 200mcg 2x ao dia e salbutamol spray 200mcg 3x ao dia (e doses “extra” conforme a necessidade). Nega tabagismo e outras patologias associadas ou uso contínuo de outras medicações. Ao exame físico apresenta-se em bom estado geral, eupneico. Ao exame do aparelho respiratório está confortável, sem esforço muscular e com raros sibilos à ausculta pulmonar. Identifique o diagnóstico e a conduta:',
     options: [
@@ -564,6 +628,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-34',
+    topography: '2.1',
+    topic: 'DPOC',
     module: 'Clínica Médica',
     text: 'Homem, 70 anos, queixa-se de dispneia aos pequenos esforços e tosse com expectoração clara matinal há cerca de 2 anos. Não apresenta comorbidades, nem usava medicações previamente. Tabagista de 40 maços/ano. Há cerca de 3 dias houve piora da dispneia, agora presente em repouso, com aumento e mudança da expectoração para amarelada, febre referida com calafrios e perda do apetite. Determine o diagnóstico mais provável para o quadro agudo:',
     options: [
@@ -581,6 +647,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-35',
+    topography: '2.1',
+    topic: 'Pneumonia comunitária',
     module: 'Clínica Médica',
     text: 'Masculino, 66 anos, etilista, relata tosse há 5 dias, dor torácica em hemitórax direito ventilatório-dependente e calafrios. Nega alergia a medicamentos. Ao exame físico: orientado, temperatura de 38ºC, pressão arterial normal, frequência respiratória de 26ipm, oximetria de pulso de 95%, acianótico e hidratado. A ausculta na base torácica direita mostrou estertores crepitantes finos e pectoriloquia. Realizou radiografia de tórax com opacidade homogênea basal direita com broncograma aéreo; ureia sérica de 35mg/dL (normal: 13 - 40), creatinina sérica de 1,0mg/dL (normal: 0,7 - 1,3). Qual a programação e a terapia medicamentosa adequadas para o caso exposto?',
     options: [
@@ -598,6 +666,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-36',
+    topography: '13',
+    topic: 'Abstinência alcoólica',
     module: 'Clínica Médica',
     text: 'Paciente de 45 anos, desacompanhado, aparência descuidada, dá entrada no Pronto-Socorro com sintomas de tremores nas mãos, nas pernas e na voz, hálito etílico, febre, confusão mental/desorientação, agitação, irritabilidade, raiva, apatia, alucinações visuais e paranoia, mudanças de humor. Paciente deixa de reconhecer seus familiares e amigos e troca o dia pela noite, dormindo durante o dia e permanecendo acordado à noite. A hipótese diagnóstica correspondente ao quadro acima é:',
     options: [
@@ -615,6 +685,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-37',
+    topography: '1.3',
+    topic: 'Amigdalite/faringoamigdalite',
     module: 'Clínica Médica',
     text: 'Jovem de 19 anos, gênero feminino, natural e procedente de São Paulo, procura o ambulatório de infectologia por apresentar febre diária há cinco dias, além de dor de garganta, discreta icterícia e manchas avermelhadas, semelhantes ao sarampo, no tórax. Conta ainda que notou nesses dias a presença de pequenos “gânglios no pescoço” e que, ao olhar a garganta no espelho, observou placas esbranquiçadas em amígdalas. Considerando apenas esses dados, qual o possível diagnóstico clínico?',
     options: [
@@ -632,6 +704,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-38',
+    topography: '6.1',
+    topic: 'Osteoartrose',
     module: 'Clínica Médica',
     text: 'Mulher de 54 anos, obesa, hipertensa e diabética (controlada), queixa-se há 3 anos de dor e edema nos joelhos ao subir escadas e após varrer a casa. Nega febre, nega parestesias, nega lesões de pele. Refere rigidez matinal de curta duração. Ao exame físico, verifica-se a presença de crepitações grosseiras patelofemorais e limitação de amplitude articular em ambos os joelhos. Diante do diagnóstico mais provável, qual a conduta a ser seguida?',
     options: [
@@ -649,6 +723,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-39',
+    topography: '2.1',
+    topic: 'Tuberculose pulmonar',
     module: 'Clínica Médica',
     text: 'Paciente de 23 anos com queixa de tosse com expectoração amarelada e alguns episódios de expectoração com sangue há 4 semanas. Apresenta febre e sudorese noturna. Notou emagrecimento de 4kg nesse período. Consome bebidas alcoólicas diariamente há 5 anos, meia garrafa de pinga. Fuma 1 maço de cigarro por dia há 5 anos. Trouxe uma radiografia do tórax solicitada num atendimento há 5 dias, na emergência. Determine a hipótese diagnóstica e o exame laboratorial útil para o diagnóstico:',
     image: '/images/tp2023-39.webp',
@@ -667,6 +743,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-40',
+    topography: '7.2',
+    topic: 'Herpes-zóster',
     module: 'Clínica Médica',
     text: 'Herpes zoster, conhecido popularmente como “cobreiro”, é uma infecção viral que ocorre pela reativação do vírus varicela zoster (VVZ). A infecção primária pelo VVZ resulta na varicela (catapora), de forma que o vírus permanece em sua forma latente nos gânglios nervosos sensitivos, podendo ser reativado durante a vida, especialmente em idosos. Sobre o herpes zoster, podemos afirmar:',
     options: [
@@ -684,6 +762,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-21',
+    topography: '1.1',
+    topic: 'AVC',
     module: 'Clínica Médica',
     text: 'Mulher, 72 anos, hipertensa e diabética, deu entrada no pronto-socorro com quadro de desvio de rima labial para a direita e hemiparesia à esquerda, que começou há 2 horas da admissão. Os sinais vitais da entrada eram PA: 174/104mmHg, FC: 82bpm, FR: 14ipm, SatO2: 95% em ar ambiente. Paciente realizou tomografia de crânio. Assinale a alternativa correta em relação ao diagnóstico provável e a melhor conduta:',
     image: '/images/tp2022-21.webp',
@@ -702,6 +782,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-22',
+    topography: '3.1',
+    topic: 'DRGE',
     module: 'Clínica Médica',
     text: 'Paciente de 47 anos com queixa de tosse seca de início há 3 meses, com piora noturna e associada a rouquidão matutina e sensação de pigarro. Diz ser hipertenso e utiliza bisoprolol. Nega tabagismo. Refere dispepsia eventual. Em relação ao caso descrito, assinale a alternativa correta:',
     options: [
@@ -718,6 +800,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-23',
+    topography: '1.3',
+    topic: 'Amigdalite/faringoamigdalite',
     module: 'Clínica Médica',
     text: 'Paciente masculino, 21 anos, procura atendimento médico com o seguinte quadro: febre há 4 dias, linfonodos cervicais fibroelásticos bilateral, discreta hepatomegalia. Hemograma: 12.000 leucócitos, sendo 55% de linfócitos e 11% de linfócitos atípicos. Qual a melhor opção diagnóstica?',
     options: [
@@ -734,6 +818,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-24',
+    topography: '8',
+    topic: 'Diabetes mellitus tipo 1 e 2',
     module: 'Clínica Médica',
     text: 'Mulher, 58 anos, DM2 há 12 anos em uso de Metformina e Gliclazida. Últimos 6 meses com aumento da sede, diurese, apetite e perda de peso de 8kg. Hemoglobina glicada: 10,3%. Em relação ao caso, é correto afirmar que:',
     options: [
@@ -750,6 +836,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-25',
+    topography: '7.2',
+    topic: 'Erisipela',
     module: 'Clínica Médica',
     text: 'Paciente masculino, 50 anos, queixa de mal-estar, febre (38°C) e lesão eritematosa bem delimitada na perna. A principal hipótese diagnóstica e a conduta são:',
     image: '/images/tp2022-25.webp',
@@ -768,6 +856,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-26',
+    topography: '7.2',
+    topic: 'Melanoma',
     module: 'Clínica Médica',
     text: 'Paciente masculino, 58 anos, apresenta lesão pigmentada no tronco com assimetria, bordas irregulares e variação de cores. Qual a principal hipótese diagnóstica?',
     image: '/images/tp2022-26.webp',
@@ -786,6 +876,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-27',
+    topography: '4.1',
+    topic: 'Nefrolitíase',
     module: 'Clínica Médica',
     text: 'Feminino, 38 anos, dor lombar direita de forte intensidade, início há 12 horas, Giordano positivo à direita, afebril. Qual a principal hipótese diagnóstica?',
     options: [
@@ -803,6 +895,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-28',
+    topography: '9',
+    topic: 'Anemia falciforme',
     module: 'Clínica Médica',
     text: 'Jovem de 17 anos com anemia falciforme. Apresenta odinofagia, febre e dor intensa em face anterior do tórax. Descorada e levemente ictérica. Quanto à dor em tórax, afirma-se:',
     options: [
@@ -820,6 +914,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-29',
+    topography: '1.5',
+    topic: 'Hipertireoidismo',
     module: 'Clínica Médica',
     text: 'Mulher, 28 anos, palpitação, tremores, perda de peso e proptose ocular. De acordo com a principal hipótese diagnóstica (Graves), assinale a correta:',
     options: [
@@ -837,6 +933,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-30',
+    topography: '14',
+    topic: 'Trauma',
     module: 'Clínica Médica',
     text: 'Em um desastre com múltiplas vítimas e recursos limitados, quais pacientes devem ser atendidos com maior prioridade no setor de urgência e emergência?',
     options: [
@@ -854,6 +952,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-31',
+    topography: '9',
+    topic: 'Anemia ferropriva',
     module: 'Clínica Médica',
     text: 'Mulher de 60 anos com anemia ferropriva (Hb 7,0, VCM 63, HCM 20). Nega sangramento. Qual a conduta mais adequada para essa paciente?',
     options: [
@@ -871,6 +971,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-32',
+    topography: '2.1',
+    topic: 'Pneumonia comunitária',
     module: 'Clínica Médica',
     text: 'Mauro, 22 anos, tosse seca, dor torácica ventilatório-dependente e febre. Radiografia com lesão de lobo médio. Sem comorbidades. Defina o diagnóstico e conduta.',
     image: '/images/tp2022-32.webp',
@@ -889,6 +991,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-33',
+    topography: '2.2',
+    topic: 'Hipertensão arterial sistêmica',
     module: 'Clínica Médica',
     text: 'Mulher hipertensa com obesidade mórbida. Qual a técnica correta de aferição da pressão arterial para esta paciente?',
     options: [
@@ -906,6 +1010,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-34',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Clínica Médica',
     text: 'Mulher de 62 anos, HAS crônica. Há 6 meses com dispneia progressiva, paroxística noturna, edema de MMII e presença de B3. ECG com sobrecarga de VE. Qual o exame complementar e conduta mais apropriados?',
     options: [
@@ -923,6 +1029,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-35',
+    topography: '2.2',
+    topic: 'Valvopatias',
     module: 'Clínica Médica',
     text: 'Homem de 19 anos, dispneia progressiva, hemoptise isolada, amigdalites de repetição na infância. Exame: B1 hiperfonética, estalido de abertura e sopro diastólico em ruflar. Qual a melhor hipótese?',
     options: [
@@ -940,6 +1048,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-36',
+    topography: '6.1',
+    topic: 'Fibromialgia',
     module: 'Clínica Médica',
     text: 'Qual medicamento inibe a recaptação de serotonina e norepinefrina, sendo útil na fibromialgia?',
     options: [
@@ -957,6 +1067,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-37',
+    topography: '10',
+    topic: 'Dengue',
     module: 'Clínica Médica',
     text: "Homem de 65 anos, diabético, com dengue confirmada. Há 5 dias teve febre, cefaleia, mialgia e dor retro-orbitária. Está afebril há 1 dia, mas surgiu dor abdominal forte e contínua, que não melhora com analgésicos. Nega sangramentos. Ao exame, está hemodinamicamente estável, com dor difusa à palpação do abdome; glicemia capilar normal e prova do laço negativa. Qual a classificação e a conduta?",
     options: [
@@ -974,6 +1086,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-38',
+    topography: '1.1',
+    topic: 'TCE',
     module: 'Clínica Médica',
     text: 'Homem, 75 anos, queda há 2 meses, usuário de varfarina. TC mostra coleção hipodensa em crescente acompanhando a convexidade cerebral. Qual o diagnóstico?',
     image: '/images/tp2022-38.webp',
@@ -992,6 +1106,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-39',
+    topography: '3.2',
+    topic: 'Hepatites virais',
     module: 'Clínica Médica',
     text: 'Gestante, 27 anos, com 12 semanas de gestação, apresenta a seguinte sorologia de hepatite B: HBsAg não reagente, anti-HBsAg reagente, anti-HBcAg não reagente. Qual a melhor avaliação?',
     options: [
@@ -1009,6 +1125,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-40',
+    topography: '3.1',
+    topic: 'DRGE',
     module: 'Clínica Médica',
     text: "Homem de 42 anos com tosse seca há 6 meses, que piora aos grandes esforços e ao deitar. A radiografia de tórax mostra imagem retrocardíaca com nível hidroaéreo. Qual exame complementar é necessário para avaliar a causa da tosse?",
     image: '/images/tp2022-40.webp',
@@ -1027,6 +1145,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-21',
+    topography: '2.2',
+    topic: 'Infarto agudo do miocárdio',
     module: 'Clínica Médica',
     text: 'Homem de 52 anos, hipertenso e tabagista, procura pronto-socorro de hospital de referência que tem todos os recursos disponíveis, com dor torácica intensa em aperto há 40 minutos, irradiada para o braço esquerdo. Ao exame físico, tem sudorese profusa, palidez, FC = 65bpm e PA = 140/90mmHg. A ausculta cardiorrespiratória não tem alterações. Realizou o ECG abaixo: Já tendo administrado AAS, clopidogrel e heparina, a próxima conduta deve ser:',
     options: [
@@ -1044,6 +1164,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-22',
+    topography: '2.1',
+    topic: 'Embolia pulmonar',
     module: 'Clínica Médica',
     text: 'Mulher de 35 anos dá entrada ao serviço de urgência de um hospital de referência da região, com queixa de dispneia súbita e dor torácica de caráter pleurítica, há 6 horas. Faz uso de anticoncepcional oral com estrogênio há 4 anos. Ao exame físico, apresenta taquipneia (24irpm), taquicardia (112bpm), saturação de oxigênio 92% em ar ambiente e pressão arterial de 110/70mmHg. A ausculta pulmonar é normal. Em membros inferiores possui edema assimétrico de membro inferior direito, com dor à palpação. Após admissão e monitorização inicial, a conduta inicial mais adequada para essa paciente é:',
     options: [
@@ -1060,6 +1182,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-23',
+    topography: '2.2',
+    topic: 'Hipertensão arterial sistêmica',
     module: 'Clínica Médica',
     text: 'Homem de 65 anos, preto, comparece à Unidade Básica de Saúde para seguimento de hipertensão arterial sistêmica. Ele tem diagnóstico de hipertensão há 10 anos e faz uso de losartana 50mg 2x/dia. Nos últimos meses, tem apresentado níveis pressóricos persistentemente elevados (média de 160x100mmHg em três consultas consecutivas), sem sintomas. Ele não tem histórico de doença renal, diabetes ou insuficiência cardíaca. O exame físico revela IMC de 28kg/m² e ausência de sopros carotídeos ou edema periférico. A conduta indicada para esse paciente é:',
     options: [
@@ -1076,6 +1200,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-24',
+    topography: '2.2',
+    topic: 'Valvopatias',
     module: 'Clínica Médica',
     text: 'Adolescente de 15 anos, com história de febre reumática, apresenta dispneia aos pequenos esforços e sopro diastólico em foco mitral. O ecocardiograma evidencia área valvar mitral de 0,9cm² e gradiente médio de 12mmHg. A conduta indicada nesse caso é:',
     options: [
@@ -1092,6 +1218,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-25',
+    topography: '2.2',
+    topic: 'Arritmias',
     module: 'Clínica Médica',
     text: 'Homem de 53 anos procura a Unidade de Emergência, por apresentar palpitações e tontura há 4 horas. Refere que os sintomas começaram durante uma discussão calorosa em seu trabalho. Nega dor torácica ou dispneia e ao exame físico apresenta: pressão arterial 123x75mmHg, frequência cardíaca 182bpm, saturação de oxigênio 98%, sem sinais de baixo débito cardíaco ou congestão. O paciente é alocado em sala de emergência e monitorizado. Realizado o eletrocardiograma abaixo: A conduta indicada para esse caso é:',
     options: [
@@ -1109,6 +1237,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-26',
+    topography: '2.1',
+    topic: 'DPOC',
     module: 'Clínica Médica',
     text: 'Homem de 65 anos, tabagista atual e com antecedente de DPOC, procura PS devido a piora aguda da tosse, aumento do volume de expectoração com coloração mais escura que seu padrão habitual, sem febre. Teve outros dois quadros similares nos últimos doze meses. Ao exame físico, cianose com saturação de O2 = 86%, roncos difusos e frequência respiratória = 30ipm. A conduta adequada para seu tratamento é:',
     options: [
@@ -1125,6 +1255,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-27',
+    topography: '2.1',
+    topic: 'Asma',
     module: 'Clínica Médica',
     text: 'ASL, mulher cis, 19 anos, procura atendimento na Unidade Básica de Saúde devido a crises de falta de ar. Informa ter recebido o diagnóstico de asma em atendimento médico recente no Pronto Atendimento, mas não lhe foi prescrito nenhum medicamento para tratamento em domicílio. Refere que suas crises estão presentes há um mês, são predominantemente noturnas e está acordando duas a três vezes por semana por causa da falta de ar e tosse. De acordo com o Protocolo Clínico e Diretrizes Terapêuticas para Asma, de maio de 2021, a conduta farmacológica inicial preferencial para essa paciente é:',
     options: [
@@ -1141,6 +1273,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-28',
+    topography: '2.1',
+    topic: 'Câncer de pulmão',
     module: 'Clínica Médica',
     text: 'Paciente do sexo masculino, 55 anos, tabagista ativo acumulando carga tabágica de 60 anos-maço. Em tomografia de tórax de baixa dose, lesão sólida, em brônquio principal direito, expansiva, com padrão de crescimento concêntrico e atelectasia do segmento broncopulmonar correspondente. Escolha o método diagnóstico mais indicado para esse caso:',
     options: [
@@ -1157,6 +1291,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-29',
+    topography: '2.1',
+    topic: 'Pneumonia comunitária',
     module: 'Clínica Médica',
     text: 'Paciente estudante universitária, com 19 anos, procurou atendimento de emergência com febre e sintomas gripais (coriza hialina, cefaleia, tosse sem expectoração) evoluindo há quatro dias, que pioraram nas últimas 24 horas, com dispneia e sensação de opressão torácica difusa. Ao exame, hemodinamicamente estável, com FR = 35ipm, SpO2 = 92% e ausculta pulmonar preservada. O teste para COVID-19 resultou positivo. No hemograma há linfocitose discreta. Além da suplementação de oxigênio e internação hospitalar, neste caso está indicado administrar:',
     options: [
@@ -1173,6 +1309,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-30',
+    topography: '4.1',
+    topic: 'Pielonefrite',
     module: 'Clínica Médica',
     text: 'Mulher de 30 anos, sem antecedentes, procurou PA devido a três dias de febre não medida, náuseas e dores musculares, piores em região lombar esquerda, inespecífica. Ao exame físico, tem PA = 130/70mmHg, FC = 98bpm, T = 38,2ºC, Peso = 60kg, sinal de Giordano + à esquerda, sem outras alterações. USG renal sem alterações. Exame de urina revela leucocitúria, discreta hematúria, proteinúria discreta e presença de cilindros leucocitários. A medicação a ser iniciada neste momento é:',
     options: [
@@ -1190,6 +1328,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-31',
+    topography: '4.1',
+    topic: 'Doença renal crônica',
     module: 'Clínica Médica',
     text: 'Homem de 58 anos, portador de doença renal crônica estágio 5, dá entrada na emergência com dispneia intensa, edema generalizado e náuseas. Exames: potássio 7,0mEq/L; ureia 192mg/dL, creditiantina 8,5mg/dL e ECG ritmo sinusal, normal. A conduta indicada para este paciente é:',
     options: [
@@ -1206,6 +1346,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-32',
+    topography: '3.1',
+    topic: 'Doença inflamatória intestinal',
     module: 'Clínica Médica',
     text: 'Mulher, cisgênero, 35 anos, comparece ao ambulatório com diarreia sanguinolenta há três meses, associada a dor abdominal difusa e urgência evacuatória. Relata perda ponderal de 4kg no período. A colonoscopia revela inflamação difusa e contínua da mucosa do reto e do cólon, sem áreas de ulceração profunda. O diagnóstico provável é:',
     options: [
@@ -1222,6 +1364,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-33',
+    topography: '3.1',
+    topic: 'DRGE',
     module: 'Clínica Médica',
     text: 'Homem de 52 anos comparece ao ambulatório com queixa de pirose e regurgitação há mais de 10 anos, com piora progressiva nos últimos meses, apesar do uso irregular de inibidor da bomba de prótons. Nega disfagia, odinofagia ou emagrecimento. Relata histórico de tabagismo e consumo regular de álcool. Ao exame físico, sem alterações relevantes. A endoscopia digestiva alta revela metaplasia intestinal na mucosa esofágica distal. Com base nesse caso, a hipótese diagnóstica mais provável é:',
     options: [
@@ -1238,6 +1382,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-34',
+    topography: '3.1',
+    topic: 'Doença celíaca',
     module: 'Clínica Médica',
     text: 'Uma paciente diabética insulino-dependente, de 19 anos, tem histórico de diarreia sem sangue ou pus, distensão abdominal, perda ponderal não quantificada e flatulência iniciadas há 4 meses. Exames solicitados pelo médico do posto de saúde mostraram hematócrito de 25%; hemoglobina de 7g/dL, VCM de 67 e ferritina de 3ng/mL. A pesquisa de gordura fecal quantitativa é de 10g. De acordo com a principal hipótese diagnóstica, o próximo exame deve ser:',
     options: [
@@ -1254,6 +1400,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-35',
+    topography: '3.2',
+    topic: 'Cirrose hepática',
     module: 'Clínica Médica',
     text: 'Homem de 48 anos procura ambulatório por fadiga persistente e desconforto abdominal progressivo há dois anos. Antecedente de hepatite B diagnosticada há 10 anos, usando antiviral irregularmente. Ao exame físico, discretamente ictérico, com telangectasias cutâneas e esplenomegalia palpável. Exames laboratoriais: elevação de transaminases, hipoalbuminemia e trombocitopenia. O quadro clínico sugere:',
     options: [
@@ -1270,6 +1418,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-36',
+    topography: '1.1',
+    topic: 'Meningite',
     module: 'Clínica Médica',
     text: 'Adolescente de 16 anos é levado ao pronto-socorro com febre alta, cefaleia intensa, rigidez de nuca e rebaixamento do nível de consciência. Apresenta ainda vômitos em jato e pressão arterial de 150/100mmHg. O exame de fundo de olho revela papiledema. A conduta inicial mais apropriada é:',
     options: [
@@ -1286,6 +1436,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-37',
+    topography: '1.1',
+    topic: 'AVC',
     module: 'Clínica Médica',
     text: 'Paciente de 72 anos, hipertenso e diabético, é levado ao Pronto-Socorro devido a um início súbito de fraqueza no lado direito do corpo e dificuldade para falar, ocorrido há aproximadamente 2 horas. Ao exame, PA 160/100mmHg, FC 80bpm, hemiparesia direita, desvio da rima labial para a esquerda e dificuldade em compreender comandos verbais. A tomografia de crânio, sem contraste, não evidencia sangramento. A conduta inicial indicada é:',
     options: [
@@ -1302,6 +1454,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-38',
+    topography: '1.1',
+    topic: 'Parkinson',
     module: 'Clínica Médica',
     text: 'Homem, cisgênero, 68 anos, comparece ao ambulatório com queixa de tremor em repouso na mão direita há um ano, associado a lentidão dos movimentos e rigidez. O exame neurológico revela bradicinesia, rigidez em roda denteada e tremor de repouso assimétrico. Não há sinais de paralisia, déficits sensoriais ou alteração da consciência. Qual é o diagnóstico mais provável?',
     options: [
@@ -1318,6 +1472,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-39',
+    topography: '9',
+    topic: 'Anemia hemolítica',
     module: 'Clínica Médica',
     text: 'Um homem de 40 anos, raça negra, é admitido no hospital com fadiga intensa, icterícia e urina escura. O hemograma revela anemia (Hb 7,0g/dL), reticulocitose, bilirrubina indireta elevada e DHL elevado. O esfregaço de sangue periférico mostra esferócitos. A conduta mais adequada para esse caso é:',
     options: [
@@ -1334,6 +1490,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-40',
+    topography: '10',
+    topic: 'Dengue',
     module: 'Clínica Médica',
     text: 'Paciente do sexo feminino, 32 anos, há 4 dias apresentando febre aferida, mialgia, cefaleia e náuseas, conduzida como dengue após NS1 reagente no 2º dia de sintomas. Hoje comparece para reavaliação clínica. Ao exame físico, paciente consciente e orientada, porém sonolenta, com tempo de enchimento capilar de 4 segundos, extremidades frias, frequência cardíaca 120bpm e pressão arterial 100x60mmHg. A conduta imediata é:',
     options: [
@@ -1350,6 +1508,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-21',
+    topography: '1.1',
+    topic: 'AVC',
     module: 'Clínica Médica',
     text: 'Mulher, 56 anos, obesa, hipertensa e diabética, foi atendida no Pronto Atendimento com quadro agudo de afasia e hemiparesia direita iniciado há uma hora. PA = 150 x 73 mmHg, FC = 90 bpm, ritmo cardíaco irregular. Escore NIHSS (National Institutes of Health Stroke Scale) = 19. Tomografia computadorizada craniana: normal. O próximo passo no manejo dessa paciente é:',
     options: [
@@ -1366,6 +1526,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-22',
+    topography: '3.2',
+    topic: 'Encefalopatia hepática',
     module: 'Clínica Médica',
     text: 'Homem, 48 anos, hepatopata crônico, admitido no Pronto Socorro com confusão mental e agitação há 1 dia. Exame físico: desorientado no tempo e no espaço, ictérico e asteríxis (flapping) presente. Abdome globoso, doloroso à palpação difusa e com sinal do piparote presente. Paracentese diagnóstica: 1.200 leucócitos/mm³ com 80% de polimorfonucleares. Sódio sérico = 130 mEq/L. A conduta adequada para o paciente é:',
     options: [
@@ -1382,6 +1544,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-23',
+    topography: '13',
+    topic: 'Esquizofrenia',
     module: 'Clínica Médica',
     text: 'Homem, 19 anos, comparece ao atendimento em Unidade Básica de Saúde, agendado pela mãe, mas não entende o motivo da consulta. Não demonstra oscilações de humor, como se não sentisse nada, e apresenta fala empobrecida e sem alteração de voz e da expressão facial. Relata sentir “que seu cérebro está vazando e que estão querendo seu mal e que ouve seus vizinhos falando mal dele e estão vigiando-lhe através do chip do celular.” Refere que o apresentador do telejornal lhe manda mensagens por meio das notícias divulgadas na TV dando comandos mentais de como deve agir. Trancou a faculdade de Ciências Sociais há 5 meses. Mãe refere desenvolvimento neuropsicomotor sem alterações; nega uso e abuso prévio de substâncias ilícitas. Das medicações abaixo, a mais indicada no tratamento farmacológico desse paciente é:',
     options: [
@@ -1398,6 +1562,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-24',
+    topography: '9',
+    topic: 'Anemia falciforme',
     module: 'Clínica Médica',
     image: '/images/tp2021-24.webp',
     text: 'Mulher, 18 anos, queixa-se de dor forte em membros superiores e mãos há 1 dia, sem fator desencadeante, com melhora parcial com dipirona. Refere que já sentiu dor semelhante várias vezes desde a infância. Nega edema, vermelhidão, trauma recente ou febre. Exame físico: bom estado geral, palidez cutâneo mucosa e icterícia (1+/4+). Murmúrio vesicular normal, simétrico e sem ruídos adventícios. Bulhas rítmicas taquicárdicas, com sopro holossistólico em focos tricúspide e mitral. Abdome e membros sem alteração. Hemograma: Hb = 8,3 g/dL; Ht = 26%; VCM = 91 fL; HCM = 29,6 pg; Leucócitos = 10,9 x 10⁶/μL (neutrófilos 72%, linfócitos 28%), Plaquetas = 480.000/mm³; Reticulócitos = 430.000/mm³. O diagnóstico mais provável é:',
@@ -1415,6 +1581,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-25',
+    topography: '6.1',
+    topic: 'Gota',
     module: 'Clínica Médica',
     text: 'Homem, 60 anos, chega ao Pronto Socorro com queixa de dor em hálux direito desde a madrugada, que o fez acordar. Nega trauma no local. Relata ingestão de grande quantidade de carne vermelha e cerveja. Teve três episódios semelhantes no último ano. Nega uso de medicamentos. Exame físico: IMC 32 kg/m², afebril, primeira articulação metatarsofalângica direita com edema, calor local e hiperemia, com muita dor ao toque e à movimentação ativa e passiva. O exame que confirma o diagnóstico mais provável nesse caso é:',
     options: [
@@ -1431,6 +1599,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-26',
+    topography: '2.1',
+    topic: 'Pneumonia comunitária',
     module: 'Clínica Médica',
     text: 'Mulher, 71 anos, é avaliada na Unidade de Pronto Atendimento com quadro febril agudo e dispneia, recebendo o diagnóstico de pneumonia. Não apresenta comorbidades, internações ou procedimentos invasivos recentes. Exame físico: FR = 32 irpm, PA = 100 x 65 mmHg, com desorientação têmporo-espacial. A conduta é:',
     options: [
@@ -1447,6 +1617,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-27',
+    topography: '7.2',
+    topic: 'Hanseníase',
     module: 'Clínica Médica',
     image: '/images/tp2021-27.webp',
     text: 'Adolescente, 15 anos, atendido em Unidade Básica de Saúde por lesão assintomática na face, que surgiu há 1 ano e não regrediu com medicamentos tópicos. Exame: lesão arredondada na região mandibular esquerda, medindo 4,5 cm no maior eixo, com borda de 0,5 cm de largura, levemente elevada, contínua na maior extensão, entremeada por alguns tubérculos e pequenos trechos descontínuos, de coloração eritematosa-ferruginosa e centro mais claro e discretamente atrófico. O diagnóstico mais provável é:',
@@ -1464,6 +1636,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-28',
+    topography: '7.2',
+    topic: 'Escabiose',
     module: 'Clínica Médica',
     text: 'Mulher, 25 anos, com prurido no corpo todo há 10 dias. Trabalha em fábrica de peças para automóveis, manipulando graxa e solventes. Tem um filho de oito anos que passa o dia na escola e que também está se coçando muito, principalmente à noite. As lesões são pápulas eritematosas, algumas encimadas por crostículas, outras em arranjo linear, com muita escoriação, distribuindo-se no abdome, mamas, axilas e face interna dos braços. A droga de escolha para o tratamento dessa doença é:',
     options: [
@@ -1480,6 +1654,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-29',
+    topography: '2.2',
+    topic: 'Hipertensão arterial sistêmica',
     module: 'Clínica Médica',
     text: 'Homem, 60 anos, diabético e dislipidêmico foi atendido na Unidade Básica de Saúde com PA = 170 x 110 mmHg, aferidas em três medidas em dias e horários distintos. Após uma semana, o paciente é reavaliado e apresenta os mesmos níveis pressóricos. Além de mudanças no estilo de vida, o tratamento mais apropriado consiste em iniciar de imediato:',
     options: [
@@ -1496,6 +1672,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-30',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Clínica Médica',
     text: 'Mulher, 57 anos, com câncer de mama, em tratamento quimioterápico iniciado há 60 dias. No Pronto Socorro, refere que desde há duas semanas apresenta dispneia aos pequenos esforços e episódios de dispneia paroxística noturna. Exame físico: presença de 3ª bulha, estertores crepitantes em bases pulmonares e ausência de engurgitamento jugular. ECG demonstra taquicardia sinusal e a radiografia de tórax indica congestão com inversão do fluxo pulmonar e linhas B de Kerley. Ecocardiograma demonstrou fração de ejeção de 45%. O diagnóstico mais provável é:',
     options: [
@@ -1512,6 +1690,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-31',
+    topography: '2.2',
+    topic: 'Síndrome coronariana aguda',
     module: 'Clínica Médica',
     image: '/images/tp2021-31.webp',
     text: 'Homem, 70 anos, hipertenso, sedentário, dislipidêmico, com sobrepeso, tabagista, diabético, com dor torácica retroesternal em peso iniciada em repouso, de forte intensidade, sem irradiação, acompanhada de sudorese, há 3 horas. Foi admitido na emergência com sinais de congestão pulmonar e o eletrocardiograma a seguir. O diagnóstico mais provável é:',
@@ -1529,6 +1709,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-32',
+    topography: '4.1',
+    topic: 'Glomerulonefrite',
     module: 'Clínica Médica',
     text: 'Homem, 48 anos, apresenta edema de face e de membros inferiores, leve, mole, frio e depressível, hematúria glomerular, hipertensão arterial, oligúria e creatinina de 3,6 mg/dL, cuja biópsia renal mostra alterações glomerulares proliferativas e formação de crescentes epiteliais extracapilares em 60% dos glomérulos. O diagnóstico é:',
     options: [
@@ -1545,6 +1727,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-33',
+    topography: '1.5',
+    topic: 'Hipertireoidismo',
     module: 'Clínica Médica',
     text: 'Mulher, 18 anos, queixa-se de perda de peso, palpitações e agitação psicomotora há dois meses. Exame físico: PA = 130 x 60 mmHg, FC = 132 bpm, tremores finos de extremidades e tireoide aumentada difusamente de volume, indolor, com temperatura local elevada e sopro tireoidiano, além de proptose bilateral sem sinais flogísticos oculares. Exames laboratoriais: TSH = 0,01 mcUI/ml; T4 livre = 2,5 ng/dL; T3 = 268 ng/dL. Ultrassom: bócio difuso. O provável diagnóstico é:',
     options: [
@@ -1561,6 +1745,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-34',
+    topography: '8',
+    topic: 'Síndrome de Cushing',
     module: 'Clínica Médica',
     text: 'Mulher, 43 anos, com ganho ponderal de 10 kg em 6 meses, fraqueza, ciclos menstruais irregulares e há 4 meses diagnóstico de hipertensão arterial sistêmica. Nega uso de quaisquer medicações. Exame físico: FC = 80 bpm, PA = 160 x 90 mmHg, IMC = 26 kg/m², circunferência abdominal = 100 cm, fácies em lua cheia, pletórica, com estrias largas e violáceas em abdômen, pele fina e com equimoses em membros. A primeira etapa na investigação diagnóstica é:',
     options: [
@@ -1577,6 +1763,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-35',
+    topography: '3.1',
+    topic: 'Doença inflamatória intestinal',
     module: 'Clínica Médica',
     text: 'Homem, 39 anos, há 8 semanas apresentando diarreia líquida com cólica abdominal e dores articulares. Procurou a emergência com queixa de dor predominante em quadrante inferior direito do abdome, que ameniza com a evacuação. Exame físico: febril, pálido, emagrecido. Massa palpável e dolorosa em fossa ilíaca direita. Leucocitose no hemograma. Mencionou ter sido operado de fístula anorretal há 1 ano. O diagnóstico e a opção terapêutica são:',
     options: [
@@ -1593,6 +1781,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-36',
+    topography: '8',
+    topic: 'Diabetes mellitus tipo 1 e 2',
     module: 'Clínica Médica',
     text: 'Homem, 50 anos, portador de hipertensão, dislipidemia e Diabetes mellitus tipo 2 há 10 anos, é admitido no Pronto Socorro com quadro de confusão mental há 1 dia. Familiares informam uso irregular de metformina, glimepirida, sinvastatina e losartana; vinha apresentando diarreia, náuseas e febre há 2 dias. Exames: glicemia 650 mg/dL; K+ = 2,5 mEq/L; discreta cetonemia e cetonúria. Enquanto aguarda vaga na UTI, como deve ser o manejo da insulinização?',
     options: [
@@ -1609,6 +1799,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-37',
+    topography: '10',
+    topic: 'HIV/AIDS',
     module: 'Clínica Médica',
     text: 'Homem, 22 anos, chega ao Pronto Socorro com queixa de diminuição de força em dimídio direito há 2 dias com piora progressiva. É hemofílico grave, com diagnóstico de HIV há 10 anos, sem uso de antirretroviral. Exame físico: hemiparesia direita incompleta com liberação piramidal e monilíase oral. Tomografia de crânio com contraste evidenciou duas lesões com captação periférica de contraste e efeito de massa. A principal hipótese diagnóstica é:',
     options: [
@@ -1625,6 +1817,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-38',
+    topography: '2.2',
+    topic: 'Infarto agudo do miocárdio',
     module: 'Clínica Médica',
     text: 'Homem, 58 anos, com antecedente de dislipidemia e tabagismo, apresenta dor epigástrica em queimação irradiada para região precordial, associada à náusea e sudorese há 7 horas. ECG: supradesnivelamento de ST em DII, DIII e AVF e infradesnivelamento em V1-V2. Evoluiu com hipotensão, dispneia intensa, sopro sistólico em foco mitral e crepitações pulmonares. A localização do IAM e possível complicação são:',
     options: [
@@ -1641,6 +1835,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-39',
+    topography: '4.1',
+    topic: 'Lesão renal aguda',
     module: 'Clínica Médica',
     text: 'Mulher, 50 anos, com diabetes tipo 2 e dislipidemia mista, iniciou uso de estatina há 2 meses. Exames: creatinina = 1,5 mg/dL; ureia = 65 mg/dL; potássio = 6,0 mEq/L; CPK = 2.200 UI/L. Além da alcalinização da urina, a conduta adequada é:',
     options: [
@@ -1657,6 +1853,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-40',
+    topography: '12',
+    topic: 'Delirium',
     module: 'Clínica Médica',
     text: 'Homem de 85 anos está internado para realização de procedimento cirúrgico eletivo devido à hiperplasia prostática benigna. Durante a madrugada passa a apresentar flutuações da consciência, desorientação, períodos de agitação intercalados com apatia, frases desconexas e agressividade verbal. Família refere ausência de episódios prévios e que o paciente era independente e lúcido. Qual o diagnóstico e a terapia farmacológica adequada?',
     options: [
@@ -1673,6 +1871,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-21',
+    topography: '2.1',
+    topic: 'DPOC',
     module: 'Clínica Médica',
     text: 'Sérgio, 62 anos, em atendimento na UBS, portador de doença pulmonar obstrutiva crônica (DPOC), secundário ao tabagismo de longa data. Nesta semana, precisou buscar atendimento e, após um resfriado, sentiu falta de ar, tosse com catarro amarelado e chiado no peito. Quanto à fisiopatologia da DPOC, é correto afirmar que:',
     options: [
@@ -1690,6 +1890,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-22',
+    topography: '2.1',
+    topic: 'Asma',
     module: 'Clínica Médica',
     text: 'Mulher de 35 anos apresenta episódios recorrentes de dispneia, tosse seca e chiado, com piora noturna e após exposição à poeira. Fora das crises, permanece assintomática. Espirometria basal sem padrão obstrutivo. Teste de broncoprovocação com metacolina demonstra queda de 22% no VEF1 (volume expiratório forçado no primeiro segundo). Nessa paciente, o principal mecanismo fisiopatológico responsável pela obstrução reversível das vias aéreas é:',
     options: [
@@ -1707,6 +1909,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-23',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Clínica Médica',
     text: 'Homem indígena de 58 anos, com histórico de etilismo crônico e infarto agudo do miocárdio há 5 anos, evolui com insuficiência cardíaca com fração de ejeção reduzida (FEVE 32%) após infarto agudo. Exame físico com presença de b3, sem outras alterações. Você o recebe na atenção básica para início do tratamento do quadro. Nesse paciente, foi introduzido Sacubitril, Valsartana, Carvedilol e Inibidor SGLT2. O diurético mais indicado neste momento que diminui mortalidade a longo prazo para esse paciente é:',
     options: [
@@ -1723,6 +1927,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-24',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Clínica Médica',
     text: 'Mulher, 52 anos, internada por dispneia progressiva há 5 dias, refere ortopneia, dispneia paroxística noturna e piora importante da tolerância aos esforços. Ao exame físico, apresenta turgência jugular, edema maleolar bilateral, crepitações bibasais, bulha acessória (B3), frequência cardíaca de 108bpm, pressão arterial de 112x74mmHg, extremidades quentes, pulsos periféricos palpáveis, sem rebaixamento do nível de consciência e com tempo de enchimento capilar de 3,0 segundos. Com base na anamnese e no exame físico, qual é o perfil clínico-hemodinâmico predominante?',
     options: [
@@ -1739,6 +1945,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-25',
+    topography: '4.1',
+    topic: 'Doença renal crônica',
     module: 'Clínica Médica',
     text: 'Mulher, 54 anos, diabética, admitida no hospital com fraqueza, dispneia progressiva e oligúria há 3 dias. Exame físico: PA 160/95mmHg, FC 98bpm, FR 26irpm, saturação de O₂ 92%, presença de estertores crepitantes bibasais e edema de membros inferiores (+++/4+). Exames laboratoriais: Ureia 210mg/dL; Creatinina 8,5mg/dL; Potássio 6,8mEq/L; pH arterial 7,21; HCO₃⁻ 14mEq/L. Apesar de administração de 100mg de furosemida, mantém oligúria. Qual a próxima conduta?',
     options: [
@@ -1755,6 +1963,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-26',
+    topography: '4.1',
+    topic: 'Lesão renal aguda',
     module: 'Clínica Médica',
     image: '/images/tp2026-26.webp',
     text: 'Mulher, 60 anos, com história de nefrolitíase, foi encaminhada ao nefrologista devido a redução do volume urinário, hematúria, dor lombar intermitente bilateral tipo cólica e vômitos quando apresenta dor. Fez uso de dipirona e escopolamina via oral. Exame de creatinina: 7mg/dL. Traz ultrassom de rins e vias urinárias, que evidencia dilatação pielocalicial bilateral. Diante do caso exposto, qual a etiologia da alteração de função renal?',
@@ -1772,6 +1982,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-27',
+    topography: '3.1',
+    topic: 'Gastrite',
     module: 'Clínica Médica',
     text: 'Homem cis, 42 anos, branco, procura atendimento em UBS com queixa de dor epigástrica em queimação há 3 meses, piora após ingestão de alimentos gordurosos e uso frequente de anti-inflamatórios não esteroidais (AINEs), por dor lombar crônica. Refere consumo regular de álcool (3-4 vezes por semana) e tabagismo (10 maços/ano). Foi levantada a hipótese diagnóstica de gastrite. Qual das alternativas abaixo contempla de forma mais adequada as medidas de prevenção e promoção de saúde para esse paciente?',
     options: [
@@ -1788,6 +2000,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-28',
+    topography: '3.1',
+    topic: 'Doença inflamatória intestinal',
     module: 'Clínica Médica',
     text: 'J.S.L., sexo feminino, 23 anos, comparece ao pronto atendimento com queixa de diarreia aquosa 10 vezes ao dia, acompanhada de muco e raias de sangue há 8 meses. Refere perda de 7kg no período. Traz colonoscopia, com resultado de colite de descendente moderada e ileíte terminal moderada (confirmados por biópsia). Ao exame físico apresenta abdome doloroso, sem defesa e presença de fístulas anorretais. Qual o diagnóstico provável da paciente?',
     options: [
@@ -1804,6 +2018,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-29',
+    topography: '1.1',
+    topic: 'Cefaleias',
     module: 'Clínica Médica',
     text: 'Mulher de 32 anos procura pronto atendimento por cefaleia hemicraniana pulsátil há 10 horas, associada a náuseas, fotofobia e piora com esforços habituais. Refere episódios semelhantes nos últimos dois anos, com melhora espontânea entre as crises, sem febre, déficit focal ou alteração do nível de consciência. Indique a investigação diagnóstica:',
     options: [
@@ -1820,6 +2036,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-30',
+    topography: '1.1',
+    topic: 'Demências',
     module: 'Clínica Médica',
     text: 'Paciente de 72 anos é levado ao médico da Saúde da Família, na UBS, por sua filha, que relata um declínio progressivo da memória do pai há cerca de dois anos, com esquecimento de fatos recentes e dificuldade em encontrar palavras. Nos últimos meses, ele começou a apresentar desorientação em locais conhecidos e necessitar de ajuda para tarefas diárias, como se vestir. Após avaliação clínica e exames complementares, foi diagnosticado com Doença de Alzheimer em fase moderada. Qual plano terapêutico mais adequado deve ser iniciado na Estratégia da Saúde da Família?',
     options: [
@@ -1836,6 +2054,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-31',
+    topography: '10',
+    topic: 'HIV/AIDS',
     module: 'Clínica Médica',
     text: 'Homem indígena, 32 anos, atendido em UBS, apresenta perda de peso não intencional e febre há 3 semanas, associadas a diarreia intermitente. Ao exame, apresenta candidíase oral. Foi realizado teste rápido para HIV, com resultado reagente. Indique a melhor conduta diagnóstica a ser realizada neste momento.',
     options: [
@@ -1852,6 +2072,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-32',
+    topography: '10',
+    topic: 'Dengue',
     module: 'Clínica Médica',
     text: 'A agente comunitária visita a Sra. Maria Alice, 32 anos, que relata nunca ter tido dengue e no momento apresenta-se saudável e sem comorbidades. A moradora pergunta se pode receber a vacina Qdenga® contra a dengue, já disponível, e quais orientações de prevenção deve seguir após a vacinação. Considerando as diretrizes mais recentes do Ministério da Saúde e as recomendações para promoção e prevenção em saúde, identifique a conduta adequada.',
     options: [
@@ -1868,6 +2090,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-33',
+    topography: '6.1',
+    topic: 'Lúpus eritematoso sistêmico',
     module: 'Clínica Médica',
     text: 'Mulher, 19 anos, de etnia amarela, previamente hígida, encontra-se em investigação no ambulatório de clínica médica, devido a trombose venosa profunda em membro inferior direito há 4 meses. Há 1 ano, apresentou perda fetal na 26ª semana gestacional, sem causa definida. Nega tabagismo e uso contínuo de medicações. Exame físico: livedo reticular em membros inferiores. Exames laboratoriais evidenciam plaquetopenia. A alteração mais associada ao quadro é:',
     options: [
@@ -1884,6 +2108,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-34',
+    topography: '9',
+    topic: 'Leucemias',
     module: 'Clínica Médica',
     text: 'Um adolescente de 16 anos é levado ao hospital com história de fadiga, febre e sangramentos gengivais há 3 semanas. Ao exame físico apresenta palidez, petéquias e linfadenomegalia cervical. Hemograma: Hb 8g/dL; Leucócitos 35.000/mm³; Plaquetas 40.000/mm³. Presença de blastos no sangue periférico. Qual é o exame diagnóstico confirmatório mais indicado?',
     options: [
@@ -1900,6 +2126,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-35',
+    topography: '9',
+    topic: 'Síndrome de lise tumoral',
     module: 'Clínica Médica',
     text: 'Homem de 70 anos procura a UBS, pois vem apresentando quadro progressivo de contrações musculares involuntárias, espasmos, câimbras dolorosas principalmente em membros e fraqueza. Refere perda de peso não intencional nos últimos meses e aumento de linfonodos cervicais em investigação. Ao exame físico, encontra-se discretamente desidratado. Laboratoriais: Fósforo 6,2mg/dL; Cálcio total 5,5mg/dL; Creatinina 2,3mg/dL; Hemoglobina 13g/dL. Considerando a principal hipótese diagnóstica, esperam-se as seguintes alterações laboratoriais adicionais:',
     options: [
@@ -1916,6 +2144,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-36',
+    topography: '2.1',
+    topic: 'Insuficiência respiratória',
     module: 'Clínica Médica',
     text: 'Homem de 62 anos, tabagista, com DPOC, chega ao pronto atendimento com dispneia, sonolência, FR 10irpm e uso de musculatura acessória. Gasometria: pH 7,28; PaCO₂ 62mmHg; PaO₂ 58mmHg. Após oxigênio suplementar, mantém rebaixamento do nível de consciência. Qual a melhor conduta inicial?',
     options: [
@@ -1932,6 +2162,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-37',
+    topography: '10',
+    topic: 'Sepse',
     module: 'Clínica Médica',
     text: 'Paciente de 58 anos, previamente hígido, procura pronto atendimento com história de febre há 2 dias, associada a tosse prodututiva e dispneia progressiva. Na admissão, apresenta-se com extremidades frias, sonolento, com os seguintes sinais vitais: Tax 38,7°C, FC 112bpm, FR 26rpm, PA 92/58mmHg, Saturação de O₂ 91% em ar ambiente. Ao exame físico, observam-se estertores crepitantes em base pulmonar direita. Considerando o quadro clínico, qual a melhor conduta inicial nas primeiras horas de atendimento?',
     options: [
@@ -1948,6 +2180,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-38',
+    topography: '2.2',
+    topic: 'Síndrome coronariana aguda',
     module: 'Clínica Médica',
     text: 'Homem de 58 anos chega ao pronto atendimento com dor torácica há 2 horas. ECG mostra supradesnivelamento do segmento ST in parede anterior. O hospital não possui hemodinâmica e o tempo estimado para transferência é de 150 minutos. Qual a melhor conduta inicial?',
     options: [
@@ -1964,6 +2198,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-39',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Clínica Médica',
     text: 'Mulher cis, de 52 anos, chega ao pronto-socorro com dispneia súbita e ortopneia. PA 180/100mmHg, SatO₂ 86%. Radiografia de tórax mostra opacidades alveolares bilaterais perihilares simétricas. Gasometria: pH 7,30; pCO₂ 50mmHg; pO₂ 60mmHg. Qual a principal hipótese diagnóstica?',
     options: [
@@ -1980,6 +2216,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-40',
+    topography: '8',
+    topic: 'Cetoacidose diabética',
     module: 'Clínica Médica',
     text: 'Paciente de 21 anos, com antecedente de diabetes mellitus tipo 1, refere quadro gripal há cerca de uma semana, associado a inapetência, o que levou à omissão de doses de insulina. Procura atendimento de urgência com náuseas, vômitos, dor abdominal e sinais de desidratação. Exames laboratoriais evidenciam: glicemia 420mg/dL; pH 7,1; bicarbonato 3mEq/L. Diante do quadro, a conduta inicial mais adequada é:',
     options: [
@@ -1998,6 +2236,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   // ---- Teste de Progresso 2019 (gabarito oficial) ----
   {
     id: 'tp2019-21',
+    topography: '4.1',
+    topic: 'Distúrbios hidroeletrolíticos',
     module: 'Clínica Médica',
     image: '/images/tp2019-21.webp',
     text: 'Homem, 82 anos, 60kg, com hipertensão arterial sistêmica e diabetes melitus 2, vem ao pronto-socorro referindo dor torácica há um dia com duração de mais ou menos 20 minutos. Relata também dispneia ao deitar, edema nas pernas e diminuição da diurese. Refere ter “problema de coração”. Faz uso de furosemida 40mg (2x/dia), carvedilol 6,25mg (2x/dia), enalapril 20mg (2x/dia). Exame físico: estase jugular, edema de membros inferiores 2+/4+, PA = 140 x 90 mmHg e boa perfusão periférica. Eletrocardiograma a seguir:\n\nQual exame deve ser solicitado nesse momento e qual a primeira medicação a ser realizada?',
@@ -2015,6 +2255,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-22',
+    topography: '4.1',
+    topic: 'Lesão renal aguda',
     module: 'Clínica Médica',
     text: 'Mulher, 70 anos, está em observação no Pronto-Socorro devido a febre, tosse com expectoração purulenta e dor ventilatório-dependente em região posterior do hemitórax esquerdo há três dias. Na admissão, estava com FC = 98 bpm, temperatura axilar = 39ºC, FR = 22 ipm e PA = 90 x 58 mmHg. Evoluiu com redução do débito urinário < 0,5 mL/kg/h por 24h e aumento proporcionado dos níveis séricos de ureia e creatinina. O sedimento de urina revelou cilindros granulosos e epiteliais. A osmolaridade urinária está normal.\n\nA causa provável da insuficiência renal aguda é:',
     options: [
@@ -2031,6 +2273,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-23',
+    topography: '6.1',
+    topic: 'Osteoporose',
     module: 'Clínica Médica',
     image: '/images/tp2019-23.webp',
     text: 'Homem, 80 anos, admitido para avaliação no Pronto-Socorro por lombalgia intensa há duas horas. Nega história de trauma ou esforço. Queixa-se de dor localizada em região lombar alta, sem irradiação, sem outros sintomas. Histórico de nefrolitíase, gota e doença pulmonar obstrutiva crônica (DPOC) grave, com inúmeras crises de exacerbação, com necessidade de internação e corticoterapia sistêmica. Exame físico: dor à palpação local e à mobilização da coluna, porém com amplitude de movimento preservada. Radiografia de coluna a seguir:\n\nDiante desse quadro, o diagnóstico é:',
@@ -2048,6 +2292,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-24',
+    topography: '7.2',
+    topic: 'Carcinoma basocelular',
     module: 'Clínica Médica',
     image: '/images/tp2019-24.webp',
     text: 'Homem, 53 anos, lavrador, apresenta há oito meses lesão indolor e de crescimento lento, medindo 3cm, na região bucinadora esquerda (figura a seguir), associada a manchas hipercrômicas em áreas expostas ao sol.\n\nO diagnóstico, o tratamento e o prognóstico são:',
@@ -2065,6 +2311,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-25',
+    topography: '13',
+    topic: 'Abstinência alcoólica',
     module: 'Clínica Médica',
     text: 'Homem, 47 anos, dá entrada na Unidade de Emergência trazido por familiares, com história de etilismo crônico. Encontrava-se acamado há dois dias por queda do estado geral, fraqueza generalizada e anorexia. Não apresentava febre. Hoje, iniciou confusão mental, alucinações, ideação paranoide e abalos musculares tônico-clônicos generalizados fugazes, com recuperação espontânea, recobrando a consciência entre as crises. Exame físico: PA = 150/90 mmHg; FC = 120 bpm; T = 37,6ºC; FR = 22 ipm, ansioso, agitado, confuso, desorientado, com sudorese profusa e tremor intenso das mãos. Glicemia capilar = 75 mg/dL.\n\nO diagnóstico clínico mais provável é:',
     options: [
@@ -2081,6 +2329,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-26',
+    topography: '9',
+    topic: 'Anemia megaloblástica',
     module: 'Clínica Médica',
     text: 'Mulher, 45 anos, portadora de Doença de Crohn com acometimento ileal, apresenta-se com queixas de mal-estar, fadiga, astenia, tontura e palpitações de caráter progressivo. Exame físico: emagrecida, descorada 3+/4+, glossite e queilite angular. Hb = 6,8 g/dL (VR > 12,5), Ht = 22% (VR > 38%), VCM = 116 fL (VR = 80 - 100), HCM = 38 pg (VR = 28 - 34), RDW = 14,5% (VR < 15,5%), leucócitos = 2.800 células/mm³ (VR = 3.500 - 10.500), plaquetas = 110.000/mm³ (VR = 150.000 - 450.000).\n\nA causa mais provável da anemia nesta paciente é:',
     options: [
@@ -2097,6 +2347,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-27',
+    topography: '7.2',
+    topic: 'Escabiose',
     module: 'Clínica Médica',
     image: '/images/tp2019-27.webp',
     text: 'Mulher, 25 anos, procura a Unidade Básica de Saúde por prurido no corpo todo há 10 dias. Trabalha em fábrica de peças para automóveis, manipulando graxa e solventes. Tem um filho de três anos que passa o dia na creche e que também está se coçando muito, principalmente à noite. As lesões são pápulas eritematosas, algumas encimadas por crostículas, outras em arranjo linear, com muita escoriação, distribuindo-se no abdome, mamas, axilas e face interna dos braços (foto a seguir).\n\nO diagnóstico e os achados clínicos que o definem são:',
@@ -2114,6 +2366,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-28',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Clínica Médica',
     text: 'Homem, 75 anos, hipertenso e diabético do tipo 2, procura Unidade de Emergência com queixa de ortopneia, edema de membros inferiores e cansaço. Refere uso de enalapril 10mg 12/12h, furosemida 40mg/dia e AAS 100mg/dia. Foi administrado furosemida por via endovenosa sem melhora do quadro, mantendo estase jugular, edema de membros inferiores e crepitação pulmonar bilateral até ápice. FR = 35 ipm, saturação de O₂ = 89% com fração inspirada de O₂ = 10 L/min em máscara com reservatório, FC = 92 bpm, PA = 190 x 100 mmHg e tempo de enchimento capilar de 2 segundos.\n\nA medicação mais adequada indicada nesse momento é:',
     options: [
@@ -2130,6 +2384,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-29',
+    topography: '6.1',
+    topic: 'Artrite reumatoide',
     module: 'Clínica Médica',
     text: 'Mulher, 40 anos, apresenta há dois meses poliartrite simétrica em articulações das mãos e punhos, aditiva, com rigidez matinal superior a uma hora. A radiografia de mãos apresenta osteopenia periarticular, erosões marginais e cistos subcondrais em articulações metacarpofalangeanas e interfalangeanas proximais. Exames laboratoriais com anemia normocítica normocrômica, elevação de provas inflamatórias e fator reumatoide negativo.\n\nO diagnóstico mais provável é:',
     options: [
@@ -2146,6 +2402,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-30',
+    topography: '1.1',
+    topic: 'Cefaleias',
     module: 'Clínica Médica',
     text: 'Homem, 50 anos, queixa-se de cefaleia diária nas últimas duas semanas. Relata dois episódios diários de dor, um deles ocorrendo sempre no período noturno, despertando-o do sono. A dor é de grande intensidade, no lado direito da face e crânio, com duração de uma hora, acompanhada de lacrimejamento e hiperemia do olho direito e congestão nasal. Exame neurológico normal.\n\nO diagnóstico mais provável é:',
     options: [
@@ -2162,6 +2420,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-31',
+    topography: '2.1',
+    topic: 'Derrame pleural',
     module: 'Clínica Médica',
     image: '/images/tp2019-31.webp',
     text: 'Homem, 68 anos, há 20 dias apresentou mal-estar, tosse com expectoração amarelada e febre de até 39°C. Foi tratado com amoxicilina e apresentou melhora do quadro. Há dois dias, surgiu dor no hemitórax direito, ventilatório-dependente, sem irradiação e sem fatores de melhora. Procurou novamente o serviço médico. Exame físico: bom estado geral, hidratado, eupneico. PA = 130 x 80 mmHg, SatO₂ em ar ambiente = 94%, FR = 14 ipm, FC = 100 bpm, T = 36,5°C. Bulhas rítmicas e normofonéticas sem sopros. Expansibilidade diminuída, redução do frêmito toracovocal, macicez à percussão e diminuição do murmúrio vesicular no terço inferior do hemitórax direito. Radiografia de tórax:\n\nA conduta mais adequada é:',
@@ -2179,6 +2439,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-32',
+    topography: '10',
+    topic: 'Tuberculose',
     module: 'Clínica Médica',
     image: '/images/tp2019-32.webp',
     text: 'Homem, 60 anos, está em tratamento para psoríase sem controle adequado da doença. Há oito meses iniciou uso de imunobiológico (infliximabe) e obteve significativa melhora. Há três semanas começou a apresentar febre e tosse seca. Foi à Unidade de Pronto Atendimento há uma semana e foi tratado com azitromicina, sem melhora. Refere perda do apetite e diminuição do peso (3kg) no período. Exame físico: bom estado geral, hidratado, taquipneico e afebril. Exame respiratório, cardiovascular e abdominal sem alterações. FC = 90 bpm; PA = 120 x 70 mmHg, T = 38,6ºC. Radiografia de tórax:\n\nA hipótese diagnóstica mais provável é:',
@@ -2196,6 +2458,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-33',
+    topography: '6.1',
+    topic: 'Fibromialgia',
     module: 'Clínica Médica',
     text: 'Mulher, 28 anos, refere dificuldade de concentração, sono não reparador, sensação de cansaço ao acordar e dor articular e muscular em membros superiores e inferiores há seis meses. Nega perda de peso, hiporexia e febre. Exame físico: pele e mucosa sem alterações, articulações ou músculos sem sinais inflamatórios, força muscular preservada e dor em tender points.\n\nO tratamento mais efetivo é:',
     options: [
@@ -2212,6 +2476,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-34',
+    topography: '13',
+    topic: 'Transtornos de ansiedade',
     module: 'Clínica Médica',
     text: 'Mulher, 30 anos, professora, foi encaminhada da Unidade de Emergência para a Unidade de Saúde da Família (USF), após ter sido atendida seis vezes no último mês por queixas de desconforto precordial, palpitações, falta de ar, sensação de desmaio e medo de estar tendo um ataque cardíaco. Os exames realizados na emergência estavam normais e as crises passavam após a injeção de benzodiazepínico. Na USF, a paciente diz estar com receio de ter crises na frente dos alunos. Nega uso de substâncias psicoativas.\n\nA opção farmacológica de primeira escolha é:',
     options: [
@@ -2228,6 +2494,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-35',
+    topography: '3.1',
+    topic: 'Doença inflamatória intestinal',
     module: 'Clínica Médica',
     text: 'Mulher, 25 anos, operada de fístula perianal há um ano, procura o ambulatório com queixa de diarreia líquida e cólica abdominal há 10 meses. Exame físico: pálida, emagrecida, com massa palpável e dolorosa em fossa ilíaca direita. Exame contrastado do trânsito intestinal com área de estenose do íleo terminal. A colonoscopia revelou úlcera de coloração avermelhada superficial em cólon ascendente, algumas erosões lineares entremeadas por mucosa normal em cólon transverso. A análise histopatológica mostrou intenso infiltrado inflamatório linfomononuclear constituindo formações granulomatosas sem material caseoso.\n\nO diagnóstico mais provável é:',
     options: [
@@ -2244,6 +2512,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-36',
+    topography: '2.1',
+    topic: 'Pneumonia comunitária',
     module: 'Clínica Médica',
     text: 'Mulher, 68 anos, é avaliada na Unidade de Pronto Atendimento com quadro febril agudo e dispneia, recebendo o diagnóstico de pneumonia. Não apresenta comorbidades, internações ou procedimentos invasivos recentes. Exame físico: FR = 32 irpm, PA = 100 / 65 mmHg, com desorientação têmporo-espacial.\n\nO plano terapêutico para o caso deve incluir:',
     options: [
@@ -2260,6 +2530,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-37',
+    topography: '1.5',
+    topic: 'Tempestade tireotóxica',
     module: 'Clínica Médica',
     text: 'Mulher, 30 anos, procura Pronto Atendimento com história de agitação, perda de peso (5kg) e palpitações há 15 dias. Há dois dias houve piora dos sintomas, principalmente das palpitações. Exame físico: agitada, consciente e acianótica. Pele quente e úmida. T = 37,4°C. Pulso = 160 bpm, arrítmico; PA = 90 x 60 mmHg. Aumento da tireoide de três vezes e proptose ocular bilateral. ECG mostrou ritmo de fibrilação atrial.\n\nA hipótese diagnóstica mais provável e a conduta mais apropriada são:',
     options: [
@@ -2276,6 +2548,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-38',
+    topography: '8',
+    topic: 'Diabetes mellitus tipo 1 e 2',
     module: 'Clínica Médica',
     text: 'Homem, 56 anos, com diabetes mellitus há 12 anos, está em uso de metformina 2g de liberação prolongada e gliclazida 120mg por dia. Exames laboratoriais: Hb glicada = 10,2%; glicemia de jejum = 190 mg/dL.\n\nA melhor conduta para esse caso é:',
     options: [
@@ -2292,6 +2566,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-39',
+    topography: '12',
+    topic: 'Demências',
     module: 'Clínica Médica',
     text: 'Homem de 75 anos, aposentado, oito anos de escolaridade, é levado ao consultório pela esposa com quadro evolutivo de esquecimento e desorientação temporal que interferem em atividades diárias, como sair sozinho para fazer as compras e controlar as finanças. Mini-exame do estado mental = 20 pontos (normal > 24), Memory Impairment Screen = 3 pontos (normal > 5), Teste de fluência verbal = 6 animais/minuto (normal > 13).\n\nO diagnóstico é compatível com:',
     options: [
@@ -2308,6 +2584,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-40',
+    topography: '2.1',
+    topic: 'Asma',
     module: 'Clínica Médica',
     image: '/images/tp2019-40.webp',
     text: 'Mulher, 38 anos, tem crises de dispneia, sibilância e tosse produtiva, frequentes nos meses de clima frio, há cerca de oito anos. Tem rinite desde a infância e história de tabagismo de longa data. Radiografia do tórax: sinais de hiperinsuflação pulmonar. Espirometria:\n\nO melhor diagnóstico que se aplica a este caso é:',
@@ -2326,6 +2604,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
   {
     id: 'tp2020-41',
+    topography: '13',
+    topic: 'Depressão maior',
     module: 'Clínica Médica',
     text: 'Paciente do sexo feminino, 22 anos, recém-divorciada e com dois filhos, procurou médico de família por sentir fadiga, apresentar ideias suicidas elaboradas e recorrentes, ganho de peso, insônia e agitação quase todos os dias há três meses, além de profundos sentimentos de inutilidade ou culpa excessiva ou inapropriada do tipo delirante. Houve prejuízo no funcionamento social e não há relato de uso de substâncias. Segundo informações da paciente e dos familiares, não houve surgimento de humor anormal e persistentemente elevado, expansivo ou irritável, bem como também não há relato prévio de distúrbios do sono.\n\nDetermine o diagnóstico:',
     options: [
@@ -2342,6 +2622,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-42',
+    topography: '1.1',
+    topic: 'TCE',
     module: 'Clínica Médica',
     text: 'ALM, 30 anos, sexo masculino, vítima de acidente de motocicleta com TCE grave, com múltiplos mecanismos (lesão axonal difusa, hematoma subdural, hematoma extradural e contusão cerebral), tendo sido submetido a drenagem de hematoma extradural e permanecendo internado durante 35 dias no hospital. Na alta, apresentava-se eupneico em ar ambiente pela cânula de traqueostomia, vigil, sem interação com o meio, com dupla hemiparesia, com espasticidade nos 4 membros, sinal de Babinski presente bilateralmente e sem ciclo sono-vigília. Iniciou acompanhamento com a Equipe de Saúde de Família dois meses após a alta. Na ocasião, a mãe relatava que o paciente permanecia com o mesmo quadro neurológico da alta hospitalar, em uso de sonda nasoenteral, com cânula de traqueostomia e sonda vesical de demora.\n\nIdentifique as orientações a serem priorizadas à família do paciente:',
     options: [
@@ -2358,6 +2640,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-43',
+    topography: '2.1',
+    topic: 'DPOC',
     module: 'Clínica Médica',
     text: 'Paciente do sexo masculino, 65 anos, refere dispneia aos esforços, progressiva, há 2 anos. Atualmente, a dispneia ocorre ao andar 100 metros no plano. No último ano, teve uma crise de piora dos sintomas, tratada ambulatorialmente com antibiótico e corticoide oral. É tabagista há 45 anos, um maço/dia. Exame físico: índice massa corpórea 20 kg/m², murmúrio vesicular reduzido bilateralmente sem ruídos adventícios. Exames complementares: Espirometria: distúrbio ventilatório obstrutivo. [Pré-broncodilatador: VEF1/CVF: 0,50; CVF: 2,4L (86%); VEF1: 1,19L (54%)]. [Pós-broncodilatador: VEF1/CVF: 0,52; CVF: 2,4L (86%); VEF1: 1,22L (55%)]. Hemograma: eosinófilos em sangue periférico: 70 células/microlitro.\n\nDefina o diagnóstico e a conduta:',
     options: [
@@ -2374,6 +2658,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-44',
+    topography: '1.5',
+    topic: 'Hipertireoidismo',
     module: 'Clínica Médica',
     text: 'J.A., sexo feminino, 35 anos, refere que há 2 meses sente tremores diários, batedeira, insônia, e que perdeu 6kg neste período, mesmo se alimentando normalmente. Ao exame físico, a paciente apresenta tremores finos de extremidades; FC = 120 bpm em repouso, PA = 140 x 90 mmHg. À palpação, apresenta aumento da tireoide em cerca de 3 vezes, sem nódulos palpáveis. Traz os exames laboratoriais: TSH = 0,02 mUI/L (VR: 0,5 - 4,2 mUI/L); T4 livre = 2,7 ng/dL (VR: 0,8 - 1,9 ng/dL); hemograma e transaminases normais.\n\nO diagnóstico é:',
     options: [
@@ -2390,6 +2676,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-45',
+    topography: '10',
+    topic: 'Sífilis',
     module: 'Clínica Médica',
     text: 'Paciente de 30 anos, sexo masculino, previamente hígido, apresentou quadro agudo de febre, mal-estar, linfonodomegalia cervical e lesões máculo-papulares pelo corpo, não pruriginosas, acometendo palmas das mãos e plantas dos pés. Refere relações sexuais desprotegidas. Foi realizado teste treponêmico: reagente, e teste não-treponêmico: reagente (VDRL 1/96).\n\nDefina o diagnóstico e o tratamento:',
     options: [
@@ -2406,6 +2694,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-46',
+    topography: '9',
+    topic: 'Trombocitopenias',
     module: 'Clínica Médica',
     text: 'Jovem de 17 anos refere o aparecimento de manchas roxas nas pernas e bolhas escuras na boca há cerca de 7 dias, além de sangramento nasal espontâneo há algumas horas. Nega patologias prévias ou uso de medicações. Ao exame físico, apresenta-se em bom estado geral, corada e hidratada. Exame pulmonar, cardiovascular e abdominal sem alterações; frequência cardíaca de 66 bpm. Membros inferiores com a presença de petéquias difusas, equimoses em coxa direita e braço esquerdo. Oroscopia evidencia uma bolha hemática em mucosa jugal. Resultado de hemograma realizado no dia anterior: hemoglobina: 12,4 g/dl; leucócitos: 4560/mm³ (diferencial normal); plaquetas: 6.000/mm³.\n\nO diagnóstico e a conduta inicial são:',
     options: [
@@ -2422,6 +2712,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-47',
+    topography: '2.2',
+    topic: 'Infarto agudo do miocárdio',
     module: 'Clínica Médica',
     image: '/images/tp2020-47.webp',
     text: 'Paciente de 52 anos, sexo masculino, tabagista, obeso, sedentário e portador de dislipidemia, chega ao setor de emergência com queixa de dor precordial em pontada, de forte intensidade e iniciada há poucos instantes, irradiada para a região epigástrica, acompanhada de sudorese fria e vômitos. O eletrocardiograma está representado a seguir:\n\nDetermine a hipótese diagnóstica e as medidas terapêuticas que devem ser tomadas pensando em diminuir a mortalidade da doença:',
@@ -2439,6 +2731,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-48',
+    topography: '1.1',
+    topic: 'TCE',
     module: 'Clínica Médica',
     image: '/images/tp2020-48.webp',
     text: 'Paciente de 75 anos sofreu queda da própria altura e apresenta sintomas de confusão mental e dores de cabeça. Realizou tomografia computadorizado do crânio (a seguir).\n\nDetermine o diagnóstico:',
@@ -2456,6 +2750,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-49',
+    topography: '3.1',
+    topic: 'Doença inflamatória intestinal',
     module: 'Clínica Médica',
     image: '/images/tp2020-49.webp',
     text: 'Homem, 23 anos, com diarreia há 3 meses (6 a 8 episódios por dia, inclusive noturnos), acompanhada de muco e cólicas abdominais, sendo que estas últimas são aliviadas com a evacuação. Refere piora da diarreia com o estresse. Relata emagrecimento não quantificado e fraqueza. Refere fazer uso “recreativo” de drogas (cigarro, maconha, ecstasy e álcool), nega uso de drogas injetáveis. Vida sexual ativa, heterossexual com várias parceiras, sem uso regular de preservativos. Pai falecido aos 48 anos de idade por neoplasia de cólon. Procurou gastroenterologista e foi solicitada uma colonoscopia para melhor elucidação diagnóstica (foto a seguir com a visão do íleo terminal):\n\nCom relação a este quadro, é correto afirmar que:',
@@ -2473,6 +2769,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-50',
+    topography: '8',
+    topic: 'Diabetes mellitus tipo 1 e 2',
     module: 'Clínica Médica',
     text: 'Paciente do sexo feminino, 47 anos, realizou glicemia como exame de rotina, com resultado: 220 mg/dL, levando ao diagnóstico de diabetes mellitus. Assintomática, relata apenas preocupação com a glicemia elevada. Antecedentes familiares: pai com diabetes e hipertensão, falecido por Infarto Agudo do Miocárdio. Mãe viva, 74 anos. Irmão de 50 anos, com diabetes. Histórico de vida: consome álcool socialmente; nega tabagismo. Ao exame físico: IMC = 27 kg/m²; cintura abdominal = 94cm; ausculta cardíaca e pulmonar normais; PA = 130 x 75 mmHg; FC = 78 bpm. Abdome globoso com fígado palpável no rebordo costal. Sem edemas. Pés com xerodermia, sem feridas, pulsos adequados; exame do monofilamento normal.\n\nA conduta inicial mais adequada, considerando o ambiente da UBS, é:',
     options: [
@@ -2489,6 +2787,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-51',
+    topography: '7.2',
+    topic: 'Erisipela',
     module: 'Clínica Médica',
     image: '/images/tp2020-51.webp',
     text: 'PCR, 65 anos, portador de hipertensão arterial sistêmica e insuficiência cardíaca congestiva, faz uso de AAS, carvedilol 6,25 mg/dia, losartana 100 mg/dia e hidroclorotiazida 25 mg/dia. Tem edema de membros inferiores recorrente, porém há cerca de 3 dias apresentou lesão avermelhada acompanhada de dor para caminhar no membro inferior esquerdo, acompanhado de febre e calafrios. Ao exame físico, o paciente apresenta-se toxemiado, com temperatura de 38,2°C. Verifica-se lesão eritematosa com bordas bem demarcadas, conforme a figura, acompanhada de adenite regional.\n\nO diagnóstico, o agente etiológico e a conduta terapêutica são:',
@@ -2506,6 +2806,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-52',
+    topography: '10',
+    topic: 'Dengue',
     module: 'Clínica Médica',
     text: 'CAS, 15 anos, sexo masculino, iniciou subitamente quadro de febre, prostração, mialgia e exantema. Feito o diagnóstico de "dengue clássica", apresentou boa recuperação em alguns dias. Permaneceu assintomático até que, após 15 dias, passou a apresentar crises convulsivas, alteração do nível de consciência e parestesia ascendente com perda de força muscular de membros inferiores.\n\nIdentifique a afirmativa correta sobre o caso:',
     options: [
@@ -2522,6 +2824,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-53',
+    topography: '1.1',
+    topic: 'AVC',
     module: 'Clínica Médica',
     text: 'Paciente de 34 anos com quadro súbito de cefaleia excruciante, holocraniana, ao realizar levantamento de peso na academia. Evoluiu com crise convulsiva tônico-clônica generalizada e liberação esfincteriana. À entrada no Pronto-Socorro, observou-se anisocoria, rigidez de nuca, ptose palpebral e estrabismo divergente. Sem comorbidades prévias.\n\nDetermine o provável diagnóstico e a lesão correspondente:',
     options: [
@@ -2538,6 +2842,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-54',
+    topography: '9',
+    topic: 'Anemia megaloblástica',
     module: 'Clínica Médica',
     text: 'R.L.N., sexo masculino, 22 anos, vegano há aproximadamente 3 anos, sem suplementação alimentar, com queixa de fraqueza, parestesias e hipoestesia nos membros inferiores. Ao exame físico, apresenta-se descorado 2+/4+, sem outras alterações. Realizou hemograma: Hb: 9,2 g/dL; Ht: 28%; VCM: 100fL; RDW: 16%; Leucócitos: 8.300/mm³ com diferencial normal. Plaquetas: 214.000/mm³; DHL: 1.500 U/L.\n\nDetermine a causa da anemia e do quadro clínico do paciente:',
     options: [
@@ -2554,6 +2860,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-55',
+    topography: '6.1',
+    topic: 'Gota',
     module: 'Clínica Médica',
     text: 'Paciente masculino, 60 anos, procura atendimento por ter despertado durante a madrugada com dor intensa no hálux direito acompanhado de rubor e inchaço local. Relata dificuldade para a deambulação porque os sintomas estão intensos. Refere ser hipertenso em uso de hidroclorotiazida e ter colesterol alto. Tem como hábitos alimentação rica em carne vermelha e ingesta de bebidas alcoólicas, em média duas cervejas ao dia. Nega outros sintomas associados.\n\nIdentifique a afirmativa correta em relação ao quadro:',
     options: [
@@ -2570,6 +2878,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-56',
+    topography: '8',
+    topic: 'Hiperaldosteronismo primário',
     module: 'Clínica Médica',
     text: 'Paciente do sexo feminino, 35 anos, comparece em Estratégia Saúde da Família com queixa de cefaleia e turvação visual, associadas a fraqueza e episódios de formigamento e câimbras nas pernas, com 6 semanas de evolução e piora progressiva nos últimos 5 dias. Nega histórico patológico pessoal e informa antecedente familiar de hipertensão arterial. Ao exame físico, verificam-se: PA: 190 x 110 mmHg, FC: 74 bpm; ausculta cardiopulmonar sem alterações. Traz exames recentes: potássio: 2,4 mmol/L (valor de referência: 3,5 - 5,1 mmol/L) e sódio: 152 mmol/L (valor de referência: 135 - 148 mmol/L).\n\nConsiderando a principal hipótese diagnóstica, identifique os exames complementares pertinentes:',
     options: [
@@ -2586,6 +2896,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-57',
+    topography: '8',
+    topic: 'Insuficiência adrenal',
     module: 'Clínica Médica',
     text: 'Paciente masculino, 29 anos, branco, vem à consulta com quadro de fraqueza, emagrecimento progressivo e “pressão baixa”. Refere ser portador de HIV e ter feito tratamento de tuberculose no passado. Ao exame apresenta-se em regular estado geral, desidratado +/4+, afebril. PA: 110 x 80 mmHg (deitado) e 90 x 60 mmHg (em pé). Apresenta escurecimento da pele em região axilar e região posterior do pescoço, bem como de mucosa oral.\n\nDetermine o diagnóstico e a conduta:',
     options: [
@@ -2602,6 +2914,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-58',
+    topography: '4.1',
+    topic: 'Doença renal crônica',
     module: 'Clínica Médica',
     text: 'Maria, 50 anos, doméstica, em acompanhamento há um ano (na ocasião com creatinina sérica: 1,8 mg/dL e ritmo de filtração glomerular estimado de 37 mL/minuto). Informa que não consegue manter a adesão à dieta porque come no emprego e seus patrões gostam de massas, frituras e todos os dias faz e come sobremesas variadas. Nos últimos dias, percebeu sua urina espumosa e em menor quantidade, fraqueza, seus pés não estão cabendo nos sapatos e até seus olhos estão inchados. Nesta noite, procurou o Pronto Atendimento com queixas de náuseas, falta de ar, palidez cutânea e edema generalizado. Realizados exames: Creatinina sérica: 5,4 mg/dL (a última era 2,4 mg/dL); Albumina sérica: 2,1 g/dL; Hb: 8 mg/dL e Hematócrito: 25%; Urina I: proteinúria 4+ (quantificada em 5,0g / 24 horas); leucocitúria: 24.000/mL, hemácias: 5.000/mL.\n\nCom relação aos achados diagnósticos de Dona Maria, é possível afirmar:',
     options: [
@@ -2618,6 +2932,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-59',
+    topography: '2.1',
+    topic: 'Derrame pleural',
     module: 'Clínica Médica',
     image: '/images/tp2020-59.webp',
     text: 'Observe atentamente a descrição dos sintomas de dois pacientes distintos:\n\nPaciente I: jovem, sexo masculino, há 4 dias com quadro de tosse inicialmente seca, que evoluiu para expectoração com secreção amarelada espessa e presença de laivos de sangue, associado a febre alta e discreta dor ventilatório-dependente dorsal à direita.\n\nPaciente II: idoso, tabagista, com perda de peso de 7kg em 2 meses, associada a tosse seca, dispneia aos grandes esforços e dor torácica ventilatório dependente em base direita. Verifique as imagens radiográficas a seguir (figuras A e B):\n\nCorrelacione os achados clínicos e radiológicos e selecione a afirmativa correta:',
@@ -2635,6 +2951,8 @@ export const CLINICA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-60',
+    topography: '10',
+    topic: 'Tuberculose',
     module: 'Clínica Médica',
     text: 'Mulher, 35 anos, em tratamento de Artrite Reumatoide (AR) com metotrexato + anti-TNF. Clinicamente, a patologia inflamatória (AR) está em remissão, sem uso de corticoterapia há anos. Queixa-se de calafrios noturnos, emagrecimento e tosse há 3 meses. A radiografia de tórax mostra um infiltrado no ápice pulmonar direito.\n\nDefina a complicação demonstrada:',
     options: [

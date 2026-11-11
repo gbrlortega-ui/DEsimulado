@@ -21,6 +21,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-42',
+    topography: '11',
+    topic: 'Puericultura',
     module: 'Pediatria',
     text: 'Menina com 1 ano e 6 meses de idade apresenta desenvolvimento de pilificação em região genital há 2 meses, associado a acne e odor axilar. Ao exame físico, há pelos grossos escuros e encaracolados em região de grandes lábios e pube, além de hipertrofia de clítoris; não há tecido mamário palpável. Qual o melhor exame a ser solicitado para a principal hipótese dessa paciente?',
     options: [
@@ -38,6 +40,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-43',
+    topography: '1.2',
+    topic: 'Catarata',
     module: 'Pediatria',
     text: 'Recém-nascido de parto normal, sexo feminino, a termo, pequeno para a idade gestacional, mãe primigesta, pré-natal sem intercorrências, refere pai com cegueira em olho D. No alojamento conjunto, foi feito o teste do olhinho no RN (Reflexo Vermelho) que se apresentou negativo no olho E e foi positivo no olho D. Diante do caso, qual a principal hipótese diagnóstica e a conduta a ser tomada pelo pediatra?',
     options: [
@@ -55,6 +59,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-44',
+    topography: '11',
+    topic: 'Icterícia neonatal',
     module: 'Pediatria',
     text: 'Recém-nascido com 19 horas de vida apresent apresentou icterícia zona II de Kramer e bilirrubina total transcutânea de 10mg/dL. Mãe O negativo, Coombs indireto positivo. RN: B positivo, Coombs direto positivo e eluato anti-B positivo. No segundo dia, BT = 25mg/dL, BI = 23mg/dL e BD = 2mg/dL. Qual o diagnóstico e conduta?',
     options: [
@@ -72,6 +78,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-45',
+    topography: '11',
+    topic: 'Obesidade infantil',
     module: 'Pediatria',
     text: 'Adolescente, 12 anos, obesidade grave (IMC = 33,2kg/m², escore Z > +3), estrias violáceas, PA 130x85mmHg. Hábitos inadequados (sedentarismo, alimentação ultraprocessada). Qual a abordagem inicial mais adequada?',
     options: [
@@ -89,6 +97,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-46',
+    topography: '1.3',
+    topic: 'Amigdalite/faringoamigdalite',
     module: 'Pediatria',
     text: 'Menino de 7 anos com febre e odinofagia há 6 dias. Usou Amoxicilina há 3 dias e evoluiu com exantema maculopapular pruriginoso. Apresenta hepatoesplenomegalia e linfonodopatia generalizada. Qual a hipótese e conduta?',
     image: '/images/tp2024-46.webp',
@@ -107,6 +117,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-47',
+    topography: '7.2',
+    topic: 'Urticária',
     module: 'Pediatria',
     text: 'Menino, 4 anos, com placas urticariformes pruriginosas há 2 horas por todo o corpo. Alimentação habitual, sem novos medicamentos. Qual a provável causa e conduta?',
     options: [
@@ -124,6 +136,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-48',
+    topography: '1.2',
+    topic: 'Uveíte',
     module: 'Pediatria',
     text: 'Menina de 4 anos com Artrite Idiopática Juvenil (AIJ) tipo oligoarticular e FAN (AAN) positivo 1/160. Qual a principal complicação a ser monitorada?',
     options: [
@@ -141,6 +155,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-49',
+    topography: '4.2',
+    topic: 'Estenose de uretra',
     module: 'Pediatria',
     text: 'Recém-nascido masculino com hidronefrose bilateral constatada no pré-natal (bexiga distendida). US com 48h de vida confirma hidronefrose e dilatação de ureteres. Causa mais provável?',
     options: [
@@ -158,6 +174,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-50',
+    topography: '11',
+    topic: 'Calendário vacinal',
     module: 'Pediatria',
     text: 'Quais as principais modificações no Calendário Vacinal de 2024 do Ministério da Saúde?',
     options: [
@@ -175,6 +193,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-51',
+    topography: '1.1',
+    topic: 'TCE',
     module: 'Pediatria',
     text: 'Menino, 4 anos, queda de 1,70m. Apresenta equimose retroauricular (sinal de Battle) e hemotímpano. Consciente (GCS 15). Qual a conduta?',
     options: [
@@ -192,6 +212,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-52',
+    topography: '11',
+    topic: 'Maus-tratos infantis',
     module: 'Pediatria',
     text: 'Adolescente, 13 anos, vítima de abuso sexual há 6 horas. Qual a conduta prioritária segundo o Ministério da Saúde?',
     options: [
@@ -209,6 +231,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-53',
+    topography: '11',
+    topic: 'Prematuridade',
     module: 'Pediatria',
     text: 'RN 37 semanas (New Ballard). Peso 3920g. Mãe com DMG (dieta). Bolsa rota há 28 horas. Terceira gestação (2 cesáreas prévias). Classificação do RN?',
     image: '/images/tp2024-53.webp',
@@ -227,6 +251,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-54',
+    topography: '11',
+    topic: 'Anemia ferropriva',
     module: 'Pediatria',
     text: 'Lactente, 11 meses, uso de leite integral e ultraprocessados. Hb 7,8, VCM baixo, RDW 16,7 (aumentado). Sem outras alterações. Qual a conduta?',
     options: [
@@ -244,6 +270,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-55',
+    topography: '9',
+    topic: 'Trombocitopenias',
     module: 'Pediatria',
     text: 'Criança de 4 anos com gastroenterite sanguinolenta, seguida de palidez, oligúria e edema. Hb 8, plaquetas 72.000, hematúria e proteinúria. Qual o diagnóstico?',
     options: [
@@ -261,6 +289,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-56',
+    topography: '11',
+    topic: 'Aleitamento materno',
     module: 'Pediatria',
     text: 'Sobre as situações de contraindicação absoluta ao aleitamento materno, assinale a correta:',
     options: [
@@ -278,6 +308,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-57',
+    topography: '1.5',
+    topic: 'Hipotireoidismo',
     module: 'Pediatria',
     text: 'RN, 24 dias, triagem neonatal (teste do pezinho) com TSH 257mUI/L. Icterícia zona II. Qual a conduta?',
     options: [
@@ -295,6 +327,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-58',
+    topography: '11',
+    topic: 'Síndrome do desconforto respiratório neonatal',
     module: 'Pediatria',
     text: 'RN com asfixia perinatal grave (Apgar 3) e desconforto respiratório. Qual consequência hemodinâmica seria esperada?',
     options: [
@@ -312,6 +346,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-59',
+    topography: '11',
+    topic: 'Síndrome do desconforto respiratório neonatal',
     module: 'Pediatria',
     text: 'RN 38 semanas, cesárea eletiva, 3940g. Taquipneia (88 irpm) e desconforto leve com 3 horas de vida. RX: congestão hilar, cisurite e hiperinsuflação. Diagnóstico?',
     options: [
@@ -329,6 +365,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-60',
+    topography: '14',
+    topic: 'Emergências pediátricas',
     module: 'Pediatria',
     text: 'Sobre a recepção do RN na sala de parto e as diretrizes de reanimação, assinale a correta:',
     options: [
@@ -346,6 +384,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-41',
+    topography: '6.1',
+    topic: 'Artrite reumatoide',
     module: 'Pediatria',
     text: 'Paciente de 7 anos, feminina, em consulta na Unidade Básica de Saúde, foi encaminhada à Unidade de Pronto Atendimento 24h (pediatria) para investigação de febre há 3 semanas, acompanhada de dor articular em joelhos e punhos, apresentando febre com picos vespertinos. Os sintomas estão acompanhados de exantema macular, que desaparece junto com a febre. Relata perda de 1kg de peso no período, sem outros sintomas. Exame físico: bom estado geral, hidratada, corada, anictérica e acianótica. Aparelho cardiovascular e respiratório sem alterações. Joelho direito com discreto edema, sem outros sinais flogísticos. A principal hipótese diagnóstica é:',
     options: [
@@ -363,6 +403,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-42',
+    topography: '9',
+    topic: 'Talassemias',
     module: 'Pediatria',
     text: 'Em exame hematológico de rotina de uma criança de um ano de idade, encontrou-se anemia discreta, hipocrômica e RDW (medida de anisocitose) normal. No seguimento longitudinal, posteriormente, observou-se aumento na concentração de hemoglobina A2. É provável que esta criança tenha:',
     options: [
@@ -380,6 +422,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-43',
+    topography: '11',
+    topic: 'ITU pediátrica',
     module: 'Pediatria',
     text: 'Uma menina de 4 anos, com antecedentes de três pielonefrites, apresenta, no momento, uma pressão arterial de 135x90mmHg. Qual dos seguintes sinais ou sintomas seria mais provável que ela apresentasse?',
     options: [
@@ -397,6 +441,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-44',
+    topography: '11',
+    topic: 'Puericultura',
     module: 'Pediatria',
     text: 'Os pais de um menino de 14 anos de idade estão preocupados com seu crescimento e o atraso no aparecimento de caracteres sexuais secundários. Antecedentes pessoais: pré-natal sem intercorrências, nascido a termo, peso ao nascimento de 3kg e comprimento de 50cm. Ele é mais baixo que seus colegas da mesma idade. O exame físico não apresenta alterações e com estadiamento puberal P2G2; sua curva de crescimento demonstra a estatura inicialmente entre z escore -2 e z escore -1 e atualmente em z escore -1. Qual seria a conduta mais apropriada para este caso?',
     options: [
@@ -414,6 +460,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-45',
+    topography: '11',
+    topic: 'Diarreia aguda',
     module: 'Pediatria',
     text: 'Lactente com 7 meses, vive em um assentamento junto com os pais e 2 irmãos de 4 e 6 anos. Alimenta-se com leite materno e alimentação complementar iniciados há 20 dias, após orientação recebida em consulta com o médico de família. Há 2 dias iniciou quadro de diarreia com evacuações líquidas, sem sangue, 6 a 7 vezes ao dia, febre não aferida. Está um pouco mais chorosa e irritada que o habitual. Em consulta no pronto atendimento, apresenta: olhos fundos, língua e boca secas, sinal da prega de 2 segundos, perfusão periférica de 3 segundos, frequência cardíaca de 135 batimentos por minuto, frequência respiratória de 28 incursões por minuto, temperatura de 37,5ºC. Qual a melhor conduta a ser seguida nesse caso?',
     options: [
@@ -431,6 +479,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-46',
+    topography: '14',
+    topic: 'Trauma',
     module: 'Pediatria',
     text: 'Menino de 6 anos sofreu acidente automobilístico. A criança foi socorrida pelo SAMU e deu entrada em uma unidade de pronto atendimento com fratura exposta de tíbia direita, com sangramento. Ao exame físico de entrada apresentava: FC 187bpm; FR 29ipm; PA 70x30mmHg; perfusão periférica de 5 segundos; T 35ºC. Ausculta pulmonar e cardíaca normais, abdome sem alterações. Ao exame neurológico, apresentava: abertura ocular ao estímulo pressórico, sem resposta verbal aos chamados ou aos estímulos pressóricos e tentava retirar a mão durante a punção venosa (Escala de coma de Glasgow = 8). Exames laboratoriais: Hb 7,3g/dL (VN 11,5 - 13); dextro 210mg% (VN 70 - 100); sódio 122mEq/L (VN 135 - 145). Quais as condutas a serem adotadas até a criança ser transferida para um serviço de referência para trauma?',
     options: [
@@ -448,6 +498,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-47',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'As cardiopatias congênitas são defeitos estruturais do coração que estão presentes na vida fetal e ao nascimento. Esse grupo representa cerca de 30% de todas as malformações congênitas e tem incidência em torno de 9,4 casos para cada 1000 nascidos vivos. O diagnóstico das cardiopatias congênitas pode ser feito na vida fetal ou após o nascimento através do exame clínico pós-natal. Acerca do teste de oximetria de pulso (teste do coraçãozinho), podemos afirmar:',
     options: [
@@ -465,6 +517,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-48',
+    topography: '3.1',
+    topic: 'Constipação intestinal',
     module: 'Pediatria',
     text: 'Criança com quatro anos apresenta menos de três evacuações completas por semana há dois meses. As fezes são em cíbalos. Ainda queixa falta de apetite, que melhora com a evacuação. Apresenta evidência de postura retentiva. Assinale a alternativa correta em relação ao diagnóstico e conduta para o caso:',
     options: [
@@ -482,6 +536,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-49',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'Recém-nascido com 25 dias de vida é levado para a primeira consulta de puericultura após alta da maternidade. Nasceu de parto normal, idade gestacional pelo Capurro de 38 semanas e sem intercorrências no parto e/ou gestação. Encontra-se em aleitamento materno exclusivo e a mãe informa que o recém-nascido parece se cansar durante algumas mamadas. Teve um ganho ponderal de 200g desde o nascimento. Ao exame físico: FC 168bpm, pulsos periféricos palpáveis difusamente e de boa amplitude. Sopro sistólico em borda esternal esquerda baixa de +2/+6, sem frêmito. O pediatra que fez a sala de parto e atendeu o recém-nascido no alojamento conjunto não relatou a presença de qualquer anormalidade no exame de alta com 72 horas de vida. A principal hipótese diagnóstica a ser considerada é:',
     options: [
@@ -499,6 +555,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-50',
+    topography: '10',
+    topic: 'Raiva',
     module: 'Pediatria',
     text: 'Menino com 4 anos com mordida de cachorro conhecido e vacinado, ferimento único e superficial no braço. Foi feita limpeza. Qual a conduta?',
     options: [
@@ -516,6 +574,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-51',
+    topography: '1.2',
+    topic: 'Catarata',
     module: 'Pediatria',
     text: 'O teste do reflexo vermelho ou “teste do olhinho” é um exame simples, rápido, indolor e de baixo custo realizado em recém-nascidos, e seu objetivo é a detecção precoce de problemas oculares congênitos que comprometem a transparência dos meios oculares e que podem impedir o desenvolvimento visual cortical. Tem como objetivo detectar algumas patologias oculares. Assinale a alternativa que apresenta estas patologias:',
     options: [
@@ -533,6 +593,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-52',
+    topography: '11',
+    topic: 'ITU pediátrica',
     module: 'Pediatria',
     text: 'Lactente de 9 meses de vida tem febre de 38,5 - 39ºC há 3 dias, acompanhado de choro intenso. Há aproximadamente 6 horas iniciou quadro de desconforto respiratório e recusa de aleitamento materno, água e papinha. Mãe refere que a criança é saudável, porém tem duas internações anteriores, uma aos 3 e outra aos 6 meses de vida, ambas por infecção urinária. Não faz seguimento ambulatorial. Ao exame está afebril, prostrado, toxemiado, descorado, desidratado e taquipneico. Coração: bulhas ritimicas normofonéticas sem sopros a dois tempos, pulmões limpos, abdome pouco distendido, sem visceromegalias, ruído hidroaéreo presente. Perfusão tecidual lentificada. Oroscopia e otoscopia normais, ausência de indícios de irritação meníngea. Foi realizada expansão volêmica, com melhora da perfusão tecidual e da taquipneia. Coletado exame de urina por cateterismo vesical: Leucócitos: 1.600.000 (normal: até 1.000), 1.000 hemácias (normal: até 1.000), proteínas ausentes (normal: ausentes), nitrito positivo (normal: negativo). Aguardando urocultura. A melhor conduta para o quadro acima seria:',
     options: [
@@ -550,6 +612,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-53',
+    topography: '11',
+    topic: 'Obesidade infantil',
     module: 'Pediatria',
     text: 'A obesidade está se tornando uma epidemia global, pois sua prevalência vem aumentando tanto em países desenvolvidos como em desenvolvimento, sendo observada já durante a infância. Em relação ao crescimento e índice de massa corpórea (IMC) para cada faixa etária, é certo afirmar que:',
     options: [
@@ -567,6 +631,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-54',
+    topography: '1.1',
+    topic: 'Cefaleias',
     module: 'Pediatria',
     text: 'Menina com 10 anos de idade é levada a atendimento por queixa de cefaleia há 1 ano. As dores têm localização frontal e estão associadas a fotofobia, fonofobia, náuseas e vômitos. Nega diplopia, perda de visão, parestesias ou perda de força muscular. A cefaleia ocorre 1 a 2 vezes por mês, com duração de 4 a 10 horas, geralmente após a escola, de intensidade moderada e piora com a atividade física. Entre os eventos, não apresenta queixas e seu rendimento escolar é exemplar. Exame físico e neurológico sem alterações. Assinale a conduta esperada no manejo desse caso:',
     options: [
@@ -584,6 +650,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-55',
+    topography: '14',
+    topic: 'Emergências pediátricas',
     module: 'Pediatria',
     text: 'Uma menina de 6 anos de idade é admitida na UTI-Pediátrica após ser resgatada de um afogamento em um lago. Durante a primeira hora após a admissão, recebeu 60mL/kg de solução salina a 0,9%, em decorrência de má perfusão e hipotensão. Ela respondia a comunicação verbal. Nas 8 horas seguintes, desenvolveu um aumento no gradiente alveolar arterial progressivo. A sua PaO2 (pressão parcial de oxigênio) é de 88mmHg, recebendo FiO₂ (fração inspirada de oxigênio) de 60% na ventilação mecânica. O RX de tórax mostra uma piora na imagem de infiltrado pulmonar bilateralmente. A sua temperatura é de 37,8ºC e a pressão venosa central é de 5mmHg. Das alternativas a seguir, qual é o mecanismo que está levando à sua piora respiratória?',
     options: [
@@ -601,6 +669,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-56',
+    topography: '1.3',
+    topic: 'Surdez',
     module: 'Pediatria',
     text: 'Na figura abaixo, observamos um paciente com Síndrome de Treacher Collins. O pai e os dois irmãos do paciente apresentam características similares. Assinale a alternativa que indica corretamente o padrão de herança, risco de recorrência e sinais clínicos:',
     image: '/images/tp2023-56.webp',
@@ -619,6 +689,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-57',
+    topography: '11',
+    topic: 'Desenvolvimento neuropsicomotor',
     module: 'Pediatria',
     text: 'Menino, 4 anos, comparece à Unidade Básica de Saúde com encaminhamento da escola, devido a dificuldade em se comunicar e interagir com outras crianças. A escola refere também agressividade quando é contrariado. Durante a consulta, os pais referem agitação e têm a sensação dele não se concentrar, nem para assistir desenhos. A família relata que ele apresenta interesse por poucos brinquedos, normalmente os mesmos, e que aprendeu a fazer contas de soma recentemente, mas lê os números desde os 2 anos de idade. Qual a hipótese diagnóstica mais provável?',
     options: [
@@ -636,6 +708,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-58',
+    topography: '9',
+    topic: 'Anemia falciforme',
     module: 'Pediatria',
     text: 'Qual o resultado característico para traço falciforme no teste do pezinho?',
     options: [
@@ -653,6 +727,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-59',
+    topography: '11',
+    topic: 'Asma infantil',
     module: 'Pediatria',
     text: 'Menino de 7 anos é trazido ao ambulatório de pediatria, devido a ocorrência de cansaço aos esforços. Pai refere que, há um ano, após correr ou brincar, a criança tem ficado ofegante, com esforço para respirar e necessita parar as atividades até recuperar o fôlego. Refere duas internações anteriores, com 2 e 3 anos, devido a cansaço, tendo recebido alta com medicações das quais não recorda o nome. Ao exame físico: paciente apresenta-se em regular estado geral, corado, eupneico e afebril. Face: pregas horizontais em pálpebras inferiores (linhas de Dennie-Morgan). Rinoscopia: palidez de mucosa e hipertrofia de cornetos. Pele: xerótica com placas hiperemiadas e descamativas em flexuras (fossa cubital e poplítea). Tórax: sem abaulamentos, retrações ou deformidades. Expansibilidade normal, percussão de tórax e ausculta pulmonar normais. Ausculta cardíaca normal. Qual o provável diagnóstico?',
     options: [
@@ -670,6 +746,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-60',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'Lactente de 2 meses de idade passa em primeira consulta no Ambulatório de Cardiologia Pediátrica. A mãe refere que a criança tem diagnóstico de cardiopatia congênita ao nascimento e está percebendo que seu bebê está ficando mais arroxeado ultimamente, principalmente com o choro, evacuação e mamada. Não trouxe o resumo de alta médica. Ao exame físico, nota-se uma cianose intensa acompanhada de períodos de agitação e de letargia, cianose de mucosas, labial, língua, leitos ungueais de mãos que se exacerbam ao choro e às mamadas, precórdio calmo, na ausculta cardíaca sopro sistólico ejetivo 2+/6+ de menor intensidade, em borda esternal esquerda superior e média. No eletrocardiograma, sinais de hipertrofia ventricular direita e, no raio X de tórax, área cardíaca aumentada às custas do ventrículo direito, com silhueta cardíaca em formato de bota, hipofluxo pulmonar, arco médio escavado. Qual o diagnóstico e a conduta sequencial nesse caso?',
     options: [
@@ -687,6 +765,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-41',
+    topography: '11',
+    topic: 'Doença de Kawasaki',
     module: 'Pediatria',
     text: 'Uma criança de 4 anos e 3 meses, sexo masculino, com história de coriza, tosse seca e febre há 7 dias. Evoluiu com conjuntivite não supurativa, dor de garganta, adenopatia cervical unilateral, exantema polimorfo escarlatiniforme com acentuação perineal e língua em morango. Assinale a alternativa que contemple o diagnóstico mais provável e uma possível complicação:',
     options: [
@@ -703,6 +783,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-42',
+    topography: '11',
+    topic: 'Desenvolvimento neuropsicomotor',
     module: 'Pediatria',
     text: 'Lactente de 18 meses com marcos de desenvolvimento adequados (anda, aponta, entende o não), porém fala apenas "mamã" e "papá" e não compõe frases. Qual a conduta esperada do pediatra?',
     options: [
@@ -720,6 +802,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-43',
+    topography: '11',
+    topic: 'Calendário vacinal',
     module: 'Pediatria',
     text: 'Lactente de 12 meses, vacinas em dia até os 6 meses, viajará para o Pará (área endêmica). Quais vacinas deve receber neste momento?',
     options: [
@@ -737,6 +821,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-44',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'Recém-nascido com 24 horas de vida, teste do coraçãozinho: SatO2 MSD = 98% e MI = 94%. Qual o passo seguinte?',
     options: [
@@ -754,6 +840,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-45',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'Recém-nascido com traços de Síndrome de Down, evolui com 72h de vida com taquipneia, taquicardia, hepatomegalia, precórdio hiperdinâmico e B2 com desdobramento amplo. Qual o diagnóstico e conduta?',
     options: [
@@ -771,6 +859,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-46',
+    topography: '1.5',
+    topic: 'Hipotireoidismo',
     module: 'Pediatria',
     text: 'Menina de 14 anos com menstruação irregular, pele e cabelos secos, bócio indolor, bradicardia e alopecia areata. Qual a hipótese mais provável?',
     options: [
@@ -787,6 +877,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-47',
+    topography: '1.5',
+    topic: 'Hipertireoidismo',
     module: 'Pediatria',
     text: 'Menina de 13 anos com emagrecimento, tremores, taquicardia, TSH suprimido, T4 livre aumentado e anticorpo contra receptor de TSH (TRAb) positivo. Qual o diagnóstico?',
     options: [
@@ -804,6 +896,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-48',
+    topography: '11',
+    topic: 'Desidratação',
     module: 'Pediatria',
     text: 'Criança de 3 anos com diarreia intensa, sonolência, taquicardia e perfusão periférica de 5 segundos. Qual a conduta e prováveis distúrbios?',
     options: [
@@ -820,6 +914,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-49',
+    topography: '11',
+    topic: 'Anemia ferropriva',
     module: 'Pediatria',
     text: 'Lactente de 6 meses, nascido a termo com 3120g, em aleitamento materno exclusivo. Como deve ser a suplementação de ferro?',
     options: [
@@ -837,6 +933,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-50',
+    topography: '11',
+    topic: 'Sepse neonatal',
     module: 'Pediatria',
     text: 'RN 33 semanas, bolsa rota há 24h, corioamnionite materna. Evolui com choque e cultura de líquor positiva com 12h de vida. Agentes mais prováveis?',
     options: [
@@ -854,6 +952,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-51',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'Menino de 4 anos com sopro suave 2+/6+ em foco tricúspide durante quadro febril. Ecocardiograma prévio normal. Sobre este sopro, assinale a correta:',
     options: [
@@ -871,6 +971,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-52',
+    topography: '9',
+    topic: 'Leucemias',
     module: 'Pediatria',
     text: 'Menino de 7 anos com febre prolongada, dor articular, hematomas, hepatoesplenomegalia e linfadenopatia. Hemograma: Pancitopenia com 13% de células atípicas. Diagnóstico e conduta:',
     options: [
@@ -888,6 +990,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-53',
+    topography: '11',
+    topic: 'Maus-tratos infantis',
     module: 'Pediatria',
     text: 'Atendimento a criança vítima de abuso sexual. Sobre o manejo, é correto afirmar:',
     options: [
@@ -905,6 +1009,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-54',
+    topography: '1.3',
+    topic: 'Otite média aguda',
     module: 'Pediatria',
     text: 'Escolar de 7 anos com dificuldade escolar, fala que "não entende", retração timpânica e bolhas de ar na otoscopia. Hipóteses iniciais:',
     options: [
@@ -922,6 +1028,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-55',
+    topography: '11',
+    topic: 'Convulsão febril',
     module: 'Pediatria',
     text: 'Menino de 3 anos, convulsão tônico-clônica única de 5 min durante quadro febril (otite). História familiar positiva para crises febris. Exame neurológico normal. Tipo de crise e conduta:',
     options: [
@@ -939,6 +1047,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-56',
+    topography: '11',
+    topic: 'Pneumonia infantil',
     module: 'Pediatria',
     text: 'Recém-nascido de 21 dias com tosse seca, conjuntivite prévia com secreção e infiltrado intersticial no RX. Hemograma com eosinofilia. Diagnóstico e conduta:',
     options: [
@@ -956,6 +1066,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-57',
+    topography: '1.2',
+    topic: 'Uveíte',
     module: 'Pediatria',
     text: 'Menina de 6 anos com AIJ oligoarticular e FAN positivo. Qual a complicação crônica mais esperada?',
     options: [
@@ -973,6 +1085,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-58',
+    topography: '11',
+    topic: 'Icterícia neonatal',
     module: 'Pediatria',
     text: 'Recém-nascido com 1 mês de vida, icterícia moderada, fezes claras (acolia) e urina escura (colúria). Qual o provável perfil laboratorial?',
     options: [
@@ -990,6 +1104,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-59',
+    topography: '11',
+    topic: 'Icterícia neonatal',
     module: 'Pediatria',
     text: 'Recém-nascido a termo (3530g), tipagem O- (mãe) e B+ (filho), Coombs e Eluato negativos. Icterícia Zona 4 com 48h (BI 15.5). Diagnóstico:',
     options: [
@@ -1006,6 +1122,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-60',
+    topography: '11',
+    topic: 'Refluxo gastroesofágico',
     module: 'Pediatria',
     text: 'Lactente de 8 meses, regurgitações desde nascimento, baixo ganho de peso (queda de percentil) e episódios de sibilância. Hipótese mais provável:',
     options: [
@@ -1023,6 +1141,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-41',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'Recém-nascido do sexo masculino, nascido a termo, com 3 dias de vida, apresenta cianose central progressiva e taquipneia. A saturação de oxigênio está em 75%, sem melhora significativa com administração de oxigênio a 100%. O exame físico revela pulsos normais, sopro sistólico e hiperfonese da segunda bulha cardíaca. Qual das seguintes cardiopatias congênitas é a mais provável neste caso?',
     options: [
@@ -1039,6 +1159,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-42',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'Um recém-nascido prematuro de 29 semanas de idade gestacional evoluiu com dificuldade respiratória progressiva e necessidade de intubação, taquicardia e pulsos periféricos amplos. Na ausculta cardíaca identifica-se sopro contínuo em maquinaria, mais audível na região infraclavicular esquerda. Considerando esse quadro clínico, qual o diagnóstico mais provável e qual é o exame complementar mais indicado para confirmar o diagnóstico?',
     options: [
@@ -1055,6 +1177,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-43',
+    topography: '11',
+    topic: 'Bronquiolite',
     module: 'Pediatria',
     text: 'Uma menina com 18 meses de idade é levada à UBS com quadro de coriza e febre baixa há 3 dias. A mãe refere melhora da febre, porém evoluiu há 12 horas com tosse seca, dispneia leve e diminuição da mamada. Ao exame físico: coriza hialina, bom estado geral, hidratada, afebril, com sibilos esparsos, tempo expiratório prolongado e tiragem intercostal leve, com frequência respiratória de 40irpm. Mãe nega episódios semelhantes anteriores, prematuridade ou doenças de base. Frequenta creche há 2 meses. Qual a conduta mais adequada para esta criança?',
     options: [
@@ -1071,6 +1195,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-44',
+    topography: '1.3',
+    topic: 'Amigdalite/faringoamigdalite',
     module: 'Pediatria',
     text: 'Um menino de 4 anos é levado à Unidade Básica de Saúde (UBS) pela mãe, que relata que ele está com febre há 2 dias, tosse seca, coriza e obstrução nasal. A criança está ativa, hidratada e sem dificuldade respiratória. Ao exame físico, observam-se hiperemia de orofaringe, sem exsudatos, e ausculta pulmonar normal. Não há sinais de alarme como cianose, tiragem ou gemência. A mãe menciona que a criança frequenta creche e que outros colegas apresentaram sintomas semelhantes recentemente. Selecione a conduta mais adequada a ser tomada pelo médico:',
     options: [
@@ -1087,6 +1213,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-45',
+    topography: '11',
+    topic: 'Diarreia aguda',
     module: 'Pediatria',
     text: 'Na Unidade Básica de Saúde (UBS), um menino de 2 anos e 6m é levado pela mãe com história de diarreia aquosa há três dias, acompanhada de vômitos e febre moderada (38,2°C). A mãe refere que ele está menos ativo e que sua diurese diminuiu. Ao exame, a criança apresenta mucosas secas, olhos levemente encovados e tempo de enchimento capilar de 2 segundos. Peso atual: 13kg (redução de aproximadamente 800g em relação ao peso habitual). Qual a conduta inicial mais adequada para esse paciente?',
     options: [
@@ -1103,6 +1231,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-46',
+    topography: '11',
+    topic: 'Desnutrição',
     module: 'Pediatria',
     text: 'João, com 1 ano e 3 meses, é levado à Unidade Básica de Saúde (UBS) por sua mãe, devido a baixo ganho de peso e episódios frequentes de infecções respiratórias nos últimos meses. Desde os 9 meses, quando ocorreu o desmame, recusa alimentos sólidos, mantendo alimentação predominantemente baseada em leite de vaca diluído. Ao exame físico, João apresenta-se irritado, com fácies triste, pele seca e descamativa, cabelos finos e despigmentados, além de edema de membros inferiores. Seu peso está abaixo do percentil 3 para a idade e a estatura também demonstra um desvio importante na curva de crescimento. Aponte a principal hipótese diagnóstica para este paciente:',
     options: [
@@ -1135,6 +1265,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-48',
+    topography: '11',
+    topic: 'Puericultura',
     module: 'Pediatria',
     text: 'Mariana, lactente de 1 ano e 2 meses, é levada à Unidade Básica de Saúde (UBS) para consulta de rotina. A mãe relata que a criança está ativa, sem doenças recentes, e que sua alimentação inclui aleitamento materno e alimentos variados, conforme dieta da família. No entanto, seus familiares comentaram que a menina "parece pequena para a idade". Ao exame físico, Mariana apresenta peso de 7,5kg (abaixo do percentil 3) e estatura de 71cm (abaixo do percentil 3), com perímetro cefálico adequado para a idade. Ao exame físico não apresenta alterações. A análise da curva de crescimento revela que a criança segue um padrão de crescimento abaixo dos percentis esperados desde os 6 meses de idade. Com base no caso, qual a melhor conduta inicial na avaliação do crescimento de Mariana?',
     options: [
@@ -1151,6 +1283,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-49',
+    topography: '10',
+    topic: 'Sífilis',
     module: 'Pediatria',
     text: 'Mulher de 29 anos apresentou no pré-natal do 1º trimestre VDRL de 1:128. Logo após o diagnóstico, realizou o tratamento com 3 doses de penicilina benzatina com 1 semana de intervalo entre elas, porém o seu parceiro não foi tratado. Na admissão para o parto, o VDRL materno era de 1:16. Demais exames de pré-natal sem alterações. O bebê nasceu com 38 semanas e sem alterações no exame físico. Acerca das condutas para o caso, assinale a alternativa correta:',
     options: [
@@ -1167,6 +1301,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-50',
+    topography: '11',
+    topic: 'Desenvolvimento neuropsicomotor',
     module: 'Pediatria',
     text: 'Criança do sexo masculino, 1 ano e 8 meses de idade, comparece ao ambulatório de Pediatria, devido a atraso na linguagem e dificuldades na interação social. Sua mãe relata que ele raramente atende pelo nome e tem crises de irritabilidade frequentes. Permanece a maior parte de seu tempo sob os cuidados de uma babá, com exposição excessiva a telas. No exame, apresenta contato visual adequado, imitação de gestos, responde a comandos simples e mantém uma boa interação com os pais. Selecione a principal hipótese diagnóstica para este paciente:',
     options: [
@@ -1183,6 +1319,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-51',
+    topography: '11',
+    topic: 'Calendário vacinal',
     module: 'Pediatria',
     text: 'Lactente de 16 meses, feminina, está em consulta de puericultura numa Unidade Básica de Saúde. A criança está ativa, sem intercorrências ou doenças crônicas. Nega uso de medicamentos. O calendário vacinal está completo até o 12º mês, inclusive recebeu 2 doses de vacina contra influenza (2024) e COVID-19, de acordo com a recomendação para a faixa etária. Conforme PNI 2025, assinale a alternativa com as vacinas que deverá receber nesta data:',
     options: [
@@ -1199,6 +1337,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-52',
+    topography: '14',
+    topic: 'Emergências pediátricas',
     module: 'Pediatria',
     text: 'RN de 33 semanas nasce de parto normal, respirando e com tônus presente. O clampeamento do cordão umbilical foi feito 30 segundos após o nascimento e o RN foi levado para a mesa de reanimação. Após as etapas iniciais, o bebê apresentava FC de 80bpm. Assinale a alternativa com as condutas corretas. Considere que o hospital dispõe de todos os equipamentos necessários para o caso.',
     options: [
@@ -1215,6 +1355,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-53',
+    topography: '11',
+    topic: 'Aleitamento materno',
     module: 'Pediatria',
     text: 'Primípara comparece em UBS com seu filho de 7 dias, referindo que ele chora muito desde o nascimento e apresenta pouca diurese. Refere que não percebe suas mamas se esvaziarem, as quais estão túrgidas, com fissuras e dor durante toda a amamentação. Pré-natal sem intercorrências, criança nasceu de parto cesáreo por opção materna, a termo, bolsa rota no ato, sem alterações, peso de nascimento 3,5kg. Hoje está com 3,1kg, exame físico sem alterações. Selecione a conduta mais adequada para este caso:',
     options: [
@@ -1231,6 +1373,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-54',
+    topography: '14',
+    topic: 'Emergências pediátricas',
     module: 'Pediatria',
     text: 'Recém-nascido, em sala de parto, apresenta apneia e cianose. Ao exame, encontra-se sem resposta, sem respiração espontânea e sem pulso palpável. O protocolo de reanimação é iniciado. Qual a primeira medida a ser adotada para otimizar as chances de sucesso da reanimação cardiopulmonar (RCP) neste paciente?',
     options: [
@@ -1247,6 +1391,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-55',
+    topography: '4.1',
+    topic: 'Síndrome nefrítica',
     module: 'Pediatria',
     text: 'Menino de 2 anos e 5 meses comparece em ambulatório especializado com queixa de inchaço há 2 dias e mal-estar. Achados de exame: edema bipalpebral e em MMII (++/+4); pressão arterial acima do percentil 95 para sexo, idade e estatura; estertores subcrepitantes em bases pulmonares; fígado a 2cm do rebordo costal direito; membros inferiores: lesões cicatriciais de impetigo. Urina I: densidade 1025; pH 5,5; leucócitos 12/campo, hemácias 50/campo, albumina +. Ureia 12mg/dL e creatinina 0,4mg/dL. RX de tórax: aumento discreto de área cardíaca. A conduta adequada para o caso é:',
     options: [
@@ -1263,6 +1409,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-56',
+    topography: '2.1',
+    topic: 'Bronquiectasias',
     module: 'Pediatria',
     text: 'Menino de 3 anos é levado ao ambulatório com história de tosse crônica, episódios recorrentes de pneumonia e diarreia com fezes volumosas e de odor fétido, de aparência brilhante e que boiam no vaso. A mãe relata que a criança tem dificuldade de ganhar peso, apesar de bom apetite. Qual é a abordagem inicial indicada para la investigação diagnóstica?',
     options: [
@@ -1279,6 +1427,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-57',
+    topography: '11',
+    topic: 'Pneumonia infantil',
     module: 'Pediatria',
     text: 'B.R., 8 anos, está há 3 dias com conjuntivite, febre de 38ºC, cansaço no peito, tosse seca, cefaleia e mialgia. Há um dia apresenta piora da falta de ar. Exame físico: frequência respiratória de 60irpm, com retração intercostal e subdiafragmática. Ausculta respiratória: presença de estertores crepitantes esparsos em ambos hemitórax; SO2 de 89%, restante sem alterações. O RX de tórax mostrou infiltrado intersticial difuso bilateral. Indique a melhor conduta terapêutica, de acordo com a hipótese diagnóstica mais adequada para o caso:',
     options: [
@@ -1295,6 +1445,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-58',
+    topography: '11',
+    topic: 'Puericultura',
     module: 'Pediatria',
     text: 'Escolar do sexo masculino, 8 anos, é trazido ao ambulatório de Pediatria pelos pais, que estão preocupados com o desenvolvimento de sua genitália. Ao exame físico, você observa que há aumento do volume testicular bilateral e do comprimento do pênis, com presença de pelos pubianos, escuros e espessos. Diante desse quadro, assinale a alternativa correta:',
     options: [
@@ -1311,6 +1463,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-59',
+    topography: '8',
+    topic: 'Insuficiência adrenal',
     module: 'Pediatria',
     text: 'Menina, com 12 dias de vida, é levada à emergência, devido a vômitos e recusa alimentar há 5 dias. Nasceu de parto normal a termo, adequado para idade gestacional. Está em aleitamento materno exclusivo, sem recuperação do peso de nascimento. Ao exame: regular estado geral; hipoativa; frequência cardíaca 158bpm; pressão arterial 68x42mmHg; pulsos periféricos finos; tempo de enchimento capilar: 3 segundos; frequência respiratória 64irpm; saturação de O2 95%; abdome globoso, com ruídos hidroaéreos normais; genitália feminina típica, com clitoromegalia. Diante desse quadro clínico e laboratorial, o diagnóstico mais provável é:',
     options: [
@@ -1327,6 +1481,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-60',
+    topography: '11',
+    topic: 'Maus-tratos infantis',
     module: 'Pediatria',
     text: 'Uma menina de 3 anos é levada ao pronto-socorro por sua mãe, devido a episódios de vômitos e sonolência progressiva nas últimas 24 horas. A mãe relata que a criança caiu da escada há 2 dias, mas não procurou atendimento médico na ocasião. Ao exame físico, a criança apresenta-se sonolenta, com resposta lenta a estímulos verbais. Observa-se edema e hematoma periorbital bilateral e equimoses em diferentes estágios de cicatrização nos braços e nas costas. Não há sinais de fratura evidente nos membros. A pressão arterial está dentro dos limites normais e não há sinais de infecção sistêmica. Qual é a principal hipótese diagnóstica?',
     options: [
@@ -1343,6 +1499,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-41',
+    topography: '10',
+    topic: 'Sífilis',
     module: 'Pediatria',
     text: 'Gestante, 27 anos, em exame de rotina no pré-natal apresentou VDRL reagente 1:64 no primeiro trimestre. A gestante e seu parceiro foram adequadamente tratados com penicilina benzatina, como confirmado por anotações na carteira de pré-natal. A evolução do VDRL foi: pré-tratamento – 1:64; após o tratamento – 1:4; na internação para o parto – 1:32. No recém-nascido (RN) o VDRL foi 1:16, e o exame físico estava normal. De acordo com as recomendações do Ministério da Saúde, a conduta é:',
     options: [
@@ -1359,6 +1517,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-42',
+    topography: '6.2',
+    topic: 'Escoliose',
     module: 'Pediatria',
     text: 'Menino, 9 anos, claudicando da perna direita há um mês. Há duas semanas tem referido dor na virilha e região anteromedial da coxa ou no joelho, também à direita, principalmente após correr ou jogar futebol. Nega febre, trauma e infecção, sinais flogísticos articulares antecedendo o quadro atual. Exame físico: limitação da mobilidade de abdução, flexão e rotação interna de quadril. A hipótese diagnóstica mais provável é:',
     options: [
@@ -1375,6 +1535,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-43',
+    topography: '11',
+    topic: 'Desidratação',
     module: 'Pediatria',
     text: 'Menina, 12 meses de idade, chega à emergência devido a quadro de vômitos que se iniciou há 1 dia (3 episódios) acompanhados de diarreia (8 episódios nas últimas 24h), fezes volumosas, líquidas, com odor fétido, sem sangue ou muco. A criança é previamente hígida e frequenta escola, está bebendo avidamente a água oferecida. Exame físico: bom estado geral, chorosa, olhos levemente encovados, saliva pouco espessa, tempo de enchimento capilar 2-3seg; peso = 10 kg; FC = 120 bpm; FR = 30 irpm. Diante destes achados, a conduta inicial é:',
     options: [
@@ -1391,6 +1553,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-44',
+    topography: '14',
+    topic: 'Intoxicações',
     module: 'Pediatria',
     text: 'Menino, 9 anos, brincando sobre os dormentes do trilho do trem ao anoitecer quando sentiu uma picada ardida e extremamente dolorosa sendo que o local edemaciou e ficou vermelho, não conseguindo identificar o bicho que o havia picado. Chega ao hospital 1 hora após com dor intensa no local da picada, sudorese copiosa, vômitos profusos, taquicardia, hipertensão e dispneia, além de dor abdominal, intercalando períodos de sonolência com agitação. A conduta é:',
     options: [
@@ -1407,6 +1571,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-45',
+    topography: '15',
+    topic: 'Ética médica',
     module: 'Pediatria',
     text: 'Menina, 15 anos, é trazida pelo namorado de 20 anos ao Pronto Socorro devido a um quadro de desidratação grave. Após o tratamento inicial, foi verificada a história de compulsão alimentar e vômitos. Além disso, a paciente faz uso excessivo de laxante. Após correção do choque e chegada dos pais, a adolescente solicitou para não contar aos pais sobre o transtorno alimentar e o namoro, fatos desconhecidos pela família. A melhor maneira de abordar esse caso sobre o sigilo profissional é:',
     options: [
@@ -1423,6 +1589,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-46',
+    topography: '11',
+    topic: 'Refluxo gastroesofágico',
     module: 'Pediatria',
     text: 'Lactente, 3 meses, com história de vômitos após todas as mamadas. Mãe refere que algumas vezes o conteúdo alimentar sai pelas narinas, mas nega cianose, tosse ou outros sintomas relacionados ao quadro. O lactente encontra-se com bom estado geral e está no escore 0 para peso e comprimento. A conduta é:',
     options: [
@@ -1439,6 +1607,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-47',
+    topography: '4.1',
+    topic: 'Síndrome nefrótica',
     module: 'Pediatria',
     text: 'Menino, 5 anos, acorda pela manhã e a mãe observa o aparecimento de edema facial, marcadamente bipalpebral. Evolui com edema generalizado, acometendo os membros inferiores e parede do abdômen ao longo da semana. Refere diminuição da diurese sem outras alterações urinárias. Nega doenças anteriores. Exame físico: PA entre percentil 50 e 90 para a idade, sexo e percentil de altura. As alterações laboratoriais esperadas são:',
     options: [
@@ -1455,6 +1625,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-48',
+    topography: '1.3',
+    topic: 'Laringite',
     module: 'Pediatria',
     text: 'Menino, 1 ano e 6 meses, apresentando há dois dias disfonia, tosse seca de padrão irritativo, com aumento progressivo de intensidade e frequência, e temperatura aferida de 37,5 ºC. Exame físico: bom estado geral com presença de coriza hialina, estridor, taquidispneia, com retração intercostal e subdiafragmática, ausculta pulmonar sem alterações. SatO2 = 97%. A conduta inicial é:',
     options: [
@@ -1471,6 +1643,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-49',
+    topography: '1.5',
+    topic: 'Hipotireoidismo',
     module: 'Pediatria',
     text: 'Menina, 13 anos, trazida à consulta com queixa de irregularidade menstrual, constipação e queda de cabelo. A menarca foi aos 11 anos. A mãe se queixa que a filha já vinha crescendo pouco nos últimos anos e que atualmente parou de crescer, ficando sua estatura abaixo do padrão familiar. Tem um primo por parte da mãe com diabetes mellitus tipo 1. Exame físico: aumento do pescoço na região da tireoide e uma lesão hipocrômica na região genital. O diagnóstico e resultados esperados de dosagem de T4 livre e TSH são:\n(Valores de normalidade para T4livre = 0,7 – 1,5 ng/dL e TSH = 0,3 – 4,0 mUI/L).',
     options: [
@@ -1487,6 +1661,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-50',
+    topography: '1.1',
+    topic: 'Cefaleias',
     module: 'Pediatria',
     text: 'Menino, 8 anos, atendido em Pronto Socorro, com queixa de cefaleia, inapetência e adinamia há cerca de 2 meses. Tem história patológica pregressa de rinite alérgica e IVAS de repetição. Nos últimos 15 dias apresenta irritabilidade, piora da cefaleia principalmente no período noturno e vômitos esporádicos. A conduta é:',
     options: [
@@ -1503,6 +1679,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-51',
+    topography: '7.2',
+    topic: 'Dermatite atópica',
     module: 'Pediatria',
     text: 'Pré-escolar, levado ao pediatra por apresentar lesão eritematosa em fossas ante cubitais e poplíteas há 1 mês. Mãe refere que as lesões são acompanhadas por prurido que piora com o suor. Exame físico: placas e pápulas eritematosas que desaparecem à digito pressão nos locais descritos. Apresenta xerose cutânea e pitiríase alba em face. É critério diagnóstico para a doença apresentada:',
     options: [
@@ -1519,6 +1697,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-52',
+    topography: '14',
+    topic: 'Sepse e choque séptico',
     module: 'Pediatria',
     text: 'Criança, sexo feminino, 18 meses, chega ao Pronto Socorro de Pediatria com quadro de febre (39 ºC) aferida em casa. A paciente vem alternando episódios de irritabilidade e letargia há 1 dia. A mãe refere que ela não está aceitando o leite, está hipoativa e que apresentou quadro de vômitos, cerca de 6 episódios em abundância. Ao exame físico: FC = 180 bpm, FR = 65 irpm, PA = 60 x 40 mmHg, saturação de 89% em ar ambiente, pele mosqueada, tempo de enchimento capilar de 5 segundos, pulsos periféricos ausentes e pulso central filiforme. A conduta imediata é:',
     options: [
@@ -1535,6 +1715,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-53',
+    topography: '11',
+    topic: 'Anemia ferropriva',
     module: 'Pediatria',
     text: 'Lactente, 6 meses, nascido a termo, com peso ao nascimento de 3000 gramas. Após mudar de município, a mãe quer orientações sobre alimentação com nova equipe médica. Refere que ele está bem, tendo recebido aleitamento materno exclusivo até os quatro meses de idade, sendo então necessária a complementação de 250 mL de fórmula infantil por dia. Além disso, ela dá à criança 1mg de ferro elementar/kg de peso/dia, desde o quarto mês de idade. Nesse caso, seguindo as recomendações do Ministério da Saúde, a orientação em relação à suplementação de ferro é:',
     options: [
@@ -1551,6 +1733,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-54',
+    topography: '11',
+    topic: 'Sepse neonatal',
     module: 'Pediatria',
     text: 'Recém-nascido, 4 dias de vida, deu entrada na unidade de pronto atendimento apresentando hipoatividade, dificuldade para mamar e história de um episódio de vômito há 1 hora. Pré-natal sem intercorrências, parto vaginal com 37 semanas e tempo de bolsa rota de 24 horas. Peso de nascimento do RN: 2575 g tendo alta da maternidade há 2 dias em aleitamento materno exclusivo. Exame físico: regular estado geral, hipoativo, hiporreativo, corado, desidratado 1+/4+, levemente taquipneico, taquicárdico, ictérico zona II de Kramer, e acianótico. Fontanela anterior plana e normotensa. Tempo de enchimento capilar de 3 segundos. Realizados exames laboratoriais para triagem infecciosa incluindo coleta de líquor que evidenciou aumento de celularidade, hiperproteinorraquia, hipoglicorraquia e bacterioscopia com presença de cocos Gram-positivo. O agente etiológico mais provável é:',
     options: [
@@ -1567,6 +1751,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-55',
+    topography: '11',
+    topic: 'Pneumonia infantil',
     module: 'Pediatria',
     text: 'Menina, pré-escolar de três anos, é atendida no ambulatório de pediatria com história de pneumonia diagnosticada há 30 dias sem melhora radiológica. Fez uso de amoxicilina por 10 dias, cefalosporina por 7 dias e macrolídeo por 10 dias. A mãe de Joana traz três radiografias realizadas nesse período: a primeira radiografia demonstrava um infiltrado pulmonar de opacidade homogênea, em lobo superior direito; a segunda radiografia (6 dias após a primeira) demonstrava um infiltrado pulmonar com densidade heterogênea e fugaz em lobo inferior direito e a terceira (15 dias após a primeira) demonstrava um infiltrado pulmonar de opacidade homogênea em lobo superior esquerdo. Além dos raios X, a mãe de Joana trazia um hemograma com leucocitose discreta e eosinofilia de 21%. A hipótese diagnóstica é:',
     options: [
@@ -1583,6 +1769,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-56',
+    topography: '8',
+    topic: 'Síndrome de Cushing',
     module: 'Pediatria',
     text: 'Menina, 2 anos, apresentando pubarca, acne e fome excessiva há 6 meses. Ao exame físico é evidenciado estatura acima do percentil 95, obesidade, estadiamento puberal de Tanner = M1P3, hipertrofia de clitóris, estrias vinhosas em abdome, PA = 100 x 70 mmHg (>P95). A hipótese diagnóstica mais provável é:',
     options: [
@@ -1599,6 +1787,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-57',
+    topography: '1.3',
+    topic: 'Amigdalite/faringoamigdalite',
     module: 'Pediatria',
     text: 'Menino, 5 anos, previamente hígido, refere história de febre baixa não medida há 5 dias e dor de garganta, associado a adinamia e mal estar. Exame físico: BEG, T = 37,8º, corado, hidratado. Vários linfonodos submandibulares, cervicais anteriores e posteriores de 2 cm de diâmetro, móveis e indolores, sem sinais flogísticos. Discreto exantema maculopapular cutâneo. Otoscopia sem alterações. Orofaringe: hiperemiada e hipertrofiada bilateralmente, sem secreção purulenta. Pulmões limpos. Coração: BRNF sem sopros. Abdome: fígado não palpável; baço percutível e palpável há 2 cm do RCE de consistência levemente endurecida. Genital masculino típico. Membros sem alterações. O agente etiológico é:',
     options: [
@@ -1615,6 +1805,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-58',
+    topography: '4.2',
+    topic: 'Torção testicular',
     module: 'Pediatria',
     text: 'Menino, 14a, é levado à emergência por sua mãe, em virtude de “vômitos e dor na virilha” há 2 horas, história anterior de crise semelhante. Desta vez estava jogando futebol e ao chegar a casa vomitou 2 vezes e começou a sentir dores na região pélvica. Exame físico: afebril, discreta palidez, fácies de dor, FC = 80 bpm, dor hemiescrotal esquerda com irradiação para a região inguinal e baixo ventre, reflexo cremastérico ausente. A hipótese diagnóstica é:',
     options: [
@@ -1631,6 +1823,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-59',
+    topography: '8',
+    topic: 'Insuficiência adrenal',
     module: 'Pediatria',
     text: 'Menina, com 12 dias de vida, é levada à emergência, devido a vômitos e recusa alimentar há 5 dias. Nasceu de parto normal a termo, adequado para idade gestacional. Está em aleitamento materno exclusivo, sem recuperação do peso de nascimento. Ao exame: regular estado geral; hipoativa; frequência cardíaca 158bpm; pressão arterial 68x42mmHg; pulsos periféricos finos; tempo de enchimento capilar: 3 segundos; frequência respiratória 64irpm; saturação de O2 95%; abdome globoso, com ruídos hidroaéreos normais; genitália feminina típica, com clitoromegalia. Diante desse quadro clínico e laboratorial, o diagnóstico mais provável é:',
     options: [
@@ -1647,6 +1841,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-60',
+    topography: '11',
+    topic: 'Maus-tratos infantis',
     module: 'Pediatria',
     text: 'Uma menina de 3 anos é levada ao pronto-socorro por sua mãe, devido a episódios de vômitos e sonolência progressiva nas últimas 24 horas. A mãe relata que a criança caiu da escada há 2 dias, mas não procurou atendimento médico na ocasião. Ao exame físico, a criança apresenta-se sonolenta, com resposta lenta a estímulos verbais. Observa-se edema e hematoma periorbital bilateral e equimoses em diferentes estágios de cicatrização nos braços e nas costas. Não há sinais de fratura evidente nos membros. A pressão arterial está dentro dos limites normais e não há sinais de infecção sistêmica. Qual é a principal hipótese diagnóstica?',
     options: [
@@ -1663,6 +1859,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-41',
+    topography: '11',
+    topic: 'Bronquiolite',
     module: 'Pediatria',
     text: 'Paciente de 4 meses é admitido em enfermaria de pediatria com quadro de tosse, secreção clara em via aérea superior há 3 dias, e os pais referem piora nas últimas 12 horas com diminuição das mamadas, temperatura de 37,5ºC e taquipneia. Ao exame físico, apresenta FR 64ipm, FC140bpm, tiragem intercostal e subdiafragmática leve, sibilos e roncos difusos, saturação de 91%. Com base no quadro clínico e diagnóstico mais provável, qual a conduta mais adequada?',
     options: [
@@ -1679,6 +1877,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-42',
+    topography: '3.1',
+    topic: 'Constipação intestinal',
     module: 'Pediatria',
     text: 'Criança de 8 anos dá entrada no hospital com queixa de evacuações dolorosas há 4 meses. A mãe relata que a criança evacua cerca de duas vezes por semana, fezes endurecidas e de grande volume, além de apresentar episódios ocasionais de escape fecal. Refere dor abdominal associada à evacuação, que se intensificou nas últimas 24 horas. Considerando esse quadro clínico, o diagnóstico mais provável é:',
     options: [
@@ -1695,6 +1895,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-43',
+    topography: '11',
+    topic: 'Sepse neonatal',
     module: 'Pediatria',
     text: 'Um recém-nascido, com 7 dias de vida, retorna ao hospital com história de recusa alimentar e irritabilidade. Ao exame físico, apresenta taquipneia, palidez cutânea, sinais de desidratação, além de coto umbilical em mumificação com odor fétido e pequenas lesões vesico-bolhosas, com áreas de hiperemia espalhadas pelo abdômen e membros superiores. Considerando o quadro clínico apresentado, a conduta adequada é:',
     options: [
@@ -1711,6 +1913,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-44',
+    topography: '14',
+    topic: 'Emergências pediátricas',
     module: 'Pediatria',
     text: 'Recém-nascido, 38 semanas e 2 dias, parto vaginal, líquido amniótico claro. Ao nascer, apresentou choro fraco, respiração irregular, hipotonia, FC 88bpm e cianose de extremidades. Após os cuidados iniciais, a equipe inicia ventilação com pressão positiva (VPP) com máscara e balão. Depois de 30 segundos de VPP eficaz, apresenta FC 70bpm. Realizados mais 30 segundos de VPP com técnica corrigida, com nova FC 55bpm. Com base nas diretrizes de reanimação neonatal, o próximo passo é:',
     options: [
@@ -1727,6 +1931,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-45',
+    topography: '11',
+    topic: 'Síndrome do desconforto respiratório neonatal',
     module: 'Pediatria',
     text: 'Recém-nascido, 32 semanas e 4 dias, nascido por cesariana indicada por pré-eclâmpsia grave materna, Apgar 5/7, líquido com mecônio +/4+. Evolui nas primeiras horas de vida com desconforto respiratório progressivo, caracterizado por taquipneia, gemência, retrações subcostais e necessidade crescente de oxigênio, sendo encaminhado à UTI neonatal. Radiografia de tórax com padrão reticulogranular difuso, presença de broncograma aéreo e redução do volume pulmonar. Qual é o principal mecanismo fisiopatológico responsável pelo quadro apresentado?',
     options: [
@@ -1743,6 +1949,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-46',
+    topography: '11',
+    topic: 'Puericultura',
     module: 'Pediatria',
     text: 'Menino, 6 anos e 2 meses, é levado à UBS por preocupação com “baixa estatura” em relação aos colegas. Ao exame, apresenta escore Z de estatura para idade < -2, com velocidade de crescimento reduzida no último ano. Não há sinais de doenças crônicas evidentes. Aguarda exames complementares, como idade óssea, TSH e IGF-1. Considerando este quadro clínico e os exames complementares solicitados, a fisiopatologia que melhor explica a principal hipótese diagnóstica é:',
     options: [
@@ -1775,6 +1983,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-48',
+    topography: '11',
+    topic: 'Desenvolvimento neuropsicomotor',
     module: 'Pediatria',
     text: 'Uma criança de 4 anos e 3 meses é levada para consulta de rotina em um ambulatório secundário de pediatria. Durante a anamnese, a mãe relata que o filho é ativo, mas ela tem dúvidas se ele está "no tempo certo" em relação aos colegas da escola. Ao realizar o exame físico e a observação direta do desenvolvimento, o médico solicita que a criança realize algumas tarefas para avaliar os marcos do DNPM. Qual conjunto de achados adequados é esperado como marco de desenvolvimento nesta idade para esta criança?',
     options: [
@@ -1791,6 +2001,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-49',
+    topography: '11',
+    topic: 'Desenvolvimento neuropsicomotor',
     module: 'Pediatria',
     text: 'Paciente A.R.S., 2 anos e 8 meses, sexo masculino. Possui história familiar de atraso de fala em primo paterno. Pais relatam pouco contato visual, atraso de linguagem e preferência por brincar sozinho, além de irritabilidade diante de mudanças de rotina. Ao exame físico, observam-se contato visual reduzido e movimentos repetitivos das mãos. Foi aplicado o teste de triagem M-CHAT-R/F, com resultado de alto risco. Considerando os dados clínicos e o teste aplicado, qual é a interpretação mais adequada?',
     options: [
@@ -1807,6 +2019,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-50',
+    topography: '11',
+    topic: 'Convulsão febril',
     module: 'Pediatria',
     text: 'Criança de 2 anos de idade é levada pelos pais ao pronto atendimento logo após quadro de perda de consciência, seguido de movimentação tônica e clônica de membros, com recuperação total após 3 minutos. Pais negam antecedentes relevantes e referem coriza e tosse discretos há 1 dia, sem febre. Negam episódios semelhantes anteriores e patologias de base. Pai refere que apresentava convulsões na infância. Ao exame: bom estado geral, alerta e vigil, calmo, ativo e reativo, FR 30ipm, FC 105bpm, T 38,3°C, avaliação neurológica, respiratória, cardiológica e abdominal normais para a idade. Qual a conduta mais adequada para o paciente em questão?',
     options: [
@@ -1823,6 +2037,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-51',
+    topography: '11',
+    topic: 'Aleitamento materno',
     module: 'Pediatria',
     text: 'Uma criança de 2 meses vem à consulta na UBS acompanhada da mãe, que relata raias de sangue nas fezes há uma semana, sem outros sintomas. Criança previamente hígida, nascida a termo, sem intercorrências neonatais, com ganho de peso e desenvolvimento adequados para a idade. Recebe apenas fórmula láctea, com preparo adequado. O exame físico está normal. Considerando a principal hipótese para o quadro, qual a conduta mais adequada?',
     options: [
@@ -1839,6 +2055,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-52',
+    topography: '2.2',
+    topic: 'Arritmias',
     module: 'Pediatria',
     image: '/images/tp2026-52.webp',
     text: 'Criança, 2 anos, na sala de emergência em regular estado geral, cianótica, sonolenta, temperatura de 36ºC, taquipneia, frequência respiratória de 48irpm, tiragem intercostal e subcostal, saturação em ar ambiente de 88%, FC 220bpm, pressão arterial de 70x40mmHg e tempo de enchimento capilar de 4 segundos. Instalada monitorização, máscara não reinalante com 15 litros/minuto e puncionado acesso venoso periférico. É constatada no monitor a seguinte imagem, confirmada pelo ECG. Qual conduta deve ser realizada?',
@@ -1856,6 +2074,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-53',
+    topography: '11',
+    topic: 'Asma infantil',
     module: 'Pediatria',
     text: 'Criança de 3 anos, previamente hígida, é trazida à UBS por terceiro episódio de tosse e sibilância nos últimos 6 meses, sempre associados a quadros de resfriado, com intervalos assintomáticos entre as crises. Não há sintomas respiratórios entre os episódios, nem história familiar de asma ou atopia. Ao exame atual, apresenta sibilos expiratórios difusos e boa resposta a broncodilatador inalatório. Qual a conduta mais adequada para o manejo deste caso na atenção primária?',
     options: [
@@ -1872,6 +2092,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-54',
+    topography: '11',
+    topic: 'Maus-tratos infantis',
     module: 'Pediatria',
     text: 'Uma adolescente de 13 anos e 10 meses comparece à UBS para consulta. Durante a entrevista confidencial, relata que mantém relações sexuais com namorado de 23 anos há vários meses, solicita ao médico orientação contraceptiva e que não conte a ninguém. Qual deve ser a conduta adequada para este caso?',
     options: [
@@ -1888,6 +2110,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-55',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'Criança de 2 anos e 4 meses, com tetralogia de Fallot, dá entrada na UBS com "crise de hipoxemia". Considerando a fisiopatologia da doença em questão, qual a melhor posição para acomodar a criança na maca de exame físico visando melhorar a hipoxemia?',
     options: [
@@ -1904,6 +2128,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-56',
+    topography: '11',
+    topic: 'Puericultura',
     module: 'Pediatria',
     text: 'Uma menina de 7 anos é levada ao ambulatório de pediatria pela mãe, devido ao aparecimento de desenvolvimento mamário há cerca de 6 meses, associado a crescimento acelerado e surgimento recente de odor axilar. Não há relato de uso de medicamentos hormonais ou doenças crônicas. Ao exame físico, apresenta estágio II de Tanner para mamas, sem desenvolvimento de pelos pubianos. A estatura encontra-se acima do percentil esperado para a idade, com avanço recente da velocidade de crescimento. Qual é o exame inicial mais indicado para investigação deste quadro clínico?',
     options: [
@@ -1920,6 +2146,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-57',
+    topography: '11',
+    topic: 'ITU pediátrica',
     module: 'Pediatria',
     text: 'Um menino de 8 anos é acompanhado em ambulatório pediátrico por apresentar três episódios de infecção do trato urinário febril nos últimos 12 meses, todos confirmados por urocultura positiva para Escherichia coli e tratados adequadamente. A mãe relata que, durante os episódios, a criança apresentou febre alta, dor lombar e mal-estar. Entre os episódios infecciosos, a criança permanece assintomática. Ao exame físico atual, não há alterações significativas. Qual é o exame indicado como primeira etapa da avaliação complementar?',
     options: [
@@ -1952,6 +2180,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-59',
+    topography: '1.3',
+    topic: 'Amigdalite/faringoamigdalite',
     module: 'Pediatria',
     text: 'Paciente com 5 anos é internado para investigação de febre persistente há 4 dias, acompanhada de faringite exsudativa, linfadenopatia cervical generalizada e baço a 3cm do rebordo costal esquerdo. O hemograma revelou linfocitose com 20% de atipia linfocitária. Durante a internação, a criança apresenta boa aceitação hídrica, mas os pais estão ansiosos quanto ao manejo. Com base no planejamento do cuidado e terapêutica adequados para este caso, a conduta correta é:',
     options: [
@@ -1968,6 +2198,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-60',
+    topography: '6.1',
+    topic: 'Artrite reumatoide',
     module: 'Pediatria',
     text: 'Menina de 4 anos comparece em UBS acompanhada da mãe, com queixa de dor e rigidez matinal, intermitente em tornozelos e joelhos, de início há 5 meses. Além da dor, apresenta edema e vermelhidão nas articulações, sem relato de trauma. Apresenta febre de 38ºC por 2 semanas, durante as quais apresentou exantema no tronco. Considerando os aspects morfofuncionais do processo inflamatório articular nessa doença, a alteração diretamente relacionada ao dano articular progressivo é:',
     options: [
@@ -2001,6 +2233,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-42',
+    topography: '11',
+    topic: 'Icterícia neonatal',
     module: 'Pediatria',
     text: 'Recém-nascido (RN) a termo apresentando icterícia Zona 2 de Krammer, com 40 horas de vida. Mãe primigesta apresenta tipagem sanguínea A negativo, Coombs indireto negativo. O RN é O positivo, Coombs direto negativo. Dosagem de bilirrubina indireta de 9,0 mg/dL, bilirrubina direta de 0,8 mg/dL.\n\nO diagnóstico mais provável é:',
     options: [
@@ -2017,6 +2251,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-43',
+    topography: '9',
+    topic: 'Anemias',
     module: 'Pediatria',
     text: 'Criança, 3 meses de vida, nascida de parto normal, gestação de 40 semanas, com peso de 3400 gramas, em aleitamento materno exclusivo. Na consulta de rotina, é observado que está discretamente descorada, fígado e baço não palpáveis. Mãe nega queixas, nega anemia na família. Teste do pezinho: sem alterações. Solicitado hemograma que revela: GV: 3,6 milhões/mm³; Hb: 9,8 g/dL, Ht: 32%; GB: 6000/mm³; Plaquetas: 250.000/mm³; VCM: 91fL (74 - 108); HCM: 30pg (25 - 35).\n\nA hipótese diagnóstica e conduta são:',
     options: [
@@ -2049,6 +2285,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-45',
+    topography: '11',
+    topic: 'Aleitamento materno',
     module: 'Pediatria',
     text: 'Recém-nascido (RN) nascido a termo, sem queixas e sem alterações ao exame físico.\n\nConsiderando-se que os exames pré-natais ao final da gestação apontaram infecção materna pelo vírus da imunodeficiência humana, a recomendação correta em relação à alimentação desse RN é:',
     options: [
@@ -2065,6 +2303,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-46',
+    topography: '10',
+    topic: 'Tétano',
     module: 'Pediatria',
     text: 'Jovem, 17 anos, apresenta ferimento profundo no pé por caco de vidro. O ferimento já foi lavado com soro fisiológico e solução antisséptica. Não havia corpos estranhos nem tecidos desvitalizados. Trata-se de jovem saudável, consciente e responsável, que se comprometeu a cuidar adequadamente do ferimento em casa. Em seu cartão de vacinação constam 3 doses e 2 reforços de vacina antitetânica, tendo sido o último aos 5 anos de idade.\n\nA conduta para a profilaxia do tétano é:',
     options: [
@@ -2081,6 +2321,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-47',
+    topography: '11',
+    topic: 'Desidratação',
     module: 'Pediatria',
     text: 'Menina, 12 meses de idade, pesando 10kg, chega à emergência devido a quadro de vômitos que iniciou há 1 dia (3 episódios) acompanhados de diarreia (8 episódios nas últimas 24h), fezes volumosas, líquidas, com odor fétido, sem sangue ou muco. A criança é previamente hígida e frequenta escola. Ao exame: bom estado geral, chorosa, olhos levemente encovados, saliva pouco espessa, FC = 120 bpm, tempo de enchimento capilar 2seg.\n\nO diagnóstico provável e a conduta inicial são:',
     options: [
@@ -2097,6 +2339,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-48',
+    topography: '1.5',
+    topic: 'Hipotireoidismo',
     module: 'Pediatria',
     text: 'Menina, 13 anos, trazida à consulta com queixa de irregularidade menstrual, constipação e queda de cabelo. A menarca foi aos 11 anos. A mãe se queixa de que a filha já vinha crescendo pouco nos últimos anos e parou de crescer, ficando sua estatura abaixo do padrão da família. Tem um primo por parte da mãe com diabetes mellitus tipo 1. Exame físico: aumento do pescoço na região da tireoide e uma lesão hipocrômica na região genital.\n\nOs prováveis diagnóstico e resultado de dosagem de T4 livre e TSH são: (Valores de normalidade para T4livre = 0,7 - 1,5 ng/dL e TSH = 0,3 - 4,0 mUI/L).',
     options: [
@@ -2113,6 +2357,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-49',
+    topography: '8',
+    topic: 'Feocromocitoma',
     module: 'Pediatria',
     text: 'Adolescente, 12 anos, masculino, encaminhado para avaliação de hipertensão arterial detectada há 3 meses. Apresentou cefaleia, palpitações, tontura, dor abdominal e perda de 3kg nesse período. Hoje apresentou episódio súbito de perda de consciência durante jogo de futebol na escola. Exame físico, uma hora após o evento: letárgico: FC = 124 bpm, FR = 20 irpm, PA = 195 x 125 mmHg, estertores crepitantes em bases pulmonares e hepatomegalia (4cm do rebordo costal direito).\n\nEste quadro sugere:',
     options: [
@@ -2129,6 +2375,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-50',
+    topography: '10',
+    topic: 'Sífilis',
     module: 'Pediatria',
     text: 'Gestante, 25 anos, em exame de rotina no pré-natal apresentou VDRL reagente 1:64 no primeiro trimestre. A gestante e seu parceiro foram adequadamente tratados com penicilina benzatina, como confirmado por anotações na carteira de pré-natal. A evolução do VDRL foi: pré-tratamento – 1:64; após o tratamento – 1:4; na internação para o parto – 1:32. No recém-nascido (RN) o VDRL foi 1:16, e o exame físico estava normal.\n\nDe acordo com as recomendações do Ministério da Saúde:',
     options: [
@@ -2145,6 +2393,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-51',
+    topography: '11',
+    topic: 'Obesidade infantil',
     module: 'Pediatria',
     text: 'Menina, 7 anos, apresenta excesso de peso desde os 4 anos. Os pais são obesos. Avaliação nutricional atual: Escore Z do índice de massa corporal/idade entre +2,0 e +3,0 Escore Z da estatura/idade: +2,0. Estadiamento puberal: M1P1. Ao exame físico: acantose nigricans em pescoço, estrias no abdome, circunferência abdominal aumentada, pressão arterial 120 x 70 mmHg.\n\nO quadro clínico sugere:',
     options: [
@@ -2161,6 +2411,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-52',
+    topography: '1.3',
+    topic: 'Laringite',
     module: 'Pediatria',
     text: 'Menino, 1 ano e 6 meses, atendido no Pronto-Socorro, apresentando há dois dias disfonia, tosse seca de padrão irritativo, com aumento progressivo de intensidade e frequência, e temperatura corpórea subfebril. Exame físico: bom estado geral com presença de coriza hialina, estridor, taquidispneia, com retração intercostal e subdiafragmática, ausculta pulmonar sem alterações.\n\nO diagnóstico e conduta são:',
     options: [
@@ -2177,6 +2429,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-53',
+    topography: '7.2',
+    topic: 'Dermatite atópica',
     module: 'Pediatria',
     text: 'Pré-escolar, levado ao pediatra por apresentar lesão eritematosa em fossas antecubitais e poplíteas há 1 mês. Mãe refere que as lesões são acompanhadas por prurido que piora com o suor. Exame físico: placas e pápulas eritematosas que desaparecem à digitopressão nos locais descritos. Apresenta xerose cutânea e pitiríase alba em face.\n\nQual alteração laboratorial é critério diagnóstico para a doença apresentada?',
     options: [
@@ -2193,6 +2447,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-54',
+    topography: '9',
+    topic: 'Linfomas',
     module: 'Pediatria',
     text: 'Adolescente, 17 anos, feminino, apresenta desmaios e tosse há 40 dias. Relata fraqueza e diminuição do apetite há 10 dias. Exame físico: emagrecida, palidez cutâneo-mucosa, frequência respiratória = 36 ipm, frequência cardíaca = 78 bpm, pressão arterial = 120 x 70 mmHg, discreta turgência jugular à direita, sem fígado e baço palpáveis. RX de tórax: massa mediastinal estendendo-se para hemitórax superior direito.\n\nA hipótese diagnóstica é:',
     options: [
@@ -2209,6 +2465,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-55',
+    topography: '6.1',
+    topic: 'Artrite reumatoide',
     module: 'Pediatria',
     text: 'Menina, 4 anos, trazida à Unidade Básica de Saúde por dificuldade para deambular há 2 meses. Mãe refere que a criança acorda com dificuldade de estender o joelho direito, com melhora após cerca de 3 horas de atividade. Notou inchaço no joelho direito durante o mesmo período. Nega emagrecimento ou lesão cutânea. Exame físico: bom estado geral, com peso, altura e pressão arterial dentro do percentil 75 para a idade, sinais flogísticos no joelho direito com contratura em flexão.\n\nEm relação à investigação complementar, podemos dizer que:',
     options: [
@@ -2225,6 +2483,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-56',
+    topography: '11',
+    topic: 'ITU pediátrica',
     module: 'Pediatria',
     text: 'Lactente, sexo masculino, 6 meses de idade, inicia quadro de febre intermitente, inapetência e pouco ganho ponderal, apresentando exame qualitativo de urina com nitritos (++), esterases leucocitárias (++) e urocultura com mais de 100.000 colônias de Escherichia coli. Inicia prontamente o tratamento com antimicrobiano.\n\nA seguir, deve-se solicitar:',
     options: [
@@ -2241,6 +2501,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-57',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'Lactente, sexo feminino, 2 meses de idade, atendida no Pronto-Socorro com história de cansaço, sudorese e interrupções às mamadas, acompanhada de palidez cutânea e discreta cianose perioral, além de ganho de peso insuficiente. Exame físico: regular estado geral, pulsos dos membros inferiores com amplitude diminuída em relação à dos superiores. Frequência respiratória = 72 irpm, tiragens intercostais, SaO₂ = 94%. Coração rítmico a 168 bpm, com sopro sistólico na borda esternal esquerda (3+/6+). Pressão arterial = 80 x 40 mmHg no membro superior direito. Fígado palpável a 4cm do rebordo costal direito na linha hemiclavicular. Eletrocardiograma: sinais de sobrecarga ventricular esquerda com ondas T invertidas nas derivações V5 e V6 (tipo “strain”).\n\nA cardiopatia congênita é:',
     options: [
@@ -2257,6 +2519,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-58',
+    topography: '8',
+    topic: 'Cetoacidose diabética',
     module: 'Pediatria',
     text: 'Menino, 5 anos, chega ao Pronto-Socorro com história de vômitos, perda de peso, polidipsia e poliúria. Exame físico: mucosas secas, turgor semipastoso, taquidispneico e torporoso. Exames laboratoriais: glicemia = 620 mg/dL; gasometria – pH: 7,08, HCO3: 4,0 mEq/L, BE: –20; Na: 135 mEq/L; K = 3,5 mEq/L; urina 1 – cetonúria +++.\n\nA primeira conduta é:',
     options: [
@@ -2273,6 +2537,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-59',
+    topography: '14',
+    topic: 'Intoxicações',
     module: 'Pediatria',
     text: 'Criança, 7 anos, proveniente de região rural, deu entrada no Pronto-Socorro com história de possível acidente com animal peçonhento, não sabendo informar a espécie, há cerca de três horas. Ao exame, apresentava edema tenso de cor violácea no pé e tornozelo direitos, com duas lesões puntiformes no pé direito, presença de botão hemorrágico e dor local. O resultado do exame tempo de coagulação apresentou-se prolongado de 15 minutos.\n\nA hipótese diagnóstica é de acidente:',
     options: [
@@ -2289,6 +2555,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-60',
+    topography: '11',
+    topic: 'Maus-tratos infantis',
     module: 'Pediatria',
     text: 'Lactente, 3 meses, chega ao Pronto-Socorro com história de choro intenso, por vezes contínuo, geralmente no período vespertino. Foi atendido em várias ocasiões, nas quais foi diagnosticada cólica do lactente, sendo a última vez há 3 semanas. Pais negam traumas, febre, vômitos ou outras alterações. Não recebeu a vacina de 2 meses. Mãe e pai hígidos com 18 e 19 anos, respectivamente. Exame físico: choroso, principalmente à manipulação de membro inferior direito, com edema na coxa direita, presença de alguns hematomas. Realizada radiografia de membro inferior direito: fratura de fêmur direito.\n\nO exame mais útil para elucidação diagnóstica é:',
     options: [
@@ -2306,6 +2574,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
   {
     id: 'tp2020-61',
+    topography: '11',
+    topic: 'Aleitamento materno',
     module: 'Pediatria',
     text: 'RN com 10 dias de vida é levado para primeira consulta na UBS. Mãe refere que o bebê chora muito e dorme pouco. Nega intercorrências neonatais. Durante toda a consulta, observa-se a mãe apática, referindo muito cansaço e dificuldade para amamentar o seu filho.\n\nDentre as alternativas abaixo, assinale a melhor conduta frente ao caso:',
     options: [
@@ -2322,6 +2592,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-62',
+    topography: '11',
+    topic: 'ITU pediátrica',
     module: 'Pediatria',
     text: 'Escolar de sete anos, sexo feminino, está há dois dias em tratamento para provável infecção do trato urinário com sulfametoxazol-trimetoprim, na dose de 40mg/kg/dia de sulfa. No início do quadro, apresentava urgência, dor e dificuldade para urinar. No momento, a mãe refere melhora significativa das queixas, entretanto o resultado da urinocultura mostra 500.000 colônias de E.coli resistente ao antimicrobiano em uso.\n\nA conduta, neste caso, deverá ser:',
     options: [
@@ -2338,6 +2610,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-63',
+    topography: '14',
+    topic: 'Intoxicações',
     module: 'Pediatria',
     text: 'Menina de 9 anos é levada a um hospital do interior de São Paulo por sua mãe. Criança relata que machucou o tornozelo direito em um arbusto há 8 horas. Apresenta lesão com 2 orifícios em face lateral de perna direita com parestesia local e pouco edema. Ao exame físico está com diplopia, disartria, ptose palpebral bilateral, fácies miastênica, mal-estar, náuseas, cefaleia, mialgia generalizada e urina escurecida. Nega dispneia. Tem dosagem de creatinofosfoquinase: 1.800 (VR: 30 – 210 U/L) e hemoglobinúria.\n\nBaseado nas informações acima, assinale o acidente ofídico da paciente:',
     options: [
@@ -2354,6 +2628,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-64',
+    topography: '11',
+    topic: 'Desenvolvimento neuropsicomotor',
     module: 'Pediatria',
     text: 'Mãe de um lactante de quatro meses está preocupada, pois seu filho não sustenta a cabeça. História perinatal: parto vaginal, banhado em mecônio espesso, necessitando de reanimação na sala de parto, Apgar 1/4/7, peso: 2.800g, comprimento: 49cm. Exame físico: eleva momentaneamente a cabeça em posição de prono e sorri, faz semiflexão dos cotovelos e pronação do antebraço e flexão de punhos e dedos, reflexo tônico cervical assimétrico, reflexo de Moro exarcebado.\n\nNessa situação, deve-se informar à mãe que seu filho apresenta:',
     options: [
@@ -2370,6 +2646,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-65',
+    topography: '9',
+    topic: 'Leucemias',
     module: 'Pediatria',
     text: 'Criança de quatro anos chega ao ambulatório de Pediatria, acompanhada pela mãe, com história de febre intermitente há duas semanas, manchas arroxeadas pelo corpo e em membros superiores e inferiores, além de inapetência e perda de peso. Exame físico: Inspeção: Regular Estado Geral, descorada 3+/4+, eupneica, com presença de petéquias principalmente em MMII. Palpação: Linfonodomegalia cervical, supraclavicular e inguinal. Na palpação abdominal, presença de hepatoesplenomegalia. Exames Laboratoriais: Hemograma: Hb: 5,2 g/dL / Ht: 18% / Leucócitos: 57.200/mm³. Neutrófilos: 572 mm3 (1%) / Bastonetes: 0 mm3 (0%). Segmentados: 572 mm3 (1%) Linfócitos típicos: 16.016 mm3 (28%). Linfócitos atípicos: 0 mm3 (0%) Blastos: 39.468 mm3 (69%). Plaquetas: 49.000 mm3.\n\nO quadro clínico desta criança é compatível com:',
     options: [
@@ -2386,6 +2664,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-66',
+    topography: '14',
+    topic: 'Sepse e choque séptico',
     module: 'Pediatria',
     image: '/images/tp2020-66.webp',
     text: 'Laura, 18 meses de idade, chega ao Pronto-Socorro com quadro de febre há quatro dias, associada a vômitos e alternando irritabilidade e letargia há 1 dia. Tem antecedente pessoal de infecção urinária de repetição. Ao exame físico apresenta-se em mau estado geral, cianose de extremidades, anictérica, febril, dispneia leve (tiragem subcostal e intercostal leves), taquicárdica, pálida e letárgica. Aparelho respiratório e abdome com exames físicos normais. Aparelho cardíaco com BRNF em 2 tempos sem sopros. Pulsos periféricos filiformes e perfusão periférica de 7 segundos. Possui este traçado em monitorização cardíaca:\n\nOs diagnósticos mais prováveis são:',
@@ -2403,6 +2683,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-67',
+    topography: '3.1',
+    topic: 'Diarreia crônica',
     module: 'Pediatria',
     text: 'Paciente de dois anos de vida é levada à Unidade Básica de Saúde com história de diarreia desde os 9 meses, com padrão de evacuações amolecidas e às vezes líquidas. A mãe refere quadro de dor abdominal e distensão. No histórico alimentar recebeu aleitamento materno exclusivo até os 6 meses, quando iniciou com alimentação complementar. Atualmente mantém aleitamento materno associado a duas refeições, e nos intervalos oferece pães, bolachas e frutas. Há dois meses notou diminuição da aceitação dos alimentos e está perdendo peso, segundo informação da mãe. Exame físico: bom estado geral, hidratada, pálida e emagrecida, distensão abdominal importante e achatamento da região glútea.\n\nDetermine o diagnóstico sindrômico e a provável etiologia:',
     options: [
@@ -2419,6 +2701,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-68',
+    topography: '11',
+    topic: 'Desenvolvimento neuropsicomotor',
     module: 'Pediatria',
     text: 'O pediatra recebe em seu consultório um paciente do sexo masculino de 14 meses para consulta de rotina. Os pais referem estar preocupados, pois a criança fala muito pouco. Pais referem que a criança nasceu a termo, sem intercorrências pré e perinatais, alimenta-se bem e a vacinação encontra-se atualizada. Sentou-se aos seis meses, engatinhou aos 10 meses e andou com 13 meses. Nega cirurgias ou internações prévias. Passa o dia em casa com a babá, gosta de brincar no tablet. Ao exame, o pediatra observa que fala algumas sílabas, porém sem significado. Aponta para o que quer e imita gestos.\n\nNesta situação, o pediatra deveria:',
     options: [
@@ -2435,6 +2719,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-69',
+    topography: '11',
+    topic: 'Asma infantil',
     module: 'Pediatria',
     text: 'Escolar, 6 anos, masculino, comparece à UBS com história de crises de chiado recorrentes desde os 2 anos de idade. No último mês nega crises ou necessidade de uso de medicação de alívio, mas toda vez que corre ou ri muito, apresenta tosse. Refere dois episódios de despertar noturno por tosse nesse período. Como antecedentes pessoais, nunca foi internado, mas já permaneceu em observação por algumas horas para realização de nebulizações com Fenoterol, sempre com boa resposta. Apresenta também queixas nasais de obstrução e coriza diariamente há três anos, o que traz prejuízo às suas atividades escolares. Tem prick test positivo para epitélio animal. De antecedentes familiares, a mãe refere ter asma.\n\nAssinale a alternativa que melhor representa os diagnósticos desse paciente e o tratamento de manutenção de primeira escolha para esses diagnósticos:',
     options: [
@@ -2451,6 +2737,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-70',
+    topography: '11',
+    topic: 'Cardiopatias congênitas',
     module: 'Pediatria',
     text: 'A.C.S., 18 meses de idade, sexo masculino, é levado à Unidade Básica de Saúde para consulta de rotina. Mãe informa que durante atendimento em Pronto-Socorro há duas semanas por quadro de tosse e coriza foi informada que seu filho apresentava sopro cardíaco. Não havia qualquer queixa em antecedentes pessoais, exceto o fato de apresentar quadros de tosse, coriza e febre de repetição desde que entrou na creche. Nega internações. Desenvolvimento pondero estatural e desenvolvimento neuropsicomotor normal. Ao exame físico encontra-se em bom estado geral, hidratado, ativo, eupneico, acianótico, afebril, boa perfusão periférica, pulsos simétricos. Aparelho Cardiovascular: BRNF, com sopro sistólico suave 2+ em 6+, musical, melhor audível em bordo esternal esquerdo baixo e que diminui de intensidade ao exame, se paciente muda da posição deitado para sentado. FC: 100 bpm, SatO₂ de 95%. Restante do exame físico normal.\n\nFrente aos dados de história e exame físico, qual a principal hipótese diagnóstica e conduta inicial?',
     options: [
@@ -2467,6 +2755,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-71',
+    topography: '11',
+    topic: 'Maus-tratos infantis',
     module: 'Pediatria',
     text: 'Criança de quatro meses é levada ao Pronto-Socorro Infantil porque não para de chorar. Mãe relata que faz 7 dias que a lactente apresenta choro inconsolável e apresentou crise convulsiva. Nega febre, diarreia, coriza, desconforto respiratório. Faz aleitamento artificial, porque a mãe precisou voltar a trabalhar. O pediatra pergunta se fica na creche, mas a mãe responde que a lactente fica aos cuidados do namorado, que atualmente não trabalha. Ao exame clínico: regular estado geral, afebril, corada, hipoativa e chorosa à manipulação. Durante o exame apresentou uma crise convulsiva tônico-clônica, que cedeu com uso de Diazepam. Crânio: sem abaulamentos ou depressão. Aparelho cardiovascular e aparelho respiratório sem alterações. Abdome: doloroso à palpação, sem visceromegalias. Extremidades: pulso amplo, com perfusão adequada. O pediatra solicita o RX de corpo total: fratura de clavícula direita e alguns calos ósseos. O pediatra suspeita então de maus tratos.\n\nQual é o exame de eleição para fechar o diagnóstico?',
     options: [
@@ -2483,6 +2773,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-72',
+    topography: '8',
+    topic: 'Cetoacidose diabética',
     module: 'Pediatria',
     text: 'Adolescente, 13 anos, com queixa de dor abdominal e vômitos ha 1 dia. Nega febre. Deu entrada no Pronto-Socorro Infantil em regular estado geral, afebril, hipoativo, desidratado ++/4+, com FR 40 rpm, FC 130 bpm, PA 100 x 60 mmHg. Coletado exames: HMG: Hb: 12,8; HT: 38; Leucócitos 9600 (1 bastonete / 40 segmentados / 50 linfócitos); Plaquetas 255.000; Glicemia 289; Na 136; K 5,0; Ureia 20; Creatinina 0,5; PCR 1,0.\n\nUrina 1: 5.000 leucócitos, 3.000 hemácias, proteínas +, corpos cetônicos ++ Gasometria venosa: pH: 7,15 / bicarbonato: 8 Diante deste caso, qual sua conduta inicial?',
     options: [
@@ -2516,6 +2808,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-74',
+    topography: '11',
+    topic: 'ITU pediátrica',
     module: 'Pediatria',
     text: 'Pedro, de 6 meses, iniciou com febre e irritabilidade há 1 dia, sem outros sintomas. Procurou a emergência pediátrica e ao exame encontra-se afebril, em bom estado, hidratado, ativo e chorando frequentemente. Restante do exame normal. Foi solicitado sumário de urina, que mostrou leucocitúria, nitrito positivo e leucoesterase positiva. A amostra foi colhida por sonda vesical de alívio e a urocultura está em andamento.\n\nDesta forma, o socorrista deve proceder com a seguinte terapêutica baseada na hipótese diagnóstica inicial:',
     options: [
@@ -2532,6 +2826,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-75',
+    topography: '11',
+    topic: 'Sepse neonatal',
     module: 'Pediatria',
     text: 'Recém-nascido com 24 horas de vida, prematuro, peso de nascimento de 1200g, com diagnóstico de septicemia, é internato na Unidade de Tratamento Intensivo, com quadro de instabilidade térmica, irritabilidade e convulsão. Ao exame físico, apresenta abaulamento da fontanela anterior. Após admissão, o médico suspeitou de meningite e solicitou vários exames, além do líquor cefalorraquidiano.\n\nAssinale a alternativa correta em relação ao agente etiológico:',
     options: [
@@ -2548,6 +2844,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-76',
+    topography: '6.2',
+    topic: 'Escoliose',
     module: 'Pediatria',
     text: 'Criança de 7 anos, sexo masculino, é trazida ao ambulatório de pediatria por dor na região inguinal esquerda com irradiação para o joelho há 2 semanas, associado a claudicação. Nega febre, dor ou edema em outras articulações. O exame físico é normal, exceto pela restrição da flexão, abdução e rotação interna do quadril esquerdo. Hemograma normal, VHS = 15 mmHg; proteína C reativa (PCR) = 12. Radiografia fragmentação parte anterior da epífise.\n\nQual sua hipótese diagnostica?',
     options: [
@@ -2564,6 +2862,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-77',
+    topography: '1.1',
+    topic: 'Cefaleias',
     module: 'Pediatria',
     text: 'Escolar de 8 anos com queixa de cefaleia holocraniana há alguns meses. Mãe refere que a criança chora com a dor de cabeça e está muito preocupada. Nega obstrução nasal, coriza e febre. Não acompanhada de náuseas ou vômitos. Apresenta melhora com analgésico, como dipirona ou paracetamol, e melhora também com o sono.\n\nAssinale a alternativa correta em relação ao provável diagnóstico dessa criança:',
     options: [
@@ -2580,6 +2880,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-78',
+    topography: '11',
+    topic: 'Anemia ferropriva',
     module: 'Pediatria',
     text: 'Lactente de 6 meses está em aleitamento materno exclusivo e vai iniciar introdução de frutas. Nasceu com 2.300g, 47cm, de 38 semanas de gestação.\n\nQuanto à suplementação de Ferro elementar, deve-se prescrever neste momento:',
     options: [
@@ -2596,6 +2898,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-79',
+    topography: '1.2',
+    topic: 'Erros refrativos',
     module: 'Pediatria',
     text: 'Escolar, 9 anos, apresenta quadro de fotofobia, ardor, hiperemia conjuntival e lacrimejamento ocular e cefaleia. É levado ao pediatra na unidade de pronto atendimento. A história clínica revela que sintomas apareceram desde o final do ano passado e que regrediram um pouco durante as férias, porém com o retorno das atividades escolares observou piora do quadro novamente. Mãe também observou que apresenta sonolência durante o dia, principalmente quando força os olhos (sic).\n\nResponda qual deve ser a provável hipótese diagnóstica e conduta do pediatra após examiná-lo:',
     options: [
@@ -2612,6 +2916,8 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-80',
+    topography: '11',
+    topic: 'Diarreia aguda',
     module: 'Pediatria',
     text: 'Menor com 4 anos de idade é levada ao Pronto-Socoro devido a quadro de intensa dor abdominal, periumbilical e diarreia fétida há cerca de 7 dias. Mãe relata perda de apetite e muitos gases intestinais.\n\nApós exame físico normal, com ruídos hidroaéreos aumentados, sem visceromegalias, qual a hipótese diagnóstica mais provável?',
     options: [

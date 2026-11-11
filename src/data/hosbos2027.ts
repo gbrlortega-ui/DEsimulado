@@ -5,6 +5,8 @@ import { Question } from '../types';
 export const HOSBOS_2027_QUESTIONS: Question[] = [
   {
     "id": "hosbos2027-1",
+    "topography": "3.1",
+    "topic": "Doença hemorroidária",
     "module": "Cirurgia",
     "text": "Homem de 34 anos chega ao pronto-socorro com queixa de sangramento anal há 3 dias. Ele relata que o sangramento começou em pequena quantidade, com fezes avermelhadas e muco. Notou presença de “tumoração” anal que sai do ânus durante a evacuação e exige que o paciente a empurre de volta para dentro, manualmente. O paciente tem um histórico de constipação crônica.\n\nDiante do exposto, pode-se afirmar que a etiologia e classificação da doença que causou o sangramento do paciente é:",
     "options": [
@@ -26,6 +28,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-2",
+    "topography": "3.4",
+    "topic": "Pancreatite aguda",
     "module": "Cirurgia",
     "text": "Homem de 36 anos deu entrada na emergência com quadro de dor abdominal em faixa (início há cerca de 8 horas), náuseas, vários episódios de vômitos e distensão abdominal discreta. Refere ingestão ocasional de bebidas alcoólicas, sem história de consumo crônico ou abusivo. Após as medidas iniciais, foram realizados os seguintes exames diagnósticos:\n• Hemograma: 12.000 leucócitos.\n• PCR: 29 mg/L (valor de referência < 3 mg/L).\n• Amilase: 726 U/L (valor de referência 25 e 125 U/L).\n• Lipase: 456 U/L (valor de referência até 60 U/L).\n• Bilirrubinas, fosfatase alcalina, gama-GT e transaminases sem alterações importantes.\n• Ultrassonografia de abdome: sem alterações.\n• Tomografia abdominal: demonstrada na imagem. (https://laccufjfgv.wixsite.com/clinicacirurgica)\n\nNesse caso, as atuais diretrizes recomendam realizar",
     "options": [
@@ -49,6 +53,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-3",
+    "topography": "3.4",
+    "topic": "Pancreatite crônica",
     "module": "Cirurgia",
     "text": "Homem de 48 anos procura atendimento ambulatorial por dor abdominal recorrente há cerca de três anos, localizada em epigástrio, irradiada para dorso, com piora após alimentação e alívio parcial ao inclinar o tronco anteriormente. Refere perda ponderal de 12 kg no último ano, episódios frequentes de diarreia volumosa e gordurosa e antecedente de etilismo crônico ininterrupto por mais de 20 anos. Ao exame físico, apresenta-se emagrecido, com discreta dor à palpação profunda do epigástrio. Exames laboratoriais demonstram elastase fecal reduzida e deficiência de vitaminas lipossolúveis; glicemia de jejum de 178 mg/dL, hemoglobina glicada de 8,1%, amilase e lipase normais. Foi realizada tomografia computadorizada de abdome, evidenciando atrofia pancreática difusa, dilatação irregular do ducto pancreático principal e múltiplas calcificações grosseiras distribuídas pelo parênquima pancreático, predominantemente em cabeça e corpo do pâncreas.\n\nDiante do quadro clínico e dos achados tomográficos, qual é a conduta mais adequada nesse momento?",
     "options": [
@@ -71,6 +77,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-4",
+    "topography": "3.1",
+    "topic": "Diverticulose/diverticulite",
     "module": "Cirurgia",
     "text": "Uma paciente de 49 anos, hipertensa e diabética, procura o pronto atendimento com quadro de dor abdominal intensa localizada em fossa ilíaca esquerda há três dias, associada a febre (38,5°C), inapetência e queda do estado geral. Ao exame físico, apresenta dor à palpação profunda e sinais de irritação peritoneal localizada em fossa ilíaca esquerda, sem sinais de peritonite generalizada. A tomografia computadorizada de abdome revela presença de divertículos no sigmoide e abscesso pélvico de 7,0 cm.\n\nConsiderando as diretrizes atuais, assinale a alternativa que apresenta, correta e respectivamente, a classificação de Hinchey e a conduta inicial indicada para essa paciente.",
     "options": [
@@ -114,6 +122,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-6",
+    "topography": "16",
+    "topic": "Isquemia mesentérica",
     "module": "Cirurgia",
     "text": "Mulher de 59 anos, portadora de fibrilação atrial crônica, em uso irregular de anticoagulante oral, apresenta dor abdominal desproporcional, súbita, há 6 horas, pós-prandial, de forte intensidade, de localização difusa. Exame físico: PA: 110 x 70 mmHg; FC: 102 bpm; FR: 20 mrpm; SatO₂: 96%; Temp. : 37,3 °C. Gasometria arterial: Lactato = 28,2 mmol/L (valor de referência: 0,5 a 1,6 mmol/L). Hemograma: leucócitose (22.000). A angiotomografia evidencia oclusão aguda da artéria mesentérica superior, associada a pneumatose intestinal e gás portal.\n\nDiante do exposto, assinale a abordagem mais indicada.",
     "options": [
@@ -136,6 +146,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-7",
+    "topography": "14",
+    "topic": "Trauma",
     "module": "Cirurgia",
     "text": "Um homem de 50 anos sofreu queda da escada (altura estimada 2 metros), caindo ao solo em posição supina. Foi atendido inicialmente por unidade do Corpo de Bombeiros e transportado à unidade de Emergência consciente e orientado, com sinais vitais iniciais estáveis (PA = 126 x 82 mmHg; FC = 88 bpm) e sob protocolo (colar cervical, prancha rígida e cobertor térmico). Na admissão da sala de emergência, foi realizado o atendimento inicial, de acordo com os preceitos do ATLS™, onde se observou que o paciente apresenta paralisia dos membros inferiores e perda de sensibilidade abaixo da cintura. O exame neurológico demonstra paraplegia flácida, arreflexia profunda e ausência do reflexo bulbocavernoso.\n\nDiante do exposto, assinale a alternativa correta.",
     "options": [
@@ -158,6 +170,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-8",
+    "topography": "16",
+    "topic": "Trauma abdominal",
     "module": "Cirurgia",
     "text": "Uma criança de 6 anos é trazida ao pronto-socorro de um centro especializado em trauma pediátrico após sofrer queda de um brinquedo em um parque de diversões. Apresenta dor abdominal localizada no hipocôndrio direito, sem sinais de irritação peritoneal. Está consciente e hemodinamicamente estável. O e-FAST detecta a presença de líquido no espaço de Morrison. A tomografia computadorizada de abdome, realizada com contraste intravenoso, evidencia lesão hepática grau I, segundo a classificação da American Association for the Surgery of Trauma (AAST).\n\nDiante do quadro apresentado, assinale a alternativa que apresenta a conduta adequada.",
     "options": [
@@ -180,6 +194,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-9",
+    "topography": "16",
+    "topic": "Perfuração de víscera oca",
     "module": "Cirurgia",
     "text": "Homem de 49 anos, com histórico de dispepsia de longa data, é admitido no pronto-socorro com dor abdominal súbita, de forte intensidade, localizada inicialmente em epigástrio e que rapidamente se disseminou para todo o abdome. Refere náuseas, um episódio de vômito, e relata uso de anti-inflamatórios não esteroidais para artrose de joelho direito. Ao exame físico, encontra-se taquicárdico (FC: 124 bpm), hipotenso (PA: 94 x 63 mmHg), com rigidez abdominal difusa e descompressão brusca positiva. Exames laboratoriais:\n• Leucograma: leucócitose com desvio à esquerda (18.700/mm³, bastões 12%); eritrograma sem alterações.\n• PCR: 187 mg/L\n• Lactato sérico: 4,2 mmol/L\n• Creatinina: 1,9 mg/dL\n• Amilase: 112 U/L\n• Radiografia de tórax apresentada: (Freitas Junior, W. R. et al. Rev. Assoc. Med. Bras. 2011; 57(6):614)\n\nDiante do quadro clínico e radiográfico, assinale a alternativa que apresenta a conduta adequada.",
     "options": [
@@ -224,6 +240,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-11",
+    "topography": "1.5",
+    "topic": "Câncer de tireoide",
     "module": "Cirurgia",
     "text": "Homem de 36 anos apresenta carcinoma medular da tireoide, hiperparatireoidismo primário e feocromocitoma, associados a uma variante patogênica germinativa no gene RET.\n\nEsse quadro é característico de qual síndrome genética?",
     "options": [
@@ -246,6 +264,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-12",
+    "topography": "16",
+    "topic": "Perfuração de víscera oca",
     "module": "Cirurgia",
     "text": "Mulher de 39 anos apresenta dor abdominal aguda de forte intensidade, iniciada subitamente no epigástrio há duas horas e que rapidamente se tornou difusa. Apresentou um episódio de vômito de conteúdo gástrico. Ao exame físico, encontra-se hemodinamicamente estável. O abdome está plano na inspeção; apresenta à ausculta ausência de ruídos hidroaéreos. À percussão, observa-se desaparecimento da macicez hepática. À palpação, rigidez abdominal difusa.\n\nAssinale a alternativa que apresenta o diagnóstico sindrômico provável e o exame de imagem adequado para sua confirmação e investigação etiológica.",
     "options": [
@@ -268,6 +288,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-13",
+    "topography": "3.1",
+    "topic": "Doença inflamatória intestinal",
     "module": "Cirurgia",
     "text": "Um homem de 29 anos, previamente hígido, apresenta dor abdominal em fossa ilíaca direita há 48 horas, associada a febre de 38,5 °C, diarreia sem sangue e perda ponderal de 6 kg nos últimos três meses. Ao exame físico, apresenta dor à palpação profunda em quadrante inferior direito, sem sinais de irritação peritoneal. Os exames laboratoriais demonstram hemoglobina de 10,2 g/dL, proteína C-reativa elevada e albumina sérica de 2,8 g/dL. A tomografia computadorizada de abdome evidencia espessamento segmentar do íleo terminal, coleção intra-abdominal de 4 cm, adjacente ao mesentério e trajeto fistuloso enteroentérico, achados compatíveis com doença de Crohn penetrante. Após antibioticoterapia e drenagem percutânea guiada por imagem, o paciente evolui com resolução da sepse, mas persiste com doença inflamatória e fistulizante do íleo terminal.\n\nConsiderando o caso apresentado, assinale a alternativa correta.",
     "options": [
@@ -290,6 +312,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-14",
+    "topography": "16",
+    "topic": "Trauma torácico",
     "module": "Cirurgia",
     "text": "Homem de 26 anos, previamente hígido, condutor de veículo, sofre acidente automobilístico com colisão frontal de alta energia contra um poste. É transportado ao pronto-socorro pela equipe de resgate. Na admissão, encontra-se consciente e orientado, com vias aéreas pérvias e colar cervical. Refere dor intensa na região pré-esternal, onde se observa equimose compatível com impacto contra o volante. A percussão torácica e as auscultas pulmonar e cardíaca não apresentam alterações. PA: 122 x 82 mmHg; FC: 92 bpm; FR: 18 mrpm. A radiografia de tórax em incidência AP evidencia alargamento do mediastino superior (imagem apresentada).\n\nConsiderando o mecanismo do trauma e o achado radiográfico, assinale a alternativa que apresenta, correta e respectivamente, a principal lesão a ser investigada e o exame mais indicado para sua confirmação. (ATLS®: Advanced Trauma Life Support Student Course Manual. 11. ed. Chicago: American College of Surgeons, 2025)",
     "options": [
@@ -313,6 +337,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-15",
+    "topography": "16",
+    "topic": "Trauma abdominal",
     "module": "Cirurgia",
     "text": "Homem de 30 anos é admitido em choque hemorrágico após ferimento por projétil de arma de fogo no quadrante superior direito do abdome. Seu tipo sanguíneo é desconhecido. Após ressuscitação inicial com volume limitado de cristaloide aquecido, administrado por dois acessos venosos periféricos calibrosos (14G) em veias antecubitais, permanece em choque. Está indicada laparotomia exploradora imediata para controle da hemorragia.\n\nDiante da persistência do choque hemorrágico, qual é a estratégia de ressuscitação adequada enquanto se providencia o controle cirúrgico imediato da hemorragia?",
     "options": [
@@ -335,6 +361,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-16",
+    "topography": "2.1",
+    "topic": "Derrame pleural",
     "module": "Cirurgia",
     "text": "Homem de 67 anos, internado por pneumonia bacteriana, evolui, após sete dias, com febre persistente, dor torácica ventilatório-dependente e dispneia. A tomografia computadorizada de tórax evidencia derrame pleural no hemitórax esquerdo, com espessamento e realce das pleuras. A análise do líquido pleural revela aspecto francamente purulento.\n\nConsiderando o manejo das infecções pleurais e do empiema, assinale a alternativa correta.",
     "options": [
@@ -356,6 +384,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-17",
+    "topography": "3.1",
+    "topic": "DRGE",
     "module": "Cirurgia",
     "text": "Homem de 63 anos, obeso, com história de doença do refluxo gastroesofágico há aproximadamente 12 anos, em uso irregular de inibidor da bomba de prótons, é submetido à endoscopia digestiva alta por persistência de pirose e regurgitação. O exame evidencia segmento de mucosa colunar no esôfago distal, com extensão de 5 cm acima da junção esofagogástrica, sem lesões nodulares ou ulceradas visíveis. São realizadas biópsias segundo protocolo sistematizado, que demonstram metaplasia intestinal especializada associada a displasia de alto grau, confirmada por revisão de patologista especializado em trato gastrointestinal.\n\nConsiderando os conhecimentos atuais sobre o manejo do esôfago de Barrett e as recomendações das principais diretrizes, assinale a alternativa correta.",
     "options": [
@@ -378,6 +408,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-18",
+    "topography": "16",
+    "topic": "Pós-operatório",
     "module": "Cirurgia",
     "text": "Mulher de 34 anos, submetida a esplenectomia eletiva por doença hematológica, procura o pronto-socorro duas semanas após o procedimento com febre de 39,5 °C, calafrios e prostração intensa.\n\nConsiderando o risco de infecção grave no paciente asplênico, assinale a alternativa correta.",
     "options": [
@@ -400,6 +432,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-19",
+    "topography": "16",
+    "topic": "Pós-operatório",
     "module": "Cirurgia",
     "text": "Mulher de 45 anos dá entrada na emergência por colecistite aguda litiásica; após as medidas terapêuticas iniciais, é submetida a uma colecistectomia aberta. O cirurgião opta pelo posicionamento de um dreno tubular no espaço sub-hepático direito.\n\nSobre os princípios técnicos e indicações do uso de drenos, assinale a alternativa correta.",
     "options": [
@@ -442,6 +476,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-21",
+    "topography": "2.2",
+    "topic": "Hipertensão arterial sistêmica",
     "module": "Clínica Médica",
     "text": "Homem de 47 anos comparece a consulta de rotina assintomático. AP: nega. Exame físico: IMC de 26,8 kg/m², circunferência abdominal de 96 cm, PA: 134 x 86 mmHg (em consulta anterior, há 6 meses, apresentava 136 x 84 mmHg). MRPA: média de 124 x 78 mmHg. Exames laboratoriais: glicemia de jejum: 92 mg/dL, LDL-colesterol: 118 mg/dL, creatinina: 0,9 mg/dL, potássio: 4,3 mEq/L e relação albuminúria/creatininúria de 12 mg/g. Eletrocardiograma normal.\n\nDe acordo com a Diretriz Brasileira de Hipertensão Arterial (2025), a classificação e a conduta indicadas, respectivamente, são:",
     "options": [
@@ -464,6 +500,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-22",
+    "topography": "2.2",
+    "topic": "Fibrilação atrial",
     "module": "Clínica Médica",
     "text": "Mulher de 71 anos refere palpitações há 2 dias. AP: HAS em uso de losartana e DM2 em uso de metformina, nega acidente vascular cerebral, infarto prévio, insuficiência cardíaca ou doença arterial periférica. Exame físico: PA: 128 x 76 mmHg, FC: 96 bpm e ausculta cardíaca com ritmo irregular. Eletrocardiograma: fibrilação atrial. Ecocardiograma: fração de ejeção de 58%, sem outras alterações. Clearance de creatinina estimado de 68 mL/min.\n\nDe acordo com a Diretriz Brasileira de Fibrilação Atrial (2025), a conduta correta quanto à profilaxia de tromboembolismo é",
     "options": [
@@ -486,6 +524,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-23",
+    "topography": "2.2",
+    "topic": "Endocardite infecciosa",
     "module": "Clínica Médica",
     "text": "Homem de 52 anos refere febre e perda ponderal há 4 semanas. AP: prótese biológica aórtica implantada há 3 anos. Exame físico: PA: 140 x 85 mmHg, ausculta cardíaca com presença de sopro sistólico em foco aórtico, sem outras alterações. Hemoculturas: positivas para Staphylococcus aureus sensível à oxacilina. Ecocardiograma transesofágico: vegetação de 12 mm em face ventricular da prótese, associada a espessamento perianular com cavidade de 15 mm compatível com abscesso de raiz aórtica e regurgitação periprotética moderada. Eletrocardiograma: intervalo PR de 220 ms.\n\nA conduta correta é",
     "options": [
@@ -508,6 +548,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-24",
+    "topography": "14",
+    "topic": "Intoxicações",
     "module": "Clínica Médica",
     "text": "Mulher de 22 anos encontra-se com rebaixamento do nível de consciência e crise convulsiva tônico-clônica generalizada após 90 minutos de ingestão intencional de 40 comprimidos de amitriptilina 25 mg. Exame físico: escala de coma de Glasgow: 10, PA: 88 x 50 mmHg, FC: 128 bpm, midríase, pele seca e quente, ausência de ruídos hidroaéreos na ausculta abdominal. Eletrocardiograma: taquicardia sinusal com QRS de 140 ms e onda R proeminente em aVR de 5 mm. Gasometria arterial: pH: 7,25.\n\nA conduta correta é a administração de",
     "options": [
@@ -530,6 +572,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-25",
+    "topography": "4.1",
+    "topic": "Distúrbios hidroeletrolíticos",
     "module": "Clínica Médica",
     "text": "Homem de 68 anos relata fraqueza muscular progressiva e parestesias. AP: doença renal crônica estágio 4 e insuficiência cardíaca, em uso de enalapril, espironolactona e furosemida. Exame físico: PA: 122 x 70 mmHg, FC: 44 bpm. Exames laboratoriais: potássio: 7,4 mEq/L, creatinina: 3,9 mg/dL, ureia: 140 mg/dL, bicarbonato: 18 mEq/L. Eletrocardiograma: ondas T apiculadas e simétricas, achatamento da onda P e alargamento do QRS para 130 ms.\n\nAlém da suspensão dos medicamentos, a conduta imediata deve ser",
     "options": [
@@ -552,6 +596,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-26",
+    "topography": "14",
+    "topic": "Parada cardiorrespiratória",
     "module": "Clínica Médica",
     "text": "Homem de 61 anos apresentou parada cardiorrespiratória extra-hospitalar presenciada, em fibrilação ventricular, com retorno à circulação espontânea após 18 minutos de reanimação e duas desfibrilações. Foi admitido na unidade de terapia intensiva em uso de ventilação mecânica, de baixa dose de noradrenalina, escala de coma de Glasgow 5 e temperatura esofágica de admissão de 37,9 ºC.\n\nA conduta deve ser",
     "options": [
@@ -574,6 +620,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-27",
+    "topography": "4.1",
+    "topic": "Distúrbios ácido-base",
     "module": "Clínica Médica",
     "text": "Homem de 58 anos apresenta vômitos incoercíveis há 4 dias e, nas últimas 12 horas, confusão mental e taquipneia. AP: etilista crônico. Exame físico: PA: 90 x 58 mmHg, FC: 116 bpm, FR: 28 irpm e desidratação 3+/4+. Gasometria arterial: pH: 7,42, PaCO₂: 30 mmHg, bicarbonato: 19 mEq/L, sódio: 138 mEq/L, cloro: 92 mEq/L, potássio: 3,1 mEq/L, albumina: 3,0 g/dL.\n\nOs diagnósticos são",
     "options": [
@@ -596,6 +644,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-28",
+    "topography": "14",
+    "topic": "Sepse e choque séptico",
     "module": "Clínica Médica",
     "text": "Mulher de 64 anos refere tosse produtiva, febre e dispneia há 3 dias. AP: HAS, DM2 e insuficiência cardíaca. Exame físico: escala de coma de Glasgow de 14, FR: 30 irpm, saturação de oxigênio de 87% em ar ambiente, PA: 78 x 45 mmHg e FC: 122 bpm. Radiografia de tórax: consolidação em lobo inferior direito. Lactato arterial: 4,2 mmol/L. Foram coletadas hemoculturas e iniciada antibioticoterapia na primeira hora, além de expansão volêmica com 30 mL/kg de cristaloide balanceado. Após a expansão, a paciente apresenta PA: 85 x 42 mmHg.\n\nSegundo as recomendações da Surviving Sepsis Campaign (2026), a conduta imediata é",
     "options": [
@@ -618,6 +668,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-29",
+    "topography": "2.1",
+    "topic": "Embolia pulmonar",
     "module": "Clínica Médica",
     "text": "Mulher de 68 anos encontra-se no 22º dia de pós-operatório de artroplastia total de quadril e refere dispneia intensa e súbita. Exame físico: PA: 78 x 50 mmHg, FC: 128 bpm, FR: 32 irpm, saturação de oxigênio de 86% em ar ambiente e turgência jugular. Angiotomografia de tórax: falhas de enchimento em ambas as artérias pulmonares principais, com relação entre os diâmetros do ventrículo direito e do ventrículo esquerdo de 1,3.\n\nA conduta deve ser",
     "options": [
@@ -640,6 +692,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-30",
+    "topography": "2.1",
+    "topic": "DPOC",
     "module": "Clínica Médica",
     "text": "Homem de 68 anos encontra-se em consulta de rotina e refere dispneia ao caminhar em plano. AP: DPOC em uso regular e com técnica inalatória adequada de associação de broncodilatador de longa ação beta-agonista (LABA) e antimuscarínico (LAMA) e com duas exacerbações moderadas tratadas ambulatorialmente e uma exacerbação com necessidade de internação hospitalar no último ano. Espirometria: VEF1 pós-broncodilatador de 45% do previsto e relação VEF1/CVF de 0,58. Hemograma: eosinófilos de 380 células/mm³.\n\nDe acordo com as recomendações da Global Initiative for Chronic Obstructive Lung Disease (GOLD – 2026), a conduta deve ser",
     "options": [
@@ -662,6 +716,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-31",
+    "topography": "1.1",
+    "topic": "Meningite",
     "module": "Clínica Médica",
     "text": "Homem de 22 anos apresenta febre, cefaleia holocraniana intensa e vômitos iniciados há 14 horas. AP: nega. Exame físico: escala de coma de Glasgow 15, rigidez de nuca, sem déficits neurológicos focais, fundo de olho sem papiledema, PA: 118 x 70 mmHg, FC: 104 bpm, temperatura axilar: 39,1 ºC.\n\nA conduta imediata, além da coleta de hemoculturas, deve ser",
     "options": [
@@ -684,6 +740,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-32",
+    "topography": "10",
+    "topic": "Dengue",
     "module": "Clínica Médica",
     "text": "Mulher de 34 anos refere febre há 5 dias com melhora há 24 horas e evolução atual com dor abdominal intensa e contínua em região epigástrica e vômitos persistentes. Refere teste NS1 positivo há 3 dias. Exame físico: PA: 110 x 70 mmHg, FC: 96 bpm, tempo de enchimento capilar de 2 segundos, extremidades quentes e dor à palpação abdominal difusa. Exames laboratoriais: hematócrito de 46% (basal de 38%), plaquetas de 78.000/mm³.\n\nDe acordo com o manual de manejo clínico da dengue do Ministério da Saúde (2024), a classificação de risco e a conduta, respectivamente, são",
     "options": [
@@ -706,6 +764,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-33",
+    "topography": "6.1",
+    "topic": "Vasculites",
     "module": "Clínica Médica",
     "text": "Mulher de 74 anos refere cefaleia de início recente, de localização temporal à direita, associada a dor ao mastigar, que a obriga a interromper as refeições. Relata ainda dois episódios de perda visual transitória no olho direito nas últimas 48 horas, além de dor e rigidez em cinturas escapular e pélvica há 3 meses. Exame físico: artéria temporal direita espessada e dolorosa à palpação, com pulso reduzido. Exames laboratoriais: VHS: 92 mm/h e PCR: 11 mg/dL.\n\nCom relação ao caso descrito, assinale a alternativa correta.",
     "options": [
@@ -728,6 +788,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-34",
+    "topography": "8",
+    "topic": "Hiperaldosteronismo primário",
     "module": "Clínica Médica",
     "text": "Mulher de 48 anos apresenta hipertensão arterial de difícil controle, mantendo PA de 168 x 104 mmHg apesar do uso regular de anlodipino 10 mg/dia, losartana 100 mg/dia e hidroclorotiazida 25 mg/dia. Exames laboratoriais: potássio sérico de 3,1 mEq/L, creatinina de 0,6 mg/dL, bicarbonato de 30 mEq/L e sódio de 143 mEq/L.\n\nA conduta, além de corrigir a hipocalemia, deve ser",
     "options": [
@@ -750,6 +812,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-35",
+    "topography": "1.1",
+    "topic": "Demências",
     "module": "Clínica Médica",
     "text": "Homem de 74 anos é levado pela esposa ao ambulatório devido a declínio cognitivo progressivo há 2 anos. Ela relata que há dias em que o paciente permanece lúcido e conversa normalmente e outros em que fica sonolento e desconectado, com oscilações marcantes da atenção. Refere ainda que ele vê crianças e animais dentro de casa de forma detalhada e recorrente. Há cerca de 10 anos apresenta episódios noturnos de gritos e movimentos vigorosos durante o sono, chegando a agredi-la involuntariamente. Há 16 meses iniciou lentificação, rigidez e discreto tremor de repouso. Foi prescrito haloperidol para as alucinações, com piora acentuada da rigidez, sonolência e disfagia em 48 horas.\n\nA principal hipótese diagnóstica é",
     "options": [
@@ -794,6 +858,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-37",
+    "topography": "7.1",
+    "topic": "Trombose venosa profunda",
     "module": "Clínica Médica",
     "text": "Mulher de 36 anos apresenta trombose venosa profunda em membro inferior esquerdo. AP: primeiro episódio de trombose venosa profunda há 14 meses em membro inferior direito, estando atualmente em uso regular de rivaroxabana 20 mg/dia. Nega tabagismo, uso de anticoncepcional hormonal, imobilização, cirurgia ou neoplasia. Investigação laboratorial demonstra anticoagulante lúpico positivo em duas ocasiões, separadas por 12 semanas, anticardiolipina IgG em alto título e anti-beta-2-glicoproteína I IgG positivo, também confirmados após 12 semanas.\n\nA conduta deve ser",
     "options": [
@@ -816,6 +882,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-38",
+    "topography": "9",
+    "topic": "Anemia megaloblástica",
     "module": "Clínica Médica",
     "text": "Mulher de 62 anos refere astenia progressiva há 6 meses e parestesias em pés que ascenderam até os joelhos, com instabilidade da marcha e quedas há 2 meses. AP: tireoidite de Hashimoto, em uso de levotiroxina, e vitiligo. Nega cirurgias prévias ou uso de outros medicamentos. Refere hábitos alimentares saudáveis e adequados. Exame físico: palidez cutâneo-mucosa, língua lisa, redução da sensibilidade vibratória e proprioceptiva em membros inferiores, sinal de Romberg positivo, hiper-reflexia patelar e sinal de Babinski bilateral, sem nível sensitivo. Exames: hemoglobina: 8,6 g/dL, volume corpuscular médio: 118 fL, RDW: elevado, leucócitos: 3.400/mm³ com neutrófilos hipersegmentados ao esfregaço, plaquetas: 130.000/mm³, contagem de reticulócitos baixa, desidrogenase lática: 980 U/L, bilirrubina indireta: 1,8 mg/dL.\n\nA conduta deve ser",
     "options": [
@@ -839,6 +907,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-39",
+    "topography": "9",
+    "topic": "Leucemias",
     "module": "Clínica Médica",
     "text": "Homem de 28 anos refere astenia intensa, febre não aferida e sangramento gengival espontâneo, iniciados há 10 dias. Exame físico: palidez cutâneo-mucosa 3+/4+, petéquias em palato e equimoses de grandes dimensões, sem adenomegalias ou visceromegalias. Exames laboratoriais: hemoglobina: 7,8 g/dL, leucócitos: 2.100/mm³, plaquetas: 18.000/mm³, INR de 1,9, tempo de tromboplastina parcial ativada alargado, fibrinogênio de 90 mg/dL e D-dímero elevado. O esfregaço de sangue periférico evidencia células imaturas com granulação azurófila grosseira e múltiplos bastonetes de Auer agrupados em feixes no citoplasma.\n\nA conduta imediata deve ser",
     "options": [
@@ -861,6 +931,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-40",
+    "topography": "8",
+    "topic": "Diabetes mellitus tipo 1 e 2",
     "module": "Clínica Médica",
     "text": "Homem de 61 anos está em consulta de rotina assintomático. AP: HAS em uso de losartana 50 mg por dia e DM2 em uso de metformina 850 mg três vezes ao dia e atorvastatina 40 mg por dia. Exame físico: IMC de 27,4 kg/m², PA: 132 x 78 mmHg e ausência de edema. Exames laboratoriais: hemoglobina glicada: 6,9%, creatinina: 1,5 mg/dL com taxa de filtração glomerular estimada de 48 mL/min/1,73 m², relação albuminúria/creatininúria de 480 mg/g confirmada em duas amostras separadas por 3 meses, potássio: 4,3 mEq/L, LDL-colesterol: 68 mg/dL. Sedimento urinário sem hematúria e ultrassonografia renal sem alterações estruturais.\n\nA conduta deve ser",
     "options": [
@@ -883,6 +955,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-41",
+    "topography": "5.1",
+    "topic": "Climatério e menopausa",
     "module": "Ginecologia e Obstetrícia",
     "text": "G.M.A., de 49 anos, vem ao consultório ginecológico com queixas de irritabilidade, falha de memória, calorões noturnos e distúrbio de sono. IMC de 30 kg/m², hipertensa crônica controlada, em uso de Enalapril 20mg/dia, histerectomia por miomatose uterina há 6 anos, sem outras comorbidades. Apresentou mamografia recente sem alterações. Dentre os exames laboratoriais, identificado FSH: 80 mUI/mL.\n\nAssinale a alternativa que apresenta o tratamento mais adequado para a paciente do caso clínico.",
     "options": [
@@ -905,6 +979,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-42",
+    "topography": "5.1",
+    "topic": "Câncer de colo uterino",
     "module": "Ginecologia e Obstetrícia",
     "text": "R.B.A., 27 anos, submetida a exame para rastreamento do câncer de colo uterino. Resultado do DNA-HPV oncogênico: HPV subtipo 16 positivo.\n\nDe acordo com as novas Diretrizes do Ministério da Saúde para o Rastreamento do Câncer do Colo Uterino, assinale a alternativa que representa a conduta adequada.",
     "options": [
@@ -928,6 +1004,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-43",
+    "topography": "15",
+    "topic": "Imunização",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher de 53 anos vem ao consultório ginecológico para consulta de rotina e, durante o atendimento, solicita esclarecimentos sobre as vacinas indicadas para sua faixa etária. Nega comorbidades ou alergias. Refere ter tomado 1 dose da vacina contra febre amarela em 2022. Trouxe sorologias: anti Hbs reagente e HbsAg não reagente. Alega episódio de herpes zoster há 6 meses.\n\nDe acordo com o caso acima e em relação às Orientações e Recomendações da Febrasgo sobre o Programa Vacinal para Mulheres, assinale a alternativa correta.",
     "options": [
@@ -950,6 +1028,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-44",
+    "topography": "5.1",
+    "topic": "Contracepção",
     "module": "Ginecologia e Obstetrícia",
     "text": "Paciente no terceiro dia pós parto vaginal, IMC 30 kg/m², em amamentação materna exclusiva, solicita, antes da alta, um método contraceptivo para ser iniciado de imediato, pois refere prole constituída. Nega outras comorbidades ou tabagismo.\n\nDe acordo com os Critérios de Elegibilidade dos Métodos Anticoncepcionais no Puerpério, assinale a alternativa que representa o método anticoncepcional mais adequado para essa paciente.",
     "options": [
@@ -972,6 +1052,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-45",
+    "topography": "11",
+    "topic": "Puericultura",
     "module": "Ginecologia e Obstetrícia",
     "text": "Assinale a alternativa que indica a avaliação de meninas para puberdade tardia, de acordo com a Academia Americana de Pediatria e Colégio Americano de Obstetras e Ginecologistas.",
     "options": [
@@ -1015,6 +1097,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-47",
+    "topography": "5.1",
+    "topic": "Vaginose bacteriana",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher de 30 anos queixando-se de secreção amarelada, de odor fétido. O esfregaço do conteúdo vaginal demonstrou uma alta adesão entre as estruturas (clue cells), o Whiff test veio positivo.\n\nAssinale a alternativa que representa o diagnóstico e o provável valor de pH encontrado na secreção.",
     "options": [
@@ -1037,6 +1121,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-48",
+    "topography": "5.1",
+    "topic": "Mioma uterino",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher de 42 anos, GIII PIII A0, IMC 32 kg/m², assintomática, submetida a ultrassom transvaginal que identificou: útero com volume aumentado de 180 cc e presença de nódulo miometrial com limites precisos, localizado em região subserosa, fúndica lateral esquerda, medindo 5 cm de diâmetro, sugestivo de mioma.\n\nAssinale a alternativa que representa a conduta mais adequada.",
     "options": [
@@ -1058,6 +1144,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-49",
+    "topography": "5.1",
+    "topic": "Sangramento uterino anormal",
     "module": "Ginecologia e Obstetrícia",
     "text": "G.B.V., 18 anos, com queixa de amenorreia primária. Ao exame físico: estatura 1,75m, IMC 21 kg/m², mamas desenvolvidas (Tanner M4), pelos pubianos e axilares escassos (Tanner P1) e abaulamento sugestivo de hérnia inguinal bilateral. Paciente nega atividade sexual. Ultrassom pélvico revela: ausência de útero e ovários.\n\nDe acordo com o caso acima, assinale a alternativa que representa o diagnóstico mais provável.",
     "options": [
@@ -1080,6 +1168,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-50",
+    "topography": "5.2",
+    "topic": "Pré-eclâmpsia",
     "module": "Ginecologia e Obstetrícia",
     "text": "F.B.C., 18 anos, primigesta, gestação gemelar diacoriônica e diamniótica, com idade gestacional de 33 semanas, deu entrada no PSO com PA de 170 x 110 mmHg, sintomas de escotomas, dor epigástrica e cefaleia fronto-occipital. Nega história de aumento de PA prévio nesta gestação.\n\nAssinale a alternativa que representa o diagnóstico correto.",
     "options": [
@@ -1102,6 +1192,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-51",
+    "topography": "5.2",
+    "topic": "Pré-natal",
     "module": "Ginecologia e Obstetrícia",
     "text": "Paciente vem para avaliação pela medicina fetal, para ser submetida ao primeiro ultrassom da gestação. Refere idade gestacional cronológica de 8 semanas. À imagem, identificados 2 sacos gestacionais e 2 embriões, sendo 1 em cada saco gestacional.\n\nDe acordo com o caso apresentado e com os conhecimentos sobre gemelidade, assinale a alternativa correta.",
     "options": [
@@ -1124,6 +1216,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-52",
+    "topography": "5.2",
+    "topic": "Trabalho de parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "Quando riscos maternos e fetais sobrepujam os benefícios representados pela permanência do feto dentro do útero, a interrupção da gestação está indicada.\n\nIndique a alternativa que pode representar, respectivamente, uma indicação e uma contra-indicação à indução do trabalho de parto, visando o parto vaginal.",
     "options": [
@@ -1146,6 +1240,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-53",
+    "topography": "5.2",
+    "topic": "Diabetes gestacional",
     "module": "Ginecologia e Obstetrícia",
     "text": "R.D.S., 30 anos, primigesta, idade gestacional de 12 semanas, vem em segunda consulta de pré natal com resultado de glicemia de jejum de 94 mg/dL.\n\nDe acordo com o resultado de glicemia, assinale a alternativa correta.",
     "options": [
@@ -1168,6 +1264,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-54",
+    "topography": "5.2",
+    "topic": "Trabalho de parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "A taxa de prematuridade no Brasil está em torno de 11 - 12% dos nascimentos. A cerclagem uterina é um procedimento realizado para prevenir o nascimento antes das 37 semanas de idade gestacional. Dentre as alternativas a seguir, assinale a que representa indicação desta conduta, de acordo com a ACOG (American College of Obstetricians and Gynecologists) e FEBRASGO (Federação Brasileira de Ginecologia e Obstetrícia).",
     "options": [
@@ -1190,6 +1288,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-55",
+    "topography": "5.2",
+    "topic": "Assistência ao parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "Embora a distocia de ombro apresente risco adicional pela macrossomia fetal, mais de 50% dos casos ocorrem em RN de peso normal e não pode ser prevista. Desse modo, é essencial que o profissional médico esteja apto em executar, habilmente, as manobras para desimpactar o ombro e tenha cuidados efetivos.\n\nAssinale a alternativa que representa a primeira conduta a ser realizada para a resolução de distocia de ombro.",
     "options": [
@@ -1211,6 +1311,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-56",
+    "topography": "5.2",
+    "topic": "Infecções na gestação",
     "module": "Ginecologia e Obstetrícia",
     "text": "D.B.V., 28 anos, GII PII 1N 1C (há 3 anos) A0, idade gestacional de 37 semanas, vem ao PS com queixa de perda de líquido via vaginal há cerca de 20 horas. Ao exame especular: saída de líquido claro com grumos pelo orifício externo do colo uterino. Ao toque vaginal: colo 4 cm, grosso-médio e medianizado. Dinâmica uterina: 3/10’/30”. Estreptococo beta hemolítico do grupo B: desconhecido. Cardiotocografia: normal.\n\nDe acordo com o caso apresentado, assinale a conduta correta.",
     "options": [
@@ -1233,6 +1335,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-57",
+    "topography": "14",
+    "topic": "Emergências obstétricas",
     "module": "Ginecologia e Obstetrícia",
     "text": "Sobre a intubação orotraqueal em gestantes no terceiro trimestre, assinale a alternativa correta.",
     "options": [
@@ -1255,6 +1359,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-58",
+    "topography": "14",
+    "topic": "Emergências obstétricas",
     "module": "Ginecologia e Obstetrícia",
     "text": "Sobre a realização da cesariana perimortem, em gestantes com idade gestacional acima de 20-24 semanas, assinale a alternativa que representa as informações corretas.",
     "options": [
@@ -1276,6 +1382,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-59",
+    "topography": "5.2",
+    "topic": "Abortamento",
     "module": "Ginecologia e Obstetrícia",
     "text": "P.M.C., 27 anos, primigesta, idade gestacional cronológica de 7 semanas, vem ao pronto socorro queixando-se de sangramento vaginal de início há cerca de 2 dias, associado a cólicas leves. Ao exame: toque vaginal: colo impérvio e amolecido. Abdome: fundo uterino intra-pélvico. Anexos não palpáveis. Dor à descompressão brusca negativa. Especular: pequena quantidade de sangue coletado em fórnice posterior. À ultrassonografia transvaginal: saco gestacional intra-uterino, com eco embrionário de 3 mm, sem batimentos cardioembrionários. Ovários sem alterações.\n\nAssinale a alternativa que representa o diagnóstico correto.",
     "options": [
@@ -1298,6 +1406,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-60",
+    "topography": "5.2",
+    "topic": "Puerpério",
     "module": "Ginecologia e Obstetrícia",
     "text": "R.G.V., 32 anos, puérpera no décimo dia pós parto vaginal, sem comorbidades, vem ao consultório para avaliação e queixa-se de sentimentos de tristeza, crises de choro frequentes, com emotividade exacerbada, hipersensibilidade e labilidade emocional, desde o terceiro dia pós parto. Refere ainda cansaço e preocupações com relação ao cuidado com o bebê.\n\nDe acordo com o quadro acima, assinale a alternativa que representa o diagnóstico mais provável.",
     "options": [
@@ -1320,6 +1430,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-61",
+    "topography": "11",
+    "topic": "Maus-tratos infantis",
     "module": "Pediatria",
     "text": "As violências contra a criança e o adolescente constituem grave problema de saúde pública e importante causa de morbimortalidade. Cabe ao médico, em sua prática clínica, reconhecer as diferentes formas de violência bem como as implicações legais e as condutas de notificação e proteção previstas na legislação brasileira, em especial no Estatuto da Criança e do Adolescente (ECA).\n\nConsiderando os conceitos atuais sobre o tema, assinale a alternativa correta.",
     "options": [
@@ -1342,6 +1454,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-62",
+    "topography": "11",
+    "topic": "Desidratação",
     "module": "Pediatria",
     "text": "Criança de 2 anos e 4 meses, com 12 kg, é levada ao pronto-socorro com diarreia aquosa há 2 dias e vômitos esporádicos. Ao exame, apresenta-se irritada e intranquila, olhos fundos, choro sem lágrimas, boca e língua secas, sede aumentada (bebe rápido e avidamente) e pulso cheio. O pediatra classifica o estado de desidratação e opta pelo plano B recomendado pelo Ministério da Saúde.\n\nSobre o manejo clínico correto dessa situação, assinale a alternativa correta.",
     "options": [
@@ -1386,6 +1500,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-64",
+    "topography": "11",
+    "topic": "Anemia ferropriva",
     "module": "Pediatria",
     "text": "Na puericultura, a prevenção da deficiência de ferro e da anemia ferropriva é uma das principais atribuições do médico, dada a alta prevalência e o impacto da carência de ferro no neurodesenvolvimento. Em uma manhã de consultas, o pediatra atende a duas crianças: Bento, recém-nascido a termo, peso adequado para a idade gestacional, em aleitamento materno exclusivo e sem fatores de risco; e Alice, recém-nascida prematura (idade gestacional de 34 semanas), peso ao nascer de 1.800 g, também em aleitamento materno. As mães das duas crianças fizeram pré-natal adequado e os partos não ocorreram com sangramentos de risco.\n\nConsiderando a recomendação atual da Sociedade Brasileira de Pediatria para a suplementação profilática de ferro, assinale a alternativa correta.",
     "options": [
@@ -1409,6 +1525,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-65",
+    "topography": "7.2",
+    "topic": "Impetigo",
     "module": "Pediatria",
     "text": "As infecções bacterianas da pele são motivo frequente de consulta e, quando não reconhecidas e tratadas precocemente, podem evoluir com complicações locais e sistêmicas.\n\nSobre essas infecções, assinale a alternativa correta.",
     "options": [
@@ -1431,6 +1549,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-66",
+    "topography": "7.2",
+    "topic": "Escabiose",
     "module": "Pediatria",
     "text": "Pré-escolar do sexo masculino, com 4 anos, apresenta queixa de coceira intensa há cerca de 2 semanas, que piora à noite e atrapalha o sono. O pai, que o trouxe à consulta, tem “rinite” e “pele seca” e diz que também apresenta prurido na pele há algumas semanas. Ao exame, observam-se pequenas pápulas eritematosas e vesículas em região interdigital das mãos, punhos, axilas e região genital, além de escoriações por coçadura. Não há febre, e a criança está em bom estado geral.\n\nConsiderando a principal hipótese diagnóstica, assinale a alternativa correta sobre o seu tratamento.",
     "options": [
@@ -1474,6 +1594,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-68",
+    "topography": "1.1",
+    "topic": "TCE",
     "module": "Pediatria",
     "text": "Pré-escolar do sexo masculino, com 2 anos e 4 meses, previamente hígida, é levada ao pronto-socorro 1 hora após queda de aproximadamente 70 cm de altura (altura do assento de uma cadeira), batendo a cabeça no chão. A mãe nega perda de consciência, vômitos, convulsão ou sonolência. Ao exame, a criança está ativa, interage normalmente, com Escala de Coma de Glasgow (ECG) 15, sem sinais de fratura de base de crânio, com pequeno hematoma de couro cabeludo na região frontal de cerca de 1 cm e sem déficit neurológico.\n\nConsiderando as orientações do PECARN (Pediatric Emergency Care Applied Research Network) e da Sociedade Brasileira de Pediatria (SBP) para o manejo do TCE leve nessa faixa etária, assinale a alternativa correta.",
     "options": [
@@ -1496,6 +1618,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-69",
+    "topography": "1.3",
+    "topic": "Otite média aguda",
     "module": "Pediatria",
     "text": "O uso racional de antibióticos é um dos pilares da prática pediátrica, e a decisão de prescrever antimicrobianos em infecções de vias aéreas deve considerar a etiologia mais provável, a gravidade e o risco de complicações. Considere os pacientes a seguir e assinale a alternativa em que está indicada a antibioticoterapia sistêmica.",
     "options": [
@@ -1518,6 +1642,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-70",
+    "topography": "11",
+    "topic": "Calendário vacinal",
     "module": "Pediatria",
     "text": "Assinale a alternativa que apresenta uma situação clínica correta em relação ao calendário nacional atualizado proposto pelo Programa Nacional de Imunizações.",
     "options": [
@@ -1541,6 +1667,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-71",
+    "topography": "5.2",
+    "topic": "Puerpério",
     "module": "Pediatria",
     "text": "Primípara, 26 anos, retorna à consulta no 11º dia pós-parto com queixa de dor intensa e progressiva na mama esquerda, iniciada há 3 dias. Relata que a dor é contínua, em queimação, com piora durante e após as mamadas, e que vem apresentando febre de 39 ºC, calafrios e mal-estar desde o dia anterior. Ao exame, observa-se área de eritema e calor localizada no quadrante súpero-externo da mama esquerda, com enduração e dor à palpação, porém sem flutuação. A pega do bebê foi avaliada e está adequada, sem fissuras mamilares.\n\nConsiderando o diagnóstico mais provável e a conduta clínica mais adequada nesse momento, assinale a alternativa correta.",
     "options": [
@@ -1562,6 +1690,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-72",
+    "topography": "1.1",
+    "topic": "Epilepsia",
     "module": "Pediatria",
     "text": "Lactente de 5 meses, sexo masculino, previamente hígido, é trazido pela mãe com queixa de “espasmos” desde os 4 meses. A mãe descreve que, principalmente ao acordar, o bebê apresenta episódios breves e repetitivos de flexão súbita de tronco, cabeça e membros (“como se fosse abraçar o próprio corpo”), em salvas, durando segundos, seguidos de choro. Nos últimos dias, a mãe nota que o bebê deixou de seguir objetos com o olhar e parece não a reconhecer como antes. Ao exame neurológico, não há sinais focais, e o perímetro cefálico está em percentil 50.\n\nConsiderando a principal hipótese diagnóstica, assinale a alternativa correta.",
     "options": [
@@ -1584,6 +1714,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-73",
+    "topography": "4.1",
+    "topic": "Síndrome nefrótica",
     "module": "Pediatria",
     "text": "Pré-escolar do sexo masculino, com 3 anos, previamente hígido, é levado ao pronto-socorro com edema periorbitário matinal há 5 dias, que evoluiu para edema de membros inferiores e aumento do volume abdominal. A mãe nega hematúria, disúria, febre ou uso de medicamentos. Ao exame: peso 16 kg; PA: 90 x 60 mmHg; edema depressível de membros inferiores e abdome distendido com macicez móvel. Exames: urina tipo I com proteinúria +++ (densidade 1.020, sem hematúria); proteinúria de 24h de 80 mg/kg/dia; albumina sérica: 1,8 g/dL; colesterol total: 320 mg/dL; ureia e creatinina normais; complemento (C3 e C4) normal.\n\nConsiderando a principal hipótese diagnóstica, assinale a alternativa correta.",
     "options": [
@@ -1606,6 +1738,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-74",
+    "topography": "11",
+    "topic": "Puericultura",
     "module": "Pediatria",
     "text": "Lactente do sexo masculino, com 35 dias de vida, nascido a termo e com 3.400 g, apresenta resultado da triagem neonatal biológica com dosagem de tripsina imunorreativa (TIR) elevada na primeira amostra, coletada com 49 horas de vida. A criança está assintomática, em aleitamento materno exclusivo e com bom ganho ponderal.\n\nCom relação à condução desse caso de acordo com as recomendações do Ministério da Saúde, assinale a alternativa correta.",
     "options": [
@@ -1628,6 +1762,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-75",
+    "topography": "11",
+    "topic": "Puericultura",
     "module": "Pediatria",
     "text": "Mãe de uma criança de 2 anos, em consulta de puericultura, pergunta ao médico como deve realizar a escovação dos dentes da filha e qual creme dental deve utilizar. Ela relata que a criança aceita bem a escovação, mas que costuma engolir parte da espuma do creme dental.\n\nConsiderando as recomendações atuais de saúde bucal para a primeira infância, assinale a alternativa correta.",
     "options": [
@@ -1650,6 +1786,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-76",
+    "topography": "11",
+    "topic": "Desenvolvimento neuropsicomotor",
     "module": "Pediatria",
     "text": "Lactente de 23 meses, do sexo masculino, é levado à consulta de puericultura. A mãe relata que acha que seu filho está com comportamento “estranho”.\n\nConsiderando a identificação de características do transtorno do espectro autista (TEA) nessa faixa etária, assinale a alternativa que descreve uma manifestação clássica do TEA e que faz parte dos critérios diagnósticos dessa condição.",
     "options": [
@@ -1692,6 +1830,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-78",
+    "topography": "11",
+    "topic": "Puericultura",
     "module": "Pediatria",
     "text": "Adolescente do sexo masculino, com 14 anos e 3 meses, é levado à consulta pela mãe, preocupada porque “o corpo do filho não está se desenvolvendo”. A mãe relata que ele sempre foi o mais baixo da turma e que o pai “também se desenvolveu tarde”. Ao exame: peso e estatura no percentil 10, com velocidade de crescimento compatível com sua idade óssea; volume testicular de 3 mL bilateralmente (estágio G1 de Tanner), sem pelos pubianos (P1); idade óssea (radiografia de carpo) de 12 anos. O adolescente nega queixas, refere olfato normal e não apresenta outras alterações ao exame físico.\n\nCom relação a esse quadro clínico, assinale a alternativa correta.",
     "options": [
@@ -1714,6 +1854,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-79",
+    "topography": "11",
+    "topic": "Bronquiolite",
     "module": "Pediatria",
     "text": "Lactente de 4 meses, previamente hígido, é admitido na emergência com quadro de coriza há 3 dias, tosse, sibilância e dificuldade respiratória progressiva. Ao exame: FR: 62 irpm; FC: 158 bpm; SatO₂ 90% em ar ambiente; tiragem subcostal e intercostal e sibilância difusa à ausculta. Após oxigenoterapia por cateter nasal de baixo fluxo (2 L/min), mantém SatO₂ 93%, porém com persistência de desconforto respiratório. O médico considera iniciar cateter nasal de alto fluxo (CNAF).\n\nSobre o uso desse dispositivo nessa doença, assinale a alternativa correta.",
     "options": [
@@ -1736,6 +1878,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-80",
+    "topography": "1.3",
+    "topic": "Surdez",
     "module": "Pediatria",
     "text": "Em uma maternidade, são avaliados dois recém-nascidos: Rafael, nascido a termo, peso de 3.200 g, sem indicadores de risco para deficiência auditiva, que realizou a triagem auditiva com 30 horas de vida, com resultado “falha” em ambas as orelhas; e Beatriz, nascida com 28 semanas de gestação, peso de 1.400 g, permanecendo em UTI neonatal há 8 dias, em ventilação mecânica.\n\nConsiderando as recomendações atuais de triagem auditiva neonatal (Ministério da Saúde), assinale a alternativa correta.",
     "options": [
@@ -1758,6 +1902,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-81",
+    "topography": "15",
+    "topic": "Saúde do trabalhador",
     "module": "Saúde Coletiva",
     "text": "Um entregador de 29 anos de idade, que trabalha para uma empresa, fazendo entregas com mediação por aplicativo, sofre um acidente de trânsito quando se dirigia ao seu destino, com sua moto, transportando alguns sanduíches para o cliente. Sofre uma fratura de tíbia direita. Ele é socorrido em um hospital e depois de intervenção cirúrgica recebe alta hospitalar e orientações para permanecer em casa se recuperando. A Equipe de Saúde da Família (ESF) mantém acompanhamento e constata que no hospital não foi feita a notificação no Sistema de Informação de Agravos de Notificação (SINAN).\n\nAssinale a alternativa correta quanto a essa questão.",
     "options": [
@@ -1781,6 +1927,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-82",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "No Brasil, existe uma Política Nacional de Segurança Alimentar e Nutricional - PNSAN, com o objetivo geral de promover a segurança alimentar e nutricional.\n\nAssinale uma ação que faça parte dos objetivos da PNSAN.",
     "options": [
@@ -1803,6 +1951,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-83",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "O Subsistema de Atenção à Saúde Indígena, componente do Sistema Único de Saúde – SUS, foi criado em 1999.\n\nAssinale a alternativa correta sobre esse tema.",
     "options": [
@@ -1825,6 +1975,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-84",
+    "topography": "15",
+    "topic": "Saúde da mulher",
     "module": "Saúde Coletiva",
     "text": "Uma UBS fica situada em uma região periférica de uma cidade de aproximadamente 400 mil pessoas. Um dos atendimentos de um determinado dia chamou a atenção da equipe de saúde. Clara, 32 anos, usuária desta unidade, casada há 10 anos, mora com o marido e dois filhos, de 3 e 7 anos de idade. Ela é diarista e o marido é segurança noturno em um galpão de logística. Ela compareceu à UBS em dia não agendado, mostrando-se apreensiva. A equipe percebeu que ela queria falar alguma coisa, mas algo a fez recuar. Seus braços estavam com hematomas e houve suspeita de violência física.\n\nAssinale a alternativa correta sobre esse caso.",
     "options": [
@@ -1847,6 +1999,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-85",
+    "topography": "15",
+    "topic": "Saúde do idoso",
     "module": "Saúde Coletiva",
     "text": "Dona Mirian tem 78 anos de idade e mora sozinha, em uma cidade de aproximadamente 50 mil habitantes. Após 60 anos de casada, acaba de perder o marido com quem vivia harmoniosamente. Mantém autonomia e boa saúde. Seus filhos moram no outro lado da mesma cidade. É usuária da UBS perto de sua casa e recebe orientações quanto aos seus hábitos e cuidados com a saúde.\n\nAssinale a alternativa correta, sobre a atenção da equipe a esta idosa.",
     "options": [
@@ -1869,6 +2023,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-86",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "Leia o texto a seguir: “Entre as várias medicinas populares praticadas no Brasil, estudamos especialmente a chamada ‘pajelança cabocla’, muito popular sobretudo na Amazônia rural, composta por um conjunto de práticas de cura xamanística, com origem em crenças e costumes dos antigos índios Tupinambás, sincretizados pelo contato com o branco e o negro, desde pelo menos a segunda metade do século XVIII.” (Raymundo Heraldo Maués, Medicinas Populares e “Pajelança Cabocla” na Amazônia. In: Maria C. S. Minayo e Paulo C. Alves, Saúde e doença, um olhar antropológico, 1994).\n\nAssinale a alternativa correta sobre o tema.",
     "options": [
@@ -1891,6 +2047,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-87",
+    "topography": "15",
+    "topic": "Saúde do trabalhador",
     "module": "Saúde Coletiva",
     "text": "Durante a sua jornada de trabalho, uma farmacêutica é rendida na farmácia onde trabalha e é ameaçada pelo assaltante, com uma arma de fogo apontada em sua cabeça, para que abra o armário onde se encontram canetas emagrecedoras. Quando estava prestes a ceder, ouve-se uma sirene e os assaltantes desistem do assalto e fogem. Passado o susto, a farmacêutica prosseguiu trabalhando, mas após 10 dias começa a sonhar com cenas do ocorrido, passando a ter revivescências e dificuldades de voltar ao local de trabalho. Feita a hipótese de Transtorno do Estresse Pós-Traumático (TEPT), assinale a alternativa correta quanto à notificação no SINAN.",
     "options": [
@@ -1913,6 +2071,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-88",
+    "topography": "15",
+    "topic": "Epidemiologia",
     "module": "Saúde Coletiva",
     "text": "Por milhares de anos, as epidemias foram consideradas consequências de julgamentos divinos sobre a perversidade do ser humano. Apaziguando-se os deuses irados, evitar-se-iam as punições. No Egito, por exemplo, Sekhmet, deusa da pestilência, provocava epidemias, se irritada, e as extinguia quando acalmada. Essa teoria teúrgica da doença perdurou por vários milênios. Mas a seu lado se desenvolveu, aos poucos, a ideia de dever-se a pestilência a causas naturais, ligadas, em especial, a clima e ambiente físico. Essa grande liberação do pensamento teve lugar na Grécia e culminou, durante os séculos 5º e 6º antes de Cristo, nas primeiras tentativas de se criar uma teoria científica, racional, a respeito da causação de doença.\n\nCom base no enunciado, assinale a alternativa correta.",
     "options": [
@@ -1935,6 +2095,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-89",
+    "topography": "15",
+    "topic": "Saúde do trabalhador",
     "module": "Saúde Coletiva",
     "text": "Em uma determinada cidade de pequeno porte, observa-se um crescimento de problemas respiratórios na população. Com a hipótese de que o trabalho rural poderia ser determinante nesse tipo de adoecimento, a secretaria de saúde resolve realizar um estudo com 1500 trabalhadores que eram vinculados a diferentes estabelecimentos. O trabalho de campo foi realizado durante 5 semanas, na safra de verão e foram utilizados 2 questionários: um para obtenção de dados dos estabelecimentos e outro, dos trabalhadores. Dos estabelecimentos, foram coletados dados sobre o tipo de produção agrícola (principais culturas e principais rebanhos de aves, bovinos, suínos e equinos) e uso de rações industriais. Dos trabalhadores, foram coletados dados de sintomas relacionados à asma, às doenças pulmonares persistentes e à bronquite. O estudo mostrou alta prevalência dos sintomas respiratórios e revelou que o trabalho na avicultura apresenta riscos elevados de doença respiratória crônica.\n\nCom base nesse enunciado, assinale a alternativa correta.",
     "options": [
@@ -1957,6 +2119,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-90",
+    "topography": "15",
+    "topic": "Epidemiologia",
     "module": "Saúde Coletiva",
     "text": "Uma doença X tem taxa de letalidade maior do que a doença Y.\n\nAssinale a alternativa correta sobre essa informação.",
     "options": [
@@ -1978,6 +2142,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-91",
+    "topography": "15",
+    "topic": "Estudos epidemiológicos",
     "module": "Saúde Coletiva",
     "text": "Há 7 anos, um grupo de pesquisadores acompanha uma população de trabalhadores que trabalhava em determinada empresa, cujo processo de trabalho utilizava amianto. Além da avaliação de saúde, são feitos exames complementares para detecção de doenças relacionadas à exposição dessa fibra. Entre outros objetivos, busca-se calcular o coeficiente de incidência de cada doença.\n\nAssinale a alternativa correta sobre esse estudo.",
     "options": [
@@ -2000,6 +2166,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-92",
+    "topography": "2.1",
+    "topic": "Tabagismo",
     "module": "Saúde Coletiva",
     "text": "A prevalência de tabagismo é o resultado da iniciação (novos usuários de tabaco) e da interrupção do consumo (por cessação do tabagismo ou morte). A identificação dos fatores determinantes da iniciação e da cessação do tabagismo é, portanto, fundamental para o planejamento de ações específicas para o controle do tabaco. O Brasil dispõe de um robusto sistema de pesquisa e vigilância que possibilita a produção de estimativas nacionais e regionais sobre o uso do tabaco, exposição ambiental à sua fumaça, cessação, exposição à propaganda pró e antitabaco, conhecimentos e atitudes, preço médio e gasto médio mensal com cigarros industrializados, dentre outras informações. Estudo publicado em dezembro de 2025, com base em dados do Vigitel, mostra que o índice caiu de 15,7% em 2006 para 9,3% em 2023. A proporção de fumantes no Brasil continua em queda, mas em ritmo mais lento.\n\nAssinale a alternativa correta sobre o tabagismo.",
     "options": [
@@ -2021,6 +2189,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-93",
+    "topography": "13",
+    "topic": "Dependência química",
     "module": "Saúde Coletiva",
     "text": "Os problemas relacionados ao consumo de álcool são muito prevalentes e responsáveis por grande peso na carga de doenças, representando um grande ônus social e econômico. É fator causal para mais de 200 doenças e lesões, entre elas distúrbios mentais e comportamentais, incluindo transtornos por uso de álcool, doenças não transmissíveis graves, como cirrose hepática, alguns tipos de câncer e doenças cardiovasculares, além das lesões resultantes de violência e acidentes de trânsito.\n\nAssinale a alternativa correta.",
     "options": [
@@ -2043,6 +2213,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-94",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "Um serviço de emergência em uma cidade de pequeno porte observa que tem atendido um crescente número de jovens alcoolizados trazidos de festas, principalmente durante as madrugadas. São registrados, além do consumo exagerado do álcool, casos de brigas e lesões físicas ocorridos nessas ocasiões. Ao mesmo tempo, equipes de algumas unidades básicas de saúde recebem usuárias, mães de jovens, que demonstram preocupação com alcoolismo entre seus filhos. Esse assunto é trazido em uma reunião da vigilância em saúde para se pensar em formas de atuação do SUS.\n\nAssinale a alternativa correta.",
     "options": [
@@ -2065,6 +2237,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-95",
+    "topography": "15",
+    "topic": "Saúde do trabalhador",
     "module": "Saúde Coletiva",
     "text": "Em uma cidade de médio porte são promovidos vários megaeventos para os quais vão pessoas de diversos municípios vizinhos. Em todas as ocasiões são contratadas empresas que, em pouco tempo, montam grandes estruturas metálicas para as apresentações ao ar livre. A vigilância em saúde dessa cidade identifica vários acidentes, inclusive com mortes, principalmente entre trabalhadores terceirizados nos processos de montagem e desmontagem. Uma rápida análise da situação detecta que trabalhadores são contratados por empreitada, e as empresas trabalham com prazos curtos para as entregas às promotoras dos eventos.\n\nAssinale a alternativa correta quanto ao papel do SUS nessa situação.",
     "options": [
@@ -2087,6 +2261,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-96",
+    "topography": "3.2",
+    "topic": "Hepatites virais",
     "module": "Saúde Coletiva",
     "text": "A hepatite B é uma doença infecciosa crônica de relevância em saúde pública, causada pelo vírus da hepatite B (HBV).\n\nAssinale a alternativa correta sobre essa doença.",
     "options": [
@@ -2108,6 +2284,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-97",
+    "topography": "15",
+    "topic": "Saúde do idoso",
     "module": "Saúde Coletiva",
     "text": "Assinale a alternativa correta, segundo o Estatuto da Pessoa Idosa.",
     "options": [
@@ -2130,6 +2308,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-98",
+    "topography": "15",
+    "topic": "Vigilância epidemiológica",
     "module": "Saúde Coletiva",
     "text": "Em março de 2026, o Ministério da Saúde promoveu mudanças na Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública, nos serviços de saúde públicos e privados em todo o território nacional.\n\nAssinale a alternativa que contém uma dessas mudanças.",
     "options": [
@@ -2153,6 +2333,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-99",
+    "topography": "13",
+    "topic": "Dependência química",
     "module": "Saúde Coletiva",
     "text": "Ivan é bancário, casado, tem 35 anos e duas filhas de 7 e 9 anos de idade. Há pouco mais de um ano começou jogar e fazer apostas, com prejuízos financeiros, o que, por vezes, traz repercussão sobre o orçamento doméstico. Sua esposa, professora, tem notado mudanças do sono, de seu humor e comportamento nos últimos meses, tornando-se ansioso, irritadiço e inquieto quando não está jogando.\n\nAssinale a alternativa correta sobre esse caso.",
     "options": [
@@ -2175,6 +2357,8 @@ export const HOSBOS_2027_QUESTIONS: Question[] = [
   },
   {
     "id": "hosbos2027-100",
+    "topography": "15",
+    "topic": "Imunização",
     "module": "Saúde Coletiva",
     "text": "Assinale a alternativa que contém as vacinas que devem ser ministradas à criança ao nascer.",
     "options": [

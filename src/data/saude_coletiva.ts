@@ -3,6 +3,8 @@ import { Question } from '../types';
 export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   {
     id: 'tp2024-101',
+    topography: '2.1',
+    topic: 'DPOC',
     module: 'Saúde Coletiva',
     text: 'Indivíduos com DPOC devem tomar medidas para reduzir a exposição a material particulado (MP) no ar interior. Assinale a alternativa que contém medidas eficazes:',
     options: [
@@ -20,6 +22,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-102',
+    topography: '15',
+    topic: 'Saúde da mulher',
     module: 'Saúde Coletiva',
     text: 'Paciente comparece com hematomas e relata agressão por pessoa com quem convive, mas nega-se a registrar Boletim de Ocorrência. Sobre a notificação, assinale a correta:',
     options: [
@@ -37,6 +41,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-103',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Dentre os atributos da Atenção Primária à Saúde (APS), como a "coordenação do cuidado" pode ser entendida?',
     options: [
@@ -54,6 +60,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-104',
+    topography: '15',
+    topic: 'Saúde do idoso',
     module: 'Saúde Coletiva',
     text: 'Sobre o instrumento de avaliação multidimensional do idoso na Atenção Primária, assinale a alternativa CORRETA:',
     options: [
@@ -71,6 +79,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-105',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Saúde Coletiva',
     text: 'Mulher de 27 anos, primigesta no 2º trimestre de gestação, nunca realizou Papanicolau. Qual a indicação correta?',
     options: [
@@ -88,6 +98,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-106',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Os Determinantes Sociais de Saúde (DSSs) estabelecem decisivamente a saúde das pessoas. Qual alternativa demonstra a influência dos DSSs nas políticas do SUS?',
     options: [
@@ -105,6 +117,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-107',
+    topography: '12',
+    topic: 'Polifarmácia',
     module: 'Saúde Coletiva',
     text: 'Homem, 76 anos, polifarmácia (Enalapril, HCTZ, Levotiroxina, Sinvastatina, Zolpidem). Apresenta sonolência, lapsos de memória e tosse. Qual a conduta mais apropriada?',
     options: [
@@ -122,6 +136,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-108',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'João, 23 anos, entregador de aplicativo, diagnosticado com HAS. Não tem condições de comprar os remédios, mas a médica explica que estão na farmácia da unidade. Quais princípios do SUS estão em destaque?',
     options: [
@@ -139,6 +155,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-109',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: "Dona Maria, 65 anos, mora em zona rural isolada, a cerca de 15 km da UBS, sem transporte público, e tem dificuldades financeiras e de locomoção para ir ao centro urbano. A equipe de Saúde da Família vai à região uma vez por mês. Ela precisa de acompanhamento por uma suspeita de doença pulmonar crônica.\n\nQual alternativa indica o princípio do SUS violado, com a justificativa correta?",
     options: [
@@ -156,6 +174,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-110',
+    topography: '15',
+    topic: 'Imunização',
     module: 'Saúde Coletiva',
     text: 'Qual estratégia é mais abrangente para promover a adesão à imunização infantil, considerando os desafios atuais no Brasil?',
     options: [
@@ -173,6 +193,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-111',
+    topography: '15',
+    topic: 'Saúde do trabalhador',
     module: 'Saúde Coletiva',
     text: 'Qual estratégia é mais eficaz para proteger trabalhadores da saúde contra riscos ocupacionais no ambiente hospitalar?',
     options: [
@@ -190,6 +212,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-112',
+    topography: '5.1',
+    topic: 'Doença inflamatória pélvica',
     module: 'Saúde Coletiva',
     text: 'D.E.N., 39 anos, universitária, apresenta secreção vaginal espessa e amarelada há 7 dias, com sangramento pós-coito. Nunca fez Papanicolau. Qual a hipótese principal?',
     options: [
@@ -207,6 +231,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-113',
+    topography: '5.1',
+    topic: 'Planejamento reprodutivo',
     module: 'Saúde Coletiva',
     text: 'M.S.N., 26 anos, 3 filhos, deseja esterilização definitiva (laqueadura). Qual o critério legal atual segundo a Lei 14.443/2022?',
     options: [
@@ -224,6 +250,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-114',
+    topography: '12',
+    topic: 'Polifarmácia',
     module: 'Saúde Coletiva',
     text: 'Sobre os princípios para evitar a polifarmácia, assinale a alternativa correta:',
     options: [
@@ -241,6 +269,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-115',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Saúde Coletiva',
     text: "Mulher, 25 anos, IMC 23,5 kg/m², sem doenças conhecidas, sedentária, sem consulta há mais de 1 ano, pede exames de \"check-up\". Além de medir a pressão arterial, quais exames e abordagens de rastreamento devem ser feitos?",
     options: [
@@ -258,6 +288,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-116',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Sobre o Método Clínico Centrado na Pessoa (MCCP), é correto afirmar:',
     options: [
@@ -275,6 +307,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-117',
+    topography: '15',
+    topic: 'Ética médica',
     module: 'Saúde Coletiva',
     text: 'Adolescente de 15 anos descobre gravidez indesejada e pede sigilo aos pais. Qual a conduta médica correta segundo o ECA?',
     options: [
@@ -292,6 +326,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-118',
+    topography: '10',
+    topic: 'Infecções sexualmente transmissíveis',
     module: 'Saúde Coletiva',
     text: 'Homem, 19 anos, com disúria e secreção uretral após contato sexual desprotegido. Qual o tratamento recomendado pelo Ministério da Saúde?',
     options: [
@@ -309,6 +345,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-119',
+    topography: '11',
+    topic: 'Aleitamento materno',
     module: 'Saúde Coletiva',
     text: 'Em comunidades pobres, qual a melhor intervenção para apoiar uma mãe com dificuldades na amamentação?',
     options: [
@@ -326,6 +364,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-120',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Saúde Coletiva',
     text: 'Homem, 52 anos, hipertenso e tabagista assintomático. Quais exames de rastreio são adequados?',
     options: [
@@ -343,6 +383,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-101',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'De acordo com o Decreto nº 7.508/11, que regulamentou a Lei nº 8.080/1990, a instituição das Regiões de Saúde foi um dos grandes marcos na organização do SUS, pois permite que a integralidade da assistência seja proporcionada à população de forma mais justa e otimizada, aproximando os usuários dos serviços necessários. Para que uma Região de Saúde seja instituída existem requisitos mínimos na oferta de ações e serviços. Desta forma uma Região de Saúde deve conter no mínimo:',
     options: [
@@ -360,6 +402,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-102',
+    topography: '15',
+    topic: 'Estudos epidemiológicos',
     module: 'Saúde Coletiva',
     text: 'O Serviço Médico de uma empresa quer calcular a prevalência de lesão sugestiva de câncer de pele entre funcionários que trabalham expostos aos raios solares em via pública e, para isso, criou um protocolo clínico. Qual é o tipo de desenho mais adequado para essa pesquisa?',
     options: [
@@ -377,6 +421,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-103',
+    topography: '15',
+    topic: 'Imunização',
     module: 'Saúde Coletiva',
     text: 'Médico de Estratégia Saúde da Família (ESF) atende um lactente com 12 meses de idade e observa no cartão vacinal da criança que as últimas vacinas recebidas foram aos 6 meses. Os pais viajarão em breve para a cidade de Belém (PA). Nesse caso, quais vacinas são prioridades nesse momento, de acordo com o Programa Nacional de Imunizações do Ministério da Saúde do Brasil?',
     options: [
@@ -394,6 +440,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-104',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'A Política Nacional de Atenção Integral da Saúde do Homem (PNAISH) tem como objetivo apoiar mudanças nas maneiras como profissionais de saúde e a população em geral entendem e agem em relação às condições de saúde do segmento de homens em nosso país, através de diversas ações. Qual ação se configura como prevenção primária para homens adultos?',
     options: [
@@ -411,6 +459,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-105',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Homem, 35 anos, motorista de aplicativo, não segue uma alimentação regular e faz atividade física aos finais de semana. Devido ao histórico familiar, seu médico solicitou exames cardiovasculares de triagem, sendo constatado que ele apresentava um estreitamento das artérias coronárias. O diagnóstico precoce permitiu que ele recebesse tratamento adequado, incluindo mudanças no estilo de vida, medicamentos e terapia de reabilitação cardíaca, contribuindo na sua recuperação. Considerando o contexto acima, assinale a alternativa onde o nível de prevenção está adequadamente caracterizado:',
     options: [
@@ -428,6 +478,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-106',
+    topography: '15',
+    topic: 'Estudos epidemiológicos',
     module: 'Saúde Coletiva',
     text: 'Os estudos epidemiológicos podem se diferenciar em relação à unidade de análise (individual ou agregado), posicionamento do investigador (observacional ou de intervenção) e dimensão temporal (instantâneo/corte ou serial/longitudinal). Em relação aos tipos de estudos, assinale a alternativa correta seguindo, respectivamente, a sequência descrita no enunciado:',
     options: [
@@ -445,6 +497,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-107',
+    topography: '10',
+    topic: 'Tuberculose',
     module: 'Saúde Coletiva',
     text: 'Homem, 25 anos, relata perda de peso espontânea de oito quilos em três meses, acompanhada de tosse e febre diária. Para a confirmação da suspeita de tuberculose pulmonar, quais são os exames laboratoriais e/ou complementares mais facilmente indicados e realizados?',
     options: [
@@ -462,6 +516,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-108',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Qual das seguintes características está associada à fase avançada da transição demográfica epidemiológica?',
     options: [
@@ -481,6 +537,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-109',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Saúde Coletiva',
     text: 'Mulher, 30 anos, tabagista (13 maços/ano), sexualmente ativa, comparece à Unidade de Saúde da Família (USF) apenas para solicitar um “check-up”. Seguindo as recomendações de evidência científica níveis A e B, quais procedimentos, em consulta e exames, deveriam ser realizados e solicitados?',
     options: [
@@ -498,6 +556,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-110',
+    topography: '15',
+    topic: 'Bioética',
     module: 'Saúde Coletiva',
     text: 'Um profissional de saúde que atua na Atenção Primária se depara com um dilema ético envolvendo a privacidade e o compartilhamento de informações de saúde de um paciente. O paciente em questão apresenta o diagnóstico de Botulismo e o profissional precisa decidir se deve divulgar essas informações a terceiros para proteger a saúde pública. O princípio ético mais relevante para orientar a decisão do profissional é:',
     options: [
@@ -515,6 +575,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-111',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'A Estratégia Saúde da Família é reconhecida como fonte regular de cuidado às pessoas que vivem em determinado território, a qual deve ser acessada ao longo do tempo, independentemente da existência de enfermidades. Para tanto, é essencial o estabelecimento de vínculo nas relações interpessoais entre profissional de saúde e usuário, as quais podem proporcionar maior efetividade e eficiência das intervenções em saúde. Qual o atributo essencial da Atenção Primária que favorece a aproximação da unidade de saúde das famílias e possibilita o estabelecimento de vínculos entre a equipe e os usuários?',
     options: [
@@ -532,6 +594,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-112',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'A febre maculosa é uma doença infecciosa transmitida por carrapatos, que pode apresentar graves manifestações clínicas, inclusive podendo levar à morte. Os níveis de prevenção da doença incluem as medidas primárias, secundárias e terciárias, além da prevenção quaternária, que tem como foco evitar a iatrogenia e o excesso de medicalização. A partir do conceito epidemiológico de história natural da doença, qual é o principal objetivo da prevenção quaternária na história natural da febre maculosa?',
     options: [
@@ -549,6 +613,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-113',
+    topography: '15',
+    topic: 'Vigilância epidemiológica',
     module: 'Saúde Coletiva',
     text: 'A Vigilância em Saúde engloba ações de atenção e promoção de saúde e de prevenção de doenças com atuação em 4 frentes: Vigilância Epidemiológica, Vigilância Sanitária, Vigilância Ambiental e Saúde do Trabalhador. Embora possa haver alguma sobreposição de funções, na maioria das situações existe uma competência mais ligada a uma determinada área. A alternativa que contempla a associação mais específica entre a ação realizada e sua respectiva área de atuação dentro da Vigilância em Saúde é:',
     options: [
@@ -566,6 +632,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-114',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'A Medicina de Família e Comunidade, como especialidade médica, começou no Brasil no final dos anos 70, em meio ao desgaste de um modelo médico curativo, voltado para as subespecialidades e, embora inicialmente marginalizada, ganhou espaço e hoje é a segunda especialidade médica que mais aumentou o número de especialistas nos últimos 10 anos (aumento de 246%). São características do trabalho do Médico de Saúde da Família e Comunidade:',
     options: [
@@ -583,6 +651,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-115',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'A hanseníase é uma doença crônica, transmissível, que ainda se constitui num problema de saúde pública no Brasil. O Boletim Epidemiológico de 2022 mostrou que no ano de 2020 houve uma redução maior da taxa de detecção geral da doença no país por 100.000 habitantes, o que pode estar relacionado aos efeitos da sobrecarga dos serviços de saúde, às restrições de mobilidade e ao receio de adquirir o coronavírus ao frequentar serviços de saúde na pandemia de Covid-19. A narrativa faz referência específica à seguinte medida de Saúde Coletiva:',
     options: [
@@ -600,6 +670,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-116',
+    topography: '15',
+    topic: 'Testes diagnósticos',
     module: 'Saúde Coletiva',
     text: 'Um estudo multicêntrico foi conduzido em dois países diferentes (país A e país B) para avaliar a eficácia do exame de Antígeno Prostático Específico (PSA) no diagnóstico do câncer de próstata. Foram incluídos 800 homens em cada país, todos com idades entre 50 e 75 anos e suspeita clínica de câncer de próstata. Todos os pacientes realizaram o exame de PSA e biópsias da próstata para o diagnóstico final. No país A, dos 800 homens, 80 foram diagnosticados com câncer de próstata após a biópsia, sendo este o teste padrão ouro. O exame de PSA teve uma sensibilidade de 85% e uma especificidade de 70% neste país. No país B, dos 800 homens, 160 foram diagnosticados com câncer de próstata após a biópsia. No entanto, o exame de PSA demonstrou sensibilidade de 70% e especificidade de 85% neste país. Os valores preditivos negativos (VPN) do exame de PSA nos países A e B são, respectivamente:',
     options: [
@@ -617,6 +689,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-117',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Em um município existiam 100 casos de tuberculose pulmonar no início de 2022. No decorrer do ano foram diagnosticados 15 novos casos. A população total desse município é de 15.350 pessoas. Nesse mesmo ano morreram 15 pessoas por tuberculose. O coeficiente de letalidade da tuberculose nesse município, no ano de 2022, é:',
     options: [
@@ -634,6 +708,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-118',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'A educação popular em saúde é considerada importante para ampliação do conhecimento e práticas relacionadas aos comportamentos saudáveis dos indivíduos e suas ações contribuem para o controle de doenças, prevenção e promoção da saúde. Em relação à educação popular em saúde, é correto afirmar que:',
     options: [
@@ -651,6 +727,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-119',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Os indicadores de saúde são parâmetros utilizados com a finalidade de avaliar, sob o ponto de vista sanitário, a higidez de agregados humanos, bem como de fornecer subsídios aos planejamentos de saúde. A respeito desses indicadores, é correto afirmar que:',
     options: [
@@ -668,6 +746,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-120',
+    topography: '15',
+    topic: 'Saúde do trabalhador',
     module: 'Saúde Coletiva',
     text: 'A saúde ambiental e do trabalhador é um campo de estudo que investiga as relações entre a produção industrial, o ambiente de trabalho e os impactos na saúde das pessoas. Nesse contexto, a epidemiologia desempenha um papel importante na compreensão dos riscos e na promoção de medidas preventivas. Qual dos seguintes cenários ilustra um exemplo de exposição ocupacional relacionada à saúde ambiental e do trabalhador?',
     options: [
@@ -685,6 +765,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-101',
+    topography: '10',
+    topic: 'Dengue',
     module: 'Saúde Coletiva',
     text: 'As arboviroses apresentam sintomas semelhantes. As manifestações clínicas/laboratoriais mais relevantes da dengue são:',
     options: [
@@ -702,6 +784,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-102',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Sobre as epidemias de fonte comum (difundidas pelo mesmo veículo como água ou alimentos), observa-se:',
     options: [
@@ -719,6 +803,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-103',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Gestante atendida em UBS após crise convulsiva recebe medicação, cadastro no pré-natal e encaminhamento ao neurologista da rede municipal. Quais princípios doutrinários do SUS foram atendidos?',
     options: [
@@ -735,6 +821,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-104',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'A Constituição Federal de 1988 torna oficial o conteúdo da Reforma Sanitária Brasileira e estabelece:',
     options: [
@@ -752,6 +840,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-105',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Sobre a classificação dos tipos de prevenção, assinale a alternativa correta:',
     options: [
@@ -769,6 +859,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-106',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Adolescente com DM tipo I é atendido. O médico foca apenas em hábitos e insulina, ignorando escola, vida sexual e relação familiar. Qual diretriz do SUS foi negligenciada?',
     options: [
@@ -786,6 +878,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-107',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Idosa de 90 anos, analfabeta, diabética com dificuldade de locomoção. Mora com sobrinha que trabalha o dia todo. Qual o Plano Terapêutico Singular (PTS) mais seguro?',
     options: [
@@ -802,6 +896,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-108',
+    topography: '10',
+    topic: 'Tuberculose',
     module: 'Saúde Coletiva',
     text: 'Homem de 21 anos em situação de rua, usuário de crack, com tosse há 2 semanas, perda de peso e febre vespertina. Qual o manejo adequado?',
     options: [
@@ -818,6 +914,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-109',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Saúde Coletiva',
     text: 'Gestante de 32 semanas com HIV positivo recém-descoberto. CV desconhecida. Sobre as recomendações do Ministério da Saúde para o parto:',
     options: [
@@ -835,6 +933,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-110',
+    topography: '15',
+    topic: 'Estudos epidemiológicos',
     module: 'Saúde Coletiva',
     text: 'Quais tipos de estudos melhor servem para determinar, respectivamente, eficácia de um tratamento e o prognóstico da doença?',
     options: [
@@ -852,6 +952,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-111',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'A tripla carga de agravos no Brasil envolve doenças infectocontagiosas, crônicas e causas externas. Qual alternativa exemplifica isso?',
     options: [
@@ -869,6 +971,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-112',
+    topography: '15',
+    topic: 'Ética médica',
     module: 'Saúde Coletiva',
     text: 'Família de paciente com hipótese de Esquizofrenia solicita segunda opinião médica. De acordo com o Código de Ética Médica, a médica deve:',
     options: [
@@ -886,6 +990,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-113',
+    topography: '15',
+    topic: 'Vigilância epidemiológica',
     module: 'Saúde Coletiva',
     text: 'Gestante tem teste rápido para sífilis positivo. Com relação à Notificação Compulsória, deve-se:',
     options: [
@@ -903,6 +1009,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-114',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     image: '/images/tp2022-114.webp',
     text: 'O método de cálculo da Razão de Mortalidade Materna é:',
@@ -921,6 +1029,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-115',
+    topography: '1.5',
+    topic: 'Hipertireoidismo',
     module: 'Saúde Coletiva',
     image: '/images/tp2022-115.webp',
     text: 'Mulher de 37 anos com perda de peso, fadiga, nervosismo, sudorese excessiva e bócio. Qual o diagnóstico e conduta inicial prováveis?',
@@ -939,6 +1049,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-116',
+    topography: '10',
+    topic: 'Raiva',
     module: 'Saúde Coletiva',
     text: 'Homem de 50 anos com ferimento dilacerante no braço por mordida de porco. Paciente nunca vacinado. Conduta correta:',
     options: [
@@ -955,6 +1067,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-117',
+    topography: '15',
+    topic: 'Saúde da mulher',
     module: 'Saúde Coletiva',
     text: 'Mulher vítima de violência doméstica apresenta-se chorosa e com hematomas, mas não deseja denunciar o marido. Conduta médica correta:',
     options: [
@@ -971,6 +1085,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-118',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'No SUS, qual é uma ação de competência específica do gestor MUNICIPAL de saúde?',
     options: [
@@ -988,6 +1104,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-119',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Qual estratégia favorece o cuidado longitudinal e humanizado, permitindo relações clínicas de longa duração na APS?',
     options: [
@@ -1005,6 +1123,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-120',
+    topography: '15',
+    topic: 'Estudos epidemiológicos',
     module: 'Saúde Coletiva',
     text: 'Sobre a Medicina Baseada em Evidências (MBE), assinale a interpretação correta:',
     options: [
@@ -1022,6 +1142,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-101',
+    topography: '15',
+    topic: 'Estratégia Saúde da Família',
     module: 'Saúde Coletiva',
     text: 'Durante uma visita domiciliar, um médico de família avalia um paciente idoso de 85 anos, acamado, com múltiplas comorbidades, incluindo hipertensão, diabetes e insuficiência cardíaca. O paciente mora com a filha, que é sua principal cuidadora, mas ela relata dificuldades para manejar a medicação e realizar os cuidados diários com o pai. Qual deve ser a abordagem mais adequada para a gestão do cuidado desse paciente no contexto da visita domiciliar?',
     options: [
@@ -1038,6 +1160,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-102',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Ana Clara, 35 anos, branca, solteira, atendente de telemarketing, reside com a mãe. Procura o Centro de Atenção Psicossocial (CAPS) com queixa de que, há 3 meses, não tem conseguido trabalhar, pois apresenta humor depressivo, choro fácil, anedonia, baixa autoestima, desesperança e alucinações auditivas de cunho persecutório. Não apresenta ideiação suicida. Nega história psiquiátrica e/ou outros problemas de saúde. Diante do caso, no CAPS deverá ser adotada a seguinte conduta:',
     options: [
@@ -1054,6 +1178,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-103',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Saúde Coletiva',
     text: 'Uma Unidade Básica de Saúde (UBS) está planejando as ações de rotina para a prevenção de câncer em sua população adscrita. A equipe multiprofissional se reúne para definir as estratégias de rastreamento a serem implementadas, considerando as diretrizes do Ministério da Saúde e a disponibilidade de recursos. Considerando as recomendações atuais para o rastreamento de neoplasias na Atenção Primária à Saúde, qual das seguintes ações representa uma estratégia prioritária e com evidências científicas consolidadas para a detecção precoce de câncer de colo do útero?',
     options: [
@@ -1070,6 +1196,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-104',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'As ações de promoção à saúde e prevenção de complicações das doenças crônicas não transmissíveis (DCNT) devem ser priorizadas. Dessa forma, é necessário conhecimento do perfil de adoecimento da população com maior prevalência de morbimortalidade, acarretando perda de qualidade de vida, limitações, incapacidades, além de alta taxa de mortalidade prematura. Quais são as quatro principais doenças crônicas não transmissíveis?',
     options: [
@@ -1086,6 +1214,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-105',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Com base na legislação do SUS, qual dos princípios fundamentais a seguir garante que todas as pessoas tenham direito ao atendimento nos serviços públicos de saúde?',
     options: [
@@ -1102,6 +1232,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-106',
+    topography: '15',
+    topic: 'Vigilância epidemiológica',
     module: 'Saúde Coletiva',
     text: 'Em uma Unidade de Saúde da Família, o médico, ao avaliar pacientes com suspeita de dengue em uma região onde há epidemia da doença, esqueceu-se de realizar a notificação dos casos suspeitos no Sistema de Informação de Agravos de Notificação (SINAN). Em relação ao registro das informações, assinale a alternativa correta:',
     options: [
@@ -1118,6 +1250,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-107',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Paciente com diabetes mellitus tipo 2 já diagnosticada realiza acompanhamento regular com equipe multidisciplinar para evitar retinopatia e nefropatia diabética. Este caso representa qual nível de prevenção?',
     options: [
@@ -1134,6 +1268,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-108',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Homem, 72 anos, hipertenso, em uso de terapia medicamentosa para hipertensão, comparece à UBS para avaliação de rotina, assintomático e apresentando os seguintes sinais vitais: PA 172/124mmHg e FC 52bpm. Assinale a melhor conduta para este paciente:',
     options: [
@@ -1150,6 +1286,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-109',
+    topography: '8',
+    topic: 'Diabetes mellitus tipo 1 e 2',
     module: 'Saúde Coletiva',
     text: 'Mulher, 55 anos, diagnosticada com diabetes mellitus tipo 2 há dois anos, retorna ao consultório médico apresentando ansiedade, além de relatar alto consumo de alimentos açucarados e a não realização de atividade física, refletindo em um mau controle glicêmico. Atualmente, utiliza como tratamento medicamentoso o cloridrato de metformina em dose máxima (850mg, 3x/dia). A seguir são mostrados os resultados dos exames laboratoriais da paciente: glicemia de jejum 220mg/dL; glicemia glicada 8,6%. Além de se reforçar a mudança do estilo de vida da paciente, qual seria a conduta terapêutica medicamentosa adequada para que haja um melhor controle dos níveis glicêmicos?',
     options: [
@@ -1166,6 +1304,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-110',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Entre as diferentes ferramentas de assistência à saúde no contexto do Sistema Único de Saúde (SUS), tem-se o Projeto Terapêutico Singular (PTS) para a organização e gestão do cuidado. Assinale a alternativa que define esta ferramenta:',
     options: [
@@ -1182,6 +1322,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-111',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Saúde Coletiva',
     text: 'Para rastreamento populacional de doenças de alta incidência e/ou prevalência, qual a principal característica dos exames a serem utilizados?',
     options: [
@@ -1198,6 +1340,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-112',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'A mortalidade proporcional por idade também pode ser representada em gráfico, sendo conhecida como Curva de Mortalidade Proporcional ou Curva de Nelson de Moraes. A curva de mortalidade proporcional apresentada abaixo reflete:',
     options: [
@@ -1215,6 +1359,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-113',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Durante uma semana, uma UBS identificou aumento expressivo de atendimentos com quadros de febre, mialgia, cefaleia e exantema em moradores do mesmo bairro, localizado próximo a um terreno baldio com histórico de acúmulo de lixo e água parada. Com base na suspeita epidemiológica, qual deve ser a principal hipótese diagnóstica e a primeira medida da investigação?',
     options: [
@@ -1231,6 +1377,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-114',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Considere uma equipe da Estratégia Saúde da Família (ESF) em uma comunidade com elevada prevalência de doenças crônicas e aumento recente da demanda por atendimentos domiciliares de pacientes acamados e em cuidados paliativos. Diante de limitações de recursos humanos e materiais e com sobrecarga evidente da equipe, qual seria a melhor conduta para otimizar a gestão de recursos e garantir a continuidade e a qualidade assistencial?',
     options: [
@@ -1247,6 +1395,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-115',
+    topography: '15',
+    topic: 'Vigilância epidemiológica',
     module: 'Saúde Coletiva',
     text: 'Durante uma consulta em uma UBS, um médico atende um paciente com suspeita de meningite meningocócica. Como o profissional deve proceder em relação à notificação da doença?',
     options: [
@@ -1263,6 +1413,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-116',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Durante o atendimento em uma UBS, o médico da Equipe de Saúde da Família identifica que a unidade vem priorizando apenas pacientes com doenças crônicas graves, enquanto outros grupos, como gestantes e crianças, têm encontrado barreiras para agendamento de consultas. Considerando os princípios do Sistema Único de Saúde (SUS), qual deve ser a crítica correta do profissional em relação à situação descrita?',
     options: [
@@ -1279,6 +1431,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-117',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'A Febre Amarela (FA) silvestre é endêmica na Região Amazônica. De tempos em tempos, o vírus reemerge na região extra-amazônica, com surtos de magnitude e extensão variáveis. Assinale a alternativa que descreve corretamente os fatores de risco para a expansão das áreas de circulação do vírus da Febre Amarela, podendo, assim, afetar todas as regiões do país:',
     options: [
@@ -1295,6 +1449,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-118',
+    topography: '8',
+    topic: 'Diabetes mellitus tipo 1 e 2',
     module: 'Saúde Coletiva',
     text: 'Paciente com 60 anos, tem diagnóstico de diabetes mellitus tipo 2 há 10 anos, comparece à Unidade Básica de Saúde (UBS) para acompanhamento de rotina. Relata seguir em parte o tratamento medicamentoso, com dificuldades para manter uma dieta adequada. O exame físico mostra IMC de 29kg/m² e a glicemia de jejum está em 280mg/dL. Obedecendo os princípios do SUS e a organização da rede de atenção à saúde, qual é a conduta mais adequada para o manejo desse paciente?',
     options: [
@@ -1311,6 +1467,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-119',
+    topography: '15',
+    topic: 'Saúde do trabalhador',
     module: 'Saúde Coletiva',
     text: 'O médico do trabalho deve considerar aspectos coletivos e individuais para a promoção e proteção da saúde dos trabalhadores e a prevenção de doenças relacionadas ao ambiente de trabalho, devido a riscos e condições laborais. Descreva o manejo adequado para um trabalhador exposto a agentes químicos no ambiente industrial:',
     options: [
@@ -1327,6 +1485,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-120',
+    topography: '15',
+    topic: 'Ética médica',
     module: 'Saúde Coletiva',
     text: 'Um senhor de 80 anos faleceu em seu domicílio durante o sono. Os familiares desconhecem qualquer patologia ou tratamentos médicos prévios. No município onde residem, não há Serviço de Verificação de Óbito (SVO), somente o Instituto Médico-Legal (IML). Para que essa família possa iniciar os trâmites para a destinação do cadáver, solicitaram atendimento do Serviço de Atendimento Municipal de Urgência. Assinale a alternativa correta acerca da destinação desse cadáver pelo médico socorrista:',
     options: [
@@ -1343,6 +1503,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-101',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Homem, 23 anos, em situação de rua, ensino fundamental incompleto, aos 18 anos abandonou sua família devido ao uso de crack e outras drogas ilícitas. Apresentou quadro associado de esquizofrenia residual sendo acompanhado pela equipe de apoio à saúde mental, numa política de redução de danos, compartilhada à unidade básica de saúde. Com tosse persistente há mais de um mês, a equipe de consultório de rua o orientou para realizar exame de baciloscopia de escarro na unidade, diagnosticando-se tuberculose. A melhor conduta é:',
     options: [
@@ -1359,6 +1521,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-102',
+    topography: '15',
+    topic: 'Vigilância epidemiológica',
     module: 'Saúde Coletiva',
     text: 'Caso A: paciente que, independentemente da idade e da situação vacinal, apresenta febre e exantema maculopapular acompanhados de um ou mais dos seguintes sinais e sintomas: tosse e/ou coriza e/ou conjuntivite. Caso B: paciente com quadro discreto de febre moderada, de início súbito, que dura de 2 a 3 dias, e sintomas generalizados inespecíficos (astenia, adinamia, anorexia, cefaleia e outros) e erupção cutânea papulovesicular, que se inicia na face, couro cabeludo ou tronco. Os casos A e B apresentam, respectivamente, características de casos suspeitos de:',
     options: [
@@ -1375,6 +1539,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-103',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Homem, 40 anos, recém separado, dois filhos adolescentes, torneiro mecânico, desempregado há 1 ano, tabagista, hipertensão não controlada, uso abusivo de álcool, procura atendimento na Unidade Básica de Saúde devido a episódio de síncope seguido por crise convulsiva. Refere pai falecido por AVC e mãe por complicações do diabetes mellitus. Após avaliação clínica e definição das suas necessidades de saúde seu caso foi escolhido para elaboração de um projeto terapêutico singular com a participação da equipe de saúde da família e do matriciamento da psiquiatria. De acordo com as etapas do projeto terapêutico singular o passo seguinte deverá definir:',
     options: [
@@ -1391,6 +1557,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-104',
+    topography: '2.2',
+    topic: 'Hipertensão arterial sistêmica',
     module: 'Saúde Coletiva',
     text: 'Mulher, 67 anos, PA = 160 x 90 mmHg, informa que é hipertensa e diabética há cerca de 10 anos. Teve infarto anterior do miocárdio (IAM) há dois anos. É tabagista e sedentária. O médico de família decide fazer a estratificação de risco cardiovascular, para definir sua estratégia de acompanhamento. O risco cardiovascular e o plano de cuidado a ser adotado, são respectivamente:',
     options: [
@@ -1407,6 +1575,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-105',
+    topography: '15',
+    topic: 'Imunização',
     module: 'Saúde Coletiva',
     text: 'Homem, caminhoneiro, procura a UBS local para receber a vacina contra febre amarela. A restrição que se impõe para que este homem não seja vacinado é:',
     options: [
@@ -1423,6 +1593,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-106',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'O resgate e cuidado integral das pessoas vulneráveis como: crianças, portadores de transtornos mentais, idosos, doentes em fase terminal ou em estado vegetativo persistent, devem ser garantidos por meio de mecanismos de proteção. Qual o mecanismo prioritário que atua como forma de superação de vulnerabilidade?',
     options: [
@@ -1439,6 +1611,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-107',
+    topography: '15',
+    topic: 'Estratégia Saúde da Família',
     module: 'Saúde Coletiva',
     text: 'Foi instalada uma nova equipe de Estratégia de Saúde da família em uma área de risco. A equipe iniciou o trabalho percorrendo área, fazendo o levantamento dos recursos disponíveis, possíveis barreiras ao acesso e cadastrando os residentes da área. Que princípios norteadores da Estratégia de Saúde da Família foram utilizados nesse trabalho?',
     options: [
@@ -1455,6 +1629,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-108',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'No primeiro mês de epidemia de febre amarela, registraram-se 20 casos numa comunidade indígena composta por 500 indivíduos. No mesmo período, 5 índios morreram em consequência da doença. As taxas de ataque/incidência, de mortalidade e de letalidade dessa doença neste período, considerando a base de 100 indivíduos, foram respectivamente de:',
     options: [
@@ -1471,6 +1647,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-109',
+    topography: '15',
+    topic: 'Estudos epidemiológicos',
     module: 'Saúde Coletiva',
     text: 'Um estudo investigou a associação entre o primeiro registro do índice de massa corporal (IMC) e a sobrevida até o diagnóstico, de 22 tipos de cânceres de localizações mais comuns em população registrada em banco de dados de atendimento clínico no Reino Unido. Após 12 meses do início, até três anos, a sobrevida foi comparada entre os grupos de pacientes com diferentes faixas de IMC. Observou-se associação positiva entre IMC e vários tipos de câncer. (Bhaskaran et al. Lancet 2014). O delineamento do estudo foi:',
     options: [
@@ -1487,6 +1665,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-110',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Durante uma comemoração em um restaurante, onde estavam presentes mais de 100 pessoas, entre 2 e 4 horas após o almoço, mais de 80% dos convidados que ingeriram maionese de batatas apresentam náuseas, vômitos e diarreia. Considerando as características de uma epidemia, podemos afirmar sobre o caso relatado:',
     options: [
@@ -1503,6 +1683,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-111',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Mulher, 58 anos, hipertensa e diabética há 12 anos. Procurou a emergência do hospital, onde se diagnosticou angina instável e diabetes descompensado. Foi internada e, após estabilização clínica, recebeu orientação para acompanhamento médico na Unidade Básica de Saúde. No atendimento da unidade, ela teve suas medicações para o tratamento do diabetes ajustadas, as prescrições de diferentes profissionais foram organizadas em apenas uma prescrição e foi referenciada para o oftalmologista. Dentre os atributos da Atenção Primária à Saúde, o que está melhor exemplificado no atendimento desta senhora é:',
     options: [
@@ -1519,6 +1701,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-112',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Embora a expectativa de vida da população brasileira venha aumentando nas últimas décadas, preocupam as autoridades sanitárias os níveis elevados de mortalidade de adolescentes masculinos, na faixa etária entre 13 e 19 anos, nos grandes e médios centros urbanos. As ações de maior impacto potencial, a curto prazo, para a diminuição da mortalidade desta população devem estar centradas em:',
     options: [
@@ -1535,6 +1719,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-113',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'É CORRETO afirmar que uma doença está “eliminada” quando:',
     options: [
@@ -1551,6 +1737,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-114',
+    topography: '10',
+    topic: 'Sífilis',
     module: 'Saúde Coletiva',
     text: 'Homem, 30 anos, solteiro, vida sexual ativa e com diferentes parceiras nos últimos cinco anos, sem uso de preservativo na maioria das relações, encontra-se assintomático, porém com exame VDRL positivo (1:8) e teste rápido treponêmico reagente. Além das orientações sobre acolhimento/esclarecimento às parceiras, a conduta farmacológica é:',
     options: [
@@ -1567,6 +1755,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-115',
+    topography: '15',
+    topic: 'Imunização',
     module: 'Saúde Coletiva',
     text: 'No que diz respeito à Mortalidade Infantil, os impactos do programa nacional de Imunização (PNI) podem ser observados por meio da redução da taxa de mortalidade no período:',
     options: [
@@ -1583,6 +1773,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-116',
+    topography: '15',
+    topic: 'Imunização',
     module: 'Saúde Coletiva',
     text: 'Considerando as recomendações sobre a saúde do idoso do Ministério da Saúde, assinale a ação preventiva que deve ser indicada para todos os idosos.',
     options: [
@@ -1599,6 +1791,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-117',
+    topography: '12',
+    topic: 'Quedas',
     module: 'Saúde Coletiva',
     text: 'Homem, 81 anos, foi levado ao ambulatório pelo neto por ter sofrido várias quedas da própria altura no último ano, logo após se levantar pela manhã. É portador de diabetes mellitus há 12 anos e refere uso de Diazepam 10 mg todas as noites. Para prevenção efetiva de novas quedas deve-se:',
     options: [
@@ -1615,6 +1809,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-118',
+    topography: '11',
+    topic: 'Aleitamento materno',
     module: 'Saúde Coletiva',
     text: 'Adolescente, 16 anos, G1P1, comparece à primeira consulta de sua filha, nascida há 10 dias. Queixa-se de que a criança chora muito, apesar de amamentá-la o dia todo. Parto a termo, via vaginal, sem complicações. PN = 2.900 g, APGAR 9/10. Após avaliação da dupla mãe-bebê, constatou-se: mãe com as mamas túrgidas, bebê com peso de 2.610 g. A orientação neste momento será:',
     options: [
@@ -1631,6 +1827,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-119',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Gestante, 23 anos, na 35ª semana, em tratamento antirretroviral há 7 anos, sendo os últimos 3 anos em resgate. Nesta segunda gestação, apresentou efeitos adversos à Zidovudina, interrompeu todos os medicamentos e abandonou o pré-natal. Deu entrada na Unidade de Urgência com quadro de sangramento vaginal, falta de ar e dores intensas em baixo ventre. Apresentava-se em mau estado geral e evoluiu com dispneia importante, saturação de O₂ = 60%, necessitando de intubação orotraqueal, vindo a falecer após três horas. Aspirado pulmonar com BAAR positivo, radiografia de tórax com processo intersticial (miliar) e hemograma com anemia. O preenchimento correto da Declaração de Óbito é:',
     options: [
@@ -1647,6 +1845,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-120',
+    topography: '15',
+    topic: 'Testes diagnósticos',
     module: 'Saúde Coletiva',
     text: 'Em estudo para avaliar um teste sorológico encontramos que entre 342 portadores da doença, 254 apresentam teste positivo e entre 328 que não apresentam a doença, 30 testaram positivo. Qual alternativa contempla, respectivamente, a especificidade, o valor preditivo positivo e a acurácia do teste?',
     options: [
@@ -1663,6 +1863,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-101',
+    topography: '15',
+    topic: 'Bioética',
     module: 'Saúde Coletiva',
     text: 'Paciente de 82 anos, portador de neoplasia maligna avançada e sem possibilidade de terapêutica modificadora da doença, é internado por insuficiência respiratória aguda (IRA). Apresenta diretiva antecipada de vontade formalmente registrada, com recusa a medidas invasivas de suporte avançado de vida. Diante da deterioração clínica, familiares solicitam a instituição de todas as medidas de prolongamento da vida. À luz dos cuidados paliativos, da bioética e das normativas do Conselho Federal de Medicina (CFM), a conduta da equipe deve ser:',
     options: [
@@ -1680,6 +1882,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-102',
+    topography: '15',
+    topic: 'Estratégia Saúde da Família',
     module: 'Saúde Coletiva',
     text: 'Uma equipe de Saúde da Família, em uma Unidade Básica de Saúde (UBS) de território urbano vulnerável, realiza territorialização conforme a Política Nacional de Atenção Básica (PNAB) e identifica microáreas com alta incidência de arboviroses, elevada prevalência de Hipertensão Arterial Sitemica (HAS) e Diabetes Mellitus (DM), baixa adesão ao cuidado longitudinal e fragilidade do vínculo. Considerando o planejamento territorial baseado em risco e a integração entre vigilância e assistência, qual é a estratégia a ser adotada pela equipe?',
     options: [
@@ -1696,6 +1900,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-103',
+    topography: '12',
+    topic: 'Quedas',
     module: 'Saúde Coletiva',
     text: 'Em uma UBS, mulher de 74 anos, diabética e hipertensa, independente para atividades de vida diária, apresenta quedas recorrentes no último ano. Considerando ações de promoção e prevenção, qual estratégia deve ser priorizada pela equipe?',
     options: [
@@ -1713,6 +1919,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-104',
+    topography: '13',
+    topic: 'Risco de suicídio',
     module: 'Saúde Coletiva',
     text: 'Mulher de 32 anos procura a UBS com tristeza persistente, insônia e desesperança há dois meses. Durante a consulta, relata que “às vezes pensa que seria melhor não acordar”. Qual é a conduta no contexto da Atenção Primária com foco na promoção e prevenção em saúde?',
     options: [
@@ -1730,6 +1938,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-105',
+    topography: '13',
+    topic: 'Transtorno bipolar',
     module: 'Saúde Coletiva',
     text: 'Homem de 28 anos é acompanhado na UBS com diagnóstico prévio de transtorno bipolar tipo I. Apresenta histórico recente de episódio maníaco com prejuízo funcional. Atualmente está eutímico. Qual estratégia terapêutica é mais adequada para prevenção de recaídas?',
     options: [
@@ -1747,6 +1957,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-106',
+    topography: '13',
+    topic: 'Transtornos de ansiedade',
     module: 'Saúde Coletiva',
     text: 'Mulher, de 38 anos, comparece à UBS relatando episódios recorrentes de taquicardia súbita, sudorese, tremores e sensação de morte iminente há 3 meses. Nega uso de substâncias psicoativas ou comorbidades. Histórico de estresse crônico por sobrecarga laboral e luto recente pela perda materna. Qual o planejamento diagnóstico mais adequado para Transtorno de Ansiedade Generalizada e Transtorno de Pânico comórbido?',
     options: [
@@ -1763,6 +1975,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-107',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Uma população em situação de rua apresenta baixa adesão às ações municipais de prevenção e rastreamento da tuberculose. Considerando a bioética nas políticas de saúde, qual medida melhor responde a esse cenário?',
     options: [
@@ -1780,6 +1994,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-108',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Após identificar alta mortalidade materna em um bairro de extrema pobreza, o gestor municipal alocou equipes extras de saúde da família exclusivamente para esse local. Simultaneamente, pactuou com as prefeituras das cidades vizinhas a criação de um consórcio para garantir leitos de UTI neonatal no município polo da região. As duas ações tomadas pelo gestor representam, respectivamente, um princípio doutrinário e um organizativo do SUS. São eles:',
     options: [
@@ -1797,6 +2013,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-109',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Em uma reunião do Conselho Municipal de Saúde, um representante dos usuários critica a mudança no cofinanciamento da Atenção Primária, que promove a redução da população adscrita por equipe de ESF para uma média de 2.500 pessoas. O usuário alega que "reduzir o número de pessoas piora a assistência, pois os médicos deveriam atender mais pacientes ao invés de menos". Qual é a justificativa técnica para a mudança?',
     options: [
@@ -1813,6 +2031,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-110',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: '"O relatório Níveis e Tendências da Mortalidade Infantil, divulgado nesta terça-feira (17) pelas Nações Unidas, aponta que o Brasil alcançou as menores taxas de mortalidade neonatal e em crianças abaixo dos cinco anos dos últimos 34 anos. Segundo o Fundo das Nações Unidas para a Infância (Unicef), um conjunto de políticas adotadas pelo país tem diminuído as mortes preveníveis de crianças, em consonância com a tendência global". (Publicado em 17/03/2026 pela Agência Brasil). Quais os fatores que influenciam a taxa de mortalidade infantil?',
     options: [
@@ -1829,6 +2049,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-111',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Um município implementou um programa de rastreamento para tuberculose pulmonar, permitindo diagnóstico e tratamento mais precoces. Após dois anos, observou-se redução do tempo médio de duração da doença na população. O número de novos casos diagnosticados por ano permaneceu semelhante ao período anterior, mas o número total de pessoas com tuberculose na comunidade diminuiu. Qual interpretação epidemiológica explica esse cenário?',
     options: [
@@ -1846,6 +2068,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-112',
+    topography: '15',
+    topic: 'Saúde do trabalhador',
     module: 'Saúde Coletiva',
     text: 'Um trabalhador de 42 anos atua há 15 anos em indústria de baterias com exposição ocupacional a chumbo. Apresenta fadiga, dor abdominal, cefaleia e parestesias. Exames laboratoriais evidenciam anemia e níveis elevados de chumbo no sangue. Considerando as ações da Vigilância em Saúde do Trabalhador, qual é a conduta inicial indicada diante desse caso?',
     options: [
@@ -1862,6 +2086,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-113',
+    topography: '15',
+    topic: 'Saúde do trabalhador',
     module: 'Saúde Coletiva',
     text: 'Um trabalhador de 32 anos, motorista de ônibus, sofreu acidente de motocicleta enquanto retornava para casa após o expediente do seu trabalho. No trajeto habitual, ele interrompeu o percurso para entrar rapidamente a sua esquerda, em uma padaria para comprar pão; ao retomar na rua para o deslocamento, colidiu com um carro e sofreu escoriações e fratura de punho. Escolha a alternativa que descreva o evento médico-legal mencionado.',
     options: [
@@ -1878,6 +2104,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-114',
+    topography: '15',
+    topic: 'Saúde do trabalhador',
     module: 'Saúde Coletiva',
     text: 'Durante uma visita domiciliar programada, o médico da ESF atende um agricultor de 38 anos que apresenta náuseas, tontura, miose e sialorreia iniciadas há 24 horas, após a aplicação de defensivos agrícolas em sua pequena lavoura. O paciente está estável, mas relata que "não queria ir ao posto para não perder o dia de serviço". Ao aplicar os cuidados médicos e os aspectos médico-legais no domicílio deste trabalhador, qual deve ser a conduta prioritária do médico?',
     options: [
@@ -1894,6 +2122,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-115',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Maria, 55 anos, comparece a consulta para buscar o resultado de sua mamografia de rastreamento bianual, que apresentou laudo BIRADS 2. Durante a consulta, o médico aproveita para discutir hábitos de vida e a autonomia dela no cuidado com o corpo. Nesse sentido, o documento "Controle do câncer de mama no Brasil: dados e números 2025" enfatiza que a prevenção primária (controle de fatores de risco) é tão importante quanto o rastreamento. Ao aplicar as diretrizes de promoção da saúde para esta paciente, qual orientação é prioritária para reduzir o risco de desenvolvimento de novas lesões?',
     options: [
@@ -1910,6 +2140,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-116',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Saúde Coletiva',
     text: 'Uma mulher trans de 52 anos, preta, procura a Unidade Básica de Saúde (UBS) para uma consulta de rotina. Realiza terapia de afirmação de gênero com estrogênios há 10 anos e não foi submetida a cirurgia de redesignação sexual (neovaginoplastia). Durante a consulta, ela questiona o médico sobre a necessidade de realizar exames para "prevenir o câncer de próstata", pois leu em uma rede social que mulheres trans não precisam se preocupar com isso. Está assintomática e não possui histórico familiar de câncer de próstata em parentes de primeiro grau. Com base nas diretrizes de promoção e prevenção em saúde e nas recomendações do Ministério da Saúde e da Sociedade Brasileira de Urologia (SBU), qual a conduta mais adequada para esta paciente?',
     options: [
@@ -1926,6 +2158,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-117',
+    topography: '2.2',
+    topic: 'Hipertensão arterial sistêmica',
     module: 'Saúde Coletiva',
     text: 'Homem indígena de 46 anos procura a Unidade Básica de Saúde para avaliação de rotina. Nega comorbidades conhecidas. Refere sedentarismo e histórico familiar de hipertensão. Durante a consulta, apresenta as seguintes medidas de pressão arterial: 1ª medida: 148/92mmHg; 2ª medida (após 2 minutos): 146/90mmHg. Está assintomático e com exame físico sem alterações. Considerando as recomendações atuais para o diagnóstico de hipertensão arterial, qual é a melhor conduta para confirmação diagnóstica?',
     options: [
@@ -1943,6 +2177,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-118',
+    topography: '8',
+    topic: 'Diabetes mellitus tipo 1 e 2',
     module: 'Saúde Coletiva',
     text: 'Mulher de 55 anos, parda, diabética há mais de 10 anos, em tratamento irregular, procura a UBS relatando que há 1 ano iniciou dor plantar, bilateral, progressiva, em queimação e mais importante no período noturno. Ao exame físico, apresenta hipoestesia plantar. Além do controle glicêmico, a medicação com maior benefício no tratamento sintomático do quadro álgico é:',
     options: [
@@ -1960,6 +2196,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-119',
+    topography: '15',
+    topic: 'Imunização',
     module: 'Saúde Coletiva',
     text: 'Em uma UBS, um paciente de 68 anos, em uso crônico de corticoide em dose imunossupressora, apresenta esquema vacinal incompleto. Considerando a Vigilância em Saúde e as ações de promoção e prevenção, qual é a conduta mais adequada em relação à imunização?',
     options: [
@@ -1977,6 +2215,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-120',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Saúde Coletiva',
     text: 'Em uma UBS, mulher cis de 45 anos apresenta teste de HPV oncogênico positivo e citologia sem lesão intraepitelial. É vacinada tardiamente contra HPV aos 30 anos. Considerando vigilância e prevenção do câncer do colo do útero, qual conduta é mais adequada?',
     options: [
@@ -1995,6 +2235,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   // ---- Teste de Progresso 2019 (gabarito oficial) ----
   {
     id: 'tp2019-101',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Conforme normatização vigente do SUS, as Redes de Atenção à Saúde (RAS) são entendidas como entrelaçamentos organizativos entre ações e serviços de saúde com diferentes densidades tecnológicas, integradas por meio de sistemas de apoio técnico, logístico e gestão, com a finalidade de:',
     options: [
@@ -2011,6 +2253,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-102',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'As doenças cardiovasculares e cerebrovasculares continuam sendo a principal causa de morte nos países desenvolvidos. No entanto, suas taxas de mortalidade vêm diminuindo nas últimas décadas em razão de ações de prevenção e melhor tratamento.\n\nA ação e o respectivo nível de prevenção capaz de reduzir a morbimortalidade por acidente vascular encefálico (AVE) são:',
     options: [
@@ -2027,6 +2271,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-103',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'No Brasil, o perfil de morbimortalidade passou do predomínio de doenças infectocontagiosas para o predomínio de doenças crônicas não transmissíveis.\n\nEsse fenômeno é denominado:',
     options: [
@@ -2043,6 +2289,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-104',
+    topography: '10',
+    topic: 'Tuberculose',
     module: 'Saúde Coletiva',
     text: 'Homem, 32 anos, comparece à Unidade Básica de Saúde com queixas de náuseas e vômitos há 5 dias. Teve diagnóstico recente de tuberculose pulmonar e iniciou, há 20 dias, o uso de rifampicina + isoniazida + pirazinamida + etambutol (quatro comprimidos em jejum), mas suspendeu a medicação desde que os sintomas surgiram. Exame físico: desidratado, sem outras alterações.\n\nApós hidratação venosa na própria UBS, a conduta, com base nas recomendações do Ministério da Saúde, é:',
     options: [
@@ -2059,6 +2307,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-105',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Na organização do processo de trabalho das equipes de saúde da família, as equipes de apoio matricial (NASF – Núcleo Ampliado de Saúde da Família) têm como responsabilidade:',
     options: [
@@ -2075,6 +2325,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-106',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Gestante, 23 anos, na 35ª semana, em tratamento antirretroviral há 7 anos, sendo os últimos 3 anos em resgate. Nesta segunda gestação, apresentou efeitos adversos à zidovudina, interrompeu todos os medicamentos e abandonou o pré-natal. Deu entrada na Unidade de Urgência com quadro de sangramento vaginal, falta de ar e dores intensas em baixo ventre. Apresentava-se em mau estado geral e evoluiu com dispneia importante, saturação de O₂ = 60%, necessitando de intubação orotraqueal, vindo a falecer após três horas. Aspirado pulmonar com BAAR positivo, radiografia de tórax com áreas de cavitações em ápice direito e hemograma com anemia.\n\nO preenchimento correto da Declaração de Óbito é:',
     options: [
@@ -2091,6 +2343,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-107',
+    topography: '15',
+    topic: 'Ética médica',
     module: 'Saúde Coletiva',
     text: 'Jovem, 15 anos, é atendida pelo médico de família de uma USF desde o seu nascimento. O médico conhece a família, que é bem estruturada e tem boas relações entre si. Ela vem ao atendimento com queixa de gripe. Durante a consulta, conta que está feliz, namorando um rapaz de 19 anos, que é usuário de drogas injetáveis e que mantém relação sexual com ele, com preservativo masculino. Além disso, conta que está usando cocaína quase diariamente com ele e que não vê nenhum problema, pois os pais não perceberam e continua indo bem na escola.\n\nLevando em conta o Código de Ética Médica, a medida mais cabível para o cuidado da jovem é:',
     options: [
@@ -2107,6 +2361,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-108',
+    topography: '15',
+    topic: 'Testes diagnósticos',
     module: 'Saúde Coletiva',
     text: 'Um pesquisador diz que um determinado exame laboratorial tem sensibilidade de 98% para o diagnóstico de uma doença.\n\nEle está dizendo que:',
     options: [
@@ -2123,6 +2379,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-109',
+    topography: '15',
+    topic: 'Saúde do trabalhador',
     module: 'Saúde Coletiva',
     text: 'Mulher, 39 anos, trabalhadora de uma indústria alimentícia, comparece ao Serviço Especializado de Segurança e Medicina do Trabalho da empresa para exame médico periódico. Queixa-se de parestesias nas mãos, com piora noturna e limitação para preensão de objetos. Exerce sua atividade laboral executando movimentos repetitivos de flexão e extensão dos dedos e punhos.\n\nDuas manobras de exame físico para avaliar possível diagnóstico são:',
     options: [
@@ -2139,6 +2397,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-110',
+    topography: '15',
+    topic: 'Vigilância epidemiológica',
     module: 'Saúde Coletiva',
     text: 'Jovem deu entrada na Unidade de Emergência com ferimentos na cabeça, nos braços e nas pernas. Durante a consulta com o médico de plantão, ela revelou que os ferimentos foram causados pelo marido. Nitidamente envergonhada e assustada, ela pediu ao médico que tratasse apenas os ferimentos e mantivesse a situação em segredo.\n\nCom relação à violência doméstica, a equipe deve notificar quando houver:',
     options: [
@@ -2155,6 +2415,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-111',
+    topography: '10',
+    topic: 'Sífilis',
     module: 'Saúde Coletiva',
     text: 'Homem, 30 anos, solteiro, vida sexual ativa e com diferentes parceiras nos últimos cinco anos, sem uso de preservativo na maioria das relações.\n\nEncontra-se assintomático, porém com exame VDRL positivo e teste rápido treponêmico reagente. A conduta é:',
     options: [
@@ -2171,6 +2433,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-112',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'O coeficiente de mortalidade perinatal tem sido recomendado como o indicador mais apropriado para análise da assistência obstétrica e neonatal e de utilização dos serviços de saúde, por dar maior visibilidade aos problemas existentes e para planejamento de ações e prevenção de morte fetal e neonatal.\n\nA mortalidade perinatal representa os óbitos ocorridos entre:',
     options: [
@@ -2187,6 +2451,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-113',
+    topography: '15',
+    topic: 'Vigilância epidemiológica',
     module: 'Saúde Coletiva',
     text: 'Caso A: paciente que, independentemente da idade e da situação vacinal, apresenta febre e exantema maculopapular acompanhados de um ou mais dos seguintes sinais e sintomas: tosse e/ou coriza e/ou conjuntivite. Caso B: paciente com quadro discreto de febre moderada, de início súbito, que dura de 2 a 3 dias, e sintomas generalizados inespecíficos (astenia, adinamia, anorexia, cefaleia e outros) e erupção cutânea papulovesicular, que se inicia na face, couro cabeludo ou tronco.\n\nOs casos A e B apresentam, respectivamente, características de casos suspeitos de:',
     options: [
@@ -2203,6 +2469,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-114',
+    topography: '15',
+    topic: 'Imunização',
     module: 'Saúde Coletiva',
     text: 'Homem, 66 anos, hígido, comparece à USF para vacinar-se contra a gripe. Relata que viajará em um mês para uma região endêmica de febre amarela. No seu cartão de vacinação há somente o registro de um reforço de vacina dupla adulto, feito há oito anos.\n\nConsiderando o esquema vacinal do idoso preconizado pelo Ministério da Saúde, a melhor conduta é:',
     options: [
@@ -2219,6 +2487,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-115',
+    topography: '15',
+    topic: 'Vigilância epidemiológica',
     module: 'Saúde Coletiva',
     text: 'Vinte pessoas foram atendidas em uma Unidade de Emergência com histórico de diarreia, náuseas, vômitos, dor abdominal e febre há poucas horas. O médico plantonista identificou que todas participaram de um almoço de confraternização, oferecido em restaurante, tendo como cardápio churrasco com carnes variadas e maionese.\n\nConsiderando esse contexto, uma das condutas do médico deverá ser:',
     options: [
@@ -2235,6 +2505,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-116',
+    topography: '15',
+    topic: 'Saúde do trabalhador',
     module: 'Saúde Coletiva',
     text: 'A Norma Regulamentadora nº 32, lançada pelo Ministério do Trabalho por meio da Portaria nº 485/2005, estabelece as diretrizes básicas para a implementação de medidas de proteção e segurança à saúde dos trabalhadores nos serviços de saúde.\n\nEm relação ao uso dos Equipamentos de Proteção Individual (EPI), é correto afirmar que:',
     options: [
@@ -2251,6 +2523,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-117',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'O financiamento do Sistema Único de Saúde é feito por meio de recursos oriundos das seguintes fontes:',
     options: [
@@ -2267,6 +2541,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-118',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Quanto aos segmentos sociais que compõem o Conselho Nacional de Saúde (CNS), a alternativa correta de acordo com a lei 8.142/90 é:',
     options: [
@@ -2283,6 +2559,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-119',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'No período prévio à implantação do Sistema Único de Saúde (SUS), podemos afirmar que, em relação ao acesso aos serviços de saúde:',
     options: [
@@ -2299,6 +2577,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-120',
+    topography: '15',
+    topic: 'Saúde da mulher',
     module: 'Saúde Coletiva',
     text: 'Estudante, 20 anos, comparece ao serviço de pronto atendimento ginecológico solicitando realização de testes sorológicos para doenças sexualmente transmissíveis. Na avaliação inicial, estava bastante ansiosa e, após hesitação inicial, referiu queixas depressivas há três meses, desde quando foi vítima de violência sexual em uma festa. Refere que estava embriagada, mas que se lembra sobre o evento e que ficou envergonhada quando acordou no local e notou o que havia ocorrido. Não procurou atendimento médico em um primeiro momento e nem contou a ninguém sobre o fato, com medo de julgamentos. Refere que já menstruou, mas que se sente constantemente triste e ansiosa, com medo de sair de casa, queda no rendimento acadêmico, com dificuldade de interagir com colegas e familiares, insônia e estar assustando-se com facilidade. Conta ainda que, quando dorme, frequentemente tem pesadelos e que se sente constantemente invadida por lembranças do evento.\n\nA hipótese diagnóstica mais provável é de transtorno:',
     options: [
@@ -2316,6 +2596,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
   {
     id: 'tp2020-21',
+    topography: '15',
+    topic: 'Estudos epidemiológicos',
     module: 'Saúde Coletiva',
     text: 'O objetivo deste estudo foi verificar associação entre exposição precoce ao leite de vaca e ocorrência de Diabetes Mellitus tipo 1 entre menores de 18 anos atendidos em uma unidade de saúde. Foi selecionada uma amostra constituída por 128 indivíduos de ambos os sexos. Foram entrevistadas 64 mães com filhos de portadores de Diabetes Mellitus tipo 1 (DM Tipo 1) e 64 mães que não tiveram filhos DM Tipo 1. Os pesquisadores perguntaram a elas com qual idade os filhos tomaram leite de vaca pela primeira vez, se antes dos 4 meses ou não. Resultados: 84,4% dos indivíduos diabéticos foram expostos ao leite de vaca antes dos quatro meses de idade, enquanto no grupo controle este percentual foi de 64,1%. A análise univariada identificou uma associação estatisticamente significante entre exposição precoce ao leite de vaca e Diabetes (p = 0,01). Na análise multivariada, essa associação permaneceu e a razão de chances estimada foi de 4,09 (IC 95%: 1,19 - 14,04; p = 0,01).\n\nQue tipo de estudo foi realizado e qual a conclusão?',
     options: [
@@ -2332,6 +2614,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-22',
+    topography: '10',
+    topic: 'Infecções relacionadas à assistência',
     module: 'Saúde Coletiva',
     text: 'Considerando as precauções indicadas para a assistência aos pacientes suspeitos ou confirmados de infecção pelo novo coronavírus, são indicados equipamentos de proteção individual (EPI).\n\nAssinale a alternativa correta:',
     options: [
@@ -2348,6 +2632,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-23',
+    topography: '15',
+    topic: 'Saúde da criança',
     module: 'Saúde Coletiva',
     text: '“R.V.T.R, nascido em 11/04/17, sexo masculino, falecido em 12/04/17. Filho de M.P.O., 28 anos, solteira, ensino médio completo e auxiliar de serviços gerais. Gestante desenvolveu toxemia severa com descolamento prematuro da placenta. RN nasceu de parto cesárea, IG 32 semanas, com a presença de circular de cordão umbilical, Apgar 2/7, sinais de sofrimento fetal com cianose +/++++. Recebeu os cuidados de reanimação na sala de parto e foi transferido para a UTI Neonatal, onde faleceu no dia seguinte. Declaração de Óbito apresentou as seguintes causas, conforme a descrição da declaração de óbito:\n\nParte I – a) P22.0 - Síndrome da angústia respiratório do recém-nascido; b) O60.1 - Trabalho de parto pré-termo com parto pré-termo; c) O14 - Hipertensão gestacional (induzida pela gravidez) com proteinúria significativa.” Com base no relatório acima, assinale a alternativa correta:',
     options: [
@@ -2364,6 +2650,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-24',
+    topography: '7.2',
+    topic: 'Hanseníase',
     module: 'Saúde Coletiva',
     image: '/images/tp2020-24.webp',
     text: 'Em consulta de acolhimento, você atende um homem de 45 anos, preocupado com uma mancha nas costas que ele acha que existe há quase três anos (imagem abaixo). Ele chegou a fazer exames em serviço de saúde de outra cidade, mas ao mudar-se para este bairro perdeu a consulta anterior. Traz exames que foram solicitados no serviço antigo. Ao exame físico, apresenta perda de sensibilidade na lesão.\n\n• Baciloscopia: negativa\n• Exame anatomopatológico: infiltrado inflamatório granulomatoso perineural e perianexial, com pesquisa de BAAR negativa\n• Reação de Mitsuda: positiva\n\nA partir do exame físico e complementar, indique a classificação da hanseníase e o tratamento corretos:',
@@ -2381,6 +2669,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-25',
+    topography: '15',
+    topic: 'Testes diagnósticos',
     module: 'Saúde Coletiva',
     text: 'Dois testes diagnósticos foram realizados em 500 pessoas com suspeita de COVID-19; destes, 300 foram confirmados. Os resultados dos exames foram:\n\nTeste rápido COVID-19 tipo 1\n• Positivo: 210 doentes / 50 não doentes\n• Negativo: 70 doentes / 150 não doentes\n\nTeste rápido COVID-19 tipo 2\n• Positivo: 270 doentes / 40 não doentes\n• Negativo: 30 doentes / 160 não doentes\n\nComparado ao teste rápido tipo 1, o teste rápido tipo 2 apresenta:',
     options: [
@@ -2397,6 +2687,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-26',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Um dos grandes desafios no Sistema de Saúde no Brasil é o estabelecimento de mecanismos regulatórios na relação público-privado. A criação da Agência Nacional de Saúde Suplementar (ANS), a partir na Lei Federal Nº 9.961/2000, foi uma iniciativa importante nessa direção. Várias medidas foram tomadas visando regular o Sistema Suplementar de Saúde, dentre elas destaca-se o “Ressarcimento ao SUS”.\n\nMarque a reposta correta:',
     options: [
@@ -2413,6 +2705,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-27',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Saúde Coletiva',
     text: 'Gestante, 25 anos, vem para consulta pré-natal. Traz uma ultrassonografia (USG) de 11 semanas e 2 dias, sem anormalidades. Não traz outros exames, não traz queixas. Ao exame, altura uterina, BCF, PA, FC e IMC estão adequados para a idade gestacional. Considere não haver anormalidades ao exame físico. São aventados os seguintes diagnósticos: Diagnóstico Obstétrico de Normalidade:1G 0P 0A. GT FUV IG: 32 semanas pela DUM e 31 semanas segundo USG de primeiro trimestre. Diagnóstico Obstétrico Patológico Atual: soropositiva para HIV, carga viral (CV) desconhecida, sem tratamento. Demais diagnósticos: sem anormalidades. A paciente questiona sobre via de parto mais adequada para evitar transmissão do HIV ao feto, caso o parto ocorra ao termo.\n\nSelecione a alternativa considerada correta:',
     options: [
@@ -2429,6 +2723,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-28',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: '“A Política Nacional de Humanização (PNH) deve estar inserida em todas as políticas e programas do SUS. A PNH busca transformar as relações de trabalho a partir da ampliação do grau de contato e da comunicação entre as pessoas e grupos, tirando-os do isolamento e das relações de poder hierarquizadas; reconhecer que as diferentes especialidades e práticas de saúde podem conversar com a experiência daquele que é assistido. Juntos, esses saberes podem produzir saúde de forma mais corresponsável”.\n\nO texto acima refere-se a qual princípio da Política Nacional de Humanização?',
     options: [
@@ -2445,6 +2741,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-29',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Com base no conceito ampliado de saúde, definido na 8ª CNS – 1986, as determinações econômica e social da saúde tornam-se cada vez mais relevantes.\n\nConsiderando que a integralidade é um princípio do Sistema Único de Saúde que busca garantir ao indivíduo uma assistência à saúde que transcenda a prática curativa, pode-se afirmar que:',
     options: [
@@ -2461,6 +2759,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-30',
+    topography: '4.1',
+    topic: 'Cistite',
     module: 'Saúde Coletiva',
     text: 'Tamara, 22 anos, vem em consulta à ESF queixando-se de disúria há 5 dias, associada a polaciúria e urgência miccional. Afirma ter vida sexual ativa, sem parceiro fixo. Como método contraceptivo, faz uso de anticoncepcional oral. Ao exame físico, não há presença de leucorreia e nem secreção uretral; o abdome está doloroso à palpação profunda do hipogástrio, sem sinais de irritação peritoneal, com sinal de Giordano ausente. Você consulta o prontuário e nota que a paciente já realizou 2 tratamentos prévios adequados para infecção do trato urinário este ano, uma vez em janeiro e outra em setembro.\n\nAssinale a assertiva correta sobre o caso:',
     options: [
@@ -2477,6 +2777,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-31',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Sr. José, 40 anos, diabético e hipertenso de longa data, com tratamento inadequado, morador de zona rural, comparece à UBS referindo sensação de “pressão” no peito, com irradiação para o ombro E, e falta de ar súbita e inexplicável. Ao exame físico encontra-se descorado 1+/4+, acianótico, anictérico, afebril, dispneico, com sudorese de extremidades; comunicativo, porém ansioso ao conversar.\n\nFrente à hipótese de Síndrome Coronariana Aguda, assinale a alternativa que contemple o atendimento integral da equipe de saúde:',
     options: [
@@ -2493,6 +2795,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-32',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     text: 'Leia as asserções abaixo e responda:\n\nI. O Brasil vive uma situação epidemiológica com tripla carga de doenças, coexistindo: i) as doenças infecciosas e causas maternas e perinatais; ii) aumento das causas externas e iii) dominância das doenças crônicas e de seus fatores de risco.\n\nPORQUE\n\nII. O país passa por mudanças demográficas e epidemiológicas nos mesmos moldes e cronologias observados em países desenvolvidos. Essas mudanças pré-definidas possibilitam o ajuste das políticas públicas na área de saúde por parte dos governantes.',
     options: [
@@ -2509,6 +2813,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-33',
+    topography: '15',
+    topic: 'Ética médica',
     module: 'Saúde Coletiva',
     text: 'O desenvolvimento e a consolidação do Sistema Único de Saúde (SUS) inclui a construção da Política Nacional de Atenção Básica (PNAB), que estabelece princípios e diretrizes que orientam a organização da Atenção Básica nos municípios.\n\nConsidere a relação médica com pacientes e familiares, o Código de Ética Médica de 2018 e os princípios e diretrizes estabelecidos no âmbito da atenção básica e assinale a alternativa correta:',
     options: [
@@ -2525,6 +2831,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-34',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Em uma USF, com população adscrita de aproximadamente 3 mil pessoas, existe uma alta prevalência de pacientes obesos. O que mais preocupa é a grande quantidade de crianças com IMC alterado seguindo o perfil epidemiológico para esta doença na comunidade descrita.\n\nSabendo da importância da participação popular nos rumos do SUS, e mediante uma possível intervenção da equipe de Saúde da Família daquele território, assinale a alternativa que melhor caracteriza como solução:',
     options: [
@@ -2541,6 +2849,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-35',
+    topography: '8',
+    topic: 'Diabetes mellitus tipo 1 e 2',
     module: 'Saúde Coletiva',
     text: 'Paciente idosa, analfabeta, portadora de diabetes e insulino-dependente, com dificuldade para locomoção, apresenta dificuldade no manejo das doenças crônicas, estando sempre fora das metas terapêuticas. Mora com uma sobrinha, que sai para trabalhar após o café da manhã e só retorna na hora do jantar. Foi encontrada a receita abaixo com a paciente:\n\n1. Enalapril 10mg 1 cp 12/12h\n2. Metformina 500mg 1 cp 8/8h\n3. Amlodipina 5mg 1 cp após o café e o jantar\n4. Insulina NPH 20u cedo e 10u noite\n5. Sinvastatina 20mg 1 cp ao deitar\n\nSobre o caso, marque a alternativa correta:',
     options: [
@@ -2557,6 +2867,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-36',
+    topography: '15',
+    topic: 'Epidemiologia',
     module: 'Saúde Coletiva',
     image: '/images/tp2020-36.webp',
     text: 'Abaixo, observa-se a evolução da taxa de mortalidade materna no brasil em anos recentes:\n\nAssinale a alternativa correta:',
@@ -2574,6 +2886,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-37',
+    topography: '15',
+    topic: 'SUS',
     module: 'Saúde Coletiva',
     text: 'Durante a pandemia da Covid-19, o então Ministro da Saúde Nelson Teich manifestou o compromisso com o SUS, com a colegialidade de sua gestão e a disposição para o diálogo permanente com o Conselho Nacional de Secretarias Municipais de Saúde (Conasems) e com o Conselho Nacional de Secretários de Saúde (Conass) na condução desta emergência em saúde pública. Nesta oportunidade, declarou: “o sucesso na missão recebida no enfrentamento da pandemia necessita do espírito de cooperação, ajuda mútua e plena disposição dos secretários estaduais e municipais de saúde em participar do grande esforço para empreender, junto com toda a sociedade brasileira, no objetivo de vencer um inimigo comum: o coronavírus”. (Conass, 2020).\n\nConsiderando o texto acima e os princípios doutrinários e organizacionais do SUS, é correto afirmar:',
     options: [
@@ -2590,6 +2904,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-38',
+    topography: '15',
+    topic: 'Atenção Primária',
     module: 'Saúde Coletiva',
     text: 'Caso Clínico: Mulher, 35 anos, saudável, diz ao médico que deseja realizar uma série de exames laboratoriais e de imagem, com a finalidade de garantir sua saúde. Diz que tem esta rotina anualmente desde os 30 anos de idade. Atualmente, em função da pandemia da Covid-19, ao realizar o teste rápido (sorológico), testou positivo. A pedido, solicitou prescrição de hidroxicloroquina.\n\nCom base no conceito de prevenção quaternária, como o médico deverá abordar esta situação?',
     options: [
@@ -2606,6 +2922,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-39',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Saúde Coletiva',
     text: 'Em relação ao rastreio do câncer de próstata, assinale a alternativa correta:',
     options: [
@@ -2622,6 +2940,8 @@ export const SAUDE_COLETIVA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-40',
+    topography: '11',
+    topic: 'Asma infantil',
     module: 'Saúde Coletiva',
     text: 'Luísa é uma menina de 6 anos que mora em uma comunidade periférica de uma grande cidade brasileira. Encontra-se em sobrepeso, de acordo com o gráfico da Organização Mundial de Saúde e não tem seu cuidado médico acompanhado por uma equipe de saúde. Sua mãe diz que todas as vezes que vai à unidade de saúde do seu bairro ela está lotada, faltam medicamentos e por esse motivo ela prefere levar ao pronto atendimento (PA). Luísa não faz uso de nenhum medicamento e nos últimos meses ela foi frequentemente ao PA com crises de asma, em uma delas precisou ficar 2 dias internada.\n\nEm relação à situação acima, é mais correto afirmar que:',
     options: [

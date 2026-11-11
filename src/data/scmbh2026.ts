@@ -5,6 +5,8 @@ import { Question } from '../types';
 export const SCMBH_2026_QUESTIONS: Question[] = [
   {
     "id": "scmbh2026-1",
+    "topography": "5.2",
+    "topic": "Gravidez ectópica",
     "module": "Cirurgia",
     "text": "Uma senhora melanodérmica, com idade de 25 anos, recém-formada em Medicina, sem doença conhecida ou uso de medicação, durante um plantão na urgência, queixou-se de forte dor no hipogástrio e, em seguida, teve lipotimia. Atendida imediatamente, verificou-se a presença de mucosas hipocoradas, distensão abdominal e pressão arterial de 95/45 mmHg. O exame ultrassonográfico mostrou grande volume líquido intra-abdominal, diagnosticado como sangue e confirmado por punção.\n\nDentre as alternativas seguintes, a partir desses dados, qual é a causa MAIS provável desse abdome agudo hemorrágico?",
     "options": [
@@ -46,6 +48,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-3",
+    "topography": "3.1",
+    "topic": "Câncer colorretal",
     "module": "Cirurgia",
     "text": "Uma senhora leucodérmica, de 66 anos, procurou o serviço proctológico por perceber a presença de uma lesão anal esquerda. Ela não era dolorosa, não interferia com a defecação, que era normal, e sangrava eventualmente em quantidade pequena. Ao exame físico, a lesão tinha aspecto vegetante e media cerca de 45mm. Feita biópsia incisional, o diagnóstico foi de carcinoma espinocelular anal.\n\nTendo em vista que esse câncer metastatiza, onde são encontradas, inicialmente, as suas metástases?",
     "options": [
@@ -67,6 +71,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-4",
+    "topography": "16",
+    "topic": "Hérnias",
     "module": "Cirurgia",
     "text": "Uma senhora de 54 anos procurou o atendimento médico por dor na região inguinofemoral esquerda com irradiação para o lábio maior do mesmo lado. Ao exame físico, percebeu-se uma protrusão local, porém o médico teve dúvida quanto ao diagnóstico e solicitou um exame ultrassonográfico. O ultrassonografista telefonou para o médico e disse-lhe que, de fato, era uma hérnia e era a mais frequentemente encontrada nessa região.\n\nCom base apenas nessas informações, dentre os itens seguintes, assinale qual era essa hérnia.",
     "options": [
@@ -88,6 +94,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-5",
+    "topography": "16",
+    "topic": "Pós-operatório",
     "module": "Cirurgia",
     "text": "Um homem de 64 anos foi submetido à gastrectomia parcial, linfadenectomia regional e restabelecimento do trânsito digestório por anastomose gastrojejunal, para tratar adenocarcinoma do tipo intestinal de Laurén, localizado no antro gástrico. Ao final da operação, foi inserido um cateter nasoentérico para nutrição enteral a partir do segundo dia pós-operatório. No quarto dia pós-operatório, começou a sair líquido gastroentérico por um dreno sentinela, colocado próximo à anastomose e exteriorizado pela parede abdominal direita, abaixo do gradil costal. O exame contrastado confirmou a fístula anastomótica, drenando para o exterior, sem coleção de líquido próximo a ela. A drenagem diária era ao redor de 150 ml. O paciente continuou clinicamente bem, sendo nutrido apenas pelo tubo nasoentérico e sem queixas abdominais, com peristaltismo normal e evacuações com fezes amolecidas.\n\nQual a conduta a ser adotada para tratar essa fístula?",
     "options": [
@@ -109,6 +117,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-6",
+    "topography": "1.5",
+    "topic": "Câncer de tireoide",
     "module": "Cirurgia",
     "text": "Um homem melanodérmico, com 61 anos de idade, sem manifestações clínicas ou uso de medicamentos, procurou o médico para avaliação de controle. Ao exame físico, na palpação cervical, percebeu-se um pequeno nódulo na parte superior do lobo direito da tireoide. Solicitou-se punção biópsia aspirativa por agulha fina orientada por ultrassonografia. A citologia revelou carcinoma folicular no nódulo que media 21 mm, sem outras alterações morfológicas da tireoide, cuja função era normal.\n\nQual é a conduta CORRETA nesse paciente?",
     "options": [
@@ -172,6 +182,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-9",
+    "topography": "3.1",
+    "topic": "Câncer colorretal",
     "module": "Cirurgia",
     "text": "Um homem feodérmico, com 59 anos de idade e obeso, queixando dor intensa no flanco direito, febre termometrada de 37,9ºC, vômitos e queda do estado geral, procurou o serviço de urgência hospitalar. Os exames complementares revelaram anemia, leucócitose e distensão de íleo e ceco, não sendo possível identificar o apêndice, sem outras alterações. Com a hipótese diagnóstica de apendicite aguda, foi indicada laparoscopia para apendicectomia. Durante a operação, verificou-se o apêndice normal, mas foi encontrado um grande tumor no cólon ascendente.\n\nTendo por base apenas esses dados, qual deve ser a CONDUTA nesse paciente entre as apresentadas a seguir?",
     "options": [
@@ -193,6 +205,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-10",
+    "topography": "14",
+    "topic": "Queimaduras",
     "module": "Cirurgia",
     "text": "Uma senhora leucodérmica, com 34 anos de idade, estava cozinhando, quando entornou uma grande panela de água fervendo sobre ela, queimando toda a parte anterior do tórax e do abdome, bem como os dois membros superiores completamente. Ela foi levada ao hospital para tratamento.\n\nQual foi a extensão de sua queimadura?",
     "options": [
@@ -218,6 +232,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-11",
+    "topography": "16",
+    "topic": "Perfuração de víscera oca",
     "module": "Cirurgia",
     "text": "Um homem de 44 anos, feodérmico, estava festejando com os amigos em um restaurante e, após alcoolismo intenso, passou a apresentar muitos episódios de vômitos. Subitamente, sentiu uma dor intensa e persistente torácica e abdominal, seguida de dispneia, enfisema cervical, queda pressórica e lipotimia.\n\nO diagnóstico MAIS provável entre os itens seguintes é:",
     "options": [
@@ -239,6 +255,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-12",
+    "topography": "3.3",
+    "topic": "Colelitíase",
     "module": "Cirurgia",
     "text": "Uma senhora melanodérmica, com 46 anos de idade, foi internada com dor intensa no andar superior do abdome. Previamente, a paciente era hígida e assintomática. Diagnosticou-se pancreatite biliar grave, e ela ficou internada durante dois meses, período no qual, foi submetida à colecistectomia e retirada endoscópica de cálculos coledocianos. Ela recebeu alta em boas condições gerais, mas, após quatro meses, desenvolveu um pseudocisto de corpo pancreático que foi crescendo no espaço retrogástrico. Após um ano, esse cisto de parede espessa media 22cm e trazia desconforto, principalmente dispéptico, por compressão gástrica posterior.\n\nQual é a MELHOR conduta nesse caso?",
     "options": [
@@ -264,6 +282,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-13",
+    "topography": "3.3",
+    "topic": "Colangiocarcinoma",
     "module": "Cirurgia",
     "text": "Um homem leucodérmico, com idade de 51 anos, previamente hígido e assintomático, procurou atendimento médico por causa de prurido intenso e progressivo em toda a superfície corpórea. Ele estava ictérico às custas de bilirrubina direta elevada. A endoscopia revelou um tumor vegetante na papila duodenal sem outras anormalidades. Feita colangiopancreatografia retrógrada com biópsia, diagnosticou-se adenocarcinoma de papila duodenal. O estudo de ressonância magnética não mostrou linfadenomegalia regional.\n\nCom base nesses dados, qual é a conduta ADEQUADA, nesse caso, entre os itens seguintes?",
     "options": [
@@ -305,6 +325,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-15",
+    "topography": "16",
+    "topic": "Trauma abdominal",
     "module": "Cirurgia",
     "text": "Uma senhora de 49 anos foi vítima de atropelamento, com múltiplas lesões intra-abdominais, incluindo fígado e baço, que foram tratadas conservadoramente. Após dois meses de sua alta hospitalar, em controle médico, foi constatada anemia. Nos exames laboratoriais, foi verificada a presença de sangue oculto nas fezes. Foram realizados exames endoscópicos que mostraram saída de sangue pela papila duodenal, indicando hemobilia. Constatou-se, nos exames de imagem, ser ela consequente ao trauma.\n\nCom os dados apresentados, dentre os itens seguintes, qual é a conduta CORRETA nessa paciente?",
     "options": [
@@ -326,6 +348,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-16",
+    "topography": "1.1",
+    "topic": "Meningite",
     "module": "Clínica Médica",
     "text": "Em um plantão na UPA, você atende um paciente do sexo masculino, 67 anos, previamente hígido, com cefaleia holocraniana em pressão há, aproximadamente, 24 horas, relato de febre termometrada acima de 38 graus e relatos de vômitos. Sem outras alterações à avaliação inicial. Ao exame físico, apresenta abertura ocular ao chamado, movimenta-se ativamente e mantém diálogo organizado. Apresenta-se com rigidez de nuca discreta, sem papiledema à avaliação de fundo de olho e sem déficit focal. PA 138×78mmHg, FC: 105bpm, SatO₂: 99% aa Exames iniciais: Hb:13.3 GL:15800 (12% de células imaturas – bastonetes e meta) n: 9800 Plaq: 168000 Cr:1,1 Ur:42 Na:138 K:3,5 Glicemia: 132.\n\nQual a PRÓXIMA conduta, considerando as alternativas a seguir?",
     "options": [
@@ -347,6 +371,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-17",
+    "topography": "4.1",
+    "topic": "Cistite",
     "module": "Clínica Médica",
     "text": "Paciente atendida em unidade básica de saúde, estudante do sexo feminino, 22 anos, sem comorbidades, apresenta disúria e polaciúria, há 24 horas, sem febre ou dor lombar. Nuligesta e sem uso recente de medicamentos. EAS: leucócito-esterase positiva, nitrito positivo e hematúria microscópica.\n\nQual o tratamento MAIS adequado?",
     "options": [
@@ -368,6 +394,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-18",
+    "topography": "2.1",
+    "topic": "Pneumonia hospitalar",
     "module": "Clínica Médica",
     "text": "Em um plantão na terapia Intensiva, você acaba de avaliar um paciente do sexo masculino, de 74 anos, portador de DPOC e diabetes mellitus tipo 2, internado há 5 dias em UTI, por acidente vascular cerebral isquêmico, atualmente em VM com TOT em redução de parâmetros até então. Durante o plantão, evolui com febre de 38,9 °C, secreção traqueal purulenta e seguinte imagem:\n\nA unidade tem prevalência de MRSA 25 % e alta taxa de bacilos gram-negativos multirresistentes. Qual o esquema empírico inicial MAIS indicado?",
     "options": [
@@ -390,6 +418,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-19",
+    "topography": "2.2",
+    "topic": "Síndrome coronariana aguda",
     "module": "Clínica Médica",
     "text": "Paciente do sexo masculino, 59 anos, tabagista e hipertenso, procura o pronto atendimento por dor torácica opressiva, iniciada há cerca de 60 minutos, irradiando para o braço esquerdo, associada à sudorese fria e náuseas. Relata episódio semelhante há 6 meses, mas de curta duração. No exame físico, encontra-se ansioso, corado, PA 132x78 mmHg, FC 92 bpm, SatO₂ 96% em ar ambiente, FR 18 irpm. Ausculta cardíaca com ritmo regular, sem sopros.\n\nLaboratório inicial: curva de troponina positiva, glicemia 128 mg/dL, creatinina 0,9 mg/dL. Considerando o diagnóstico, qual conduta, entre as abaixo, NÃO reduz mortalidade na fase aguda?",
     "options": [
@@ -412,6 +442,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-20",
+    "topography": "2.2",
+    "topic": "Endocardite infecciosa",
     "module": "Clínica Médica",
     "text": "Homem de 42 anos, portador de hipertensão arterial e insuficiência renal crônica estadio I, está internado por piora da função renal significativa e em diálise por CDL. Paciente evolui com febre persistente e lombalgia há 5 dias. Nega sintomas urinários, nega cirurgias prévias. Ao exame: PA 118x70 mmHg, FC 96 bpm, FR 18 irpm, temperatura 38,5 °C. Sem sopros audíveis. Coluna lombar dolorosa à palpação, sem rigidez meníngea. Iniciado tratamento empírico com Cefepime. Em 24 horas, houve resultado positivo de duas Hemoculturas cocos GRAM positivos, catalase positivo e coagulase positivo, sensível à oxacilina. Após 48 horas de tratamento, o paciente mantém febre de 38 °C e elevação de proteína C reativa.\n\nQual o próximo passo MAIS adequado na investigação?",
     "options": [
@@ -433,6 +465,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-21",
+    "topography": "2.1",
+    "topic": "Pneumonia comunitária",
     "module": "Clínica Médica",
     "text": "Mulher de 70 anos, portadora de doença renal crônica estágio 4, hipertensão arterial e diabetes mellitus tipo 2. Há dois dias apresenta febre, tosse produtiva e dispneia progressiva. Ao chegar ao pronto-socorro, encontra-se confusa, sudoreica e taquipneica. Sinais vitais: PA 88x54 mmHg, FC 118 bpm, FR 32 irpm, SatO₂ 89% em ar ambiente, temperatura 38,6 °C. Ausculta pulmonar com crepitações bilaterais difusas. Gasometria arterial com hipoxemia moderada. Segue radiografia da paciente:\n\nQual o local de tratamento MAIS adequado para essa paciente?",
     "options": [
@@ -455,6 +489,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-22",
+    "topography": "1.5",
+    "topic": "Hiperparatireoidismo",
     "module": "Clínica Médica",
     "text": "Mulher de 45 anos, previamente hígida, realiza exames de rotina e apresenta hipercalcemia de 11,2 mg/dL (VR: 8,5-10,2). Ao repetir a dosagem, o valor persiste elevado, e o PTH encontra-se aumentado. Relata episódios de cólica renal e diagnóstico prévio de nefrolitíase. Não faz uso de diuréticos tiazídicos nem de lítio. Ao exame físico, não há alterações relevantes.\n\nQual a conduta definitiva MAIS adequada?",
     "options": [
@@ -497,6 +533,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-24",
+    "topography": "4.1",
+    "topic": "Cistite",
     "module": "Clínica Médica",
     "text": "Idosa de 68 anos, acamada por sequelas de AVC isquêmico, faz uso de sonda vesical há três semanas. A equipe de enfermagem relata sonolência, porém sem alteração importante do basal da paciente. Nega febre, dor lombar ou sintomas urinários. Exame físico: PA 128x76 mmHg, FC 84 bpm, SatO₂ 96%, afebril. Abdome flácido, bexiga não palpável. Exame de urina: leveduras ao microscópio; urocultura com 10⁵ UFC/mL de Candida albicans.\n\nQual a conduta MAIS adequada?",
     "options": [
@@ -518,6 +556,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-25",
+    "topography": "1.1",
+    "topic": "Meningite",
     "module": "Clínica Médica",
     "text": "Paciente do sexo masculino, 61 anos, previamente hígido, é levado ao pronto-socorro por febre alta e rebaixamento progressivo do nível de consciência. Ao exame: PA 124x78 mmHg, FC 104 bpm, FR 22 irpm, temperatura 39,1 °C, Glasgow 12. Rigidez de nuca presente, sem papiledema nem déficit focal. Punção lombar: pressão de abertura 360 mmH₂O; 1800 células/mm³ (90% PMN); glicose 28 mg/dL (relação líquor/soro 0,35); proteína 320 mg/dL. Coloração de Gram com diplococos gram-positivos. País com baixa taxa de resistência à ceftriaxona.\n\nQual o tratamento direcionado e conduta adjuvante?",
     "options": [
@@ -543,6 +583,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-26",
+    "topography": "4.1",
+    "topic": "Pielonefrite",
     "module": "Clínica Médica",
     "text": "Paciente é atendido, sexo masculino, 66 anos, diabético e portador de hiperplasia prostática, internado por febre, calafrios e dor em flanco direito há cinco dias. Iniciado antibiótico endovenoso com cobertura para bacilos gram-negativos. Não tem história prévia de uso de ATB. Após 72 horas de tratamento, permanece febril e com dor lombar. Diurese preservada.\n\nQual a sua PRÓXIMA conduta?",
     "options": [
@@ -564,6 +606,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-27",
+    "topography": "2.1",
+    "topic": "Pneumonia comunitária",
     "module": "Clínica Médica",
     "text": "Em um plantão em terapia intensiva, você é responsável por paciente do sexo masculino, 62 anos, com pneumonia adquirida na comunidade grave, internado em UTI. Apresenta hipotensão arterial, hipoxemia e necessidade de altas frações de oxigênio, já recebendo antibioticoterapia empírica ampla. Mantém instabilidade hemodinâmica e PCR aumentado. Pro-calcitonina aumentada.\n\nQual a conduta sobre o uso de corticoide nesse contexto?",
     "options": [
@@ -585,6 +629,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-28",
+    "topography": "4.1",
+    "topic": "Doença renal crônica",
     "module": "Clínica Médica",
     "text": "Você está de plantão em um serviço de atenção terciária, quando atende um paciente do sexo masculino, 73 anos, hipertenso e diabético, há pelo menos 10 anos, em uso irregular da medicação. Paciente é admitido por confusão mental e refere piora da dispneia há dois dias. Relata ganho de peso, edema de membros inferiores e diminuição do volume urinário. Exame físico: PA 168x98 mmHg, FC 92 bpm, FR 24 irpm, SatO₂ 94% em ar ambiente, crepitações em bases pulmonares e turgência jugular. Laboratório: ureia 136 mg/dL, creatinina 3,4 mg/dL (prévia 1,1 mg/dL), K⁺ 6,1 mEq/L, Na⁺ 132 mEq/L, gasometria com pH 7,28 e bicarbonato 16 mEq/L.\n\nQual o diagnóstico MAIS provável e conduta inicial indicada?",
     "options": [
@@ -606,6 +652,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-29",
+    "topography": "4.1",
+    "topic": "Distúrbios hidroeletrolíticos",
     "module": "Clínica Médica",
     "text": "Durante a visita matinal em uma enfermaria de nefrologia, um paciente de 58 anos, portador de doença renal crônica estágio 5, sem diurese residual, relata náuseas, fraqueza muscular e confusão mental progressiva há dois dias. Está em hemodiálise três vezes por semana. Sinais vitais: PA 138x80 mmHg, FC 84 bpm. ECG mostra ondas T apiculadas e alargamento discreto do QRS. Laboratório: K⁺ 6,9 mEq/L, Na⁺ 138 mEq/L, HCO₃⁻ 20 mEq/L.\n\nQual é a conduta imediata MAIS apropriada?",
     "options": [
@@ -627,6 +675,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-30",
+    "topography": "6.1",
+    "topic": "Esclerose sistêmica",
     "module": "Clínica Médica",
     "text": "Durante uma consulta ambulatorial, uma mulher de 49 anos com história de artralgia difusa, rigidez matinal e fadiga é questionada sobre sintomas associados. Refere fenômeno de Raynaud, disfagia leve e sensação de pele endurecida nas mãos. Ao exame: espessamento cutâneo distal, telangiectasias em face e discreta hipertensão arterial.\n\nQual achado laboratorial confirma o diagnóstico clínico MAIS provável?",
     "options": [
@@ -648,6 +698,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-31",
+    "topography": "5.2",
+    "topic": "Diabetes gestacional",
     "module": "Ginecologia e Obstetrícia",
     "text": "O diabetes melitus gestacional é uma doença com potencial importante de causar alterações neonatais que podem ser prevenidas com a manutenção dos níveis glicêmicos dentro de valores relacionados abaixo risco dessas complicações.\n\nSobre essa patologia da gestação, é CORRETO afirmar:",
     "options": [
@@ -669,6 +721,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-32",
+    "topography": "5.2",
+    "topic": "Restrição de crescimento fetal",
     "module": "Ginecologia e Obstetrícia",
     "text": "A restrição do crescimento fetal é definida como um processo capaz de modificar e restringir o potencial de crescimento do feto. Constitui intercorrência que acomete de 5% a 10% das gestações, sendo a segunda principal causa de mortalidade perinatal.\n\nSobre essa afecção, é INCORRETO afirmar:",
     "options": [
@@ -689,6 +743,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-33",
+    "topography": "5.2",
+    "topic": "Pré-eclâmpsia",
     "module": "Ginecologia e Obstetrícia",
     "text": "A pré-eclâmpsia é uma doença multissistêmica que costuma ocorrer na segunda metade da gestação, sendo a doença mais importante na obstetrícia e a maior causa de mortalidade materna e perinatal.\n\nSobre essa doença, é CORRETO afirmar:",
     "options": [
@@ -710,6 +766,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-34",
+    "topography": "5.2",
+    "topic": "Gravidez ectópica",
     "module": "Ginecologia e Obstetrícia",
     "text": "A gravidez ectópica é sinônimo de gravidez extrauterina, sendo a grande maioria tubária e é uma patologia potencialmente fatal para as pacientes.\n\nSobre esta ocorrência, pode-se afirmar:",
     "options": [
@@ -731,6 +789,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-35",
+    "topography": "5.2",
+    "topic": "Trabalho de parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "Dentre os métodos de avaliação do bem-estar fetal antes do parto está a cardiotocografia fetal, com indicações estabelecidas no acompanhamento anteparto de gestações na presença de algumas patologias e também utilizadas no acompanhamento de pacientes, chamadas de risco habitual com alguma intercorrência como gestação prolongada.\n\nSobre essa propedêutica fetal, é INCORRETO afirmar:",
     "options": [
@@ -751,6 +811,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-36",
+    "topography": "5.2",
+    "topic": "Pré-natal",
     "module": "Ginecologia e Obstetrícia",
     "text": "A assistência pré-natal é uma “estratégia interdisciplinar de atendimento profissional que otimiza o alcance e a manutenção da integridade das condições de saúde materna e fetal “(Maternidade Escola UFRJ 2015).\n\nSobre essa assistência do período gestacional, é CORRETO afirmar:",
     "options": [
@@ -772,6 +834,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-37",
+    "topography": "5.2",
+    "topic": "Descolamento prematuro de placenta",
     "module": "Ginecologia e Obstetrícia",
     "text": "O descolamento prematuro da placenta (DPP) é a separação intempestiva da placenta implantada no corpo uterino, antes do nascimento, após a 20ª semana de gestação. É uma causa importante e potencialmente grave de sangramento vaginal na segunda metade da gravidez, com elevada morbidade materna e fetal.\n\nSobre essa ocorrência, é CORRETO afirmar:",
     "options": [
@@ -793,6 +857,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-38",
+    "topography": "5.2",
+    "topic": "Puerpério",
     "module": "Ginecologia e Obstetrícia",
     "text": "O puerpério é o período do pós-parto, que sob o ponto de vista fisiológico, caracteriza-se pelos processos involutivos e de recuperação do organismo materno após a gestação.\n\nSobre este período, pode-se afirmar:",
     "options": [
@@ -835,6 +901,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-40",
+    "topography": "5.1",
+    "topic": "Contracepção",
     "module": "Ginecologia e Obstetrícia",
     "text": "O controle voluntário da fertilidade é particularmente importante na sociedade moderna e é essencial para que a mulher consiga alcançar suas metas pessoais quanto para o controle populacional do planeta na medida que um rápido crescimento populacional pode ameaçar nossa sobrevivência.\n\nSobre os métodos de planejamento familiar para as mulheres, é INCORRETO afirmar:",
     "options": [
@@ -856,6 +924,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-41",
+    "topography": "5.1",
+    "topic": "Câncer de colo uterino",
     "module": "Ginecologia e Obstetrícia",
     "text": "O conceito de neoplasia intraepitelial cervical (NIC) foi introduzido por Richart, que sugeriu o potencial de progressão das displasias e, desde então, o desenvolvimento do conhecimento dessas lesões e seu tratamento se tornaram uma forma efetiva de diminuir a incidência do câncer de colo uterino. Sendo uma profilaxia secundária.\n\nSobre estas NICs, é CORRETO afirmar:",
     "options": [
@@ -877,6 +947,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-42",
+    "topography": "5.1",
+    "topic": "Câncer de endométrio",
     "module": "Ginecologia e Obstetrícia",
     "text": "O carcinoma de endométrio constitui a neoplasia maligna mais comum do sistema genital feminino nos países desenvolvidos; no nosso meio, ele é o segundo, mas estima-se um aumento proporcional da sua ocorrência.\n\nSobre o câncer de endométrio, é INCORRETO afirmar:",
     "options": [
@@ -898,6 +970,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-43",
+    "topography": "5.1",
+    "topic": "Climatério e menopausa",
     "module": "Ginecologia e Obstetrícia",
     "text": "Atualmente, as mulheres passam um terço da sua vida no período pós- menopausa e esse é um dado de extrema relevância para se cuidar da saúde e qualidade de vida delas nesse período.\n\nSobre o climatério, é CORRETO afirmar que:",
     "options": [
@@ -919,6 +993,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-44",
+    "topography": "4.2",
+    "topic": "Incontinência urinária",
     "module": "Ginecologia e Obstetrícia",
     "text": "A incontinência urinária é definida como qualquer perda involuntária de urina. As estimativas de prevalência são variadas, devido à dificuldade de definição, populações usadas, idade e outros fatores envolvidos nos estudos. Estima-se que afete um terço das mulheres durante a sua vida e com repercussões muitas vezes importantes na qualidade de vida.\n\nSobre essa patologia, é CORRETO afirmar:",
     "options": [
@@ -940,6 +1016,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-45",
+    "topography": "5.1",
+    "topic": "Prolapso genital",
     "module": "Ginecologia e Obstetrícia",
     "text": "O prolapso dos órgãos pélvicos (POP) é a herniação dos órgãos pélvicos através do diafragma urogenital, causando sintomas que reduzem a qualidade de vida das pacientes e com frequência associados à incontinência urinária.\n\nSobre essa patologia, é CORRETO afirmar:",
     "options": [
@@ -961,6 +1039,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-46",
+    "topography": "15",
+    "topic": "Estratégia Saúde da Família",
     "module": "Saúde Coletiva",
     "text": "Considere as afirmativas abaixo sobre territorialização e adscrição na Atenção Primária à Saúde (APS) e assinale V para as que considerar verdadeiras ou F para as que considerar falsas. (__) A adscrição territorial sustenta o cuidado longitudinal e a gestão de risco. (__) Mapas de vulnerabilidade devem integrar dados sanitários, ambientais e sociais. (__) A atualização cadastral é acessória e pode ser suprimida sem perdas assistenciais. (__) A microterritorialização apoia planejamento, busca ativa e vigilância local.\n\nAssinale a alternativa com a sequência CORRETA de respostas.",
     "options": [
@@ -982,6 +1062,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-47",
+    "topography": "15",
+    "topic": "Vigilância epidemiológica",
     "module": "Saúde Coletiva",
     "text": "É CORRETO afirmar que a Vigilância Sanitária (VISA), no controle de água e alimentos:",
     "options": [
@@ -1003,6 +1085,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-48",
+    "topography": "15",
+    "topic": "Testes diagnósticos",
     "module": "Saúde Coletiva",
     "text": "“Quanto maiores os coeficientes de verossimilhança (likelihood ratios, LR+) e quanto menores os LR−, __________ a capacidade do teste de modificar a probabilidade pós-teste.”\n\nAssinale a alternativa que preenche CORRETAMENTE a lacuna.",
     "options": [
@@ -1024,6 +1108,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-49",
+    "topography": "15",
+    "topic": "Epidemiologia",
     "module": "Saúde Coletiva",
     "text": "São exemplos corretos de medida e denominador, EXCETO:",
     "options": [
@@ -1045,6 +1131,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-50",
+    "topography": "15",
+    "topic": "Estudos epidemiológicos",
     "module": "Saúde Coletiva",
     "text": "Considere as afirmativas abaixo sobre os desenhos de estudo e assinale V para as que considerar verdadeiras, e F para as que considerar falsas. (__) Estudos de coorte permitem estimar risco relativo e inferir temporalidade. (__) Caso-controle estima odds ratio e é útil para doenças raras. (__) Ensaio clínico randomizado controla confundimento por alocação aleatória. (__) Estudos ecológicos inferem causalidade individual sem risco de falácia.\n\nAssinale a sequência CORRETA de respostas.",
     "options": [
@@ -1065,6 +1153,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-51",
+    "topography": "15",
+    "topic": "Epidemiologia",
     "module": "Saúde Coletiva",
     "text": "Óbito hospitalar com múltiplas comorbidades e pneumonia recente; houve queda domiciliar na semana anterior sem lesões graves relatadas.\n\nAssinale a alternativa que apresenta a conduta MAIS adequada na Declaração de Óbito (DO).",
     "options": [
@@ -1086,6 +1176,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-52",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "Sobre a organização regional do Sistema Único de Saúde (SUS), é INCORRETO afirmar que:",
     "options": [
@@ -1107,6 +1199,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-53",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "“A equidade no SUS é operacionalizada pela alocação de recursos __________, ______________orientada por necessidades de saúde, barreiras de acesso e perfis epidemiológicos.”\n\nAssinale a alternativa que preenche CORRETAMENTE a lacuna.",
     "options": [
@@ -1127,6 +1221,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-54",
+    "topography": "15",
+    "topic": "Estratégia Saúde da Família",
     "module": "Saúde Coletiva",
     "text": "São elementos de uma Linha De Cuidado efetiva na Estratégia de Saúde da Família (ESF), EXCETO:",
     "options": [
@@ -1148,6 +1244,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-55",
+    "topography": "15",
+    "topic": "Epidemiologia",
     "module": "Saúde Coletiva",
     "text": "Assinale a alternativa que apresenta a conduta MAIS adequada como primeira resposta organizada a um surto suspeito de doença transmitida por alimento em uma escola.",
     "options": [
@@ -1169,6 +1267,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-56",
+    "topography": "15",
+    "topic": "Saúde do trabalhador",
     "module": "Saúde Coletiva",
     "text": "Trabalhador de indústria de tintas, 42 anos, cefaleia, tontura e parestesia após jornada; exposição crônica a solventes orgânicos; exame sem déficit focal; sem etilismo.\n\nAssinale a alternativa que apresenta a conduta MAIS adequada diante do caso.",
     "options": [
@@ -1190,6 +1290,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-57",
+    "topography": "15",
+    "topic": "Vigilância epidemiológica",
     "module": "Saúde Coletiva",
     "text": "É CORRETO afirmar que, na interface saúde-meio ambiente em territórios adscritos da Atenção Primária à Saúde (APS):",
     "options": [
@@ -1211,6 +1313,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-58",
+    "topography": "15",
+    "topic": "SUS",
     "module": "Saúde Coletiva",
     "text": "É INCORRETO afirmar que, na interface entre saúde suplementar e Sistema Único de Saúde (SUS):",
     "options": [
@@ -1232,6 +1336,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-59",
+    "topography": "15",
+    "topic": "Vigilância epidemiológica",
     "module": "Saúde Coletiva",
     "text": "Considere as afirmativas a seguir sobre condutas diante de caso suspeito de sarampo (paciente com febre, exantema, tosse, coriza e conjuntivite): I. A notificação deve ser imediata como suspeito, antes da confirmação laboratorial. II. A coleta para RT-PCR (swab de naso/orofaringe e/ou urina) é mais útil até o 5º dia do exantema; a sorologia IgM é preferível a partir do 3º dia do exantema. III. A vacinação de bloqueio dos contatos suscetíveis é idealmente realizada até 72 horas (com janela estendida com menor efetividade). IV. A presença de esquema vacinal completo no paciente suspeito exclui a investigação, dispensando coleta e rastreamento de contatos.\n\nSobre as afirmativas acima, estão CORRETAS:",
     "options": [
@@ -1253,6 +1359,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-60",
+    "topography": "15",
+    "topic": "Atenção Primária",
     "module": "Saúde Coletiva",
     "text": "Assinale a alternativa que apresenta o conjunto MAIS adequado de ações de uso da informação para manejo de condições crônicas na Atenção Primária à Saúde (APS).",
     "options": [
@@ -1274,6 +1382,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-61",
+    "topography": "2.2",
+    "topic": "Hipertensão arterial sistêmica",
     "module": "Pediatria",
     "text": "Marque a alternativa CORRETA a respeito da hipertensão arterial em pediatria.",
     "options": [
@@ -1294,6 +1404,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-62",
+    "topography": "11",
+    "topic": "Anemia ferropriva",
     "module": "Pediatria",
     "text": "Criança de 2 anos de idade, sexo masculino, é levada a uma consulta pediátrica por apresentar palidez cutaneomucosa. No exame físico, criança com bom estado geral, hipocorado ++/4, frequência cardíaca 92 bpm, sopro sistólico II/VI BEE, frequência respiratória 29 irpm, ausência de visceromegalia palpável. Hemograma realizado mostrou: hemoglobina 7g/dl; volume corpuscular médio (VCM) de 60 fL; global de leucócitos de 5400 mm³, 45% de neutrófilos, 45% de linfócitos, 5% de eosinófilos e 5% de monócitos; plaquetas de 400.000mm³; reticulócitos de 1%.\n\nDiante desse caso, marque qual a MELHOR conduta dentre as alternativas a seguir.",
     "options": [
@@ -1315,6 +1427,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-63",
+    "topography": "11",
+    "topic": "Cardiopatias congênitas",
     "module": "Pediatria",
     "text": "Criança de 3 meses de vida, sexo feminino, comparece pela terceira vez a um pronto atendimento, por apresentar cansaço e sudorese após as mamadas. A acompanhante relata que não tem notado ganho de peso satisfatório, apesar de observar que o lactente, que está em aleitamento materno exclusivo, suga bem o seio materno. No exame físico, lactente com regular estado geral, pulsos periféricos debilmente palpáveis, acianótico, hidratado, com esforço respiratório leve, frequência cardíaca de 170 bpm, Pressão arterial 120/80 mmHg em membro superior direito, fígado a 4 cm reborda costal direita, frequência respiratória de 70 irpm, murmúrio vesicular fisiológico.\n\nDiante do caso clínico, qual a PRINCIPAL hipótese diagnóstica?",
     "options": [
@@ -1357,6 +1471,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-65",
+    "topography": "1.3",
+    "topic": "Amigdalite/faringoamigdalite",
     "module": "Pediatria",
     "text": "Mãe comparece à consulta de pronto atendimento com criança de 3 anos de idade, com queixa de febre e dor de garganta. Refere que a cada 4 semanas, a criança apresenta quadro semelhante, com lesões aftosas em cavidade oral, tendo feito uso de antibiótico para faringoamigdalite quase que mensalmente no último ano. Relata também que a febre normalmente é alta mas não dura mais do que 3 dias. Nega sudorese, perda de peso ou adinamia. Ao exame, foram notados linfonodos móveis, fibroelásticos, pequenos, sem sinais flogísticos em cadeias cervicais bilateralmente, além de enantema e lesões aftosas em orofaringe, sem demais alterações.\n\nSobre o quadro descrito, assinale a conduta MAIS assertiva em relação à principal hipótese diagnóstica:",
     "options": [
@@ -1378,6 +1494,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-66",
+    "topography": "11",
+    "topic": "Diarreia aguda",
     "module": "Pediatria",
     "text": "Criança de 5 anos de idade é internada para tratamento de febre e diarreia de 5 dias de evolução. Ao exame físico na ectoscopia, observado regular estado geral, hipocorada (3+/4+), desidratada (1+/4+), afebril, cabelos finos e quebradiços; aparelho cardiovascular:\n\ntaquicárdica, pulsos periféricos cheios, tempo de enchimento capilar de 2 segundos, normotensa; aparelho respiratório: ausculta e frequência normais; aparelho digestivo: abdome plano, algo doloroso, sem defesa. Realizada aferição de peso e estatura, com peso/estatura e estatura/idade entre -2DP e -3DP segundo NHCS, glicemia capilar normal. Sobre o quadro descrito, assinale a alternativa CORRETA:",
     "options": [
@@ -1403,6 +1521,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-67",
+    "topography": "9",
+    "topic": "Anemia megaloblástica",
     "module": "Pediatria",
     "text": "Trata-se de criança de 2 anos de idade, internada para investigação de atraso no desenvolvimento neuropsicomotor e identificado erro alimentar importante. Ao exame físico, encontra-se em regular estado geral, apática, não sorri, não permanece em pé, tônus muscular reduzido. Realizada revisão laboratorial com hemograma evidenciando pancitopenia.\n\nSobre o caso descrito, assinale a alternativa que MELHOR justifica o quadro:",
     "options": [
@@ -1424,6 +1544,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-68",
+    "topography": "11",
+    "topic": "Asma infantil",
     "module": "Pediatria",
     "text": "Lactente de 16 meses é internado, devido a segundo episódio de sibilância (primeiro episódio aos 12 meses de idade), com taquipneia, esforço respiratório, tempo expiratório prolongado e sibilos expiratórios difusos, com resposta a beta 2 agonistas de curta duração. Segundo a mãe, o quadro iniciou após episódio de resfriado comum. Lactente previamente hígido, com teste do pezinho normal, sem internações, bom ganho pondero estatural. Pais e irmão possuem histórias de sibilância. Ao exame físico, exceto pelo aparelho respiratório, sem alterações.\n\nSobre o quadro descrito, assinale a alternativa CORRETA:",
     "options": [
@@ -1449,6 +1571,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-69",
+    "topography": "11",
+    "topic": "Bronquiolite",
     "module": "Pediatria",
     "text": "Em consulta de puericultura de seu bebê de 3 meses de idade cronológica e 45 dias de idade corrigida, baixo ganho ponderal, portadora de comunicação interatrial e persistência do canal arterial e displasia broncopulmonar, mãe relata preocupação sobre bronquiolite viral aguda.\n\nAssinale a orientação MAIS adequada:",
     "options": [
@@ -1471,6 +1595,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-70",
+    "topography": "11",
+    "topic": "Aleitamento materno",
     "module": "Pediatria",
     "text": "Recém-nascido (39 semanas de idade gestacional, peso adequado para idade gestacional, sem contexto infeccioso) de 21 dias, é trazido à maternidade devido à icterícia, zona II de Kramer. Mãe refere aleitamento materno exclusivo e nega colúria e acolia fecal, febre, inapetência, irritabilidade ou quaisquer outras queixas. Exame físico, exceto pela icterícia, sem alterações, ganho de peso adequado. Dosada bilirrubina total de 6,3mg/dL sendo 0,7mg/dL direta e 5,6mg/dL indireta, restante do perfil hepático, hemograma e reticulócitos sem alterações.\n\nSobre o quadro descrito, assinale a alternativa CORRETA:",
     "options": [
@@ -1492,6 +1618,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-71",
+    "topography": "11",
+    "topic": "Diarreia aguda",
     "module": "Pediatria",
     "text": "M.M.L; 2 anos, sexo feminino. Paciente dá entrada no Pronto Atendimento com quadro de diarreia de 5 dias de evolução, com fezes aquosas em grande volume, vários episódios ao dia. Mãe relata febre nos primeiros 2 dias; e quadro semelhante em toda família. AO EXAME: Hipocorado (1+/4+), anictérico, acianótico, mucosas secas, pulso aumentado, sedento, boa perfusão capilar, sem edemas. Aparelho Cardiovascular: Ritmo cardíaco regular em 2 tempos, sem sopros. Frequência cardíaca: 120bpm Aparelho respiratório: Murmúrio vesicular fisiológico, sem esforço Aparelho digestivo: Abdome normotenso, indolor, sem massas ou visceromegalias, ruído hidroaéreo positivo.\n\nSobre o quadro clínico, é CORRETO afirmar:",
     "options": [
@@ -1513,6 +1641,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-72",
+    "topography": "11",
+    "topic": "Aleitamento materno",
     "module": "Pediatria",
     "text": "S.G.L; 2 meses, sexo feminino. Paciente em aleitamento materno exclusivo em livre demanda, vai à consulta com Gastroenterologista Pediátrico devido a regurgitações frequentes, desde o primeiro mês de vida, após todas as mamadas e em grande volume, incluindo com saída de leite pelo nariz. Mãe nega perda de peso, febre, recusa alimentar ou irritabilidade durante as mamadas. Apresentando 3 evacuações ao dia, sem pus, muco ou sangue. História Pregressa: Nega alergias medicamentosas. Vacinação em dia. Teste do pezinho: normal. Nega internações prévias. Nega história de consanguinidade na família. Recém-nascido a termo, 39 semanas, parto normal; Peso ao nascimento:3200g; comprimento:50cm; Perímetro Cefálico:33cm; sem intercorrências; Apgar 8/9. Recebeu alta da maternidade em 24 horas. História Familiar: nada digno de nota AO EXAME: Peso: 5500g; Comprimento:58cm; Perímetro Cefálico:38cm Corado, hidratado, anictérico, acianótico, pulsos cheios e rítmicos, boa perfusão capilar, sem edemas. Aparelho Cardiovascular: Ritmo cardíaco regular em 2 tempos, sem sopros. Frequência cardíaca: 128bpm Aparelho respiratório: Murmúrio vesicular fisiológico, sem esforço; Frequência respiratória:40irpm Aparelho digestivo: Abdome normotenso, indolor, sem massas ou visceromegalias, ruído hidroaéreo positivo.\n\nAparelho genitourinário: genitália tipicamente feminina Sistema nervoso: Fontanela anterior normotensa e plana Sobre o caso clínico, é CORRETO afirmar:",
     "options": [
@@ -1534,6 +1664,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-73",
+    "topography": "11",
+    "topic": "Diarreia aguda",
     "module": "Pediatria",
     "text": "As Parasitoses Intestinais ainda são um grave problema de saúde, principalmente nos países em desenvolvimento. Segundo a organização Mundial da Saúde (OMS), representam o conjunto de doenças mais comuns do globo terrestre.\n\nSobre as Parasitoses Intestinais na infância, é CORRETO afirmar:",
     "options": [
@@ -1554,6 +1686,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-74",
+    "topography": "11",
+    "topic": "Convulsão febril",
     "module": "Pediatria",
     "text": "Criança de 2 anos, com desenvolvimento normal, na vigência de 38,8 graus secundária a resfriado, apresenta uma crise convulsiva tônico clônica generalizada, com duração de 3 minutos, sendo referenciada para pronto socorro, onde já dá entrada alerta, lúcida, sem rigidez de nuca e com restante de exame físico sem alterações. Mãe refere que é a primeira crise da vida desta criança.\n\nFrente a este quadro, qual a conduta ADEQUADA?",
     "options": [
@@ -1574,6 +1708,8 @@ export const SCMBH_2026_QUESTIONS: Question[] = [
   },
   {
     "id": "scmbh2026-75",
+    "topography": "14",
+    "topic": "Anafilaxia",
     "module": "Pediatria",
     "text": "Um paciente de 8 anos de idade é levado às pressas ao pronto atendimento devido à edema labial. Os pais relatam que estavam em um almoço de família quando notaram a alteração. Relatam que durante trajeto o paciente apresentou vários episódios de vômitos. Ao exame físico, você nota ausência de urticária, ausculta respiratória sem alterações e pressão normal para idade.\n\nDiante do caso e do tema, de acordo com a Sociedade Brasileira de Pediatria e a World Allergy Organization, assinale a alternativa CORRETA:",
     "options": [

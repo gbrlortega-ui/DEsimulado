@@ -5,6 +5,8 @@ import { Question } from '../types';
 export const USPRP_2025_QUESTIONS: Question[] = [
   {
     "id": "usprp2025-1",
+    "topography": "11",
+    "topic": "Cardiopatias congênitas",
     "module": "Pediatria",
     "text": "Criança A tem o diagnóstico de Tetralogia de Fallot e após receber vacina de 2 meses, apresentou episódio de cianose severa que melhorou somente após o uso de morfina endovenosa. A criança manteve desvio de rima labial para esquerda após este evento. Criança B tem diagnóstico de coarctação de aorta e deu entrada em serviço de urgência com 2 meses de vida, apresentando vômitos e distensão abdominal severa e dolorosa. Precisou de cirurgia de ressecção de alça intestinal e ileostomia. Ambas as crianças evoluíram com complicações graves secundárias às suas cardiopatias congênitas, sendo que a criança A sofreu uma lesão cerebral e a criança B, uma lesão intestinal.\n\nQual das alternativas apresenta as causas corretas para as complicações apresentadas?",
     "options": [
@@ -26,6 +28,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-2",
+    "topography": "11",
+    "topic": "Desidratação",
     "module": "Pediatria",
     "text": "Menino de 8 anos, 25kg, está internado em serviço de urgência, pois sofreu fratura de úmero após queda de bicicleta. A chefe do plantão recomendou prescrever jejum com soro de manutenção 100% do Holliday, o proporcional para correr por 12 horas. A criança precisará de cirurgia amanhã pela manhã.\n\nQual volume você deve prescrever para este período?",
     "options": [
@@ -47,6 +51,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-3",
+    "topography": "14",
+    "topic": "Intoxicações",
     "module": "Pediatria",
     "text": "Paciente de 4 anos vem ao pronto atendimento 20 minutos após picada de escorpião. Enfermeira do plantão chama referindo que a criança está vomitando, tem pele fria e pegajosa, pulsos radiais finos e os seguintes sinais vitais: Frequência cardíaca variando entre 80 bpm e 170 bpm, pressão em membro superior direito 120/105 mmHg, frequência respiratória de 40 irpm, saturação de oxigênio 95%.\n\nApós o atendimento da paciente, a enfermeira pede para tirar uma dúvida do caso com você: Se a pressão estava alta, por que o pulso estava fino? Qual o mecanismo mais adequado para explicar a dúvida apresentada?",
     "options": [
@@ -68,6 +74,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-4",
+    "topography": "14",
+    "topic": "Emergências pediátricas",
     "module": "Pediatria",
     "text": "Menino de 2 anos com histórico de epilepsia é trazido para a sala de emergência. Mãe refere que criança fez uso de um medicamento por via retal por orientação médica (não lembra o nome), pois apresentou movimentos tônicos clônicos com duração aproximada de 6 minutos. Ao exame físico: sonolenta, frequência respiratória = 10 incursões/minuto, respiração superficial, saturação de oxigênio = 85%. À ausculta pulmonar: murmúrio vesicular diminuído bilateralmente.\n\nQual é a conduta imediata mais apropriada para este paciente?",
     "options": [
@@ -89,6 +97,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-5",
+    "topography": "16",
+    "topic": "Trauma torácico",
     "module": "Pediatria",
     "text": "Menino de 4 anos está internado em enfermaria no 7º dia de pós-operatório de uma cirurgia cardíaca para correção de uma comunicação interventricular. Inicia sinais de desconforto respiratório súbito, com queda de saturação para 90%, mesmo em uso de cateter nasal de oxigênio 4 litros/minuto. Refere também dor torácica no lado esquerdo.\n\nA radiografia de tórax é apresentada a seguir:",
     "options": [
@@ -111,6 +121,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-6",
+    "topography": "14",
+    "topic": "Emergências pediátricas",
     "module": "Pediatria",
     "text": "Menina de 18 meses é levada ao atendimento de urgência. Mãe relata que, há 30 minutos, criança estava brincando em casa, sem supervisão, quando a escutou tossir e chorar subitamente. Iniciou sialorreia logo a seguir. Nega febre, sintomas gripais ou vômitos. Na entrada, a criança se encontrava pouco chorosa, mantendo sialorreia, eupneica, com murmúrios vesiculares presentes e simétricos, sem ruídos adventícios. Frequência cardíaca de 120 bpm, saturação de Oxigênio de 97% em ar ambiente, frequência respiratória de 28 ipm.\n\nCom relação à investigação, qual a recomendação que aumenta o poder diagnóstico do exame de imagem?",
     "options": [
@@ -132,6 +144,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-7",
+    "topography": "11",
+    "topic": "Desenvolvimento neuropsicomotor",
     "module": "Pediatria",
     "text": "Uma criança de 8 anos é atendida no ambulatório geral de pediatria devido a baixo rendimento escolar. Há 3 meses, vem sendo observadas dificuldades como falta de atenção nos afazeres escolares e domésticos, dificuldade em manter a concentração durante as atividades de lazer e nas aulas de educação física, além de dificuldade em seguir instruções e concluir os deveres. A mãe relata que o comportamento desatento é frequente e que a criança rotineiramente perde objetos e se distrai facilmente com estímulos externos. O pré natal e parto foram sem intercorrências e não tem antecedentes familiares de doenças neurológicas. O exame neurológico não tem sinais de focalização.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -153,6 +167,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-8",
+    "topography": "7.2",
+    "topic": "Dermatite atópica",
     "module": "Pediatria",
     "text": "Lactente de 8 meses é encaminhado ao consultório pediátrico com quadro de lesões cutâneas pruriginosas e recidivantes desde os 6 meses de vida. Não notou fatores desencadeantes. Criança em aleitamento materno, iniciou complementação com fórmula infantil de seguimento aos 6 meses de vida, juntamente com introdução alimentar. Atualmente aceita todos os tipos de alimentos, inclusive trigo e ovo.\n\nLesões são predominantemente em face, abdome e superfícies extensoras com características conforme foto a seguir: Qual a hipótese diagnóstica mais provável?",
     "options": [
@@ -174,6 +190,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-9",
+    "topography": "11",
+    "topic": "Púrpura de Henoch-Schönlein",
     "module": "Pediatria",
     "text": "Menina de 8 anos, com relato de febre, coriza e odinofagia há 10 dias, que melhoraram espontaneamente. Há 2 dias iniciou dor e edema de tornozelos, há 1 dia com dor abdominal acompanhada de diarreia sanguinolenta e presença de lesões purpúricas em membros inferiores. A avaliação laboratorial mostrou hemograma normal, urina rotina normal e VHS de 27 mm/1 hora (VN< 20mm/1 hora).\n\nQual o diagnóstico mais provável?",
     "options": [
@@ -195,6 +213,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-10",
+    "topography": "3.1",
+    "topic": "Diarreia crônica",
     "module": "Pediatria",
     "text": "Menino, 4 anos, apresenta-se com queixas de diarreia crônica há 1 ano. A mãe relata que está mais apático e com o apetite reduzido. Ao exame físico apresenta-se com abdômen distendido, face edemaciada e edema assimétrico em membros inferiores principalmente à direita. Exames Laboratoriais: Hemograma: Hb= 10g/dL; GB = 10.000/microL; linfócitos = 700/microL (VN: 1500–6000/microL). Albumina: 2,5 g/dL (VR: 3,5–5,0). Gamaglobulina: 0,2 g/dL (0,50 a 1,68). Esteatócrito: 10% (VN < 2%). Alfa 1 antitripsina fecal: 5,0 mg/g fezes (VN < 3,0).\n\nQual o diagnóstico mais provável?",
     "options": [
@@ -216,6 +236,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-11",
+    "topography": "14",
+    "topic": "Sepse e choque séptico",
     "module": "Pediatria",
     "text": "Paciente de 10 anos, caiu do balanço há 5 dias, evoluindo com dor em joelho esquerdo e dificuldade para deambular. Há 1 dia, apresentou piora do estado geral, tosse e desconforto respiratório importante, além de rebaixamento do nível de consciência. Ao exame físico: Mau estado geral, FR: 50 ipm, retrações intercostais e subcostais, murmúrio vesicular reduzido bilateralmente, FC: 160 bpm, pressão arterial 70/20 mmHg, pulsos amplos, tempo de enchimento capilar menor que 1 segundo, extremidades quentes e avermelhadas. Presença de edema, calor local e hiperemia em joelho esquerdo. Não houve melhora do quadro após colocação de coxim abaixo de occipício, aspiração de vias aéreas inferiores, intubação com sequência rápida, administração de duas alíquotas de soro fisiológico e início da antibioticoterapia. Como próximo passo do tratamento, é recomendado iniciar droga endovenosa de infusão contínua.\n\nQual droga deve ser iniciada neste momento?",
     "options": [
@@ -237,6 +259,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-12",
+    "topography": "2.2",
+    "topic": "Dislipidemia",
     "module": "Pediatria",
     "text": "Uma menina com 9 anos foi avaliada há 4 meses em função do pai de 32 anos apresentar dislipidemia e estar em tratamento com estatina há 2 anos. Esta paciente apresenta peso e estatura no percentil 75, tem aprendizagem normal e não utiliza nenhum tipo de medicamento ou suplementação nutricional ou vitamínica. Seu exame físico não apresenta anormalidades. Os pais informam que seguiram a maior parte das recomendações nutricionais e de atividade física recomendada na avaliação anterior. Abaixo estão os resultados dos exames realizados na primeira avaliação e atualmente.\n\nQual é a conduta mais adequada para esta paciente?",
     "options": [
@@ -259,6 +283,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-13",
+    "topography": "9",
+    "topic": "Coagulopatias",
     "module": "Pediatria",
     "text": "Você recebe para atendimento uma criança de 3 anos, do sexo masculino, com queixa de sangramento de difícil controle por uma lesão perfuro cortante em pé direito há 1 hora. Os pais mudaram-se recentemente para a região, e contam que no seguimento anterior na origem, criança foi diagnosticada com \"problema de sangramento\", mas não trouxeram relatório médico. Ao exame clínico de admissão, paciente encontra-se em bom estado geral, descorado +/4+ e hidratado. Apresentava ferimento de cerca de 6 cm em dorso do pé direito, com sangramento abundante no local, com pouca melhora do sangramento com medidas locais de compressão do ferimento. À ectoscopia, foram observadas algumas raras petéquias em membros inferiores. Sem outros achados anormais ao exame clínico.\n\nQual o diagnóstico de base mais provável?",
     "options": [
@@ -280,6 +306,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-14",
+    "topography": "11",
+    "topic": "Asma infantil",
     "module": "Pediatria",
     "text": "Lactente de 1 ano, em consulta com pediatra apresenta história prévia de 3 episódios de sibilância, com necessidade de procurar pronto atendimento e realizar beta 2 agonista de curta duração. Apresenta também tosse seca pela manhã quase diariamente e tosse desencadeada pelo choro. Investigação dos diversos aparelhos revelou regurgitações frequentes até o 7° mês de vida, com melhora espontânea, e pele ressecada, com lesões pruriginosas em superfícies extensoras e abdômen.\n\nQual é o tratamento de primeira escolha para esse paciente?",
     "options": [
@@ -301,6 +329,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-15",
+    "topography": "1.1",
+    "topic": "Epilepsia",
     "module": "Pediatria",
     "text": "Paciente do sexo masculino, com 3 anos e 6 meses de idade, é trazido ao pronto socorro devido a crises convulsivas tônicas recorrentes que persistem há 20 minutos. Foi transportado pelo SAMU, acompanhado pela mãe. Durante o transporte, foram iniciadas a monitorização dos sinais vitais, a administração de oxigênio por máscara e a verificação da glicemia capilar, que resultou em 80 mg/dL. Nenhuma medicação foi administrada. Na admissão, o paciente apresentava-se em regular estado geral, com os seguintes sinais vitais: FC de 140 bpm, FR de 28 ipm, Saturação de oxigênio de 100%, e temperatura de 38,3°C. O paciente estava pálido, com olhar fixo, sialorreico e com postura de hipertonia generalizada. A mãe relata que ele já teve crises febris curtas desde os 12 meses de idade.\n\nQual é a conduta farmacológica imediata mais adequada?",
     "options": [
@@ -322,6 +352,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-16",
+    "topography": "1.3",
+    "topic": "Amigdalite/faringoamigdalite",
     "module": "Pediatria",
     "text": "Criança de 4 anos é levada ao consultório com história de febre diária há 6 dias, com picos a cada 8 horas. Passou em atendimento médico há 2 dias, recebendo diagnóstico de amigdalite e prescrita amoxicilina, que já iniciou uso. Há 4 horas, notou aparecimento de rash cutâneo. Mãe está preocupada, pois acha que o antibiótico não está fazendo efeito, além de ter provocado alergia na criança. Na sua avaliação, você identifica que a criança possui placas em ambas as amígdalas e que estas se encontram aumentadas, apresenta ainda adenomegalias cervicais e discreto aumento de baço. O rash cutâneo é maculopapular e morbiliforme difuso, com predomínio no tronco. Os sinais vitais se encontram dentro da normalidade e o aspecto geral da criança é bom.\n\nQual a melhor conduta?",
     "options": [
@@ -343,6 +375,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-17",
+    "topography": "14",
+    "topic": "Trauma",
     "module": "Pediatria",
     "text": "Menina de 8 anos é trazida à sala de emergência após ser atropelada por um carro. A criança foi encontrada inconsciente no local, mas recuperou a consciência durante o transporte para o hospital. Apresenta dor abdominal. Ao exame físico: frequência cardíaca de 150 bpm, pressão arterial de 70/40 mmHg, frequência respiratória de 30 rpm, saturação de oxigênio de 95% em máscara não reinalante, enchimento capilar 6 segundos e pulsos finos. Administrados 20ml/kg de cristaloides com manutenção dos parâmetros clínicos.\n\nQual é o próximo passo no manejo desta criança?",
     "options": [
@@ -364,6 +398,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-18",
+    "topography": "11",
+    "topic": "Sepse neonatal",
     "module": "Pediatria",
     "text": "Recém-nascido (RN) do sexo masculino, nascido com 2950g, Apgar 9/10. A mãe teve pré eclampsia na gestação e trabalho de parto inibido com 29 semanas. Com 36 semanas, ela apresentou um quadro febril, com trabalho de parto espontâneo e rotura da bolsa amniótica, sendo iniciado tratamento de corioamnionite. Evoluiu para um parto vaginal, 20 horas após a rotura da bolsa. Ao nascer, o RN foi colocado em contato pele a pele com a mãe, permanecendo em boas condições, com exame físico normal.\n\nConsiderando a presença de fatores de risco para sepse neonatal precoce, qual é a conduta mais adequada para o RN neste momento?",
     "options": [
@@ -384,6 +420,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-19",
+    "topography": "11",
+    "topic": "Aleitamento materno",
     "module": "Pediatria",
     "text": "Lactente de 6 meses é avaliado em consulta de puericultura. Nasceu com 30 semanas de idade gestacional, pesando 1250g, com boa evolução. A mãe relata aleitamento materno exclusivo desde a alta hospitalar e nega queixas. Peso atual: 6100g. Na avaliação clínica, o lactente apresenta sustentação da cabeça, emite sons, não rola, pega objetos e não leva à boca. Tem exame físico normal. Curva de crescimento trazida pela mãe. Os círculos pretos correspondem às medidas de peso do lactente nos primeiros 6 meses de vida.\n\nObservando os dados da curva de crescimento trazida pela mãe (figura), qual é a orientação alimentar mais adequada neste momento?",
     "options": [
@@ -407,6 +445,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-20",
+    "topography": "11",
+    "topic": "Aleitamento materno",
     "module": "Pediatria",
     "text": "Menina de 4 meses, 6kg, vem à consulta de puericultura. Os pais não trazem nenhuma queixa clínica e, ao exame físico, você também não identifica nenhuma alteração. A mãe sofreu um acidente há cerca de 2 semanas e precisou ficar internada por alguns dias, já está bem, porém não tem conseguido mais amamentar sua filha. Os pais estão decididos que iniciarão fórmula infantil de primeiro semestre e pedem orientação quanto ao volume e preparo.\n\nQual referência de gasto energético basal deve ser usada para este cálculo?",
     "options": [
@@ -428,6 +468,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-21",
+    "topography": "15",
+    "topic": "Atenção Primária",
     "module": "Saúde Coletiva",
     "text": "O médico de família e comunidade (MFC) observou que um paciente, de 50 anos, que ele havia referenciado para o cardiologista, por conta de uma hipertensão arterial de difícil controle, não retornou mais à Unidade de Saúde da Família (USF) para seguimento. Como não recebeu nenhuma contrarreferência do cardiologista, entrou em contato para saber sobre a condição de saúde do paciente. O cardiologista informou que o paciente estava bem e que, após a realização de exames, trocou algumas medicações anti-hipertensivas, com estabilização da pressão arterial. Comentou, ainda, que não havia contrarrefenciado o paciente à atenção primária à saúde (APS), pois entendia que o melhor manejo deste agravo é realizado pelo cardiologista. O MFC argumentou que o paciente poderia ser contrarreferenciado à APS e que eles poderiam compartilhar o cuidado dessa pessoa.\n\nConsiderando a Política Nacional de Atenção Especializada do Sistema Único de Saúde, como pode ser classificada esta prática do cardiologista?",
     "options": [
@@ -449,6 +491,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-22",
+    "topography": "15",
+    "topic": "Atenção Primária",
     "module": "Saúde Coletiva",
     "text": "Um novo morador do território de uma Unidade de Saúde da Família (USF) é visitado pelo agente comunitário de saúde (ACS) que oferece os serviços da unidade de saúde e a possibilidade de cadastramento, no sistema de saúde do município. Durante a visita, o morador pergunta para o ACS qual o horário de funcionamento da USF e é informado que ela funciona das 7:30 h até às 17:00 h. O morador, então, comenta que possivelmente não conseguirá usar este serviço de saúde, pois sai de casa às 7:00 h da manhã e só retorna do trabalho às 20:00 h.\n\nConsiderando a atenção primária à saúde como porta preferencial do sistema de saúde, qual a dimensão da acessibilidade está prejudicada na situação descrita acima?",
     "options": [
@@ -470,6 +514,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-23",
+    "topography": "15",
+    "topic": "Atenção Primária",
     "module": "Saúde Coletiva",
     "text": "Na última reunião de equipe, na Unidade de Saúde da Família, a enfermeira informou que havia recebido um e-mail do Conselho Tutelar sobre a situação de uma adolescente de 13 anos que não tem comparecido às aulas. O agente comunitário de saúde (ACS) disse que esta família era bem complexa, residia na região da comunidade e que, no passado, já tinham abordado essa família, juntamente, com o Centro de Referência de Assistência Social (CRAS). A enfermeira se dispôs a realizar uma visita domiciliar (VD) com o ACS, no dia seguinte. O médico de família e comunidade se propôs a consultar sua agenda e verificar a data mais próxima para atender a adolescente. No início da reunião seguinte, o ACS apresentou o genograma atualizado da família para subsidiar as discussões. (Fonte: arquivo próprio do autor)\n\nNa abordagem desta família, considerando o genograma apresentado, como pode ser classificada a relação da mãe do caso índice com a sua avó materna?",
     "options": [
@@ -492,6 +538,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-24",
+    "topography": "15",
+    "topic": "Testes diagnósticos",
     "module": "Saúde Coletiva",
     "text": "Um pesquisador aplicou um teste diagnóstico numa população de 1.000 indivíduos. A sensibilidade e a especificidade do teste utilizado eram de 90%. A população da qual foram retirados os indivíduos tinha uma prevalência da doença X igual a 20%. Outro pesquisador utilizou o mesmo teste, mas agora numa população de 1.000 indivíduos, cuja prevalência da doença X era de 2%.\n\nOs valores preditivos positivos, respectivamente, nas duas populações são:",
     "options": [
@@ -513,6 +561,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-25",
+    "topography": "13",
+    "topic": "Risco de suicídio",
     "module": "Clínica Médica",
     "text": "Paciente do sexo feminino, de 72 anos de idade, com história de hipertensão arterial, diabetes mellitus tipo 2, obesidade grau 2, fibrilação atrial crônica, lombalgia crônica por espondiloartrose e transtorno depressivo crônico. Faz uso regular de dipirona, losartana, insulinas NPH e regular, metformina, sertralina e varfarina, não fuma e ingere cerveja diariamente, mas não sabe precisar a quantidade, ao médico de família e comunidade (MFC). Paciente vem à Unidade de Saúde da Família, onde é seguida há 17 anos, para atendimento eventual. Durante consulta com o MFC informa que, há cerca de 3 meses, após a morte do esposo, vem apresentando, diariamente, tristeza, anedonia, insônia, perda de apetite, sentimento de menos valia, sem esperança de melhora no futuro. Nega sintomas psicóticos. Paciente está morando sozinha, tem apenas uma filha e a relação das duas sempre foi muito conflituosa, com piora nos últimos meses, devido a desentendimentos pela divisão da herança do esposo. Paciente reduziu suas atividades sociais de costume, perdendo contato com amigos e outros familiares. Ao ser questionada pelo MFC, responde que tem vontade de morrer, pois já não vê solução para sua vida. Revela que, há cerca de 20 anos, ingeriu vários medicamentos para tentar tirar a própria vida. Ela relata que pensa em tirar a própria vida tomando grande dosagens de seus medicamentos, de uma só vez. Paciente sente que suas forças para suportar a dor emocional estão se acabando.\n\nQual é a conduta mais adequada?",
     "options": [
@@ -534,6 +584,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-26",
+    "topography": "11",
+    "topic": "Puericultura",
     "module": "Pediatria",
     "text": "Criança do sexo masculino, de 8 anos e 3 meses de idade, foi trazida à Unidade de Saúde da Família pela mãe, para consulta de puericultura. Mãe não relatou queixas ativas. Ao ser questionada, durante a anamnese, mãe respondeu que percebeu odor forte nas axilas do filho que se iniciou há cerca de 2 meses, sendo necessário iniciar o uso de desodorante. Não surgiram queixas cardiorrespiratórias, genitourinárias ou gastrintestinais, durante o interrogatório dos diversos sistemas. Criança apresentava desenvolvimento neuropsicomotor adequado para a idade, alimentação, razoavelmente, dentro das orientações do Guia Alimentar para a População Brasileira do Ministério da Saúde, fazia atividade física regularmente e não passava mais que duas horas ao dia em uso de telas. Estava com a carteira de vacinação atualizada. Não tinha história de doenças prévias graves e histórico de saúde familiar sem informações relevantes. Ao exame físico, o peso e a altura da criança encontravam-se sobre o percentil 50, sem mudanças de percentil recentemente. Ao exame da genitália havia pelos mais grossos, enegrecidos e encaracolados ao redor da base do pênis e em pequena quantidade (ainda contáveis), testículo de cerca de 2 cm³ (medido com orquidômetro), pênis de tamanho e forma semelhantes à última consulta de rotina, realizada 6 meses antes. Não havia pelos em outras partes do corpo que chamassem a atenção e não havia acne na face. Sem achados alterados no restante do exame físico completo.\n\nO diagnóstico mais provável para este caso é:",
     "options": [
@@ -555,6 +607,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-27",
+    "topography": "9",
+    "topic": "Anemia ferropriva",
     "module": "Clínica Médica",
     "text": "Paciente 47 anos, sexo feminino, comparece em consulta com queixa de há 3 meses apresentar fadiga, astenia e episódios de tontura, Paciente G1P1A0CO, com método contraceptivo e laqueadura tubária há 12 anos, sem atraso menstrual. Nega uso de medicações, doenças prévias e história familiar de doenças. Exame físico normal.\n\nExames laboratoriais:\n• Hemoglobina: 9,7 g/dL (Referência: 11,5-14,9)\n• VCM: 76 fL (Referência: 81-100,2)\n• RDW: 16% (Referência: 11,9-15,5)\n• Glóbulos brancos: 5200 leucócitos/mm³ (Referência: 2.883-9.969)\n• Plaquetas: 155.000/mm³ (Referência: 135.606-343.044)\n• Ferritina: 18 ng/mL (Referência: 40-200)\n\nQual o questionamento mais adequado que o médico deve fazer para complementar a anamnese?",
     "options": [
@@ -576,6 +630,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-28",
+    "topography": "15",
+    "topic": "Atenção Primária",
     "module": "Saúde Coletiva",
     "text": "A médica de família e comunidade (MFC) trabalha há 5 anos em uma Unidade de Saúde da Família (USF) e conhece bem a população que assiste e os principais problemas do território. Recentemente, uma nova família chegou em uma das 5 microáreas que conformam seu território. Trata-se de uma família com filhos adolescentes e tiveram consultas de casos novos agendadas na USF. Na consulta de caso novo da mãe dos adolescentes ela comentou que andava muito preocupada com o filho mais velho, de 17 anos. Achava que ele estava usando algum tipo de droga, pois mudou muito seu comportamento, ultimamente. No dia da consulta de Caso Novo desse adolescente, enquanto se prepara para chamá-lo, a MFC lembrou-se da preocupação da mãe e, na consulta, além de explorar as queixas do adolescente se preparou para realizar a triagem sobre o uso, abuso e dependência de substâncias.\n\nQual instrumento de triagem seria melhor aplicado pela MFC, no caso acima?",
     "options": [
@@ -598,6 +654,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-29",
+    "topography": "15",
+    "topic": "Atenção Primária",
     "module": "Saúde Coletiva",
     "text": "Ao realizar o cadastro de uma pessoa na área de abrangência da Unidade de Saúde da Família, a agente comunitária de saúde (ACS) pergunta sobre a sua a sexualidade. Ela responde ter nascido mulher, mas se reconhece como homem e deseja sexualmente mulheres.\n\nComo a ACS deve registrar, no cadastro, a identidade de gênero e a orientação sexual desta pessoa?",
     "options": [
@@ -620,6 +678,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-30",
+    "topography": "15",
+    "topic": "Epidemiologia",
     "module": "Saúde Coletiva",
     "text": "Em uma investigação sobre a associação entre Mortalidade Infantil e indicadores socioeconômicos, Fonseca et al. (2019) utilizaram fontes de dados secundários de 74 municípios de uma região do Brasil e vários indicadores socioeconômicos, Verificaram que o IDH (Índice de Desenvolvimento Humano) estava associado à Taxa de Mortalidade Infantil (TMI), com Coeficiente de Correlação de 0,643, e a Renda per capita Média (RPCM), com Coeficiente de Correlação de 0,549, ambos com nível de significância inferior a 1%.\n\nConsiderando as informações acima qual o tipo de estudo realizado pelos autores?",
     "options": [
@@ -662,6 +722,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-32",
+    "topography": "2.1",
+    "topic": "Asma",
     "module": "Clínica Médica",
     "text": "Paciente 45 anos, sexo feminino, portadora de asma em uso diário de glicocorticoide inalatório em baixa dose e para crises, uso de Beta 2 (B2) agonista de curta duração. Comparece em consulta de rotina na Unidade de Atenção Básica (UBS). Refere que nos últimos 3 meses não apresentou sintomas de falta de ar, durante o dia ou à noite. Nega ter usado B2 de curta duração e nega limitações de atividades devido à asma. No último ano não teve história de exacerbações. Nega tabagismo e outras doenças. Exame físico sem alterações. IMC 22 kg/m².\n\nQual a conduta mais adequada para o manejo deste quadro?",
     "options": [
@@ -705,6 +767,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-34",
+    "topography": "10",
+    "topic": "Dengue",
     "module": "Clínica Médica",
     "text": "Mulher de 68 anos, procura a Unidade de Saúde da Família (USF) em demanda espontânea e no acolhimento refere febre não aferida há 4 dias, associada à cefaleia, mialgia, artralgia, náuseas e diarreia. Nega vômito, dor abdominal. Não buscou atendimento antes, pois o esposo e o filho estão diagnosticados com dengue e acreditou que pudesse ser o mesmo. A técnica de enfermagem solicita supervisão da enfermeira que orienta a mesma a notificar dengue, realizar prova do laço e hematócrito em centrifuga e após os resultados solicita avaliação médica. A médica de família e comunidade examina a paciente e identifica que a mesma está em BEG, corada, hidratada, PA 136X79 mmHg, FC 96 bom, FR 16 ipm, auscultas cardíaca e respiratória sem alterações; Abdome: RHA +, normoativo, indolor, sem visceromegalias, Descompressão brusca (DB) ausente, membros sem edema, panturrilhas livres. Prova do laço positiva. Hematócrito: 49%.\n\nQual a melhor conduta inicial para esta situação?",
     "options": [
@@ -726,6 +790,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-35",
+    "topography": "15",
+    "topic": "Estudos epidemiológicos",
     "module": "Saúde Coletiva",
     "text": "Um estudo clínico (N Engl J Med 390;10: 900–910, 2024) investigou a presença de micro e nanoplásticos (MNPs) em placas de ateroma da artéria carótida de pacientes submetidos à endarterectomia. Posteriormente, acompanhou por 34 meses a incidência de eventos cardiovasculares comparativamente entre os que tinham MNPs nas placas da carótida e os que não tinham. Os resultados do desfecho primário do estudo estão sintetizados na Figura 1.\n\nConsiderando os resultados desse estudo, assinale a alternativa abaixo que melhor os interpretam.",
     "options": [
@@ -748,6 +814,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-36",
+    "topography": "15",
+    "topic": "Estudos epidemiológicos",
     "module": "Saúde Coletiva",
     "text": "Um estudo ecológico foi realizado no Reino Unido (Lancet Planet Health 2024; 8: e156-162) para investigar a possível associação entre a temperatura ambiente diária e o risco populacional de Insuficiência Renal Aguda (IRA) no mesmo dia e nos dias subsequentes. A figura abaixo ilustra os resultados principais desse estudo.\n\nConsiderando os resultados apresentados, assinale a alternativa abaixo que melhor os interpretam.",
     "options": [
@@ -770,6 +838,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-37",
+    "topography": "15",
+    "topic": "Vigilância epidemiológica",
     "module": "Saúde Coletiva",
     "text": "A imagem abaixo foi publicada pelo Sistema de Estimativas de Emissões e Remoções de Gases de Efeito Estufa (SEEG), ligado ao Observatório do Clima, e retrata as emissões desses gases por município e macrorregião brasileira, nos últimos 10 anos. A figura também discrimina os principais setores emissores desses mesmos gases, em cada município.\n\nCom base nas informações apresentadas, e nos seus conhecimentos sobre esse problema, assinale a alternativa que melhor as interpreta.",
     "options": [
@@ -792,6 +862,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-38",
+    "topography": "15",
+    "topic": "Imunização",
     "module": "Saúde Coletiva",
     "text": "A Organização Mundial da Saúde (OMS) lançou em 1974 o Programa Expandido de Imunizações que acaba de completar 50 anos de existência. A figura abaixo, extraída de um artigo científico (Lancet 2024; 403: 2307-16) ilustra o impacto global acumulativo produzido por esse programa sobre desfechos de interesse em saúde pública.\n\nConsiderando as informações apresentadas e seu conhecimento sobre imunização, assinale a alternativa que melhor as interpreta.",
     "options": [
@@ -814,6 +886,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-39",
+    "topography": "15",
+    "topic": "Atenção Primária",
     "module": "Saúde Coletiva",
     "text": "Na reunião do Conselho Local de Saúde (CLS) alguns moradores do território da Unidade de Saúde da Família (USF) apresentaram a preocupação com o aumento do número de acidentes de trânsito, na principal avenida do bairro. Relataram, ainda, que os idosos estão com dificuldade para atravessar esta avenida, pois os carros e as motos transitam em alta velocidade. Os conselheiros decidiram convidar um representante do Departamento dos Serviços de Trânsito do município para participar da próxima reunião do CLS, discutirem este problema e possíveis estratégias de enfrentamento.\n\nEsta deliberação dos conselheiros locais de saúde se relaciona, principalmente, com qual atributo da atenção primária à saúde?",
     "options": [
@@ -835,6 +909,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-40",
+    "topography": "5.1",
+    "topic": "Contracepção",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher de 20 anos, procura a Unidade de Saúde da Família para iniciar Planejamento Familiar. Tem um filho de 6 anos e relata a ocorrência de um aborto. Após a gestação ficou hipertensa e, atualmente, apresenta um IMC: 30kg/m². Apresenta anticorpo antifosfolipídeo positivo, mas a doença está controlada. Ela deseja fazer laqueadura, pois a situação financeira não está nada fácil, só o esposo trabalha e diz que não pode engravidar, novamente, de jeito nenhum.\n\nComo Médico de Família e Comunidade desta Unidade qual conduta você indicaria?",
     "options": [
@@ -858,6 +934,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-41",
+    "topography": "10",
+    "topic": "HIV/AIDS",
     "module": "Ginecologia e Obstetrícia",
     "text": "Gestante, 24 anos, G3P2A0, com 12 semanas, com sorologia anti-HIV não reagente na última semana, procurou o serviço de urgência referindo que durante relação sexual há 26 horas, houve ruptura total do preservativo com ejaculado no canal anal. A paciente está muito ansiosa, pois seu parceiro vive com HIV, sem tratamento e sem controle clínico e laboratorial no último ano. O teste rápido para detecção do HIV da gestante foi negativo.\n\nQual a conduta mais adequada?",
     "options": [
@@ -879,6 +957,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-42",
+    "topography": "5.2",
+    "topic": "Infecções na gestação",
     "module": "Ginecologia e Obstetrícia",
     "text": "Secundigesta, 27 anos, 28 semanas de idade gestacional, parceria sexual inconstante e início tardio de pré-natal. Na anamnese negou alterações clínicas compatíveis com sífilis. Sem alterações no exame físico e ginecológico/obstétrico. Exames laboratoriais: Quimioluminescência para sífilis reagente e Rapid Plasma Reagin (RPR) não reagente.\n\nConsiderando as atuais diretrizes do Ministério da Saúde para o diagnóstico sorológico da sífilis, qual seria a melhor estratégia para este caso?",
     "options": [
@@ -900,6 +980,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-43",
+    "topography": "5.2",
+    "topic": "Puerpério",
     "module": "Ginecologia e Obstetrícia",
     "text": "Puérpera, 27 anos, G1P1, está no quarto dia após parto cesárea a termo por parada secundária de descida, internada em alojamento conjunto, evoluindo com quadro de febre. Tem obesidade grau 3 e sua avaliação de escore de alerta precoce (do inglês = MEOWS modified early obstetric warning score) está destacada em negrito no quadro apresentado a seguir. Abdômen normotenso, ruídos hidroaéreos presentes, ferida operatória sem sinais flogísticos, fundo uterino palpável a 2 cm abaixo da cicatriz umbilical e doloroso em hipogástrio. Especular = loquiação presente, avermelhada e com odor fétido. Toque vaginal = colo pérvio 3 cm, amolecido, doloroso a imobilização.\n\nQual é o melhor esquema terapêutico?",
     "options": [
@@ -922,6 +1004,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-44",
+    "topography": "5.2",
+    "topic": "Restrição de crescimento fetal",
     "module": "Ginecologia e Obstetrícia",
     "text": "Primigesta, 24 anos, com 36 semanas, portadora de Diabetes Mellitus tipo 1 desde os 10 anos de idade e nefropatia diabética há 5 anos. Paciente retorna à consulta de pré-natal referindo controle glicêmico satisfatório, porém com episódios de mal-estar geral, tonturas e sudorese, que melhoram com alimentação, há uma semana. Nega episódios de perda de consciência. Refere adequada adesão ao plano nutricional e à insulinoterapia prescritos. Em uso de análogos de insulinas NPH e Asparte desde o inicio da gestação. Exame físico geral e obstétrico normais. Ganho de peso semanal de 100 g. Hoje, a ultrassonografia evidenciou peso fetal estimado no percentil 9, índice de pulsatilidade da artéria umbilical no percentil 100 e da artéria cerebral média no percentil 2, maior bolsão de liquido amniótico de 4 cm, perfil biofísico fetal de 8 em 8.\n\nA análise do perfil glicêmico da última semana está demonstrada no quadro a seguir: Além do ajuste de insulinas e vigilância de bem-estar fetal, com que idade gestacional deve ser programada a resolução de sua gestação?",
     "options": [
@@ -944,6 +1028,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-45",
+    "topography": "5.2",
+    "topic": "Trabalho de parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "Primigesta, 30 anos, com 39 semanas, foi admitida para indução do trabalho de parto, por hipertensão controlada, assintomática. Exame físico geral normal. Altura uterina de 36cm, atividade uterina ausente, feto com boa vitalidade. A indução foi iniciada com misoprostol e, no segundo dia, com progressão do índice de Bishop de 2 para 6, foi continuada com infusão de ocitocina. Após 4 horas, se obteve a cardiotocografia exibida abaixo (Figura 1). Foram prescritos para a mãe decúbito lateral esquerdo, oxigenação em máscara, infusão rápida de soro fisiológico e interrupção da ocitocina. A cardiotocografia obtida após 30 minutos está demonstrada na Figura 2. O exame cervical nesse momento mostrava colo centrado, curto, 7 cm, feto ODT, 1, bolsa rota.",
     "options": [
@@ -966,6 +1052,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-46",
+    "topography": "5.2",
+    "topic": "Assistência ao parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "Primigesta, 24 anos, com 37 semanas gestacionais. Realizou pré-natal no posto de saúde sem intercorrências. Procura a maternidade por perda líquida vaginal há 2 horas, em episódio único. Nega febre, sangramento ou dores abdominais. Sinais vitais normais. Altura uterina: 34 cm. Atividade uterina ausente. Exame especular: conteúdo claro no fundo de saco em pequena quantidade. Testes auxiliares: pH de 7,5. Padrão microscópico de cristalização com ramificações secundárias. Índice de líquido amniótico: 2 cm. Toque vaginal: colo dilatado 2 cm, variedade de posição sacro transversa esquerda, apresentação alta e móvel. Cardiotocografia: feto ativo e reativo.\n\nQual a melhor orientação para esta paciente?",
     "options": [
@@ -987,6 +1075,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-47",
+    "topography": "5.2",
+    "topic": "Trabalho de parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "Tercigesta (2 partos vaginais, com 34 e 35 semanas), 31 anos, com 38 semanas de gestação, internou em fase ativa do trabalho de parto, sem intercorrências no pré-natal. A parturiente está bem ativa, deambulando e fazendo exercícios na bola Bobath. Quer muito o parto vaginal. A evolução de seu trabalho de parto está demonstrada no partograma abaixo. Os sinais vitais maternos e vitalidade fetal são normais. Escolha a alternativa com a melhor conduta para essa parturiente, segundo as Diretrizes Nacionais e da Organização Mundial da Saúde (2020).",
     "options": [
@@ -1009,6 +1099,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-48",
+    "topography": "5.2",
+    "topic": "Trabalho de parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "Primigesta, 30 anos, com idade gestacional de 33 semanas e 3 dias. Pré-natal de risco habitual e sem intercorrências. Procura a maternidade com queixa de cólicas abdominais intermitentes, a cada 10 minutos acompanhada de eliminação de muco pela vagina. Nega sangramentos ou perdas líquidas. Sem outras queixas. Ao exame: sinais vitais normais. Obstétrico: 2 contrações moderadas de 30 segundos em 10 minutos; frequência cardíaca fetal de 140 bpm, sem desacelerações. Toque vaginal: colo dilatado 4 cm, esvaecido 50%, centrando, com bolsa palpável e apresentação cefálica, alta e móvel.\n\nQual a melhor conduta para a gestante?",
     "options": [
@@ -1030,6 +1122,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-49",
+    "topography": "5.2",
+    "topic": "Hemorragia pós-parto",
     "module": "Ginecologia e Obstetrícia",
     "text": "Multípara, G4P4, parto vaginal sem intercorrências há 30 minutos. Recém-nascido com peso de 4.100 gramas. Foram administradas 10 unidades de ocitocina intramuscular para profilaxia de hemorragia pós-parto. Logo após a dequitação observou-se sangramento vaginal volumoso e útero hipotônico. Até o momento já foram realizados massagem uterina bimanual, ocitocina, ácido tranexâmico e 2.500 ml de soro fisiológico (SF 0,9%). No momento, útero hipotônico, pressão arterial 90 x 50 mmHg e frequência cardíaca: 128 batimentos por minuto. Índice de choque de 1,4.\n\nQual manejo mais adequado?",
     "options": [
@@ -1051,6 +1145,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-50",
+    "topography": "5.2",
+    "topic": "Pré-natal",
     "module": "Ginecologia e Obstetrícia",
     "text": "Secundigesta (G2P0A1), 26 anos, com atraso menstrual de 18 semanas, inicia pré-natal hoje após teste de gravidez positivo. Nega doenças ou intercorrências até o momento. Exame físico geral sem alterações. A altura uterina é de 26cm. Fez ultrassonografia hoje, com achado de gestação gemelar dicoriônica, com idade gestacional de 24 semanas, achados fetais e anexiais normais.\n\nCom relação à profilaxia de pré-eclâmpsia, nesse caso, a alternativa correta é:",
     "options": [
@@ -1094,6 +1190,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-52",
+    "topography": "5.1",
+    "topic": "Câncer de colo uterino",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher de 27 anos, comparece à Unidade Básica de Saúde para checar resultado de exame citopatológico, sem queixas. Refere ciclos menstruais regulares, nega sangramento intermenstrual, dispareunia, sinusorragia e dor pélvica. Resultado de colpocitologia: Células escamosas atípicas de significado indeterminado, possivelmente não neoplásicas.\n\nDe acordo com as diretrizes do INCA, qual a melhor conduta?",
     "options": [
@@ -1137,6 +1235,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-54",
+    "topography": "4.2",
+    "topic": "Incontinência urinária",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher de 52 anos, G2P2A0 (2PN), DUM há 3 anos, procura atendimento ginecológico com queixa de perda urinaria há 8 meses que vem atrapalhando suas atividades habituais. Após orientações comportamentais e de fortalecimento do assoalho pélvico, que não melhoraram as queixas da paciente, foi realizado estudo urodinâmico. O exame físico e o estudo urodinâmico estão representados na figura.\n\nConsiderando-se a hipótese diagnóstica mais provável, qual a conduta mais apropriada neste momento?",
     "options": [
@@ -1180,6 +1280,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-56",
+    "topography": "5.1",
+    "topic": "Adenomiose",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher de 42 anos, G3P2A1, método anticoncepcional: laqueadura tubária, DUM há 12 dias, procura atendimento ginecológico com queixa de sangramento uterino aumentado há 6 meses, com aumento do fluxo, permanecendo cerca de 6 a 7 dias com sangramento associado a dismenorreia moderada. Ao exame físico: PA: 120x70mmHg, FC: 78bpm, abdome plano, normotenso e indolor a palpação. Espécular: colo róseo, sem lesões ou conteúdo anormal; Toque: colo cartilaginoso, centrado, indolor a mobilização, útero centrado em anteversoflexão (AVF), globoso e aumentado de tamanho. Exames complementares: Hb: 11,2g/dl; Ht: 30%; USTV: útero AVF, centrado, volume de 195cm³. Ovário esquerdo: 4,2cm³, ovário direito: 5,7cm³, representado na figura.\n\nQual a hipótese diagnóstica mais provável?",
     "options": [
@@ -1202,6 +1304,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-57",
+    "topography": "5.1",
+    "topic": "Sangramento uterino anormal",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher de 26 anos, nuligesta, refere parada das menstruações. Refere menarca aos 13 anos, seguida de ciclos regulares por 7 anos, após os quais passou a apresentar intervalos menstruais longos de 3 a 4 meses, sendo a última menstruação há dois anos. É triatleta e treina cerca de 6 horas diárias. Associa a alteração menstrual ao aumento na intensidade dos treinos. Nega uso de medicações. No momento sem atividade sexual. Ao exame físico: PA: 90x60 mmHg; IMC: 17,2kg/m²; Índice de Ferriman Gallwey: 2. Mamas sem alterações. Exames complementares: FSH=1,19mIU/ml (VN=3,5 a 10,5mIU/ml); Prolactina=12ng/dl (VN menor 25mg/dl) e TSH 2.1mIU/ml (VN=0,4 a 4,0MIU/ml).\n\nQual o exame mais relevante a ser solicitado para esta paciente?",
     "options": [
@@ -1223,6 +1327,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-58",
+    "topography": "5.1",
+    "topic": "Infertilidade",
     "module": "Ginecologia e Obstetrícia",
     "text": "Mulher de 36 anos, nuligesta, deseja engravidar. Refere 2 a 3 relações pênis-vagina por semana, sem uso de métodos contraceptivos há 2 anos. Ciclos menstruais regulares, sem queixas. Nega vícios ou uso de medicações. Exame físico geral e ginecológico sem alterações. Parceiro com 39 anos, sem doenças crônicas. Nega vícios e uso de medicações. Exames complementares: Parceiro: Espermograma 1 (critérios de normalidade da OMS, 2021): volume de 4,7 mL, 1,6 milhões de espermatozoides/mL, 5% de motilidade progressiva, 1% de formas normais e 58% de vitalidade. Espermograma 2, realizado cerca de 3 meses após com parâmetros similares. Paciente: histerossalpingografia e ultrassonografia transvaginal sem anormalidades.\n\nQual a abordagem terapêutica mais efetiva para este casal?",
     "options": [
@@ -1265,6 +1371,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-60",
+    "topography": "5.1",
+    "topic": "Contracepção",
     "module": "Ginecologia e Obstetrícia",
     "text": "Na unidade básica de saúde, você atende uma mulher de 23 anos, G0, com diagnóstico de Diabetes Mellitus tipo 1 desde os 12 anos de idade. Deseja contracepção. IMC: 31 kg/m². PA: 110x65 mmHg. Exame ginecológico sem alterações. Exames de rastreamento recomendados para a idade: normais, com exceção de HDL: 30 mg/dL (VN > 40 mg/dL). Exames de monitoramento da diabetes mellitus: sem alterações.\n\nVeja abaixo as figuras de 1 a 4, que apresentam opções de orientação contraceptiva: Considerando os critérios médicos de elegibilidade da Organização Mundial da Saúde (OMS), 2015, qual das figuras apresenta a orientação contraceptiva mais adequada?",
     "options": [
@@ -1287,6 +1395,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-61",
+    "topography": "2.2",
+    "topic": "Endocardite infecciosa",
     "module": "Clínica Médica",
     "text": "Homem, 45 anos, apresenta episódios de febre de até 38,3°C há 2 semanas. Sem outras queixas. Exame físico: PA: 138 x 80 mmHg; frequência cardíaca: 112 bpm, regular, com sopro diastólico em borda esternal esquerda 2+/4+, sem outros achados. Eletrocardiograma: normal. Ecocardiograma: valva aórtica bicúspide com filamento móvel em sua face ventricular e regurgitação leve. Hemoculturas: um par negativo no sétimo dia de leitura.\n\nQual das imagens acima seria mais sugestiva para confirmar o diagnóstico deste paciente?",
     "options": [
@@ -1309,6 +1419,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-62",
+    "topography": "2.2",
+    "topic": "Arritmias",
     "module": "Clínica Médica",
     "text": "Mulher, 75 anos, apresenta palpitações taquicárdicas e dispneia há 3 horas. Sem outras queixas. Exame físico: consciente, orientada, ritmo cardíaco irregular em 3 tempos, bulhas hipofonéticas, sem sopros. Tempo de enchimento capilar menor que 3 segundos. Murmúrio vesicular presente e simétrico, com estertores finos em terços inferiores dos campos pulmonares. FC = 142 bpm, PA = 110 x 70 mmHg.\n\nEletrocardiograma na figura abaixo: Qual das condutas abaixo é a mais apropriada para o atendimento inicial dessa paciente?",
     "options": [
@@ -1331,6 +1443,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-63",
+    "topography": "7.2",
+    "topic": "Pênfigo e penfigoide",
     "module": "Clínica Médica",
     "text": "Homem, 24 anos, sem comorbidades prévias, apresenta bolhas flácidas e lesões exulceradas com retalhos de bolhas rotas nas áreas seborreicas do tronco anterior e posterior, além de lesões crostosas no couro cabeludo e na face há 18 meses. Relata ter feito uso de anti-histamínicos, hidratantes e corticoides tópicos sem melhora das lesões. Ao exame, além das lesões descritas, não apresentava lesões nas mucosas e o Nikolsky estava positivo ao lado de uma lesão ativa.\n\nQual é o diagnóstico mais provável?",
     "options": [
@@ -1352,6 +1466,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-64",
+    "topography": "7.2",
+    "topic": "Dermatite atópica",
     "module": "Clínica Médica",
     "text": "Menina 6 anos, histórico de dermatite de repetição, atualmente mais intenso nas dobras, além de rinite alérgica. Há 3 semanas notou exacerbação das lesões de dermatite, piora do prurido e aparecimento de lesões novas no abdome, onde refere também muito prurido. Ao exame apresenta placas de dermatite subaguda nas dobras, sinais de escoriações e no abdome as lesões da figura.\n\nConsiderando o diagnóstico mais provável, qual microorganismo seria identificado nas lesões ativas do abdome?",
     "options": [
@@ -1375,6 +1491,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-65",
+    "topography": "14",
+    "topic": "Intoxicações",
     "module": "Clínica Médica",
     "text": "Homem, 45 anos, trabalhador rural, é levado ao pronto socorro após exposição acidental a um produto químico. Apresenta-se com sudorese excessiva, lacrimejamento, sialorréia e dificuldade para respirar. Apresentou 3 episódios de vômitos em 3 horas. Exame físico: FC= 60 bpm, PA= 90/60 mmHg, FR= 25 irpm, SpO₂= 94% em ar ambiente, consciente, mas confuso; pupilas mióticas e fotorreagentes; ausculta pulmonar: murmúrio vesicular presente bilateralmente, com sibilos e roncos úmidos difusos, expectoração de escarro incolor. Demais sistemas sem alterações.\n\nQual é a conduta inicial mais adequada para o manejo desse paciente?",
     "options": [
@@ -1396,6 +1514,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-66",
+    "topography": "8",
+    "topic": "Cetoacidose diabética",
     "module": "Clínica Médica",
     "text": "Mulher, 28 anos, com diabetes mellitus tipo 1, apresenta poliúria, polidipsia, náuseas e vômitos há 48 horas. Interrompeu a administração de insulina regular há dois dias devido a um episódio de gastroenterite. Exame físico: desidratada, respiração de Kussmaul e hálito cetônico. Sinais vitais: PA= 90x50 mmHg, FC= 120 bpm, FR= 28 irpm, SpO₂= 96% em ar ambiente. Laboratório: glicose sérica= 480 mg/dL (VR: 70-99), pH arterial= 7,15 (VR: 7,35-7,45), bicarbonato= 10 mEq/L (VR: 22-28), cetonas séricas positivas, sódio= 142 mEq/L (VR: 135-145), cloro= 100 mEq/L (VR: 98-106), potássio= 4,0 mEq/L (VR: 3,5-5,0).\n\nQual é a conduta inicial mais adequada para o manejo deste caso?",
     "options": [
@@ -1417,6 +1537,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-67",
+    "topography": "16",
+    "topic": "Pré-operatório",
     "module": "Clínica Médica",
     "text": "Mulher, 64 anos, portadora de diabetes mellitus tipo 2 desde os 56 anos, em uso de empagliflozina 25 mg/dia, linagliptina 5 mg/dia e metformina XR 1g/dia. Será submetida à colecistectomia videolaparoscópica eletiva. Última hemoglobina glicada (HbA1c): 7,3% (VR: 4.3-6.1).\n\nQuais orientações devem ser feitas em relação ao uso dos antidiabéticos?",
     "options": [
@@ -1438,6 +1560,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-68",
+    "topography": "3.2",
+    "topic": "Hepatites virais",
     "module": "Clínica Médica",
     "text": "Homem, 53 anos, assintomático, comparece à Unidade Básica de Saúde buscando orientações sobre os resultados de exames realizados para doação de sangue. Antecedente de cirurgia para correção de fratura de fêmur aos 18 anos de idade devido acidente automobilístico. Exame físico: obesidade grau II. Exames laboratoriais: HBsAg = não reagente; anti HBc IgG = não reagente; anti HBsAg = reagente; anti HCV = reagente; AST = 18 U/L (VR: 15-37); ALT = 57 U/L (VR: 10-49)\n\nQual é a conduta mais adequada?",
     "options": [
@@ -1459,6 +1583,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-69",
+    "topography": "3.4",
+    "topic": "Pancreatite crônica",
     "module": "Clínica Médica",
     "text": "Homem, 53 anos, com histórico de pancreatite crônica associada ao consumo abusivo de bebida alcoólica, refere aumento da frequência de evacuações nos últimos 9 meses, fezes de aspecto gorduroso e com mau cheiro. Exame físico: emagrecido, sinais vitais normais, sem outras alterações.\n\nQual deficiência de vitamina mais provavelmente pode ser encontrada nesse paciente?",
     "options": [
@@ -1480,6 +1606,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-70",
+    "topography": "12",
+    "topic": "Delirium",
     "module": "Clínica Médica",
     "text": "Mulher, 84 anos, portadora de síndrome demencial fase moderada, apresentou queda no domicílio com fratura de fêmur e foi internada para correção cirúrgica. Após 12 horas do procedimento, evoluiu com confusão mental e agitação psicomotora de difícil controle, medidas não farmacológicas.\n\nQual é a melhor conduta medicamentosa?",
     "options": [
@@ -1501,6 +1629,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-71",
+    "topography": "9",
+    "topic": "Anemia ferropriva",
     "module": "Clínica Médica",
     "text": "Mulher, 70 anos, há 8 meses com adinamia e dispneia progressiva. Exame físico: BEG, hipocorada 2+/4+, sem outras alterações. Hemograma completo: hemoglobina: 9,6 g/dl; VCM: 73 fl; glóbulos brancos: 5.300/μL; plaquetas: 425.000/μL; reticulócitos=0,3%. Ácido fólico: 3,6 ng/mL (VR: 3.0 a 17.0); Vitamina B12: 654 pg/mL (VR: 174,0 a 878,0); Ferritina: 1,5 ng/mL (VR: 10 a 291), ferro sérico: 25 ug/dL (VR: 50 a 170), capacidade latente de fixação de ferro: 460 ug/dL (VR: 250 a 425).\n\nQual exame deve ser solicitado para complementar a avaliação da paciente?",
     "options": [
@@ -1522,6 +1652,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-72",
+    "topography": "10",
+    "topic": "Infecções sexualmente transmissíveis",
     "module": "Clínica Médica",
     "text": "Homem, 27 anos, auxiliar administrativo, morador de Ribeirão Preto. Há 6 dias com fadiga, mal-estar e odinofagia. Nega febre. Um dia após o início do quadro, notou lesões de pele (figuras abaixo). Refere início dos sintomas uma semana após relações sexuais com diferentes parceiros, com uso de preservativos nas relações sexuais genitais, porém não nas relações sexuais orais. Nega contato com áreas de mata ou com animais silvestres ou domésticos. Exame físico: lesões de pele pouco numerosas e com distribuição aleatória conforme fotos abaixo. Orofaringe: hiperemiada com pequena úlcera em palato mole. Linfonodos palpáveis em região cervical e axilar. Hemograma, dosagem de transaminases e avaliação da função renal sem alterações. Teste rápido para HIV, sífilis, hepatite C e B negativos.\n\nQual agente infeccioso é a provável causa do quadro?",
     "options": [
@@ -1564,6 +1696,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-74",
+    "topography": "2.2",
+    "topic": "Hipertensão arterial sistêmica",
     "module": "Clínica Médica",
     "text": "Homem, 38 anos, assintomático, procura atendimento por necessidade de relatório médico para a prática de atividade física. Nega uso de medicamentos. Nega tabagismo e etilismo. Exame físico: PA 140x90 mmHg. Eletrocardiograma normal. Solicitado monitorização ambulatorial da pressão arterial (MAPA), com resultado abaixo.\n\nQual é o diagnóstico e a conduta apropriada?",
     "options": [
@@ -1585,6 +1719,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-75",
+    "topography": "2.1",
+    "topic": "DPOC",
     "module": "Clínica Médica",
     "text": "Homem, 70 anos, apresenta-se com perda de peso significativa, fadiga e dispneia aos pequenos esforços. Relata dificuldade para se alimentar devido à falta de apetite e sensação de saciedade precoce. Antecedentes: doença pulmonar obstrutiva crônica grave e insuficiência cardíaca congestiva. Exame físico: perda de massa muscular e edema de membros inferiores. Exames laboratoriais: albumina sérica: 2,9 g/dL (VR: 3.4-5.0); hemoglobina: 12,0 g/dL; creatinina: 1,1 mg/dL; proteína C reativa (PCR): 0,8 mg/dL (VR: < 1,0); glicemia de jejum: 105 mg/dL.\n\nQual intervenção nutricional é a mais apropriada para este paciente?",
     "options": [
@@ -1607,6 +1743,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-76",
+    "topography": "2.1",
+    "topic": "Câncer de pulmão",
     "module": "Clínica Médica",
     "text": "Homem, 68 anos, refere tosse persistente há 3 meses, com piora progressiva. Refere perda de peso não intencional de 5kg neste período. Há 2 meses apresenta dor contínua, de intensidade 6/10, localizada no ombro direito, irradiando para o braço ipsilateral. Na última semana, iniciou com sudorese vespertina, principalmente na face à esquerda. É tabagista (carga tabágica de 60 anos/maço). Exame físico: redução da expansibilidade pulmonar e de murmúrio vesicular no terço superior do pulmão direito.\n\nQual é a hipótese diagnóstica mais provável para este quadro clínico?",
     "options": [
@@ -1628,6 +1766,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-77",
+    "topography": "2.1",
+    "topic": "Asma",
     "module": "Clínica Médica",
     "text": "Mulher, 45 anos, conta que desde a infância tem episódios de dispneia, tosse seca e chiado no peito quando exposta a poeira ou fumaça. Nunca fumou e nega comorbidades. Exame físico com sibilos esparsos, sem outras alterações.\n\nQual acometimento de vias aéreas é o mais provavelmente envolvido nesse caso?",
     "options": [
@@ -1649,6 +1789,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-78",
+    "topography": "2.1",
+    "topic": "DPOC",
     "module": "Clínica Médica",
     "text": "Homem, 76 anos, em acompanhamento por DPOC há 8 anos; nega comorbidades. Refere piora progressiva da dispneia (de pequenos esforços para dispneia em repouso) há 2 semanas, sem piora da tosse ou do aspecto da expectoração. Nega dor torácica, hemoptise, piora súbita dos sintomas. Exame físico: BEG, corado, cianótico (++/4+). Murmúrio vesicular fisiológico sem ruídos adventícios. Frequência respiratória: 28 i.pm. Ritmo cardíaco regular, com hiperfonese de B2, sem sopros. FC: 98 bpm. PA: 110 x 80 mmHg. Edema de membros inferiores (3+/4+) bilateral, depressível e simétrico. Presença de estase jugular a 45°.\n\nQual é a medida indicada para o diagnóstico mais provável?",
     "options": [
@@ -1670,6 +1812,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-79",
+    "topography": "6.1",
+    "topic": "Osteoartrose",
     "module": "Clínica Médica",
     "text": "Mulher, 68 anos, refere dor em joelhos há 1 ano, com piora progressiva, localizada principalmente 7/10). A dor é acentuada durante ortostase e atividades físicas, melhorando parcialmente após uso de dipirona, com alívio parcial. É hipertensa, em tratamento com enalapril, mas refere que não controla bem a pressão arterial. Exame físico: BEG; IMC: 31,5 kg/m²; presença de calor e crepitação à movimentação em joelhos (figura abaixo).\n\nQual é a alteração mais provável de ser encontrada em radiografia dos joelhos?",
     "options": [
@@ -1692,6 +1836,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-80",
+    "topography": "6.1",
+    "topic": "Espondilite anquilosante",
     "module": "Clínica Médica",
     "text": "Homem, 55 anos, refere dor em interfalangianas distais de ambas as mãos há três anos, pior após períodos de repouso. Obtém melhora com o uso de anti-inflamatórios não esteroidais. Nega outros tratamentos. Exame físico: BEG, corado; edema e dor à palpação de 2º a 5º interfalangianas distais de ambas as mãos; pele (ver figura).\n\nLevando em conta as alterações cutâneas e articulares, qual tratamento está indicado?",
     "options": [
@@ -1714,6 +1860,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-81",
+    "topography": "16",
+    "topic": "Pós-operatório",
     "module": "Cirurgia",
     "text": "Mulher, 56 anos, obesa. No segundo dia de pós-operatório de colecistectomia videolaparoscópica por litíase biliar. Cirurgia eletiva. Refere dor em hipocôndrio direito e febre. Exame físico: paciente com dor, temperatura axilar de 37,6°C. Ausência de taquicardia. Eupneica e anictérica. Ferida operatória em bom aspecto. Abdome discretamente distendido, com ruídos hidroaéreos sem alterações. Sem resistência e sem dor à palpação superficial. Ao revisar os controles, observou-se temperatura axilar oscilando entre 36,7°C e 37,8°C com três temperaturas aferidas acima de 37°C no período. Antibiótico prescrito em carater profilático na indução anestésica e suspenso nesta data, no segundo dia de pós-operatório.\n\nQual a conduta mais adequada?",
     "options": [
@@ -1734,6 +1882,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-82",
+    "topography": "16",
+    "topic": "Feridas",
     "module": "Cirurgia",
     "text": "Homem, 27 anos, sexo masculino, pós-operatório de apendicectomia. Refere febre de 37,8°C há 2 dias. Nega alteração do hábito intestinal e uso de medicamentos. Exame físico: bom estado geral, temperatura axilar de 37,8°C. Abdome normotenso, sem sinais de irritação peritoneal. Ferida operatória sem sinais flogísticos, com hiperemia do abaulamento em sua topografia. Ruídos hidroaéreos presentes, sem sinais de irritação dos hidroaéreos. Ao exame: dor à palpação abdominal profunda, sem sinais de irritação peritoneal.\n\nConsiderando o diagnóstico mais provável, qual a conduta mais adequada?",
     "options": [
@@ -1754,6 +1904,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-83",
+    "topography": "16",
+    "topic": "Pré-operatório",
     "module": "Cirurgia",
     "text": "Homem, 52 anos, será submetido a colectomia subtotal devido a doença diverticular. O paciente tem hipertensão arterial e diabetes mellitus controlados com uso correto e regular de medicamentos.\n\nQual a classificação pré-operatória desse paciente conforme os critérios de risco cirúrgico anestésico da Sociedade Americana de Anestesiologistas (ASA)?",
     "options": [
@@ -1775,6 +1927,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-84",
+    "topography": "16",
+    "topic": "Feridas",
     "module": "Cirurgia",
     "text": "Homem de 57 anos desenvolveu lesão por pressão sacral grau 4 após internação prolongada em unidade de terapia intensiva para tratamento de choque séptico. A lesão é bem delimitada, com presença de tecido desvitalizado no leito e dimensões de 18 x 12 cm.\n\nQuais as próximas condutas indicadas no tratamento deste paciente?",
     "options": [
@@ -1818,6 +1972,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-86",
+    "topography": "7.2",
+    "topic": "Melanoma",
     "module": "Cirurgia",
     "text": "Mulher de 64 anos, submetida à biópsia excisional de melanoma em membro superior direito, com índice de Breslow de 3,7 milímetros sem a presença de ulceração e com índice mitótico de zero. Foi submetida à ampliação de margens de 2 centímetros e à pesquisa de linfonodo sentinela axilar direito, que revelou a presença de micrometástases.\n\nQuais as próximas condutas indicadas no tratamento desta paciente?",
     "options": [
@@ -1839,6 +1995,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-87",
+    "topography": "16",
+    "topic": "Trauma abdominal",
     "module": "Cirurgia",
     "text": "Homem, 35 anos, vítima de 2 ferimentos por arma de fogo em região abdominal, admitido em choque hipovolêmico no pronto atendimento de hospital secundário. Exame físico: Pressão Arterial de 60 x 20 mmHg, intensa palidez, gemente, desorientado e com extremidades frias. Na inspeção do abdome observa-se 2 ferimentos perfurantes em parede abdominal, sendo um em hipocondrio esquerdo e outro em flanco esquerdo. Na ausência de recursos de imagem o paciente será submetido a laparotomia exploradora de urgência.\n\nQual a melhor incisão para acessar a cavidade abdominal?",
     "options": [
@@ -1860,6 +2018,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-88",
+    "topography": "7.2",
+    "topic": "Carcinoma basocelular",
     "module": "Cirurgia",
     "text": "Mulher de 85 anos apresenta tumoração eritematosa de cerca de 1 cm de diâmetro, bordos perolados e presença de teleangiectasias há 1 ano na ponta nasal.\n\nQual o diagnóstico mais provável e a conduta mais adequada?",
     "options": [
@@ -1880,6 +2040,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-89",
+    "topography": "16",
+    "topic": "Obstrução intestinal",
     "module": "Cirurgia",
     "text": "Menino, 4 anos, apresenta parada da eliminação de flatus e fezes há 4 dias. Evoluiu com distensão abdominal progressiva, inapetência e febre. Antecedentes: constipação intestinal desde o período neonatal. Eliminou mecônio com 16 horas de vida. Informante refere necessidade frequente de estímulo com supositório para evacuação. Nega eliminação de fezes explosivas ao toque. Três internações por enterocolite com 8 meses, 1 ano e 2 anos de idade. Exame físico: regular estado geral, febril (38°C), desidratado (+1/+4), corado, eupneico. Abdome: distendido, ruídos hidroaéreos diminuídos, sem sinais de irritação peritoneal. Timpânico à percussão. Após radiografia simples de abdome, o paciente foi internado. Prescrita lavagem intestinal, hidratação endovenosa e antibioticoterapia. Diagnóstico do plantonista foi de doença de Hirschsprung.\n\nQual dado é mais compatível com o diagnóstico de plantonista?",
     "options": [
@@ -1901,6 +2063,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-90",
+    "topography": "7.1",
+    "topic": "Doença arterial periférica",
     "module": "Cirurgia",
     "text": "Homem de 75 anos, hipertenso e tabagista com queixa de dor em membro inferior esquerdo ao caminhar 50 metros, com melhora completa ao repouso. Interna em leito de enfermaria comum para tratamento de COVID 19 de gravidade moderada. O índice tornozelo braço a esquerda é 0,4 e à direita é 0,8. Ausência de edema em membros inferiores. Nega antecedentes de infarto agudo do miocárdio ou acidente vascular cerebral. Está em uso de ácido acetil salicílico (AAS) 100 mg ao dia e Anlodipino 5mg uma vez ao dia. Realizou radiografia de tórax e tomografia de tórax com contraste, sem alterações. Exames laboratoriais de entrada: Hematócrito: 45 %; Glóbulos Brancos: 6500 (sem desvio) /mm³; Plaquetas: 250000/mm³; Sódio: 145 mM/L; Potássio: 4,4 mM/L; Creatinina: 2,5 mg/dl; Dímeros D: 755 ng/dl (VN<500 ng/dl).\n\nQual a melhor conduta inicial em relação ao manejo das medicações antitrombóticas?",
     "options": [
@@ -1922,6 +2086,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-91",
+    "topography": "8",
+    "topic": "Diabetes mellitus tipo 1 e 2",
     "module": "Cirurgia",
     "text": "Mulher, 52 anos, obesa, hipertensa, diabética, fazendo uso irregular de medicamentos para controle das comorbidades, procura uma Unidade de Pronto Atendimento, com queixas de um abscesso em região pré auricular esquerda. Ao exame nota-se tumoração inflamatória na área citada, de cerca de 2 cm de diâmetro, com flutuação central. Feita a medida da glicemia que resultou 450 mg/dl e PA 150 X 90 mmHg.\n\nQual a conduta mais adequada nesse momento?",
     "options": [
@@ -1943,6 +2109,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-92",
+    "topography": "7.1",
+    "topic": "Trombose venosa profunda",
     "module": "Cirurgia",
     "text": "Mulher, 60 anos com história de câncer de mama, submetida a mastectomia há 3 semanas e em inicio tratamento quimioterápico complementar. Na consulta ambulatorial observou-se edema súbito em perna direita, associada a dor local.\n\nQual a conduta mais adequada, considerando o diagnóstico mais provável?",
     "options": [
@@ -1984,6 +2152,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-94",
+    "topography": "4.2",
+    "topic": "Torção testicular",
     "module": "Cirurgia",
     "text": "Homem, 21 anos, admitido com dor aguda em bolsa testicular direita de inicio ha duas horas. Nega disúria, polaciuria ou nicturia. Nega alteração na cor, odor e aspecto da urina. Previamente hígido, vida sexual ativa, várias parceiras, sem uso de preservativo. Refere dor, afebril. Testículos tópicos, direito mais alto que esquerdo, e com hiperemia e dor em escroto a direita.\n\nQual medida de propedêutica ou semiotécnica poderia contribuir para o diagnóstico nesse caso?",
     "options": [
@@ -2026,6 +2196,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-96",
+    "topography": "4.1",
+    "topic": "Distúrbios hidroeletrolíticos",
     "module": "Cirurgia",
     "text": "Mulher, 22 anos, admitida em abdome agudo inflamatório. Submetida à laparotomia exploradora e salpingectomia por gravidez ectópica. Após alta da recuperação anestésica, é encaminhada à enfermaria para suporte clínico geral e cuidados de pós-operatório. Exame físico: bom estado geral, hidratada, corada, eupneica, afebril. Com náusea. Abdome: plano, ruído hidroaéreo diminuído, curativo limpo, dor à palpação em topografia de incisão. Aguarda pela prescrição.\n\nConsiderando esta etapa do pós-operatório, qual item poderia ser subtraído do soro de manutenção?",
     "options": [
@@ -2047,6 +2219,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-97",
+    "topography": "1.4",
+    "topic": "Câncer de boca",
     "module": "Cirurgia",
     "text": "Um paciente de 60 anos, tabagista há mais de 30 anos e etilista crônico, apresenta uma lesão ulcerada indolor na cavidade oral, notada há aproximadamente 5 meses. Durante a avaliação clínica, observa-se que o paciente também apresenta um nódulo endurecido e fixo no pescoço localizado em nível II à direita (figura).\n\nCom base no quadro clínico e considerando que a lesão primária está na cavidade oral, qual é o sítio mais provável de origem do tumor?",
     "options": [
@@ -2069,6 +2243,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-98",
+    "topography": "4.1",
+    "topic": "Lesão renal aguda",
     "module": "Cirurgia",
     "text": "Homem, 45 anos de idade, obeso grau 3, IMC atual de 65kg/m² (mas já perdeu 38Kg de seu peso máximo). Diabético e hipertenso. Foi submetido a cirurgia bariátrica pela técnica de bypass gástrico em Y de Roux por via laparoscópica. A informação é que sua cirurgia durou mais de três horas por dificuldade técnica em vista de aderências na cavidade abdominal devido a colecistectomia realizada por via aberta há 10 anos. Você, como médico hospitalista, foi avaliar o paciente no segundo dia de pós-operatório. O mesmo queixava-se de dor em região dorsal bilateral e fraqueza. Negava febre, dispneia, dor abdominal, disuria, coluria ou icterícia, mas apresentava urina mais escura.\n\nPensando no diagnóstico mais provável, qual deve ser a conduta para confirmar este diagnóstico e terapia inicial adequada?",
     "options": [
@@ -2090,6 +2266,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-99",
+    "topography": "16",
+    "topic": "Obstrução intestinal",
     "module": "Cirurgia",
     "text": "Homem de 38 anos, previamente hígido. Encontra-se em tratamento intensivo no CTI há duas semanas por queimadura de 3º grau (55% da superfície corporal). Há 02 dias com parada de eliminação de flatos e fezes. Ao exame físico encontrava-se com estado geral regular, desidratado, porém hemodinamicamente estável. O exame do abdome chamava atenção pela distensão difusa e dor à palpação profunda, sem sinais de irritação peritoneal. Os exames laboratoriais revelaram hipocalemia, insuficiência renal aguda e acidose metabólica com níveis elevados (limítrofes) de lactato. Os exames radiológicos demonstraram distensão difusa das alças intestinais sem um ponto evidente de obstrução.\n\nQual a melhor conduta inicial frente ao quadro apresentado?",
     "options": [
@@ -2111,6 +2289,8 @@ export const USPRP_2025_QUESTIONS: Question[] = [
   },
   {
     "id": "usprp2025-100",
+    "topography": "13",
+    "topic": "Abstinência alcoólica",
     "module": "Cirurgia",
     "text": "Mulher de 38 anos de idade foi trazida para a Unidade de Pronto Atendimento (UPA) onde você é o médico de plantão? O acompanhante refere que a mesma foi submetida a cirurgia bariátrica (não sabe qual a técnica operatória realizada) há 36 dias. Vem evoluindo com vômitos de repetição e precisou ser levada diversas vezes na mesma UPA para receber hidratação endovenosa. Na última semana apresentou fraqueza, parestesias nos pés e dores musculares. Há dois dias começou a reclamar que a visão estava ficando turva (SIC) e como acordou confusa no dia de hoje, o acompanhante a trouxe. Ao exame físico, apresentava-se estável hemodinamicamente e com índice de 14 na Escala de Coma de Glasgow.\n\nQual das alternativas abaixo está CORRETA, com relação ao quadro da paciente?",
     "options": [

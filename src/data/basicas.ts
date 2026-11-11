@@ -3,6 +3,8 @@ import { Question } from '../types';
 export const BASICAS_QUESTIONS: Question[] = [
   {
     id: 'tp2024-1',
+    topography: '11',
+    topic: 'Puericultura',
     module: 'Ciências Básicas',
     text: 'Um bebê do sexo masculino, recém-nascido e a termo, é atendido em unidade de cuidados intensivos neonatais com vômitos frequentes, irritabilidade e falta de ganho de peso. Como em toda criança ao nascer, foi realizado o "Teste do Pezinho" no paciente, o qual detectou uma das mais conhecidas doenças metabólicas congênitas. Essa patologia é resultado de um defeito na enzima fenilalanina hidroxilase, que participa do catabolismo do aminoácido fenilalanina. Desta forma, qual a patologia e quais outros sintomas o bebê poderá apresentar caso não receba o devido tratamento?',
     options: [
@@ -20,6 +22,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-2',
+    topography: '2.2',
+    topic: 'Dislipidemia',
     module: 'Ciências Básicas',
     text: 'O diabetes mellitus é uma doença com elevada prevalência global, associada à mortalidade cardiovascular e complicações microvasculares, que conferem o caráter crônico a essa patologia. No diabetes tipo II, o processo aterosclerótico tem início antes mesmo do diagnóstico, daí a importância do reconhecimento dos fatores de risco implicados na fisiopatologia da doença vascular nessa população. A dislipidemia no diabético é caracterizada por lipoproteínas ricas em triglicérides, LDL pequenas, densas e muito aterogênicas e HDL-c baixo. (Fonte: Chacra AP. Dislipidemia Diabética. Rev. Soc. Cardiol. Estado de Säo Paulo; 26(3): 195-204, 2016). É correto afirmar que uma das causas da hipertrigliceridemia observada em pacientes com diabetes mellitus é causada por:',
     options: [
@@ -105,6 +109,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-7',
+    topography: '9',
+    topic: 'Anemia falciforme',
     module: 'Ciências Básicas',
     text: 'Uma mulher de 25 anos apresenta-se no consultório médico com queixas de fadiga, palidez, dor no peito e dificuldade respiratória. Seus exames laboratoriais revelam valores de hemoglobina abaixo do valor de referência, apresentando células falciformes e presença de hemoglobina S, subsidiando um diagnóstico de anemia falciforme. Desta forma, pode-se afirmar que:',
     options: [
@@ -139,6 +145,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-9',
+    topography: '2.2',
+    topic: 'Doença arterial coronariana crônica',
     module: 'Ciências Básicas',
     text: 'A aterosclerose é uma condição associada às doenças cardiovasculares que possui uma importante razão de prevalência. Esta condição pode estar associada a quadros isquêmicos no coração, cérebro e extremidades, afetando preferencialmente artérias de grande e médio calibre, elásticas ou musculares. Frequentemente estão envolvidas em quadros isquêmicos de coração, cérebro e extremidades. Do ponto de vista fisiopatológico, esta condição pode ser caracterizada como:',
     options: [
@@ -156,6 +164,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-10',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Ciências Básicas',
     text: 'Uma mulher de 65 anos apresenta-se no consultório médico com queixas de dispneia ao realizar atividades cotidianas, edema nas pernas e fadiga. Ela relata que esses sintomas pioraram nos últimos seis meses. A paciente tem um histórico de hipertensão arterial mal controlada e foi diagnosticada com diabetes mellitus tipo 2 há 10 anos. Durante o exame físico, seus sinais vitais são: Pressão arterial 140/90mmHg; frequência cardíaca 85 bpm; frequência respiratória 20 rpm. Um ecocardiograma mostra uma fração de ejeção de 35% (normal: ≥ 55%). Qual é o principal mecanismo fisiológico responsável pelos sintomas da paciente, considerando a fração de ejeção reduzida?',
     options: [
@@ -173,6 +183,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-11',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ciências Básicas',
     text: 'A infecção pelo Papilomavírus humano (HPV) é bastante prevalente, sendo que na maioria das vezes, a infecção cervical pelo HPV é transitória e regride espontaneamente. No pequeno número de casos nos quais a infecção persiste e, especialmente, é causada por um subtipo viral oncogênico, pode ocorrer o desenvolvimento de lesões precursoras, cuja identificação e tratamento adequado previne a progressão para o câncer cervical invasivo. Uma das metodologias empregadas para estas etapas de rastreio e identificação é a Avaliação Colpocitológica Oncótica Cervical. A respeito da emissão de laudo desta metodologia diagnóstica, assinale a alternativa correta:',
     options: [
@@ -241,6 +253,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-15',
+    topography: '3.2',
+    topic: 'Hipertensão portal',
     module: 'Ciências Básicas',
     text: 'A esquistossomose é uma doença intimamente relacionada a iniquidades de acesso aos serviços básicos, e que ainda hoje representa um agravo de elevada prevalência em múltiplos territórios do mundo. A etiologia desta enfermidade parasitária está correlacionada com patógenos do gênero Schistosoma, cujo ciclo de transmissão depende do contato com coleções hídricas contaminadas. A respeito das manifestações clínicas associadas à infecção, assinale a alternativa correta:',
     options: [
@@ -292,6 +306,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-18',
+    topography: '3.2',
+    topic: 'Hepatocarcinoma',
     module: 'Ciências Básicas',
     text: 'O carcinoma hepatocelular (CHC) é responsável por mais de 90% das neoplasias malignas hepáticas primárias. Nos países ocidentais, incluindo o Brasil, 70-80% dos casos de carcinoma hepatocelular estão associados à cirrose secundária, decorrente da infecção crônica pelos vírus B. A respeito desta relação causal, podemos afirmar que a hepatite crônica:',
     options: [
@@ -326,6 +342,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-20',
+    topography: '1.1',
+    topic: 'Parkinson',
     module: 'Ciências Básicas',
     text: 'O Parkinson é uma doença neurodegenerativa caracterizada pela perda progressiva de neurônios dopaminérgicos na substância negra do cérebro. Estudos recentes têm mostrado que a disfunção mitocondrial desempenha um papel crítico na patogênese do Parkinson. As proteínas PINK1 e Parkin são fundamentais para a regulação da qualidade mitocondrial, participando de um processo chamado mitofagia, que é a degradação seletiva de mitocôndrias danificadas. Qual das alternativas abaixo descreve corretamente a relação entre as proteínas PINK1, Parkin, a doença de Parkinson e o metabolismo celular?',
     options: [
@@ -343,6 +361,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-1',
+    topography: '4.1',
+    topic: 'Cistite',
     module: 'Ciências Básicas',
     text: 'Paciente do sexo feminino, 22 anos, sem histórico de internação hospitalar recente ou outra queixa médica, procura pronto atendimento com dor ao urinar. Diz que, apesar da vontade de urinar, quando vai ao banheiro não consegue urinar direito e de vez em quando acaba “vazando” um pouco de urina na roupa. Diz também que a urina está um pouco mais turva e com cheiro forte. Analisando o caso clínico, o microrganismo mais provável de causar este quadro, sua classificação microbiológica e o exame laboratorial que pode identificar o microrganismo em nível de gênero e espécie são, respectivamente:',
     options: [
@@ -394,6 +414,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-4',
+    topography: '9',
+    topic: 'Anemia ferropriva',
     module: 'Ciências Básicas',
     text: 'Os glóbulos vermelhos são componentes do tecido sanguíneo relacionados com o transporte de oxigênio, que em baixos níveis podem indicar a presença de anemia no paciente. Sabemos que existem diversos tipos de anemia, tais como a falciforme, a ferropriva e as talassemias. Sobre a anemia ferropriva, marque a alternativa correta:',
     options: [
@@ -428,6 +450,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-6',
+    topography: '2.1',
+    topic: 'Pneumonia comunitária',
     module: 'Ciências Básicas',
     text: 'A pneumonia adquirida na comunidade (PAC) é definida como uma infecção aguda do parênquima pulmonar, que o indivíduo adquire por transmissão na comunidade, distinguindo-a daquela adquirida no hospital. O tratamento proposto pelas diretrizes mais recentes para tratamento de PAC com necessidade de internação (enfermaria), elaboradas pela Sociedade Brasileira de Pneumologia e Tisiologia, é apresentado a seguir. Com relação às drogas antimicrobianas propostas, pode se afirmar que:',
     image: '/images/tp2023-6.webp',
@@ -532,6 +556,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-12',
+    topography: '8',
+    topic: 'Feocromocitoma',
     module: 'Ciências Básicas',
     text: 'Paciente do sexo feminino, 65 anos, com hipertensão arterial não controlada e sintomas de cefaleias, mal-estar geral e flushing facial relacionados aos picos de pressão arterial elevada. Os exames realizados incluíram eletrocardiograma normal, radiografia de tórax sem alterações e tomografia computadorizada abdominal. Verificou-se um aumento da aldosterona sérica (798 pmol/L; normal: 28 a 443 pmol/L), com renina sérica, metanefrinas plasmáticas, cortisol, ácido vanilmandélico e ionograma dentro dos parâmetros normais. Como deve ser interpretado o distúrbio da pressão arterial apresentado pela paciente desse relato?',
     image: '/images/tp2023-12.webp',
@@ -550,6 +576,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-13',
+    topography: '3.4',
+    topic: 'Pancreatite aguda',
     module: 'Ciências Básicas',
     text: 'Homem com 54 anos apresenta dor abdominal intensa com início há algumas horas, localizada no andar superior do abdome, com irradiação para as costas, acompanhada de náuseas e vômitos. Ao exame, abdome distendido, tenso à palpação, com sensibilidade maior em região epigástrica e periumbilical. Exames laboratoriais: lipase 625U/L (inferior a 60U/L); amilase 980U/L (valor de referência de 28 a 100U/L). Na tomografia computadorizada de abdome, foi visualizada coleção de líquido intraperitoneal e aumento difuso do pâncreas. Qual das alterações é mais provável de ser vista nesta condição?',
     options: [
@@ -584,6 +612,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-15',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ciências Básicas',
     text: 'Gestante de 25 anos, com 2 partos prévios, moradora de zona rural, apresenta sorologia para toxoplasmose com lgG positivo e IgM negativo. Está na décima semana de gestação. Identifique a conduta a ser adotada neste caso:',
     options: [
@@ -601,6 +631,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-16',
+    topography: '10',
+    topic: 'HIV/AIDS',
     module: 'Ciências Básicas',
     text: 'Geraldo, 45 anos, apresenta diarreia severa e fétida, relata fortes dores abdominais, febre ocasional aferida em 37,8ºC, náuseas e um episódio de vômito. Ao exame clínico. o paciente se apresentava desidratado (+++/+++++) e em estado geral regular. Foi solicitada a internação para a administração endovenosa de soro e exames laboratoriais, que incluíram hemograma completo, coprocultura, exame parasitológico de fezes (EPF) com pesquisa de coccídios e sangue oculto nas fezes. Em relação aos parâmetros hematológicos, o paciente apresentou eosinofilia em 3200 (VR 50 - 500/mm3) e os demais parâmetros próximos à normalidade, positivo para sangue oculto nas fezes no EPF, negativo para ovos e cistos de enteroparasitas e positivo para oocistos de Criptosporidium parvum. Por se tratar de uma coccidiose, qual doença de base deve ser investigada nesse paciente?',
     options: [
@@ -635,6 +667,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-18',
+    topography: '14',
+    topic: 'Intoxicações',
     module: 'Ciências Básicas',
     text: 'Um laudo da Polícia Federal revelou que quatro rios da maior reserva Yanomami estão contaminados por mercúrio com mais de 8600% do estipulado máximo para águas de consumo humano (ipen.br/portal, 06/06/22). Sabe-se que o mercúrio tem efeito extremo no metabolismo, ligando-se a grupos sulfidrila de sistemas enzimáticos. Em casos graves de intoxicação, os pacientes podem desenvolver lesão pulmonar aguda e desconforto respiratório grave com hipoxemia. Assinale a alternativa correta:',
     options: [
@@ -652,6 +686,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-19',
+    topography: '1.5',
+    topic: 'Hipertireoidismo',
     module: 'Ciências Básicas',
     text: 'Uma mulher de 29 anos consulta seu médico com uma história de 3 meses de intensa sudorese, palpitações e perda de peso (7kg). Ao exame, ela apresenta nervosismo e agitação, tremor em suas mãos e uma frequência cardíaca de 150bpm. Além disso, o médico nota um aumento de sua tireoide e exoftalmia. Os exames laboratoriais demonstraram aumento sérico de T3 e T4 e uma diminuição dos níveis de TSH. O médico então levanta a hipótese diagnóstica de doença de Graves, posteriormente confirmada. Assinale a alternativa correta:',
     options: [
@@ -669,6 +705,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-20',
+    topography: '13',
+    topic: 'Esquizofrenia',
     module: 'Ciências Básicas',
     text: 'Um paciente foi trazido por familiares ao hospital psiquiátrico, pois estava agressivo, quebrando objetos em casa e tentou bater em seu pai. Durante a entrevista, o paciente teve que ser contido devido à franca agressividade. A história pregressa foi colhida com familiares, os quais relataram que seis meses antes ele começou a dizer a familiares que estava ouvindo vozes. Uma noite acordou aos gritos e risadas, sem que ninguém soubesse o motivo. Frente a este quadro, foi estabelecida a hipótese diagnóstica de esquizofrenia e foi indicado o uso de um neuroléptico, da família das butirofenonas, o haloperidol, cujo mecanismo de ação farmacológica é explicado por bloqueio dos receptores centrais:',
     options: [
@@ -686,6 +724,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-1',
+    topography: '2.1',
+    topic: 'Asma',
     module: 'Ciências Básicas',
     text: 'Paciente de 34 anos é atendido no pronto-socorro com crise de asma, tendo sido medicado com salbutamol e ipratrópio por via inalatória (4 inalações) e solumedrol por via intravenosa. Com relação às medicações administradas, é correto afirmar que:',
     options: [
@@ -703,6 +743,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-2',
+    topography: '5.1',
+    topic: 'Tricomoníase',
     module: 'Ciências Básicas',
     text: 'Mulher, 35 anos, queixa-se de ardor ao urinar e desconforto durante o ato sexual. Exame físico normal. Ao exame ginecológico foi observado corrimento vaginal fino, de cor amarelo/esverdeado, bolhoso e de odor fétido. No exame colposcópico, a cérvice se apresentou levemente edemaciada, com eritemas e raros pontos hemorrágicos na mucosa vaginal. A paciente nega febre ou dores abdominais e não foram detectados sinais de infartamento ganglionar. Foi solicitada urinálise, que mostrou os seguintes resultados: urina turva, com hemácias, cilindros proteicos, células epiteliais e leucócitos em abundância, e a estrutura mostrada na imagem a seguir:',
     image: '/images/tp2022-2.webp',
@@ -721,6 +763,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-3',
+    topography: '3.2',
+    topic: 'Icterícia',
     module: 'Ciências Básicas',
     text: 'Homem de 36 anos procura Unidade Básica de Saúde por sentir fraqueza e cansaço. Relata não fumar nem beber. Ao exame clínico, o médico observa pele amarelada, pressão arterial 120/70mmHg, frequência cardíaca de 84 sístoles/minuto. Resultados laboratoriais: o exame de sangue apresenta hematócrito de 46%, número de hemácias 5.250.000/mm3, hemoglobina 16g/dL, Leucócitos 7.500/mm3, plaquetas 230.000/mm3; AST e ALT aumentadas; fezes acólicas e urina escura. Nesta situação, a icterícia ocorre por acúmulo de bilirrubina:',
     options: [
@@ -738,6 +782,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-4',
+    topography: '2.1',
+    topic: 'Derrame pleural',
     module: 'Ciências Básicas',
     text: 'Homem de 56 anos, após o 7º dia de pós-operatório de cirurgia do esôfago realizada no mediastino superior, apresenta discreta dor torácica e dispneia moderada, sem alterações nos sinais vitais. Após a realização de uma radiografia de tórax, notou-se derrame pleural à esquerda, e a toracocentese evidenciou a formação de líquido de aspecto leitoso (quilotórax). A causa do derrame pleural é devido a lesão no:',
     options: [
@@ -772,6 +818,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-6',
+    topography: '5.1',
+    topic: 'Infertilidade',
     module: 'Ciências Básicas',
     text: 'Homem de 35 anos, sem filhos, não fumante, nega história de doenças crônicas ou recorrentes, bem como exposição tóxica prévia. Ao exame físico, apresenta volume testicular reduzido com ductos palpáveis. Os níveis de FSH séricos estão aumentados. Há presença de oligospermia em volume de sêmen normal, com espermatozoides com motilidade e morfologia normais. Cariótipo em bandamento GTG: 46,XY. A investigação diagnóstica deve prosseguir para:',
     options: [
@@ -788,6 +836,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-7',
+    topography: '4.1',
+    topic: 'Lesão renal aguda',
     module: 'Ciências Básicas',
     text: 'Aminoglicosídeos são fármacos considerados nefrotóxicos que podem promover aumento dos níveis séricos de creatinina e ureia ou proteinúria, sendo importante o monitoramento da função renal dos pacientes que os utilizam. Correlacione a alteração renal ao principal mecanismo patológico de toxicidade destes fármacos.',
     options: [
@@ -804,6 +854,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-8',
+    topography: '2.2',
+    topic: 'Febre reumática',
     module: 'Ciências Básicas',
     text: 'A febre reumática é uma sequela principalmente de infecções por Streptococcus pyogenes e pode cursar com cardite ou outras complicações, como artrite, coreia, eritema e/ou nódulos cutâneos. Acredita-se que a lesão cardíaca é causada pela ativação inapropriada de linfócitos T no miocárdio, devido ao mimetismo molecular. Sobre a ativação dos linfócitos T na febre reumática, é correto afirmar que:',
     options: [
@@ -820,6 +872,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-9',
+    topography: '4.1',
+    topic: 'Distúrbios ácido-base',
     module: 'Ciências Básicas',
     text: 'Paciente de 74 anos, portador de DPOC grave, deu entrada na Emergência com quadro de dispneia, febre e expectoração de coloração amarelada, de início há 3 dias. Durante o atendimento inicial, evoluiu com rebaixamento de nível de consciência e necessitou de intubação orotraqueal. Após as condutas iniciais, exames complementares foram solicitados: Hemograma (Hb: 16g/dL, Ht 48%, Leucócitos: 30.000/mm3 com a presença de metamielócitos e desvio à esquerda); Na+: 140mEq/L, K+: 4,3mEq/L; creatinina: 1,5mg/dL; ureia: 68mg/dL. Gasometria arterial com pH: 7,13; pO2: 55mmHg; HCO3: 13mEq/L; pCO2: 84mmHg; SatO2: 85% com FiO2 (ventilação mecânica): 80%. Determine o diagnóstico gasométrico e a pCO2 esperada para tal paciente.',
     options: [
@@ -854,6 +908,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-11',
+    topography: '14',
+    topic: 'Anafilaxia',
     module: 'Ciências Básicas',
     text: 'Mulher de 55 anos foi passear em um sítio e, durante uma caminhada pelo lugar, foi picada por uma vespa. Logo apresentou coceira, vermelhidão e inchaço local. Após 20 minutos da picada, chegou ao hospital mais próximo com edema de glote, teve choque anafilático e foi a óbito. A paciente desenvolveu uma hipersensibilidade do tipo I, que envolve o mecanismo imunológico por participação de anticorpos. O mecanismo imunológico da hipersensibilidade tipo I ocorre quando:',
     options: [
@@ -870,6 +926,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-12',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Ciências Básicas',
     text: 'Homem de 68 anos, hipertenso e dislipidêmico, há vários anos em tratamento, apresenta-se na clínica com queixa de piora de dispneia agora e aos pequenos esforços há várias semanas, e inchaço nos pés ao final do dia. Tem tosse noturna e, ultimamente, dificuldade para dormir, necessitando apoiar-se em 2 traveissoiros, acordando à noite, às vezes, com falta de ar, que melhora ao se sentar com as pernas para fora da cama. Em análises post mortem, observam-se alterações histopatológicas no miocárdio, assim como alterações estruturais e funcionais no ventrículo esquerdo, responsáveis pela insuficiência cardíaca. Identifique a melhor descrição das alterações encontradas na insuficiência cardíaca.',
     image: '/images/tp2022-12.webp',
@@ -887,6 +945,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-13',
+    topography: '8',
+    topic: 'Insuficiência adrenal',
     module: 'Ciências Básicas',
     text: 'Mulher de 36 anos procura o médico com queixa de fraqueza, anorexia e perda de peso nos últimos meses. Relata que apresentou nos últimos dias quadro de síncope e entre as outras vezes que percebeu que iria desmaiar, usou sal de cozinha na boca, com melhora. Ao exame físico: pressão arterial deitada 90/60mmHg e sentada 80/50mmHg; paciente emagrecida, hidratada, porém chama a atenção a hiperpigmentação das mãos, braços, face e pescoço. A paciente relata que a cicatriz da cesárea também se tornou mais evidente. Exames laboratoriais: o hemograma apresentou parâmetros normais, porém, observou-se hiponatremia e hipercalemia. Diante do quadro apresentado, suspeitou-se de hipocortisolismo. A doença associada a essa suspeita afeta diretamente a região:',
     options: [
@@ -903,6 +963,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-14',
+    topography: '2.2',
+    topic: 'Doença arterial coronariana crônica',
     module: 'Ciências Básicas',
     text: 'Ao analisar uma angiografia de um paciente de 55 anos do sexo masculino, foi observada uma obstrução do ramo circunflexo da artéria coronária esquerda. Essa obstrução pode afetar o sistema de condução do miocárdio?',
     options: [
@@ -920,6 +982,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-15',
+    topography: '7.2',
+    topic: 'Hanseníase',
     module: 'Ciências Básicas',
     text: 'A imagem a seguir é referente a biópsia cutânea de paciente do sexo masculino, 51 anos, que apresenta no tórax múltiplas lesões maculares, hipopigmentadas, acompanhadas de rarefação de pelos e perda de sensibilidade. Detecção precoce e tratamento adequado têm papel fundamental na prevenção de incapacidades provocadas por esta doença. O agente etiológico e a respectiva patologia são:',
     image: '/images/tp2022-15.webp',
@@ -938,6 +1002,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-16',
+    topography: '5.2',
+    topic: 'Abortamento',
     module: 'Ciências Básicas',
     text: 'Paciente de 23 anos, no fim do primeiro trimestre de gestação, apresenta sangramento pelo canal vaginal e relata dor abdominal frequente e hiperêmese. O exame clínico apontou pré-eclâmpsia e, ao ultrassom, foram observados cistos foliculares de 15 a 20mm em ambos os ovários. O saco gestacional apresentava modificações morfológicas importantes, com a presença de múltiplos cistos e o embrião não era visível. Suspeitando-se de doença trofoblástica gestacional, foi solicitada a dosagem sérica de gonadotrofina coriônica humana. A concentração apresentou níveis muito superiores ao normal, indicando o diagnóstico de mola hidatiforme. O anexo embrionário responsável pela condição detectada é:',
     options: [
@@ -955,6 +1021,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-17',
+    topography: '1.1',
+    topic: 'AVC',
     module: 'Ciências Básicas',
     text: 'Paciente com quadro de Doença Encefálica Vascular (AVC) apresentando dificuldade de movimentar o membro superior direito, fala pastosa e desvio da comissura labial à direita. Indique a alternativa que corresponde ao nome do vaso, o ramo e a sua área irrigada, respectivamente:',
     options: [
@@ -971,6 +1039,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-18',
+    topography: '1.1',
+    topic: 'Meningite',
     module: 'Ciências Básicas',
     text: 'Criança de 4 anos é atendida no pronto-socorro com história de um dia de febre alta e cefaleia intensa. Ao exame, nota-se rigidez de nuca. A amostra colhida do líquor apresenta conteúdo turvo e na bacterioscopia visualizam-se diplococos Gram-negativos. O provável patógeno é:',
     options: [
@@ -988,6 +1058,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-19',
+    topography: '2.1',
+    topic: 'Pneumonia comunitária',
     module: 'Ciências Básicas',
     text: 'Homem de 55 anos, em situação de rua e etilista, foi internado devido a pneumonia multilobar grave. Desenvolveu quadro de insuficiência respiratória grave. Foi solicitada uma baciloscopia de escarro, que revelou bastonetes gram-negativos encapsulados. O organismo é fermentador de lactose em ágar de MacConkey e é muito mucoide. O agente etiológico mais provável é:',
     options: [
@@ -1004,6 +1076,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-20',
+    topography: '10',
+    topic: 'Malária',
     module: 'Ciências Básicas',
     text: 'Caminhoneiro, 42 anos, comparece ao serviço de saúde referindo febre alta (39ºC) precedida de calafrios e astenia há 3 dias. Esteve em várias localidades na BR 364 (Cuiabá-Porto Velho) por 45 dias. Relata que há 30 dias teve quadro febril semelhante e recebeu diagnóstico de malária, sendo tratado apenas com cloroquina. Pode-se afirmar que:',
     options: [
@@ -1020,6 +1094,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-1',
+    topography: '4.1',
+    topic: 'Distúrbios ácido-base',
     module: 'Ciências Básicas',
     text: 'Homem negro, com 50 anos de idade, sem comorbidades, foi admitido no Pronto-Socorro com queixas de febre aferida, dor na perna esquerda associada a hiperemia local e linfadenite inguinal ipsilateral. Ao exame físico, PA 90x60mmHg, FC 104bpm e tempo de enchimento capilar de 4s. Dentre os exames, foi coletada gasometria arterial, que mostrou: pH 7,25; HCO3 16mEq/L; PaCO2 36mmHg; PaO2 87mmHg. Exames laboratoriais: Na 140mEq/L; Cl 101mEq/L; Ca 9,5mEq/L; creatinina 1,1mg/dL e ureia 40mg/dL). Qual o distúrbio acidobásico apresentado por este paciente e a provável condição clínica associada?',
     options: [
@@ -1036,6 +1112,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-2',
+    topography: '1.1',
+    topic: 'Meningite',
     module: 'Ciências Básicas',
     text: 'Homem de 45 anos, previamente hígido, foi admitido no pronto-socorro com febre alta, cefaleia intensa, rigidez de nuca e rebaixamento do nível de consciência. A tomografia de crânio sem contraste não mostrou sinais de hipertensão intracraniana. A punção lombar foi realizada, e os achados do líquor foram: leucócitos = 1.500/mm³ (90% polimorfonucleares), proteínas = 250mg/dL, glicose = 20mg/dL (glicemia plasmática = 100mg/dL). Assinale a alternativa que propõe o diagnóstico correto:',
     options: [
@@ -1052,6 +1130,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-3',
+    topography: '2.1',
+    topic: 'Derrame pleural',
     module: 'Ciências Básicas',
     text: 'Paciente com 68 anos, ex-tabagista, apresenta-se com dispneia progressiva, dor torácica pleurítica e perda de peso inexplicada nos últimos meses. O exame físico revela diminuição do murmúrio vesicular na base pulmonar esquerda, com macicez à percussão desta área. A radiografia de tórax mostra grande derrame pleural esquerdo. Realiza-se toracocentese diagnóstica, com os seguintes resultados:\nProteína do líquido pleural: 5,2g/dL\nProteína sérica: 6,8g/dL\nLDH do líquido pleural: 450U/L\nLDH sérico: 200U/L\nQual das seguintes opções descreve corretamente a classificação do derrame pleural, com base nos critérios de Light?',
     options: [
@@ -1084,6 +1164,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-5',
+    topography: '9',
+    topic: 'Coagulopatias',
     module: 'Ciências Básicas',
     text: 'Um paciente é encaminhado ao ambulatório secundário para investigação de tendência a sangramentos após pequenos traumas. Os exames laboratoriais revelam um aumento no Tempo de Protrombina (TP) e no Tempo de Tromboplastina Parcial Ativada (TTPa). Com base nesses achados, qual das condições abaixo pode justificar essa alteração na cascata da coagulação?',
     options: [
@@ -1100,6 +1182,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-6',
+    topography: '14',
+    topic: 'Choque',
     module: 'Ciências Básicas',
     text: 'Um paciente de 70 anos, é encaminhado para atendimento de emergência com quadro de hipotensão severa (PA 80/50mmHg), taquicardia (120bpm) e extremidades frias, devido ao uso excessivo de diurético. Com base na situação clínica descrita, assinale a alternativa que melhor explica os mecanismos compensatórios associados aos sintomas do paciente:',
     options: [
@@ -1116,6 +1200,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-7',
+    topography: '6.2',
+    topic: 'Hérnia de disco',
     module: 'Ciências Básicas',
     text: 'Um homem de 38 anos, pedreiro, procura a urgência com dor lombar há uma semana, irradiando para membro inferior direito. Refere fraqueza na perna e dificuldade para estender a perna. Ao exame clínico apresentou força reduzida no iliopsoas (4/5). Exames mostram compressão da raiz nervosa de L1 à direita. Qual reflexo tendinoso deve ser pesquisado para avaliação da queixa motora e relacionado ao resultado dos exames complementares?',
     options: [
@@ -1132,6 +1218,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-8',
+    topography: '1.1',
+    topic: 'AVC',
     module: 'Ciências Básicas',
     text: 'Ao ser submetido a terapia de reperfusão de oclusão de artéria vertebral com alteplase, um paciente teve melhora dos sintomas iniciais (disartria, nistagmos e vertigem), porém evoluiu com sonolência excessiva em seguida. Diante de uma nova tomografia sem hiperdensidades anormais, o paciente foi submetido a arteriografia de urgência, que evidenciou que o trombo “migrara” em relação a sua posição original. Caracterize corretamente o caso.',
     options: [
@@ -1148,6 +1236,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-9',
+    topography: '7.1',
+    topic: 'Trombose venosa profunda',
     module: 'Ciências Básicas',
     text: 'Um paciente de 68 anos é admitido no setor de Urgência e Emergência com dor intensa, edema e aumento da temperatura na panturrilha direita, com evolução há dois dias. Ele foi submetido a uma cirurgia ortopédica há uma semana e permaneceu em repouso no leito, desde então. O exame físico revela assimetria de volume entre os membros inferiores e a ultrassonografia Doppler confirma a presença de trombose venosa profunda (TVP).\nCom base na Tríade de Virchow, assinale a alternativa que indica a alteração fisiológica determinante para a gênese do trombo nesse paciente e o mecanismo subjacente:',
     options: [
@@ -1164,6 +1254,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-10',
+    topography: '1.1',
+    topic: 'Hipertensão intracraniana',
     module: 'Ciências Básicas',
     text: 'Um homem de 58 anos, hipertenso crônico, deu entrada na emergência após queda de motocicleta. Apresenta-se com rebaixamento do nível de consciência e sinais de hipertensão intracraniana. Durante o monitoramento, sua pressão arterial média (PAM) foi de 80mmHg e a pressão intracraniana (PIC) estimada em 35mmHg. Considerando os princípios fisiológicos da hemodinâmica cerebral, qual é a conduta mais adequada para preservar a pressão de perfusão cerebral (PPC) e evitar isquemia?',
     options: [
@@ -1180,6 +1272,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-11',
+    topography: '2.1',
+    topic: 'DPOC',
     module: 'Ciências Básicas',
     text: 'Durante uma avaliação em um ambulatório secundário, um paciente realizou um exame de espirometria para investigar sintomas de dispneia e tosse crônica. O laudo evidenciou uma redução significativa no Volume Expiratório Forçado no primeiro segundo (VEF1) e uma razão VEF1/CVF abaixo do valor de referência. Com base nestes dados, qual é a principal conclusão sobre o padrão ventilatório identificado nelas exames?',
     options: [
@@ -1196,6 +1290,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-12',
+    topography: '5.2',
+    topic: 'Pré-eclâmpsia',
     module: 'Ciências Básicas',
     text: 'Maria, gestante de 32 anos, primigesta, com 32 semanas de gestação, chega ao hospital com cefaleia intensa, edema em membros inferiores e pressão arterial de 160/110mmHg. Refere escotomas e dor epigástrica nas últimas horas. Ao exame, apresenta proteinúria. A equipe médica inicia conduta emergencial para controle da pressão arterial. Assinale a alternativa que apresenta o tratamento farmacológico adequado para Maria e o correto mecanismo de ação do fármaco escolhido:',
     options: [
@@ -1212,6 +1308,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-13',
+    topography: '2.2',
+    topic: 'Hipertensão arterial sistêmica',
     module: 'Ciências Básicas',
     text: 'Um paciente idoso de 60 anos, com histórico de hipertensão arterial, inicia o uso de captopril para controle da pressão arterial. Após algumas semanas de tratamento, ele relata o surgimento de tosse persistente. O médico explica que este é um efeito colateral comum do medicamento. Qual é o mecanismo responsável pela tosse persistente induzida pelo captopril?',
     options: [
@@ -1228,6 +1326,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-14',
+    topography: '4.2',
+    topic: 'Hiperplasia prostática benigna',
     module: 'Ciências Básicas',
     text: 'Um paciente de 59 anos, com histórico de hipertensão, apresenta sintomas de dificuldade para urinar e jato urinário fraco. Após avaliação, foi iniciado tratamento com mesilato de doxazosina. Qual efeito adverso comum deve ser monitorado?',
     options: [
@@ -1244,6 +1344,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-15',
+    topography: '9',
+    topic: 'Linfomas',
     module: 'Ciências Básicas',
     text: 'Um paciente de 45 anos, previamente saudável, é encaminhado ao ambulatório por apresentar um nódulo indolor em região cervical, acompanhado de perda de peso inexplicada e fadiga. Exames laboratoriais revelam níveis elevados da proteína c-Myc. A biópsia do nódulo indica proliferação celular atípica. Qual o papel do gene c-Myc na oncogênese observada no paciente?',
     options: [
@@ -1260,6 +1362,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-16',
+    topography: '10',
+    topic: 'Sepse',
     module: 'Ciências Básicas',
     text: 'Um paciente imunocomprometido é internado com quadro de sepse por bactéria gram-negativa. Durante a investigação clínica, nota-se deficiência na ativação da via alternativa do sistema do complemento. Com base nesse achado, qual das opções abaixo descreve corretamente uma das principais funções do sistema do complemento?',
     options: [
@@ -1292,6 +1396,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-18',
+    topography: '4.1',
+    topic: 'Distúrbios hidroeletrolíticos',
     module: 'Ciências Básicas',
     text: 'Um paciente de 65 anos é admitido na emergência com confusão mental, náuseas e fraqueza muscular. Seu histórico revela o uso de diuréticos tiazídicos e uma recente ingestão excessiva de água. Os exames laboratoriais mostram uma concentração plasmática de sódio de 122mEq/L (valor normal: 135-145mEq/L). Com base na fisiologia do controle do sódio no organismo, assinale a alternativa que explica o mecanismo fisiopatológico subjacente ao quadro do paciente:',
     options: [
@@ -1308,6 +1414,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-19',
+    topography: '4.1',
+    topic: 'Lesão renal aguda',
     module: 'Ciências Básicas',
     text: 'Um homem de 34 anos foi admitido na emergência após sofrer uma queda de 4 metros de altura, enquanto trabalhava em um canteiro de obras. Foi resgatado consciente, com dor intensa nos membros inferiores, principalmente nas coxas, além de fraqueza muscular generalizada. Ele permaneceu imobilizado no chão por cerca de 1 hora antes de ser socorrido. Ao exame físico, observou-se dor muscular intensa, rigidez nas coxas e sem sinais de fraturas ósseas aparentes. O paciente apresenta urina de cor escura, FC 110bpm e PA 95/60mmHg. Os exames revelaram níveis elevados de creatina quinase (CK = 20.000U/L), mioglobina sérica aumentada e creatinina elevada (1.9mg/dL). Assinale a alternativa correta:',
     options: [
@@ -1324,6 +1432,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-20',
+    topography: '2.2',
+    topic: 'Síndrome coronariana aguda',
     module: 'Ciências Básicas',
     text: 'Um paciente de 58 anos chega ao pronto atendimento relatando dor torácica intensa há aproximadamente quatro horas, acompanhada de sudorese e dispneia. O exame físico revela taquicardia e pressão arterial de 140/90mmHg. O eletrocardiograma mostra alterações sugestivas de isquemia miocárdica. Para confirmar o diagnóstico de infarto agudo do miocárdio (IAM), qual marcador sérico é considerado o principal, devido a sua alta especificidade?',
     options: [
@@ -1340,6 +1450,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-1',
+    topography: '13',
+    topic: 'Esquizofrenia',
     module: 'Ciências Básicas',
     image: '/images/tp2021-1.webp',
     text: 'A tabela abaixo mostra os valores de Kd de 4 antipsicóticos típicos denominados drogas A, B, C e D a vários receptores (nenhuma droga possui qualquer atividade intrínseca nestes receptores). Kd é a constante de dissociação cuja concentração em nM reflete a ocupância de 50% dos receptores, ou seja, menor Kd significa maior afinidade pelo receptor.\n\nBaseado nisso, qual é o antipsicótico que provavelmente produzirá a menor incidência de efeitos sedativos?',
@@ -1357,6 +1469,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-2',
+    topography: '2.1',
+    topic: 'Fibrose pulmonar',
     module: 'Ciências Básicas',
     image: '/images/tp2021-2.webp',
     text: 'Homem, 40 anos, apresenta febre, lesão cutânea no braço esquerdo e à radiografia simples de tórax presença de adenomegalia hilar bilateral. A biópsia da pele mostrou acúmulo de células epitelioides na derme, formando granulomas “nus” (sem coroa linfocitária), contendo células gigantes multinucleadas e ausência de necrose. A pesquisa de microrganismos pelas colorações especiais foi negativa. Diante do quadro clínico e morfológico, a principal hipótese diagnóstica é:',
@@ -1374,6 +1488,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-3',
+    topography: '4.1',
+    topic: 'Doença renal crônica',
     module: 'Ciências Básicas',
     text: 'Homem, 48 anos, com insuficiência renal crônica, em realização de hemodiálise, apresenta hiperparatireoidismo secundário com hormônio paratireoidiano plasmático de 860 pg/mL (referência de 10–65 pg/mL), cuja fisiopatologia está associada:',
     options: [
@@ -1406,6 +1522,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-5',
+    topography: '6.1',
+    topic: 'Artrite séptica',
     module: 'Ciências Básicas',
     text: 'Mulher, 22 anos, procura atendimento médico com queixa de febre e inchaço no joelho direito. Ela também tinha história recente de quadro de cervicite. O exame do líquido aspirado da articulação do joelho revela a presença de diplococos Gram negativos. O agente mais provável dessa artrite séptica é:',
     options: [
@@ -1470,6 +1588,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-9',
+    topography: '9',
+    topic: 'Anemia megaloblástica',
     module: 'Ciências Básicas',
     text: 'Mulher, 80 anos, foi admitida em hospital com histórico de um ano de parestesias em membros inferiores, queda do estado geral e piora cognitiva progressiva. A um mês da internação, parou de deambular e evoluiu com disfagia orofaríngea. Na admissão apresentava-se em regular estado geral, descorada, hiporresponsiva e com déficit da memória recente. Ao exame: déficit de sensibilidade em membros inferiores, incoordenação motora, Babinski bilateral, paraparesia crural e desorientação têmporo-espacial. No laboratório, apresentava Hb: 8,4 g/dL, VCM: 110 fl, hipersegmentação de neutrófilos, TSH normal e gastrite atrófica. A carência vitamínica envolvida com o quadro é:',
     options: [
@@ -1502,6 +1622,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-11',
+    topography: '4.1',
+    topic: 'Doença renal crônica',
     module: 'Ciências Básicas',
     text: 'Homem, 45 anos, em acompanhamento pós-transplante renal há 10 meses, apresenta proteinúria, aumento da creatinina sanguínea e perda progressiva da função do enxerto. Realizada biópsia renal que evidenciou fibrose e anormalidades vasculares. Pode-se concluir que o paciente apresenta rejeição:',
     options: [
@@ -1518,6 +1640,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-12',
+    topography: '1.1',
+    topic: 'AVC',
     module: 'Ciências Básicas',
     text: 'Homem, 70 anos, apresentou perda da consciência repentina e, após aproximadamente uma hora, despertou. Ao exame estava incapaz de falar e mover os membros à esquerda. Exame de imagem 6 meses após revelou áreas císticas no lobo parietal direito. As alterações decorrem do processo denominado:',
     options: [
@@ -1534,6 +1658,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-13',
+    topography: '14',
+    topic: 'Choque',
     module: 'Ciências Básicas',
     text: 'Homem, 23 anos, vítima de trauma abdominal fechado com hipovolemia por provável hemorragia intra-abdominal. Qual é a ação direta das células justaglomerulares nessa situação?',
     options: [
@@ -1550,6 +1676,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-14',
+    topography: '2.1',
+    topic: 'Asma',
     module: 'Ciências Básicas',
     text: 'Homem, 45 anos, asmático, iniciou anti-hipertensivo e apresentou broncoespasmo logo após a medicação. Qual fármaco anti-hipertensivo foi provavelmente introduzido?',
     options: [
@@ -1582,6 +1710,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-16',
+    topography: '4.1',
+    topic: 'Distúrbios ácido-base',
     module: 'Ciências Básicas',
     image: '/images/tp2021-16.webp',
     text: 'Mulher de 60 anos internada com pneumonia lobar, em uso de tiazídico há 9 meses. O distúrbio ácido-básico esperado é:',
@@ -1599,6 +1729,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-17',
+    topography: '16',
+    topic: 'Trauma abdominal',
     module: 'Ciências Básicas',
     image: '/images/tp2021-17.webp',
     text: 'FAST mostrando sangramento intra-abdominal no espaço de Morrison, região periesplênica e retrovesical. A alteração aparece como região:',
@@ -1633,6 +1765,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-19',
+    topography: '15',
+    topic: 'Bioestatística',
     module: 'Ciências Básicas',
     text: 'Um estudo epidemiológico mostrou IC95% da contagem de linfócitos T CD4 entre 254 e 429 células/mm³. Podemos afirmar corretamente que:',
     options: [
@@ -1649,6 +1783,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-20',
+    topography: '2.2',
+    topic: 'Infarto agudo do miocárdio',
     module: 'Ciências Básicas',
     text: 'Homem, 44 anos, apresentou oclusão do ramo circunflexo da artéria coronária esquerda. Pode sofrer infarto do miocárdio prioritariamente em qual região cardíaca?',
     options: [
@@ -1665,6 +1801,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-1',
+    topography: '3.2',
+    topic: 'Ascite',
     module: 'Ciências Básicas',
     text: 'Homem cis, pardo, de 48 anos, etilista, é admitido em um hospital com aumento do volume abdominal, edema de membros inferiores e fadiga. Ao exame físico, observa-se ascite volumosa e a paracentese diagnóstica revela os seguintes dados: Albumina do líquido ascítico: 1,0g/dL; Albumina sérica: 3,0g/dL; Contagem de leucócitos: 150 células/mm³ (predomínio de mononucleares); Proteínas totais no líquido: 1,5g/dL. Qual é o principal mecanismo fisiopatológico responsável pela formação da ascite nesse paciente?',
     options: [
@@ -1682,6 +1820,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-2',
+    topography: '8',
+    topic: 'Cetoacidose diabética',
     module: 'Ciências Básicas',
     text: 'Homem de 28 anos com diabetes mellitus tipo 1 é admitido em emergência hospitalar com respiração de Kussmaul e confusão mental. Gasometria: pH 7,18; HCO₃⁻: 10mEq/L; pCO₂: 23mmHg. Aplicando a fórmula de Winter ‒ ([1,5 × HCO₃⁻] + 8) ± 2mmHg ‒ qual é o raciocínio fisiopatológico correto acerca da resposta compensatória pulmonar nesse paciente?',
     options: [
@@ -1699,6 +1839,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-3',
+    topography: '4.1',
+    topic: 'Cistite',
     module: 'Ciências Básicas',
     text: 'Mulher, 35 anos, procurou a UBS com disúria, urgência e aumento da frequência urinária há dois dias, sem febre ou dor lombar. Possui histórico de infecções urinárias de repetição, tratadas empiricamente. Diante dos sintomas, o médico solicitou exame de urina tipo I, que revelou esterase leucocitária positiva, 50-70 leucócitos/campo e presença de bactérias. Qual a conduta diagnóstica mais apropriada nesse momento?',
     options: [
@@ -1716,6 +1858,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-4',
+    topography: '3.2',
+    topic: 'Cirrose hepática',
     module: 'Ciências Básicas',
     text: 'Um paciente de 52 anos, acompanhado em uma Unidade Básica de Saúde (UBS), é portador de cirrose hepática avançada secundária ao etilismo crônico. Durante consulta, apresenta queixa de insônia, sendo prescrita uma medicação sedativa de metabolização predominantemente hepática e alta taxa de extração hepática. Considerando o caso clínico, qual das alternativas descreve a alteração farmacocinética esperada para esse medicamento?',
     options: [
@@ -1733,6 +1877,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-5',
+    topography: '4.1',
+    topic: 'Pielonefrite',
     module: 'Ciências Básicas',
     text: 'Paciente de 47 anos, gênero feminino. Procura a UBS com sintomas urinários, febre e urgência miccional. Antecedentes de diabetes mellitus tipo 2 e obesidade, em uso de metformina diariamente. O médico suspeita de ITU (infecção do trato urinário) e prescreve quinolona para tratamento. Considerando a farmacodinâmica desse antibiótico, qual mecanismo explica sua ação antimicrobiana?',
     options: [
@@ -1750,6 +1896,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-6',
+    topography: '1.3',
+    topic: 'Amigdalite/faringoamigdalite',
     module: 'Ciências Básicas',
     text: 'Um adolescente de 16 anos é acompanhado em atendimento domiciliar por quadro de faringite bacteriana, com cultura positiva para Streptococcus pyogenes. O médico prescreve a Benzetacil (Penicilina G) como tratamento. Considerando os aspectos da bactéria e do antibiótico prescrito para o caso clínico, qual alternativa melhor explica como esse fármaco atua sobre a bactéria?',
     options: [
@@ -1784,6 +1932,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-8',
+    topography: '7.2',
+    topic: 'Hanseníase',
     module: 'Ciências Básicas',
     text: 'Paciente de 40 anos, sexo masculino, exibe lesão de pele eritematosa em face associada a madarose. Após realização de biópsia, foi realizado o diagnóstico de hanseníase virchowiana. Em relação à resposta inflamatória envolvida nesse processo, assinale a alternativa correta:',
     options: [
@@ -1801,6 +1951,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-9',
+    topography: '7.2',
+    topic: 'Herpes-zóster',
     module: 'Ciências Básicas',
     text: 'Um paciente de 65 anos procura a Unidade Básica de Saúde com dor em faixa no hemitórax direito, associada a lesões vesiculares na pele, respeitando uma distribuição linear sem cruzar a linha média. Considerando a organização dos dermátomos, qual estrutura nervosa está relacionada ao padrão apresentado?',
     options: [
@@ -1818,6 +1970,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-10',
+    topography: '16',
+    topic: 'Isquemia mesentérica',
     module: 'Ciências Básicas',
     text: 'Um homem de 59 anos, de etnia amarela, é admitido em ambiente hospitalar com dor abdominal intensa de início súbito, localizada na região epigástrica, associada a náuseas e vômitos. Exames de imagem sugerem comprometimento vascular de um dos principais ramos arteriais do abdome, levando à isquemia de órgãos derivados do intestino anterior. Com base na irrigação abdominal e nos aspectos morfofuncionais, qual das artérias abaixo está mais provavelmente envolvida?',
     options: [
@@ -1835,6 +1989,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-11',
+    topography: '14',
+    topic: 'Crise hipertensiva',
     module: 'Ciências Básicas',
     text: 'Um paciente de 55 anos é atendido no pronto-socorro com quadro de crise hipertensiva associada a taquicardia. Durante a avaliação, observa-se aumento do débito cardíaco como um dos principais determinantes da elevação pressórica. Qual receptor está mais diretamente envolvido nesse caso?',
     options: [
@@ -1852,6 +2008,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-12',
+    topography: '2.2',
+    topic: 'Hipertensão arterial sistêmica',
     module: 'Ciências Básicas',
     text: 'Paciente feminina, 48 anos, com histórico de hipertensão arterial essencial bem controlada, comparece ao ambulatório para acompanhamento. Há três meses, iniciou tratamento com um inibidor da enzima conversora de angiotensina (IECA). Nos exames de rotina atuais, observa-se uma elevação discreta e estável da creatinina sérica (de 0,9mg/dL para 1,2mg/dL) e uma consequente redução na taxa de filtração glomerular estimada (TFGe), que o médico assistente considera uma alteração esperada e clinicamente aceitável nesse contexto, após exclusão de outras causas. Qual o efeito renal esperado com o início do tratamento?',
     options: [
@@ -1869,6 +2027,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-13',
+    topography: '9',
+    topic: 'Coagulopatias',
     module: 'Ciências Básicas',
     text: 'Paciente pardo de 34 anos, em avaliação pré-operatória para colecistectomia eletiva. Seus exames laboratoriais revelam: Plaquetas dentro da normalidade, Tempo de Protrombina (TP) normal, mas Tempo de Tromboplastina Parcial Ativada (TTPA) significativamente prolongado. O teste de mistura (plasma do paciente + plasma normal) corrige o TTPA para valores normais. A deficiência de qual fator da coagulação melhor explica o achado?',
     options: [
@@ -1885,6 +2045,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-14',
+    topography: '8',
+    topic: 'Cetoacidose diabética',
     module: 'Ciências Básicas',
     text: 'Mulher, 35 anos, previamente hígida, dá entrada no hospital com quadro de vômitos, desidratação e taquipneia. Dextro: 500mg/dL. Gasometria arterial revela: pH 7,09 (VR: 7,35 - 7,45); HCO₃ 6mEq/L (VR: 22 - 26) e pCO₂ 18mmHg (VR: 35 - 45). Exames laboratoriais: Na 140mEq/L (VR: 135 - 145) e Cl 100mEq/L (VR: 98 - 106). Sobre o ânion gap, pode-se afirmar que:',
     options: [
@@ -1901,6 +2063,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-15',
+    topography: '2.2',
+    topic: 'Insuficiência cardíaca',
     module: 'Ciências Básicas',
     text: 'Homem de 52 anos é internado com diagnóstico de insuficiência cardíaca descompensada. Apresenta dispneia aos mínimos esforços, ortopneia, edema de membros inferiores, turgência jugular e crepitações bibasais. Durante a avaliação hemodinâmica, identifica-se aumento da pressão de enchimento ventricular, sem elevação proporcional do débito cardíaco. Qual mecanismo fisiopatológico explica melhor esse achado?',
     options: [
@@ -1917,6 +2081,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-16',
+    topography: '8',
+    topic: 'Hiperaldosteronismo primário',
     module: 'Ciências Básicas',
     text: 'Um homem de 41 anos, internado por hipertensão resistente e fraqueza muscular, apresenta PA de 168/100mmHg. Exames sanguíneos revelam: potássio 2,9mEq/L (VR: 3,5 - 5,0); bicarbonato 33mEq/L (VR: 22 - 28); pH arterial 7,48 (VR: 7,35 - 7,45), atividade de renina plasmática reduzida e aldosterona elevada. Identifique a alteração que melhor explica os achados clínicos e laboratoriais desse paciente.',
     options: [
@@ -1933,6 +2099,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-17',
+    topography: '1.5',
+    topic: 'Hipertireoidismo',
     module: 'Ciências Básicas',
     text: 'Paciente de 29 anos procura ambulatório por palpitações, sudorese excessiva e intolerância ao calor há 4 meses. Ao exame físico, apresenta tremor fino de extremidades, taquicardia e aumento difuso da glândula tireoide. Os exames laboratoriais revelam T4 livre elevado, e a pesquisa de anticorpos contra o receptor de TSH (TRAb) é positiva. Assinale o perfil hormonal e a relação de feedback do eixo hipotálamo-hipófise-tireoide mais compatíveis com esse quadro.',
     options: [
@@ -1949,6 +2117,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-18',
+    topography: '2.1',
+    topic: 'DPOC',
     module: 'Ciências Básicas',
     text: 'Paciente, 55 anos, tabagista de longa data, com diagnóstico de DPOC, apresenta dispneia progressiva e hipoxemia crônica ao exame clínico durante internação. Considerando as alterações fisiopatológicas da relação ventilação-perfusão, assinale o padrão predominante nesse paciente.',
     options: [
@@ -1965,6 +2135,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-19',
+    topography: '2.1',
+    topic: 'Câncer de pulmão',
     module: 'Ciências Básicas',
     text: 'Mulher cis, branca, 42 anos, é encaminhada do ambulatório secundário de oncologia para avaliação de adenocarcinoma broncoalveolar. A investigação diagnóstica inclui tomografia de tórax, biópsia pulmonar com exame histopatológico e análise molecular que evidencia mutação pontual no gene EGFR (exon 19), com aumento da expressão da proteína receptora tirosina quinase. A paciente apresenta exames laboratoriais com leucocitose discreta, VHS elevada e níveis séricos de lactato desidrogenase (LDH) acima dos valores de referência. Com base nessas informações, qual a alternativa que melhor expressa o papel desse gene alterado no contexto da patogênese tumoral?',
     options: [
@@ -2030,6 +2202,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-3',
+    topography: '7.2',
+    topic: 'Dermatite de contato',
     module: 'Ciências Básicas',
     image: '/images/tp2019-3.webp',
     text: 'Mulher, 15 anos, procurou a UBS referindo edema de pálpebras bilateral, com prurido intenso, acompanhado de lesões avermelhadas no pescoço, também pruriginosas, que se repetem em intervalos variados nos últimos seis meses. Refere ainda que, anteriormente, as lesões apareciam no início da semana e desapareciam sem necessidade de tratamento, porém nas últimas semanas elas permanecem inalteradas.\n\nA resposta imune envolvida é:',
@@ -2063,6 +2237,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-5',
+    topography: '2.2',
+    topic: 'Valvopatias',
     module: 'Ciências Básicas',
     text: 'Homem, 40 anos, com antecedente de febre reumática, queixa-se de falta de ar e fraqueza aos esforços. Exame físico: sopro sistólico no 2º espaço intercostal paraesternal direito.\n\nCorrelacionando as queixas, a ausculta e a morfologia cardíaca, provavelmente o paciente é portador de:',
     options: [
@@ -2112,6 +2288,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-8',
+    topography: '10',
+    topic: 'Infecções relacionadas à assistência',
     module: 'Ciências Básicas',
     image: '/images/tp2019-8.webp',
     text: 'Parturiente desenvolveu infecção hospitalar na incisão cirúrgica da cesariana, da qual foi isolado Staphylococcus aureus, cujo antibiograma é representado pela figura abaixo:\n\nEm Staphylococcus aureus, a resistência à oxacilina é:',
@@ -2161,6 +2339,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-11',
+    topography: '6.1',
+    topic: 'Gota',
     module: 'Ciências Básicas',
     text: 'Homem, 55 anos, apresenta inflamação articular compatível com crise de gota e elevado nível sérico de ácido úrico. Relata que esses sintomas surgiram algum tempo após ter iniciado um novo esquema terapêutico para o tratamento da hipertensão, com a utilização combinada de três anti-hipertensivos: captopril, hidroclorotiazida e nifedipina.\n\nO mecanismo responsável por esse quadro se deve a:',
     options: [
@@ -2177,6 +2357,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-12',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ciências Básicas',
     text: 'Logo após o nascimento de seu filho, uma mãe apresentou quadro convulsivo, sendo diagnosticado um foco epileptogênico e indicado o uso de fenobarbital sódico por tempo prolongado. Após os três primeiros meses do nascimento da criança, a mãe voltou a tomar anticoncepcional oral de microdosagem. No entanto, os ciclos menstruais continuaram irregulares e o ginecologista suspeitou que não estivesse sendo efetivo, tendo pedido à mãe que utilizasse outro método anticoncepcional até a retirada do fenobarbital.\n\nEsta interação medicamentosa pode ser explicada porque o medicamento:',
     options: [
@@ -2209,6 +2391,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-14',
+    topography: '9',
+    topic: 'Anemia falciforme',
     module: 'Ciências Básicas',
     text: 'Homem, afrodescendente, 35 anos, atendido na emergência com quadro de dor torácica, palidez intensa e icterícia, e história pregressa de dores articulares. A suspeita diagnóstica foi de síndrome torácica aguda, por crise vaso-oclusiva associada.\n\nOs exames laboratoriais necessários para confirmar o diagnóstico da doença de base, além do hemograma, são:',
     options: [
@@ -2225,6 +2409,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-15',
+    topography: '8',
+    topic: 'Cetoacidose diabética',
     module: 'Ciências Básicas',
     text: 'Mulher, 32 anos, com histórico de diabetes insulinodependente, apresentando quadro de febre, vômitos e diarreia há 3 dias e piora do controle glicêmico. Deu entrada na unidade de emergência sonolenta, com frequência cardíaca = 130 bpm, frequência respiratória = 30 irpm e pressão arterial = 100 x 60 mmHg. Glicemia capilar: 375 mg/dL. O exame de gasometria arterial e dosagens séricas mostrava os seguintes parâmetros:\n\n• pH: 7,13 (VR: 7,35 - 7,45)\n• pO₂: 99,5 mmHg (VR: 83 - 108 mmHg)\n• pCO₂: 30,5 mmHg (VR: 32 - 45 mmHg)\n• HCO₃⁻: 10 mmol/L (VR: 18 - 23 mmol/L)\n• BE (Base Excess): -17,8 mmol/L (VR: -2 a 3 mmol/L)\n• Cloreto: 105 mmol/L (VR: 98 - 106 mmol/L)\n• Sódio: 136 mmol/L (VR: 136 - 146 mmol/L)\n• Potássio: 4,4 mmol/L (VR: 3,5 - 5,0 mmol/L)\n• Hiato aniônico: 25,4 mmol/L (VR: 8 - 16 mmol/L)\n• Glicose: 428 mg/dL (VR: 70 - 99 mg/dL)\n• Lactato: 1,4 mmol/L (VR: 0,5 - 1,6 mmol/L)\n\nO diagnóstico do distúrbio do equilíbrio ácido-base é:',
     options: [
@@ -2257,6 +2443,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-17',
+    topography: '4.1',
+    topic: 'Doença renal crônica',
     module: 'Ciências Básicas',
     text: 'Homem, 48 anos, com insuficiência renal crônica, em realização de hemodiálise, apresenta hiperparatireodismo secundário, com hormônio paratireoidiano plasmático de 860 pg/mL (referência de 10 - 65 pg/mL), cuja fisiopatologia está associada:',
     options: [
@@ -2305,6 +2493,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-20',
+    topography: '4.1',
+    topic: 'Distúrbios hidroeletrolíticos',
     module: 'Ciências Básicas',
     text: 'Homem, 72 anos, apresentou vômito excessivo em um curto período de tempo, decorrente de uma virose gastrintestinal. No hospital, seus exames revelaram hipocalemia.\n\nUm possível resultado de hipocalemia sobre as células excitáveis é:',
     options: [
@@ -2322,6 +2512,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
   {
     id: 'tp2020-1',
+    topography: '9',
+    topic: 'Anemia megaloblástica',
     module: 'Ciências Básicas',
     image: '/images/tp2020-1.webp',
     text: 'Uma mulher branca de 58 anos, de descendência norte-europeia, apresenta uma história de 2 meses de aumento de fadiga, dificuldade de deambulação e déficits de memória. A história familiar apresenta doença autoimune. Os achados laboratoriais destacam uma anemia macrocítica, uma redução acentuada na vitamina B12 sérica e a presença de anticorpos anticélulas parietais.\n\nAnalise a fotomicrografia abaixo e assinale a alternativa que estiver indicando a célula da mucosa gástrica associada à redução acentuada na vitamina B12 e aos anticorpos anticélulas parietais:',
@@ -2373,6 +2565,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-4',
+    topography: '10',
+    topic: 'Doença de Chagas',
     module: 'Ciências Básicas',
     text: 'Clodoaldo, 66 anos, agricultor, é chagásico crônico há pelo menos 5 anos. Apesar da infecção ser acompanhada desde a fase aguda, foi obsevado apenas uma cardiomegalia leve que não interfere nas atividades diárias do paciente.\n\nComo podemos classificar a doença do paciente?',
     options: [
@@ -2389,6 +2583,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-5',
+    topography: '14',
+    topic: 'Anafilaxia',
     module: 'Ciências Básicas',
     text: 'Uma senhora de 62 anos de idade, IMS, previamente hígida, foi picada por uma abelha de uma colmeia em seu jardim, o que já havia acontecido várias vezes durante o verão. Alguns minutos após a última picada, ela começou a se queixar de coceira nas mãos, pés e virilha, acompanhada por cãibra abdominal. Logo após ela caiu desmaiada com respiração ofegante, entrou em colapso e perdeu a consciência. Seu marido, um médico, percebeu que a respiração estava taquipneica e apresentava edema em seus lábios e pálpebras; ela estava pálida e havia um eritema em seu pescoço e braços. Ao exame, seu batimento podia ser sentido, porém sua pulsação radial estava muito fraca. Seu marido imediatamente administrou adrenalina via I.M., um anti-histamínico (inibidor do receptor H1) I.V. e hidrocortisona. Ela recobrou a consciência e seu ritmo respiratório diminuiu. IMS não tinha história de reações adversas ao veneno de abelha, alimentos ou antibióticos; não havia também histórico de asma, rinite alérgica ou dermatite atópica. No dia seguinte ela estava completamente recuperada. Os resultados das investigações foram:\n\n• Células brancas: 7,5 x 10⁹/L (normalidade: 4 - 11)\n• Neutrófilos: 4,4 x 10⁹/L (normalidade: 2 - 7,5)\n• Eosinófilos: 0,40 x 10⁹/L (normalidade: 0,4 - 0,44)\n• Linfócitos: 2,4 x 10⁹/L (normalidade: 1,6 - 3,5)\n• Plaquetas: 296 x 10⁹/L (normalidade: 150 - 400)\n\nCom base no caso relatado, trata-se de um caso clássico de:',
     options: [
@@ -2405,6 +2601,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-6',
+    topography: '8',
+    topic: 'Insuficiência adrenal',
     module: 'Ciências Básicas',
     text: 'Maria Paula, 45 anos, apresenta-se ao consultório médico relatando importante perda de peso (aproximadamente 7 quilos em 3 meses), fadiga, redução do pelo corporal nas axilas e regiões púbicas e ausência de menstruação nos últimos 3 meses, com teste de gravidez negativo. Ao exame físico apresentava-se emagrecida, olhos profundos e redução do turgor da pele. Em posição supina, a PA era de 90/60 mmHg e a FC era de 95 batim/min; na posição ereta a PA era de 70/35 mmHg e FC: 120 batim/min. Apresenta hiperpigmentação nos mamilos e nos vincos da palma da mão. Exames sanguíneos laboratoriais revelaram: Na⁺: 125 mEq/L (Ref. 140 mEq/L); K⁺: 5,7 mEq/L (Ref. 4,5 mEq/L); Osmolaridade: 265 mOsm/L (Ref. 290 mOsm/L); Glicose em jejum: 50 mg/dL (Ref. 70 – 100 mg/dL); Cortisol: reduzido; Aldosterona: reduzida; ACTH: elevado; pH arterial: 7,32 (Ref. 7,4); HCO₃⁻:18 mEq/L (Ref: 24 mEq/L).\n\nA disfunção em qual dos locais abaixo poderia justificar o quadro clínico?',
     options: [
@@ -2421,6 +2619,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-7',
+    topography: '5.1',
+    topic: 'Infertilidade',
     module: 'Ciências Básicas',
     text: 'Em relação às causas atribuídas para a infertilidade masculina, podemos afirmar:',
     options: [
@@ -2437,6 +2637,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-8',
+    topography: '7.2',
+    topic: 'Hanseníase',
     module: 'Ciências Básicas',
     text: 'Paciente do sexo feminino, 45 anos, apresenta-se em Unidade de Pronto Atendimento com queixa de perda da sensibilidade nas mãos. Ao exame físico foram evidenciados nódulos eritemato-acastanhados, com aspecto de queloides ou fibromas. Foi realizada uma biópsia com achados histopatológicos de macrófagos com citoplasma repleto de bacilos de Hansen, formando acúmulos denominados Globias.\n\nO diagnóstico definitivo é:',
     options: [
@@ -2453,6 +2655,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-9',
+    topography: '4.1',
+    topic: 'Lesão renal aguda',
     module: 'Ciências Básicas',
     text: 'Paciente do sexo feminino, 45 anos, apresenta-se em Unidade de Pronto Atendimento com oligúria. Relata que está em tratamento para herpes simples com Aciclovir há quatro dias, e que há 48 horas não consegue urinar. Foram solicitados exames laboratoriais que sugeriram o diagnóstico de necrose tubular aguda.\n\nSobre o padrão de lesão encontrado na necrose tubular aguda, é correto afirmar que:',
     options: [
@@ -2469,6 +2673,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-10',
+    topography: '9',
+    topic: 'Anemia megaloblástica',
     module: 'Ciências Básicas',
     text: 'Dietas vegetarianas e veganas são compostas basicamente de frutas, folhas, legumes, cereais, leguminosas, nozes e sementes. Na dieta vegana não entra qualquer alimento de origem animal, incluindo mel. Na vegetariana não se come carne, aves, peixes e frutos do mar. Existem vitaminas praticamente inexistentes em alimentos de origem vegetal e, se não suplementadas, os indivíduos podem apresentar fraqueza, fadiga e anemia trazendo alterações metabólicas principalmente nos lipídeos.\n\nQual das vitaminas está associada a essas dietas?',
     options: [
@@ -2485,6 +2691,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-11',
+    topography: '8',
+    topic: 'Obesidade',
     module: 'Ciências Básicas',
     text: 'Indivíduos submetidos a cirurgia bariátrica na técnica de bypass gástrico em Y-de-Roux (BGYR) têm vários benefícios metabólicos pós-cirurgia como: redução dos níveis de colesterol, LDL-colesterol, triglicerídeos e glicemia. Porém, com o passar do tempo há diminuição de absorção de micronutrientes (vitaminas e minerais) que consequentemente pode levar o paciente a uma diminuição da concentração de hemoglobina e eritropoiese ineficaz, com redução número de hemácias, levando o paciente à anemia.\n\nEssa anemia deve-se à deficiência de qual micronutriente?',
     options: [
@@ -2517,6 +2725,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-13',
+    topography: '9',
+    topic: 'Anemia falciforme',
     module: 'Ciências Básicas',
     text: 'JFP, 25 anos, portador de Anemia Falciforme, iniciou quadro doloroso leve em MID. Não apresentava febre, queixas urinárias ou cardiorrespiratórias. Como a dor estava leve, iniciou Ibuprofeno 3x/dia, intercalando com paracetamol também 3x/dia. Por causa do calor achou melhor iniciar hidratação via oral.\n\nVocê acha que a conduta tomada é correta e tem base fisiopatológica?',
     options: [
@@ -2549,6 +2759,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-15',
+    topography: '1.1',
+    topic: 'Esclerose múltipla',
     module: 'Ciências Básicas',
     text: 'Infecções virais têm sido associadas ao desenvolvimento de doenças autoimunes como diabetes melito tipo 1 e esclerose múltipla. No caso da esclerose múltipla, há uma associação com infecção pelo vírus Epstein-Barr.\n\nA explicação para esta associação imunológica é:',
     options: [
@@ -2597,6 +2809,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-18',
+    topography: '3.1',
+    topic: 'Úlcera péptica',
     module: 'Ciências Básicas',
     text: '“A infecção pelo Helicobacter pylori tem sido associada a câncer gástrico, linfoma do tecido linfoide associado a mucosa gástrica (MALT) e úlcera péptica, e sua erradicação pode curar o linfoma MALT gástrico e prevenir a recorrência de úlcera péptica. A infecção apresenta alta prevalência em todo o mundo, principalmente em países em desenvolvimento. Doenças relacionadas ao H. pylori são raras em crianças, mas a maioria dos pacientes infectados contrai a infecção nesta idade. Apesar do fato de que a estratégia "testar e tratar" não seja recomendada em crianças com dor abdominal ou dispepsia funcional, se os sintomas forem recorrentes ou graves recomenda-se a endoscopia digestiva alta com biópsia.\n\nNão há consenso sobre se o tratamento do H. pylori é útil em crianças com distúrbios gastrointestinais funcionais, mas o tratamento é geralmente indicado se a infecção foi diagnosticada, principalmente devido à morbidade de longo prazo.” Em relação aos principais aspectos práticos dos medicamentos utilizados para doenças ácido-pépticas, assinale a alternativa correta abaixo:',
     options: [
@@ -2629,6 +2843,8 @@ export const BASICAS_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-20',
+    topography: '2.2',
+    topic: 'Infarto agudo do miocárdio',
     module: 'Ciências Básicas',
     text: '“Homem de 49 anos de idade procurou atendimento médico por dispneia intensa. Apresentou dor epigástrica intensa de uma hora de duração, acompanhada de dispneia, sudorese e palidez, dez dias antes do atendimento. Tal sintoma foi seguido de outros episódios de dor precordial acompanhados de dispneia, desencadeados por esforços progressivamente menores. A dispneia isoladamente passou a ocorrer mesmo em repouso e em decúbito dorsal, e houve aparecimento de edema de membros inferiores, três dias antes do atendimento médico. O paciente era tabagista. O exame físico dessa consulta revelou paciente com dispneia ruidosa, pressão arterial 80/50 mmHg, pulso regular, frequência 110 bpm e sinais de vasoconstrição periférica. O exame dos pulmões revelou estertores e sibilos disseminados, até os ápices de ambos os hemitórax. A semiologia cardíaca revelou a presença de 3ª bulha. O exame do abdome foi normal. Havia edema discreto de membros inferiores. Foi feito o diagnóstico de edema agudo de pulmão”.\n\nConsiderando o caso clinico acima, a principal hipótese diagnóstica e a alteração anatomopatológica correspondente seriam, respectivamente:',
     options: [

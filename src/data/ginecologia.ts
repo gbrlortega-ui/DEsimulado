@@ -20,6 +20,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-82',
+    topography: '5.1',
+    topic: 'Sangramento uterino anormal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Sobre as causas de sangramento uterino anormal (classificação FIGO - PALM-COEIN), assinale a correta:',
     options: [
@@ -37,6 +39,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-83',
+    topography: '5.1',
+    topic: 'Climatério e menopausa',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher negra, 54 anos, menopausa há 15 anos. Asma grave (corticoide crônico), hipertensa (tiazídico), insônia (benzodiazepínico). Tabagista, sedentária. Mãe/avó com osteoporose. Fatores de risco para osteoporose presentes:',
     options: [
@@ -54,6 +58,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-84',
+    topography: '5.1',
+    topic: 'Climatério e menopausa',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 52 anos, última menstruação há 13 meses. Fogachos intensos, ressecamento vaginal e dispareunia. Hipertensa controlada, IMC 22. Tratamento mais adequado?',
     options: [
@@ -88,6 +94,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-86',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente, 32 anos, hipertensa (uso de Losartana). Orientação contraceptiva correta?',
     options: [
@@ -105,6 +113,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-87',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 30 anos, citologia: "Células escamosas atípicas não podendo excluir lesão de alto grau (ASC-H)". Conduta?',
     options: [
@@ -122,6 +132,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-88',
+    topography: '5.1',
+    topic: 'Vaginose bacteriana',
     module: 'Ginecologia e Obstetrícia',
     text: 'Corrimento branco acinzentado, odor fétido (pior após coito/menstruação). Whiff teste positivo. Sem inflamação vulvovaginal. Diagnóstico e conduta?',
     options: [
@@ -139,6 +151,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-89',
+    topography: '5.2',
+    topic: 'Diabetes gestacional',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 12 semanas, IMC 29. Glicemia de jejum: 132 mg/dL. Histórico familiar de DM2. Diagnóstico?',
     options: [
@@ -156,6 +170,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-90',
+    topography: '5.2',
+    topic: 'Assistência ao parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante, 41 semanas, cesárea prévia. Trabalho de parto ativo. Bradicardia fetal sustentada, dor abdominal súbita intensa, interrupção das contrações e choque materno. Qual o diagnóstico?',
     options: [
@@ -173,6 +189,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-91',
+    topography: '5.2',
+    topic: 'Puerpério',
     module: 'Ginecologia e Obstetrícia',
     text: 'Puérpera (45 dias) com COVID-19 leve. Preocupada com a amamentação exclusiva. Qual a orientação?',
     options: [
@@ -190,6 +208,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-92',
+    topography: '5.2',
+    topic: 'Puerpério',
     module: 'Ginecologia e Obstetrícia',
     text: 'A sepse puerperal é definida por infecção do trato genital até 42 dias pós-parto. Quais sinais estão presentes?',
     options: [
@@ -207,6 +227,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-93',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante (8 semanas), teste rápido positivo para sífilis. Nega sintomas, múltiplos parceiros. Tratamento e conduta pelo Ministério da Saúde?',
     options: [
@@ -224,6 +246,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-94',
+    topography: '5.2',
+    topic: 'Rotura prematura de membranas',
     module: 'Ginecologia e Obstetrícia',
     text: "Gestante, 30 semanas, com perda de líquido abrupta pela vagina há 4 horas. Afebril e normotensa, tônus uterino normal, frequência cardíaca fetal de 160 bpm. Ao exame especular, saída de líquido claro pelo colo, com odor de \"água sanitária\". Qual a conduta correta?",
     options: [
@@ -241,6 +265,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-95',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: "Gestante com HIV, 38 semanas, em uso regular de terapia antirretroviral, com carga viral indetectável na 34ª semana. Chega em trabalho de parto: colo com 6 cm, bolsa íntegra, feto cefálico e cardiotocografia normal. Qual a conduta?",
     options: [
@@ -258,6 +284,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-96',
+    topography: '5.2',
+    topic: 'Puerpério',
     module: 'Ginecologia e Obstetrícia',
     text: 'Puérpera, 4º dia, febre 38,5ºC, útero doloroso e subinvoluído. Trabalho de parto durou 18h, bolsa rota há 4h. Qual o fator de risco para infecção?',
     options: [
@@ -292,6 +320,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-98',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 58 anos, dor mamária esporádica. Tia-avó com câncer de mama aos 72 anos. Exame físico normal. Qual o exame indicado?',
     options: [
@@ -309,6 +339,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-99',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 19 anos, Depressão (em uso de Sertralina). Qual a orientação contraceptiva correta?',
     options: [
@@ -326,6 +358,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-100',
+    topography: '5.1',
+    topic: 'Câncer de endométrio',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 60 anos, obesa, nuligesta. Sangramento genital pós-menopausa. USG: endométrio 12mm heterogêneo. Diagnóstico e conduta?',
     options: [
@@ -343,6 +377,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-81',
+    topography: '5.2',
+    topic: 'Gravidez ectópica',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 26 anos, com última menstruação há 9 semanas e sangramento vaginal irregular por duas vezes. Beta hCG 3000mUI/mL (referência positivo acima de 2,35mUI/mL). Referindo mal-estar, dor abdominal e sensação de desmaio (sic). Ao exame clínico, descorada ++/4+, pressão arterial 100x60mmHg, frequência cardíaca 110bpm, abdome distendido, doloroso, com dor à descompressão brusca em fossa ilíaca à direita. Ultrassom endovaginal com útero anteroversofletido, endométrio regular, hiperecogênico com 8mm de espessura, observa-se imagem hipoecoica sugestiva de grande quantidade de líquido retrouterina e em cavidade abdominal. Qual a suspeita diagnóstica?',
     options: [
@@ -360,6 +396,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-82',
+    topography: '5.2',
+    topic: 'Diagnóstico de gravidez',
     module: 'Ginecologia e Obstetrícia',
     text: 'Entre os vários hormônios responsáveis pelas mudanças fisiológicas que ocorrem no corpo da mulher durante a gestação, existe um hormônio glicoproteico produzido pelo complexo feto-placentário, cuja função é dar suporte ao corpo lúteo no início da gravidez; seu rápido aumento nas fases iniciais da gestação é responsável pelo clássico sintoma gestacional de náuseas e vômitos, no entanto, após 12 semanas de gestação, seus valores hormonais diminuem gradualmente e entram em um patamar aliviando os sintomas descritos na maior parte dos casos; mas, em casos de cromossomopatias fetais, os valores desse hormônio podem seguir padrões diferentes e sua dosagem nos auxilia no diagnóstico precoce. Qual é esse hormônio?',
     options: [
@@ -377,6 +415,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-83',
+    topography: '5.2',
+    topic: 'Puerpério',
     module: 'Ginecologia e Obstetrícia',
     text: 'Puérpera, 20 anos, G1P1, amamentando recém-nascido de 20 dias de vida, comparece à Unidade Básica de Saúde com queixa de dor mamária e febre há dois dias. Exame físico: bom estado geral, FC 100bpm, FR 18irpm, PA 125x88mmHg, T 38°C. Exame das mamas: ingurgitamento bilateral; mama direita avermelhada e dolorosa à palpação, com edema de pele, sem sinais de abscesso, com fissura mamilar. Além da ordenha das mamas, a conduta é:',
     options: [
@@ -394,6 +434,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-84',
+    topography: '5.2',
+    topic: 'Diabetes gestacional',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 23 anos, primigesta, Índice de Massa Corporal (IMC) 28kg/m2. Sem comorbidades prévias. Vem à segunda consulta de pré-natal com idade gestacional de 10 semanas e 5 dias. Traz exame de glicemia de jejum = 93mg/dL. Frente a este resultado do exame, qual a conduta para esta paciente? Parâmetros laboratoriais: Glicemia de jejum no pré-natal: Glicemia de jejum < 92mg/dL – normal; Glicemia de jejum - 92 a 125mg/dL – Diabetes Mellitus Gestacional; Glicemia de jejum ≥ 126mg/dL – Diabetes Mellitus',
     image: '/images/tp2023-84.webp',
@@ -412,6 +454,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-85',
+    topography: '5.2',
+    topic: 'Pré-natal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante, G1P0, 33 semanas e 4 dias, procura a emergência da Maternidade com queixas de astenia, mal-estar, prurido em face plantar e palma das mãos, náuseas e perda ponderal de 4kg nas últimas 2 semanas. Alega que, há uma semana, apresentou quadro de prurido em abdome e foi orientada a utilizar loratadina 5mg/dia, à noite, por cinco dias, com melhora parcial. Ao exame físico: bom estado geral, mucosas úmidas e coradas, ictérica (2+/4), PA 122x78mmHg, FC 63bpm, FR 17irpm, Tax 36,1ºC. Ao exame obstétrico: AU 32cm, BCF 153bpm, tônus uterino normal, toque vaginal não se aplica. Presença de escoriações em abdome, palma das mãos e planta dos pés. Diante do caso clínico acima, qual alternativa define o diagnóstico e a conduta a ser realizada?',
     options: [
@@ -429,6 +473,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-86',
+    topography: '5.2',
+    topic: 'Hemorragia pós-parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Puérpera de 28 anos apresenta sangramento uterino em grande quantidade, quarenta minutos pós-parto vaginal, sem intercorrências. AP: diabetes gestacional, polidrâmnio e feto Grande para Idade Gestacional (GIG). Exame físico: FC 110bpm, PA 100x60mmHg, útero com tônus diminuído. O índice de choque, o principal fator de risco para hemorragia pós-parto e o tratamento inicial recomendados são, respectivamente:',
     options: [
@@ -446,6 +492,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-87',
+    topography: '5.2',
+    topic: 'Trabalho de parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, Gesta II, Para I, procura o pronto atendimento da maternidade com queixa de apresentar perda de uma secreção mucosa pela vagina. Refere dores abdominais em cólica há 2 dias e está com 28 semanas de gestação. Na sua primeira gestação, teve um parto vaginal prematuro com 32 semanas e o recém-nascido permaneceu 21 dias na UTI, mas teve alta em boas condições. Ao exame clínico, não apresentava nada digno de nota e, ao obstétrico, estava com AU de 28, FCF 136bpm, dinâmica uterina com 2 contrações em 10 minutos. Ao toque, o colo estava centrado, médio, pérvio para 2cm, membrana íntegra e apresentação pélvica alta e móvel. Frente ao quadro descrito, é correto se afirmar que deve-se:',
     options: [
@@ -463,6 +511,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-88',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: '26 anos, secundigesta com 1 abortamento anterior há 3 anos, portadora do vírus HIV, em uso regular de tenofovir, lamivudina e dolutegravir. Apresenta carga viral menor que 1000 cópias/mL com 36 semanas, tendo indicação de zidovudina intravenosa até o clampeamento do cordão. Apresentação cefálica. A conduta em relação ao parto é:',
     options: [
@@ -480,6 +530,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-89',
+    topography: '5.1',
+    topic: 'Mioma uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 30 anos de idade queixa-se de aumento do fluxo menstrual, sangramento intenso por 7 dias, com eliminação de coágulos e cólicas importantes. Essa queixa tem cerca de um ano de duração. Refere ter engravidado uma vez, tendo parto normal há 3 anos, sem intercorrência. Usa preservativo como método contraceptivo. Ao exame físico, observa-se colo normal, com moderada quantidade de sangue coletado na vagina. O toque bimanual mostra útero aumentado a 10cm da sínfise púbica, superfície irregular, móvel, discretamente doloroso à palpação. Pensando nas causas de sangramento uterino anormal, a primeira hipótese diagnóstica deve ser:',
     options: [
@@ -497,6 +549,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-90',
+    topography: '5.1',
+    topic: 'Endometriose',
     module: 'Ginecologia e Obstetrícia',
     text: 'Na avaliação diagnóstica da endometriose, está correto afirmar que:',
     options: [
@@ -514,6 +568,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-91',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 24 anos comparece à UBS em busca de método contraceptivo. Em seu histórico apresenta crises de cefaleia unilateral pulsátil precedidas de escotomas, que ocorrem com maior frequência no período menstrual. Entre os contraceptivos, a indicação correta para essa situação é:',
     options: [
@@ -531,6 +587,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-92',
+    topography: '5.1',
+    topic: 'Infertilidade',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 36 anos, tentando engravidar há 4 anos, sem sucesso. Teve antecedente de aborto retido, com a necessidade de curetagem uterina. Mantém relações sexuais frequentes, ciclos menstruais regulares. Nega dismenorreia. Refere mãe menopausada aos 42 anos e antecedente de apendicectomia. Procurou o ginecologista para investigar a infertilidade. Quais exames deveriam ser solicitados para a propedêutica básica da infertilidade?',
     options: [
@@ -548,6 +606,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-93',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 32 anos, G3P3, laqueada, fez exame colpocitológico de rotina na Unidade Básica de Saúde, cujo laudo veio compatível com ASC-H (células escamosas atípicas de significado indeterminado). Segundo as diretrizes do Ministério da Saúde/INCA (Instituto Nacional do Câncer), qual conduta deve ser adotada?',
     options: [
@@ -565,6 +625,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-94',
+    topography: '5.1',
+    topic: 'Climatério e menopausa',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 54 anos procura atendimento ginecológico para alívio dos fogachos que surgiram há 6 anos, por ocasião da menopausa. Refere ainda alteração do sono e secura vaginal, o que traz desconforto na qualidade de vida. Apresenta hábitos de vida saudáveis e trouxe exames recentes realizados com seu cardiologista, sem alterações dignas de nota. Trata-se de uma hipertensão leve e controlada com medicação. Nos antecedentes familiares, refere mãe que sofreu recente fratura do colo do fêmur. Questiona sobre a possibilidade de iniciar tratamento para menopausa. Determine a conduta adequada para o caso:',
     options: [
@@ -582,6 +644,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-95',
+    topography: '5.1',
+    topic: 'Prolapso genital',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 74 anos, viúva, moradora de casa de repouso para idosos, apresenta queixa de sangramento vaginal em pequena quantidade há 7 dias. É hipertensa crônica e diabética. Menopausada desde os 50 anos, nega terapia de reposição hormonal, teve 5 gestações, sendo elas 4 partos vaginais e 1 aborto sem necessidade de curetagem. Conta que há mais de 10 anos tem a sensação de peso e bola na vagina, e que muitas vezes perde urina aos pequenos esforços. Seu último exame de “prevenção” foi em 2010. Ao exame físico, observa-se a seguinte imagem: A principal hipótese diagnóstica é:',
     image: '/images/tp2023-95.webp',
@@ -600,6 +664,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-96',
+    topography: '5.1',
+    topic: 'Câncer de ovário',
     module: 'Ginecologia e Obstetrícia',
     text: 'A classificação IOTA (International Ovarian Tumor Analysis) é uma padronização quanto à descrição de tumores anexiais por exame ultrassonográfico. Assinale a alternativa que contém apenas critérios de malignidade:',
     options: [
@@ -617,6 +683,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-97',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'No rastreio do câncer de colo uterino, sobre a recomendação da citologia oncológica em mulheres com menos de 25 anos, está correto afirmar que:',
     options: [
@@ -634,6 +702,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-98',
+    topography: '10',
+    topic: 'Sífilis',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 26 anos, G4P3A0, branca, desempregada, sem parceria sexual no momento, procura atendimento em Pronto-Socorro Ginecológico, devido ao aparecimento de “caroços" na vulva e odor na vagina há mais ou menos 5 dias. Ao exame ginecológico, observam-se as lesões abaixo e um corrimento vaginal mal-cheiroso, branco e abundante. Qual o método para confirmação diagnóstica e o tratamento correto?',
     image: '/images/tp2023-98.webp',
@@ -652,6 +722,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-99',
+    topography: '15',
+    topic: 'Saúde da mulher',
     module: 'Ginecologia e Obstetrícia',
     text: 'O atendimento de pessoas em situação de violência sexual exige o cumprimento dos princípios do sigilo, da ética e dos aspectos legais. Dessa forma, no atendimento de emergência a essas pacientes, deve-se realizar a seguinte abordagem:',
     options: [
@@ -686,6 +758,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-81',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 34 anos, G III C II, 10 semanas de gestação. Último preventivo há 5 anos (normal). Sobre a coleta de colpocitológico na gestação, é correto afirmar:',
     options: [
@@ -703,6 +777,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-82',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 32 anos, nuligesta, resultado de citologia oncótica: ASC-US (células escamosas atípicas de significado indeterminado). Conduta preconizada pelo Ministério da Saúde:',
     options: [
@@ -737,6 +813,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-84',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'Adolescente de 15 anos busca contracepção hormonal. Qual a orientação correta sobre autonomia e métodos?',
     options: [
@@ -754,6 +832,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-85',
+    topography: '5.1',
+    topic: 'Infertilidade',
     module: 'Ginecologia e Obstetrícia',
     text: 'Casal (mulher 35, homem 36) tentando engravidar. Ela tem histórico de infertilidade prévia. Ele já tem um filho. Sobre a investigação básica da infertilidade:',
     options: [
@@ -787,6 +867,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-87',
+    topography: '5.1',
+    topic: 'Câncer de ovário',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 40 anos, USG (18/set): cisto unilocular ecorrefringente de 4,18 cm em ovário direito. Toque vaginal: consistência cística e dolorosa. Conduta?',
     options: [
@@ -803,6 +885,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-88',
+    topography: '5.1',
+    topic: 'Climatério e menopausa',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher 52 anos, menopausa há 4 anos, fogachos intensos. Útero presente, endométrio 3mm, mioma intramural de 10mm. Mamografia BI-RADS 2. Sobre TH:',
     options: [
@@ -820,6 +904,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-89',
+    topography: '5.2',
+    topic: 'Puerpério',
     module: 'Ginecologia e Obstetrícia',
     text: 'Pós-parto recente, mastite em mama esquerda (eritema, dor, calor). Conduta clínica correta?',
     options: [
@@ -837,6 +923,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-90',
+    topography: '5.1',
+    topic: 'Prolapso genital',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 82 anos, prolapso uterino estádio 3, ulceração em ectocérvice. Cardiopata grave. Sem interesse sexual. Cirurgia indicada?',
     options: [
@@ -853,6 +941,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-91',
+    topography: '5.2',
+    topic: 'Puerpério',
     module: 'Ginecologia e Obstetrícia',
     text: 'Puérpera (10º dia), febre (38.2ºC), mama direita com hiperemia, edema e ponto de flutuação em QSL. Qual o manejo correto?',
     options: [
@@ -870,6 +960,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-92',
+    topography: '5.2',
+    topic: 'Pré-natal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 34 semanas, Hb 11,5 g/dL (era 12,5 g/dL com 10 semanas). Conduta correta?',
     options: [
@@ -887,6 +979,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-93',
+    topography: '5.2',
+    topic: 'Diabetes gestacional',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante (25 semanas), TOTG 75g: Jejum 97, 1h 150, 2h 112 mg/dL. Qual o diagnóstico?',
     options: [
@@ -904,6 +998,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-94',
+    topography: '5.2',
+    topic: 'Pré-eclâmpsia',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante (26 semanas), PA 150/100, creatinina 1,3 mg/dL, proteína/creatinina 0,58. Qual parâmetro define "sinal de gravidade" na pré-eclâmpsia aqui?',
     options: [
@@ -921,6 +1017,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-95',
+    topography: '5.2',
+    topic: 'Pré-eclâmpsia',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante (30 semanas), PA 150/90, feto < P3, oligoâmnio, Doppler normal. PA era normal no início. Diagnóstico?',
     options: [
@@ -953,6 +1051,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-97',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante (18 semanas), teste rápido para sífilis positivo. Como proceder de acordo com o Ministério da Saúde?',
     options: [
@@ -970,6 +1070,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-98',
+    topography: '5.2',
+    topic: 'Pré-natal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante em pré-natal de baixo risco. Quais vacinas devem ser orientadas de rotina?',
     options: [
@@ -987,6 +1089,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-99',
+    topography: '5.2',
+    topic: 'Abortamento',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente com perdas fetais tardias (26 e 24 semanas), indolores, com expulsão fetal imediata rápida. Qual o diagnóstico mais provável?',
     options: [
@@ -1004,6 +1108,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-100',
+    topography: '5.2',
+    topic: 'Rotura prematura de membranas',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante (36 semanas), perda líquida clara. Especular: saída ativa por Valsalva. Toque: colo fechado. Sobre este caso:',
     options: [
@@ -1020,6 +1126,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-81',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente feminina, 16 anos, procura o seu atendimento na Unidade Básica de Saúde, sem acompanhante. Relata ter iniciado vida sexual com o atual namorado há 6 meses e solicita prescrição de pílula contraceptiva, apesar de referir uso adequado de preservativo. Nega qualquer comorbidade, uso de medicações e vícios. Diante do caso, assinale a alternativa correta:',
     options: [
@@ -1036,6 +1144,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-82',
+    topography: '5.1',
+    topic: 'Sangramento uterino anormal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente feminina, de 46 anos, foi encaminhada ao ambulatório de cirurgia ginecológica devido a sangramento uterino anormal, que não apresentou melhora com o uso de ibuprofeno. Relata que o sangramento é intenso no período menstrual. No período intermenstrual, ocorre após algumas relações sexuais. Baseado na imagem de ultrassonografia transvaginal com doppler, assinale a alternativa que contém a hipótese diagnóstica para esse sangramento uterino anormal.',
     options: [
@@ -1053,6 +1163,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-83',
+    topography: '5.1',
+    topic: 'Síndrome dos ovários policísticos',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 22 anos de idade, procurou o ambulatório de ginecologia preocupada por estar há 6 meses sem menstruar, desde que parou uso de anticoncepcional oral combinado, pois deseja engravidar. Refere menarca aos 12 anos, mas como apresentava irregularidade menstrual e acne grave na adolescência, iniciou a pílula aos 15 anos e só suspendeu agora. Nega comorbidades e uso de medicamentos. Ao exame físico, apresenta IMC de 30kg/m², hirsutismo e acne. Assinale a conduta preconizada para este caso:',
     options: [
@@ -1069,6 +1181,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-84',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 26 anos, com vida sexual ativa desde os 18 anos, em uso de anticoncepcional oral combinado como método contraceptivo e sem comorbidades, apresenta em sua primeira citologia oncótica o diagnóstico de lesão intraepitelial escamosa de baixo grau (LSIL). Assinale a alternativa que indica a conduta inicial indicada para essa paciente:',
     options: [
@@ -1085,6 +1199,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-85',
+    topography: '5.1',
+    topic: 'Doença inflamatória pélvica',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 19 anos, nuligesta, usuária de dispositivo intra-uterino (DIU) de cobre há 3 anos, com parceiro sexual fixo há 2 meses, procura ginecologista com queixa de dor em baixo ventre, dispareunia e corrimento fétido há duas semanas. Ao exame físico, encontra-se em bom estado geral, corada, hidratada, PA 100x70mmHg; FC 72bpm; temperatura axilar de 37,7°C. Ausculta respiratória e cardiovascular sem alterações. Abdome plano, normotenso, doloroso à palpação profunda de hipogástrio, descompressão brusca ausente. Ao exame ginecológico, ectoscopia vulvar sem alterações; especular: vagina e colo tróficos, com presença de leucorreia amarelada fétida. Ao toque vaginal, dor à palpação e mobilização do colo. Considerando a hipótese diagnóstica do quadro, assinale a alternativa que contenha a sequência de condutas mais adequadas:',
     options: [
@@ -1101,6 +1217,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-86',
+    topography: '5.1',
+    topic: 'Endometriose',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 33 anos, nuligesta, teve a menarca aos 13 anos. Refere vida sexual activa, em uso regular de preservativo. Relata que apresentava cólicas menstruais leves que melhoravam com analgésicos, mas há 2 anos as dores pioraram e atualmente não melhoram nem com anti-inflamatórios. Apresenta queixa de dispareunia de profundidade, que se iniciou há 1 ano. Diante do quadro descrito, assinale a conduta correta:',
     options: [
@@ -1133,6 +1251,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-88',
+    topography: '5.1',
+    topic: 'Candidíase vaginal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 28 anos, refere que apresentou infecção urinária e utilizou antibiótico por 10 dias; procura agora a UBS com queixa de ardência e desconforto vulvar. Nega odor desagradável. O exame especular revela secreção esbranquiçada, espessa e aderente às paredes vaginais. O pH vaginal está em 4,0. Assinale a alternativa com a hipótese diagnóstica:',
     options: [
@@ -1149,6 +1269,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-89',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 29 anos, com um filho de 5 anos, vai à UBS com desejo de contracepção. Está em um relacionamento estável e pretende ter outro filho nos próximos 5 ou 6 anos. Refere vida sexual ativa, com uso regular de preservativo masculino, mas sente-se insegura somente com esse método. Refere ciclos menstruais regulares. Nega doenças, cirurgias prévias ou uso de medicamentos. Refere cefaleia com aura em investigação. Assinale a alternativa correta em relação à indicação do método contraceptivo diante da história clínica descrita:',
     options: [
@@ -1165,6 +1287,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-90',
+    topography: '5.1',
+    topic: 'Sangramento uterino anormal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente feminina, 19 anos, procura o ambulatório de ginecologia com desejo de gestação. Refere que tem vida sexual ativa desde os 15 anos e usa preservativo. Tem desenvolvimento sexual normal, mas nega menarca. Não procurou o médico antes, pois tem familiares que nunca menstruaram e dizem que “é coisa de família”. Ao exame, apresenta fenótipo feminino, desenvolvimento sexual adequado para a idade. Exame ginecológico: inspeção normal. Toque: vagina em fundo cego, ausência de útero. Assinale a alternativa com a hipótese diagnóstica e resultados de exames compatíveis com o quadro clínico descrito:',
     options: [
@@ -1181,6 +1305,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-91',
+    topography: '5.2',
+    topic: 'Pré-natal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Secundigesta, 36 semanas de gestação, 1 parto normal anterior, 35 anos de idade. Fez 7 consultas de pré-natal e, diante do diagnóstico de diabetes gestacional, fazia dieta e exercícios físicos, obtendo controle glicêmico adequado. Realizou uma ultrassonografia obstétrica há 3 semanas, que evidenciou peso fetal de 2900g, placenta grau 1, ILA normal. O exame físico desta consulta é PA 125/80mmHg, Pulso 84bpm, BCF 148bpm, boa movimentação fetal e altura uterina de 35cm. Diante do descrito, assinale a alternativa com a orientação correta para o parto desta paciente:',
     options: [
@@ -1197,6 +1323,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-92',
+    topography: '5.2',
+    topic: 'Eclâmpsia',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 35 semanas, chega inconsciente ao PS, trazida por familiares, com história de ter apresentado crise convulsiva em casa. Ao exame, nota-se PA de 160/110mmHg, altura uterina de 30cm, dinâmica uterina ausente, colo impérvio, BCF 155bpm. Os familiares negam história de epilepsia e na carteira de pré-natal consta aumento de pressão arterial a partir de 28 semanas, quando foi indicado uso de metildopa. Assinale a alternativa que indica a conduta clínico-obstétrica:',
     options: [
@@ -1213,6 +1341,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-93',
+    topography: '5.2',
+    topic: 'Trabalho de parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante, 2G1PN, com 39 semanas e 1 dia, é internada em trabalho de parto com 7cm de dilatação e bolsa rota há 30 minutos. As evoluções do trabalho de parto foram descritas no partograma a seguir: Assinale a alternativa correta em relação ao diagnóstico e à conduta nesse caso:',
     options: [
@@ -1230,6 +1360,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-94',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 25 anos, primigesta, com idade gestacional de 12 semanas, compareceu em consulta de pré-natal de rotina com resultado de exames laboratoriais solicitados pela enfermeira. Após análise dos exames, o médico da UBS constatou que a sorologia de toxoplasmose IgM e IgG eram positivos. Assinale a alternativa abaixo que tenha a conduta adequada neste caso:',
     options: [
@@ -1246,6 +1378,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-95',
+    topography: '5.2',
+    topic: 'Abortamento',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, com última menstruação há oito semanas, procura o pronto atendimento com queixa de cólicas hipogástricas e relato de sangramento vaginal há dois dias. Ao exame físico, foi evidenciada consistência uterina amolecida e volume aumentado, compatível com o tempo de amenorreia, além de colo uterino fechado. Identifique a hipótese diagnóstica e o método propedêutico indicado para o esclarecimento do caso:',
     options: [
@@ -1262,6 +1396,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-96',
+    topography: '5.2',
+    topic: 'Descolamento prematuro de placenta',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 27 anos, G1P0A0, IG de 37 semanas e 5 dias, dá entrada no PS obstétrico referindo sangramento vaginal há 20 minutos, de início súbito, associado a dor abdominal intensa. Ao exame físico, evidencia-se PA materna 90/50mmHg, FC materna 123bpm, BCF 110bpm, sangramento vaginal moderado, tônus uterino aumentado. Toque evidencia dilatação de 3cm, bolsa íntegra. Identifique a alternativa que apresenta a conduta adequada frente ao caso:',
     options: [
@@ -1278,6 +1414,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-97',
+    topography: '5.2',
+    topic: 'Hemorragia pós-parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 39 anos, G3PN3 com histórico de pré-eclâmpsia sobreposta a hipertensão arterial crônica, teve parto normal há 50 minutos e está apresentando sangramento vaginal abundante. Ao chegar ao leito, ela se encontra em regular estado geral, frequência cardíaca de 120bpm, pressão arterial de 90x60 e útero amolecido acima da cicatriz umbilical. Diante do quadro, assinale a alternativa com a sequência e o protocolo terapêutico adequados:',
     options: [
@@ -1294,6 +1432,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-98',
+    topography: '5.2',
+    topic: 'Abortamento',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 30 anos, secundigesta com 1 aborto espontâneo anterior, vai ao pronto-socorro com diagnóstico de gravidez e quadro de sangramento vaginal há 2 dias. Refere ter apresentado fortes dores e eliminado a gestação em casa há 2 horas. Ela traz o material para ser analisado. Ao exame físico, apresenta exame especular com moderada quantidade de sangue em fundo de saco vaginal, sangramento ativo via orifício externo do colo e ao toque com colo pérvio. Abaixo, a imagem do material entregue por ela à equipe: Assinale a alternativa com a hipótese diagnóstica:',
     options: [
@@ -1311,6 +1451,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-99',
+    topography: '5.2',
+    topic: 'Abortamento',
     module: 'Ginecologia e Obstetrícia',
     text: 'Uma mulher de 28 anos chega ao serviço de urgência com queixa de dor abdominal em cólica e sangramento vaginal há 2 dias. Ela relata última menstruação há 7 semanas e história de doença inflamatória pélvica há 2 anos. Ao exame físico, apresenta palidez cutânea, taquicardia (100bpm) e pressão arterial de 100/70mmHg. Ao exame abdominal apresenta dor à palpação profunda no hipogástrio e descompressão brusca positiva. Toque com dor à mobilização uterina e colo impérvio. Qual é a conduta inicial mais adequada para esta paciente?',
     options: [
@@ -1327,6 +1469,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-100',
+    topography: '5.2',
+    topic: 'Isoimunização Rh',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante de 23 anos, está em acompanhamento pré-natal e nega gestações anteriores ou abortamentos. Apresenta tipagem sanguínea AB Rh negativo, com parceiro O Rh positivo. Assinale a alternativa que indica o momento adequado para receber imunoglobulina anti-D, caso o Coombs indireto se mantenha negativo durante a gravidez:',
     options: [
@@ -1343,6 +1487,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-81',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 15 anos, em acompanhamento por dismenorreia primária, deseja iniciar uso de método contraceptivo. Nega história prévia de eventos tromboembólicos ou tabagismo e está em acompanhamento por enxaqueca com aura em uso de topiramato. A melhor conduta é:',
     options: [
@@ -1359,6 +1505,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-82',
+    topography: '5.2',
+    topic: 'Hemorragia pós-parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 26 anos, com 2 horas de pós-parto vaginal, inicia quadro de sudorese, palidez e sangramento vaginal em grande intensidade. Exame físico: hipocorada 2+/4+, PA = 80 x 40 mmHg, FC = 110 bpm, ritmo cardíaco regular. Fundo uterino na cicatriz umbilical, hipotônico, sangramento vaginal volumoso e de grande intensidade. Em associação aos cuidados de suporte de vida materna, as condutas imediatas são:',
     options: [
@@ -1375,6 +1523,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-83',
+    topography: '5.2',
+    topic: 'Trabalho de parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Parturiente, 28 anos, 38 semanas de gestação, com diagnóstico de pré-eclâmpsia, está internada para iniciar indução do trabalho de parto. É realizada cardiotocografia de 20 minutos que apresenta traçado de frequência cardíaca fetal com linha de base de 140 bpm, variabilidade de 20 bpm, 2 acelerações transitórias e ausência de desacelerações. Baseando-se somente na descrição do traçado, a conduta é:',
     options: [
@@ -1391,6 +1541,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-84',
+    topography: '5.2',
+    topic: 'Diabetes gestacional',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante, 35 anos, com idade gestacional de 29 semanas, comparece à consulta pré-natal com a seguinte curva glicêmica (após sobrecarga de 75g de glicose): 85 mg/dL (jejum) – 188 mg/dL (1h) – 150 mg/dL (2h). Apresentou glicemia de jejum no primeiro trimestre de 78 mg/dL. A orientação que terá melhor resultado na condução desse caso é:',
     options: [
@@ -1407,6 +1559,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-85',
+    topography: '5.2',
+    topic: 'Gravidez ectópica',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 26 anos, é admitida na emergência de uma maternidade com queixas de dor pélvica, atraso menstrual de 2 meses e discreto sangramento vaginal. Refere ciclos menstruais irregulares. Não faz uso de métodos contraceptivos, pois deseja engravidar. Ao exame: corada, hidratada, PA = 120 x 80 mmHg; FC = 90 bpm. Há dois dias realizou β-hCG com resultado de 1280 mUI/mL. Foi solicitado exame de ultrassonografia pélvica que mostrou massa complexa com sinal do anel tubário em anexo uterino esquerdo, medindo 3,0cm, e endométrico ecogênico medindo 13 mm. Os resultados do exame de sangue foram: β-hCG de 1360 mUI/mL; Hematócrito: 39%; Hemoglobina: 11,6 g/dL. A conduta mais indicada para a paciente nesse momento é:',
     options: [
@@ -1423,6 +1577,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-86',
+    topography: '5.1',
+    topic: 'Endometriose',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 28 anos, com dois filhos nascidos de cesárea, há oito meses procurou atendimento ginecológico por dor pélvica de forte intensidade, tipo cólica, na região pélvica, irradiando para a região lombar. A dor tem caráter progressivo e contínuo e se exacerba durante o período menstrual. Há sete meses, passou a apresentar dispareunia profunda. Está tentando engravidar há 10 meses. A melhor propedêutica a ser realizada é:',
     options: [
@@ -1439,6 +1595,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-87',
+    topography: '5.2',
+    topic: 'Abortamento',
     module: 'Ginecologia e Obstetrícia',
     text: 'Multípara, 30 anos, G3P0A3, comparece em consulta com desejo de gravidez. Relata abortamentos prévios entre 16 e 20 semanas de idade gestacional, sem quadro de dor ou sangramento, com rotura espontânea das membranas e dilatação cervical. A causa mais provável é:',
     options: [
@@ -1455,6 +1613,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-88',
+    topography: '5.2',
+    topic: 'Descolamento prematuro de placenta',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, com idade gestacional de 32 semanas, chega à emergência com dor abdominal de início súbito, contínua, associada a sangramento transvaginal de coloração escura. Traz ultrassom do dia anterior mostrando feto vivo e placenta corporal posterior. Exame físico: PA = 160 x 90 mmHg, feto longitudinal, pélvico, BCF = 110 bpm constante, útero hipertônico, colo fechado. A conduta é:',
     options: [
@@ -1471,6 +1631,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-89',
+    topography: '5.1',
+    topic: 'Tricomoníase',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 32 anos, apresenta corrimento vaginal de coloração amarelo-esverdeada, prurido vulvar discreto e disúria. Exame físico: conteúdo vaginal esverdeado, bolhoso e colo em “framboesa”. O exame complementar para confirmação diagnóstica é:',
     options: [
@@ -1487,6 +1649,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-90',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 24 anos, portadora do vírus HIV, idade gestacional de 36 semanas, em uso de Nevirapina, Zidovudina e Lamivudina. Com 35 semanas, apresentou carga viral menor do que mil cópias. No nascimento, será administrada Zidovudina endovenosa em dose de ataque e de manutenção até o clampeamento do cordão umbilical. A resolução da gestação nessa paciente é:',
     options: [
@@ -1503,6 +1667,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-91',
+    topography: '5.2',
+    topic: 'Trabalho de parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Secundigesta, 25 anos, parto vaginal prévio há dois anos, é internada com 31 semanas de gestação devido a cólicas em baixo ventre há 4 horas. Tem história de trabalho de parto pré-termo e infecção do trato urinário tratada nesta gravidez. Nega doenças. Exame obstétrico: 3 contrações de 30 segundos, moderadas, em 10 minutos. O colo uterino é médio, centrado, com 3 cm de dilatação. O tocolítico mais indicado nesse caso é:',
     options: [
@@ -1519,6 +1685,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-92',
+    topography: '5.2',
+    topic: 'Rotura prematura de membranas',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 45 anos, com 32 semanas de gestação, procura maternidade com queixa de perda de líquido por via vaginal há 6 horas. Nega doenças ou intercorrências no pré-natal. Exame físico: sinais vitais normais, dinâmica uterina ausente; vitalidade fetal preservada; tônus uterino normal. Exame especular: visualização de perda de líquido amniótico claro por orifício cervical externo. A conduta inicial para essa gestante é:',
     options: [
@@ -1535,6 +1703,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-93',
+    topography: '15',
+    topic: 'Rastreamento',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 34 anos, veio à consulta médica de rotina. Na anamnese, referiu que seu pai havia apresentado câncer de mama aos 40 anos de idade. O exame das mamas foi normal. A conduta é indicar:',
     options: [
@@ -1551,6 +1721,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-94',
+    topography: '5.2',
+    topic: 'Síndrome HELLP',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 42 anos, previamente hígida, com idade gestacional de 32 semanas, é admitida na maternidade com pressão arterial de 140 x 90 mmHg e queixa de epigastralgia. Nega cefaleia ou qualquer outra queixa. Proteinúria de fita está positiva 2+. Exames laboratoriais: AST: 136 U/l, ALT: 154 U/l, bilirrubina total: 2,3 mg/dL, plaquetas: 90.000/mm³ e LDH: 1450 U/l. O diagnóstico é:',
     options: [
@@ -1567,6 +1739,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-95',
+    topography: '5.1',
+    topic: 'Sangramento uterino anormal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Menina de 17 anos de idade vem acompanhada pela mãe para o ambulatório de ginecologia com queixa de nunca ter menstruado. A paciente não apresenta outras queixas. Nega doenças crônicas e uso de medicamentos. Ao exame: estatura = 1,47 m, mamas em estágio M1 e pelos pubianos em P1 (classificação de Tanner). Traz exames laboratoriais que mostram níveis muito elevados de FSH. O diagnóstico e conduta são:',
     options: [
@@ -1583,6 +1757,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-96',
+    topography: '15',
+    topic: 'Saúde da mulher',
     module: 'Ginecologia e Obstetrícia',
     text: 'Adolescente, 15 anos, na 10ª semana de gravidez resultante de violência sexual, não deseja manter a gravidez. Vem à consulta acompanhada pelos pais. Para a interrupção legal desta gestação é necessário:',
     options: [
@@ -1599,6 +1775,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-97',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente, 57 anos, Gesta 3/Para 3, realizou colpocitologia de rotina com resultado de lesão intraepitelial escamosa de alto grau (HSIL), presença de Gardnerella vaginalis e Mobiluncus sp. O próximo passo do acompanhamento deve ser:',
     options: [
@@ -1615,6 +1793,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-98',
+    topography: '5.1',
+    topic: 'Climatério e menopausa',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 52 anos procura atendimento por ondas de calor há 24 meses, com piora após a parada do fluxo menstrual (há 14 meses). Há 6 meses, apresenta também sensação de secura vaginal com dor ao coito. Refere estar em tratamento para hipertensão e diabetes há 7 anos, ambos controlados. Mãe com história de morte aos 65 anos por tromboembolismo. Sem outros achados dignos de nota. Ao exame: PA = 120/82 mmHg, mucosa vaginal hipotrófica, pele seca. Demais, sem particularidades. Traz exames de mamografia, densitometria, exames séricos e citopatológicos de colo uterino normais. O tratamento para este caso será:',
     options: [
@@ -1631,6 +1811,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-99',
+    topography: '5.1',
+    topic: 'Prolapso genital',
     module: 'Ginecologia e Obstetrícia',
     image: '/images/tp2021-99.webp',
     text: 'Paciente de 55 anos com queixa de “sensação de bola na vagina” e dificuldade para urinar. Relata atividade sexual regular. O exame ginecológico revela prolapso uterino completo (estágio IV). Qual o tratamento cirúrgico mais indicado?',
@@ -1648,6 +1830,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-100',
+    topography: '5.1',
+    topic: 'Mioma uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 47 anos, solteira, nuligesta, traz exames de rotina. Apresenta ciclos menstruais regulares. Nega atividade sexual e não tem desejo de engravidar. A ultrassonografia endovaginal mostrou útero de volume 160 cm³ (média até 120 cm³), miométrio regular apresentando mioma intramural com 20 mm no maior diâmetro, endométrio regular trilaminar de espessura 8 mm, ovário direito com volume 8 cm³ (normal até 10 cm³) e ovário esquerdo com volume 9 cm³ com cisto anexial único, não septado, anecoico medindo 23 x 24 x 19 mm. A citologia oncológica do colo uterino, mamografia, e exames laboratoriais estão com valores normais. A conduta a ser adotada é:',
     options: [
@@ -1664,6 +1848,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-81',
+    topography: '5.1',
+    topic: 'Planejamento reprodutivo',
     module: 'Ginecologia e Obstetrícia',
     text: 'Durante atendimento em uma UBS, um homem trans de 32 anos, em uso de testosterona e sem cirurgias ginecológicas, procura orientação sobre planejamento reprodutivo, desejando evitar gestação no momento, mas manter a possibilidade futura. Considerando princípios bioéticos, direitos reprodutivos e a atuação da Atenção Primária, assinale a alternativa correta.',
     options: [
@@ -1681,6 +1867,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-82',
+    topography: '5.1',
+    topic: 'Doença inflamatória pélvica',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher cis, branca, 30 anos, refere dor pélvica há 5 dias, febre (38,1°C) e corrimento vaginal. Exame abdominal: dor em hipogástrio, sem sinais de irritação peritoneal. Exame especular: secreção mucopurulenta cervical; toque bimanual: dor à mobilização do colo e dor anexial bilateral. Leucócitos 15.200/mm³ e PCR elevada. Qual mecanismo fisiopatológico explica o quadro descrito?',
     options: [
@@ -1698,6 +1886,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-83',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'Na UBS, uma mulher de 28 anos procura atendimento para orientações sobre anticoncepção. Ela relata vida sexual ativa com parceiro fixo, menstruações regulares e deseja um método eficaz, reversível e de uso contínuo, pois tem dificuldade de se lembrar dos comprimidos diariamente. Está bastante preocupada com uma gravidez indesejada e gostaria de iniciar o método logo. Refere que não fuma, não tem enxaqueca. Refere que após uma viagem longa apresentou um episódio de trombose em membro inferior esquerdo, o diagnóstico não foi feito oportunamente, mas os médicos a alertaram para a possibilidade. Assinale a alternativa com a indicação de método anticoncepcional para essa paciente.',
     options: [
@@ -1715,6 +1905,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-84',
+    topography: '5.1',
+    topic: 'Mioma uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Uma mulher de 38 anos, nuligesta, parda, procura atendimento ambulatorial com queixa de aumento do fluxo menstrual há cerca de 8 meses, associado a sensação de peso pélvico. Ao exame ginecológico, observa-se útero aumentado de volume, irregular, móvel e indolor à palpação. Diante do quadro descrito, assinale a alternativa que indica a abordagem diagnóstica inicial para essa paciente.',
     options: [
@@ -1732,6 +1924,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-85',
+    topography: '8',
+    topic: 'Prolactinoma',
     module: 'Ginecologia e Obstetrícia',
     text: 'Katia, 29 anos, procura atendimento em ambulatório de ginecologia apresentando quadro de amenorreia. Refere uso de DIU de cobre. Durante o exame físico, é detectada a presença de galactorreia bilateral. Com base no caso apresentado, qual informação adicional da anamnese contribuiria para fortalecer a principal suspeita clínica?',
     options: [
@@ -1748,6 +1942,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-86',
+    topography: '5.1',
+    topic: 'Sangramento uterino anormal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Uma mulher de 26 anos procura a Unidade Básica de Saúde (UBS) com queixa de ausência de menstruação há 8 meses. Relata que seus ciclos eram regulares anteriormente. Nega gravidez (teste urinário negativo), uso de medicações, perda de peso súbita ou estresse excessivo. Ao exame físico, apresenta índice de massa corporal (IMC) de 24kg/m², ausência de galactorreia ou sinais de hiperandrogenismo. Foi realizado o teste da progesterona (Acetato de Medroxiprogesterona 10mg/dia, por 10 dias), que resultou em ausência de sangramento após a suspensão. Em seguida, foi realizado o teste do estrogênio e progesterona combinados, que resultou em sangramento vaginal normal. Considerando a descrição do caso, qual a interpretação correta sobre o mecanismo da doença desta paciente?',
     options: [
@@ -1780,6 +1976,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-88',
+    topography: '10',
+    topic: 'Infecções sexualmente transmissíveis',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 32 anos, branca, procura a Unidade Básica de Saúde devido a lesões verrucosas na vulva há 3 meses. Refere vida sexual ativa, sem queixas. Ao exame, há múltiplas verrugas exofíticas pequenas em vulva/períneo, sem sinais de complicação. Sem sinais de imunossupressão. Teste de gravidez negativo. Indique a conduta inicial.',
     options: [
@@ -1796,6 +1994,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-89',
+    topography: '5.1',
+    topic: 'Síndrome dos ovários policísticos',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 26 anos, parda, procura a Unidade Básica de Saúde devido a ciclos menstruais longos, com intervalos que variam entre 40 e 60 dias desde a adolescência e acne persistente. Refere dificuldade para perder peso. Nega uso de anticoncepcional. Ao exame: IMC 31kg/m², acantose nigricans em pescoço e hirsutismo leve. Teste de gravidez negativo. Dentre os possíveis mecanismos fisiopatológicos da doença, assinale o que explica o conjunto de achados dessa paciente.',
     options: [
@@ -1812,6 +2012,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-90',
+    topography: '5.1',
+    topic: 'Sangramento uterino anormal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Uma paciente de 22 anos, branca, procura atendimento por amenorreia há 8 meses. Relata perda ponderal de 10kg no último ano, associada a prática intensa de exercícios físicos e restrição alimentar. Nega uso de anticonceptivos. Ao exame físico, apresenta IMC de 17kg/m², frequência cardíaca de 52bpm e sinais de hipoestrogenismo. Teste de gravidez negativo. Exames laboratoriais: LH, FSH, Estradiol: abaixo dos valores de referência; Prolactina normal e TSH normal. Nesse caso, a amenorreia apresentada pela paciente apresenta como principal mecanismo fisiopatológico:',
     options: [
@@ -1828,6 +2030,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-91',
+    topography: '6.1',
+    topic: 'Lúpus eritematoso sistêmico',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta de 24 semanas, com lúpus eritematoso sistêmico, em uso de hidroxicloroquina e azatioprina, refere artralgia em mãos e fadiga há 2 semanas; nega febre, edema ou sintomas urinários. PA 120/78mmHg, exame obstétrico normal. Identifique o próximo passo no planejamento diagnóstico para determinar atividade da doença.',
     options: [
@@ -1844,6 +2048,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-92',
+    topography: '5.2',
+    topic: 'Pré-eclâmpsia',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta de 32 anos, com 35 semanas de gestação, dá entrada no Serviço de Urgência apresentando cefaleia holocraniana persistente, visão turva e dor em hipocôndrio direito. Ao exame físico, apresenta-se consciente, orientada, com pressão arterial de 170/115mmHg, edema de membros inferiores (3+/4+) e reflexos osteotendíneos aumentados. A avaliação obstétrica demonstra batimentos cardiofetais presentes e rítmicos, sem sinais de trabalho de parto. Diante do quadro descrito, qual deve ser o planejamento terapêutico imediato para esta paciente?',
     options: [
@@ -1860,6 +2066,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-93',
+    topography: '5.2',
+    topic: 'Descolamento prematuro de placenta',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 27 anos, G2P1, com hypertension arterial crônica, em uso de metildopa, dá entrada na maternidade com 36 semanas gestacionais apresentando dor abdominal de início súbito, hipertonia uterina permanente, sangramento vaginal de coloração escura e ausência de batimentos cardíacos fetais. Exame físico: PA 160x110mmHg, FC 122bpm e útero lenhoso à palpação. Exames laboratoriais: fibrinogênio 75mg/dL; plaquetas 54.000/mm³; TP: alargado, D-dímero: fortemente positivo e presença de esquizócitos no esfregaço periférico. O mecanismo que explica os aspectos morfofuncionais envolvidos no caso descrito e sugerido pelo padrão laboratorial encontrado é:',
     options: [
@@ -1876,6 +2084,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-94',
+    topography: '5.2',
+    topic: 'Trabalho de parto',
     module: 'Ginecologia e Obstetrícia',
     image: '/images/tp2026-94.webp',
     text: 'Mulher de 31 anos, G2P1, com 39 semanas gestacionais, encontra-se em trabalho de parto no centro obstétrico, com evolução conforme o partograma abaixo:\n[Partograma mostra parada secundária da dilatação: ausência de progressão da dilatação cervical por 2 horas ou mais durante a fase ativa na presença de contrações adequadas]\nA conduta adequada para essa gestante é:',
@@ -1893,6 +2103,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-95',
+    topography: '5.2',
+    topic: 'Rotura prematura de membranas',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta de 25 anos, com gestação única de 31 semanas, procura o serviço de urgência referindo perda súbita de líquido vaginal há 4 horas. Nega dor ou febre. Traz o cartão de acompanhamento pré-natal sem descrição de intercorrências. Nega doenças clínicas e ginecológicas, uso de medicamentos ou tabagismo. Ao exame especular, observa-se coleção de líquido no fundo de saco posterior com pH alcalino (teste com papel de nitrazina positivo) e ausência de dilatação cervical. Não há sinais de corioamnionite. Ultrassonografia confirma oligoidrâmnio moderado. Exames laboratoriais não sugerem quadro infeccioso. O principal mecanismo responsável pela fragilização e ruptura das membranas ovulares nesse caso é:',
     options: [
@@ -1909,6 +2121,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-96',
+    topography: '5.2',
+    topic: 'Hemorragia pós-parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 29 anos, após parto vaginal há 20 minutos, evolui com sangramento vaginal intenso. O partograma evidenciou trabalho de parto prolongado, com uso de ocitocina. Ao exame físico: útero aumentado, amolecido e acima da cicatriz umbilical. Sinais vitais: taquicardia e hipotensão leve. A conduta imediata mais adequada é:',
     options: [
@@ -1925,6 +2139,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-97',
+    topography: '15',
+    topic: 'Bioética',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante de 16 semanas, com diagnóstico recente de toxoplasmose, é acompanhada pela mãe, que solicita ao médico omitir informações à menor para não “prejudicar a gestação”. Sob a perspectiva ética e médico-legal, a conduta adequada é:',
     options: [
@@ -1941,6 +2157,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-98',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta de 32 anos, com 36 semanas de gestação, em acompanhamento por infecção pelo HIV, em uso regular de terapia antirretroviral (TARV) desde o primeiro trimestre, apresenta carga viral de 1.200 cópias/mL no último exame. Evolui sem intercorrências obstétricas. Diante desse cenário, qual a conduta para redução do risco de transmissão vertical?',
     options: [
@@ -1957,6 +2175,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-99',
+    topography: '5.2',
+    topic: 'Pré-natal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Durante consulta de pré-natal em uma UBS, uma primigesta de 28 anos, com 10 semanas de gestação, sem comorbidades, comparece para sua primeira consulta. Considerando as recomendações da atenção primária, assinale a alternativa correta.',
     options: [
@@ -1973,6 +2193,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-100',
+    topography: '6.1',
+    topic: 'Lúpus eritematoso sistêmico',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher de 30 anos apresenta história de três perdas gestacionais consecutivas antes de 10 semanas. Traz exames laboratoriais recentes, mostrando anticorpo anticardiolipina IgG positivo em título moderado em uma única dosagem. A paciente demonstra ansiedade e solicita ao médico que “inicie imediatamente qualquer tratamento para evitar nova perda gestacional”, mesmo antes da confirmação diagnóstica. Considerando os princípios éticos, bioéticos e médico-legais envolvidos na prática clínica, qual é a conduta adequada?',
     options: [
@@ -1990,6 +2212,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   // ---- Teste de Progresso 2019 (gabarito oficial) ----
   {
     id: 'tp2019-81',
+    topography: '5.2',
+    topic: 'Pré-natal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante comparece para primeira consulta de pré-natal com 12 semanas de gestação, confirmada por ultrassonografia precoce.\n\nEm relação à avaliação da vitalidade fetal, é correto afirmar que:',
     options: [
@@ -2006,6 +2230,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-82',
+    topography: '5.2',
+    topic: 'Idade gestacional',
     module: 'Ginecologia e Obstetrícia',
     text: 'Para calcular a idade gestacional, nos baseamos na data da última menstruação.\n\nPortanto, a mulher que menstruou pela última vez em 01/03/2018, no dia 03/12/2018 está com:',
     options: [
@@ -2022,6 +2248,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-83',
+    topography: '5.2',
+    topic: 'Pré-eclâmpsia',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 17 anos de idade, chega ao hospital com queixas de cefaleia intensa, dor epigástrica e alterações visuais. Está com 35 semanas de gravidez, pressão arterial de 170 x 110 mmHg, útero com tônus normal, dinâmica ausente, altura uterina de 29cm, frequência cardíaca fetal de 136 bpm.\n\nO diagnóstico provável e conduta são:',
     options: [
@@ -2038,6 +2266,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-84',
+    topography: '5.2',
+    topic: 'Diabetes gestacional',
     module: 'Ginecologia e Obstetrícia',
     text: 'Secundigesta, 31 anos, na 24ª semana apresentou teste de tolerância à glicose (TTG 75g) alterado, tendo sido instituída nesse momento uma dieta para diabetes com 2.000Kcal e atividade física (caminhada – 150 minutos/semana). Com 29 semanas, a gestante realiza ultrassonografia, que mostra crescimento fetal no percentil 90 e polidrâmnio, e traz o controle glicêmico da última semana (dias 1, 3, 5 e 7):\n\n• Jejum (mg/dL): 97 / 96 / 99 / 101\n• 1h pós-café (mg/dL): 139 / 136 / 142 / 141\n• 1h pós-almoço (mg/dL): 150 / 144 / 141 / 138\n• 1h pós-jantar (mg/dL): 153 / 140 / 134 / 137\n• Hb glicada: 6,5%\n\nConsiderando o quadro atual, a conduta é:',
     options: [
@@ -2054,6 +2284,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-85',
+    topography: '5.2',
+    topic: 'Abortamento',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 30 anos, sem morbidades, com antecedente obstétrico de parto pré-termo (24ª semana) na primeira gravidez e de três abortamentos tardios nas gestações subsequentes. Atualmente está na 13ª semana de gravidez, sem queixas. Realizou exames de rotina de pré-natal (normais) e ultrassonografia de primeiro trimestre, com morfologia fetal e transluscência nucal normais.\n\nCom base no antecedente obstétrico da gestante e no resultado dos exames, a melhor conduta é:',
     options: [
@@ -2070,6 +2302,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-86',
+    topography: '5.2',
+    topic: 'Abortamento',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 28 anos de idade, gestação de 11 semanas, apresenta queixa de cólica em baixo ventre e sangramento vaginal de moderada intensidade há dois dias. Ao exame, encontra-se febril (37,8°C), PA: 110 x 70 mmHg e FC: 108bpm. Ao exame especular, observa-se grande quantidade de sangue vivo em fundo de saco vaginal, com odor fétido e orifício interno do colo uterino pérvio para 1 polpa digital.\n\nNesse caso, a conduta é:',
     options: [
@@ -2086,6 +2320,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-87',
+    topography: '5.2',
+    topic: 'Descolamento prematuro de placenta',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 37 semanas de gravidez, comparece ao pronto atendimento da maternidade por dor abdominal de forte intensidade, acompanhada por sangramento vaginal de coloração viva, em moderada quantidade. Exame físico: PA = 100/60 mmHg, hipertonia uterina, FCF = 80 bpm, especular com sangramento pelo orifício externo em moderada quantidade, com coágulos. Toque: colo dilatado 4cm, bolsa íntegra.\n\nConsiderando o caso descrito, a hipótese diagnóstica e a melhor conduta são:',
     options: [
@@ -2102,6 +2338,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-88',
+    topography: '5.2',
+    topic: 'Trabalho de parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 29 anos, 33 semanas, pré-natal sem intercorrências. Procura pronto atendimento com queixa de dor em hipogástrio há 3 horas. Ao exame físico, bom estado geral, sinais vitais normais, altura uterina de 31cm, feto cefálico, FCF = 140 bpm, dinâmica uterina de 3 contrações em 10 minutos, com 50 segundos de duração, rítmicas, dolorosas. Ao exame de toque: colo médio com 3cm, medianizado, bolsa íntegra, cefálico, -2.\n\nNesse caso, o próximo passo no cuidado da gestante é prescrever:',
     options: [
@@ -2118,6 +2356,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-89',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: 'Primigesta, 20 anos de idade, 24 semanas de gestação, retorna para checar exames da rotina de pré-natal. Dentre eles, o teste não treponêmico mostrou-se positivo na titulação 1:256 e teste treponêmico reagente.\n\nFrente a este resultado, qual seria a conduta?',
     options: [
@@ -2134,6 +2374,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-90',
+    topography: '5.2',
+    topic: 'Trabalho de parto',
     module: 'Ginecologia e Obstetrícia',
     image: '/images/tp2019-90.webp',
     text: 'Secundigesta, 28 anos, fumante de 20 cigarros/dia, idade gestacional 38 semanas, apresenta-se em trabalho de parto com dinâmica uterina = 3 contrações de 40 segundos, moderadas, em 10min. Ao toque, colo uterino com 3cm de dilatação, esvaecido 80%, cefálico alto e fixo, com saída de líquido meconial. A monitorização fetal está representada na imagem a seguir:\n\nO tipo de desacelerações da frequência cardíaca fetal e a conduta neste caso são, respectivamente:',
@@ -2151,6 +2393,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-91',
+    topography: '5.1',
+    topic: 'Sangramento uterino anormal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Nuligesta, 28 anos de idade, procura atendimento por estar sem menstruar há 7 meses. Traz exames de TSH e prolactina dentro dos limites de normalidade e teste de gravidez negativo. Continuou sem menstruar após ter utilizado progestagênio por 10 dias. Exame físico sem alterações.\n\nNesse caso, a conduta para estabelecer a melhor hipótese diagnóstica é:',
     options: [
@@ -2167,6 +2411,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-92',
+    topography: '5.1',
+    topic: 'Endometriose',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 42 anos de idade, G4P4, com diagnóstico histopatológico de endometriose peritoneal superficial realizado durante cirurgia de laqueadura tubária há 2 anos. Procura Unidade Básica de Saúde para rotina ginecológica. Relata ciclos menstruais regulares, com fluxo menstrual pouco aumentado e dismenorreia moderada não incapacitante. Nega outras queixas ginecológicas.\n\nEm relação ao acompanhamento da paciente, é correto afirmar que:',
     options: [
@@ -2183,6 +2429,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-93',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 18 anos de idade, iniciou vida sexual e deseja orientação para anticoncepção. Refere cefaleia frequente com duração de 4 a 6 horas, pulsátil, latejante, unilateral associada a náusea e, às vezes, vômitos, com sensibilidade a luz. Nega antecedente familiar de trombose venosa.\n\nA opção de anticoncepção mais indicada é:',
     options: [
@@ -2199,6 +2447,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-94',
+    topography: '5.1',
+    topic: 'Climatério e menopausa',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 52 anos de idade, menopausa há três anos, submetida a exérese de fibroadenoma de mama há 10 anos. Antecedente familiar de irmã com câncer de mama. Refere intensos fogachos e interroga seu médico a respeito da possibilidade de realizar Terapia Hormonal (TH).\n\nQual seria a melhor orientação a ser dada para esta paciente?',
     options: [
@@ -2215,6 +2465,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-95',
+    topography: '4.2',
+    topic: 'Incontinência urinária',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 50 anos de idade, chega à Unidade Básica de Saúde com queixa de perda urinária, precedida de vontade súbita de urinar, associada a dispareunia e diminuição de lubrificação vaginal. Nega que essa perda seja relacionada aos esforços. Como comorbidades, apresenta diabetes mellitus tipo 2, controlado com metformina e dieta. Ao exame ginecológico, apresenta hipotrofia vulvar, manobra de Valsalva negativa e região genital sem lesões.\n\nA hipótese diagnóstica e a conduta são:',
     options: [
@@ -2247,6 +2499,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-97',
+    topography: '5.1',
+    topic: 'Mioma uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Nuligesta, 49 anos de idade, sem desejo de engravidar. Ciclos menstruais regulares, foi submetida à ultrassonografia endovaginal de rotina com útero de volume 140cm3 (média até 120cm3), miométrio regular apresentando mioma intramural com 20mm no maior diâmetro, endométrio regular trilaminar de espessura 8mm (normal na fase proliferativa até 14mm), ovário direito com volume 8cm3 (normal até 10cm3) e ovário esquerdo com volume de 9cm3 com cisto anexial único, não septado, hipoecogênico medindo 23x24x19mm. A citologia oncótica, mamografia, hemograma, coagulograma, glicose sérica, TSH, T4 livre, urina tipoI, colesterol e frações estão com valores normais.\n\nA conduta a ser adotada é:',
     options: [
@@ -2263,6 +2517,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-98',
+    topography: '5.1',
+    topic: 'Vaginose bacteriana',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 30 anos de idade, G3P2A1, com queixa de corrimento vaginal com odor desagradável. Relata que sempre teve odor vaginal, mas nos últimos 3 meses ficou mais intenso no período menstrual e após as relações sexuais. Refere que recentemente fez tratamento com creme vaginal de metronidazol por 10 dias, porém sem melhora. Nega febre, dor ao ato sexual ou dificuldades para urinar. Exame ginecológico: corrimento vaginal em pequena quantidade, branco-acinzentado com odor intenso ao teste com KOH 10%.\n\nNesse caso, a hipótese diagnóstica, o pH vaginal e o tratamento são:',
     options: [
@@ -2279,6 +2535,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-99',
+    topography: '5.1',
+    topic: 'Planejamento reprodutivo',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 28 anos de idade, G3P3, último parto há 2 anos, casada, em uso de anticoncepcional oral, comparece a consulta solicitando realização de esterilização cirúrgica. Nega comorbidades, nega queixas e apresenta exame físico e ginecológico normais.\n\nA laqueadura tubária poderá ser realizada nas seguintes condições:',
     options: [
@@ -2295,6 +2553,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-100',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Mulher, 33 anos de idade, apresenta citologia cervical compatível com lesão intraepitelial de baixo grau (LIEBG/LSIL).\n\nDe acordo com as orientações do Instituto Nacional do Câncer (INCA), como deve ser o seguimento desta mulher?',
     options: [
@@ -2312,6 +2572,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   // ---- Teste de Progresso 2020 — Consórcio SP 1, outubro (gabarito oficial) ----
   {
     id: 'tp2020-81',
+    topography: '5.1',
+    topic: 'Câncer de ovário',
     module: 'Ginecologia e Obstetrícia',
     text: 'Nas pacientes com massas anexiais é de suma importância a diferenciação entre as de etiologia benigna e maligna.\n\nNo exame ultrassonográfico de abordagem transvaginal, são fatores sugestivos de malignidade:',
     options: [
@@ -2328,6 +2590,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-82',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'A contracepção de longa duração (LARC – long-acting reversible contraception) que envolve implantes subdérmicos, DIU de cobre e SIU com levonorgestrel, são ultimamente recomendados pela OMS para mulheres mais jovens, devido maior falha dos métodos tradicionais, como ocorre com os contraceptivos hormonais orais quando usados nessa faixa etária, levando assim ao risco de gravidez indesejada.\n\nSobre os LARC, qual a alternativa correta dentre as abaixo relacionadas?',
     options: [
@@ -2344,6 +2608,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-83',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Menina, 12 anos de idade, procura a Unidade Básica de Saúde acompanhada dos pais para consulta ginecológica de rotina, pois iniciou suas relações sexuais. Durante a consulta os pais apresentam dúvidas sobre a vacinação contra o vírus do HPV.\n\nVocê, conhecendo as recomendações do Ministério da Saúde e os benefícios da vacinação, deve assinalar a alternativa INCORRETA sobre essas orientações:',
     options: [
@@ -2376,6 +2642,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-85',
+    topography: '5.1',
+    topic: 'Endometriose',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente de 41 anos procura atendimento médico com queixa de dor pélvica há mais de seis meses, com piora no período pré-menstrual, acompanhado de dismenorreia intensa que se intensificou nos últimos seis meses. Ela é nuligesta e está sem método contraceptivo há três anos, com desejo de engravidar. Exame físico geral normal, abdome doloroso à palpação de fossa ilíaca direita, sem sinais de irritação peritoneal. Ao exame ginecológico, colo de aspecto epitelizado e conteúdo vaginal normal. Paciente refere dor à palpação de anexos direitos no toque bimanual e dor à mobilização do útero. Anexos esquerdos indolores à palpação. Solicitado ultrassom pélvico transvaginal, que evidenciou cisto de conteúdo espesso em ovário direito de 2,8cm no seu maior diâmetro e nódulo em região de ureter direito, com hidronefrose discreta à direita.\n\nApós a análise do quadro clínico e o ultrassom, assinale a conduta correta entre as alternativas abaixo:',
     options: [
@@ -2392,6 +2660,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-86',
+    topography: '5.1',
+    topic: 'Candidíase vaginal',
     module: 'Ginecologia e Obstetrícia',
     text: 'Você é o médico da UBS e atendeu a Sra. Maria, de 28 anos, com 2 filhos vivos, e que está acima do peso. Ela compareceu à consulta por ter um corrimento branco em grande quantidade com coceira associada a ardor quando urina. Também refere que esse corrimento piora no período pré-menstrual. Detalha que isso a incomoda há alguns meses e diz que o marido está se queixando de coceira no pênis há 2 dias, após coito vaginal recente.\n\nQual a sua hipótese diagnóstica provável e a conduta correta dentre as abaixo relacionadas?',
     options: [
@@ -2408,6 +2678,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-87',
+    topography: '5.1',
+    topic: 'Climatério e menopausa',
     module: 'Ginecologia e Obstetrícia',
     text: 'ANS, 55 anos, procura atendimento na Unidade Básica de Saúde queixando-se de fogachos eventuais de forte intensidade, principalmente no período noturno. Informa que a última menstruação ocorreu há 3 anos. Secundigesta, com dois partos cesárea. Laqueada. Nega patologias de base ou cirurgias prévias. O médico solicita exames de rotina como hemograma, colesterol e frações, triglicerídios, glicose, TSH, urina I. Todos se encontram sem alterações relevantes. A citologia do colo uterino igualmente está sem alterações. O ultrassom endovaginal demonstrou útero em retroversoflexão com volume de 100cm3, endométrio regular com 3mm de espessura, anexos sem alterações. Mamografia classificada como BIRADS categoria 2. A paciente está muito preocupada quanto ao envelhecimento causado pela “menopausa” e solicita a orientação quanto ao uso de terapia hormonal.\n\nA alternativa correta dentre as abaixo relacionadas é:',
     options: [
@@ -2424,6 +2696,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-88',
+    topography: '5.1',
+    topic: 'Infertilidade',
     module: 'Ginecologia e Obstetrícia',
     text: 'Maria tem 38 anos, é nuligesta, está casada com Joaquim há três anos, com quem teve a sexarca. Durante os dois primeiros anos de relacionamento usou anticoncepcional oral, mas está sem contracepção desde então. O seu esposo tem 2 filhos de outro relacionamento, sendo que o mais novo tem 4 anos. Ela procura atendimento em um consultório de ginecologia de convênio, com desejo de engravidar.\n\nSobre o caso acima, está correto afirmar:',
     options: [
@@ -2440,6 +2714,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-89',
+    topography: '5.1',
+    topic: 'Câncer de colo uterino',
     module: 'Ginecologia e Obstetrícia',
     text: 'Paciente aos 30 anos, hígida e assintomática, realizou Colpocitologia Oncótica (CCO) compatível com “Atipias Glandulares de Significado Indeterminado (AGC)”.\n\nA conduta correta é:',
     options: [
@@ -2473,6 +2749,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-91',
+    topography: '5.2',
+    topic: 'Diabetes gestacional',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante com 36 anos, II Gesta I Para, compareceu à 1ª. consulta na UBS para acompanhamento pré-natal. A PA era de 120 x 80 mmHg, peso 84kg, estatura 1,65m. Trouxe exames realizados que foram pedidos pela enfermeira na ocasião do agendamento da consulta médica. Entre eles, uma glicemia de jejum de 94 mg/dL.\n\nFrente a essa informação, é correto afirmar que se trata de paciente:',
     options: [
@@ -2489,6 +2767,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-92',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: 'MSC, 32 anos, G2P1 com parto normal anterior, sem comorbidades na gravidez atual, negava qualquer tipo de alergia. Em gestação anterior apresentou colonização anal e vaginal positiva para Streptococcus agalactiae (EGB). Atualmente está com 34 5/7 sem, e apresenta gestação gemelar diamniótica e dicoriônica. Chegou ao plantão com queixa de perda de líquido há dois dias e dores abdominais que se intensificaram há 3 horas. Ao exame: PA: 120/80 mmHg; FC: 76 bpm; AU:40cm; BCF feto 1: 146 bpm e feto 2: 152 bpm; dinâmica uterina de 3 contrações em 10 minutos, de média intensidade e duração de 40 segundos. Ao exame especular, apresentava saída de líquido pelo orifício externo do colo, caracterizando uma rotura prematura de membranas ovulares pré-termo (RPMO-PT). Ao toque, colo dilatado com 5cm, médio, apresentação do feto 1 cefálico. MSC relata que ainda não havia coletado swab para EGB. Exames de vitalidade e ultrassonografia demonstravam boa oxigenação em ambos os fetos e pesos semelhantes.\n\nQual o melhor conjunto de condutas para este caso?',
     options: [
@@ -2505,6 +2785,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-93',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante, G2P1, atualmente com 38 semanas e com parto normal anterior. Relata história pregressa de óbito neonatal precoce por sepse. Dá entrada no pronto atendimento com queixa de perda líquida. Sem comorbidades na gestação atual. Realizou 7 consultas no pré-natal de risco habitual, com exames normais, inclusive com coleta de EGB negativa com 35 semanas. Negava alergias. Ao exame físico geral: corada, hidratada, eupneica, sem outros comemorativos ao exame. Ao exame obstétrico apresentava: feto em situação longitudinal e apresentação cefálica, com AU de 36cm, BCF de 140 bpm sem desacelerações. Exame especular com presença de secreção transparente em fundo de saco, com pH 8,0 ao teste da fita. Toque vaginal: colo grosso, posteriorizado com 01 polpa justa.\n\nQual a melhor conduta?',
     options: [
@@ -2521,6 +2803,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-94',
+    topography: '5.1',
+    topic: 'Contracepção',
     module: 'Ginecologia e Obstetrícia',
     text: 'JLS, 28 anos, procura atendimento na Unidade Básica de Saúde. Encontra-se em período de pós-parto normal ocorrido há 45 dias. Relata estar em amamentação exclusiva e que não foi orientada quanto ao método contraceptivo.\n\nEntre os métodos abaixo, qual poderia ser recomendado?',
     options: [
@@ -2537,6 +2821,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-95',
+    topography: '5.2',
+    topic: 'Infecções na gestação',
     module: 'Ginecologia e Obstetrícia',
     text: 'MML, 20 anos, primigesta com 40 semanas de gravidez, não está fazendo acompanhamento regular de pré-natal. É atendida no ambulatório de gestação de alto risco trazendo exames solicitados em consulta anterior. Os resultados para sífilis são apresentados na seguinte forma: VDRL 1:32 e FTA-Abs positivo. Paciente nega qualquer antecedente de sífilis, tratamentos prévios do casal, presença de lesões vulvares ou outras doenças sexualmente transmissíveis.\n\nA melhor conduta para este caso é:',
     options: [
@@ -2553,6 +2839,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-96',
+    topography: '5.2',
+    topic: 'Pré-eclâmpsia',
     module: 'Ginecologia e Obstetrícia',
     text: 'RBS, 29. Anos, IIIGIIPc0A, com dois partos prematuros anteriores em decorrência de mau controle pressórico, é encaminhada de pré-natal de UBS com 33 semanas de gestação e pico pressórico de 170 x 110. Paciente apresentando edema em membros inferiores e queixando-se de cefaleia, escotomas e epigastralgia.\n\nSobre este caso, é correto afirmar que:',
     options: [
@@ -2569,6 +2857,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-97',
+    topography: '5.2',
+    topic: 'Trabalho de parto',
     module: 'Ginecologia e Obstetrícia',
     image: '/images/tp2020-97.webp',
     text: 'J.M.S., 28 anos, secundigesta com 1 parto normal de termo, em trabalho de parto, com idade gestacional de 36 semanas e 3 dias, é internada em maternidade em franco trabalho de parto com 3cm de dilatação, colo médio, anterior, bolsa íntegra e apresentação cefálica. Ao internar, paciente é submetida a exame da figura 1 para avaliação de vitalidade fetal. Instalada em leito em centro obstétrico, é monitorada durante todo o trabalho de parto. Transcorridas 4 horas da internação, apresenta-se com dores em baixo ventre de moderada a forte intensidade, dinâmica uterina mantida 4 contrações em 10 minutos. Avaliado colo, este estava anterior, fino, previno para 5/6cm e a bolsa ainda encontrava-se íntegra. Solicitada nova avaliação, realizado exame da figura 2.\n\nSobre os exames, podemos concluir que:',
@@ -2586,6 +2876,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-98',
+    topography: '5.2',
+    topic: 'Pré-natal',
     module: 'Ginecologia e Obstetrícia',
     text: 'O médico pré-natalista deve ter em mente que a necessidade de ferro aumenta durante o período gestacional e a suplementação é recomendada tanto pela Organização Mundial da Saúde quanto pelo Ministério da Saúde.\n\nAssinale a alternativa correta quanto ao tema citado:',
     options: [
@@ -2602,6 +2894,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-99',
+    topography: '5.2',
+    topic: 'Placenta prévia',
     module: 'Ginecologia e Obstetrícia',
     text: 'Em um plantão na maternidade, o Dr. João atende uma gestante com 33 semanas, queixando-se de sangramento vaginal intermitente, de pequena monta, há 2 meses que acentuou há 4 horas, após ela ter feito faxina em sua casa. Ela informa que morava na zona rural e ainda não iniciou o pré-natal. Ao exame físico apresenta-se hipocorada, com AU = 26cm, BCF = 133 bpm e PA = 110 x 70 mmHg; D.U = ausente e tônus uterino normal. Ao exame especular: sangue em moderada quantidade, coletado. Ele então solicita uma ultrassonografia com urgência, a qual evidencia uma gestação tópica, única, com feto vivo com biometria compatível com 32 semanas, líquido normal e placenta prévia centro-total.\n\nEntre as alternativas abaixo, a conduta correta a ser tomada pelo Dr. João é:',
     options: [
@@ -2618,6 +2912,8 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-100',
+    topography: '5.2',
+    topic: 'Trabalho de parto',
     module: 'Ginecologia e Obstetrícia',
     text: 'Gestante de 25 anos, 35 semanas de amenorreia, pré-natal adequado, última consulta há 3 semanas. Procura UBS referindo dor em BV há 4 horas. Exame físico: bom estado geral, PA 120/80 mmHg, peso 52kg, ausência de edema em MMII. Exame obstétrico AU = 32cm; BCF 144 bpm; DU: 3 contrações moderadas de 10 minutos com toque vaginal de 2,0cm, esvaecido 60%, cefálico, plano-2 De Lee, bolsa íntegra.\n\nA conduta correta é:',
     options: [

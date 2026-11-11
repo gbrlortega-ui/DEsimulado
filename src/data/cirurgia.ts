@@ -3,6 +3,8 @@ import { Question } from '../types';
 export const CIRURGIA_QUESTIONS: Question[] = [
   {
     id: 'tp2024-61',
+    topography: '16',
+    topic: 'Feridas',
     module: 'Cirurgia',
     text: 'Maria, de 30 anos, é uma mulher saudável que realizou uma cirurgia cesariana há 6 meses. A recuperação inicial foi boa. Retorna relatando que a cicatriz está aumentando de tamanho, está elevada, rígida e com coloração mais escura. Ela também menciona que a área está frequentemente coçando e dolorida ao toque. Qual é o diagnóstico mais provável?',
     options: [
@@ -20,6 +22,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-62',
+    topography: '16',
+    topic: 'Pré-operatório',
     module: 'Cirurgia',
     text: 'Em relação aos cuidados pré-operatórios, além da avaliação do risco cirúrgico pelo ASA, avaliação nutricional, avaliação funcional (DASI), por vezes há a necessidade de exames complementares. Podemos afirmar:',
     options: [
@@ -37,6 +41,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-63',
+    topography: '16',
+    topic: 'Hérnias',
     module: 'Cirurgia',
     text: 'Homem de 60 anos, metalúrgico, DPOC, diabético tipo 2, refere dor e protusão na região inguinal direita há 3 meses. Ao exame físico, é evidenciada uma hérnia inguinal à direita e aumento volumétrico da próstata. Assinale a afirmativa correta:',
     options: [
@@ -54,6 +60,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-64',
+    topography: '3.1',
+    topic: 'Doença inflamatória intestinal',
     module: 'Cirurgia',
     text: 'Homem de 45 anos com história de retocolite ulcerativa em tratamento com Infliximabe é atendido toxemiado, com dor e distensão abdominal. A radiografia simples mostrou grande dilatação do cólon transverso (12cm). Qual o diagnóstico e conduta na urgência?',
     options: [
@@ -71,6 +79,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-65',
+    topography: '3.3',
+    topic: 'Colangite aguda',
     module: 'Cirurgia',
     text: 'Paciente de 45 anos chega ao PS com dor abdominal intensa no QSD, febre, icterícia e calafrios. US revela múltiplos cálculos na via biliar comum. Qual é a condição mais provável?',
     options: [
@@ -88,6 +98,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-66',
+    topography: '3.1',
+    topic: 'Hemorragia digestiva baixa',
     module: 'Cirurgia',
     text: 'Mulher de 70 anos, 80kg, hipertensa controlada. Refere sangramento vivo nas fezes ("tingindo o vaso"). Exame físico: estável, descorada +/4, toque retal sem massas, sangue em dedo de luva. Qual a melhor conduta e principal suspeita?',
     options: [
@@ -123,6 +135,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-68',
+    topography: '7.1',
+    topic: 'Doença arterial periférica',
     module: 'Cirurgia',
     text: 'Paciente de 75 anos, diabética, com ferida dolorosa no dorso do pé direito. Relata claudicação para 80m. Ausência de pulsos podálicos bilateralmente. Qual a correta interpretação?',
     options: [
@@ -140,6 +154,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-69',
+    topography: '2.1',
+    topic: 'Derrame pleural',
     module: 'Cirurgia',
     text: 'Homem, 54 anos, tabagista, perda ponderal e dispneia. RX com derrame pleural à direita. Qual procedimento e resultado esperado para neoplasia?',
     image: '/images/tp2024-69.webp',
@@ -158,6 +174,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-70',
+    topography: '6.2',
+    topic: 'Fraturas',
     module: 'Cirurgia',
     text: 'João, 7 anos, queda de bicicleta com fratura diafisária de rádio e ulna. Desvio angular pequeno (<10-15 graus). Pulsos e nervos OK. Qual a conduta?',
     options: [
@@ -175,6 +193,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-71',
+    topography: '1.1',
+    topic: 'Hipertensão intracraniana',
     module: 'Cirurgia',
     text: 'Homem, 70 anos, HAS. Evolui com Glasgow 7, midríase fixa à direita, Bradipneia (8), Bradicardia (48) e PA 240/120. Qual o diagnóstico e conduta inicial?',
     options: [
@@ -192,6 +212,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-72',
+    topography: '14',
+    topic: 'Queimaduras',
     module: 'Cirurgia',
     text: 'Homem de 70kg, queimaduras de 2º e 3º graus (chama direta). Área: tórax frontal/abdome (18%), membro superior direito (9%), face anterior perna direita (9%) e área genital (1%). Extensão (SCQ) e volume em 24h?',
     options: [
@@ -209,6 +231,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-73',
+    topography: '1.3',
+    topic: 'Câncer de cabeça e pescoço',
     module: 'Cirurgia',
     text: 'Homem, 56 anos, tabaco/etilismo. Disfagia, alteração da voz ("abafada"), lesão em epiglote estendendo-se à banda ventricular. Pregas vocais móveis. Linfonodo cervical móvel de 3cm. Qual a origem e voz?',
     options: [
@@ -226,6 +250,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-74',
+    topography: '1.2',
+    topic: 'Ceratite',
     module: 'Cirurgia',
     text: 'Soda cáustica no olho. Dor intensa, vermelhidão e baixa visão. Qual a conduta?',
     options: [
@@ -243,6 +269,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-75',
+    topography: '16',
+    topic: 'Pré-operatório',
     module: 'Cirurgia',
     text: 'Gestante em cesariana após peridural apresenta queda na PA e náuseas ao ficar em decúbito dorsal. Quais os fatores responsáveis?',
     options: [
@@ -260,6 +288,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-76',
+    topography: '14',
+    topic: 'Choque',
     module: 'Cirurgia',
     text: 'Vítima de atropelamento, 70kg. Pálido, frio e confuso. FC 135, FR 32, PA 85x40. Qual o grau de choque?',
     options: [
@@ -277,6 +307,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-77',
+    topography: '16',
+    topic: 'Trauma abdominal',
     module: 'Cirurgia',
     text: 'Trauma de moto, inconsciente, choque, distensão abdominal e FAST positivo. Próximo passo?',
     options: [
@@ -311,6 +343,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-79',
+    topography: '16',
+    topic: 'Pré-operatório',
     module: 'Cirurgia',
     text: 'Sobre a classificação ASA de estado físico, assinale a correta:',
     options: [
@@ -328,6 +362,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2024-80',
+    topography: '14',
+    topic: 'Trauma',
     module: 'Cirurgia',
     text: 'Politraumatizado grave (fraturas expostas, dor abdominal, lacerações). Qual o primeiro passo prioritário no ATLS?',
     options: [
@@ -345,6 +381,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-61',
+    topography: '3.1',
+    topic: 'Doença inflamatória intestinal',
     module: 'Cirurgia',
     text: 'Mulher, 30 anos, com história de retocolite ulcerativa há 3 meses, em terapia com infliximabe há 2 meses, dá entrada no pronto atendimento com disenteria intensa, distensão abdominal, febre de 38ºC, taquicardia (120 bpm), anemia leve, hipotensão, dor abdominal e descompressão brusca negativa. Podemos afirmar que:',
     options: [
@@ -362,6 +400,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-62',
+    topography: '16',
+    topic: 'Feridas',
     module: 'Cirurgia',
     text: 'Paciente idoso e diabético foi submetido a laparotomias prévias e evoluiu com hérnia incisional. A aponeurose é de cicatrização lenta e necessita de fios, de preferência não absorvíveis, para manter as bordas aponeuróticas unidas até sua total cicatrização. Neste caso, optamos por fios de sutura não absorvíveis principalmente em doentes diabéticos, que têm maior dificuldade na cicatrização das feridas. O fio considerado ideal para o fechamento da aponeurose é:',
     options: [
@@ -379,6 +419,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-63',
+    topography: '16',
+    topic: 'Trauma abdominal',
     module: 'Cirurgia',
     text: 'No trauma esplênico grau I, com estabilidade hemodinâmica e líquido na cavidade estimado em 500mL, que ocorreu 6 horas antes do atendimento, qual o tratamento recomendado?',
     options: [
@@ -396,6 +438,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-64',
+    topography: '6.2',
+    topic: 'Hérnia de disco',
     module: 'Cirurgia',
     text: 'Paciente de 45 anos, masculino, pedreiro, queixa-se de dor na região lombar há 5 dias, após esforço ao levantar peso. Ao exame físico, apresenta alteração de sensibilidade na face medial da perna e do pé, fraqueza para dorsofletir o pé e hiporreflexia patelar. A hipótese diagnóstica é hérnia discal da raiz de:',
     options: [
@@ -430,6 +474,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-66',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     text: 'Paciente de 52 anos procura unidade de pronto atendimento referindo dor abdominal difusa e constipação intestinal progressiva há 10 dias, parada de eliminação de gases e fezes há 2 dias, acompanhada de vômitos de odor fétido. Ao exame físico, encontra-se desidratado 3/4+, com dor à palpação superficial e profunda em todo o abdome, distensão abdominal, hipertimpanismo e com ruídos hidroaéreos aumentados. Frente ao caso descrito, qual o melhor exame a ser solicitado para confirmar o diagnóstico e favorecer uma tomada de decisão?',
     options: [
@@ -447,6 +493,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-67',
+    topography: '4.2',
+    topic: 'Torção testicular',
     module: 'Cirurgia',
     text: 'Adolescente, 13 anos, admitido no pronto-socorro com dor inguinal à direita com irradiação escrotal, de início súbito há cerca de 2 horas, com melhora parcial há cerca de 1 hora. O paciente referiu ter participado de atividades esportivas na manhã do mesmo dia. Exame físico de genital: testículo direito elevado no escroto e fora do eixo longitudinal habitual, aumento do volume e da consistência com discreta hiperemia, ausência de reflexo cremastérico. Qual é o diagnóstico e a conduta?',
     options: [
@@ -464,6 +512,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-68',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     text: 'Paciente masculino, 65 anos, vem ao hospital referindo dor progressiva e aumento do volume abdominal há 6 horas. Tem antecedente de constipação intestinal crônica, com piora progressiva com o passar dos anos. Realizou o exame de RX. Ao exame físico o abdome se encuentra distendido, timpânico, com dor à palpação superficial e profunda difusamente, com sinal de descompressão brusca dolorosa negativo. Qual hipótese diagnóstica se enquadra com a análise do quadro clínico e exame radiológico?',
     image: '/images/tp2023-68.webp',
@@ -482,6 +532,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-69',
+    topography: '7.1',
+    topic: 'Trombose venosa profunda',
     module: 'Cirurgia',
     text: 'Paciente de 18 anos iniciou uso de anticoncepcional há 3 dias e apresenta aumento de volume da panturrilha direita (7cm maior que a esquerda). Ao se realizar a dorsiflexão plantar, apresenta dor nos músculos da panturrilha, apresenta ainda veias dos pés ingurgitadas e discreta cianose. Qual a hipótese diagnóstica?',
     options: [
@@ -499,6 +551,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-70',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     text: 'Paciente de 43 anos, sexo masculino, no pós-operatório tardio (um ano) de uma laparotomia exploradora por ferimento (projétil de arma de fogo). Apresenta, há 2 dias, náuseas seguidas de vômitos, que se intensificaram nas últimas 6 horas, acompanhados por aumento do volume abdominal e dor tipo cólica. Ao exame físico encontra-se corado, desidratado ++/4+, acianótico, anictérico, afebril e eupneico. Frequência cardíaca de 98bpm, pressão arterial de 120x70mmHg. Ausculta pulmonar e cardíaca normais. Exame abdominal com distensão e dor na palpação superficial e profunda difusamente, com descompressão brusca dolorosa negativa. Realizou Raio X de abdome. Qual a hipótese diagnóstica e a conduta a ser adotada inicialmente?',
     image: '/images/tp2023-70.webp',
@@ -517,6 +571,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-71',
+    topography: '6.2',
+    topic: 'Fraturas',
     module: 'Cirurgia',
     text: 'Paciente masculino, 18 anos, dá entrada na Unidade de Pronto Atendimento com desvio ósseo em tíbia direita. Ao exame, apresenta laceração de pele e subcutâneo com exposição de sítio de fratura. Em relação às fraturas expostas, podemos afirmar:',
     options: [
@@ -534,6 +590,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-72',
+    topography: '4.2',
+    topic: 'Câncer de próstata',
     module: 'Cirurgia',
     text: 'Homem de 64 anos comparece ao ambulatório de urologia para avaliação de doenças da próstata, pois seu pai fora diagnosticado com câncer de próstata ainda jovem. No momento, não apresenta qualquer queixa espontânea e está contente com o jato urinário. Ao toque, foi encontrado um nódulo indolor em lobo esquerdo em uma próstata de volume normal. Ele também trouxe os exames anteriores registrados: 2020 (PSA total 0.9/livre 0.4), 2021 (1.1/0.3), 2022 (1.3/0.5) e 2023 (2.1/0.2). Com base no enunciado, podemos afirmar que:',
     image: '/images/tp2023-72.webp',
@@ -552,6 +610,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-73',
+    topography: '3.1',
+    topic: 'Hemorragia digestiva alta',
     module: 'Cirurgia',
     text: 'Paciente masculino, 48 anos, cirrótico por vírus C, Child-Pugh B, apresenta hematêmese em grande volume, rebaixamento do nível de consciência, frequência cardíaca de 120bpm, pressão arterial de 60x40mmHg. No hemograma observa-se dosagem de hemoglobina de 7,0g/dL e plaquetas de 78.000/mm3. Qual a conduta inicial?',
     options: [
@@ -569,6 +629,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-74',
+    topography: '3.1',
+    topic: 'Doença hemorroidária',
     module: 'Cirurgia',
     text: 'Sangramento anal é uma queixa comum na atenção básica. Em se tratando de hemorroidas, podemos afirmar que:',
     options: [
@@ -586,6 +648,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-75',
+    topography: '7.1',
+    topic: 'Aneurisma de aorta abdominal',
     module: 'Cirurgia',
     text: 'O exame considerado padrão ouro para avaliação do aneurisma de aorta abdominal é:',
     options: [
@@ -603,6 +667,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-76',
+    topography: '14',
+    topic: 'Trauma',
     module: 'Cirurgia',
     text: 'Paciente de 52 anos, masculino, vitimado de queda de motocicleta a 60km/h. Dá entrada na unidade de urgência referenciada trazido pelo SAMU, com imobilização completa. Refere dor em hipocôndrio esquerdo, equimose em flanco. Está consciente, lúcido e orientado. Refere que utiliza 100mg de aspirina. Sinais vitais: tensão arterial de 100x65mmHg, pulso de 100bpm, frequência cardíaca de 100bpm, frequência respiratória de 16irpm, saturação de oxigênio de 96% em ar ambiente. Realizada tomografia de abdome com contraste, evidenciando lesão de baço grau II (AAST), com presença de sangue livre na cavidade. Realizado tromboelastograma, evidenciando redução da Amplitude Máxima (MA). O tratamento hemoterápico mais efetivo neste momento, baseado no tromboelastrograma, é:',
     image: '/images/tp2023-76.webp',
@@ -621,6 +687,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-77',
+    topography: '3.2',
+    topic: 'Hepatocarcinoma',
     module: 'Cirurgia',
     text: 'Paciente cirrótico por hepatite C apresenta 2 nódulos hepáticos com “wash-out” em tomografia de abdome com contraste trifásico (1 nódulo tem 2,2cm no segmento 5 e outro tem 2,5cm no segmento 7), MELD 12, alfafetoproteína de 600ng/mL (normal até 10ng/mL). No estadiamento não apresenta metástases à distância. Qual a conduta frente a esse caso, considerando que o paciente tem boa performance clínica?',
     options: [
@@ -638,6 +706,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-78',
+    topography: '10',
+    topic: 'Doença de Chagas',
     module: 'Cirurgia',
     text: 'Paciente do sexo feminino, 50 anos, proveniente do norte de Minas Gerais, com queixa de disfagia progressiva há 5 anos, associada a regurgitação e necessidade de ingesta de água para auxílio durante a alimentação. A endoscopia digestiva alta mostra grande quantidade de estase alimentar e esôfago de calibre aumentado. A radiografia contrastada de esôfago-estômago-duodeno evidencia esôfago com 7cm e presença de ondas terciárias. De acordo com a epidemiologia, os dados clínicos e de exames complementares, qual o diagnóstico e o tratamento?',
     options: [
@@ -655,6 +725,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-79',
+    topography: '16',
+    topic: 'Hérnias',
     module: 'Cirurgia',
     text: 'Homem de 60 anos, metalúrgico, portador de doença pulmonar obstrutiva crônica (DPOC), diabético tipo 2, refere dor e protusão na região inguinal direita, principalmente aos esforços, há 3 meses. Ao exame físico é evidenciada uma hérnia inguinal à direita e aumento volumétrico da próstata. Em relação à hérnia, é correto afirmar que:',
     options: [
@@ -672,6 +744,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2023-80',
+    topography: '1.4',
+    topic: 'Doença periodontal',
     module: 'Cirurgia',
     text: 'Paciente de 30 anos, masculino, refere avulsão do terceiro molar inferior direito há 6 dias. O dentista receitou-lhe amoxicilina por 7 dias. Há 3 dias notou abaulamento na região submandibular direita, com dor local e febre. Procurou Unidade Básica de Saúde, sendo avaliado, mantido o uso de antibiótico, introduzido anti-inflamatório e foi dispensado. Hoje dá entrada no pronto-socorro de hospital de referência, queixando-se de piora da dor, picos febris, aumento da lesão cervical, acompanhada por hiperemia da pele, taquicardia, odinofagia, disfagia e elevação do soalho da boca. Qual é o diagnóstico e o exame de imagem para complementação diagnóstica?',
     image: '/images/tp2023-80.webp',
@@ -690,6 +764,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-61',
+    topography: '16',
+    topic: 'Feridas',
     module: 'Cirurgia',
     text: 'Paciente de 25 anos, masculino, será submetido a correção de hérnia inguinal direita por via convencional - inguinotomia. Visando a ligadura dos vasos superficiais do subcutâneo, o fechamento da aponeurose e o fechamento da pele, quais seriam os fios utilizados, respectivamente?',
     options: [
@@ -706,6 +782,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-62',
+    topography: '16',
+    topic: 'Hérnias',
     module: 'Cirurgia',
     text: 'Paciente de 18 anos com abaulamento inguinal há 4 anos. Iniciou dor forte, febre, calor local e vermelhidão na pele sobre o saco herniário, sem redução do conteúdo. Qual a hipótese e conduta?',
     options: [
@@ -722,6 +800,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-63',
+    topography: '3.3',
+    topic: 'Colecistite aguda',
     module: 'Cirurgia',
     text: 'Paciente de 45 anos, obesa, com dor em hipocôndrio direito, Murphy positivo e febre (38,2ºC). Qual a conduta recomendada?',
     options: [
@@ -756,6 +836,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-65',
+    topography: '16',
+    topic: 'Pré-operatório',
     module: 'Cirurgia',
     text: 'Mulher, 30 anos, apresenta cefaleia pós-raquianestesia. Qual a conduta inicial recomendada?',
     options: [
@@ -773,6 +855,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-66',
+    topography: '1.1',
+    topic: 'TCE',
     module: 'Cirurgia',
     text: 'Vítima de trauma, AO paradoxal à dor (2), RM inespecífica à dor (4), sem resposta verbal (1). PA 90/60, FC 68, pele aquecida. Qual o Glasgow e conduta?',
     options: [
@@ -790,6 +874,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-67',
+    topography: '16',
+    topic: 'Trauma torácico',
     module: 'Cirurgia',
     text: 'Vítima de trauma automobilístico com dor torácica e falta de ar. Imagem radiológica evidencia velamento de base pulmonar com desvio de mediastino. Qual a conduta?',
     image: '/images/tp2022-67.webp',
@@ -808,6 +894,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-68',
+    topography: '16',
+    topic: 'Trauma torácico',
     module: 'Cirurgia',
     text: 'Trauma de tórax com murmúrio diminuído e saturação 88%. Imagem radiográfica mostra pneumotórax. Qual a conduta imediata?',
     image: '/images/tp2022-68.webp',
@@ -826,6 +914,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-69',
+    topography: '7.1',
+    topic: 'Trombose venosa profunda',
     module: 'Cirurgia',
     text: "Homem de 37 anos, no primeiro dia de pós-operatório de drenagem de abscesso anal, internado para antibiótico endovenoso, queixa-se de inchaço e dor na perna direita. Ao exame: aumento de volume de todo o membro inferior direito, edema com cacifo (Godet +) e dor na panturrilha que piora à dorsiflexão do pé.\n\nQual a conduta recomendada para esclarecer o diagnóstico?",
     options: [
@@ -843,6 +933,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-70',
+    topography: '14',
+    topic: 'Trauma',
     module: 'Cirurgia',
     text: 'Politrauma com respiração ruidosa, hipertimpanismo à direita, choque, percussão pulmonar alterada e sínfise púbica alargada. Próximo passo?',
     options: [
@@ -859,6 +951,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-71',
+    topography: '7.1',
+    topic: 'Doença arterial periférica',
     module: 'Cirurgia',
     text: 'Diabético com necrose seca em hálux há 1 semana e dor de repouso. Pulsos distais ausentes. Qual a conduta?',
     options: [
@@ -876,6 +970,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-72',
+    topography: '4.1',
+    topic: 'Nefrolitíase',
     module: 'Cirurgia',
     text: 'Lombalgia súbita irradiada para testículo, acordando o paciente, associada a febre. Qual a investigação inicial?',
     options: [
@@ -893,6 +989,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-73',
+    topography: '3.1',
+    topic: 'Hemorragia digestiva baixa',
     module: 'Cirurgia',
     text: 'Mulher de 63 anos com enterorragia moderada. Abdome inocente, toque retal com sangue vivo. Qual a principal suspeita e conduta?',
     options: [
@@ -910,6 +1008,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-74',
+    topography: '7.1',
+    topic: 'Trombose venosa profunda',
     module: 'Cirurgia',
     text: 'Paciente em uso de rivaroxabana por TEP fará artroplastia de quadril. Qual o cuidado perioperatório?',
     options: [
@@ -927,6 +1027,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-75',
+    topography: '16',
+    topic: 'Apendicite aguda',
     module: 'Cirurgia',
     text: 'Homem de 18 anos com dor no epigástrio que migrou para FID, defesa abdominal e descompressão brusca positiva. Leucocitose 17.000. Próximo passo?',
     options: [
@@ -944,6 +1046,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-76',
+    topography: '1.1',
+    topic: 'Hipertensão intracraniana',
     module: 'Cirurgia',
     text: 'Criança com meningite em tratamento evolui com piora do Glasgow e cefaleia. TC mostra hidrocefalia comunicante. Qual a conduta?',
     options: [
@@ -961,6 +1065,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-77',
+    topography: '16',
+    topic: 'Feridas',
     module: 'Cirurgia',
     text: 'Pós-operatório (5º dia) com pus na ferida mas abdome normal à palpação. Qual o diagnóstico e conduta?',
     options: [
@@ -978,6 +1084,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-78',
+    topography: '1.1',
+    topic: 'AVC',
     module: 'Cirurgia',
     text: "Mulher de 55 anos tem cefaleia súbita durante a relação sexual, seguida de perda da consciência. No pronto-socorro está com Glasgow 4, anisocoria (pupila direita maior), postura em extensão e Babinski à esquerda, sem melhora após manitol. A tomografia de crânio mostra imagem hiperdensa no parênquima parietal esquerdo, junto ao ventrículo, e conteúdo hiperdenso dentro dos ventrículos. Qual o diagnóstico?",
     image: '/images/tp2022-78.webp',
@@ -1013,6 +1121,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2022-80',
+    topography: '14',
+    topic: 'Queimaduras',
     module: 'Cirurgia',
     text: 'Queimadura por água fervente em face anterior do membro superior esquerdo e eritema no rosto. Qual a SCQ de 2º grau?',
     options: [
@@ -1030,6 +1140,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-61',
+    topography: '16',
+    topic: 'Perfuração de víscera oca',
     module: 'Cirurgia',
     text: 'Homem de 45 anos, previamente saudável, procura o serviço de emergência com quadro de dor abdominal intensa e súbita há aproximadamente 6 horas. Relata que a dor iniciou na região epigástrica e rapidamente se generalizou pelo abdome. Exame físico: posição antálgica com abdome rígido, doloroso à palpação difusa e com sinal de irritação peritoneal. Exames laboratoriais: leucocitose com desvio à esquerda. O RX de abdome em posição ortostática evidencia pneumoperitônio. Baseado nesse quadro clínico, qual a conduta mais adequada?',
     options: [
@@ -1046,6 +1158,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-62',
+    topography: '3.3',
+    topic: 'Colangiocarcinoma',
     module: 'Cirurgia',
     text: 'Homem de 65 anos, tabagista e com histórico de colangite esclerosante primária, apresenta icterícia progressiva há dois meses, associada a perda de peso não intencional e prurido cutâneo. Colangiopancreatografia por ressonância magnética revela uma estenose irregular da via biliar hepática comum, com dilatação dos ductos intra-hepáticos. Qual é o diagnóstico mais provável?',
     options: [
@@ -1062,6 +1176,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-63',
+    topography: '3.4',
+    topic: 'Pancreatite aguda',
     module: 'Cirurgia',
     text: 'Mulher de 47 anos, etilista crônica, é admitida no PS com dor abdominal intensa em faixa, localizada em epigástrio e irradiando para dorso, associada a náuseas e vômitos há 24 horas. Exame físico: abdome distendido e doloroso à palpação profunda em epigástrio, sem sinais de peritonite. Exames laboratoriais: amilase sérica de 1.200U/L (valor de referência: < 100U/L) e lipase sérica de 1.500U/L (valor de referência: < 160U/L). TC de abdome: aumento difuso do pâncreas, com borramento da gordura peripancreática, mas sem necrose ou coleções líquidas. Qual o diagnóstico mais provável?',
     options: [
@@ -1078,6 +1194,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-64',
+    topography: '4.1',
+    topic: 'Lesão renal aguda',
     module: 'Cirurgia',
     text: 'Homem com 18 anos, soterrado por destroços de desabamento de prédio, foi trazido ao hospital após resgate com fraturas costais à direita, pneumotórax à direita (drenado na sala de emergência), PA 110x60mmHg, FC 100bpm e SpO2 94%. Foi submetido a tomografia contrastada de abdome, que detectou laceração de 3cm e hematoma subcapsular com 8cm no lobo direito do fígado, sem extravasamento de contraste, e discreto líquido livre intra-abdominal. Não há trauma penetrante. Considerando a inexistência de outras lesões significativas, como deve ser conduzido o trauma hepático neste momento?',
     options: [
@@ -1094,6 +1212,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-65',
+    topography: '3.1',
+    topic: 'Hemorragia digestiva alta',
     module: 'Cirurgia',
     text: 'Homem de 50 anos, com história de cirrose hepática por etilismo, é admitido no hospital com hematêmese volumosa e sinais de instabilidade hemodinâmica. Após estabilização inicial com reposição volêmica e uso de terlipressina, qual deve ser a próxima conduta prioritária?',
     options: [
@@ -1110,6 +1230,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-66',
+    topography: '3.1',
+    topic: 'Câncer colorretal',
     module: 'Cirurgia',
     text: 'Mulher de 65 anos, previamente hígida, sem comorbidades conhecidas, apresenta anemia ferropriva e alteração do hábito intestinal há três meses, associada a perda ponderal. Realizada uma colonoscopia, que evidenciou lesão vegetante em cólon descendente de 8x8x5cm, cujo exame anatomopatológico revelou um adenocarcinoma. Qual deve ser a próxima conduta?',
     options: [
@@ -1126,6 +1248,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-67',
+    topography: '3.1',
+    topic: 'Doença inflamatória intestinal',
     module: 'Cirurgia',
     text: 'Homem de 37 anos procurou atendimento de urgência com queixa de dor abdominal difusa e de forte intensidade, associada a diarreia muco-sanguinolenta e febre há dois dias. Refere ter retocolite ulcerativa (RCU), que foi diagnosticada há 5 anos, mas não fez mais acompanhamento ou uso de medicação nos últimos anos. Apresenta-se ao exame físico desidratado, taquicárdico e febril (39°C); abdome globoso, distendido, tenso, doloroso difusamente, com mais intensidade no quadrante inferior direito. Foi realizada tomografia computadorizada do abdome, que revelou dilatação importante do cólon, principalmente nos segmentos ascendente e transverso, sem ponto de obstrução ou pneumoperitônio. Qual a principal hipótese diagnóstica?',
     options: [
@@ -1142,6 +1266,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-68',
+    topography: '16',
+    topic: 'Hérnias',
     module: 'Cirurgia',
     text: 'Homem de 22 anos relata abaulamento na região inguinal direita, que aumenta aos esforços e reduz espontaneamente em repouso. No exame físico, observa-se protrusão palpável na região inguinal ao aumento da pressão intra-abdominal. Qual o mecanismo fisiopatológico mais envolvido na formação desse quadro?',
     options: [
@@ -1158,6 +1284,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-69',
+    topography: '8',
+    topic: 'Obesidade',
     module: 'Cirurgia',
     text: 'Mulher de 38 anos, com IMC de 42kg/m², hipertensa controlada com três classes de medicamentos, com apneia obstrutiva do sono e sem diabetes mellitus, é encaminhada para equipe multiprofissional, comparecendo ao ambulatório para avaliação pré-operatória de cirurgia bariátrica. Tentou emagrecer com várias dietas e acompanhamento com nutricionistas há quase 10 anos, sem sucesso, por isso manifesta desejo de ser operada. Com base nos critérios da Sociedade Brasileira de Cirurgia Bariátrica e Metabólica (SBCBM), qual a conduta mais indicada para esta paciente?',
     options: [
@@ -1174,6 +1302,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-70',
+    topography: '7.1',
+    topic: 'Isquemia arterial aguda',
     module: 'Cirurgia',
     text: 'Homem, cisgênero, 60 anos, hipertenso, comparece ao serviço de urgência com dor intensa e súbita em membro inferior direito há 6 horas. Ao exame: ausculta cardíaca com bulhas arrítmicas; membro inferior direito com extremidade fria, pálida, sem pulsos palpáveis e sem alteração de trofismo. Qual conduta mais adequada?',
     options: [
@@ -1190,6 +1320,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-71',
+    topography: '7.1',
+    topic: 'Aneurisma de aorta abdominal',
     module: 'Cirurgia',
     text: 'Um homem de 68 anos, hipertenso e tabagista de longa data, é levado ao serviço de urgência com queixa de dor abdominal intensa e de início súbito, irradiando para a região lombar. Relata episódios de tontura e sudorese. Ao exame físico, apresenta-se hipotenso (PA 90x60mmHg) e taquicárdico (FC 120bpm). Palpa-se uma massa pulsátil expansiva na região abdominal. Diante deste quadro, qual é a principal hipótese diagnóstica?',
     options: [
@@ -1206,6 +1338,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-72',
+    topography: '14',
+    topic: 'Trauma',
     module: 'Cirurgia',
     text: 'Mulher de 38 anos procura o serviço de emergência com queixa de dor e vermelhidão ao longo de uma veia na perna esquerda há 4 dias. Relata uso recente de anticoncepcional oral. Nega traumas ou cirurgias recentes. Ao exame físico observa-se um cordão endurecido, eritematoso e doloroso ao longo da veia safena magna, sem sinais de edema significativo no membro. Considerando a principal hipótese diagnóstica, qual é a melhor conduta inicial?',
     options: [
@@ -1222,6 +1356,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-73',
+    topography: '16',
+    topic: 'Trauma torácico',
     module: 'Cirurgia',
     text: 'Homem de 26 anos, vítima de atropelamento, deu entrada no pronto-socorro apresentando tórax instável e respiração paradoxal secundária a fraturas cominutivas em vários arcos costais. Apresentava pneumotórax bilateralmente, que foram drenados no atendimento primário. Foi encaminhado à UTI consciente, respirando espontaneamente e estável hemodinamicamente. Após quatro horas do atendimento, apresentou quadro de insuficiência respiratória aguda progressiva. Qual é a causa mais provável dessa evolução clínica?',
     options: [
@@ -1238,6 +1374,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-74',
+    topography: '16',
+    topic: 'Trauma torácico',
     module: 'Cirurgia',
     text: 'Homem cis, 22 anos, sofre um ferimento por arma branca no precórdio e chega à emergência com sinais de atividade elétrica no monitor cardíaco e ausência de pulsos carotídeos. Qual a abordagem cirúrgica indicada para este paciente?',
     options: [
@@ -1254,6 +1392,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-75',
+    topography: '4.1',
+    topic: 'Nefrolitíase',
     module: 'Cirurgia',
     text: 'Mulher, 24 anos, deu entrada no pronto-socorro com quadro de dor lombar esquerda de forte intensidade, associada a vômitos, inapetência e mal-estar há 4 dias. Ao exame físico: regular estado geral, desidratada +/4, febril 38.5ºC, frequência cardíaca 120bpm, pressão arterial 110/70mmHg. Abdômen flácido e indolor, com dor à percussão lombar à esquerda. Exames laboratoriais: hemograma com leucocitose e desvio à esquerda, leucocitúria e hematúria. Tomografia de abdômen: cálculo de 2x1cm na junção ureterovesical esquerda, com hidronefrose. Qual a conduta adequada neste caso?',
     options: [
@@ -1270,6 +1410,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-76',
+    topography: '4.2',
+    topic: 'Torção testicular',
     module: 'Cirurgia',
     text: 'Homem, 25 anos, comparece ao pronto-socorro com queixa de dor em região escrotal há 3 horas, de início súbito e intensidade progressiva. Nega trauma local ou esforço físico associado. Ao exame, testículo direito normal, testículo esquerdo elevado, aumentado de tamanho e horizontalizado (sinal de Angel positivo), com dor intensa à manipulação. Qual o diagnóstico e a melhor conduta?',
     options: [
@@ -1286,6 +1428,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-77',
+    topography: '7.2',
+    topic: 'Celulite',
     module: 'Cirurgia',
     text: 'Mulher de 50 anos, com diabetes mellitus tipo 2 descompensada, deu entrada no hospital com quadro de dor perianal e febre há 2 dias, sem sangramentos. Nega episódios anteriores semelhantes. Foi apendicectomizada há um ano. Ao exame físico, apresenta presença de tumor e sinais flogísticos e crepitação no períneo. A dor impossibilitou o toque retal. A hipótese diagnóstica mais provável é:',
     options: [
@@ -1302,6 +1446,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2025-78',
+    topography: '11',
+    topic: 'Prematuridade',
     module: 'Cirurgia',
     text: 'Recém-nascido prematuro, 32 semanas de idade gestacional, com 14 dias de vida, apresenta há 24 horas distensão abdominal progressiva, intolerância alimentar, letargia, instabilidade térmica e hemodinâmica, emese biliar, hematoquezia discreta, diminuição da consistência das fezes e episódios de apneia. Ao exame físico: abdome distendido e tenso, minimamente doloroso à palpação. O RX abdominal revela pneumatose intestinal, sem pneumoperitônio. Com o provável diagnóstico em mente, qual a conduta mais apropriada para este caso?',
     options: [
@@ -1350,6 +1496,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-61',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     text: 'Recém-nascido de termo, sexo masculino, com cinco dias de vida, recebeu alta hospitalar com 36 horas de vida. A mãe refere que estava aceitando bem o leite materno, mas tem vomitado nas últimas 24 horas. O vômito inicialmente era de leite, mas agora está levemente esverdeado. Hoje evacuou pela primeira vez na vida, uma pequena quantidade de mecônio. Ao exame físico o bebê está em bom estado geral, hidratado e corado, FC 125 bpm, FR 38 ipm. O abdome está distendido, sem massas palpáveis e sem reação peritoneal. O exame do períneo mostra ânus tópico e há saída de grande quantidade de mecônio, de modo explosivo, após a realização de estímulo retal. O diagnóstico mais provável e a conduta mais adequada neste momento são:',
     options: [
@@ -1382,6 +1530,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-63',
+    topography: '16',
+    topic: 'Pré-operatório',
     module: 'Cirurgia',
     text: 'Paciente de 46 anos, masculino, usa fluoxetina 20 mg/dia. Vítima de queda de bicicleta, deu entrada no pronto socorro, consciente, deambulando, com vários pequenos ferimentos superficiais em membros inferiores e superiores necessitando múltiplas suturas. Recebeu por via venosa 1 g de cefalotina e 100 mg de cetoprofeno. Durante a realização das suturas, apresenta inquietação, vertigem, zumbido, fala arrastada e culminando em convulsão tônico-clônica. O diagnóstico para este caso é de:',
     options: [
@@ -1398,6 +1548,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-64',
+    topography: '16',
+    topic: 'Pós-operatório',
     module: 'Cirurgia',
     text: 'Menino, 10 anos, no 1º dia pós-operatório de apendicectomia por apendicite aguda perfurada, sonolento e hipoativo há 2 horas. A mãe relata que, antes disso, apresentou 3 episódios de vômitos, de conteúdo bilioso, em grande quantidade. Desde o momento da cirurgia, encontra-se em jejum e ainda não evacuou, mas está eliminando flatos. Hoje urinou apenas uma vez, em pequena quantidade, urina de cor amarelo escura. Exame físico: regular estado geral, hipoativo, descorado 2+/4, anictérico, com turgor pastoso. T = 37,2 ºC, FC = 106 bpm, FR = 15 irpm, PA = 100 x 70 mmHg. Abdome: ruídos hidro aéreos propulsivos, com dor à palpação profunda da região próxima à ferida cirúrgica, sem reação peritoneal. O diagnóstico é:',
     options: [
@@ -1414,6 +1566,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-65',
+    topography: '7.1',
+    topic: 'Insuficiência venosa crônica',
     module: 'Cirurgia',
     text: 'Mulher, 60 anos, com áreas de hiperpigmentação em bota no terço inferior de perna esquerda, pele ressecada e descamativa, úlcera de aproximadamente 5 cm com bordas irregulares e escavadas. Veias dilatadas bilateralmente e pulsos normais. Nega dor local. Além de curativo, a conduta é:',
     options: [
@@ -1430,6 +1584,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-66',
+    topography: '16',
+    topic: 'Feridas',
     module: 'Cirurgia',
     image: '/images/tp2021-66.webp',
     text: 'Paciente comparece ao ambulatório após realização de ponte de safena com o seguinte achado de exame físico: área de deiscência total de pele, com granulação no subcutâneo subjacente. Hiperemia leve ao redor da ferida e edema do membro. A enfermeira solicita avaliação em relação à ferida cirúrgica. Pode-se afirmar:',
@@ -1447,6 +1603,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-67',
+    topography: '3.3',
+    topic: 'Colangite aguda',
     module: 'Cirurgia',
     image: '/images/tp2021-67.webp',
     text: 'Homem, 57 anos, apresenta queixa de dor abdominal em hipocôndrio direito há cinco dias, associado a náuseas e vômitos. Comorbidades: hipertenso e diabético. Exame físico: mau estado geral, confuso, sudoreico, ictérico 2+/4+, T = 38 ºC, FC = 130 bpm, SaO2 ar ambiente = 95%, tempo de enchimento capilar > 2 segundos, PA = 70 x 45 mmHg. Abdome flácido, dolorido em hipocôndrio direito, ruídos hidroaéreos presentes. Exames laboratoriais e tomografia apresentados abaixo. O diagnóstico, a síndrome e a conduta são, respectivamente:',
@@ -1464,6 +1622,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-68',
+    topography: '6.2',
+    topic: 'Lesões do manguito rotador',
     module: 'Cirurgia',
     text: 'Homem, 60 anos, pintor e pedreiro, procura por atendimento médico ambulatorial queixando-se de dor na região ântero-lateral do ombro direito há quatro meses. Refere que a dor é de intensidade moderada e irradia para região lateral do braço, piorando com movimentos e à noite. Refere alívio parcial com analgésicos e anti-inflamatórios não hormonais. Exame físico: diminuição de força da elevação lateral (abdução) do ombro direito. O diagnóstico mais provável é:',
     options: [
@@ -1480,6 +1640,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-69',
+    topography: '3.1',
+    topic: 'Doença hemorroidária',
     module: 'Cirurgia',
     text: 'Homem, 50 anos, refere sangramento de cor vermelho “vivo” associado à evacuação, não misturado às fezes, há 1 semana. Relata também dor e abaulamento da região anal com concomitante prurido e ardência local. Ao exame físico: nodulação azulada/vinhosa, dolorosa ao toque, mas redutível com a manobra digital. A conduta é:',
     options: [
@@ -1496,6 +1658,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-70',
+    topography: '16',
+    topic: 'Isquemia mesentérica',
     module: 'Cirurgia',
     text: 'Homem de 68 anos de idade, procura a emergência com dor abdominal em mesogastro de forte intensidade, início súbito, há 6 horas, não melhorando após o uso de medicação oral. Refere quadros semelhantes de menor intensidade há 6 meses. Nega alteração de hábito intestinal. Faz uso de antidepressivo e antiarrítmico. Ao exame físico: afebril, anictérico, pressão arterial 95 X 60 mmHg, frequência cardíaca 125 bpm, ritmo cardíaco irregular, abdome distendido, doloroso, difusamente, sem sinais de irritação peritoneal com ruídos hidroaéreos diminuídos. Exames complementares: Hemoglobina 11 g/dL. Leucócitos 12.500/mm, 2% bastões e 30% segmentados, plaquetas 400.000 mm, amilase 65 U/I (normal até 55 U/I), lipase 125 U/I (normal até 60 U/I). Radiografia simples de abdome com distensão de alças de jejuno e íleo, sem pneumoperitônio. Tomografia de abdome evidencia ar na parede de alças de delgado, sem evidência de obstrução e imagens lineares hipotensas em projeção do fígado indo até a periferia hepática. Com base nos achados, qual a hipótese diagnóstica?',
     options: [
@@ -1512,6 +1676,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-71',
+    topography: '1.1',
+    topic: 'TCE',
     module: 'Cirurgia',
     image: '/images/tp2021-71.webp',
     text: 'Homem, 20 anos, deu entrada na Emergência 2 horas após acidente motociclístico, em que houve breve perda de consciência. Seguindo-se à avaliação inicial do paciente politraumatizado, a equipe da neurocirurgia foi contactada. O exame neurológico foi normal, exceto por queixa de dor cervical, recebendo o escore de 15 na Escala de Coma de Glasgow, além de equimose periorbital esquerda. Paciente permaneceu internado para observação hospitalar. Após 3 horas, o paciente estava sonolento, com discreta dilatação pupilar esquerda e movimentação simétrica dos membros. A imagem tomográfica compatível com a provável lesão do paciente é:',
@@ -1529,6 +1695,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-72',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     image: '/images/tp2021-72.webp',
     text: 'Mulher, 68 anos, procura atendimento por quadro de dor abdominal em cólica há 3 dias, acompanhada de distensão, náuseas, hiporexia e parada de eliminação de flatos e fezes. Antecedentes pessoais: há seis meses apresenta emagrecimento e episódios de dores abdominais, associados a constipação intestinal. Exame físico: abdome distendido, globoso, hipertimpânico em andar superior, levemente doloroso, com massa endurecida palpável em hipogástrio. Radiografia de abdome: imagem abaixo. O diagnóstico e o achado de imagem são:',
@@ -1546,6 +1714,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-73',
+    topography: '4.1',
+    topic: 'Nefrolitíase',
     module: 'Cirurgia',
     text: 'Mulher, 46 anos, chega à unidade de pronto atendimento com quadro de dor em região lombar e flanco direito, vômitos, febre, taquicardia e mal-estar. Relata antecedente de urolitíase. Apresenta melhora parcial com analgésico, antitérmico e antiemético endovenosos. Exames – Hemograma: glóbulos brancos 19.600/mm³, bastões 15%; creatinina: 2,1 mg/dL; urina I: leucocitúria importante e hematúria. Tomografia de abdome evidencia cálculo ureteral proximal à direita com cerca de 0,8 cm, com dilatação moderada ureteropielocalicial a montante e borramento perirenal. A conduta é:',
     options: [
@@ -1562,6 +1732,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-74',
+    topography: '4.2',
+    topic: 'Câncer de próstata',
     module: 'Cirurgia',
     text: 'Homem, 68 anos, refere jato urinário fraco e entrecortado, esforço para iniciar micção e noctúria há 6 meses. Antígeno prostático específico (PSA) do ano anterior de 1,2 ng/mL. PSA atual = 2,6 ng/mL. Toque retal: próstata com dimensões de aproximadamente 40 g de peso e consistência fibroelástica. Para descartar neoplasia maligna da próstata, deve-se solicitar inicialmente:',
     options: [
@@ -1578,6 +1750,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-75',
+    topography: '2.1',
+    topic: 'Derrame pleural',
     module: 'Cirurgia',
     text: 'Homem, 66 anos, queixa-se de astenia, emagrecimento e perda de apetite há cerca de 30 dias, acompanhadas de febre intermitente e não aferida. Ao exame físico e à radiografia de tórax confirmou-se a presença de derrame pleural em base torácica direita. Após a pleurocentese confirmou-se o diagnóstico de tuberculose pleural. A análise de líquido pleural que corrobora esta hipótese é:',
     options: [
@@ -1594,6 +1768,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-76',
+    topography: '14',
+    topic: 'Queimaduras',
     module: 'Cirurgia',
     text: 'Mulher, 25 anos, procurou a Unidade Básica de Saúde com história de acidente na cozinha de casa com derramamento de óleo quente, atingindo a parte anterior da coxa direita há uma hora. A paciente refere dor intensa no local e ao exame, a região se apresentava coberta de flictenas. Vacinação antitetânica em dia. A conduta é:',
     options: [
@@ -1610,6 +1786,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-77',
+    topography: '1.2',
+    topic: 'Catarata',
     module: 'Cirurgia',
     text: 'Mulher, 72 anos, queixa-se de dificuldades visuais para costurar há 1 ano com evolução insidiosa. Na revisão de prontuário, observou-se que nas duas últimas consultas (4 e 8 meses) houve mudança do exame de refração. No exame oftalmológico, observa-se redução de acuidade bilateral assimétrica, tonometria normal. É portadora de diabetes mellitus, hipertireoidismo e lúpus, com uso crônico de corticoide oral e tem contato regular com gatos. Nega tabagismo ou etilismo. O diagnóstico mais provável é:',
     options: [
@@ -1626,6 +1804,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-78',
+    topography: '16',
+    topic: 'Trauma torácico',
     module: 'Cirurgia',
     text: 'Homem, 35 anos, trazido por ambulância do Corpo de Bombeiros com história de colisão veículo versus anteparo, onde era o motorista e estava sem cinto de segurança em carro sem airbag. Há relato de trauma direto contra o volante. Chega ao serviço em prancha rígida, com colar cervical e headblock. Ao exame: paciente agitado, pouco cooperativo, interagindo com o interlocutor, queixando-se de falta de ar. Orofaringe sem alterações. Turgência jugular à direita e desvio da traqueia para esquerda. Hemitórax direito com aumento de volume, ausência de murmúrio vesicular e hipertimpanismo à direita. PA = 90 x 60 mmHg, FC = 112 bpm; FR = 28 irpm. A conduta imediata é:',
     options: [
@@ -1642,6 +1822,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-79',
+    topography: '16',
+    topic: 'Trauma abdominal',
     module: 'Cirurgia',
     text: 'Um motoqueiro de 21 anos de idade foi vítima de uma colisão que resultou em traumatismo fechado do abdome. Encontra-se internado na Emergência sem sinais de irritação peritoneal e apresentando estabilidade hemodinâmica, porém a tomografia de abdome evidenciou gás no retroperitônio. O diagnóstico mais provável é:',
     options: [
@@ -1658,6 +1840,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2021-80',
+    topography: '1.5',
+    topic: 'Nódulos tireoidianos',
     module: 'Cirurgia',
     text: 'Homem, 60 anos, apresentou em ultrassom de carótidas um nódulo de 1 cm de diâmetro no lobo direito da tireoide, de aspecto sólido e hipoecogênico, com bordas irregulares e microcalcificações. Tem exames de sangue recentes sem alterações, com dosagens de TSH e T4 livre normais. A próxima conduta deve ser:',
     options: [
@@ -1674,6 +1858,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-61',
+    topography: '3.4',
+    topic: 'Pancreatite aguda',
     module: 'Cirurgia',
     text: 'Mulher de 45 anos é admitida em um serviço de emergência com queixa de dor abdominal súbita e intensa, em "barra", no andar superior do abdome, com irradiação para o dorso, iniciada há 8 horas. Relata náuseas e vômitos persistentes. Ao exame físico, apresenta dor severa à palpação de epigástrio, sem sinais de peritonite. Exame laboratorial: Lipase de 1.200U/L (VR: até 160U/L). Qual é o evento inicial envolvido na fisiopatologia dessa doença?',
     options: [
@@ -1691,6 +1877,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-62',
+    topography: '3.1',
+    topic: 'Hemorragia digestiva alta',
     module: 'Cirurgia',
     text: 'Homem de 60 anos, em tratamento de arritmia cardíaca com AAS (ácido acetilsalicílico) 200mg ao dia, procura a UBS com queixa de fraqueza, adinamia e epigastralgia há 2 meses. Refere perda ponderal de 2kg nos últimos meses. Fez uso de omeprazol 20mg por 7 dias, mas abandonou o uso devido ao escurecimento das fezes. Ao exame físico, encontra-se descorado 1/4+, PA = 120x80mmHg, FC = 80bpm e FR = 16irpm. Qual a conduta inicial mais adequada?',
     options: [
@@ -1707,6 +1895,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-63',
+    topography: '16',
+    topic: 'Abdome agudo',
     module: 'Cirurgia',
     text: 'Homem de 72 anos chega ao pronto atendimento hospitalar com dor abdominal súbita e intensa, referida como em “facada”, iniciada há poucas horas. Relata náuseas, abdome rígido à palpação e história de epigastralgia recorrente há meses, com uso frequente de anti-inflamatórios para dor no quadril. A tomografia sugere pneumoperitônio. Qual é a conduta terapêutica inicial mais adequada para esse paciente?',
     options: [
@@ -1723,6 +1913,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-64',
+    topography: '16',
+    topic: 'Trauma abdominal',
     module: 'Cirurgia',
     text: 'Homem, 32 anos, foi levado a um serviço de urgência após colisão frontal de automóvel em alta velocidade. Na admissão, apresentava confusão mental. Após ressuscitação volêmica inicial, os exames foram: FC 128bpm, PA 85/55mmHg e FR 24irpm; ausculta pulmonar normal e abdome distendido e doloroso à palpação. Realizado o exame FAST (Focused Assessment with Sonography for Trauma, ou avaliação com ultrassom focada no trauma), que revelou lâmina anecoica no espaço de Morrison e região periesplênica. Qual a conduta mais adequada neste caso?',
     options: [
@@ -1739,6 +1931,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-65',
+    topography: '16',
+    topic: 'Trauma abdominal',
     module: 'Cirurgia',
     text: 'Mulher de 33 anos chega ao pronto-socorro após colisão automobilística. Era a condutora e utilizava cinto de segurança. Encontra-se orientada e referindo dor abdominal difusa. Ao exame: dor à palpação no hipocôndrio esquerdo, sem irritação peritoneal e equimose no andar superior do abdome. PA 120x75mmHg, FC 94bpm, FR 20irpm, saturando 96% em ar ambiente. FAST (Focused Assessment with Sonography for Trauma, ou avaliação com ultrassom focada no trauma) positivo para líquido livre no abdome na janela esplenorrenal. Qual a melhor conduta?',
     options: [
@@ -1755,6 +1949,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-66',
+    topography: '16',
+    topic: 'Trauma torácico',
     module: 'Cirurgia',
     text: 'Homem de 32 anos sofreu queda de 3 metros de altura. No pronto-socorro, referiu intensa dor torácica. Ao exame: vias aéreas pérvias; ausência de turgência jugular; FC 112bpm; PA 90x50mmHg; FR 28irpm e saturando 90% com máscara nasal de O2 a 15L/min. Expansão torácica assimétrica. Hemitórax esquerdo: M.V. abolido, som maciço à percussão, crepitação de costelas à palpação. Hemitórax direito: murmúrio vesicular presente. Qual o diagnóstico?',
     options: [
@@ -1771,6 +1967,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-67',
+    topography: '16',
+    topic: 'Feridas',
     module: 'Cirurgia',
     text: 'Mulher de 45 anos, submetida a colecistectomia aberta há cinco dias, apresenta dor persistente e calor local em região de incisão cirúrgica. Exame físico: afebril, normocárdica, normotensa e eupneica. Observa-se hiperemia perilesional, edema e saída de secreção purulenta pelos bordos da ferida. Qual a conduta mais adequada neste momento?',
     options: [
@@ -1787,6 +1985,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-68',
+    topography: '16',
+    topic: 'Hérnias',
     module: 'Cirurgia',
     text: 'Homem de 55 anos procura pronto atendimento com dor inguinal há 8 horas e masa dolorosa, irredutível, sem sinais sistêmicos. Apresenta-se afebril, com FC 88bpm, sem sinais de peritonite ou obstrução intestinal. Qual a conduta mais adequada neste caso?',
     options: [
@@ -1803,6 +2003,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-69',
+    topography: '7.2',
+    topic: 'Celulite',
     module: 'Cirurgia',
     text: 'Homem de 40 anos apresenta tumefação dolorosa em coxa há 7 dias, com aumento progressivo, flutuação e eritema. Após tentativa prévia de antibioticoterapia e sem drenagem da lesão, houve piora do quadro. Considerando a fisiopatologia do abscesso, qual mecanismo explica a falha do tratamento clínico isolado?',
     options: [
@@ -1819,6 +2021,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-70',
+    topography: '7.1',
+    topic: 'Doença arterial periférica',
     module: 'Cirurgia',
     text: 'Uma mulher de 54 anos, tabagista e hipertensa, procura atendimento hospitalar com queixa de dor em panturrilha ao caminhar cerca de 200 metros, com melhora após alguns minutos de repouso. Ao exame físico, apresenta pulsos pediosos e tibiais posteriores diminuídos bilateralmente. Qual mecanismo fisiopatológico explica os sintomas desta paciente?',
     options: [
@@ -1835,6 +2039,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-71',
+    topography: '7.1',
+    topic: 'Insuficiência venosa crônica',
     module: 'Cirurgia',
     text: 'Uma mulher de 63 anos, obesa (IMC 32kg/m²), procura atendimento na UBS com queixa de dor, sensação de peso e edema em membros inferiores ao final do dia, com melhora ao elevar as pernas. Ao exame físico observam-se varizes bilaterais, edema maleolar e hiperpigmentação na região do tornozelo. Diante deste quadro clínico, qual o exame complementar mais indicado para avaliar a causa estrutural da doença?',
     options: [
@@ -1851,6 +2057,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-72',
+    topography: '4.1',
+    topic: 'Nefrolitíase',
     module: 'Cirurgia',
     text: 'Homem, 29 anos, apresenta-se no pronto-socorro com quadro de dor lombar à direita de forte intensidade, com irradiação para região genital ipsilateral, acompanhado de náuseas e urina escura. Não apresentava febre. Foi medicado com melhora importante do quadro. Realizada tomografia sem contraste, que evidenciou cálculo de 4mm em ureter direito distal, sem hidronefrose. Ureia e creatinina séricas normais. Qual a conduta?',
     options: [
@@ -1867,6 +2075,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-73',
+    topography: '4.1',
+    topic: 'Pielonefrite',
     module: 'Cirurgia',
     text: 'Em uma UBS, um homem de 72 anos apresenta febre, dor lombar intensa e prostração. Exames mostram leucocitose, PCR elevada, creatinina de 1,4mg/dL e urina com leucócitos e nitrito positivo. Ultrassonografia evidencia hidronefrose à direita, associada a imagem sugestiva de cálculo ureteral. O diagnóstico e a conduta inicial neste caso são:',
     options: [
@@ -1883,6 +2093,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-74',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     text: 'Lactente de 7 meses foi atendido em PS com história de choro súbito e intenso, com flexão de membros inferiores sobre o abdome. Mãe relata 2 episódios de vômitos e eliminação de fezes avermelhadas, com aspecto de "geleia de morango". Ao exame físico, nota-se massa alongada, palpável em hipocôndrio direito. Considerando o diagnóstico de intussuscepção intestinal, qual a fisiopatologia responsável pela isquemia com saída de muco e sangue pelo reto?',
     options: [
@@ -1931,6 +2143,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-77',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     text: 'Mulher de 68 anos é internada em enfermaria, com queixa de dor abdominal e parada de eliminação de flatos e fezes há 3 dias, com vômitos há 24 horas. Ao exame físico, apresenta dor abdominal importante, com dor à descompressão brusca, FC 123bpm e PA 100x50mmHg. Tomografia de abdome total evidenciou massa abdominal em sigmoide com oclusão intestinal. Diante do quadro exposto, qual a conduta inicial adequada?',
     options: [
@@ -1947,6 +2161,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-78',
+    topography: '3.1',
+    topic: 'Doença hemorroidária',
     module: 'Cirurgia',
     text: 'Mulher de 65 anos refere sangramento às evacuações e exteriorização de massa anal durante o esforço evacuatório. Antecedente de três partos normais e obstipação intestinal. Exame proctológico: hemorroidas mistas com componente interno importante e prolapso à manobra de Valsalva, redutível ao toque. O mecanismo fisiopatológico envolvido no quadro é:',
     options: [
@@ -1963,6 +2179,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-79',
+    topography: '16',
+    topic: 'Isquemia mesentérica',
     module: 'Cirurgia',
     text: 'Homem de 68 anos, com histórico de fibrilação atrial crônica e dislipidemia, procura a emergência com dor abdominal intensa, de início súbito, periumbilical, há 6 horas. A intensidade da dor é desproporcional aos achados do exame físico abdominal, que demonstra apenas leve distensão e pouca sensibilidade à palpação. Os exames laboratoriais iniciais revelam leucocitose e acidose metabólica com elevação do lactato. Qual é o exame de imagem mais indicado para confirmar o diagnóstico e planejar o tratamento neste momento?',
     options: [
@@ -1979,6 +2197,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2026-80',
+    topography: '1.1',
+    topic: 'TCE',
     module: 'Cirurgia',
     text: 'Homem, de 28 anos, é levado ao pronto-socorro após ser atingido por uma barra de ferro na região têmporo-parietal direita em uma briga. No local do incidente, o paciente apresentou uma breve perda de consciência, mas recuperou-se totalmente, conversando com os socorristas (Escala de Coma de Glasgow 15). Durante o transporte, ele tornou-se subitamente sonolento, evoluindo rapidamente para coma (Glasgow 7) e apresentando midríase à direita. Qual é a principal hipótese diagnóstica e o achado radiológico esperado na Tomografia de Crânio?',
     options: [
@@ -1996,6 +2216,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   // ---- Teste de Progresso 2019 (gabarito oficial) ----
   {
     id: 'tp2019-61',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     image: '/images/tp2019-61.webp',
     text: 'Mulher, 68 anos, procura atendimento por quadro de dor abdominal em cólica há 3 dias, acompanhada de distensão, náuseas, hiporexia e parada de eliminação de flatos e fezes. Antecedentes pessoais: há seis meses apresenta emagrecimento e episódios de dores abdominais, associados a constipação intestinal. Exame físico: abdome distendido, globoso, hipertimpânico em andar superior, levemente doloroso, com massa endurecida palpável em hipogástrio. Radiografia de abdome: imagem abaixo.\n\nO diagnóstico e o achado de imagem são:',
@@ -2013,6 +2235,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-62',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     text: 'Homem, 66 anos, atendido no serviço de emergência por parada de eliminação de fezes e flatos há 5 dias, associada a vômitos e aumento progressivo do volume abdominal. Refere que seu hábito intestinal é de uma evacuação a cada dois dias. Antecedente pessoal: laparotomia exploradora prévia, devido a úlcera gástrica perfurada há 20 anos. Exame físico: abdome globoso, timpânico, sem sinais de irritação peritoneal, com uma cicatriz xifopúbica. Radiografia de abdome: sinais de empilhamento de moedas e níveis hidroaéreos, sem pneumoperitônio.\n\nO diagnóstico etiológico e a conduta são:',
     options: [
@@ -2046,6 +2270,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-64',
+    topography: '3.3',
+    topic: 'Colangite aguda',
     module: 'Cirurgia',
     text: 'Mulher de 65 anos apresenta há três dias icterícia, dor abdominal e urina de cor escura. Antecedentes pessoais: colecistopatia crônica calculosa, aguardando cirurgia. Exame físico: febril, ictérica 3+/4, com dor à palpação de hipocôndrio direito. Exames laboratoriais: bilirrubina total de 4,8 mg/dL (bilirrubina direta: 3,8 mg/dL), leucograma de 15.000/mm³ sem desvio.\n\nA hipótese diagnóstica mais provável é:',
     options: [
@@ -2062,6 +2288,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-65',
+    topography: '16',
+    topic: 'Hérnias',
     module: 'Cirurgia',
     image: '/images/tp2019-65.webp',
     text: 'Homem, 63 anos, refere o aparecimento de tumoração localizada no flanco esquerdo, ligeiramente dolorosa, com aumento discreto, porém progressivo do seu volume há seis meses. Nega traumatismo local ou sinais inflamatórios. Foi realizada tomografia computadorizada (abaixo).\n\nO diagnóstico é:',
@@ -2079,6 +2307,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-66',
+    topography: '3.3',
+    topic: 'Colangite aguda',
     module: 'Cirurgia',
     image: '/images/tp2019-66.webp',
     text: 'Homem, 57 anos, apresenta queixa de dor abdominal em hipocôndrio direito há cinco dias, associado a náuseas e vômitos. Comorbidades: hipertenso e diabético. Exame físico: mau estado geral, confuso, sudoreico, ictérico 2+/4+, T = 38°C, FC = 130bpm, SaO₂ ar ambiente = 95%, tempo de enchimento capilar > 2 segundos, PA = 70 x 45 mmHg. Abdome flácido, dolorido em hipocôndrio direito, ruídos hidroaéreos presentes. Exames laboratoriais: Hb: 13,0 g/dL; leucócitos: 16.000/mm³ com 10% de bastonetes; ureia: 98 mg/dL; creatinina sérica: 3,2 mg/dL; bilirrubinas totais: 6,9 mg/dL (direta: 4,0 mg/dL); AST 150u/mL; ALT: 101 u/mL; Gama-GT 980 u/mL; fosfatase alcalina: 748 u/mL; amilase: 80 u/mL. Tomografia de abdome apresentada abaixo.\n\nO diagnóstico, a síndrome e a conduta são, respectivamente:',
@@ -2096,6 +2326,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-67',
+    topography: '6.2',
+    topic: 'Lombalgia',
     module: 'Cirurgia',
     text: 'Homem, 18 anos, sem comorbidades, procura atendimento na UBS com queixa de dor lombar há 3 dias. A dor é intensa na região lombar e se irradia pela face posterior da coxa direita até o joelho. Há limitação da amplitude dos movimentos pela dor.\n\nO exame de sensibilidade é normal, como também o são os reflexos tendinosos profundos dos membros inferiores. A conduta é:',
     options: [
@@ -2112,6 +2344,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-68',
+    topography: '8',
+    topic: 'Obesidade',
     module: 'Cirurgia',
     text: 'Mulher, 36 anos, procura atendimento ambulatorial para tratamento da obesidade. Refere ter obesidade há 12 anos, após gestação, e realizado inúmeras dietas sem sucesso. Fez uso de Sibutramina e Bupropiona nos últimos dois anos com efeitos colaterais (taquicardia e irritabilidade) e perda ponderal de 12kg. Ao exame: peso = 104kg; altura = 1,68m e IMC 36,8 kg/m². Refere esteatose hepática, doença do refluxo gastroesofágico e artropatia de joelho direito.\n\nA melhor orientação clínica para esta paciente é:',
     options: [
@@ -2128,6 +2362,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-69',
+    topography: '16',
+    topic: 'Pós-operatório',
     module: 'Cirurgia',
     text: 'Menino, 10 anos, no 1º pós-operatório de apendicectomia por apendicite aguda perfurada, sonolento e hipoativo há 2 horas. A mãe relata que, antes disso, apresentou 3 episódios de vômitos, de conteúdo bilioso, em grande quantidade. Desde o momento da cirurgia, encontra-se em jejum e ainda não evacuou, mas está eliminando flatos. Hoje, urinou apenas uma vez, em pequena quantidade, urina de cor amarelo escura. Exame físico: REG, hipoativo, descorado 2+/4, anictérico, com turgor pastoso. T = 37,2ºC, FC = 106 bpm, FR = 15 irpm, PA = 100 x 70 mmHg. Abdome: ruídos hidroaéreos propulsivos, com dor à palpação profunda da região próxima à ferida cirúrgica, sem reação peritoneal.\n\nO diagnóstico é:',
     options: [
@@ -2144,6 +2380,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-70',
+    topography: '14',
+    topic: 'Trauma',
     module: 'Cirurgia',
     text: 'Homem, 20 anos, vítima de capotamento de automóvel há 30 minutos, com escore de Glasgow = 7, com equimose periorbitária bilateral e trauma complexo de face com sangramento intenso.\n\nPA = 120 x 90 mmHg, FC = 100 bpm e FR = 18 ipm, saturação em ar ambiente de 96%. A conduta é:',
     options: [
@@ -2160,6 +2398,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-71',
+    topography: '2.1',
+    topic: 'Derrame pleural',
     module: 'Cirurgia',
     text: 'Homem, 59 anos, referia dispneia importante e apresentava história clínica compatível com pneumonia comunitária. Foi realizada uma radiografia de tórax, que evidenciou um derrame pleural volumoso ocupando os 2/3 inferiores do hemitórax direito. O paciente foi submetido a uma toracocentese diagnóstica.\n\nAs características do líquido pleural que indicam uma drenagem torácica imediata são:',
     options: [
@@ -2176,6 +2416,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-72',
+    topography: '7.1',
+    topic: 'Aneurisma de aorta abdominal',
     module: 'Cirurgia',
     text: 'Homem, 70 anos, deu entrada no Pronto-Socorro com quadro de dor abdominal, com irradiação para o dorso e para o flanco esquerdo, com início 4 horas antes da admissão hospitalar. Antecedentes pessoais: tabagismo, hipertensão arterial, enfisema pulmonar e dislipidemia. Exame físico: ansioso, sudoreico, PA = 90 x 50 mmHg, FC = 130 bpm. Ausculta cardíaca: presença de duas bulhas rítmicas e hipofonéticas. Abdome: massa pulsátil em região epigástrica, com dor intensa à palpação local e sinais de irritação peritoneal. MMII: pulsos femorais, poplíteos, tibiais posteriores e pediosos palpáveis, porém com amplitude diminuída.\n\nO diagnóstico é:',
     options: [
@@ -2192,6 +2434,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-73',
+    topography: '16',
+    topic: 'Perfuração de víscera oca',
     module: 'Cirurgia',
     text: 'Homem, 45 anos, tabagista, etilista, deu entrada no PS com queixa de dor de forte intensidade em região mesogástrica de início súbito há 6 horas, após vômitos intensos. Exame físico: hálito etílico, hipocorado 1+/4+, PA = 100 x 60 mmHg, FC = 110 bpm, abdome tenso, em tábua, doloroso à palpação em região de mesogástrio, sinal de Jobert positivo.\n\nO diagnóstico e o exame complementar a se solicitar são, respectivamente:',
     options: [
@@ -2208,6 +2452,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-74',
+    topography: '1.1',
+    topic: 'AVC',
     module: 'Cirurgia',
     text: 'Mulher, 58 anos, hipertensa, é levada ao hospital devido a cefaleia súbita, intensa, acompanhada de vômitos e rebaixamento do nível de consciência há 3 horas. Exame físico: sonolenta, confusa, rigidez de nuca; PA = 200 x 120 mmHg, FC = 84bpm.\n\nO diagnóstico e a conduta são, respectivamente:',
     options: [
@@ -2224,6 +2470,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-75',
+    topography: '16',
+    topic: 'Trauma torácico',
     module: 'Cirurgia',
     text: 'Mulher, 36 anos, renal crônica, em uso contínuo de AAS, foi submetida a passagem de cateter de diálise (Shilley) em veia subclávia direita para iniciar hemodiálise. O método foi realizado segundo a técnica de Seldinger, não guiado por ultrassom. Após o procedimento, a paciente começou a apresentar dispneia, taquipneia e dessaturação de O₂. Submetida a radiografia de tórax, que evidenciou hemotórax extenso à direita. Realizada drenagem torácica à direita com saída imediata de 800mL de sangue. A paciente manteve-se com episódios de hipotensão arterial e necessidade de transfusões sanguíneas sucessivas. O débito no dreno de tórax foi de 280 mL/hora nas primeiras 3 horas. Não há serviço de cirurgia endovascular disponível no hospital.\n\nAs indicações para abordagem cirúrgica da paciente são:',
     options: [
@@ -2240,6 +2488,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-76',
+    topography: '7.2',
+    topic: 'Carcinoma espinocelular',
     module: 'Cirurgia',
     text: 'Homem, 65 anos, trabalhador rural, apresenta lesão ulcerada de 3cm de diâmetro no antebraço direito há um ano. Refere sangramento esporádico.\n\nAo exame, apresenta lesão de margens elevadas, não muito bem definidas, com aspecto perláceo, leito hipervascularizado e ulceração central. A conduta é:',
     options: [
@@ -2256,6 +2506,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-77',
+    topography: '1.2',
+    topic: 'Ceratite',
     module: 'Cirurgia',
     text: 'Menino, 13 anos, apresentou queda sobre objeto cortante em via pública. Dá entrada no Pronto-Socorro com perfuração do olho direito.\n\nAté a chegada do oftalmologista, a conduta é:',
     options: [
@@ -2272,6 +2524,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-78',
+    topography: '4.1',
+    topic: 'Nefrolitíase',
     module: 'Cirurgia',
     text: 'Mulher, 46 anos, chega à unidade de pronto atendimento com quadro de dor em região lombar e flanco direito, vômitos, febre, taquicardia e mal-estar. Relata antecedente de urolitíase. Apresenta melhora parcial com analgésico, antitérmico e antiemético endovenosos. Exames: Hemograma: glóbulos brancos 19.600/mm³, bastões 15%; creatinina: 2,1 mg/dL; urina I: leucocitúria importante e hematúria.\n\nTomografia de abdome evidencia cálculo ureteral proximal à direita com cerca de 0,8cm, com dilatação moderada ureteropielocalicial a montante e borramento peri-renal. A conduta é:',
     options: [
@@ -2288,6 +2542,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-79',
+    topography: '4.2',
+    topic: 'Câncer de próstata',
     module: 'Cirurgia',
     text: 'Homem, 60 anos, com sintomas miccionais leves, procurou atendimento ambulatorial para avaliação prostática. O toque retal mostrou próstata fibroelástica, sem nódulos e com peso estimado de 30 gramas. A dosagem do Antígeno Prostático Específico (PSA) total foi de 11,8 ng/mL (VR: até 4,0 ng/mL) e o exame de sedimento urinário foi normal.\n\nA melhor conduta é:',
     options: [
@@ -2304,6 +2560,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2019-80',
+    topography: '16',
+    topic: 'Pré-operatório',
     module: 'Cirurgia',
     text: 'Mulher, 21 anos, foi encaminhada ao serviço de cirurgia ambulatorial para uma biópsia de linfonodo cervical. Após o preparo pré-operatório e antissepsia, foi iniciado o procedimento com anestesia local. Momentos após, ao se iniciar a manipulação do linfonodo, a paciente referiu gosto metálico na boca, vertigem e turvação visual. Passou a ficar agitada e a movimentar-se constantemente na maca.\n\nA causa dessas alterações e a conduta são:',
     options: [
@@ -2338,6 +2596,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-102',
+    topography: '4.2',
+    topic: 'Câncer de próstata',
     module: 'Cirurgia',
     text: 'Paciente de 64 anos procura atendimento médico com queixa de polaciúria (intervalo miccional a cada 3 horas), nictúria e com jato urinário médio. Qualidade de vida pouco afetada pelos sintomas urinários. Trouxe à consulta um ultrassom realizado há dois anos, demonstrando próstata de 55g e vias urinárias normais. Tem como antecedente familiar irmão com diagnóstico de câncer de próstata que se encontra em tratamento.\n\nQual o rastreamento mínimo recomendado para este paciente?',
     options: [
@@ -2354,6 +2614,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-103',
+    topography: '16',
+    topic: 'Pré-operatório',
     module: 'Cirurgia',
     text: 'Paciente de 30 anos, masculino, foi submetido a cirurgia para correção de hérnia inguinal bilateral. Na avaliação pré-operatória apresentava-se em bom estado geral, com sinais vitais dentro da normalidade, assim como os exames laboratoriais, com exceção da glicemia em jejum que constava valor de 130 mg/dL. Referiu que fazia uso de hipoglicemiante oral para o tratamento de diabetes mellitus tipo 2.\n\nApós exame clínico e análise dos exames laboratoriais, qual a classificação deste paciente com relação ao risco anestésico-cirúrgico (ASA - American Society of Anesthesiology)?',
     options: [
@@ -2370,6 +2632,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-104',
+    topography: '3.1',
+    topic: 'Câncer colorretal',
     module: 'Cirurgia',
     text: 'Homem de 64 anos, previamente hígido e sem comorbidades, apresenta dor em fossa ilíaca esquerda e hematoquezia. Submetido a uma colonoscopia, deparou-se com uma lesão de crescimento lateral em cólon descendente, multilobulada, friável e sangrante ao toque do aparelho de colonoscopia, com cerca de 5cm de extensão, com uma área deprimida central e perfazendo cerca de 60% da circunferência da luz do órgão. Realizada biópsia que mostrou tratar-se de um adenoma tubular com displasia de baixo grau e alguns focos com displasia de alto grau.\n\nQual a conduta neste caso?',
     options: [
@@ -2386,6 +2650,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-105',
+    topography: '16',
+    topic: 'Trauma torácico',
     module: 'Cirurgia',
     image: '/images/tp2020-105.webp',
     text: 'L.S., 26 anos, condutor de veículo pesado, vítima de colisão automotiva em rodovia. Condutor de outro veículo (carro) faleceu em cena. Admitido em pronto-socorro referenciado trazido por viatura de socorro básico. Respira espontaneamente. Frequência respiratória: 23 incursões por minuto, saturação de oxigênio de 90% pelo oxímetro de pulso, e a ausculta apresenta murmúrio vesicular diminuído difusamente associado a crepitação de parede torácica direita. Frequência cardíaca 110 batimentos por minuto, pressão arterial 105 x 67 mmHg. Escala de Coma de Glasgow de 13 pontos. Dermoabrasão em sentido oblíquo em parede anterior de tórax. Após administrar oxigênio complementar, obter acessos venosos e iniciar administração de cristaloides, foi solicitada tomografia de tórax sem contraste endovenoso.\n\nAvalie as imagens abaixo e assinale a alternativa que melhor corresponde ao diagnóstico e condutas adequadas:',
@@ -2403,6 +2669,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-106',
+    topography: '6.2',
+    topic: 'Luxações',
     module: 'Cirurgia',
     image: '/images/tp2020-106.webp',
     text: 'Paciente J.P.S. de 60 anos, destro, caminhoneiro, apresenta dor crônica em ombro direito há 2 (dois) anos, com piora 5 (cinco) meses após trocar o pneu de um caminhão. Apresenta piora da dor à noite e queixa-se de dificuldade para levar a mão acima da cabeça. Ao exame físico na inspeção estática e dinâmica não apresenta alterações na pele como abaulamentos, equimoses, porém apresenta os testes de impacto de Neer e o teste de Jobe positivos. Realizou uma Ressonância Nuclear Magnética (RNM) conforme imagem abaixo, na qual foi confirmada a principal hipótese diagnóstica do caso.\n\nQual das alternativas abaixo NÃO é um diagnóstico diferencial desse caso?',
@@ -2420,6 +2688,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-107',
+    topography: '1.5',
+    topic: 'Nódulos tireoidianos',
     module: 'Cirurgia',
     text: 'F.C., masculino, 60 anos, queixa-se do aparecimento de um “caroço” no pescoço há cerca de 3 meses. Está assintomático. Trouxe exames laboratoriais: TSH (hormônio estimulante da tireoide) de 2,3 µUI/L (valor de referência de 0,5 - 4,2 µUI/L); T4 (tiroxina) livre de 1,5 ng/dL (valor de referência de 0,8 - 1,9 ng/dL) e ultrassonografia cervical que descreve um nódulo tireoidiano de 2,5cm em lobo tireoidiano direito, bem delimitado, hipoecogênico e com presença de microcalcificações puntiformes de permeio.\n\nA sua conduta nesta situação seria:',
     options: [
@@ -2436,6 +2706,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-108',
+    topography: '2.1',
+    topic: 'Derrame pleural',
     module: 'Cirurgia',
     text: 'Sr. Antônio, 66 anos, queixa-se de astenia, emagrecimento e perda de apetite há cerca de 30 dias, acompanhadas de febre intermitente e não aferida. Ao exame físico e à radiografia de tórax confirmou-se a presença de derrame pleural em base torácica direita. Após a pleurocentese confirmou-se o diagnóstico de tuberculose pleural.\n\nA análise de líquido pleural que corrobora esta hipótese é:',
     options: [
@@ -2452,6 +2724,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-109',
+    topography: '16',
+    topic: 'Obstrução intestinal',
     module: 'Cirurgia',
     image: '/images/tp2020-109.webp',
     text: 'ECM, 58 anos, chega ao Pronto Atendimento com quadro de distensão abdominal há 4 dias e dor abdominal em cólica. Relata parada de eliminação de gases e fezes há 7 dias e início de vômitos há 12 horas. Nega febre. Paciente portador de hipertensão arterial e tabagista. Ao exame: abdome globoso, com cicatriz de laparotomia prévia por úlcera péptica perfurada, com ruídos aumentados, dor à palpação profunda generalizada, sem sinais de peritonite; ao toque, ampola retal sem fezes. Exames laboratoriais com função renal e eletrólitos normais. Radiografia de abdome anteroposterior é a que segue:\n\nA partir da história, exame físico e radiografia, o diagnóstico e conduta são:',
@@ -2469,6 +2743,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-110',
+    topography: '16',
+    topic: 'Apendicite aguda',
     module: 'Cirurgia',
     text: 'Helena, 18 anos, com 33 semanas de gestação (G1P0A0), admitida no hospital com dor epigástrica iniciada há dois dias, acompanhada de náuseas, vômitos e anorexia. Relata piora progressiva da dor e irradiação para o flanco direito. Ao exame apresentava-se corada, desidratada (1+/4+), frequência cardíaca de 110 batimentos por minuto, pressão arterial de 100 x 60 mmHg, temperatura axilar de 37,9ºC. Abdome gravídico doloroso em flanco direito e com descompressão brusca positiva. Altura uterina de 32cm e batimentos cardíacos fetais presentes. Aos exames complementares, sedimento de urina sem alterações e leucograma com 18.000 leucócitos/mL com 10% de bastões.\n\nA hipótese diagnóstica e o respectivo tratamento para Helena são:',
     options: [
@@ -2485,6 +2761,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-111',
+    topography: '3.3',
+    topic: 'Colelitíase',
     module: 'Cirurgia',
     text: 'MTF, 48 anos, dona de casa, católica, tem antecedente de hipertensão em uso de losartana. Procurou o pronto-socorro municipal com o seguinte quadro: refere que estava em casa e logo após o almoço, há 2 horas, iniciou com dor tipo cólica no hipocôndrio direito, de forte intensidade, sem fatores de melhora, associado a náusea e um episódio de vômito alimentar em pequena quantidade. Nega febre. Fez uso de paracetamol, porém como os sintomas não melhoraram, optou por procurar o pronto atendimento. Na chegada, apresentava-se em regular estado geral, fácies álgica, pulso 96 batimentos por minuto, pressão arterial de 140 x 95 mmHg, peso de 86kg, altura de 1,45m, acianótica, anictérica e afebril. Ao exame abdominal: abdômen globoso, doloroso à palpação superficial e profunda na topografia do hipocôndrio direito, descompressão brusca negativa, ruídos hidroaéreos positivos. Cardiovascular, pulmonar e membros sem alterações.\n\nBaseado no caso exposto, qual a melhor conduta?',
     options: [
@@ -2501,6 +2779,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-112',
+    topography: '16',
+    topic: 'Hérnias',
     module: 'Cirurgia',
     text: 'Criança de 3 anos de idade, masculino, vem ao Ambulatório de Especialidade com encaminhamento da Unidade Básica de Saúde para avaliação, devido a hipótese diagnóstica de testículo não descido. Ao exame físico, genitália adequada para o sexo masculino; testículo esquerdo tópico, e com volume adequado para a idade; testículo direito palpável em região inguinal, sem alcançar o escroto com as manobras realizadas e presença de espessamento de cordão inguinal sugerindo presença concomitante de hérnia inguinal esquerda; escroto sem sinais de hipoplasia. Aos exames complementares, níveis séricos normais de LH (hormônio luteinizante) e FSH (hormônio folículo estimulante), ultrassonografia de rins e vias urinárias sem alterações.\n\nQual a melhor conduta a ser tomada para o tratamento deste paciente?',
     options: [
@@ -2517,6 +2797,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-113',
+    topography: '1.2',
+    topic: 'Catarata',
     module: 'Cirurgia',
     text: 'Paciente com 70 anos de idade, oriundo do interior de São Paulo, procura serviço médico com queixa de baixa de acuidade visual há 2 anos. Durante a anamnese refere visão turva que tem piorado progressivamente, tem percebido uma névoa na visão e que as paredes brancas estão mais amareladas nos últimos meses. Nega dor, hiperemia ocular e/ou trauma ocular. Fez exame refracional há 6 meses e não percebeu melhora da visão com os óculos novos. Nega cirurgias oculares prévias. Nega tabagismo e uso de álcool.\n\nDiante do quadro descrito, podemos afirmar:',
     options: [
@@ -2533,6 +2815,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-114',
+    topography: '2.1',
+    topic: 'Câncer de pulmão',
     module: 'Cirurgia',
     text: 'Paciente de 60 anos procura ambulatório por queixa de tosse seca há 2 meses, sem febre. É tabagista de longa data e sem outras comorbidades. Ao Raio X de tórax apresenta imagem em pulmão direito de 3cm de diâmetro em região periférica tendo sido feita hipótese diagnóstica inicial de nódulo solitário de pulmão.\n\nDentre as alternativas abaixo, qual caracteriza o passo fundamental para instituir o tratamento?',
     options: [
@@ -2549,6 +2833,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-115',
+    topography: '4.1',
+    topic: 'Nefrolitíase',
     module: 'Cirurgia',
     text: 'Paciente masculino, 30 anos, dá entrada no pronto-socorro com quadro de dor lombar intensa, hematúria e febre. Tem antecedente pessoal de calculose renal. Foi feita a hipótese de cálculo ureteral e infecção do trato urinário.\n\nQual a alternativa mais adequada para confirmar o diagnóstico?',
     options: [
@@ -2565,6 +2851,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-116',
+    topography: '16',
+    topic: 'Hérnias',
     module: 'Cirurgia',
     text: 'Paciente de 15 anos de idade apresenta quadro de dor inguinal direita há 3 dias, com piora do quadro nas últimas 24 horas. Apresenta parada de eliminação de gases e fezes há um dia e febre. Ao exame físico apresenta tumoração inguinal com dor à palpação e eritema importante da pele.\n\nQual o diagnóstico mais provável e a conduta?',
     options: [
@@ -2581,6 +2869,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-117',
+    topography: '8',
+    topic: 'Obesidade',
     module: 'Cirurgia',
     text: 'Mulher de 42 anos, saudável exceto por ser portadora de obesidade Grau II, procura Unidade Saúde da Família solicitando encaminhamento para cirurgia bariátrica e apresenta pedido do médico privado, com quem passou em consulta há 1 mês para orçamento de cirurgia bariátrica, como fez sua vizinha que está ótima. Acrescenta ainda que após receber encaminhamento para serviço de cirurgia bariátrica pelo SUS, (peso de 95kg e altura de 1,57m) foi aconselhada a engordar “uns 5-6 kg”, chegando próximo aos 101kg.\n\nComo médico da Estratégia Saúde da Família, qual seria a conduta mais adequada para o caso acima?',
     options: [
@@ -2597,6 +2887,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-118',
+    topography: '7.1',
+    topic: 'Doença arterial periférica',
     module: 'Cirurgia',
     text: 'Homem com 60 anos, tabagista de um maço de cigarros ao dia por 40 anos, diabético sabidamente há 22 anos, hipertensão moderada controlada e dislipidemia. Apresenta sinais de doença arterial periférica, predominante no membro inferior esquerdo com classificação Fontaine Estágio III ou Rutherford categoria 4.\n\nQual a melhor conduta?',
     options: [
@@ -2613,6 +2905,8 @@ export const CIRURGIA_QUESTIONS: Question[] = [
   },
   {
     id: 'tp2020-119',
+    topography: '16',
+    topic: 'Pré-operatório',
     module: 'Cirurgia',
     text: 'A paciente MLA, do sexo feminino, 67 anos, é portadora de Coxartrose grave do lado direito. Em consulta médica com seu ortopedista, foi proposto o tratamento cirúrgico com artroplastia total de quadril. Durante a avaliação pré-operatória, foi observado pelo médico assistente que a paciente fazia uso de Rivaroxabana 20 mg/dia, devido a tromboembolismo pulmonar prévio.\n\nConsiderando que a paciente será submetida a anestesia raquidiana e que sua função renal é normal, a conduta correta no manejo pré-operatório para que a cirurgia possa ser realizada é:',
     options: [
