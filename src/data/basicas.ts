@@ -12,8 +12,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Hiperplasia adrenal; dores abdominais graves, fraqueza extrema e insuficiência renal.'
     ],
     correctAnswer: 1,
-    explanation: 'A Fenilcetonúria decorre do acúmulo de fenilalanina devido à deficiência da enzima fenilalanina hidroxilase.',
-    commentary: 'Fenilcetonúria é uma doença metabólica congênita causada por um defeito na enzima fenilalanina hidroxilase, levando à acumulação de fenilalanina no organismo. Os sintomas incluem deficiência intelectual devido à toxicidade da fenilalanina para o sistema nervoso central, convulsões devido à toxicidade cerebral, náusea e erupção cutânea.',
+    explanation: "A fenilalanina hidroxilase converte fenilalanina em tirosina. Quando ela falta, a fenilalanina se acumula no sangue e no cérebro, e parte dela vira fenilcetonas eliminadas na urina: é a fenilcetonúria, doença autossômica recessiva rastreada no Teste do Pezinho.\n\nSem dieta restrita em fenilalanina desde as primeiras semanas, o excesso é tóxico para o sistema nervoso em formação e causa deficiência intelectual, convulsões e alterações de comportamento. Também há vômitos, eczema (erupção cutânea), odor de \"mofo\" na urina e pele e cabelos mais claros, já que falta tirosina para fazer melanina.",
+    commentary: "Hipotireoidismo (A): também é rastreado no Teste do Pezinho, mas decorre da falta de hormônio tireoidiano, não de defeito na fenilalanina hidroxilase.\n\nAnemia falciforme (C): é uma hemoglobinopatia por mutação no gene da betaglobina; não tem relação com o metabolismo de aminoácidos.\n\nHiperplasia adrenal (D): resulta de defeito enzimático na síntese de cortisol (em geral a 21-hidroxilase), com perda de sal e virilização, e não de defeito na fenilalanina hidroxilase.",
+    tip: "Fenilalanina hidroxilase deficiente = fenilcetonúria: sem dieta, deficiência intelectual e convulsões.",
     reference: 'Nelson, D.L.; Cox, M.M. (2019). Princípios de bioquímica de Lehninger (7a ed.). Artmed. Guyton, A. C., & Hall, J. E. (2016). Tratado de Fisiologia Médica (13ª ed.). Elsevier.',
     tags: ['bioquímica', 'erros inatos do metabolismo']
   },
@@ -28,8 +29,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Redução da atividade da lipase lipoproteica.'
     ],
     correctAnswer: 3,
-    explanation: 'A resistência à insulina reduz a atividade da lipase lipoproteica, impedindo a hidrólise adequada de triglicérides nas lipoproteínas.',
-    commentary: 'A enzima lipase lipoproteica hidrolisa triglicérides de lipoproteínas VLDL e quilomicrom circulantes no sangue com estímulo da insulina. No diabetes mellitus tipo II esta enzima tem sua ativação prejudicada pela resistência à insulina. Com a baixa atividade da lipase lipoproteica ocorre acúmulo dos triglicérides nas lipoproteínas plasmáticas e consequentemente a hiperglicemia. No diabetes mellitus tipo II não há redução da atividade da lipase hormônio sensível, de qualquer forma esta alteração não resulta em hipertrigliceridemia. No diabetes mellitus tipo II há aumento da neoglicogênese hepática, no entanto o estímulo desta via não favorece a hipertrigliceridemia. No diabetes mellitus tipo II há aumento da atividade da hmg-coa redutase, enzima regulatória da síntese de colesterol, favorecendo a hipercolesterolemia, mas não tendo repercussão sobre a hipertrigliceridemia.',
+    explanation: "A lipase lipoproteica fica no endotélio dos capilares e quebra os triglicérides transportados por quilomícrons e VLDL, liberando ácidos graxos para os tecidos. A insulina é o principal estímulo para sua síntese e atividade.\n\nNo diabetes tipo 2, a resistência à insulina reduz a ação dessa enzima, e os triglicérides deixam de ser retirados da circulação com eficiência. Some-se a isso o maior aporte de ácidos graxos ao fígado, que aumenta a produção de VLDL. O resultado é a dislipidemia típica do diabético: triglicérides altos, HDL baixo e LDL pequenas e densas.",
+    commentary: "HMG-CoA redutase (A): é a enzima-chave da síntese de colesterol; seu aumento eleva o colesterol, e não explica a hipertrigliceridemia.\n\nLipase hormônio sensível (B): na resistência à insulina ela fica mais ativa, e não menos, porque a insulina normalmente a inibe; mais lipólise no tecido adiposo envia mais ácidos graxos ao fígado.\n\nNeoglicogênese hepática (C): está aumentada no diabetes e contribui para a hiperglicemia, mas não é a via que leva ao acúmulo de triglicérides no plasma.",
+    tip: "Diabetes tipo 2 + triglicérides altos: pense na lipase lipoproteica pouco ativa por resistência à insulina.",
     reference: 'Nelson DL, Cox MM - Princípios de Bioquímica de Lehninger 5ª ed. Artmed, 2011. Baynes JW, Dominiczak MH – Bioquímica Médica 2ª ed, Ed. Elsevier, 2009. Harvey RA, Ferrier DR - Bioquímica Ilustrada 5ª ed. Artmed, 2012.',
     tags: ['bioquímica', 'metabolismo', 'diabetes']
   },
@@ -44,8 +46,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A cauda poliA no RNA mensageiro é um tipo de íntrom localizada em uma porção terminal dessa molécula e removida através do processo denominado splicing.'
     ],
     correctAnswer: 0,
-    explanation: 'No processamento do RNA (splicing), os íntrons são removidos e os éxons são unidos para formar a sequência codificante final.',
-    commentary: 'Éxons são regiões codificantes do RNA mensageiro, enquanto íntrons são segmentos removidos durante o processamento do RNA mensageiro, sendo não codificantes e não traduzidos em proteínas. Essa afirmação corretamente descreve a diferença entre éxons e íntrons e o processo de splicing que remove os íntrons do RNA mensageiro antes da tradução.',
+    explanation: "O gene é transcrito inteiro em um RNA precursor (pré-mRNA), que contém éxons e íntrons. No processamento dentro do núcleo, o splicing retira os íntrons e une os éxons; são os éxons que permanecem no RNA mensageiro maduro e carregam a sequência que será traduzida em proteína.\n\nAlém do splicing, o processamento inclui a adição do cap 5' e da cauda poli-A, que protegem o RNA e ajudam na exportação e na tradução, mas não são traduzidos.",
+    commentary: "Íntrons como regiões codificantes (B): inverte os conceitos; os íntrons é que são removidos, e os éxons formam o mRNA maduro.\n\nCap 5' (C): protege o mRNA da degradação e ajuda o ribossomo a reconhecê-lo, mas é um nucleotídeo modificado que não é traduzido em aminoácidos.\n\nCauda poli-A (D): não é íntron; é uma sequência de adeninas adicionada à extremidade 3' durante o processamento, e permanece no mRNA maduro em vez de ser retirada pelo splicing.",
+    tip: "Éxon expressa e fica; íntron interrompe e sai no splicing. Cap e cauda poli-A protegem, mas não são traduzidos.",
     reference: 'Alberts, B.; Johnson, A.; Lewis, J.; Raff, M.; Roberts, K.; Walter, P. (2017). Biologia Molecular da Célula. (6ª ed.) Artmed. Nature Education Home (2024). Nature. Disponível em: <https://www.nature.com/scitable/definition/intron-introns67/#:~:text=Introns%20are%20noncoding%20sections%20of,f or%20proteins%20are%20called%20exons>. Acesso em: 25 de maio de 2024.',
     tags: ['genética molecular', 'biologia celular']
   },
@@ -60,8 +63,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Sequenciamento de Sanger dos cromossomos 9 e 22.'
     ],
     correctAnswer: 2,
-    explanation: 'O FISH usa sondas fluorescentes para identificar translocações cromossômicas específicas.',
-    commentary: 'A identificação do cromossomo Filadélfia pode ser feita por FISH, PCR em tempo real (qPCR) ou por cariótipo. Como a pergunta é sobre a técnica de biologia molecular, cariótipo não é molecular e o qPCR não foi citado entre as alternativas, a alternativa C é a única possível.',
+    explanation: "O cromossomo Filadélfia é a translocação t(9;22), que junta o gene BCR (cromossomo 22) ao ABL1 (cromossomo 9). A hibridização in situ fluorescente (FISH) usa sondas marcadas que se ligam a essas sequências específicas: quando há fusão, os sinais de cores diferentes aparecem colados, o que identifica o rearranjo mesmo em núcleos fora da divisão celular.\n\nNa prática, o diagnóstico da LMC também usa o cariótipo e o RT-PCR para o transcrito BCR-ABL1; o RT-PCR quantitativo é o exame de escolha para monitorar a resposta aos inibidores de tirosina quinase. Entre as opções oferecidas, porém, a única adequada para detectar a translocação é a FISH.",
+    commentary: "Enzimas de restrição (A): cortam o DNA em sequências curtas e serviriam para análise de fragmentos, mas não detectam de forma prática uma translocação entre dois cromossomos inteiros.\n\nMLPA (B): é útil para identificar deleções e duplicações (alterações de número de cópias), mas não detecta translocações equilibradas como a t(9;22).\n\nSequenciamento de Sanger (D): lê trechos curtos de DNA e serve para mutações pontuais; não é capaz de sequenciar cromossomos inteiros nem é método de rotina para rearranjos.",
+    tip: "Cromossomo Filadélfia: detectado por cariótipo, FISH ou RT-PCR; o PCR quantitativo acompanha o tratamento.",
     reference: 'JORDE, Lynn B. Genética médica. Rio de Janeiro GEN Guanabara Koogan 2017 1 recurso online ISBN 9788595151659. NUSSBAUM, Robert L. Thompson & Thompson Genética médica. Rio de Janeiro GEN Guanabara Koogan 2016 1 recurso online ISBN 9788595151819.',
     tags: ['genética molecular', 'hematologia']
   },
@@ -76,8 +80,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A espermatogênese, em túbulo seminífero testicular, determina a formação morfológica completa. Entretanto, há necessidade de maturação funcional, adquirida no interior do útero/tuba uterina, denominadas de capacitação e reação acrossomal, permitindo assim o rompimento da zona pelúcida ovocitária, entrada do espermatozoide no gameta feminino e fusão dos pró-núcleos.'
     ],
     correctAnswer: 3,
-    explanation: 'A maturação final (capacitação) ocorre no trato reprodutivo feminino.',
-    commentary: 'Quando o espermatozoide deixa o túbulo seminífero está morfologicamente completo, porém precisa adquirir função para a fecundação e isso ocorre no genital feminino, através da capacitação e reação acrossomal.',
+    explanation: "A espermatogênese acontece nos túbulos seminíferos do testículo e termina com a espermiogênese, quando a espermátide ganha cabeça, acrossomo e flagelo: o espermatozoide sai dali com a forma completa. No epidídimo ele ganha motilidade e amadurece, mas ainda não consegue fecundar.\n\nA capacitação ocorre no trato genital feminino (útero e tubas): há remoção de glicoproteínas e colesterol da membrana da cabeça. Só o espermatozoide capacitado, ao encontrar a zona pelúcida, sofre a reação acrossomal, liberando enzimas que permitem atravessá-la, fundir-se ao ovócito e formar os pró-núcleos.",
+    commentary: "Espermatogênese no epidídimo (A): a formação dos espermatozoides ocorre nos túbulos seminíferos; o epidídimo é local de armazenamento e maturação.\n\nFormação funcional completa no testículo (B): o espermatozoide que deixa o túbulo seminífero não está apto a fecundar; precisa de maturação no epidídimo e de capacitação no trato feminino.\n\nCapacitação no epidídimo (C): a capacitação e a reação acrossomal acontecem no trato genital feminino, não no epidídimo.",
+    tip: "Forma no túbulo seminífero, amadurece no epidídimo, capacita no trato feminino.",
     reference: 'SADLER, T.W; Langman, Embriologia médica. 14a ed. Rio de Janeiro: Guanavara-Koogan Editora, 2021. JUNQUEIRA LC., CARNEIRO J. Histologia Básica 13ª Edição. Editora Guanabara Koogan, 2017. KIERSZENBAUM AL., TRES LL. Histologia e Biologia Celular: Uma Introdução a Patologia. 4ª Edição. Editora GEN Guanabara Koogan, 2016.',
     tags: ['embriologia', 'histologia']
   },
@@ -92,8 +97,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) O processo de neurulação se desenvolve a partir do espessamento de uma região da mesoderme. Tal evento é estimulado pela notocorda que induz a formação da placa neural, pregas neurais e posterior fechamento do tubo neural. Agentes teratogênicos interferem na movimentação das células e determinam má formação, tal como a anencefalia.'
     ],
     correctAnswer: 1,
-    explanation: 'A neurulação é induzida pela notocorda sobre a ectoderme.',
-    commentary: 'A neurulação ocorre a partir da ectoderme sob estimulação da notocorda. As demais alternativas ficam incorretas pelas seguintes razões: a neurulação ocorre a partir da ectoderme, e não da notocorda, das cristas neurais e da mesoderme. Quando o espermatozoide deixa o túbulo seminífero está morfologicamente completo, porém precisa adquirir função para a fecundação e isso ocorre no genital feminino e não no epidídimo.',
+    explanation: "Na terceira semana, a notocorda (derivada do mesoderma) libera sinais que induzem o ectoderma que está acima dela a se espessar, formando a placa neural. As bordas da placa se elevam como pregas neurais, que se aproximam e se fundem, formando o tubo neural; as extremidades (neuroporos) fecham na quarta semana.\n\nFalha no fechamento do neuroporo cranial leva à anencefalia; falha no caudal, à espinha bífida. A suplementação de ácido fólico antes da concepção e no início da gestação reduz o risco desses defeitos.",
+    commentary: "Neurulação a partir da notocorda (A): a notocorda induz, mas é o ectoderma que se espessa e forma a placa neural.\n\nIndução pelas cristas neurais (C): as cristas neurais surgem das bordas das pregas durante a neurulação; elas não são o indutor do processo.\n\nNeurulação a partir do mesoderma (D): o sistema nervoso deriva do ectoderma; o mesoderma forma, entre outros, a própria notocorda, os somitos e os músculos.",
+    tip: "Notocorda induz, ectoderma forma o tubo neural. Neuroporo cranial aberto = anencefalia.",
     reference: 'SADLER, T.W; Langman, Embriologia médica. 14a ed. Rio de Janeiro: Guanavara-Koogan Editora, 2021. JUNQUEIRA LC., CARNEIRO J. Histologia Básica 13ª Edição. Editora Guanabara Koogan, 2017.',
     tags: ['embriologia', 'neuroembriologia']
   },
@@ -108,8 +114,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A anemia falciforme é causada por uma dieta rica em gorduras saturadas, que afeta a produção de hemoglobina, alterando sua conformação estrutural e funcionalidade.'
     ],
     correctAnswer: 0,
-    explanation: 'Uma mutação pontual no gene da globina beta causa a troca de ácido glutâmico por valina.',
-    commentary: 'A anemia falciforme é uma patologia caracterizada pela alteração do aminoácido ácido glutâmico pela valina derivada de uma substituição da timina pela adenina no sexto códon no DNA do cromossomo 11.',
+    explanation: "A anemia falciforme é herdada de forma autossômica recessiva: a pessoa doente tem duas cópias do gene alterado da betaglobina (HbSS). A mutação troca um único aminoácido, o ácido glutâmico, por valina na sexta posição da cadeia beta, formando a hemoglobina S.\n\nQuando desoxigenada, a HbS se polimeriza e deforma a hemácia em foice. Essas células rígidas são destruídas antes do tempo (anemia hemolítica) e obstruem a microcirculação, causando crises de dor, síndrome torácica aguda e lesões de órgãos.",
+    commentary: "Exercício físico intenso (B): a doença é genética e não é causada por exercício; esforço com desidratação pode, no máximo, precipitar crises em quem já tem a doença.\n\nInfecção bacteriana (C): infecções desencadeiam complicações, mas não causam a anemia falciforme, que é hereditária.\n\nDieta rica em gordura saturada (D): a alimentação não muda a estrutura da hemoglobina; a alteração está no gene da betaglobina.",
+    tip: "HbS: valina no lugar do ácido glutâmico na posição 6 da betaglobina; herança autossômica recessiva.",
     reference: 'Guyton, A. C., & Hall, J. E. (2016). Tratado de Fisiologia Médica (13ª ed.). Elsevier. Ganong, W. F. (2016). Fisiologia Médica (25ª ed.). McGrawHill Education. Nelson, D.L.; Cox, M.M. (2019). Princípios de bioquímica de Lehninger (7a ed.). Artmed.',
     tags: ['genética', 'hematologia', 'bioquímica']
   },
@@ -124,8 +131,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) No sistema digestório, os fibroblastos produzem impulsos elétricos para coordenar a movimentação dos alimentos pelo trato digestivo.'
     ],
     correctAnswer: 2,
-    explanation: 'Miócitos cardíacos possuem alta concentração de mitocôndrias para a demanda aeróbica constante.',
-    commentary: 'Os miócitos são as células musculares do coração (miocárdio). O coração é um órgão que trabalha de forma contínua e intensa para bombear sangue por todo o corpo, o que exige uma grande quantidade de energia. Já os pneumócitos do tipo II não são células colunares grandes e espessas; são pequenas e cúbicas, responsáveis pela produção de surfactante, que reduz a tensão superficial nos alvéolos, e não pela troca gasosa, que é função dos pneumócitos do tipo I. Por sua vez, as células da glia não estão localizadas na área olfatória das fossas nasais, mas no sistema nervoso central. As células responsáveis pela detecção de odores são os neurônios olfatórios. Por fim, os fibroblastos não produzem impulsos elétricos; eles são responsáveis pela síntese de componentes da matriz extracelular, como colágeno, e não pela coordenação da movimentação no trato digestivo.',
+    explanation: "O miocárdio contrai sem parar, a vida toda, e depende quase totalmente do metabolismo aeróbico. Por isso os cardiomiócitos têm grande quantidade de mitocôndrias, que ocupam cerca de um terço do volume celular e produzem o ATP necessário para a contração e para o bombeamento de íons.\n\nIsso também explica por que o coração é tão sensível à falta de oxigênio: na isquemia, a produção de energia cai rapidamente e a contração é afetada em pouco tempo.",
+    commentary: "Células da glia na área olfatória (A): a detecção dos odores é feita pelos neurônios olfatórios do epitélio olfatório; as células da glia dão suporte no sistema nervoso e não são receptoras de odor.\n\nPneumócitos tipo II (B): são células cúbicas e pequenas que produzem surfactante; a barreira fina por onde ocorre a troca gasosa é formada pelos pneumócitos tipo I, achatados, que revestem a maior parte do alvéolo.\n\nFibroblastos no tubo digestivo (D): produzem colágeno e matriz extracelular; o ritmo elétrico da motilidade intestinal é dado pelas células intersticiais de Cajal e pelo sistema nervoso entérico.",
+    tip: "Coração trabalha sem parar: cardiomiócito é lotado de mitocôndrias e vive de metabolismo aeróbico.",
     reference: 'Guyton, A. C., & Hall, J. E. (2016). Tratado de Fisiologia Médica (13ª ed.). Elsevier. Silverthorn, D. U. (2018). Human Physiology: An Integrated Approach (8ª ed.). Pearson.',
     tags: ['histologia', 'fisiologia']
   },
@@ -140,8 +148,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Processo inflamatório crônico vascular, devido à deposição lipídica em parede vascular.'
     ],
     correctAnswer: 3,
-    explanation: 'A aterosclerose é fundamentalmente um processo inflamatório crônico da parede arterial.',
-    commentary: 'A aterosclerose é um processo multifatorial inflamatório crônico e com deposição de lipídeos. Esta condição não guarda relação com etiologias não proliferativas neoplásicas, exclusivamente degenerativas e/ou exclusivamente obstrutivas por deposição lipídica.',
+    explanation: "A aterosclerose começa com disfunção do endotélio, que permite a entrada e a retenção de LDL na íntima. A LDL oxidada ativa o endotélio, atrai monócitos que viram macrófagos e células espumosas, e estimula a migração de células musculares lisas, que formam a capa fibrosa da placa.\n\nTodo esse processo é mantido por citocinas e células inflamatórias por anos, por isso é definido como doença inflamatória crônica da parede arterial associada ao depósito de lipídios. A inflamação também explica a instabilidade da placa: a capa fibrosa fina pode romper e causar trombose, que leva ao infarto e ao AVC.",
+    commentary: "Processo exclusivamente obstrutivo (A): a obstrução é uma consequência; a doença envolve inflamação, proliferação celular e remodelamento da parede, e a placa pode causar eventos por ruptura mesmo sem obstruir muito.\n\nProcesso neoplásico (B): há proliferação de células musculares lisas, mas reativa, sem caráter de neoplasia.\n\nGênese somente degenerativa (C): reduzir a aterosclerose a degeneração ignora o papel central da inflamação e da resposta imune.",
+    tip: "Aterosclerose = inflamação crônica da parede arterial com depósito de LDL; placa instável rompe e trombosa.",
     reference: 'MALTA, DC; PINHEIRO, PC; TEIXEIRA, RA; MACHADO, IE; dos SANTOS, FM; RIBEIRO, RIBEIRO, AL Estimativas do Risco Cardiovascular em Dez Anos na População Brasileira: Um Estudo de Base Populacional Arq Bras Cardiol.; 116(3):423-431, 2021. FILHO, GB; Bogliolo, Patologia, 8 ed, Guanabara-Koogan, Rio de Janeiro, 2011. KUMMAR, V; ABBAS, AK; FAUSTO, N; ASTER, JC; ROBBINS&COTRAN, Bases Patológicas das Doenças, 8ed, Elsevier, Rio de Janeiro, 2010.',
     tags: ['patologia', 'cardiologia']
   },
@@ -156,8 +165,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Aumento da frequência cardíaca para manter a perfusão tecidual.'
     ],
     correctAnswer: 0,
-    explanation: 'Na disfunção sistólica, o ventrículo não esvazia adequadamente, aumentando o volume e pressão no final da diástole.',
-    commentary: 'A insuficiência cardíaca com fração de ejeção reduzida (disfunção sistólica) resulta em um aumento do volume diastólico final, pois o ventrículo esquerdo não consegue bombear eficientemente o sangue para fora, levando a uma sobrecarga de volume e sintomas como dispneia e edema.',
+    explanation: "Com fração de ejeção de 35%, o ventrículo esquerdo ejeta pouco sangue em cada batimento (disfunção sistólica). O volume que sobra no fim da sístole se soma ao retorno venoso e aumenta o volume e a pressão diastólica final.\n\nEssa pressão elevada é transmitida para trás: ao átrio esquerdo e às veias pulmonares, causando congestão pulmonar e dispneia, e, com o tempo, ao sistema venoso sistêmico, causando edema de membros inferiores. A fadiga vem do débito cardíaco baixo.",
+    commentary: "Aumento da contratilidade (B): na insuficiência cardíaca com fração reduzida a contratilidade está diminuída; o estímulo adrenérgico tenta compensar, mas não é a causa dos sintomas.\n\nDiminuição da resistência periférica (C): ocorre o contrário; a ativação simpática e do sistema renina-angiotensina-aldosterona aumenta a resistência vascular, piorando a pós-carga.\n\nAumento da frequência cardíaca (D): a taquicardia é um mecanismo compensatório (a paciente está com 85 bpm), mas não explica a congestão e o edema.",
+    tip: "Fração de ejeção reduzida: sobra sangue no ventrículo, sobe a pressão diastólica e vem a congestão.",
     reference: 'Guyton, A. C., & Hall, J. E. (2016). Tratado de Fisiologia Médica (13ª ed.). Elsevier. Ganong, W. F. (2016). Fisiologia Médica (25ª ed.). McGrawHill Education.',
     tags: ['fisiologia cardiovascular', 'insuficiência cardíaca']
   },
@@ -172,8 +182,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) O laudo precisa informar a adequabilidade da amostra e epitélios representados na coleta. A referência a lesões intraepiteliais e malignidade e demais achados é opcional.'
     ],
     correctAnswer: 2,
-    explanation: 'O laudo citológico deve relatar adequabilidade, representatividade dos epitélios e a presença/ausência de lesões.',
-    commentary: 'De acordo com as diretrizes nacionais preconizadas pelo Instituto Nacional do Câncer (INCA), o laudo deve contar informações relacionadas a adequabilidade da amostra, representação epitelial e a referência sobre as lesões intraepiteliais.',
+    explanation: "A Nomenclatura Brasileira para Laudos Citopatológicos Cervicais, adotada pelo INCA, organiza o laudo em partes. Primeiro, a adequabilidade da amostra (satisfatória ou insatisfatória, com o motivo). Depois, os epitélios representados (escamoso, glandular, metaplásico), que mostram se a junção escamocolunar foi amostrada.\n\nEm seguida vem o diagnóstico: dentro dos limites da normalidade, alterações benignas ou atipias celulares (lesões intraepiteliais e carcinoma). Outros achados, como microrganismos, são descritos quando presentes. A adequabilidade é obrigatória porque uma amostra ruim deve ser repetida.",
+    commentary: "Adequabilidade opcional (A): a adequabilidade é item obrigatório; sem ela não se sabe se um resultado negativo é confiável.\n\nRepresentação dos epitélios opcional (B): os epitélios representados fazem parte obrigatória do laudo, pois indicam se a zona de transformação foi coletada.\n\nLesões intraepiteliais opcionais (D): informar presença ou ausência de lesão e malignidade é o objetivo principal do exame, e não pode ser opcional.",
+    tip: "Laudo do preventivo: adequabilidade + epitélios representados + diagnóstico (normal, benigno ou atipia).",
     reference: 'BARROS, ALS; LIMA, DNO; AZEVEDO, MD; Micheline de Lucena OLIVEIRA, ML; Caderno de referência 1: Citopatologia Ginecológica/ – Brasília: Ministério da Saúde; Rio de Janeiro: CEPESC, 2012. FILHO, GB; Bogliolo, Patologia, 8 ed, Guanabara-Koogan, Rio de Janeiro, 2011. KUMMAR, V; ABBAS, AK; FAUSTO, N; ASTER, JC; ROBBINS&COTRAN, Bases Patológicas das Doenças, 8ed, Elsevier, Rio de Janeiro, 2010.',
     tags: ['patologia', 'ginecologia']
   },
@@ -188,8 +199,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Os órgãos linfoides primários são a medula óssea, o timo e o baço, que produzem e amadurecem os linfócitos; os órgãos linfoides secundários são os linfonodos, o sistema imune cutâneo e o sistema imune mucoso.'
     ],
     correctAnswer: 1,
-    explanation: 'Órgãos primários são medula e timo. Órgãos secundários são baço, linfonodos e MALT.',
-    commentary: 'Os órgãos linfoides primários e secundários desempenham papéis cruciais no sistema imunológico. Os primários, como a medula óssea e o timo, são responsáveis pela produção e maturação das células imunes, como os linfócitos. A medula óssea é o local onde as células-tronco se diferenciam em linfócitos B, enquanto o timo é fundamental para a maturação dos linfócitos T. Já os órgãos linfoides secundários, como os linfonodos, baço e tecido linfoide associado a mucosa, são onde ocorrem as respostas imunológicas adaptativas. Neles, os linfócitos ativados respondem a antígenos, produzindo uma variedade de mediadores imunes para combater infecções e patógenos.',
+    explanation: "Os órgãos linfoides primários (ou centrais) são onde os linfócitos nascem e amadurecem: a medula óssea, que gera os precursores de linfócitos B e T e onde os linfócitos B amadurecem, e o timo, para onde os precursores T migram para amadurecer e passar pela seleção que elimina os autorreativos.\n\nOs órgãos linfoides secundários (periféricos) são onde os linfócitos maduros encontram os antígenos e iniciam a resposta adaptativa: linfonodos, baço, sistema imune cutâneo e tecido linfoide associado às mucosas.",
+    commentary: "Timo como órgão secundário (A): o timo é órgão primário, pois é onde os linfócitos T amadurecem.\n\nLinfócitos T gerados no timo (C): os precursores dos linfócitos T são gerados na medula óssea; o timo é o local de maturação e seleção, não de origem.\n\nBaço como órgão primário (D): o baço é órgão secundário, local de resposta a antígenos do sangue, e não de produção de linfócitos.",
+    tip: "Primários: medula óssea (gera todos e amadurece o B) e timo (amadurece o T). Secundários: onde se encontra o antígeno.",
     reference: 'DELVES, Peter J. ROITT - Fundamentos de Imunologia, 13ª edição Grupo GEN, 2018. E-book. ISBN 9788527733885.',
     tags: ['imunologia', 'histologia']
   },
@@ -204,8 +216,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Trata-se do mecanismo inato conhecido como inflamação, processo através do qual células fagocíticas atravessam o endotélio por diapedese e se dirigem ao tecido conjuntivo para promover a fagocitose de antígenos.'
     ],
     correctAnswer: 3,
-    explanation: 'A diapedese é o processo de migração celular através do endotélio íntegro durante a inflamação.',
-    commentary: 'Como descrito em diferentes literaturas, a inflamação é caracterizada por uma série de eventos relacionados, entre os quais aumento no fluxo sanguíneo, permeabilidade vascular e exsudação de líquido derivado do sangue na região afetada, além do acúmulo de leucócitos e proteínas plasmáticas. É conhecido que, esse processo, ocorre na imunidade inata ou inespecífica.',
+    explanation: "O enunciado descreve leucócitos que saem do vaso e chegam ao tecido conjuntivo para defender o organismo: é a inflamação, resposta da imunidade inata. Diante de uma agressão, o endotélio passa a expressar moléculas de adesão; neutrófilos e monócitos rolam, aderem firmemente e atravessam a parede entre as células endoteliais, processo chamado diapedese.\n\nNo tecido, guiados por quimiocinas (quimiotaxia), essas células fagocitam e destroem os microrganismos. Os monócitos se transformam em macrófagos, que também apresentam antígenos e ajudam a acionar a resposta adaptativa.",
+    commentary: "Imunidade adaptativa com IgM e IgG (A): a produção de anticorpos pelos plasmócitos não envolve células atravessando o endotélio para fagocitar; é outro braço da resposta.\n\nInflamação como mecanismo adquirido (B): a inflamação é inata; além disso, o movimento através do endotélio é a diapedese (citocinas são mediadores químicos), e os fagócitos fazem fagocitose, não \"apoptose de antígenos\".\n\nSistema complemento (C): é um conjunto de proteínas plasmáticas, e não células que migram para os tecidos, embora participe da opsonização e da formação do complexo de ataque à membrana.",
+    tip: "Leucócito saindo do vaso por diapedese para fagocitar = inflamação, resposta inata.",
     reference: 'ABBAS, Abul K.; PILLAI, Shiv; LICHTMAN, Andrew H. Imunologia: Celular e Molecular. 9 ed. Rio De Janeiro: Editora Elsevier Ltda, 2019.',
     tags: ['imunologia', 'patologia']
   },
@@ -220,8 +233,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Gênero Pseudomonas'
     ],
     correctAnswer: 2,
-    explanation: 'Clostridium (Clostridioides) difficile causa colite pseudomembranosa após uso de antibióticos.',
-    commentary: 'É possível inferir que se trata de patógenos do gênero Clostridium por fatores como: anaerobiose, catalase-negativo, produção de toxinas, especialmente após tratamento com antibióticos.',
+    explanation: "Em um tubo com meio de cultura, o oxigênio se concentra na superfície e falta no fundo. Crescimento só no fundo indica bactéria anaeróbia obrigatória, que não tolera oxigênio.\n\nSomando o uso prévio de clindamicina, que altera a microbiota intestinal, à colite pseudomembranosa, o agente é o Clostridioides difficile (antigo Clostridium difficile): bacilo gram-positivo, anaeróbio e formador de esporos, que produz as toxinas A e B. O diagnóstico é feito com pesquisa de toxinas ou PCR nas fezes, e o tratamento de escolha é vancomicina oral ou fidaxomicina.",
+    commentary: "Streptococcus (A): são anaeróbios facultativos, crescendo ao longo de todo o tubo, e não causam colite pseudomembranosa.\n\nBacillus (B): são em geral aeróbios ou facultativos, crescendo perto da superfície; o B. cereus causa intoxicação alimentar, não colite associada a antibiótico.\n\nPseudomonas (D): é aeróbia estrita e cresceria apenas na superfície do meio, o oposto do observado.",
+    tip: "Crescimento só no fundo do tubo = anaeróbio estrito. Antibiótico + colite pseudomembranosa = C. difficile.",
     reference: 'TORTORA, Gerard J.; FUNKE, Berdell R.; CASE, Christine L. Microbiologia. Grupo A, 2017. E-book. ISBN 9788582713549.',
     tags: ['microbiologia', 'gastroenterologia']
   },
@@ -236,8 +250,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A apresentação clínica nas formas crônicas de esquistossomose é variável, oscilando de acordo com a carga parasitária e com a resposta inflamatória desencadeada no organismo pelos trofozoítos alojados nas varizes esofágicas.'
     ],
     correctAnswer: 0,
-    explanation: 'A hipertensão portal na esquistossomose causa formação de varizes no terço distal do esôfago.',
-    commentary: 'A alternativa correta descreve com precisão uma das complicações graves da esquistossomose hepatoesplênica: a hipertensão portal que pode resultar em hemorragias maciças devido ao rompimento de varizes esofágicas presentes principalmente nos terços médio e distal do esôfago. As demais alternativas apresentam erros conceituais, como a referência a amastigotas e trofozoítos, que não são estágios do ciclo de vida dos patógenos do gênero Schistosoma, e a localização incorreta das varizes esofágicas no terço proximal, o que não é característico da esquistossomose.',
+    explanation: "Na forma hepatoesplênica da esquistossomose mansônica, os ovos de Schistosoma mansoni presos nos ramos da veia porta provocam granulomas e fibrose periportal (fibrose de Symmers). Isso cria uma hipertensão portal pré-sinusoidal, com a função do fígado em geral preservada.\n\nO sangue procura caminhos alternativos para chegar à circulação sistêmica, e as varizes se formam principalmente no terço distal do esôfago e no fundo gástrico, onde há comunicação entre a veia gástrica esquerda e as veias esofágicas. A ruptura dessas varizes causa hemorragia digestiva alta volumosa, a complicação mais grave dessa forma.",
+    commentary: "Amastigotas circulantes (B): amastigota é forma de protozoários como Leishmania e Trypanosoma cruzi; o Schistosoma é um helminto, e a lesão crônica vem da reação aos ovos.\n\nVarizes no terço proximal (C): as varizes da hipertensão portal ficam sobretudo no esôfago distal e no estômago, não exclusivamente no terço proximal.\n\nTrofozoítos nas varizes (D): trofozoíto também é forma de protozoário; o Schistosoma vive como verme adulto nas veias mesentéricas, não nas varizes esofágicas.",
+    tip: "Esquistossomose hepatoesplênica: fibrose periportal, hipertensão portal pré-sinusoidal e varizes no esôfago distal.",
     reference: 'FERREIRA, M. U. Parasitologia Contemporânea. Grupo GEN, 2020. E-book. ISBN 9788527737166. Disponível em: https://integrada.minhabiblioteca.com.br/#/books/9788527737 166/',
     tags: ['parasitologia', 'hepatologia']
   },
@@ -252,8 +267,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Antagonismo não-competitivo'
     ],
     correctAnswer: 3,
-    explanation: 'A inibição irreversível é um tipo de antagonismo não competitivo/irreversível.',
-    commentary: 'A interação fármaco-receptor, responsável pelo efeito sobre a agregação plaquetária relacionado ao AAS ocorre de forma irreversível, sendo assim antagonistas não competitivos, já que diminuem a eficácia (efeito máximo) do agonista.',
+    explanation: "O AAS acetila de forma irreversível um resíduo de serina da ciclooxigenase 1 das plaquetas, bloqueando a produção de tromboxano A2. Como a plaqueta não tem núcleo para fabricar nova enzima, o efeito dura toda a vida dela, cerca de 7 a 10 dias.\n\nEm farmacologia, um bloqueio irreversível como esse não é superado por mais substrato ou agonista: o efeito máximo possível cai. Por isso é classificado como antagonismo não competitivo (irreversível), diferente do competitivo, em que aumentar a concentração do agonista restaura a resposta.",
+    commentary: "Agonista inverso (A): é o fármaco que se liga a um receptor com atividade basal e produz efeito oposto ao do agonista; não descreve a inativação de uma enzima.\n\nAntagonismo competitivo (B): é reversível e pode ser superado por mais agonista, deslocando a curva sem reduzir o efeito máximo; a ligação do AAS não se desfaz.\n\nAgonista parcial (C): ativa o receptor, mas sem atingir o efeito máximo; o AAS não ativa, ele inativa a enzima.",
+    tip: "AAS acetila a COX-1 para sempre: antagonismo não competitivo (irreversível), efeito pela vida da plaqueta.",
     reference: 'Rang, H.P; Dale, M.M. (2016). Farmacologia (8a ed.). Elsevier. Golan, D.E.; Tashjian, A.H.; Armstrong, E.J.; Armstrong, A.W. (2014). Princípios de Farmacologia: A Base Fisiopatológica da Farmacoterapia. (3ª ed.) Guanabara Koogan.',
     tags: ['farmacologia', 'hematologia']
   },
@@ -268,8 +284,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Lesão irreversível do tipo necrose liquefativa.'
     ],
     correctAnswer: 1,
-    explanation: 'A necrose de coagulação mantém o contorno celular apesar da morte, sendo típica de isquemia.',
-    commentary: 'Os achados de aumento de acidofilia, perda de limites celulares e preservação de arcabouço tecidual referem-se à Necrose de Coagulação, uma lesão irreversível.',
+    explanation: "Citoplasma mais eosinofílico (acidófilo), limites celulares apagados e contorno dos túbulos preservado é a descrição clássica da necrose de coagulação. A isquemia desnatura as proteínas estruturais e as enzimas, de modo que a célula morre, mas a arquitetura do tecido permanece por alguns dias.\n\nOs túbulos contorcidos proximais são os mais atingidos por terem alto consumo de oxigênio. Toda necrose é lesão irreversível; a necrose de coagulação é o padrão típico do infarto em órgãos sólidos como rim e coração (o cérebro é a exceção, com liquefação).",
+    commentary: "Degeneração vacuolar (A): é uma lesão reversível, com acúmulo de água no citoplasma (tumefação celular), sem perda dos limites celulares.\n\nNecrose de coagulação reversível (C): necrose é, por definição, morte celular e, portanto, irreversível.\n\nNecrose liquefativa (D): ocorre por digestão enzimática, com perda total da arquitetura; é típica de infecções bacterianas e do infarto cerebral.",
+    tip: "Acidofilia + células sem limites + arquitetura preservada = necrose de coagulação (isquemia de órgão sólido).",
     reference: 'FILHO, GB; Bogliolo, Patologia, 8 ed, Guanabara-Koogan, Rio de Janeiro, 2011. KUMMAR, V; ABBAS, AK; FAUSTO, N; ASTER, JC; ROBBINS&COTRAN, Bases Patológicas das Doenças, 8ed, Elsevier, Rio de Janeiro, 2010.',
     tags: ['patologia', 'fisiopatologia']
   },
@@ -284,8 +301,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Se caracteriza por eventos cirróticos que associam a angiogênese e fibrose, mas nunca determina potencial vulnerabilidade à mutação gênica, pois não envolve constante proliferação em associação à infecção viral.'
     ],
     correctAnswer: 0,
-    explanation: 'A inflamação e regeneração crônica facilitam o acúmulo de mutações oncogênicas.',
-    commentary: 'A Hepatite Crônica Viral caracterizada por eventos cirróticos determina proliferação nos eventos reparativos, o que deixa as células hepáticas vulneráveis a mutagênese.',
+    explanation: "A hepatite crônica viral mantém uma agressão contínua aos hepatócitos. O fígado responde com regeneração, e os ciclos de morte e reparo produzem fibrose e nódulos de regeneração, que formam a cirrose.\n\nCada divisão celular é uma oportunidade de erro na replicação do DNA. Com a proliferação constante, somada ao estresse oxidativo da inflamação, as mutações se acumulam e surgem displasia e carcinoma hepatocelular. No vírus B há ainda um efeito direto: o DNA viral pode se integrar ao genoma do hepatócito, e por isso o CHC pode aparecer mesmo sem cirrose.",
+    commentary: "Sem proliferação constante (B): a vulnerabilidade a mutações decorre justamente da proliferação contínua; a alternativa nega o mecanismo.\n\nSem eventos cirróticos (C): a hepatite crônica pode evoluir com regeneração e fibrose, e é exatamente isso que aumenta o risco de câncer.\n\nNunca determina vulnerabilidade (D): a hepatite crônica viral é um dos principais fatores de risco para CHC, pela proliferação constante e pelos efeitos do vírus.",
+    tip: "Hepatite crônica: lesão contínua, regeneração e fibrose; muita divisão celular gera mutação e CHC.",
     reference: 'Marcio F. CHEDID, MF Carcinoma Hepatocelular: Diagnóstico e Manejo Cirúrgico Arq Bras Cir Dig Artigo de Revisão;30(4):272-278, 2017. FILHO, GB; Bogliolo, Patologia, 8 ed, Guanabara-Koogan, Rio de Janeiro, 2011. KUMMAR, V; ABBAS, AK; FAUSTO, N; ASTER, JC; ROBBINS&COTRAN, Bases Patológicas das Doenças, 8ed, Elsevier, Rio de Janeiro, 2010.',
     tags: ['oncologia', 'hepatologia']
   },
@@ -300,8 +318,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Ativação direta de macrófagos que fagocitam o vírus e apresentam antígenos no contexto de moléculas MHC classe II.'
     ],
     correctAnswer: 2,
-    explanation: 'Células T citotóxicas (CD8+) reconhecem antígenos via MHC classe I.',
-    commentary: 'As células T citotóxicas (ou células T CD8+) são ativadas quando seus receptores de célula T (TCR) reconhecem antígenos específicos apresentados por moléculas do complexo maior de histocompatibilidade (MHC) classe I. As células dendríticas são células apresentadoras de antígenos profissionais que capturam antígenos virais, processam-nos e os apresentam em moléculas MHC classe I para ativar células T CD8+.',
+    explanation: "Os linfócitos T CD8+ (citotóxicos) reconhecem peptídeos apresentados em moléculas de MHC classe I. A ativação inicial do linfócito T virgem acontece no linfonodo, e quem consegue fazê-la é a célula dendrítica, a apresentadora profissional, que oferece o antígeno e os sinais coestimulatórios necessários.\n\nPara isso, a célula dendrítica pode ser infectada diretamente ou capturar restos de células infectadas e levar esses antígenos para a via do MHC I (apresentação cruzada). Depois de ativados, os CD8+ se multiplicam e matam qualquer célula infectada que exponha o peptídeo viral no MHC I.",
+    commentary: "Interferon tipo I para recrutar células T reguladoras (A): o interferon tipo I tem ação antiviral e estimula a resposta, mas não ativa os CD8+ por recrutamento de reguladoras, que, ao contrário, frenam a resposta.\n\nAtivação de células B e anticorpos (B): faz parte da resposta humoral; os anticorpos não ativam diretamente os linfócitos T citotóxicos.\n\nMacrófagos com MHC classe II (D): o MHC II apresenta antígenos para os linfócitos T CD4+ (auxiliares), não para os CD8+.",
+    tip: "CD8 lê MHC I, CD4 lê MHC II. Quem ativa o T virgem é a célula dendrítica.",
     reference: 'DELVES, Peter J. ROITT - Fundamentos de Imunologia, 13ª edição Grupo GEN, 2018. E-book. ISBN 9788527733885.',
     tags: ['imunologia', 'biologia celular']
   },
@@ -316,8 +335,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A principal função da PINK1 é atuar como um receptor mitocondrial de cálcio, enquanto a Parkin está envolvida na sinalização apoptótica, ambos processos fundamentais na neurodegeneração associada à doença de Parkinson.'
     ],
     correctAnswer: 1,
-    explanation: 'PINK1 e Parkin eliminam mitocôndrias defeituosas; sua falha causa acúmulo de organelas tóxicas.',
-    commentary: 'Esta alternativa descreve com precisão a função de PINK1 e Parkin na mitofagia. A PINK1 se acumula na membrana externa das mitocôndrias danificadas e recruta a Parkin, que marca essas mitocôndrias para degradação. Este processo é essencial para a manutenção da saúde celular e prevenção da neurodegeneração observada na doença de Parkinson.',
+    explanation: "Em uma mitocôndria saudável, a PINK1 é importada para a membrana interna e degradada. Quando a mitocôndria está danificada e perde o potencial de membrana, a PINK1 não consegue entrar e se acumula na membrana externa, onde é ativada.\n\nA PINK1 ativa recruta a Parkin, uma ubiquitina ligase, que coloca ubiquitina nas proteínas da membrana externa. Essa marcação sinaliza para o autofagossomo englobar a mitocôndria, que é degradada no lisossomo: é a mitofagia. Mutações em PINK1 e PRKN causam formas familiares de doença de Parkinson de início precoce, pelo acúmulo de mitocôndrias defeituosas nos neurônios dopaminérgicos.",
+    commentary: "Ciclo celular e replicação do DNA (A): PINK1 e Parkin atuam no controle de qualidade mitocondrial, não na regulação do ciclo celular.\n\nBiossíntese de ATP (C): elas não produzem ATP; a queda de energia é consequência do acúmulo de mitocôndrias doentes que deixaram de ser removidas.\n\nReceptor de cálcio e sinalização apoptótica (D): não são as funções principais dessas proteínas; a PINK1 é uma quinase sensora de dano, e a Parkin é uma ubiquitina ligase.",
+    tip: "PINK1 acumula na mitocôndria danificada e chama a Parkin, que marca para mitofagia.",
     reference: 'Alberts, B., Johnson, A., Lewis, J., Morgan, D., Raff, M., Roberts, K., & Walter, P. (2015). Biologia Molecular da Célula (6ª ed.). Artmed. Youle, R. J., & Narendra, D. P. (2011). Mechanisms of mitophagy. Nature Reviews Molecular Cell Biology, 12(1), 9- 14. Exner, N., Lutz, A. K., Haass, C., & Winklhofer, K. F. (2012). Mitochondrial dysfunction in Parkinson\'s disease: molecular mechanisms and pathophysiological consequences. The EMBO Journal, 31(14), 3038-3062.',
     tags: ['neurologia', 'biologia celular']
   },
@@ -332,8 +352,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Streptococcus agalactiae, coco gram positivo e exame bacterioscópico de urina.'
     ],
     correctAnswer: 0,
-    explanation: 'Em infecções urinárias comunitárias, a E. coli é o agente isolado em mais de 80% dos casos, sendo identificada por urocultura.',
-    commentary: 'O caso é de uma infecção do trato urinário comunitária. Mais de 80% destas infecções são causadas por Enterobactérias em especial a Escherichia coli. O exame laboratorial capaz de identificar gênero e espécie é a urocultura. Exame bacterioscópico não revela estas informações.',
+    explanation: "Mulher jovem, sem internação recente, com disúria, urgência, pequenas perdas de urina e urina turva e com odor forte: quadro de cistite adquirida na comunidade.\n\nNessas infecções, o agente predominante, com folga, é a Escherichia coli, um bacilo gram-negativo da família das enterobactérias, que vem da flora intestinal e ascende pela uretra. O exame que identifica o microrganismo até gênero e espécie, e ainda permite o antibiograma, é a urocultura.",
+    commentary: "Staphylococcus saprophyticus (B): é de fato coco gram-positivo e causa cistite em mulheres jovens sexualmente ativas, mas é o segundo agente, bem menos frequente que a E. coli.\n\nKlebsiella pneumoniae (C): é enterobactéria e pode causar ITU, porém é mais comum em infecções complicadas ou relacionadas à assistência à saúde.\n\nStreptococcus agalactiae e bacterioscopia (D): o estreptococo do grupo B importa sobretudo em gestantes e recém-nascidos; além disso, a bacterioscopia (Gram) mostra só a forma e a coloração da bactéria, sem definir a espécie.",
+    tip: "ITU comunitária: E. coli (enterobactéria). Gênero e espécie com antibiograma = urocultura.",
     reference: 'Lo, DS et al. Infecção urinária comunitária: etiologia segundo idade e sexo. Braz. J. Nephrol. 35 (2) • Jun 2013 • https://doi.org/10.5935/0101-2800.20130016',
     tags: ['microbiologia', 'infectologia']
   },
@@ -348,8 +369,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Menor atividade da bomba Na+/K+ ATPase, com acúmulo de sódio intracelular e edema celular, que pode ser chamado de degeneração hidrópica.'
     ],
     correctAnswer: 3,
-    explanation: 'A isquemia reduz o ATP, falhando a bomba de sódio-potássio, gerando acúmulo de sódio e água (edema) intracelular.',
-    commentary: 'A falta de oxigênio leva à menor produção de ATP e diminuição da atividade da bomba de sódio e potássio, causando aumento de sódio intracelular e edema celular, que também é chamado de degeneração hidrópica.',
+    explanation: "Sem oxigênio, a fosforilação oxidativa mitocondrial para e a produção de ATP cai. A bomba Na+/K+ ATPase depende de ATP, então perde atividade: o sódio se acumula dentro da célula, o potássio sai e a água entra junto com o sódio.\n\nO resultado é a tumefação celular, chamada degeneração hidrópica, a primeira e ainda reversível manifestação da lesão hipóxica. Paralelamente, a célula recorre à glicólise anaeróbia, acumula lactato e acidifica o citoplasma. Se a hipóxia persistir, a lesão pode evoluir para necrose.",
+    commentary: "Apoptose pela via intrínseca (A): a via mitocondrial pode ser ativada em algumas situações, mas o mecanismo central e inicial da lesão hipóxica é a queda de ATP com falência da bomba de sódio; isquemia intensa costuma levar à necrose.\n\nAcúmulo de potássio extracelular e degeneração hidrofílica (B): o edema decorre da entrada de sódio e água, e o termo correto é degeneração hidrópica.\n\nMaior atividade da bomba e redução celular (C): descreve o contrário do que acontece; sem ATP a bomba trabalha menos, e a célula incha em vez de diminuir.",
+    tip: "Hipóxia: menos ATP, bomba de Na+/K+ falha, sódio e água entram = degeneração hidrópica (reversível).",
     reference: 'KUMAR, Vinay; ASTER, Jon C.; ABBAS, Abul K. Robbins &Cotran Patologia: bases patológicas das doenças. 9 ed. Rio de Janeiro: Guanabara Koogan, 2021, 1421 p.',
     tags: ['fisiologia', 'patologia celular']
   },
@@ -364,8 +386,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A cetose é um estado metabólico em que ocorre um aumento de glicose no sangue, geralmente associado a uma dieta rica em carboidratos e baixa em gorduras e proteínas.'
     ],
     correctAnswer: 1,
-    explanation: 'No jejum prolongado, o esqueleto carbônico de aminoácidos é a principal fonte para a gliconeogênese.',
-    commentary: 'Durante o período de jejum prolongado, as proteínas musculares são mobilizadas e quebradas para liberar aminoácidos, que são utilizados para a síntese de glicose no fígado por meio da gliconeogênese.\n\nOs ácidos graxos resultantes da lipólise não são utilizados para síntese de glicose, eles são oxidados para produzir ATP.\n\nA insulina é um hormônio que desempenha um papel importante na regulação do metabolismo dos carboidratos, facilitando a entrada de glicose nas células musculares e adipócitos para ser utilizada como fonte de energia. Além disso, a insulina também estimula a síntese de proteínas, sendo essencial para o anabolismo.\n\nA cetose é um estado metabólico em que o organismo utiliza predominantemente ácidos graxos como fonte de energia, em vez de glicose. Geralmente, a cetose está associada a uma dieta com baixa ingestão de carboidratos.',
+    explanation: "No jejum prolongado, depois que o glicogênio hepático se esgota, o fígado precisa fabricar glicose para manter a glicemia, sobretudo para cérebro e hemácias. Uma das principais fontes de carbono para isso são os aminoácidos liberados pela quebra de proteínas musculares (alanina e glutamina, em especial), convertidos em glicose pela gliconeogênese.\n\nTambém servem de substrato o lactato e o glicerol dos triglicerídeos. Com o tempo, o aumento dos corpos cetônicos reduz a necessidade de glicose pelo cérebro e poupa proteína muscular.",
+    commentary: "Ácidos graxos gerando glicose (A): ácidos graxos de cadeia par são oxidados até acetil-CoA, que não pode ser convertido em glicose porque a reação da piruvato desidrogenase é irreversível; só o glicerol dos triglicerídeos é gliconeogênico. Os ácidos graxos servem como fonte de energia.\n\nInsulina facilitando a saída de glicose (C): a insulina faz o contrário, promovendo a entrada de glicose em músculo e tecido adiposo (pelo GLUT4); a parte sobre síntese proteica e anabolismo está certa.\n\nCetose com glicose alta e dieta rica em carboidratos (D): cetose é o aumento de corpos cetônicos quando há pouca glicose ou pouca insulina, típica do jejum e de dietas pobres em carboidratos.",
+    tip: "Jejum prolongado: proteína muscular vira aminoácido, que vira glicose no fígado (gliconeogênese). Ácido graxo não vira glicose.",
     reference: 'Marzzoco, Anita; Torres, Bayardo Baptista, Bioquímica básica. 4.ed. Editora(s) Guanabara Koogan, 2015 [Disponível na rede de bibliotecas da Unoeste e na BV Minha Biblioteca], capítulo: 16, pg.206-208.',
     tags: ['bioquímica', 'metabolismo']
   },
@@ -380,8 +403,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Caracteriza-se principalmente pela presença de hemácias com o formato de foice.'
     ],
     correctAnswer: 2,
-    explanation: 'A perda crônica de sangue (como menometrorragia) é uma causa comum de depleção de estoques de ferro.',
-    commentary: 'Este tipo de anemia está relacionada com a perda de sangue, mas também com baixa ingestão de nutrientes, como o ferro. Os médicos recomendam o aumento do consumo de carnes e folhas escuras por conterem este mineral.',
+    explanation: "A anemia ferropriva é adquirida: resulta de perda crônica de sangue, ingestão ou absorção insuficiente de ferro ou aumento da demanda (gestação, crescimento). Na mulher em idade fértil, o sangramento menstrual aumentado ou prolongado é uma das causas mais comuns.\n\nÉ uma anemia microcítica e hipocrômica, com ferritina baixa. O tratamento é repor ferro e corrigir a causa. Em homens e em mulheres após a menopausa, deve-se investigar perda pelo trato gastrointestinal.",
+    commentary: "Causa genética, sem resposta ao ferro (A): a ferropriva não é hereditária e responde justamente à reposição de ferro.\n\nProdução incorreta de cadeias de hemoglobina (B): esse defeito define as talassemias; nelas, dar ferro sem deficiência comprovada não ajuda e pode causar sobrecarga.\n\nHemácias em foice (D): são características da anemia falciforme (hemoglobina S), não da ferropriva.",
+    tip: "Ferropriva = perda de sangue ou falta de ferro. Na mulher jovem, pense em menstruação aumentada; em homem, no intestino.",
     reference: 'Zago, M. A.; Falcão, R. P.; Pasquini, R. Hematologia: fundamentos e prática. Rio de Janeiro: Atheneu, 2004. Bain BJ, Gupta R. A – Z ofHaematology. BlackwellPubli., London, 2003.',
     tags: ['hematologia', 'nutrologia']
   },
@@ -396,8 +420,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Cólica direita e cólica média'
     ],
     correctAnswer: 1,
-    explanation: 'A artéria cólica média (da mesentérica superior) e a cólica esquerda (da mesentérica inferior) anastomosam-se formando a arcada de Riolan.',
-    commentary: 'Para responder à questão é necessário identificar os ramos que representam a anastomose entre as artérias mesentérica superior e mesentérica inferior. Assim, o ramo distal da artéria mesentérica superior e o ramo proximal da artéria mesentérica inferior são respectivamente: artéria cólica média (ramo da artéria mesentérica superior) e artéria cólica esquerda (ramo da artéria mesentérica inferior).',
+    explanation: "A artéria mesentérica superior irriga o intestino até cerca dos dois terços proximais do cólon transverso, e a mesentérica inferior irriga o restante do cólon até a porção superior do reto. As duas se comunicam no cólon transverso e no ângulo esplênico, pela anastomose entre a artéria cólica média (ramo da mesentérica superior) e a cólica esquerda (ramo da mesentérica inferior), por meio da artéria marginal (de Drummond) e do arco de Riolan.\n\nQuando a mesentérica inferior se oclui lentamente por aterosclerose, o sangue segue da mesentérica superior pela cólica média até a cólica esquerda e preenche o território da mesentérica inferior, o que explica o paciente assintomático. O reto ainda recebe sangue das artérias retais média e inferior, ramos da ilíaca interna.",
+    commentary: "Ileocólica e cólica média (A): as duas são ramos da mesentérica superior; a comunicação entre elas não leva sangue ao território da mesentérica inferior.\n\nSigmoidea e retal superior (C): ambas são ramos da própria mesentérica inferior, e ficariam sem fluxo com a obstrução de sua origem.\n\nCólica direita e cólica média (D): novamente, dois ramos da mesentérica superior, sem relação com a irrigação colateral do território da inferior.",
+    tip: "Ponte entre mesentérica superior e inferior: cólica média com cólica esquerda (artéria marginal e arco de Riolan).",
     reference: 'Keith L.; DALLEY, Arthur F.; AGUR, Anne M R. Anatomia Orientada para Clínica. Rio de Janeiro: Guanabara Koogan (Grupo GEN), 2022. E-book. ISBN 9788527734608. Disponível em: https://integrada.minhabiblioteca.com.br/#/books/9788527734608/. Acesso em: 25 jul. 2023.',
     tags: ['anatomia', 'cirurgia vascular']
   },
@@ -413,8 +438,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A ceftriaxona tem biodisponibilidade que permite aplicação única diária e não necessita de ajuste de dosagem em casos de insuficiência renal.'
     ],
     correctAnswer: 3,
-    explanation: 'A ceftriaxona possui meia-vida longa (dose única diária) e eliminação biliar/renal balanceada, dispensando ajuste em insuficiência renal leve a moderada.',
-    commentary: 'A ceftriaxona tem bom perfil metabólico permitindo aplicação única diária e não é metabolizada sistemicamente, mas convertida a metabólitos microbiologicamente inativos pela flora intestinal.\n\nA associação entre ampicilina/sulbactan tem boa cobertura para germes Gram negativos, mas não para germes hospitalares, tais como a Pseudomonas aeruginosa ou a Klebsiella pneumoniae hospitalar (KPC).\n\nAs fluoroquinolonas respiratórias (levofloxacino e moxifloxacino) têm bom perfil metabólico, permitindo aplicação única diária, mas sem penetração satisfatória na barreira hematoencefálica.\n\nAs cefalosporinas de 3ª geração (ceftriaxona e cefotaxima) podem ser utilizadas na gestação, sem efeito teratogênico significativo ou comprovado.',
+    explanation: "A ceftriaxona, cefalosporina de 3ª geração usada na PAC internada (associada a um macrolídeo), tem meia-vida longa, o que permite uma dose ao dia. Sua eliminação é mista, renal e biliar: quando o rim falha, a via biliar compensa, e por isso não é preciso ajustar a dose na insuficiência renal isolada.\n\nEssa combinação de posologia simples, boa cobertura para pneumococo e Haemophilus e segurança na disfunção renal faz dela uma das bases do tratamento da PAC em enfermaria.",
+    commentary: "Cefalosporinas de 3ª geração teratogênicas (A): não há efeito teratogênico estabelecido; as cefalosporinas estão entre os antibióticos considerados seguros na gestação.\n\nAmpicilina/sulbactam contra gram-negativos hospitalares (B): a associação cobre bem germes comunitários, mas não cobre Pseudomonas aeruginosa nem gram-negativos multirresistentes hospitalares.\n\nFluoroquinolonas com boa penetração na barreira hematoencefálica (C): levofloxacino e moxifloxacino de fato têm ótima biodisponibilidade oral e dose única diária; o ponto incorreto da afirmação é a penetração no sistema nervoso central, pois não são antibióticos de escolha para infecções do SNC.",
+    tip: "Ceftriaxona: uma dose ao dia e eliminação renal e biliar, então não ajusta na insuficiência renal.",
     reference: 'As Bases farmacológicas da terapêutica de Goodman & Gilman. 13. ed. Porto Alegre: Artmed, 2019. ISBN 9788580556148.',
     tags: ['farmacologia', 'pneumologia']
   },
@@ -429,8 +455,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Estados prolongados de hiperglicemia no diabetes tipo 2 promovem a redução da fosforilação oxidativa mitocondrial.'
     ],
     correctAnswer: 0,
-    explanation: 'A disfunção mitocondrial na senescência celular contribui para a resistência à apoptose, favorecendo a sobrevivência de células senescentes.',
-    commentary: 'A senescência é caracterizada por uma parada irreversível do ciclo celular e um fenótipo pró-inflamatório, comumente conhecido como fenótipo secretor associado a senescência (SASP). A disfunção mitocondrial é uma característica frequentemente não apreciada da senescência celular, que desempenha papéis importantes não apenas na parada do crescimento da senescência, mas também no desenvolvimento do SASP e na resistência à morte celular por apoptose.\n\nALTERNATIVA ERRADA: "O que regula a taxa de captação de glicose é principalmente a concentração de insulina no sangue." O que regula a taxa de captação de glicose é principalmente a concentração de glicose no sangue. A glicose entra nas células por meio de transportadores específicos (GLUTs) localizados na membrana celular.\n\n"Células tumorais alteram a dinâmica mitocondrial favorecendo a fissão de mitocôndrias." Sob estímulos extracelulares, as mitocôndrias sofrem constantes dinâmicas de fusão e fissão para atender a diferentes demandas celulares. A dinâmica mitocondrial é regulada por proteínas e lipídios especializados. A dinâmica mitocondrial desregulada tem sido associada ao início e progressão de diversos cânceres humanos, afetando aspectos como metástase do câncer, resistência a drogas e sobrevivência de células-tronco cancerígenas. Na maioria dos casos, a fissão mitocondrial facilita a proliferação, metástase e resistência às drogas das células cancerígenas, causando o desenvolvimento do câncer.\n\n"Estados prolongados de hiperglicemia promovem a redução da fosforilação oxidativa mitocondrial." O diabetes tipo 2 é caracterizado por disfunção mitocondrial, alta produção de espécies reativas de oxigênio (ROS) e baixos níveis de ATP.',
+    explanation: "Células senescentes param de se dividir de forma irreversível e passam a secretar mediadores inflamatórios (o fenótipo secretor associado à senescência, SASP). A disfunção mitocondrial, frequente no envelhecimento, participa da manutenção desse estado e também deixa essas células resistentes à apoptose.\n\nEsse é o ponto da alternativa correta: em vez de morrerem, as células senescentes se acumulam nos tecidos e mantêm um ambiente inflamatório crônico, que contribui para doenças ligadas à idade.",
+    commentary: "Insulina como principal regulador da captação de glicose (B): a velocidade com que as células captam glicose, pelos transportadores GLUT, é ditada sobretudo pela glicemia; a insulina modula essa captação sobretudo em músculo e tecido adiposo (GLUT4).\n\nFusão mitocondrial em tumores (C): na maioria dos cânceres predomina a fissão mitocondrial, que favorece proliferação, metástase e resistência a quimioterápicos.\n\nRedução da fosforilação oxidativa pela hiperglicemia no diabetes tipo 2 (D): a hiperglicemia crônica sobrecarrega a mitocôndria de substrato e aumenta a geração de espécies reativas de oxigênio; o gabarito considera a afirmação incorreta, mas o tema é controverso.",
+    tip: "Mitocôndria disfuncional no envelhecimento ajuda a célula senescente a escapar da apoptose (efeito antiapoptótico).",
     reference: 'doi: 10.15252/embr.201948395; https://doi.org/10.1016/j.redox.2017.01.013; Am J Cancer Res. 2020; 10(5): 1278–1293.',
     tags: ['biologia celular', 'metabolismo']
   },
@@ -446,8 +473,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Nos miócitos esqueléticos após longo tempo de imobilidade.'
     ],
     correctAnswer: 2,
-    explanation: 'A metaplasia brônquica (substituição do epitélio respiratório por escamoso) é análoga à metaplasia intestinal no esôfago (Barrett).',
-    commentary: 'O caso refere-se a metaplasia intestinal na mucosa esofágica (Esôfago de Barrett). A metaplasia é um processo de adaptação celular frente a um novo estímulo. Na mucosa brônquica de fumantes, ocorre metaplasia escamosa. Hipertrofia ocorre no miocárdio hipertenso; displasia no HPV; atrofia no músculo imobilizado.',
+    explanation: "Epitélio colunar com células caliciformes no lugar do epitélio escamoso do esôfago, após anos de refluxo, é o esôfago de Barrett: uma metaplasia intestinal. Metaplasia é a troca de um tipo de epitélio maduro por outro, mais resistente ao agressor persistente — no caso, o ácido e a bile refluídos.\n\nO exemplo paralelo é o brônquio do fumante crônico: o epitélio colunar ciliado é substituído por epitélio escamoso, que suporta melhor a fumaça, mas perde a limpeza mucociliar. Nos dois casos, a metaplasia é potencialmente reversível, porém, se o estímulo continuar, pode evoluir para displasia e câncer (adenocarcinoma de esôfago e carcinoma epidermoide de pulmão).",
+    commentary: "Miocardiócitos na hipertensão (A): o aumento da sobrecarga leva a hipertrofia, ou seja, aumento do tamanho das células, sem troca de tipo celular.\n\nColo uterino com HPV (B): a infecção pelo HPV causa alterações virais (coilocitose) e displasia (lesões intraepiteliais), que não são adaptação, e sim lesão pré-neoplásica.\n\nMúsculo esquelético após imobilidade (D): a perda de estímulo leva à atrofia, com redução do tamanho das fibras.",
+    tip: "Barrett e brônquio do fumante: os dois são metaplasia (troca de epitélio) e podem evoluir para displasia.",
     reference: 'Patologia, Bogliolo-9ª Edição. 2016.',
     tags: ['patologia', 'gastroenterologia']
   },
@@ -462,8 +490,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Inibir a síntese de glicogênio hepático.'
     ],
     correctAnswer: 0,
-    explanation: 'Sem a ativação da glicogênio fosforilase, o fígado não libera glicose no jejum, exigindo aporte exógeno constante (amido) para evitar hipoglicemia.',
-    commentary: 'A enzima fosforilase quinase é responsável por fosforilar e ativar a enzima glicogênio fosforilase. A enzima glicogênio fosforilase, por sua vez, hidrolisa as ligações glicosídicas alfa 1→4 dos feixes do glicogênio, sendo a principal responsável pela glicogenólise.\n\nNa paciente com deficiência de fosforilase quinase hepática, a quebra do glicogênio fica comprometida. Sem a quebra do glicogênio do fígado, a manutenção da glicemia no jejum recente fica comprometida, havendo risco de hipoglicemia. Por esta razão, a paciente deve consumir amido com frequência para a obter glicose por meio da digestão e garantir que haja glicose suficiente no sangue na ausência da glicogenólise.\n\nO consumo de amido promove a secreção de insulina estimulando a síntese de glicogênio muscular, mas este efeito não é importante para a terapia da paciente. O consumo de amido promove a secreção de insulina inibindo a quebra de glicogênio hepático, que já estava prejudicada pela deficiência genética. O consumo de amido promove a secreção de insulina estimulando a síntese de glicogênio hepático.',
+    explanation: "A fosforilase quinase ativa a glicogênio fosforilase, enzima que quebra o glicogênio. Na deficiência hepática dessa enzima (glicogenose tipo IX), o fígado acumula glicogênio, mas não consegue liberá-lo como glicose entre as refeições, e a paciente tende à hipoglicemia de jejum.\n\nO amido de milho cru é digerido devagar e libera glicose de forma contínua no intestino. Tomado em intervalos curtos, ele substitui a glicogenólise hepática que falta e mantém a glicemia estável, inclusive à noite.",
+    commentary: "Síntese de glicogênio muscular (B): o músculo não tem glicose-6-fosfatase e não libera glicose para o sangue; aumentar seu glicogênio não corrige a hipoglicemia, que é o problema da paciente.\n\nEstimular a quebra do glicogênio hepático (C): a quebra está bloqueada pela própria deficiência, e a refeição com amido, ao elevar a insulina, ainda inibe a glicogenólise.\n\nInibir a síntese de glicogênio hepático (D): não é esse o objetivo; a insulina liberada após a ingestão até favorece a síntese, e o alvo terapêutico é evitar a hipoglicemia.",
+    tip: "Glicogenose hepática: o fígado não solta glicose. Amido de milho cru frequente = glicemia mantida.",
     reference: 'Harvey RA, Ferrier DR - Bioquímica Ilustrada 5ª. ed. Artmed, 2012. Marzzoco A, Torres BB - Bioquímica Básica. 3ª ed. Ed. Guanabara Koogan, 2007. Nelson DL, Cox MM - Princípios de Bioquímica de Lehninger 5ª ed. Artmed, 2011.',
     tags: ['bioquímica', 'erros inatos do metabolismo']
   },
@@ -478,8 +507,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Não ocorre alteração da taxa de filtração glomerular.'
     ],
     correctAnswer: 2,
-    explanation: 'A queda da PA reduz inicialmente a TFG, mas os mecanismos de autorregulação renal (miogênico e feedback tubuloglomerular) estabilizam o fluxo.',
-    commentary: 'Se a pressão arterial diminui durante o sono, ocorre uma diminuição da taxa de filtração glomerular, logo depois ocorre aumento da filtração glomerular pelo mecanismo de autorregulação renal para manter a homeostase.',
+    explanation: "Durante o sono a pressão arterial cai um pouco. Como a pressão de perfusão renal diminui, a filtração glomerular tende a cair num primeiro momento.\n\nO rim, porém, tem mecanismos próprios que mantêm o fluxo sanguíneo e a filtração quase constantes numa ampla faixa de pressão (aproximadamente 80 a 180 mmHg de pressão média): a autorregulação. Ela envolve o reflexo miogênico da arteríola aferente, que se dilata quando a pressão cai, e o feedback tubuloglomerular, em que a mácula densa percebe menos cloreto de sódio e sinaliza dilatação aferente e liberação de renina. Assim a filtração volta ao normal sem depender do sistema nervoso.",
+    commentary: "Recuperação por mecanismo neural (A): a queda inicial está correta, mas a correção é intrínseca ao rim (autorregulação); a ativação simpática renal, ao contrário, contrai arteríolas e tende a reduzir a filtração.\n\nAumento inicial da filtração (B): com pressão menor a filtração não sobe, ela cai, e o ajuste também não é neural.\n\nSem nenhuma alteração (D): há uma queda transitória da filtração até que a autorregulação a restabeleça.",
+    tip: "Pressão cai, filtração cai um pouco e a autorregulação renal (miogênica + mácula densa) a restabelece.",
     reference: 'Sato, M.A. Tratado de Fisiologia Médica – 1a ed (2021). Editora Guanabara Koogan/Grupo GEN, Rio de Janeiro.',
     tags: ['fisiologia renal']
   },
@@ -494,15 +524,16 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) São células do sistema imunológico responsáveis pela defesa do organismo contra agentes infecciosos.'
     ],
     correctAnswer: 3,
-    explanation: 'Leucócitos (linfócitos, granulócitos e monócitos) compõem a linhagem de defesa contra patógenos.',
-    commentary: 'Os leucócitos são os elementos da linhagem branca do sangue, divididos em componentes mieloides e linfoides, unicamente relacionados à proteção do organismo contra patógenos e infecções.',
-    reference: 'Boehm T, Swann JB. Origin na devolution of adaptive immunity. Annu Ver Anim Biosci. 2014;2:259-283.',
+    explanation: "Leucócitos são os glóbulos brancos e têm como função a defesa do organismo. Dividem-se em linhagem mieloide (neutrófilos, eosinófilos, basófilos e monócitos), ligada sobretudo à resposta inata, e linhagem linfoide (linfócitos B, T e NK), base da imunidade adaptativa.\n\nTodos nascem na medula óssea; somente os linfócitos T completam a maturação no timo.",
+    commentary: "Funcionamento após maturação no timo (A): isso vale apenas para os linfócitos T; neutrófilos, monócitos e linfócitos B amadurecem na medula óssea.\n\nCoagulação e formação de hemácias (B): a hemostasia primária cabe às plaquetas e aos fatores de coagulação, e as hemácias derivam de precursores eritroides da medula.\n\nProdução de insulina (C): quem secreta insulina são as células beta das ilhotas pancreáticas.",
+    tip: "Leucócito = defesa. Todos nascem na medula; só o linfócito T termina de amadurecer no timo.",
+    reference: "Boehm T, Swann JB. Origin and evolution of adaptive immunity. Annu Rev Anim Biosci. 2014;2:259-283.",
     tags: ['histologia', 'imunologia']
   },
   {
     id: 'tp2023-12',
     module: 'Ciências Básicas',
-    text: 'Paciente do sexo feminino, 65 anos, com hipertensão arterial não controlada e sintomas de cefaleias, mal-estar geral e flushing facial relacionados aos picos de pressão arterial elevada. Os exames realizados incluíram eletrocardiograma normal, radiografia de tórax sem alterações e tomografia computadorizada abdominal. Verificou-se um aumento da aldosterona sérica (798μmol/L; normal: 28 a 443μmol/L), com renina sérica, metanefrinas plasmáticas, cortisol, ácido vanilmandélico e ionograma dentro dos parâmetros normais. Como deve ser interpretado o distúrbio da pressão arterial apresentado pela paciente desse relato?',
+    text: 'Paciente do sexo feminino, 65 anos, com hipertensão arterial não controlada e sintomas de cefaleias, mal-estar geral e flushing facial relacionados aos picos de pressão arterial elevada. Os exames realizados incluíram eletrocardiograma normal, radiografia de tórax sem alterações e tomografia computadorizada abdominal. Verificou-se um aumento da aldosterona sérica (798 pmol/L; normal: 28 a 443 pmol/L), com renina sérica, metanefrinas plasmáticas, cortisol, ácido vanilmandélico e ionograma dentro dos parâmetros normais. Como deve ser interpretado o distúrbio da pressão arterial apresentado pela paciente desse relato?',
     image: '/images/tp2023-12.webp',
     options: [
       '(A) Síndrome de Cushing',
@@ -511,8 +542,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Hipertensão essencial'
     ],
     correctAnswer: 1,
-    explanation: 'Aldosterona alta com renina normal/baixa sugere hiperaldosteronismo primário (ex: tumor de Conn).',
-    commentary: 'Embora a hipertensão possa ser observada como uma adaptação homeostática devido a mudanças no sistema cardiovascular e ao enrijecimento das artérias com o avanço da idade, mesmo entre idosos, é importante considerar causas secundárias para essa manifestação. O caso apresentado evidencia a presença de um tumor raro nas glândulas suprarrenais em uma paciente de 65 anos, o que é evidenciado pela ultrassonografia abdominal e os valores aumentados de aldosterona.',
+    explanation: "Hipertensão de difícil controle com aldosterona elevada, metanefrinas, ácido vanilmandélico e cortisol normais aponta para hiperaldosteronismo primário, cuja causa tumoral clássica é o adenoma adrenal produtor de aldosterona (síndrome de Conn).\n\nNo hiperaldosteronismo primário, a aldosterona é produzida de forma autônoma, retém sódio e água e eleva a pressão; a renina fica tipicamente suprimida, e a relação aldosterona/renina é o exame de triagem. A hipocalemia ajuda, mas falta em boa parte dos pacientes. Confirmada a produção autônoma, faz-se a tomografia das adrenais e, quando indicado, cateterismo das veias adrenais antes da cirurgia.",
+    commentary: "Síndrome de Cushing (A): o cortisol está normal e não há sinais de hipercortisolismo (obesidade central, estrias violáceas, fraqueza proximal).\n\nHipertensão renovascular (C): a estenose da artéria renal ativa o sistema renina-angiotensina, e a aldosterona sobe junto com a renina (hiperaldosteronismo secundário).\n\nHipertensão essencial (D): o diagnóstico só é feito quando não há causa secundária, e aqui há excesso de aldosterona, que obriga a investigar a adrenal.",
+    tip: "Hipertensão resistente + aldosterona alta + renina suprimida = hiperaldosteronismo primário; procure adenoma de adrenal.",
     reference: 'Bortolotto, Luiz Aparecido, and Marcus Vinícius Bolívar Malachias. "Atualização no diagnóstico e tratamento das principais causas de hipertensão secundária." Rev. bras. hipertens (2011): 46-66. Oigman, Wille. "Sinais e sintomas em hipertensão arterial." JBM 102.5 (2014): 13-8. Silva, Joana, et al. "Hipertensão arterial secundária a tumor raro da glândula adrenal." Arquivos Brasileiros de Cardiologia 95 (2010): 144-147.',
     tags: ['fisiologia endócrina', 'cardiologia']
   },
@@ -527,9 +559,10 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Necrose gordurosa'
     ],
     correctAnswer: 3,
-    explanation: 'A liberação de lipases pancreáticas no tecido peripancreático causa digestão de gordura e formação de sabões de cálcio (esteatonecrose).',
-    commentary: 'Trata-se de quadro clínico de pancreatite aguda, na qual pode ser observada necrose gordurosa (esteatonecrose) no tecido peripancreático devido à ação de enzimas lipolíticas (lipase) que extravasam.',
-    reference: 'Patologia -Bases Patológicas das Doenças – Robbins & Contron.',
+    explanation: "Dor epigástrica intensa irradiada para o dorso, com náuseas e vômitos, lipase e amilase muito acima de três vezes o limite e pâncreas aumentado na tomografia: pancreatite aguda.\n\nA lesão tecidual típica é a necrose gordurosa enzimática. As lipases que escapam dos ácinos digerem a gordura do pâncreas e ao redor dele; os ácidos graxos liberados se ligam ao cálcio e formam sabões (saponificação), visíveis como manchas branco-giz. Esse consumo de cálcio explica a hipocalcemia, que é um marcador de gravidade.",
+    commentary: "Necrose coagulativa (A): é o padrão da isquemia em órgãos sólidos (infarto do miocárdio, do rim), com preservação temporária do contorno das células.\n\nNecrose fibrinoide (B): ocorre na parede dos vasos, em vasculites por imunocomplexos e na hipertensão maligna.\n\nNecrose caseosa (C): é característica da tuberculose, com aspecto de queijo friável dentro do granuloma.",
+    tip: "Pancreatite: lipase digere gordura e o ácido graxo se liga ao cálcio (saponificação) = necrose gordurosa.",
+    reference: "KUMAR, V.; ABBAS, A. K.; ASTER, J. C. Robbins & Cotran Patologia: bases patológicas das doenças. Rio de Janeiro: Elsevier.",
     tags: ['patologia', 'gastroenterologia']
   },
   {
@@ -543,8 +576,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Os anti-inflamatórios esteroidais causam maiores alterações teciduais, pois seu principal mecanismo de ação está associado à interação com proteínas celulares de superfície.'
     ],
     correctAnswer: 0,
-    explanation: 'Os corticoides atuam em receptores intracitoplasmáticos que migram ao núcleo para alterar a expression gênica, o que leva horas.',
-    commentary: 'Os corticosteroides são fármacos de natureza mais hidrofóbica, portanto, atravessam com facilidade a membrana plasmática e atuam em nível de regulação da transcrição gênica. todo esse processo é bastante lento, demorando várias horas ou até mesmo dia para gerar alterações.\n\nCorticosteroides reduzem a produção de prostaglandinas via inibição da fosfolipase a2 que gera ácido araquidônico (molécula precursora de prostaglandinas).\n\nA supressão da fosfolipase a2 acarreta uma redução na produção de prostaglandinas, acarretando uma redução da permeabilidade vascular.\n\nInteração dos corticosteroides se dá com receptores nucleares, que estão no citoplasma e depois são deslocados para o núcleo para a regulação da expressão gênica.',
+    explanation: "Os corticosteroides são lipossolúveis, atravessam a membrana e se ligam ao receptor de glicocorticoide no citoplasma. O complexo vai ao núcleo e muda a transcrição de genes: aumenta proteínas anti-inflamatórias (como a anexina-1, que inibe a fosfolipase A2) e reduz citocinas, moléculas de adesão e a expressão da COX-2.\n\nComo dependem da síntese de novas proteínas, seus efeitos levam horas para aparecer, diferentemente dos AINEs, que inibem a ciclo-oxigenase diretamente e agem mais rápido.",
+    commentary: "Aumento de prostaglandinas vasodilatadoras (B): anti-inflamatórios agem justamente reduzindo a síntese de prostaglandinas.\n\nPermeabilidade por supressão da fosfolipase A2 (C): inibir a fosfolipase A2 diminui a liberação de ácido araquidônico e de seus derivados, o que reduz a permeabilidade vascular; o aumento de permeabilidade decorre de mediadores como histamina, bradicinina, prostaglandinas e leucotrienos.\n\nAção por proteínas de superfície (D): os esteroides atuam por receptores intracelulares que agem no núcleo, e não por receptores de membrana.",
+    tip: "Corticoide: receptor intracelular, ação no núcleo (transcrição gênica), por isso o efeito demora horas.",
     reference: 'Brunton, L.L. Goodman & Gilman: As Bases Farmacológicas da Terapêutica. 12ª ed. Rio de Janeiro: McGrawHill, 2012. Rachelle Etienne, Flávia Pereira Dias Viegas, Claudio Viegas Jr. Aspectos Fisiopatológicos da Inflamação e o Planejamento de Fármacos: uma Visão Geral Atualizada. Revista Virtual de Química, 2021.',
     tags: ['farmacologia', 'imunologia']
   },
@@ -559,8 +593,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Cordocentese ou PCR de líquido amniótico.'
     ],
     correctAnswer: 2,
-    explanation: 'IgG positivo e IgM negativo indicam imunidade pregressa (infecção antiga), sem risco de transmissão vertical atual.',
-    commentary: 'A sorologia para toxoplasmose é um dos exames de rotina preconizados pelo Ministério da Saúde a ser realizado na primeira consulta pré-natal. A conduta adotada depende dos resultados de tal exame, quando:\n- IgM negativo e IgG positivo temos uma gestante que no passado teve toxoplasmose, encontrando-se imune não sendo necessário adotar qualquer medida além da manutenção habitual do pré-natal;\n- IgM negativo e IgG negativo temos uma gestante susceptível, sendo assim deve-se repetir trimestralmente a sorologia para acompanhar caso ocorra infecção em algum momento da gestação;\n- IgM positivo e IgG negativo temos uma gestante com infecção aguda que deverá ser tratada;\n- Em relação a pesquisa de avidez de IgG: IgM positivo e IgG positivo em gestantes com menos de 16 semanas teremos que realizar o exame de avidez do IgG para definir. Se a avidez for alta indica infecção antiga, não sendo necessário tratamento e realiza apenas seguimento habitual. Porém, se a avidez for baixa ou a gestante tiver mais de 16 semanas considera infecção aguda.\n\nNos casos de infecção materna aguda deve-se descartar um resultado falso positivo repetindo a sorologia ou solicitando IgA quando disponível. Caso não tenha tais opções já pode indicar tratamento com espiramicina 1g de 8/8h para diminuir o risco de infecção fetal até que se realize a investigação de infecção fetal por meio da amniocentese ou PCR do líquido amniótico.',
+    explanation: "IgG positivo com IgM negativo no primeiro trimestre indica infecção antiga: a gestante já teve contato com o Toxoplasma e está imune. A chance de transmissão fetal em gestante imunocompetente nessa situação é desprezível.\n\nNão há tratamento a fazer nem necessidade de repetir a sorologia; segue-se o pré-natal habitual. A exceção são as gestantes imunossuprimidas (como as que vivem com HIV), em que pode haver reativação.",
+    commentary: "Espiramicina até o parto (A): é indicada na suspeita ou confirmação de infecção aguda materna, para reduzir a transmissão ao feto, o que não é o caso.\n\nAvidez de IgG (B): é usada quando IgG e IgM são positivos, de preferência até 16 semanas, para diferenciar infecção recente de antiga.\n\nCordocentese ou PCR no líquido amniótico (D): investigam infecção fetal depois de diagnosticada infecção aguda na mãe; a PCR por amniocentese é o método usado hoje.",
+    tip: "Toxo: IgG+ e IgM- = imune. Nada a tratar e não repete sorologia (salvo imunossuprimida).",
     reference: 'NEVES, D.P. Parasitologia Humana. 13ª ed. São Paulo: Atheneu, 2016. BRASIL. Protocolo de Notificação e Investigação: Toxoplasmose Gestacional e congênita. Brasília: Ministério da Saúde, 2018.',
     tags: ['infectologia', 'obstetrícia']
   },
@@ -575,8 +610,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Doença autoimune'
     ],
     correctAnswer: 1,
-    explanation: 'A criptosporidiose é uma infecção oportunista clássica definidora de AIDS em casos de diarreia crônica/severa.',
-    commentary: 'A criptosporidiose provoca diarreia autolimitada em imunocompetentes. Em pacientes com AIDS e imunodeficiência avançada (queda de LTCD4), torna-se uma causa comum de diarreia prolongada e grave.',
+    explanation: "Cryptosporidium parvum é um protozoário coccídio que infecta o epitélio intestinal. No imunocompetente causa diarreia aquosa autolimitada; quando há queda importante de linfócitos T CD4, a infecção vira diarreia volumosa e prolongada, com perda de peso, desidratação e distúrbios eletrolíticos.\n\nPor isso, diante de coccidiose intestinal (Cryptosporidium, Cystoisospora, Cyclospora) em adulto com quadro grave, é obrigatório investigar infecção pelo HIV, já que a AIDS é a imunodeficiência mais associada a esses parasitas. A base do tratamento é recuperar a imunidade com a terapia antirretroviral.",
+    commentary: "Doença de Crohn (A): causa diarreia crônica inflamatória, mas não é a doença de base que predispõe classicamente à criptosporidiose grave.\n\nNeoplasias (C): pacientes oncológicos em quimioterapia podem ficar imunossuprimidos, porém a condição a ser investigada primeiro e de forma rotineira é a infecção pelo HIV.\n\nDoença autoimune (D): não é a associação típica; só haveria risco por imunossupressão do tratamento, o que não é sugerido no caso.",
+    tip: "Coccídio intestinal (Cryptosporidium, Cystoisospora) com diarreia grave em adulto: peça anti-HIV.",
     reference: 'Mims Microbiologia Médica e Imunologia, 6ª. Ed. 2020.',
     tags: ['infectologia', 'imunologia']
   },
@@ -591,8 +627,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Pâncreas anular'
     ],
     correctAnswer: 2,
-    explanation: 'A urina fetal é a principal fonte de líquido amniótico no 2º e 3º trimestres; falhas renais (como agenesia) causam oligoâmnio.',
-    commentary: 'O sistema urinário fetal é a principal fonte de líquido amniótico que desempenha importantes funções como maturação pulmonar, amortecimento de choques, barreira contra infecções e evita aderência do embrião ao âmnio. Todas as outras alternativas são responsáveis por excesso de líquido amniótico (polidrâmnio), seja por ausência do reflexo de deglutição (Anencefalia) ou obstrução de trato digestivo (atresia de esôfago e pâncreas anular), onde o líquido seria reabsorvido.',
+    explanation: "A partir do segundo trimestre, o líquido amniótico vem principalmente da urina fetal, e é removido sobretudo pela deglutição do feto e absorção no intestino. Por isso, o que reduz a produção ou a saída de urina causa oligoâmnio, e o que impede a deglutição ou o trânsito intestinal causa polidrâmnio.\n\nEntre as opções, a única ligada ao sistema urinário é a agenesia renal, por isso é a resposta. Na prática, o oligoâmnio grave é típico da agenesia renal bilateral (sequência de Potter, com hipoplasia pulmonar); na unilateral, o rim contralateral costuma manter o volume de líquido.",
+    commentary: "Anencefalia (A): o feto não deglute adequadamente por falta do controle neural, e o líquido se acumula (polidrâmnio).\n\nAtresia de esôfago (B): o líquido deglutido não chega ao intestino para ser absorvido, causando polidrâmnio.\n\nPâncreas anular (D): comprime o duodeno, obstrui o trânsito e também leva a polidrâmnio.",
+    tip: "Líquido amniótico: falta urina = oligoâmnio; feto não engole ou intestino obstruído = polidrâmnio.",
     reference: 'MOORE, K. L.; PERSAUD, T. V. N.; TORCHIA, M. G. Embriologia clínica. 10. ed. Rio de Janeiro: Elsevier, 2016. SADLER, T. W. Langman embriologia médica. 13. ed. São Paulo: Guanabara Koogan, 2016.',
     tags: ['embriologia', 'obstetrícia']
   },
@@ -607,8 +644,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Ocorre inibição do ciclo de Krebs com desenvolvimento de anemia, devido a menor síntese de heme.'
     ],
     correctAnswer: 3,
-    explanation: 'O mercúrio liga-se a grupos SH de enzimas do ciclo de Krebs e da síntese de porfirinas (heme), levando à anemia.',
-    commentary: 'O mercúrio ao se ligar a grupos sulfidrilas das enzimas promove precipitação e inibição de várias vias metabólicas como: descarboxilação do piruvato, ciclo de Kreb’s, síntese de porfirina. O anel de porfirina com o ferro compõe o Heme que com as globinas compõem a estrutura da hemoglobina. A diminuição da hemoglobina leva a um quadro de anemia.\n\nAo se inibir os sistemas enzimáticos do metabolismo as vias metabólicas aeróbicas são inibidas e como o catabolismo lipídico é aeróbico não há maior utilização deste. Com o desenvolvimento da hipoxemia há alta produção de lactato desenvolvendo acidose metabólica.\n\nPara que a gliconeogênese aconteça a partir do lactato tem-se que utilizar parte do ciclo de Kreb’s, estando este inibido e a reação de piruvato para fosfoenolpiruvato sendo irreversível não há condições para que a glioneogênese ocorra.',
+    explanation: "O mercúrio se liga aos grupos sulfidrila (–SH) e inativa várias enzimas, entre elas o complexo da piruvato desidrogenase e enzimas do ciclo de Krebs. Com o ciclo bloqueado, falta succinil-CoA, que é o ponto de partida da síntese do heme (junto com a glicina, pela ALA sintase, na mitocôndria). Algumas enzimas seguintes da via da porfirina também têm grupos –SH e são inibidas.\n\nMenos heme significa menos hemoglobina, e o resultado é anemia. Somada à lesão pulmonar com hipoxemia, a célula passa a depender da glicólise anaeróbia.",
+    commentary: "Alcalose metabólica por excesso de piruvato (A): com o metabolismo aeróbio bloqueado e hipoxemia, o piruvato vira lactato e o resultado é acidose metabólica.\n\nMaior uso de triglicerídeos (B): a beta-oxidação depende do ciclo de Krebs e da cadeia respiratória; com essas vias inibidas, a gordura não pode ser aproveitada como fonte de energia.\n\nGliconeogênese a partir do lactato ativada (C): transformar lactato em glicose exige converter piruvato em oxaloacetato na mitocôndria, etapa ligada ao ciclo de Krebs; com essas enzimas comprometidas, a via não funciona.",
+    tip: "Mercúrio bloqueia enzimas com –SH: Krebs para, falta succinil-CoA, cai a síntese de heme e surge anemia.",
     reference: 'Baynes, John W. e Dominiczak, Marek H. Bioquímica Médica. 5 ed. Rio de Janeiro: Elsevier, 2022. Murray, Robert K. et al. Bioquímica Ilustrada de HARPER. 31 ed. Porto Alegre: AMGH, 2021. Sanches, José A. Garcia; Compri-Nardy, Mariane B. e Breda-Stella, Mercia. Bases da Bioquímica e Tópicos de Biofísica- Um Marco Inicial. 2 ed. Rio de Janeiro: Guanabara Koogan, 2021.',
     tags: ['toxicologia', 'bioquímica']
   },
@@ -623,8 +661,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A diminuição do TSH observada na doença de Graves é decorrente da destruição das células produtoras desse hormônio na hipófise. A destruição dessas células causa uma desregulação da produção de hormônios tireoidianos (T3 e T4), levando ao hipertireoidismo.'
     ],
     correctAnswer: 1,
-    explanation: 'Anticorpos anti-receptor de TSH (TRAb) agem como agonistas do receptor, estimulando continuamente a glândula.',
-    commentary: 'A doença de Graves é causada pela produção de anticorpos com ação agonista (estimuladores) específicos para o receptor de TSH. A ligação desses autoanticorpos com o receptor “simula” a ação do Hormônio Estimulador da Tireoide, induzindo a secreção dos hormônios tireoidianos, e consequente hipertireoidismo. Trata-se, portanto, de uma resposta autoimune mediada por anticorpos não-IgE (hipersensibilidade do tipo II), com disfunção celular. As demais alternativas estão incorretas pois: 1) não existe destruição direta das células da tireóide em decorrência da presença dos autoanticorpos; 2) a Doença de Graves não é decorrente de hipersensibilidade mediada por deposição de imunocomplexos (hipersensibilidade do tipo III); 3) Os autoanticorpos presentes na Doença de Graves são direcionados ao receptor do TSH, e não ao próprio TSH.',
+    explanation: "Hipertireoidismo com bócio difuso e exoftalmia caracteriza a doença de Graves. Ela é causada por autoanticorpos contra o receptor do TSH (TRAb) que agem como agonistas: ligam-se ao receptor e imitam o TSH, estimulando a glândula a crescer e a produzir T3 e T4 sem controle.\n\nÉ uma hipersensibilidade do tipo II mediada por anticorpo que altera a função celular sem destruir a célula. O excesso de hormônios inibe a hipófise por retroalimentação negativa, o que explica o TSH suprimido.",
+    commentary: "Destruição das células da tireoide (A): a liberação de hormônio pré-formado por destruição ocorre nas tireoidites (como a fase inicial da tireoidite de Hashimoto ou a subaguda), não na doença de Graves.\n\nDeposição de imunocomplexos (C): esse é o mecanismo da hipersensibilidade tipo III (lúpus, glomerulonefrite pós-estreptocócica), que não explica a doença de Graves.\n\nDestruição de células hipofisárias (D): o TSH está baixo porque o excesso de T3 e T4 freia a hipófise; se as células produtoras de TSH fossem destruídas, o resultado seria hipotireoidismo central.",
+    tip: "Graves: TRAb estimulante imita o TSH (hipersensibilidade tipo II). TSH baixo por retroalimentação.",
     reference: 'RICH, R.R..; FLEISHER, T.A.; SCHROEDER, H.W.; WEYAND, C.M.; CORRY, D.B. ; PUCK, J.M. Clinical Immunology: Principles and Practice. 6th. ed. Elsevier, 2022.',
     tags: ['imunologia', 'endocrinologia']
   },
@@ -639,8 +678,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Acetilcolinérgicos'
     ],
     correctAnswer: 0,
-    explanation: 'O haloperidol é um neuroléptico típico que atua bloqueando receptores D2 dopaminérgicos.',
-    commentary: 'O mecanismo de ação dos neurolépticos típicos como o haloperidol baseia-se no bloqueio dos receptores dopaminérgicos centrais, o que explica tanto seu efeito antipsicótico quanto seus efeitos extrapiramidais.',
+    explanation: "O haloperidol é um antipsicótico típico de alta potência, da classe das butirofenonas. Seu efeito vem do bloqueio dos receptores dopaminérgicos D2 no cérebro.\n\nNa via mesolímbica, esse bloqueio reduz alucinações e delírios. Nas outras vias, ele explica os principais efeitos adversos: na nigroestriatal, sintomas extrapiramidais (distonia aguda, acatisia, parkinsonismo e discinesia tardia); na tuberoinfundibular, aumento da prolactina; na mesocortical, piora de sintomas negativos e cognitivos. A síndrome neuroléptica maligna é a complicação grave a lembrar.",
+    commentary: "Noradrenérgicos (B): o bloqueio alfa-1 adrenérgico, que causa hipotensão postural, é marcante nos típicos de baixa potência como a clorpromazina, não é o mecanismo do efeito antipsicótico do haloperidol.\n\nSerotoninérgicos (C): o bloqueio 5-HT2A é característico dos antipsicóticos atípicos (risperidona, olanzapina, quetiapina, clozapina).\n\nColinérgicos (D): o efeito antimuscarínico (boca seca, constipação, retenção urinária) aparece em fármacos como clorpromazina e clozapina; o haloperidol tem pouca ação nesses receptores.",
+    tip: "Haloperidol = bloqueio D2. Alta potência, logo muito efeito extrapiramidal e pouco anticolinérgico.",
     reference: 'Farmacologia ( Rang H.P., Dale M.M. 9 ed. 2020).',
     tags: ['farmacologia', 'psiquiatria']
   },
@@ -655,8 +695,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A associação de salbutamol e ipratrópio é contraindicada por atuarem no mesmo receptor.'
     ],
     correctAnswer: 1,
-    explanation: 'O salbutamol é um agonista beta 2 adrenérgico utilizado na asma, podendo causar tremor e taquicardia como efeitos colaterais.',
-    commentary: 'O salbutamol é utilizado na asma como beta 2 agonista, tendo como efeito colateral o tremor de extremidades e taquicardia. O ipratrópio atua como antagonista dos receptores muscarínicos e a boca seca é o único efeito colateral. Solumedrol é um corticoide, que na crise de asma atua como antiinflamatório e pode causar hipopotassemia e não causa diarreia. Ipratrópio e salbutamol atuam em recepotres diferentes.',
+    explanation: "O salbutamol é um agonista beta-2 adrenérgico de curta ação: relaxa a musculatura lisa brônquica e é a base do tratamento da crise de asma. Como também estimula receptores beta no músculo esquelético e no coração, seus efeitos adversos mais comuns são tremor de extremidades e taquicardia (além de hipocalemia em doses altas).\n\nNa crise moderada a grave, associa-se o brometo de ipratrópio, um antagonista muscarínico, e um corticoide sistêmico, como a metilprednisolona (Solu-Medrol), para controlar a inflamação.",
+    commentary: "Ipratrópio como xantina (A): o ipratrópio é anticolinérgico (antimuscarínico), não xantina; por via inalatória, o efeito adverso mais comum é boca seca. Xantinas são aminofilina e teofilina.\n\nSolumedrol como antileucotrieno (C): é metilprednisolona, um corticoide; pode causar hipocalemia e hiperglicemia, e não hiperpotassemia. Antileucotrieno é o montelucaste.\n\nAssociação contraindicada (D): os dois agem em receptores diferentes (beta-2 e muscarínico) e a associação é recomendada na crise moderada a grave, pois tem efeito broncodilatador somado.",
+    tip: "Salbutamol = beta-2 agonista (tremor, taquicardia). Ipratrópio = antimuscarínico (boca seca). Solu-Medrol = corticoide.",
     reference: 'RANG, H. P.; DALE, M.M.; RITTER, J. M. Farmacologia. 8. ed. Rio de Janeiro: Elsevier, 2016',
     tags: ['farmacologia', 'pneumologia']
   },
@@ -672,8 +713,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Trichomonas vaginalis'
     ],
     correctAnswer: 3,
-    explanation: 'O corrimento amarelo-esverdeado bolhoso com odor fétido e cérvice em framboesa (pontos hemorrágicos) é característico de Trichomonas vaginalis.',
-    commentary: 'Mulheres com vaginite aguda causada por T. vaginalis frequentemente têm corrimento devido a infiltração por leucócitos. A consistência do corrimento varia de acordo com a paciente, de fino e escasso a espesso e abundante. O sintoma clássico de corrimento amarelo, abundante, espumoso e mucopurulento ocorre em somente 20% dos casos. Há também odor vaginal anormal e prurido vulvar. A vagina e a cérvice podem ser edematosas e eritematosas, com erosão e pontos hemorrágicos na parede cervical conhecidos como colpitis macularis ou cérvice com aspecto de morango. O protozoário pode ser visualizado em microscopia óptica e o aspecto bolhoso da secreção é um sinal típico desse parasita.',
+    explanation: "Corrimento amarelo-esverdeado, bolhoso e fétido, disúria, dispareunia e colo do útero edemaciado com pontos hemorrágicos (o chamado colo em framboesa ou em morango) formam o quadro típico da tricomoníase. A estrutura vista na urina é o protozoário flagelado Trichomonas vaginalis, que pode aparecer no exame de urina e no exame a fresco da secreção, onde se vê seu movimento.\n\nÉ uma IST: o tratamento é com metronidazol, e a parceria sexual também deve ser tratada.",
+    commentary: "Gardnerella vaginalis (A): causa vaginose bacteriana, com corrimento acinzentado, homogêneo e odor de peixe, sem inflamação do colo; ao microscópio aparecem células-guia (clue cells), não protozoários.\n\nChlamydia trachomatis (B): causa cervicite, muitas vezes assintomática, com secreção mucopurulenta endocervical; é bactéria intracelular e não é vista como estrutura móvel no exame de urina.\n\nNeisseria gonorrhoeae (C): também causa cervicite e uretrite purulenta; na bacterioscopia aparecem diplococos Gram-negativos, não protozoários flagelados.",
+    tip: "Corrimento amarelo-esverdeado bolhoso + colo em framboesa = Trichomonas; trate com metronidazol, inclusive a parceria.",
     reference: 'LÓPEZ, L. B. et al. Strategies by which some pathogenictrichomonads integrate diverse signals in the decision-making process. An Acad Bras, v. 72, p. 173-86, 2000. AMATO NETO, V.; AMATO, V. S.; GRYSCHEK, Ronaldo Cesar Borges . Parasitologia: Uma Abordagem Clínica. 1. ed. São Paulo: Elsevier, 2008. v. 1. 456p',
     tags: ['microbiologia', 'ginecologia']
   },
@@ -688,8 +730,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Direta no plasma, por obstrução do canalículo biliar.'
     ],
     correctAnswer: 0,
-    explanation: 'Na hepatite viral, há deficiência da glicuronil transferase na captação e conjugação, elevando a bilirrubina indireta.',
-    commentary: 'Este caso clínico trata de uma situação de hepatite viral, a icterícia nesta situação ocorre por alteração hepática. A glicuronil transferase é a enzima que capta a bilirrubina indireta e a conjuga com ácido glicurônico formando a bilirrubina direta ou conjugada. Na hepatite viral há deficiência desta enzima, levando ao aumento da bilirrubina indireta. Na icterícia por obstrução biliar há aumento da bilirrubina direta e não há alteração das enzimas hepáticas. O caso mostra número normal de hemácias e hematócrito, o que indica que a icterícia não é provocada por anemia hemolítica.',
+    explanation: "Pele amarelada com AST e ALT elevadas em homem que não bebe sugere lesão hepatocelular, como uma hepatite viral. O hemograma normal (hemoglobina, hematócrito e hemácias normais) afasta hemólise como causa da icterícia.\n\nA banca considera que a lesão do hepatócito reduz a capacidade de conjugar a bilirrubina, já que a glicuronil transferase (UDP-glicuronosiltransferase) é a enzima que transforma a bilirrubina indireta em direta; por isso marca a alternativa A. Na prática, porém, a lesão hepatocelular prejudica todas as etapas (captação, conjugação e excreção), e costuma predominar a bilirrubina direta: é ela, por ser hidrossolúvel, que escurece a urina, e as fezes acólicas indicam que pouca bilirrubina chega ao intestino. A deficiência isolada da enzima é o mecanismo de Gilbert e Crigler-Najjar, em que não há colúria.",
+    commentary: "Indireta por obstrução do canalículo (B): obstrução das vias biliares impede a saída da bilirrubina já conjugada, elevando a bilirrubina direta, não a indireta.\n\nIndireta por hemólise (C): o hemograma normal afasta anemia hemolítica, e a hemólise não explica transaminases elevadas, colúria e acolia.\n\nDireta por obstrução do canalículo (D): a banca a descartou por interpretar o quadro como lesão hepatocelular (transaminases altas), e não como obstrução; ainda assim, colúria e acolia são achados de aumento da bilirrubina direta.",
+    tip: "Colúria = bilirrubina direta. Deficiência isolada de glicuronil transferase (Gilbert) eleva só a indireta, sem colúria.",
     reference: 'Douglas, C.R. Tratado de Fisiologia Aplicado às Ciências Médicas – 6a ed (2006). Koeppen, B.M.& Stanton, B.A. Berne & Levy – Fisiologia – 6a ed. (2009). Sato, M.A. Tratado de Fisiologia Médica – 1a ed (2021). Grossman, S., Porth C.M. Porth fisiopatologia. 9ª ed.',
     tags: ['fisiologia', 'hepatologia']
   },
@@ -704,8 +747,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Ducto linfático direito'
     ],
     correctAnswer: 1,
-    explanation: 'O quilotórax é causado pela laceração ou obstrução do ducto torácico, que transporta o quilo pelo mediastino.',
-    commentary: 'O quilotórax resulta tanto da obstrução, ou dificuldade de escoamento do quilo, quanto da laceração do ducto torácico. Este ducto que tem início no abdome, na cisterna do quilo, ascende pelo mediastino posterior e pela abertura torácica superior. Em parte de seu trajeto, o ducto torácico entra na veia braquiocefálica esquerda.',
+    explanation: "Líquido leitoso na toracocentese é quilo, linfa rica em gordura absorvida no intestino. Quilotórax após cirurgia de esôfago indica lesão do ducto torácico, que carrega o quilo do abdome até o sistema venoso.\n\nO ducto torácico começa na cisterna do quilo, no abdome, sobe pelo mediastino posterior à direita da aorta e, por volta da altura de T4-T5, cruza para a esquerda, terminando na junção das veias subclávia e jugular interna esquerdas. Por isso uma lesão no mediastino superior costuma causar quilotórax à esquerda, como no caso.",
+    commentary: "Linfonodos broncomediastinais (A): drenam linfa de pulmões e mediastino, sem conteúdo de quilo intestinal; não produzem quilotórax.\n\nCisterna do quilo (C): fica no abdome, na altura das primeiras vértebras lombares, longe do campo da cirurgia no mediastino superior.\n\nDucto linfático direito (D): drena só o quadrante superior direito do corpo, não recebe linfa intestinal e, se lesado, o derrame seria à direita.",
+    tip: "Líquido leitoso no tórax = quilotórax = lesão do ducto torácico (no mediastino superior, derrame à esquerda).",
     reference: 'MOORE, K. L.; DALLEY, A. F.; AGUR, A. M. R. Moore anatomia orientada para a clínica. 7. ed. Rio de Janeiro: Guanabara Koogan, 2014.',
     tags: ['anatomia', 'cirurgia']
   },
@@ -720,8 +764,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Músculo iliopsoas'
     ],
     correctAnswer: 1,
-    explanation: 'O músculo glúteo médio, inervado pelo nervo glúteo superior, é o principal estabilizador pélvico na marcha.',
-    commentary: 'O nervo glúteo superior inerva os músculos glúteo médio, glúteo mínimo e tensor da fáscia lata. Desses, o músculo glúteo médio é responsável pela abdução de quadril e pela estabilidade pélvica importante na marcha.',
+    explanation: "O nervo glúteo superior inerva o glúteo médio, o glúteo mínimo e o tensor da fáscia lata. O glúteo médio é o principal abdutor do quadril e, durante a marcha, mantém a pelve nivelada quando o corpo se apoia em uma perna só.\n\nCom ele fraco, ao apoiar no membro afetado a pelve cai para o lado oposto: é o sinal de Trendelenburg positivo. Para compensar, o paciente inclina o tronco para o lado da lesão, produzindo a marcha característica.",
+    commentary: "Glúteo máximo (A): é inervado pelo nervo glúteo inferior e atua principalmente na extensão do quadril (levantar da cadeira, subir escadas); sua fraqueza não dá sinal de Trendelenburg.\n\nPiriforme (C): é rotador lateral do quadril, inervado por ramos diretos do plexo sacral; não sustenta a pelve no apoio unipodal.\n\nIliopsoas (D): é o principal flexor do quadril, inervado pelo plexo lombar e pelo nervo femoral; não tem relação com o nervo glúteo superior.",
+    tip: "Trendelenburg positivo = glúteo médio fraco = nervo glúteo superior. A pelve cai para o lado sadio.",
     reference: 'MOORE, K. L.; DALLEY, A. F.; AGUR, A. M. R. Moore anatomia orientada para a clínica. 7. ed. Rio de Janeiro: Guanabara Koogan, 2014.',
     tags: ['anatomia', 'ortopedia']
   },
@@ -801,8 +846,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Seta 4 indica adventícia com tecido conjuntivo frouxo.'
     ],
     correctAnswer: 0,
-    explanation: 'A mucosa gástrica é revestida por epitélio simples cilíndrico que se invagina formando as criptas e glândulas.',
-    commentary: 'O estômago apresenta túnica mucosa com epitélio simples cilíndrico, tecido conjuntivo frouxo, criptas e glândulas. A submucosa é de tecido conjuntivo moderadamente denso. A muscular apresenta três direções de fibras. A quarta camada é a serosa (abaixo do diafragma) e não adventícia.',
+    explanation: "A parede do estômago tem quatro túnicas: mucosa, submucosa, muscular e serosa. A mucosa (seta 1) é formada por epitélio simples cilíndrico secretor de muco, que se aprofunda formando as fossetas gástricas (fovéolas) onde desembocam as glândulas, apoiado na lâmina própria de tecido conjuntivo frouxo e na muscular da mucosa.\n\nPor isso a alternativa A descreve corretamente a túnica indicada. Vale lembrar a particularidade do estômago: a muscular própria tem três camadas (oblíqua interna, circular média e longitudinal externa).",
+    commentary: "Submucosa de tecido conjuntivo denso (B): a banca considera a submucosa um conjuntivo menos compacto, rico em vasos e com o plexo submucoso; na lâmina, a camada da seta 2 aparece clara e frouxa.\n\nMuscular com uma só direção (C): no estômago, a muscular própria tem fibras lisas em três direções, e não em uma.\n\nAdventícia (D): o estômago fica na cavidade abdominal, revestido por peritônio; sua camada externa é a serosa (conjuntivo frouxo coberto por mesotélio), não adventícia.",
+    tip: "Estômago: mucosa com epitélio cilíndrico simples e fovéolas, muscular em três camadas e serosa por fora.",
     reference: 'JUNQUEIRA, L. U.; CARNEIRO, J. Histologia Básica – Texto e Atlas. 13. Ed. Rio de Janeiro: Guanabara Koogan, 2017.',
     tags: ['histologia', 'gastroenterologia']
   },
@@ -866,8 +912,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Sim, pois a irrigação do nó sinoatrial, responsável pelo sistema de condução do miocárdio, é feita pelo ramo para o nó sinoatrial, proveniente da artéria coronária esquerda.'
     ],
     correctAnswer: 1,
-    explanation: 'O nó sinoatrial é irrigado em 60% das pessoas pela artéria coronária direita (ramo do nó sinoatrial).',
-    commentary: 'O nó sinoatrial (sinusal) é geralmente irrigado pelo ramo para o nó sinoatrial oriundo da artéria coronária direita. Portanto, uma obstrução na artéria circunflexa (ramo da coronária esquerda) geralmente não afeta o nó sinoatrial na maioria da população.',
+    explanation: "O nó sinoatrial é o marca-passo natural do coração. A artéria do nó sinoatrial nasce, na maioria das pessoas (cerca de 60%), da artéria coronária direita; o nó atrioventricular também costuma ser irrigado pela coronária direita, por um ramo que surge perto da origem da artéria interventricular posterior, nos corações de dominância direita.\n\nNesse padrão mais comum, a obstrução do ramo circunflexo da coronária esquerda não compromete o sistema de condução. É esse padrão anatômico que a banca cobra, e por isso a resposta é B.",
+    commentary: "AV irrigado pelo ramo do nó sinusal vindo da esquerda (A): mistura os dois nós; o nó AV recebe a artéria do nó atrioventricular, e não a do nó sinusal, e no padrão comum ela vem da coronária direita.\n\nNó sinusal irrigado pelo ramo do nó AV (C): inverte as estruturas; o nó sinusal tem sua própria artéria, que não é ramo da interventricular posterior.\n\nArtéria do nó sinoatrial vinda da coronária esquerda (D): isso acontece em uma minoria das pessoas (pelo circunflexo); no padrão mais frequente ela nasce da coronária direita.",
+    tip: "Artéria do nó sinusal e artéria do nó AV vêm, na maioria das pessoas, da coronária direita.",
     reference: 'MOORE, K. L.; DALLEY, A. F.; AGUR, A. M. R. Moore anatomia orientada para a clínica. 7. ed. Rio de Janeiro: Guanabara Koogan, 2014.',
     tags: ['anatomia', 'cardiologia']
   },
@@ -883,8 +930,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Mycobacterium Leprae; Hanseníase'
     ],
     correctAnswer: 3,
-    explanation: 'Lesões hipopigmentadas com perda de sensibilidade e rarefação de pelos são clássicas de Hanseníase (M. leprae).',
-    commentary: 'O diagnóstico de Hanseníase baseia-se em lesões cutâneas com alteração de sensibilidade e sinais de comprometimento neural. A biópsia com Ziehl-Neelsen pode identificar o bacilo álcool-ácido resistente Mycobacterium leprae. A detecção precoce é crucial para prevenir sequelas e incapacidades físicas.',
+    explanation: "Manchas hipocrômicas com perda de sensibilidade e rarefação de pelos são o quadro clássico da hanseníase. Na biópsia corada por Ziehl-Neelsen aparecem bacilos álcool-ácido resistentes, o Mycobacterium leprae, que tem predileção por pele e nervos periféricos.\n\nO diagnóstico é principalmente clínico (lesão de pele com alteração de sensibilidade, nervo espessado ou baciloscopia positiva). O tratamento é a poliquimioterapia, oferecida gratuitamente pelo SUS, e o diagnóstico precoce evita incapacidades físicas, além de interromper a transmissão.",
+    commentary: "Tuberculose (A): na pele aparece em formas como escrofuloderma e lúpus vulgar; não causa manchas hipocrômicas anestésicas.\n\nParacoccidioidomicose (B): é causada por fungo, com lesões ulceradas em mucosa oral (estomatite moriforme) e pulmão; na biópsia aparecem leveduras com brotamento múltiplo, não bacilos álcool-ácido resistentes.\n\nLeishmaniose tegumentar (C): causa úlcera de bordas elevadas e fundo granuloso; na biópsia veem-se formas amastigotas dentro de macrófagos, não bacilos.",
+    tip: "Mancha hipocrômica com perda de sensibilidade + BAAR no Ziehl-Neelsen = hanseníase.",
     reference: 'Robbins & Cotran - Patologia - Bases Patológicas das Doenças, 9ª ed. Guia prático sobre a Hanseníase, MS, 2017.',
     tags: ['infectologia', 'dermatologia', 'microbiologia']
   },
@@ -899,8 +947,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Saco vitelino'
     ],
     correctAnswer: 2,
-    explanation: 'A mola hidatiforme é uma doença trofoblástica que afeta a placenta em formação.',
-    commentary: 'A placenta é o anexo derivado do trofoblasto. Na mola hidatiforme, ocorre proliferação exacerbada do trofoblasto (sincicio e citotrofoblasto), com hidropisia das vilosidades coriônicas. O sinciciotrofoblasto produz altos níveis de beta-hCG, o que pode causar hiperêmese, pré-eclâmpsia precoce e cistos tecaluteínicos nos ovários.',
+    explanation: "A mola hidatiforme é uma doença trofoblástica gestacional: o trofoblasto prolifera de forma exagerada e as vilosidades coriônicas ficam edemaciadas, formando as vesículas vistas no ultrassom. Como o sinciciotrofoblasto produz hCG, os níveis do hormônio ficam muito acima do esperado, o que explica a hiperêmese, os cistos ovarianos (cistos tecaluteínicos, estimulados pelo hCG) e a pré-eclâmpsia antes de 20 semanas.\n\nO trofoblasto e as vilosidades coriônicas formam a parte fetal da placenta; por isso o anexo embrionário envolvido é a placenta. Na mola completa não há embrião, como no caso.",
+    commentary: "Alantoide (A): participa da formação dos vasos umbilicais e dá origem ao úraco; não é tecido trofoblástico.\n\nCordão umbilical (B): conecta embrião e placenta e contém os vasos umbilicais; não produz hCG nem forma as vesículas da mola.\n\nSaco vitelino (D): participa da nutrição inicial, da hematopoese precoce e da origem das células germinativas; está ligado a tumores que produzem alfafetoproteína, não à mola.",
+    tip: "Mola hidatiforme = proliferação do trofoblasto (placenta) + hCG muito alto + cistos tecaluteínicos.",
     reference: 'Garner EI et al. Gestational trophoblastic disease. Clin Obstet Gynecol. 2007.',
     tags: ['embriologia', 'obstetrícia']
   },
@@ -931,8 +980,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Haemophilus influenzae'
     ],
     correctAnswer: 2,
-    explanation: 'Diplococos Gram-negativos no líquor são patognomônicos de Neisseria meningitidis (meningococo).',
-    commentary: 'A Neisseria meningitidis apresenta-se como diplococos Gram-negativos em "grão de café". O Haemophilus influenzae é um cocobacilo Gram-negativo. O Streptococcus pneumoniae (pneumococo) é um diplococo Gram-positivo.',
+    explanation: "Febre alta, cefaleia intensa e rigidez de nuca com líquor turvo indicam meningite bacteriana. A bacterioscopia com diplococos Gram-negativos aponta para Neisseria meningitidis, o meningococo, que também pode causar meningococcemia com petéquias e choque.\n\nNa prática: iniciar ceftriaxona sem atraso, notificar imediatamente e fazer quimioprofilaxia dos contatos próximos (rifampicina é a opção mais usada).",
+    commentary: "Streptococcus pneumoniae (A): também causa meningite, mas aparece como diplococo Gram-positivo (lanceolado).\n\nStaphylococcus aureus (B): é coco Gram-positivo em cachos e é causa rara de meningite fora de contexto de neurocirurgia, trauma ou derivação.\n\nHaemophilus influenzae (D): causa meningite em crianças pequenas (hoje rara com a vacina), mas é cocobacilo Gram-negativo, não diplococo.",
+    tip: "Líquor com diplococo Gram-negativo = meningococo; Gram-positivo = pneumococo; cocobacilo Gram-negativo = Haemophilus.",
     reference: 'JAWETZ, E. et al. Microbiologia médica. 21. ed. Rio de Janeiro: Guanabara Koogan, 2000.',
     tags: ['microbiologia', 'pediatria', 'infectologia']
   },
@@ -1624,8 +1674,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Elevação da pressão hidrostática devido à hipertensão portal.'
     ],
     correctAnswer: 3,
-    explanation: 'O gradiente soro-ascite de albumina (GASA = 3,0 – 1,0 = 2,0 g/dL) é maior que 1,1 g/dL, indicando ascite por hipertensão portal. O mecanismo fisiopatológico envolve aumento da pressão hidrostática no sistema porta, além de ativação de SRAA, promovendo retenção de sódio e água.',
-    commentary: 'Comentários sobre a resposta correta:\n(D) O gradiente soro-ascite de albumina (GASA = 3,0 – 1,0 = 2,0 g/dL) é maior que 1,1 g/dL, indicando ascite por hipertensão portal. O mecanismo fisiopatológico envolve aumento da pressão hidrostática no sistema porta, além de ativação de sistemas neuro-hormonais (como SRAA), promovendo retenção de sódio e água.\n\nComentários sobre os distratores:\n(A) A hipoalbuminemia pode causar ascite (ex: síndrome nefrótica), mas a albumina sérica geralmente está muito baixa, o GASA tende a ser baixo (<1,1 g/dL), pois há pouca diferença entre soro e líquido e, no caso: Albumina sérica = 3,0 g/dL (não é gravemente baixa) e GASA = 2,0 g/dL (alto), logo, a hipoalbuminemia isolada não explica o quadro.\n(B) Esse mecanismo é típico de ascite exsudativa, como ocorre em peritonite bacteriana, tuberculose peritoneal, carcinomatose. Nesses casos, espera-se: GASA < 1,1 g/dL; proteínas elevadas no líquido (>2,5 g/dL); maior contagem de leucócitos. No caso apresentado: GASA = 2,0 g/dL (alto, sugere hipertensão portal) Proteína = 1,5 g/dL (baixa). Portanto, não há evidência de processo inflamatório/permeabilidade aumentada.\n(C) Esse mecanismo ocorre em situações como linfoma, carcinomatose, ascite quilosa. Características esperadas são líquido ricos em proteínas, aspecto frequentemente leitoso (quiloso) e GASA geralmente baixo (<1,1). No caso: Proteína baixa (1,5 g/dL) e GASA alto. Isso afasta fortemente ascite por obstrução linfática.',
+    explanation: "O primeiro passo diante de uma ascite é calcular o GASA, a diferença entre a albumina do sangue e a do líquido ascítico. Neste caso a conta dá 2,0 g/dL (3,0 menos 1,0). Valor igual ou acima de 1,1 g/dL indica que a ascite se deve à hipertensão portal.\n\nNo etilista, a causa é a cirrose: a fibrose aumenta a resistência ao fluxo portal e eleva a pressão hidrostática nos sinusoides, empurrando líquido para a cavidade. A vasodilatação esplâncnica ativa o sistema renina-angiotensina-aldosterona e o sistema simpático, que retêm sódio e água e perpetuam a ascite. A proteína baixa no líquido (menor que 2,5 g/dL) e a celularidade baixa, com mononucleares, reforçam que não há infecção nem inflamação peritoneal.",
+    commentary: "Hipoalbuminemia grave (A): com albumina no sangue de 3,0 g/dL, a hipoalbuminemia é apenas leve; além disso, a ascite por queda da pressão oncótica (como na síndrome nefrótica) cursa com GASA abaixo de 1,1 g/dL.\n\nAumento da permeabilidade por infecção (B): peritonite bacteriana, tuberculose ou carcinomatose geram GASA baixo e líquido rico em proteínas; uma peritonite bacteriana teria 250 ou mais neutrófilos/mm³, o que não ocorre aqui.\n\nObstrução linfática (C): produz ascite quilosa, de aspecto leitoso, rica em proteínas e triglicerídeos e com GASA geralmente baixo, o oposto dos achados.",
+    tip: "GASA ≥ 1,1 g/dL = hipertensão portal. Proteína do líquido < 2,5 g/dL sugere cirrose; ≥ 2,5 g/dL, causa cardíaca.",
     reference: 'LOPES, A. C. Tratado de clínica médica, v. 1, 3. ed. – Rio de Janeiro: Roca, 2016.',
     tags: ['fisiopatologia', 'gastroenterologia']
   },
@@ -1640,8 +1691,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) A pCO₂ de 23mmHg está abaixo do intervalo esperado para compensação respiratória, e a persistência do pH em 7,18 demonstra que os sistemas de tamponamento foram superados pela produção de corpos cetônicos.'
     ],
     correctAnswer: 1,
-    explanation: 'A pCO₂ de 23mmHg está dentro do intervalo esperado (23 ± 2mmHg) pela fórmula de Winter, confirmando hiperventilação como compensação respiratória adequada da cetoacidose diabética, sem distúrbio respiratório primário.',
-    commentary: 'Comentários sobre a resposta correta:\n(B) Aplicando a fórmula: (1,5 × 10) + 8 ± 2 = 23 ± 2 mmHg. A pCO₂ de 23 mmHg está exatamente no valor central esperado, confirmando compensação respiratória adequada. O pH permanece baixo (7,18) porque a compensação respiratória tem eficiência de 50–75% e jamais normaliza completamente o pH no distúrbio metabólico primário.\n\nComentários sobre os distratores:\n(A) Acidose respiratória associada existiria se a pCO₂ estivesse acima de 25 mmHg (limite superior do intervalo esperado). A pCO₂ de 23 mmHg está dentro do intervalo calculado, afastando esse diagnóstico.\n(C) Erro conceitual grave: a compensação respiratória é parcial (eficiência de 50–75%) e nunca normaliza o pH em distúrbios metabólicos primários. O pH de 7,18 confirma compensação adequada, porém incompleta — como esperado fisiologicamente.\n(D) A persistência do pH baixo (7,18) após compensação respiratória adequada é um achado esperado e fisiologicamente normal — a compensação é parcial por definição (eficiência de 50–75%). O pH de 7,18 não indica falência dos sistemas de tamponamento nem necessidade de bicarbonato intravenoso.',
+    explanation: "O paciente tem cetoacidose diabética: acidose metabólica (pH 7,18 com bicarbonato de 10 mEq/L) e respiração de Kussmaul. Para saber se o pulmão está compensando bem, usa-se a fórmula de Winter: pCO₂ esperada = 1,5 × 10 + 8 = 23, com margem de ± 2, ou seja, de 21 a 25 mmHg.\n\nA pCO₂ medida é 23 mmHg, dentro da faixa: a hiperventilação é a compensação adequada e não há distúrbio respiratório associado. O pH continua ácido porque a compensação respiratória de um distúrbio metabólico é sempre parcial e nunca devolve o pH ao normal. O tratamento é corrigir a causa com hidratação venosa e insulina; bicarbonato só em acidose muito grave (pH abaixo de 6,9).",
+    commentary: "Acidose respiratória associada (A): só seria o caso com pCO₂ maior que 25 mmHg, o teto da faixa calculada; com 23 mmHg, a ventilação está fazendo o esperado.\n\npH normalizado (C): o pH é 7,18, longe do normal; além disso, a compensação nunca corrige totalmente um distúrbio primário.\n\npCO₂ abaixo do esperado (D): o valor está exatamente no centro da faixa calculada; uma pCO₂ abaixo de 21 mmHg é que indicaria alcalose respiratória associada. O pH baixo é esperado e não significa falência dos tampões.",
+    tip: "Winter: pCO₂ esperada = 1,5 × HCO₃⁻ + 8 ± 2. Acima = acidose respiratória junto; abaixo = alcalose respiratória junto.",
     reference: 'Albert MS, Dell RB, Winters RW. Quantitative displacement of acid-base equilibrium in metabolic acidosis. PMID: 6016545. | HALL, John E. Tratado de Fisiologia Médica. Cap. 31. 13. ed. Rio de Janeiro: Elsevier, 2017.',
     tags: ['fisiologia', 'nefrologia', 'endocrinologia']
   },
@@ -1656,8 +1708,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Encaminhar a paciente para avaliação com nefrologista para investigação aprofundada de causas de ITU recurrentes, sem a necessidade de exames adicionais de urina na UBS.'
     ],
     correctAnswer: 2,
-    explanation: 'Solicitar urocultura e antibiograma para identificar o agente etiológico e seu perfil de sensibilidade é a conduta mais adequada dado o histórico de infecções urinárias de repetição recorrentes.',
-    commentary: 'Comentários sobre a resposta correta:\n(C) A paciente apresenta sintomas clássicos de ITU e um EAS com alterações que confirmam processo inflamatório/infeccioso. No entanto, o histórico de ITUs de repetição, tratadas empiricamente, aumenta o risco de resistência bacteriana. Nesses casos, o planejamento diagnóstico mais apropriado inclui a solicitação de urocultura e antibiograma. Este exame é fundamental para identificar o patógeno específico e seu perfil de sensibilidade aos antimicrobianos, permitindo um tratamento antibiótico direcionado, mais eficaz e que minimize o risco de falha terapêutica e de desenvolvimento de mais resistência. A antibioticoterapia empírica deve ser considerada com cautela em casos de recorrência, sendo a cultura essencial para guiar a conduta.\n\nComentários sobre os distratores:\n(A) Incorreta. A presença de disúria, urgência, aumento da frequência urinária, esterase leucocitária positiva e grande quantidade de leucócitos e bactérias no EAS, mesmo sem febre, é altamente sugestiva de ITU. A hipótese de contaminação é menos provável com um EAS tão alterado e sintomatologia clara.\n(B) Incorreta. Embora a antibioticoterapia empírica possa ser uma opção em casos de ITU não complicada e primeiro episódio, em pacientes com histórico de recorrência e tratamentos empíricos prévios, a probabilidade de resistência é maior.\n(D) Incorreta. Embora a investigação de causas de ITU recorrente por um especialista possa ser necessária a longo prazo, a conduta imediata na UBS, diante de um quadro agudo e um EAS alterado, é confirmar a infecção e planejar o tratamento.',
+    explanation: "Disúria, urgência e polaciúria sem febre ou dor lombar caracterizam cistite, e o exame de urina com esterase leucocitária positiva, muitos leucócitos e bactérias confirma um processo infeccioso. O dado que muda a conduta é a história de infecções de repetição tratadas sempre de forma empírica.\n\nO uso repetido de antibióticos seleciona bactérias resistentes. Por isso, na cistite recorrente, deve-se colher urocultura com antibiograma antes de tratar: ela identifica o agente e mostra a que antibióticos ele é sensível, o que permite escolher (ou ajustar) o tratamento e reduzir a chance de falha. A investigação de fatores que favorecem a recorrência pode ser feita depois, na própria APS.",
+    commentary: "Contaminação da amostra (A): sintomas típicos associados a uma urina tão alterada tornam a infecção verdadeira muito provável; recoletar só atrasaria a conduta. A ausência de febre apenas indica infecção baixa.\n\nAntibiótico empírico imediato (B): é aceitável na cistite não complicada isolada, mas aqui há recorrência e tratamentos empíricos prévios, com maior risco de resistência; além disso, fluoroquinolona não é primeira escolha para cistite.\n\nEncaminhar ao nefrologista sem exames (D): o quadro agudo deve ser resolvido na UBS, e a urocultura é básica; a recorrência de cistite, em geral, não exige especialista de imediato.",
+    tip: "Cistite de repetição ou tratamentos empíricos prévios: colha urocultura com antibiograma antes do antibiótico.",
     reference: 'SOCIEDADE BRASILEIRA DE INFECTOLOGIA. Recomendações para o manejo das infecções do trato urinário. 2019. | HOOTON, T. M. et al. Clinical Infectious Diseases, 2018.',
     tags: ['infectologia', 'nefrologia']
   },
@@ -1672,8 +1725,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Aumento da biodisponibilidade oral, devido à redução do metabolismo de primeira passagem.'
     ],
     correctAnswer: 3,
-    explanation: 'Na cirrose hepática, há redução do fluxo sanguíneo hepático e da função hepatocelular, diminuindo o metabolismo de primeira passagem e aumentando a biodisponibilidade de fármacos de alta extração hepática.',
-    commentary: 'Comentários sobre a resposta correta:\n(D) Na cirrose hepática, há comprometimento da função hepatocelular e redução do fluxo sanguíneo hepático, o que diminui o metabolismo de primeira passagem, especialmente para fármacos com alta taxa de extração hepática. Isso leva ao aumento da biodisponibilidade oral.\n\nComentários sobre os distratores:\n(A) Incorreta: a hipoalbuminemia pode aumentar a fração livre do fármaco e, em muitos casos, aumentar (não reduzir) o volume de distribuição.\n(B) Incorreta: ocorre o oposto — há redução (e não aumento) do metabolismo de primeira passagem.\n(C) Incorreta: a cirrose reduz a depuração hepática, não a aumenta.',
+    explanation: "Fármacos de alta taxa de extração hepática são aqueles que o fígado retira em grande parte já na primeira passagem do sangue portal. Por isso a quantidade que chega à circulação depois de uma dose oral costuma ser pequena, e a depuração deles depende principalmente do fluxo sanguíneo hepático.\n\nNa cirrose avançada, há menos hepatócitos funcionantes e o sangue portal é desviado por shunts portossistêmicos, sem passar pelo fígado. O metabolismo de primeira passagem cai muito, e a biodisponibilidade oral aumenta. Na prática, um sedativo nessa situação atinge níveis mais altos e age por mais tempo, com risco de precipitar encefalopatia hepática: deve-se reduzir a dose ou escolher outro fármaco.",
+    commentary: "Redução do volume de distribuição (A): a hipoalbuminemia deixa mais fármaco solto no plasma, sem ligação a proteínas, e, junto com a retenção de líquido (ascite), tende a aumentar o volume de distribuição, não a reduzir.\n\nRedução da biodisponibilidade por mais primeira passagem (B): é o inverso; na cirrose, o fígado retira menos fármaco na primeira passagem.\n\nAumento da depuração por indução enzimática (C): a cirrose reduz a capacidade metabólica e o fluxo hepático, diminuindo a depuração.",
+    tip: "Cirrose + fármaco de alta extração hepática = menos primeira passagem, mais biodisponibilidade oral. Reduza a dose.",
     reference: 'Brunton LL et al. Goodman & Gilman’s The Pharmacological Basis of Therapeutics.',
     tags: ['farmacologia', 'gastroenterologia']
   },
@@ -1688,8 +1742,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Inibição da síntese de ácido fólico bacteriano por bloqueio da diidropteroato sintetase.'
     ],
     correctAnswer: 0,
-    explanation: 'As quinolonas atuam inibindo as topoisomerases bacterianas, principalmente a DNA girase, impedindo a duplicação do DNA bacteriano.',
-    commentary: 'Comentários sobre a resposta correta:\n(A) A classe das fluoroquinolonas, cuja ação antimicrobiana ocorre por inibição da DNA girase (topoisomerase II) e da topoisomerase IV bacterianas, enzimas essenciais para a replicação e transcrição do DNA bacteriano. A inibição dessas enzimas impede a duplicação do material genético, levando à morte bacteriana.\n\nComentários sobre os distratores:\n(B) Esse mecanismo corresponde aos antibióticos β-lactâmicos, como penicilinas e cefalosporinas, que atuam inibindo a síntese da parede celular bacteriana.\n(C) A inibição da síntese proteica na subunidade ribossomal 50S é característica de antibióticos como macrolídeos (azitromicina), cloranfenicol e lincosamidas, e não das fluoroquinolonas.\n(D) A inibição da síntese de ácido fólico bacteriano por bloqueio da diidropteroato sintetase é o mecanismo de ação das sulfonamidas.',
+    explanation: "As quinolonas (como ciprofloxacino e levofloxacino) agem sobre o DNA bacteriano. Elas inibem duas topoisomerases: a DNA girase (topoisomerase II), que desfaz o superenrolamento da fita para permitir a replicação, e a topoisomerase IV, que separa as fitas-filhas ao final da duplicação.\n\nCom essas enzimas bloqueadas, o DNA sofre quebras que a bactéria não consegue reparar, e o efeito é bactericida. Em geral, nos gram-negativos, o alvo principal é a DNA girase; nos gram-positivos, a topoisomerase IV.",
+    commentary: "Inibição da parede celular (B): é o mecanismo dos betalactâmicos (penicilinas, cefalosporinas, carbapenêmicos), que se ligam às proteínas ligadoras de penicilina, e da vancomicina.\n\nLigação à subunidade 50S (C): é como agem macrolídeos, clindamicina, cloranfenicol e linezolida, que bloqueiam a síntese de proteínas.\n\nBloqueio da diidropteroato sintetase (D): é o mecanismo das sulfonamidas, como o sulfametoxazol, que impedem a síntese de folato; o trimetoprim atua em outra etapa dessa via, a di-hidrofolato redutase.",
+    tip: "Quinolona = DNA girase (topoisomerase II) e topoisomerase IV. Lembre: quinolona mexe no DNA.",
     reference: 'Brunton LL, Hilal-Dandan R, Knollmann BC. Goodman & Gilman\'s the pharmacological basis of therapeutics. 14th ed. New York: McGraw-Hill Education; 2023.',
     tags: ['farmacologia', 'infectologia']
   },
@@ -1704,15 +1759,16 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Inibe a replicação do DNA bacteriano por bloqueio da DNA girase.'
     ],
     correctAnswer: 1,
-    explanation: 'A Penicilina G (Benzetacil) é um antibiótico beta-lactâmico que atua inibindo a síntese da parede celular bacteriana por meio do bloqueio da transpeptidação do peptidoglicano.',
-    commentary: 'Comentários sobre a resposta correta:\n(B) Os antibióticos β-lactâmicos (como penicilinas) atuam inibindo a síntese da parede celular bacteriana, especificamente interferindo na formação do peptidoglicano, componente estrutural essencial para a integridade da célula bacteriana. Esse efeito leva à lise bacteriana, especialmente em bactérias Gram-positivas como o Streptococcus pyogenes.\n\nComentários sobre os distratores:\n(A) Inibe a síntese proteica ao se ligar à subunidade 30S do ribossomo bacteriano. Esse é o mecanismo de antibióticos como aminoglicosídeos e tetraciclinas.\n(C) Altera a permeabilidade da membrana celular ao se ligar a ergosterol. O ergosterol é um componente típico da membrana de fungos, não de bactérias. Esse mecanismo é característico de antifúngicos (ex.: anfotericina B).\n(D) Inibe a replicação do DNA bacteriano por bloqueio da DNA girase. Esse é o mecanismo das fluoroquinolonas.',
+    explanation: "A penicilina G benzatina é um betalactâmico. Esses antibióticos se ligam às proteínas ligadoras de penicilina (PBPs), enzimas transpeptidases que fazem as ligações cruzadas entre as cadeias de peptidoglicano, a malha que dá rigidez à parede bacteriana.\n\nSem essas ligações, a parede fica frágil e a bactéria se rompe por lise osmótica, efeito bactericida sobre células em multiplicação. O Streptococcus pyogenes, gram-positivo com parede espessa de peptidoglicano, continua sensível à penicilina, que segue como tratamento de escolha da faringite estreptocócica, inclusive para prevenir febre reumática.",
+    commentary: "Ligação à subunidade 30S (A): é o mecanismo dos aminoglicosídeos e das tetraciclinas, que atuam no ribossomo e bloqueiam a síntese proteica.\n\nLigação ao ergosterol (C): o ergosterol existe na membrana dos fungos, não das bactérias; esse é o mecanismo dos polienos, como a anfotericina B e a nistatina.\n\nBloqueio da DNA girase (D): é a ação das quinolonas, que atuam na replicação do DNA, sem relação com a parede.",
+    tip: "Betalactâmico = liga-se às PBPs e impede as ligações cruzadas do peptidoglicano → lise da bactéria.",
     reference: 'Goodman & Gilman\'s The Pharmacological Basis of Therapeutics. Brunton LL, Hilal-Dandan R, Knollmann BC.',
     tags: ['farmacologia', 'infectologia']
   },
   {
     id: 'tp2026-7',
     module: 'Ciências Básicas',
-    text: 'Durante atendimento ambulatorial, quatro pacientes apresentam manifestações imunológicas distintas: glomerulonefrite por imunocomplexos, anafilaxia alimentar, dermatite de contato e doença hemolítica mediada por anticorpos. A alternativa que apresenta corretamente o principal mediador imunológico envolvido, respectively, é:',
+    text: 'Durante atendimento ambulatorial, quatro pacientes apresentam manifestações imunológicas distintas: glomerulonefrite por imunocomplexos, anafilaxia alimentar, dermatite de contato e doença hemolítica mediada por anticorpos. A alternativa que apresenta corretamente o principal mediador imunológico envolvido, respectivamente, é:',
     options: [
       '(A) Imunocomplexos – Mastócitos – Linfócitos T – IgG citotóxico',
       '(B) Complemento – IgM citotóxico – Eosinófilos – IgE',
@@ -1720,8 +1776,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Complemento – Mastócitos – Macrófagos – IgA citotóxico'
     ],
     correctAnswer: 0,
-    explanation: 'A sequência de mecanismos envolve hipersensibilidade tipo III (imunocomplexos), tipo I (mastócitos/IgE), tipo IV (linfócitos T) e tipo II (anticorpos IgG/citotóxica).',
-    commentary: 'Comentários sobre a resposta correta:\n(A) Imunocomplexos → Complexos Ag-Ac (Reação de Hipersensibilidade do Tipo III)\nAnafilaxia → Mastócitos (Reação de Hipersensibilidade do Tipo I)\nDermatite tardia → Linfócitos T (Reação de Hipersensibilidade do Tipo IV)\nCitotoxicidade → IgG (Reação de Hipersensibilidade do Tipo II)\n\nComentários sobre os distratores:\n(B) Atribui IgM à Anafilaxia e IgE à doença hemolítica, o que é incorreto.\n(C) Linfócitos B não atuam diretamente na resposta inflamatória tardia de contato (células T).\n(D) IgA não é o mediador principal de citotoxicidade clássica da doença hemolítica.',
+    explanation: "A questão cobra a classificação de Gell e Coombs das reações de hipersensibilidade, na ordem dos quatro casos:\n\n• Glomerulonefrite por imunocomplexos: tipo III, em que complexos antígeno-anticorpo se depositam nos tecidos e ativam o complemento.\n• Anafilaxia alimentar: tipo I, imediata, com IgE ligada aos mastócitos, que degranulam e liberam histamina.\n• Dermatite de contato: tipo IV, tardia, mediada por linfócitos T sensibilizados.\n• Doença hemolítica por anticorpos: tipo II, citotóxica, com IgG (ou IgM) dirigida contra antígenos da hemácia.\n\nA alternativa A traz a sequência correta: imunocomplexos, mastócitos, linfócitos T e IgG.",
+    commentary: "Complemento, IgM, eosinófilos e IgE (B): coloca IgM na anafilaxia (que é mediada por IgE e mastócitos), eosinófilos na dermatite de contato (que é por linfócitos T) e IgE na hemólise (que é por IgG/IgM).\n\nImunocomplexos, IgE, linfócitos B e macrófagos (C): acerta as duas primeiras, mas a reação tardia é comandada por linfócitos T, não B, e a hemólise é mediada por anticorpos, não por macrófagos como mediador principal.\n\nComplemento, mastócitos, macrófagos e IgA (D): a dermatite de contato depende de linfócitos T, e a IgA não é o anticorpo da citotoxicidade nas reações tipo II.",
+    tip: "Gell e Coombs: I = IgE/mastócito; II = IgG/IgM contra célula; III = imunocomplexo; IV = linfócito T (tardia).",
     reference: 'ABBAS, Abul K.; LICHTMAN, Andrew H.; PILLAI, Shiv. Imunologia celular e molecular. 10. ed. Rio de Janeiro: Guanabara Koogan, 2023, Capítulo 16.',
     tags: ['imunologia']
   },
@@ -1736,8 +1793,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Trata-se de caso no qual a resposta imune Th1 está ativa, resultando em numerosas formações granulomatosas e, por isso, à coloração de Fite-Faraco são identificados raros bacilos.'
     ],
     correctAnswer: 2,
-    explanation: 'A hanseníase virchowiana decorre de uma deficiência na resposta celular (Th1), impedindo a destruição intracelular dos bacilos e resultando em sua proliferação massiva.',
-    commentary: 'Comentários sobre a resposta correta:\n(C) Casos de hanseníase virchowiana ocorrem quando a resposta imune celular, ou seja, Th1, está deficiente. Por isso são identificados numerosos bacilos à coloração de Fite-Faraco devido à incapacidade do macrófago de lisar o microrganismo por falta de estímulo do IFN-gama.\n\nComentários sobre os distratores:\n(A) A resposta Th2 realmente está ativa com níveis altos de anticorpos ineficazes, mas a causa primária da incapacidade de contenção é a deficiência celular Th1.\n(B) A resposta Th2 não está deficiente; e encontram-se numerosos bacilos, não raros.\n(D) Na virchowiana a resposta Th1 está gravemente deprimida e não há formação típica de granulomas tuberculoides organizados com raros bacilos.',
+    explanation: "A hanseníase forma um espectro definido pela resposta imune do paciente ao Mycobacterium leprae. No polo tuberculoide, a resposta celular Th1 (interferon-gama ativando macrófagos) é forte: há granulomas bem formados e raros bacilos.\n\nNo polo virchowiano, a resposta Th1 é deficiente. Os macrófagos não conseguem destruir o bacilo, que se multiplica dentro deles (células de Virchow, espumosas), e a coloração de Fite-Faraco mostra muitos bacilos, muitas vezes em globias. A doença é disseminada, com infiltração da face e perda dos pelos das sobrancelhas (madarose), e a baciloscopia é fortemente positiva.",
+    commentary: "Th2 ativa (A): o virchowiano tem de fato predomínio Th2 e muitos anticorpos, mas esses anticorpos não protegem; a explicação para os numerosos bacilos é a falha da imunidade celular Th1, que é o ponto central cobrado.\n\nTh2 deficiente e raros bacilos (B): no virchowiano a resposta Th2 está presente, e os bacilos são numerosos, não raros.\n\nTh1 ativa com granulomas (D): descreve o polo tuberculoide, com granulomas bem formados e poucos bacilos, o oposto do virchowiano.",
+    tip: "Hanseníase: Th1 forte = tuberculoide, poucos bacilos; Th1 fraca (Th2 predomina) = virchowiana, muitos bacilos.",
     reference: 'BRASILEIRO, Filho G.: Bogliolo: Patologia. 10. ed. Rio de Janeiro. Guanabara Koogan, 2021.',
     tags: ['infectologia', 'patologia', 'imunologia']
   },
@@ -1752,8 +1810,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Ramo comunicante do sistema nervoso autônomo torácico.'
     ],
     correctAnswer: 1,
-    explanation: 'No herpes-zóster, o vírus migra a partir do gânglio sensitivo da raiz dorsal através da raiz espinhal torácica correspondente, afetando estritamente aquele dermátomo correspondente.',
-    commentary: 'Comentários sobre a resposta correta:\n(B) Os dermátomos correspondem a áreas cutâneas inervadas por uma única raiz nervosa espinhal. No herpes-zóster, o vírus permanece latente nos gânglios sensitivos e, ao reativar, segue o trajeto da raiz nervosa, produzindo lesões restritas a um dermátomo, sem cruzar a linha média.\n\nComentários sobre os distratores:\n(A) Os nervos intercostais derivam das raízes espinhais, mas representam ramos periféricos mistos, não sendo a estrutura primária que define o padrão segmentar do gânglio dorsal infectado.\n(C) Não existe um “plexo torácico” com organização segmentar típica como descrito.\n(D) Os ramos comunicantes estão relacionados ao sistema nervoso autônomo simpático e não são responsáveis pela inervação sensitiva cutânea segmentar.',
+    explanation: "Dor em faixa seguida de vesículas agrupadas num lado do tórax, que param na linha média, em um idoso: é herpes-zóster. Depois da varicela, o vírus fica latente no gânglio sensitivo da raiz dorsal e, quando a imunidade cai (com a idade, por exemplo), reativa e desce pelas fibras sensitivas daquela raiz.\n\nDermátomo é justamente a faixa de pele inervada pelas fibras sensitivas de uma única raiz espinhal. Por isso as lesões seguem um dermátomo e não cruzam a linha média: a estrutura que define o padrão é a raiz nervosa torácica do segmento acometido.",
+    commentary: "Nervo intercostal (A): é o ramo anterior da raiz, um nervo periférico misto; ele faz parte do trajeto, mas o que delimita o dermátomo é a raiz espinhal (e seu gânglio), e o ramo posterior também inerva parte do dermátomo, no dorso.\n\nTronco de plexo torácico (C): os nervos torácicos não formam plexo; além disso, plexos misturam fibras de várias raízes, o que desfaz a distribuição em faixas.\n\nRamo comunicante (D): liga o nervo espinhal à cadeia simpática e conduz fibras autonômicas, não a sensibilidade cutânea por segmento.",
+    tip: "Herpes-zóster: reativação no gânglio da raiz dorsal → lesões em um só dermátomo, que param na linha média.",
     reference: 'HAMMER, G.D.; MCPHEE, S.J. Fisiopatologia da Doença: Uma Introdução à Medicina Clínica. 7 ed. São Paulo: Artmed, 2015.',
     tags: ['anatomia', 'neurologia', 'infectologia']
   },
@@ -1768,8 +1827,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Tronco celíaco'
     ],
     correctAnswer: 3,
-    explanation: 'O tronco celíaco irriga os órgãos derivados do intestino anterior (foregut), que compreendem esôfago distal, estômago, duodeno proximal, fígado, vesícula biliar, pâncreas e baço.',
-    commentary: 'Comentários sobre a resposta correta:\n(D) O tronco celíaco é o principal vaso responsável pela irrigação dos órgãos derivados do intestino anterior (foregut), incluindo estômago, fígado, baço e parte do duodeno. A dor epigástrica associada a sinais de isquemia nesses órgãos sugere comprometimento desse tronco arterial.\n\nComentários sobre os distratores:\n(A) Artéria mesentérica superior: irriga o intestino médio (midgut), incluindo jejuno, íleo, ceco, apêndice e cólon transverso proximal.\n(B) Artéria mesentérica inferior: irriga estruturas do intestino posterior (hindgut), como cólon descendente, sigmoide e reto superior.\n(C) Artéria ilíaca comum: participa da irrigação dos membros inferiores e órgãos pélvicos.',
+    explanation: "O tubo digestivo é dividido, pela embriologia, em intestino anterior, médio e posterior, e cada parte tem sua artéria. O intestino anterior dá origem ao esôfago abdominal, estômago, duodeno até a papila maior, fígado, vias biliares e pâncreas (com o baço irrigado pelo mesmo tronco), e todos são supridos pelo tronco celíaco, por meio das artérias gástrica esquerda, esplênica e hepática comum.\n\nA dor desses órgãos é referida no epigástrio, como neste paciente. Isquemia de órgãos do intestino anterior aponta, portanto, para o tronco celíaco.",
+    commentary: "Mesentérica superior (A): irriga o intestino médio, da segunda metade do duodeno até cerca de dois terços do cólon transverso; sua dor é referida na região periumbilical.\n\nMesentérica inferior (B): irriga o intestino posterior (terço distal do transverso, descendente, sigmoide e reto superior); a dor é referida no hipogástrio.\n\nIlíaca comum (C): ramo terminal da aorta que supre a pelve e os membros inferiores, sem relação com as vísceras do intestino anterior.",
+    tip: "Anterior = tronco celíaco (epigástrio); médio = mesentérica superior (umbigo); posterior = mesentérica inferior (hipogástrio).",
     reference: 'MOORE, K. L.; DALLEY, A. F.; AGUR, A. M. R. Anatomia Orientada para a Clínica. 8ª ed. Rio de Janeiro: Guanabara Koogan.',
     tags: ['anatomia', 'gastroenterologia']
   },
@@ -1784,8 +1844,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Receptor β2'
     ],
     correctAnswer: 2,
-    explanation: 'A ativação dos receptores adrenérgicos beta-1 no coração aumenta tanto o cronotropismo quanto o inotropismo, promovendo elevação direta do débito cardíaco.',
-    commentary: 'Comentários sobre a resposta correta:\n(C) O receptor β1 está localizado predominantemente no coração e sua ativação aumenta a frequência cardíaca (cronotropismo) e a contratilidade (inotropismo), contribuindo para o aumento do débito cardíaco e, consequentemente, da pressão arterial.\n\nComentários sobre os distratores:\n(A) Receptor α1: promove vasoconstrição arteriolar periférica, aumentando a resistência vascular sistêmica.\n(B) Receptor α2: feedback inibitório pré-sináptico central, que diminui o efluxo simpático.\n(D) Receptor β2: promove vasodilatação muscular esquelética e relaxamento bronquial.',
+    explanation: "Pressão arterial é débito cardíaco multiplicado pela resistência vascular periférica, e o débito é frequência cardíaca vezes volume sistólico. O enunciado diz que o aumento da pressão vem do débito, com taquicardia.\n\nO receptor que aumenta a frequência (efeito cronotrópico) e a força de contração (efeito inotrópico) é o β1, predominante no coração, estimulado pela noradrenalina e pela adrenalina. O β1 também está nas células justaglomerulares e estimula a liberação de renina. É o receptor bloqueado pelos betabloqueadores cardiosseletivos, como metoprolol e atenolol.",
+    commentary: "Receptor α1 (A): fica na musculatura lisa dos vasos e eleva a pressão por vasoconstrição, isto é, pelo aumento da resistência periférica, não do débito.\n\nReceptor α2 (B): atua sobretudo na terminação pré-sináptica e no sistema nervoso central, inibindo a liberação de noradrenalina; reduz a atividade simpática (base da ação da clonidina).\n\nReceptor β2 (D): causa broncodilatação e vasodilatação em alguns leitos, como o músculo esquelético; seu efeito cardíaco é pequeno.",
+    tip: "β1 = coração (FC e contratilidade) e renina; β2 = brônquios e vasodilatação; α1 = vasoconstrição; α2 = freio pré-sináptico.",
     reference: 'COSTANZO, L. S. Fisiologia. 6ª ed. Elsevier.',
     tags: ['fisiologia', 'farmacologia', 'cardiologia']
   },
@@ -1800,8 +1861,9 @@ export const BASICAS_QUESTIONS: Question[] = [
       '(D) Aumento da resistência vascular na arteríola aferente, diminuindo o fluxo sanguíneo renal para os glomérulos.'
     ],
     correctAnswer: 0,
-    explanation: 'Os IECAs provocam dilatação da arteríola eferente ao bloquear a angiotensina II. Isto reduz a pressão de filtração dentro do glomérulo, gerando queda transitória e aceitável da TFG.',
-    commentary: 'Comentários sobre a resposta correta:\n(A) Vasodilatação da arteríola eferente glomerular, resultando na redução da pressão hidrostática intraglomerular: A angiotensina II (Ang II) é um potente vasoconstritor eferente. Ao inibir a enzima conversora, os IECAs causam vasodilatação da arteríola eferente. Essa dilatação reduz a resistência de saída do sangue do glomérulo, resultando em diminuição da pressão hidrostática intraglomerular e, consequentemente, uma redução esperada na TFG.\n\nComentários sobre os distratores:\n(B) A permeabilidade capilar não é reduzida agudamente por esse mecanismo podocitário em condições não-nefróticas.\n(C) O aumento da pressão hidrostática na cápsula de Bowman ocorre em obstruções pós-renais, não sendo efeito dos IECAs.\n(D) O efeito esperado é a vasodilatação e não o aumento da resistência aferente.',
+    explanation: "A angiotensina II contrai as duas arteríolas do glomérulo, mas age mais sobre a eferente. Essa constrição na saída do glomérulo mantém a pressão hidrostática dentro dos capilares glomerulares e, com ela, a filtração.\n\nAo bloquear a formação de angiotensina II, o IECA dilata a arteríola eferente: a pressão intraglomerular cai, a filtração diminui um pouco e a creatinina sobe discretamente. É um efeito esperado e, a longo prazo, protetor, porque reduz a hiperfiltração e a proteinúria. Na prática, uma elevação de creatinina de até cerca de 30% em relação ao basal, estável, é tolerada sem suspender o remédio; aumentos maiores levam a investigar estenose de artéria renal ou hipovolemia.",
+    commentary: "Menor permeabilidade por ação nos podócitos (B): a queda da filtração com IECA é hemodinâmica, por mudança de pressão, e não por alteração da barreira de filtração.\n\nAumento da pressão no espaço de Bowman (C): ocorre quando há obstrução ao fluxo urinário, como em cálculos ou aumento da próstata, não como efeito do IECA.\n\nMais resistência na arteríola aferente (D): sem angiotensina II, a tendência da aferente é dilatar ou se manter, não contrair; contrair a aferente é efeito, por exemplo, dos anti-inflamatórios não esteroides.",
+    tip: "IECA/BRA dilatam a eferente → menos pressão no glomérulo → creatinina sobe até ~30% e é aceitável.",
     reference: 'LINDA S COSTANZO. Fisiologia, Elsevier, 7 edição, 2025. | GUYTON & HALL. Tratado de Fisiologia Médica, Elsevier, 14 edição, 2021.',
     tags: ['fisiologia', 'farmacologia', 'nefrologia']
   },

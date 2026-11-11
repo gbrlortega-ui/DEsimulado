@@ -148,560 +148,567 @@ export const SAMPLE_QUESTIONS: Question[] = [
       "(D) Anemia ferropriva"
     ],
     "correctAnswer": 1,
-    "explanation": "Anemia microcítica com RDW normal e aumento de HbA2 é característica do traço talassêmico (beta-talassemia minor).",
-    "commentary": "A concentração de hemoglobina A2 aumenta no traço talassêmico ou ß talassemia minor. Os pacientes tem um único gene anormal para a cadeia beta da hemoglobina e habitualmente não tem problemas a não ser uma discreta anemia microcítica. A talassemia homozigota evoluiria de forma mais tempestuosa com anemia severa, hepatoesplenomegalia , necessidade de múltiplas transfusões, presença de RDW (a medida da anisocitose) normal, com microcitia, alerta para este diagnóstico, um vez que ele está aumentado, devido à anisocitose, na anemia ferropriva. Na anemia ferropriva severa a hemoglobina A2 está diminuída e na anemia ferropriva leve ou moderada a hemoglobina A2 está normal.O nível de hemoglobina A2 também está normal na anemia falciforme e na anemia da doença crônica.",
+    "explanation": "Anemia leve, hipocrômica e microcítica com RDW normal é o padrão do traço talassêmico: as hemácias são pequenas, mas de tamanho uniforme. Na ferropenia, ao contrário, o RDW sobe cedo, porque hemácias pequenas novas convivem com as antigas, de tamanho normal.\n\nO aumento da hemoglobina A2 (acima de cerca de 3,5%) na eletroforese confirma a betatalassemia heterozigota (minor): um dos genes da cadeia beta é defeituoso, e a cadeia delta compensa. Ela costuma ser assintomática ou causar anemia leve e não precisa de tratamento. O cuidado é não prescrever ferro sem necessidade e fazer aconselhamento genético.",
+    "commentary": "Anemia da doença crônica (A): costuma ser normocítica ou levemente microcítica, ligada a inflamação ou infecção crônica, com ferritina normal ou alta e Hb A2 normal.\n\nAnemia falciforme (C): é anemia hemolítica grave, normocítica, com crises de dor; a eletroforese mostra predomínio de Hb S, e não aumento de Hb A2.\n\nAnemia ferropriva (D): é a causa mais comum de microcitose no lactente, mas cursa com RDW elevado e Hb A2 normal ou baixa.",
+    "tip": "Microcitose com RDW normal = pense em talassemia; Hb A2 aumentada = betatalassemia minor.",
     "reference": "Hay et al pp, 844-845; Kliegman et al pp, 2033-2037; Mc Millan et al pp, 1699-1700; Rudolph et al, pp 1536-1538.",
     "tags": [
       "hematologia"
     ]
   },
   {
-    "id": "tp2022-53",
+    "id": "tp2022-51",
     "module": "Pediatria",
-    "text": "Atendimento a criança vítima de abuso sexual. Sobre o manejo, é correto afirmar:",
+    "text": "Menino de 4 anos com sopro suave 2+/6+ em foco tricúspide durante quadro febril. Ecocardiograma prévio normal. Sobre este sopro, assinale a correta:",
     "options": [
-      "(A) Dispensar exames caso não haja lesões genitais visíveis.",
-      "(B) Não repetir a entrevista com a criança sobre o relato (evitar revitimização).",
-      "(C) Não registrar em prontuário até confirmação da autoria.",
-      "(D) Restringir o exame ao aparelho genital."
+      "(A) A principal causa de sopro fisiológico nesta idade é o forame oval pérvio.",
+      "(B) O sopro fisiológico é comum nesta idade e tende a ficar mais audível em situações de febre.",
+      "(C) O sopro fisiológico está presente em menos de 30% das crianças.",
+      "(D) O sopro fisiológico normalmente é acompanhado de alterações de bulhas."
     ],
     "correctAnswer": 1,
-    "explanation": "A escuta especializada visa evitar que a criança repita a narrativa traumática múltiplas vezes (revitimização).",
-    "commentary": "O protocolo orienta evitar a revitimização. O prontuário deve ser detalhado e o exame físico completo (não restrito à genitália) para buscar outros sinais de violência.",
-    "reference": "Protocolo de Atenção Integral - UNICEF/MS.",
+    "explanation": "Criança de 4 anos com febre, sopro suave e de baixa intensidade (2+/6+), sem outras alterações e com ecocardiograma e ECG normais há 1 ano: é um sopro inocente (fisiológico), e a febre o tornou mais audível.\n\nSopros inocentes são muito frequentes em pré-escolares e escolares; o mais comum é o sopro de Still, vibratório, na borda esternal esquerda baixa. Eles aumentam em estados de débito cardíaco elevado (febre, anemia, exercício, ansiedade) e podem sumir com a mudança de posição. São sistólicos, suaves, sem frêmito, com bulhas normais, e não exigem tratamento, só reavaliação fora do quadro febril.",
+    "commentary": "Forame oval pérvio (A): em geral não produz sopro audível; não é a causa dos sopros fisiológicos da infância.\n\nMenos de 30% das crianças (C): o sopro inocente é auscultado na maioria das crianças em algum momento da infância, bem acima de 30%.\n\nAlterações de bulhas (D): bulhas alteradas, sopro diastólico, intensidade de 3+/6+ ou mais e frêmito são sinais de sopro patológico, que pede investigação.",
+    "tip": "Sopro inocente: sistólico, suave, sem frêmito, bulhas normais e mais audível com febre ou anemia.",
+    "reference": "Tratado de Pediatria Burns - 4ª Ed.",
     "tags": [
-      "violência",
-      "ética"
+      "cardiologia"
     ]
   },
   {
-    "id": "tp2021-51",
+    "id": "tp2021-47",
     "module": "Pediatria",
-    "text": "Pré-escolar, levado ao pediatra por apresentar lesão eritematosa em fossas ante cubitais e poplíteas há 1 mês. Mãe refere que as lesões são acompanhadas por prurido que piora com o suor. Exame físico: placas e pápulas eritematosas que desaparecem à digito pressão nos locais descritos. Apresenta xerose cutânea e pitiríase alba em face. É critério diagnóstico para a doença apresentada:",
+    "text": "Menino, 5 anos, acorda pela manhã e a mãe observa o aparecimento de edema facial, marcadamente bipalpebral. Evolui com edema generalizado, acometendo os membros inferiores e parede do abdômen ao longo da semana. Refere diminuição da diurese sem outras alterações urinárias. Nega doenças anteriores. Exame físico: PA entre percentil 50 e 90 para a idade, sexo e percentil de altura. As alterações laboratoriais esperadas são:",
     "options": [
-      "(A) Linfocitose.",
-      "(B) IgE sérica elevada.",
-      "(C) IgA sérica diminuída.",
-      "(D) Leucocitose com eosinofilia."
+      "(A) Hematúria e cilindros hemáticos em Urina tipo 1 (EAS).",
+      "(B) Proteinúria maciça e colesterol total e frações aumentadas.",
+      "(C) Consumo de complemento C3 e complemento total CH50.",
+      "(D) Antiestreptolisina (ASLO) aumentada e hematúria."
     ],
     "correctAnswer": 1,
-    "explanation": "A dermatite atópica clássica flexural (lesões pruriginosas localizadas em dobras cutâneas antecubitais e poplíteas) associada a xerodermia e pitiríase alba facial é guiada pelos critérios clínicos estabelecidos por Hanifin e Rajka. Entre os dados menores aceitos, a elevação sérica de IgE destaca-se como critério imunológico clássico.",
-    "commentary": "Os critérios de Hanifin e Rajka constituem o padrão diagnótico na Dermatite Atópica. Exigem a preexistência de critérios maiores (prurido intenso, distribuição típica flexural na infância/liquenificação, cronicidade recidivante e história familiar de atopia). Entre os critérios secundários/menores estão achados de hipersensibilidade cutânea e exames laboratoriais como reatividade imunoespecífica e títulos elevados de IgE circulante.",
-    "reference": "Consenso de Dermatite Atópica da SBP/SBD.",
+    "explanation": "A instalação insidiosa de edema generalizado (anasarca) associada a níveis tensionais normais em pré-escolar é o protótipo clínico da Síndrome Nefrótica Idiopática (geralmente por doença de lesão mínima). Laboratorialmente, caracteriza-se por proteinúria massiva e hipercolesterolemia com hipoalbuminemia.",
+    "commentary": "O quadro clínico descreve paciente com fenótipo sugestivo de Síndrome Nefrótica. A proteinúria intensa leva a hipoalbuminemia acentuada, a qual reduz a pressão oncótica capilar gerando edema volumoso. Em resposta, há aumento reflexo da síntese hepática de lipoproteínas, elevando sobremaneira o colesterol urinário e circulante. Hematúria e consumo de complemento apontariam para diagnóstico nefrítico.",
+    "reference": "Nefrologia Pediátrica - Prática Clínica, SBP.",
     "tags": [
-      "dermatologia",
-      "alergia e imunologia"
+      "nefrologia"
     ]
   },
   {
-    "id": "tp2020-62",
+    "id": "tp2019-54",
     "module": "Pediatria",
-    "text": "Escolar de sete anos, sexo feminino, está há dois dias em tratamento para provável infecção do trato urinário com sulfametoxazol-trimetoprim, na dose de 40mg/kg/dia de sulfa. No início do quadro, apresentava urgência, dor e dificuldade para urinar. No momento, a mãe refere melhora significativa das queixas, entretanto o resultado da urinocultura mostra 500.000 colônias de E.coli resistente ao antimicrobiano em uso.\n\nA conduta, neste caso, deverá ser:",
+    "text": "Adolescente, 17 anos, feminino, apresenta desmaios e tosse há 40 dias. Relata fraqueza e diminuição do apetite há 10 dias. Exame físico: emagrecida, palidez cutâneo-mucosa, frequência respiratória = 36 ipm, frequência cardíaca = 78 bpm, pressão arterial = 120 x 70 mmHg, discreta turgência jugular à direita, sem fígado e baço palpáveis. RX de tórax: massa mediastinal estendendo-se para hemitórax superior direito.\n\nA hipótese diagnóstica é:",
     "options": [
-      "(A) Trocar o antimicrobiano em uso de acordo com a sensibilidade in vitro.",
-      "(B) Trocar o antimicrobiano em uso por ácido nalidíxico.",
-      "(C) Trocar o antimicrobiano em uso por amoxicilina oral.",
-      "(D) Manter o esquema antimicrobiano em uso."
+      "(A) Linfoma",
+      "(B) Higroma cístico",
+      "(C) Bócio mergulhante",
+      "(D) Tuberculose pulmonar"
     ],
-    "correctAnswer": 3,
-    "explanation": "Na ITU baixa, a resposta clínica ao antimicrobiano é suficiente para mantê-lo, mesmo com resistência in vitro: a concentração urinária do fármaco costuma ser muito maior que a dos discos do antibiograma.",
-    "commentary": "Trocar o antibiótico em uma criança que já melhorou é desnecessário. Ácido nalidíxico e amoxicilina não estão indicados com base no antibiograma.",
-    "reference": "National Institute for Health and Clinical Excellence. UrinaryTractInfection in Children: Diagnosis, Tratament, and Longterm Management: Nice Clinical Guideline 54. London, England: National Institute for Health and Clinical Excellence; 2007. Available at: www.nice.org.uk/nicemedia/live/11819/36032/36032.pdf.",
+    "correctAnswer": 0,
+    "explanation": "Adolescente com sintomas constitucionais, tosse e massa mediastinal com turgência jugular (sinal de compressão da veia cava superior): a principal hipótese é linfoma, a causa mais comum de massa de mediastino anterior nessa faixa etária.",
+    "commentary": "O higroma cístico é congênito e cervical. O bócio mergulhante é raro em adolescentes. A tuberculose pulmonar não costuma causar síndrome de veia cava superior.",
+    "reference": "Nelson Tratado de Pediatria – 16ª. ed / Kliegman, Stanton, St. Geme, Schor, Elsevier, 2003.",
     "tags": [
       "pediatria",
-      "infecção urinária"
+      "oncologia pediátrica",
+      "linfoma"
     ]
   },
   {
-    "id": "tp2022-23",
+    "id": "tp2023-28",
     "module": "Clínica Médica",
-    "text": "Paciente masculino, 21 anos, procura atendimento médico com o seguinte quadro: febre há 4 dias, linfonodos cervicais fibroelásticos bilateral, discreta hepatomegalia. Hemograma: 12.000 leucócitos, sendo 55% de linfócitos e 11% de linfócitos atípicos. Qual a melhor opção diagnóstica?",
+    "text": "JM está em situação de rua e na primeira vez em que experimentou cocaína teve uma sensação de intensa euforia, bem-estar, desinibição, perda de apetite e aumento da energia e libido; porém, com o uso prolongado da droga, passou a ter que usar cada vez mais a cocaína para obter esses mesmos efeitos. O nome que corresponde a esse efeito causado pelo consumo prolongado de drogas é:",
     "options": [
-      "(A) Adenite bacteriana",
-      "(B) Linfoma não Hodgkin",
-      "(C) Tuberculose ganglionar",
-      "(D) Síndrome da mononucleose"
+      "(A) Abuso",
+      "(B) Abstinência",
+      "(C) Tolerância",
+      "(D) Overdose"
     ],
-    "correctAnswer": 3,
-    "explanation": "Linfocitose com atipia linfocitária associada a febre e linfonodomegalia cervical em jovem é característico de mononucleose.",
-    "commentary": "Esta questão caracteriza a síndrome da mononucleose: jovem com febre aguda, linfonodos cervicais fibroelásticos bilaterais e linfocitose com atipia.",
-    "reference": "Infectologia. Bases clínicas e tratamento Reinaldo Salomão, edição 2017",
+    "correctAnswer": 2,
+    "explanation": "Precisar de doses cada vez maiores para obter o mesmo efeito, ou ter efeito menor com a mesma dose, é a definição de tolerância. Ela surge com o uso repetido, por adaptação do organismo à substância (mudanças nos receptores, na neurotransmissão e no metabolismo).\n\nA tolerância é um dos critérios do transtorno por uso de substâncias e costuma andar junto com a abstinência e a perda de controle sobre o consumo, por isso é peça central na evolução para a dependência.",
+    "commentary": "Abuso (A): designa um padrão de uso que traz prejuízos (sociais, legais, de saúde), não a necessidade de aumentar a dose; o DSM-5 substituiu abuso e dependência por transtorno por uso de substâncias.\n\nAbstinência (B): são os sintomas que surgem ao parar ou reduzir o uso; na cocaína, disforia, cansaço, sonolência, aumento do apetite e fissura.\n\nOverdose (D): é a intoxicação grave por dose excessiva, com risco de arritmia, infarto, convulsão e hipertermia.",
+    "tip": "Mais droga para o mesmo efeito = tolerância. Sintomas ao parar = abstinência.",
+    "reference": "DIEHL, A.; CORDEIRO, D. C.; LARANJEIRA, R. (Orgs.). Dependência química: prevenção, tratamento e políticas públicas. 2. ed. Porto Alegre: Artmed, 2018. 554 p.",
     "tags": [
-      "infectologia",
-      "hematologia"
+      "psiquiatria"
     ]
   },
   {
-    "id": "tp2025-35",
+    "id": "tp2025-31",
     "module": "Clínica Médica",
-    "text": "Homem de 48 anos procura ambulatório por fadiga persistente e desconforto abdominal progressivo há dois anos. Antecedente de hepatite B diagnosticada há 10 anos, usando antiviral irregularmente. Ao exame físico, discretamente ictérico, com telangectasias cutâneas e esplenomegalia palpável. Exames laboratoriais: elevação de transaminases, hipoalbuminemia e trombocitopenia. O quadro clínico sugere:",
+    "text": "Homem de 58 anos, portador de doença renal crônica estágio 5, dá entrada na emergência com dispneia intensa, edema generalizado e náuseas. Exames: potássio 7,0mEq/L; ureia 192mg/dL, creditiantina 8,5mg/dL e ECG ritmo sinusal, normal. A conduta indicada para este paciente é:",
     "options": [
-      "(A) Reativação de replicação viral, sem dano hepático significativo.",
-      "(B) Hepatopatia crônica viral com cirrose compensada.",
-      "(C) Transformação neoplásica com sinais de alarme.",
-      "(D) Cirrose grave com iminência de insuficiência hepática aguda."
+      "(A) Restrição hídrica rigorosa e uso de furosemida em altas doses.",
+      "(B) Iniciar hemodiálise de emergência.",
+      "(C) Administração de gluconato de cálcio, insulina e glicose.",
+      "(D) Expansão volêmica, bicarbonato e repetir exames."
     ],
     "correctAnswer": 1,
-    "explanation": "A evolução de hepatite B crônica com sinais de hipertensão portal (esplenomegalia descrita) associados a hipoalbuminemia, transaminases elevadas e plaquetopenia sugere cirrose compensada.",
-    "commentary": "Os achados do exame físico (telangiectasias, esplenomegalia) e do laboratório (plaquetopenia, hipoalbuminemia e transaminases alteradas) traduzem evolução crônica para cirrose com hipertensão portal já estabelecida. Como o paciente não apresenta ascite rebelde, encefalopatia de repetição ou sangramentos, classifica-se em cirrose compensada neste momento.",
-    "reference": "HARRISON'S Principles of Internal Medicine. 21. ed. McGraw-Hill. Sociedade Brasileira de Hepatologia, 2019.",
-    "tags": [
-      "hepatologia",
-      "infectologia"
-    ]
-  },
-  {
-    "id": "tp2021-39",
-    "module": "Clínica Médica",
-    "text": "Mulher, 50 anos, com diabetes tipo 2 e dislipidemia mista, iniciou uso de estatina há 2 meses. Exames: creatinina = 1,5 mg/dL; ureia = 65 mg/dL; potássio = 6,0 mEq/L; CPK = 2.200 UI/L. Além da alcalinização da urina, a conduta adequada é:",
-    "options": [
-      "(A) Trocar estatina por fibrato e fazer controle glicêmico rigoroso com hipoglicemiante oral, iniciar antiproteinúrico.",
-      "(B) Suspender imediatamente a estatina, iniciar diurético de alça e solução polarizante.",
-      "(C) Suspender imediatamente a estatina, iniciar diurético de alça e gluconato de cálcio.",
-      "(D) Suspender imediatamente a estatina, hidratação endovenosa com salina isotônica e solução polarizante."
-    ],
-    "correctAnswer": 3,
-    "explanation": "A paciente exibe quadro de injúria renal aguda secundária a rabdomiólise após estatina (CPK = 2.200 UI/L) com hipercalemia moderada-grave (K+ = 6,0 mEq/L). O pilar da conduta de rabdomiólise é a suspensão do agente causador associado à vigorosa hidratação endovenosa com salina para desobstruir os túbulos da mioglobina nefrotóxica, aliada à imediata infusão de solução polarizante para corrigir o potássio plasmático.",
-    "commentary": "A rabdomiólise tem como complicação temida a necrose tubular aguda obstrutiva por depósito de mioglobina. A nefropatia de base impõe restrição no uso de IECA/BRA (antiproteinúrico sugerido) pela hipercalemia existente. Diuréticos devem ser indicados com prudência apenas na vigência de hipervolemia refratária pós-volume. A conduta padrão assenta-se na hidratação, suspensão da estatina e estabilização da calemia.",
-    "reference": "FAUCI, AS et al. Harrison Medicina Interna. 18ªed. Rio de Janeiro: McGraw-Hill, 2013.",
+    "explanation": "O paciente apresenta indicações clássicas de diálise de urgência (hipercalemia grave de 7,0 mEq/L, sobrecarga volêmica refratária com dispneia importante, além de uremia sintomática com náuseas).",
+    "commentary": "O paciente com doença renal crônica terminal (estágio 5) apresenta critérios inequívocos de urgência dialítica. Embora medidas de deslocamento interno do potássio (insulina, glicose) e estabilização de membrana (gluconato de cálcio) sejam temporariamente válidas para evitar arritmias em hipercalemia grave, elas não resolvem a sobrecarga hídrica nem a uremia severa, tornando a hemodiálise de emergência a conduta definitiva e imediata indicada.",
+    "reference": "KDIGO Clinical Practice Guideline for Acute Kidney Injury. UpToDate, 2023.",
     "tags": [
       "nefrologia",
-      "cardiologia",
-      "farmacologia",
       "emergência"
     ]
   },
   {
-    "id": "tp2019-38",
+    "id": "tp2021-36",
     "module": "Clínica Médica",
-    "text": "Homem, 56 anos, com diabetes mellitus há 12 anos, está em uso de metformina 2g de liberação prolongada e gliclazida 120mg por dia. Exames laboratoriais: Hb glicada = 10,2%; glicemia de jejum = 190 mg/dL.\n\nA melhor conduta para esse caso é:",
+    "text": "Homem, 50 anos, portador de hipertensão, dislipidemia e Diabetes mellitus tipo 2 há 10 anos, é admitido no Pronto Socorro com quadro de confusão mental há 1 dia. Familiares informam uso irregular de metformina, glimepirida, sinvastatina e losartana; vinha apresentando diarreia, náuseas e febre há 2 dias. Exames: glicemia 650 mg/dL; K+ = 2,5 mEq/L; discreta cetonemia e cetonúria. Enquanto aguarda vaga na UTI, como deve ser o manejo da insulinização?",
     "options": [
-      "(A) Substituir a gliclazida por insulina regular no jantar.",
-      "(B) Aumentar a metformina para 3g/dia.",
-      "(C) Introduzir insulina NPH ao deitar.",
-      "(D) Reforçar modificação do estilo de vida e reavaliar em seis meses."
+      "(A) Insulina regular intramuscular a cada 1 hora.",
+      "(B) Insulina regular intravenosa contínua.",
+      "(C) Não iniciar insulinização até normalização do potássio.",
+      "(D) Análogo de insulina ultrarrápida subcutânea a cada 1 hora."
     ],
     "correctAnswer": 2,
-    "explanation": "Diabético tipo 2 com HbA1c de 10,2% apesar de metformina e sulfonilureia em doses plenas: está muito acima da meta e precisa de intensificação.\n\nA conduta clássica é iniciar insulina basal (NPH ao deitar), mantendo os orais, e titular pela glicemia de jejum.",
-    "commentary": "Trocar a gliclazida por insulina regular no jantar não é o esquema inicial. A dose de 2 g/dia já é a máxima efetiva da metformina. Apenas reforçar o estilo de vida e reavaliar em 6 meses atrasaria o controle.",
-    "reference": "Qaseem A, Wilt TJ, Kansagara D, Horwitch C, Barry MJ, Forciea MA, et al. Hemoglobin A1c Targets for Glycemic Control With Pharmacologic Therapy for Non pregnant Adults With Type 2. / Diabetes Mellitus: A Guidance Statement Update From the American College of Physicians. Ann Intern Med. [Epubahead of print 6 March 2018]168:569–576. doi: 10.7326/M17-0939. / Diretrizes da Sociedade Brasileira de Diabetes 2017-2018 /Organização José Egídio Paulo de Oliveira, Renan Magalhães Montenegro Junior, Sérgio Vencio. -- São Paulo: Editora Clannad, 2017. / Netto, A P. Conduta terapêutica no Diabetes tipo 2: Algoritmo SBD 2017. 9 9",
+    "explanation": "O paciente exibe quadro de Estado Hiperglicêmico Hiperosmolar (EHH). Contudo, apresenta potássio sérico amplamente baixo (K+ = 2,5 mEq/L). Como a insulina promove o desvio interno rápido de potássio para dentro das células, iniciar a insulinização nessa fase gera risco altíssimo de hipocalemia catastrófica e óbito por arritmias graves. A conduta determina repor o eletrólito e adiar a insulina.",
+    "commentary": "No manejo inicial das emergências glicêmicas graves, o status do potássio dita o tempo da introdução da insulina. Se o valor do potássio medido for menor que 3,3 mEq/L, a insulinoterapia deve ser rigorosamente suspensa. Deve-se iniciar hidratação salina e reposição robusta de cloreto de potássio para primeiro normalizar os valores iônicos séricos.",
+    "reference": "MILECH, A. Diretrizes da Sociedade Brasileira de Diabetes (2019-2020). São Paulo: A.C. Farmacêutica, 2016. FAUCI, A.S et al. Medicina Interna de Harrison. 20ª ed. Rio de Janeiro: McGrawHill, 2019",
     "tags": [
       "endocrinologia",
-      "diabetes",
-      "insulinoterapia"
+      "emergência",
+      "fisiopatologia"
     ]
   },
   {
-    "id": "tp2024-78",
-    "module": "Cirurgia",
-    "text": "Disfagia progressiva (3 meses), perda ponderal > 20%, tabagista e etilista. Qual o principal diagnóstico?",
+    "id": "tp2019-33",
+    "module": "Clínica Médica",
+    "text": "Mulher, 28 anos, refere dificuldade de concentração, sono não reparador, sensação de cansaço ao acordar e dor articular e muscular em membros superiores e inferiores há seis meses. Nega perda de peso, hiporexia e febre. Exame físico: pele e mucosa sem alterações, articulações ou músculos sem sinais inflamatórios, força muscular preservada e dor em tender points.\n\nO tratamento mais efetivo é:",
     "options": [
-      "(A) Adenocarcinoma do esôfago",
-      "(B) Carcinoma espinocelular do esôfago",
-      "(C) Megaesôfago chagásico",
-      "(D) Esôfago de Barrett"
+      "(A) Anti-inflamatório não hormonal",
+      "(B) Atividade física aeróbica",
+      "(C) Agulhamento de tender points",
+      "(D) Anti-inflamatório hormonal"
     ],
     "correctAnswer": 1,
-    "explanation": "O tabaco e álcool são os principais fatores de risco para o carcinoma espinocelular (CEC) de esôfago.",
-    "commentary": "O álcool e o tabaco são fatores de risco significativos para câncer esofágico. A progressão rápida dos sintomas disfágicos, a perda de peso e os antecedentes de tabagismo e etilismo sugerem um carcinoma esofágico, especialmente carcinoma espinocelular, que é mais comumente associado a esses fatores.",
-    "reference": "Engel LS, Chow WH, Vaughan TL, et al. Riscos atribuíveis à população de câncer de esôfago e gástrico. J Natl Cancer Inst. 2003;95(18):1404.",
+    "explanation": "Dor musculoesquelética difusa há mais de 3 meses, sono não reparador, fadiga e alteração cognitiva, com exame físico sem sinais inflamatórios e dor em pontos dolorosos: fibromialgia.\n\nO tratamento com melhor evidência é a atividade física aeróbica regular, associada a educação em dor e, se necessário, fármacos como amitriptilina ou duloxetina.",
+    "commentary": "Anti-inflamatórios (hormonais ou não) não têm eficácia na fibromialgia, que não é inflamatória. O agulhamento de pontos não tem evidência consistente.",
+    "reference": "Goldenberg, DL. Patient education: Fibromyalgia (Beyond the Basics) UpToDate 2018. / https://www.uptodate.com/contents/fibromyalgia-beyond-the-basics.",
+    "tags": [
+      "reumatologia",
+      "fibromialgia",
+      "dor crônica"
+    ]
+  },
+  {
+    "id": "tp2024-74",
+    "module": "Cirurgia",
+    "text": "Soda cáustica no olho. Dor intensa, vermelhidão e baixa visão. Qual a conduta?",
+    "options": [
+      "(A) Antibiótico tópico e endovenoso e chamar oftalmo.",
+      "(B) Encaminhamento urgente cirúrgico.",
+      "(C) Antibiótico tópico e retorno em 15 dias.",
+      "(D) Lavagem intensa com soro fisiológico e encaminhamento ao oftalmologista."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Soda cáustica é um álcali, e queimaduras oculares por álcali são as mais graves, porque o produto saponifica as membranas celulares e continua penetrando na córnea e nas estruturas internas do olho enquanto houver contato. Dor intensa, hiperemia, baixa da visão e ceratite grave mostram lesão importante.\n\nA conduta imediata, antes de qualquer outra coisa, é irrigação abundante e prolongada com soro fisiológico (ou água limpa, se não houver soro), com o olho aberto e removendo partículas dos fundos de saco, até neutralizar o pH da superfície. Depois, usam-se colírio antibiótico e lubrificante para proteger a córnea enquanto ela reepiteliza, e o paciente é encaminhado ao oftalmologista para avaliação da extensão da lesão.",
+    "commentary": "Internação com antibiótico tópico e endovenoso (A): antibiótico venoso não tem papel, e chamar o oftalmologista sem antes irrigar deixa o álcali agir por mais tempo.\n\nEncaminhamento cirúrgico urgente (B): a lesão aguda não é cirúrgica de imediato; o que define o prognóstico é a irrigação feita no primeiro atendimento.\n\nColírio antibiótico e retorno em 15 dias (C): sem irrigação e sem seguimento próximo, a queimadura progride e pode levar a perda visual.",
+    "tip": "Queimadura química no olho, sobretudo por álcali: irrigar muito, já, antes de qualquer exame; depois oftalmologista.",
+    "reference": "Oftalmologia Geral - Vaughan & Asbury, 17ª ed.",
+    "tags": [
+      "oftalmologia",
+      "emergência"
+    ]
+  },
+  {
+    "id": "tp2022-61",
+    "module": "Cirurgia",
+    "text": "Paciente de 25 anos, masculino, será submetido a correção de hérnia inguinal direita por via convencional - inguinotomia. Visando a ligadura dos vasos superficiais do subcutâneo, o fechamento da aponeurose e o fechamento da pele, quais seriam os fios utilizados, respectivamente?",
+    "options": [
+      "(A) Algodão, PDS (polidioxanona), monocryl (poliglecaprona 25).",
+      "(B) Vicryl (poliglactina 370), nylon, monocryl (poliglecaprona 25).",
+      "(C) PDS (polidioxanona), monocryl (poligecaprina 25), algodão.",
+      "(D) Catgut, monocryl (poliglecaprona 25), nylon."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Algodão para vasos superficiais, PDS (fio de longa absorção) para aponeurose e Monocryl para sutura intradérmica na pele.",
+    "commentary": "Para ligaduras superficiais, o algodão é tradicional. A aponeurose exige um fio que suporte tração por tempo prolongado (PDS). Na pele, o monocryl evita cicatrizes exageradas.",
+    "reference": "Sabiston - Tratado de Cirurgia - 18ª Ed.",
+    "tags": [
+      "cirurgia geral",
+      "suturas"
+    ]
+  },
+  {
+    "id": "tp2025-62",
+    "module": "Cirurgia",
+    "text": "Homem de 65 anos, tabagista e com histórico de colangite esclerosante primária, apresenta icterícia progressiva há dois meses, associada a perda de peso não intencional e prurido cutâneo. Colangiopancreatografia por ressonância magnética revela uma estenose irregular da via biliar hepática comum, com dilatação dos ductos intra-hepáticos. Qual é o diagnóstico mais provável?",
+    "options": [
+      "(A) Hepatocarcinoma com invasão da via biliar.",
+      "(B) Adenocarcinoma pancreático com invasão da via biliar.",
+      "(C) Colelitíase complicada com colangite crônica.",
+      "(D) Colangiocarcinoma peri-hilar – Tumor de Klatskin."
+    ],
+    "correctAnswer": 3,
+    "explanation": "O colangiocarcinoma peri-hilar (Tumor de Klatskin) é o tumor biliar primário mais comum no hilo hepático, fortemente associado à colangite esclerosante primária.",
+    "commentary": "O colangiocarcinoma peri-hilar, ou hilar (chamado tumor de Klatskin), é um tumor maligno da árvore biliar, frequentemente associado à colangite esclerosante primária. Os achados clínicos incluem icterícia progressiva indolor, perda de peso e prurido, além de exames de imagem demonstrando estenose irregular da via biliar com dilatação dos ductos intra-hepáticos. O hepatocarcinoma está usualmente associado a cirrose e nódulos parenquimatosos. O adenocarcinoma pancreático cursa com massa pancreática e sinal de Courvoisier. A colelitíase cursa com quadro febril e álgico mais agudo.",
+    "reference": "Rizvi, S., & Gores, G. J. (2013). Pathogenesis, diagnosis, and management of cholangiocarcinoma. Gastroenterology, 145(6), 1215-1229; Khan, S. A., Davidson, B. R. et al. (2012). Guidelines for the diagnosis and treatment of cholangiocarcinoma. Gut, 61(12), 1657-1669.",
     "tags": [
       "oncologia",
       "gastroenterologia"
     ]
   },
   {
-    "id": "tp2022-70",
+    "id": "tp2021-80",
     "module": "Cirurgia",
-    "text": "Politrauma com respiração ruidosa, hipertimpanismo à direita, choque, percussão pulmonar alterada e sínfise púbica alargada. Próximo passo?",
+    "text": "Homem, 60 anos, apresentou em ultrassom de carótidas um nódulo de 1 cm de diâmetro no lobo direito da tireoide, de aspecto sólido e hipoecogênico, com bordas irregulares e microcalcificações. Tem exames de sangue recentes sem alterações, com dosagens de TSH e T4 livre normais. A próxima conduta deve ser:",
     "options": [
-      "(A) Toracostomia de alívio e via aérea definitiva.",
-      "(B) Fechamento de pelve e transfusão massiva.",
-      "(C) Via aérea definitiva, drenagem torácica à direita e fechamento de pelve.",
-      "(D) Via aérea, toracostomia de alívio e aguardar exames para fechar pelve."
+      "(A) Repetir a ultrassom de tireoide em seis meses.",
+      "(B) Solicitar cintilografia de tireoide.",
+      "(C) Indicar lobectomia tireoidiana à direita.",
+      "(D) Fazer punção aspirativa com agulha fina do nódulo (PAAF)."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Nódulo de tireoide eutireoidiano medindo 1,0 cm com padrões de alta classificação de risco (TIRADS V/VI - hipoecoico, limites irregulares e microcalcificações) indica a feitura imediata de punção aspirativa por agulha fina (PAAF) guiada por USG.",
+    "commentary": "Nódulo de 1,0 cm de diâmetro com padrões ultrassonográficos suspeitos (formato sólido, hipoecogênico, limites microlobulados ou irregulares e com presença de microcalcificações de cálcio pontual) manifesta critérios diagnósticos consistentes com malignização (carcinoma papilífero de tireoide). Em pacientes eutireoidianos (com TSH e hormônios tieroidenos devidamente em faixa normal), a imediata investigação citológica por Punção Aspirativa com Agulha Fina (PAAF) dirigida é soberana. O rastreio por cintilografia é restrito a nódulos quentes ou hiperfuncionantes em vigência de TSH suprimido. Esperar seis meses ou lobectomia cirúrgica direta prévia sem estudo citopatológico são imprudentes.",
+    "reference": "Towsend, CM; Beauchamp, RD; Evans, BM; Sabiston - Tratado de Cirurgia, 20ª edição, Editora Guanabara-Koogan, 2019.",
+    "tags": [
+      "cabeça e pescoço",
+      "endocrinologia",
+      "oncologia"
+    ]
+  },
+  {
+    "id": "tp2019-64",
+    "module": "Cirurgia",
+    "text": "Mulher de 65 anos apresenta há três dias icterícia, dor abdominal e urina de cor escura. Antecedentes pessoais: colecistopatia crônica calculosa, aguardando cirurgia. Exame físico: febril, ictérica 3+/4, com dor à palpação de hipocôndrio direito. Exames laboratoriais: bilirrubina total de 4,8 mg/dL (bilirrubina direta: 3,8 mg/dL), leucograma de 15.000/mm³ sem desvio.\n\nA hipótese diagnóstica mais provável é:",
+    "options": [
+      "(A) Cólica biliar",
+      "(B) Pancreatite aguda",
+      "(C) Colecistite aguda calculosa",
+      "(D) Coledocolitíase com colangite"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Paciente com colelitíase que evolui com icterícia colestática (predomínio de bilirrubina direta), febre e dor em hipocôndrio direito — tríade de Charcot: coledocolitíase complicada por colangite.",
+    "commentary": "A cólica biliar não causa febre nem icterícia. A colecistite aguda isolada não cursa com icterícia significativa. A pancreatite cursaria com dor em faixa e elevação de amilase/lipase.",
+    "reference": "José Cesar Assef et. Al. Emergências cirúrgicas traumáticas e não traumáticas. Condutas e algorítimo. Capítulo 24. Colangite aguda. 9 13",
+    "tags": [
+      "cirurgia",
+      "vias biliares",
+      "colangite"
+    ]
+  },
+  {
+    "id": "tp2024-87",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Mulher, 30 anos, citologia: \"Células escamosas atípicas não podendo excluir lesão de alto grau (ASC-H)\". Conduta?",
+    "options": [
+      "(A) Encaminhar para colposcopia.",
+      "(B) Repetir citologia em 6 meses.",
+      "(C) Repetir citologia em 12 meses.",
+      "(D) Repetir citologia em 3 anos."
+    ],
+    "correctAnswer": 0,
+    "explanation": "ASC-H significa células escamosas atípicas em que não se pode afastar lesão de alto grau. Uma parte importante dessas mulheres tem, de fato, lesão intraepitelial de alto grau ou até câncer na investigação.\n\nPor isso as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero recomendam que toda mulher com ASC-H, em qualquer idade, seja encaminhada diretamente à colposcopia, com biópsia das áreas suspeitas. Não se repete a citologia.",
+    "commentary": "Repetir em 6 meses (B): é a conduta para ASC-US em mulheres a partir de 30 anos, não para ASC-H, que pode esconder lesão de alto grau.\n\nRepetir em 12 meses (C): é a conduta para ASC-US e LSIL em mulheres mais jovens; atrasaria o diagnóstico de uma lesão potencialmente grave.\n\nRepetir em 3 anos (D): é o intervalo do rastreamento após dois exames normais, sem lugar diante de um laudo alterado.",
+    "tip": "ASC-H, HSIL, AGC ou suspeita de invasão: colposcopia direto, sem repetir citologia.",
+    "reference": "Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero.",
+    "tags": [
+      "ginecologia oncológica",
+      "patologia do trato genital inferior"
+    ]
+  },
+  {
+    "id": "tp2023-88",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "26 anos, secundigesta com 1 abortamento anterior há 3 anos, portadora do vírus HIV, em uso regular de tenofovir, lamivudina e dolutegravir. Apresenta carga viral menor que 1000 cópias/mL com 36 semanas, tendo indicação de zidovudina intravenosa até o clampeamento do cordão. Apresentação cefálica. A conduta em relação ao parto é:",
+    "options": [
+      "(A) Interromper por cesárea com 39 semanas.",
+      "(B) Induzir com ocitocina na 37ª semana.",
+      "(C) Aguardar pelo parto vaginal.",
+      "(D) Iniciar prostaglandina via vaginal com 37 semanas."
     ],
     "correctAnswer": 2,
-    "explanation": "O ABCDE exige: A (via aérea definitiva pela obstrução/consciência), B (drenagem pelo pneumo hipertensivo), C (pelve e restrição de cristaloides).",
-    "commentary": "O fechamento temporário da pelve (lençol/cinta) é parte do controle de danos no \"C\" do trauma.",
-    "reference": "ATLS 10ª Edição.",
+    "explanation": "Pelo protocolo do Ministério da Saúde para prevenção da transmissão vertical do HIV, a via de parto é decidida pela carga viral medida a partir de 34 semanas. Quando ela está inferior a 1.000 cópias/mL, a cesariana eletiva não reduz de forma relevante a transmissão, e a via de parto segue a indicação obstétrica.\n\nEsta gestante usa a terapia antirretroviral corretamente, tem carga viral inferior a 1.000 cópias/mL com 36 semanas e feto cefálico, então o correto é aguardar o trabalho de parto espontâneo e o parto vaginal. A cesariana nas mulheres vivendo com HIV tem mais complicações pós-operatórias e só é eletiva quando a carga viral é igual ou maior que 1.000 cópias/mL ou desconhecida.",
+    "commentary": "Cesárea com 39 semanas (A): a cesariana eletiva por HIV fica para carga viral igual ou maior que 1.000 cópias/mL ou desconhecida após 34 semanas (nesse caso, programada com 38 semanas), não para esta paciente.\n\nIndução com ocitocina na 37ª semana (B): não há indicação obstétrica para antecipar o parto; o HIV controlado não justifica indução.\n\nProstaglandina vaginal com 37 semanas (D): da mesma forma, não há motivo para preparar o colo e induzir; o caminho é esperar o trabalho de parto espontâneo.",
+    "tip": "HIV na gestação: carga viral abaixo de 1.000 após 34 semanas = parto vaginal; acima ou desconhecida = cesárea eletiva.",
+    "reference": "Ministério da saúde. Protocolo clínico e diretrizes terapêuticas para prevenção da transmissão vertical de hiv, sífilis e hepatites virais. Página 108. 2022. Disponível em https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_hiv_sifilis_hepatites.pdf",
     "tags": [
-      "trauma",
+      "obstetrícia",
+      "infecções"
+    ]
+  },
+  {
+    "id": "tp2022-92",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Primigesta, 34 semanas, Hb 11,5 g/dL (era 12,5 g/dL com 10 semanas). Conduta correta?",
+    "options": [
+      "(A) Pesquisar hemoglobinopatias por eletroforese.",
+      "(B) Orientar dieta ricas em legumes, verduras e proteínas.",
+      "(C) Encaminhar ao alto risco por anemia severa.",
+      "(D) Ferro elementar em doses terapêuticas."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Na gestação, considera-se anemia a hemoglobina abaixo de 11 g/dL. Esta gestante tem 11,5 g/dL, portanto não está anêmica.\n\nA queda de 12,5 para 11,5 g/dL ao longo da gravidez é esperada: o volume de plasma aumenta mais do que a massa de hemácias, o que dilui a hemoglobina (hemodiluição fisiológica). A conduta é apenas orientar alimentação saudável e variada, com fontes de ferro e proteínas, e manter a suplementação profilática de ferro e ácido fólico que o Ministério da Saúde recomenda a todas as gestantes.",
+    "commentary": "Eletroforese de hemoglobina (A): investigação de hemoglobinopatias faz sentido diante de anemia, microcitose sem deficiência de ferro ou história familiar; aqui a hemoglobina é normal.\n\nEncaminhar ao alto risco por anemia severa (C): não há anemia; a anemia grave na gestação corresponde a valores muito mais baixos (abaixo de 8 g/dL).\n\nFerro em dose terapêutica (D): dose de tratamento é para gestante com anemia confirmada; com hemoglobina normal, usa-se apenas a dose profilática.",
+    "tip": "Gestação: anemia é Hb abaixo de 11 g/dL. Queda leve ao longo da gravidez é hemodiluição fisiológica.",
+    "reference": "MS - Atenção ao Pré-Natal de Baixo Risco.",
+    "tags": [
+      "obstetrícia",
+      "nutrição"
+    ]
+  },
+  {
+    "id": "tp2025-97",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Paciente de 39 anos, G3PN3 com histórico de pré-eclâmpsia sobreposta a hipertensão arterial crônica, teve parto normal há 50 minutos e está apresentando sangramento vaginal abundante. Ao chegar ao leito, ela se encontra em regular estado geral, frequência cardíaca de 120bpm, pressão arterial de 90x60 e útero amolecido acima da cicatriz umbilical. Diante do quadro, assinale a alternativa com a sequência e o protocolo terapêutico adequados:",
+    "options": [
+      "(A) Compressão uterina bimanual e revisão de canal vaginal.",
+      "(B) Ocitocina, metilergometrina e misoprostol.",
+      "(C) Compressão uterina bimanual, ocitocina e misoprostol.",
+      "(D) Ocitocina e curetagem imediata."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Diante de hemorragia pós-parto por atonia uterina, a conduta mecânica inicial com compressão bimanual (manobra de Hamilton) deve ser associada imediatamente a ocitocina e misoprostol, evitando metilergometrina pelo histórico de hipertensão.",
+    "commentary": "A atonia uterina consolidada por útero amolecido (globo de segurança de Pinard ausente) é responsável por mais de 80% das causas de hemorragia pós-parto (HPP). A conduta de urgência exige manobras de fechamento e compressão física mecânica imediata (como a manobra bimanual de Hamilton) aliada à infusão veloz de ocitocina sistêmica endovenosa e administração retal/sublingual de misoprostol (800mcg). É imperioso destacar que o uso de Metilergometrina (Ergotrate) é estritamente contraindicado nesse caso, pelo grave histórico relatado de pré-eclâmpsia e hipertensão crônica na paciente, antevisto o seu potente e deletério efeito vasoconstritor arterial.",
+    "reference": "Hemorragia pós-parto, Protocolo FEBRASGO-Obstetrícia, nº 36, 2021.",
+    "tags": [
+      "obstetrícia",
       "emergência"
     ]
   },
   {
-    "id": "tp2025-72",
-    "module": "Cirurgia",
-    "text": "Mulher de 38 anos procura o serviço de emergência com queixa de dor e vermelhidão ao longo de uma veia na perna esquerda há 4 dias. Relata uso recente de anticoncepcional oral. Nega traumas ou cirurgias recentes. Ao exame físico observa-se um cordão endurecido, eritematoso e doloroso ao longo da veia safena magna, sem sinais de edema significativo no membro. Considerando a principal hipótese diagnóstica, qual é a melhor conduta inicial?",
+    "id": "tp2021-96",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Adolescente, 15 anos, na 10ª semana de gravidez resultante de violência sexual, não deseja manter a gravidez. Vem à consulta acompanhada pelos pais. Para a interrupção legal desta gestação é necessário:",
     "options": [
-      "(A) Anti-inflamatórios não esteroides, compressão elástica e mobilização precoce.",
-      "(B) Anticoagulação plena com heparina de baixo peso molecular imediatamente.",
-      "(C) Indicar repouso absoluto do membro afetado e antibioticoterapia profilática para evitar infecção secundária.",
-      "(D) Realizar punção da veia afetada para aspiração do trombo e reduzir a inflamação local."
-    ],
-    "correctAnswer": 0,
-    "explanation": "A tromboflebite superficial estéril é tratada preferencialmente com medidas conservadoras e sintomáticas: AINEs, terapia compressiva elástica de suporte e estímulo à deambulação ativa.",
-    "commentary": "Este caso exibe traços nítidos de tromboflebite superficial da via venosa subcutânea (safena magna), favorecida na mulher jovem sob terapia de anticoncepção oral combinada. Por constituir enfermidade eminentemente imunológica local autolimitada e estéril, o plano de frente abjura o repouso estrito (contra-indicado pelo aumento do estase e risco subsequente de TVP). O alívio decorre de anti-inflamatórios (AINEs), compressão graduada e mobilidade física regular. Anticoagulação formal estaria balizada em caso de proximidade direta ao sistema venoso profundo (< 3-5 cm da crossa de safena) ou lesões com extensão superior a 5 cm.",
-    "reference": "Diretrizes do American College of Chest Physicians (ACCP); Sociedade Brasileira de Angiologia e Cirurgia Vascular (SBACV) - Projeto Diretrizes.",
-    "tags": [
-      "cirurgia vascular"
-    ]
-  },
-  {
-    "id": "tp2026-69",
-    "module": "Cirurgia",
-    "text": "Homem de 40 anos apresenta tumefação dolorosa em coxa há 7 dias, com aumento progressivo, flutuação e eritema. Após tentativa prévia de antibioticoterapia e sem drenagem da lesão, houve piora do quadro. Considerando a fisiopatologia do abscesso, qual mecanismo explica a falha do tratamento clínico isolado?",
-    "options": [
-      "(A) Formação de cavidade encapsulada com baixa penetração de antibióticos e alta carga bacteriana.",
-      "(B) Redução da perfusão tecidual local por vasoconstrição reflexa.",
-      "(C) Produção bacteriana de toxinas que inativam diretamente antibióticos sistêmicos.",
-      "(D) Formação de biofilme bacteriano, impedindo resposta inflamatória local."
-    ],
-    "correctAnswer": 0,
-    "explanation": "O abscesso estabelece uma cavidade encapsulada espessa contendo pus e detritos necróticos, criando uma barreira física com baixa perfusão interna. Isso impede que os antibióticos sistêmicos atinjam concentrações terapêuticas eficazes no local infectado, exigindo drenagem cirúrgica.",
-    "commentary": "O abscesso cutâneo ou muscular profundo forma uma coleção purulenta envolta por uma pseudocápsula de fibrina e tecido colágeno inflamatório. Essa barreira vascularizada externamente mas avascular internamente cria um ambiente com baixíssima perfusão central, pH ácido e altíssima carga bacteriana ativa e dormente. Como resultado, os antibióticos circulantes não penetram no interior do abscesso em quantidade suficiente, o que dita o antigo aforismo cirúrgico: \"ubi pus, ibi evacua\" (onde há pus, esvazie/drene). Sobre os distratores: (B, C, D) Embora vasoconstrição tecidual periférica, toxinas bacterianas e biofilmes bacterianos desempenhem papéis em infecções, a barreira mecânica e biológica da cápsula do abscesso é o fator fisiopatológico primário reconhecido na falha da terapia medicamentosa isolada.",
-    "reference": "Stevens DL et al. Practice Guidelines for Skin and Soft Tissue Infections. Clin Infect Dis. 2014. Miller JM et al. Guide to Microbiology Laboratory Utilization. Clin Infect Dis. 2024. Seidelman JL et al. Surgical Site Infection Prevention. JAMA. 2023.",
-    "tags": [
-      "abscesso",
-      "fisiopatologia",
-      "infecção"
-    ]
-  },
-  {
-    "id": "tp2020-114",
-    "module": "Cirurgia",
-    "text": "Paciente de 60 anos procura ambulatório por queixa de tosse seca há 2 meses, sem febre. É tabagista de longa data e sem outras comorbidades. Ao Raio X de tórax apresenta imagem em pulmão direito de 3cm de diâmetro em região periférica tendo sido feita hipótese diagnóstica inicial de nódulo solitário de pulmão.\n\nDentre as alternativas abaixo, qual caracteriza o passo fundamental para instituir o tratamento?",
-    "options": [
-      "(A) Tomografia computadorizada de tórax",
-      "(B) Punção com agulha fina transtorácica",
-      "(C) Broncoscopia com biopsia transbrônquica",
-      "(D) PET-CT"
+      "(A) Autorização expedida pelo juiz da comarca de residência.",
+      "(B) Solicitação assinada pela paciente e representante legal.",
+      "(C) Laudo pericial do exame de corpo delito expedido pelo IML.",
+      "(D) Boletim de ocorrência lavrado pela autoridade policial."
     ],
     "correctAnswer": 1,
-    "explanation": "Nódulo pulmonar periférico de 3 cm em tabagista: alta probabilidade de neoplasia. O passo fundamental para instituir o tratamento é o diagnóstico histológico — em lesão periférica, a punção transtorácica com agulha (guiada por TC) é o método indicado.",
-    "commentary": "Tomografia e PET-CT ajudam no estadiamento e na caracterização, mas não dão o diagnóstico histológico. A broncoscopia é melhor para lesões centrais.",
-    "reference": "Sabiston, tratado de cirurgia, 19ª edição, capítulo de pulmão, seção tórax.",
-    "tags": [
-      "cirurgia torácica",
-      "nódulo pulmonar"
-    ]
-  },
-  {
-    "id": "tp2024-93",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Gestante (8 semanas), teste rápido positivo para sífilis. Nega sintomas, múltiplos parceiros. Tratamento e conduta pelo Ministério da Saúde?",
-    "options": [
-      "(A) Penicilina benzatina 7,2 milhões (3 doses); tratar parceiro, acompanhar mensal com VDRL.",
-      "(B) Penicilina benzatina 2,4 milhões (1 dose); repetir VDRL.",
-      "(C) Penicilina benzatina 7,2 milhões; repetir VDRL trimestral.",
-      "(D) Penicilina benzatina 2,4 milhões; não tratar parceiro."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Em gestantes com tempo de infecção desconhecido, utiliza-se esquema de sífilis latente tardia (3 doses de 2,4 milhões). O tratamento do parceiro é obrigatório para evitar reinfecção.",
-    "commentary": "Segundo o Ministério da Saúde o tratamento proposto para gestante diante de um teste rápido positivo para a sífilis é: • Tratamento imediato com penicilina benzatina na dose compatível com o estadio da doença, que no caso é desconhecido, então, deve ser tratado com a dose de 7,2 milhões. • Coleta de novo teste para confirmação. • Tratar o parceiro sempre. • Notificar a vigilância sanitária • Acompanhar com teste não treponêmico mensal para verificar aumento de titulação.",
-    "reference": "Protocolo clínico e diretrizes terapêuticas para a prevenção da transmissão vertical de HIV, sífilis e hepatites virais Ministério da Saúde 2022",
+    "explanation": "Pelas normas diretivas e leis penais brasileiras, a interrupção da gravidez fruto de abuso ou estupro (violento/vulnerável) independe de alvarás judiciais, registros policiais prévios de boletins de ocorrência ou atestados legistas periciais do Instituto Médico Legal (IML). O único documento de elegibilidade e autonomia obrigatório é o Termo de Consentimento Livre e Esclarecido assinado pela paciente acompanhada perante o seu representante ou responsável legal.",
+    "commentary": "A legislação nacional e as normativas de violência sexual preconizadas pelo Ministério da Saúde estabelecem que a palavra do doente presencial é soberana e suficiente para caracterizar e assegurar a violência contra a maturidade da mulher. Caberá à equipe multiprofissional (médico, psicólogo, enfermeiro e assistente social) ratificar a compatibilidade evolutiva da idade gestacional e o termo assinado, prosseguindo com o abortamento legal na rede pública garantida, sem necessidade de burocracias externas ou alvarás.",
+    "reference": "Norma Técnica de Prevenção e Tratamento dos Agravos Resultantes da Violência Sexual contra Mulheres e Adolescentes, Ministério da Saúde, 3ª ed (2012).",
     "tags": [
       "obstetrícia",
-      "IST"
+      "aborto legal",
+      "violência sexual"
     ]
   },
   {
-    "id": "tp2022-82",
+    "id": "tp2019-100",
     "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher de 32 anos, nuligesta, resultado de citologia oncótica: ASC-US (células escamosas atípicas de significado indeterminado). Conduta preconizada pelo Ministério da Saúde:",
+    "text": "Mulher, 33 anos de idade, apresenta citologia cervical compatível com lesão intraepitelial de baixo grau (LIEBG/LSIL).\n\nDe acordo com as orientações do Instituto Nacional do Câncer (INCA), como deve ser o seguimento desta mulher?",
     "options": [
-      "(A) Repetir a colpocitologia em 6 meses.",
-      "(B) Repetir a colpocitologia em 12 meses.",
-      "(C) Fazer a colposcopia em 18 meses.",
-      "(D) Colposcopia com biópsia dirigida."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Pelas diretrizes brasileiras, a conduta para ASC-US em mulheres de 30 anos ou mais é a repetição em 6 meses.",
-    "commentary": "ASC-US em mulheres >= 30 anos exige repetição semestral. Se houver dois resultados consecutivos de ASC-US ou pior, encaminha-se para colposcopia.",
-    "reference": "Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, INCA 2016.",
-    "tags": [
-      "ginecologia geral",
-      "rastreamento"
-    ]
-  },
-  {
-    "id": "tp2022-100",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Gestante (36 semanas), perda líquida clara. Especular: saída ativa por Valsalva. Toque: colo fechado. Sobre este caso:",
-    "options": [
-      "(A) Prescrição de penicilina após 18h de bolsa rota.",
-      "(B) Cesárea de urgência obrigatória se bolsa rota > 6h.",
-      "(C) Corticoindução é mandatória.",
-      "(D) USG com ILA normal não exclui o diagnóstico de amniorexe."
-    ],
-    "correctAnswer": 3,
-    "explanation": "O diagnóstico de rotura de membranas é clínico (anamnese e especular); o volume de líquido no USG pode estar normal em roturas altas.",
-    "commentary": "O ILA normal não afasta bolsa rota. Com 36 semanas, a conduta é resolução da gravidez e profilaxia para GBS se indicado (sem necessidade de corticoide após 34 semanas).",
-    "reference": "Cartilha Ministério da Saúde, 2021.",
-    "tags": [
-      "obstetrícia"
-    ]
-  },
-  {
-    "id": "tp2021-88",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher, com idade gestacional de 32 semanas, chega à emergência com dor abdominal de início súbito, contínua, associada a sangramento transvaginal de coloração escura. Traz ultrassom do dia anterior mostrando feto vivo e placenta corporal posterior. Exame físico: PA = 160 x 90 mmHg, feto longitudinal, pélvico, BCF = 110 bpm constante, útero hipertônico, colo fechado. A conduta é:",
-    "options": [
-      "(A) Cesárea imediata.",
-      "(B) Conduta expectante.",
-      "(C) Inibição de trabalho de parto.",
-      "(D) Indução do trabalho de parto."
-    ],
-    "correctAnswer": 0,
-    "explanation": "O quadro de dor abdominal contínua súbita, hipertonia uterina (útero lenhoso), elevação da pressão arterial e sofrimento fetal agudo (BCF 110 bpm fixo) com sangramento escuro é típico de Descolamento Prematuro de Placenta (DPP). Sendo um feto vivo com sofrimento agudo e sem parto vaginal iminente, indica-se a cesariana imediata.",
-    "commentary": "A suspeita clínica de DPP é essencialmente clínica (dor abdominal súbita intensa contínua + hipertonia uterina + sangramento escuro). Sendo o feto vivo, e na presença de sofrimento fetal agudo sem parto vaginal iminente (no caso o colo está impérvio e fechado), a conduta prioritária é a resolução cirúrgica por cesariana rápida, precedida de amniotomia que reduz a hipertensão intraútero e evita infiltração miometrial (útero de Couvelaire) e coagulação intravascular disseminada.",
-    "reference": "Fernandes CE, Silva de Sá MF. Tratado de Obstetrícia FEBRASGO. São Paulo: Elsevier, 2018; Montenegro CABR. Rezende Obstetrícia. 13ª ED. Rio de Janeiro: Guanabara Koogan, 2017.",
-    "tags": [
-      "obstetrícia",
-      "descolamento de placenta",
-      "urgência"
-    ]
-  },
-  {
-    "id": "tp2026-98",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Primigesta de 32 anos, com 36 semanas de gestação, em acompanhamento por infecção pelo HIV, em uso regular de terapia antirretroviral (TARV) desde o primeiro trimestre, apresenta carga viral de 1.200 cópias/mL no último exame. Evolui sem intercorrências obstétricas. Diante desse cenário, qual a conduta para redução do risco de transmissão vertical?",
-    "options": [
-      "(A) Indicar cesariana eletiva a partir de 38 semanas e realizar zidovudina intravenosa intraparto.",
-      "(B) Manter conduta expectante e indicar parto vaginal, pois está em uso regular de TARV.",
-      "(C) Indicar parto vaginal com uso de fórceps para reduzir o tempo expulsivo.",
-      "(D) Suspender TARV no intraparto e iniciar profilaxia apenas no recém-nascido."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Gestantes vivendo com HIV que apresentem Carga Viral indetectável ou desconhecida, ou ainda carga viral maior ou igual a 1.000 cópias/mL detectada próximo ao termo (após 34 semanas), têm indicação formal de parto por via cesariana eletiva (com membranas íntegras, a partir de 38 semanas de gestação) associada à infusão de Zidovudina (AZT) endovenosa intraparto.",
-    "commentary": "O protocolo clínico brasileiro estabelece que a determinação da via de parto na gestante infectada pelo HIV baseia-se na aferição da Carga Viral (CV) colhida na idade gestacional de 34 semanas ou mais. Se a CV for maior ou igual a 1.000 cópias/mL (ou desconhecida), a via preferencial obrigatória de eleição é a cesariana eletiva (programada, realizada antes do início do trabalho de parto e de qualquer ruptura de membranas), devendo-se infundir o AZT venoso contínuo desde 3 horas antes da incisão cirúrgica até o clampeamento do cordão. Sobre os distratores: (B) O parto vaginal só é seguro e elegível quando a Carga Viral do terceiro trimestre encontra-se comprovadamente indetectável ou < 1.000 cópias/mL. (C) O fórceps de alívio e outros procedimentos invasivos (como amniotomia ou episiotomia) devem ser evitados devido ao risco de sangramento e infecção cruzada. (D) A TARV materna jamais deve ser suspensa, sendo somada à profilaxia infundida.",
-    "reference": "BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Protocolo clínico e diretrizes terapêuticas para prevenção da transmissão vertical de HIV, sífilis e hepatites virais. Brasília: Ministério da Saúde, 2022.",
-    "tags": [
-      "HIV e gestação",
-      "transmissão vertical",
-      "cesariana eletiva"
-    ]
-  },
-  {
-    "id": "tp2024-107",
-    "module": "Saúde Coletiva",
-    "text": "Homem, 76 anos, polifarmácia (Enalapril, HCTZ, Levotiroxina, Sinvastatina, Zolpidem). Apresenta sonolência, lapsos de memória e tosse. Qual a conduta mais apropriada?",
-    "options": [
-      "Manter prescrição e adicionar antidepressivo (ISRS).",
-      "Substituir Enalapril por BRA e considerar redução/descontinuação do Zolpidem.",
-      "Aumentar HCTZ para controle pressórico e adicionar IBP.",
-      "Aumentar Levotiroxina para melhorar a fadiga e manter Zolpidem."
+      "(A) Repetir a citologia imediatamente e, se persistir a alteração, encaminhar para colposcopia.",
+      "(B) Repetir a citologia em 6 meses e, se persistir a alteração, encaminhar para colposcopia.",
+      "(C) Ser encaminhada para a colposcopia imediata.",
+      "(D) Colher exame de detecção de DNA-HPV."
     ],
     "correctAnswer": 1,
-    "explanation": "A tosse pode ser efeito colateral do Enalapril e a sonolência/lapsos de memória do Zolpidem.",
-    "commentary": "A substituição do enalapril por um BRA (bloqueador do receptor da angiotensina) pode reduzir a tosse persistente. A redução ou descontinuação do zolpidem pode diminuir a sonolência diurna, lapsos de memória e fadiga. A introdução de estratégias não farmacológicas para insônia, como a terapia cognitivocomportamental, pode melhorar a qualidade do sono sem os efeitos adversos do zolpidem. As outras opções não abordam adequadamente os problemas relacionados à polifarmácia e podem introduzir novos riscos ou não resolver os sintomas atuais.",
-    "reference": "Fick, D. M., et al. (2019). \"2019 American Geriatrics Society Beers Criteria® Update Expert Panel.\" Journal of the American Geriatrics Society, 67(4), 674-694. Maher, R. L., Hanlon, J., & Hajjar, E. R. (2014). \"Clinical consequences of polypharmacy in elderly.\" Expert Opinion on Drug Safety, 13(1), 57-65. Katzung, B. G., Masters, S. B., & Trevor, A. J. (2012). \"Basic & Clinical Pharmacology.\" 12ª ed. New York: McGraw-Hill Medical.",
+    "explanation": "Pelas diretrizes do INCA (2016) para rastreamento citológico, a lesão intraepitelial de baixo grau em mulheres com 25 anos ou mais deve ser seguida com repetição da citologia em 6 meses. Se a alteração persistir, a paciente é encaminhada para colposcopia.",
+    "commentary": "A colposcopia imediata é para lesões de alto grau. Observação: com a nova diretriz de rastreamento por DNA-HPV (INCA, 2024), a conduta passa a depender do resultado do teste de HPV nos locais que já a adotaram.",
+    "reference": "Diretrizes brasileiras para o rastreamento do câncer do colo do útero / Instituto Nacional de Câncer. Coordenação Geral de Ações Estratégicas. Divisão de Apoio à Rede de Atenção Oncológica. – Rio de Janeiro: INCA, 2011. ISBN 978-85-7318-184-5",
     "tags": [
-      "polifarmácia",
-      "geriatria",
-      "farmacologia"
+      "ginecologia",
+      "rastreamento",
+      "câncer de colo uterino"
     ]
   },
   {
-    "id": "tp2023-108",
+    "id": "tp2024-116",
     "module": "Saúde Coletiva",
-    "text": "Qual das seguintes características está associada à fase avançada da transição demográfica epidemiológica?",
+    "text": "Sobre o Método Clínico Centrado na Pessoa (MCCP), é correto afirmar:",
     "options": [
-      "(A) Baixa prevalência de doenças crônicas não transmissíveis.",
-      "(B) Predominância de doenças infecciosas e parasitárias.",
-      "(C) Aumento da expectativa de vida.",
-      "(D) Alta taxa de mortalidade infantil."
-    ],
-    "correctAnswer": 2,
-    "explanation": "A transição demográfica caracteriza-se pelo envelhecimento populacional e aumento da longevidade.",
-    "commentary": "Durante a fase inicial da transição demográfica, as principais causas de morte e morbidade são dominadas por doenças infecciosas, como doenças respiratórias, diarreia e outras infecções transmissíveis. No entanto, à medida que as condições socioeconômicas melhoram, o acesso aos cuidados de saúde se amplia e ocorrem mudanças no estilo de vida e no ambiente, ocorre a transição para a fase avançada.\n\nNessa fase, a prevalência das dcnts começa a aumentar, enquanto a incidência de doenças infecciosas diminui. as dcnts, como doenças cardiovasculares, diabetes, doenças respiratórias crônicas e certos tipos de câncer, estão relacionadas principalmente a fatores de risco não transmissíveis, como tabagismo, alimentação inadequada, inatividade física, consumo excessivo de álcool e exposição a poluentes ambientais.\n\nPortanto, quando uma população entra na fase avançada da transição demográfica epidemiológica, a baixa prevalência de dcnts é uma característica observada. isso indica que a população está enfrentando uma menor carga de doenças infecciosas e está vivendo por mais tempo, mas também destaca a importância de enfrentar os fatores de risco relacionados às DCNTs para garantir a saúde e o bem-estar a longo prazo.",
-    "reference": "Duarte Elisabeth Carmen, Barreto Sandhi Maria. Transição demográfica e epidemiológica: a Epidemiologia e Serviços de Saúde revisita e atualiza o tema. Epidemiol. Serv. Saúde [Internet]. 2012 Dez [citado 2023 Jun 29] ; 21( 4 ): 529-532. Oliveira AS. TRANSIÇÃO DEMOGRÁFICA, TRANSIÇÃO EPIDEMIOLÓGICA E ENVELHECIMENTO POPULACIONAL NO BRASIL. Hygeia [Internet];15(32):69-7. Goldani MZ, Mosca PRF, Portela AK, Silveira PP, Silva CH da. O impacto da transição demográfico-epidemiológica na saúde da criança e do adolescente do Brasil. Clin Biomed Res [Internet]. 27º de abril de 2012 ;32(1).",
-    "tags": [
-      "saúde coletiva",
-      "demografia"
-    ]
-  },
-  {
-    "id": "tp2022-113",
-    "module": "Saúde Coletiva",
-    "text": "Gestante tem teste rápido para sífilis positivo. Com relação à Notificação Compulsória, deve-se:",
-    "options": [
-      "(A) Completar a investigação e só notificar após confirmação.",
-      "(B) Notificar como \"Gestante com Sífilis\" já na suspeita.",
-      "(C) Notificar somente se houver sífilis congênita no feto.",
-      "(D) Ignorar pois sífilis não é de notificação compulsória."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Pelas diretrizes de vigilância, a notificação de sífilis deve ocorrer após a confirmação diagnostica.",
-    "commentary": "Diferente de algumas outras doenças, a notificação de sífilis pressupõe a confirmação (teste treponêmico + não treponêmico ou histórico de tratamento).",
-    "reference": "Protocolo Transmissão Vertical HIV/Sífilis, 2022.",
-    "tags": [
-      "vigilância epidemiológica",
-      "IST"
-    ]
-  },
-  {
-    "id": "tp2021-112",
-    "module": "Saúde Coletiva",
-    "text": "Embora a expectativa de vida da população brasileira venha aumentando nas últimas décadas, preocupam as autoridades sanitárias os níveis elevados de mortalidade de adolescentes masculinos, na faixa etária entre 13 e 19 anos, nos grandes e médios centros urbanos. As ações de maior impacto potencial, a curto prazo, para a diminuição da mortalidade desta população devem estar centradas em:",
-    "options": [
-      "(A) Aumento das ações intersetoriais contra drogas e contra a violência.",
-      "(B) Aumento das campanhas de uso de preservativo masculino.",
-      "(C) Elevação da renda per capita da população.",
-      "(D) Melhoria das condições de saneamento básico."
-    ],
-    "correctAnswer": 0,
-    "explanation": "A principal causa de mortalidade em jovens e adolescentes masculinos no meio urbano brasileiro é constituída por causas externas (homicídios, acidentes de trânsito violento e violências interpessoais). Intervenções intersetoriais integradas direcionadas ao controle da criminalidade, violência urbana e consumo abusivo de entorpecentes/drogas são, portanto, as opções com maior ptencial de retorno e impacto imediato.",
-    "commentary": "As causas externas constituem a grande e alarmante epidemia na saúde dos jovens brasileiros, superando infinitamente patologias infecciosas transmissíveis ou crônicas na faixa etária juvenil. Por tal característica, o amparo a este público transborda o espectro estrito de atuação do setor de saúde, demandando políticas territoriais intersetoriais articuladas de segurança, assistência social, lazer e redução de violência.",
-    "reference": "BEAGLEHOLE, R.; BONITA, R.; KJELLSTRÖM, T. Epidemiologia básica. 2 ed. São Paulo: Santos / OMS, 2010.",
-    "tags": [
-      "saúde do adolescente",
-      "causas externas",
-      "vulnerabilidade social"
-    ]
-  },
-  {
-    "id": "tp2019-109",
-    "module": "Saúde Coletiva",
-    "text": "Mulher, 39 anos, trabalhadora de uma indústria alimentícia, comparece ao Serviço Especializado de Segurança e Medicina do Trabalho da empresa para exame médico periódico. Queixa-se de parestesias nas mãos, com piora noturna e limitação para preensão de objetos. Exerce sua atividade laboral executando movimentos repetitivos de flexão e extensão dos dedos e punhos.\n\nDuas manobras de exame físico para avaliar possível diagnóstico são:",
-    "options": [
-      "(A) Phalen e Eichoff",
-      "(B) Finkelstein e Eichoff",
-      "(C) Tinel e Finkelstein",
-      "(D) Tinel e Phalen"
+      "O componente \"Sendo Realista\" foca apenas nos recursos financeiros do paciente.",
+      "O acrônimo SIFE refere-se à anamnese técnica por sistemas.",
+      "Deve-se seguir rigidamente a ordem dos quatro componentes em todas as consultas.",
+      "O primeiro componente foca em entender a experiência da doença para o indivíduo (ideias, sentimentos, expectativas)."
     ],
     "correctAnswer": 3,
-    "explanation": "Parestesias nas mãos com piora noturna em trabalhadora com movimentos repetitivos de punho: síndrome do túnel do carpo (LER/DORT).\n\nAs manobras indicadas são o sinal de Tinel (percussão do nervo mediano no punho) e o teste de Phalen (flexão máxima do punho).",
-    "commentary": "Finkelstein e Eichhoff avaliam a tenossinovite de De Quervain.",
-    "reference": "BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância em Saúde Ambiental e do Trabalhador. Dor relacionada ao trabalho: lesões por esforços repetitivos (LER) e Distúrbios Osteomusculares Relacionados ao Trabalho (Dort). Brasília: Editora do Ministério da Saúde, 2012. 68 p Manuais Técnicos em Saúde do Trabalhador nº. 10. Protocolos de Complexidade Diferenciada. / http://www.scielo.br/pdf/rbort/v49n5/pt_0102-3616-rbort-49-05-0429.pdf",
+    "explanation": "O Método Clínico Centrado na Pessoa organiza a consulta em quatro componentes: explorar a saúde, a doença e a experiência de adoecer; entender a pessoa como um todo (história de vida, família, contexto); elaborar um plano conjunto de manejo; e intensificar a relação médico-pessoa.\n\nO primeiro componente vai além do diagnóstico biomédico: busca saber como a pessoa vive aquele problema. Para isso usa-se o acrônimo SIFE — Sentimentos, Ideias, Funcionalidade (o impacto no dia a dia) e Expectativas em relação à consulta. É essa compreensão que permite chegar a um plano que a pessoa aceite e consiga seguir.",
+    "commentary": "Sendo realista restrito ao dinheiro do paciente (A): a ideia de ser realista diz respeito ao uso sensato do tempo, dos recursos do serviço e da equipe e das próprias habilidades do médico, e não só às finanças da pessoa.\n\nSIFE como anamnese por sistemas (B): o SIFE explora a experiência subjetiva da doença (sentimentos, ideias, funcionalidade e expectativas); o interrogatório sobre os diversos aparelhos é outra ferramenta.\n\nOrdem rígida dos componentes (C): os componentes se entrelaçam e são retomados conforme a conversa e o vínculo evoluem; não existe sequência obrigatória em cada consulta.",
+    "tip": "MCCP, 1º componente = SIFE: Sentimentos, Ideias, Funcionalidade e Expectativas do paciente sobre a doença.",
+    "reference": "Consulta centrada na pessoa, José Mauro Ceratti Lopes; Lêda Chaves Dias, Tratado de Medicina de Família e Comunidade, Capítulo 15, 2ª edição, Gustavo Gusso, 2019. Método clínico centrado na pessoa, Marcelo Garcia Kolling, Medicina Ambulatorial – Condutas de Atenção Primária baseadas em Evidências, Cap 11, 5ª edição, Artmed, 2022",
     "tags": [
-      "saúde coletiva",
-      "saúde do trabalhador",
-      "ortopedia"
+      "MCCP",
+      "relação médico-paciente",
+      "APS"
     ]
   },
   {
-    "id": "tp2022-17",
-    "module": "Ciências Básicas",
-    "text": "Paciente com quadro de Doença Encefálica Vascular (AVC) apresentando dificuldade de movimentar o membro superior direito, fala pastosa e desvio da comissura labial à direita. Indique a alternativa que corresponde ao nome do vaso, o ramo e a sua área irrigada, respectivamente:",
+    "id": "tp2022-103",
+    "module": "Saúde Coletiva",
+    "text": "Gestante atendida em UBS após crise convulsiva recebe medicação, cadastro no pré-natal e encaminhamento ao neurologista da rede municipal. Quais princípios doutrinários do SUS foram atendidos?",
     "options": [
-      "(A) Cerebral média esquerda / Artéria carótida interna esquerda / Face superolateral do giro pré-central.",
-      "(B) Cerebral média direita / Artéria carótida interna direita / Face superolateral do giro pós-central.",
-      "(C) Cerebral anterior esquerda / Artéria carótida interna esquerda / Face superolateral do giro pré-central.",
-      "(D) Cerebral anterior direita / Artéria carótida interna esquerda / Face medial do giro pós-central."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Déficit motor à direita indica lesão no hemisfério esquerdo. A face superolateral do giro pré-central (área motora) é irrigada pela cerebral média.",
-    "commentary": "O déficit motor no lado direito do corpo indica uma lesão no hemisfério cerebral esquerdo devido à decussação das pirâmides. A dificuldade de fala e fraqueza na face e membro superior sugerem acometimento da face superolateral do giro pré-central, território da artéria cerebral média esquerda (ramo da carótida interna).",
-    "reference": "MOORE, K. L. Anatomia orientada para a clínica. 7. ed. Rio de Janeiro: Guanabara Koogan, 2014.",
-    "tags": [
-      "anatomia",
-      "neurologia"
-    ]
-  },
-  {
-    "id": "tp2021-11",
-    "module": "Ciências Básicas",
-    "text": "Homem, 45 anos, em acompanhamento pós-transplante renal há 10 meses, apresenta proteinúria, aumento da creatinina sanguínea e perda progressiva da função do enxerto. Realizada biópsia renal que evidenciou fibrose e anormalidades vasculares. Pode-se concluir que o paciente apresenta rejeição:",
-    "options": [
-      "(A) Aguda.",
-      "(B) Hiperaguda.",
-      "(C) Crônica.",
-      "(D) Trombótica."
+      "(A) Universalidade e Regionalização.",
+      "(B) Intersetorialidade e Equidade.",
+      "(C) Universalidade e Integralidade.",
+      "(D) Integralidade e Territorialização."
     ],
     "correctAnswer": 2,
-    "explanation": "A biópsia renal com predomínio de fibrose intersticial, atrofia tubular e espessamento fibrointimal vascular de curso lento (10 meses pós-transplante) caracteriza a rejeição crônica do enxerto.",
-    "commentary": "A rejeição crônica é patologicamente definida por lesão vascular arterial progressiva (íntima espessada secundária a proliferação celular), fibrose intersticial crônica e perda insidiosa de função glomerular renal. A rejeição hiperaguda ocorre em minutos por anticorpos pré-formados, e a aguda desenvolve infiltrado inflamatório túbulo-intersticial em semanas.",
-    "reference": "SEMENTILLI, A. et al. Renal transplant pathology: main morphological findings and how to sign out biopsies. J. Bras. Patol. Med. Lab. Aug. 2008",
+    "explanation": "O acesso à UBS (Universalidade) e o cuidado que vai da atenção primária à especializada (Integralidade) exemplificam esses princípios.",
+    "commentary": "A universalidade garante o acesso. A integralidade é vista no atendimento que considera todas as necessidades da paciente, articulando diferentes níveis de complexidade.",
+    "reference": "Lei nº 8.080/1990.",
     "tags": [
-      "patologia",
-      "nefrologia",
-      "cirurgia"
+      "SUS",
+      "políticas de saúde"
     ]
   },
   {
-    "id": "tp2026-16",
-    "module": "Ciências Básicas",
-    "text": "Um homem de 41 anos, internado por hipertensão resistente e fraqueza muscular, apresenta PA de 168/100mmHg. Exames sanguíneos revelam: potássio 2,9mEq/L (VR: 3,5 - 5,0); bicarbonato 33mEq/L (VR: 22 - 28); pH arterial 7,48 (VR: 7,35 - 7,45), atividade de renina plasmática reduzida e aldosterona elevada. Identifique a alteração que melhor explica os achados clínicos e laboratoriais desse paciente.",
+    "id": "tp2025-107",
+    "module": "Saúde Coletiva",
+    "text": "Paciente com diabetes mellitus tipo 2 já diagnosticada realiza acompanhamento regular com equipe multidisciplinar para evitar retinopatia e nefropatia diabética. Este caso representa qual nível de prevenção?",
     "options": [
-      "(A) Redução da reabsorção distal de Na⁺, com redução da secreção de K⁺ e H⁺, favorecendo diminuição do HCO₃⁻ plasmático.",
-      "(B) Aumento da reabsorção distal de Na⁺, com aumento da secreção de K⁺ e H⁺, favorecendo elevação do HCO₃⁻ plasmático.",
-      "(C) Aumento da secreção tubular de HCO₃⁻, com redução da reabsorção de Na⁺ e retenção simultânea de K⁺.",
-      "(D) Redução da secreção tubular de K⁺, com aumento da excreção de Na⁺ e retenção compensatória de H⁺."
+      "(A) Prevenção primária",
+      "(B) Prevenção secundária",
+      "(C) Prevenção terciária",
+      "(D) Prevenção quaternária"
     ],
     "correctAnswer": 1,
-    "explanation": "O hiperaldosteronismo primário aumenta a reabsorção distal de Na⁺ (provocando hipertensão) e estimula a secreção de K⁺ e H⁺ pelas células intercaladas, gerando hipocalemia e alcalose metabólica.",
-    "commentary": "Comentários sobre a resposta correta:\n(B) O quadro clínico-laboratorial é compatível com hiperaldosteronismo primário. A aldosterona atua promovendo reabsorção distal de Na⁺ (expansão volêmica/hipertensão), secreção tubular ativa de K⁺ (hipocalemia) e secreção de H⁺ pelas células intercaladas alfa, promovendo alcalose metabólica com elevação de HCO₃⁻.\n\nComentários sobre os distratores:\n(A) A aldosterona aumenta, e não reduz, a reabsorção de sódio e a eliminação de K⁺ e H⁺.\n(C) Contradiz o papel de retenção de Na e espoliação de K clássica da aldosterona.\n(D) No hiperaldosteronismo a secreção de K⁺ e de H⁺ está aumentada, e a excreção de Na⁺ reduzida distalmente.",
-    "reference": "HALL, John E.; HALL, Michael E. Guyton & Hall - Tratado de Fisiologia Médica. 14. ed. Rio de Janeiro: GEN Guanabara Koogan, 2021. Capítulo 28.",
+    "explanation": "De acordo com referenciais clássicos da Medicina de Família sobre níveis preventivos, a prevenção secundária visa à detecção precoce de lesões assintomáticas e ao tratamento de base imediato para conter o avanço ao espectro clínico desfavorável.",
+    "commentary": "Embora o manejo de complicações estabelecidas de longo prazo seja classificado sob o crivo preventivo terciário (focado em reabilitação e limitação de incapacidades), a conduta ativa diagnóstica multiprofissional periódica voltada a interceptar manifestações ainda subclínicas em fase latente (como a busca ativa precoce por microalbuminúria ou retinopatia diabética inicial incipiente em paciente diagnosticado) assenta-se sob o escopo preventivo secundário.",
+    "reference": "Lopes JM, Gusso G. Tratado de Medicina de Família e Comunidade, 2a ed. Porto Alegre: Artmed, 2019.",
+    "tags": [
+      "prevenção",
+      "atenção primária"
+    ]
+  },
+  {
+    "id": "tp2026-103",
+    "module": "Saúde Coletiva",
+    "text": "Em uma UBS, mulher de 74 anos, diabética e hipertensa, independente para atividades de vida diária, apresenta quedas recorrentes no último ano. Considerando ações de promoção e prevenção, qual estratégia deve ser priorizada pela equipe?",
+    "options": [
+      "(A) Fazer avaliação multifatorial de risco de quedas, revisão medicamentosa e orientação de exercício físico.",
+      "(B) Solicitar densitometria óssea anual, independentemente de fatores adicionais de risco.",
+      "(C) Encaminhar para otorrino para investigação de alteração do equilíbrio como causa principal das quedas.",
+      "(D) Encaminhar para ortopedia para investigação de artrose como causa principal das quedas."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Idosa com quedas recorrentes precisa de uma avaliação multifatorial, porque a queda raramente tem uma única causa. A equipe deve investigar fatores do próprio paciente (força, marcha e equilíbrio, visão, hipotensão postural, hipoglicemia, cognição, pés), revisar os medicamentos (anti-hipertensivos, hipoglicemiantes, sedativos e a polifarmácia em geral) e avaliar riscos em casa.\n\nA intervenção com melhor resultado para prevenir novas quedas é o exercício físico regular com treino de equilíbrio e fortalecimento, associado à correção dos fatores encontrados. Tudo isso pode ser feito e coordenado na Atenção Primária.",
+    "commentary": "Densitometria anual (B): pode ser indicada para avaliar osteoporose e risco de fratura, mas não previne a queda em si, e não há motivo para repeti-la todo ano de forma rotineira.\n\nEncaminhar ao otorrino (C): alteração vestibular é apenas um dos fatores possíveis; encaminhar sem avaliação global ignora os demais e tira o cuidado da APS.\n\nEncaminhar à ortopedia (D): da mesma forma, a artrose é só uma possível contribuição; o encaminhamento isolado não aborda medicamentos, visão, ambiente e condicionamento.",
+    "tip": "Quedas no idoso: avaliação multifatorial + revisão de remédios + exercício de equilíbrio e força.",
+    "reference": "Ministério da Saúde. Caderneta de Saúde da Pessoa Idosa; Sociedade Brasileira de Geriatria e Gerontologia (SBGG).",
+    "tags": [
+      "saúde do idoso",
+      "prevenção de quedas",
+      "multifatorialidade"
+    ]
+  },
+  {
+    "id": "tp2019-118",
+    "module": "Saúde Coletiva",
+    "text": "Quanto aos segmentos sociais que compõem o Conselho Nacional de Saúde (CNS), a alternativa correta de acordo com a lei 8.142/90 é:",
+    "options": [
+      "(A) 50% de usuário do SUS, 30% de trabalhadores do SUS e 20% de gestores/prestadores de serviço de saúde.",
+      "(B) 30% de usuário do SUS, 30% de trabalhadores do SUS e 40% de gestores/prestadores de serviço de saúde.",
+      "(C) 25% de usuário do SUS, 25% de trabalhadores do SUS e 50% de gestores/prestadores de serviço de saúde.",
+      "(D) 50% de usuário do SUS, 25% de trabalhadores do SUS e 25% de gestores/prestadores de serviço de saúde."
+    ],
+    "correctAnswer": 3,
+    "explanation": "A Lei 8.142/1990 estabelece a paridade nos conselhos de saúde: 50% de representantes de usuários e 50% divididos entre os demais segmentos — 25% de trabalhadores da saúde e 25% de gestores e prestadores.",
+    "commentary": "As demais distribuições não respeitam a paridade dos usuários.",
+    "reference": "Página do Conselho Nacional de Saúde – ministério da saúde, https://conselho.saude.gov.br/apresentacao/composicao.htm Lei 8.142/90, 28/12/90 / Instituto de Métrica e Avaliação em Saúde. Estudo de Carga de Doença Global: gerando evidências, informando políticas de saúde. Seattle, WA: IHME, 2013.",
+    "tags": [
+      "saúde coletiva",
+      "SUS",
+      "controle social"
+    ]
+  },
+  {
+    "id": "tp2022-19",
+    "module": "Ciências Básicas",
+    "text": "Homem de 55 anos, em situação de rua e etilista, foi internado devido a pneumonia multilobar grave. Desenvolveu quadro de insuficiência respiratória grave. Foi solicitada uma baciloscopia de escarro, que revelou bastonetes gram-negativos encapsulados. O organismo é fermentador de lactose em ágar de MacConkey e é muito mucoide. O agente etiológico mais provável é:",
+    "options": [
+      "(A) Nocardia abscessos",
+      "(B) Clostridium difficile",
+      "(C) Streptococcus pneumoniae",
+      "(D) Klebsiella pneumoniae"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Klebsiella pneumoniae é um bacilo Gram-negativo encapsulado, fermentador de lactose, associado a pneumonias graves em etilistas.",
+    "commentary": "A Klebsiella pneumoniae (família Enterobacteriaceae) é um bastonete Gram-negativo, lactose positivo e apresenta uma cápsula proeminente que resulta em colônias muito mucoides. O S. pneumoniae é Gram-positivo. Clostridium é anaeróbio.",
+    "reference": "TRABULSI, L. R.; ALTERTHUM, F. (Ed.). Microbiologia. 5. ed. São Paulo: Atheneu, 2010.",
+    "tags": [
+      "microbiologia",
+      "pneumologia",
+      "infectologia"
+    ]
+  },
+  {
+    "id": "tp2021-13",
+    "module": "Ciências Básicas",
+    "text": "Homem, 23 anos, vítima de trauma abdominal fechado com hipovolemia por provável hemorragia intra-abdominal. Qual é a ação direta das células justaglomerulares nessa situação?",
+    "options": [
+      "(A) Bloqueio da liberação do hormônio antidiurético.",
+      "(B) Liberação de aldosterona.",
+      "(C) Aumento da reabsorção da creatinina.",
+      "(D) Liberação de renina."
+    ],
+    "correctAnswer": 3,
+    "explanation": "As células justaglomerulares renais respondem diretamente à hipotensão arterial e hipovolemia por meio da síntese e liberação de renina para ativar o eixo SRAA.",
+    "commentary": "A redução da pressão de perfusão na artéria aferente renal estimula as células do aparelho justaglomerular a secretar renina por ação direta. A renina cliva o angiotensinogênio hepático em angiotensina I, iniciando a cascata que estabiliza a pressão circulatória por vasoconstrição (via Angiotensina II) e retenção de sódio/água (via aldosterona, liberada pela adrenal pós-estímulo).",
+    "reference": "Berne & Levy - Fisiologia - 6a Ed. Elsevier",
     "tags": [
       "fisiologia",
       "nefrologia",
-      "endocrinologia"
+      "fisiopatologia"
     ]
   },
   {
-    "id": "enamed-2025-16",
-    "module": "ENAMED",
-    "text": "Recém-nascido de 15 dias, a termo, Apgar 8/9, peso e comprimento ao nascer de 2.600 g e 46 cm, respectivamente, com síndrome de Down, e cuja gestação não apresentou outras intercorrências. Está na consulta de puericultura com peso e comprimento atuais de 2.900 g e 47 cm, respectivamente.\n\nPara o acompanhamento pôndero-estatural, os dados devem ser plotados nas",
+    "id": "tp2019-1",
+    "module": "Ciências Básicas",
+    "text": "Paciente alcoolista e sem-teto queixa-se que seus dentes estão soltos e as gengivas sangram com facilidade. Suspeita-se que ele tenha uma dieta pobre e que pode ter escorbuto (deficiência de vitamina C). O escorbuto é caracterizado por um defeito na hidroxilação de prolina.\n\nDos componentes químicos abaixo, o relacionado com esta condição é:",
     "options": [
-      "(A) curvas de crescimento da OMS desde o nascimento até a adolescência.",
-      "(B) curvas de crescimento específicas para síndrome de Down desde o nascimento.",
-      "(C) curvas de crescimento da OMS, corrigindo o peso e o comprimento para síndrome de Down.",
-      "(D) curvas de crescimento da OMS até os dois anos e, a partir daí, em curvas específicas para síndrome de Down."
+      "(A) Fibronectina",
+      "(B) Elastina",
+      "(C) Ácido hialurônico",
+      "(D) Colágeno"
     ],
-    "correctAnswer": 1,
-    "explanation": "Crianças com síndrome de Down apresentam um padrão de crescimento diferente da população geral, com velocidade de crescimento, peso e estatura próprios. Por esse motivo, recomenda-se utilizar curvas de crescimento específicas para síndrome de Down desde o nascimento, permitindo uma avaliação mais precisa do desenvolvimento pôndero-estatural.",
-    "commentary": "As curvas da Organização Mundial da Saúde (OMS) continuam sendo úteis para comparação populacional, porém não refletem adequadamente o padrão esperado desses pacientes. Também não existe correção matemática do peso ou comprimento para síndrome de Down, tornando incorretas as demais alternativas.",
-    "reference": "Ministério da Saúde / Puericultura e acompanhamento da criança com Síndrome de Down",
+    "correctAnswer": 3,
+    "explanation": "A vitamina C é cofator das enzimas prolil e lisil-hidroxilases, essenciais para a hidroxilação dos resíduos de prolina e lisina do colágeno. Sem ela, a tripla hélice fica instável e o colágeno, frágil.\n\nIsso explica os sinais do escorbuto: sangramento gengival, perda dentária, hemorragias perifoliculares e má cicatrização.",
+    "commentary": "Fibronectina, elastina e ácido hialurônico são componentes da matriz extracelular, mas não dependem da hidroxilação de prolina mediada pela vitamina C.",
+    "reference": "Junqueira LC & Carneiro J. Biologia Celular e Molecular - Biologia da Interação Célula-Matriz Extracelular. 8 ed. Guanabara Koogan, 2005, pag. 229-238.",
     "tags": [
-      "pediatria",
-      "puericultura",
-      "síndrome de down"
+      "bioquímica",
+      "vitaminas",
+      "colágeno"
     ]
   },
   {
-    "id": "enamed-2025-66",
+    "id": "enamed-2025-25",
     "module": "ENAMED",
-    "text": "Homem de 24 anos comparece à Unidade Básica de Saúde (UBS) para avaliação de lesão ulcerada em pênis com cerca de 10 dias de evolução. Refere relação sexual desprotegida há aproximadamente 3 semanas. Ao exame físico, observa-se úlcera única, de bordas elevadas, endurecidas, indolor e com fundo limpo. Linfonodos inguinais discretamente aumentados, móveis e indolores.\n\nO diagnóstico mais provável e o tratamento indicado são, respectivamente,",
+    "text": "Multípara, 37 semanas, obesa, apresentando diabetes mellitus gestacional controlada com insulina NPH e regular. Evoluiu para parto normal, e o recém-nascido pesou 3.300 g.\n\nA conduta no puerpério imediato deve ser",
     "options": [
-      "(A) Cancro mole; azitromicina 1 g VO em dose única.",
-      "(B) Herpes genital; aciclovir 400 mg VO por 7 dias.",
-      "(C) Sífilis primária; penicilina benzatina 2,4 milhões UI IM em dose única.",
-      "(D) Linfogranuloma venéreo; doxiciclina 100 mg VO por 21 dias."
+      "(A) suspender insulinoterapia.",
+      "(B) iniciar hipoglicemiante oral.",
+      "(C) manter insulina NPH em 1/3 da dose da gravidez.",
+      "(D) manter insulinoterapia com a dosagem do pré-natal."
     ],
-    "correctAnswer": 2,
-    "explanation": "A lesão descrita corresponde ao cancro duro, manifestação clássica da sífilis primária, causada pelo Treponema pallidum. Caracteriza-se por ser uma úlcera única, de bordas elevadas e endurecidas, indolor, de fundo limpo, frequentemente associada à linfadenomegalia inguinal indolor e bilateral. O tratamento de escolha recomendado pelo Ministério da Saúde é a penicilina G benzatina 2,4 milhões UI IM em dose única.",
-    "commentary": "O cancro mole (A) apresenta lesões múltiplas, dolorosas, com fundo purulento e linfadenite que fistuliza por orifício único (asclere). O herpes genital (B) cursa com múltiplas vesículas que evoluem para úlceras rasas dolorosas e recorrentes. O linfogranuloma venéreo (D) se manifesta por pápula/pústula efêmera seguida por adenopatia inguinal dolorosa com múltiplos orifícios de drenagem (bico de regador).",
-    "reference": "Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmitíveis (PCDT-IST) - Ministério da Saúde",
+    "correctAnswer": 0,
+    "explanation": "No diabetes mellitus gestacional (DMG), a resistência à insulina é induzida por hormônios de origem placentária (como o lactogênio placentário). Com a dequitação e saída da placenta no parto, há uma queda abrupta e imediata desses níveis hormonais contrarreguladores, cessando o estímulo diabetogênico temporário. Portanto, a insulinoterapia deve ser suspensa imediatamente no puerpério, mantendo-se apenas o monitoramento glicêmico capilar de rotina e agendando reavaliação de tolerância glicêmica (com TOTG 75g) entre 4 e 12 semanas pós-parto.",
+    "commentary": "Iniciar hipoglicemiantes orais ou manter a insulina pós-parto sem necessidade comprovada induzirá hipoglicemia iatrogênica na paciente, visto que a fisiologia retorna ao basal rapidamente.",
+    "reference": "Diretrizes da Sociedade Brasileira de Diabetes (SBD) / FEBRASGO",
     "tags": [
-      "infectologia",
       "ginecologia",
-      "urologia",
-      "sífilis",
-      "IST"
+      "obstetrícia",
+      "diabetes gestacional",
+      "puerpério"
     ]
   },
   {
-    "id": "enamed-2025-95",
+    "id": "enamed-2025-68",
     "module": "ENAMED",
-    "text": "Menina de 11 anos é levada pela mãe à Unidade Básica de Saúde por cansaço, palidez cutânea e baixo rendimento escolar há três meses. O hemograma mostra hemoglobina de 8,4 g/dL, VCM de 62 fL, HCM de 24 pg, CHCM de 28 g/dL, RDW de 22%, eosinofilia discreta e plaquetas de 480.000/mm³.\n\nQual é a conduta mais adequada?",
+    "text": "Homem de 60 anos procura atendimento por apresentar perda urinária aos esforços há seis meses após prostatectomia radical realizada para tratamento de câncer de próstata localizado. Nega urgência miccional ou sintomas obstrutivos.\n\nQual é a conduta inicial mais adequada?",
     "options": [
-      "(A) Dosar ferro sérico, por ser exame sensível e específico.",
-      "(B) Iniciar ferro elementar 4 mg/kg/dia, esperando aumento dos reticulócitos em 4 a 7 dias.",
-      "(C) Classificar a anemia como normocítica e solicitar esfregaço pela presença de anisocitose e eliptocitose.",
-      "(D) Encaminhar ao hematologista devido à eosinofilia e trombocitose."
+      "(A) Implante imediato de esfíncter urinário artificial.",
+      "(B) Exercícios para fortalecimento do assoalho pélvico.",
+      "(C) Prescrição de oxibutinina.",
+      "(D) Ressecção transuretral da próstata."
     ],
     "correctAnswer": 1,
-    "explanation": "O hemograma revela uma anemia microcítica (VCM 62 fL) e hipocrômica (HCM 24 pg, CHCM 28 g/dL) com anisocitose acentuada (RDW de 22% - valor de referência < 14,5%), que é a apresentação laboratorial clássica da anemia ferropriva (deficiência de ferro). Diante de forte suspeita epidemiológica e laboratorial na infância/adolescência, a conduta recomendada na atenção básica é o teste terapêutico com reposição de ferro elementar (dose de 3 a 5 mg/kg/dia). O primeiro sinal de eficácia do tratamento é a resposta reticulocitária (aumento dos reticulócitos), observada entre o 4º e o 7º dia do início da terapia.",
-    "commentary": "O ferro sérico isolado (A) é um exame de baixa sensibilidade e especificidade devido à variação circadiana e influência da dieta. A anemia é francamente microcítica, não normocítica (C). A trombocitose (plaquetas 480.000/mm³) é reacional à deficiência de ferro (eritropoietina estimula a trombopoiese por homologia estrutural) e a eosinofilia discreta é comum e frequentemente associada a parasitoses intestinais na infância (causa de perda crônica de ferro), não justificando encaminhamento ao hematologista (D).",
-    "reference": "Tratado de Pediatria da Sociedade Brasileira de Pediatria (SBP) / Diretrizes de Anemia Ferropriva",
+    "explanation": "A incontinência urinária de esforço é uma complicação conhecida após prostatectomia radical, decorrente do enfraquecimento ou lesão do esfíncter uretral intrínseco. A conduta inicial e conservadora mais recomendada consiste no fortalecimento da musculatura do assoalho pélvico por meio de fisioterapia pélvica e exercícios de Kegel, apresentando ótimas taxas de melhora e cura ao longo do primeiro ano pós-cirúrgico.",
+    "commentary": "O implante de esfíncter urinário artificial (A) é a terapia padrão-ouro cirúrgica, mas é indicado apenas após falha do tratamento conservador por pelo menos 6 a 12 meses. A oxibutinina (C) é um anticolinérgico indicado para incontinência de urgência (bexiga hiperativa), e não de esforço pura. A RTUp (D) não tem papel aqui, pois o paciente não possui próstata (foi submetido a prostatectomia radical).",
+    "reference": "Diretrizes de Urologia da Sociedade Brasileira de Urologia (SBU) / Campbell-Walsh Urology",
     "tags": [
-      "pediatria",
-      "hematologia",
-      "anemia ferropriva",
-      "deficiência de ferro",
-      "ferro elementar",
-      "reticulócitos"
+      "cirurgia",
+      "urologia",
+      "incontinência urinária",
+      "pós-operatório",
+      "prostatectomia"
     ]
   }
 ];

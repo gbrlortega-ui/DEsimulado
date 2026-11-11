@@ -12,8 +12,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Tipo de cicatrização queloide'
     ],
     correctAnswer: 3,
-    explanation: 'O queloide ultrapassa os limites da ferida original, ao contrário da cicatriz hipertrófica.',
-    commentary: 'A cicatrização queloide ocorre quando o tecido cicatricial cresce além dos limites da ferida original, resultando em uma área elevada, rígida e frequentemente mais escura. Este tipo de cicatriz pode causar sintomas como prurido e dor, como descrito no quadro clínico de Maria. Diferente da cicatriz hipertrófica, que também é elevada, mas se mantém dentro dos limites da ferida original, a cicatriz queloide se estende para além desses limites.',
+    explanation: "Seis meses depois da cesárea, a cicatriz continua crescendo, está elevada, endurecida, mais escura que a pele vizinha, coça e dói. Esse comportamento, de uma cicatriz que segue aumentando meses depois da cirurgia, é o do queloide.\n\nO queloide resulta da produção excessiva e desorganizada de colágeno e ultrapassa as bordas da incisão e invade a pele vizinha; não regride sozinho e tende a voltar depois da retirada cirúrgica isolada. É mais comum em pele negra e em áreas como tórax, ombros e lóbulos das orelhas. O tratamento combina corticoide intralesional, placas de silicone e compressão, deixando a cirurgia para casos selecionados e associada a outras terapias.",
+    commentary: "Dermatofibroma (A): é um nódulo firme e pequeno, geralmente nas pernas, que afunda quando pinçado (sinal da covinha) e não surge sobre cicatriz cirúrgica.\n\nCicatriz hipertrófica (B): também é elevada e pode coçar, mas aparece nas primeiras semanas, fica dentro dos limites da incisão e costuma regredir com o tempo.\n\nInfecção de ferida operatória (C): ocorre nos primeiros dias a semanas, com calor, hiperemia, secreção e às vezes febre; a recuperação inicial foi boa.",
+    tip: "Queloide passa da borda da ferida e não regride; hipertrófica fica dentro da borda e melhora sozinha.",
     reference: 'Sabiston - Tratado de Cirurgia - Townsend, Courtney; Beauchamp, Daniel - 2 Volumes - 18ª Ed. Cirurgia Vascular: Doenças Vasculares Periféricas, 4ª edição, volume 01 e 02 Maffei, Lastória, Yoshida, Rollo, Giannini, Moura.',
     tags: ['cirurgia geral', 'cicatrização']
   },
@@ -28,8 +29,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Rx de tórax deve ser solicitado acima dos 35 anos, mesmo que a cirurgia seja de baixo risco.'
     ],
     correctAnswer: 2,
-    explanation: 'Não há necessidade de exames pré-operatórios de rotina em pacientes saudáveis menores de 45 anos submetidos a cirurgias de baixo risco.',
-    commentary: 'Segundo estudos, não há necessidade de exames préoperatórios de rotina em pacientes saudáveis menores de 40 anos de idade, submetidos a cirurgias de baixo risco.',
+    explanation: "Para pessoas saudáveis (ASA 1 ou 2) que vão fazer cirurgia de baixo risco, a anamnese e o exame físico bem feitos substituem exames de rotina. Estudos mostram que pedir exames laboratoriais de forma indiscriminada, sem indicação clínica, não reduz complicações nem mortalidade, e ainda gera resultados falsamente alterados, adiamentos e custo.\n\nOs exames devem ser pedidos de forma individualizada, conforme a doença do paciente, os remédios que usa e o porte da cirurgia: por exemplo, hemograma em cirurgia com perda de sangue esperada, função renal em quem tem DRC ou usa diurético, ECG em cardiopatas ou em cirurgias de risco intermediário ou alto.",
+    commentary: "ECG acima de 35 anos em cirurgia de baixo risco (A): idade isolada não indica ECG; ele é pedido por doença cardiovascular conhecida, sintomas ou porte cirúrgico maior.\n\nPainel mínimo para todos (B): não existe pacote obrigatório; hemograma, eletrólitos, glicemia e coagulograma de rotina em pessoas saudáveis não mudam os desfechos.\n\nRadiografia de tórax acima de 35 anos (D): é indicada por doença cardiopulmonar ou sintomas, não pela idade.",
+    tip: "Paciente saudável + cirurgia de baixo risco = sem exames de rotina; peça só o que a clínica justifica.",
     reference: 'Associação Americana de Anestesiologia. Questionário préanestésico. Disponível em: [link](https://www.aana.com/patients/pre-anesthesiaquestionnaire) (Acessado em 31 de janeiro de 2022). Utilidade do eletrocardiograma de rotina antes da cirurgia e na internação hospitalar geral. Revisão crítica e novas orientações. UA, Goldberger AL, O\'Konski M. Testes pré-operatórios (atualização): Testes pré-operatórios de rotina para cirurgias eletivas, National Guideline Center (Reino Unido). (Ed), National Institute for Health and Care Excellence (NICE), Londres 2016. Colégio Brasileiro de Cirurgiões – Programa de autoavaliação em Cirurgia – Pré-operatórios. TCBC Guilherme Pinto Bravo Neto; TCBC Manuel Domingos da Cruz Gonçalves',
     tags: ['cirurgia geral', 'pré-operatório']
   },
@@ -44,8 +46,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Como se trata de uma hérnia direta, congênita, o tratamento é a herniorrafia inguinal.'
     ],
     correctAnswer: 0,
-    explanation: 'Hérnias diretas ocorrem por fraqueza da parede posterior (Triângulo de Hesselbach), associadas a fatores que aumentam a pressão intra-abdominal.',
-    commentary: 'Neste caso, o esforço físico criando uma pressão maior no triângulo de Hesselbach, associado à perfusão diminuída em razão da DPOC, são os principais fatores para a formação da hérnia, que, no caso, é uma hérnia direta. A hiperplasia prostática também é um fator importante, mas não representa isoladamente importância tão significativa. A hérnia em questão é direta, as indiretas são as que se exteriorizam pelo anel inguinal. O tratamento padrão-ouro para os adultos com hérnias inguinais é a hernioplastia inguinal.',
+    explanation: "Homem de 60 anos, com trabalho braçal, DPOC e protrusão inguinal que dói aos esforços. O enunciado sugere uma hérnia inguinal direta, que sai pelo triângulo de Hesselbach (delimitado pelos vasos epigástricos inferiores, pela borda lateral do reto abdominal e pelo ligamento inguinal), na parede posterior do canal inguinal.\n\nA hérnia direta é adquirida: surge pelo enfraquecimento da fáscia transversal com a idade, somado ao aumento repetido da pressão abdominal (esforço físico, tosse crônica da DPOC, esforço para urinar ou evacuar). O tabagismo também altera o colágeno e enfraquece a parede. O tratamento do adulto é a hernioplastia com tela (como a técnica de Lichtenstein ou a via laparoscópica).",
+    commentary: "Hiperplasia prostática como causa de metade das hérnias (B): o esforço miccional pode contribuir, mas não há base para atribuir a ela metade dos casos.\n\nSaída pelo anel inguinal profundo (C): isso define a hérnia indireta, que passa lateralmente aos vasos epigástricos inferiores, pelo trajeto do processo vaginal.\n\nHérnia direta congênita tratada com herniorrafia (D): a hérnia direta é adquirida (a congênita é a indireta, por persistência do processo vaginal), e no adulto o padrão é a correção com tela, não a sutura simples.",
+    tip: "Direta: Hesselbach, adquirida, medial aos vasos epigástricos. Indireta: anel interno, congênita, lateral aos vasos.",
     reference: 'Hérnias de Parede Abdominal – Diagnóstico e Tratamento, 2ª Edição 2009. Juan Carlos M. Gonzáles, Capítulo 13.',
     tags: ['cirurgia geral', 'hérnias']
   },
@@ -60,8 +63,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Megacólon tóxico e colectomia total com ileostomia terminal.'
     ],
     correctAnswer: 3,
-    explanation: 'Megacólon tóxico com falha ao tratamento clínico exige colectomia subtotal com ileostomia.',
-    commentary: 'Enquanto a maioria dos pacientes que desenvolvem megacólon tóxico relacionado à DII apresenta colite ulcerativa, alguns apresentam colite de Crohn ou colite indeterminada. Como essas três entidades podem não ser facilmente distinguíveis durante um surto agudo, como o megacólon tóxico, sugere-se tratar todos os megacólons tóxicos relacionados à DII com a mesma abordagem. Pacientes com megacólon tóxico relacionado à DII que não respondem aos glicocorticoides intravenosos dentro de três dias devem ser considerados para um teste de infliximabe ou ciclosporina como terapia de segunda linha. Pacientes que não respondem a um dos agentes de segunda linha (infliximabe ou ciclosporina) após mais três dias necessitam de cirurgia. Pacientes que desenvolvem megacólon tóxico enquanto tomam infliximabe ou ciclosporina devem ser submetidos à cirurgia sem demora, de colectomia subtotal com ileostomia terminal em vez de uma proctocolectomia de estágio único.',
+    explanation: "Paciente com retocolite ulcerativa, toxemiado, com distensão abdominal e cólon transverso de cerca de 12 cm na radiografia: é megacólon tóxico (dilatação do cólon acima de 6 cm com toxicidade sistêmica).\n\nO quadro surgiu durante o uso de infliximabe, ou seja, o tratamento clínico de resgate já falhou; insistir nele aumenta o risco de perfuração, que eleva muito a mortalidade. A cirurgia deve ser feita sem demora: colectomia total (subtotal) com ileostomia terminal, deixando o reto fechado ou exteriorizado. A reconstrução com bolsa ileal fica para um segundo tempo, com o paciente recuperado.",
+    commentary: "Proctocolectomia total com bolsa ileal (A): é cirurgia longa e complexa, inadequada para um paciente grave, imunossuprimido e em urgência; a bolsa é feita mais tarde, de forma eletiva.\n\nMegacólon idiopático com tratamento clínico (B): o megacólon idiopático é crônico e não cursa com toxemia; aqui há colite grave em paciente com retocolite.\n\nMegacólon chagásico (C): é dilatação crônica, sem toxemia, ligada à doença de Chagas e com predomínio no sigmoide e reto; não é o caso de quem tem retocolite e está toxemiado.",
+    tip: "Megacólon tóxico que piora com corticoide ou biológico = colectomia subtotal + ileostomia terminal; bolsa ileal só depois.",
     reference: 'Etiologia e Tratamento Cirúrgico do Megacólon Tóxico. Ausch C, Madoff RD, Gnant M, Rosen HR, Garcia-Aguilar J, Hölbling N, Herbst F, Buxhofer V, Holzer B, Rothenberger DA, Schiessel R; Doença Colorretal. 2006;8(3):195.',
     tags: ['coloproctologia', 'emergência']
   },
@@ -76,8 +80,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Hepatite aguda'
     ],
     correctAnswer: 1,
-    explanation: 'A tríade de Charcot (dor, febre e icterícia) é clássica de colangite aguda.',
-    commentary: 'Os sintomas apresentados pelo paciente, incluindo dor abdominal no quadrante superior direito, febre, icterícia, calafrios e náuseas/vômitos, sugerem fortemente colangite aguda. A presença de múltiplos cálculos na via biliar comum, conforme observado na ultrassonografia abdominal, é consistente com o diagnóstico de colangite aguda por coledocolitíase. Esta é uma condição de emergência que requer tratamento imediato, incluindo antibioticoterapia e drenagem biliar, seguida por colecistectomia e remoção dos cálculos biliares.',
+    explanation: "Dor no hipocôndrio direito, febre com calafrios e icterícia formam a tríade de Charcot. Com cálculos no colédoco na ultrassonografia (e, na prova, colestase e leucocitose), o diagnóstico é colangite aguda por coledocolitíase: a obstrução do ducto permite que bactérias do intestino proliferem na bile parada e ganhem a circulação.\n\nÉ uma emergência. O tratamento inclui hidratação, antibiótico de amplo espectro e drenagem da via biliar, de preferência por CPRE com retirada dos cálculos, com urgência maior nos casos graves (como a pêntade de Reynolds, com confusão e hipotensão). A colecistectomia é feita depois, para evitar novos episódios.",
+    commentary: "Colecistite aguda (A): causa dor no hipocôndrio direito com sinal de Murphy e febre, mas icterícia é incomum; o cálculo está na vesícula, não no colédoco.\n\nPancreatite aguda (C): a dor é epigástrica, em faixa e irradiada para o dorso, com lipase elevada; pode ser causada por cálculo, mas não explica a tríade de Charcot.\n\nHepatite aguda (D): causa icterícia e transaminases muito altas, mas não costuma vir com febre com calafrios e cálculos no colédoco.",
+    tip: "Febre com calafrio + icterícia + dor no hipocôndrio direito (Charcot) = colangite; antibiótico + drenagem por CPRE.",
     reference: 'Sabiston - Tratado de Cirurgia - Townsend, Courtney; Beauchamp, Daniel - 2 Volumes - 18ª Ed. Cirurgia Vascular: Doenças Vasculares Periféricas, 4ª edição, volume 01 e 02 Maffei, Lastória, Yoshida, Rollo, Giannini, Moura.',
     tags: ['cirurgia biliar', 'gastroenterologia']
   },
@@ -92,8 +97,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Colonoscopia – Doença diverticular dos cólons'
     ],
     correctAnswer: 3,
-    explanation: 'A colonoscopia é o exame inicial para HDB em pacientes estáveis. A DDC é a principal causa nesta faixa etária.',
-    commentary: 'Na hemorragia digestiva baixa em paciente estável, deve-se seguir o algoritmo da situação. Em questão, HAD paciente estável = Colonoscopia. A tomografia não trará resposta adequada, visto que se trata de sangramento e não infecção. A doença hemorroidária tem como seu principal sintoma o sangramento, porém na grande maioria das vezes repetitivos e de pequena monta.',
+    explanation: "Idosa com sangramento vivo pelo reto, de volume considerável (tinge o vaso), mas estável (PA 110x60, FC 80), com toque retal sem massas: é hemorragia digestiva baixa sem instabilidade.\n\nA doença diverticular é a causa mais frequente de hemorragia digestiva baixa em idosos; o sangramento costuma ser volumoso, indolor e cessar sozinho na maior parte dos casos. No paciente estável, a colonoscopia (após preparo do cólon) é o exame de escolha: localiza a fonte, permite tratar pelo endoscópio e afasta tumores. Se o paciente estivesse instável, a investigação inicial seria angiotomografia e, conforme o caso, arteriografia com embolização.",
+    commentary: "Anuscopia por fissura anal (A): a fissura causa dor intensa ao evacuar e pouco sangue, que mancha o papel; a paciente não tem dor.\n\nTomografia para doença diverticular (B): tomografia comum serve para diverticulite (inflamação), não para sangramento; para sangramento ativo usa-se angiotomografia, reservada aos pacientes instáveis ou com sangramento contínuo.\n\nRetossigmoidoscopia por doença hemorroidária (C): hemorroidas sangram em geral pouco e de forma repetida; além disso, nessa idade é preciso examinar todo o cólon.",
+    tip: "Idoso com sangramento retal vivo, volumoso e indolor = divertículo; estável → colonoscopia, instável → angio-TC.",
     reference: 'Management of the Adult Patient with Acute Lower Gastrointestinal Bleeding. American College of Gastroenterology. Practice Parameters Committee. Zuccaro G Jr; Am J Gastroenterol. 1998;93(8):1202. Department of Gastroenterology, Cleveland Clinic Foundation, Ohio 44195, USA. PMID 9707037',
     tags: ['coloproctologia', 'HDB']
   },
@@ -109,8 +115,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Transplante multivisceral.'
     ],
     correctAnswer: 2,
-    explanation: 'Defeitos extensos de parede abdominal (como gastrosquise/onfalocele gigante) exigem fechamento estagiado com silo.',
-    commentary: 'Trata-se de um defeito extenso demais para fazer a correção em um único tempo cirúrgico. Nessas situações, o mais indicado é a instalação de um silo, evitando assim a ocorrência de síndrome compartimental.',
+    explanation: "Recém-nascido com defeito extenso da parede abdominal e vísceras expostas, sem saco protetor, corresponde ao quadro de gastrosquise (ou a uma onfalocele gigante rota). Quando o volume de vísceras fora do abdome é grande, devolvê-las de uma só vez eleva demais a pressão intra-abdominal e pode causar síndrome compartimental, com prejuízo da ventilação, do retorno venoso e da perfusão intestinal e renal.\n\nPor isso, coloca-se um silo (bolsa de silicone presa ao redor do defeito) e as alças são reduzidas aos poucos, em alguns dias, até ser possível fechar a parede. Enquanto isso, o bebê precisa de proteção das alças, aquecimento, hidratação venosa, sonda gástrica e nutrição parenteral.",
+    commentary: "Nitrato de prata tópico (A): pertence à estratégia \"pintar e esperar\" da onfalocele gigante com saco íntegro, em que o saco epiteliza aos poucos; não serve para vísceras expostas.\n\nPlastia umbilical com tela imediata (B): o fechamento primário imediato de um defeito extenso força a redução e expõe ao risco de síndrome compartimental.\n\nTransplante multivisceral (D): é reservado à falência intestinal irreversível, não ao tratamento inicial de um defeito de parede.",
+    tip: "Defeito de parede grande com alças expostas: silo e redução gradual, para evitar síndrome compartimental.",
     reference: 'Handbook of Pediatric Surgery, Second Edition – Springer',
     tags: ['cirurgia pediátrica']
   },
@@ -125,8 +132,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Claudicação neurológica, pois só ocorre em subidas.'
     ],
     correctAnswer: 2,
-    explanation: 'A presença de serviço trófico define isquemia crítica, exigindo investigação para revascularização.',
-    commentary: 'Paciente com quadro de insuficiência arterial crônica devido ao quadro de claudicação para aclives, evoluindo para isquemia crítica, que é definida como lesão trófica e/ou dor de repouso, sendo o critério para indicação de tratamento cirúrgico para revascularização. Isso aprofunda o diagnóstico com ultrassom Doppler e/ou angiotomografia. A claudicação intermitente é caracterizada por dor muscular durante a caminhada, geralmente com distâncias parecidas, com necessidade de repouso para melhora. A presença de lesão trófica é critério de indicação de tratamento cirúrgico, com tentativa de revascularização do membro, mesmo com ultrassom Doppler de ondas contínuas sem fluxo arterial, pois a avaliação de leito distal se dá através de algum exame de imagem, como ultrassom Doppler pulsado, angiotomografia ou angiografia. A amputação primária só é indicada para os casos de ausência de leito distal para revascularização. A claudicação neurológica é dor em membro inferior durante a caminhada com distância variável, associada com sintomas neurológicos, podendo apresentar posição antálgica para melhora. A ausência de fluxo arterial ao Doppler de ondas contínuas impossibilita o cálculo do índice tornozelo-braço, mas não é um critério para a indicação de tratamento cirúrgico, e sim para diagnóstico e acompanhamento de doença arterial crônica.',
+    explanation: "A paciente tem doença arterial obstrutiva periférica (diabetes, infarto prévio, claudicação ao subir ladeiras e ausência de pulsos distais), e agora uma ferida no pé. Lesão trófica (úlcera ou gangrena) ou dor em repouso por isquemia definem isquemia crítica do membro, a fase mais grave da doença, com alto risco de amputação.\n\nNesse estágio, há indicação de revascularização, e o passo seguinte é mapear a anatomia arterial com ultrassom Doppler, angiotomografia (ou angiorressonância, ou arteriografia) para planejar a cirurgia aberta ou endovascular. A ausência de som ao Doppler portátil nas artérias do pé não significa que não haja leito distal para ponte; a amputação primária só se justifica quando não há opção de revascularização ou o membro é inviável.",
+    commentary: "Insuficiência arterial crônica por claudicação (A): a claudicação existe, mas não resume o quadro atual; com ferida no pé, o estágio é de isquemia crítica e exige investigação para revascularização. Na prova, a alternativa ainda dizia que a dor melhora sem repouso, o que contradiz a definição de claudicação.\n\nAmputação primária pela ausência de fluxo ao Doppler (B): o Doppler portátil sem fluxo não define a ausência de leito distal; antes de amputar, é preciso exame de imagem para buscar revascularização.\n\nClaudicação neurológica (D): a claudicação neurogênica (estenose do canal lombar) tem distância variável, piora em pé e melhora ao sentar ou flexionar o tronco; a dor da paciente surge com distância fixa e melhora com repouso, típica de origem arterial.",
+    tip: "DAOP com ferida no pé ou dor em repouso = isquemia crítica → exame de imagem e revascularização.",
     reference: 'BRITO, Carlos José de. Cirurgia Vascular: Cirurgia Endovascular, Angiologia. In: Cirurgia Vascular: Cirurgia Endovascular, Angiologia. 2019.',
     tags: ['cirurgia vascular']
   },
@@ -142,8 +150,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Toracocentese; Critério de Light; exsudato linfocítico.'
     ],
     correctAnswer: 3,
-    explanation: 'Derrames pleurais neoplásicos são exsudatos (Light) com predomínio linfocítico.',
-    commentary: 'O critério diagnóstico de Light é composto por 5 critérios. Tem por objetivo diferenciar derrame pleural transudativo de exsudativo. Define-se derrame pleural exsudativo se pelo menos um dos seguintes for verdadeiro: ⦁ Relação Proteína do líquido pleural / Proteína sérica > 0,5 ⦁ Relação DHL líquido pleural / DHL sérico > 0,6 ⦁ DHL do líquido pleural > 2/3 do limite superior da normalidade de DHL sérico (limite normal 246 U/L) Os Writérios de Wells leva em consideração os principais fatores de risco para o desenvolvimento Tromboembolismo pulmonar.',
+    explanation: "Tabagista de longa data com emagrecimento, inapetência e derrame pleural à direita sem febre: a principal hipótese é derrame pleural neoplásico (por câncer de pulmão ou metástase). O próximo passo é a toracocentese diagnóstica, com análise bioquímica, citológica e celular do líquido.\n\nOs critérios de Light separam exsudato de transudato: o líquido é exsudato se tiver pelo menos um destes achados: proteína pleural/sérica acima de 0,5; DHL pleural/sérica acima de 0,6; ou DHL pleural acima de 2/3 do limite superior do DHL sérico. O derrame neoplásico costuma ser exsudato com predomínio de linfócitos, e a citologia oncótica positiva confirma a malignidade; se for negativa e a suspeita persistir, repete-se ou parte-se para biópsia pleural (de preferência por toracoscopia).",
+    commentary: "Paracentese (A): é a punção do líquido do abdome (ascite), não do tórax; a interpretação pelos critérios de Light está certa, mas o procedimento está errado.\n\nDrenagem tubular e critérios de Wells (B): drenar não é o passo diagnóstico inicial, e os critérios de Wells estimam a probabilidade de tromboembolismo pulmonar ou trombose venosa, não classificam o líquido pleural.\n\nToracocentese com Wells e transudato neutrofílico (C): os critérios estão errados, transudato não é o esperado na neoplasia, e predomínio de neutrófilos sugere processo agudo, como derrame parapneumônico.",
+    tip: "Derrame pleural em tabagista emagrecido: toracocentese → Light mostra exsudato linfocítico → citologia oncótica.",
     reference: 'J, D., Meyerson, S. L., A, P. (Ed.), & JD, C. (Ed.) (2008). Pearson\'s Thoracic and Esophageal Surgery 3rd edition. Churchill Livingstone. SAAD Jr, Roberto ET AL. Cirurgia Torácica Geral. 2.ed. São Paulo: Atheneu, 2010. Medicina intensiva: abordagem prática. Universidade de São Paulo / Luciano César Pontes de Azevedo et al. 2. ed. Barueri, SP: Manole, 2015.',
     tags: ['cirurgia torácica', 'oncologia']
   },
@@ -158,8 +167,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Redução fechada e haste intramedular.'
     ],
     correctAnswer: 2,
-    explanation: 'Em crianças < 10 anos, o tratamento conservador com redução fechada e gesso tem excelentes resultados.',
-    commentary: 'O tratamento conservador é o tratamento padrão para fraturas abaixo de 10 anos, com resultados excelentes. Os desvios angulares aceitáveis variam de acordo com a idade da criança e o nível da fratura. Em crianças até 8 anos de idade são considerados aceitáveis desvios inferiores a 15 graus de angulação na incidência AP e 20 graus em perfil.',
+    explanation: "Criança de 7 anos com fratura diafisária dos dois ossos do antebraço, fechada, sem lesão vascular ou nervosa e com pouca angulação (5 graus em AP e 10 graus em perfil). Em crianças pequenas, o osso tem grande capacidade de remodelação, e desvios desse tamanho estão dentro do limite aceitável para a idade.\n\nPor isso, o tratamento é conservador: redução fechada, se necessário, para alinhar a rotação e a angulação, e imobilização com gesso axilopalmar (braquiopalmar), com o cotovelo fletido, para bloquear a pronação e a supinação. O seguimento com radiografias nas primeiras semanas confirma que o alinhamento se mantém. A cirurgia fica para fraturas expostas, instáveis ou com desvio inaceitável após redução.",
+    commentary: "Tipoia simples (A): não imobiliza a fratura dos dois ossos nem controla a rotação; o desvio pode aumentar e consolidar em posição ruim.\n\nRedução aberta com placas (B): é reservada a adolescentes, fraturas expostas ou que não se mantêm reduzidas; numa criança de 7 anos com desvio aceitável, expõe a riscos sem benefício.\n\nRedução fechada com haste intramedular (D): a haste flexível é a opção cirúrgica para fraturas instáveis ou com desvio inaceitável, o que não é o caso.",
+    tip: "Fratura de antebraço em criança com pouco desvio: redução fechada e gesso axilopalmar; a remodelação corrige o resto.",
     reference: 'Beaty JH, Kasser JR. In Rockwood and Wilkins (ed). Fractures in Children. Baltimore: Lippincott Williams and Wilkins, 2001. Manual de trauma ortopédico / SBOT - Sociedade Brasileira de Ortopedia e Traumatologia; coordenadores, Isabel Pozzi... [et al.] - São Paulo: SBOT - Sociedade Brasileira de Ortopedia e Traumatologia, 2011.',
     tags: ['ortopedia', 'cirurgia pediátrica']
   },
@@ -174,8 +184,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Estado de mal não convulsivo e hidantalização.'
     ],
     correctAnswer: 0,
-    explanation: 'A Tríade de Cushing (HI, Bradicardia, Bradipneia) indica iminência de herniação. IOT é prioritária.',
-    commentary: 'Idoso abre o quadro com mal-estar e após 30 minutos o quadro muda drasticamente: Glasgow de 7, midríase fixa unilateral, além de bradipneia, bradicardia e hipertensão. Esses três últimos dados compõem a tríade de Cushing, achado que indica a presença de hipertensão intracraniana. Nesse momento, a prioridade é a intubação orotraqueal como medida emergencial.',
+    explanation: "Idoso hipertenso com déficit motor súbito que, em 30 minutos, cai para Glasgow 7, com midríase fixa unilateral, bradicardia, bradipneia e hipertensão grave. A pupila dilatada e fixa indica herniação do uncus comprimindo o nervo oculomotor, e a associação de hipertensão arterial, bradicardia e alteração respiratória forma a tríade de Cushing, resposta do tronco à hipertensão intracraniana.\n\nO diagnóstico sindrômico é hipertensão intracraniana com herniação, e a prioridade é proteger a via aérea: Glasgow igual ou menor que 8 e respiração irregular indicam intubação orotraqueal. Depois de estabilizar, faz-se a tomografia de crânio para definir a causa (provavelmente hemorragia intracerebral hipertensiva) e as medidas para baixar a pressão intracraniana.",
+    commentary: "AVC isquêmico e tomografia (B): sem imagem não é possível dizer se o AVC é isquêmico ou hemorrágico, e a piora rápida com herniação favorece hemorragia; além disso, a tomografia vem depois de garantir a via aérea.\n\nHematoma intracerebral com drenagem imediata (C): o hematoma é uma hipótese, mas só pode ser confirmado por imagem, e a indicação cirúrgica depende do tamanho e do local; a via aérea vem antes.\n\nEstado de mal não convulsivo e hidantalização (D): não há crises nem dados que sugiram esse diagnóstico, e a tríade de Cushing com anisocoria aponta para hipertensão intracraniana.",
+    tip: "Hipertensão + bradicardia + respiração irregular = tríade de Cushing (HIC). Glasgow ≤ 8: intubar primeiro.",
     reference: 'Tratado de Neurologia da Academia Brasileira de Neurologia, 2ª edição.',
     tags: ['neurocirurgia', 'emergência']
   },
@@ -190,8 +201,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) 27% de área queimada e 4305mL de soro glicosado.'
     ],
     correctAnswer: 1,
-    explanation: 'SCQ = 18 + 9 + 9 + 1 = 37%. Parkland (2ml/kg/%): 2 * 70 * 37 = 5180mL.',
-    commentary: 'As queimaduras representam uma condição médica grave, exigindo uma abordagem cuidadosa e multidisciplinar. Além da avaliação inicial da extensão e profundidade das queimaduras, a reposição volêmica desempenha um papel crítico na gestão desses pacientes, especialmente nas queimaduras extensas que podem levar a um estado de choque hipovolêmico. O protocolo ATLS (Suporte Avançado de Vida no Trauma) fornece diretrizes valiosas para a abordagem inicial desses casos, enfatizando a priorização da via aérea, respiração e circulação. A reposição volêmica é parte integrante do manejo inicial, visando restaurar a perfusão tecidual adequada e prevenir complicações graves. Utiliza-se a regra de Parkland: 2x SCQ x Peso, com o resultado sendo o volume a ser infundido em 24 horas, de preferência Ringer Lactato, por diminuir o risco de acidose metabólica. A implementação adequada do protocolo ATLS pode melhorar significativamente os resultados clínicos em pacientes com queimaduras graves.',
+    explanation: "Pela regra dos nove do adulto: tórax e abdome anteriores valem 18%, o membro superior inteiro 9%, a face anterior de um membro inferior 9% e o períneo/genitais 1%. A soma é 37% de superfície corporal queimada (contam apenas as queimaduras de segundo e terceiro graus).\n\nPara a reposição nas primeiras 24 horas, o ATLS (10ª edição) usa 2 mL x peso x % de SCQ no adulto, com Ringer lactato: 2 x 70 x 37 = 5180 mL. Metade é infundida nas primeiras 8 horas a partir do momento da queimadura e o restante nas 16 horas seguintes, ajustando pelo débito urinário (cerca de 0,5 mL/kg/h no adulto). A fórmula clássica de Parkland usa 4 mL, e a diretriz atual parte de 2 mL para reduzir a hiper-hidratação.",
+    commentary: "37% com 6320 mL de soro glicosado (A): a área está certa, mas o volume não corresponde à fórmula, e soro glicosado não repõe volume intravascular; o cristaloide indicado é o Ringer lactato.\n\n27% com 9450 mL de Ringer lactato (C): a soma das áreas foi feita errado, e o volume não corresponde a nenhuma das fórmulas com 27%.\n\n27% com 4305 mL de soro glicosado (D): erra a área e o tipo de fluido.",
+    tip: "Queimado adulto: 2 mL x kg x %SCQ de Ringer lactato em 24 h, metade nas primeiras 8 h; alvo de diurese 0,5 mL/kg/h.",
     reference: 'American College of Surgeons. Advanced Trauma Life Support: Student Course Manual. 10th ed. Chicago, IL: American College of Surgeons; 2018. Schaefer TJ, Omar Nunez Lopez. Burn Resuscitation And Management [Internet]. Nih.gov. StatPearls Publishing; 2019. Galvagno SM, Nahmias JT, Young DA. Advanced Trauma Life Support® Update 2019. Anesthesiology Clinics. 2019 Mar;37(1):13–32. Hudspith J, Rayatt S. First aid and treatment of minor burns. BMJ. 2004 Jun 17;328(7454):1487–9.',
     tags: ['queimados', 'emergência']
   },
@@ -206,8 +218,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Glote / rouquidão'
     ],
     correctAnswer: 1,
-    explanation: 'Tumores de epiglote (supraglote) têm voz abafada ("hot potato voice"), enquanto glóticos causam rouquidão.',
-    commentary: 'Tumores malignos da região supraglótica apresentam-se com alteração da voz, desconforto faríngeo, disfagia e/ou linfonodo cervical. A voz geralmente é descrita como "abafada". A rouquidão é típica de tumores glóticos ou lesões mais avançadas, devido à fixação de prega vocal por invasão da aritenóide ou articulação cricoaritenoidea.',
+    explanation: "A lesão começa na epiglote e se estende à banda ventricular (prega vestibular) e à prega ariepiglótica, todas estruturas da supraglote; as pregas vocais estão móveis. Trata-se de carcinoma espinocelular supraglótico em homem tabagista e etilista.\n\nComo a glote está livre, a voz não fica rouca: o tumor ocupa o espaço acima das pregas vocais e deixa a voz abafada (\"voz de batata quente\"). Os sintomas iniciais costumam ser odinofagia, sensação de corpo estranho e disfagia, e a supraglote tem drenagem linfática rica e bilateral, por isso a metástase cervical aparece cedo, como o linfonodo jugulocarotídeo alto deste paciente.",
+    commentary: "Glote com voz metálica (A): a lesão está acima das pregas vocais, que estão livres e móveis; voz metálica não é característica do câncer de laringe.\n\nTransglótico com voz metálica (C): o tumor transglótico atravessa o ventrículo e envolve a glote, geralmente com prega vocal fixa e rouquidão; aqui as pregas estão móveis.\n\nGlote com rouquidão (D): rouquidão precoce é a marca do tumor glótico, mas a origem desta lesão é a epiglote.",
+    tip: "Câncer de glote: rouquidão precoce e pouca metástase. Supraglote: voz abafada, disfagia e linfonodo cervical cedo.",
     reference: 'Cirurgia de Cabeça e Pescoço - Fundamentos para a Graduação Médica. Lenine Garcia Brandão & Marilia D’Elboux Guimarães, Sarvier, 2011.',
     tags: ['cirurgia de cabeça e pescoço', 'oncologia']
   },
@@ -222,8 +235,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Lavagem intensa com soro fisiológico e encaminhamento ao oftalmologista.'
     ],
     correctAnswer: 3,
-    explanation: 'Queimaduras químicas oculares são emergências que exigem lavagem copiosa imediata.',
-    commentary: 'Trata-se de um quadro de queimadura química da córnea levando a grave desepitelização (ceratite). Nestes casos, a conduta correta é a lavagem intensa da córnea com soro fisiológico para retirar os resíduos da substância agressora, instilação tópica de antibioticotico e lubrificantes oculares e oclusão para estimular o processo de reepitelização.',
+    explanation: "Soda cáustica é um álcali, e queimaduras oculares por álcali são as mais graves, porque o produto saponifica as membranas celulares e continua penetrando na córnea e nas estruturas internas do olho enquanto houver contato. Dor intensa, hiperemia, baixa da visão e ceratite grave mostram lesão importante.\n\nA conduta imediata, antes de qualquer outra coisa, é irrigação abundante e prolongada com soro fisiológico (ou água limpa, se não houver soro), com o olho aberto e removendo partículas dos fundos de saco, até neutralizar o pH da superfície. Depois, usam-se colírio antibiótico e lubrificante para proteger a córnea enquanto ela reepiteliza, e o paciente é encaminhado ao oftalmologista para avaliação da extensão da lesão.",
+    commentary: "Internação com antibiótico tópico e endovenoso (A): antibiótico venoso não tem papel, e chamar o oftalmologista sem antes irrigar deixa o álcali agir por mais tempo.\n\nEncaminhamento cirúrgico urgente (B): a lesão aguda não é cirúrgica de imediato; o que define o prognóstico é a irrigação feita no primeiro atendimento.\n\nColírio antibiótico e retorno em 15 dias (C): sem irrigação e sem seguimento próximo, a queimadura progride e pode levar a perda visual.",
+    tip: "Queimadura química no olho, sobretudo por álcali: irrigar muito, já, antes de qualquer exame; depois oftalmologista.",
     reference: 'Oftalmologia Geral - Vaughan & Asbury, 17ª ed.',
     tags: ['oftalmologia', 'emergência']
   },
@@ -238,8 +252,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Compressão pulmonar pelo útero.'
     ],
     correctAnswer: 1,
-    explanation: 'O bloqueio simpático da anestesia somado à compressão da veia cava pelo útero causa hipotensão.',
-    commentary: 'A compressão aorto-cava em gestantes é uma realidade com início precoce, que promove redução do retorno venoso ao coração, causando hipotensão arterial e favorecendo que essas busquem o decúbito lateral. A anestesia regional (raqui ou peridural) promove bloqueio simpático com redução da pressão arterial. Durante a gestação, ocorre redução dos volumes residuais e de reserva expiratório e aumento do volume de ar corrente e de reserva inspiratória, assim como redução da capacidade residual funcional e aumento da capacidade inspiratória.',
+    explanation: "Duas coisas somam-se nessa gestante. Ao deitar de costas, o útero grávido comprime a veia cava inferior (e a aorta), reduzindo o retorno venoso e o débito cardíaco: é a síndrome de hipotensão supina. Ao mesmo tempo, a peridural bloqueia as fibras simpáticas, causando vasodilatação, acúmulo de sangue nos membros inferiores e queda da pressão.\n\nA náusea é um sinal precoce da hipotensão. A conduta é deslocar o útero para a esquerda (cunha sob o quadril direito ou inclinação lateral esquerda da mesa), oferecer fluidos e usar vasopressor (como fenilefrina ou efedrina) se necessário, para proteger a perfusão da placenta.",
+    commentary: "Aumento dos volumes e capacidades pulmonares (A): na gravidez, o volume corrente aumenta, mas o volume de reserva expiratório e o volume residual diminuem; nada disso explica a hipotensão.\n\nAumento da capacidade residual funcional (C): é o contrário: a CRF cai na gestação, pela elevação do diafragma, o que deixa a gestante mais sujeita a hipoxemia, mas não a hipotensão.\n\nCompressão pulmonar pelo útero (D): o útero eleva o diafragma, mas não comprime o pulmão a ponto de causar queda de pressão; a causa é vascular.",
+    tip: "Gestante hipotensa deitada de costas após raqui ou peridural: desloque o útero para a esquerda, hidrate e use vasopressor.",
     reference: 'Cavalcante FS. Alterações fisiológicas da gravidez em: Cangiani LM, Carmona MJC, Ferez D, Bastos CO, Duarte LTD, Cangiani LH, et al. Tratado de Anestesiologia, 9ª ed, Editora dos Editores, 2021; 2461-98. Bastos CO, Castro LFC. Anestesia para cesariana em: Cangiani LM, Carmona MJC, Ferez D, Bastos CO, Duarte LTD, Cangiani LH, et al. Tratado de Anestesiologia, 9ª ed, Editora dos Editores, 2021; 2537-64.',
     tags: ['anestesiologia', 'obstetrícia']
   },
@@ -254,8 +269,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Débito urinário ainda normal.'
     ],
     correctAnswer: 0,
-    explanation: 'Choque Grau III (perda 30-40%) caracteriza-se por hipotensão, taquicardia (>120) e alteração do sensório.',
-    commentary: 'De acordo com a classificação do choque hipovolêmico abaixo, fica claro que se trata de um paciente em choque grau III.',
+    explanation: "Pela classificação do choque hemorrágico do ATLS, o paciente está pálido, frio e confuso, com FC de 135 bpm, FR de 32 irpm e PA sistólica de 85 mmHg. Taquicardia importante associada a queda da pressão arterial e alteração do nível de consciência caracteriza choque classe III, com perda estimada de 30% a 40% da volemia.\n\nCom volemia de cerca de 70 mL/kg, um homem de 70 kg tem aproximadamente 4900 mL de sangue; 30% a 40% disso equivale a algo entre 1500 e 2000 mL. Nessa classe já está indicada a transfusão de hemoderivados, além do controle da fonte de sangramento.",
+    commentary: "Choque classe II, perda de 20% a 30% (B): na classe II a pressão sistólica ainda é mantida e o paciente costuma estar apenas ansioso; aqui há hipotensão e confusão.\n\nPerda maior que 2000 mL (C): corresponde à classe IV, com mais de 40% de perda, pulso muito acelerado, pressão muito baixa, rebaixamento acentuado da consciência e diurese praticamente ausente.\n\nDébito urinário normal (D): na classe III a diurese já está claramente reduzida (em torno de 5 a 15 mL/h).",
+    tip: "Choque classe III: taquicardia + hipotensão + confusão = perda de 30% a 40% (1500 a 2000 mL); hora de transfundir.",
     reference: 'Advanced Trauma Life Support (ATLS), 9ª Ed 2014. MARTINS, H. S.; DAMASCENO, M. C. T.; AWADA, S. Pronto Socorro: Medicina de emergência; 3ª Ed. Nicholas H, Tyler JA. Hemorrhagic Shock. Treasure Island (FL): StatPearls [Internet]. 2022.',
     tags: ['trauma', 'choque']
   },
@@ -270,8 +286,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Lavado peritoneal.'
     ],
     correctAnswer: 2,
-    explanation: 'Paciente instável com FAST positivo para líquido livre exige cirurgia imediata para controle de danos.',
-    commentary: 'O paciente apresenta sinais de hemoperitônio traumático, uma condição que requer intervenção cirúrgica imediata. A laparotomia exploratória é o próximo passo mais apropriado no manejo deste paciente, pois permite uma avaliação direta da cavidade abdominal para identificar e controlar a fonte de sangramento, além de possibilitar a realização de procedimentos de controle de danos, se necessário. As outras opções (A, B e D) podem ser consideradas em situações específicas, mas não são apropriadas como próximo passo primário no manejo de um paciente com suspeita de hemoperitônio traumático.',
+    explanation: "Politraumatizado inconsciente, em choque hipovolêmico, com abdome distendido e doloroso e FAST positivo: há sangramento intra-abdominal com instabilidade hemodinâmica. Nessa combinação, o ATLS indica laparotomia exploratória imediata, porque só o controle cirúrgico da fonte resolve o choque.\n\nA reanimação com hemoderivados (de preferência concentrado de hemácias, plasma e plaquetas, com pouco cristaloide) acontece ao mesmo tempo, a caminho do centro cirúrgico, mas não deve atrasar a cirurgia. Em pacientes muito graves, a laparotomia pode seguir a estratégia de controle de danos.",
+    commentary: "Tomografia de abdome e pelve (A): é o exame do paciente estável; levar um paciente em choque ao tomógrafo atrasa o controle do sangramento e pode ser fatal.\n\nEstabilizar com fluidos e transfusão (B): a reposição é feita em paralelo, mas o paciente com sangramento abdominal ativo não estabiliza sem cirurgia, e cristaloide em excesso piora a coagulopatia e a hipotermia.\n\nLavado peritoneal (D): já se sabe que há sangue no abdome pelo FAST; o lavado é alternativa quando o FAST não está disponível ou é duvidoso.",
+    tip: "Trauma com choque + FAST positivo = laparotomia já. Estável com FAST positivo = tomografia.",
     reference: 'Sabiston - Tratado de Cirurgia - Townsend, Courtney; Beauchamp, Daniel - 2 Volumes - 18ª Ed. Cirurgia Vascular: Doenças Vasculares Periféricas, 4ª edição, volume 01 e 02 Maffei, Lastória, Yoshida, Rollo, Giannini, Moura.',
     tags: ['trauma', 'emergência']
   },
@@ -286,8 +303,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Esôfago de Barrett'
     ],
     correctAnswer: 1,
-    explanation: 'O tabaco e álcool são os principais fatores de risco para o carcinoma espinocelular (CEC) de esôfago.',
-    commentary: 'O álcool e o tabaco são fatores de risco significativos para câncer esofágico. A progressão rápida dos sintomas disfágicos, a perda de peso e os antecedentes de tabagismo e etilismo sugerem um carcinoma esofágico, especialmente carcinoma espinocelular, que é mais comumente associado a esses fatores.',
+    explanation: "Disfagia que progride rápido de sólidos para líquidos, emagrecimento acentuado (mais de 20% do peso) e história de tabagismo e etilismo apontam para câncer de esôfago, e o tipo histológico ligado a esses dois fatores é o carcinoma espinocelular (epidermoide), mais frequente no terço médio do esôfago.\n\nA investigação começa por endoscopia digestiva alta com biópsia, seguida de estadiamento (tomografia e, conforme o caso, ecoendoscopia e PET-CT). Como o esôfago não tem serosa e se distende muito, a disfagia costuma surgir só quando o tumor já ocupa boa parte da luz, por isso o diagnóstico é tardio na maioria dos casos.",
+    commentary: "Adenocarcinoma do esôfago (A): está associado a refluxo crônico, esôfago de Barrett e obesidade, e predomina no terço distal; tabaco e álcool pesam muito mais no carcinoma espinocelular.\n\nMegaesôfago chagásico (C): a disfagia é lenta e arrastada por anos, com regurgitação, e o emagrecimento é gradual; o paciente vem de área endêmica para Chagas.\n\nEsôfago de Barrett (D): é uma metaplasia sem sintomas próprios (as queixas são as do refluxo) e não causa disfagia progressiva com grande perda de peso, a não ser que já tenha evoluído para adenocarcinoma.",
+    tip: "Disfagia rápida de sólidos para líquidos + emagrecimento + tabaco e álcool = carcinoma espinocelular de esôfago.",
     reference: 'Engel LS, Chow WH, Vaughan TL, et al. Riscos atribuíveis à população de câncer de esôfago e gástrico. J Natl Cancer Inst. 2003;95(18):1404.',
     tags: ['oncologia', 'gastroenterologia']
   },
@@ -302,8 +320,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) ASA 5 - Morte cerebral declarada.'
     ],
     correctAnswer: 2,
-    explanation: 'ASA 4 é um paciente com doença sistêmica que ameaça a vida constantemente.',
-    commentary: 'A classificação ASA avalia o estado físico e o risco anestésicocirúrgico. A ASA 4 é para pacientes com doença sistêmica grave que representa um risco constante para a vida. ASA 1 é para pacientes saudáveis, ASA 2 para pacientes com doença sistêmica leve, ASA 3 para doença sistêmica grave, ASA 5 para moribundos e ASA 6 para pacientes com morte cerebral cuja morte está sendo realizada para doação de órgãos.',
+    explanation: "A classificação ASA de estado físico ordena os pacientes pela doença de base antes da anestesia:\n\n• ASA 1: paciente saudável.\n• ASA 2: doença sistêmica leve, sem limitação funcional.\n• ASA 3: doença sistêmica grave, com limitação funcional.\n• ASA 4: doença sistêmica grave que representa ameaça constante à vida.\n• ASA 5: paciente moribundo, que não deve sobreviver sem a cirurgia.\n• ASA 6: morte encefálica declarada, com órgãos sendo retirados para doação.\n\nO sufixo \"E\" é acrescentado quando a cirurgia é de emergência. A alternativa C descreve corretamente o ASA 4.",
+    commentary: "ASA 2 como paciente sadio (A): paciente saudável é ASA 1; o ASA 2 tem doença sistêmica leve.\n\nASA 3 como doença sistêmica leve (B): doença leve é ASA 2; o ASA 3 tem doença sistêmica grave.\n\nASA 5 como morte encefálica (D): o ASA 5 é o moribundo; a morte encefálica para doação é o ASA 6.",
+    tip: "ASA: 1 saudável, 2 leve, 3 grave, 4 ameaça constante à vida, 5 moribundo, 6 morte encefálica (doador).",
     reference: 'Sociedade de Anestesiologia do Estado de São Paulo. Tratado de Anestesiologia. 7ª ed. São Paulo: SAESP; 2011.',
     tags: ['anestesiologia']
   },
@@ -318,8 +337,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Radiografia de tórax.'
     ],
     correctAnswer: 0,
-    explanation: 'O manejo da via aérea (A) é a primeira prioridade no ABCDE do trauma.',
-    commentary: 'Independentemente de outras lesões visíveis, a sequência ABCDE deve ser rigorosamente seguida, iniciando pela via aérea e proteção cervical.',
+    explanation: "No ATLS, o atendimento ao politraumatizado grave começa pela avaliação primária, seguindo a sequência ABCDE: via aérea com proteção da coluna cervical, respiração e ventilação, circulação com controle de hemorragia, avaliação neurológica e exposição com controle da temperatura. O que mata mais rápido é tratado primeiro, à medida que é encontrado.\n\nO paciente está inconsciente, o que por si só ameaça a via aérea, e tem lacerações na face; garantir a via aérea (com restrição de movimento da coluna cervical) vem antes das fraturas expostas e da dor abdominal. Hemorragia externa grave, se presente, é controlada de imediato junto com esse primeiro passo, como enfatizam os protocolos de atendimento pré-hospitalar.",
+    commentary: "Avaliação neurológica detalhada (B): na avaliação primária, o D é rápido (Glasgow, pupilas e sinais de lateralização); o exame neurológico completo fica para a avaliação secundária.\n\nFluidos intravenosos rápidos (C): a circulação é a etapa C; além disso, a reanimação do trauma prioriza hemoderivados e evita grandes volumes de cristaloide.\n\nRadiografia de tórax (D): é exame complementar da avaliação primária, mas não vem antes de garantir a via aérea.",
+    tip: "Politrauma: ABCDE na ordem; A = via aérea com proteção da cervical, sempre primeiro.",
     reference: 'ATLS 10ª ed.',
     tags: ['trauma', 'emergência']
   },
@@ -334,8 +354,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) 50% dos pacientes nesta situação se beneficiará com tratamento clínico.'
     ],
     correctAnswer: 1,
-    explanation: 'Paciente com colite grave em uso de infliximabe com provável megacólon tóxico tem indicação cirúrgica de colectomia subtotal.',
-    commentary: 'A TC abdominal é mais confiável para avaliar a extensão e a gravidade da colite e a presença de dilatação colônica do que as radiografias abdominais, a TC pode ser capaz de distinguir megacólon tóxico, distensão de ar acima de 6 cm com padrão austral anormal, pseudopólipos nodulares espessamentos difusos da parede colônica, edema submucoso.\n\nApenas uma minoria de pacientes é elegível para uma colonoscopia, talvez uma retossigmoidoscopia seja mais indicada.\n\nCerca de 50% dos pacientes se beneficiarão com o tratamento clínico, porém não uma paciente medicada recentemente com infliximabe.',
+    explanation: "Paciente com retocolite ulcerativa que, mesmo em uso de infliximabe, apresenta disenteria intensa, distensão abdominal, febre, taquicardia, anemia e hipotensão: é uma colite grave com toxicidade sistêmica (colite fulminante), com risco de megacólon tóxico e perfuração. Como ela já está em terapia de resgate com biológico e não respondeu, as chances de controle clínico são baixas.\n\nNessa situação, a cirurgia não deve ser adiada. A operação de escolha na urgência é a colectomia subtotal com ileostomia terminal, mantendo o reto: retira o cólon doente com menor tempo cirúrgico e risco, sem anastomose em paciente grave. A reconstrução (proctocolectomia com bolsa ileal) é planejada depois, com a paciente recuperada.",
+    commentary: "Tomografia não acrescenta nada (A): a tomografia avalia melhor que a radiografia a extensão da colite, a dilatação do cólon e complicações como perfuração e abscesso.\n\nColonoscopia como exame de eleição (C): na colite grave com distensão, a colonoscopia completa aumenta o risco de perfuração; quando necessária, faz-se uma retossigmoidoscopia cuidadosa, com pouca insuflação.\n\nMetade responde ao tratamento clínico (D): esse número pode valer para crises graves tratadas no início, mas não para uma paciente que já piorou mesmo em uso de infliximabe; nela a indicação é cirúrgica.",
+    tip: "RCU grave com toxicidade que não responde ao resgate (infliximabe) = colectomia subtotal com ileostomia terminal.",
     reference: 'Megacólon tóxico: papel da TC na avaliação e detecção de complicações. Imbriaco m, Balthazar ej clin imaging. 2001;25(5):349. Colonoscopy during an attack of severe ulcerative colitis is a safe procedure and of great value in clinical decision making. alemayehu g, järnerot g am j gastroenterol. 1991;86(2):187. Megacólon tóxico na colite ulcerativa e na colite de crohn. fazio vw Clin gastroenterol. 1980;9(2):389. Aetiology and surgical management of toxic megacolon. Ausch c, madoff rd, gnant m, rosen hr, garcia-aguilar j, hölbling n, herbst f, buxhofer v, holzer b, rothenberger da, schiessel r colorectal dis. 2006;8(3):195.',
     tags: ['coloproctologia', 'emergência']
   },
@@ -350,8 +371,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Nylon'
     ],
     correctAnswer: 3,
-    explanation: 'O Nylon é um fio monofilamentar não absorvível, ideal para síntese de aponeurose em pacientes com risco de má cicatrização (diabéticos).',
-    commentary: 'O nylon é um fio sintético monofilamentar não absorvível ideal para suturas que exigem resistência permanente e pouca reação tecidual. Todos os outros citados são absorvíveis.',
+    explanation: "A aponeurose cicatriza devagar e leva meses para recuperar a força. Por isso, para fechar a parede abdominal, principalmente em pacientes com cicatrização ruim (idosos, diabéticos, já operados), o fio precisa manter a resistência por muito tempo.\n\nEntre as opções, o único fio não absorvível é o nylon (poliamida), monofilamentar, resistente e com pouca reação tecidual. Ácido poliglicólico, catgut e poligalactina são absorvidos em semanas e perdem força antes de a aponeurose cicatrizar, o que favorece nova hérnia.",
+    commentary: "Ácido poliglicólico (A): fio sintético absorvível trançado; perde a maior parte da força em poucas semanas.\n\nCatgut (B): fio biológico absorvível, com reação inflamatória intensa e absorção rápida; não serve para aponeurose.\n\nPoligalactina (C): fio absorvível trançado (Vicryl), útil em subcutâneo e ligaduras, mas sem durabilidade suficiente para a aponeurose.",
+    tip: "Aponeurose cicatriza devagar: precisa de fio que dure. Entre as opções, o único não absorvível é o nylon.",
     reference: 'Skandalakis, JE; Anatomia e técnica cirúrgica - manual prático, segunda edição, 2007 , editora Revinter',
     tags: ['cirurgia geral', 'suturas']
   },
@@ -366,8 +388,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Laparoscopia diagnóstica e esplenectomia, se necessário.'
     ],
     correctAnswer: 0,
-    explanation: 'Trauma esplênico em paciente estável tem como padrão o tratamento conservador (não-operatório).',
-    commentary: 'Como o paciente está estável hemodinamicamente e o trauma tendo sido há seis horas supõe-se que não há mais sangramento ativo e o tratamento pode ser conservador sem laparotomias e em observação rigorosa em uti',
+    explanation: "Paciente com lesão esplênica grau I (hematoma ou laceração pequenos e superficiais), estável hemodinamicamente, avaliado 6 horas após o trauma, com cerca de 500 mL de líquido livre. Em pacientes estáveis, a maioria das lesões de baço para de sangrar sozinha, e o tratamento não operatório é o padrão, preservando o órgão e sua função imunológica.\n\nEsse tratamento exige vigilância: internação em local com monitorização (UTI ou unidade semi-intensiva), exames seriados (hemoglobina e exame abdominal), repouso e centro cirúrgico disponível. Se o paciente ficar instável ou tiver sinais de peritonite, indica-se a cirurgia; em casos selecionados com extravasamento de contraste, a angioembolização é uma alternativa.",
+    commentary: "Punção abdominal (B): a paracentese ou o lavado peritoneal só mostram que há sangue, o que a imagem já mostrou; não tratam nem mudam a conduta em paciente estável.\n\nLaparotomia com esplenectomia (C): é indicada em paciente instável ou com peritonite, não em lesão grau I estável.\n\nLaparoscopia com esplenectomia (D): procedimento invasivo sem indicação em paciente estável com lesão leve; a esplenectomia desnecessária ainda expõe a infecções graves por germes encapsulados.",
+    tip: "Trauma de baço com paciente estável = tratamento não operatório com monitorização; instabilidade = cirurgia.",
     reference: 'Sabiston: textbook of surgery; 21 edition, 2022; editora Elsevier',
     tags: ['trauma']
   },
@@ -382,8 +405,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) S1'
     ],
     correctAnswer: 1,
-    explanation: 'A raiz L4 é responsável pelo reflexo patelar e pela sensibilidade na face medial da perna.',
-    commentary: 'A raiz l4 é responsável pelo reflexo patelar, da inervação do músculo tibial anterior e a sensibilidade na face medial da perna e pé. A raiz l5 é responsável pelo reflexo do tibial posterior, inervação do músculo extensor longo do hálux e sensibilidade na face lateral da perna e dorso do pé. A raiz de s1 e responsável pelo reflexo aquileu, da musculatura do músculo fibular longo e curto e sensibilidade na face lateral do pé.',
+    explanation: "Lombalgia após esforço com sinais de uma raiz nervosa: dormência no lado interno (medial) da perna e do pé, fraqueza para a dorsiflexão do pé (músculo tibial anterior) e reflexo patelar diminuído. Esse conjunto corresponde à raiz de L4.\n\nNa coluna lombar, a hérnia posterolateral costuma comprimir a raiz que sai no nível de baixo; assim, a raiz L4 geralmente é afetada por hérnia entre L3 e L4. Para o exame, vale gravar os três níveis mais cobrados: L4 (lado medial da perna, tibial anterior, reflexo patelar), L5 (dorso do pé e face lateral da perna, extensor longo do hálux, sem reflexo confiável) e S1 (borda lateral do pé e planta, flexão plantar e eversão, reflexo aquileu).",
+    commentary: "L3 (A): dá sensibilidade na face anterior e medial da coxa até o joelho e participa da extensão do joelho e do reflexo patelar, mas não da sensibilidade da perna e do pé.\n\nL5 (C): altera a sensibilidade do dorso do pé e da face lateral da perna e enfraquece a extensão do hálux; o reflexo patelar fica normal.\n\nS1 (D): causa alteração da sensibilidade na borda lateral e planta do pé, fraqueza na flexão plantar e reflexo aquileu diminuído.",
+    tip: "L4 = face medial da perna + tibial anterior + patelar. L5 = dorso do pé + hálux. S1 = borda lateral do pé + aquileu.",
     reference: 'Propedeutica ortopédica e traumatológica, Nelson mattioli leit, flávio faloppa- porto alegre artmed, 2013. Manual básico de ortopedia da sbot.2010 , coordenadores. Gerra m i p, fucks r. Cec sbot.',
     tags: ['ortopedia', 'neurocirurgia']
   },
@@ -398,8 +422,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Parada de eliminação de gases e fezes'
     ],
     correctAnswer: 0,
-    explanation: 'Obstruções altas (gástricas) causam vômitos precoces, logo após a alimentação.',
-    commentary: 'Como a obstrução é gástrica os sintomas são de vômitos precoces logo após a alimentação já que o alimento não passa para o intestino delgado',
+    explanation: "Paciente com emagrecimento importante, massa epigástrica, anemia e tumor que bloqueia a passagem do endoscópio para o duodeno: câncer gástrico distal (antro ou piloro) causando obstrução da saída do estômago.\n\nComo o alimento não consegue passar do estômago, ele é eliminado por vômitos pouco tempo depois da refeição, com alimento parcialmente digerido e sem bile, acompanhados de saciedade precoce. A distensão fica restrita ao epigástrio, e o paciente pode ter alcalose metabólica hipoclorêmica e hipocalêmica pela perda de suco gástrico. Os gases e as fezes continuam sendo eliminados, porque o intestino abaixo não está obstruído.",
+    commentary: "Vômitos fecaloides (B): aparecem em obstruções baixas do intestino delgado ou do cólon, com proliferação bacteriana no conteúdo parado.\n\nDistensão abdominal importante (C): é típica de obstrução intestinal mais distal; na obstrução gástrica, a distensão fica limitada ao epigástrio.\n\nParada de eliminação de gases e fezes (D): sinal de obstrução intestinal completa, mais característico das obstruções colônicas e do delgado; na obstrução do estômago, o trânsito abaixo continua.",
+    tip: "Obstrução da saída do estômago = vômitos precoces com alimento, sem bile, e alcalose hipoclorêmica; gases e fezes seguem.",
     reference: 'Sabiston: textbook of surgery; 21 edition, 2022 ; editora Elsevier',
     tags: ['gastroenterologia', 'oncologia']
   },
@@ -414,15 +439,16 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Videolaparoscopia'
     ],
     correctAnswer: 2,
-    explanation: 'A TC com contraste é o padrão-ouro no abdome agudo obstrutivo para definir causa e nível da obstrução.',
-    commentary: 'A Tomografia computadorizada com contraste é o método diagnóstico preferencial na suspeita de abdome agudo obstrutivo, com sensibilidade e especificidade superiores a 90%\n\nA Tomografia computadorizada desempenha um papel fundamental na triagem de emergência, tratamento adequado e tomada de decisão e fornece alta sensibilidade, especificidade e precisão na detecção de obstrução intestinal em estágio inicial e comprometimento vascular intestinal agudo. A tc também pode diferenciar entre várias etiologias, que é considerado um critério importante na triagem de pacientes para tratamento cirúrgico versus não cirúrgico.',
+    explanation: "Constipação progressiva, parada de eliminação de gases e fezes, distensão, hipertimpanismo, ruídos hidroaéreos aumentados (luta peristáltica) e vômitos fecaloides compõem o quadro de abdome agudo obstrutivo, provavelmente de nível baixo. O paciente está muito desidratado e com dor difusa, o que obriga a pensar também em sofrimento de alça.\n\nA tomografia de abdome e pelve, de preferência com contraste, é o exame que mais ajuda na decisão: confirma a obstrução, mostra o ponto de transição, sugere a causa (tumor, volvo, brida, hérnia) e detecta sinais de isquemia, como espessamento da parede, pneumatose e líquido livre. É ela que separa quem pode ser tratado de forma conservadora de quem precisa de cirurgia.",
+    commentary: "Enema opaco (A): pode mostrar obstrução colônica, mas não avalia o intestino delgado nem sinais de isquemia, e o bário é contraindicado se houver suspeita de perfuração.\n\nRaio X de abdome (B): é o exame inicial mais disponível e sugere obstrução (níveis hidroaéreos, distensão), mas tem baixa capacidade de definir causa, local exato e sofrimento vascular.\n\nVideolaparoscopia (D): é procedimento terapêutico invasivo, difícil em abdome muito distendido e não é o método de escolha para confirmar o diagnóstico.",
+    tip: "Abdome agudo obstrutivo: a TC com contraste confirma, localiza, mostra a causa e procura isquemia.",
     reference: 'Curr med imaging, 2022;18(3):275-284. Doi:10.2174/1573405617666210628154218.',
     tags: ['gastroenterologia', 'emergência']
   },
   {
     id: 'tp2023-67',
     module: 'Cirurgia',
-    text: 'Adolescente, 13 anos, admitido no pronto-socorro com dor inguinal à direita com irradiação escrotal, de início súbito há cerca de 2 horas, com melhora parcial há cerca de 1 hora. O paciente referiu ter participado de atividades esportivas na manhã do mesmo dia. Exame físico de genital: testículo esquerdo elevado no escroto e fora do eixo longitudinal habitual, aumento do volume e da consistência com discreta hiperemia, ausência de reflexo cremastérico. Qual é o diagnóstico e a conduta?',
+    text: 'Adolescente, 13 anos, admitido no pronto-socorro com dor inguinal à direita com irradiação escrotal, de início súbito há cerca de 2 horas, com melhora parcial há cerca de 1 hora. O paciente referiu ter participado de atividades esportivas na manhã do mesmo dia. Exame físico de genital: testículo direito elevado no escroto e fora do eixo longitudinal habitual, aumento do volume e da consistência com discreta hiperemia, ausência de reflexo cremastérico. Qual é o diagnóstico e a conduta?',
     options: [
       '(A) Neoplasia; biópsia.',
       '(B) Trauma testicular; analgesia e seguimento ambulatorial.',
@@ -430,8 +456,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Torção testicular; cirurgia de urgência.'
     ],
     correctAnswer: 3,
-    explanation: 'A tríade de dor súbita em adolescente, testículo elevado/horizontalizado e ausência de reflexo cremastérico é torção testicular.',
-    commentary: 'Paciente jovem com dor unilateral súbita com história de atividade física prévia sempre se deve considerar torção testicular. O exame físico demonstra sinais clássicos de torção com elevação e angulação secundária a torção no próprio eixo e ausência de reflexo cremastérico.\n\nTrauma testicular é uma hipótese plausível pela história de prática de esportes, mas a história deixaria claro que o início foi durante o esporte e no exame físico não teríamos o achado de elevação e angulação.\n\nOrquite é um quadro também de escroto agudo, mas apresenta melhora da dor à elevação testicular (sinal de Prehn) e não apresenta os achados de exame físico desse paciente. O quadro também é mais arrastado, não súbito.\n\nNeoplasia não se apresenta com dor, em geral é indolor com crescimento progressivo podendo apresentar síndromes paraneoplásicas como ginecomastia e hipertireoidismo.',
+    explanation: "Dor súbita no escroto de um adolescente, após esforço físico, com testículo elevado, horizontalizado (fora do eixo), aumentado e com reflexo cremastérico ausente é torção testicular até prova em contrário. A melhora parcial da dor não afasta o quadro: pode ocorrer distorção espontânea temporária, com risco de nova torção.\n\nA torção é emergência cirúrgica, porque a viabilidade do testículo cai rapidamente após cerca de 6 horas de isquemia. Diante de quadro clínico típico, não se deve atrasar a exploração escrotal esperando exames; a cirurgia inclui distorção, avaliação da viabilidade (orquiectomia se inviável) e orquidopexia, geralmente bilateral.",
+    commentary: "Neoplasia (A): tumor de testículo costuma ser massa endurecida e indolor, de crescimento lento, sem início súbito nem perda do reflexo cremastérico.\n\nTrauma testicular (B): exigiria relato de impacto direto durante o esporte; além disso, a elevação e a horizontalização do testículo apontam para torção, e liberar o paciente sem cirurgia levaria à perda do órgão.\n\nOrquite (C): tem instalação mais gradual, geralmente com febre e sintomas urinários ou parotidite, reflexo cremastérico presente e alívio da dor ao elevar o testículo (sinal de Prehn positivo).",
+    tip: "Dor escrotal súbita + testículo alto e horizontal + sem reflexo cremastérico = torção: cirurgia já, sem esperar exame.",
     reference: 'Campbell-walsh urologia. Gen guanabara koogan; 11ª edição. 2018',
     tags: ['urologia', 'emergência']
   },
@@ -447,8 +474,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Tumor de ceco'
     ],
     correctAnswer: 1,
-    explanation: 'O volvo de sigmoide é uma causa comum de obstrução baixa em idosos e apresenta imagem radiológica típica de "U invertido" ou "grão de café".',
-    commentary: 'A imagem radiológica e o quadro clínico são clássicos de volvo de sigmoide.',
+    explanation: "Idoso com constipação crônica de longa data que evolui em poucas horas com dor e grande distensão abdominal, timpanismo e sem peritonite tem o perfil típico do volvo de sigmoide. A constipação crônica alonga e torna redundante o sigmoide, que gira sobre o próprio mesentério e forma uma alça fechada.\n\nNa radiografia, o achado clássico é a alça de sigmoide muito dilatada em forma de U invertido, o sinal do grão de café, apontando para o quadrante superior direito. Sem sinais de isquemia ou perfuração, a conduta inicial é a descompressão por retossigmoidoscopia ou colonoscopia, seguida de sigmoidectomia eletiva na mesma internação, pelo alto risco de recidiva.",
+    commentary: "Fecaloma (A): também ocorre no constipado crônico idoso, mas a radiografia mostra massa fecal com aspecto mosqueado no reto ou sigmoide, e não a grande alça em grão de café.\n\nAderência intestinal (C): causa obstrução de delgado em paciente com cirurgia abdominal prévia, com alças centrais empilhadas; não há relato de operação anterior.\n\nTumor de ceco (D): provoca obstrução de evolução mais arrastada, com anemia e perda de peso, e não a distensão súbita com imagem típica de volvo.",
+    tip: "Idoso constipado crônico + distensão súbita + grão de café no RX = volvo de sigmoide: descomprimir por endoscopia.",
     reference: 'Schuwartz. Tratado de cirurgia. 9 edição. Sabiston. Tratado de cirurgia. A base biológica da prática cirúrgica moderna. 20a.',
     tags: ['coloproctologia', 'emergência']
   },
@@ -463,8 +491,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Lesão óssea'
     ],
     correctAnswer: 0,
-    explanation: 'A associação de uso de estrogênio (ACO) e edema unilateral com sinal de Homans positivo sugere TVP.',
-    commentary: 'A paciente acima além de a história do uso de hormônios anticoncepcional oral que podem interferir na tríade de Virchow (hipercoagulabilidade) apresenta ao exame físico: edema, aumento da panturrilha em relação ao outro membro, sinal de romans positivo, veias superficiais ingurgitadas demonstrando uma provável trombose do sistema profundo.',
+    explanation: "Mulher jovem que acabou de iniciar anticoncepcional combinado (o estrogênio aumenta a coagulabilidade, um dos elementos da tríade de Virchow) com aumento importante do diâmetro da panturrilha, dor à dorsiflexão do pé (sinal de Homans), veias superficiais ingurgitadas e leve cianose tem quadro de trombose venosa profunda.\n\nO ingurgitamento das veias superficiais reflete o desvio do fluxo quando o sistema profundo está obstruído. A confirmação é feita com ultrassom Doppler venoso, e o tratamento é anticoagulação; o anticoncepcional com estrogênio deve ser suspenso.",
+    commentary: "Oclusão arterial aguda (B): o membro fica frio, pálido, sem pulsos, com dor intensa, parestesia e paralisia; não há edema importante nem veias ingurgitadas.\n\nDoença arterial oclusiva crônica (C): ocorre em idosos com fatores de risco cardiovascular, com claudicação intermitente e atrofia, e não com edema agudo em uma jovem.\n\nLesão óssea (D): não explicaria o edema volumoso da panturrilha, as veias dilatadas e a cianose, nem há história de trauma.",
+    tip: "Estrogênio + panturrilha inchada + Homans positivo + veias superficiais cheias = TVP: Doppler e anticoagulação.",
     reference: 'Maffei doenças vasculares periféricas. Rutherford,vascular disease',
     tags: ['cirurgia vascular']
   },
@@ -480,8 +509,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Aderência intestinal; correção de distúrbios hidroeletrolíticos e tratamento conservador com sonda nasogástrica aberta.'
     ],
     correctAnswer: 3,
-    explanation: 'Aderências (bridas) são a principal causa de obstrução de delgado em pacientes com cirurgia prévia; o tratamento inicial costuma ser conservador.',
-    commentary: 'O RX mostra um padrão de obstrução de intestino delgado. relacionando a imagem com o histórico do paciente chegamos a hipótese de brida (aderência intestinal), sendo a correção dos distúrbios hidroeletrolíticos e o tratamento conservador as primeiras medidas a serem adotadas. abscesso intracavitário não se enquadra no tempo de pós-operatório do paciente. Não existe sinal de pneumoperitônio no RX apresentado e a história clínica associada ao exame físico, também não são compatíveis com perfuração intestinal. a radiografia mostra um padrão de distensão de alças de intestino delgado e não de cólon, não sendo característica da torção de cólon.',
+    explanation: "Paciente com laparotomia prévia (por ferimento de arma de fogo) que evolui com náuseas, vômitos, cólica e distensão, sem sinais de peritonite e hemodinamicamente estável, tem como principal hipótese obstrução de intestino delgado por bridas, a causa mais comum de obstrução em operados. A radiografia mostra alças de delgado distendidas, sem padrão colônico e sem pneumoperitônio.\n\nNa obstrução por aderência sem sinais de sofrimento de alça, o tratamento inicial é conservador: jejum, sonda nasogástrica aberta para descompressão, hidratação venosa e correção dos distúrbios hidroeletrolíticos, com reavaliações seriadas. Febre, dor contínua, peritonite, leucocitose ou falha do tratamento indicam cirurgia.",
+    commentary: "Torção de cólon (A): a radiografia mostraria grande alça colônica dilatada, e não o padrão de delgado; além disso, a laparotomia imediata não é a primeira conduta neste caso estável.\n\nAbscesso intracavitário (B): é complicação do pós-operatório precoce, com febre e dor localizada, e não aparece um ano após a cirurgia com quadro obstrutivo e paciente afebril.\n\nPerfuração intestinal (C): haveria peritonite (descompressão dolorosa positiva) e pneumoperitônio na radiografia, ausentes aqui.",
+    tip: "Operado antigo + vômitos + distensão + RX de delgado = brida: SNG aberta, hidratação e observação.",
     reference: 'Schuwartz. Tratado de cirurgia. 9 edição. Sabiston. Tratado de cirurgia. A base biológica da prática cirúrgica moderna. 20 edição',
     tags: ['gastroenterologia', 'emergência']
   },
@@ -496,8 +526,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Fraturas expostas somente podem ser fixadas cirurgicamente com fixadores externos. O uso de antibiótico só deve ser realizado se a lesão apresentar sinais de infecção.'
     ],
     correctAnswer: 2,
-    explanation: 'O desbridamento cirúrgico é a medida mais importante para prevenir a infecção em fraturas expostas.',
-    commentary: 'A fratura exposta é uma lesão considerada contaminada e não infectada. As fraturas provocadas por projétil de arma de fogo são consideradas expostas pois levam à comunicação do hematoma fraturário com o ambiente externo. Fraturas expostas classificadas até o grau 3b podem ser fixadas com fixação interna e em todos os graus podem ser fixadas com fixação externa. Os intuitos do debridamento cirúrgico são retirar corpos estranhos, retirar tecidos desvitalizados e reduzir a contaminação bacteriana.',
+    explanation: "Fratura exposta é aquela em que o foco de fratura (o hematoma fraturário) se comunica com o meio externo. Por isso ela é considerada contaminada, mas não infectada: a infecção é uma complicação que se quer evitar.\n\nO desbridamento cirúrgico, feito com urgência junto com irrigação abundante, tem como objetivos retirar corpos estranhos e tecidos desvitalizados e diminuir a carga bacteriana, o que reduz o risco de infecção e de pseudartrose. Os outros pilares são antibiótico precoce (iniciado o quanto antes, no pronto-socorro), profilaxia do tétano e estabilização da fratura.",
+    commentary: "Projéteis de arma de fogo (A): também são fraturas expostas, porque o trajeto do projétil liga o foco de fratura ao exterior.\n\nToda fratura exposta é infectada (B): ela é contaminada; infecção é uma complicação possível, não a regra.\n\nSó fixador externo e antibiótico apenas se infectada (D): muitas fraturas expostas podem receber fixação interna (como haste intramedular), e o antibiótico é obrigatório de forma profilática desde a admissão, sem esperar sinais de infecção.",
+    tip: "Fratura exposta é contaminada, não infectada: antibiótico precoce, desbridamento, irrigação e estabilização.",
     reference: 'Hebert, Sizínio et al. Ortopedia e traumatologia: princípios e prática. São Paulo: Artmed.',
     tags: ['ortopedia', 'emergência']
   },
@@ -513,8 +544,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) O toque retal é um exame antiquado e atualmente desnecessário, visto os avanços tecnológicos. Portanto, o ideal é solicitar uma ressonância magnética multiparamétrica da próstata.'
     ],
     correctAnswer: 0,
-    explanation: 'Qualquer nódulo ao toque retal ou alteração significativa na velocidade do PSA exige biópsia, independente do valor absoluto do PSA.',
-    commentary: 'O paciente deste relato deve ser biopsiado devido aos seguintes fatores: toque sugestivo, velocidade de progressão maior que 0,75ng/dl e relação PSA livre/PSA total menor que 20%. Note que o valor atual do PSA total não atinge o nível teto de referência que é 2,5ng/dl, porém não há valor de PSA completamente seguro. Além disso o histórico familiar é fator de realce.',
+    explanation: "Este homem tem vários sinais de alerta para câncer de próstata: nódulo endurecido ao toque retal, PSA subindo 0,8 ng/mL em um ano (velocidade acima de 0,75 ng/mL/ano), relação PSA livre/total muito baixa (0,2/2,1, cerca de 10%) e pai com câncer em idade jovem. O PSA total de 2,1 ng/mL ainda está em faixa considerada normal, o que mostra que não existe valor de PSA que exclua a doença.\n\nO toque retal alterado, sozinho, já indica investigação histológica. Por isso o próximo passo é a biópsia de próstata, que confirma o diagnóstico e define o escore de Gleason. Na prática atual, a ressonância multiparamétrica costuma ser feita antes da biópsia para guiar a coleta, mas não substitui o toque nem a confirmação histológica.",
+    commentary: "Velocidade do PSA desde 2021 (B): de 2020 a 2022 o PSA subiu só 0,2 ng/mL por ano, abaixo do limiar de alerta; o salto relevante ocorreu em 2023.\n\nRelação livre/total maior que 25% (C): relação alta sugere doença benigna; o que reforça indicação de biópsia é a relação baixa, e ela não é o único critério de decisão.\n\nToque retal antiquado (D): o toque continua parte da avaliação e, neste caso, foi justamente o exame que encontrou o nódulo; a ressonância complementa, mas não dispensa o toque nem a biópsia.",
+    tip: "Toque retal com nódulo indica biópsia, mesmo com PSA normal; relação livre/total baixa reforça a suspeita.",
     reference: 'Nardozza Júnior, A.; Zerati Filho, M.; Reis, RB. Urologia fundamental. São Paulo: Planmark, 2010.',
     tags: ['urologia', 'oncologia']
   },
@@ -529,8 +561,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Instituir inibidor de bomba de prótons.'
     ],
     correctAnswer: 1,
-    explanation: 'O manejo inicial de qualquer sangramento digestivo grave prioriza a estabilização hemodinâmica e proteção de via aérea.',
-    commentary: 'O paciente em questão apresenta hematêmese em grande volume, com sinais de sangramento digestivo grave (rebaixamento do nível de consciência e hipotensão arterial), necessitando de tratamento urgente.\n\nO primeiro passo é garantir a via aérea do paciente. Isso pode ser feito com uma intubação endotraqueal, garantindo que a via aérea esteja segura, a seguir o paciente deve receber reposição volêmica.\n\nO uso de terlipressina, um medicamento que contrai os vasos sanguíneos diminuído a pressão portal, ele pode ser usado para tratar sangramento de varizes esofágicas. O antibiótico deve ser utilizado para prevenção de infeções bacterianas em cirróticos com hemorragia digestiva. Todavia, eles são medicamentos que devem ser utilizados na sequência do tratamento após garantir a proteção das vias aéreas e reposição volêmica.\n\nApós a estabilização do paciente, ele deve ser encaminhado para uma endoscopia digestiva alta. O que permite identificar o ponto de sangramento e realizar o tratamento adequado.\n\nO inibidor de bomba de prótons é um medicamento que reduz a produção de ácido gástrico. Ele não é eficaz no tratamento de sangramento de varizes esofágicas, sendo recomendado para o tratamento de sangramento secundário doenças pépticas.',
+    explanation: "Cirrótico com hematêmese volumosa, rebaixamento de consciência, taquicardia e hipotensão (60x40 mmHg) está em choque hemorrágico, muito provavelmente por varizes esofágicas. Em qualquer emergência, a ordem é a do ABC: primeiro proteger a via aérea, porque o rebaixamento de consciência associado ao sangue na orofaringe traz alto risco de aspiração, e depois restaurar a perfusão com acesso venoso calibroso e reposição volêmica.\n\nA reposição deve ser criteriosa, com transfusão restritiva (alvo de hemoglobina em torno de 7 a 8 g/dL), porque excesso de volume aumenta a pressão portal. Em seguida vêm o vasoconstritor esplâncnico, o antibiótico profilático e a endoscopia com ligadura nas primeiras 12 horas, depois da estabilização.",
+    commentary: "Endoscopia com ligadura (A): é o tratamento definitivo do sangramento varicoso, mas só deve ser feita depois de proteger a via aérea e estabilizar a hemodinâmica.\n\nTerlipressina e antibiótico (C): são parte obrigatória do tratamento e devem começar cedo, mas não precedem a garantia da via aérea e da reposição volêmica num paciente em choque.\n\nInibidor de bomba de prótons (D): tem papel no sangramento péptico, não reduz a pressão portal e não trata a hemorragia varicosa.",
+    tip: "HDA varicosa em choque: ABC primeiro (via aérea e volume), depois terlipressina, antibiótico e EDA.",
     reference: 'Hepatology, vol. 65, no. 1, 2017. Portal hypertensive bleeding in cirrhosis: risk stratification, diagnosis, and management: 2016 practice guidance by the american association for the study of liver diseases.',
     tags: ['gastroenterologia', 'emergência']
   },
@@ -545,8 +578,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Os plicomas são frequentes nas hemorroidas internas e relacionam-se com fenômeno trombótico.'
     ],
     correctAnswer: 0,
-    explanation: 'Hemorroidas internas originam-se acima da linha denteada, enquanto as externas originam-se abaixo.',
-    commentary: 'A linha denteada é o limite anatômico utilizado para classificar as hemorroidas em Externas (abaixo) e internas (acima). As hemorroidas internas cursam mais comumente com sangramento e prolapso e as externas, com dor, prurido, cicatrização secundaria (plicomas), podendo desenvolver processo trombótico. As hemorroidas internas são classificadas em:\n\n• 1° grau: somente sangram.\n• 2° grau: sangram e desenvolvem prolapso de redução espontânea.\n• 3° grau: sangram e desenvolvem prolapso com redução manual\n• 4° grau: sangramento e prolapso permanente',
+    explanation: "A linha denteada (pectínea) separa o epitélio colunar do reto do anoderma e é a referência anatômica para classificar as hemorroidas: as internas nascem do plexo acima dela e as externas, do plexo abaixo dela.\n\nEssa divisão tem consequência clínica. Acima da linha a inervação é visceral, então a hemorroida interna costuma ser indolor e se manifesta por sangramento vivo e prolapso. Abaixo, a inervação é somática, e a externa causa dor (sobretudo quando trombosa), prurido e pode deixar plicomas. As internas são graduadas de I a IV conforme o prolapso: I só sangra; II prolapsa e volta sozinha; III precisa de redução manual; IV fica permanentemente exteriorizada.",
+    commentary: "Terceiro grau com redução espontânea (B): retorno espontâneo define o segundo grau; no terceiro grau o paciente precisa empurrar o mamilo hemorroidário de volta.\n\nExternas sangram mais (C): o sangramento é a queixa típica das internas; as externas se apresentam mais com dor, prurido e trombose.\n\nPlicomas nas internas (D): plicomas são pregas cutâneas residuais que surgem após episódios de trombose ou inflamação das hemorroidas externas, e não das internas.",
+    tip: "Acima da linha denteada: interna, sangra e não dói. Abaixo: externa, dói, trombosa e deixa plicoma.",
     reference: 'American society for gastrointestinal endoscopy. Asge guideline: endoscopy in the diagnosis and treat mento f inflammatory bowel disease. Gastrointestinal endoscopy. 2006; 63(4):558-65. Dani r. Gastroenterologia essencial. 2. Ed. Rio de janeiro: guanabara koogan; 2001. P. 336-44. Galvão-alves j, rodrigues rhr. Constipação intestinal. In: galvão-alves j. Temas de atualização em gastroenterologia. Rio de janeiro: rubio; 2006. P. 81-8. Kudo s, kashida h, tamura t, kogure e, imai y, yamano h et al. Colonoscopic diagnosis and management of nonpolypoid early colorectal cancer. Word j surg. 2000; 24(9):1081-90.',
     tags: ['coloproctologia']
   },
@@ -561,8 +595,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Angiotomografia'
     ],
     correctAnswer: 3,
-    explanation: 'A angiotomografia permite avaliar o diâmetro da parede aórtica e a anatomia para planejamento cirúrgico.',
-    commentary: 'Como o aneurisma é uma doença de parede e não de luz do vaso a angiotomografia avalia melhor a parede do que a arteriografia (avalia melhor a luz do vaso).',
+    explanation: "O aneurisma de aorta abdominal é uma dilatação da parede do vaso, e frequentemente a luz fica parcialmente ocupada por trombo mural. Por isso o exame de referência precisa mostrar a parede e o diâmetro externo, e não só o contraste circulando.\n\nA angiotomografia faz isso: mede o diâmetro real, define a extensão, a relação com as artérias renais e ilíacas e a presença de trombo, e é o exame usado para planejar tanto a cirurgia aberta quanto o tratamento endovascular. O ultrassom é o método de rastreamento e de seguimento dos aneurismas pequenos.",
+    commentary: "Arteriografia (A): mostra só a luz contrastada; com trombo mural, pode subestimar muito o tamanho do aneurisma, além de ser invasiva.\n\nUltrassom Doppler (B): é barato, sem radiação e ótimo para rastreamento e acompanhamento, mas depende do operador, é prejudicado por gases e obesidade e não detalha a anatomia para o planejamento cirúrgico.\n\nPletismografia (C): avalia variações de volume e fluxo nos membros, útil em doença venosa ou arterial periférica, e não estuda a aorta.",
+    tip: "Aneurisma é doença da parede: ultrassom rastreia, angiotomografia é o padrão ouro e planeja a correção.",
     reference: 'Maffei, doença vascular periferia. Rutherford - vascular dissesse.',
     tags: ['cirurgia vascular']
   },
@@ -578,15 +613,16 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Protocolo de transfusão maciça.'
     ],
     correctAnswer: 2,
-    explanation: 'No TEG, a Máxima Amplitude (MA) reflete a contribuição plaquetária na formação do coágulo.',
-    commentary: 'A tromboelastograma (TEG) é um exame que analisa como um todo coagulação sanguínea. Sua interpretação deriva de análise dos seguintes seguimentos:\n\nTime - r - "tempo de reação" até formas iniciais do coágulo. Se o tempo r for aumentado, o paciente precisa de flama fresco congelado ou preservado.\n\nTime - k - "tempo cinético" para coágulo alcance 20 mm; reflete fibrinogênio e níveis de plaquetas; se k tem o tempo aumentou, o paciente pode precisar crio precipitado ou plaquetas.\n\nÂngulo ∝ - ângulo de inclinação que indica velocidade do coágulo formação; reflete fibrinogênio e níveis de plaquetas.\n\nMáxima amplitude: amplitude máxima de rastreamento, reflete a contribuição das plaquetas na formação do coágulo; se diminuído, o paciente tem plaquetas disfunção e necessidades plaquetas.\n\nLy-30: porcentagem de redução da amplitude 30 minutos após a máxima amplitude; ly-30 elevado significa que o coágulo também está sendo quebrado rapidamente.\n\nNo caso analisado, temos uma alteração de máxima amplitude (ma), sendo necessário transfusão de plaquetas.',
+    explanation: "O tromboelastograma avalia a formação do coágulo como um todo e orienta a transfusão por componente. Cada parâmetro aponta para um defeito: tempo R prolongado indica falta de fatores (plasma); tempo K longo ou ângulo alfa reduzido sugerem falta de fibrinogênio (crioprecipitado); amplitude máxima (MA) reduzida reflete coágulo fraco por deficiência ou disfunção de plaquetas; e lise aumentada em 30 minutos (LY30) indica hiperfibrinólise (ácido tranexâmico).\n\nNeste paciente, a única alteração é a MA reduzida, coerente com o uso de aspirina, que inibe a função plaquetária. Ele tem lesão esplênica grau II e está estável, sem critério para transfusão maciça. O componente indicado pelo exame é o concentrado de plaquetas.",
+    commentary: "Concentrado de hemácias (A): repõe transporte de oxigênio, mas não corrige o defeito de coagulação apontado pelo exame; o paciente está estável.\n\nRinger e plasma fresco (B): o plasma seria indicado por tempo R prolongado, e o cristaloide em grande volume dilui fatores e piora a coagulopatia no trauma.\n\nTransfusão maciça (D): é reservada ao choque hemorrágico grave com sangramento volumoso, o que não é o caso de um paciente estável com lesão esplênica de baixo grau.",
+    tip: "TEG: R longo = plasma; K/alfa = crioprecipitado; MA baixa = plaquetas; LY30 alto = ácido tranexâmico.",
     reference: 'AMERICAN COLLEGE OF SURGIONS COMMITTEE ON TRAUMA. Advanced Trauma Life Suport - ATLS. 10 edição',
     tags: ['trauma', 'hematologia']
   },
   {
     id: 'tp2023-77',
     module: 'Cirurgia',
-    text: 'Paciente cirrótico por hepatite C apresenta 2 nódulos hepáticos com “wash-out” em tomografia de abdome com contraste trifásico (1 nódulo tem 2,2cm no segmento 5 e outro tem 2,5cm no segmento 7), MELD 12, alfafetoproteína de 600ng/dL (normal até 10ng/dL). No estadiamento não apresenta metástases à distância. Qual a conduta frente a esse caso, considerando que o paciente tem boa performance clínica?',
+    text: 'Paciente cirrótico por hepatite C apresenta 2 nódulos hepáticos com “wash-out” em tomografia de abdome com contraste trifásico (1 nódulo tem 2,2cm no segmento 5 e outro tem 2,5cm no segmento 7), MELD 12, alfafetoproteína de 600ng/mL (normal até 10ng/mL). No estadiamento não apresenta metástases à distância. Qual a conduta frente a esse caso, considerando que o paciente tem boa performance clínica?',
     options: [
       '(A) Hepatectomia direita',
       '(B) Quimioembolização',
@@ -594,8 +630,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Sorafenib'
     ],
     correctAnswer: 2,
-    explanation: 'Pacientes com hepatocarcinoma dentro dos critérios de Milão (nódulos < 3cm) e cirrose têm indicação de transplante.',
-    commentary: 'Paciente cirrótico com bom perfil clinico, tem dois nódulos (hepatocarcinoma). Esta dentro de critério de Milão. Alfafetoproteína é menor que 1000. Portanto a conduta é transplante hepático em situação especial devido hepatocarcinoma',
+    explanation: "Nódulos com realce arterial e lavagem (wash-out) na tomografia trifásica de um cirrótico definem carcinoma hepatocelular sem precisar de biópsia. Este paciente tem dois nódulos, ambos menores que 3 cm, sem invasão vascular ou metástase, o que o coloca dentro dos critérios de Milão (um nódulo até 5 cm, ou até três nódulos de até 3 cm cada).\n\nA alfafetoproteína está elevada, mas abaixo de 1.000 ng/mL, valor acima do qual a regra brasileira contraindica o transplante. Com boa condição clínica, o transplante hepático é o tratamento de escolha, porque remove os tumores e também a cirrose que os origina; o paciente recebe pontuação especial na fila por causa do tumor.",
+    commentary: "Hepatectomia direita (A): o fígado cirrótico tolera mal ressecções grandes, os nódulos estão em segmentos diferentes e a cirrose remanescente continuaria gerando novos tumores.\n\nQuimioembolização (B): é usada nos tumores intermediários fora dos critérios de transplante ou como ponte enquanto o paciente aguarda na fila, e não como tratamento definitivo de quem é candidato.\n\nSorafenibe (D): é terapia sistêmica para doença avançada (invasão vascular ou metástases), situação que não corresponde a este paciente.",
+    tip: "CHC no cirrótico dentro de Milão (1 até 5 cm ou até 3 de até 3 cm) e AFP abaixo de 1.000: transplante.",
     reference: 'Sabiston: textbook of surgery; 21 edition, 2022; editora Elsevier',
     tags: ['oncologia', 'gastroenterologia']
   },
@@ -610,8 +647,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Megaesôfago chagásico e cardiomiotomia a Heller-Pinotti.'
     ],
     correctAnswer: 3,
-    explanation: 'Esôfago Grau III de Rezende (calibre entre 7-10cm) tem como tratamento de escolha a cirurgia de Heller-Pinotti.',
-    commentary: 'Trata-se de um paciente com disfagia progressiva, com epidemiologia positiva para chagas, com esôfago aumentado, com ondas terciárias e estase alimentar – quadro compatível com megaesôfago por chagas. O esôfago de 7cm configura grau 3 de Rezende e a melhora conduta terapêutica é a cardiomiotomia a Heller-Pinotti',
+    explanation: "Disfagia progressiva de longa evolução, regurgitação, necessidade de água para empurrar o alimento, estase na endoscopia e esôfago dilatado em mulher do norte de Minas Gerais (área endêmica de doença de Chagas) indicam megaesôfago chagásico. A destruição dos plexos mioentéricos impede o relaxamento do esfíncter inferior e abole a peristalse.\n\nA classificação de Rezende usa o diâmetro do esôfago no esofagograma; 7 cm corresponde ao limite entre os graus II e III, ainda sem dolicomegaesôfago. Nessa fase, o tratamento de melhor resultado é a cardiomiotomia a Heller com fundoplicatura parcial (técnica de Pinotti), que alivia a obstrução e reduz o refluxo depois da miotomia. A esofagectomia fica para os casos avançados (grau IV).",
+    commentary: "Câncer esofágico com ressecção endoscópica (A): o câncer causa disfagia de evolução mais rápida, com perda de peso e estenose irregular, e não estase com esôfago difusamente dilatado; a ressecção endoscópica serve só para lesões superficiais.\n\nCâncer esofágico com esofagectomia (B): a epidemiologia e os exames apontam acalasia chagásica, e não neoplasia.\n\nDilatação com balão (C): é opção nos graus iniciais ou para quem não pode operar, com efeito menos duradouro que a miotomia num esôfago já com 7 cm.",
+    tip: "Disfagia longa + área endêmica de Chagas + esôfago dilatado: megaesôfago; graus II e III = Heller-Pinotti.",
     reference: 'Sabiston: textbook of surgery; 21 edition, 2022; editora Elsevier',
     tags: ['gastroenterologia']
   },
@@ -626,8 +664,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Por se tratar de uma hérnia direta, congênita, o tratamento é a herniorrafia inguinal.'
     ],
     correctAnswer: 2,
-    explanation: 'Hérnias diretas ocorrem por fraqueza da parede posterior e são agravadas por doenças que aumentam a pressão abdominal (DPOC, prostatismo).',
-    commentary: 'Das tramas do colágeno em decorrentes da idade (alterações bioquímicas e metabólicas), associada a DPOC e a hiperplasia prostática e esforço físico (fatores mecânicos), são os fatores mais importantes para a formação das hernias inguinais diretas, que se exteriorizam pelo anel inguinal externo, a hiperplasia prostática colabora porem não de maneira significativa para o quadro em questão, e o tratamento é a hernioplastia inguinal.',
+    explanation: "Homem idoso, trabalhador braçal, com DPOC (tosse crônica) e aumento prostático (esforço miccional) reúne os fatores que levam à hérnia inguinal adquirida: aumento repetido da pressão abdominal somado ao enfraquecimento do colágeno da parede com a idade.\n\nO ponto frágil é o triângulo de Hesselbach (limitado pelos vasos epigástricos inferiores, pela borda do músculo reto e pelo ligamento inguinal), por onde saem as hérnias diretas, típicas desse perfil. O tratamento é cirúrgico, de preferência com tela (hernioplastia, como a técnica de Lichtenstein), corrigindo antes, quando possível, os fatores que aumentam a pressão abdominal.",
+    commentary: "Hiperplasia prostática em 50% (A): o esforço para urinar contribui, mas não existe essa proporção; é um fator associado entre vários.\n\nSaída pelo anel inguinal profundo (B): esse é o trajeto da hérnia indireta; o quadro do paciente, com fatores de risco adquiridos, sugere hérnia direta pelo assoalho do canal, e o enunciado não permite afirmar a saída pelo anel interno.\n\nDireta e congênita (D): a hérnia direta é adquirida; a congênita é a indireta, ligada à persistência do conduto peritônio-vaginal. Além disso, o tratamento preferido hoje é a correção com tela.",
+    tip: "Hérnia direta = triângulo de Hesselbach, adquirida, idoso que faz força (DPOC, próstata, esforço).",
     reference: 'Hernias de parede abdominal – diagnóstico e tratamento 2ª edição 2009. Juan Carlos M Gonzáles capítulo 13.',
     tags: ['cirurgia geral', 'hérnias']
   },
@@ -643,8 +682,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Cisto radicular do terceiro molar inferior infectado; Raio X panorâmico da mandíbula.'
     ],
     correctAnswer: 1,
-    explanation: 'A Angina de Ludwig é uma celulite grave dos espaços submandibulares, geralmente de origem odontogênica.',
-    commentary: 'Angina de Ludwig: infecção nos espaços submandibular, submentoniano e sublingual. De origem dentária e com rápida evolução para obstrução de vias aéreas superiores. O termo angina deriva do termo grego, que significa “estrangulamento”, revelando o acometimento da via aérea em questão. O exame mais adequado para o diagnóstico e programação terapêutica é a tomografia computadorizada, preferencialmente com contraste, que deve incluir planos da face, do pescoço e do tórax. As imagens permitem avaliação da real extensão da loja, se é única ou múltipla, situação dos tecidos adjacentes, previsão de via aérea difícil e extensão para o tórax.',
+    explanation: "Infecção que começa num molar inferior e evolui com abaulamento submandibular, febre, piora apesar de antibiótico oral, odinofagia, disfagia e elevação do assoalho da boca configura a angina de Ludwig: infecção que se espalha rapidamente pelos espaços submandibular, sublingual e submentoniano. Os molares inferiores são a origem mais comum porque suas raízes ficam abaixo da inserção do músculo milo-hióideo.\n\nO grande risco é a obstrução da via aérea pela língua empurrada para cima e para trás, além da extensão para o mediastino. O exame de imagem indicado é a tomografia computadorizada de pescoço com contraste (incluindo tórax quando há suspeita de extensão), que mostra a extensão, coleções a drenar e o comprometimento da via aérea. O tratamento associa garantia da via aérea, antibiótico venoso e drenagem cirúrgica.",
+    commentary: "Sialoadenite aguda (A): é inflamação da glândula salivar, com dor e aumento da glândula e saída de pus pelo ducto, sem elevação do assoalho da boca; e a ressonância é mais demorada e pouco prática nessa urgência.\n\nInfecção profunda da mandíbula (C): o raio X panorâmico mostra o osso e o dente, mas não avalia os espaços cervicais nem a via aérea, que são o que ameaça a vida.\n\nCisto radicular infectado (D): seria uma lesão localizada ao dente, sem disseminação cervical; e a radiografia panorâmica, de novo, não estuda as partes moles do pescoço.",
+    tip: "Infecção de molar inferior + elevação do assoalho da boca = Ludwig: via aérea, TC de pescoço com contraste e drenagem.",
     reference: 'Lenine gb & guimarães md. Cirurgia de cabeça e pescoço- fundamentos para a graduação médica. Sarvier, 2011. Araujo fo. V j., cemea cr, brandão lg. Manual do residente de cirurgia de cabeça e pescoço - 2.ed.-barueri, sp: manole. 2013. Rev col bras cir 47:e20202524. Doi: 10.1590/0100-6991e-20202524',
     tags: ['cirurgia de cabeça e pescoço', 'emergência']
   },
@@ -691,8 +731,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Colangiorressonância e CPRE conservadora.'
     ],
     correctAnswer: 1,
-    explanation: 'Murphy positivo e febre definem colecistite aguda; o US é o exame inicial e a colecistectomia precoce é o padrão.',
-    commentary: 'Os fatores de risco (4Fs: female, fat, forty, fertile) e o sinal de Murphy sugerem colecistite. O US confirma e o tratamento é cirúrgico (videolaparoscopia).',
+    explanation: "Mulher de 45 anos, obesa, com dor em hipocôndrio direito há 2 dias, náuseas, vômitos, febre, taquicardia e sinal de Murphy positivo: a principal hipótese é colecistite aguda, inflamação da vesícula geralmente por cálculo impactado no infundíbulo.\n\nA investigação inclui exames laboratoriais (leucograma, PCR, bilirrubinas, enzimas hepáticas, amilase ou lipase) e ultrassonografia de abdome, exame de escolha para confirmar (cálculos, parede espessada, líquido perivesicular, Murphy ultrassonográfico). Confirmado o diagnóstico, o tratamento definitivo é a colecistectomia videolaparoscópica, de preferência precoce, junto com hidratação, analgesia e antibiótico.",
+    commentary: "Tomografia e só tratamento clínico (A): a TC não é o exame inicial para doença da vesícula (o ultrassom é mais sensível para cálculos), e manter apenas suporte adia a cirurgia, que é o tratamento.\n\nLaparotomia exploradora urgente (C): não há peritonite difusa nem instabilidade que justifiquem cirurgia aberta sem diagnóstico; a via de escolha é a laparoscópica, após confirmação.\n\nColangiorressonância e CPRE (D): servem para suspeita de cálculo no colédoco (icterícia, colangite, dilatação da via biliar), o que não é descrito; e obesidade não contraindica a laparoscopia.",
+    tip: "Febre + dor em hipocôndrio direito + Murphy: ultrassom confirma colecistite; trate com colecistectomia laparoscópica precoce.",
     reference: 'Coelho, Júlio Cezar - Aparelho Digestivo - 4ª Ed.',
     tags: ['gastroenterologia', 'cirurgia biliar']
   },
@@ -707,8 +748,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Doença do refluxo crônica, hérnia de hiato importante e obesidade.'
     ],
     correctAnswer: 3,
-    explanation: 'O adenocarcinoma (habitual no terço distal) associa-se ao Barrett/DRGE e obesidade.',
-    commentary: 'O adenocarcinoma de esôfago distal está intimamente ligado ao esôfago de Barrett (metaplasia intestinal secundaria ao refluxo crônico).',
+    explanation: "O tipo de câncer de esôfago muda conforme a altura. No terço distal predomina o adenocarcinoma, que nasce da mucosa lesada por refluxo ácido crônico: a agressão repetida leva à metaplasia intestinal (esôfago de Barrett), depois à displasia e ao câncer.\n\nPor isso os principais fatores de risco são a doença do refluxo crônica, a hérnia de hiato grande (que facilita o refluxo) e a obesidade, sobretudo a abdominal, que aumenta a pressão sobre a junção esofagogástrica. O tabagismo também contribui, mas pesa mais no carcinoma epidermoide.",
+    commentary: "Esôfago em quebra-nozes e tabagismo (A): o esôfago em quebra-nozes é distúrbio motor (contrações de amplitude muito alta) e não é lesão pré-maligna.\n\nTabagismo e etilismo (B): são os fatores clássicos do carcinoma epidermoide (espinocelular), que predomina no terço médio do esôfago.\n\nDiabetes e hipertensão (C): não estão entre os fatores de risco reconhecidos para câncer de esôfago.",
+    tip: "Esôfago distal = adenocarcinoma (refluxo, Barrett, obesidade). Esôfago médio = epidermoide (fumo e álcool).",
     reference: 'Sabiston - Tratado de Cirurgia - 18ª Ed.',
     tags: ['oncologia', 'gastroenterologia']
   },
@@ -723,8 +765,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Blood-patch imediato em UTI.'
     ],
     correctAnswer: 2,
-    explanation: 'O tratamento inicial da cefaleia pós-raqui é conservador; o blood-patch reserva-se a casos refratários.',
-    commentary: 'Repouso e hidratação costumam resolver a maioria dos casos. O blood-patch é invasivo e realizado por anestesiologista em ambiente controlado.',
+    explanation: "A cefaleia pós-raquianestesia ocorre porque o líquor vaza pelo orifício da dura-máter, a pressão liquórica cai e as estruturas sensíveis à dor são tracionadas. É típica a piora ao sentar ou ficar de pé e a melhora ao deitar. Mulheres jovens, agulhas mais calibrosas e cortantes e várias tentativas de punção aumentam o risco.\n\nA maioria dos casos melhora em poucos dias, e o tratamento inicial é conservador: repouso conforme o conforto, hidratação, analgésicos comuns e cafeína. Se a dor for incapacitante ou não ceder, indica-se o tampão sanguíneo peridural (blood patch), feito por anestesiologista em ambiente adequado, com injeção de sangue autólogo no espaço peridural.",
+    commentary: "Blood patch imediato na enfermaria (A): não é a primeira medida, fica para casos refratários ou muito incapacitantes; e é feito por anestesiologista, com técnica asséptica e ambiente apropriado.\n\nContraindicado pela idade (B): a idade não contraindica o procedimento; ser jovem é, na verdade, fator de risco para a cefaleia.\n\nBlood patch imediato na UTI pelo intensivista (D): não é a conduta inicial, a cefaleia pós-raqui não exige UTI e o procedimento é do anestesiologista.",
+    tip: "Cefaleia pós-raqui (piora em pé, alivia deitado): conservador primeiro; refratária, blood patch peridural.",
     reference: 'Manica, James - Anestesiologia - 4ª Ed.',
     tags: ['anestesiologia']
   },
@@ -739,8 +782,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) ECG 9; intubação orotraqueal.'
     ],
     correctAnswer: 1,
-    explanation: 'AO 2 + RM 4 + RV 1 = GCS 7. Pacientes com GCS < 8 exigem via aérea definitiva (IOT).',
-    commentary: 'A hipotensão com frequência cardíaca normal sugere choque neurogênico (distributivo). Independente do tipo de choque, o GCS de 7 obriga a proteção da via aérea.',
+    explanation: "Pela Escala de Coma de Glasgow: abertura ocular apenas à dor = 2; retirada inespecífica do membro ao estímulo doloroso (flexão normal, sem localizar) = 4; nenhum som = 1. Total: 7. Com Glasgow de 8 ou menos, o paciente não protege a via aérea, e a conduta é a intubação orotraqueal (via aérea definitiva), com proteção da coluna cervical.\n\nHá também PA baixa sem taquicardia e pele aquecida, sem vasoconstrição, num trauma de alta energia. Esse padrão sugere choque neurogênico por lesão medular (perda do tônus simpático), e não choque hemorrágico, que daria taquicardia e pele fria. Por isso não se indica reposição volêmica agressiva; ainda assim, sangramento deve ser sempre pesquisado.",
+    commentary: "Glasgow 9 e volume agressivo (A): a soma está errada (é 7) e o padrão hemodinâmico não é de hemorragia; o problema imediato é a via aérea.\n\nGlasgow 5 e Ringer agressivo (C): a pontuação está subestimada e a conduta prioriza volume quando o primeiro passo é garantir a via aérea.\n\nGlasgow 9 e intubação (D): a conduta seria aceitável, mas a pontuação está errada; com 9 pontos a intubação não seria automática.",
+    tip: "Glasgow ≤8 = intubar. Hipotensão sem taquicardia e com pele quente no trauma = pense em choque neurogênico.",
     reference: 'ATLS 10ª Edição.',
     tags: ['trauma', 'neurocirurgia']
   },
@@ -756,8 +800,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Drenagem por toracocentese.'
     ],
     correctAnswer: 2,
-    explanation: 'O tratamento de escolha para o hemotórax no trauma é a drenagem torácica fechada.',
-    commentary: 'A drenagem em selo d\'água permite a reexpandir o pulmão e monitorar o débito hemático.',
+    explanation: "Vítima de colisão de carro com dor torácica, dispneia, taquicardia e taquipneia, e radiografia com velamento da base do hemitórax: é hemotórax traumático. O tratamento é a drenagem torácica fechada, em selo d'água, com dreno inserido no 5º espaço intercostal, entre as linhas axilares anterior e média.\n\nO dreno trata e também orienta a conduta: saída imediata de cerca de 1.500 mL de sangue ou drenagem de 200 mL/h por 2 a 4 horas (ou necessidade de transfusão contínua) indica toracotomia.",
+    commentary: "Punção diagnóstica (A): o diagnóstico já está feito pela clínica e pela imagem; a punção não resolve o hemotórax nem permite medir o débito.\n\nDrenagem aberta (B): a drenagem aberta (pleurostomia) é usada em empiema crônico com pleura aderida, não no hemotórax agudo; o tórax aberto agravaria a ventilação.\n\nToracocentese (D): a agulha não esvazia de forma eficaz sangue que coagula e não permite acompanhar o sangramento; a escolha é o dreno.",
+    tip: "Hemotórax traumático: dreno em selo d'água. 1.500 mL de saída imediata ou 200 mL/h por 2 a 4 h = toracotomia.",
     reference: 'ATLS 10ª Edição.',
     tags: ['trauma', 'cirurgia torácica']
   },
@@ -773,24 +818,26 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Solicitar tomografia corporativa.'
     ],
     correctAnswer: 0,
-    explanation: 'O pneumotórax sintomático no trauma exige drenagem imediata (selo d\'água).',
-    commentary: 'O diagnóstico de pneumotórax é clínico no trauma e a drenagem não deve ser retardada por exames complexos se o paciente estiver sintomático.',
+    explanation: "Trauma torácico com escoriação em hemitórax esquerdo, murmúrio vesicular diminuído desse lado e saturação de 88% em ar ambiente, com radiografia mostrando pneumotórax: o paciente tem pneumotórax traumático com repercussão na oxigenação.\n\nO tratamento é a drenagem torácica em selo d'água, que reexpande o pulmão; depois se faz radiografia de controle para conferir a posição do dreno e a expansão pulmonar. Se houvesse sinais de tensão (desvio de traqueia, turgência jugular, hipotensão), a descompressão com agulha ou dedo viria antes, sem esperar imagem.",
+    commentary: "Nova radiografia com Laurel (B): o pneumotórax já está diagnosticado; repetir exames atrasa o tratamento. O decúbito lateral com raios horizontais (Laurel) investiga derrame pleural.\n\nOxigênio e observação (C): oxigênio é medida de suporte, mas não resolve o pneumotórax de um paciente que já está hipoxêmico no trauma.\n\nTomografia de corpo inteiro (D): a TC só é feita depois de corrigir as ameaças à vida no exame primário; o paciente vai para a tomografia já drenado.",
+    tip: "Pneumotórax traumático com hipoxemia: drene em selo d'água; a imagem é só controle depois.",
     reference: 'Sabiston - Tratado de Cirurgia - 19ª Ed.',
     tags: ['trauma', 'cirurgia torácica']
   },
   {
     id: 'tp2022-69',
     module: 'Cirurgia',
-    text: 'Paciente no pós-operatório com dor e inchaço em panturrilha direita. Sinal de Homans positivo. Qual a conduta?',
+    text: "Homem de 37 anos, no primeiro dia de pós-operatório de drenagem de abscesso anal, internado para antibiótico endovenoso, queixa-se de inchaço e dor na perna direita. Ao exame: aumento de volume de todo o membro inferior direito, edema com cacifo (Godet +) e dor na panturrilha que piora à dorsiflexão do pé.\n\nQual a conduta recomendada para esclarecer o diagnóstico?",
     options: [
-      '(A) Observação e elevação do membro (baixa probabilidade por Wells).',
-      '(B) Dímero-D inicial (alta sensibilidade).',
-      '(C) Ecografia vascular direta (Wells de alta probabilidade).',
-      '(D) Ultrassom é a primeira modalidade em qualquer suspeita de TVP.'
+      "(A) Pelo escore de Wells, a probabilidade de trombose venosa profunda (TVP) é baixa, e a observação clínica com elevação do membro basta.",
+      "(B) O exame inicial deve ser o dímero-D, por sua alta sensibilidade para TVP.",
+      "(C) A ecografia vascular deve ser feita depois do dímero-D, pois a probabilidade de TVP pelo escore de Wells é alta.",
+      "(D) Na suspeita de TVP é necessário um exame de imagem, e o ultrassom é a primeira modalidade recomendada."
     ],
     correctAnswer: 3,
-    explanation: 'Em suspeitas clínicas reais de TVP, o US Doppler é o exame de escolha inicial.',
-    commentary: 'O escore de Wells ajuda a estratificar. Se a probabilidade for alta, parte-se direto para o exame de imagem.',
+    explanation: "Paciente internado, no pós-operatório, com perna direita inchada, edema com cacifo e dor na panturrilha à dorsiflexão do pé (sinal de Homans): suspeita de trombose venosa profunda. Pelo escore de Wells, ele soma pontos por cirurgia recente, edema de toda a perna e edema com cacifo restrito ao membro sintomático, chegando a probabilidade alta.\n\nQuando a probabilidade pré-teste é alta, o próximo passo é o exame de imagem: a ultrassonografia com Doppler (compressão venosa) é a primeira escolha. O dímero-D é útil para excluir TVP em quem tem baixa probabilidade, mas no pós-operatório ele se eleva de qualquer forma e perde valor.",
+    commentary: "Baixa probabilidade e só observar (A): o paciente pontua alto no Wells; observar sem investigar deixaria uma TVP sem tratamento, com risco de embolia pulmonar.\n\nDímero-D primeiro (B): é sensível, mas pouco específico, e fica elevado após cirurgia e em processos inflamatórios e infecciosos; serve para afastar TVP em baixa probabilidade, não neste caso.\n\nUltrassom depois do dímero-D (C): na alta probabilidade o dímero-D não muda a conduta; vai-se direto à imagem.",
+    tip: "TVP: Wells alto = Doppler direto; Wells baixo = dímero-D (negativo exclui).",
     reference: 'ESVS 2021 Clinical practice guidelines on venous thrombosis.',
     tags: ['cirurgia vascular']
   },
@@ -821,8 +868,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Amputação infrapatelar imediata.'
     ],
     correctAnswer: 1,
-    explanation: 'Na isquemia crítica, deve-se revascularizar antes de qualquer desbridamento/amputação para garantir cicatrização.',
-    commentary: 'Amputar um membro isquêmico sem revascularização leva à necrose da ferida cirúrgica e perda do nível de amputação.',
+    explanation: "Diabético com necrose seca no hálux, dor de repouso e pulso femoral presente, mas poplíteo e distais ausentes: é isquemia crônica crítica do membro (doença arterial obstrutiva femoropoplítea), com lesão trófica sem sinais de infecção.\n\nNesse cenário, a prioridade é devolver fluxo ao membro. A arteriografia (ou angiotomografia) mapeia a obstrução e orienta a revascularização, por cirurgia aberta ou endovascular. Como a necrose é seca e não há infecção, não há urgência em retirar o tecido: espera-se a lesão se delimitar e, com o membro já irrigado, faz-se depois a amputação econômica ou o desbridamento.\n\nO ponto que a prova cobra: mexer em uma lesão seca de um pé isquêmico sem revascularizar abre uma ferida que não cicatriza e amplia a necrose.",
+    commentary: "Amputar o hálux antes de revascularizar (A): o coto ficaria sem sangue suficiente para cicatrizar e a necrose avançaria. Desbridar ou amputar primeiro só se justifica quando há infecção grave ameaçando o membro ou a vida (pé úmido, sepse).\n\nApenas amputar o hálux (C): ignora a causa, que é a obstrução arterial; sem revascularização, a ferida da amputação também evolui mal.\n\nAmputação infrapatelar imediata (D): dor de repouso indica isquemia crítica, mas não é sinônimo de membro inviável. Amputação maior fica para quando não há possibilidade de revascularização ou o membro já não é salvável.",
+    tip: "Pé isquêmico com necrose seca e sem infecção: primeiro revascularizar, depois amputar o que sobrar delimitado.",
     reference: 'Maffei - Doenças Vasculares Periféricas.',
     tags: ['cirurgia vascular']
   },
@@ -837,8 +885,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Raio X simples e amilase.'
     ],
     correctAnswer: 2,
-    explanation: 'A TC sem contraste é o padrão-ouro para litíase; febre indica litíase infectada (emergência urológica).',
-    commentary: 'A litíase obstrutiva febril exige drenagem imediata da via urinária (duplo J ou nefrostomia) para evitar choque séptico.',
+    explanation: "Dor lombar intensa e súbita, irradiada para o testículo, que acorda o paciente de madrugada, com punho-percussão dolorosa, é a apresentação típica de cólica ureteral por cálculo. A febre muda o cenário: sugere obstrução com infecção (pielonefrite obstrutiva), uma urgência urológica pelo risco de sepse.\n\nA tomografia de abdome e pelve sem contraste é o exame de referência para cálculo urinário: tem alta sensibilidade, mostra tamanho e localização do cálculo e o grau de dilatação. Hemograma, PCR e urina tipo I avaliam a infecção.\n\nConfirmada a litíase obstrutiva infectada, a conduta é antibiótico e desobstrução urgente da via urinária (cateter duplo J ou nefrostomia), deixando a retirada do cálculo para depois que a infecção for controlada.",
+    commentary: "Ultrassonografia com amilase e gama-GT (A): o ultrassom é alternativa útil (gestantes, crianças), mas depende do operador e enxerga mal cálculos no ureter médio; enzimas pancreáticas e hepáticas não têm relação com a hipótese.\n\nRessonância magnética (B): tem baixa sensibilidade para cálculos urinários, é mais demorada e mais cara; não é exame de pronto-socorro para essa suspeita.\n\nRaio X simples com amilase (D): não detecta cálculos radiotransparentes nem os sobrepostos a estruturas ósseas, e não mostra a dilatação da via urinária; amilase de novo é irrelevante.",
+    tip: "Cólica renal + febre = cálculo obstrutivo infectado: TC sem contraste, exames de infecção e desobstruir com urgência.",
     reference: 'Diretrizes SBU - Urolitíase.',
     tags: ['urologia', 'emergência']
   },
@@ -853,8 +902,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Encaminhamento ambulatorial - Hemorroidas.'
     ],
     correctAnswer: 0,
-    explanation: 'A doença diverticular é a principal causa de HDB vultosa em idosos; exige internação para investigação.',
-    commentary: 'A estabilização hemodinâmica e a colonoscopia após preparo são os passos fundamentais.',
+    explanation: "Mulher de 63 anos com sangue vivo nas fezes em quantidade moderada, abdome sem sinais de irritação e sangue no toque retal: é hemorragia digestiva baixa. Ela está descorada e taquicárdica no limite, então precisa ser internada, monitorada e estabilizada, com exames laboratoriais e reserva de sangue, antes da investigação endoscópica.\n\nNa idade dela, a causa mais comum de sangramento baixo volumoso e indolor é a doença diverticular dos cólons (obesidade e idade acima de 60 anos reforçam a hipótese). A colonoscopia, depois do preparo intestinal, identifica a origem e pode tratar o sangramento; a endoscopia alta entra quando há dúvida sobre fonte alta, já que um sangramento alto volumoso também pode sair como sangue vermelho.",
+    commentary: "Tomografia e investigação ambulatorial (B): hemorragia digestiva com sinais de repercussão (palidez, frequência cardíaca de 90) não deve ser conduzida fora do hospital; a investigação precisa ser feita internada.\n\nRetossigmoidoscopia no PS para dar alta (C): o toque retal não mostrou doença hemorroidária, e a retossigmoidoscopia não avalia o cólon proximal, onde muitos divertículos sangram.\n\nEncaminhar ao proctologista (D): além de não haver evidência de hemorroidas, liberar uma paciente idosa com sangramento ativo é inseguro.",
+    tip: "Idoso com sangue vivo, indolor e volumoso nas fezes: internar, estabilizar e colonoscopia; pense em diverticulose.",
     reference: 'British Society of Gastroenterology - HDB Guidelines.',
     tags: ['coloproctologia', 'HDB']
   },
@@ -869,8 +919,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Suspender rivaroxabana 48h antes e retomar 12h após se sem sangramento.'
     ],
     correctAnswer: 3,
-    explanation: 'Novos anticoagulantes orais (DOACs) devem ser suspensos 48h antes de cirurgia de grande porte.',
-    commentary: 'Não há necessidade de ponte com heparina (bridging) para DOACs na maioria dos cenários de risco cirúrgico alto.',
+    explanation: "A rivaroxabana é um anticoagulante oral direto (inibidor do fator Xa) de meia-vida curta, por isso não precisa de ponte com heparina nem de reversão com vitamina K para uma cirurgia programada. Com função renal normal, a última dose é tomada cerca de 48 horas antes de uma cirurgia de alto risco de sangramento, como a artroplastia de quadril, para que o efeito já tenha passado na hora da cirurgia.\n\nDepois da operação, o anticoagulante volta assim que a hemostasia estiver garantida e não houver sangramento ativo. Como a paciente teve TEP há poucas semanas, ela tem alto risco de nova trombose, e o tempo sem anticoagulação deve ser o menor possível; a profilaxia do tromboembolismo é retomada cedo, e a dose plena em seguida.",
+    commentary: "Suspender e dar AAS (A): o AAS não substitui o anticoagulante na prevenção da recorrência do TEP e ainda soma risco de sangramento.\n\nTrocar por varfarina (B): não traz nenhuma vantagem; a varfarina tem efeito mais longo e imprevisível, exigiria suspensão mais precoce e ponte com heparina.\n\nManter a rivaroxabana e dar vitamina K (C): a vitamina K reverte antagonistas da vitamina K, não os inibidores do fator Xa; operar anticoagulado expõe a sangramento grave.",
+    tip: "Rivaroxabana em cirurgia de alto risco de sangramento: parar ~48 h antes, sem ponte, e voltar assim que a hemostasia permitir.",
     reference: 'Med Clin North Am. 2020.',
     tags: ['hematologia', 'cirurgia geral']
   },
@@ -885,8 +936,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Antibiótico e observação.'
     ],
     correctAnswer: 1,
-    explanation: 'Em homens jovens, a clínica de apendicite é soberana e permite indicação cirúrgica direta (Escore de Alvarado ≥ 7).',
-    commentary: 'A migração da dor e o sinal de Blumberg são altamente específicos para apendicite aguda.',
+    explanation: "Homem jovem com dor que começou no epigástrio e migrou para a fossa ilíaca direita, náuseas, hiporexia, febre, defesa e descompressão brusca dolorosa na FID, leucocitose de 17.000 com desvio: é apendicite aguda clássica.\n\nPelo escore de Alvarado, ele soma pelo menos 8 pontos (migração da dor, anorexia, náuseas, dor em FID, descompressão, febre e leucocitose), o que torna o diagnóstico clínico muito provável. Em homem jovem com quadro típico, exames de imagem não acrescentam e só atrasam a cirurgia; a conduta é apendicectomia, com antibiótico profilático.\n\nA imagem fica para os casos duvidosos (escore intermediário), mulheres em idade fértil, idosos, crianças e suspeita de complicação.",
+    commentary: "Tomografia de abdome (A): tem ótima acurácia, mas é desnecessária quando a clínica já confirma o diagnóstico; atrasa a cirurgia e irradia o paciente.\n\nUltrassonografia (C): útil em crianças, gestantes e casos duvidosos; aqui não muda a conduta.\n\nAntibiótico e observação (D): o tratamento só com antibiótico é opção estudada para apendicite não complicada confirmada por imagem, com maior recorrência; com peritonismo e sem imagem, não é a conduta indicada.",
+    tip: "Homem jovem, dor migratória para FID, peritonismo e leucocitose (Alvarado alto): cirurgia, sem precisar de imagem.",
     reference: 'JAMA 2021 - Acute Appendicitis Review.',
     tags: ['gastroenterologia', 'emergência']
   },
@@ -901,8 +953,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Angiografia cerebral.'
     ],
     correctAnswer: 2,
-    explanation: 'Na hidrocefalia aguda pós-meningite (ambiente infectado), a DVE é preferível à DVP definitiva.',
-    commentary: 'A DVE permite o controle da pressão intracraniana enquanto se trata o processo infeccioso liquórico.',
+    explanation: "Criança com meningite bacteriana que melhorava com ceftriaxona e, no quinto dia, volta a ter cefaleia progressiva, vômitos e queda do Glasgow (14 para 10). A tomografia mostra hidrocefalia comunicante: o exsudato inflamatório prejudica a reabsorção do líquor nas granulações aracnoides, e a pressão intracraniana sobe.\n\nCom rebaixamento de consciência, é preciso drenar o líquor com urgência. A derivação ventricular externa (DVE) resolve a hipertensão intracraniana, permite medir a pressão, colher líquor para controle da infecção e pode ser retirada se a hidrocefalia for transitória, o que é comum após meningite. Uma derivação definitiva só é considerada depois, se o paciente não tolerar a retirada da DVE e o líquor estiver estéril.",
+    commentary: "Trocar o antibiótico (A): a piora se deve a uma complicação mecânica (hidrocefalia), não à falha do tratamento; a criança vinha melhorando, e trocar o antibiótico não reduz a pressão intracraniana.\n\nDerivação ventrículo-peritoneal (B): implantar um sistema permanente com líquor ainda infectado e com muitas proteínas leva a infecção e obstrução da válvula; além disso, a hidrocefalia pós-meningite pode ser transitória.\n\nAngiografia cerebral (D): investiga doenças vasculares (aneurisma, malformação), que não explicam o quadro; a causa já está na tomografia.",
+    tip: "Hidrocefalia aguda em meningite em curso: DVE (temporária); DVP só depois, com líquor limpo.",
     reference: 'Nitrini - A Neurologia que todo médico deve saber.',
     tags: ['neurocirurgia', 'pediatria']
   },
@@ -917,15 +970,16 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) ISC; antibióticos e manutenção dos pontos.'
     ],
     correctAnswer: 0,
-    explanation: 'Infecção superficial de incisão trata-se com drenagem e curativos; antibióticos são reservados para celulite extensa.',
-    commentary: 'A drenagem do pus e a limpeza mecânica são fundamentais na ISC superficial.',
+    explanation: "No quinto dia após laparotomia, a ferida tem eritema e secreção purulenta, mas o exame do abdome é normal. Isso é infecção superficial do sítio cirúrgico, restrita à pele e ao subcutâneo, que costuma aparecer justamente entre o quarto e o sétimo dia de pós-operatório.\n\nO tratamento principal é a drenagem: retirar alguns pontos para abrir a cicatriz no trecho acometido, lavar e fazer curativos até a cicatrização por segunda intenção. Quando a drenagem é adequada e não há celulite extensa ou sinais sistêmicos, o antibiótico não é necessário.",
+    commentary: "Fístula por deiscência da sutura da úlcera (B): causaria sinais de peritonite ou saída de conteúdo digestivo pela ferida, com piora clínica; com abdome normal, não há motivo para reoperar.\n\nEventração (C): é a abertura da aponeurose com vísceras sob a pele, geralmente com saída de líquido seroso-sanguinolento, não pus; e o enfaixamento não trata infecção.\n\nAntibiótico mantendo os pontos (D): o pus continuaria preso no subcutâneo; sem drenagem, a infecção não se resolve, e o antibiótico sozinho não basta.",
+    tip: "Pus na ferida com abdome normal = infecção superficial: abrir, lavar e fazer curativo; antibiótico só se houver celulite ou sinais sistêmicos.",
     reference: 'Surgical Infection Society Guidelines - 2016.',
     tags: ['cirurgia geral', 'infectologia']
   },
   {
     id: 'tp2022-78',
     module: 'Cirurgia',
-    text: 'Cefaleia súbita durante relação sexual, Glasgow 4 e anisocoria. TC mostra imagem hiperdensa em parênquima e ventrículos. Diagnosis?',
+    text: "Mulher de 55 anos tem cefaleia súbita durante a relação sexual, seguida de perda da consciência. No pronto-socorro está com Glasgow 4, anisocoria (pupila direita maior), postura em extensão e Babinski à esquerda, sem melhora após manitol. A tomografia de crânio mostra imagem hiperdensa no parênquima parietal esquerdo, junto ao ventrículo, e conteúdo hiperdenso dentro dos ventrículos. Qual o diagnóstico?",
     image: '/images/tp2022-78.webp',
     options: [
       '(A) Hematoma apenas intraventricular.',
@@ -934,8 +988,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Isquemia cerebral volumosa.'
     ],
     correctAnswer: 1,
-    explanation: 'A hipertensão súbita pode causar hematomas parenquimatosos com inundação ventricular associada.',
-    commentary: 'O rebaixamento brusco do nível de consciência sugere evento hemorrágico central.',
+    explanation: "Na tomografia sem contraste, sangue recente aparece hiperdenso (branco). Aqui a hiperdensidade ocupa o parênquima cerebral, próximo ao ventrículo, e também o interior dos ventrículos: é um hematoma intraparenquimatoso com extensão (inundação) ventricular.\n\nA clínica combina: cefaleia súbita durante esforço, perda de consciência, Glasgow muito baixo, anisocoria e sinais de herniação que não melhoram com manitol. A hemorragia intraventricular associada piora o prognóstico, porque pode causar hidrocefalia aguda e aumentar a pressão intracraniana.",
+    commentary: "Hematoma apenas intraventricular (A): a imagem mostra sangue também no parênquima; a hemorragia intraventricular pura (primária) é rara e não explicaria o componente parenquimatoso.\n\nHemorragia subaracnoidea (C): na tomografia, o sangue preenche cisternas, sulcos e fissuras, contornando o cérebro, e não forma uma coleção dentro do parênquima.\n\nIsquemia cerebral volumosa (D): o infarto aparece hipodenso (escuro), e nas primeiras horas a tomografia pode até ser normal; imagem hiperdensa indica sangue.",
+    tip: "TC sem contraste: hiperdenso = sangue; hipodenso = isquemia. Sangue no parênquima e nos ventrículos = hematoma com inundação ventricular.",
     reference: 'Tratado de Neurologia e Neurocirurgia - Giacomelli.',
     tags: ['neurocirurgia', 'emergência']
   },
@@ -950,8 +1005,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) O risco de degeneração maligna é maior do que na população normal.'
     ],
     correctAnswer: 3,
-    explanation: 'Testículos criptorquídicos têm risco significativamente maior de seminoma e outros tumores germinativos.',
-    commentary: 'A orquidopexia precoce visa preservar a fertilidade e facilitar o autoexame para detecção de tumores.',
+    explanation: "A criptorquidia é a ausência do testículo na bolsa escrotal por parada da descida em algum ponto do trajeto (abdome, canal inguinal). Suas principais consequências são a redução da fertilidade, o maior risco de câncer testicular, o maior risco de torção e as repercussões estéticas e psicológicas.\n\nO risco de tumor de células germinativas (seminoma é o mais comum) é maior nesses testículos do que na população geral, e ainda mais quando o testículo é intra-abdominal. A orquidopexia precoce, idealmente entre 6 e 18 meses de vida, melhora o potencial de fertilidade e permite palpar o testículo no seguimento, mas não elimina por completo o risco de malignidade.",
+    commentary: "Temperatura não afeta a espermatogênese (A): é o contrário; o testículo fora da bolsa fica em temperatura mais alta, e isso é um dos fatores que prejudicam a produção de espermatozoides.\n\nNão causa efeitos psicológicos (B): a bolsa vazia gera preocupação estética e psicológica frequente nos pais e no próprio paciente, que deve ser abordada.\n\nNão há risco maior de torção (C): a fixação anômala do testículo fora do lugar facilita a torção do funículo espermático.",
+    tip: "Criptorquidia: menos fertilidade, mais câncer, mais torção e impacto psicológico. Orquidopexia entre 6 e 18 meses.",
     reference: 'Urologia Fundamental - SBU.',
     tags: ['urologia', 'pediatria']
   },
@@ -966,8 +1022,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) 18%'
     ],
     correctAnswer: 0,
-    explanation: 'Membro superior total = 9%. Face anterior = 4.5%. Eritema no rosto é 1º grau (não conta na Parkland/SCQ).',
-    commentary: 'Apenas queimaduras de 2º e 3º grau entram no cálculo da superfície corpórea queimada.',
+    explanation: "Para calcular a superfície corporal queimada (SCQ), só entram as queimaduras de segundo e terceiro graus. O rosto tem apenas eritema, que é queimadura de primeiro grau, então fica fora da conta.\n\nAs bolhas aparecem em toda a face anterior do membro superior esquerdo. Pela regra dos nove (ou pelo diagrama de Lund-Browder), o membro superior inteiro vale 9% no adulto, sendo metade na face anterior e metade na posterior. Logo, a área com queimadura de segundo grau é de cerca de 4,5%.",
+    commentary: "7,5% (B): resultaria de incluir a hemiface (cerca de metade dos 9% da cabeça, por volta de 2 a 3%) junto com a face anterior do braço; mas o rosto teve só eritema, que não entra no cálculo.\n\n9% (C): corresponde ao membro superior inteiro, frente e verso; só a face anterior foi atingida.\n\n18% (D): equivaleria aos dois membros superiores inteiros, ou a um membro inferior inteiro; não corresponde a nenhuma área lesada.",
+    tip: "Primeiro grau não entra na SCQ. Membro superior = 9%; só a face anterior = 4,5%.",
     reference: 'Neligan - Cirurgia Plástica - Vol 6.',
     tags: ['queimados', 'emergência']
   },
@@ -1626,8 +1683,9 @@ export const CIRURGIA_QUESTIONS: Question[] = [
       '(D) Isquemia primária da microvasculatura pancreática por vasoconstrição reflexa, levando à falência imediata das ilhotas de Langerhans e instalação de cetoacidose diabética.'
     ],
     correctAnswer: 2,
-    explanation: 'O evento inicial na fisiopatologia da pancreatite aguda é a ativação intrapancreática precoce de zimogênios proteolíticos (como a conversão do tripsinogênio em tripsina) no interior das células acinares, levando à autodigestão do tecido pancreático.',
-    commentary: 'O evento inicial da pancreatite aguda é a falha nos mecanismos de proteção celular que mantêm as enzimas digestivas em sua forma inativa (zimogênios). A ativação precoce da tripsina dentro do ácino pancreático desencadeia uma cascata de ativação de outras enzimas (fosfolipases, elastases), causando a autodigestão do parênquima, edema, hemorragia e resposta inflamatória local e sistêmica. Sobre os distratores: (A) A translocação bacteriana e a infecção da necrose pancreática são complicações tardias (segunda/terceira semana); nas primeiras 12-24 horas, a inflamação é estéril. (B) O refluxo biliar para os hepatócitos causaria colestase/hepatite e não pancreatite. (D) A pancreatite é primariamente do pâncreas exócrino; a falência endócrina é sequela tardia, não evento inicial.',
+    explanation: "Dor epigástrica súbita, em faixa e irradiada para o dorso, com vômitos e lipase acima de três vezes o limite superior, fecha o diagnóstico de pancreatite aguda (bastam dois de três critérios: dor típica, enzimas elevadas e imagem compatível).\n\nQualquer que seja a causa (cálculo biliar e álcool são as principais), o evento inicial é o mesmo: o tripsinogênio se converte em tripsina ainda dentro da célula acinar. A tripsina ativa as demais enzimas (fosfolipase, elastase), e o pâncreas passa a digerir a si mesmo, com edema, necrose e inflamação que pode se tornar sistêmica.",
+    commentary: "Translocação bacteriana precoce (A): a infecção da necrose pancreática é complicação tardia, em geral depois da primeira semana; no início, a inflamação é química, sem bactérias.\n\nRefluxo biliar para os hepatócitos (B): a litíase é causa frequente, mas a lesão acontece no pâncreas, pela obstrução do ducto pancreático e pela ativação enzimática nele; refluxo para o fígado causaria lesão hepática.\n\nIsquemia das ilhotas com cetoacidose (D): a pancreatite começa no pâncreas exócrino; diabetes pode surgir como sequela tardia, e não é o mecanismo inicial.",
+    tip: "Pancreatite aguda começa com tripsinogênio virando tripsina dentro do ácino → autodigestão.",
     reference: 'SABISTON, David C. Tratado de Cirurgia: A Base Biológica da Prática Cirúrgica Moderna. Rio de Janeiro: Elsevier. KUMAR, Vinay et al. Robbins & Cotran: Patologia Estrutural e Funcional. 10ª ed. Rio de Janeiro: Elsevier, 2021.',
     tags: ['pancreatite aguda', 'fisiopatologia', 'pâncreas']
   },

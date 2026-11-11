@@ -12,8 +12,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) BI-RADS 5, core biopsy do nódulo, sem necessidade de biopsiar o linfonodo.'
     ],
     correctAnswer: 2,
-    explanation: 'BI-RADS 5 indica lesão altamente suspeita. Core biopsy ou mamotomia fornecem o diagnóstico do nódulo, e a PAAF do linfonodo axilar avalia o comprometimento nodal.',
-    commentary: 'O bi-rads 5 é utilizado para classificar exame de mamografia com lesão altamente suspeita para câncer de mama, como no exemplo acima. O diagnóstico anatomopatológico é sempre necessário para nortear a melhor conduta e se possível deve ser feito antes da abordagem cirúrgica. Tanto core biopsy quanto mamotomia fornecem diagnostico histopatológico, permitindo a realização de imuno-histoquímica essencial para a escolha da abordagem terapêutica inicial (cirurgia ou quimioterapia neoadjuvante). A PAAF permite identificar presença ou ausência de células neoplásicas, cujo resultado tem impacto na abordagem cirúrgica da axila.',
+    explanation: "Nódulo espiculado, denso, com calcificações pleomorfas é um achado mamográfico altamente sugestivo de malignidade, o que corresponde à categoria BI-RADS 5. A retração do complexo areolopapilar e o linfonodo axilar duro e fixo reforçam a suspeita de carcinoma com comprometimento axilar.\n\nAntes de qualquer cirurgia é preciso ter o diagnóstico histológico. A core biopsy (ou a mamotomia) retira fragmentos de tecido do nódulo, o que permite a imuno-histoquímica (receptores hormonais, HER2, Ki-67), essencial para decidir entre cirurgia primária e quimioterapia neoadjuvante. Já no linfonodo suspeito, a PAAF basta para mostrar se há células neoplásicas, e esse resultado muda a abordagem da axila.",
+    commentary: "BI-RADS 0 (A): é usado quando o exame está incompleto e precisa de incidências ou exames adicionais; aqui os achados já são característicos de lesão altamente suspeita.\n\nBiópsia cirúrgica das duas lesões (B): é mais invasiva e não é a primeira escolha; as biópsias percutâneas dão o diagnóstico com menos morbidade e permitem planejar o tratamento, inclusive a neoadjuvância.\n\nSem biopsiar o linfonodo (D): linfonodo axilar clinicamente suspeito precisa ser investigado, porque a confirmação de metástase muda a cirurgia axilar (dispensa a pesquisa do linfonodo sentinela de início) e o estadiamento.",
+    tip: "Espiculado + calcificações pleomorfas = BI-RADS 5: core biopsy no nódulo e PAAF na axila suspeita antes de operar.",
     reference: 'Diretrizes em mastologia: Facina, G; Oliveira, V.M. et al, Sociedade Brasileira de Mastologia, 2021.',
     tags: ['mastologia', 'oncologia']
   },
@@ -28,8 +29,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) A miomatose submucosa é um desafio para o tratamento clínico.'
     ],
     correctAnswer: 3,
-    explanation: 'Os miomas submucosos (estruturais) são os mais sintomáticos e apresentam pouca resposta ao tratamento clínico farmacológico.',
-    commentary: 'Os miomas submucosos, são geralmente os mais sintomáticos em relação a sangramento uterino aumentado e tem pouca resposta ao tratamento clínico. Geralmente os distúrbios ovulatórios cursam com irregularidade menstrual. Deve ter atenção especial ao uso de anticoncepcional nos casos de risco de trombose. Não existe técnica de exérese de focos de adenomiose.',
+    explanation: "A FIGO divide as causas de sangramento uterino anormal em estruturais (PALM: pólipo, adenomiose, leiomioma, malignidade/hiperplasia) e não estruturais (COEIN: coagulopatia, disfunção ovulatória, endometrial, iatrogênica e não classificada).\n\nO mioma é uma das causas estruturais mais frequentes. Entre eles, os submucosos, que deformam a cavidade endometrial, são os que mais provocam sangramento aumentado e os que menos respondem ao tratamento medicamentoso; o tratamento de escolha costuma ser a miomectomia histeroscópica.",
+    commentary: "Adenomiose (A): é de fato causa estrutural, mas o tratamento é clínico (progestagênios, DIU de levonorgestrel) ou, quando falha, histerectomia; não existe técnica consagrada de retirada dos focos com preservação do útero.\n\nDistúrbios ovulatórios (B): são não estruturais, mas a anovulação causa sangramento irregular e imprevisível, e não um ciclo regular com fluxo aumentado.\n\nDistúrbios da hemostasia (C): são não estruturais, mas os contraceptivos hormonais são parte importante do tratamento, por exemplo na doença de von Willebrand; a cautela com estrogênio vale para quem tem trombofilia ou risco trombótico, não para as coagulopatias em geral.",
+    tip: "PALM é estrutural, COEIN não. Mioma submucoso: o que mais sangra e o que menos responde a remédio.",
     reference: 'Yela DA, Benetti-Pinto CL. Sangramento uterino anormal. São Paulo: Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO), 2018.',
     tags: ['ginecologia geral', 'DIP']
   },
@@ -44,8 +46,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) História familiar de câncer de mama, sedentarismo e uso crônico de corticoide.'
     ],
     correctAnswer: 1,
-    explanation: 'Menopausa (especialmente precoce), histórico familiar (genética), tabagismo e uso de corticoides são fatores clássicos de risco.',
-    commentary: 'Os fatores de risco para osteoporose são: Idade, glicocorticoides orais ou sistêmicos, história de quedas, osteoporose secundária (menopausa precoce, hipertireoidismo, hiperprolactinemia, doença de Cushing , diabetes mellitus, mieloma múltiplo, hemoglobinopatias, mastocitose, fibrose cística, doença pulmonar obstrutiva crônica, doença celíaca, doença inflamatória intestinal, síndrome de má absorção, intestino curto, artrite reumatoide, espondiloartrite, tabagismo, etilismo (Homens > 21 unidades/semana mulheres > 14 unidades/semana), fratura prévia por fragilidade, insuficiência ovariana prematura não tratada ou hipogonadismo masculino, História familiar de fratura de quadril, baixo índice de massa corpórea (< 18,5 kg/m2 ).',
+    explanation: "A paciente tem 54 anos e está na menopausa há 15 anos, ou seja, parou de menstruar por volta dos 39 anos: menopausa precoce (antes dos 40), que expõe o osso a longo período sem estrogênio. Somam-se o tabagismo e a história de osteoporose na mãe e na avó, todos fatores de risco reconhecidos.\n\nO uso crônico de corticoide sistêmico também é fator de risco importante, mas a única alternativa que reúne apenas fatores verdadeiros é a que cita menopausa precoce, história familiar e tabagismo. Ela tem indicação de densitometria óssea.",
+    commentary: "Raça negra e benzodiazepínico (A): mulheres negras têm, em média, maior massa óssea, o que é proteção, não risco. O benzodiazepínico aumenta o risco de quedas e fraturas, mas não é fator de risco para baixa massa óssea; sedentarismo também não completa a alternativa.\n\nObesidade (C): o caso não descreve obesidade, e o baixo peso (IMC abaixo de 18,5) é que se associa a osteoporose; o benzodiazepínico, como dito, não entra na lista.\n\nHistória familiar de câncer de mama (D): não tem relação com a massa óssea; o corticoide crônico é fator de risco, mas a alternativa traz um item errado.",
+    tip: "Menopausa antes dos 40, cigarro, corticoide, baixo peso e osteoporose ou fratura de quadril na família: fatores de risco para osteoporose.",
     reference: 'Manual brasileiro de osteoporose: orientações práticas para os profissionais de saúde / organização Adriana Orcesi Pedro , Perola Grinberg Plapler , Vera Lúcia Szejnfeld - 1. ed. - São Paulo: Editora Clannad, 2021, ISBN 978-65-89832-00-3',
     tags: ['climatério', 'osteoporose']
   },
@@ -60,8 +63,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Anticoncepção hormonal combinada com estradiol transdérmico.'
     ],
     correctAnswer: 0,
-    explanation: 'Paciente com sintomas vasomotores e atrofia urogenital na janela de oportunidade. Devido à hipertensão, a via transdérmica é preferível por evitar metabolismo de primeira passagem.',
-    commentary: 'Paciente se encontra na janela de oportunidade para Terapia Hormonal (TH) -10 anos de sintomas e abaixo de 60 anos; além de nenhuma contraindicação para o uso. A condição de Hipertensão não é contraindicação para TH, porém diante essa comorbidades opta-se por via transdérmica, por evitar o metabolismo hepático de 1ª passagem. A opção da resposta é comercializada através do Systen Sequi®ou Estalis®.',
+    explanation: "Mulher de 52 anos, com amenorreia há mais de 12 meses (pós-menopausa), fogachos que atrapalham o sono e sintomas geniturinários. Ela está no período em que a terapia hormonal tem melhor relação entre risco e benefício (menos de 60 anos e menos de 10 anos de menopausa) e não tem contraindicação: hipertensão controlada não impede o tratamento.\n\nComo tem útero, o estrogênio precisa ser associado a um progestagênio para proteger o endométrio. Na hipertensa, prefere-se a via transdérmica, que evita a primeira passagem hepática e tem menor impacto sobre a pressão, a coagulação e os triglicerídeos. Estradiol com noretisterona em adesivo atende a esses critérios.",
+    commentary: "Estradiol oral e didrogesterona (B): o esquema protege o endométrio, mas a via oral passa pelo fígado e não é a preferida em hipertensa quando há opção transdérmica.\n\nGabapentina e noretisterona (C): a gabapentina é alternativa não hormonal para quem não pode usar estrogênio, o que não é o caso; progestagênio isolado não trata o ressecamento vaginal.\n\nAnticoncepção hormonal combinada (D): na pós-menopausa não há necessidade de contracepção, e as doses de anticoncepcional são maiores que as de reposição; somar outro estradiol seria excesso de estrogênio.",
+    tip: "Climatério sintomático com útero e hipertensão controlada: estrogênio transdérmico + progestagênio.",
     reference: 'CONSENSO BRASILEIRO DE TERAPIA HORMONAL DO CLIMATÉRIO, 2024. https://app.ginecoacademy.com/consenso-brasileiro-deterapeutica-hormonal-2024-principais-recomendacoes/',
     tags: ['climatério', 'terapia hormonal']
   },
@@ -76,8 +80,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Desenvolvimento compatível com a idade; tamanho segue variantes físicas individuais.'
     ],
     correctAnswer: 3,
-    explanation: 'O estágio M5 e P5 representa o patamar de desenvolvimento adulto completo. O tamanho final das mamas é individual.',
-    commentary: 'Correta, pois de acordo com a classificação de Tanner, esta adolescente tem o desenvolvimento mamário normal, cabendo aí, variações constitucionais individuais. A telarca (desenvolvimento do tecido mamário glandular) é o 1º evento da puberdade. A aplicação da escala de Tanner deve fazer parte da avaliação rotineira para acompanhamento do estágio da maturação sexual da adolescente. O uso de hormônios não tem aplicabilidade neste caso, já que a mama se encontra em estadio adequado à idade cronológica.',
+    explanation: "Tanner M5 (mama adulta, com a aréola no mesmo contorno da mama) e P5 aos 17 anos indicam que a puberdade terminou e que o desenvolvimento está adequado para a idade. O estadiamento de Tanner avalia a maturação, não o volume: o tamanho final da mama varia muito entre mulheres e não indica doença.\n\nA conduta é tranquilizar a adolescente e explicar que a diferença em relação às irmãs é uma variação individual normal. Não há indicação de hormônio.",
+    commentary: "Estrogênio para acelerar o crescimento (A): a mama já está em estágio adulto; hormônio não muda o tamanho de uma mama normal e traria riscos sem benefício.\n\nTelarca como último evento (B): é o contrário; nas meninas, a telarca costuma ser o primeiro sinal da puberdade, e a menarca vem depois.\n\nTanner fora da rotina (C): o estadiamento de Tanner continua sendo parte do exame de rotina para acompanhar a maturação sexual de crianças e adolescentes.",
+    tip: "Telarca é o primeiro sinal da puberdade feminina. M5 aos 17 anos = mama adulta; tamanho é variação individual.",
     reference: 'Endocrinologia Feminina/ Fernandes CE, Pompei LM. Ed Manole 2016, pag. 173-82. Hormônios em Ginecologia/ Benetti-Pinto CL, Fernandes CE, Silva filhos AL. Ed Manole 2024, pag. 91-7.',
     tags: ['ginecologia infanto-puberal', 'puberdade']
   },
@@ -92,8 +97,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) O médico não deve interferir na escolha mesmo se houver contraindicação.'
     ],
     correctAnswer: 1,
-    explanation: 'Em hipertensas, os métodos com estrogênio (combinados) devem ser evitados. Progestagênios isolados e DIUs são categoria 1 ou 2 pela OMS.',
-    commentary: 'Segundo os critérios de elegibilidade da Organização Mundial de Saúde, para estes casos, a melhor escolha será pelo progestagênio isolado por essas vias que constam na alternativa (B). Apesar da hipertensão, existe a alternativa de métodos mais seguros de que preservativos, como os progestagênios isolados. Contraceptivos combinados são proscritos pelos critérios de elegibilidade da OMS por conterem estrogênios. É verdade que a decisão deva ser da mulher, mas como neste caso, somente após colocadas todas as possibilidades que não interfiram com a quadro hipertensivo, ou seja, deve-se excluir contraceptivo combinado por qualquer via.',
+    explanation: "Paciente hipertensa em tratamento, com pressão controlada. Segundo os critérios médicos de elegibilidade da OMS para uso de contraceptivos, os métodos com estrogênio (pílula, adesivo ou anel combinados) devem ser evitados em hipertensas, pelo aumento do risco de AVC e infarto.\n\nJá os métodos só com progestagênio (pílula, implante de etonogestrel) e os DIUs de cobre ou de levonorgestrel são seguros nessa situação e muito eficazes. Cabe ao médico apresentar essas opções e ajudar a mulher a escolher entre elas.",
+    commentary: "Apenas métodos de barreira (A): não há motivo para excluir todos os hormônios; progestagênios isolados e DIU são seguros e bem mais eficazes que o preservativo.\n\nCombinados seguros (C): qualquer via de contraceptivo combinado (oral, adesivo ou anel) leva estrogênio e está contraindicada ou desaconselhada na hipertensa.\n\nDecisão sem interferência médica (D): a escolha é da mulher, mas o médico deve informar e orientar sobre os métodos adequados ao seu quadro clínico, evitando os que podem lhe fazer mal.",
+    tip: "Hipertensa: nada de estrogênio. Progestagênio isolado, implante ou DIU (cobre ou levonorgestrel).",
     reference: 'Hormônios em Ginecologia/ Benetti-Pinto CL, Fernandes CE, Silva filhos AL. Ed Manole 2024, pag. 11-7. Endocrinologia Feminina/ Fernandes CE, Pompei LM. Ed Manole 2016, pag. 341-97',
     tags: ['contracepção']
   },
@@ -108,8 +114,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Repetir citologia em 3 anos.'
     ],
     correctAnswer: 0,
-    explanation: 'ASC-H possui alto risco de lesão precursora (NIC 2/3) ou câncer invasivo latente. Colposcopia é obrigatória.',
-    commentary: 'Estudos revelam frequência de lesão de alto grau entre 12,2% e 68% e de câncer em torno de 1,3% a 3% nas mulheres com citologia de ASC-H. Recomendação: Todas as mulheres com laudo citopatológico de ASC-H devem ser encaminhadas para uma unidade de referência para colposcopia.',
+    explanation: "ASC-H significa células escamosas atípicas em que não se pode afastar lesão de alto grau. Uma parte importante dessas mulheres tem, de fato, lesão intraepitelial de alto grau ou até câncer na investigação.\n\nPor isso as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero recomendam que toda mulher com ASC-H, em qualquer idade, seja encaminhada diretamente à colposcopia, com biópsia das áreas suspeitas. Não se repete a citologia.",
+    commentary: "Repetir em 6 meses (B): é a conduta para ASC-US em mulheres a partir de 30 anos, não para ASC-H, que pode esconder lesão de alto grau.\n\nRepetir em 12 meses (C): é a conduta para ASC-US e LSIL em mulheres mais jovens; atrasaria o diagnóstico de uma lesão potencialmente grave.\n\nRepetir em 3 anos (D): é o intervalo do rastreamento após dois exames normais, sem lugar diante de um laudo alterado.",
+    tip: "ASC-H, HSIL, AGC ou suspeita de invasão: colposcopia direto, sem repetir citologia.",
     reference: 'Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero.',
     tags: ['ginecologia oncológica', 'patologia do trato genital inferior']
   },
@@ -124,8 +131,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Encaminhar para cultura antes de tratar.'
     ],
     correctAnswer: 2,
-    explanation: 'Vaginose bacteriana (Gardnerella) apresenta corrimento característico, Whiff positivo e ausência de processo inflamatório (não é vaginite).',
-    commentary: '(C) correta, pois trata-se de quadro clínico típico de vaginose bacteriana, confirmada pelo teste do KOH, que alcaliniza o meio e produz odor de putrecina (teste de Whiff). O mesmo efeito ocorre após coito e menstrução, situações que alcalinizam o meio vaginal. No caso de tricomoníase, existe processo inflamatório e prurido como queixa e a secreção usualmente tem coloração amareloesverdeada. Na presença de sintomas clássicos, o exame físico confirma a suspeita, não se deve pedir exame complementar e sim tratar em seguida da consulta clínica.',
+    explanation: "Corrimento branco-acinzentado, homogêneo, com odor fétido que piora após a relação e na menstruação, sem prurido e sem inflamação de vulva e vagina, é o quadro típico de vaginose bacteriana. O sêmen e o sangue menstrual são alcalinos e liberam as aminas produzidas pelos anaeróbios, por isso o odor aumenta nessas situações; o teste de Whiff (KOH a 10%) positivo reproduz esse fenômeno.\n\nO diagnóstico é clínico (critérios de Amsel) e o tratamento de escolha é metronidazol por via oral, por 7 dias, com o gel vaginal como alternativa. Não é necessário tratar o parceiro.",
+    commentary: "Candidíase (A): o corrimento é branco, grumoso, sem odor, com prurido intenso e vulvovaginite (hiperemia e edema); o teste de Whiff é negativo.\n\nTricomoníase (B): costuma vir com corrimento amarelo-esverdeado e bolhoso, prurido e sinais inflamatórios, como colo em framboesa; o caso não tem inflamação.\n\nCultura antes de tratar (D): com quadro clínico típico e teste de Whiff positivo, o diagnóstico está feito no consultório e o tratamento pode começar na hora; cultura não é útil para vaginose, cuja flora inclui bactérias da vagina normal.",
+    tip: "Vaginose: corrimento acinzentado, cheiro de peixe pior após o coito, Whiff positivo, sem inflamação = metronidazol.",
     reference: 'Peixoto S. Infecção Genital na Mulher Ed Roca 2007.Pag 89- 113. Tratado de Ginecologia FEBRASGO. Elsevier 2019. Pag. 265- 78',
     tags: ['ginecologia geral', 'infecções']
   },
@@ -140,8 +148,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Diabetes Pré-Gestacional (Overt Diabetes).'
     ],
     correctAnswer: 3,
-    explanation: 'Glicemia de jejum ≥ 126 mg/dL no primeiro trimestre define Diabetes Pré-Gestacional (paciente já era diabética antes da gravidez).',
-    commentary: 'Exame de glicemia de jejum com valor acima de 126 mg/dl primeiro trimestre, caracteriza diabetes pré-gestacional ou “overt diabetes”, paciente que estava diabética e não sabia, seguimento a princípio com controle dietético e com glicosimetria de horário, e podemos acrescentar exercícios físicos.',
+    explanation: "Na rotina do pré-natal, a glicemia de jejum é pedida já na primeira consulta. Pelo consenso brasileiro (OPAS, Ministério da Saúde, FEBRASGO e SBD, 2016), valor de 92 a 125 mg/dL define diabetes gestacional, e valor de 126 mg/dL ou mais define diabetes diagnosticado na gestação (overt diabetes), que corresponde a um diabetes prévio não reconhecido.\n\nCom 132 mg/dL às 12 semanas, a paciente tem diabetes pré-gestacional. A conduta inicial é dieta, atividade física e monitorização da glicemia capilar em vários horários; se as metas não forem atingidas, inicia-se insulina. Ela não precisa fazer o TOTG.",
+    commentary: "Não diabética, TOTG com 24 a 28 semanas (A): o TOTG é para quem tem jejum abaixo de 92 mg/dL; com 132 mg/dL o diagnóstico já está feito.\n\nNão diabética, apenas dieta e exercício (B): ignora o diagnóstico e deixa de monitorar a glicemia, expondo mãe e feto às complicações da hiperglicemia.\n\nDiabetes gestacional (C): vale para jejum entre 92 e 125 mg/dL; a partir de 126 mg/dL considera-se diabetes prévio à gestação.",
+    tip: "Jejum na gestação: < 92 normal; 92 a 125 = DMG; ≥ 126 = overt diabetes (diabetes prévio).",
     reference: 'Organização Pan-Americana da Saúde. Ministério da Saúde. Federação Brasileira das Associações de Ginecologia e Obstetrícia. Sociedade Brasileira de Diabetes Rastreamento e diagnóstico de diabetes mellitus gestacional no Brasil. Brasília, DF: OPAS, 2016. 32p.: il. ISBN: 978-85-7967-118-0',
     tags: ['obstetrícia', 'diabetes']
   },
@@ -156,8 +165,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Abdome agudo não obstétrico.'
     ],
     correctAnswer: 1,
-    explanation: 'A tríade de interrupção de contrações, dor lancinante e subida/perda da apresentação fetal com sofrimento agudo é clássica de rotura uterina (especialmente em cicatriz prévia).',
-    commentary: 'Os sinais e sintomas da ruptura uterina incluem bradicardia fetal, desacelerações variáveis, evidência de hipovolemia, perda da posição fetal (detectada durante o exame cervical) e dor abdominal intensa ou constante. Se o feto foi expelido do útero e está localizado no interior da cavidade peritoneal, a morbidade e mortalidade fetal e materna aumentam significativamente. O tratamento da ruptura uterina é laparotomia imediata com cesariana e, se necessário, histerectomia.',
+    explanation: "Gestante com cesárea anterior (cicatriz uterina) em trabalho de parto que evolui com dor súbita e lancinante, parada das contrações, bradicardia fetal sustentada e sinais de choque (hipotensão, taquicardia, taquipneia) tem rotura uterina até prova em contrário. A ausência de sangramento vaginal não afasta o diagnóstico, porque o sangue vai para a cavidade abdominal.\n\nOutros sinais são a perda da altura da apresentação e a palpação de partes fetais sob a pele. A conduta é laparotomia imediata para retirar o feto e reparar o útero, e muitas vezes a histerectomia é necessária.",
+    commentary: "Descolamento prematuro de placenta (A): também causa dor, sofrimento fetal e choque, mas o útero fica hipertônico, endurecido, com contrações; a parada da atividade uterina aponta para rotura.\n\nRotura de cápsula hepática (C): complicação rara da pré-eclâmpsia grave e da síndrome HELLP, com dor em epigástrio e hipocôndrio direito; não há quadro hipertensivo aqui.\n\nAbdome agudo não obstétrico (D): não explica o conjunto de cicatriz uterina, parada das contrações e sofrimento fetal agudo durante o trabalho de parto.",
+    tip: "Cesárea prévia + dor súbita + parada das contrações + bradicardia fetal + choque = rotura uterina → laparotomia já.",
     reference: 'BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Atenção ao pré-natal de baixo risco. I.ed. Brasília: Ministério da Saúde; 2012. BRASIL. Ministério da Saúde. Secretaria de Atenção A Saúde. Gestação de alto risco. Brasília: Editora do Ministério da Saúde, 2010. BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Pré-natal e Puerpério: atenção qualificada e humanizada. 1.ed. Brasília: Ministério da Saúde; 2005. BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Saúde Brasil 2011: uma análise da situação de saúde e a vigilância da saúde da mulher. Brasília: Ministério da Saúde, 2012.',
     tags: ['obstetrícia', 'emergência']
   },
@@ -172,8 +182,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Amamentar apenas se o bebê já tiver sido exposto.'
     ],
     correctAnswer: 1,
-    explanation: 'O SARS-CoV-2 não é transmitido pelo leite. Os benefícios dos anticorpos maternos superam os riscos.',
-    commentary: 'Evidências atuais sugerem que o leite materno não é uma fonte de transmissão do SARS-CoV-2. Portanto, as mães com suspeita ou confirmação de COVID-19 devem continuar amamentando, desde que tomem precauções de higiene, como usar máscara e lavar as mãos antes de tocar no bebê. Esta recomendação é independente do status de vacinação contra COVID-19. Interromper a amamentação imediatamente e alimentar o bebê com fórmula até se recuperar completamente do COVID-19: Interromper a amamentação não é necessário, pois o leite materno não transmite o vírus. Além disso, a amamentação proporciona anticorpos e outros benefícios imunológicos importantes para o bebê. Amamentar apenas se tiver sido vacinada contra COVID-19, caso contrário, deve usar fórmula: A continuidade da amamentação não depende do status de vacinação da mãe. Mesmo mães não vacinadas devem amamentar enquanto tomam precauções de higiene. Amamentar apenas se o bebê já tiver sido exposto ao COVID-19, caso contrário, usar fórmula: Não há necessidade de restringir a amamentação com base na exposição do bebê ao COVID-19, pois o leite materno não transmite o vírus e fornece benefícios significativos.',
+    explanation: "O leite materno não é considerado meio de passagem do SARS-CoV-2 para o bebê, e amamentar continua trazendo benefícios ao bebê, inclusive anticorpos. Por isso Ministério da Saúde, OMS e sociedades de pediatria recomendam que a mãe com COVID-19, suspeita ou confirmada, continue amamentando.\n\nO cuidado é evitar a transmissão por gotículas: usar máscara durante as mamadas, higienizar as mãos antes de pegar a criança e higienizar superfícies. Essa orientação vale independentemente de a mãe estar vacinada.",
+    commentary: "Interromper e usar fórmula (A): suspender o aleitamento não protege o bebê, já que o leite não transmite o vírus, e o priva dos benefícios da amamentação.\n\nAmamentar só se vacinada (C): a recomendação de manter o aleitamento não depende do estado vacinal da mãe.\n\nAmamentar só se o bebê já foi exposto (D): não há base para essa restrição; com as medidas de higiene, a amamentação deve continuar em qualquer caso.",
+    tip: "Mãe com COVID-19: continua amamentando, com máscara e mãos lavadas.",
     reference: 'Centers for Disease Control and Prevention. (2021). Care for Breastfeeding People: Interim Guidance on Breastfeeding and Breast Milk Feeds in the Context of COVID-19. CDC. World Health Organization. (2020). Breastfeeding and COVID19: Scientific Brief. WHO. American Academy of Pediatrics. (2021). Breastfeeding During the COVID-19 Pandemic. AAP. Ministério da Saúde do Brasil (2021) Campanha incentiva o aleitamento materno no Brasil',
     tags: ['puerpério', 'aleitamento']
   },
@@ -188,8 +199,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Apenas atraso na involução uterina.'
     ],
     correctAnswer: 2,
-    explanation: 'A tríade clássica de endometrite/infecção puerperal envolve febre, dor uterina e lóquios fétidos/purulentos.',
-    commentary: 'Na sepse puerperal estão presentes dois ou mais dos seguintes eventos: dor pélvica; febre; conteúdo vaginal anormal; cheiro anormal do corrimento vaginal; atraso na redução do tamanho do útero (< 2cm/dia durante os primeiros dias).',
+    explanation: "A sepse puerperal é a infecção do trato genital que ocorre do parto até 42 dias depois. Pela definição da OMS, o diagnóstico exige dois ou mais dos seguintes: dor pélvica, febre, corrimento vaginal anormal, odor anormal do corrimento e atraso na involução uterina.\n\nA única alternativa que reúne pelo menos dois desses critérios é a que cita dor pélvica, conteúdo vaginal anormal e febre. A forma mais comum é a endometrite, cujo tratamento é antibiótico de amplo espectro por via venosa (clindamicina com gentamicina é o esquema clássico).",
+    commentary: "Conteúdo vaginal anormal e mialgia (A): a mialgia não faz parte dos critérios, então sobra apenas um item.\n\nDor pélvica e mialgia (B): de novo, só um critério verdadeiro; mialgia é sintoma inespecífico.\n\nAtraso na involução uterina (D): é um dos critérios, mas sozinho não basta; é preciso pelo menos dois.",
+    tip: "Sepse puerperal (OMS): 2 ou mais entre dor pélvica, febre, corrimento ou odor anormal e útero que não involui.",
     reference: 'Infecção puerperal. Sérgio Hecker Luz, João Alfredo Piffero Steibel, Gustavo Steibel, Edson Vieira da Cunha Filho. FEMINA 2019;47(12): 898-901.',
     tags: ['puerpério', 'infecções']
   },
@@ -204,15 +216,16 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Penicilina benzatina 2,4 milhões; não tratar parceiro.'
     ],
     correctAnswer: 0,
-    explanation: 'Em gestantes com tempo de infecção desconhecido, utiliza-se esquema de sífilis latente tardia (3 doses de 2,4 milhões). O tratamento do parceiro é obrigatório para evitar reinfecção.',
-    commentary: 'Segundo o Ministério da Saúde o tratamento proposto para gestante diante de um teste rápido positivo para a sífilis é: • Tratamento imediato com penicilina benzatina na dose compatível com o estadio da doença, que no caso é desconhecido, então, deve ser tratado com a dose de 7,2 milhões. • Coleta de novo teste para confirmação. • Tratar o parceiro sempre. • Notificar a vigilância sanitária • Acompanhar com teste não treponêmico mensal para verificar aumento de titulação.',
+    explanation: "Na gestante, um teste rápido (treponêmico) reagente já basta para começar o tratamento no mesmo dia, sem esperar o resultado do teste não treponêmico (VDRL), que é colhido em seguida para confirmar e servir de base ao seguimento. A sífilis na gestação também é de notificação compulsória.\n\nComo ela não tem sinais e não se sabe quando se infectou, a doença é tratada como sífilis latente de duração ignorada: penicilina benzatina 2,4 milhões de UI por semana, por 3 semanas (7,2 milhões no total). As parcerias sexuais devem ser testadas e tratadas, e na gestação o VDRL é repetido todo mês para confirmar a queda dos títulos e detectar reinfecção.",
+    commentary: "Dose única de 2,4 milhões (B): serve só para sífilis recente (primária, secundária ou latente com menos de um ano); sem saber o tempo de infecção, o tratamento deve ser o de sífilis tardia.\n\nVDRL trimestral (C): a dose está certa, mas na gestante o controle é mensal; o seguimento a cada 3 meses é o usado fora da gestação.\n\nNão tratar o parceiro (D): a dose é insuficiente e deixar a parceria sem tratamento leva à reinfecção da gestante e à sífilis congênita.",
+    tip: "Gestante com teste rápido reagente: trata no dia. Tempo desconhecido = 3 doses de benzatina (7,2 milhões), parceiro tratado e VDRL mensal.",
     reference: 'Protocolo clínico e diretrizes terapêuticas para a prevenção da transmissão vertical de HIV, sífilis e hepatites virais Ministério da Saúde 2022',
     tags: ['obstetrícia', 'IST']
   },
   {
     id: 'tp2024-94',
     module: 'Ginecologia e Obstetrícia',
-    text: 'Paciente, 30 semanas, perda líquida clara abrupta. Exame: especular confirma saída de líquido odor "água sanitária". Conduta correta?',
+    text: "Gestante, 30 semanas, com perda de líquido abrupta pela vagina há 4 horas. Afebril e normotensa, tônus uterino normal, frequência cardíaca fetal de 160 bpm. Ao exame especular, saída de líquido claro pelo colo, com odor de \"água sanitária\". Qual a conduta correta?",
     options: [
       '(A) Corioamnionite; induzir parto imediatamente.',
       '(B) Iniciar tocólise imediatamente.',
@@ -220,15 +233,16 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Administrar corticosteroides (betametasona ou dexametasona).'
     ],
     correctAnswer: 3,
-    explanation: 'RPMO prematura exige corticoterapia para maturação pulmonar e neuroproteção se indicado.',
-    commentary: 'A ruptura prematura das membranas é o vazamento do líquido amniótico que envolve o feto em qualquer momento antes de o trabalho de parto ter começado. Administrar corticosteroides de 24 semanas a 34 semanas (deve-se individualizar o caso par a uso até 35 semanas e seis dias); Para o uso correto da tocólise, há necessidade de realizar adequadamente o diagnóstico de verdadeiro trabalho de parto prematuro, com presença de contrações uterinas regulares e alterações cervicais progressivas. Classicamente, devem ocorrer duas ou três contrações em 10 minutos, acompanhadas de dilatação cervical superior a 1 – 2 centímetros, ou esvaecimento maior que 80%. O pleno desenvolvimento do sistema parassimpático ocorre no início do terceiro trimestre. No segundo trimestre, a utilização da CTG anteparto está prejudicada, pois apenas 50% dos fetos saudáveis demonstram acelerações da FCF. No termo, as acelerações transitórias da FCF constituem o melhor marcador de bem-estar fetal. A maturação progressiva do sistema parassimpático fetal provoca redução nos níveis da FCF basal, mantendo-se dentro da faixa normal de 110 a 160 batimentos por minuto (bpm). As acelerações da FCF apresentam menor amplitude e duração antes de 32 semanas de gestação, sendo mais exuberantes após esse período. Antes de 32 semanas, em geral, observam-se acelerações com amplitude de apenas 10 bpm e duração de dez segundos. Após 32 semanas, as acelerações são mais evidentes, de maior amplitude e duração, geralmente acima de 15 bpm e com duração de, pelo menos, 15 segundos. É importante acompanhar os batimentos cardíacos fetais (BCFs) com cardiotocografia para identificar sinais de infecção intraútero, que incluem taquicardia, redução da variabilidade da frequência cardíaca fetal e/ou outros achados de condição não tranquilizadora. A complicação mais temida, a corioamnionite, pode ser assintomática inicialmente, mas também se manifestar pelo desencadeamento do trabalho de parto, acompanhado de perda de líquido amniótico de aspecto purulento e/ou odor fétido. Nesses casos, podem ser observadas febre, dor à palpação uterina e taquicardias fetal e materna, essas últimas um sinal que pode preceder a identificação do aumento de temperatura.',
+    explanation: "Saída de líquido claro pelo colo, com o odor característico do líquido amniótico, confirma a rotura prematura das membranas ovulares (antes do trabalho de parto), aqui com 30 semanas. Não há febre, dor uterina nem líquido purulento, ou seja, nada que indique infecção, e não há quadro de trabalho de parto.\n\nNessa idade gestacional a conduta é expectante, com internação, e o corticoide para maturação pulmonar fetal é obrigatório entre 24 e 34 semanas: betametasona 12 mg IM, duas doses com 24 horas de intervalo, ou dexametasona 6 mg IM de 12 em 12 horas, quatro doses. Somam-se antibiótico de latência, vigilância de sinais de infecção e avaliação do bem-estar fetal.",
+    commentary: "Corioamnionite (A): exigiria sinais como febre, útero doloroso, líquido purulento ou fétido e taquicardia materna e fetal; a paciente está afebril, com tônus normal e líquido claro.\n\nTocólise imediata (B): não há diagnóstico de trabalho de parto (contrações regulares com modificação do colo); além disso, a tocólise não é rotina na rotura de membranas.\n\nCardiotocografia sem valor (C): o exame tem utilidade nessa idade gestacional, apenas com critérios de aceleração menores antes de 32 semanas; é importante para notar taquicardia fetal e perda de variabilidade, que podem ser os primeiros sinais de infecção.",
+    tip: "Rotura prematura de membranas entre 24 e 34 semanas, sem infecção: internar, corticoide, antibiótico de latência e vigiar infecção.",
     reference: 'Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Rotura prematura de membranas ovulares. São Paulo: FEBRASGO; 2021 (Protocolo FEBRASGO Obstetrícia, n. 45/ Comissão Nacional Especializada em Assistência Pré-Natal). Souza E, Fava JL, Musiello RB, Camano L. Trabalho de parto prematuro: uso racional da tocólise. São Paulo: Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO); 2018. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Cardiotocografia anteparto. São Paulo: FEBRASGO; 2021. (Protocolo FEBRASGO-Obstetrícia, n. 17/Comissão Nacional Especializada em Medicina Fetal).',
     tags: ['obstetrícia', 'prematuridade']
   },
   {
     id: 'tp2024-95',
     module: 'Ginecologia e Obstetrícia',
-    text: 'Gestante HIV positivo, 38 semanas, colo 6cm, bolsa íntegra. Carga viral indetectável na 34ª semana. Conduta?',
+    text: "Gestante com HIV, 38 semanas, em uso regular de terapia antirretroviral, com carga viral indetectável na 34ª semana. Chega em trabalho de parto: colo com 6 cm, bolsa íntegra, feto cefálico e cardiotocografia normal. Qual a conduta?",
     options: [
       '(A) Realizar nova carga viral; se >1000, cesárea e AZT.',
       '(B) Condução do trabalho de parto vaginal; sem necessidade de AZT endovenoso.',
@@ -236,8 +250,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Indicar cesariana eletiva obrigatoriamente.'
     ],
     correctAnswer: 1,
-    explanation: 'Pacientes com carga viral indetectável após a 34ª semana, em uso de TARV, podem ter parto vaginal sem necessidade de AZT profilático no parto.',
-    commentary: 'Paciente vive com HIV e carga viral indetectada na 34 semana de gestação e faz uso regular de TARV, pode ter parto vaginal sem a necessidade do uso de AZT endovenosa',
+    explanation: "O que define a via de parto e o uso de zidovudina (AZT) no parto da gestante com HIV é a carga viral medida a partir de 34 semanas. Com carga viral indetectável nessa época e uso regular da terapia antirretroviral, o risco de transmissão vertical é muito baixo.\n\nPor isso, segundo o Ministério da Saúde, a via de parto segue a indicação obstétrica (aqui, parto vaginal, já em fase ativa) e o AZT endovenoso no parto não é necessário. A medicação antirretroviral oral deve ser mantida. Durante o trabalho de parto, evitam-se amniotomia e procedimentos invasivos, e o recém-nascido recebe profilaxia conforme o risco.",
+    commentary: "Nova carga viral e cesárea se acima de 1000 (A): o resultado de 34 semanas já orienta a conduta; além disso, ela está com 6 cm de dilatação, e a cesárea eletiva para prevenção só faz sentido antes do trabalho de parto e com membranas íntegras.\n\nAZT endovenoso (C): é indicado quando a carga viral é detectável, desconhecida ou foi colhida antes de 34 semanas, ou quando a adesão é duvidosa; não é o caso.\n\nCesárea obrigatória (D): a cesárea eletiva é indicada quando a carga viral é desconhecida ou de 1000 cópias/mL ou mais após 34 semanas; com carga viral indetectável, a via é obstétrica.",
+    tip: "HIV com carga viral indetectável após 34 semanas e TARV regular: parto pela indicação obstétrica, sem AZT endovenoso.",
     reference: 'Brasil. Ministério da Saúde. Secretaria de Atenção Primária à Saúde. Departamento de Ações Programáticas. Manual de gestação de alto risco [recurso eletrônico] / Ministério da Saúde, Secretaria de Atenção Primária à Saúde. Departamento de Ações Programáticas. – Brasília : Ministério da Saúde, 2022. 692p.:il.',
     tags: ['obstetrícia', 'infecções']
   },
@@ -252,8 +267,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Idade adolescente.'
     ],
     correctAnswer: 0,
-    explanation: 'Trabalho de parto prolongado e múltiplos toques vaginais são os principais fatores de risco para endometrite.',
-    commentary: 'A alternativa correta (A), o trabalho de parto prolongado é um fator de risco para infecção puerperal. A hipertensão arterial está relacionada a aumento de risco de morte materna não é fator de risco para infecção puerperal. A rotura das membranas inferior a 16 horas quando exame de Streptococcus negativo baixo risco de infecção e adolescente não é fator de risco.',
+    explanation: "Febre no 4º dia pós-parto com útero doloroso e maior que o esperado (subinvoluído) indica endometrite, a forma mais comum de infecção puerperal. Entre os dados do caso, o que aumenta o risco é o trabalho de parto prolongado (18 horas): mais tempo de trabalho de parto significa mais toques vaginais e mais tempo de exposição da cavidade uterina às bactérias da vagina.\n\nOs principais fatores de risco são cesárea, trabalho de parto prolongado, bolsa rota por muito tempo, muitos toques vaginais, manipulação intrauterina e retenção de restos placentários. O tratamento é antibiótico venoso de amplo espectro, como clindamicina associada a gentamicina.",
+    commentary: "Hipertensão arterial (B): é fator de risco para outras complicações maternas, mas não favorece infecção puerperal.\n\nRotura da bolsa há 4 horas (C): a bolsa rota só se torna fator de risco relevante quando prolongada (classicamente mais de 18 horas); 4 horas, com pesquisa de estreptococo do grupo B negativa, é tempo curto.\n\nIdade adolescente (D): ser adolescente não aumenta, por si, o risco de infecção puerperal.",
+    tip: "Infecção puerperal: cesárea, trabalho de parto prolongado, bolsa rota prolongada e muitos toques são os fatores de risco.",
     reference: 'Assistência ao quarto período do parto de risco habitual, protocolo Febrasgo 2018. Manual técnico do Pré-natal e puerpério no SUS-SP 2010. Pré-natal e Puerpério, atenção qualificada e humanizada. Ministério da Saúde, 2006.',
     tags: ['puerpério', 'infecções']
   },
@@ -268,8 +284,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Esvaziamento axilar.'
     ],
     correctAnswer: 2,
-    explanation: 'No tumor Phyllodes, margens de pelo menos 1,0cm são ideais para prevenir recidiva local.',
-    commentary: 'A margem em um Phyllodes Boderline deve ser igual ou maior que 1 cm. O papel da radioterapia em TF na variante maligna é controverso. Dados limitados em série de casos, mostram maior controle das recidivas locais nos casos de tumores de grandes dimensões. Não é indicado radioterapia em TF Boderline. Não existe indicação de terapia farmacológica adjuvante. Não há necessidade de cirurgia axilar em TP malignos e com gânglios palpáveis. Linfonodos com altíssima suspeita clínica de comprometimento deve ser ressecado, mas não deve ser realizado esvaziamento axilar completo. No TP Boderline não deve ser realizado esvaziamento axilar completo.',
+    explanation: "O tumor phyllodes é uma lesão fibroepitelial que cresce rápido e que, ao contrário do fibroadenoma, tende a voltar no mesmo lugar quando a retirada é incompleta. O tratamento é cirúrgico, e o que mais importa para evitar a recidiva local é a margem livre.\n\nNos tumores borderline e malignos, recomenda-se margem de pelo menos 1 cm. Como a margem foi de 0,5 cm, a conduta é ampliar a ressecção.",
+    commentary: "Quimioterapia adjuvante (A): não há tratamento sistêmico adjuvante com benefício comprovado para o tumor phyllodes, e menos ainda na forma borderline.\n\nRadioterapia adjuvante (B): seu papel é discutido apenas em tumores malignos, principalmente os grandes ou com margens comprometidas; não é indicada no borderline.\n\nEsvaziamento axilar (D): o phyllodes raramente dá metástase para linfonodos (quando se espalha, é por via sanguínea), por isso não se faz cirurgia axilar de rotina.",
+    tip: "Phyllodes borderline ou maligno: margem de pelo menos 1 cm. Margem menor → ampliar. Sem axila e sem quimio.",
     reference: 'Doenças da Mama. 3ª edição. Rio de Janeiro: Atheneu, 2022',
     tags: ['mastologia', 'cirurgia']
   },
@@ -284,8 +301,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Ultrassonografia apenas.'
     ],
     correctAnswer: 0,
-    explanation: 'Paciente em idade de rastreamento (50-69 anos) sem fatores de alto risco (tia-avó tardia não conta como risco familiar forte).',
-    commentary: 'O caso consiste em uma paciente com risco habitual para câncer de mama e sem sinais de suspeição que está em idade de rastreamento pelo ministério da saúde. Sendo assim, o exame padrão ouro para ser indicado é a mamografia bilateral de rastreamento.',
+    explanation: "Mulher de 58 anos sem sinais suspeitos no exame físico e cuja única queixa é dor mamária passageira, que isoladamente raramente indica câncer. A tia-avó que teve câncer de mama aos 72 anos é parente distante, com diagnóstico em idade avançada, e não coloca a paciente em alto risco.\n\nEla tem, portanto, risco habitual e está na faixa do rastreamento recomendada pelo Ministério da Saúde e pelo INCA (50 a 69 anos, a cada 2 anos). Como nunca fez exame de imagem, o indicado é a mamografia bilateral.",
+    commentary: "Ressonância com contraste (B): é reservada ao rastreamento de mulheres de alto risco (mutação BRCA, radioterapia torácica na juventude, risco calculado elevado) e a situações diagnósticas específicas.\n\nRessonância sem contraste (C): sem contraste a ressonância não avalia o tecido mamário em busca de câncer; serve, por exemplo, para avaliar implantes de silicone.\n\nUltrassonografia (D): não é exame de rastreamento isolado; complementa a mamografia em mamas densas ou na avaliação de nódulos.",
+    tip: "Risco habitual, 50 a 69 anos: mamografia a cada 2 anos. Ressonância é para alto risco.",
     reference: 'Instituto Nacional de Câncer José Alencar Gomes da Silva. Diretrizes para a detecção precoce do câncer de mama no Brasil/ Instituto Nacional de Câncer José Alencar Gomes da Silva – Rio de Janeiro: INCA, 2015. https://www.gov.br/conitec/ptbr/midias/protocolos/diretrizes_de teccaoprecoce_cm.pdf',
     tags: ['mastologia', 'rastreamento']
   },
@@ -300,8 +318,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Combinados são obrigatórios pelo humor.'
     ],
     correctAnswer: 2,
-    explanation: 'Sertralina e depressão não contraindicam nenhum método contraceptivo moderno. Todos são Categoria 1.',
-    commentary: 'Os critérios de elegibilidade são orientações da OMS (organização mundial de saúde) sobre a prescrição de métodos contraceptivos levando em consideração o risco-benefício para a saúde de cada paciente. (A) O Acetado de Medroxiprogesterona pode ser usado sem nenhum problema. (B) Não há contraindicações ao uso de métodos orais. (C) Paciente jovem e em tratamento para a depressão com medicação que não há contraindicação a nenhum método contraceptivo. (D) Não há efeito positivo no humor com o uso de contraceptivos combinados',
+    explanation: "Pelos critérios médicos de elegibilidade da OMS, os transtornos depressivos são categoria 1 para todos os métodos hormonais: combinados, progestagênio oral, injetável trimestral, implante e DIU de levonorgestrel. Não há evidência de que esses métodos piorem a depressão.\n\nA sertralina também não reduz a eficácia dos contraceptivos. Como ela é jovem e não tem outra condição clínica, qualquer método reversível pode ser oferecido, e a escolha depende da preferência dela após orientação.",
+    commentary: "Evitar acetato de medroxiprogesterona (A): o injetável trimestral também é categoria 1 na depressão; não há restrição específica por esse motivo.\n\nEvitar métodos orais por interação (B): a sertralina não induz as enzimas hepáticas que metabolizam os hormônios; as interações importantes são com anticonvulsivantes indutores, rifampicina e alguns antirretrovirais.\n\nCombinados preferíveis pelo humor (D): não há efeito benéfico comprovado sobre o humor que justifique dar preferência a eles.",
+    tip: "Depressão (e uso de ISRS) = categoria 1 da OMS para todos os contraceptivos hormonais.",
     reference: 'Tratado de Ginecologia: Manuel João Batista Castello Girão, Edmund C. Baracat, Geraldo R. Lima (2017)',
     tags: ['contracepção', 'saúde mental']
   },
@@ -316,8 +335,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Sangramento pós-menopausa; neoplasia maligna; biópsia de endométrio.'
     ],
     correctAnswer: 3,
-    explanation: 'Sangramento na pós-menopausa com endométrio espessado (>4-5mm) é câncer de endométrio até que se prove o contrário. Biópsia é mandatória.',
-    commentary: 'Trata-se de uma mulher na pós-menopausa tardia apresentando sangramento vaginal, com fatores de risco presentes para câncer de endométrio (obesidade, nuliparidade, pós-menopausa), ausência de lesões visíveis no exame ginecológico e espessamento endometrial ao ultrassom. Nesse caso trata-se de um sangramento pós-menopausa com indicação de biópsia de endométrio para afastar lesões como hiperplasia endometrial com atipia e neoplasia maligna de endométrio.',
+    explanation: "Sangramento que aparece depois de 12 meses ou mais de amenorreia é chamado de sangramento pós-menopausa, e não de sangramento uterino anormal, termo reservado à menacme. Ele deve ser investigado sempre, porque o câncer de endométrio é a causa que não pode passar despercebida.\n\nA paciente reúne fatores de risco importantes (obesidade grave, nuliparidade, pós-menopausa) e o endométrio está espessado e heterogêneo (12 mm, quando o esperado é abaixo de 4 a 5 mm). A conduta é obter amostra do endométrio para estudo histológico, de preferência por histeroscopia com biópsia, para afastar hiperplasia com atipia e carcinoma.",
+    commentary: "Sangramento uterino anormal, pólipo e histerectomia (A): o nome não se aplica após a menopausa, e não se indica histerectomia sem diagnóstico histológico.\n\nMiomatose e miomectomia (B): miomas não costumam crescer nem começar a sangrar depois da menopausa; o ultrassom mostra endométrio espessado, não miomas.\n\nHiperplasia e biópsia de linfonodo sentinela (C): a hiperplasia é uma hipótese possível, mas o linfonodo sentinela faz parte do estadiamento cirúrgico de um câncer já diagnosticado, não da investigação inicial.",
+    tip: "Sangramento pós-menopausa + endométrio acima de 4 a 5 mm: amostra de endométrio (histeroscopia com biópsia) para afastar câncer.",
     reference: 'Protocolos Febrasgo. Hiperplasia endometrial e câncer de endométrio. 2021.',
     tags: ['ginecologia oncológica', 'pós-menopausa']
   },
@@ -332,8 +352,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Peritonite secundária à apendicite'
     ],
     correctAnswer: 0,
-    explanation: 'Quadro de choque hemorrágico (hipotensão, taquicardia, palidez) em paciente com beta-hCG positivo e líquido livre em cavidade sugere gravidez ectópica rota.',
-    commentary: 'A gravidez ectópica em geral, não se apresenta classicamente com atraso menstrual regular, mas sim, com sangramento vaginal irregular. O teste de gravidez acima de 3000 mui/ml em geral, deve apresentar a visualização de saco gestacional intra-uterino. A sua ausência, nestas condições, mesmo sem visualização de gestação ectópica, deve fazer a sugestão deste diagnóstico, como é o caso.\n\nGestações ectópicas acima de 8-10 semanas estão mais sujeitas à ruptura, que, clinicamente se manifesta com sinais e sintomas de abdome agudo hemorrágico, com dor abdominal, mal estar, tontura, náuseas, vômitos, hipotensão, taquisfigmia, taquicardia, mucosas hipocoradas, distensão abdominal, dor à palpação abdominal, sinais de descompressão brusca. O ultrassom pode sugerir a presença de sangue em cavidade abdominal, que se traduz por imagem hipoecóica.',
+    explanation: "Atraso menstrual com sangramento irregular, beta-hCG positivo de 3.000 mUI/mL e útero vazio (só endométrio espessado) já sugerem gestação ectópica: com esse nível de hCG, a gestação intrauterina normalmente seria visível ao ultrassom transvaginal.\n\nSomam-se sinais de abdome agudo hemorrágico: palidez, taquicardia, pressão no limite, sensação de desmaio, dor com descompressão brusca e grande volume de líquido livre na pelve e no abdome. O diagnóstico é gravidez ectópica rota. Com instabilidade hemodinâmica e hemoperitônio, a conduta é cirúrgica de urgência, além da reposição volêmica e da imunoglobulina anti-D se a paciente for Rh negativo.",
+    commentary: "Abscesso tubo-ovariano (B): cursa com febre, corrimento e massa anexial complexa, e não explica o beta-hCG positivo nem o choque hemorrágico.\n\nCisto ovariano roto (C): pode causar hemoperitônio, mas o beta-hCG positivo com útero vazio aponta para a ectópica.\n\nApendicite com peritonite (D): teria febre, dor migratória para fossa ilíaca direita e quadro infeccioso, sem teste de gravidez positivo nem sangue livre volumoso.",
+    tip: "Beta-hCG positivo + útero vazio + líquido livre + choque = ectópica rota: cirurgia de urgência.",
     reference: 'Zugaib Obstetrícia, Ed. Manole, 4ª edição, 2020. Novak, Tratado de Ginecologia. Rio de Janeiro: Guanabara-Koogan. 16.ed, 2021. Rezende, Obstetrícia, Guanabara-Koogan, 14ª edição, 2022.',
     tags: ['obstetrícia', 'emergência']
   },
@@ -348,8 +369,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Gonadotrofina Coriônica Humana'
     ],
     correctAnswer: 3,
-    explanation: 'O hCG (Gonadotrofina Coriônica Humana) mantém o corpo lúteo no início da gestação e está associado aos vômitos gestacionais e rastreio de aneuploidias.',
-    commentary: 'A hCG é o mais importante hormônio glicoproteico produzido pela placenta. A molécula de hCG é constituída pelas subunidades α e β. A principal função da hCG é dar suporte ao corpo lúteo no início da gravidez. Nas primeiras semanas, os níveis sanguíneos do hormônio dobram a cada dois a três dias, atingem um pico máximo entre 8 e 12 semanas (50.000 a 150.000 mUI/mL) e, a seguir, decrescem gradualmente até níveis baixos (3.000 a 10.000 mUI/mL), que permanecem inalterados até o termo da gestação. Em casos de cromossomopatias os níveis de β hCG se alteram (aumentam na trissomia do 21 e diminuem nas trissomias do 13 e 18) auxiliando do diagnóstico precoce de cromossomopatias.\n\nTanto a progesterona quanto o estrogênio, o β hCG e o lactogenio placentário são hormônios produzidos pelo complexo feto-placentário, no entanto, apresentam funções em diferentes sistemas dos descritos na questão. Além do mais tais hormônios não apresentam grande impacto na detecção de cromossomopatias quanto β hCG.',
+    explanation: "O hormônio descrito é a gonadotrofina coriônica humana (hCG), glicoproteína formada por subunidades alfa e beta e produzida pelo trofoblasto. Seu papel no início da gestação é manter o corpo lúteo produzindo progesterona até que a placenta assuma essa função.\n\nA hCG sobe rapidamente nas primeiras semanas, chega ao pico entre 8 e 12 semanas e depois cai e se estabiliza, o que coincide com o período de maior náusea e com a melhora dos sintomas. Como seus valores se alteram nas cromossomopatias (a fração beta livre sobe na trissomia do 21 e cai nas trissomias 13 e 18), ela faz parte do rastreamento bioquímico do primeiro trimestre, junto com a PAPP-A e a translucência nucal.",
+    commentary: "Lactogênio placentário (A): aumenta progressivamente ao longo da gestação e atua no metabolismo materno, gerando resistência à insulina; não sustenta o corpo lúteo nem é usado no rastreamento de aneuploidias.\n\nProgesterona (B): é um esteroide, não uma glicoproteína; é produzida pelo corpo lúteo e depois pela placenta, mantendo o endométrio e a quiescência uterina.\n\nEstrogênio (C): também é esteroide, aumenta durante toda a gravidez e não tem o padrão de pico no primeiro trimestre nem o papel de manter o corpo lúteo.",
+    tip: "hCG: mantém o corpo lúteo, pico com 8 a 12 semanas, náuseas, e beta livre alto na trissomia do 21.",
     reference: 'Coutinho T, Coutinho CM, Coutinho LM; Anatomia, Desenvolvimento e Fisiologia dos Anexos Embrionáriose Fetais; Tratado de Obstetrícia - Febrasgo / editores Cesar Eduardo Fernandes, Marcos Felipe Silva de Sá; 1. ed.; 4: (275-308)- Rio de Janeiro : Elsevier, 2019. Nicolaides NH, FMF; 2011.',
     tags: ['obstetrícia', 'fisiologia']
   },
@@ -364,8 +386,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Antibioticoterapia oral; suspensão temporária da amamentação.'
     ],
     correctAnswer: 1,
-    explanation: 'Mastite lactacional sem abscesso é tratada com antibióticos orais e manutenção do esvaziamento mamário (amamentação).',
-    commentary: 'Não há sinais de comprometimento sistêmico ou profundo na mama (abcesso). A conduta é ATB oral com manutenção da amamentação (esvaziamento mamário) e reavaliação em 48h.',
+    explanation: "Puérpera amamentando com febre, mama vermelha, dolorosa e edemaciada, com fissura mamilar como porta de entrada, tem mastite lactacional. Não há abscesso e ela está em bom estado geral, sem sinais de sepse, o que permite tratamento ambulatorial.\n\nA conduta é antibiótico oral com cobertura para Staphylococcus aureus (como cefalexina), analgesia e esvaziamento eficaz da mama, mantendo a amamentação, inclusive na mama afetada. O leite não faz mal ao bebê e a interrupção favorece a estase láctea, que piora a infecção e aumenta o risco de abscesso. Reavaliar em 48 horas; sem melhora, pesquisar abscesso com ultrassom.",
+    commentary: "Antibiótico venoso com suspensão da amamentação (A): a via venosa fica para casos graves, com sepse ou falha do tratamento oral, e suspender a amamentação piora a estase.\n\nSó analgesia (C): com febre, sinais flogísticos e fissura, já é mastite infecciosa e precisa de antibiótico.\n\nAntibiótico oral com suspensão da amamentação (D): a interrupção não é necessária e prejudica o esvaziamento, que é parte central do tratamento.",
+    tip: "Mastite sem abscesso: antibiótico oral antiestafilocócico e manter a amamentação, esvaziando bem a mama.",
     reference: 'Febrasgo - Tratado de Ginecologia. Disponível em: Minha Biblioteca, Grupo GEN, 2018.',
     tags: ['puerpério', 'mastologia']
   },
@@ -381,8 +404,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Realizar teste oral de tolerância à glicose de 75g.'
     ],
     correctAnswer: 2,
-    explanation: 'Glicemia de jejum entre 92 e 125 mg/dL no início da gestação define Diabetes Mellitus Gestacional (DMG); a conduta inicial é mudança no estilo de vida.',
-    commentary: 'Após o diagnóstico de diabetes gestacional a paciente deverá ser orientada a realizar dieta, exercícios e monitoração glicêmica. Estas medidas apontarão para a necessidade da introdução da insulina ou se o controle continuará com as medidas adotadas. A glicemia de jejum está alterada e o valor está dentro da faixa de diabetes mellitus gestacional. Diante do diagnóstico realizado, não deverão ser realizados outros testes para diagnóstico. A droga de escolha para tratamento na gestação é a insulina, que não ultrapassa a barreira placentária e não atinge o feto. O uso da insulina será empregado, após tentativa de controlar os níveis glicêmicos com dieta e exercício físico.',
+    explanation: "Pelo critério brasileiro (Ministério da Saúde, FEBRASGO, SBD), uma glicemia de jejum entre 92 e 125 mg/dL em qualquer fase da gestação já faz o diagnóstico de diabetes mellitus gestacional, sem necessidade de outro teste. A glicemia de 93 mg/dL desta gestante se encaixa nessa faixa.\n\nO tratamento começa com mudanças de estilo de vida: orientação nutricional, atividade física regular e automonitorização da glicemia capilar. Se as metas glicêmicas não forem atingidas em cerca de duas semanas, inicia-se a insulina, que é o fármaco de escolha na gravidez.",
+    commentary: "Insulinoterapia imediata (A): a insulina é indicada quando dieta e exercício não alcançam as metas, e não logo no diagnóstico.\n\nHipoglicemiante oral imediato (B): não é a primeira opção no Brasil; os orais atravessam a placenta e ficam restritos a situações em que a insulina não é viável.\n\nTOTG 75 g (D): o diagnóstico já está feito pela glicemia de jejum; o TOTG entre 24 e 28 semanas é para quem teve jejum normal no início do pré-natal.",
+    tip: "Jejum de 92 a 125 mg/dL na gestação = DMG: dieta, exercício e monitorização; insulina se não controlar.",
     reference: 'Rastreamento e diagnóstico de diabetes mellitus gestacional no Brasil. © 2017 Organização Pan-Americana da Saúde. Ministério da Saúde. Federação Brasileira das Associações de Ginecologia e Obstetrícia. Sociedade Brasileira de Diabetes. Tratado de obstetrícia FEBRASGO / editores Cesar Eduardo Fernandes, Marcos Felipe Silva de Sá; coordenação Coríntio Mariani Neto. – 1. ed. – Rio de Janeiro: Elsevier, 2019.',
     tags: ['obstetrícia', 'diabetes']
   },
@@ -397,8 +421,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Colecistite gestacional. Avaliar a possibilidade de utilizar sintomáticos até adquirir a viabilidade do feto para realizar o tratamento cirúrgico.'
     ],
     correctAnswer: 0,
-    explanation: 'Prurido palmoplantar no terceiro trimestre associado à icterícia é patognomônico de Colestase Gestacional.',
-    commentary: 'A colestase intra-hepática da gravidez é uma disfunção, principalmente no terceiro trimestre, do transporte de ácidos biliares (AB) através da membrana canalicular, que resulta em acúmulo sistêmico de AB com prurido intenso. A patogênese é desconhecida, mas envolve uma hipersensibilidade genética aos metabólitos do estrogênio. Tem um prognóstico benigno para as mães, mas traz um risco maior para o feto. O tratamento é com alívio sintomático para a mãe, supervisão do feto, ácido ursodesoxicólico e programação oportuna do parto.',
+    explanation: "Prurido intenso no terceiro trimestre, que começa ou predomina em palmas e plantas, piora à noite, sem lesões primárias de pele (só escoriações de coçar) e com icterícia leve, é o quadro da colestase intra-hepática da gestação. A causa envolve suscetibilidade genética aos estrogênios e progesterona, que dificultam a excreção dos ácidos biliares.\n\nO diagnóstico é confirmado pela dosagem de ácidos biliares séricos elevados, e as transaminases costumam estar aumentadas. Para a mãe a evolução é benigna, mas há risco fetal (prematuridade, mecônio e óbito fetal, sobretudo com ácidos biliares muito altos). O tratamento é com ácido ursodesoxicólico, vigilância fetal e programação do parto conforme o nível dos ácidos biliares.",
+    commentary: "Escabiose (B): causa prurido noturno com pápulas e túneis em dobras, punhos e espaços interdigitais, sem icterícia; e a ivermectina não é recomendada na gestação.\n\nHepatite B (C): não costuma ter o prurido palmoplantar como queixa principal; e a imunoglobulina é dada ao recém-nascido logo após o parto, junto com a vacina, e não à gestante para proteção fetal.\n\nColecistite (D): cursa com dor em hipocôndrio direito, febre e sinal de Murphy, ausentes; e a colecistectomia pode ser feita na gestação, sem esperar a viabilidade fetal.",
+    tip: "Prurido palmoplantar noturno no 3º trimestre, sem lesões = colestase gestacional: ácidos biliares e ácido ursodesoxicólico.",
     reference: 'Freitas, F et al. Rotinas em Obstetrícia. 6Ed. Porto Alegre: Artmed, 2011.',
     tags: ['obstetrícia']
   },
@@ -413,8 +438,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) 1,1 / Diabetes gestacional; infusão de ocitocina + ácido tranexâmico.'
     ],
     correctAnswer: 1,
-    explanation: 'Índice de choque = FC/PAS (110/100 = 1.1). Sobredistensão por polidrâmnio/macrossomia causa atonia.',
-    commentary: 'O índice de choque é calculado a partir da fórmula FC/PAS. O principal elemento de risco do caso apresentado é a sobre distensão uterina decorrente do polidrâmnio e feto GIG. Sendo a HPP por atonia a primeira hipótese, a conduta inicial é ocitocina e transamin.',
+    explanation: "O índice de choque é a frequência cardíaca dividida pela pressão sistólica: 110/100 = 1,1. Valores acima de 0,9 no pós-parto indicam perda volumosa e necessidade de atenção, mesmo com pressão ainda aparentemente aceitável.\n\nO sangramento ocorre com útero hipotônico, logo a causa é atonia uterina, a principal causa de hemorragia pós-parto. O fator de risco central aqui é a sobredistensão uterina, produzida pelo polidrâmnio e pelo feto grande. O tratamento inicial é massagem uterina e ocitocina, associadas ao ácido tranexâmico, que deve ser dado o mais cedo possível (até 3 horas do parto).",
+    commentary: "1,83 / diabetes gestacional / metilergometrina (A): o índice está errado; o diabetes age indiretamente, pelo feto grande e polidrâmnio; e a metilergometrina é opção de segunda linha, não a primeira escolha.\n\n1,83 / sobredistensão / ocitocina e misoprostol (C): o valor 1,83 sai de dividir a frequência cardíaca pela pressão diastólica (110/60), e o índice usa a sistólica; o misoprostol é alternativa adicional, não a dupla inicial padrão.\n\n1,1 / diabetes gestacional (D): o índice e o tratamento estão certos, mas o fator de risco mais direto para a atonia é a sobredistensão uterina.",
+    tip: "Índice de choque = FC/PAS (acima de 0,9 alerta). Atonia: ocitocina + ácido tranexâmico nas 3 primeiras horas.",
     reference: 'Febrasgo - Tratado de Ginecologia. Disponível em: Minha Biblioteca, Grupo GEN, 2018.',
     tags: ['obstetrícia', 'hemorragia']
   },
@@ -429,8 +455,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Internar, avaliar a vitalidade fetal, entrar com uterolítico, fazer a corticoterapia e introduzir antibiótico para prevenção da infecção pelo Streptococcus do Grupo B.'
     ],
     correctAnswer: 3,
-    explanation: 'Trabalho de parto prematuro exige internação para tocólise, corticoterapia e profilaxia para GBS.',
-    commentary: 'A questão aborda anamnese obstétrica relatando que paciente já teve um parto prematuro na gestação anterior, oferecendo risco da repetição do fato, entendendo à necessidade de internação de fundamental importância na tentativa de prorrogar a gestação com medicação uterolítico e o uso do corticoide para maturidade pulmonar e uso antibiótico para evitar possível contaminação com Streptococcus do Grupo B, pois neste período da gestação não foi pesquisado a presença EGB e faz parte protocolo assistência ao parto prematuro. Há erro ao orientar a paciente repousar em casa e também ao propor observação, sem a necessidade de atuação rápida para inibir o trabalho de parto prematuro (TPP) que é de fundamental importância. Não há indicação da inibição do TPP antes do parto cesária, a fase do TPP no momento tem a possibilidade de inibir as contrações.',
+    explanation: "Gestante de 28 semanas com contrações regulares e colo já modificado (médio, centrado e com 2 cm), membranas íntegras e antecedente de parto prematuro está em trabalho de parto prematuro. Nessa idade gestacional, prolongar a gravidez por pelo menos 48 horas traz grande benefício ao recém-nascido.\n\nA conduta é internar, avaliar a vitalidade fetal, iniciar tocolítico (como nifedipino ou atosibana) para ganhar tempo para o corticoide (betametasona) agir na maturação pulmonar fetal, e iniciar profilaxia antibiótica para estreptococo do grupo B, já que a pesquisa de colonização não foi feita. Abaixo de 32 semanas, com parto iminente, também se usa sulfato de magnésio para neuroproteção fetal.",
+    commentary: "Cesárea imediata por apresentação pélvica (A): não há indicação de interromper agora; o trabalho de parto pode ser inibido, e a via de parto só é discutida se ele progredir.\n\nRepouso domiciliar (B): trabalho de parto prematuro com colo modificado exige internação; repouso e abstinência sexual não têm eficácia comprovada para impedir o parto.\n\nObservar sem medicar até o termo (C): perder tempo sem corticoide e sem tocólise piora o prognóstico do prematuro; além disso, a tocólise é usada por curto prazo, não até o termo.",
+    tip: "TPP antes de 34 semanas: internar, tocolítico, corticoide e profilaxia para EGB; abaixo de 32 semanas, magnésio.",
     reference: 'saude.gov.br. https://bvsms.saude.gov.br › gestacao_alto_risco. https://fi-admin.bvsalud.org/document/view/gatn7. https://www.febrasgo.org.br/rbgo/uploads/arquivos/html/2009-31-tratamento-do-trabalho-de-parto-prematuro.',
     tags: ['obstetrícia', 'prematuridade']
   },
@@ -445,8 +472,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Iniciar prostaglandina via vaginal com 37 semanas.'
     ],
     correctAnswer: 2,
-    explanation: 'Gestantes com carga viral < 1000 cópias/mL podem ter parto por indicação obstétrica (incluindo vaginal).',
-    commentary: 'A recomendação é que o parto vaginal seja a via de escolha nas gestantes com cv-hiv menor que 1.000 cópias/ml a partir da 34ª semana. Abaixo dessa contagem, a cesariana não é fator estatisticamente relevante para prevenção de tv-hiv e se mostra como importante causa de morbidade nessa população. A incidência de complicações pós- operatórias e hospitalizações após a cesariana é maior nas mvhiv do que nas mulheres soronegativas. Portanto, se não houver indicação obstétrica, não se recomenda realizar cesariana eletiva em gestante com cv-hiv abaixo de 1.000 cópias/ml para prevenir tv-hiv.',
+    explanation: "Pelo protocolo do Ministério da Saúde para prevenção da transmissão vertical do HIV, a via de parto é decidida pela carga viral medida a partir de 34 semanas. Quando ela está inferior a 1.000 cópias/mL, a cesariana eletiva não reduz de forma relevante a transmissão, e a via de parto segue a indicação obstétrica.\n\nEsta gestante usa a terapia antirretroviral corretamente, tem carga viral inferior a 1.000 cópias/mL com 36 semanas e feto cefálico, então o correto é aguardar o trabalho de parto espontâneo e o parto vaginal. A cesariana nas mulheres vivendo com HIV tem mais complicações pós-operatórias e só é eletiva quando a carga viral é igual ou maior que 1.000 cópias/mL ou desconhecida.",
+    commentary: "Cesárea com 39 semanas (A): a cesariana eletiva por HIV fica para carga viral igual ou maior que 1.000 cópias/mL ou desconhecida após 34 semanas (nesse caso, programada com 38 semanas), não para esta paciente.\n\nIndução com ocitocina na 37ª semana (B): não há indicação obstétrica para antecipar o parto; o HIV controlado não justifica indução.\n\nProstaglandina vaginal com 37 semanas (D): da mesma forma, não há motivo para preparar o colo e induzir; o caminho é esperar o trabalho de parto espontâneo.",
+    tip: "HIV na gestação: carga viral abaixo de 1.000 após 34 semanas = parto vaginal; acima ou desconhecida = cesárea eletiva.",
     reference: 'Ministério da saúde. Protocolo clínico e diretrizes terapêuticas para prevenção da transmissão vertical de hiv, sífilis e hepatites virais. Página 108. 2022. Disponível em https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_hiv_sifilis_hepatites.pdf',
     tags: ['obstetrícia', 'infecções']
   },
@@ -461,8 +489,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Mioma uterino intramural'
     ],
     correctAnswer: 3,
-    explanation: 'Útero aumentado e irregular associado a menorragia sugere miomatose uterina.',
-    commentary: 'Das opções apresentadas, somente o mioma intramural seria capaz de gerar aumento do volume do útero, promovendo irregularidade de sua superfície externa e ainda sangramento uterino anormal.',
+    explanation: "Mulher em idade reprodutiva com sangramento menstrual aumentado, coágulos e cólicas há um ano e útero aumentado, de contorno irregular e móvel ao toque bimanual tem como primeira hipótese leiomioma uterino, o tumor pélvico mais comum da mulher.\n\nNa classificação PALM-COEIN do sangramento uterino anormal, os miomas são causa estrutural. Os intramurais aumentam o volume do útero e deformam seu contorno; quando distorcem a cavidade, aumentam a superfície endometrial e prejudicam a contração do miométrio, o que explica o aumento do fluxo. O ultrassom transvaginal é o exame inicial para confirmar e mapear os nódulos.",
+    commentary: "Endometriose pélvica (A): manifesta-se por dismenorreia progressiva, dor pélvica crônica, dispareunia e infertilidade, e não aumenta o útero de forma irregular; quem aumenta o útero é a adenomiose, mas de modo difuso e regular.\n\nSarcoma uterino (B): é raro, mais comum após a menopausa, e costuma crescer rapidamente; não é a primeira hipótese numa mulher de 30 anos com quadro de um ano.\n\nPólipo endocervical (C): seria visto no exame especular saindo pelo orifício do colo (que aqui estava normal) e causa sangramento intermenstrual ou pós-coito, sem aumento do útero.",
+    tip: "Sangramento aumentado + útero grande, irregular e móvel = mioma, até que se prove o contrário.",
     reference: 'Donnez J, Dolmans MM. Uterine fibroid management: from the present to the future. Hum Reprod Update. 2016 Nov;22(6):665-686. doi: 10.1093/humupd/dmw023. Epub 2016 Jul 27. PMID: 27466209; PMCID: PMC5853598. Febrasgo, . Febrasgo - Tratado de Ginecologia. Disponível em: Minha Biblioteca, Grupo GEN, 2018.',
     tags: ['ginecologia geral']
   },
@@ -477,8 +506,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Geralmente os casos de endometriose com acometimento intestinal apresentam valores elevados de CA 125.'
     ],
     correctAnswer: 0,
-    explanation: 'O CA 125 possui baixa sensibilidade e especificidade para o diagnóstico de endometriose.',
-    commentary: 'A endometriose tem na sua suspeita clínica, indicação de prova terapêutica. A vídeo-laparoscopia com biópsia de lesões sugestivas de endometriose não é obrigatória para a instituição de um tratamento, ao contrário, a forte suspeita clínica de endometriose pode servir de base como indicação de tratamento clínico. O CA 125 é uma glicoproteína produzida naturalmente nos ovários, serosas, tubas uterinas e intestino, podendo estar aumentada no sangue devido à gravidez, período menstrual, endometriose e, algumas vezes, em casos de câncer, especialmente o câncer de ovário. Na maioria dos casos de endometriose, ela não sofre elevação, desta forma, atualmente, a sua dosagem é muito pouco utilizada para o diagnóstico de endometriose uma vez que ela tem baixa correlação com o diagnóstico, especialmente nos casos leves da doença.',
+    explanation: "O CA-125 é um marcador produzido por vários epitélios (ovário, peritônio, pleura, endométrio, tubas) e se eleva em muitas situações benignas, como menstruação, gestação, doença inflamatória pélvica e miomas, além do câncer de ovário. Na endometriose, ele fica normal na maior parte dos casos, principalmente nas formas leves.\n\nPor isso sua correlação com o diagnóstico é baixa: um resultado normal não exclui a doença, e um elevado não a confirma. O diagnóstico da endometriose hoje se apoia na clínica e nos exames de imagem (ultrassom transvaginal com preparo intestinal e ressonância), e o tratamento clínico pode ser iniciado com base na suspeita, sem confirmação cirúrgica obrigatória.",
+    commentary: "CA-125 imprescindível (B): o exame tem baixa sensibilidade e especificidade e não é necessário para diagnosticar a doença.\n\nVideolaparoscopia obrigatória (C): ela permite ver e biopsiar as lesões, mas não é exigida antes de iniciar o tratamento clínico; fica para casos com indicação cirúrgica ou falha do tratamento.\n\nEndometriose intestinal com CA-125 alto (D): a forma profunda pode elevar um pouco o marcador, mas isso não é regra e não serve para identificar acometimento intestinal, que é avaliado por imagem.",
+    tip: "Endometriose: CA-125 não diagnostica; suspeita clínica e imagem bastam para iniciar o tratamento.",
     reference: 'Novak, Tratado de Ginecologia. Rio de Janeiro: Guanabara-Koogan. 16.ed, 2021. Ginecologia de Willians, Hoffman et al. McGrawHIll 2ª edição, 2014.',
     tags: ['ginecologia geral', 'DIP']
   },
@@ -493,8 +523,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Injetável mensal contendo estrogênio e progestagênio.'
     ],
     correctAnswer: 2,
-    explanation: 'A enxaqueca com aura contraindica o uso de estrogênio pelo risco aumentado de AVC.',
-    commentary: 'A cefaleia apresentada caracteriza uma enxaqueca com aura. a presença de aura é fator de risco para acidente vascular cerebral e a associação com contraceptivos que contém estrógenos aumenta esse risco. Dessa forma, qualquer contraceptivo hormonal contendo estrogênio (pílula contraceptiva, injetável mensal, anel vaginal e adesivo contraceptivo) são contraindicados. Métodos que contém somente progestagênios, como as pílulas de progestagênio, além de métodos não hormonais são adequados para essa situação clínica.',
+    explanation: "Cefaleia unilateral, pulsátil, ligada à menstruação e precedida por escotomas é enxaqueca com aura. A aura é fator de risco independente para acidente vascular cerebral isquêmico, e o estrogênio dos métodos combinados aumenta ainda mais esse risco.\n\nPelos critérios de elegibilidade da OMS, enxaqueca com aura é categoria 4 (contraindicação absoluta) para todos os métodos com estrogênio, em qualquer via: pílula, adesivo, anel e injetável mensal. Ficam disponíveis os métodos só de progestagênio (pílula, injetável trimestral, implante, DIU hormonal) e os não hormonais, como o DIU de cobre. Entre as alternativas, a pílula de progestagênio é a única adequada.",
+    commentary: "Adesivo combinado (A): libera estrogênio pela pele, com o mesmo risco trombótico das pílulas combinadas; contraindicado.\n\nPílula combinada (B): contém estrogênio e é categoria 4 na enxaqueca com aura.\n\nInjetável mensal (D): também combina estrogênio e progestagênio, portanto tem a mesma contraindicação.",
+    tip: "Enxaqueca com aura = nenhum método com estrogênio (OMS 4); use progestagênio isolado ou DIU de cobre.",
     reference: 'Sacco S, Merki-Feld GS, Ægidius KL et al. Hormonal contraceptives and risk of ischemic stroke in women with migraine: a consensus statement from the European Headache Federation (EHF) and the European Society of Contraception and Reproductive Health (ESC). J Headache Pain. 2017;18(1):108.',
     tags: ['contracepção']
   },
@@ -509,8 +540,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Espermograma, TSH, T4L, FSH, estradiol, ultrassom transvaginal, histerossalpingografia, histeroscopia diagnóstica e cariótipo do casal.'
     ],
     correctAnswer: 1,
-    explanation: 'A propedêutica básica foca no fator masculino, reserva ovariana e fator tuboperitoneal.',
-    commentary: 'A pesquisa básica de infertilidade compreende a pesquisa do fator masculino (50% das causas de infertilidade) através do espermograma; na mulher a pesquisa da reserva ovariana pelo AMH ou FSH juntamente com o estradiol (ambas na fase folicular inicial) e ultrasson transvaginal e histerossalpingografia para a avalição do fator anatômico.',
+    explanation: "Infertilidade é a falta de gestação após 12 meses de relações regulares sem contracepção (6 meses quando a mulher tem 35 anos ou mais). Esta paciente de 36 anos tenta há 4 anos, então a investigação já deveria ter começado.\n\nA propedêutica básica cobre os fatores principais com poucos exames: espermograma para o fator masculino, que responde por cerca de metade dos casos; avaliação da reserva ovariana, pelo hormônio antimülleriano (ou FSH e estradiol no início do ciclo), importante pela idade e pela menopausa precoce da mãe; ultrassom transvaginal para útero, ovários e contagem de folículos antrais; e histerossalpingografia para a permeabilidade tubária, já que ela teve curetagem e apendicectomia. Com ciclos regulares, a ovulação é presumida.",
+    commentary: "Com TSH, T4 livre e histeroscopia (A): a histeroscopia não faz parte da propedêutica básica, sendo indicada quando a histerossalpingografia ou o ultrassom sugerem alteração da cavidade; e a função tireoidiana não é obrigatória para todas.\n\nTireoide, FSH, estradiol e histeroscopia (C): acrescenta exames que só entram com indicação específica, além de repetir a avaliação de reserva que o AMH já fornece.\n\nTudo isso mais cariótipo do casal (D): o cariótipo é para perdas gestacionais de repetição ou alteração grave do espermograma, não para a investigação inicial de um casal com um único aborto.",
+    tip: "Infertilidade básica: espermograma, reserva ovariana (AMH), ultrassom transvaginal e histerossalpingografia.",
     reference: 'Infertilidade da prática clínica à laboratorial. Elvio Tognotti. 1 Ed, 2014, Editora Manole. ENDOCRINOLOGIA GINECOLÓGICA CLINICA E INFERTILIDADE. FRITZ, MARC A./SPEROFF, LEON, 2015, Revinter RJ.',
     tags: ['infertibilidade']
   },
@@ -525,8 +557,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Realizar colposcopia.'
     ],
     correctAnswer: 3,
-    explanation: 'O achado de ASC-H exige avaliação colposcópica imediata pelo alto risco de lesão de alto grau.',
-    commentary: 'Segundo as diretrizes do ministério da saúde /INCA de 2016 os casos de ASC-H devem ser encaminhados para avaliação colpscópica.',
+    explanation: "ASC-H significa células escamosas atípicas em que não se pode afastar lesão de alto grau. Mesmo sem ser um diagnóstico definitivo, uma parte relevante desses casos corresponde a NIC 2 ou 3 na histologia.\n\nPor isso as diretrizes brasileiras do INCA determinam encaminhar para colposcopia, independentemente da idade (com particularidades apenas para menores de 25 anos e gestantes, que também vão à colposcopia). Na colposcopia, se houver achado anormal, faz-se biópsia dirigida ou, em casos selecionados, a exérese da zona de transformação.",
+    commentary: "Histerectomia (A): é tratamento desproporcional; nem há diagnóstico histológico, e as lesões precursoras são tratadas com exérese da zona de transformação.\n\nBiópsia (B): deve ser guiada pela colposcopia, que mostra onde está a área alterada; não se faz biópsia às cegas antes desse exame.\n\nRepetir a citologia em 6 meses (C): é a conduta para ASC-US e lesão de baixo grau em determinadas idades, não para ASC-H, pelo risco de lesão de alto grau.",
+    tip: "ASC-H, HSIL, AGC ou atipias de origem indefinida: colposcopia direto.",
     reference: 'Diretrizes brasileiras para o rastreamento do câncer do colo uterino. Segunda edição revista, ampliada e atualizada. INCA, RJ 2016.',
     tags: ['ginecologia oncológica', 'patologia do trato genital inferior']
   },
@@ -541,8 +574,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Para essa paciente, a melhor opção seria o tratamento tópico vaginal exclusivo, obedecendo os critérios da OMS (Organização Mundial de Saúde).'
     ],
     correctAnswer: 1,
-    explanation: 'Paciente na janela de oportunidade com sintomas marcantes e risco de osteoporose tem indicação de TH.',
-    commentary: 'A terapia hormonal da menopausa encontra indicação para alivio dos sintomas vasomotores, da atrofia vaginal e na prevenção de fraturas osteoporóticas. Os benefícios da TH superam os riscos quando iniciada para mulheres sintomáticas com menos de 60 anos de idade ou dentro do período de 10 anos de pós-menopausa. A hipertensão controlada não constitui contraindicação à TH, podendo a paciente agregar benefício ao seu uso. O tratamento tópico poderá aliviar os sintomas da atrofia vaginal, porém não apresentam resultados com relação aos fogachos. Para esses, a melhor escolha será a TH que deverá passar pela escolha do melhor esquema posológico e via de administração.',
+    explanation: "A terapia hormonal da menopausa é o tratamento mais eficaz para os sintomas vasomotores e também melhora a atrofia geniturinária e previne a perda óssea. O benefício supera os riscos quando é iniciada antes dos 60 anos ou nos primeiros 10 anos após a menopausa, a chamada janela de oportunidade.\n\nEsta paciente tem 54 anos e está a 6 anos da menopausa, com fogachos, distúrbio do sono e secura vaginal que prejudicam a qualidade de vida, exames cardiológicos normais e hipertensão leve controlada, que não contraindica o tratamento. O histórico de fratura de fêmur da mãe aumenta o interesse na proteção óssea. Ela tem útero, então o estrogênio deve ser associado a progestagênio; a via transdérmica é interessante em hipertensas por ter menor efeito trombótico.",
+    commentary: "Janela de 5 anos (A): o limite usado é de 10 anos desde a menopausa ou 60 anos de idade, e ela está dentro dele.\n\nHipertensão contraindica (C): a hipertensão controlada não é contraindicação; o que contraindica são doença coronariana, AVC, tromboembolismo prévio e câncer de mama, entre outros.\n\nSó tratamento vaginal tópico (D): melhora a secura vaginal, mas não controla os fogachos nem protege o osso, que são queixas e objetivos importantes nesta paciente.",
+    tip: "TH da menopausa: iniciar antes dos 60 anos ou até 10 anos da menopausa; hipertensão controlada não contraindica.",
     reference: 'Endocrinologia Feminina. César Eduardo Fernandes, Luciano de Melo Pompei – Barueri, SP: Manole, 2016',
     tags: ['climatério', 'terapia hormonal']
   },
@@ -558,8 +592,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Pólipo endometrial friável'
     ],
     correctAnswer: 0,
-    explanation: 'Sensação de "bola na vagina" associada a exteriorização em idosa multípara é prolapso.',
-    commentary: 'A queixa e quadro clínico descrito, assim como a imagem do exame físico demonstrado na questão demonstram classicamente o diagnóstico de Prolapso uterovaginal completo. Apesar da queixa de sangramento uterino pós menopausa e a ausência de acompanhamento médico nos últimos 13 anos pode sugerir a presença de carcinoma de colo uterino, no entanto a queixa e quadro clínico descrito, assim como a imagem do exame físico demonstram classicamente o diagnóstico de Prolapso Uterovaginal Completo. Dificilmente uma paciente pós menopausa apresentaria diagnóstico de pólipo endometrial ou mioma parido, além disso são situações em que há sangramento mais abundante do que ao descrito no enunciado da questão.',
+    explanation: "Idosa com cinco gestações (quatro partos vaginais), sensação de peso e de bola na vagina há mais de 10 anos e perda de urina aos esforços tem a história clássica de distopia genital, causada pelo enfraquecimento do assoalho pélvico pelos partos, pela idade e pelo hipoestrogenismo. A imagem mostra o útero e as paredes vaginais exteriorizados além do introito, ou seja, prolapso uterovaginal completo.\n\nO pequeno sangramento se explica pela mucosa exposta, ressecada e atrófica, que sofre atrito e ulcera (úlcera de decúbito). Mesmo assim, por ser sangramento pós-menopausa em mulher sem rastreio há anos, a úlcera e o colo devem ser avaliados com citologia e, se necessário, biópsia, antes de tratar o prolapso com pessário ou cirurgia.",
+    commentary: "Carcinoma de colo (B): o sangramento pós-menopausa e a falta de rastreio exigem afastar essa hipótese, mas a história longa de bola na vagina e a imagem de órgão exteriorizado definem o prolapso como diagnóstico principal.\n\nMioma parido (C): é um mioma submucoso que sai pelo colo, mais comum em mulheres no menacme com sangramento volumoso; não explica a exteriorização do útero com paredes vaginais.\n\nPólipo endometrial friável (D): pode causar sangramento pós-menopausa, mas é pequeno, intrauterino e não gera sensação de bola na vagina nem a imagem descrita.",
+    tip: "Multípara idosa com bola na vagina e incontinência aos esforços = prolapso; sangramento vem da mucosa exposta.",
     reference: 'Brito LGO, Juliato CRT, Castro EB; Prolapso do Órgãos Genitais; Tratado de ginecologia Febrasgo / editores Cesar Eduardo Fernandes, Marcos Felipe Silva de Sá; 1. ed.;65: (2020-2052)- Rio de Janeiro : Elsevier, 2019.',
     tags: ['ginecologia geral', 'uroginecologia']
   },
@@ -574,8 +609,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Tumor cístico sem debris e unilocular.'
     ],
     correctAnswer: 2,
-    explanation: 'Tumores sólidos com contornos irregulares e alta vascularização são marcadores de malignidade (M-rules).',
-    commentary: 'Desde o ano 2000, a classificação IOTA (international ovarian tumor analysis) vem padronizando descritores ecográficos que devem ser valorizados na avaliação de massas anexiais. São 5 descritores de malignidade e 5 de benignidade. as características tumor sólido de contornos irregulares e vascularização abundante são critérios de malignidade.',
+    explanation: "As regras simples do grupo IOTA usam cinco características ultrassonográficas de benignidade (B) e cinco de malignidade (M) para classificar massas anexiais. Sinais de malignidade: tumor sólido irregular (M1), ascite (M2), quatro ou mais projeções papilares (M3), tumor multilocular sólido irregular com 10 cm ou mais (M4) e fluxo sanguíneo muito intenso ao Doppler (M5).\n\nSinais de benignidade: cisto unilocular (B1), componente sólido menor que 7 mm (B2), sombra acústica (B3), tumor multilocular liso menor que 10 cm (B4) e ausência de fluxo (B5). A alternativa C combina dois critérios de malignidade, tumor sólido irregular e vascularização abundante, o que caracteriza massa suspeita a ser encaminhada à oncologia ginecológica.",
+    commentary: "Multilocular sem áreas sólidas e com sombra acústica (A): a sombra acústica é critério de benignidade, e um multilocular liso sem componente sólido também tende a ser benigno.\n\nComponente sólido menor que 7 mm sem fluxo (B): são dois critérios de benignidade (B2 e B5).\n\nCisto unilocular sem debris (D): o cisto unilocular é o critério B1, de benignidade.",
+    tip: "IOTA maligno: sólido irregular, ascite, 4 ou mais papilas, multilocular sólido de 10 cm ou mais e muito fluxo.",
     reference: 'MASSAS ANEXIAIS: DESCRIÇÃO E INTERPRETAÇÃO ULTRASSONOGRÁFICA POR IOTA. REVISTA FÊMINA, FEBRASGO, 2021; 49: 6-11',
     tags: ['ginecologia oncológica', 'imagenologia']
   },
@@ -590,8 +626,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Não está recomendada, pela baixa incidência de câncer do colo do útero em mulheres jovens.'
     ],
     correctAnswer: 3,
-    explanation: 'As diretrizes desaconselham a coleta em < 25 anos pela raridade do câncer invasivo e alta taxa de regressão de lesões.',
-    commentary: 'Nas diretrizes brasileiras para o rastreamento do câncer de colo de útero não se recomenda a coleta de citologia oncológica de colo uterino abaixo de 25 anos, porque, além da baixa incidência de câncer do colo do útero em mulheres jovens, há evidências de que o rastreamento em mulheres com menos de 25 anos seja menos eficiente do que em mulheres mais maduras. Além disto, lesões tipo NIC II em mulheres jovens tem um comportamento evolutivo semelhante à lesão de baixo grau. Outro fato relevante mais recentemente demonstrado é de que o tratamento de lesões precursoras do câncer de colo em adolescentes e mulheres jovens está associado ao aumento de morbidade obstétrica e neonatal, principalmente nas mulheres em que são feitos processos cirúrgicos no colo uterino, aumentando o risco de parto prematuro (evidência alta).',
+    explanation: "As diretrizes brasileiras de rastreamento do câncer do colo do útero começam a coleta aos 25 anos para quem já iniciou a vida sexual. Antes dessa idade, o câncer invasor é raro, e a infecção pelo HPV e as lesões que ela causa costumam regredir sozinhas.\n\nAlém de detectar pouco câncer, rastrear mulheres jovens leva a muitos tratamentos de lesões que regrediriam. Os procedimentos excisionais no colo nessa faixa aumentam a morbidade obstétrica, sobretudo o risco de parto prematuro. Por isso o benefício não compensa e a coleta não é recomendada antes dos 25 anos.",
+    commentary: "Mesma morbidade (A): tratar lesões em jovens traz mais prejuízo reprodutivo, justamente porque elas ainda vão engravidar, e muitas lesões regrediriam sem tratamento.\n\nMesma efetividade que em mais velhas (B): o rastreamento é menos eficiente nessa faixa, com pouca detecção de câncer e muitos achados transitórios.\n\nAlta progressão das lesões precursoras (C): ocorre o contrário; nas jovens, a maioria das lesões, inclusive parte das de grau 2, regride espontaneamente.",
+    tip: "Rastreio do colo começa aos 25 anos: antes disso, pouco câncer, muita regressão e risco de tratar à toa.",
     reference: 'Zugaib Obstetrícia, Ed. Manole, 4ª edição, 2020. Novak, Tratado de Ginecologia. Rio de Janeiro: Guanabara-Koogan. 16.ed, 2021. Rezende, Obstetrícia, Guanabara-Koogan, 14ª edição, 2022.',
     tags: ['ginecologia oncológica']
   },
@@ -607,8 +644,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Deve-se realizar biópsia para anatomopatológico e o tratamento é a completa ressecção com anestesia local.'
     ],
     correctAnswer: 1,
-    explanation: 'Condiloma lata e roséolas são sinais de Sífilis Secundária; o diagnóstico é por teste rápido ou sorologia.',
-    commentary: 'A sífilis secundária se caracteriza pelo aparecimento de manchas descamativas em região palmar e plantar (roséolas sifilíticas). Com o surgimento em genitais e próximo ao ânus de lesões papulosas não verrucosas ricas em treponemas. Essas lesões, conhecidas como Condiloma Sifilítico ou Lata, são facilmente confundidas com condiloma acuminado. A falta do tratamento correto na grávida proporciona uma taxa de transmissão vertical entre 50 a 100%',
+    explanation: "As lesões papulosas, úmidas e planas na vulva da imagem correspondem ao condiloma plano (condiloma lata), manifestação da sífilis secundária. São lesões muito ricas em treponemas, portanto altamente contagiosas, e frequentemente confundidas com verrugas por HPV.\n\nPelo fluxograma do Ministério da Saúde, o diagnóstico começa com o teste rápido treponêmico, complementado por teste não treponêmico (VDRL) para confirmar e servir de base ao seguimento. A sífilis secundária é sífilis recente, tratada com penicilina benzatina 2.400.000 UI por via intramuscular em dose única (1.200.000 UI em cada glúteo). O seguimento é feito com VDRL trimestral, e a parceria sexual deve ser testada e tratada.",
+    commentary: "VDRL e penicilina repetida em 7 dias (A): o esquema em três doses semanais é para sífilis latente tardia ou de duração ignorada; a sífilis secundária se trata com dose única.\n\nDiagnóstico clínico e ácido tricloroacético (C): seria a conduta para condiloma acuminado (HPV), que tem lesões vegetantes, secas, em couve-flor, e não as pápulas planas e úmidas da sífilis.\n\nBiópsia e ressecção (D): não se resseca lesão de sífilis; a sorologia faz o diagnóstico e a penicilina resolve as lesões.",
+    tip: "Pápulas planas e úmidas na vulva = condiloma plano (sífilis secundária): teste rápido e penicilina benzatina em dose única.",
     reference: 'PROTOCOLO CLÍNICO E DIRETRIZES TERAPÊUTICAS PARA PROFILAXIA PÓS-EXPOSIÇÃO (PEP) DE RISCO À INFECÇÃO PELO HIV, IST E HEPATITES VIRAIS (PCDT, MINISTÉRIO DA SAÚDE, 2021). TRATADO DE OBSTETRÍCIA DA FEBRASGO (ELSEVIER, 2019)',
     tags: ['IST']
   },
@@ -623,8 +661,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Exigir primeiramente o laudo do Instituto Médico Legal (IML), documento elaborado para fazer prova criminal.'
     ],
     correctAnswer: 2,
-    explanation: 'O atendimento de emergência é prioritário e não depende de registro policial ou laudo pericial.',
-    commentary: 'A exigência destes documentos para atendimento à vítima de violência sexual, nos serviços de saúde é incorreta e ilegal. A assistência à saúde é prioritária e a recusa de atendimento pode ser caracterizada, ética e legalmente, como omissão. Após o atendimento médico, caso seja desejo da mulher, e ela tenha condições, ela poderá ir à delegacia para lavrar o Boletim de Ocorrência Policial. Caso o exame pericial pelo IML não tenha sido realizado, o laudo será feito com base no prontuário médico. Dessa forma, o atendimento de emergência a pacientes vítimas de violência sexual é um desafio para os profissionais da saúde e exige uma capacitação adequada para que seja feita de forma ética, legal, respeitosa e eficiente. O profissional médico deve estar preparado tanto para o manejo clínico quanto psicológico de pacientes vítimas de violência sexual, visto que falhas nessa abordagem podem ocasionar casos de reincidência dessas agressões e sérios danos para a paciente, especialmente quando a vítima é criança ou adolescente.',
+    explanation: "Ao atender uma pessoa que sofreu violência sexual, a saúde vem antes de qualquer exigência policial ou pericial. Nenhum documento (boletim de ocorrência, laudo do IML) pode ser condição para atender, e negar atendimento configura omissão, com consequências éticas e legais.\n\nO atendimento de emergência inclui acolhimento, exame e registro detalhado em prontuário, anticoncepção de emergência, profilaxias de IST e HIV (até 72 horas), vacinação contra hepatite B quando indicada e apoio psicológico. Registrar a ocorrência na polícia é decisão da vítima; se o exame do IML não for feito, o prontuário pode servir de base para o laudo indireto.",
+    commentary: "Exigir boletim de ocorrência (A): o registro policial não é obrigatório para receber atendimento e não pode ser pré-requisito.\n\nNotificação da violência (B): a notificação é compulsória e deve ser feita pelo serviço, mas é um instrumento de vigilância epidemiológica, não o princípio que orienta o atendimento de emergência; ela não substitui nem antecede o cuidado.\n\nExigir laudo do IML (D): a perícia é opcional para a vítima e nunca condição para o atendimento médico.",
+    tip: "Violência sexual: atender primeiro, sem exigir BO ou IML; recusar atendimento é omissão.",
     reference: 'Ética em ginecologia e obstetrícia / Conselho Federal de Medicina. Câmara Técnica de Ginecologia e Obstetrícia. – Brasília: CFM, 2021.',
     tags: ['ética', 'saúde pública']
   },
@@ -639,8 +678,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Solicitar exames de laboratório como TSH, T4 livre, T3 e prolactina, pois estamos diante de um caso de distúrbio hormonal.'
     ],
     correctAnswer: 0,
-    explanation: 'Fluxo papilar suspeito exige investigação com imagem para afastar papiloma ou carcinoma.',
-    commentary: 'A citologia de fluxo papilar tem alto percentual (de até 90%) para falso negativo. Por isso não solicitamos este exame. Os exames de imagem identificam a maioria das causas de fluxo papilar patológico e permitem a orientação de biopsia para diagnostico histológico.',
+    explanation: "Descarga papilar espontânea, unilateral, uniductal (por um só orifício), serossanguinolenta e com ponto de gatilho é descarga papilar suspeita, chamada patológica. A causa mais comum é o papiloma intraductal, mas é preciso afastar carcinoma, cujo risco aumenta com a idade (aqui, 46 anos).\n\nA investigação começa por exames de imagem, mamografia e ultrassonografia, que identificam a maioria das lesões responsáveis e guiam a biópsia para o diagnóstico histológico. Se forem normais, a ressonância magnética ou a ductoscopia podem ajudar, e a excisão do ducto envolvido é uma opção.",
+    commentary: "Citologia da secreção como primeiro passo (B): a citologia tem alta taxa de falso-negativo; não deve condicionar os exames de imagem, que precisam ser feitos de qualquer forma.\n\nCitologia negativa para tranquilizar (C): pelo mesmo motivo, um resultado negativo não exclui câncer e não permite liberar a paciente.\n\nDosagens hormonais (D): prolactina e tireoide são investigadas na descarga bilateral, multiductal, leitosa (galactorreia), e não na descarga sanguinolenta de um só ducto.",
+    tip: "Descarga papilar espontânea, unilateral, uniductal e sanguinolenta = patológica: mamografia e ultrassom.",
     reference: 'Diretrizes em Mastologia, 2022, Sociedade Brasileira de Mastologia.',
     tags: ['mastologia']
   },
@@ -655,8 +695,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) A interpretação do exame colpocitológico fica prejudicada durante a gravidez.'
     ],
     correctAnswer: 2,
-    explanation: 'Gestantes devem seguir o rastreamento de câncer de colo do útero conforme a periodicidade e faixa etária recomendadas para as demais mulheres.',
-    commentary: 'Gestantes têm o mesmo risco que não gestantes de apresentarem câncer do colo do útero. O pré-natal é uma excelente oportunidade para atualizar o rastreamento.',
+    explanation: "A gravidez não muda o risco de câncer do colo do útero nem as regras do rastreamento. Pelas diretrizes brasileiras, a citologia é feita dos 25 aos 64 anos, a cada 3 anos depois de dois exames anuais normais. Esta paciente fez o último preventivo há 5 anos, então está com o rastreamento atrasado e deve colher o exame.\n\nO pré-natal é uma ótima oportunidade para isso, já que muitas mulheres só procuram o serviço de saúde nessa fase. A coleta é segura na gestação quando feita com técnica cuidadosa; como a junção escamocolunar costuma estar exteriorizada, a amostra da ectocérvice geralmente é adequada.",
+    commentary: "Coleta contraindicada na gestação (A): não há contraindicação; o exame com espátula e escova, feito com delicadeza, não aumenta o risco de perda gestacional.\n\nExame dispensado por ser gestante (B): a gestante segue a mesma periodicidade e faixa etária das demais mulheres; dispensar o exame atrasaria ainda mais um rastreamento já vencido.\n\nInterpretação prejudicada, adiar para depois do parto (D): as alterações da gravidez são conhecidas pelo citopatologista e não impedem a leitura; adiar faria perder uma chance de detectar lesões precursoras.",
+    tip: "Gestante segue o rastreamento normal do colo (25 a 64 anos, a cada 3 anos): se está vencido, colhe no pré-natal.",
     reference: 'Diretrizes brasileiras para o rastreamento do câncer do colo do útero, INCA 2020.',
     tags: ['obstetrícia', 'rastreamento']
   },
@@ -671,8 +712,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Colposcopia com biópsia dirigida.'
     ],
     correctAnswer: 0,
-    explanation: 'Pelas diretrizes brasileiras, a conduta para ASC-US em mulheres de 30 anos ou mais é a repetição em 6 meses.',
-    commentary: 'ASC-US em mulheres >= 30 anos exige repetição semestral. Se houver dois resultados consecutivos de ASC-US ou pior, encaminha-se para colposcopia.',
+    explanation: "ASC-US (atipias de células escamosas de significado indeterminado) é a alteração citológica mais frequente e, na maioria das vezes, corresponde a alterações transitórias ou lesões de baixo grau que regridem sozinhas. Só uma pequena parte esconde lesão de alto grau.\n\nPor isso, nas diretrizes brasileiras de rastreamento citológico (INCA/Ministério da Saúde), a conduta para mulheres de 30 anos ou mais com ASC-US é repetir a citologia em 6 meses. Se a repetição vier normal, faz-se outra em 6 meses e, com dois exames normais, ela volta ao rastreamento de rotina. Se a alteração persistir (ASC-US ou mais grave), encaminha-se para colposcopia. Entre 25 e 29 anos, o intervalo de repetição é de 12 meses.",
+    commentary: "Repetir em 12 meses (B): é o intervalo indicado para mulheres de 25 a 29 anos com ASC-US; esta paciente tem 32 anos.\n\nColposcopia em 18 meses (C): esse intervalo não existe nas diretrizes; a colposcopia é feita quando a atipia persiste na repetição, sem esperar tanto.\n\nColposcopia com biópsia de imediato (D): é a conduta para atipias mais suspeitas (ASC-H, lesão de alto grau, AGC); para um único ASC-US seria excesso de intervenção.",
+    tip: "ASC-US: 30 anos ou mais repete em 6 meses; 25 a 29 anos repete em 12 meses. Persistiu, colposcopia.",
     reference: 'Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, INCA 2016.',
     tags: ['ginecologia geral', 'rastreamento']
   },
@@ -687,8 +729,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Está no climatério pré-menopausal.'
     ],
     correctAnswer: 2,
-    explanation: 'O nível de progesterona (450 ng/dL) é característico da fase lútea, o que comprova a ocorrência de ovulação.',
-    commentary: 'Os padrões hormonais (especialmente a progesterona elevada) referem-se à fase lútea, indicando que a ovulação ocorreu.',
+    explanation: "A chave está na progesterona: 450 ng/dL fica na faixa da fase lútea (183 a 2390 ng/dL), muito acima do valor da fase folicular. A progesterona alta só é produzida pelo corpo lúteo, que se forma a partir do folículo depois da ovulação. Então essa mulher ovulou e está na segunda metade do ciclo.\n\nOs demais exames combinam: estradiol dentro do esperado para a fase lútea e LH e FSH baixos (8 UI/L), sem pico ovulatório e sem a elevação típica da falência ovariana.",
+    commentary: "Está menstruada (A): na menstruação, estradiol e progesterona estão baixos, por causa da queda do corpo lúteo; aqui a progesterona está em nível lúteo.\n\nEstá grávida (B): a progesterona alta não basta para afirmar gravidez, que é feita pela dosagem do beta-hCG, não informada.\n\nClimatério pré-menopausal (D): a perda da função ovariana eleva as gonadotrofinas, principalmente o FSH; com FSH de 8 UI/L e ciclos regulares, não há indício de climatério.",
+    tip: "Progesterona em nível de fase lútea = houve ovulação (só o corpo lúteo produz progesterona em quantidade).",
     reference: 'Tratado de Ginecologia FEBRASGO, 2019.',
     tags: ['endocrinologia']
   },
@@ -703,8 +746,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Pode ser atendida sem responsável e tem direito ao sigilo e escolha informada.'
     ],
     correctAnswer: 3,
-    explanation: 'Adolescentes têm direito à privacidade, autonomia e sigilo na escolha de métodos contraceptivos.',
-    commentary: 'A adolescente tem direito à privacidade. DIUs (LARCs) são ótimas opções por não dependerem da adesão diária da usuária.',
+    explanation: "A adolescente de 15 anos tem direito a ser atendida sozinha, com privacidade e sigilo, inclusive para receber orientação e prescrição de anticoncepção. O sigilo só é quebrado em situações de risco à vida ou à saúde dela ou de terceiros, como violência ou abuso. Para o exame ginecológico, se ela concordar, basta a presença de um auxiliar ou acompanhante de sala, sem precisar do responsável.\n\nA escolha do método é compartilhada: o médico apresenta as opções seguras para a idade (todas são, inclusive os métodos de longa duração), e ela decide de forma informada. Vale reforçar o uso do preservativo junto com o método hormonal, para prevenir infecções sexualmente transmissíveis (dupla proteção).",
+    commentary: "Escolha exclusiva do médico (A): contraria a autonomia e a decisão compartilhada; impor um método reduz a adesão e o vínculo.\n\nHormônio interfere no amadurecimento do eixo gonadal (B): não há essa interferência; os métodos hormonais são seguros após a menarca, e só o preservativo é pouco eficaz para evitar gravidez.\n\nDIU e SIU contraindicados nesta idade (C): os LARCs, métodos de longa ação e reversíveis (DIU de cobre, SIU de levonorgestrel e implante) são considerados de primeira linha para adolescentes, inclusive nulíparas, pela alta eficácia.",
+    tip: "Adolescente: atendimento sem responsável, com sigilo e escolha informada; LARC é ótima opção e preservativo sempre junto.",
     reference: 'Manual SOGESP de Assistência Ginecológica a Adolescentes, 2021.',
     tags: ['ginecologia infanto-puberal', 'ética']
   },
@@ -735,8 +779,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Repetição da ultrassonografia em 6 meses.'
     ],
     correctAnswer: 3,
-    explanation: 'Lesões BI-RADS 3 (provavelmente benignas) têm recomendação de controle de imagem em 6 meses.',
-    commentary: 'BI-RADS 3 infere baixa probabilidade de malignidade. O controle semestral é o padrão para observar estabilidade.',
+    explanation: "Mulher de 40 anos com nódulo palpável: a mamografia veio BI-RADS 0 (inconclusiva, precisa de complementação), e a ultrassonografia mostrou nódulo hipoecoico, de contornos regulares, paralelo à pele (mais largo que alto) e com 1,2 cm. Essas características são de lesão provavelmente benigna, como fibroadenoma, e por isso receberam BI-RADS 3.\n\nNa categoria 3, a chance de câncer é muito baixa (até 2%), e a recomendação é controle de curto prazo com o mesmo exame que mostrou a lesão: nova ultrassonografia em 6 meses, seguida de controles até completar cerca de 2 anos de estabilidade. Se a lesão crescer ou mudar de aspecto, passa a ter indicação de biópsia.\n\nO antecedente familiar (tia materna, segundo grau, diagnóstico aos 66 anos) não coloca a paciente em alto risco.",
+    commentary: "Ressonância mamária (A): é reservada a casos que a mamografia e a ultrassonografia não resolvem ou a mulheres de alto risco; uma tia com câncer depois da menopausa não configura alto risco.\n\nRepetir a mamografia em 6 meses (B): o nódulo foi caracterizado na ultrassonografia, então é ela que deve ser repetida para comparar a lesão.\n\nBiópsia com agulha grossa por ser palpável (C): o fato de ser palpável, isoladamente, não obriga a biópsia quando a imagem é típica de benignidade; a biópsia é indicada para BI-RADS 4 e 5 ou se houver mudança no controle.",
+    tip: "BI-RADS 3: controle com o mesmo exame em 6 meses. BI-RADS 4 e 5: biópsia.",
     reference: 'Sistema BI-RADS, ACR.',
     tags: ['mastologia']
   },
@@ -767,8 +812,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Categoria 2 no BI-RADS contraindica o uso de estrogênio.'
     ],
     correctAnswer: 1,
-    explanation: 'Para pacientes com útero, a terapia de reposição hormonal deve ser combinada (E+P) para proteção endometrial.',
-    commentary: 'Miomas pequenos e BI-RADS 2 não contraindicam TH. A associação de progesterona é obrigatória se o útero estiver presente.',
+    explanation: "Mulher de 52 anos, menopausada há 4 anos, com fogachos intensos que atrapalham sua vida: tem indicação de terapia hormonal (TH). Ela está na chamada janela de oportunidade (menos de 60 anos e menos de 10 anos de menopausa), quando os benefícios superam os riscos, e não apresenta contraindicações: não tem câncer de mama, trombose, doença hepática grave nem sangramento genital sem explicação.\n\nComo tem útero, precisa receber estrogênio associado a progestagênio. O progestagênio protege o endométrio da hiperplasia e do câncer que o estrogênio isolado provocaria.",
+    commentary: "Apenas estrogênio (A): a TH só com estrogênio é reservada a mulheres sem útero (histerectomizadas); com útero, aumenta o risco de câncer de endométrio.\n\nMioma contraindica a TH (C): um mioma pequeno (10 mm) e assintomático não contraindica; recomenda-se apenas acompanhar o tamanho e os sintomas.\n\nBI-RADS 2 contraindica o estrogênio (D): a categoria 2 indica achado benigno; o que contraindica a TH é câncer de mama atual ou passado, não uma mamografia benigna.",
+    tip: "Fogacho, menos de 60 anos e menos de 10 anos de menopausa, sem contraindicação: TH. Tem útero? Estrogênio + progestagênio.",
     reference: 'Consenso Brasileiro de Terapêutica Hormonal da Menopausa, 2018.',
     tags: ['climatério', 'terapia hormonal']
   },
@@ -783,8 +829,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Antibiótico (ex: Clindamicina), analgésico e manutenção da amamentação.'
     ],
     correctAnswer: 3,
-    explanation: 'O tratamento da mastite envolve antibióticos e manutenção do esvaziamento mamário (amamentação continuada).',
-    commentary: 'Não se deve suspender a amamentação. A drenagem só é indicada se houver abscesso formado.',
+    explanation: "Puérpera com dor intensa, eritema e calor em um quadrante da mama: é mastite lactacional, geralmente causada por Staphylococcus aureus que entra por fissuras do mamilo em uma mama com leite parado.\n\nO tratamento combina antibiótico com cobertura para estafilococo (cefalexina ou dicloxacilina são as opções habituais; a clindamicina é alternativa, sobretudo em alérgicas), analgésico ou anti-inflamatório e esvaziamento eficiente da mama. A amamentação deve continuar, inclusive na mama afetada: ela ajuda a drenar o leite, e o leite não faz mal ao bebê.",
+    commentary: "Antibiótico com drenagem sempre necessária (A): a drenagem só é indicada quando se forma abscesso (área flutuante ou coleção na ultrassonografia), o que não é o caso.\n\nSuspender a amamentação durante o antibiótico (B): interromper a amamentação aumenta a estase de leite e o risco de abscesso; os antibióticos usados são compatíveis com o aleitamento.\n\nCobertura específica para anaeróbios (C): os agentes principais são o estafilococo e, menos vezes, estreptococos e gram-negativos; anaeróbios não são o alvo.",
+    tip: "Mastite: antibiótico antiestafilocócico, analgesia e continuar amamentando. Drenagem só se houver abscesso.",
     reference: 'Zugaib Obstetrícia, 2020.',
     tags: ['puerpério', 'mastologia']
   },
@@ -815,8 +862,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Antibioticoterapia, elevação da mama e drenagem do abscesso.'
     ],
     correctAnswer: 3,
-    explanation: 'A presença de flutuação indica abscesso mamário, que exige drenagem cirúrgica associada a antibióticos.',
-    commentary: 'Abscessos lactacionais devem ser drenados. A amamentação deve ser mantida na mama contralateral e, se possível, na afetada após melhora.',
+    explanation: "Puérpera no 10º dia, em amamentação exclusiva, com febre, prostração, hiperemia e edema extensos na mama direita e um ponto de flutuação no quadrante superior lateral: a mastite evoluiu para abscesso mamário.\n\nAbscesso precisa ser drenado, por punção aspirativa guiada por ultrassonografia (preferida, repetida se necessário) ou por incisão cirúrgica nos maiores. Junto, mantêm-se antibiótico antiestafilocócico, analgésico, elevação e suporte das mamas e esvaziamento da mama, de preferência continuando a amamentação (pelo menos na mama sadia, e na afetada quando a dor e a posição da drenagem permitirem).",
+    commentary: "Setorectomia (A): retirar um setor da mama é tratamento exagerado para um abscesso, que se resolve com drenagem.\n\nMamografia para descartar carcinoma inflamatório (B): a mamografia é pouco útil e muito dolorosa na mama lactante e inflamada; o exame de escolha é a ultrassonografia. O carcinoma inflamatório só é investigado se o quadro não responder ao tratamento.\n\nInterromper a lactação com cabergolina (C): o leite não está contaminado a ponto de prejudicar o bebê, e suspender a amamentação favorece a estase e piora o quadro.",
+    tip: "Mastite com flutuação = abscesso: drenar (punção guiada por US ou incisão) + antibiótico, sem parar a amamentação.",
     reference: 'Zugaib Obstetrícia, 2020.',
     tags: ['puerpério', 'mastologia']
   },
@@ -831,8 +879,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Ferro elementar em doses terapêuticas.'
     ],
     correctAnswer: 1,
-    explanation: 'Hemoglobina >= 11 g/dL na gestação é considerada normal; a queda leve deve-se à hemodiluição fisiológica.',
-    commentary: 'Hb 11,5 é normal na gestação. A suplementação profilática de ferro deve ser mantida, e a dieta orientada.',
+    explanation: "Na gestação, considera-se anemia a hemoglobina abaixo de 11 g/dL. Esta gestante tem 11,5 g/dL, portanto não está anêmica.\n\nA queda de 12,5 para 11,5 g/dL ao longo da gravidez é esperada: o volume de plasma aumenta mais do que a massa de hemácias, o que dilui a hemoglobina (hemodiluição fisiológica). A conduta é apenas orientar alimentação saudável e variada, com fontes de ferro e proteínas, e manter a suplementação profilática de ferro e ácido fólico que o Ministério da Saúde recomenda a todas as gestantes.",
+    commentary: "Eletroforese de hemoglobina (A): investigação de hemoglobinopatias faz sentido diante de anemia, microcitose sem deficiência de ferro ou história familiar; aqui a hemoglobina é normal.\n\nEncaminhar ao alto risco por anemia severa (C): não há anemia; a anemia grave na gestação corresponde a valores muito mais baixos (abaixo de 8 g/dL).\n\nFerro em dose terapêutica (D): dose de tratamento é para gestante com anemia confirmada; com hemoglobina normal, usa-se apenas a dose profilática.",
+    tip: "Gestação: anemia é Hb abaixo de 11 g/dL. Queda leve ao longo da gravidez é hemodiluição fisiológica.",
     reference: 'MS - Atenção ao Pré-Natal de Baixo Risco.',
     tags: ['obstetrícia', 'nutrição']
   },
@@ -847,8 +896,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Repetir glicemia pós-prandial.'
     ],
     correctAnswer: 0,
-    explanation: 'Jejum >= 92 mg/dL em gestante fecha diagnóstico de DMG.',
-    commentary: 'Um único valor alterado no TOTG (jejum >= 92, 1h >= 180, 2h >= 153) é suficiente para o diagnóstico de DMG.',
+    explanation: "No teste oral de tolerância à glicose com 75 g, feito entre 24 e 28 semanas, basta um valor alterado para diagnosticar diabetes mellitus gestacional (DMG). Os pontos de corte são: jejum de 92 mg/dL ou mais, 1 hora de 180 mg/dL ou mais e 2 horas de 153 mg/dL ou mais.\n\nA glicemia de jejum desta gestante foi de 97 mg/dL, acima de 92. Mesmo com os valores de 1 e 2 horas normais, o diagnóstico de DMG está feito, e ela deve iniciar dieta, atividade física e monitorização glicêmica.",
+    commentary: "Exame normal (B): um único valor alterado já basta; o jejum de 97 mg/dL está acima do limite.\n\nDiabetes pré-existente (C): esse diagnóstico exige glicemia de jejum de 126 mg/dL ou mais, glicemia ao acaso de 200 mg/dL ou mais ou HbA1c de 6,5% ou mais; nada disso aparece aqui.\n\nGlicemia pós-prandial para confirmar (D): o TOTG já é o teste diagnóstico; não precisa de outro exame para confirmar.",
+    tip: "TOTG 75 g na gestação: 92 / 180 / 153 mg/dL. Um valor alterado = DMG.",
     reference: 'Consenso Brasileiro DMG, 2017.',
     tags: ['obstetrícia', 'diabetes']
   },
@@ -863,8 +913,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Plaquetas abaixo de 200.000/mm³.'
     ],
     correctAnswer: 2,
-    explanation: 'Creatinina sérica > 1,1 mg/dL é um critério de gravidade na pré-eclâmpsia.',
-    commentary: 'Insuficiência renal (Cr > 1.1) é sinal de gravidade. Edema e RCF não são critérios diagnósticos de gravidade isoladamente pela classificação atual.',
+    explanation: "Gestante de 26 semanas, antes normotensa, com PA de 150/100 mmHg e relação proteína/creatinina urinária de 0,58 (acima de 0,3): tem pré-eclâmpsia.\n\nEntre os achados, o que define sinal de gravidade é a creatinina de 1,3 mg/dL. Creatinina acima de 1,1 mg/dL (ou o dobro do valor basal, sem outra doença renal) indica lesão renal e enquadra o caso como pré-eclâmpsia com sinais de gravidade. Os outros sinais clássicos são PA de 160/110 mmHg ou mais, plaquetas abaixo de 100.000/mm³, transaminases em dobro, dor epigástrica ou em hipocôndrio direito, edema pulmonar e sintomas visuais ou cerebrais.\n\nA restrição de crescimento fetal, embora importante para a conduta e a vigilância fetal, não entra nessa lista de critérios de gravidade.",
+    commentary: "Restrição de crescimento fetal (A): é sinal de disfunção placentária e pesa na conduta, mas não faz parte dos critérios atuais de pré-eclâmpsia grave.\n\nEdema generalizado (B): edema é comum em gestantes, inclusive normais, e deixou de ser critério de diagnóstico ou de gravidade.\n\nPlaquetas abaixo de 200.000/mm³ (D): o limite de gravidade é abaixo de 100.000/mm³; 198.000 é contagem normal.",
+    tip: "Pré-eclâmpsia grave no laboratório: creatinina acima de 1,1, plaquetas abaixo de 100 mil, transaminases em dobro.",
     reference: 'Tratado de Obstetrícia FEBRASGO.',
     tags: ['obstetrícia', 'hipertensão']
   },
@@ -911,8 +962,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Tratar apenas se o parceiro for positivo.'
     ],
     correctAnswer: 0,
-    explanation: 'O tratamento da sífilis na gestação deve ser imediato após teste rápido positivo para evitar transmissão vertical.',
-    commentary: 'Não se deve atrasar o tratamento aguardando confirmação em gestantes. O parceiro deve ser tratado simultaneamente.',
+    explanation: "Na gestação, um teste rápido (treponêmico) reagente para sífilis já basta para começar o tratamento, sem esperar o resultado de outros exames. Isso porque a sífilis tem alta transmissão vertical e pode causar aborto, natimorto e sífilis congênita, e qualquer atraso aumenta o risco para o feto.\n\nAo mesmo tempo, colhe-se um teste não treponêmico (VDRL) para confirmar e servir de base ao seguimento, que na gestação é mensal. O tratamento é com penicilina benzatina, em dose e número de aplicações conforme a fase da doença. A parceria sexual também deve ser testada e tratada, mesmo com teste negativo, para evitar reinfecção da gestante.",
+    commentary: "Aguardar o treponêmico de confirmação (B): esperar atrasa o tratamento, e a gestante pode não voltar; o Ministério da Saúde orienta tratar já no primeiro teste reagente.\n\nEritromicina se for alérgica (C): a eritromicina atravessa mal a placenta e não trata o feto; o único tratamento eficaz na gestação é a penicilina benzatina, e a gestante alérgica deve passar por dessensibilização.\n\nTratar o parceiro só se for positivo (D): a parceria pode estar no período de janela, com teste ainda negativo; o tratamento é indicado mesmo assim, senão a gestante se reinfecta.",
+    tip: "Gestante com teste rápido de sífilis reagente: penicilina benzatina na hora, VDRL mensal e tratar a parceria mesmo se negativa.",
     reference: 'Ministério da Saúde - Protocolo Transmissão Vertical 2021.',
     tags: ['obstetrícia', 'IST']
   },
@@ -927,8 +979,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Hepatite B, dTpa, COVID-19 e febre amarela.'
     ],
     correctAnswer: 1,
-    explanation: 'Hepatite B, dTpa, Influenza e COVID-19 são as vacinas recomendadas de rotina no Calendário da Gestante.',
-    commentary: 'Vacinas de vírus vivos (como SCR - rubéola, sarampo, caxumba) são contraindicadas na gestação.',
+    explanation: "O calendário do Ministério da Saúde para gestantes inclui vacinas de vírus inativado, toxoides e vacinas de componentes, que são seguras na gravidez:\n\n• Hepatite B, se não houver esquema completo;\n• dTpa (difteria, tétano e coqueluche acelular), a partir de 20 semanas, em toda gestação, para proteger o bebê contra a coqueluche nos primeiros meses;\n• Influenza, na campanha anual;\n• COVID-19.\n\nVacinas de vírus vivos atenuados, como tríplice viral (sarampo, caxumba e rubéola), são contraindicadas na gestação e ficam para o puerpério nas mulheres não imunes.",
+    commentary: "Rubéola e caxumba (A): fazem parte da tríplice viral, de vírus vivos, contraindicada na gestação.\n\nSarampo e caxumba (C): também componentes da tríplice viral; não se aplica na gravidez.\n\nFebre amarela (D): vacina de vírus vivo, que não faz parte da rotina da gestante; só é considerada em situação de alto risco de exposição, como viagem inadiável a área com transmissão.",
+    tip: "Gestante: hepatite B, dTpa, influenza e COVID-19. Vírus vivo (tríplice viral, febre amarela), em regra, não.",
     reference: 'Calendário Nacional de Vacinação - MS.',
     tags: ['obstetrícia', 'imunização']
   },
@@ -943,8 +996,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Perdas fetais sem correlação.'
     ],
     correctAnswer: 2,
-    explanation: 'Perdas fetais recorrentes no segundo trimestre, sem dor/contrações prévias, sugerem insuficiência istmo-cervical.',
-    commentary: 'A história clínica de partos prematuros exclusivos rápidos e indolores é patognomônica de IIC.',
+    explanation: "As perdas desta paciente seguem o padrão típico da insuficiência istmo-cervical (IIC): ocorrem no segundo trimestre, cada vez mais cedo (26 e depois 24 semanas), com pouca ou nenhuma dor ou contração, sensação de peso no períneo e expulsão rápida de fetos vivos e sem malformações, que morrem pela prematuridade extrema. O colo se dilata sem trabalho de parto típico.\n\nA história de duas curetagens, com infecção depois da primeira, é fator de risco por lesão do colo. Na próxima gestação, o tratamento é a cerclagem do colo, que pode ser indicada pela própria história, geralmente entre 12 e 14 semanas.",
+    commentary: "Incompatibilidade genética (A): causas genéticas (cromossômicas) costumam levar a abortos no primeiro trimestre, muitas vezes com fetos malformados; aqui as perdas são tardias e os fetos nasceram vivos e sem malformações.\n\nIncompatibilidade Rh (B): a paciente recebeu imunoglobulina anti-D e tem Coombs indireto negativo, então não está sensibilizada; além disso, a doença hemolítica causaria anemia e hidropsia fetal, não parto rápido e indolor.\n\nPerdas sem correlação (D): o padrão repetido e característico aponta uma causa comum, que deve ser tratada na próxima gestação.",
+    tip: "Perda no 2º trimestre, indolor, rápida, com feto vivo e normal = insuficiência istmo-cervical: cerclagem na próxima gestação.",
     reference: 'Zugaib Obstetrícia, 2020.',
     tags: ['obstetrícia']
   },
@@ -1619,8 +1673,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Encaminhar para serviço especializado antes de qualquer orientação sobre os métodos contraceptivos.'
     ],
     correctAnswer: 0,
-    explanation: 'A testosterona não é um método contraceptivo confiável. Homens trans com útero e ovários mantêm potencial reprodutivo e necessitam de orientação sobre métodos contraceptivos adequados e sobre o planejamento de gestações futuras na Atenção Primária.',
-    commentary: 'A alternativa está correta porque respeita os direitos reprodutivos e a autonomia do paciente, princípios fundamentais da bioética. Homens trans que possuem útero e ovários podem engravidar, e a testosterona não é método contraceptivo. Assim, cabe ao médico oferecer acolhimento, orientação sobre métodos contraceptivos e informações sobre fertilidade, garantindo atendimento ético, sem discriminação e alinhado às diretrizes do SUS. Sobre os distratores: (B) A testosterona pode bloquear o eixo e impedir a ovulação, mas o processo é dose e tempo dependente por isso não é método contraceptivo confiável. (C) Negar aconselhamento reprodutivo com base na identidade de gênero fere princípios éticos, direitos reprodutivos e o princípio da equidade no SUS. (D) A Atenção Primária à Saúde tem competência para realizar aconselhamento em planejamento reprodutivo.',
+    explanation: "Um homem trans que tem útero e ovários pode engravidar, mesmo em uso de testosterona. O hormônio pode suprimir a ovulação e causar amenorreia, mas isso depende de dose e tempo e não é seguro: o hormônio não pode ser usado como anticoncepcional e, se houver gestação, é teratogênica.\n\nPortanto, o médico da Atenção Primária deve acolher, informar que é preciso contracepção, discutir os métodos (os de progestagênio isolado, o DIU de cobre e o preservativo são opções que não interferem na hormonização masculinizante) e orientar sobre a fertilidade futura. Isso respeita a autonomia e os direitos reprodutivos garantidos pela Lei do Planejamento Familiar.",
+    commentary: "Testosterona como contraceptivo (B): a ovulação pode ocorrer mesmo com amenorreia; confiar no hormônio expõe a pessoa a uma gravidez não desejada.\n\nNegar aconselhamento sobre gestação (C): é discriminatório e viola os direitos reprodutivos e a equidade; a identidade de gênero não impede o desejo de gestar ou de evitar gestação.\n\nEncaminhar antes de orientar (D): planejamento reprodutivo é atribuição da APS; o encaminhamento fica para situações específicas, sem atrasar a orientação.",
+    tip: "Testosterona não é anticoncepcional. Homem trans com útero precisa de orientação contraceptiva na APS.",
     reference: 'Ministério da Saúde. Atenção integral à saúde da população LGBT no SUS. Brasília: Ministério da Saúde, 2013. Lei nº 9.263 de 1996. Dispõe sobre o planejamento familiar no Brasil.',
     tags: ['bioética', 'planejamento reprodutivo', 'saúde LGBT']
   },
@@ -1635,8 +1690,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Processo inflamatório autoimune primário das trompas uterinas, desencadeado por alteração hormonal do ciclo menstrual.'
     ],
     correctAnswer: 2,
-    explanation: 'A Doença Inflamatória Pélvica (DIP) é caracterizada pela ascensão de patógenos do trato genital inferior (colo/vagina) para o trato genital superior (endométrio, trompas, peritônio pélvico), gerando uma resposta inflamatória que lesiona o epitélio tubário.',
-    commentary: 'A doença inflamatória pélvica ocorre principalmente por infecção ascendente do trato genital inferior. Microrganismos associados a infecções sexualmente transmissíveis, como Chlamydia trachomatis e Neisseria gonorrhoeae, podem atravessar o canal cervical e alcançar o endométrio e as trompas. A resposta inflamatória local provoca infiltração de neutrófilos, edema e destruição do epitélio tubário, levando a salpingite e podendo evoluir para aderências, abscesso tubo-ovariano e infertilidade. Sobre os distratores: (A) A translocação bacteriana intestinal pode ocorrer em quadros intra-abdominais específicos, mas não representa o mecanismo típico de desenvolvimento da doença inflamatória pélvica. (B) A disseminação hematogênica não corresponde ao mecanismo fisiopatológico habitual da DIP. (D) A DIP não é causada por processo autoimune primário, mas sim por resposta imunológica à infecção bacteriana do trato genital superior.',
+    explanation: "Dor pélvica, febre, secreção cervical mucopurulenta, dor à mobilização do colo e dor anexial bilateral, com leucocitose e PCR elevada, configuram doença inflamatória pélvica (DIP).\n\nO mecanismo é a infecção ascendente: microrganismos do colo e da vagina, sobretudo Chlamydia trachomatis e Neisseria gonorrhoeae, além de bactérias da vaginose, sobem pelo canal cervical e atingem endométrio, trompas e às vezes o peritônio pélvico. A inflamação lesa o epitélio ciliado das tubas, e as cicatrizes explicam as sequelas: infertilidade, gravidez ectópica e dor pélvica crônica. O tratamento deve cobrir gonococo, clamídia e anaeróbios, e as parcerias sexuais também precisam ser tratadas.",
+    commentary: "Translocação intestinal (A): pode ocorrer em processos abdominais, como a apendicite, que inflamam secundariamente a pelve, mas não é o caminho da DIP, que começa no trato genital.\n\nDisseminação hematogênica (B): a via sanguínea só é relevante em casos raros, como a tuberculose genital; a DIP começa no colo e progride para cima.\n\nAutoimunidade primária (D): a inflamação da DIP é uma resposta à infecção bacteriana, não um processo autoimune ou hormonal.",
+    tip: "DIP = infecção ascendente (clamídia e gonococo) do colo para endométrio e trompas; sequelas: infertilidade e ectópica.",
     reference: 'FEBRASGO. Manual de Orientação: Doença Inflamatória Pélvica. Federação Brasileira das Associações de Ginecologia e Obstetrícia, 2023. BEREK, J. S. Berek & Novak’s Gynecology. 16ª ed. Philadelphia: Wolters Kluwer, 2020.',
     tags: ['DIP', 'fisiopatologia', 'infecções sexualmente transmissíveis']
   },
@@ -1651,8 +1707,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Anticoncepcional injetável combinado mensal'
     ],
     correctAnswer: 1,
-    explanation: 'O DIU de cobre é um método contraceptivo reversível de longa duração (LARC) altamente eficaz que não depende da adesão diária e é seguro para pacientes com histórico de eventos tromboembólicos, pois não contém hormônios.',
-    commentary: 'O DIU de cobre é um método altamente eficaz, reversível, de longa duração e adequado para início na UBS, alinhado à promoção da saúde e à prevenção de gravidez não planejada. Além disso, não depende de adesão diária, o que é especialmente relevante para pacientes com dificuldade de uso contínuo de métodos orais. Adicionalmente, por ser isento de hormônios, não apresenta risco de eventos trombóticos. Sobre os distratores: (A, D) Métodos combinados contêm estrogênio, sendo contraindicados em pacientes com histórico suspeito ou confirmado de trombose venosa profunda (Categoria 4 da OMS). (C) Embora seguros, os métodos de barreira apresentam menor eficácia clínica real e dependem de uso correto em cada relação, não preenchendo os requisitos de alta eficácia solicitados pela paciente.',
+    explanation: "A paciente quer um método muito eficaz, reversível e que não dependa de tomar comprimido todo dia, e tem história de provável trombose venosa profunda. Métodos com estrogênio aumentam o risco de trombose e ficam contraindicados (categoria 4 dos critérios de elegibilidade da OMS) em quem já teve trombose venosa.\n\nO DIU de cobre não tem hormônio, é seguro após trombose (categoria 1), é um dos métodos mais eficazes, dura cerca de 10 anos e pode ser inserido na própria UBS. O DIU hormonal com levonorgestrel e o implante seriam alternativas aceitáveis, mas não estão entre as opções.",
+    commentary: "Anticoncepcional oral combinado (A): tem estrogênio, contraindicado com antecedente de trombose, e depende do uso diário, que é justamente a dificuldade da paciente.\n\nMétodo de barreira (C): não tem risco de trombose e protege contra infecções sexualmente transmissíveis, mas falha muito no uso real e não atende ao desejo de alta eficácia.\n\nInjetável combinado mensal (D): também contém estrogênio e, portanto, é contraindicado após trombose.",
+    tip: "História de trombose: nada de estrogênio. DIU de cobre é eficaz, sem hormônio e dura cerca de 10 anos.",
     reference: 'World Health Organization. Medical eligibility criteria for contraceptive use. 6th ed. Geneva: WHO; 2024.',
     tags: ['contracepção', 'DIU de cobre', 'critérios de elegibilidade']
   },
@@ -1667,8 +1724,9 @@ export const GINECOLOGIA_QUESTIONS: Question[] = [
       '(D) Ultrassonografia pélvica transvaginal'
     ],
     correctAnswer: 3,
-    explanation: 'A ultrassonografia pélvica transvaginal é o exame de imagem inicial de escolha para avaliação de queixas de sangramento uterino anormal e massa pélvica/útero aumentado por miomatose uterina devido a sua ampla disponibilidade, baixo custo e alta acurácia.',
-    commentary: 'A ultrassonografia pélvica, especialmente pela via transvaginal, é o exame inicial de escolha na investigação de leiomioma uterino, pois é amplamente disponível, não invasivo e apresenta boa acurácia para avaliar número, tamanho e localização dos miomas. Sobre os distratores: (A) A ressonância magnética pélvica é excelente para mapeamento de miomas em úteros muito volumosos ou para planejamento cirúrgico complexo (miomectomias múltiplas), mas não constitui abordagem inicial. (B) A histeroscopia é padrão para avaliação endometrial e de miomas submucosos (cavidade uterina), mas não avalia miomas intramurais ou subserosos nem o volume uterino global como exame inicial. (C) A tomografia não tem boa resolução espacial para tecidos moles da pelve ginecológica e não é usada de rotina nesta indicação.',
+    explanation: "Mulher de 38 anos com sangramento menstrual aumentado, sensação de peso pélvico e útero aumentado, irregular e móvel ao toque: o diagnóstico mais provável é leiomioma uterino (mioma), o tumor pélvico benigno mais comum na mulher.\n\nO primeiro exame é a ultrassonografia pélvica transvaginal, que é acessível, barata, não invasiva e mostra bem o número, o tamanho e a localização dos nódulos (submucoso, intramural ou subseroso), além de avaliar o endométrio. Exames mais complexos ficam para casos selecionados.",
+    commentary: "Ressonância magnética (A): é útil para mapear miomas antes de cirurgia conservadora ou quando o ultrassom é inconclusivo, por exemplo para diferenciar de adenomiose; não é o exame inicial.\n\nHisteroscopia (B): avalia e trata lesões da cavidade, como miomas submucosos e pólipos; é invasiva e entra depois do ultrassom, quando ele sugere lesão intracavitária.\n\nTomografia (C): avalia mal os órgãos pélvicos, expõe à radiação e não tem papel na investigação de miomas.",
+    tip: "Útero aumentado e irregular com sangramento aumentado: pense em mioma e peça ultrassom transvaginal primeiro.",
     reference: 'Tratado de Ginecologia da FEBRASGO. Cesar Eduardo Fernandes, Marcos Felipe Silva de Sá. 1ª ed. Rio de Janeiro: Elsevier, 2019.',
     tags: ['miomatose uterina', 'ultrassonografia', 'diagnóstico']
   },

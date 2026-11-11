@@ -12,8 +12,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) O teste de antígeno NS1 está presente em altas concentrações no soro de pacientes e podem ser detectados após os primeiros sintomas e devem ser solicitados até o 5º dia.'
     ],
     correctAnswer: 3,
-    explanation: 'O NS1 é uma proteína viral detectável na fase aguda (viremia), geralmente do 1º ao 5º dia.',
-    commentary: 'O NS1 é uma proteína do vírus da dengue, marcador de fase aguda da infecção, mesmo antes do aparecimento dos anticorpos das classes IgM e IgG. Está presente em altas concentrações no sangue de pessoas portadoras da doença, desde o início da infecção e pode ser detectada a partir do 1º a 2º dias de sintomas.',
+    explanation: "O NS1 é uma proteína não estrutural do vírus da dengue liberada em grande quantidade no sangue durante a fase de viremia. Por isso pode ser detectado desde o primeiro dia de sintomas, antes do aparecimento dos anticorpos, e o Ministério da Saúde orienta solicitá-lo até o quinto dia, junto com os métodos de detecção viral (RT-PCR, isolamento viral).\n\nA partir do sexto dia, a viremia cai e o exame indicado passa a ser a sorologia IgM. É importante lembrar que o resultado não muda a conduta inicial: o manejo é guiado pela classificação clínica de risco.",
+    commentary: "Sorologia em qualquer período (A): a IgM só se torna detectável a partir do quinto ou sexto dia, então uma sorologia precoce pode dar falso negativo.\n\nNS1 em qualquer período (B): o antígeno acompanha a viremia e diminui depois da primeira semana; após o quinto dia a sensibilidade cai.\n\nSorologia até o quinto dia (C): inverte a lógica; a sorologia é indicada a partir do sexto dia, e não até o quinto.",
+    tip: "Dengue: NS1 ou RT-PCR até o 5º dia; sorologia IgM a partir do 6º dia.",
     reference: 'Dengue: Diagnóstico e manejo clínico – Adulto e criança, 6ª edição. Ministério da Saúde, Secretaria de vigilância e saúde e ambiente, Departamento de doenças transmissíveis, Brasil, 2024.',
     tags: ['infectologia', 'dengue']
   },
@@ -28,8 +29,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Prova do laço positiva'
     ],
     correctAnswer: 1,
-    explanation: 'Sinais de alarme indicam extravasamento de plasma (como derrames cavitários) ou disfunção orgânica.',
-    commentary: 'Pelo Ministério da Saúde são considerados sinais de alarme: dor abdominal intensa (referida ou à palpação) e contínua, vômitos persistentes, acúmulo de líquidos (ascite, derrame pleural, derrame pericárdico), hipotensão postural ou lipotimia, hepatomegalia maior ou igual 2 cm abaixo do rebordo costal, sangramento de mucosa, letargia ou irritabilidade.',
+    explanation: "Os sinais de alarme da dengue marcam o extravasamento de plasma que costuma surgir na defervescência, entre o terceiro e o sétimo dia. Pelo Ministério da Saúde, entram na lista: dor abdominal forte e persistente, vômitos que não cessam, coleções de líquido (ascite, derrame pleural ou pericárdico), queda da pressão ao ficar de pé ou lipotimia, fígado palpável 2 cm ou mais abaixo da costela, sangramento em mucosas, sonolência ou irritabilidade e hematócrito em elevação progressiva.\n\nO derrame pleural é um desses sinais. Quem os apresenta passa para o grupo C e precisa de hidratação venosa e internação.",
+    commentary: "Esplenomegalia (A): não faz parte da lista de sinais de alarme da dengue.\n\nPetéquias (C): sangramento de pele espontâneo coloca o paciente no grupo B, mas não é sinal de alarme; o sangramento que alarma é o de mucosa.\n\nProva do laço positiva (D): também classifica no grupo B (sangramento induzido), mas não indica extravasamento de plasma.",
+    tip: "Dengue: acúmulo de líquido (ascite, derrame pleural) é alarme; petéquias e prova do laço só levam ao grupo B.",
     reference: 'Dengue: Diagnóstico e manejo clínico – Adulto e criança, 6ª edição. Ministério da Saúde, Secretaria de vigilância e saúde e ambiente, Departamento de doenças transmissíveis, Brasil, 2024.',
     tags: ['infectologia', 'dengue']
   },
@@ -44,8 +46,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Prescrever diurético endovenoso para promover a diurese.'
     ],
     correctAnswer: 0,
-    explanation: 'Hipercalemia grave (7,6) com alterações no ECG refratária ao tratamento clínico é indicação absoluta de diálise de urgência.',
-    commentary: 'É um caso de insuficiência renal aguda e doença renal crônica agudizada devido ao uso de AINE. Neste caso está indicado o início do tratamento dialítico devido ao quadro de hipercalemia refratária associada à alteração em eletrocardiograma - risco de evoluir com arritmia e/ou parada cardíaca.',
+    explanation: "Idoso com doença renal crônica provável (hipertensão e diabetes de longa data) em uso de losartana que tomou cetoprofeno por 5 dias: o AINE reduz as prostaglandinas que dilatam a arteríola aferente, e o bloqueador do receptor de angiotensina tira a vasoconstrição da eferente. O rim perde a capacidade de manter a filtração e surge uma lesão renal aguda grave, com oligúria, congestão (estertores e edema) e confusão mental por uremia.\n\nO potássio de 7,6 mEq/L com onda T apiculada que persiste após as medidas clínicas é hipercalemia refratária com repercussão no ECG, uma indicação de diálise de urgência. O paciente ainda tem sobrecarga de volume e sinais de uremia, outras indicações que reforçam a decisão.",
+    commentary: "Hidratação venosa (B): o paciente já está hipervolêmico, com estertores e edema; mais volume pioraria a congestão pulmonar.\n\nHidratação com diurético (C): o volume extra é contraindicado, e o diurético não corrige a tempo uma hipercalemia refratária com alteração no ECG.\n\nDiurético isolado (D): pode ajudar na congestão em quem ainda responde, mas não é suficiente diante de hipercalemia grave refratária e uremia.",
+    tip: "Indicações de diálise de urgência: hipercalemia refratária, acidose grave, hipervolemia refratária e uremia (AEIOU).",
     reference: 'THOMÉ, Fernando Saldanha; ANTUNES, Verônica V. Hörbe; THOMÉ, Gustavo. Insuficiência renal aguda. In: VERONESE, Fernando Veríssimo; MANFRO, Roberto Ceratti; THOMÉ, Fernando Saldanha; BARROS, Elvino. Nefrologia na prática clínica. 1ª Ed. São Paulo: Livraria Balieiro, 2019. BOIM, Mirian Aparecida; SANTOS, Oscar F. Pavão dos; SCHOR, Nestor. Insuficiência renal aguda. In: AJZEN, Horácio; SCHOR, Nestor. Guia de Nefrologia. 3ª Ed. Barueri: Editora Manole, 2011.',
     tags: ['nefrologia', 'emergência']
   },
@@ -60,8 +63,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Entende-se como IRA: elevação em 0,3mg/dL de creatinina em relação aos valores de base em 7 dias OU elevação em 1,5 vezes dentro de um período de 48 horas OU redução do débito urinário para menos que 0,3mL/kg/h em 6 horas consecutivas.'
     ],
     correctAnswer: 2,
-    explanation: 'O critério KDIGO define IRA como ↑ Cr ≥ 0,3 mg/dL em 48h, ou ↑ Cr ≥ 1,5x a base em 7 dias, ou débito urinário < 0,5 mL/kg/h por 6h.',
-    commentary: 'A definição de IRA vem seguindo um longo caminho, desde a década de 90 quando existia uma heterogenicidade de definições até as primeiras iniciativas de uniformização diagnósticas (AKIN E RIFLE) em 2012 um grupo de experts, utilizando-se do conceito que pequenas elevações da creatinina de base (na monta de 0.3mg/dL) tinham impacto e fazendo uma fusão dos critérios previamente descritos desenvolve o critério KDIGO, o qual é o atualmente aceito como critério diagnóstico, descrito na alternativa (C).',
+    explanation: "Pelo KDIGO de 2012, há injúria renal aguda quando ocorre qualquer um destes critérios: aumento da creatinina de pelo menos 0,3 mg/dL em 48 horas; aumento para 1,5 vez o valor basal ou mais, sabido ou presumido nos últimos 7 dias; ou débito urinário abaixo de 0,5 mL/kg/h por 6 horas.\n\nO critério de 0,3 mg/dL foi incorporado porque mesmo pequenas elevações da creatinina se associam a pior prognóstico. Os mesmos parâmetros servem para estadiar a IRA de 1 a 3.",
+    commentary: "Creatinina acima de 1,5 mg/dL (A): um valor absoluto não define IRA; o critério é a variação em relação ao basal.\n\nElevação de 0,5 mg/dL e duas vezes o basal em 12 horas de oligúria (B): os números estão errados; a elevação mínima é 0,3 mg/dL, a relativa é 1,5 vez, e a oligúria conta a partir de 6 horas (dobrar a creatinina já é estágio 2).\n\nJanelas trocadas e 0,3 mL/kg/h (D): o aumento de 0,3 mg/dL vale em 48 horas e o de 1,5 vez em 7 dias; débito abaixo de 0,3 mL/kg/h é critério de estágio 3, não de definição.",
+    tip: "KDIGO: creatinina +0,3 em 48 h, ou 1,5 vez em 7 dias, ou diurese < 0,5 mL/kg/h por 6 h.",
     reference: 'Khwaja A. KDIGO clinical practice guidelines for acute kidney injury. Nephron Clin Pract. 2012;120(4):c179-84. Palevsky PM, Liu KD, Brophy PD, Chawla LS, Parikh CR, Thakar CV, et al. KDOQI US commentary on the 2012 KDIGO clinical practice guideline for acute kidney injury. Am J Kidney Dis. 2013;61(5):649-72.',
     tags: ['nefrologia']
   },
@@ -76,8 +80,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Solicitar eletromiografia para avaliar neuropatia relacionada ao diabetes como a principal causa da dor.'
     ],
     correctAnswer: 0,
-    explanation: 'O fortalecimento do quadríceps e medidas não farmacológicas são pilares no tratamento da osteoartrite de joelhos.',
-    commentary: 'A denominação mais aceita internacionalmente da doença é osteoartrite. O termo artrose ainda é muito utilizado, conhecido e associado aos aspectos mecânicos. É uma afecção dolorosa das articulações que ocorre por insuficiência da cartilagem, ocasionada por um desequilíbrio entre a formação e a destruição dos seus principais elementos, associada a uma variedade de condições como: sobrecarga mecânica, alterações bioquímicas da cartilagem e membrana sinovial e fatores genéticos. O tratamento deve ser multidisciplinar e buscar a melhora funcional, mecânica e clínica. O tratamento não farmacológico incluí programas educativos para o paciente, motivando e envolvendo o paciente no programa de reabilitação. Orientação para cuidados com relação ao uso de rampas e escadas; e com relação à ergonomia do trabalho doméstico e/ou profissional. A cinesioterapia tem por objetivo o fortalecimento, com ganho de massa muscular; especificamente o fortalecimento do músculo quadríceps, deve ser feito nas artrites do joelho. Assim como condicionamento físico, com alongamento e exercícios aeróbios.',
+    explanation: "Dor mecânica nos joelhos (piora ao subir escadas e com esforço), rigidez matinal curta, crepitação grosseira e limitação de movimento em mulher obesa acima dos 50 anos fecham o quadro clínico de osteoartrite. O diagnóstico é clínico e não exige exame para ser estabelecido.\n\nA base do tratamento é não farmacológica: educação, perda de peso e exercício. O fortalecimento do quadríceps diminui a carga sobre a articulação e melhora dor e função, e o treino de equilíbrio e propriocepção reduz instabilidade e quedas. Analgésicos e anti-inflamatórios tópicos entram como complemento, e não no lugar dessas medidas.",
+    commentary: "Dieta pobre em purinas e álcool (B): é orientação para gota, doença inflamatória com crises de artrite aguda, quadro diferente do descrito.\n\nDensitometria óssea (C): avalia osteoporose, que não causa dor articular nem crepitação; não investiga a causa da dor no joelho.\n\nEletromiografia (D): a paciente nega parestesias, e a dor ligada ao esforço com crepitação é articular, não neuropática.",
+    tip: "Osteoartrite de joelho: o primeiro tratamento é exercício (quadríceps) e perda de peso.",
     reference: 'Pendleton A, Ardeu N, Dougados M, et al. EULAR recommendations for the management of knee osteoarthritis: report of a task force of the Standing Committee for International Clinical Studies Including Therapeutic Trials (ESCISIT). Ann Rheum Dis 59:936-44, 2000.',
     tags: ['reumatologia', 'ortopedia']
   },
@@ -92,8 +97,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Demência vascular'
     ],
     correctAnswer: 1,
-    explanation: 'A tríade de flutuação cognitiva, alucinações visuais e parkinsonismo é típica da Demência por Corpos de Lewy.',
-    commentary: 'Os sintomas apresentados são característicos da demência por corpos de Lewy. Nesse caso são descritos: flutuação cognitiva com variação acentuada da atenção, alucinações visuais, transtorno comportamental do sono REM e sinais de parkinsonismo ao exame clínico, além dos déficits nas funções executivas e capacidade visuoespacial (dificuldade em dirigir e estacionar o carro). Dois ou mais desses critérios principais fazem com que o diagnóstico de Lewy seja altamente provável. A ressonância magnética mostra grau de atrofia do lobo temporal medial (MTA 2) e microangiopatia leve (Fazekas 1). Essas alterações são esperadas em pacientes acima de 80 anos.',
+    explanation: "O idoso tem demência com flutuação marcante da atenção, alucinações visuais bem formadas, sono agitado (sugere distúrbio de comportamento no sono REM) e parkinsonismo (rigidez axial e bradicinesia). Esses são justamente os quatro achados centrais da demência com corpos de Lewy; dois deles já tornam o diagnóstico provável.\n\nA dificuldade para dirigir e estacionar aponta para déficit visuoespacial e executivo, também típico dessa demência no início, quando a memória pode estar relativamente poupada. A ressonância mostra apenas alterações esperadas para a idade. Na prática, esses pacientes são muito sensíveis a antipsicóticos, que devem ser evitados; os inibidores da colinesterase costumam ajudar.",
+    commentary: "Demência frontotemporal (A): começa com mudança de comportamento ou de linguagem, em geral antes dos 65 anos, sem alucinações visuais e sem parkinsonismo precoce.\n\nDoença de Alzheimer (C): começa com perda de memória recente e progressão gradual, sem grande flutuação, e o parkinsonismo e as alucinações aparecem só em fases avançadas; a atrofia temporal medial aqui é compatível com a idade.\n\nDemência vascular (D): exige doença cerebrovascular relevante na imagem e evolução relacionada a eventos vasculares; Fazekas 1 indica apenas alteração leve de substância branca.",
+    tip: "Corpos de Lewy: flutuação + alucinações visuais + parkinsonismo + transtorno do sono REM. Evite antipsicóticos.",
     reference: 'Tratado de Geriatria e Gerontologia - Quinta edição - Freitas & Py - Guanabara Koogan 2022. Geriatria Prática Clínica - Segunda edição - Duarte & Amaral - Manole 2023.',
     tags: ['geriatria', 'neurologia']
   },
@@ -108,8 +114,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Fator Reumatoide e a realização do exame de capilaroscopia periungueal.'
     ],
     correctAnswer: 1,
-    explanation: 'Fenômeno de Raynaud e espessamento cutâneo sugerem Esclerose Sistêmica; FAN e capilaroscopia são exames fundamentais.',
-    commentary: 'Considerado um sinal de alerta para a esclerose sistêmica, o fenômeno de Raynaud é uma das manifestações mais iniciais, podendo estar presente vários anos antes do surgimento dos demais sintomas. A presença do fenômeno de Raynaud deve, portanto, levantar a suspeição quanto à possibilidade do diagnóstico de esclerose sistêmica. Sugere-se, para a sua investigação, a pesquisa de autoanticorpos nucleares (FAN) e a realização do exame de capilaroscopia periungueal. Ambos os exames, quando alterados, aumentam fortemente a possibilidade do diagnóstico da doença.',
+    explanation: "Fenômeno de Raynaud (dedos que ficam roxos no frio), mãos inchadas e espessamento da pele em mulher de 40 anos sugerem esclerose sistêmica. O Raynaud pode anteceder em anos as demais manifestações, e as mãos edemaciadas (\"puffy hands\") são uma fase inicial da doença.\n\nOs exames que mais ajudam são o FAN, positivo na grande maioria dos pacientes (com os autoanticorpos específicos anticentrômero e anti-Scl-70 na sequência), e a capilaroscopia periungueal, que mostra o padrão esclerodérmico de capilares dilatados e áreas sem capilares. Ambos fazem parte dos critérios classificatórios e ajudam a separar o Raynaud secundário do primário.",
+    commentary: "FAN e ultrassonografia de mãos (A): o FAN é útil, mas a ultrassonografia avalia sinovite e tendões e não confirma esclerose sistêmica.\n\nFator reumatoide e radiografia de mãos (C): são exames voltados para artrite reumatoide; o fator reumatoide é pouco específico, e a radiografia não identifica a doença inicial.\n\nFator reumatoide e capilaroscopia (D): a capilaroscopia é adequada, mas o fator reumatoide não é o autoanticorpo de triagem da esclerose sistêmica.",
+    tip: "Raynaud + mãos inchadas + pele espessa: peça FAN e capilaroscopia periungueal (esclerose sistêmica).",
     reference: 'Livro da Sociedade Brasileira de Reumatologia, 2ª edição, capítulo de Esclerose Sistêmica. Cartilha SBR – Esclerose Sistêmica.',
     tags: ['reumatologia']
   },
@@ -124,8 +131,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Hidrocefalia de pressão normal'
     ],
     correctAnswer: 3,
-    explanation: 'A tríade clássica de Hakim-Adams (apraxia de marcha, incontinência urinária e demência) caracteriza a Hidrocefalia de Pressão Normal.',
-    commentary: 'A hidrocefalia de pressão normal (HPN), também conhecida como hidrocefalia de pressão normal idiopática (HPNI), é uma condição caracterizada pelos sinais clínicos da hidrocefalia (isto é, apraxia da marcha sem resposta à levodopa, com ou sem incontinência urinária ou comprometimento cognitivo), mas sem aumento significativo na pressão do líquido cefalorraquidiano (LCR), conforme medição por punção lombar. A despeito disso, a condição responde à redução na pressão do LCR e/ou a um procedimento de derivação desse mesmo líquido.',
+    explanation: "A tríade de Hakim (alteração da marcha com quedas, incontinência urinária e declínio cognitivo) é a apresentação da hidrocefalia de pressão normal. O que chama a atenção é a marcha e a incontinência surgirem logo no começo, junto com o déficit cognitivo, o que não acontece nas demências degenerativas comuns.\n\nA imagem mostra ventrículos dilatados sem atrofia proporcional dos sulcos, e a punção lombar tem pressão normal. A melhora da marcha depois da retirada de líquor (tap test) ajuda a selecionar quem se beneficia da derivação ventriculoperitoneal; por ser uma causa tratável de demência, não pode passar despercebida.",
+    commentary: "Demência frontotemporal (A): começa com alteração de comportamento ou de linguagem; distúrbio de marcha e incontinência precoces não são típicos.\n\nDoença de Alzheimer (B): a perda de memória domina por anos, e quedas e incontinência só aparecem em fases avançadas.\n\nDemência vascular (C): pode ter alteração de marcha e incontinência, mas em geral com história de AVC, fatores de risco e déficits focais; a tríade de instalação conjunta sugere mais hidrocefalia de pressão normal.",
+    tip: "Marcha alterada + incontinência + demência (\"wacky, wobbly, wet\") = hidrocefalia de pressão normal, causa tratável.",
     reference: 'Normal Pressure Hidrocephalis - uptodate.com. Acta Neurochir Suppl Acta Neurochir Suppl. 2002:81:93-7. Neurosurgery. 2005;57(Suppl 3):S2-1-S2-52.',
     tags: ['neurologia', 'geriatria']
   },
@@ -140,8 +148,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Parassonia, distúrbio do sono não-REM, discutir medicamentos para aprofundar o sono do paciente.'
     ],
     correctAnswer: 2,
-    explanation: 'Uma crise única com risco de recorrência > 60% em 10 anos (como no caso de lesão estrutural prévia - AVC) define epilepsia e justifica tratamento.',
-    commentary: 'Primeiramente estamos diante de uma crise epiléptica, não AVC nem parassonia. E numa primeira crise epiléptica, deve-se tratar preventivamente justamente quando há confirmação de lesão estrutural, no caso o paciente teve AVC prévio.',
+    explanation: "O paciente teve uma crise epiléptica não provocada, um ano depois de um AVC no território da artéria cerebral média direita. A cicatriz cortical do AVC é uma lesão estrutural remota que torna o cérebro propenso a novas crises.\n\nPela definição prática da ILAE, uma única crise não provocada já caracteriza epilepsia quando o risco de recorrência é alto (como na lesão estrutural prévia). Por isso, nesse cenário, indica-se iniciar fármaco antiepiléptico já após o primeiro evento. Crise que ocorre durante o sono também é fator que aumenta a chance de recorrência.",
+    commentary: "Não iniciar fármaco por ser o primeiro evento (A): essa conduta vale para a primeira crise sem fatores de risco; com lesão estrutural prévia o risco de recorrência é alto e o tratamento é indicado.\n\nNovo AVC (B): o quadro foi de crise convulsiva, sem déficit focal novo descrito; a crise tardia pós-AVC decorre da cicatriz antiga, embora a imagem ajude a afastar lesão nova.\n\nParassonia (D): parassonias do sono não REM são comuns na infância e não produzem crise convulsiva; aprofundar o sono não é tratamento de epilepsia.",
+    tip: "Primeira crise + lesão estrutural prévia (AVC antigo) = epilepsia: já inicie antiepiléptico.",
     reference: 'Classificação das epilepsias da ILAE: Relatório da Comissão de Classificação e Terminologia da ILAE. Epilepsia, 58(4):512-521, 2017 Doi:10.111/epi.13709',
     tags: ['neurologia']
   },
@@ -156,8 +165,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Deve-se suspeitar de insuficiência adrenal, dosar eletrólitos (pode apresentar hiponatremia e hipoglicemia), se possível dosar cortisol, ACTH, e imediatamente fazer hidratação e reposição de sódio e hidrocortisona EV.'
     ],
     correctAnswer: 3,
-    explanation: 'A hiperpigmentação indica Insuficiência Adrenal Primária (↑ACTH/MSH). Em crise adrenal, o tratamento deve ser imediato com hidratação e hidrocortisona venosa.',
-    commentary: 'A insuficiência adrenal decorre da destruição do parênquima adrenal por infiltração metastática, apresenta-se como insuficiência adrenal primária (com queda de cortisol e aldosterona), levando a perda de peso, inapetência, piorando com náusea, vômitos, hipoglicemia, hipotensão, hiponatremia e choque hipovolêmico. Como há queda do cortisol e aumento de ACTH e α-MSH (derivados da pro-opiomelanocortina -POMC) por liberação do eixo hipotálamo-hipófise, há consequente hiperpigmentação progressiva da pele em região de dobras e de mucosas. No ambiente do pronto atendimento (insuficiência adrenal aguda) deve-se dar suporte de urgência com hidratação, reposição de sódio e glicose, e administração de hidrocortisona EV na dose inicial de 100mg, mantendo 50mg de 6 em 6 hora para tratamento da crise adrenal. Para tratamento da insuficiência adrenal crônica administrar glicocorticoide (prednisona ou prednisolona na dose de 5mg pela manhã e 2,5mg após almoço), e mineralocorticoide (fludrocortisona 0,05 a 0,2mg ao dia).',
+    explanation: "O paciente perdeu uma adrenal por metástase de câncer de próstata e agora tem emagrecimento, náuseas, vômitos, desidratação, lipotimia e escurecimento da pele em dobras e gengiva. A infiltração metastática da adrenal restante leva a insuficiência adrenal primária. A hiperpigmentação indica a origem adrenal: com cortisol baixo, a hipófise produz mais POMC, que gera ACTH e MSH.\n\nA infecção urinária precipitou uma crise adrenal. Os exames esperados são hiponatremia, hipercalemia e hipoglicemia, com cortisol baixo e ACTH alto, mas a coleta não pode atrasar o tratamento: soro fisiológico, glicose se necessário e hidrocortisona intravenosa (100 mg em bolus e depois 50 mg a cada 6 horas, ou dose equivalente). Depois da fase aguda, faz-se a reposição oral de glicocorticoide e fludrocortisona.",
+    commentary: "ACTH baixo e prednisona (A): na insuficiência primária o ACTH está alto; e na crise adrenal o corticoide deve ser hidrocortisona venosa, não prednisona oral.\n\nHiperpigmentação na insuficiência secundária (B): na causa hipofisária o ACTH está baixo e não há hiperpigmentação; além disso, a fludrocortisona não é necessária na forma secundária, e a crise pede hidrocortisona venosa.\n\nTeste de supressão com dexametasona (C): investiga excesso de cortisol (síndrome de Cushing), o oposto do quadro apresentado.",
+    tip: "Hiperpigmentação + hiponatremia + hipercalemia = Addison (ACTH alto). Crise adrenal: soro + hidrocortisona EV já.",
     reference: 'Vilar L. Endocrinologia Clínica. 7 ed. Rio de Janeiro, Editora: Guanabara Koogan, 2022. Bandeira F. Protocolos Clínicos em endocrinologia e diabetes. 3 ed. Rio de Janeiro, Editora guanabara Koogan, 2019',
     tags: ['endocrinologia', 'emergência']
   },
@@ -172,8 +182,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Etambutol'
     ],
     correctAnswer: 0,
-    explanation: 'O teste rápido molecular (GeneXpert) detecta especificamente a resistência à Rifampicina.',
-    commentary: 'Desde dezembro de 2010, a OMS recomendou o uso do teste GenXpert ou TRM-TB (teste rápido molecular) em países com tuberculose endêmica. O teste tem como base a reação em cadeia da polimerase (PCR) em tempo real e torna possível o diagnóstico de tuberculose e a detecção de resistência à rifampicina simultaneamente, a partir de amostras clínicas, em algumas horas.',
+    explanation: "O teste rápido molecular para tuberculose (TRM-TB, plataforma GeneXpert) é um PCR em tempo real que, em poucas horas, identifica o DNA do complexo Mycobacterium tuberculosis e procura mutações na região do gene rpoB, associadas à resistência à rifampicina.\n\nA rifampicina é o principal fármaco do esquema básico, e a resistência a ela funciona como marcador de tuberculose multirresistente. Por isso o resultado \"rifampicina resistente\" exige encaminhamento para referência, cultura e teste de sensibilidade completo. O TRM-TB é o exame inicial de escolha para diagnóstico de tuberculose pulmonar no Brasil.",
+    commentary: "Isoniazida (B): o TRM-TB convencional não avalia resistência a ela; a resistência à isoniazida é vista por cultura com teste de sensibilidade ou por testes moleculares específicos.\n\nPirazinamida (C): não é testada pelo TRM-TB; sua sensibilidade é avaliada em cultura.\n\nEtambutol (D): também não faz parte do que o TRM-TB detecta.",
+    tip: "TRM-TB (GeneXpert): detecta o bacilo e a resistência à rifampicina (gene rpoB).",
     reference: 'Salomão, Reinaldo Infectologia: Bases clínicas e tratamento / Reinaldo Salomão - 1. ed. - Rio de Janeiro: Guanabara Koogan, 2017 (252-264). Brasil, Ministério da Saúde, Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. Manual de recomendações para o controle de tuberculose no Brasil; 2ª edição; 2022.',
     tags: ['infectologia']
   },
@@ -188,8 +199,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Manter valproato e realizar ressonância magnética de encéfalo.'
     ],
     correctAnswer: 2,
-    explanation: 'Em uma primeira crise sem fatores de risco para recorrência (neuroimagem e laboratório normais), o tratamento medicamentoso não é recomendado.',
-    commentary: 'O paciente teve uma primeira crise convulsiva, foi investigado, e nenhuma causa foi detectada. Evolui bem, voltando ao seu estado basal. A literatura recomenda o uso de antiepiléticos nesta situação somente na presença de qualquer uma das alterações a seguir: (1) anormalidades epileptiformes no EEG interictal; (2) causa remota identificada na anamnese (história de tumor cerebral ou infecções); (3) alterações de exame neurológico, como deficitis focais e alterações cognitivas; (4) se a crise aconteceu durante o sono.',
+    explanation: "O rapaz teve uma crise única, investigada sem causa aguda, tem exame físico normal e não há relato de lesão cerebral prévia, alteração no EEG nem crise durante o sono. Nessa situação, o risco de nova crise é relativamente baixo, e o protocolo do Ministério da Saúde não recomenda manter antiepiléptico após uma única crise sem fatores de risco.\n\nO valproato foi iniciado sem indicação clara e ainda traz efeitos adversos relevantes (ganho de peso, tremor, toxicidade hepática e teratogenicidade). A conduta é retirá-lo e reavaliar, orientando o paciente a procurar atendimento se houver nova crise; uma segunda crise não provocada define epilepsia e indica tratamento.",
+    commentary: "Otimizar a dose de valproato (A): não há indicação de tratar, então aumentar a dose expõe o paciente a efeitos adversos sem benefício.\n\nManter a dose (B): manter o fármaco sem indicação também não é recomendado após primeira crise sem fatores de risco.\n\nManter valproato e pedir ressonância (D): a ressonância pode completar a investigação, mas não justifica manter o antiepiléptico em um paciente sem critérios para tratamento.",
+    tip: "Primeira crise sem causa e sem fator de risco (EEG, lesão, exame, sono): não trate; espere a segunda.",
     reference: 'Tratado de Neurologia da Academia Brasileira de Neurologia, 2ª edição.',
     tags: ['neurologia']
   },
@@ -204,8 +216,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Apenas o uso de prednisona na dose de 1mg/kg/dia e protetor gástrico.'
     ],
     correctAnswer: 1,
-    explanation: 'Na PTI crônica com plaquetas > 20.000-30.000 e sem sangramento ativo, a conduta expectante é aceitável.',
-    commentary: 'Apenas devemos tratar pacientes com plaquetopenia < 20.000/mm3 e com manifestação hemorrágica, pacientes com contagem de plaquetas > 20.000/mm3 sangue sem sangramentos podem ser acompanhados ambulatorialmente, com orientação para não utilizar medicamentos que afetem a atividade plaquetária como o ácido acetilsalicílico.',
+    explanation: "O paciente tem púrpura trombocitopênica imune com mais de 6 meses de evolução (forma crônica), plaquetas em 65.000/mm³ e nenhum sangramento há 2 meses. O objetivo do tratamento na PTI é evitar sangramento grave, e não normalizar a contagem de plaquetas.\n\nCom plaquetas acima de 20.000 a 30.000/mm³ e sem sangramento, a conduta é observar, com hemogramas periódicos e orientação para evitar AAS, anti-inflamatórios e outros fármacos que prejudicam a função plaquetária. O tratamento com corticoide, imunoglobulina ou outras linhas fica para quem sangra ou tem plaquetas muito baixas.",
+    commentary: "Transfusão de plaquetas e prednisona (A): as plaquetas transfundidas são destruídas rapidamente pelos anticorpos; a transfusão é reservada para sangramento grave, e o corticoide não está indicado sem sangramento com essa contagem.\n\nImunoglobulina e prednisona (C): é tratamento para sangramento ou contagens muito baixas; a dose também está incorreta (o habitual é 1 g/kg por 1 a 2 dias, ou 0,4 g/kg por 5 dias).\n\nPrednisona isolada (D): expõe o paciente aos efeitos adversos do corticoide sem benefício, já que ele não sangra e tem plaquetas em nível seguro.",
+    tip: "PTI: trate o paciente que sangra, não o número. Plaquetas acima de 20-30 mil sem sangramento: observar.",
     reference: 'Protocolo clínico e diretrizes terapêuticas da púrpura trombocitopênica idiopática. Brasil. Ministério da Saúde. Secretaria de Ciência, Tecnologia, Inovação e Insumos Estratégicos em Saúde. Departamento de Gestão e Incorporação de Tecnologias e Inovação em Saúde. Protocolo Clínico e Diretrizes Terapêuticas da Púrpura Trombocitopênica Idiopática [recurso eletrônico] / Ministério da Saúde, Secretaria de Ciência, Tecnologia, Inovação e Insumos Estratégicos em Saúde, Departamento de Gestão e Incorporação de Tecnologias e Inovação em Saúde. – Brasília: Ministério da Saúde, 2020.44 p',
     tags: ['hematologia']
   },
@@ -220,8 +233,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) O grau de dispneia e o número de exacerbações no último ano norteiam as decisões terapêuticas.'
     ],
     correctAnswer: 3,
-    explanation: 'A classificação GOLD (A, B, E) baseia-se nos sintomas (mMRC ou CAT) e no histórico de exacerbações.',
-    commentary: '(A) As medidas não farmacológicas citadas melhoram prognóstico e evolução da DPOC. (B) A combinação de LABA (beta agonista de longa ação) e LAMA (antimuscarínicos de longa ação) é o tratamento de escolha para pacientes GOLD B e E. (C) Pelo MRC 1 apenas, o paciente seria Gold A, porém uma exacerbação que exige internação já o torna exacerbador, Gold E. O tratamento é LABA + LAMA com ou sem corticóide inalatório, e não apenas medicação de resgate. (D) Correta',
+    explanation: "Na estratégia GOLD, o tratamento inicial da DPOC estável é escolhido pela combinação de dois critérios: a intensidade dos sintomas (dispneia pelo mMRC ou escore CAT) e a história de exacerbações no último ano. Assim se formam os grupos A, B e E.\n\nQuem tem duas ou mais exacerbações moderadas, ou uma que levou à internação, é do grupo E e recebe LAMA mais LABA, acrescentando corticoide inalatório se os eosinófilos forem altos. Os grupos A e B dependem dos sintomas: broncodilatador para o A e dupla broncodilatação de longa ação para o B. Os eosinófilos no sangue também ajudam a decidir o uso de corticoide inalatório.",
+    commentary: "Medidas não farmacológicas só aliviam sintomas (A): parar de fumar e a oxigenoterapia prolongada (quando indicada) reduzem mortalidade, e vacinas e reabilitação diminuem exacerbações e internações; há impacto no prognóstico.\n\nDupla broncodilatação contraindicada (B): LAMA mais LABA é o esquema recomendado para os grupos B e E, sem aumento relevante de risco cardiovascular.\n\nMedicação só nas crises após internação (C): uma internação por exacerbação já coloca o paciente no grupo E, que precisa de tratamento de manutenção com broncodilatadores de longa ação, mesmo com dispneia leve.",
+    tip: "GOLD: sintomas (mMRC/CAT) + exacerbações no último ano definem A, B ou E. Uma internação já é grupo E.",
     reference: 'Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Pulmonary Disease. 2023.',
     tags: ['pneumologia']
   },
@@ -236,15 +250,16 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) VDRL negativo e FTA-ABs positivos descartam o diagnóstico de sífilis e não há necessidade de solicitar outro exame confirmatório.'
     ],
     correctAnswer: 2,
-    explanation: 'A combinação de um teste treponêmico (FTA-Abs) e um não treponêmico (VDRL) reagentes confirma o diagnóstico de sífilis.',
-    commentary: 'O VDRL (Veneral Disease Research Laboratory) é um teste não treponêmico que costuma ficar positivo 2-6 semanas após a contaminação; em que a amostra reagente no teste qualitativo é testada com o teste quantitativo para determinar o título, ou seja, a maior diluição da amostra que ainda é reagente (Ex: 1:2; 1:4; 1:16; 1:32). Quando a amostra não é reagente no teste qualitativo, não precisa de diluição para quantificação de anticorpos. A queda adequada dos títulos é indicativa de sucesso do tratamento. O monitoramento deve ser, portanto, realizado com o teste não treponêmico. Geralmente resultados falsopositivos (<1/8) podem ser vistos em até 2% da população sem a doença, portanto, valores acima de 1/16 devem ser considerados. Entre os testes treponêmicos há o FTA-Abs (teste de imunofluorescência indireta), e pode ser positivo entre 7-10 dias após o aparecimento do cancro duro. Ao contrário do VDRL que pode ficar negativo após alguns anos, uma vez positivo o FTAAbs, assim permanecerá, mesmo após a cura. Para estabelecer o diagnóstico de sífilis são necessários 2 testes imunológicos (1 treponêmico e 1 não treponêmico). Se FTA-ABs e VDRL reagentes, pode tratar-se de sífilis ativa, latente ou cicatriz sorológica de sífilis tratada. Se VDRL negativo e FTA-ABs positivo, deve-se realizar um terceiro teste treponêmico com metodologia diferente do primeiro. Se não reagente, pode ser resultado falso reagente para o primeiro teste, podendo excluir o diagnóstico de sífilis. Se reagente, suspeita-se de sífilis recente ou tardia, sifilis tratada, caso haja documentação de tratamento adequado.',
+    explanation: "O diagnóstico de sífilis usa dois tipos de teste. O não treponêmico (VDRL) detecta anticorpos contra lipídios liberados pela lesão celular, é quantitativo e serve para acompanhar o tratamento, já que os títulos caem com a cura. O treponêmico (FTA-ABs, testes rápidos) detecta anticorpos contra o Treponema pallidum e costuma ficar positivo pelo resto da vida.\n\nQuando os dois são reagentes, o caso é considerado sífilis e, se não houver registro de tratamento adequado anterior, deve ser tratado. Na neurossífilis, que entra no diagnóstico diferencial das demências, a confirmação exige ainda a análise do líquor (VDRL no líquor, celularidade e proteínas).",
+    commentary: "VDRL positivo e FTA-ABs negativo como cicatriz (A): um teste não treponêmico reagente com treponêmico não reagente sugere falso positivo do VDRL; cicatriz sorológica é o padrão oposto (treponêmico positivo e VDRL baixo ou negativo).\n\nSó VDRL acima de 1/64 (B): não existe esse ponto de corte; qualquer título reagente deve ser confirmado com teste treponêmico, e títulos baixos ocorrem na sífilis latente e tardia.\n\nTreponêmico reagente com VDRL não reagente descartando sífilis (D): esse padrão pode ser sífilis muito recente, sífilis tardia ou tratada, ou falso positivo; recomenda-se um segundo teste treponêmico de outra metodologia, e não se descarta a doença.",
+    tip: "Sífilis: VDRL acompanha o tratamento; o treponêmico fica positivo para sempre. Os dois reagentes sem tratamento prévio: tratar.",
     reference: 'https://www.saude.sp.gov.br/resources/crt/eventos/transmissao-vertical-da-sifilis/2-webinar10032021/diagnosticolaboratorialdasifilis_edilene_10032021.p df',
     tags: ['infectologia']
   },
   {
     id: 'tp2024-36',
     module: 'Clínica Médica',
-    text: 'Mulher, 37 anos, apresenta obesidade centrípeta, depósitos de gordura na região da coluna cervicotorácica (“giba de búfalo”) e na região supraclavicular, assim como rosto arredondado ("face de lua cheia"). Outros achados clínicos relevantes foram pele fina, estrias violáceas no abdômen e hipertensão arterial. Os exames laboratoriais revelaram cortisol urinário = 507-773mg/24h (normal = 30 a 300mg/24h), e uma tomografia computadorizada do abdome indicou hiperplasia macronodular bilateral das adrenais, com dois nódulos grandes, proeminentes, bilaterais, de 3 e 3,5cm no maior diâmetro. O estudo anatomopatológico demonstrou que os nódulos eram compostos por células claras que apresentavam monotonia nuclear, achado típico de células do córtex adrenal. A hipótese diagnóstica mais condizente é:',
+    text: 'Mulher, 37 anos, apresenta obesidade centrípeta, depósitos de gordura na região da coluna cervicotorácica (“giba de búfalo”) e na região supraclavicular, assim como rosto arredondado ("face de lua cheia"). Outros achados clínicos relevantes foram pele fina, estrias violáceas no abdômen e hipertensão arterial. Os exames laboratoriais revelaram cortisol urinário = 507-773µg/24h (normal = 30 a 300µg/24h), e uma tomografia computadorizada do abdome indicou hiperplasia macronodular bilateral das adrenais, com dois nódulos grandes, proeminentes, bilaterais, de 3 e 3,5cm no maior diâmetro. O estudo anatomopatológico demonstrou que os nódulos eram compostos por células claras que apresentavam monotonia nuclear, achado típico de células do córtex adrenal. A hipótese diagnóstica mais condizente é:',
     options: [
       '(A) Tumor hipofisário, o qual induz à maior liberação de ACTH pela adenoipófise, o que leva à hiperplasia das adrenais e, consequentemente, a uma baixa concentração plasmática de cortisol.',
       '(B) Doença de Addison, em que se observa uma hipofunção adrenocortical e que, no paciente em questão, trata-se de uma endocrinopatia de etiologia autoimune com baixa produção mineralocorticoide.',
@@ -252,8 +267,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Síndrome de Cushing, caracterizada pela hiperfunção adrenocortical, nesse caso resultante da produção excessiva de cortisol associada ao desenvolvimento de nódulos adrenais.'
     ],
     correctAnswer: 3,
-    explanation: 'As estrias violáceas, obesidade centrípeta e ↑cortisol livre urinário confirmam o diagnóstico de Síndrome de Cushing.',
-    commentary: 'O enunciado apresenta achados clínicos e laboratoriais compatíveis com a Síndrome de Cushing. Essa síndrome é resultante da hipersecreção de cortisol por parte do córtex das glândulas adrenais, e o excesso desse hormônio leva a depósitos abdominais, torácicos e faciais de gordura. A medição de cortisol na urina, como apresentado no enunciado da questão, é um indicativo da quantidade de cortisol sérico não ligado (ou livre) e constitui um auxílio no diagnóstico da hiperatividade suprarrenal. Essa hiperatividade, no caso considerado, é resultante da hiperplasia macronodular bilateral apresentada pela paciente.',
+    explanation: "Obesidade centrípeta, giba de búfalo, preenchimento supraclavicular, face de lua cheia, pele fina, estrias violáceas e hipertensão compõem o quadro clínico do hipercortisolismo. O cortisol livre urinário bem acima do limite superior confirma a produção excessiva do hormônio: é a síndrome de Cushing.\n\nA causa aqui está na própria adrenal: a hiperplasia macronodular bilateral, com nódulos de células corticais, produz cortisol de forma autônoma, sem depender do ACTH (Cushing ACTH-independente). Na investigação, o cortisol não suprime com dexametasona e o ACTH plasmático tende a ficar baixo, o que separa essa forma das causas hipofisárias e ectópicas.",
+    commentary: "Tumor hipofisário (A): o adenoma produtor de ACTH (doença de Cushing) estimula as adrenais e eleva o cortisol, não o reduz; além disso, causa hiperplasia difusa, e a paciente tem cortisol urinário alto.\n\nDoença de Addison (B): é o oposto, com falta de cortisol e aldosterona; cursa com fraqueza, hipotensão, hiperpigmentação e perda de peso, nada parecido com o quadro descrito.\n\nHiperaldosteronismo primário (C): explica hipertensão (em geral com hipocalemia), mas não produz o fenótipo cushingoide nem eleva o cortisol urinário.",
+    tip: "Fenótipo cushingoide + cortisol urinário alto + nódulos adrenais bilaterais = Cushing ACTH-independente.",
     reference: 'PEREIRA, M.A.A.; ARAÚJO, R.S.; BISI, H. Síndrome de Cushing Associada à Hiperplasia Macronodular das Adrenais. Apresentação de um Caso e Revisão da Literatura. Arq Bras Endocrinol Metab, 45 (6): 619-627, 2001. KRONENBERG, H.M.; MELMED, S.; POLONSKY, K.S; LARSEN, P. R. Williams Tratado de Endocrinologia. 11. ed. Rio de Janeiro: Elsevier, 2010. 1532 p. MOLINA, P.E. Fisiologia Endócrina. 5. ed. São Paulo: Mc Graw Hill Brasil, 2021. 320 p.',
     tags: ['endocrinologia']
   },
@@ -268,8 +284,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Espirometria'
     ],
     correctAnswer: 2,
-    explanation: 'A ecocardiografia transtorácica é o exame de triagem (rastreio inicial) preferencial para suspeita de Hipertensão Pulmonar.',
-    commentary: 'Na avaliação de uma suspeita de hipertensão pulmonar o eletrocardiograma, espirometria e a radiografia de tórax são exames úteis, porém irão evidenciar apenas sinais inespecíficos e em algumas situações, principalmente em quadros iniciais podem ser normais. No algoritmo de investigação no caso de suspeita de hipertensão pulmonar o exame de escolha é a ecocardiografia. É um exame não invasivo de fácil acesso capaz de detectar sinais de alterações compatíveis independente da causa de base e mesmo em quadros iniciais.',
+    explanation: "Diante da suspeita de hipertensão pulmonar (dispneia aos esforços, dor torácica, tontura ou síncope), o primeiro exame recomendado pelas diretrizes é o ecocardiograma transtorácico. Ele é não invasivo, amplamente disponível e estima a probabilidade de hipertensão pulmonar pela velocidade do refluxo tricúspide e por sinais indiretos, como dilatação e disfunção do ventrículo direito e aumento do átrio direito. Também ajuda a achar a causa, como doença do coração esquerdo ou cardiopatia congênita.\n\nO diagnóstico definitivo, porém, é feito pelo cateterismo cardíaco direito: pela diretriz ESC/ERS de 2022, pressão média da artéria pulmonar acima de 20 mmHg.",
+    commentary: "Radiografia de tórax (A): pode mostrar artérias pulmonares centrais aumentadas e doença pulmonar associada, mas é pouco sensível e pode ser normal nas fases iniciais.\n\nEletrocardiograma (B): sinais de sobrecarga direita reforçam a suspeita, mas um traçado normal não afasta a doença; não serve para estimar a pressão pulmonar.\n\nEspirometria (D): faz parte da investigação etiológica (procura doença pulmonar como causa), mas não avalia a hemodinâmica pulmonar.",
+    tip: "Suspeitou de hipertensão pulmonar: ecocardiograma primeiro; quem confirma é o cateterismo direito.",
     reference: '2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension Developed by the task force for the diagnosis and treatment of pulmonary hypertension of the European Society of Cardiology (ESC) and the European Respiratory Society (ERS). Endorsed by the International Society for Heart and Lung Transplantation (ISHLT) and the European Reference Network on rare respiratory diseases (ERN-LUNG). Práticas Pneumológicas. 1ed.Rio de Janeiro: Di Livros Editora, 2022. Sociedade Brasileira de Pneumologia e Tisiologia. Classificação e avaliação diagnóstica da hipertensão pulmonar. J Bras Pneumol. 2005;31(2 Suppl):S1-S8.',
     tags: ['cardiologia', 'pneumologia']
   },
@@ -284,15 +301,16 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Anemia ferropriva; ferro sérico, ferritina, saturação de transferrina, sangue oculto nas fezes.'
     ],
     correctAnswer: 0,
-    explanation: 'Anemia microcítica com ↓VCM, ↑RDW e picacismo sugerem ferropenia. Em adultos com sintomas constitucionais, deve-se afastar neoplasia (colonoscopia).',
-    commentary: 'Sendo a doença mais comum do mundo, a anemia ferropriva é frequente na vida de qualquer médico e muitas vezes subestimada. Esse caso, com o picacismo (demonstrado pela mudança de dieta), a queda de cabelo e a queilite angular, acompanhado de uma anemia microcítica com RDW aumentado é um diagnóstico de livro de anemia ferropriva. No entanto é fundamental alguns conhecimentos aqui. Em primeiro lugar sobre como diagnosticar. Em um caso com alta probabilidade pré-teste, tendo como base anamnese e exame físico, o alto valor preditivo positivo e negativo da dosagem de ferritina a torna mais que suficiente para o diagnóstico, sendo os demais exames do ‘perfil de ferro’ ou ‘cinética de ferro’ opcionais e mais indicados em situação de suspeita de associação à anemia de inflamação. Por outro lado, pela perda ponderal e pelo fato de ser um homem, sem sangramento evidente, a investigação de doenças oncológicas é de suma importância. Nesse sentido, o tumor mais normalmente associado a anemia ferropriva é o câncer de cólon e a colonoscopia é essencial. Novamente, dado a alta probabilidade pré-teste para a doença, pela ocorrência da anemia ferropriva e da síndrome consumptiva, o sangue oculto não é recomendado, aqui estamos falando de abordagem diagnóstica e não screening.',
+    explanation: "Fraqueza, queda de cabelo, queilite angular e vontade de comer grãos crus (pica, aqui amilofagia) somados a anemia microcítica e hipocrômica com RDW alto e plaquetose reativa formam o retrato da anemia ferropriva.\n\nQuando a suspeita clínica é tão alta, a ferritina baixa sozinha basta para confirmar a falta de ferro; o perfil completo (ferro sérico, transferrina, saturação) é útil sobretudo quando há inflamação associada. O ponto principal da questão é a causa: homem adulto, sem sangramento visível e com perda de 12 kg tem ferropenia por perda digestiva oculta até prova em contrário, e o câncer colorretal precisa ser afastado com colonoscopia (com endoscopia digestiva alta, em geral, na mesma investigação).",
+    commentary: "Doença mieloproliferativa crônica (B): a plaquetose de 560 mil é reativa à ferropenia; não há esplenomegalia nem outras alterações que justifiquem biópsia de medula.\n\nAnemia da inflamação (C): costuma ser normocítica ou levemente microcítica, com RDW pouco alterado e ferritina normal ou alta; o quadro clínico aponta para falta de ferro.\n\nPerfil de ferro com sangue oculto (D): o diagnóstico está certo, mas a pesquisa de sangue oculto é exame de rastreamento; num paciente com anemia ferropriva e emagrecimento, um resultado negativo não afasta tumor, e a colonoscopia é obrigatória de qualquer forma.",
+    tip: "Homem ou mulher pós-menopausa com anemia ferropriva sem causa aparente: ferritina e endoscopia (colonoscopia + EDA).",
     reference: 'Auerbach, M. and Adamson, J.W. (2016), How we diagnose and treat iron deficiency anemia. Am. J. Hematol., 91: 31- 38. https://doi.org/10.1002/ajh.24201 Douglas K Rex et al. Colorectal Cancer Screening: Recommendations for Physicians and Patients From the U.S. Multi-Society Task Force on Colorectal Cancer. June 06, 2017DOI:https://doi.org/10.1053/j.gastro.2017.05.013',
     tags: ['hematologia', 'gastroenterologia']
   },
   {
     id: 'tp2024-39',
     module: 'Clínica Médica',
-    text: 'Mulher de 63 anos, natural e procedente de Manaus, apresenta cansaço, dor no corpo e discreta icterícia. Trabalha em serviços domésticos. Internou em hospital local para investigação diagnóstica. Ao exame clínico, foi observado discreto aumento do fígado (1,5cm do rebordo costal direito), de consistência endurecida; icterícia ++/4. Em análise laboratorial, foi constatado TGO de 200mg/dL (VR: inferior a 34U/L), TGP de 130mg/dL (VR: Mulheres: 10-37U/L), anti-HCV (+) com carga viral de 300.000UI. Desta forma:',
+    text: 'Mulher de 63 anos, natural e procedente de Manaus, apresenta cansaço, dor no corpo e discreta icterícia. Trabalha em serviços domésticos. Internou em hospital local para investigação diagnóstica. Ao exame clínico, foi observado discreto aumento do fígado (1,5cm do rebordo costal direito), de consistência endurecida; icterícia ++/4. Em análise laboratorial, foi constatado TGO de 200U/L (VR: inferior a 34U/L), TGP de 130U/L (VR: Mulheres: 10-37U/L), anti-HCV (+) com carga viral de 300.000UI. Desta forma:',
     options: [
       '(A) Deve ser solicitado exame de genotipagem, visando escolher o melhor tratamento entre os DAAs.',
       '(B) Devemos iniciar o tratamento com as drogas antivirais de ação direta (DAAs), não havendo necessidade de outros exames.',
@@ -300,15 +318,16 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) A genotipagem e a elastografia são fundamentais no prétratamento e devem ser realizadas.'
     ],
     correctAnswer: 1,
-    explanation: 'Atualmente, o tratamento da Hepatite C é pangenotípico e simplificado, sendo iniciado em todos os pacientes com viremia detectada.',
-    commentary: 'Por conta das drogas de ação direta pangenotípicas disponíveis no SUS, não há necessidade da realização do exame de genotipagem, da mesma forma que biopsia ou mesmo elastografia hepática pré-tratamento. Todos os pacientes com teste anti HCV positivo e carga viral detectada são elegíveis para o tratamento. Lembrando que a média de tempo do tratamento é de 12 semanas, com pelo menos 1 comprimido da associação medicamentosa ao dia, com poucos eventos adversos.',
+    explanation: "A paciente tem hepatite C com viremia detectável (anti-HCV reagente e carga viral positiva). Pelas recomendações atuais do Ministério da Saúde, toda pessoa com HCV-RNA detectável tem indicação de tratamento, independentemente do grau de fibrose ou do genótipo.\n\nCom os antivirais de ação direta pangenotípicos disponíveis no SUS (como sofosbuvir associado a velpatasvir), a genotipagem deixou de ser necessária para escolher o esquema, e a biópsia não é exigida para indicar o tratamento. O esquema típico dura 12 semanas, por via oral, com altas taxas de cura e poucos efeitos adversos. A avaliação de fibrose por escores simples (APRI, FIB-4) continua útil para identificar cirrose, que muda a duração do tratamento e exige rastreamento de carcinoma hepatocelular depois da cura.",
+    commentary: "Genotipagem para escolher o DAA (A): com os esquemas pangenotípicos, o genótipo não muda a escolha do tratamento na maioria dos pacientes.\n\nElastografia ou biópsia para decidir se trata (C): o grau de fibrose não define mais se a pessoa deve ser tratada; todos com viremia são tratados.\n\nGenotipagem e elastografia obrigatórias (D): nenhum dos dois é pré-requisito para iniciar o tratamento; exigir esses exames só atrasa o acesso.",
+    tip: "Hepatite C com carga viral detectável = tratar todos com DAA pangenotípico; genótipo e biópsia não são pré-requisito.",
     reference: 'Nota Técnica no. 30/2023 - CGAHV/DVIHV/SVSA/MSMinistério da Saúde -Secretaria de Vigilância em Saúde e Ambiente. Departamento de HIV/Aids, hepatites virais, tuberculose e infecções sexualmente transmissíveis – MS',
     tags: ['hepatologia', 'infectologia']
   },
   {
     id: 'tp2024-40',
     module: 'Clínica Médica',
-    text: 'Homem, 72 anos, diabético, hipertenso e dislipidêmico, com histórico de infarto do miocárdio há 6 meses, doença arterial periférica sintomática e doença renal crônica (ClCr estimado de 53mL/min/1,73m² – Valor de referência do clearance de creatinina: 75 a 115mL/min/1,73m²). Apresentou radbomiólise em uso de estatinas. Qual estatina deve ser recomendada no tratamento de dislipidemia em pacientes com disfunção renal?',
+    text: 'Homem, 72 anos, diabético, hipertenso e dislipidêmico, com histórico de infarto do miocárdio há 6 meses, doença arterial periférica sintomática e doença renal crônica (ClCr estimado de 53mL/min/1,73m² – Valor de referência do clearance de creatinina: 75 a 115mL/min/1,73m²). Apresentou rabdomiólise em uso de estatinas. Qual estatina deve ser recomendada no tratamento de dislipidemia em pacientes com disfunção renal?',
     options: [
       '(A) Pravastatina',
       '(B) Atorvastatina',
@@ -316,8 +335,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Rosuvastatina'
     ],
     correctAnswer: 0,
-    explanation: 'A pravastatina, por ser a alternativa de menor custo, é a estatina de escolha para estes pacientes.',
-    commentary: 'A pravastatina, por ser a alternativa de menor custo, é a estatina de escolha para estes pacientes. O tratamento da dislipidemia tem por objetivo final a redução de eventos cardiovasculares, incluindo mortalidade, bem como a prevenção de pancreatite aguda associada à hipertrigliceridemia grave.',
+    explanation: "O paciente tem risco cardiovascular muito alto (infarto recente, doença arterial periférica, diabetes e doença renal crônica) e, portanto, precisa de hipolipemiante, mas já teve rabdomiólise com estatina. Nessa situação, prefere-se uma estatina com menor potencial de toxicidade muscular e de interação medicamentosa.\n\nA pravastatina é hidrofílica e não é metabolizada pelo citocromo CYP3A4, o que reduz interações que elevam o nível do fármaco e o risco de miopatia. Com clearance em torno de 53 mL/min, pode ser usada sem ajuste, iniciando em dose baixa e com monitoramento de sintomas musculares e CK. Como é uma estatina de menor potência, a meta de LDL costuma exigir associação com ezetimiba.",
+    commentary: "Atorvastatina (B): quase não depende do rim e não exige ajuste na DRC, mas é metabolizada pelo CYP3A4 e é de maior potência, o que aumenta o risco muscular em quem já teve rabdomiólise.\n\nSinvastatina (C): é a mais associada a miopatia e rabdomiólise, sobretudo em doses altas e com interações pelo CYP3A4; deve ser evitada nesse paciente.\n\nRosuvastatina (D): é de alta potência, tem eliminação renal relevante e exige redução de dose na disfunção renal avançada; após rabdomiólise, não é a primeira escolha.",
+    tip: "Estatina após miopatia: hidrofílica e fora do CYP3A4 (pravastatina), dose baixa, CK de controle e ezetimiba se preciso.",
     reference: 'Dislipidemia na Prática Clínica. Renato JORGE ALVES e Raul Dias Santos. Editora dos Editores; 1ª edição (19 dezembro 2022). Ferreira SRC. Estatinas na doença renal crônica. Arquivos Brasileiros de Cardiologia - Volume 85, Suplemento V, outubro/2005.',
     tags: ['cardiologia', 'nefrologia']
   },
@@ -332,8 +352,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Há evidências de que o consumo excessivo de sódio e o de fluidos pode acarretar um aumento da volemia, mas não constitui fator de descompensação e risco de hospitalização em pacientes com IC crônica sintomática.'
     ],
     correctAnswer: 2,
-    explanation: 'O exercício físico é fundamental na IC estável, melhorando capacidade funcional e reduzindo internações.',
-    commentary: 'Pacientes com IC frequentemente relatam problemas sexuais, e aproximadamente 25% referem completa suspensão da vida sexual. Os inibidores da fosfodiesterase tipo 5 (iF-5) são geralmente seguros e eficazes para o tratamento da disfunção erétil em pacientes com IC compensada.\n\nO uso permissivo de bebidas alcoólicas em pequena quantidade em pacientes com IC crônica estável de outras etiologias (não relacionada com uso de álcool) é controvertido. Os potenciais riscos devem ser explicados ao paciente, e a decisão de uso pode ser compartilhada.\n\nO consumo excessivo de sódio e líquidos constitui fator de descompensação e risco de hospitalização em pacientes com IC crônica sintomática.',
+    explanation: "A reabilitação com exercício físico regular é recomendada para pacientes com insuficiência cardíaca crônica estável. Ela é segura quando bem prescrita, melhora a capacidade funcional e a qualidade de vida e diminui as internações por descompensação.\n\nO treino deve ser individualizado (de preferência após teste cardiopulmonar ou ergométrico), combinando atividade aeróbica e de resistência, e faz parte das medidas não farmacológicas ao lado do controle de sal e líquidos, da vacinação e da educação do paciente.",
+    commentary: "Álcool em pequena quantidade como protetor (A): não há proteção miocárdica comprovada; em IC de outra etiologia, a liberação de pequenas doses é discutível e deve ser decidida em conjunto, nunca estimulada.\n\nInibidores da fosfodiesterase-5 proibidos (B): sildenafila e similares costumam ser seguros e eficazes para disfunção erétil na IC compensada; a contraindicação absoluta é o uso associado a nitratos.\n\nSódio e líquidos sem papel na descompensação (D): a ingestão excessiva de sal e água é uma causa frequente de descompensação e internação na IC sintomática.",
+    tip: "IC crônica estável: exercício regular é seguro, melhora a qualidade de vida e reduz internações.",
     reference: 'Diretriz Brasileira de Insuficiência Cardíaca Crônica e Aguda. Arq Bras Cardiol. 2018; 111(3):436-539.',
     tags: ['cardiologia']
   },
@@ -348,8 +369,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Betabloqueadores (atenolol)'
     ],
     correctAnswer: 0,
-    explanation: 'A associação preferencial com BRA (losartana) é um tiazídico ou bloqueador de canal de cálcio.',
-    commentary: 'A segunda droga nesse caso, segundo a recomendação das Diretrizes, deve ser um diurético tiazídico ou um bloqueador dos canais de cálcio (esse não está entre as respostas).\n\nA metildopa encontra sua principal indicação durante a gestação.\n\nO tratamento com associações de dois bloqueadores do sistema renina-angiotensina, como IECA com BRA, é contraindicado, pois promoveu o aumento de efeitos adversos, sem a redução de desfechos cardiovasculares.\n\nBetabloqueadores devem ser indicados em condições específicas, tais como: IC, pós IAM, Angina, controle da FC, mulheres jovens com potencial para engravidar, em geral em combinação om outros fármacos.',
+    explanation: "Hipertensa em uso de BRA (losartana) com pressão de 160x100 mmHg, já com hábitos saudáveis: é preciso associar um segundo fármaco. As Diretrizes Brasileiras de Hipertensão (2020) consideram preferencial combinar um bloqueador do sistema renina-angiotensina (IECA ou BRA) com um antagonista de cálcio di-hidropiridínico ou com um diurético tiazídico ou similar.\n\nComo o bloqueador de canal de cálcio não está entre as opções, a escolha é a hidroclorotiazida, que tem efeito sinérgico com a losartana e ainda reduz a tendência à hipercalemia do BRA.",
+    commentary: "Metildopa (B): sua principal indicação é a hipertensão na gestação; fora dela não é fármaco de primeira linha, por efeitos adversos como sedação.\n\nCaptopril (C): somar IECA a um BRA é duplo bloqueio do sistema renina-angiotensina, contraindicado porque aumenta hipercalemia e lesão renal sem reduzir eventos cardiovasculares.\n\nAtenolol (D): os betabloqueadores ficam reservados para situações específicas, como insuficiência cardíaca, pós-infarto, angina e controle de frequência cardíaca.",
+    tip: "IECA/BRA + segundo fármaco: tiazídico ou bloqueador de cálcio. Nunca IECA + BRA.",
     reference: 'Diretrizes Brasileiras de Hipertensão Arterial – 2020. Arq Bras Cardiol. 2021; 116(3):516-658',
     tags: ['cardiologia', 'hipertensão']
   },
@@ -364,8 +386,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Leucemia aguda'
     ],
     correctAnswer: 3,
-    explanation: 'Quadro agudo com bicitopenia e presença de blastos granulares no sangue periférico é diagnóstico de Leucemia Aguda.',
-    commentary: 'Quadro clínico do paciente corresponde a doença aguda (início rápido sem sintomas arrastado), com presença de células blásticas no sangue periférico – caracteriza leucemia aguda.',
+    explanation: "Mulher jovem com sangramento gengival, hiperplasia de gengiva, metrorragia e febre, instalados em poucas semanas, e um hemograma com anemia, plaquetopenia, neutropenia e grande número de blastos no sangue periférico. Esse conjunto define leucemia aguda: a medula é tomada por células imaturas que não amadurecem, e faltam as células normais (daí anemia, sangramento e infecção).\n\nA granulação abundante sugere linhagem mieloide, e a hiperplasia gengival é mais típica das formas mielomonocítica e monocítica. A confirmação é feita por mielograma com imunofenotipagem e citogenética. Se houver suspeita de leucemia promielocítica aguda, que cursa com coagulação intravascular disseminada, o ácido transretinoico deve começar já na suspeita.",
+    commentary: "Púrpura trombocitopênica imune (A): reduz só as plaquetas; não há anemia importante, neutropenia nem blastos circulantes.\n\nLeucemia crônica (B): tem curso insidioso e predomínio de células maduras (na mieloide crônica, todas as fases da maturação; na linfoide crônica, linfócitos maduros em idosos), sem tantos blastos.\n\nReação leucemoide (C): é leucocitose reacional, geralmente a infecção, com neutrófilos maduros e desvio à esquerda, sem citopenias e sem domínio de blastos.",
+    tip: "Citopenias + blastos no sangue periférico + quadro de semanas = leucemia aguda até prova em contrário.",
     reference: 'ZAGO, Marco Antônio; FALCÃO, Roberto Passetto; PASQUINI, Ricardo, Tratado de hematologia, São Paulo.Atheneu,2013. 2- HOFFBRAND, A.Victor; MOSS,P.A.H. Fundamento em Hematologia.6.ed,Porto Alegre:Artmed,2015.',
     tags: ['hematologia', 'oncologia']
   },
@@ -380,8 +403,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Consumo de plaquetas na formação do coágulo.'
     ],
     correctAnswer: 1,
-    explanation: 'Queda de >50% das plaquetas após início de heparina sugere fortemente HIT (Heparin-Induced Thrombocytopenia).',
-    commentary: 'A trombocitopenia induzida por heparina geralmente ocorre nas primeiras 48 a 72 horas após o início do tratamento com heparina e é caracterizada por uma trombocitopenia leve e transitória (raramente inferior a 100.000/mm3), retornando frequentemente ao normal dentro de quatro dias após a suspensão da heparina. Em geral, considera-se uma queda de 50% ou mais em comparação com o valor basal pré-heparina.',
+    explanation: "Queda das plaquetas de 180 mil para 85 mil (mais de 50%) depois de iniciar heparina, sem outra causa evidente, deve levantar a suspeita de trombocitopenia induzida por heparina (TIH). A forma que importa é a imune: anticorpos contra o complexo heparina-fator plaquetário 4 ativam as plaquetas, que caem e, paradoxalmente, geram trombose arterial e venosa.\n\nA suspeita se organiza pelo escore 4T (grau da queda, momento, trombose e outras causas). Diante dela, suspende-se toda heparina, inclusive a de lavagem de cateteres, e troca-se por anticoagulante não heparínico (argatrobana, fondaparinux ou anticoagulante oral direto), além de pedir anticorpos anti-PF4. Não se deve transfundir plaquetas de rotina.",
+    commentary: "Variação do laboratório (A): a contagem foi repetida e confirmada, e uma queda de mais da metade do valor basal não é variação normal.\n\nConsumo pela trombose venosa (C): a TVP isolada não consome plaquetas a ponto de derrubá-las desse modo; isso exigiria um processo como a coagulação intravascular disseminada.\n\nConsumo na formação do coágulo (D): é a mesma ideia da anterior; a formação do trombo não explica uma plaquetopenia dessa intensidade.",
+    tip: "Plaquetas caem mais de 50% após heparina: suspenda toda heparina e troque por anticoagulante não heparínico.",
     reference: 'Sandes, Alex F. Diagnósticos em hematologia 2a ed. Disponível em: Minha Biblioteca, (2nd edição). Editora Manole, 2020.',
     tags: ['hematologia', 'angiologia']
   },
@@ -396,8 +420,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Tratamento hospitalar com ceftriaxone 2g endovenoso 1 vez ao dia, por 7 dias.'
     ],
     correctAnswer: 2,
-    explanation: 'Cistite não complicada em mulher jovem; nitrofurantoína é a primeira escolha.',
-    commentary: 'Paciente com diagnóstico de Infecção do Trato Urinário devido à cistite, sendo esta mulher jovem e sem comorbidades. Neste caso não haveria necessidade de solicitação de exames complementares mais específicos (como uma ultrassonografia), e sim de realização de tratamento clínico ambulatorial com a droga de primeira escolha; neste caso seria a nitrofurantoina 100mg 6/6h por 5 dias.',
+    explanation: "Mulher jovem, sem comorbidades, afebril, com disúria e dor suprapúbica, punho-percussão negativa e urina com leucocitúria, nitrito positivo e bactérias: cistite aguda não complicada. O diagnóstico é clínico e não exige exame de imagem.\n\nO tratamento é ambulatorial com um antibiótico de primeira linha que se concentra na bexiga e preserva os de amplo espectro: nitrofurantoína 100 mg de 6 em 6 horas por 5 dias, ou fosfomicina em dose única como alternativa. Hidratação e analgesia ajudam no alívio dos sintomas.",
+    commentary: "Ultrassonografia de abdome (A): não há sinal de pielonefrite, obstrução, gestação ou outro fator de complicação, nem suspeita de lesão renal; a imagem não muda a conduta.\n\nCiprofloxacino (B): as quinolonas não são primeira escolha na cistite simples, por efeitos adversos e para evitar resistência; ficam para pielonefrite e situações específicas.\n\nCeftriaxona hospitalar (D): internação e antibiótico venoso são para pielonefrite grave, sepse ou impossibilidade de tratar por via oral, o que não é o caso.",
+    tip: "Cistite simples em mulher jovem: nitrofurantoína 5 dias (ou fosfomicina dose única), sem imagem.",
     reference: 'KNOBEL, E. Condutas no paciente grave. São Paulo: Editora Atheneu, 2016. VELASCO, I, T, Saraiva et al. Medicina de Emergência: abordagem prática. Manole, 16º ed, 2022',
     tags: ['infectologia', 'urologia']
   },
@@ -412,8 +437,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Papilomavírus cutâneo humano'
     ],
     correctAnswer: 1,
-    explanation: 'Exantema palmoplantar/generalizado e linfadenopatia em paciente de risco sugere Sífilis Secundária.',
-    commentary: 'A sífilis é uma das ISTs mais prevalentes nos dias atuais e merece atenção especial em todas as áreas de conhecimento da medicina. Frequentemente vemos casos mais avançados dessa doença, por falta de diagnóstico clínico nas fases iniciais. Neste caso temos uma apresentação de sífilis secundária, que muitas vezes é diagnosticada como hipersensibilidade, sem uma história clínica adequada.',
+    explanation: "Manchas eritematosas arredondadas, numulares, não pruriginosas, espalhadas pelo corpo, junto com linfonodos cervicais aumentados, sugerem sífilis secundária: a roséola sifilítica com micropoliadenopatia. Também podem aparecer lesões em palmas e plantas, condiloma plano, placas mucosas e alopecia em clareira.\n\nA sífilis é muito frequente em pessoas que vivem com HIV, mesmo com boa imunidade, e o quadro é muitas vezes confundido com alergia. O diagnóstico é feito com teste treponêmico e não treponêmico (VDRL), e o tratamento da sífilis recente é penicilina benzatina 2,4 milhões UI IM em dose única, com testagem e tratamento das parcerias.",
+    commentary: "Meningite meningocócica (A): cursa com febre alta, toxemia e lesões petequiais ou purpúricas de evolução rápida, não com manchas assintomáticas e bom estado geral.\n\nReação a medicações (C): o paciente usa a mesma TARV há dois anos, sem fármaco novo, e as farmacodermias costumam coçar.\n\nHPV cutâneo (D): causa verrugas, e não máculas eritematosas disseminadas com linfonodos.",
+    tip: "Manchas avermelhadas que não coçam + linfonodos + até palmas e plantas = sífilis secundária: peça VDRL.",
     reference: 'Tratado de Infectologia – Veronesi e Focaccia (6a edição – 2020) Editora Atheneu',
     tags: ['infectologia', 'dermatologia']
   },
@@ -428,8 +454,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) A insônia e os tremores devem ser tratados com benzodiazepínicos.'
     ],
     correctAnswer: 0,
-    explanation: 'O metimazol (tiamazol) é a droga de primeira escolha para o hipertireoidismo na Doença de Graves.',
-    commentary: 'A Doença de Graves é provocada pelo autoanticorpo estimulador da tireoide trab. o tratamento medicamentoso é feito com metimazol e, como segunda opção o propiltiuracil, pois este tem mais efeitos colaterais. Caso não haja resposta com o tratamento medicamentoso, a segunda opção é a iodoterapia e, a última opção é a tireoidectomia total. Com o uso do metimazol, haverá melhora do hipertireodismo e das queixas adrenérgicas (insônia e tremores) entram em remissão, portanto não é necessário nenhuma outra abordagem específica.',
+    explanation: "Hipertireoidismo (TSH suprimido, T4 livre alto) com bócio difuso e exoftalmia bilateral é doença de Graves. O tratamento medicamentoso preferencial é o tiamazol (metimazol), que bloqueia a síntese hormonal, é dado uma vez ao dia e tem menos hepatotoxicidade que o propiltiouracil.\n\nO propiltiouracil fica reservado ao primeiro trimestre da gestação e à crise tireotóxica. Enquanto o hormônio não normaliza, um betabloqueador como o propranolol alivia taquicardia, tremor e ansiedade. As outras opções definitivas são o iodo radioativo e a tireoidectomia.",
+    commentary: "Anti-TPO como anticorpo estimulador (B): o anti-TPO é marcador de autoimunidade tireoidiana (típico de Hashimoto); o anticorpo que estimula a glândula na doença de Graves é o TRAb, contra o receptor do TSH.\n\nCirurgia como escolha para a maioria (C): a tireoidectomia é indicada em situações específicas, como bócio volumoso com compressão, nódulo suspeito ou contraindicação às outras opções.\n\nBenzodiazepínicos para insônia e tremor (D): esses sintomas são adrenérgicos e melhoram com betabloqueador e com o controle do hipertireoidismo.",
+    tip: "Graves: tiamazol é a 1ª escolha; propiltiouracil só no 1º trimestre ou na crise tireotóxica. Sintomas: betabloqueador.",
     reference: 'Guia Prático em Doenças da Tireoide-Capítulo 10, pag 163. Doença de Graves – Sociedade Brasileira de Endocrinologia e Metabologia 2022.',
     tags: ['endocrinologia']
   },
@@ -444,8 +471,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Overdose'
     ],
     correctAnswer: 2,
-    explanation: 'Tolerância é a necessidade de doses crescentes da substância para atingir o efeito desejado.',
-    commentary: 'Questão representa a importância do conceito de tolerância a substâncias psicoativas, que são a base da evolução para a dependência química. Muitos confundem o Conceito, com uso abusivo ou abstinência, ignorando por completo o efeito de tolerância tão importante para o conceito de dependência.',
+    explanation: "Precisar de doses cada vez maiores para obter o mesmo efeito, ou ter efeito menor com a mesma dose, é a definição de tolerância. Ela surge com o uso repetido, por adaptação do organismo à substância (mudanças nos receptores, na neurotransmissão e no metabolismo).\n\nA tolerância é um dos critérios do transtorno por uso de substâncias e costuma andar junto com a abstinência e a perda de controle sobre o consumo, por isso é peça central na evolução para a dependência.",
+    commentary: "Abuso (A): designa um padrão de uso que traz prejuízos (sociais, legais, de saúde), não a necessidade de aumentar a dose; o DSM-5 substituiu abuso e dependência por transtorno por uso de substâncias.\n\nAbstinência (B): são os sintomas que surgem ao parar ou reduzir o uso; na cocaína, disforia, cansaço, sonolência, aumento do apetite e fissura.\n\nOverdose (D): é a intoxicação grave por dose excessiva, com risco de arritmia, infarto, convulsão e hipertermia.",
+    tip: "Mais droga para o mesmo efeito = tolerância. Sintomas ao parar = abstinência.",
     reference: 'DIEHL, A.; CORDEIRO, D. C.; LARANJEIRA, R. (Orgs.). Dependência química: prevenção, tratamento e políticas públicas. 2. ed. Porto Alegre: Artmed, 2018. 554 p.',
     tags: ['psiquiatria']
   },
@@ -460,8 +488,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) HBsAg (-), anti-HBc IgG (+), anti-HBc IgM (-), anti-HBs (+), Anti-HCV (+)'
     ],
     correctAnswer: 1,
-    explanation: 'Hepatite B aguda/fulminante requer HBsAg (+) e Anti-HBc IgM (+). Antecedente de Hep C curada mantém Anti-HCV (+).',
-    commentary: 'Paciente jovem de 32 anos, evoluindo com hepatite fulminante por Vírus B. A maior parte da literatura define esta entidade como uma insuficiência hepática que evolui em menos de 26 semanas (mais ou menos 6 meses) a partir da lesão inicial. Essa insuficiência hepática é caracterizada classicamente por Encefalopatia Hepática e Coagulopatia (INR ≥ 1,5).\n\nSe o paciente já teve contato com o vírus C, independentemente de estar curado ou não, ele terá a marca sorológica do Anti-HCV.\n\nO diagnóstico sorológico da hepatite B envolve a avaliação de antígenos e anticorpos. Por meio da combinação destes marcadores, é possível determinar as diferentes fases da infecção e se o paciente está imune ou susceptível:\n- HBsAg: Indica infecção pelo vírus B.\n- Anti-HBs: Indica recuperação e imunidade ao vírus B (ou vacinação).\n- Anti-HBc total: Indica infecção atual ou prévia.\n- Anti-HBc IgM: Indica infecção recente ou agudização.',
+    explanation: "A hepatite fulminante pelo vírus B ocorre na fase aguda da infecção, com insuficiência hepática (encefalopatia e coagulopatia). O perfil sorológico esperado é HBsAg positivo, anti-HBc positivo com IgM positivo (marcador de infecção recente) e anti-HBs negativo, porque não houve cura.\n\nQuanto à hepatite C, quem teve contato com o vírus mantém o anti-HCV positivo por toda a vida, mesmo depois da cura; o que fica negativo após a resposta virológica sustentada é o HCV-RNA. Vale lembrar que, na forma fulminante, a resposta imune intensa pode negativar o HBsAg precocemente, e o anti-HBc IgM é o marcador mais confiável.",
+    commentary: "Anti-HBc IgM negativo e anti-HCV negativo (A): seria um perfil de hepatite B crônica, sem infecção aguda, e ignora que o anti-HCV persiste após a cura da hepatite C.\n\nAnti-HCV negativo (C): o perfil do vírus B está certo, mas o anti-HCV continua positivo em quem já teve hepatite C, mesmo curada.\n\nHBsAg negativo e anti-HBs positivo (D): indica hepatite B passada e curada, com imunidade, o que não combina com hepatite fulminante atual pelo vírus B.",
+    tip: "Hepatite B aguda: HBsAg+ e anti-HBc IgM+. Hepatite C curada: anti-HCV+ para sempre, RNA negativo.",
     reference: 'Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas para o Tratamento da Hepatite Viral Crônica B e Coinfeccões, Brasília, 2009.',
     tags: ['gastroenterologia', 'infectologia']
   },
@@ -476,8 +505,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Tratamento empírico com inibidor de bomba de prótons durante 8 semanas.'
     ],
     correctAnswer: 3,
-    explanation: 'Em pacientes jovens sem sinais de alarme, o tratamento empírico com IBP por 8 semanas é a conduta inicial padrão.',
-    commentary: 'Segundo a diretriz do Colégio Americano de Gastroenterologia (2022), pacientes com sintomatologia compatível com doença do refluxo gastroesofágico (azia e regurgitações), sem sangramento, devem inicialmente ser tratados com inibidores de bomba de prótons durante 8 semanas.\n\nA realização da endoscopia digestiva alta está indicada somente nos casos em que houver retorno dos sintomas após a suspensão do tratamento com inibidores de bomba de prótons, e deverá ser feita 2-4 semanas após o término dessa medicação.\n\nA manometria de alta resolução do esôfago não é indicada como um exame diagnóstico isolado na DRGE. O tratamento com antagonistas H2 demonstra resultados inferiores aos IBPs.',
+    explanation: "Mulher de 27 anos com azia e regurgitação típicas, piora após ganho de peso e sem sinais de alarme: o diagnóstico de doença do refluxo é clínico. A conduta é mudar hábitos (perda de peso, evitar refeições volumosas antes de deitar, elevar a cabeceira) e fazer teste terapêutico com inibidor de bomba de prótons por 8 semanas.\n\nA endoscopia fica para quem tem sinais de alarme (disfagia, odinofagia, perda de peso, sangramento, anemia, vômitos persistentes), início dos sintomas em idade mais avançada ou falha do tratamento empírico.",
+    commentary: "Antagonista H2 por 6 a 8 semanas (A): alivia menos a azia e a regurgitação do que o inibidor de bomba de prótons; pode ser usado em sintomas ocasionais ou como complemento noturno.\n\nEndoscopia antes de tratar (B): sem sinais de alarme, o exame não é necessário para iniciar o tratamento em paciente jovem com sintomas típicos.\n\nManometria esofágica (C): não diagnostica refluxo; serve para avaliar distúrbios motores (como acalasia), para posicionar o cateter da pHmetria e antes de cirurgia antirrefluxo.",
+    tip: "DRGE típica em jovem sem alarme: mudança de hábitos + IBP por 8 semanas, sem endoscopia inicial.",
     reference: 'Katz, PO, et al. ACG Clinical Guideline: Guidelines for the Diagnosis and Management of Gastroesophageal Reflux Disease. Am J Gastroenterol. 2022 January 01; 117(1): 27–56.',
     tags: ['gastroenterologia']
   },
@@ -492,8 +522,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Ácido úrico'
     ],
     correctAnswer: 0,
-    explanation: 'Jovem com fotossensibilidade e nefrite sugere Lúpus (LES); o FAN é o teste de triagem mais sensível.',
-    commentary: 'Estamos diante de uma paciente jovem, do sexo feminino, caracterizando a população com maior incidência de Lúpus Eritematoso Sistêmico, doença esta que pode acometer diferentes órgãos e tecidos. Na questão, nos deparamos com o acometimento renal pela doença, manifesto por proteinúria (espuma na urina), aumento da pressão arterial e edema de membros inferiores. Além disso o acometimento cutâneo característico (eritema malar) após exposição solar (viagem prévia à praia) não deixa dúvidas sobre o diagnóstico. Segundo os novos critérios diagnósticos para o Lúpus Eritematoso Sistêmico (ACR/EULAR), a positividade do exame FAN é tido como critério de entrada.',
+    explanation: "Mulher jovem com eritema malar que piorou após exposição ao sol, dor articular, edema, hipertensão e urina espumosa (proteinúria) reúne sinais cutâneos e renais típicos de lúpus eritematoso sistêmico. O quadro renal sugere nefrite lúpica, que precisa ser investigada com urina tipo 1, proteinúria quantificada e função renal.\n\nO primeiro exame a pedir é o fator antinúcleo (FAN). Nos critérios de classificação EULAR/ACR de 2019, FAN positivo (título de pelo menos 1:80) é o critério de entrada: sem ele, não se segue com a pontuação. Com FAN positivo, confirmam-se a suspeita e a atividade com anti-DNA dupla hélice, anti-Sm e complemento (C3 e C4).",
+    commentary: "ANCA (B): é o marcador das vasculites de pequenos vasos (granulomatose com poliangeíte, poliangeíte microscópica), que podem causar glomerulonefrite, mas não explicam o eritema malar fotossensível.\n\nFator reumatoide (C): ajuda no diagnóstico de artrite reumatoide, que não tem rash malar nem síndrome nefrótica; além disso, a paciente não tem artrite ao exame.\n\nÁcido úrico (D): investiga gota ou nefropatia por urato, quadros que não combinam com mulher jovem, eritema malar e proteinúria.",
+    tip: "Mulher jovem + eritema malar fotossensível + urina espumosa = pense em lúpus; o primeiro exame é o FAN (critério de entrada).",
     reference: '2019 European League Against Rheumatism/American College of Rheumatology Classification Criteria for Systemic Lupus Erythematosus. Arthritis Rheumatol 71(9):1400–1412, 2019.',
     tags: ['reumatologia', 'nefrologia']
   },
@@ -508,8 +539,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Paciente tem como principal hipótese diagnóstica migrânea sem aura e necessita de exame de imagem para afastar cefaleia secundária.'
     ],
     correctAnswer: 3,
-    explanation: 'Despertar noturno pela dor é um "red flag" (sinal de alerta) que exige neuroimagem para excluir causas secundárias.',
-    commentary: 'A migrânea é uma cefaleia pulsátil, hemicraniana, com náusea e/ou êmese, com foto e/ou fonofobia, pode apresentar aura de até uma hora. O paciente em questão apresenta um sinal de alarme que seria o despertar pela dor. Isso exige a realização de um exame de imagem para afastar cefaleia secundária.',
+    explanation: "Cefaleia pulsátil de um lado só, com fotofobia, fonofobia e náuseas, presente há mais de 10 anos e sem aura, tem as características da migrânea sem aura. O problema é a mudança recente: nos últimos 6 meses a dor ficou mais forte e passou a acordar o paciente à noite.\n\nMudança do padrão de uma cefaleia antiga e despertar noturno pela dor são sinais de alarme, que obrigam a afastar uma causa secundária (tumor, hipertensão intracraniana, lesão estrutural). Por isso, mesmo com o diagnóstico principal de migrânea, está indicado exame de imagem do encéfalo, de preferência ressonância magnética.",
+    commentary: "Cefaleia tensional (A): é em aperto, bilateral, de leve a moderada intensidade, sem náuseas e com no máximo um entre fotofobia ou fonofobia; o quadro aqui é de migrânea.\n\nMigrânea sem exames (B): estaria certa se não houvesse sinais de alarme. A piora recente com despertar noturno exige investigação.\n\nISRS como primeira escolha (C): os inibidores seletivos de recaptação de serotonina não têm boa eficácia na profilaxia da migrânea. As opções de primeira linha são betabloqueadores (propranolol), amitriptilina, topiramato e flunarizina.",
+    tip: "Cefaleia antiga que muda de padrão ou acorda o paciente = sinal de alarme: pedir neuroimagem.",
     reference: 'Nitrini, Ricardo; Bacheschi, Luiz Alberto (eds). A neurologia que todo médico deve saber [3.ed.]. SÃO PAULO: Atheneu, 2015.',
     tags: ['neurologia']
   },
@@ -524,8 +556,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Trata-se de asma parcialmente controlada; o paciente está eupneico e sem esforço respiratório, com raros sibilos à ausculta. A medicação em uso pode ser mantida e o paciente deverá ser encaminhado para avaliação psicológica.'
     ],
     correctAnswer: 1,
-    explanation: 'Sintomas diurnos e noturnos frequentes indicam asma não controlada; a conduta é subir um degrau (step-up) no tratamento.',
-    commentary: 'Conforme as Recomendações para o manejo da asma da SBPT – 2020 e GINA - 2023, a paciente apresenta todos os critérios de Asma não-controlada. A conduta preferencial é a associação entre formoterol e um corticoesteroide inalado, em doses crescentes conforme a necessidade. As orientações não-medicamentosa, tais como a verificação da higiene ambiental, a verificação presença de fatores clínicos relacionados ao mal controle da asma (DRGE, apneia do sono, depressão, ansiedade e outras) é fundamental.',
+    explanation: "Para avaliar o controle da asma, olham-se as últimas 4 semanas: sintomas diurnos mais de 2 vezes por semana, despertar noturno, uso de resgate mais de 2 vezes por semana e limitação das atividades. Este paciente tem os quatro (inclusive faltas ao trabalho), o que define asma não controlada, mesmo com exame físico tranquilo no dia da consulta.\n\nAntes de subir o tratamento, revisam-se técnica inalatória, adesão, exposição a alérgenos e irritantes e comorbidades (rinite, refluxo, obesidade, ansiedade). Depois, pela SBPT e pela GINA, a conduta é passar do corticoide inalatório isolado para a combinação corticoide inalatório + formoterol, como budesonida/formoterol, que também pode ser usada como resgate. Isso substitui o resgate com salbutamol isolado, que está sendo usado demais.",
+    commentary: "Asma parcialmente controlada com aminofilina (A): com os quatro critérios presentes, a asma é não controlada. Aumentar o salbutamol e acrescentar metilxantina não é recomendado: as xantinas têm pouca eficácia e muitos efeitos adversos.\n\nImunobiológico (C): reservado para asma grave que segue sem controle mesmo com doses altas de corticoide inalatório + LABA, técnica e adesão corretas. O paciente ainda está em etapa inicial de tratamento.\n\nManter a medicação e encaminhar ao psicólogo (D): o controle é ruim, não parcial; manter o esquema deixa o paciente exposto a crises graves.",
+    tip: "Sintoma diurno > 2x/sem, despertar noturno, resgate > 2x/sem, limitação: 3 ou 4 = asma não controlada. Subir para CI + formoterol.",
     reference: 'Recomendações para o manejo da asma da Sociedade Brasileira de Pneumologia e Tisiologia – 2020. J Bras Pneumol. 2020;46(1):e20190307. Global Initiative for Asthma, 2023.',
     tags: ['pneumologia']
   },
@@ -540,8 +573,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Tuberculose pulmonar'
     ],
     correctAnswer: 2,
-    explanation: 'Piora aguda de dispneia e secreção em paciente com perfil de DPOC (idoso, tabagista) é exacerbação aguda.',
-    commentary: 'Estamos a frente de um homem de 70 anos, com queixa de dispneia progressiva aos pequenos esforços associada a tosse com expectoração. Sintomas arrastados, crônicos! Há três dias, cursa com piora da dispneia, aumento e mudança do aspecto da expectoração, além de febre, inapetência e calafrios. O ponto de partida é o pressuposto que nosso paciente apresenta sintomas sugestivos + exposição compatível (tabagismo) caracterizando exacerbação aguda da DPOC.',
+    explanation: "Homem idoso com carga tabágica alta (40 maços-ano), dispneia progressiva e tosse produtiva matinal há 2 anos: é o quadro de DPOC, que se confirma com espirometria mostrando obstrução que não reverte com broncodilatador (VEF1/CVF menor que 0,70 pós-broncodilatador).\n\nNos últimos 3 dias houve piora aguda da dispneia, aumento do volume e purulência do escarro e febre. Essa piora aguda dos sintomas respiratórios além da variação do dia a dia é a exacerbação da DPOC, na maioria das vezes desencadeada por infecção respiratória. Aumento da dispneia, do volume e da purulência do escarro (critérios de Anthonisen) indicam antibiótico, além de broncodilatador de curta ação e corticoide sistêmico.",
+    commentary: "Pleurite aguda (A): o sintoma principal é dor torácica que piora com a respiração, que o paciente não tem; não explica a história de 2 anos.\n\nCrise de asma (B): a asma costuma começar na infância ou juventude, com sintomas variáveis e episódicos; um tabagista pesado de 70 anos com sintomas contínuos tem DPOC.\n\nTuberculose pulmonar (D): tosse por mais de 3 semanas com febre vespertina, sudorese noturna e emagrecimento; aqui a febre e a mudança do escarro surgiram de forma aguda, há 3 dias.",
+    tip: "Tabagista com tosse e dispneia crônicas que piora em dias, com mais escarro e escarro purulento = exacerbação de DPOC.",
     reference: 'GLOBAL INITIATIVE FOR CHRONIC OBSTRUCTIVE LUNG DISEASE. Global strategy for Diagnosis, Management and Prevention of Chronic Obstructive Pulmonary Disease 2023 REPORT.',
     tags: ['pneumologia']
   },
@@ -556,8 +590,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Indicar tratamento hospitalar com quinolona (levofloxacina).'
     ],
     correctAnswer: 0,
-    explanation: 'Paciente estável (CURB-65 = 1) com comorbidade (etilismo) deve tratar PAC ambulatorialmente com terapia combinada.',
-    commentary: 'A recomendação do Manejo das Pneumonias Adquiridas na Comunidade de 2018 orienta manter o tratamento ambulatorial conforme o escore de avaliação da gravidade CURB (valor=1) bem como pela estabilidade clínica. A presença da comorbidade (etilismo) e uso de antimicrobiano recente impõe que deva ser utilizado terapia com beta lactâmico (associado ou não a clavulanato) e macrolídeo.',
+    explanation: "Tosse, febre, dor pleurítica, crepitações e pectorilóquia na base direita, com opacidade e broncograma aéreo na radiografia, confirmam pneumonia adquirida na comunidade. A gravidade se avalia pelo CURB-65: confusão (não), ureia acima de 50 mg/dL (não, 35), frequência respiratória de 30 ou mais (não, 26), PA sistólica abaixo de 90 ou diastólica de 60 ou menos (não) e idade de 65 anos ou mais (sim). Escore 1, com saturação adequada e paciente estável: tratamento ambulatorial.\n\nNa diretriz da SBPT de 2018, quem tem comorbidade ou fator de risco (como o etilismo) ou usou antibiótico recentemente deve receber um betalactâmico associado a um macrolídeo (por exemplo, amoxicilina ou amoxicilina-clavulanato + azitromicina) ou, como alternativa, uma quinolona respiratória em monoterapia.",
+    commentary: "Internação com ceftriaxona (B): com CURB-65 de 1 e estabilidade clínica, não há indicação de internação; e o betalactâmico isolado deixa sem cobertura os germes atípicos.\n\nAmoxicilina isolada (C): é a opção para adulto previamente hígido, sem comorbidades. O etilismo pede esquema mais amplo, com macrolídeo associado.\n\nInternação com levofloxacina (D): a quinolona respiratória é uma alternativa aceitável no tratamento ambulatorial, mas o paciente não precisa ser internado.",
+    tip: "PAC com CURB-65 de 0 a 1 trata em casa; se houver comorbidade (etilismo, DM, DPOC), betalactâmico + macrolídeo.",
     reference: 'Recomendações para o manejo da pneumonia adquirida na comunidade 2018. J Bras Pneumol. 2018;44(5):405-425',
     tags: ['pneumologia', 'infectologia']
   },
@@ -572,8 +607,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Delirium tremens'
     ],
     correctAnswer: 3,
-    explanation: 'Delirium Tremens é uma emergência médica por abstinência grave do álcool, com distúrbios sensitivos e desorientação.',
-    commentary: 'Quadro compatível com delirium tremens, muito comum em atendimentos de Pronto Socorro, mas que pode ser confundido com os transtornos psiquiátricos mencionados na demais alternativas. Mostra a importância de diferenciar o quadro clínico causado pelo álcool dos quadros psiquiátricos crônicos.',
+    explanation: "Paciente com sinais de uso pesado de álcool que chega com tremores, febre, agitação, desorientação, alucinações visuais, paranoia, oscilações de humor e inversão do ciclo sono-vigília. O que domina o quadro é a alteração aguda e flutuante da consciência e da atenção, isto é, delirium, junto com hiperatividade autonômica (tremor, febre): é o delirium tremens, a forma mais grave da abstinência alcoólica, que costuma surgir de 48 a 96 horas após a última dose.\n\nÉ uma emergência médica, com risco de morte. O tratamento inclui benzodiazepínico (diazepam ou, em hepatopatas e idosos, lorazepam), tiamina antes da glicose para prevenir encefalopatia de Wernicke, hidratação, correção de eletrólitos e ambiente seguro. As alucinações visuais e a desorientação não indicam doença psiquiátrica primária.",
+    commentary: "Transtorno de personalidade paranoide (A): é um padrão duradouro de desconfiança, desde o início da vida adulta, sem rebaixamento da consciência, febre ou tremor.\n\nEsquizofrenia (B): predominam alucinações auditivas e delírios com consciência e orientação preservadas; não cursa com febre, tremor e desorientação aguda.\n\nTranstorno bipolar (C): é marcado por episódios de mania e depressão, também com orientação preservada; a variação de humor aqui é parte do delirium.",
+    tip: "Etilista com tremor, febre, desorientação e alucinação visual = delirium tremens: benzodiazepínico + tiamina antes da glicose.",
     reference: 'DIEHL, A.; CORDEIRO, D. C.; LARANJEIRA, R. (Orgs.). Dependência química: prevenção, tratamento e políticas públicas. 2. ed. Porto Alegre: Artmed, 2018. 554 p.',
     tags: ['psiquiatria', 'emergência']
   },
@@ -588,8 +624,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Síndrome retroviral aguda'
     ],
     correctAnswer: 1,
-    explanation: 'A tríade febre, faringite exsudativa e linfadenopatia generalizada sugere fortemente Mononucleose (vírus EBV).',
-    commentary: 'É fundamental diferenciar clinicamente uma mononucleose infecciosa de amigdalite ou outras síndromes do grupo, levando em conta dados epidemiológicos e clínicos. Lembrar que síndrome retroviral aguda e mononucleose não apresentam exsudato amigdaliano (embora mononucleose possa apresentar placas esbranquiçadas).',
+    explanation: "Adolescente/adulta jovem com febre há 5 dias, dor de garganta com placas esbranquiçadas nas amígdalas, linfonodos cervicais aumentados, exantema e discreta icterícia. Essa combinação de faringoamigdalite exsudativa, linfadenopatia e acometimento hepático é a apresentação típica da mononucleose infecciosa pelo vírus Epstein-Barr, frequente nessa faixa etária.\n\nO diagnóstico é confirmado com hemograma (linfocitose com linfócitos atípicos), aumento discreto de transaminases e sorologia (anti-VCA IgM ou teste de anticorpos heterófilos). O tratamento é de suporte. Vale lembrar que amoxicilina ou ampicilina nesses pacientes frequentemente provoca exantema, e que a esplenomegalia exige evitar esportes de contato.",
+    commentary: "Toxoplasmose linfoglandular (A): causa linfadenopatia cervical, febre baixa e cansaço, mas raramente faringite com placas nas amígdalas e icterícia.\n\nFaringite estreptocócica (C): tem febre e exsudato amigdaliano, mas não costuma causar icterícia, exantema morbiliforme nem linfadenopatia além da cervical anterior; o exantema da escarlatina é áspero (\"lixa\"), não semelhante ao do sarampo.\n\nSíndrome retroviral aguda (D): pode dar febre, faringite, linfonodos e exantema, mas a faringite costuma ser sem exsudato, e pode haver úlceras orais; a história de exposição de risco ajudaria. Deve ser lembrada no diagnóstico diferencial e o anti-HIV é recomendado, mas a combinação com placas e icterícia aponta para mononucleose.",
+    tip: "Jovem com faringite com placas + linfonodos + hepatite discreta (icterícia) = mononucleose; amoxicilina pode causar rash.",
     reference: 'Tratado de Infectologia – Veronesi e Focaccia (6a edição – 2020) Editora Atheneu',
     tags: ['infectologia']
   },
@@ -604,8 +641,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Solicitar eletromiografia para avaliar neuropatia relacionada ao diabetes, a principal causa da dor.'
     ],
     correctAnswer: 0,
-    explanation: 'Fortalecimento do quadríceps é a intervenção não farmacológica mais eficaz para redução da dor na osteoartrite de joelho.',
-    commentary: 'A denominação mais aceita internacionalmente é osteoartrite. O tratamento deve ser multidisciplinar e buscar a melhora funcional, mecânica e clínica. O tratamento não farmacológico incluí programas educativos, orientação ergonômica e cinesioterapia (fortalecimento do quadríceps).',
+    explanation: "Mulher de 54 anos, obesa, com dor nos joelhos há 3 anos que piora com o uso (subir escadas, varrer), rigidez matinal curta, crepitação grosseira e limitação de movimento, sem febre: é o quadro de osteoartrite (artrose) de joelhos. O diagnóstico é clínico, e a radiografia pode mostrar redução do espaço articular e osteófitos.\n\nA base do tratamento é não farmacológica: educação sobre a doença, perda de peso e exercícios, principalmente o fortalecimento do quadríceps, além de treino de equilíbrio e propriocepção e atividade aeróbica de baixo impacto. Os medicamentos (analgésicos, anti-inflamatórios tópicos ou orais por curto período, infiltração com corticoide) complementam essas medidas.",
+    commentary: "Dieta pobre em purinas e álcool (B): é orientação para gota, que tem crises agudas de artrite com sinais inflamatórios, e não dor mecânica com crepitação.\n\nDensitometria óssea (C): avalia osteoporose, que não causa dor articular nem crepitação; não investiga a causa do quadro.\n\nEletromiografia (D): a neuropatia diabética causa parestesias e queimação em pés, que a paciente nega; ela não explica dor mecânica nos joelhos.",
+    tip: "Dor no joelho que piora com o uso + rigidez matinal curta + crepitação = artrose; trate com perda de peso e fortalecimento do quadríceps.",
     reference: 'Pendleton A, Ardeu N, Dougados M, et al. EULAR recommendations for the management of knee osteoarthritis. Ann Rheum Dis 59:936-44, 2000.',
     tags: ['reumatologia', 'ortopedia']
   },
@@ -621,8 +659,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Tuberculose Pulmonar. Solicitar pesquisa de BAAR no escarro ou teste molecular para tuberculose.'
     ],
     correctAnswer: 3,
-    explanation: 'Sintomas consumptivos crônicos (>3 semanas) e imagem em lobo superior obrigam investigação de Tuberculose com escarro.',
-    commentary: 'Mediante um caso de tosse com expectoração amarela e com sangue, febre e emagrecimento há 4 semanas, num indivíduo etilista, a radiografia com consolidação em lobo superior sugere tuberculose. A realização de duas amostras de escarro (BAAR ou TRM-TB) é fundamental para o isolamento do bacilo.',
+    explanation: "Tosse com escarro há 4 semanas, hemoptise, febre, sudorese noturna e perda de peso em um paciente etilista e tabagista formam o quadro clássico de tuberculose pulmonar. Tosse por 3 semanas ou mais já define sintomático respiratório, que deve ser investigado; o alcoolismo é fator de risco importante.\n\nNa radiografia, a tuberculose do adulto costuma acometer os lobos superiores, às vezes com cavitação. Para confirmar, o Ministério da Saúde recomenda o teste rápido molecular para tuberculose (que também detecta resistência à rifampicina) ou a baciloscopia (pesquisa de BAAR) no escarro, com cultura nas situações indicadas. Diagnóstico confirmado: esquema RHZE e testagem para HIV.",
+    commentary: "Pneumonia adquirida na comunidade (A): costuma ter evolução de poucos dias, não de 4 semanas com emagrecimento e sudorese noturna; hemograma, ureia e PCR avaliam gravidade, mas não fazem o diagnóstico etiológico.\n\nTuberculose pleural (B): apresenta dor torácica pleurítica e derrame pleural; aqui predominam tosse com escarro e hemoptise. O teste de Mantoux não confirma doença ativa.\n\nNeoplasia de pulmão (C): pode causar tosse, hemoptise e perda de peso, mas a febre com sudorese noturna em jovem de 23 anos aponta para infecção; a citologia do escarro não é o exame inicial.",
+    tip: "Tosse por 3 semanas ou mais + febre vespertina + sudorese noturna + emagrecimento = tuberculose: teste rápido molecular ou BAAR no escarro.",
     reference: 'Manual de Recomendações para o controle da tuberculose no Brasil. 2a edição atualizada. 2019.',
     tags: ['infectologia', 'pneumologia']
   },
@@ -637,8 +676,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) A vacina para o herpes zoster é indicada apenas para indivíduos imunossuprimidos, especialmente em vigência de tratamento oncológico.'
     ],
     correctAnswer: 2,
-    explanation: 'A vacina recombinante (vírus inativado) Shingrix é altamente eficaz e indicada acima dos 50 anos.',
-    commentary: 'O Herpes-zóster é geralmente doloroso e unilateral (acompanha dermátomo). A reativação acontece geralmente por situações de imunossupressão. A vacina (Shingrix - recombinante) é disponibilizada apenas na rede privada e indicada para maiores de 50 anos.',
+    explanation: "O herpes-zóster é a reativação do vírus varicela-zóster que ficou latente em um gânglio sensitivo. Ela ocorre quando a imunidade celular cai, como no envelhecimento, no câncer, no HIV e em uso de imunossupressores. A lesão é uma erupção de vesículas sobre base eritematosa, dolorosa, que segue um dermátomo de um lado só do corpo; a complicação mais temida é a neuralgia pós-herpética.\n\nA prevenção mais eficaz é a vacina. Hoje se usa a vacina recombinante adjuvada (não é de vírus vivo), recomendada pela SBIm para pessoas a partir de 50 anos, em duas doses, e que pode ser usada também em imunossuprimidos. Por isso a alternativa C é a correta, mesmo chamando a vacina de \"inativada\".",
+    commentary: "Viagens para lugares frios (A): o que reativa o vírus é a queda da imunidade celular (idade, doenças, medicamentos), e não o clima.\n\nErupção indolor e bilateral (B): o zóster é tipicamente doloroso (a dor pode até começar antes das lesões) e unilateral, respeitando um dermátomo.\n\nVacina só para imunossuprimidos (D): a vacina é recomendada para todas as pessoas a partir de 50 anos; os imunossuprimidos são um grupo a mais em que ela é indicada, e não o único.",
+    tip: "Zóster = vesículas dolorosas, unilaterais, em um dermátomo. Vacina recombinante a partir de 50 anos, inclusive em imunossuprimidos.",
     reference: 'Calendário de Vacinação SBIm Idoso 2022/2023. Guia de Vacinação Geriatria SBIm / SBGG 2022/2023.',
     tags: ['infectologia', 'geriatria']
   },
@@ -654,8 +694,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Acidente vascular cerebral isquêmico. Transferência para UTI e observar a evolução.'
     ],
     correctAnswer: 0,
-    explanation: 'Paciente com déficit focal agudo (2h) e TC normal; diagnóstico de AVCI e indicação de trombólise endovenosa.',
-    commentary: 'Nessa situação — déficit focal agudo, visto bem pela última vez há 2 horas — estamos diante de uma paciente com indicação de trombólise (está dentro da janela de 4h30). A tomografia de crânio inicial serve para excluir sangramento (AVCH). No caso, a ausência de hiperdensidade sugere AVCI.',
+    explanation: "Déficit neurológico focal de início súbito (desvio de rima e hemiparesia) em idosa hipertensa e diabética é acidente vascular cerebral até prova em contrário. A tomografia sem contraste não mostra sangramento (que apareceria como área hiperdensa); nas primeiras horas, o AVC isquêmico costuma ter tomografia normal.\n\nCom início há 2 horas, ela está dentro da janela de 4,5 horas para trombólise intravenosa (alteplase, ou tenecteplase onde disponível), desde que não haja contraindicações. A pressão de 174/104 mmHg permite trombolisar, pois o limite é 185/110 mmHg; antes, é preciso checar a glicemia capilar, porque hipo e hiperglicemia podem imitar AVC.",
+    commentary: "AVC hemorrágico com craniectomia (B): a tomografia não mostra hiperdensidade, e não há sinais de hipertensão intracraniana ou efeito de massa que indiquem descompressão.\n\nAVC hemorrágico com trombólise (C): além de o diagnóstico estar errado, sangramento intracraniano é contraindicação absoluta à trombólise.\n\nAVC isquêmico com UTI e observação (D): o diagnóstico está certo, mas apenas observar perde a janela terapêutica; quanto mais cedo a reperfusão, mais tecido cerebral se salva.",
+    tip: "Déficit focal súbito + TC sem sangue + < 4,5 h + PA < 185/110 + glicemia ok = trombólise.",
     reference: 'SOPESP/BRASIL. Diretrizes de atenção à reabilitação da pessoa com acidente vascular cerebral. 1ª ed. Brasília: Ministério da Saúde, 2013.',
     tags: ['neurologia', 'emergência']
   },
@@ -719,8 +760,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Necrobiose lipoídica - Corticoterapia sistêmica.'
     ],
     correctAnswer: 1,
-    explanation: 'Erisipela é uma infecção superficial com bordas nítidas, calor e dor, frequentemente por Streptococcus.',
-    commentary: 'O quadro clínico de febre e lesão eritematosa bem delimitada em membro inferior é típico de erisipela, devendo ser tratada com foco em cocos gram-positivos (especialmente S. pyogenes).',
+    explanation: "Febre, mal-estar e placa eritematosa, quente e de bordas bem delimitadas e elevadas na perna caracterizam a erisipela, infecção da derme superficial e dos linfáticos causada principalmente pelo Streptococcus pyogenes (estreptococo beta-hemolítico do grupo A).\n\nO tratamento é antibiótico com cobertura estreptocócica, como penicilina, amoxicilina ou cefalexina, além de repouso e elevação do membro. Vale procurar e tratar a porta de entrada, como frieira entre os dedos, para evitar recorrências.",
+    commentary: "Celulite com cobertura para Gram-negativos (A): a celulite é mais profunda e tem bordas mal definidas; quando tratada, a cobertura é para Gram-positivos (estreptococo e Staphylococcus aureus), não Gram-negativos.\n\nTrombose venosa profunda (C): causa edema, dor e empastamento da panturrilha, mas não placa eritematosa bem delimitada com febre.\n\nNecrobiose lipoídica (D): placas amareladas e atróficas na região pré-tibial, de evolução crônica, associadas ao diabetes, sem febre; corticoide sistêmico pioraria uma infecção.",
+    tip: "Placa vermelha, quente, de borda bem delimitada + febre = erisipela (estreptococo do grupo A): penicilina.",
     reference: 'Guia de Vigilância em Saúde. Ministério da Saúde.',
     tags: ['dermatologia', 'infectologia']
   },
@@ -736,8 +778,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Carcinoma espinocelular'
     ],
     correctAnswer: 0,
-    explanation: 'Lesões com critérios ABCDE alterados (assimetria, bordas irregulares, cores variadas) sugerem melanoma.',
-    commentary: 'A lesão descrita apresenta 3 características de alta suspeição para melanoma no critério ABCDE: assimetria, bordas irregulares e mais de 2 cores.',
+    explanation: "Lesão pigmentada com assimetria, bordas irregulares e mais de uma cor preenche três critérios da regra ABCDE (Assimetria, Bordas, Cor, Diâmetro acima de 6 mm e Evolução), o que torna o melanoma a principal hipótese.\n\nA conduta é a biópsia excisional com margem estreita, para confirmar o diagnóstico e medir a espessura de Breslow, que define a margem da ampliação e o prognóstico. Em idoso, o tronco é localização comum, e por isso o exame completo da pele vale em toda consulta.",
+    commentary: "Dermatofibrossarcoma (B): é placa ou nódulo endurecido, da cor da pele ou violáceo, de crescimento lento no tronco; não é lesão pigmentada multicolorida.\n\nCarcinoma basocelular pigmentado (C): costuma ser pápula de aspecto perolado, com bordas brilhantes e telangiectasias, em área de exposição solar, geralmente com pigmento mais uniforme.\n\nCarcinoma espinocelular (D): lesão ceratósica, descamativa ou ulcerada em área fotoexposta, em geral não pigmentada.",
+    tip: "ABCDE: Assimetria, Bordas irregulares, Cores, Diâmetro > 6 mm, Evolução. Suspeitou de melanoma? Biópsia excisional.",
     reference: 'National Comprehensive Cancer Network: www.nccn.org',
     tags: ['dermatologia', 'oncologia']
   },
@@ -752,8 +795,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Abscesso renal'
     ],
     correctAnswer: 2,
-    explanation: 'Dor lombar súbita, intensa, sem febre e com Giordano positivo sugere obstrução por cálculo em via urinária.',
-    commentary: 'A ureterolitíase (cálculo) é a principal causa de cólica nefrética súbita e intensa. A ausência de febre diferencia da pielonefrite aguda. O sinal de Giordano traduz a distensão da cápsula renal pela obstrução.',
+    explanation: "Dor lombar unilateral intensa, de início súbito, sem febre e sem sintomas urinários, com Giordano positivo, é a apresentação típica da cólica renal por cálculo ureteral. A obstrução distende a pelve e a cápsula renal, o que explica a dor e o Giordano; a taquicardia acompanha a dor intensa.\n\nO exame de escolha para confirmar é a tomografia de abdome sem contraste; o ultrassom é alternativa, sobretudo em gestantes. O tratamento inicial é analgesia (anti-inflamatório e, se preciso, opioide). Se surgir febre com obstrução, é urgência: a via urinária precisa ser desobstruída.",
+    commentary: "Pielonefrite (A): também dá dor lombar e Giordano positivo, mas costuma vir com febre, calafrios e sintomas urinários, ausentes aqui.\n\nLombociatalgia (B): dor mecânica que piora com o movimento e pode irradiar para a perna; não costuma dar Giordano positivo.\n\nAbscesso renal (D): quadro infeccioso, com febre geralmente prolongada e estado geral comprometido.",
+    tip: "Dor lombar súbita, forte, unilateral, sem febre = cálculo ureteral. Febre + obstrução = desobstruir com urgência.",
     reference: 'ZERATI FILHO, Miguel et al. Urologia fundamental. 1. ed. São Paulo: Planmark, 2010.',
     tags: ['urologia', 'nefrologia']
   },
@@ -768,8 +812,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) A combinação de foco inflamatório, autoesplenectomia e bacteremia causa osteomielite bacteriana, geralmente por Salmonella, que provoca a dor.'
     ],
     correctAnswer: 1,
-    explanation: 'As crises álgicas na anemia falciforme são causadas pela vaso-oclusão microvascular e consequente isquemia tecidual.',
-    commentary: 'A fisiopatologia da dor na anemia falciforme está ligada à falcização das hemácias unter estresse (como infecções), gerando vaso-oclusão e necrose isquêmica tecidual que estimula as terminações nervosas. A autoesplenectomia aumenta o risco de infecções, mas não é causa direta da dor.',
+    explanation: "Na anemia falciforme (forma homozigota SS), a hemoglobina S polimeriza quando desoxigenada e deforma as hemácias, que obstruem a microcirculação. A crise vaso-oclusiva causa isquemia e necrose dos tecidos, inclusive da medula óssea de costelas e esterno, e é essa isquemia que provoca a dor. Infecções, desidratação, frio e estresse são gatilhos frequentes, como a amigdalite do caso.\n\nPonto prático: dor torácica com febre em paciente falcêmico exige afastar síndrome torácica aguda (procurar infiltrado novo na radiografia e hipoxemia), que é grave. A crise dolorosa é tratada com analgesia potente (opioide se necessário) e hidratação.",
+    commentary: "Comum a todas as formas e causada pela autoesplenectomia (A): o traço falcêmico (AS) não causa crises de dor, e a perda do baço aumenta o risco de infecção, mas não é o mecanismo da dor.\n\nPiora da anemia por hemólise (C): a hemólise explica anemia e icterícia, mas a dor vem da vaso-oclusão local, e não de isquemia sistêmica por anemia.\n\nOsteomielite por Salmonella (D): existe e é mais frequente em falcêmicos, mas é infecção localizada, geralmente em ossos longos; o quadro de dor recorrente desencadeada por infecção é de crise vaso-oclusiva.",
+    tip: "Dor na anemia falciforme = vaso-oclusão e isquemia. Dor torácica + febre: afaste síndrome torácica aguda.",
     reference: 'Robbins e Cotran, Patologia; Bases patológicas das doenças. 7ª edição.',
     tags: ['hematologia']
   },
@@ -784,8 +829,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) É esperado aumento nos níveis de TSH e diminuição de T4 livre.'
     ],
     correctAnswer: 2,
-    explanation: 'O hipertiroidismo de Graves é mediado por anticorpos TRAb que estimulam a tireoide.',
-    commentary: 'A tríade de hipertiroidismo clínico, proptose ocular (oftalmopatia) e bócio difuso caracteriza a Doença de Graves. O diagnóstico sorológico é dado pelo TRAb elevado. Espera-se TSH suprimido e T4 livre elevado.',
+    explanation: "Mulher jovem com palpitação, tremores, perda de peso, intestino mais solto, taquicardia, PA diferencial alargada e proptose: é tireotoxicose, e a oftalmopatia aponta para doença de Graves, a causa mais comum de hipertireoidismo nessa faixa etária.\n\nGraves é autoimune: anticorpos estimulam o receptor do TSH (TRAb) e fazem a tireoide produzir hormônio sem controle. Por isso o TRAb elevado é o achado esperado e é o exame que confirma a etiologia quando a clínica não basta. A oftalmopatia e o mixedema pré-tibial são manifestações próprias de Graves, não vistas nas outras causas de hipertireoidismo.",
+    commentary: "Levotiroxina (A): é reposição para hipotireoidismo. Em Graves o tratamento usa antitireoidianos (metimazol de escolha; propiltiouracil em situações específicas), iodo radioativo ou cirurgia.\n\nTireoide pequena com nódulos (B): em Graves a glândula costuma estar aumentada de forma difusa e muito vascularizada ao Doppler, sem nódulos. Nódulos grandes sugerem bócio multinodular tóxico ou adenoma tóxico.\n\nTSH alto e T4 livre baixo (D): é o perfil do hipotireoidismo primário. No hipertireoidismo primário o TSH está suprimido e o T4 livre (ou o T3) elevado.",
+    tip: "Hipertireoidismo + oftalmopatia = Graves: TSH suprimido, T4L alto e TRAb positivo.",
     reference: 'Diretrizes da SBEM - Hipertiroidismo.',
     tags: ['endocrinologia']
   },
@@ -800,8 +846,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Pacientes que foram trazidos por equipes de resgate seguindo ordem de chegada ao pronto-socorro.'
     ],
     correctAnswer: 0,
-    explanation: 'Em situações de catástrofe, a priorização visa salvar o maior número de vidas (beneficência coletiva e justiça).',
-    commentary: 'O princípio da justiça na bioética de desastres preconiza que, em cenário de escassez absoluta de recursos, deve-se priorizar as vítimas com maior chance de recuperação (sobrevida). A ordem de chegada ("first come, first aid") ou idade não são critérios adequados nestas situações.',
+    explanation: "Em desastre com múltiplas vítimas e recursos insuficientes, a prioridade é definida pela gravidade e pela chance de o atendimento mudar o desfecho. Protocolos de triagem (como o START) classificam as vítimas por cores e priorizam quem tem lesão grave, mas com boa possibilidade de sobreviver se tratado rapidamente.\n\nIsso se apoia nos princípios bioéticos de beneficência (fazer o maior bem possível com o que se tem) e de justiça distributiva (alocar recursos escassos por critérios clínicos objetivos e iguais para todos). O Código de Ética Médica proíbe discriminar pacientes por qualquer característica, inclusive idade.",
+    commentary: "Jovens primeiro (B): idade isolada não é critério clínico; priorizar por expectativa de vida discrimina e ignora a gravidade das lesões.\n\nIdosos primeiro (C): a prioridade prevista no Estatuto da Pessoa Idosa (Lei 10.741/2003) não substitui a triagem por gravidade em situações de emergência com múltiplas vítimas.\n\nOrdem de chegada (D): a classificação de risco existe justamente para abandonar esse critério, que pode deixar o paciente grave esperando enquanto o leve é atendido.",
+    tip: "Múltiplas vítimas: triagem por gravidade e chance de sobrevida (justiça e beneficência), nunca idade ou ordem de chegada.",
     reference: 'Código de Ética Médica. Resolução CFM n° 2.217/2018.',
     tags: ['bioética', 'emergência']
   },
@@ -816,8 +863,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Solicitar cintilografia com hemácias marcadas para avaliação de sangramento no intestino delgado.'
     ],
     correctAnswer: 1,
-    explanation: 'Anemia ferropriva no idoso exige exclusão de câncer gastrointestinal, mesmo sem sangramento visível.',
-    commentary: 'Todo paciente acima de 50 anos com anemia ferropriva precisa de investigação do trato gastrointestinal para descartar neoplasias (especialmente CA de cólon e estômago). O sangue oculto não é suficiente para diagnóstico definitivo nestes casos.',
+    explanation: "Anemia microcítica e hipocrômica (VCM 63, HCM 20), RDW alto e reticulócitos baixos em mulher de 60 anos, já na pós-menopausa, configuram anemia ferropriva. Nessa idade, sem menstruação, a falta de ferro é considerada perda sanguínea oculta pelo tubo digestivo até prova em contrário, mesmo sem relato de sangramento.\n\nO trato gastrointestinal concentra as causas mais importantes, como doença péptica e câncer colorretal (o de cólon direito pode sangrar sem mudar o hábito intestinal). Por isso a conduta é investigar com endoscopia digestiva alta e colonoscopia, enquanto se repõe o ferro.",
+    commentary: "Ferro oral e repetir em 3 meses (A): tratar sem investigar pode atrasar o diagnóstico de um câncer. Além disso, a reposição não deve parar assim que a hemoglobina melhora; ela continua até repor os estoques (ferritina).\n\nSangue oculto nas fezes (C): é teste de rastreamento em pessoas sem sintomas. Diante de anemia ferropriva o resultado negativo não exclui lesão, e a endoscopia será necessária de qualquer forma.\n\nCintilografia com hemácias marcadas (D): serve para localizar sangramento ativo, geralmente quando a endoscopia alta e a colonoscopia não acharam a fonte. Não é exame inicial.",
+    tip: "Anemia ferropriva em homem ou mulher pós-menopausa: endoscopia digestiva alta + colonoscopia.",
     reference: 'Hoffbrand, A.V; MOSS, P. A. H. Fundamentos em hematologia.',
     tags: ['hematologia', 'gastroenterologia', 'geriatria']
   },
@@ -833,8 +881,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Pneumonia adquirida na comunidade de lobo médio; tratamento domiciliar com betalactâmico via oral.'
     ],
     correctAnswer: 3,
-    explanation: 'PAC em jovem sem comorbidades e estável (CURB-65=0) tem tratamento ambulatorial com betalactâmico ou macrolídeo.',
-    commentary: 'A radiografia mostra consolidação no lobo médio (sinal da silhueta cardíaca). O quadro agudo indica PAC. Como o paciente é jovem e hígido, o tratamento é ambulatorial com betalactâmico via oral.',
+    explanation: "Jovem sem comorbidades, com quadro agudo de tosse, febre, dor pleurítica e crepitações em base direita, estável (FR 18, SpO2 98%, PA normal, consciente): pneumonia adquirida na comunidade sem critérios de gravidade (CURB-65 = 0), que pode ser tratada em casa.\n\nNa radiografia, a consolidação apaga o contorno direito do coração (sinal da silhueta) e fica delimitada pela cissura horizontal, o que localiza a lesão no lobo médio. Na lesão de lobo inferior, o que se apaga é a cúpula diafragmática, e no perfil a opacidade fica posterior. Para o adulto previamente hígido, a diretriz brasileira aceita betalactâmico oral (amoxicilina) como tratamento ambulatorial.",
+    commentary: "Lobos médio e inferior com macrolídeo (A): o macrolídeo seria uma opção aceitável, mas a imagem não mostra acometimento do lobo inferior (diafragma preservado e espaço retrocardíaco livre no perfil).\n\nTuberculose com RIPE (B): o quadro tem 2 dias; a tuberculose cursa com tosse por mais de 3 semanas, febre vespertina, sudorese noturna e emagrecimento, e não exige internação para tratar.\n\nLobo inferior com fluoroquinolona (C): a localização está errada e a quinolona respiratória fica reservada a quem tem comorbidades, uso recente de antibiótico ou quadro mais grave.",
+    tip: "Apagou a borda do coração = lobo médio; apagou o diafragma = lobo inferior. PAC leve no jovem: amoxicilina em casa.",
     reference: 'Recomendações para o manejo da PAC 2018. J Bras Pneumol. 2018.',
     tags: ['pneumologia', 'infectologia']
   },
@@ -849,9 +898,10 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Manguito 10cm acima da fossa antecubital, centralizado na artéria braquial.'
     ],
     correctAnswer: 2,
-    explanation: 'Em obesos, manguitos maiores são essenciais para evitar medidas falsamente elevadas.',
-    commentary: 'A técnica exige manguito adequado (largo para obesos), posicionado 2-3cm acima da fossa antecubital. A bolsa deve cobrir 40% da circunferência e envolver 80% do braço.',
-    reference: 'IV Diretrizes Brasileiras de Hipertensão Arterial. 2020.',
+    explanation: "A técnica correta de aferição vale para todos, e na obesidade o detalhe que mais pesa é o tamanho do manguito: manguito estreito demais superestima a pressão. A bolsa de borracha deve ter largura de cerca de 40% da circunferência do braço e comprimento que envolva 80% a 100% dele; em braços muito largos usa-se manguito de obeso (ou, se não houver, o do antebraço com ausculta da radial).\n\nO manguito vai 2 a 3 cm acima da fossa cubital, com o centro da bolsa sobre a artéria braquial, braço apoiado na altura do coração e paciente sentado em repouso. Antes de inflar, estima-se a sistólica pela palpação do pulso radial e infla-se 20 a 30 mmHg acima dela.",
+    commentary: "2 a 10 cm acima e largura de 30% (A): a distância é imprecisa, a posição da bolsa sobre a braquial importa, e largura de 30% é pequena, o que superestima a pressão.\n\nSó envolver o braço e inflar até 220 mmHg (B): ignora o tamanho do manguito e a estimativa palpatória da sistólica; inflar demais causa dor e não garante leitura correta.\n\n10 cm acima da fossa cubital (D): o manguito fica alto demais e longe do ponto de ausculta; o correto é 2 a 3 cm acima.",
+    tip: "Manguito: largura 40% e comprimento 80 a 100% do braço, 2 a 3 cm acima da fossa cubital, bolsa sobre a braquial.",
+    reference: "Barroso WKS et al. Diretrizes Brasileiras de Hipertensão Arterial – 2020. Arq Bras Cardiol. 2021;116(3):516-658. Ministério da Saúde. Cadernos de Atenção Básica nº 15 – Hipertensão Arterial Sistêmica. 2006.",
     tags: ['cardiologia']
   },
   {
@@ -865,8 +915,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Holter de 24 horas; manter Captopril, associar Carvedilol e Sustrate.'
     ],
     correctAnswer: 1,
-    explanation: 'Quadro clínico de Insuficiência Cardíaca; o ecocardiograma avalia a função de bomba e guia o tratamento.',
-    commentary: 'A paciente apresenta sinais congestivos e de falha ventricular (B3, DPN). O eco é o exame principal. O tratamento padrão da IC inclui inibição neuro-hormonal (IECA + Betabloqueador) e diuréticos para alívio sintomático.',
+    explanation: "Hipertensa de longa data, mal controlada, com dispneia progressiva, dispneia paroxística noturna, ortopneia, edema de membros inferiores, B3, estertores em bases, hepatomegalia e cardiomegalia: quadro de insuficiência cardíaca congestiva, provavelmente de causa hipertensiva.\n\nO ecocardiograma é o exame que confirma o diagnóstico e mede a fração de ejeção, que define o tratamento. Na conduta, mantém-se o IECA (captopril, agora em uso correto), usa-se furosemida para aliviar a congestão e associa-se betabloqueador com benefício comprovado na IC (carvedilol), iniciado em dose baixa e aumentado aos poucos, o que também ajuda a controlar a taquicardia.",
+    commentary: "MAPA e hidralazina com tiazídico (A): a dúvida não é se a paciente é hipertensa, e sim a função do coração. Trocar o IECA por hidralazina retira um fármaco que reduz mortalidade na IC, e o tiazídico é fraco para a congestão.\n\nCintilografia e ivabradina (C): a cintilografia investiga isquemia, não é o exame inicial da IC. A ivabradina só entra em IC com fração reduzida em ritmo sinusal que segue com FC alta já em uso de betabloqueador na dose tolerada.\n\nHolter e Sustrate (D): o Holter avalia arritmias, que não são o problema principal. Sustrate (propatilnitrato) é nitrato antianginoso, sem papel no tratamento crônico dessa paciente.",
+    tip: "Suspeita de IC: ecocardiograma. Congestão: furosemida. Base do tratamento: IECA + betabloqueador da IC.",
     reference: 'Diretriz Brasileira de Insuficiência Cardíaca Aguda e Crônica – SBC. 2019.',
     tags: ['cardiologia']
   },
@@ -881,8 +932,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Tuberculose Pulmonar'
     ],
     correctAnswer: 2,
-    explanation: 'Ruflar diastólico com estalido de abertura e B1 hiperfonética são sinais de Estenose Mitral, geralmente reumática.',
-    commentary: 'A história de amigdalites e o sopro diastólico com estalido de abertura selam o diagnóstico de estenose mitral reumática. O tratamento visa controle da frequência cardíaca e redução da congestão pulmonar.',
+    explanation: "Jovem de zona rural com amigdalites de repetição na infância (pista de febre reumática), dispneia progressiva aos esforços, taquicardia, hemoptise e congestão pulmonar. Na ausculta, B1 hiperfonética, estalido de abertura e sopro diastólico em ruflar no foco mitral: é a tríade da estenose mitral, cuja causa principal no Brasil é a doença reumática.\n\nA investigação inclui radiografia, ECG e, sobretudo, ecocardiograma, que mede a área valvar. No tratamento inicial, diurético alivia a congestão e o betabloqueador reduz a frequência cardíaca, alongando a diástole e dando mais tempo para o sangue passar pela valva estreitada.",
+    commentary: "Insuficiência aórtica (A): dá sopro diastólico aspirativo, em decrescendo, no foco aórtico, com pulsos amplos e PA diferencial alargada, sem estalido de abertura nem ruflar.\n\nDPOC (B): improvável aos 19 anos sem tabagismo, e não explica estalido de abertura e sopro diastólico.\n\nTuberculose (D): não há febre, emagrecimento nem tosse prolongada, e a ausculta cardíaca é típica de valvopatia; sedativo da tosse não é tratamento.",
+    tip: "B1 hiperfonética + estalido de abertura + ruflar diastólico = estenose mitral (reumática).",
     reference: 'Diretrizes Brasileiras de Valvopatias – 2020.',
     tags: ['cardiologia']
   },
@@ -897,15 +949,16 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Duloxetina'
     ],
     correctAnswer: 3,
-    explanation: 'A duloxetina é um antidepressivo dual (serotonina e noradrenalina) que modula a dor crônica.',
-    commentary: 'A duloxetina é a única entre as opções com mecanismo de ação dual na recaptação de neurotransmissores moduladores da dor. Anti-inflamatórios e corticóides não têm indicação na fibromialgia.',
+    explanation: "Dor crônica generalizada com fadiga, sono não reparador e queixas cognitivas é o quadro da fibromialgia. O tratamento se apoia em exercício físico e educação; entre os fármacos, usam-se os que modulam as vias descendentes de controle da dor.\n\nA duloxetina é um inibidor da recaptação de serotonina e noradrenalina (IRSN) e é um dos medicamentos com eficácia na fibromialgia, ao lado da amitriptilina e da pregabalina. Das alternativas, é a única com esse mecanismo.",
+    commentary: "Corticosteroide (A): anti-inflamatório hormonal; a fibromialgia não é doença inflamatória e o corticoide não traz benefício.\n\nParacetamol (B): analgésico simples, sem ação sobre a recaptação de serotonina e noradrenalina e com pouco efeito nessa dor.\n\nNimesulida (C): anti-inflamatório não esteroide; também não age no mecanismo central de amplificação da dor da fibromialgia.",
+    tip: "Fibromialgia: exercício + amitriptilina, duloxetina (IRSN) ou pregabalina. Corticoide e AINE não.",
     reference: 'Expert opinion on pharmacotherapy, 2015.',
     tags: ['reumatologia', 'farmacologia']
   },
   {
     id: 'tp2022-37',
     module: 'Clínica Médica',
-    text: 'Homem de 65 anos, diabético, diagnóstico de dengue. Afebril há 1 dia, mas apresenta forte dor abdominal que não cede com analgésicos. Qual a classificação e conduta?',
+    text: "Homem de 65 anos, diabético, com dengue confirmada. Há 5 dias teve febre, cefaleia, mialgia e dor retro-orbitária. Está afebril há 1 dia, mas surgiu dor abdominal forte e contínua, que não melhora com analgésicos. Nega sangramentos. Ao exame, está hemodinamicamente estável, com dor difusa à palpação do abdome; glicemia capilar normal e prova do laço negativa. Qual a classificação e a conduta?",
     options: [
       '(A) Dengue C; reposição volêmica endovenosa imediata (10mL/kg na primeira hora) e internação.',
       '(B) Dengue B; hemograma e se plaquetopenia grave iniciar reposição venosa.',
@@ -913,8 +966,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Dengue D; reposição volêmica endovenosa (30mL/kg na primeira hora) e UTI.'
     ],
     correctAnswer: 0,
-    explanation: 'A dor abdominal intensa e contínua é um sinal de alarme, classificando como Dengue Grupo C.',
-    commentary: 'A dor abdominal que surge após a febre é um sinal clássico de extravasamento plasmático incipiente (alerta). No estágio C, a conduta é hidratação venosa imediata e internação por 48h.',
+    explanation: "Paciente com dengue no 5º dia, entrando na fase crítica (logo após a queda da febre), surge dor abdominal intensa e contínua. Isso é sinal de alarme. Como ele está hemodinamicamente estável, sem sinais de choque, a classificação é grupo C.\n\nNo grupo C, a hidratação venosa começa imediatamente, sem esperar exames: soro fisiológico 10 mL/kg em 1 hora, com reavaliação clínica e do hematócrito para decidir os próximos passos. O paciente fica em leito de internação até estabilizar, por no mínimo 48 horas segundo o manual do Ministério da Saúde citado. Idade acima de 65 anos e diabetes já o colocariam ao menos no grupo B.",
+    commentary: "Hemograma antes de hidratar (B): no grupo C a reposição venosa não pode esperar o resultado de exames; condicionar a hidratação à plaquetopenia está errado.\n\nHidratação oral e 6 horas de observação (C): é a conduta do grupo B, para quem não tem sinal de alarme. Dor abdominal intensa exige hidratação venosa e internação.\n\n30 mL/kg e UTI (D): é a fase de expansão do grupo D (choque ou sangramento grave). O paciente está estável.",
+    tip: "Dengue com sinal de alarme e sem choque = grupo C: SF 10 mL/kg na 1ª hora, já, e internação.",
     reference: 'Dengue: diagnóstico e manejo clínico. Ministério da Saúde, 2016.',
     tags: ['infectologia', 'emergência']
   },
@@ -930,8 +984,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Hemorragia subaracnoidea traumática'
     ],
     correctAnswer: 2,
-    explanation: 'A imagem hipodensa em crescente e a história de trauma antigo são típicas do subdural crônico.',
-    commentary: 'O hematoma subdural crônico se caracteriza por uma coleção entre a dura-máter e a aracnóide, ocorrendo após trauma venoso (veias ponte). A hipodensidade na TC indica sangue antigo.',
+    explanation: "Idoso anticoagulado (varfarina por fibrilação atrial) que caiu há 2 meses e agora tem confusão, sonolência e piora do estado geral, sem déficit focal grosseiro. A tomografia mostra coleção hipodensa em forma de crescente acompanhando a convexidade: hematoma subdural crônico.\n\nO sangramento vem da ruptura de veias-ponte entre o córtex e os seios durais, favorecida pela atrofia cerebral do idoso e pela anticoagulação; por isso o trauma pode ser mínimo e os sintomas aparecerem semanas depois. Com o tempo o coágulo se liquefaz e forma membranas, e a coleção fica hipodensa na TC. A conduta inclui reverter a anticoagulação e avaliar drenagem neurocirúrgica.",
+    commentary: "Contusão cerebral (A): lesão dentro do parênquima, geralmente em polos frontais e temporais, com focos hiperdensos de sangue, logo após o trauma.\n\nHematoma epidural (B): coleção aguda, hiperdensa e biconvexa (em lente), por lesão arterial (meníngea média) associada a fratura, com intervalo lúcido de horas, não de meses.\n\nHemorragia subaracnoidea traumática (D): sangue hiperdenso nos sulcos e cisternas, na fase aguda, sem formar coleção em crescente.",
+    tip: "Idoso, anticoagulado, queda há semanas, crescente hipodenso na TC = hematoma subdural crônico.",
     reference: 'SABISTON. Tratado de cirurgia: A base biológica da prática cirúrgica moderna.',
     tags: ['neurologia', 'cirurgia', 'emergência']
   },
@@ -946,15 +1001,16 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Paciente com Hepatite B curada.'
     ],
     correctAnswer: 1,
-    explanation: 'A presença isolada do Anti-HBs sem o marcador de contato (Anti-HBc) define imunidade por vacinação.',
-    commentary: 'O perfil sorológico onde apenas o Anti-HBs é positivo indica sucesso da imunização. Se a paciente fosse curada, o Anti-HBc total também seria positivo.',
+    explanation: "Para ler a sorologia da hepatite B, três marcadores bastam: HBsAg indica infecção atual; anti-HBc indica contato prévio com o vírus; anti-HBs indica imunidade.\n\nAqui o HBsAg é negativo (sem infecção), o anti-HBc é negativo (nunca teve contato com o vírus) e o anti-HBs é positivo (imune). A única forma de ter anti-HBs sem anti-HBc é a vacina, que contém apenas o antígeno de superfície. A gestante está vacinada e protegida; o recém-nascido seguirá a rotina de vacina ao nascer.",
+    commentary: "Hepatite B crônica (A): exigiria HBsAg positivo por mais de 6 meses e anti-HBc positivo; na fase de imunotolerância há HBeAg positivo e transaminases normais.\n\nFase imunorreativa (C): também tem HBsAg e anti-HBc positivos, agora com transaminases elevadas e inflamação hepática.\n\nHepatite B curada (D): quem teve a infecção mantém o anti-HBc positivo junto com o anti-HBs; o anti-HBc negativo afasta contato com o vírus.",
+    tip: "Anti-HBs isolado (HBsAg e anti-HBc negativos) = vacinado. Anti-HBs + anti-HBc = curado.",
     reference: 'Infectologia. Bases clínicas e tratamento Reinaldo Salomão.',
     tags: ['infectologia', 'hepatologia']
   },
   {
     id: 'tp2022-40',
     module: 'Clínica Médica',
-    text: 'Homem, 72 anos, tosse seca há 6 meses, pior ao decúbito. Radiografia mostra nível hidroaéreo retrocardíaco (Hérnia de hiato). Qual exame é necessário?',
+    text: "Homem de 42 anos com tosse seca há 6 meses, que piora aos grandes esforços e ao deitar. A radiografia de tórax mostra imagem retrocardíaca com nível hidroaéreo. Qual exame complementar é necessário para avaliar a causa da tosse?",
     image: '/images/tp2022-40.webp',
     options: [
       '(A) Angiografia torácica',
@@ -963,8 +1019,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Endoscopia digestiva alta'
     ],
     correctAnswer: 3,
-    explanation: 'A hérnia de hiato é visível na radiografia e a EDA é o exame de escolha para avaliação gástrica.',
-    commentary: 'A tosse que piora ao deitar sugere fortemente refluxo gastroesofágico (DRGE). A radiografia confirma a presença de hérnia hiatal (nível hidroaéreo no mediastino posterior). A EDA é o exame de eleição para avaliar a anatomia e as complicações do refluxo.',
+    explanation: "Tosse seca há 6 meses é tosse crônica (mais de 8 semanas). A piora ao deitar e aos grandes esforços sugere refluxo, e a radiografia mostra imagem retrocardíaca com nível hidroaéreo, que corresponde a estômago herniado no tórax: hérnia de hiato.\n\nA hérnia de hiato favorece a doença do refluxo gastroesofágico, uma das principais causas de tosse crônica com radiografia de pulmão sem lesão parenquimatosa. O exame que avalia a hérnia e as lesões de refluxo (esofagite, esôfago de Barrett) é a endoscopia digestiva alta.",
+    commentary: "Angiografia torácica (A): investiga vasos (aneurisma, tromboembolismo), sem suspeita no caso.\n\nBroncoscopia com lavado (B): é útil quando há lesão no parênquima ou nas vias aéreas, como massa, infecção ou suspeita de corpo estranho; a imagem aqui é digestiva.\n\nEcodopplercardiograma (C): não há sinais de doença cardíaca; a imagem retrocardíaca com nível hidroaéreo não é do coração.",
+    tip: "Nível hidroaéreo atrás do coração na radiografia = hérnia de hiato: peça endoscopia digestiva alta.",
     reference: 'Michaudet C, Malaty J. Chronic Cough: Evaluation and Management. Am Fam Physician. 2017.',
     tags: ['gastroenterologia', 'pneumologia']
   },
@@ -1625,8 +1682,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Inflamação de pequenas vias aéreas, aumento na produção de muco e aprisionamento aéreo ocasionam o efeito espaço morto, razão da dispneia de Sérgio.'
     ],
     correctAnswer: 2,
-    explanation: 'O distúrbio ventilação/perfusão é o principal responsável pela hipoxemia durante a exacerbação da DPOC, situação à qual o paciente pode estar sujeito.',
-    commentary: 'Comentários sobre a resposta correta:\n(C) Embora a redução dos níveis de saturação arterial de oxigênio possa ocorrer por vários fatores na DPOC, durante a exacerbação o mecanismo central é o distúrbio ventilação/perfusão. O aumento da inflamação nas pequenas vias aéreas intensifica a resistência destas, por isso reduz a ventilação alveolar. Desta maneira, o sangue que circula pelo capilar pulmonar terá dificuldade para se oxigenar.\n\nComentários sobre os distratores:\n(A) Embora a hipercapnia possa ocorrer na exacerbação, o mecanismo descrito está errado, porque o gás carbônico tem alta difusibilidade pela membrana alvéolo-capilar, sendo limitado principalmente pela hipoventilação difusa.\n(B) A broncoconstrição reversível é característica de outra doença de vias aéreas, a asma. Uma vez que Sérgio é portador de DPOC, apresenta limitação persistente do fluxo aéreo, e não reversível.\n(D) Os fenômenos listados reduzem a ventilação alveolar e, por isso, provocam efeito shunt, não espaço morto.',
+    explanation: "Sérgio está em exacerbação da DPOC, provavelmente desencadeada por infecção respiratória: mais dispneia, escarro purulento e sibilância. A hipoxemia nesse momento vem principalmente do desequilíbrio entre ventilação e perfusão (V/Q).\n\nA inflamação, o edema e o muco nas pequenas vias aéreas fazem com que vários alvéolos continuem recebendo sangue, mas sejam mal ventilados. O sangue passa por eles sem se oxigenar o suficiente, e a saturação cai. Por isso a oferta de oxigênio em baixo fluxo costuma corrigir a hipoxemia, buscando saturação entre 88% e 92% para não agravar a retenção de CO₂.",
+    commentary: "Difusão de CO₂ comprometida (A): o CO₂ atravessa a membrana alveolocapilar com muita facilidade; quando há hipercapnia na exacerbação, ela se deve à hipoventilação alveolar e ao cansaço da musculatura respiratória, não a falha de difusão.\n\nBroncoconstrição reversível (B): obstrução variável e reversível é marca da asma; a DPOC se define por limitação persistente ao fluxo aéreo.\n\nEfeito espaço morto (D): áreas mal ventiladas e ainda perfundidas produzem efeito shunt (V/Q baixo); espaço morto é o contrário, área ventilada e pouco perfundida.",
+    tip: "Hipoxemia na exacerbação da DPOC = distúrbio V/Q. Oxigênio em baixo fluxo, alvo de SpO₂ 88–92%.",
     reference: 'Fisiopatologia Pulmonar de West: Princípios Básicos.',
     tags: ['pneumologia', 'fisiopatologia']
   },
@@ -1641,8 +1699,9 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Perda da retração elástica pulmonar com aprisionamento aéreo progressivo.'
     ],
     correctAnswer: 1,
-    explanation: 'A asma brônquica é caracterizada por hiperresponsividade brônquica e obstrução variável e reversível do fluxo aéreo.',
-    commentary: 'Comentários sobre a resposta correta:\n(B) O quadro clínico é típico de asma, caracterizado por sintomas variáveis e desencadeados por estímulos ambientais. A espirometria basal pode ser normal fora das crises. O teste de broncoprovocação positivo (queda ≥20% no VEF1) demonstra hiperresponsividade brônquica, mecanismo central da doença, associado à obstrução variável das vias aéreas.\n\nComentários sobre os distratores:\n(A) Refere-se a obstrução fixa, mais compatível com DPOC avançada ou remodelamento irreversível, não condizente com variabilidade clínica.\n(C) Doenças intersticiais cursam com padrão restritivo, não com hiperresponsividade brônquica.\n(D) Descreve enfisema pulmonar, com perda de elasticidade, típico da DPOC.',
+    explanation: "Crises de dispneia, tosse seca e chiado, piores à noite e com poeira, e normalidade entre as crises sugerem asma. Como a espirometria basal veio normal, o diagnóstico foi confirmado pelo teste de broncoprovocação: a metacolina provocou queda de 20% ou mais no VEF1 (aqui, 22%), o que demonstra hiperresponsividade brônquica.\n\nNa asma, a inflamação crônica das vias aéreas as torna exageradamente sensíveis a estímulos. A obstrução surge, varia ao longo do tempo e regride, sozinha ou com broncodilatador. Essa variabilidade é a principal diferença em relação à DPOC.",
+    commentary: "Obstrução fixa com remodelamento (A): descreve a DPOC ou a asma grave de longa data com remodelamento; não combina com uma paciente sem sintomas e com espirometria normal entre as crises.\n\nRedução da complacência por doença intersticial (C): as doenças intersticiais deixam o pulmão rígido e produzem padrão restritivo, sem hiperresponsividade brônquica.\n\nPerda da retração elástica (D): é o mecanismo do enfisema, em que a destruição do parênquima causa obstrução persistente e aprisionamento de ar.",
+    tip: "Espirometria normal + suspeita de asma: broncoprovocação. Queda ≥ 20% do VEF1 = hiperresponsividade brônquica.",
     reference: 'GINA – Global Strategy for Asthma Management and Prevention. 2024. Harrison’s Principles of Internal Medicine. 21ª ed. Sociedade Brasileira de Pneumologia e Tisiologia – Diretrizes de Asma.',
     tags: ['pneumologia', 'fisiopatologia']
   },
@@ -1930,7 +1989,8 @@ export const CLINICA_QUESTIONS: Question[] = [
       '(D) Iniciar insulina subcutânea de ação intermediária.'
     ],
     correctAnswer: 1,
-    explanation: 'A conduta inicial inquestionável da Cetoacidose Diabética (CAD) baseia-se na ressuscitação volêmica vigorosa imediata com soro fisiológico ou ringer e na determinação célere do potássio plasmático sérico antes de iniciar a insulina.',
+    annulled: true,
+    explanation: "Questão anulada pela banca: aparece para estudo, mas não conta na nota.\n\nNa cetoacidose diabética, a diurese osmótica causa desidratação importante. O primeiro passo é a reposição volêmica com soro fisiológico e a dosagem do potássio: a insulina leva o potássio para dentro das células, e iniciá-la com potássio abaixo de 3,3 mEq/L pode causar hipocalemia grave e arritmias. Por isso a alternativa B é a mais aceita.",
     commentary: 'Comentários sobre a resposta correta:\n(B) A cetoacidose diabética (CAD) causa desidratação profunda decorrente de diurese osmótica maciça. O passo prioritário inicial do tratamento é a reposição volêmica imediata com soro fisiológico e a dosagem do potássio sérico. É imperativo conhecer os níveis de potássio antes de iniciar a infusão de insulina regular, pois a insulina desvia o potássio para o intracelular, o que pode desencadear hipocalemia severa e arritmias cardíacas fatais se os níveis basais forem menores que 3,3 mEq/L.\n\nComentários sobre os distratores:\n(A) O uso de bicarbonato na CAD é de exceção e reservado a casos de acidemia extrema com pH < 6,9 pelo risco de hipocalemia refratária, edema cerebral e acidose liquórica paradoxal.\n(C) Embora a insulina regular intravenosa seja o tratamento específico para a CAD, ela não deve anteceder a expansão volêmica vigorosa inicial e deve aguardar a confirmação de que o potássio sérico está > 3,3 mEq/L.\n(D) A insulina subcutânea de ação intermediária (NPH) não possui papel terapêutico útil no manejo de urgência de crises hiperglicêmicas agudas no pronto-socorro.',
     reference: 'American Diabetes Association (ADA) Guidelines on Hyperglycemic Crises in Adult Patients with Diabetes. | HAJJAR, Ludhmila Abrahão; BRANDÃO NETO, Rodrigo Antonio (eds.). Medicina de emergência: abordagem prática. 19. ed. Santana de Parnaíba (SP): Manole, 2025. Note: esta questão foi originalmente anulada no gabarito oficial por imprecisão de opções, porém clinicamente a hidratação associada à dosagem de potássio permanece como a conduta primária obrigatória.',
     tags: ['endocrinologia', 'emergência']

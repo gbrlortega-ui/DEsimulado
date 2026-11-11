@@ -76,8 +76,12 @@ Formato em `src/types.ts` (`Question`). Convenções:
   também entram se receberem `topography`. A especialidade sai de "Em breve" sozinha quando tem
   questões, e cada assunto vira um filtro marcável; o validador recusa topografia ou assunto
   inexistente.
-- **Explicações:** `explanation` = raciocínio que leva à resposta; `commentary` = por que as
-  outras alternativas estão erradas; `reference` = diretriz/manual; `tags` em minúsculas, mantendo siglas (`HIV`, `SUS`) e
+- **Direitos autorais:** os gabaritos comentados oficiais (TP, consórcios) proíbem reprodução. Use-os só como
+  fonte (conferir gabarito, entender o raciocínio, copiar as referências bibliográficas) e escreva explicação e
+  comentário com texto próprio — nunca cole trechos. Anuladas: `annulled: true`; gabarito oficial discutível:
+  marcar o oficial, aceitar a outra em `alsoAccepted` e avisar em `alert`.
+- **Explicações:** `explanation` = raciocínio que leva à resposta; `commentary` = por que cada
+  alternativa errada está errada (um parágrafo por alternativa, "Nome (A): …"); `tip` = Bizu; `reference` = diretriz/manual; `tags` em minúsculas, mantendo siglas (`HIV`, `SUS`) e
   nomes próprios (`doença de Crohn`) — o validador recusa tag que comece com maiúscula.
 
 ## Fluxo de alteração
