@@ -129,8 +129,9 @@ export const SAMPLE_QUESTIONS: Question[] = [
       "(D) Idade óssea"
     ],
     "correctAnswer": 1,
-    "explanation": "Sinais de virilização rápida sem telarca sugerem puberdade precoce periférica de origem adrenal (como tumor).",
-    "commentary": "O paciente apresenta pubarca, associado a odor axilar, acne e sinais de virilização rapidamente progressiva, devemos pensar em uma disfunção da glândula adrenal, pela rapidez do quadro, um tumor de adrenal é o diagnóstico mais provável. Portanto, o exame mais adequado é a tomografia de adrenal. LH e FSH devem ser pedidos na suspeita de puberdade e essa menina não apresenta sinal puberal já que não tem mama palpável. USg pélvico deve ser pedido na puberdade precoce periférica, quando há suspeita de tumor ovariano. Rx idade óssea deve ser pedido para avaliar o prognóstico estatural do paciente, não faz diagnóstico de nenhuma patologia.",
+    "explanation": "Pelos pubianos grossos, acne, odor axilar e aumento do clitóris em uma menina de 1 ano e meio, sem mamas, indicam excesso de andrógenos (virilização), e não puberdade verdadeira: se o eixo hipotálamo-hipófise-gônadas estivesse ativado, haveria telarca.\n\nA instalação rápida (2 meses) e a virilização intensa nessa idade levantam a suspeita de tumor adrenal produtor de andrógenos (carcinoma adrenocortical é o principal). Por isso o exame que investiga a principal hipótese é a imagem da adrenal, como a tomografia.",
+    "commentary": "LH e FSH (A): servem para avaliar puberdade precoce central, que começa com telarca nas meninas — aqui não há tecido mamário.\n\nUltrassom pélvico (C): procura tumor ovariano ou sinais de estímulo estrogênico no útero e ovários; não é o exame da hipótese principal, que é adrenal.\n\nIdade óssea (D): mostra o quanto os andrógenos aceleraram a maturação e ajuda no prognóstico de altura, mas não identifica a causa.",
+    "tip": "Virilização rápida sem mamas na lactente: pense em tumor de adrenal e peça imagem da adrenal.",
     "reference": "Tratado de pediatria / organização Sociedade Brasileira de Pediatria. - 5. ed. - Barueri [SP]: Manole, 2022. Seção 16 endocrinologia. Endocrinologia pediátrica / Crésio de Aragão Dantas Alves. - 1. ed. - Barueri [SP]: Manole, 2019.",
     "tags": [
       "endocrinologia"

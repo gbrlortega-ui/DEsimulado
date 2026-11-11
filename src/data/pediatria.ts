@@ -13,8 +13,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) Parvovírus B19'
     ],
     correctAnswer: 2,
-    explanation: 'A síndrome mão-pé-boca, caracterizada por febre e vesículas típicas, é causada pelo Coxsackievírus.',
-    commentary: 'A questão aborda um paciente com febre e vesículas na região da mão e boca, caracterizando a síndrome mão pé boca, causada pelo vírus Coxsackie. O vírus Epstein Barr cursaria com odinofagia, hepatoesplenomegalia, adenomegalia cervical. Varicela Zoster é caracterizado por lesões polimórficas disseminadas pelo corpo. O parvovírus B19 apresenta eritema de bochechas.',
+    explanation: "Criança pequena com febre baixa, irritabilidade e recusa alimentar (as lesões na boca doem ao comer) somadas a vesículas em mãos e na mucosa oral formam o quadro clássico da doença mão-pé-boca.\n\nEla é causada por enterovírus, principalmente o Coxsackie A16 (também o enterovírus 71 e o Coxsackie A6). O tratamento é de suporte: analgesia, antitérmico e atenção à hidratação, porque a dor oral leva à desidratação.",
+    commentary: "Varicela-zóster (A): lesões em vários estágios ao mesmo tempo (mácula, pápula, vesícula e crosta), muito pruriginosas, começando no tronco e na face — não se concentram em mãos e boca.\n\nEpstein-Barr (B): causa mononucleose, com faringite exsudativa, linfonodos cervicais aumentados e hepatoesplenomegalia, sem vesículas em mãos.\n\nParvovírus B19 (D): eritema infeccioso, com bochechas vermelhas (\"face esbofeteada\") e depois exantema rendilhado nos membros, sem vesículas.",
+    tip: "Febre + recusa alimentar + vesículas em mãos, pés e boca = Coxsackie (doença mão-pé-boca).",
     reference: 'Tratado de pediatria / organização Sociedade Brasileira de Pediatria. - 5. ed. - Barueri [SP]: Manole, 2022. Seção 20. Infectologia',
     tags: ['infectologia', 'exantemáticas']
   },
@@ -29,8 +30,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) Idade óssea'
     ],
     correctAnswer: 1,
-    explanation: 'Sinais de virilização rápida sem telarca sugerem puberdade precoce periférica de origem adrenal (como tumor).',
-    commentary: 'O paciente apresenta pubarca, associado a odor axilar, acne e sinais de virilização rapidamente progressiva, devemos pensar em uma disfunção da glândula adrenal, pela rapidez do quadro, um tumor de adrenal é o diagnóstico mais provável. Portanto, o exame mais adequado é a tomografia de adrenal. LH e FSH devem ser pedidos na suspeita de puberdade e essa menina não apresenta sinal puberal já que não tem mama palpável. USg pélvico deve ser pedido na puberdade precoce periférica, quando há suspeita de tumor ovariano. Rx idade óssea deve ser pedido para avaliar o prognóstico estatural do paciente, não faz diagnóstico de nenhuma patologia.',
+    explanation: "Pelos pubianos grossos, acne, odor axilar e aumento do clitóris em uma menina de 1 ano e meio, sem mamas, indicam excesso de andrógenos (virilização), e não puberdade verdadeira: se o eixo hipotálamo-hipófise-gônadas estivesse ativado, haveria telarca.\n\nA instalação rápida (2 meses) e a virilização intensa nessa idade levantam a suspeita de tumor adrenal produtor de andrógenos (carcinoma adrenocortical é o principal). Por isso o exame que investiga a principal hipótese é a imagem da adrenal, como a tomografia.",
+    commentary: "LH e FSH (A): servem para avaliar puberdade precoce central, que começa com telarca nas meninas — aqui não há tecido mamário.\n\nUltrassom pélvico (C): procura tumor ovariano ou sinais de estímulo estrogênico no útero e ovários; não é o exame da hipótese principal, que é adrenal.\n\nIdade óssea (D): mostra o quanto os andrógenos aceleraram a maturação e ajuda no prognóstico de altura, mas não identifica a causa.",
+    tip: "Virilização rápida sem mamas na lactente: pense em tumor de adrenal e peça imagem da adrenal.",
     reference: 'Tratado de pediatria / organização Sociedade Brasileira de Pediatria. - 5. ed. - Barueri [SP]: Manole, 2022. Seção 16 endocrinologia. Endocrinologia pediátrica / Crésio de Aragão Dantas Alves. - 1. ed. - Barueri [SP]: Manole, 2019.',
     tags: ['endocrinologia']
   },
@@ -61,8 +63,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) Isoimunização BO e realizar exsanguineotransfusão.'
     ],
     correctAnswer: 3,
-    explanation: 'Isoimunização ABO (mãe O, filho B) com níveis críticos de bilirrubina (25 mg/dL) exige exsanguineotransfusão (ET).',
-    commentary: 'Trata-se de diagnóstico confirmado de isoimunização BO, pois apresenta eluato anti B positivo. O coombs pode ser positivo na isoimunização BO. Os microesferócitos também podem ser encontrados no caso de hemólise intensa, levando a anemia e icterícia grave que não respondeu somente com a fototerapia. Neste caso, com níveis de 22mg/dL de BI, a melhor conduta é a exsanguineotransfusão o mais rápido que for possível. O exame para confirmar Esferocitose Hereditária: curva de fragilidade osmótica e história materna ou paterna de terem Esferocitose, visto que é doença autossômica dominante. A presença de microesferócitos no sangue periférico não diagnostica Esferocitose.',
+    explanation: "Icterícia nas primeiras 24 horas de vida é sempre patológica e sugere hemólise. A mãe é O e o bebê é B, com Coombs direto positivo e eluato anti-B positivo: o anticorpo grudado nas hemácias do bebê é o anti-B da mãe, o que confirma a doença hemolítica por incompatibilidade ABO.\n\nNo segundo dia, a bilirrubina indireta chegou a 23 mg/dL, acima do limite de exsanguineotransfusão para um recém-nascido com doença hemolítica nessa idade. A conduta é exsanguineotransfusão o quanto antes, mantendo fototerapia intensiva enquanto ela é preparada: ela retira bilirrubina e anticorpos e corrige a anemia.",
+    commentary: "Isoimunização Rh (A): a mãe é Rh negativo e o bebê Rh positivo, mas o eluato identificou anti-B como o anticorpo nas hemácias — a causa é ABO, não Rh.\n\nTransfusão de concentrado de hemácias (B e C): corrige anemia, mas não remove a bilirrubina nem os anticorpos; não trata o risco de kernicterus.\n\nEsferocitose hereditária (C): microesferócitos também aparecem na hemólise por ABO. O diagnóstico de esferocitose exige teste de fragilidade osmótica (ou EMA) e história familiar, pois é doença autossômica dominante.",
+    tip: "Icterícia < 24 h + Coombs direto positivo + mãe O e bebê A ou B = incompatibilidade ABO; bilirrubina acima do limite → exsanguineotransfusão.",
     reference: 'Cloherty and Stark\'s Manual of Neonatal Care, 9th Edition, 2023',
     tags: ['neonatologia', 'icterícia']
   },
@@ -77,8 +80,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) Orientar restrição de glúten, lactose e gordura poliinsaturada; solicitar perfil lipídico e vitamina D.'
     ],
     correctAnswer: 0,
-    explanation: 'A abordagem inicial da obesidade grave foca em mudança de estilo de vida e triagem de comorbidades metabólicas.',
-    commentary: 'Trata-se de um caso de obesidade grave. A abordagem inicial da adolescente envolve mudança de estilo de vida para a criança e família. Alimentação à base de alimentos in natura e minimamente processados, redução do sedentarismo, investigação de dislipidemia e tolerância à glicose. Não se recomenda jejum intermitente, alimentos diet e light de forma rotineira, restrição de glúten, lactose, gordura poli-insaturada.',
+    explanation: "Adolescente com obesidade grave (IMC com escore Z acima de +3), pressão elevada para a idade e hábitos inadequados. A abordagem inicial recomendada pelo Ministério da Saúde é mudar o estilo de vida da família toda: alimentação baseada em alimentos in natura e minimamente processados, refeições regulares, mais frutas, verduras e legumes, menos ultraprocessados e mais atividade física.\n\nAo mesmo tempo, rastreiam-se as complicações metabólicas mais comuns: perfil lipídico e glicemia de jejum (e, conforme o caso, transaminases para doença hepática gordurosa). A pressão de 130x85 mmHg também precisa ser confirmada e acompanhada.",
+    commentary: "Jejum intermitente (B): não é recomendado para crianças e adolescentes; e gasometria e cetonúria não fazem parte da investigação da obesidade.\n\nProdutos diet e light (C): costumam ser ultraprocessados e não ensinam uma alimentação saudável; hemograma e albumina não rastreiam as complicações da obesidade.\n\nRestrição de glúten, lactose e gorduras poli-insaturadas (D): sem indicação em quem não tem doença celíaca ou intolerância; as gorduras poli-insaturadas são, inclusive, saudáveis.",
+    tip: "Obesidade infantil: mudança de hábitos da família + rastrear lipídios e glicose. Nada de dietas restritivas da moda.",
     reference: 'Brasil. Ministério da Saúde. Instrutivo para o cuidado da criança e do adolescente com sobrepeso e obesidade no âmbito da Atenção Primária à Saúde [recurso eletrônico] / Ministério da Saúde, Universidade do Estado do Rio de Janeiro. – Brasília: Ministério da Saúde, 2022. 201 p.: il. Tratado de Pediatria. Sociedade Brasileira de Pediatria. 5ª Edição, 2021.',
     tags: ['nutrologia', 'hebiatria']
   },
@@ -94,8 +98,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) Leucemia mieloide aguda. Encaminhar urgente para serviço com oncopediatria.'
     ],
     correctAnswer: 1,
-    explanation: 'O exantema após o uso de amoxicilina/ampicilina em quadros de faringite é clássico da Mononocleose Infecciosa (VEB).',
-    commentary: 'Em crianças, a infecção pelo VEB apresenta-se geralmente na forma de febre baixa prolongada, com ou sem linfadenopatia, tosse, rinorreia e faringite, podendo também apresentar cansaço e hepatoesplenomegalia. A febre é geralmente menor que 39°C, de início abrupto, podendo persistir por 1 a 2 semanas. A faringite ocorre na 1ª semana de doença, variando de quadros leves a sintomas que podem ser confundidos com a faringotonsilite por Streptococcus pyogenes. Cinquenta por cento dos pacientes apresentam esplenomegalia, que pode chegar a 80% dos casos em crianças pequenas. Pode ser observado o exantema maculopapular pruriginoso, geralmente desencadeado pelo uso de ampicilina ou amoxicilina como no caso acima.',
+    explanation: "Febre e dor de garganta prolongadas, linfonodos aumentados em várias regiões e hepatoesplenomegalia formam o quadro de mononucleose infecciosa pelo vírus Epstein-Barr. O detalhe que fecha o diagnóstico é o exantema maculopapular pruriginoso que surgiu depois da amoxicilina: é uma reação característica de quem tem mononucleose e recebe aminopenicilina, e não uma alergia verdadeira ao antibiótico.\n\nO tratamento é de suporte (repouso, hidratação e sintomáticos). Por causa da esplenomegalia, a criança deve evitar esportes de contato por algumas semanas, pelo risco de ruptura do baço.",
+    commentary: "Streptococcus pyogenes resistente (A): o estreptococo não desenvolve resistência à amoxicilina, e a faringite estreptocócica não causa hepatoesplenomegalia nem linfonodos aumentados em todo o corpo.\n\nStaphylococcus aureus (C): não explica faringite com hepatoesplenomegalia e linfadenopatia generalizada, nem o exantema após amoxicilina.\n\nLeucemia (D): pode ter hepatoesplenomegalia e linfonodos, mas o conjunto faringite + exantema após amoxicilina aponta para mononucleose. Se houver citopenias ou blastos no hemograma, aí sim a investigação muda.",
+    tip: "Faringite que \"piora\" com exantema após amoxicilina = mononucleose (Epstein-Barr).",
     reference: 'Tratado de Pediatria. Sociedade Brasileira de Pediatria. 5ª edição. Volume 1. 2022. Capítulo 5, página 4131, Vírus Epstein-Barr.',
     tags: ['infectologia', 'mononucleose']
   },
@@ -110,8 +115,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) Viral, prescrever um anti-histamínico de 2ª geração por 7 dias e orientar a mãe.'
     ],
     correctAnswer: 3,
-    explanation: 'Infecções virais são a causa mais comum de urticária aguda na infância (até 40% dos casos).',
-    commentary: 'Resposta D (correta): Em 30% a 50% dos casos, não é possível identificar uma causa específica para a urticária aguda, sendo esta classificada como idiopática. A prevalência de diferentes etiologias varia entre diferentes grupos etários. Na infância é comum a associação da urticária aguda com alimentos e/ou medicamentos, levando frequentemente a restrições alimentares e suspensão das medicações. No entanto, em mais de 40% dos casos são infecções virais leves do trato respiratório superior as causas mais frequentes de urticária aguda em crianças. Nas demais alternativas: apesar da causa poder ser desconhecida, o tratamento sempre deve ser feito com um anti-histamínico de 2ª geração, evitando os efeitos colaterais dos anti-histamínicos de 1ª geração. Não devem ser feitas dietas de restrição, principalmente porque no enunciado indica que não houve ingestão que justifique essa conduta. O encaminhamento ao alergista é desnecessário.',
+    explanation: "Placas urticariformes pruriginosas há poucas horas definem urticária aguda (menos de 6 semanas). Em crianças, a principal causa identificável são infecções virais leves, sobretudo das vias aéreas superiores — bem mais comuns que alimentos ou remédios. Em boa parte dos casos nenhum gatilho é encontrado.\n\nComo não houve alimento nem remédio novo, a causa viral é a mais provável. O tratamento é anti-histamínico de segunda geração (como cetirizina, loratadina ou desloratadina) por alguns dias, com orientação à família sobre sinais de alerta, como falta de ar e inchaço de lábios ou língua.",
+    commentary: "Anti-histamínico de 1ª geração (B e C): causa sonolência e prejudica a atenção e o aprendizado; os de 2ª geração são a primeira escolha.\n\nRetirar corantes (C): não há alimento suspeito, e dietas de restrição sem indicação não ajudam.\n\nEncaminhar ao alergista (A): um episódio agudo, sem gatilho e sem sinais de gravidade, não precisa de especialista; o encaminhamento cabe à urticária crônica (mais de 6 semanas) ou a reações graves.",
+    tip: "Urticária aguda na criança: pense em vírus e trate com anti-histamínico de 2ª geração.",
     reference: 'Alcântara CT, Raeder DFT, Campinhos FL, et al. Guia prático para urticária aguda. Arq Asma Alerg Imunol. 2022;6(2):214- 24. Zuberbier T, Latiff AHA, Abuzakouk M, Aquilina S, et al. The international EAACI/GA LEN/EuroGuiDerm/APAAACI guideline for the definition, classification, diagnosis, and management of urticaria. Allergy 2022 Mar;77(3):734-766. doi: 10.1111/all.15090. Epub 2021 Oct 2',
     tags: ['alergia e imunologia']
   },
@@ -126,8 +132,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) Anquilose'
     ],
     correctAnswer: 2,
-    explanation: 'Pacientes com AIJ oligoarticular e FAN positivo têm alto risco de desenvolver uveíte anterior crônica assintomática.',
-    commentary: '40% das crianças com AIJ tipo oligoarticular AAN positivo evoluem com uveíte anterior crônica, não é o quadro clínico de sarcoidose, uveíte anterior aguda é uma complicação de AIJ tipo ERA, mais comum em meninos adolescentes HLAb27+, anquilose seria uma complicação de AIJ FR+',
+    explanation: "Na artrite idiopática juvenil oligoarticular, meninas pequenas com FAN positivo formam o grupo de maior risco de uveíte anterior crônica (iridociclite). Essa uveíte é silenciosa: não causa olho vermelho nem dor, e pode levar a catarata, glaucoma e perda visual se não for detectada.\n\nPor isso essas crianças fazem rastreio oftalmológico regular com lâmpada de fenda, a cada 3 meses no grupo de maior risco, mesmo sem sintomas.",
+    commentary: "Uveíte anterior aguda (A): dolorosa, com olho vermelho e fotofobia; é típica da artrite relacionada à entesite, mais comum em meninos maiores com HLA-B27.\n\nSarcoidose (B): não é complicação da AIJ.\n\nAnquilose (D): fusão articular aparece em formas mais destrutivas, como a poliarticular com fator reumatoide positivo e a artrite relacionada à entesite (na coluna e sacroilíacas), não como principal risco da oligoarticular.",
+    tip: "AIJ oligoarticular + menina pequena + FAN positivo = uveíte crônica silenciosa → lâmpada de fenda periódica.",
     reference: 'https://www.gov.br/conitec/ptbr/midias/protocolos/resumidos/PCDTResumidoAIJ.pdf Cassidy JT, Petty RE. Juvenile rheumatoid arthritis. In: Cassidy JT, Petty RE, editors. Textbook of pediatric rheumatology. 8th ed. Philadelphia: WB Saunders; 2021. p. 218-321.',
     tags: ['reumatologia']
   },
@@ -142,8 +149,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) Defeito da junção uretero-vesical bilateral'
     ],
     correctAnswer: 0,
-    explanation: 'Válvula de uretra posterior (VUP) é a causa mais comum de obstrução infravesical e hidronefrose bilateral em meninos.',
-    commentary: 'Válvula de uretra posterior é uma patologia exclusiva do sexo masculino, de diagnóstico pelo US pré-natal. É o defeito congênito mais comum no RN masculino.',
+    explanation: "Hidronefrose bilateral com ureteres dilatados e bexiga distendida em um menino indica obstrução abaixo da bexiga, na uretra. A causa mais comum de obstrução uretral congênita em meninos é a válvula de uretra posterior.\n\nO diagnóstico é confirmado pela uretrocistografia miccional. Depois do nascimento, o primeiro passo é descomprimir a bexiga com sonda; o tratamento definitivo é a ablação endoscópica das válvulas. O acompanhamento da função renal é essencial.",
+    commentary: "Estenose de junção ureteropiélica (B): dilata só a pelve renal, com ureter e bexiga normais, e costuma ser unilateral.\n\nRim multicístico displásico (C): cistos que não se comunicam em um rim sem função, geralmente unilateral, sem dilatação do ureter nem da bexiga.\n\nDefeito da junção ureterovesical (D): o megaureter obstrutivo dilata o ureter e a pelve, mas a bexiga é normal; não explica a bexiga distendida.",
+    tip: "Menino + hidronefrose bilateral + ureteres dilatados + bexiga distendida = válvula de uretra posterior.",
     reference: 'Cascio, S., Coyle, D., Nappo, S., Caione, P. (2023). Posterior Urethral Valves. In: Puri, P., Höllwarth, M.E. (eds) Pediatric Surgery. Springer, Cham. https://doi.org/10.1007/978-3-030- 81488-5_94',
     tags: ['nefrologia', 'urologia']
   },
@@ -158,8 +166,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) COVID-19 em 3 doses (6, 7 e 9 meses) e vacina contra HPV em dose única.'
     ],
     correctAnswer: 3,
-    explanation: 'Em 2024, a vacina COVID-19 entrou no calendário básico infantil e a vacina HPV passou a ser dose única.',
-    commentary: 'A vacina Covid-19 está recomendada com esquema de 03 doses (aos 06, 07 e 09 meses de idade). Caso não tenha iniciado e/ou completado o esquema primário até os 09 meses de idade, a vacina poderá ser administrada até 04 anos, 11 meses e 29 dias, conforme histórico vacinal, respeitando os intervalos mínimos recomendados (04 semanas entre a 1ª e 2ª dose; e 08 semanas entre a 2ª e 3ª dose). Vacina da febre amarela aos 5 anos para crianças que não receberam as duas doses anteriormente. Vacina pneumocócica 23 valente está indicada apenas para a população indígena.',
+    explanation: "Em 2024, o calendário de vacinação infantil do Ministério da Saúde passou a incluir a vacina contra a COVID-19 em três doses, aos 6, 7 e 9 meses de idade (quem não completou pode vacinar até antes dos 5 anos). No mesmo ano, a vacina contra o HPV para crianças e adolescentes passou a ser aplicada em dose única.",
+    commentary: "Duas doses aos 6 e 9 meses (A): o esquema adotado foi de três doses (6, 7 e 9 meses).\n\nFebre amarela aos 5 anos para todos (B): o esquema é uma dose aos 9 meses e reforço aos 4 anos; a dose aos 5 anos é só para quem não recebeu as anteriores.\n\nPneumocócica 23-valente aos 5 anos para todos (C): no calendário de rotina, ela é indicada à população indígena e a grupos com condições especiais, não a todas as crianças.",
+    tip: "Calendário 2024: COVID-19 aos 6, 7 e 9 meses + HPV em dose única.",
     reference: 'https://www.gov.br/saude/pt-br/vacinacao/calendario',
     tags: ['imunização']
   },
@@ -190,8 +199,9 @@ export const PEDIATRIA_QUESTIONS: Question[] = [
       '(D) Acolhimento e notificação apenas com consentimento do responsável.'
     ],
     correctAnswer: 0,
-    explanation: 'A profilaxia de ISTs e gravidez deve ser iniciada o mais rápido possível (preferencialmente nas primeiras 72 horas).',
-    commentary: 'O protocolo de atendimento às vítimas de estupro do Ministério da saúde estabelece que o atendimento médico realizado pelo socorrista deve incluir as profilaxias das Infecções sexualmente transmissíveis e da gravidez indesejada o quanto antes para que a eficácia seja maior. Também deve ser coletado o material de interesse forense para realizar a identificação do abusador no primeiro atendimento para que não se perca essa oportunidade, pois quanto mais se retarda essa coleta, menos chance de material genético presente no corpo da vítima. O boletim de IML é uma determinação da delegacia de polícia e não do médico. A notificação compulsória é obrigatória para os profissionais da saúde e, portanto, não depende de autorização de vítimas ou seus responsáveis legais para serem feitas.',
+    explanation: "Diante de violência sexual, o atendimento de saúde é urgente e não depende de boletim de ocorrência nem de exame no IML. A adolescente deve ser acolhida e receber, o quanto antes, as profilaxias: anticoncepção de emergência, profilaxia pós-exposição ao HIV (até 72 horas), profilaxia das ISTs bacterianas e vacina contra hepatite B quando indicada. Quanto mais cedo, maior a eficácia.\n\nNo mesmo atendimento coletam-se os vestígios de interesse forense, que se perdem com o tempo. A notificação da violência é compulsória e, por ser menor de idade, o Conselho Tutelar deve ser comunicado.",
+    commentary: "Ir antes ao IML (B) ou à delegacia (C): atrasa as profilaxias, que perdem eficácia com o tempo. O registro policial é direito da vítima, mas não condição para o atendimento de saúde.\n\nNotificar só com consentimento do responsável (D): a notificação é obrigatória para o profissional de saúde e não depende de autorização da vítima nem da família.",
+    tip: "Violência sexual: acolher + profilaxias o quanto antes (até 72 h) + coleta de vestígios + notificação. Sem exigir BO.",
     reference: 'Ministério da Saúde. Secretaria de Vigilância em Saúde. Notificação de violências interpessoais e autoprovocadas [recurso eletrônico]. Brasília: Ministério da Saúde, 2017. Ministério da Saúde. Ministério da Justiça. Secretaria de Políticas para as Mulheres. Norma Técnica Atenção Humanizadas às Pessoas em Situação de Violência Sexual com Registro de Informações e Coleta de Vestígios. 1ª Ed.Brasília-DF, 2015. https://bvsms.saude.gov.br/bvs/publicacoes/atencao_humaniz ada_pessoas_violencia_sexual_norma_tecnica.pdf Brasil. Ministério da Saúde. Programa Nacional de DST/AIDS. Protocolo Clínico e Diretrizes Terapêuticas para Manejo da Infecção pelo HIV em Crianças e Adolescentes- Brasília, 2014. Ministério da Saúde. Portaria 1271 de 06 de junho de 2014. Define a Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública nos serviços de saúde públicos e privados em todo o território nacional, nos termos do anexo, e dá outras providências. Disponível em: http://dtr2004.saude.gov.br/sinanweb/novo/Documentos/Portar ia_1271_06jun2014.pdf. Acesso em 04 nov.2014.',
     tags: ['heabiaria', 'violência']
   },
