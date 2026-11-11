@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-/** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "enamed-2026-3" → "ENAMED 2026"; "sug-enamed1-5" → "ENAMED 1" (simulado sugerido). */
+/** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "unifesp2025-4" → "UNIFESP 2025"; "enamed-2026-3" → "ENAMED 2026"; "sug-enamed1-5" → "ENAMED 1" (simulado sugerido). */
 export function examLabel(id: string) {
   if (id.startsWith('topo-')) return 'Topografia';
   const sug = id.match(/^sug-([a-z]+)(\d+)-\d+$/i);

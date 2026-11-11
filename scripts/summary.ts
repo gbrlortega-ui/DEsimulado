@@ -22,16 +22,19 @@ const countBy = <T,>(list: T[], key: (item: T) => string | undefined) =>
   }, {});
 
 export function summarySource(): string {
-  const editions = new Map<string, { label: string; kind: 'TP' | 'ENAMED'; year: number; count: number }>();
+  type Kind = 'TP' | 'ENAMED' | 'Residência';
+  const editions = new Map<string, { label: string; kind: Kind; year: number; count: number }>();
   for (const q of QUESTIONS) {
     const label = examLabel(q.id);
-    const [kind, year] = label.split(' ');
-    const e = editions.get(label) ?? { label, kind: kind as 'TP' | 'ENAMED', year: Number(year), count: 0 };
+    const [prefix, year] = label.split(' ');
+    const kind: Kind = prefix === 'TP' || prefix === 'ENAMED' ? prefix : 'Residência';
+    const e = editions.get(label) ?? { label, kind, year: Number(year), count: 0 };
     e.count++;
     editions.set(label, e);
   }
+  const ORDER: Kind[] = ['TP', 'ENAMED', 'Residência'];
   const EDITIONS = [...editions.values()].sort((a, b) =>
-    a.kind === b.kind ? a.year - b.year : a.kind === 'TP' ? -1 : 1
+    a.kind === b.kind ? a.year - b.year || a.label.localeCompare(b.label) : ORDER.indexOf(a.kind) - ORDER.indexOf(b.kind)
   );
 
   // Questões curtas, sem imagem, que cabem bem como amostra na página inicial.
@@ -59,13 +62,13 @@ export const TOTAL_QUESTIONS = ${QUESTIONS.length};
 export const COUNT_BY_AREA: Record<string, number> = ${json(countBy(QUESTIONS, (q) => q.module))};
 
 export interface ExamEdition {
-  label: string; // "TP 2024", "ENAMED 2026"
-  kind: 'TP' | 'ENAMED';
+  label: string; // "TP 2024", "ENAMED 2026", "UNIFESP 2025"
+  kind: 'TP' | 'ENAMED' | 'Residência';
   year: number;
   count: number;
 }
 
-/** Provas presentes no banco, em ordem cronológica (TP primeiro, depois ENAMED). */
+/** Provas presentes no banco, em ordem cronológica (TP, depois ENAMED, depois residência). */
 export const EDITIONS: ExamEdition[] = ${json(EDITIONS)};
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */

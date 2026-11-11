@@ -48,11 +48,13 @@ corrigir uma figura, salve com outro nome para o aluno não ver a versão antiga
 
 Formato em `src/types.ts` (`Question`). Convenções:
 
-- **IDs:** `tp2026-12` (Teste de Progresso, ano, número) ou `enamed-2026-12`. O rótulo da prova
-  na tela ("ENAMED 2026", "TP 2024") é derivado do ID — não mudar o padrão.
+- **IDs:** `tp2026-12` (Teste de Progresso, ano, número), `enamed-2026-12` ou, para provas de
+  residência, sigla + ano (`unifesp2025-12`). O rótulo da prova na tela ("ENAMED 2026", "TP 2024",
+  "UNIFESP 2025") é derivado do ID — não mudar o padrão.
 - **Arquivos:** questões do TP ficam no arquivo da área (`clinica.ts`, `pediatria.ts`…);
   cada edição do ENAMED tem seu arquivo (`enamed.ts` = 2025, `enamed2026.ts` = 2026),
-  registrado em `src/data/questions.ts`.
+  registrado em `src/data/questions.ts`. Provas de residência também têm arquivo próprio
+  (`unifesp2025.ts`), com `module` da área de cada questão para entrarem nos simulados por área.
 - **Alternativas:** o prefixo `(A) ` no texto é opcional — a interface remove e mostra a letra
   no marcador (`stripOptionLetter` em `src/lib/utils.ts`). `correctAnswer` é o índice (0 = A).
 - **Quebras de linha:** use `\n\n` entre parágrafos e `• ` para listas de exames. A interface

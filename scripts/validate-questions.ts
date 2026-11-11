@@ -16,7 +16,8 @@ const MODULES: Module[] = [
   'Pediatria', 'Clínica Médica', 'Cirurgia', 'Ginecologia e Obstetrícia',
   'Saúde Coletiva', 'Ciências Básicas', 'ENAMED',
 ];
-const ID_PATTERN = /^(tp\d{4}-\d+|enamed-\d{4}-\d+|sug-[a-z]+\d+-\d+|topo-\d+(?:-\d+)+)$/;
+// tp2026-12 (Teste de Progresso), unifesp2025-12 (provas de residência: sigla + ano), enamed-2026-12…
+const ID_PATTERN = /^([a-z]+\d{4}-\d+|enamed-\d{4}-\d+|sug-[a-z]+\d+-\d+|topo-\d+(?:-\d+)+)$/;
 // Banco geral + simulados sugeridos (validados juntos para pegar IDs repetidos entre eles).
 const QUESTIONS = [...BANK, ...SUGERIDOS.flatMap((s) => s.questions), ...TOPOGRAPHY_QUESTIONS];
 const LETTERS = 'ABCDE';
@@ -30,11 +31,12 @@ QUESTIONS.forEach((q, i) => {
   const err = (m: string) => errors.push(`${where}: ${m}`);
   const warn = (m: string) => warnings.push(`${where}: ${m}`);
 
-  if (!ID_PATTERN.test(q.id)) err(`ID fora do padrão (tp2026-12, enamed-2026-12, sug-enamed1-12 ou topo-1-1-12)`);
+  if (!ID_PATTERN.test(q.id)) err(`ID fora do padrão (tp2026-12, unifesp2025-12, enamed-2026-12, sug-enamed1-12 ou topo-1-1-12)`);
   seen.set(q.id, (seen.get(q.id) ?? 0) + 1);
   if (!MODULES.includes(q.module)) err(`módulo inválido: "${q.module}"`);
   if (!q.text?.trim()) err('enunciado vazio');
-  if (q.options.length < 4 || q.options.length > 5) err(`${q.options.length} alternativas (esperado 4 ou 5)`);
+  // Algumas provas de residência trazem questões com 3 alternativas.
+  if (q.options.length < 3 || q.options.length > 5) err(`${q.options.length} alternativas (esperado de 3 a 5)`);
   // O prefixo "(A) " é opcional (a interface remove), mas se existir precisa bater com a posição.
   q.options.forEach((o, j) => {
     const m = o.match(/^\s*\(([A-E])\)/);
