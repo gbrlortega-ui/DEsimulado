@@ -9,6 +9,7 @@ import { ENAMED_QUESTIONS } from './enamed';
 import { ENAMED_2026_QUESTIONS } from './enamed2026';
 import { UNIFESP_2025_QUESTIONS } from './unifesp2025';
 import { HOSBOS_2027_QUESTIONS } from './hosbos2027';
+import { USPRP_2025_QUESTIONS } from './usprp2025';
 
 export const QUESTIONS: Question[] = [
   ...PEDIATRIA_QUESTIONS,
@@ -20,5 +21,6 @@ export const QUESTIONS: Question[] = [
   ...ENAMED_QUESTIONS,
   ...ENAMED_2026_QUESTIONS,
   ...UNIFESP_2025_QUESTIONS,
-  ...HOSBOS_2027_QUESTIONS
+  ...HOSBOS_2027_QUESTIONS,
+  ...USPRP_2025_QUESTIONS
 ];

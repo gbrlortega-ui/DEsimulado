@@ -8,6 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 /** Siglas de prova que não cabem no ID (só letras minúsculas): prefixo do ID em maiúsculas → nome exibido. */
 const EXAM_NAMES: Record<string, string> = {
   HOSBOS: 'HOS-BOS',
+  USPRP: 'USP-RP',
 };
 
 /** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "unifesp2025-4" → "UNIFESP 2025"; "enamed-2026-3" → "ENAMED 2026"; "sug-enamed1-5" → "ENAMED 1" (simulado sugerido). */

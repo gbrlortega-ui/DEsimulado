@@ -2,14 +2,14 @@
 // O build e o servidor local regeneram este arquivo sozinhos; o `npm run validate` acusa se ficar desatualizado.
 import type { Question } from '../types';
 
-export const TOTAL_QUESTIONS = 1359;
+export const TOTAL_QUESTIONS = 1459;
 
 export const COUNT_BY_AREA: Record<string, number> = {
-  "Pediatria": 238,
-  "Clínica Médica": 266,
-  "Cirurgia": 224,
-  "Ginecologia e Obstetrícia": 230,
-  "Saúde Coletiva": 241,
+  "Pediatria": 259,
+  "Clínica Médica": 291,
+  "Cirurgia": 244,
+  "Ginecologia e Obstetrícia": 251,
+  "Saúde Coletiva": 254,
   "Ciências Básicas": 160
 };
 
@@ -89,6 +89,12 @@ export const EDITIONS: ExamEdition[] = [
     "count": 99
   },
   {
+    "label": "USP-RP 2025",
+    "kind": "Residência",
+    "year": 2025,
+    "count": 100
+  },
+  {
     "label": "HOS-BOS 2027",
     "kind": "Residência",
     "year": 2027,
@@ -128,6 +134,13 @@ export const SOURCES: ExamSource[] = [
     "count": 99
   },
   {
+    "key": "USP-RP",
+    "label": "USP-RP",
+    "kind": "Residência",
+    "years": "2025",
+    "count": 100
+  },
+  {
     "key": "HOS-BOS",
     "label": "HOS-BOS",
     "kind": "Residência",
@@ -158,7 +171,12 @@ export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
   "Clínica Médica|HOS-BOS": 20,
   "Ginecologia e Obstetrícia|HOS-BOS": 20,
   "Pediatria|HOS-BOS": 20,
-  "Saúde Coletiva|HOS-BOS": 20
+  "Saúde Coletiva|HOS-BOS": 20,
+  "Pediatria|USP-RP": 21,
+  "Saúde Coletiva|USP-RP": 13,
+  "Clínica Médica|USP-RP": 25,
+  "Ginecologia e Obstetrícia|USP-RP": 21,
+  "Cirurgia|USP-RP": 20
 };
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */
