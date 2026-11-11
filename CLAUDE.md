@@ -49,7 +49,8 @@ corrigir uma figura, salve com outro nome para o aluno não ver a versão antiga
 Formato em `src/types.ts` (`Question`). Convenções:
 
 - **IDs:** `tp2026-12` (Teste de Progresso, ano, número), `enamed-2026-12` ou, para provas de
-  residência, sigla + ano (`unifesp2025-12`). O rótulo da prova na tela ("ENAMED 2026", "TP 2024",
+  residência, sigla + ano (`unifesp2025-12`, `hosbos2027-12`); siglas com hífen ou outro formato
+  ganham o nome exibido em `EXAM_NAMES` (`src/lib/utils.ts`), ex.: HOSBOS → "HOS-BOS". O rótulo da prova na tela ("ENAMED 2026", "TP 2024",
   "UNIFESP 2025") é derivado do ID — não mudar o padrão.
 - **Arquivos:** questões do TP ficam no arquivo da área (`clinica.ts`, `pediatria.ts`…);
   cada edição do ENAMED tem seu arquivo (`enamed.ts` = 2025, `enamed2026.ts` = 2026),
