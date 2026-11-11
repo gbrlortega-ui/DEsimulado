@@ -72,7 +72,9 @@ Formato em `src/types.ts` (`Question`). Convenções:
   gabarito técnico com oficial. IDs `sug-enamed1-12`; `alert` = aviso de gabarito provisório;
   `alsoAccepted` = outras alternativas aceitas como certas; `tip` = Bizu (dica curta).
 - **Simulado por topografia:** roteiro (regiões → especialidades → assuntos) em
-  `src/data/topografia.ts`. Questões novas vão em `src/data/topografia_questoes.ts` com ID
+  `src/data/topografia.ts`. Estratégia atual: preencher a topografia marcando `topography`/`topic`
+  nas questões das provas do banco (o arquivo de questões inéditas está vazio desde 11/2026).
+  Questões inéditas, se voltarem, vão em `src/data/topografia_questoes.ts` com ID
   `topo-1-1-12` (especialidade 1.1, nº 12), `topography` = id da especialidade ("1.1"; regiões sem
   subdivisão usam "8") e `topic` = nome exato do assunto no roteiro. Questões do banco geral
   também entram se receberem `topography`. A especialidade sai de "Em breve" sozinha quando tem

@@ -92,15 +92,10 @@ export const EDITIONS: ExamEdition[] = [
 ];
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */
-export const TOPOGRAPHY_COUNT: Record<string, number> = {
-  "1.1": 80
-};
+export const TOPOGRAPHY_COUNT: Record<string, number> = {};
 
 /** Questões por assunto, na chave "1.1|Cefaleias". */
-export const TOPIC_COUNT: Record<string, number> = {
-  "1.1|Cefaleias": 40,
-  "1.1|AVC": 40
-};
+export const TOPIC_COUNT: Record<string, number> = {};
 
 export interface SuggestedExamInfo {
   id: string;
