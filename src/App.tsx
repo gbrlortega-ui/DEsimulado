@@ -123,6 +123,7 @@ export default function App() {
   useEffect(() => {
     const preload = () => {
       loadBank().catch(() => {});
+      account.prefetch(); // Firebase pronto para o login abrir a janela na hora do toque
       [loadSetup, loadTopography, loadSession, loadResults].forEach((load) => load().catch(() => {}));
     };
     if ('requestIdleCallback' in window) {

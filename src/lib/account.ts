@@ -10,7 +10,16 @@ import type { CloudUser } from './cloud';
 const FLAG = 'desimulados:conta';
 /** De qual conta são os dados guardados neste navegador (evita juntar o histórico de outro aluno). */
 const OWNER = 'desimulados:dono';
-const loadCloudModule = () => import('./cloud');
+type CloudModule = typeof import('./cloud');
+/** Módulo já baixado: o login precisa abrir a janela direto no toque, sem esperar download. */
+let cloudModule: CloudModule | null = null;
+const loadCloudModule = (): Promise<CloudModule> =>
+  cloudModule
+    ? Promise.resolve(cloudModule)
+    : import('./cloud').then((m) => {
+        cloudModule = m;
+        return m;
+      });
 
 export type AccountStatus = 'off' | 'loading' | 'in';
 
@@ -26,7 +35,7 @@ export interface Account {
   pushHistory: (history: HistoryEntry[]) => void;
   /** Aluno apagou o histórico: apaga também na conta e impede que volte de outros aparelhos. */
   clearCloudHistory: () => void;
-  /** Baixa o Firebase antes do clique (ao passar o mouse/focar em "Entrar"). */
+  /** Baixa o Firebase antes do clique (em segundo plano, depois que a página abre). */
   prefetch: () => void;
 }
 
@@ -178,15 +187,14 @@ export function useAccount(handlers: Handlers): Account {
   }, []);
 
   const signIn = useCallback(async () => {
+    // Abre a janela do Google já no toque (se o módulo ainda não chegou, baixa e tenta mesmo assim).
+    const pending = cloudModule ? cloudModule.signInWithGoogle() : loadCloudModule().then((m) => m.signInWithGoogle());
     setError(null);
     setStatus('loading');
     signingIn.current = true;
-    // Marca antes: no celular o login vai pela própria aba (redirect) e a página recarrega.
-    set(FLAG, '1');
     setWatching(true);
     try {
-      const cloud = await loadCloudModule();
-      await cloud.signInWithGoogle();
+      await pending;
       // Janela fechada sem entrar: volta ao estado anterior (o login com sucesso já mudou o status).
       await new Promise((r) => setTimeout(r, 800));
       if (!userRef.current) {
@@ -194,11 +202,15 @@ export function useAccount(handlers: Handlers): Account {
         set(FLAG, null);
         setStatus('off');
       }
-    } catch {
+    } catch (err) {
       signingIn.current = false;
       if (!userRef.current) set(FLAG, null);
       setStatus(userRef.current ? 'in' : 'off');
-      setError('Não foi possível entrar com o Google. Tente de novo.');
+      setError(
+        (err as { code?: string }).code === 'auth/popup-blocked'
+          ? 'O navegador bloqueou a janela do Google. Toque em "Entrar com Google" de novo.'
+          : 'Não foi possível entrar com o Google. Tente de novo.'
+      );
     }
   }, []);
 
@@ -211,8 +223,8 @@ export function useAccount(handlers: Handlers): Account {
   }, [forgetLocal]);
 
   const deleteAccount = useCallback(async () => {
-    const cloud = await loadCloudModule();
-    await cloud.deleteAccount();
+    // Mesma regra do login: a confirmação da conta abre janela, então chama direto se já houver módulo.
+    await (cloudModule ? cloudModule.deleteAccount() : loadCloudModule().then((m) => m.deleteAccount()));
     set(FLAG, null);
     set(OWNER, null);
     forgetLocal();

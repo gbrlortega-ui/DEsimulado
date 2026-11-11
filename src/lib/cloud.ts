@@ -9,11 +9,9 @@ import {
   GoogleAuthProvider,
   deleteUser,
   getAuth,
-  getRedirectResult,
   onAuthStateChanged,
   reauthenticateWithPopup,
   signInWithPopup,
-  signInWithRedirect,
   signOut as fbSignOut,
   type User,
 } from 'firebase/auth';
@@ -24,8 +22,8 @@ import type { SavedQuiz } from './progress';
 // Configuração pública do app web (não é segredo: o acesso é controlado pelas regras do Firestore).
 const app = initializeApp({
   apiKey: 'AIzaSyChIUX9llvOWQoQLphbnClNYH2FjdeEpB4',
-  // No site oficial, o login passa pelo próprio domínio (/__/auth/*, repassado ao Firebase pelo
-  // vercel.json). Assim Safari/iOS e Chrome não bloqueiam o retorno do login por isolarem cookies.
+  // No site oficial, a janela do Google mostra "desimulados.com.br": o login passa pelo próprio
+  // domínio (/__/auth/*, repassado ao Firebase pelo vercel.json). Em outros endereços, o padrão.
   authDomain: /(^|\.)desimulados\.com\.br$/.test(location.hostname)
     ? location.host
     : 'desimulados-ferramentas.firebaseapp.com',
@@ -67,30 +65,20 @@ const toUser = (u: User): CloudUser => ({
   photo: u.photoURL ?? undefined,
 });
 
-// Conclui um login feito pela própria aba (celular), se houver.
-getRedirectResult(auth).catch(() => {});
-
 export function watchUser(cb: (user: CloudUser | null) => void) {
   return onAuthStateChanged(auth, (u) => cb(u ? toUser(u) : null));
 }
 
-/** Celular/tablet: login na própria aba (janelas costumam ser bloqueadas). Computador: janela. */
-const prefersRedirect = () => window.matchMedia('(pointer: coarse)').matches;
-
+/**
+ * Login sempre por janela (popup): funciona em todos os navegadores, inclusive Safari/iOS, que
+ * bloqueiam o login "na própria aba" quando o site não está no Firebase Hosting.
+ * Precisa ser chamado direto no toque do aluno (sem esperar nada antes), senão a janela é bloqueada.
+ */
 export async function signInWithGoogle() {
-  if (prefersRedirect()) {
-    await signInWithRedirect(auth, provider);
-    return;
-  }
   try {
     await signInWithPopup(auth, provider);
   } catch (err) {
     const code = (err as { code?: string }).code;
-    // Navegador bloqueou a janela (comum no celular): faz o login na própria aba.
-    if (code === 'auth/popup-blocked' || code === 'auth/operation-not-supported-in-this-environment') {
-      await signInWithRedirect(auth, provider);
-      return;
-    }
     if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request') return;
     throw err;
   }
@@ -135,7 +123,6 @@ export async function deleteAccount() {
   if (!u) return;
   const last = Date.parse(u.metadata.lastSignInTime ?? '') || 0;
   if (Date.now() - last > 4 * 60 * 1000) {
-    if (prefersRedirect()) throw Object.assign(new Error('reauth'), { code: 'auth/requires-recent-login' });
     await reauthenticateWithPopup(u, provider);
   }
   await deleteDoc(ref(u.uid));
