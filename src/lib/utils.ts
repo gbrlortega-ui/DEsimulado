@@ -13,7 +13,7 @@ const EXAM_NAMES: Record<string, string> = {
   SUSBA: 'SUS-BA',
 };
 
-/** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "unifesp2025-4" → "UNIFESP 2025"; "enamed-2026-3" → "ENAMED 2026"; "sug-enamed1-5" → "ENAMED 1" (simulado sugerido). */
+/** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "unifesp2025-4" → "UNIFESP 2025"; "enamed-2026-3" → "ENAMED 2026"; "revalida-2025-1-7" → "REVALIDA 2025/1"; "sug-enamed1-5" → "ENAMED 1" (simulado sugerido). */
 export function examLabel(id: string) {
   if (id.startsWith('topo-')) return 'Topografia';
   const sug = id.match(/^sug-([a-z]+)(\d+)-\d+$/i);
@@ -23,6 +23,8 @@ export function examLabel(id: string) {
     const prefix = tp[1].toUpperCase();
     return `${EXAM_NAMES[prefix] ?? prefix} ${tp[2]}`;
   }
+  const revalida = id.match(/^revalida-(\d{4})-([12])-\d+$/i);
+  if (revalida) return `REVALIDA ${revalida[1]}/${revalida[2]}`;
   const enamed = id.match(/^enamed-(\d{4})-\d+$/i);
   if (enamed) return `ENAMED ${enamed[1]}`;
   return id.split('-')[0].toUpperCase();

@@ -18,7 +18,7 @@ const MODULES: Module[] = [
 ];
 // 'ENAMED' continua no tipo Module só para simulados salvos antigos; toda questão precisa de uma área.
 // tp2026-12 (Teste de Progresso), unifesp2025-12 (provas de residência: sigla + ano), enamed-2026-12…
-const ID_PATTERN = /^([a-z]+\d{4}-\d+|enamed-\d{4}-\d+|sug-[a-z]+\d+-\d+|topo-\d+(?:-\d+)+)$/;
+const ID_PATTERN = /^([a-z]+\d{4}-\d+|enamed-\d{4}-\d+|revalida-\d{4}-[12]-\d+|sug-[a-z]+\d+-\d+|topo-\d+(?:-\d+)+)$/;
 // Banco geral + simulados sugeridos (validados juntos para pegar IDs repetidos entre eles).
 const QUESTIONS = [...BANK, ...SUGERIDOS.flatMap((s) => s.questions), ...TOPOGRAPHY_QUESTIONS];
 const LETTERS = 'ABCDE';
@@ -32,7 +32,7 @@ QUESTIONS.forEach((q, i) => {
   const err = (m: string) => errors.push(`${where}: ${m}`);
   const warn = (m: string) => warnings.push(`${where}: ${m}`);
 
-  if (!ID_PATTERN.test(q.id)) err(`ID fora do padrão (tp2026-12, unifesp2025-12, enamed-2026-12, sug-enamed1-12 ou topo-1-1-12)`);
+  if (!ID_PATTERN.test(q.id)) err(`ID fora do padrão (tp2026-12, unifesp2025-12, enamed-2026-12, revalida-2025-1-12, sug-enamed1-12 ou topo-1-1-12)`);
   seen.set(q.id, (seen.get(q.id) ?? 0) + 1);
   if (!MODULES.includes(q.module)) err(`módulo inválido: "${q.module}"`);
   if (!q.text?.trim()) err('enunciado vazio');
