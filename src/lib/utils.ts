@@ -10,6 +10,7 @@ const EXAM_NAMES: Record<string, string> = {
   HOSBOS: 'HOS-BOS',
   USPRP: 'USP-RP',
   SCMBH: 'SCM-BH',
+  SUSBA: 'SUS-BA',
 };
 
 /** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "unifesp2025-4" → "UNIFESP 2025"; "enamed-2026-3" → "ENAMED 2026"; "sug-enamed1-5" → "ENAMED 1" (simulado sugerido). */

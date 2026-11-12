@@ -2,14 +2,14 @@
 // O build e o servidor local regeneram este arquivo sozinhos; o `npm run validate` acusa se ficar desatualizado.
 import type { Question } from '../types';
 
-export const TOTAL_QUESTIONS = 1534;
+export const TOTAL_QUESTIONS = 1579;
 
 export const COUNT_BY_AREA: Record<string, number> = {
-  "Pediatria": 274,
-  "Clínica Médica": 306,
-  "Cirurgia": 259,
-  "Ginecologia e Obstetrícia": 266,
-  "Saúde Coletiva": 269,
+  "Pediatria": 282,
+  "Clínica Médica": 318,
+  "Cirurgia": 268,
+  "Ginecologia e Obstetrícia": 278,
+  "Saúde Coletiva": 273,
   "Ciências Básicas": 160
 };
 
@@ -83,6 +83,12 @@ export const EDITIONS: ExamEdition[] = [
     "count": 100
   },
   {
+    "label": "SUS-BA 2025",
+    "kind": "Residência",
+    "year": 2025,
+    "count": 45
+  },
+  {
     "label": "UNIFESP 2025",
     "kind": "Residência",
     "year": 2025,
@@ -131,6 +137,13 @@ export const SOURCES: ExamSource[] = [
     "kind": "ENAMED",
     "years": "2025–2026",
     "count": 200
+  },
+  {
+    "key": "SUS-BA",
+    "label": "SUS-BA",
+    "kind": "Residência",
+    "years": "2025",
+    "count": 45
   },
   {
     "key": "UNIFESP",
@@ -194,39 +207,44 @@ export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
   "Clínica Médica|SCM-BH": 15,
   "Ginecologia e Obstetrícia|SCM-BH": 15,
   "Saúde Coletiva|SCM-BH": 15,
-  "Pediatria|SCM-BH": 15
+  "Pediatria|SCM-BH": 15,
+  "Clínica Médica|SUS-BA": 12,
+  "Cirurgia|SUS-BA": 9,
+  "Ginecologia e Obstetrícia|SUS-BA": 12,
+  "Pediatria|SUS-BA": 8,
+  "Saúde Coletiva|SUS-BA": 4
 };
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */
 export const TOPOGRAPHY_COUNT: Record<string, number> = {
-  "8": 48,
+  "8": 51,
   "9": 42,
-  "10": 67,
-  "11": 155,
+  "10": 71,
+  "11": 158,
   "12": 12,
-  "13": 35,
+  "13": 38,
   "14": 59,
   "15": 248,
-  "16": 94,
+  "16": 103,
   "1.2": 10,
   "1.3": 19,
   "7.2": 30,
   "4.2": 21,
-  "1.1": 52,
+  "1.1": 54,
   "1.5": 22,
-  "6.1": 29,
-  "3.1": 47,
+  "6.1": 32,
+  "3.1": 50,
   "4.1": 56,
   "2.1": 60,
-  "6.2": 15,
+  "6.2": 18,
   "2.2": 64,
   "3.2": 16,
   "3.3": 12,
   "7.1": 19,
   "1.4": 2,
   "3.4": 10,
-  "5.1": 114,
-  "5.2": 140
+  "5.1": 123,
+  "5.2": 143
 };
 
 /** Questões por assunto, na chave "1.1|Cefaleias". */
@@ -261,7 +279,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "1.3|Surdez": 2,
   "11|Desenvolvimento neuropsicomotor": 13,
   "9|Anemia falciforme": 7,
-  "11|Asma infantil": 9,
+  "11|Asma infantil": 12,
   "11|Doença de Kawasaki": 1,
   "1.5|Hipertireoidismo": 9,
   "11|Desidratação": 6,
@@ -291,7 +309,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "10|Tétano": 1,
   "8|Feocromocitoma": 2,
   "9|Linfomas": 2,
-  "8|Cetoacidose diabética": 8,
+  "8|Cetoacidose diabética": 11,
   "3.1|Diarreia crônica": 3,
   "1.2|Erros refrativos": 1,
   "10|Dengue": 12,
@@ -301,7 +319,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "1.1|Demências": 5,
   "6.1|Lúpus eritematoso sistêmico": 6,
   "1.1|Epilepsia": 5,
-  "10|Tuberculose": 12,
+  "10|Tuberculose": 15,
   "2.1|DPOC": 12,
   "9|Anemia ferropriva": 5,
   "3.2|Hepatites virais": 5,
@@ -331,7 +349,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "3.1|Doença inflamatória intestinal": 10,
   "3.1|Doença celíaca": 1,
   "3.2|Cirrose hepática": 2,
-  "1.1|Meningite": 6,
+  "1.1|Meningite": 8,
   "1.1|Parkinson": 3,
   "9|Anemia hemolítica": 2,
   "3.2|Encefalopatia hepática": 1,
@@ -347,17 +365,17 @@ export const TOPIC_COUNT: Record<string, number> = {
   "9|Síndrome de lise tumoral": 1,
   "2.1|Insuficiência respiratória": 1,
   "10|Sepse": 4,
-  "6.1|Osteoporose": 2,
+  "6.1|Osteoporose": 5,
   "7.2|Carcinoma basocelular": 2,
   "9|Anemia megaloblástica": 8,
   "2.1|Derrame pleural": 12,
   "13|Transtornos de ansiedade": 4,
   "1.5|Tempestade tireotóxica": 1,
   "12|Demências": 1,
-  "13|Depressão maior": 2,
+  "13|Depressão maior": 5,
   "8|Hiperaldosteronismo primário": 3,
-  "16|Feridas": 10,
-  "16|Pré-operatório": 13,
+  "16|Feridas": 13,
+  "16|Pré-operatório": 14,
   "16|Hérnias": 11,
   "3.3|Colangite aguda": 4,
   "3.1|Hemorragia digestiva baixa": 2,
@@ -373,7 +391,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "16|Obstrução intestinal": 14,
   "7.1|Trombose venosa profunda": 6,
   "4.2|Câncer de próstata": 5,
-  "3.1|Hemorragia digestiva alta": 4,
+  "3.1|Hemorragia digestiva alta": 7,
   "3.1|Doença hemorroidária": 4,
   "7.1|Aneurisma de aorta abdominal": 4,
   "3.2|Hepatocarcinoma": 2,
@@ -389,7 +407,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "8|Obesidade": 4,
   "7.1|Isquemia arterial aguda": 1,
   "7.2|Celulite": 2,
-  "16|Pós-operatório": 8,
+  "16|Pós-operatório": 13,
   "7.1|Insuficiência venosa crônica": 2,
   "6.2|Lesões do manguito rotador": 1,
   "16|Isquemia mesentérica": 4,
@@ -400,7 +418,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "6.2|Luxações": 1,
   "3.3|Colelitíase": 2,
   "5.1|Sangramento uterino anormal": 12,
-  "5.1|Climatério e menopausa": 12,
+  "5.1|Climatério e menopausa": 15,
   "5.1|Contracepção": 21,
   "5.1|Câncer de colo uterino": 19,
   "5.1|Vaginose bacteriana": 3,
@@ -416,13 +434,13 @@ export const TOPIC_COUNT: Record<string, number> = {
   "5.2|Pré-natal": 18,
   "5.2|Hemorragia pós-parto": 5,
   "5.2|Trabalho de parto": 18,
-  "5.1|Mioma uterino": 5,
+  "5.1|Mioma uterino": 8,
   "5.1|Endometriose": 7,
   "5.1|Infertilidade": 8,
   "5.1|Prolapso genital": 4,
-  "5.1|Câncer de ovário": 3,
+  "5.1|Câncer de ovário": 6,
   "15|Saúde da mulher": 8,
-  "5.2|Pré-eclâmpsia": 9,
+  "5.2|Pré-eclâmpsia": 12,
   "5.2|Abortamento": 12,
   "5.1|Síndrome dos ovários policísticos": 3,
   "5.1|Doença inflamatória pélvica": 4,
@@ -513,6 +531,8 @@ export const TOPIC_COUNT: Record<string, number> = {
   "2.1|Pneumonia hospitalar": 1,
   "1.5|Hiperparatireoidismo": 1,
   "6.1|Esclerose sistêmica": 1,
+  "10|Meningococcemia": 1,
+  "6.2|Pé diabético": 3,
   "10|Chikungunya": 1
 };
 

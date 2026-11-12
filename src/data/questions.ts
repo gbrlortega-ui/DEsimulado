@@ -11,6 +11,7 @@ import { UNIFESP_2025_QUESTIONS } from './unifesp2025';
 import { HOSBOS_2027_QUESTIONS } from './hosbos2027';
 import { USPRP_2025_QUESTIONS } from './usprp2025';
 import { SCMBH_2026_QUESTIONS } from './scmbh2026';
+import { SUSBA_2025_QUESTIONS } from './susba2025';
 
 export const QUESTIONS: Question[] = [
   ...PEDIATRIA_QUESTIONS,
@@ -24,5 +25,6 @@ export const QUESTIONS: Question[] = [
   ...UNIFESP_2025_QUESTIONS,
   ...HOSBOS_2027_QUESTIONS,
   ...USPRP_2025_QUESTIONS,
-  ...SCMBH_2026_QUESTIONS
+  ...SCMBH_2026_QUESTIONS,
+  ...SUSBA_2025_QUESTIONS
 ];
