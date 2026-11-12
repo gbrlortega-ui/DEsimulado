@@ -16,16 +16,16 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(C) Realizar ecocardiograma transesofágico.",
       "(D) Iniciar anticoagulação plena."
     ],
-    "correctAnswer": 3,
-    "explanation": "Paciente estável (PA preservada, SatO₂ 98%, sem choque, isquemia, congestão ou rebaixamento de consciência) com taquicardia de QRS estreito, R-R irregular e sem ondas P sinusais: fibrilação atrial com resposta ventricular rápida (diferencial com flutter de condução variável). Na estabilidade, não há indicação de cardioversão de emergência, e a decisão central passa a ser o risco tromboembólico. O CHA₂DS₂-VASc é 2 (hipertensão + idade de 65–74 anos), o que indica anticoagulação plena, independentemente da escolha posterior entre controle da frequência ou do ritmo. Além disso, o início dos sintomas há 2 horas não garante o início da arritmia.",
-    "commentary": "A: não há bradicardia nem bloqueio AV que justifique marca-passo. B: a cardioversão é opção de controle do ritmo, mas não é obrigatória no paciente estável e exige avaliar duração da arritmia e anticoagulação antes. C: o ecocardiograma transesofágico pode excluir trombo antes de uma cardioversão, mas não é o passo inicial obrigatório.",
-    "tip": "Taquiarritmia: estabilidade → ritmo → anticoagulação. Não se cardioverte só pela frequência, e não se deixa de anticoagular paciente de risco só porque a arritmia é recente.",
+    "correctAnswer": 2,
+    "explanation": "Paciente estável (PA preservada, SatO₂ 98%, sem choque, isquemia, congestão ou rebaixamento de consciência) com taquicardia de QRS estreito, R-R irregular e sem ondas P sinusais: fibrilação atrial com resposta ventricular rápida. Como não há instabilidade, não se cardioverte de emergência, e a reversão do ritmo passa a depender do risco tromboembólico. Embora a FA tenha menos de 24 horas, o CHA₂DS₂-VA é 2 (hipertensão + idade de 65–74 anos), o que caracteriza alto risco embólico. Nesse cenário, antes da cardioversão é preciso excluir trombo no átrio esquerdo e na auriculeta com ecocardiograma transesofágico (ou anticoagular por 3 semanas). O ETE permite cardioverter logo após laudo negativo, sempre com anticoagulação plena antes do procedimento e mantida por pelo menos 4 semanas depois.",
+    "commentary": "A: não há bradicardia nem bloqueio AV que justifique marca-passo. B: cardioverter direto só é seguro na FA < 24 horas de baixo risco embólico ou na instabilidade hemodinâmica; com CHA₂DS₂-VA 2, é preciso excluir trombo antes. D: a anticoagulação plena é necessária e acompanha o ETE e a cardioversão, mas sozinha não define a conduta; a alternativa que resolve a segurança da reversão neste paciente de alto risco é o ETE.",
+    "tip": "FA estável: < 24 horas e baixo risco → cardioversão direta; < 24 horas com CHA₂DS₂-VA ≥ 2, ≥ 24 horas ou início incerto → ETE ou 3 semanas de anticoagulação antes. Instável → cardioversão elétrica imediata, sem esperar exame.",
     "tags": [
       "clínica médica",
       "gabarito técnico",
       "gabarito provisório"
     ],
-    "alert": "Gabarito provisório, não oficial (alta controvérsia). Resposta adotada: D (anticoagulação pelo CHA₂DS₂-VASc de 2 pontos). O gabarito original indicava B, mas a cardioversão elétrica não é obrigatória em paciente estável.",
+    "alert": "Gabarito provisório, não oficial (alta controvérsia). Resposta adotada: C (ETE antes da cardioversão em FA < 24 horas com CHA₂DS₂-VA ≥ 2).",
     "image": "/images/sugenamed1-1.webp"
   },
   {
