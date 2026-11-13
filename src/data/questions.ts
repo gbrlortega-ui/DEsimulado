@@ -19,6 +19,7 @@ import { IOG_2026_QUESTIONS } from './iog2026';
 import { SESPE_2026_QUESTIONS } from './sespe2026';
 import { HPP_2026_QUESTIONS } from './hpp2026';
 import { HSRC_2026_QUESTIONS } from './hsrc2026';
+import { AMP_2026_QUESTIONS } from './amp2026';
 
 export const QUESTIONS: Question[] = [
   ...PEDIATRIA_QUESTIONS,
@@ -40,5 +41,6 @@ export const QUESTIONS: Question[] = [
   ...IOG_2026_QUESTIONS,
   ...SESPE_2026_QUESTIONS,
   ...HPP_2026_QUESTIONS,
-  ...HSRC_2026_QUESTIONS
+  ...HSRC_2026_QUESTIONS,
+  ...AMP_2026_QUESTIONS
 ];
