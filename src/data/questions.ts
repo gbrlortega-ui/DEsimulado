@@ -14,6 +14,7 @@ import { SCMBH_2026_QUESTIONS } from './scmbh2026';
 import { SUSBA_2025_QUESTIONS } from './susba2025';
 import { HIAE_2025_QUESTIONS } from './hiae2025';
 import { REVALIDA_2025_1_QUESTIONS } from './revalida2025_1';
+import { UNIMEDPB_2026_QUESTIONS } from './unimedpb2026';
 
 export const QUESTIONS: Question[] = [
   ...PEDIATRIA_QUESTIONS,
@@ -30,5 +31,6 @@ export const QUESTIONS: Question[] = [
   ...SCMBH_2026_QUESTIONS,
   ...SUSBA_2025_QUESTIONS,
   ...HIAE_2025_QUESTIONS,
-  ...REVALIDA_2025_1_QUESTIONS
+  ...REVALIDA_2025_1_QUESTIONS,
+  ...UNIMEDPB_2026_QUESTIONS
 ];

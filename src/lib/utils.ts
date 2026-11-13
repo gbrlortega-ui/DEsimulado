@@ -11,6 +11,7 @@ const EXAM_NAMES: Record<string, string> = {
   USPRP: 'USP-RP',
   SCMBH: 'SCM-BH',
   SUSBA: 'SUS-BA',
+  UNIMEDPB: 'UNIMED-PB',
 };
 
 /** Nome da prova a partir do ID: "tp2024-21" → "TP 2024"; "unifesp2025-4" → "UNIFESP 2025"; "enamed-2026-3" → "ENAMED 2026"; "revalida-2025-1-7" → "REVALIDA 2025/1"; "sug-enamed1-5" → "ENAMED 1" (simulado sugerido). */
