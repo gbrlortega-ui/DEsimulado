@@ -18,6 +18,7 @@ import { UNIMEDPB_2026_QUESTIONS } from './unimedpb2026';
 import { IOG_2026_QUESTIONS } from './iog2026';
 import { SESPE_2026_QUESTIONS } from './sespe2026';
 import { HPP_2026_QUESTIONS } from './hpp2026';
+import { HSRC_2026_QUESTIONS } from './hsrc2026';
 
 export const QUESTIONS: Question[] = [
   ...PEDIATRIA_QUESTIONS,
@@ -38,5 +39,6 @@ export const QUESTIONS: Question[] = [
   ...UNIMEDPB_2026_QUESTIONS,
   ...IOG_2026_QUESTIONS,
   ...SESPE_2026_QUESTIONS,
-  ...HPP_2026_QUESTIONS
+  ...HPP_2026_QUESTIONS,
+  ...HSRC_2026_QUESTIONS
 ];
