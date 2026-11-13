@@ -41,27 +41,38 @@ export async function pickQuestions(settings: QuizSettings): Promise<Question[]>
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
-  // O TP repete questões entre edições (ex.: tp2021-59 = tp2025-59): não sortear o mesmo enunciado duas vezes.
-  const seen = new Set<string>();
+  // O TP repete questões entre edições (ex.: tp2021-59 = tp2025-59): não sortear a mesma questão duas vezes.
+  // Mesmo início de enunciado não basta: provas de residência fazem várias perguntas sobre o mesmo caso
+  // (ex.: susba2025-1/2/3). Repetida = mesmo início e (mesmo final de enunciado ou mesmas alternativas).
+  const seenEnd = new Set<string>();
+  const seenOptions = new Set<string>();
   const picked: Question[] = [];
   for (const q of shuffled) {
-    const key = sameTextKey(q.text);
-    if (seen.has(key)) continue;
-    seen.add(key);
+    const { byEnd, byOptions } = repeatKeys(q);
+    if (seenEnd.has(byEnd) || seenOptions.has(byOptions)) continue;
+    seenEnd.add(byEnd);
+    seenOptions.add(byOptions);
     picked.push(q);
     if (picked.length === settings.questionCount) break;
   }
   return picked;
 }
 
-/** Chave para reconhecer o mesmo enunciado em provas diferentes (ignora maiúsculas, espaços e pontuação). */
-function sameTextKey(text: string) {
+/** Texto normalizado para comparar questões (ignora maiúsculas, acentos, espaços e pontuação). */
+function normalize(text: string) {
   return text
     .toLowerCase()
     .normalize('NFD')
     .replace(/[^a-z0-9]+/g, ' ')
-    .trim()
-    .slice(0, 200);
+    .trim();
+}
+
+/** Chaves para reconhecer a mesma questão em provas diferentes. */
+function repeatKeys(q: Question) {
+  const text = normalize(q.text);
+  const start = text.slice(0, 200);
+  const options = q.options.map((o) => normalize(o.replace(/^\(?[A-E]\)\s*/, ''))).join('|');
+  return { byEnd: `${start}|${text.slice(-120)}`, byOptions: `${start}|${options.slice(0, 200)}` };
 }
 
 /** Recupera as questões de um simulado salvo, na mesma ordem. Retorna null se alguma não existir mais. */
