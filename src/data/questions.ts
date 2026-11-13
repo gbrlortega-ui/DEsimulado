@@ -17,6 +17,7 @@ import { REVALIDA_2025_1_QUESTIONS } from './revalida2025_1';
 import { UNIMEDPB_2026_QUESTIONS } from './unimedpb2026';
 import { IOG_2026_QUESTIONS } from './iog2026';
 import { SESPE_2026_QUESTIONS } from './sespe2026';
+import { HPP_2026_QUESTIONS } from './hpp2026';
 
 export const QUESTIONS: Question[] = [
   ...PEDIATRIA_QUESTIONS,
@@ -36,5 +37,6 @@ export const QUESTIONS: Question[] = [
   ...REVALIDA_2025_1_QUESTIONS,
   ...UNIMEDPB_2026_QUESTIONS,
   ...IOG_2026_QUESTIONS,
-  ...SESPE_2026_QUESTIONS
+  ...SESPE_2026_QUESTIONS,
+  ...HPP_2026_QUESTIONS
 ];
