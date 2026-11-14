@@ -95,15 +95,9 @@ export const EDITIONS: ExamEdition[] = [
     "count": 75
   },
   {
-    "label": "AMP 2026",
-    "kind": "Residência",
-    "year": 2026,
-    "count": 100
-  },
-  {
     "label": "REVALIDA 2025/1",
     "kind": "Residência",
-    "year": null,
+    "year": 2025,
     "count": 100
   },
   {
@@ -122,6 +116,12 @@ export const EDITIONS: ExamEdition[] = [
     "label": "USP-RP 2025",
     "kind": "Residência",
     "year": 2025,
+    "count": 100
+  },
+  {
+    "label": "AMP 2026",
+    "kind": "Residência",
+    "year": 2026,
     "count": 100
   },
   {
@@ -207,17 +207,10 @@ export const SOURCES: ExamSource[] = [
     "count": 75
   },
   {
-    "key": "AMP",
-    "label": "AMP",
-    "kind": "Residência",
-    "years": "2026",
-    "count": 100
-  },
-  {
     "key": "REVALIDA",
     "label": "REVALIDA",
     "kind": "Residência",
-    "years": "NaN",
+    "years": "2025/1",
     "count": 100
   },
   {
@@ -239,6 +232,13 @@ export const SOURCES: ExamSource[] = [
     "label": "USP-RP",
     "kind": "Residência",
     "years": "2025",
+    "count": 100
+  },
+  {
+    "key": "AMP",
+    "label": "AMP",
+    "kind": "Residência",
+    "years": "2026",
     "count": 100
   },
   {

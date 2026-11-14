@@ -28,7 +28,7 @@ export function summarySource(): string {
     const label = examLabel(q.id);
     const [prefix, year] = label.split(' ');
     const kind: Kind = prefix === 'TP' || prefix === 'ENAMED' ? prefix : 'Residência';
-    const e = editions.get(label) ?? { label, kind, year: Number(year), count: 0 };
+    const e = editions.get(label) ?? { label, kind, year: parseInt(year, 10), count: 0 };
     e.count++;
     editions.set(label, e);
   }
@@ -50,7 +50,8 @@ export function summarySource(): string {
     s.count += e.count;
   }
   for (const s of SOURCES) {
-    const ys = EDITIONS.filter((e) => e.label.startsWith(s.key + ' ')).map((e) => e.year);
+    // Ano como aparece no rótulo ("2025", ou "2025/1" no REVALIDA).
+    const ys = EDITIONS.filter((e) => e.label.startsWith(s.key + ' ')).map((e) => e.label.split(' ')[1]);
     s.years = ys.length > 1 ? `${ys[0]}–${ys[ys.length - 1]}` : String(ys[0]);
   }
 

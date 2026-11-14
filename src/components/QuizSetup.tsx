@@ -286,7 +286,7 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
                       disabled={n === 0}
                       icon={SOURCE_ICON[src.kind]}
                       title={src.label}
-                      detail={`${src.kind === 'Residência' ? 'Residência ' : ''}${src.years} · ${fmt(n)} questões`}
+                      detail={`${src.kind === 'Residência' && src.key !== 'REVALIDA' ? 'Residência ' : ''}${src.years} · ${fmt(n)} questões`}
                       onClick={() => setSources(toggle(sources, src.key, allSources))}
                     />
                   );
