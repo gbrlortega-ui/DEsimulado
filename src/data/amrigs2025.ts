@@ -102,7 +102,7 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 2,
     "explanation": "I incorreta: as lesões estruturais precedem a albuminúria; na nefropatia incipiente (microalbuminúria) já há espessamento da membrana basal glomerular e expansão mesangial.\nII correta: a nefropatia clínica (macroalbuminúria) tem proteinúria persistente acima de 500 mg/24h, albumina em amostra acima de cerca de 200 mg/L e queda progressiva da filtração glomerular.\nIII correta (segundo a banca): estabelecida a proteinúria, a perda de função é progressiva e parte relevante dos pacientes chega à doença renal crônica avançada.",
-    "commentary": "Apenas I e II (A): a I está errada.\n\nApenas I e III (B): a I está errada.\n\nI, II e III (D): a I está errada.\n\nObservação: a redação da III (\"mais de 10% evoluem para a doença renal crônica\") é imprecisa — a proporção que progride para DRC terminal varia muito entre as séries. A banca a considerou correta.",
+    "commentary": "Apenas I e II (A): a I está errada.\n\nApenas I e III (B): a I está errada.\n\nI, II e III (D): a I está errada.",
     "reference": "Diretriz da Sociedade Brasileira de Diabetes — Doença renal do diabetes",
     "tags": [
       "nefropatia diabética",
@@ -110,7 +110,8 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
       "albuminúria",
       "diabetes"
     ],
-    "tip": "Na nefropatia diabética a lesão histológica vem antes da microalbuminúria."
+    "tip": "Na nefropatia diabética a lesão histológica vem antes da microalbuminúria.",
+    "alert": "Gabarito discutível: a redação da assertiva III (\"mais de 10% evoluem para a doença renal crônica\") é imprecisa. A banca a considerou correta."
   },
   {
     "id": "amrigs2025-6",
@@ -537,7 +538,7 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 0,
     "explanation": "No adulto, a obstrução do trato de saída gástrico (estenose pilórica) hoje tem como principal causa a neoplasia — sobretudo o adenocarcinoma gástrico distal (antro e piloro). A úlcera péptica era a causa mais comum no passado, mas perdeu espaço com os IBPs e a erradicação do H. pylori. Diante de estenose pilórica no adulto, a primeira hipótese a investigar (EDA com biópsia) é câncer.",
-    "commentary": "Úlcera péptica duodenal (B): causa clássica e ainda frequente em algumas séries, mas superada pelas neoplasias na era dos IBPs.\n\nPólipos gástricos (C): raramente causam obstrução.\n\nFitobezoar (D): causa rara, associada a gastroparesia ou cirurgia gástrica prévia.\n\nObservação: algumas referências ainda citam a úlcera péptica como causa mais comum; a banca seguiu a visão atual, de predomínio neoplásico.",
+    "commentary": "Úlcera péptica duodenal (B): causa clássica e ainda frequente em algumas séries, mas superada pelas neoplasias na era dos IBPs.\n\nPólipos gástricos (C): raramente causam obstrução.\n\nFitobezoar (D): causa rara, associada a gastroparesia ou cirurgia gástrica prévia.",
     "reference": "Sabiston — Tratado de Cirurgia (obstrução do trato de saída gástrico)",
     "tags": [
       "estenose pilórica",
@@ -545,7 +546,8 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
       "câncer gástrico",
       "úlcera péptica"
     ],
-    "tip": "Estenose pilórica no adulto: câncer gástrico até prova em contrário."
+    "tip": "Estenose pilórica no adulto: câncer gástrico até prova em contrário.",
+    "alert": "Gabarito discutível: algumas referências ainda citam a úlcera péptica como causa mais comum de estenose pilórica no adulto. A banca seguiu a visão atual, de predomínio do câncer gástrico."
   },
   {
     "id": "amrigs2025-26",
@@ -559,7 +561,7 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 3,
     "explanation": "A dor que começa no epigástrio/periumbigo e migra para a fossa ilíaca direita, com febre baixa, náuseas e vômitos e Blumberg positivo, é a apresentação clássica da apendicite aguda (cronologia de Murphy). A colecistectomia prévia afasta colecistite.",
-    "commentary": "Síndrome intestinal inflamatória (A): quadro crônico, com diarreia, sangue ou muco e perda de peso.\n\nDoença de Crohn (B): pode simular apendicite (ileíte), mas costuma haver história crônica de diarreia, dor e emagrecimento.\n\nTrombose mesentérica (C): a fibrilação atrial lembra embolia mesentérica, mas esta se apresenta com dor desproporcional ao exame físico e sem migração para a fossa ilíaca direita; aqui o exame mostra irritação peritoneal localizada.\n\nObservação: a fibrilação atrial é um distrator forte; a banca considerou que a migração típica da dor define o diagnóstico de apendicite.",
+    "commentary": "Síndrome intestinal inflamatória (A): quadro crônico, com diarreia, sangue ou muco e perda de peso.\n\nDoença de Crohn (B): pode simular apendicite (ileíte), mas costuma haver história crônica de diarreia, dor e emagrecimento.\n\nTrombose mesentérica (C): a fibrilação atrial lembra embolia mesentérica, mas esta se apresenta com dor desproporcional ao exame físico e sem migração para a fossa ilíaca direita; aqui o exame mostra irritação peritoneal localizada.",
     "reference": "Sabiston — Tratado de Cirurgia / WSES Jerusalem guidelines (2020)",
     "tags": [
       "apendicite aguda",
@@ -567,7 +569,8 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
       "sinal de Blumberg",
       "isquemia mesentérica"
     ],
-    "tip": "Dor periumbilical que migra para FID + Blumberg = apendicite."
+    "tip": "Dor periumbilical que migra para FID + Blumberg = apendicite.",
+    "alert": "Gabarito discutível: a fibrilação atrial sugere embolia mesentérica, mas a dor migratória para a fossa ilíaca direita com Blumberg é típica de apendicite. A banca manteve D."
   },
   {
     "id": "amrigs2025-27",
@@ -581,14 +584,15 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 1,
     "explanation": "O tamanho é o principal preditor de malignidade dos pólipos de vesícula. As diretrizes indicam colecistectomia em pólipos ≥10 mm e em pólipos sintomáticos; pólipos de 6–9 mm com fatores de risco (idade >50–60 anos, colangite esclerosante primária, origem asiática, base séssil/espessamento focal) também podem ser operados. Entre as opções, o tamanho acima de 8 mm é a única característica ligada à indicação cirúrgica.",
-    "commentary": "História familiar de neoplasia biliar (A): não é, isoladamente, indicação cirúrgica nas diretrizes.\n\nPólipos no cólon (C): não têm relação com o manejo do pólipo de vesícula.\n\nPólipos múltiplos (D): multiplicidade sugere pseudopólipos de colesterol, geralmente benignos.\n\nObservação: o corte clássico é 10 mm; o limite de 8 mm da alternativa é discutível, aceito pela banca por ser a única opção ligada ao tamanho.",
+    "commentary": "História familiar de neoplasia biliar (A): não é, isoladamente, indicação cirúrgica nas diretrizes.\n\nPólipos no cólon (C): não têm relação com o manejo do pólipo de vesícula.\n\nPólipos múltiplos (D): multiplicidade sugere pseudopólipos de colesterol, geralmente benignos.",
     "reference": "ESGAR/EAES/EFISDS/ESGE — Management and follow-up of gallbladder polyps (2022)",
     "tags": [
       "pólipo de vesícula biliar",
       "colecistectomia",
       "vesícula biliar"
     ],
-    "tip": "Pólipo de vesícula ≥10 mm (ou 6–9 mm com fator de risco) = colecistectomia."
+    "tip": "Pólipo de vesícula ≥10 mm (ou 6–9 mm com fator de risco) = colecistectomia.",
+    "alert": "Gabarito discutível: o corte clássico para colecistectomia em pólipo de vesícula é 10 mm; 8 mm só indica cirurgia com fatores de risco. A banca manteve B por ser a única opção ligada ao tamanho."
   },
   {
     "id": "amrigs2025-28",
@@ -623,7 +627,7 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 0,
     "explanation": "Antes da cirurgia antirrefluxo, a avaliação deve confirmar o refluxo e estudar a anatomia e a motilidade: EDA (esofagite, Barrett, hérnia), manometria (exclui acalásia e distúrbios motores, orienta o tipo de fundoplicatura), pHmetria/impedanciometria (prova o refluxo) e esofagograma (anatomia da hérnia). A cintilografia de esvaziamento gástrico entra quando há suspeita de gastroparesia. A banca considerou esse conjunto como a avaliação pré-operatória correta.",
-    "commentary": "IBP com ligação reversível (B): os IBPs ligam-se de forma covalente e irreversível à H⁺/K⁺-ATPase.\n\npHmetria como padrão-ouro diagnóstico (C): a banca a considerou incorreta; o diagnóstico de DRGE é sobretudo clínico (e pela resposta ao IBP), e a pHmetria é o melhor exame para documentar refluxo ácido patológico, não padrão-ouro diagnóstico isolado.\n\nDose mínima de IBP como padrão-ouro (D): o tratamento inicial é com dose plena por 8 semanas; a dose mínima eficaz é estratégia de manutenção.\n\nObservação: chamar a cintilografia de exame \"essencial\" no pré-operatório é exagerado (é seletiva), e muitos textos chamam a pHmetria de 24 h de padrão-ouro para refluxo ácido. A questão é discutível.",
+    "commentary": "IBP com ligação reversível (B): os IBPs ligam-se de forma covalente e irreversível à H⁺/K⁺-ATPase.\n\npHmetria como padrão-ouro diagnóstico (C): a banca a considerou incorreta; o diagnóstico de DRGE é sobretudo clínico (e pela resposta ao IBP), e a pHmetria é o melhor exame para documentar refluxo ácido patológico, não padrão-ouro diagnóstico isolado.\n\nDose mínima de IBP como padrão-ouro (D): o tratamento inicial é com dose plena por 8 semanas; a dose mínima eficaz é estratégia de manutenção.",
     "reference": "Consenso Brasileiro da DRGE (FBG) / Consenso de Lyon 2.0 (2023) / SAGES guidelines",
     "tags": [
       "DRGE",
@@ -632,7 +636,11 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
       "manometria esofágica",
       "inibidor de bomba de prótons"
     ],
-    "tip": "Antes da fundoplicatura: EDA + manometria + pHmetria (+ esofagograma)."
+    "tip": "Antes da fundoplicatura: EDA + manometria + pHmetria (+ esofagograma).",
+    "alsoAccepted": [
+      2
+    ],
+    "alert": "Gabarito discutível: chamar a cintilografia de exame \"essencial\" no pré-operatório é exagero (é seletiva), e muitos textos chamam a pHmetria de 24 h de padrão-ouro para refluxo ácido. A banca manteve A. Neste simulado, a alternativa C também é aceita como correta."
   },
   {
     "id": "amrigs2025-30",
@@ -668,7 +676,7 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 3,
     "explanation": "I correta: o Streptococcus pneumoniae é o agente mais frequente da sepse fulminante pós-esplenectomia (OPSI), seguido de Haemophilus influenzae b e meningococo.\nII incorreta: o risco é maior nos primeiros 2 anos, mas persiste por toda a vida; há casos décadas após a cirurgia — por isso vacinação e orientação são permanentes.\nIII considerada correta pela banca.",
-    "commentary": "Apenas I (A): a banca considerou a III também correta.\n\nApenas II (B): a II está errada.\n\nApenas III (C): a I está correta.\n\nObservação: a III é discutível. A maior parte da literatura mostra risco e mortalidade por OPSI MENORES após esplenectomia por trauma do que por doenças hematológicas (talassemia, linfoma, anemia falciforme), atribuídos à imunodepressão de base e, no trauma, à esplenose residual. Pela literatura, a resposta seria \"Apenas I\" (A); o gabarito oficial é D.",
+    "commentary": "Apenas I (A): a banca considerou a III também correta.\n\nApenas II (B): a II está errada.\n\nApenas III (C): a I está correta.",
     "reference": "Sabiston — Tratado de Cirurgia (baço) / Guia do CRIE — Ministério da Saúde",
     "tags": [
       "esplenectomia",
@@ -676,7 +684,11 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
       "pneumococo",
       "asplenia"
     ],
-    "tip": "Asplenia: risco de OPSI por toda a vida — vacinar contra pneumococo, Hib e meningococo."
+    "tip": "Asplenia: risco de OPSI por toda a vida — vacinar contra pneumococo, Hib e meningococo.",
+    "alsoAccepted": [
+      0
+    ],
+    "alert": "Gabarito discutível: a literatura mostra risco e mortalidade por sepse pós-esplenectomia MENORES após trauma do que após doenças hematológicas, o que torna a III falsa e a resposta \"Apenas I\". A banca manteve D. Neste simulado, a alternativa A também é aceita como correta."
   },
   {
     "id": "amrigs2025-32",
@@ -1026,7 +1038,8 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
       "genitália externa feminina"
     ],
     "tip": "Pequenos lábios: pregas finas, sem pelos, dentro dos grandes lábios.",
-    "image": "/images/amrigs2025-47.webp"
+    "image": "/images/amrigs2025-47.webp",
+    "alert": "Gabarito discutível: a seta fica perto da junção do pequeno lábio com o prepúcio. A banca considerou que ela aponta a borda do pequeno lábio (C)."
   },
   {
     "id": "amrigs2025-48",
@@ -1261,7 +1274,7 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 2,
     "explanation": "Na figura, a letra C indica as vilosidades coriônicas voltadas para a decídua basal, que se ramificam e formam o córion frondoso (viloso) — a parte fetal da futura placenta. As vilosidades do lado da decídua capsular degeneram e formam o córion liso.",
-    "commentary": "Cavidade coriônica (A): é o celoma extraembrionário, entre âmnio e córion; não é a estrutura com vilosidades indicada.\n\nCavidade uterina (B): é o espaço entre a decídua capsular e a parietal, fora do saco gestacional.\n\nCavidade amniótica (D): é a cavidade que envolve diretamente o embrião, delimitada pelo âmnio.\n\nObservação: o enunciado não diz qual letra está em questão; a resposta oficial corresponde à estrutura C da figura.",
+    "commentary": "Cavidade coriônica (A): é o celoma extraembrionário, entre âmnio e córion; não é a estrutura com vilosidades indicada.\n\nCavidade uterina (B): é o espaço entre a decídua capsular e a parietal, fora do saco gestacional.\n\nCavidade amniótica (D): é a cavidade que envolve diretamente o embrião, delimitada pelo âmnio.",
     "reference": "Moore — Embriologia Clínica (placenta e membranas fetais)",
     "tags": [
       "embriologia",
@@ -1270,7 +1283,8 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
       "placenta"
     ],
     "tip": "Córion frondoso (junto à decídua basal) vira placenta; córion liso (junto à capsular) vira membrana.",
-    "image": "/images/amrigs2025-58.webp"
+    "image": "/images/amrigs2025-58.webp",
+    "alert": "Atenção à redação: o enunciado não diz qual letra da figura está em questão. A resposta oficial (córion frondoso) corresponde à estrutura C."
   },
   {
     "id": "amrigs2025-59",
@@ -1328,7 +1342,7 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 3,
     "explanation": "RN a termo que nasce chorando e com bom tônus tem boa vitalidade; a cianose dos primeiros minutos é esperada (a saturação sobe aos poucos). A conduta é clampeamento oportuno do cordão após pelo menos 60 segundos, mantendo o RN em contato pele a pele com a mãe e avaliando continuamente FC, respiração e tônus. A sífilis materna não contraindica o clampeamento tardio nem o contato pele a pele (diferente do que se discute para HIV e HTLV, e a amamentação também é liberada).",
-    "commentary": "Estímulo tátil e clampeamento imediato (A): o RN já respira bem; não há indicação de estímulo nem de clampeamento imediato.\n\nClampeamento imediato e berço aquecido para reanimação (B): só se o RN não respirasse ou estivesse hipotônico.\n\nClampeamento com 30 segundos (C): para o RN a termo com boa vitalidade, recomenda-se esperar pelo menos 60 segundos.\n\nObservação: a alternativa D usa \"clampeamento imediato após 60 segundos\", redação contraditória; o sentido é clampeamento após 1 minuto.",
+    "commentary": "Estímulo tátil e clampeamento imediato (A): o RN já respira bem; não há indicação de estímulo nem de clampeamento imediato.\n\nClampeamento imediato e berço aquecido para reanimação (B): só se o RN não respirasse ou estivesse hipotônico.\n\nClampeamento com 30 segundos (C): para o RN a termo com boa vitalidade, recomenda-se esperar pelo menos 60 segundos.",
     "reference": "SBP — Reanimação do recém-nascido ≥34 semanas em sala de parto (2022) / Ministério da Saúde — PCDT de transmissão vertical de HIV, sífilis e hepatites (2022)",
     "tags": [
       "reanimação neonatal",
@@ -1336,7 +1350,8 @@ export const AMRIGS_2025_QUESTIONS: Question[] = [
       "sífilis congênita",
       "contato pele a pele"
     ],
-    "tip": "RN ≥34 sem que chora e tem tônus: clampear após ≥60 s e pele a pele."
+    "tip": "RN ≥34 sem que chora e tem tônus: clampear após ≥60 s e pele a pele.",
+    "alert": "Atenção à redação: a alternativa D fala em \"clampeamento imediato após 60 segundos\", o que é contraditório; o sentido é clampear após 1 minuto."
   },
   {
     "id": "amrigs2025-62",

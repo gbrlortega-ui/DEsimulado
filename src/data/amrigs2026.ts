@@ -126,7 +126,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 3,
     "explanation": "O teste do nitrito detecta bactérias que reduzem nitrato a nitrito, propriedade típica das enterobactérias (E. coli, Klebsiella, Proteus). Por isso, nitrito negativo não exclui infecção por enterococo, Staphylococcus saprophyticus ou Pseudomonas. A banca considerou correta a afirmação de que apenas as Enterobacteriaceae fazem essa conversão.",
-    "commentary": "Urocultura em toda cistite não complicada da mulher (A): o tratamento é empírico; a cultura fica para falha, recorrência, gestação ou suspeita de complicação.\n\nHomem com cistite sem cultura (B): infecção urinária no homem é considerada complicada e deve ter urocultura.\n\nBacteriúria assintomática com mais de 10.000 UFC/mL (C): o critério é ≥100.000 UFC/mL (10⁵) em duas amostras na mulher ou em uma no homem.\n\nObservação: a alternativa D é imprecisa — outros Gram-negativos (como Pseudomonas e Acinetobacter, em menor grau) também reduzem nitrato. A banca a aceitou por ser a única sem erro grosseiro.",
+    "commentary": "Urocultura em toda cistite não complicada da mulher (A): o tratamento é empírico; a cultura fica para falha, recorrência, gestação ou suspeita de complicação.\n\nHomem com cistite sem cultura (B): infecção urinária no homem é considerada complicada e deve ter urocultura.\n\nBacteriúria assintomática com mais de 10.000 UFC/mL (C): o critério é ≥100.000 UFC/mL (10⁵) em duas amostras na mulher ou em uma no homem.",
     "reference": "IDSA — Asymptomatic bacteriuria guideline (2019) / SBU — Infecção do trato urinário",
     "tags": [
       "infecção urinária",
@@ -134,7 +134,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "bacteriúria assintomática",
       "urocultura"
     ],
-    "tip": "Nitrito positivo sugere enterobactéria; nitrito negativo não exclui ITU."
+    "tip": "Nitrito positivo sugere enterobactéria; nitrito negativo não exclui ITU.",
+    "alert": "Gabarito discutível: a alternativa D diz que \"apenas\" as enterobactérias convertem nitrato em nitrito, mas outros Gram-negativos (como Pseudomonas) também o fazem. É a única opção sem erro grosseiro, e a banca a manteve."
   },
   {
     "id": "amrigs2026-7",
@@ -345,7 +346,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 1,
     "explanation": "Na fase aguda do AVC isquêmico, o AAS (160–325 mg nas primeiras 24–48 h, ou 24 h após trombólise) foi o antiplaquetário com benefício demonstrado nos grandes ensaios (IST, CAST). A banca considerou esta a alternativa correta.",
-    "commentary": "PA >185/110 mmHg não contraindica trombólise (A): pressão acima de 185/110 mmHg que não baixa com tratamento CONTRAINDICA a trombólise.\n\nAnticoagulação de rotina (C): não é indicada no AVC aterotrombótico agudo (não reduz recorrência e aumenta sangramento).\n\nAAS + clopidogrel sem benefício após AVC minor (D): os estudos CHANCE e POINT mostraram redução de recorrência com dupla antiagregação por 21 dias após AVC menor ou AIT de alto risco.\n\nObservação: a alternativa B segue o Harrison; a própria dupla antiagregação dos estudos CHANCE/POINT também é um tratamento de fase aguda, o que torna o \"único\" discutível.",
+    "commentary": "PA >185/110 mmHg não contraindica trombólise (A): pressão acima de 185/110 mmHg que não baixa com tratamento CONTRAINDICA a trombólise.\n\nAnticoagulação de rotina (C): não é indicada no AVC aterotrombótico agudo (não reduz recorrência e aumenta sangramento).\n\nAAS + clopidogrel sem benefício após AVC minor (D): os estudos CHANCE e POINT mostraram redução de recorrência com dupla antiagregação por 21 dias após AVC menor ou AIT de alto risco.",
     "reference": "AHA/ASA — Guidelines for the Early Management of Acute Ischemic Stroke (2019) / Diretrizes da SBDCV",
     "tags": [
       "AVC isquêmico",
@@ -353,7 +354,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "trombólise",
       "dupla antiagregação"
     ],
-    "tip": "AVC menor/AIT de alto risco: AAS + clopidogrel por 21 dias."
+    "tip": "AVC menor/AIT de alto risco: AAS + clopidogrel por 21 dias.",
+    "alert": "Gabarito discutível: a alternativa B chama o AAS de \"único\" antiplaquetário eficaz na fase aguda, mas a dupla antiagregação (AAS + clopidogrel, estudos CHANCE e POINT) também tem benefício no AVC menor. As demais alternativas estão claramente erradas, e a banca manteve B."
   },
   {
     "id": "amrigs2026-17",
@@ -540,7 +542,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 0,
     "explanation": "I correta: hérnia umbilical irredutível, dolorosa, com hiperemia de pele, parada de eliminação de gases e fezes e vômitos fecaloides = hérnia encarcerada com obstrução e provável estrangulamento.\nII incorreta: com sinais de estrangulamento, a redução manual é contraindicada (risco de reduzir alça isquêmica ou necrótica); a indicação é cirurgia de urgência.\nIII incorreta (para a banca): em campo potencialmente contaminado, com possível ressecção intestinal, a tela é evitada e prefere-se a herniorrafia primária.",
-    "commentary": "Apenas II (B): a II está errada.\n\nApenas III (C): a III foi considerada errada.\n\nApenas I e III (D): a III foi considerada errada.\n\nObservação: diretrizes recentes (WSES, Sabiston) admitem tela sintética em campo limpo-contaminado sem grande contaminação; a III é discutível, mas não muda a resposta, que depende do estrangulamento.",
+    "commentary": "Apenas II (B): a II está errada.\n\nApenas III (C): a III foi considerada errada.\n\nApenas I e III (D): a III foi considerada errada.",
     "reference": "WSES Guidelines — Emergency repair of complicated abdominal wall hernias (2017) / Sabiston",
     "tags": [
       "hérnia umbilical",
@@ -548,7 +550,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "hérnia estrangulada",
       "tela"
     ],
-    "tip": "Hérnia com sinais de estrangulamento: não reduzir, operar."
+    "tip": "Hérnia com sinais de estrangulamento: não reduzir, operar.",
+    "alert": "Gabarito discutível: a banca considerou errada a assertiva III (tela), mas diretrizes recentes (WSES) admitem tela sintética em campo limpo-contaminado. Como a II está errada de qualquer forma, a resposta depende só do julgamento da III."
   },
   {
     "id": "amrigs2026-26",
@@ -628,7 +631,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 3,
     "explanation": "A TC mostra diverticulite com pequenas bolhas de ar pericólicas, sem abscesso e sem líquido livre — diverticulite complicada leve (WSES 1A / Hinchey modificado Ia-Ib). A paciente está estável e aceita dieta. A conduta é tratamento não operatório (antibiótico conforme o caso), com monitorização clínica e laboratorial — a PCR ajuda a acompanhar a evolução e a detectar complicação.",
-    "commentary": "Antibiótico IV de amplo espectro e dieta zero (A): exagera o tratamento numa paciente estável, que aceita dieta.\n\nAntibiótico oral com dieta líquida e repouso (B): repouso no leito e dieta restrita não têm benefício comprovado.\n\nSem antibiótico, só sintomáticos (C): ar extraluminal já caracteriza forma complicada; a omissão do antibiótico vale para a diverticulite não complicada.\n\nObservação: a alternativa D é genérica; a banca a considerou correta por enfatizar o manejo não operatório com monitorização.",
+    "commentary": "Antibiótico IV de amplo espectro e dieta zero (A): exagera o tratamento numa paciente estável, que aceita dieta.\n\nAntibiótico oral com dieta líquida e repouso (B): repouso no leito e dieta restrita não têm benefício comprovado.\n\nSem antibiótico, só sintomáticos (C): ar extraluminal já caracteriza forma complicada; a omissão do antibiótico vale para a diverticulite não complicada.",
     "reference": "WSES Guidelines for the management of acute left-sided colonic diverticulitis (2020)",
     "tags": [
       "diverticulite aguda",
@@ -636,7 +639,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "proteína C reativa",
       "tratamento não operatório"
     ],
-    "tip": "Diverticulite com bolha de ar pericólica e sem abscesso: tratamento clínico."
+    "tip": "Diverticulite com bolha de ar pericólica e sem abscesso: tratamento clínico.",
+    "alert": "Gabarito discutível: a alternativa D é genérica (\"considerar tratamento não operatório\"). A banca a escolheu por priorizar o manejo não operatório com monitorização; as demais trazem medidas sem respaldo (dieta zero, repouso, omitir antibiótico na forma complicada)."
   },
   {
     "id": "amrigs2026-30",
@@ -761,14 +765,15 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 3,
     "explanation": "A banca considerou as quatro corretas: a obesidade grave associa-se a doença renal crônica terminal (por diabetes, hipertensão e glomerulopatia da obesidade), a maior risco de câncer de próstata agressivo, à doença articular degenerativa (artrose, comorbidade muito frequente) e a alterações epigenéticas (metilação de DNA) que participam do seu desenvolvimento.",
-    "commentary": "Apenas I e IV (A), Apenas II e III (B), Apenas I, II e III (C): todas deixam de fora assertivas consideradas corretas.\n\nObservação: \"a alteração mais frequente\" (III) é afirmação discutível — dislipidemia, hipertensão e esteatose hepática também são muito prevalentes nos obesos graves.",
+    "commentary": "Apenas I e IV (A), Apenas II e III (B), Apenas I, II e III (C): todas deixam de fora assertivas consideradas corretas.",
     "reference": "Sabiston — Tratado de Cirurgia (cirurgia bariátrica) / Diretrizes Brasileiras de Obesidade (ABESO)",
     "tags": [
       "obesidade",
       "cirurgia bariátrica",
       "comorbidades da obesidade"
     ],
-    "tip": "Obesidade grave aumenta risco de DRC, câncer e artrose."
+    "tip": "Obesidade grave aumenta risco de DRC, câncer e artrose.",
+    "alert": "Gabarito discutível: chamar a artrite de \"a alteração mais frequente\" no obeso grave (III) é discutível — hipertensão, dislipidemia e esteatose também são muito prevalentes. A banca considerou as quatro assertivas corretas."
   },
   {
     "id": "amrigs2026-36",
@@ -1415,7 +1420,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 3,
     "explanation": "Refluxo vesicoureteral de baixo grau (I–II) tem alta taxa de resolução espontânea e baixo risco de lesão renal; as diretrizes (AAP 2011) não recomendam profilaxia antibiótica de rotina nesses casos — ela favorece resistência bacteriana. A conduta é suspender a profilaxia, orientar sobre sintomas e tratar precocemente novos episódios febris.",
-    "commentary": "Profilaxia 3 vezes por semana (A): não há indicação de profilaxia, e o esquema não é usado.\n\nUretrocistografias periódicas (B): exame invasivo e irradiante; não se repete de rotina no RVU grau II.\n\nCorreção cirúrgica (C): indicada em graus altos (IV–V) com infecções de repetição apesar da profilaxia ou cicatrizes renais progressivas.\n\nObservação: o estudo RIVUR mostrou que a profilaxia reduz recorrências em RVU I–IV, e diretrizes europeias (EAU/ESPU) a consideram em lactentes com ITU febril de repetição; a questão é discutível.",
+    "commentary": "Profilaxia 3 vezes por semana (A): não há indicação de profilaxia, e o esquema não é usado.\n\nUretrocistografias periódicas (B): exame invasivo e irradiante; não se repete de rotina no RVU grau II.\n\nCorreção cirúrgica (C): indicada em graus altos (IV–V) com infecções de repetição apesar da profilaxia ou cicatrizes renais progressivas.",
     "reference": "AAP — Urinary Tract Infection: Clinical Practice Guideline (2011, reafirmado 2016) / SBP — ITU na criança",
     "tags": [
       "refluxo vesicoureteral",
@@ -1423,7 +1428,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "profilaxia antibiótica",
       "nefrologia pediátrica"
     ],
-    "tip": "RVU de baixo grau: tende a resolver sozinho; profilaxia não é rotina."
+    "tip": "RVU de baixo grau: tende a resolver sozinho; profilaxia não é rotina.",
+    "alert": "Gabarito discutível: a banca seguiu a AAP, que não recomenda profilaxia de rotina no refluxo de baixo grau. O estudo RIVUR e a diretriz europeia (EAU/ESPU) apoiam a profilaxia em lactentes com ITU febril de repetição. Nenhuma das outras alternativas é adequada."
   },
   {
     "id": "amrigs2026-66",
@@ -1546,7 +1552,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 2,
     "explanation": "A pergunta é sobre a medida mais efetiva para RESOLVER o coma por benzodiazepínico: o flumazenil, antagonista competitivo do receptor benzodiazepínico, reverte a sedação.",
-    "commentary": "Intubação (A): protege a via aérea, mas não resolve o coma; o paciente está eupneico.\n\nSalina hipertônica (B): é para hipertensão intracraniana ou hiponatremia grave.\n\nNaloxona (D): antagonista opioide, sem efeito sobre benzodiazepínicos.\n\nObservação: na prática, o flumazenil é usado com cautela — pode precipitar convulsões em usuários crônicos de benzodiazepínicos ou em coingestão de pró-convulsivantes (como tricíclicos). O tratamento de suporte é a base, e o antídoto fica para casos selecionados, como esta intoxicação isolada em adolescente.",
+    "commentary": "Intubação (A): protege a via aérea, mas não resolve o coma; o paciente está eupneico.\n\nSalina hipertônica (B): é para hipertensão intracraniana ou hiponatremia grave.\n\nNaloxona (D): antagonista opioide, sem efeito sobre benzodiazepínicos.",
     "reference": "SBP — Intoxicações agudas na infância / Goldfrank's Toxicologic Emergencies",
     "tags": [
       "intoxicação por benzodiazepínicos",
@@ -1554,7 +1560,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "antídotos",
       "toxicologia"
     ],
-    "tip": "Benzodiazepínico: flumazenil. Opioide: naloxona."
+    "tip": "Benzodiazepínico: flumazenil. Opioide: naloxona.",
+    "alert": "Gabarito discutível: o flumazenil reverte o coma por benzodiazepínico, mas pode precipitar convulsões (uso crônico, coingestão de tricíclicos) e, na prática, muitos priorizam suporte e via aérea (Glasgow 6). A banca manteve C porque a pergunta é sobre a resolução do coma."
   },
   {
     "id": "amrigs2026-72",
@@ -1590,7 +1597,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 3,
     "explanation": "O edema cerebral é a principal causa de morte na cetoacidose diabética pediátrica e costuma surgir nas primeiras 12 horas (4–12 h) do tratamento, manifestando-se por cefaleia, bradicardia, hipertensão e rebaixamento ou piora do nível de consciência. A banca relacionou o edema a esse rebaixamento precoce durante o manejo.",
-    "commentary": "Insulina contínua em vez de intermitente (A): a infusão contínua de insulina regular (0,05–0,1 UI/kg/h) é o padrão; não é fator de risco.\n\nExpansão cautelosa (B): a reposição cautelosa é recomendada justamente para reduzir risco.\n\nPotássio acima da necessidade (C): o potássio é reposto conforme os níveis; não se associa a edema cerebral.\n\nObservação: os fatores de risco clássicos são uso de bicarbonato, idade baixa, cetoacidose grave, PaCO₂ baixa, ureia alta e queda lenta do sódio corrigido. O rebaixamento é manifestação do edema, não sua causa; a redação da alternativa é imprecisa.",
+    "commentary": "Insulina contínua em vez de intermitente (A): a infusão contínua de insulina regular (0,05–0,1 UI/kg/h) é o padrão; não é fator de risco.\n\nExpansão cautelosa (B): a reposição cautelosa é recomendada justamente para reduzir risco.\n\nPotássio acima da necessidade (C): o potássio é reposto conforme os níveis; não se associa a edema cerebral.",
     "reference": "ISPAD Clinical Practice Consensus Guidelines 2022 — Diabetic ketoacidosis / SBD",
     "tags": [
       "cetoacidose diabética",
@@ -1598,7 +1605,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "diabetes tipo 1",
       "emergência pediátrica"
     ],
-    "tip": "CAD na criança: piora neurológica nas primeiras horas = edema cerebral → manitol ou salina 3%."
+    "tip": "CAD na criança: piora neurológica nas primeiras horas = edema cerebral → manitol ou salina 3%.",
+    "alert": "Gabarito discutível: o rebaixamento de consciência nas primeiras horas é manifestação do edema cerebral, não sua causa; os fatores de risco clássicos (bicarbonato, PaCO₂ baixa, ureia alta) não estão entre as opções. A banca manteve D."
   },
   {
     "id": "amrigs2026-74",
@@ -1815,7 +1823,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "atenção primária",
       "cuidados paliativos"
     ],
-    "tip": "Atenção domiciliar: paciente estável; instabilidade e ventilação invasiva = hospital."
+    "tip": "Atenção domiciliar: paciente estável; instabilidade e ventilação invasiva = hospital.",
+    "alert": "Atenção à redação: a alternativa D cita \"I, II, III e IV\", mas a questão tem só três assertivas. O gabarito (B) não é afetado."
   },
   {
     "id": "amrigs2026-84",
@@ -1829,7 +1838,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 3,
     "explanation": "As três assertivas estão corretas (a alternativa D traz \"I, II, III e IV\", mas só há três assertivas — a banca a considerou como \"todas corretas\").\n\nI: os conselhos de saúde são instâncias colegiadas, deliberativas e permanentes em cada esfera de governo (Lei 8.142/90).\nII: a composição é paritária — 50% de usuários e 50% divididos entre trabalhadores de saúde, governo e prestadores.\nIII: entre suas atribuições está aprovar o plano de saúde da respectiva esfera (Plano Municipal, no município).",
-    "commentary": "Apenas I e II (A), Apenas I e III (B), Apenas II e III (C): todas deixam de fora uma assertiva correta.\n\nObservação: a II simplifica a paridade, que é entre usuários e o conjunto dos demais segmentos, não exatamente entre \"governo e sociedade civil\".",
+    "commentary": "Apenas I e II (A), Apenas I e III (B), Apenas II e III (C): todas deixam de fora uma assertiva correta.",
     "reference": "Lei nº 8.142/1990 / Resolução CNS nº 453/2012",
     "tags": [
       "conselhos de saúde",
@@ -1837,7 +1846,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "participação social",
       "SUS"
     ],
-    "tip": "Conselho de saúde: permanente, deliberativo e paritário (50% usuários)."
+    "tip": "Conselho de saúde: permanente, deliberativo e paritário (50% usuários).",
+    "alert": "Atenção à redação: a alternativa D cita \"I, II, III e IV\", mas a questão tem só três assertivas — a banca a considerou como \"todas corretas\"."
   },
   {
     "id": "amrigs2026-85",
@@ -1960,7 +1970,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 0,
     "explanation": "I correta: o indicador de cobertura vacinal do Previne Brasil considerava pentavalente e poliomielite inativada em crianças de 1 ano.\nII correta: o indicador de citopatológico considera mulheres de 25 a 64 anos.\nIII incorreta: o indicador de saúde bucal era a proporção de gestantes com pelo menos UM atendimento odontológico no pré-natal.",
-    "commentary": "Apenas I e III (B): a III está errada.\n\nApenas II e III (C): a III está errada.\n\n\"I, II, III e IV\" (D): a III está errada (e não existe assertiva IV).\n\nObservação: o Previne Brasil foi substituído em 2024 pelo novo modelo de cofinanciamento da APS, mas os indicadores cobrados seguem a Portaria nº 102/2022.",
+    "commentary": "Apenas I e III (B): a III está errada.\n\nApenas II e III (C): a III está errada.\n\n\"I, II, III e IV\" (D): a III está errada (e não existe assertiva IV).",
     "reference": "Ministério da Saúde — Portaria GM/MS nº 102/2022 (indicadores do Previne Brasil)",
     "tags": [
       "programa previne brasil",
@@ -1968,7 +1978,8 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "atenção primária",
       "financiamento da APS"
     ],
-    "tip": "Previne Brasil: gestante com ≥1 consulta odontológica; citopatológico 25–64 anos."
+    "tip": "Previne Brasil: gestante com ≥1 consulta odontológica; citopatológico 25–64 anos.",
+    "alert": "Atenção: o Previne Brasil foi substituído em 2024 pelo novo modelo de cofinanciamento da APS. A questão cobra os indicadores da Portaria nº 102/2022."
   },
   {
     "id": "amrigs2026-91",
@@ -2091,7 +2102,7 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 1,
     "explanation": "Sensibilidade de 100% significa que todos os doentes têm teste positivo — nenhum falso-negativo. Logo, nenhum paciente com HIV terá resultado negativo.",
-    "commentary": "Todos os positivos têm HIV (A): com especificidade de 98%, 2% dos não doentes terão falso-positivo.\n\n2% dos doentes com falso-negativo (C): 2% se refere aos não doentes (falso-positivos), não aos doentes.\n\nTodos os negativos livres da doença (D): com sensibilidade de 100%, é verdade no plano teórico — mas a alternativa B é a que traduz diretamente a sensibilidade, e o resultado negativo também depende da fase da infecção (janela imunológica).\n\nObservação: matematicamente, sensibilidade de 100% faz o VPN ser 100%, o que tornaria D também verdadeira; a banca preferiu B, definição direta de sensibilidade.",
+    "commentary": "Todos os positivos têm HIV (A): com especificidade de 98%, 2% dos não doentes terão falso-positivo.\n\n2% dos doentes com falso-negativo (C): 2% se refere aos não doentes (falso-positivos), não aos doentes.\n\nTodos os negativos livres da doença (D): com sensibilidade de 100%, é verdade no plano teórico — mas a alternativa B é a que traduz diretamente a sensibilidade, e o resultado negativo também depende da fase da infecção (janela imunológica).",
     "reference": "Fletcher — Epidemiologia Clínica / Ministério da Saúde — Manual técnico para o diagnóstico da infecção pelo HIV",
     "tags": [
       "sensibilidade",
@@ -2099,7 +2110,11 @@ export const AMRIGS_2026_QUESTIONS: Question[] = [
       "testes diagnósticos",
       "HIV"
     ],
-    "tip": "Sensibilidade = positivo nos doentes. Especificidade = negativo nos sadios."
+    "tip": "Sensibilidade = positivo nos doentes. Especificidade = negativo nos sadios.",
+    "alsoAccepted": [
+      3
+    ],
+    "alert": "Gabarito discutível: com sensibilidade de 100% não há falsos-negativos, então todo negativo está livre da doença (VPN = 100%) — a alternativa D também é verdadeira. A banca manteve B. Neste simulado, a alternativa D também é aceita como correta."
   },
   {
     "id": "amrigs2026-97",
