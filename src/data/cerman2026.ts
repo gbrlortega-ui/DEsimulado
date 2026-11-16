@@ -1159,7 +1159,7 @@ export const CERMAN_2026_QUESTIONS: Question[] = [
     "topography": "5.2",
     "topic": "Infecções na gestação",
     "module": "Ginecologia e Obstetrícia",
-    "text": "Gestante foi ao pré-natal com resultado de sorologia para toxoplasmose realizada na 18ª semana de gestação, com o resultado (IgG: Reagente / IgM: Não reagente). Assinale a alternativa CORRETA de acordo com as diretrizes brasileiras.",
+    "text": "Gestante foi ao pré-natal com resultado de sorologia para toxoplasmose realizada na 18ª semana de gestação (IgG: Reagente / IgM: Não reagente). Assinale a alternativa CORRETA de acordo com as diretrizes brasileiras.",
     "options": [
       "(A) O resultado da Avidez de IgG não é importante para definir a conduta. Aguardar resultado da amniocentese para iniciar tratamento.",
       "(B) Avidez de IgG, evidencia infecção antiga. Encaminhar para o pré-natal de risco habitual para acompanhamento.",
