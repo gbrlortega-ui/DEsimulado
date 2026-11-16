@@ -10,6 +10,7 @@ import { ENAMED_2026_QUESTIONS } from './enamed2026';
 import { UNIFESP_2025_QUESTIONS } from './unifesp2025';
 import { HOSBOS_2027_QUESTIONS } from './hosbos2027';
 import { HOSBOS_2025_QUESTIONS } from './hosbos2025';
+import { CERMAN_2025_QUESTIONS } from './cerman2025';
 import { USPRP_2025_QUESTIONS } from './usprp2025';
 import { SCMBH_2026_QUESTIONS } from './scmbh2026';
 import { SUSBA_2025_QUESTIONS } from './susba2025';
@@ -48,5 +49,6 @@ export const QUESTIONS: Question[] = [
   ...HSRC_2026_QUESTIONS,
   ...AMP_2026_QUESTIONS,
   ...AMRIGS_2025_QUESTIONS,
-  ...AMRIGS_2026_QUESTIONS
+  ...AMRIGS_2026_QUESTIONS,
+  ...CERMAN_2025_QUESTIONS
 ];
