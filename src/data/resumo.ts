@@ -2,14 +2,14 @@
 // O build e o servidor local regeneram este arquivo sozinhos; o `npm run validate` acusa se ficar desatualizado.
 import type { Question } from '../types';
 
-export const TOTAL_QUESTIONS = 2414;
+export const TOTAL_QUESTIONS = 2514;
 
 export const COUNT_BY_AREA: Record<string, number> = {
-  "Pediatria": 451,
-  "Clínica Médica": 492,
-  "Cirurgia": 430,
-  "Ginecologia e Obstetrícia": 445,
-  "Saúde Coletiva": 436,
+  "Pediatria": 472,
+  "Clínica Médica": 512,
+  "Cirurgia": 450,
+  "Ginecologia e Obstetrícia": 465,
+  "Saúde Coletiva": 455,
   "Ciências Básicas": 160
 };
 
@@ -93,6 +93,12 @@ export const EDITIONS: ExamEdition[] = [
     "kind": "Residência",
     "year": 2025,
     "count": 75
+  },
+  {
+    "label": "HOS-BOS 2025",
+    "kind": "Residência",
+    "year": 2025,
+    "count": 100
   },
   {
     "label": "REVALIDA 2025/1",
@@ -213,6 +219,13 @@ export const SOURCES: ExamSource[] = [
     "count": 75
   },
   {
+    "key": "HOS-BOS",
+    "label": "HOS-BOS",
+    "kind": "Residência",
+    "years": "2025–2027",
+    "count": 200
+  },
+  {
     "key": "REVALIDA",
     "label": "REVALIDA",
     "kind": "Residência",
@@ -288,13 +301,6 @@ export const SOURCES: ExamSource[] = [
     "kind": "Residência",
     "years": "2026",
     "count": 60
-  },
-  {
-    "key": "HOS-BOS",
-    "label": "HOS-BOS",
-    "kind": "Residência",
-    "years": "2027",
-    "count": 100
   }
 ];
 
@@ -316,11 +322,11 @@ export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
   "Clínica Médica|UNIFESP": 26,
   "Ginecologia e Obstetrícia|UNIFESP": 17,
   "Pediatria|UNIFESP": 19,
-  "Cirurgia|HOS-BOS": 20,
-  "Clínica Médica|HOS-BOS": 20,
-  "Ginecologia e Obstetrícia|HOS-BOS": 20,
-  "Pediatria|HOS-BOS": 20,
-  "Saúde Coletiva|HOS-BOS": 20,
+  "Cirurgia|HOS-BOS": 40,
+  "Clínica Médica|HOS-BOS": 40,
+  "Ginecologia e Obstetrícia|HOS-BOS": 40,
+  "Pediatria|HOS-BOS": 41,
+  "Saúde Coletiva|HOS-BOS": 39,
   "Pediatria|USP-RP": 21,
   "Saúde Coletiva|USP-RP": 13,
   "Clínica Médica|USP-RP": 25,
@@ -385,91 +391,91 @@ export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */
 export const TOPOGRAPHY_COUNT: Record<string, number> = {
-  "8": 65,
-  "9": 61,
-  "10": 96,
-  "11": 228,
-  "12": 19,
-  "13": 47,
-  "14": 97,
-  "15": 350,
-  "16": 140,
-  "1.2": 14,
-  "1.3": 23,
-  "7.2": 37,
+  "8": 67,
+  "9": 63,
+  "10": 99,
+  "11": 238,
+  "12": 20,
+  "13": 48,
+  "14": 103,
+  "15": 369,
+  "16": 146,
+  "1.2": 15,
+  "1.3": 24,
+  "7.2": 38,
   "4.2": 25,
-  "1.1": 67,
-  "1.5": 27,
-  "6.1": 40,
-  "3.1": 77,
-  "4.1": 71,
-  "2.1": 83,
-  "6.2": 19,
-  "2.2": 90,
-  "3.2": 24,
-  "3.3": 25,
+  "1.1": 72,
+  "1.5": 28,
+  "6.1": 41,
+  "3.1": 82,
+  "4.1": 72,
+  "2.1": 86,
+  "6.2": 20,
+  "2.2": 92,
+  "3.2": 25,
+  "3.3": 27,
   "7.1": 25,
   "1.4": 3,
   "3.4": 17,
-  "5.1": 172,
-  "5.2": 204
+  "5.1": 179,
+  "5.2": 215
 };
 
 /** Questões por assunto, na chave "1.1|Cefaleias". */
 export const TOPIC_COUNT: Record<string, number> = {
-  "11|Puericultura": 25,
-  "1.2|Catarata": 4,
+  "11|Puericultura": 26,
+  "1.2|Catarata": 5,
   "11|Icterícia neonatal": 8,
-  "11|Obesidade infantil": 8,
+  "11|Obesidade infantil": 9,
   "1.3|Amigdalite/faringoamigdalite": 12,
   "7.2|Urticária": 1,
   "1.2|Uveíte": 2,
   "4.2|Estenose de uretra": 2,
-  "11|Calendário vacinal": 11,
-  "1.1|TCE": 11,
+  "11|Calendário vacinal": 12,
+  "1.1|TCE": 12,
   "11|Maus-tratos infantis": 15,
   "11|Prematuridade": 2,
-  "11|Anemia ferropriva": 12,
+  "11|Anemia ferropriva": 13,
   "9|Trombocitopenias": 5,
-  "11|Aleitamento materno": 18,
+  "11|Aleitamento materno": 19,
   "1.5|Hipotireoidismo": 7,
   "11|Síndrome do desconforto respiratório neonatal": 8,
-  "14|Emergências pediátricas": 12,
+  "14|Emergências pediátricas": 13,
   "6.1|Artrite reumatoide": 7,
   "9|Talassemias": 2,
-  "11|ITU pediátrica": 6,
+  "11|ITU pediátrica": 7,
   "11|Diarreia aguda": 8,
-  "14|Trauma": 35,
+  "14|Trauma": 36,
   "11|Cardiopatias congênitas": 20,
   "3.1|Constipação intestinal": 6,
   "10|Raiva": 6,
-  "1.1|Cefaleias": 8,
+  "1.1|Cefaleias": 9,
   "1.3|Surdez": 2,
   "11|Desenvolvimento neuropsicomotor": 17,
   "9|Anemia falciforme": 7,
   "11|Asma infantil": 17,
-  "11|Doença de Kawasaki": 1,
+  "11|Doença de Kawasaki": 2,
   "1.5|Hipertireoidismo": 10,
-  "11|Desidratação": 9,
+  "11|Desidratação": 10,
   "11|Sepse neonatal": 7,
   "9|Leucemias": 8,
   "1.3|Otite média aguda": 2,
   "11|Convulsão febril": 5,
-  "11|Pneumonia infantil": 8,
+  "11|Pneumonia infantil": 9,
   "11|Refluxo gastroesofágico": 2,
-  "11|Bronquiolite": 9,
+  "11|Bronquiolite": 10,
   "11|Desnutrição": 3,
-  "10|Sífilis": 14,
+  "10|Sífilis": 15,
   "4.1|Síndrome nefrítica": 3,
   "2.1|Bronquiectasias": 2,
   "8|Insuficiência adrenal": 6,
   "6.2|Escoliose": 2,
   "14|Intoxicações": 13,
-  "15|Ética médica": 14,
-  "4.1|Síndrome nefrótica": 6,
+  "15|Ética médica": 15,
+  "4.1|Síndrome nefrótica": 7,
   "1.3|Laringite": 3,
   "7.2|Dermatite atópica": 4,
-  "14|Sepse e choque séptico": 9,
+  "14|Sepse e choque séptico": 10,
   "8|Síndrome de Cushing": 3,
   "4.2|Torção testicular": 5,
   "2.2|Arritmias": 7,
@@ -477,33 +483,33 @@ export const TOPIC_COUNT: Record<string, number> = {
   "10|Tétano": 1,
   "8|Feocromocitoma": 2,
   "9|Linfomas": 3,
-  "8|Cetoacidose diabética": 14,
+  "8|Cetoacidose diabética": 15,
   "3.1|Diarreia crônica": 3,
   "1.2|Erros refrativos": 1,
-  "10|Dengue": 14,
+  "10|Dengue": 15,
   "4.1|Distúrbios hidroeletrolíticos": 10,
   "4.1|Lesão renal aguda": 12,
-  "8|Diabetes mellitus tipo 1 e 2": 22,
+  "8|Diabetes mellitus tipo 1 e 2": 23,
   "1.1|Demências": 7,
   "6.1|Lúpus eritematoso sistêmico": 7,
-  "1.1|Epilepsia": 6,
-  "10|Tuberculose": 20,
-  "2.1|DPOC": 18,
+  "1.1|Epilepsia": 7,
+  "10|Tuberculose": 21,
+  "2.1|DPOC": 19,
   "9|Anemia ferropriva": 6,
   "3.2|Hepatites virais": 5,
   "2.2|Dislipidemia": 8,
   "2.2|Insuficiência cardíaca": 12,
-  "2.2|Hipertensão arterial sistêmica": 21,
+  "2.2|Hipertensão arterial sistêmica": 22,
   "4.1|Cistite": 6,
   "13|Dependência química": 6,
   "3.1|DRGE": 9,
   "2.1|Asma": 10,
-  "2.1|Pneumonia comunitária": 15,
+  "2.1|Pneumonia comunitária": 16,
   "13|Abstinência alcoólica": 6,
   "6.1|Osteoartrose": 2,
   "2.1|Tuberculose pulmonar": 1,
   "7.2|Herpes-zóster": 2,
-  "1.1|AVC": 18,
+  "1.1|AVC": 19,
   "7.2|Erisipela": 2,
   "7.2|Melanoma": 4,
   "4.1|Nefrolitíase": 8,
@@ -517,10 +523,10 @@ export const TOPIC_COUNT: Record<string, number> = {
   "3.1|Doença inflamatória intestinal": 12,
   "3.1|Doença celíaca": 2,
   "3.2|Cirrose hepática": 3,
-  "1.1|Meningite": 9,
+  "1.1|Meningite": 10,
   "1.1|Parkinson": 3,
   "9|Anemia hemolítica": 3,
-  "3.2|Encefalopatia hepática": 1,
+  "3.2|Encefalopatia hepática": 2,
   "13|Esquizofrenia": 5,
   "6.1|Gota": 4,
   "7.2|Hanseníase": 7,
@@ -529,49 +535,49 @@ export const TOPIC_COUNT: Record<string, number> = {
   "4.1|Glomerulonefrite": 3,
   "10|HIV/AIDS": 9,
   "12|Delirium": 5,
-  "3.1|Gastrite": 2,
+  "3.1|Gastrite": 3,
   "9|Síndrome de lise tumoral": 1,
   "2.1|Insuficiência respiratória": 1,
   "10|Sepse": 4,
   "6.1|Osteoporose": 7,
   "7.2|Carcinoma basocelular": 3,
   "9|Anemia megaloblástica": 10,
-  "2.1|Derrame pleural": 12,
-  "13|Transtornos de ansiedade": 4,
+  "2.1|Derrame pleural": 13,
+  "13|Transtornos de ansiedade": 5,
   "1.5|Tempestade tireotóxica": 1,
   "12|Demências": 1,
   "13|Depressão maior": 7,
   "8|Hiperaldosteronismo primário": 3,
-  "16|Feridas": 15,
+  "16|Feridas": 17,
   "16|Pré-operatório": 17,
-  "16|Hérnias": 17,
+  "16|Hérnias": 18,
   "3.3|Colangite aguda": 4,
-  "3.1|Hemorragia digestiva baixa": 2,
+  "3.1|Hemorragia digestiva baixa": 3,
   "7.1|Doença arterial periférica": 5,
   "6.2|Fraturas": 5,
   "1.1|Hipertensão intracraniana": 3,
   "14|Queimaduras": 10,
   "1.3|Câncer de cabeça e pescoço": 2,
   "1.2|Ceratite": 3,
-  "14|Choque": 4,
+  "14|Choque": 5,
   "16|Trauma abdominal": 11,
   "6.2|Hérnia de disco": 2,
-  "16|Obstrução intestinal": 16,
+  "16|Obstrução intestinal": 17,
   "7.1|Trombose venosa profunda": 8,
   "4.2|Câncer de próstata": 5,
-  "3.1|Hemorragia digestiva alta": 9,
+  "3.1|Hemorragia digestiva alta": 10,
   "3.1|Doença hemorroidária": 5,
   "7.1|Aneurisma de aorta abdominal": 4,
   "3.2|Hepatocarcinoma": 4,
   "10|Doença de Chagas": 3,
   "1.4|Doença periodontal": 1,
   "3.3|Colecistite aguda": 3,
-  "16|Trauma torácico": 17,
+  "16|Trauma torácico": 18,
   "16|Apendicite aguda": 9,
-  "16|Perfuração de víscera oca": 6,
+  "16|Perfuração de víscera oca": 7,
   "3.3|Colangiocarcinoma": 3,
   "3.4|Pancreatite aguda": 8,
-  "3.1|Câncer colorretal": 10,
+  "3.1|Câncer colorretal": 11,
   "8|Obesidade": 10,
   "7.1|Isquemia arterial aguda": 3,
   "7.2|Celulite": 2,
@@ -581,35 +587,35 @@ export const TOPIC_COUNT: Record<string, number> = {
   "16|Isquemia mesentérica": 4,
   "1.5|Nódulos tireoidianos": 3,
   "16|Abdome agudo": 5,
-  "6.2|Lombalgia": 3,
-  "7.2|Carcinoma espinocelular": 1,
+  "6.2|Lombalgia": 4,
+  "7.2|Carcinoma espinocelular": 2,
   "6.2|Luxações": 1,
   "3.3|Colelitíase": 8,
-  "5.1|Sangramento uterino anormal": 15,
-  "5.1|Climatério e menopausa": 19,
+  "5.1|Sangramento uterino anormal": 16,
+  "5.1|Climatério e menopausa": 21,
   "5.1|Contracepção": 28,
-  "5.1|Câncer de colo uterino": 27,
-  "5.1|Vaginose bacteriana": 5,
+  "5.1|Câncer de colo uterino": 28,
+  "5.1|Vaginose bacteriana": 6,
   "5.2|Diabetes gestacional": 19,
   "5.2|Assistência ao parto": 10,
   "5.2|Puerpério": 14,
-  "5.2|Infecções na gestação": 26,
-  "5.2|Rotura prematura de membranas": 6,
-  "15|Rastreamento": 20,
-  "5.1|Câncer de endométrio": 7,
-  "5.2|Gravidez ectópica": 8,
+  "5.2|Infecções na gestação": 27,
+  "5.2|Rotura prematura de membranas": 7,
+  "15|Rastreamento": 21,
+  "5.1|Câncer de endométrio": 8,
+  "5.2|Gravidez ectópica": 9,
   "5.2|Diagnóstico de gravidez": 1,
-  "5.2|Pré-natal": 30,
+  "5.2|Pré-natal": 33,
   "5.2|Hemorragia pós-parto": 9,
   "5.2|Trabalho de parto": 23,
-  "5.1|Mioma uterino": 8,
+  "5.1|Mioma uterino": 9,
   "5.1|Endometriose": 10,
   "5.1|Infertilidade": 8,
   "5.1|Prolapso genital": 7,
   "5.1|Câncer de ovário": 7,
   "15|Saúde da mulher": 8,
   "5.2|Pré-eclâmpsia": 16,
-  "5.2|Abortamento": 16,
+  "5.2|Abortamento": 17,
   "5.1|Síndrome dos ovários policísticos": 6,
   "5.1|Doença inflamatória pélvica": 7,
   "5.1|Candidíase vaginal": 3,
@@ -624,18 +630,18 @@ export const TOPIC_COUNT: Record<string, number> = {
   "15|Bioética": 7,
   "5.2|Idade gestacional": 5,
   "4.2|Incontinência urinária": 7,
-  "5.2|Placenta prévia": 2,
-  "15|Atenção Primária": 69,
-  "15|Saúde do idoso": 5,
-  "15|SUS": 48,
+  "5.2|Placenta prévia": 4,
+  "15|Atenção Primária": 70,
+  "15|Saúde do idoso": 6,
+  "15|SUS": 52,
   "12|Polifarmácia": 2,
-  "15|Imunização": 21,
-  "15|Saúde do trabalhador": 19,
-  "15|Estudos epidemiológicos": 30,
-  "15|Epidemiologia": 40,
-  "15|Vigilância epidemiológica": 27,
-  "15|Testes diagnósticos": 20,
-  "15|Estratégia Saúde da Família": 11,
+  "15|Imunização": 23,
+  "15|Saúde do trabalhador": 20,
+  "15|Estudos epidemiológicos": 31,
+  "15|Epidemiologia": 41,
+  "15|Vigilância epidemiológica": 29,
+  "15|Testes diagnósticos": 21,
+  "15|Estratégia Saúde da Família": 12,
   "12|Quedas": 3,
   "13|Risco de suicídio": 7,
   "13|Transtorno bipolar": 3,
@@ -648,17 +654,17 @@ export const TOPIC_COUNT: Record<string, number> = {
   "4.1|Distúrbios ácido-base": 7,
   "14|Anafilaxia": 4,
   "10|Malária": 3,
-  "9|Coagulopatias": 6,
+  "9|Coagulopatias": 7,
   "4.2|Hiperplasia prostática benigna": 2,
   "2.1|Fibrose pulmonar": 2,
   "6.1|Artrite séptica": 2,
-  "15|Bioestatística": 4,
+  "15|Bioestatística": 6,
   "3.2|Ascite": 3,
   "14|Crise hipertensiva": 1,
   "7.2|Dermatite de contato": 1,
   "1.1|Esclerose múltipla": 1,
   "3.1|Úlcera péptica": 4,
-  "9|Neutropenia febril": 3,
+  "9|Neutropenia febril": 4,
   "13|Transtornos alimentares": 4,
   "4.2|Fimose": 1,
   "3.4|Câncer de pâncreas": 3,
@@ -669,35 +675,37 @@ export const TOPIC_COUNT: Record<string, number> = {
   "1.5|Tireoidites": 1,
   "13|TOC": 1,
   "3.1|Fissura anal": 2,
-  "6.1|Vasculites": 2,
-  "3.3|Coledocolitíase": 5,
+  "6.1|Vasculites": 3,
+  "3.3|Coledocolitíase": 6,
   "14|Emergências obstétricas": 4,
   "13|Transtornos de personalidade": 1,
-  "2.2|Fibrilação atrial": 5,
+  "2.2|Fibrilação atrial": 6,
   "6.2|Síndrome da cauda equina": 1,
   "7.2|Impetigo": 2,
   "3.2|Peritonite bacteriana espontânea": 2,
   "7.1|Dissecção de aorta": 2,
   "4.2|Câncer de bexiga": 1,
   "4.2|Retenção urinária": 2,
-  "1.3|Vertigem": 1,
+  "1.3|Vertigem": 2,
   "6.2|Lesão do ligamento cruzado anterior": 1,
   "8|Distúrbios do cálcio": 2,
-  "14|Parada cardiorrespiratória": 4,
+  "14|Parada cardiorrespiratória": 6,
   "4.1|Nefropatia diabética": 2,
   "2.2|Choque cardiogênico": 1,
-  "12|Cuidados paliativos": 7,
+  "12|Cuidados paliativos": 8,
   "10|Toxoplasmose": 2,
   "1.5|Câncer de tireoide": 3,
   "2.2|Endocardite infecciosa": 4,
   "2.1|Tabagismo": 5,
+  "1.5|Hiperparatireoidismo": 3,
+  "3.3|Câncer de vesícula": 3,
+  "3.1|Diarreia aguda": 1,
+  "5.2|Restrição de crescimento fetal": 5,
   "11|Púrpura de Henoch-Schönlein": 2,
-  "5.2|Restrição de crescimento fetal": 3,
   "5.1|Adenomiose": 2,
   "7.2|Pênfigo e penfigoide": 1,
   "1.4|Câncer de boca": 1,
   "2.1|Pneumonia hospitalar": 1,
-  "1.5|Hiperparatireoidismo": 2,
   "6.1|Esclerose sistêmica": 1,
   "10|Meningococcemia": 3,
   "6.2|Pé diabético": 3,
@@ -709,7 +717,6 @@ export const TOPIC_COUNT: Record<string, number> = {
   "1.2|Retinopatia diabética": 1,
   "8|Hipoglicemia": 1,
   "2.1|Pneumotórax": 1,
-  "3.3|Câncer de vesícula": 2,
   "1.3|Sinusite/rinossinusite": 1,
   "16|Nutrição cirúrgica": 2,
   "10|Leptospirose": 1,
@@ -768,329 +775,309 @@ export const SAMPLE_QUESTIONS: Question[] = [
     ]
   },
   {
-    "id": "tp2022-49",
+    "id": "tp2022-51",
     "topography": "11",
-    "topic": "Anemia ferropriva",
+    "topic": "Cardiopatias congênitas",
     "module": "Pediatria",
-    "text": "Lactente de 6 meses, nascido a termo com 3120g, em aleitamento materno exclusivo. Como deve ser a suplementação de ferro?",
+    "text": "Menino de 4 anos com sopro suave 2+/6+ em foco tricúspide durante quadro febril. Ecocardiograma prévio normal. Sobre este sopro, assinale a correta:",
     "options": [
-      "(A) Iniciar suplementação de 2mg de ferro/kg/dia.",
-      "(B) Iniciar suplementação de 1mg de ferro/kg/dia.",
-      "(C) Não há necessidade de suplementação no momento.",
-      "(D) Deveria ter iniciado com 30 dias de vida."
+      "(A) A principal causa de sopro fisiológico nesta idade é o forame oval pérvio.",
+      "(B) O sopro fisiológico é comum nesta idade e tende a ficar mais audível em situações de febre.",
+      "(C) O sopro fisiológico está presente em menos de 30% das crianças.",
+      "(D) O sopro fisiológico normalmente é acompanhado de alterações de bulhas."
     ],
     "correctAnswer": 1,
-    "explanation": "Lactente nascido a termo, com peso adequado (3.120 g) e sem outros fatores de risco, em aleitamento materno exclusivo, chega aos 6 meses sem nunca ter recebido ferro. Os estoques de ferro do nascimento se esgotam por volta dessa idade e o leite materno não cobre a demanda do crescimento, por isso a profilaxia é indicada.\n\nA dose profilática para o lactente a termo de peso adequado é 1 mg de ferro elementar/kg/dia, mantida até os 2 anos. A dose de 2 mg/kg/dia e o início com 30 dias de vida são reservados a prematuros e recém-nascidos de baixo peso.",
-    "commentary": "2 mg/kg/dia (A): é a dose profilática para prematuros e baixo peso ao nascer (pode chegar a mais em muito baixo peso), não para o lactente a termo de peso adequado.\n\nSem necessidade de ferro (C): a profilaxia é universal nessa idade; aleitamento exclusivo não dispensa a suplementação.\n\nInício com 30 dias (D): esse início precoce é para prematuros e recém-nascidos de baixo peso.",
-    "tip": "Ferro profilático: a termo e peso adequado, 1 mg/kg/dia até 2 anos; prematuro ou baixo peso, 2 mg/kg/dia desde 30 dias.",
-    "reference": "Consenso sobre Anemia Ferropriva SBP.",
+    "explanation": "Criança de 4 anos com febre, sopro suave e de baixa intensidade (2+/6+), sem outras alterações e com ecocardiograma e ECG normais há 1 ano: é um sopro inocente (fisiológico), e a febre o tornou mais audível.\n\nSopros inocentes são muito frequentes em pré-escolares e escolares; o mais comum é o sopro de Still, vibratório, na borda esternal esquerda baixa. Eles aumentam em estados de débito cardíaco elevado (febre, anemia, exercício, ansiedade) e podem sumir com a mudança de posição. São sistólicos, suaves, sem frêmito, com bulhas normais, e não exigem tratamento, só reavaliação fora do quadro febril.",
+    "commentary": "Forame oval pérvio (A): em geral não produz sopro audível; não é a causa dos sopros fisiológicos da infância.\n\nMenos de 30% das crianças (C): o sopro inocente é auscultado na maioria das crianças em algum momento da infância, bem acima de 30%.\n\nAlterações de bulhas (D): bulhas alteradas, sopro diastólico, intensidade de 3+/6+ ou mais e frêmito são sinais de sopro patológico, que pede investigação.",
+    "tip": "Sopro inocente: sistólico, suave, sem frêmito, bulhas normais e mais audível com febre ou anemia.",
+    "reference": "Tratado de Pediatria Burns - 4ª Ed.",
     "tags": [
-      "nutrição",
-      "hematologia"
-    ]
-  },
-  {
-    "id": "tp2019-45",
-    "topography": "11",
-    "topic": "Aleitamento materno",
-    "module": "Pediatria",
-    "text": "Recém-nascido (RN) nascido a termo, sem queixas e sem alterações ao exame físico.\n\nConsiderando-se que os exames pré-natais ao final da gestação apontaram infecção materna pelo vírus da imunodeficiência humana, a recomendação correta em relação à alimentação desse RN é:",
-    "options": [
-      "(A) Indicar aleitamento materno em regime de livre demanda.",
-      "(B) Contraindicar a amamentação e prescrever fórmula láctea.",
-      "(C) Indicar aleitamento materno com leite ordenhado após congelamento.",
-      "(D) Contraindicar a amamentação e indicar aleitamento humano cruzado."
-    ],
-    "correctAnswer": 1,
-    "explanation": "No Brasil, a infecção materna pelo HIV é contraindicação ao aleitamento materno, pelo risco de transmissão vertical. O recém-nascido deve receber fórmula láctea, fornecida pelo SUS, e a lactação da mãe deve ser inibida.",
-    "commentary": "Leite ordenhado congelado não elimina o vírus. O aleitamento cruzado (por outra mulher) não é recomendado.",
-    "reference": "Tratado de Pediatria – Sociedade Brasileira de Pediatria 4ª Edição / Ministério da Saúde. Protocolo clínico e diretrizes terapêuticas para manejo da infecção pelo HIV em crianças e adolescentes. Brasília, 2018.",
-    "tags": [
-      "pediatria",
-      "aleitamento materno",
-      "HIV"
-    ]
-  },
-  {
-    "id": "tp2022-36",
-    "topography": "6.1",
-    "topic": "Fibromialgia",
-    "module": "Clínica Médica",
-    "text": "Qual medicamento inibe a recaptação de serotonina e norepinefrina, sendo útil na fibromialgia?",
-    "options": [
-      "(A) Corticosteroide",
-      "(B) Paracetamol",
-      "(C) Nimesulide",
-      "(D) Duloxetina"
-    ],
-    "correctAnswer": 3,
-    "explanation": "Dor crônica generalizada com fadiga, sono não reparador e queixas cognitivas é o quadro da fibromialgia. O tratamento se apoia em exercício físico e educação; entre os fármacos, usam-se os que modulam as vias descendentes de controle da dor.\n\nA duloxetina é um inibidor da recaptação de serotonina e noradrenalina (IRSN) e é um dos medicamentos com eficácia na fibromialgia, ao lado da amitriptilina e da pregabalina. Das alternativas, é a única com esse mecanismo.",
-    "commentary": "Corticosteroide (A): anti-inflamatório hormonal; a fibromialgia não é doença inflamatória e o corticoide não traz benefício.\n\nParacetamol (B): analgésico simples, sem ação sobre a recaptação de serotonina e noradrenalina e com pouco efeito nessa dor.\n\nNimesulida (C): anti-inflamatório não esteroide; também não age no mecanismo central de amplificação da dor da fibromialgia.",
-    "tip": "Fibromialgia: exercício + amitriptilina, duloxetina (IRSN) ou pregabalina. Corticoide e AINE não.",
-    "reference": "Expert opinion on pharmacotherapy, 2015.",
-    "tags": [
-      "reumatologia",
-      "farmacologia"
-    ]
-  },
-  {
-    "id": "tp2026-29",
-    "topography": "1.1",
-    "topic": "Cefaleias",
-    "module": "Clínica Médica",
-    "text": "Mulher de 32 anos procura pronto atendimento por cefaleia hemicraniana pulsátil há 10 horas, associada a náuseas, fotofobia e piora com esforços habituais. Refere episódios semelhantes nos últimos dois anos, com melhora espontânea entre as crises, sem febre, déficit focal ou alteração do nível de consciência. Indique a investigação diagnóstica:",
-    "options": [
-      "(A) Realizar o diagnóstico clínico de enxaqueca.",
-      "(B) Solicitar tomografia computadorizada de crânio.",
-      "(C) Indicar punção lombar para afastar causas secundárias.",
-      "(D) Solicitar eletroencefalograma."
-    ],
-    "correctAnswer": 0,
-    "explanation": "A enxaqueca é diagnosticada clinicamente com base em critérios estabelecidos (IHS), dispensando exames de imagem e laboratoriais na ausência de sinais de alerta (red flags).",
-    "commentary": "Comentários sobre a resposta correta:\n(A) A enxaqueca (migrânea) típica apresenta sintomas clássicos (hemicraniana, pulsátil, associada a náuseas e fotofobia, recidivante há anos). Na ausência completa de sinais de alarme (\"red flags\", como febre, déficit focal, início súbito em trovão, edema de papila), o diagnóstico é estritamente clínico e exames complementares de imagem são desnecessários.\n\nComentários sobre os distratores:\n(B) A tomografia computadorizada de crânio não deve ser solicitada em cefaleias recorrentes típicas sem sinais de alerta ou mudança de padrão álgico.\n(C) A punção lombar é indicada na investigação de suspeitas infecciosas (meningite), hemorragia subaracnoidea de TC normal, ou hipertensão intracraniana, não se aplicando à crise migranosa típica.\n(D) O eletroencefalograma não possui sensibilidade, especificidade ou utilidade no diagnóstico da enxaqueca ou outras cefaleias primárias.",
-    "reference": "INTERNATIONAL HEADACHE SOCIETY. The International Classification of Headache Disorders, 3rd edition. Cephalalgia, 2018. | HARRISON’S Principles of Internal Medicine. 21st ed. New York: McGraw-Hill, 2022.",
-    "tags": [
-      "neurologia"
-    ]
-  },
-  {
-    "id": "tp2024-80",
-    "topography": "14",
-    "topic": "Trauma",
-    "module": "Cirurgia",
-    "text": "Politraumatizado grave (fraturas expostas, dor abdominal, lacerações). Qual o primeiro passo prioritário no ATLS?",
-    "options": [
-      "(A) Avaliação primária com controle da via aérea.",
-      "(B) Avaliação neurológica detalhada.",
-      "(C) Fluidos IV rápidos.",
-      "(D) Radiografia de tórax."
-    ],
-    "correctAnswer": 0,
-    "explanation": "No ATLS, o atendimento ao politraumatizado grave começa pela avaliação primária, seguindo a sequência ABCDE: via aérea com proteção da coluna cervical, respiração e ventilação, circulação com controle de hemorragia, avaliação neurológica e exposição com controle da temperatura. O que mata mais rápido é tratado primeiro, à medida que é encontrado.\n\nO paciente está inconsciente, o que por si só ameaça a via aérea, e tem lacerações na face; garantir a via aérea (com restrição de movimento da coluna cervical) vem antes das fraturas expostas e da dor abdominal. Hemorragia externa grave, se presente, é controlada de imediato junto com esse primeiro passo, como enfatizam os protocolos de atendimento pré-hospitalar.",
-    "commentary": "Avaliação neurológica detalhada (B): na avaliação primária, o D é rápido (Glasgow, pupilas e sinais de lateralização); o exame neurológico completo fica para a avaliação secundária.\n\nFluidos intravenosos rápidos (C): a circulação é a etapa C; além disso, a reanimação do trauma prioriza hemoderivados e evita grandes volumes de cristaloide.\n\nRadiografia de tórax (D): é exame complementar da avaliação primária, mas não vem antes de garantir a via aérea.",
-    "tip": "Politrauma: ABCDE na ordem; A = via aérea com proteção da cervical, sempre primeiro.",
-    "reference": "ATLS 10ª ed.",
-    "tags": [
-      "trauma",
-      "emergência"
-    ]
-  },
-  {
-    "id": "tp2025-70",
-    "topography": "7.1",
-    "topic": "Isquemia arterial aguda",
-    "module": "Cirurgia",
-    "text": "Homem, cisgênero, 60 anos, hipertenso, comparece ao serviço de urgência com dor intensa e súbita em membro inferior direito há 6 horas. Ao exame: ausculta cardíaca com bulhas arrítmicas; membro inferior direito com extremidade fria, pálida, sem pulsos palpáveis e sem alteração de trofismo. Qual conduta mais adequada?",
-    "options": [
-      "(A) Analgesia e anti-inflamatórios, aguardando melhora clínica para posterior avaliação cirúrgica.",
-      "(B) Heparinização plena e angiotomografia do membro para decisão terapêutica com urgência.",
-      "(C) Doppler arterial e fasciotomia profilática do membro para evitar síndrome compartimental.",
-      "(D) Repouso físico e anticoagulação plena por três meses."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Na suspeita clínica de oclusão arterial aguda de membro (isquemia com viabilidade preservada), a conduta imediata consiste em heparinização plena (para cessar propagação do trombo) e angiotomografia urgente.",
-    "commentary": "O doente apresenta quadro clássico de Oclusão Arterial Aguda de membro inferior, de importante etiologia provável embólica, sugerida pela associação de dor súbita severa e ritmo cardíaco arrítmico (sugestivo de fibrilamento atrial). A imediata heparinização sistêmica é indispensável para obstar a progressão de novos coágulos na vasculatura. A angiotomografia cervical/abdominal/ilíaco-femoral é fundamental na urgência para programar o desfecho operatório (trombectomia aberta, embolectomia de Fogarty ou terapia endovascular). Medidas conservadoras puras com repouso, sem o tratamento reconstrutivo imediato, estendem o tempo de anóxia tecidual à necrose irrecuperável.",
-    "reference": "Rutherfords Vascular Surgery and Endovascular Therapy, 9ª ed., 2018.",
-    "tags": [
-      "cirurgia vascular",
-      "emergência"
-    ]
-  },
-  {
-    "id": "tp2019-73",
-    "topography": "16",
-    "topic": "Perfuração de víscera oca",
-    "module": "Cirurgia",
-    "text": "Homem, 45 anos, tabagista, etilista, deu entrada no PS com queixa de dor de forte intensidade em região mesogástrica de início súbito há 6 horas, após vômitos intensos. Exame físico: hálito etílico, hipocorado 1+/4+, PA = 100 x 60 mmHg, FC = 110 bpm, abdome tenso, em tábua, doloroso à palpação em região de mesogástrio, sinal de Jobert positivo.\n\nO diagnóstico e o exame complementar a se solicitar são, respectivamente:",
-    "options": [
-      "(A) Gastrite aguda; endoscopia digestiva alta.",
-      "(B) Úlcera perfurada; radiografia de tórax com cúpulas.",
-      "(C) Úlcera terebrante; tomografia computadorizada de abdome.",
-      "(D) Pancreatite aguda; amilase."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Dor abdominal súbita e intensa, abdome em tábua e sinal de Jobert (perda da macicez hepática por ar livre) em tabagista e etilista: úlcera péptica perfurada.\n\nA radiografia de tórax em pé com cúpulas diafragmáticas mostra pneumoperitônio.",
-    "commentary": "Gastrite não causa peritonite com pneumoperitônio. A úlcera terebrante penetra órgão vizinho sem ar livre. A pancreatite não causa sinal de Jobert.",
-    "reference": "Clínica Cirúrgica; Alipio Correia Neto, Manlio Esperanzini. Manual do Residente de Cirurgia.",
-    "tags": [
-      "cirurgia",
-      "abdome agudo perfurativo"
-    ]
-  },
-  {
-    "id": "tp2023-88",
-    "topography": "5.2",
-    "topic": "Infecções na gestação",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "26 anos, secundigesta com 1 abortamento anterior há 3 anos, portadora do vírus HIV, em uso regular de tenofovir, lamivudina e dolutegravir. Apresenta carga viral menor que 1000 cópias/mL com 36 semanas, tendo indicação de zidovudina intravenosa até o clampeamento do cordão. Apresentação cefálica. A conduta em relação ao parto é:",
-    "options": [
-      "(A) Interromper por cesárea com 39 semanas.",
-      "(B) Induzir com ocitocina na 37ª semana.",
-      "(C) Aguardar pelo parto vaginal.",
-      "(D) Iniciar prostaglandina via vaginal com 37 semanas."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Pelo protocolo do Ministério da Saúde para prevenção da transmissão vertical do HIV, a via de parto é decidida pela carga viral medida a partir de 34 semanas. Quando ela está inferior a 1.000 cópias/mL, a cesariana eletiva não reduz de forma relevante a transmissão, e a via de parto segue a indicação obstétrica.\n\nEsta gestante usa a terapia antirretroviral corretamente, tem carga viral inferior a 1.000 cópias/mL com 36 semanas e feto cefálico, então o correto é aguardar o trabalho de parto espontâneo e o parto vaginal. A cesariana nas mulheres vivendo com HIV tem mais complicações pós-operatórias e só é eletiva quando a carga viral é igual ou maior que 1.000 cópias/mL ou desconhecida.",
-    "commentary": "Cesárea com 39 semanas (A): a cesariana eletiva por HIV fica para carga viral igual ou maior que 1.000 cópias/mL ou desconhecida após 34 semanas (nesse caso, programada com 38 semanas), não para esta paciente.\n\nIndução com ocitocina na 37ª semana (B): não há indicação obstétrica para antecipar o parto; o HIV controlado não justifica indução.\n\nProstaglandina vaginal com 37 semanas (D): da mesma forma, não há motivo para preparar o colo e induzir; o caminho é esperar o trabalho de parto espontâneo.",
-    "tip": "HIV na gestação: carga viral abaixo de 1.000 após 34 semanas = parto vaginal; acima ou desconhecida = cesárea eletiva.",
-    "reference": "Ministério da saúde. Protocolo clínico e diretrizes terapêuticas para prevenção da transmissão vertical de hiv, sífilis e hepatites virais. Página 108. 2022. Disponível em https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_hiv_sifilis_hepatites.pdf",
-    "tags": [
-      "obstetrícia",
-      "infecções"
-    ]
-  },
-  {
-    "id": "tp2025-95",
-    "topography": "5.2",
-    "topic": "Abortamento",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Primigesta, com última menstruação há oito semanas, procura o pronto atendimento com queixa de cólicas hipogástricas e relato de sangramento vaginal há dois dias. Ao exame físico, foi evidenciada consistência uterina amolecida e volume aumentado, compatível com o tempo de amenorreia, além de colo uterino fechado. Identifique a hipótese diagnóstica e o método propedêutico indicado para o esclarecimento do caso:",
-    "options": [
-      "(A) Abortamento completo – Dosagem de beta HCG",
-      "(B) Gestação ectópica – Dosagem de beta HCG",
-      "(C) Aborto incompleto – Ultrassom pélvico transvaginal",
-      "(D) Ameaça de aborto – Ultrassom pélvico transvaginal"
-    ],
-    "correctAnswer": 3,
-    "explanation": "Gestante de primeiro trimestre com queixa álgica tipo cólica abdominal baixa associada a hemorragias autolimitadas locais que preserva útero volumoso gravídico e colo impérvio fechado ao toque define a ameaça de aborto.",
-    "commentary": "A ameaça de abortamento caracteriza-se classicamente por sangramento uterino discreto, dores pélvicas mecânicas, altura uterina em conformidade ao tempo provável de amenorreia e óstio cervical impérvio ao toque ginecológico. O pilar propedêutico ouro indispensável para assegurar e confirmar a vitalidade embriofetal e descartar desprendimentos ou perdas irreparáveis (como o abortamento consumado ou incompleto) consiste na realização do ultrassom pélvico transvaginal, identificando batimentos cardíacos fetais ativos.",
-    "reference": "Tratado de Obstetrícia FEBRASGO, Elsevier, 2019.",
-    "tags": [
-      "obstetrícia",
-      "sangramento 1º trimestre"
-    ]
-  },
-  {
-    "id": "tp2019-86",
-    "topography": "5.2",
-    "topic": "Abortamento",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Primigesta, 28 anos de idade, gestação de 11 semanas, apresenta queixa de cólica em baixo ventre e sangramento vaginal de moderada intensidade há dois dias. Ao exame, encontra-se febril (37,8°C), PA: 110 x 70 mmHg e FC: 108bpm. Ao exame especular, observa-se grande quantidade de sangue vivo em fundo de saco vaginal, com odor fétido e orifício interno do colo uterino pérvio para 1 polpa digital.\n\nNesse caso, a conduta é:",
-    "options": [
-      "(A) Realizar esvaziamento uterino e antibioticoterapia.",
-      "(B) Solicitar ultrassonografia e manter observação.",
-      "(C) Iniciar antibioticoterapia e manter observação.",
-      "(D) Realizar apenas aspiração manual intrauterina."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Abortamento com colo pérvio, sangramento, febre, taquicardia e odor fétido: abortamento infectado.\n\nA conduta é antibioticoterapia de amplo espectro e esvaziamento uterino (após o início dos antibióticos), para remover o foco infeccioso.",
-    "commentary": "Observação expectante é inadequada diante da infecção. Antibiótico sem esvaziamento mantém o foco. Aspiração sem antibiótico expõe ao risco de sepse.",
-    "reference": "Zugaib, M & Francisco RP. Obstetrícia. Editora Manole, 2017 Duarte G, et al. Protocolos de Conduta em Gestação de Alto Risco, 2003",
-    "tags": [
-      "obstetrícia",
-      "abortamento"
-    ]
-  },
-  {
-    "id": "tp2023-108",
-    "topography": "15",
-    "topic": "Epidemiologia",
-    "module": "Saúde Coletiva",
-    "text": "Qual das seguintes características está associada à fase avançada da transição demográfica epidemiológica?",
-    "options": [
-      "(A) Baixa prevalência de doenças crônicas não transmissíveis.",
-      "(B) Predominância de doenças infecciosas e parasitárias.",
-      "(C) Aumento da expectativa de vida.",
-      "(D) Alta taxa de mortalidade infantil."
-    ],
-    "correctAnswer": 0,
-    "alsoAccepted": [
-      2
-    ],
-    "explanation": "Gabarito oficial: A. Aqui no DEsimulados, a alternativa C também conta como certa, porque é a que está de acordo com o conceito.\n\nQuando a transição demográfica está avançada, natalidade e mortalidade já caíram, a população envelhece e a expectativa de vida aumenta. A transição epidemiológica acompanha esse processo: as doenças infecciosas e parasitárias perdem peso e passam a predominar as doenças crônicas não transmissíveis (cardiovasculares, câncer, diabetes).\n\nO próprio comentário da banca descreve esse aumento das doenças crônicas, mas conclui marcando a alternativa \"baixa prevalência de doenças crônicas\". Por isso a questão é polêmica: na prova vale a A; no estudo, guarde que a fase avançada traz mais expectativa de vida e mais doenças crônicas.",
-    "commentary": "Baixa prevalência de doenças crônicas (A): gabarito oficial, mas contraria o conceito; com o envelhecimento, as doenças crônicas não transmissíveis se tornam as principais causas de adoecimento e morte.\n\nPredomínio de doenças infecciosas e parasitárias (B): caracteriza as fases iniciais da transição.\n\nAlta mortalidade infantil (D): também é típica das fases iniciais; na fase avançada ela cai bastante.",
-    "alert": "Gabarito oficial discutível: a banca marcou A, mas o conceito aponta C. As duas contam como certas aqui.",
-    "tip": "Transição avançada: população mais velha, expectativa de vida maior e predomínio de doenças crônicas.",
-    "reference": "Duarte Elisabeth Carmen, Barreto Sandhi Maria. Transição demográfica e epidemiológica: a Epidemiologia e Serviços de Saúde revisita e atualiza o tema. Epidemiol. Serv. Saúde [Internet]. 2012 Dez [citado 2023 Jun 29] ; 21( 4 ): 529-532. Oliveira AS. TRANSIÇÃO DEMOGRÁFICA, TRANSIÇÃO EPIDEMIOLÓGICA E ENVELHECIMENTO POPULACIONAL NO BRASIL. Hygeia [Internet];15(32):69-7. Goldani MZ, Mosca PRF, Portela AK, Silveira PP, Silva CH da. O impacto da transição demográfico-epidemiológica na saúde da criança e do adolescente do Brasil. Clin Biomed Res [Internet]. 27º de abril de 2012 ;32(1).",
-    "tags": [
-      "saúde coletiva",
-      "demografia"
-    ]
-  },
-  {
-    "id": "tp2021-107",
-    "topography": "15",
-    "topic": "Estratégia Saúde da Família",
-    "module": "Saúde Coletiva",
-    "text": "Foi instalada uma nova equipe de Estratégia de Saúde da família em uma área de risco. A equipe iniciou o trabalho percorrendo área, fazendo o levantamento dos recursos disponíveis, possíveis barreiras ao acesso e cadastrando os residentes da área. Que princípios norteadores da Estratégia de Saúde da Família foram utilizados nesse trabalho?",
-    "options": [
-      "(A) Territorialização e adscrição da clientela.",
-      "(B) Hierarquização e integralidade.",
-      "(C) Equidade e caráter substitutivo.",
-      "(D) Referência e contrarreferência."
-    ],
-    "correctAnswer": 0,
-    "explanation": "O processo de percorrer e mapear a área geográfica delimitada de atuação da equipe (definindo barreiras, vulnerabilidades e recursos) e identificar e cadastrar os habitantes da localidade caracteriza de maneira explícita os princípios norteadores de territorialização e adscrição da clientela.",
-    "commentary": "No âmbito organizacional da Atenção Primária no Brasil, a territorialização define a área geográfica de corresponsabilidade da ESF e o mapeamento locorregional. Conectado a ela, a adscrição consagra o vínculo e responsabilidade permanente sobre uma população específica descrita (indivíduos cadastrados vinculados ao serviço no território demarcado).",
-    "reference": "PNAB - Política Nacional de Atenção Básica, Portaria nº 2.436/2017.",
-    "tags": [
-      "estratégia saúde da família",
-      "territorialização",
-      "princípios do SUS"
-    ]
-  },
-  {
-    "id": "tp2023-9",
-    "module": "Ciências Básicas",
-    "text": "A paciente mencionada no texto (rainha da maisena) tem deficiência genética de uma proteína envolvida no metabolismo do glicogênio, a enzima fosforilase quinase hepática. Considerando a deficiência desta enzima, a principal finalidade terapêutica do consumo de amido com alta frequência pela paciente é:",
-    "options": [
-      "(A) Garantir a manutenção da glicemia.",
-      "(B) Promover a síntese de glicogênio muscular.",
-      "(C) Estimular a quebra do glicogênio hepático.",
-      "(D) Inibir a síntese de glicogênio hepático."
-    ],
-    "correctAnswer": 0,
-    "explanation": "A fosforilase quinase ativa a glicogênio fosforilase, enzima que quebra o glicogênio. Na deficiência hepática dessa enzima (glicogenose tipo IX), o fígado acumula glicogênio, mas não consegue liberá-lo como glicose entre as refeições, e a paciente tende à hipoglicemia de jejum.\n\nO amido de milho cru é digerido devagar e libera glicose de forma contínua no intestino. Tomado em intervalos curtos, ele substitui a glicogenólise hepática que falta e mantém a glicemia estável, inclusive à noite.",
-    "commentary": "Síntese de glicogênio muscular (B): o músculo não tem glicose-6-fosfatase e não libera glicose para o sangue; aumentar seu glicogênio não corrige a hipoglicemia, que é o problema da paciente.\n\nEstimular a quebra do glicogênio hepático (C): a quebra está bloqueada pela própria deficiência, e a refeição com amido, ao elevar a insulina, ainda inibe a glicogenólise.\n\nInibir a síntese de glicogênio hepático (D): não é esse o objetivo; a insulina liberada após a ingestão até favorece a síntese, e o alvo terapêutico é evitar a hipoglicemia.",
-    "tip": "Glicogenose hepática: o fígado não solta glicose. Amido de milho cru frequente = glicemia mantida.",
-    "reference": "Harvey RA, Ferrier DR - Bioquímica Ilustrada 5ª. ed. Artmed, 2012. Marzzoco A, Torres BB - Bioquímica Básica. 3ª ed. Ed. Guanabara Koogan, 2007. Nelson DL, Cox MM - Princípios de Bioquímica de Lehninger 5ª ed. Artmed, 2011.",
-    "tags": [
-      "bioquímica",
-      "erros inatos do metabolismo"
-    ]
-  },
-  {
-    "id": "tp2021-20",
-    "topography": "2.2",
-    "topic": "Infarto agudo do miocárdio",
-    "module": "Ciências Básicas",
-    "text": "Homem, 44 anos, apresentou oclusão do ramo circunflexo da artéria coronária esquerda. Pode sofrer infarto do miocárdio prioritariamente em qual região cardíaca?",
-    "options": [
-      "(A) Ventrículos direito e esquerdo.",
-      "(B) Átrio e ventrículo esquerdo.",
-      "(C) Átrios direito e esquerdo.",
-      "(D) Septo interventricular."
-    ],
-    "correctAnswer": 1,
-    "explanation": "A artéria circunflexa, ramo da artéria coronária esquerda, é responsável prioritariamente por nutrir a parede lateral do ventrículo esquerdo e porções do átrio esquerdo.",
-    "commentary": "A oclusão do ramo circunflexo da coronária esquerda (Cx) acarreta isquemia aguda (infarto) na parede lateral do ventrículo esquerdo e no átrio esquerdo. O septo interventricular e parede anterior são comumente nutridos pela interventricular anterior (ADA), enquanto o ventrículo direito é domínio da coronária direita (CD).",
-    "reference": "Drake RL, Vogl AW, Mitchell AWM. Gray’s Anatomy for students. 2nd edition. Churchill Livingstone, Elsevier, Philadelphia, 2005.",
-    "tags": [
-      "anatomia",
       "cardiologia"
     ]
   },
   {
-    "id": "enamed-2025-32",
-    "topography": "5.2",
-    "topic": "Pré-eclâmpsia",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Paciente G5P3C1, 35 anos, idade gestacional de 15 semanas por ecografia realizada com 8 semanas, hipertensa crônica em uso de enalapril, antecedente de pré-eclâmpsia. Comparece à consulta de pré-natal na Unidade Básica de Saúde (UBS) com pressão arterial de 140 × 90 mmHg.\n\nQual é a conduta medicamentosa indicada para essa paciente?",
+    "id": "tp2019-54",
+    "topography": "9",
+    "topic": "Linfomas",
+    "module": "Pediatria",
+    "text": "Adolescente, 17 anos, feminino, apresenta desmaios e tosse há 40 dias. Relata fraqueza e diminuição do apetite há 10 dias. Exame físico: emagrecida, palidez cutâneo-mucosa, frequência respiratória = 36 ipm, frequência cardíaca = 78 bpm, pressão arterial = 120 x 70 mmHg, discreta turgência jugular à direita, sem fígado e baço palpáveis. RX de tórax: massa mediastinal estendendo-se para hemitórax superior direito.\n\nA hipótese diagnóstica é:",
     "options": [
-      "(A) Captopril, varfarina e ácido acetilsalicílico.",
-      "(B) Furosemida, varfarina e carbonato de cálcio.",
-      "(C) Losartana, enoxaparina e carbonato de cálcio.",
-      "(D) Alfa-metildopa, ácido acetilsalicílico e carbonato de cálcio."
+      "(A) Linfoma",
+      "(B) Higroma cístico",
+      "(C) Bócio mergulhante",
+      "(D) Tuberculose pulmonar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Adolescente com sintomas constitucionais, tosse e massa mediastinal com turgência jugular (sinal de compressão da veia cava superior): a principal hipótese é linfoma, a causa mais comum de massa de mediastino anterior nessa faixa etária.",
+    "commentary": "O higroma cístico é congênito e cervical. O bócio mergulhante é raro em adolescentes. A tuberculose pulmonar não costuma causar síndrome de veia cava superior.",
+    "reference": "Nelson Tratado de Pediatria – 16ª. ed / Kliegman, Stanton, St. Geme, Schor, Elsevier, 2003.",
+    "tags": [
+      "pediatria",
+      "oncologia pediátrica",
+      "linfoma"
+    ]
+  },
+  {
+    "id": "tp2025-31",
+    "topography": "4.1",
+    "topic": "Doença renal crônica",
+    "module": "Clínica Médica",
+    "text": "Homem de 58 anos, portador de doença renal crônica estágio 5, dá entrada na emergência com dispneia intensa, edema generalizado e náuseas. Exames: potássio 7,0mEq/L; ureia 192mg/dL, creditiantina 8,5mg/dL e ECG ritmo sinusal, normal. A conduta indicada para este paciente é:",
+    "options": [
+      "(A) Restrição hídrica rigorosa e uso de furosemida em altas doses.",
+      "(B) Iniciar hemodiálise de emergência.",
+      "(C) Administração de gluconato de cálcio, insulina e glicose.",
+      "(D) Expansão volêmica, bicarbonato e repetir exames."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O paciente apresenta indicações clássicas de diálise de urgência (hipercalemia grave de 7,0 mEq/L, sobrecarga volêmica refratária com dispneia importante, além de uremia sintomática com náuseas).",
+    "commentary": "O paciente com doença renal crônica terminal (estágio 5) apresenta critérios inequívocos de urgência dialítica. Embora medidas de deslocamento interno do potássio (insulina, glicose) e estabilização de membrana (gluconato de cálcio) sejam temporariamente válidas para evitar arritmias em hipercalemia grave, elas não resolvem a sobrecarga hídrica nem a uremia severa, tornando a hemodiálise de emergência a conduta definitiva e imediata indicada.",
+    "reference": "KDIGO Clinical Practice Guideline for Acute Kidney Injury. UpToDate, 2023.",
+    "tags": [
+      "nefrologia",
+      "emergência"
+    ]
+  },
+  {
+    "id": "tp2019-33",
+    "topography": "6.1",
+    "topic": "Fibromialgia",
+    "module": "Clínica Médica",
+    "text": "Mulher, 28 anos, refere dificuldade de concentração, sono não reparador, sensação de cansaço ao acordar e dor articular e muscular em membros superiores e inferiores há seis meses. Nega perda de peso, hiporexia e febre. Exame físico: pele e mucosa sem alterações, articulações ou músculos sem sinais inflamatórios, força muscular preservada e dor em tender points.\n\nO tratamento mais efetivo é:",
+    "options": [
+      "(A) Anti-inflamatório não hormonal",
+      "(B) Atividade física aeróbica",
+      "(C) Agulhamento de tender points",
+      "(D) Anti-inflamatório hormonal"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dor musculoesquelética difusa há mais de 3 meses, sono não reparador, fadiga e alteração cognitiva, com exame físico sem sinais inflamatórios e dor em pontos dolorosos: fibromialgia.\n\nO tratamento com melhor evidência é a atividade física aeróbica regular, associada a educação em dor e, se necessário, fármacos como amitriptilina ou duloxetina.",
+    "commentary": "Anti-inflamatórios (hormonais ou não) não têm eficácia na fibromialgia, que não é inflamatória. O agulhamento de pontos não tem evidência consistente.",
+    "reference": "Goldenberg, DL. Patient education: Fibromyalgia (Beyond the Basics) UpToDate 2018. / https://www.uptodate.com/contents/fibromyalgia-beyond-the-basics.",
+    "tags": [
+      "reumatologia",
+      "fibromialgia",
+      "dor crônica"
+    ]
+  },
+  {
+    "id": "tp2022-61",
+    "topography": "16",
+    "topic": "Feridas",
+    "module": "Cirurgia",
+    "text": "Paciente de 25 anos, masculino, será submetido a correção de hérnia inguinal direita por via convencional - inguinotomia. Visando a ligadura dos vasos superficiais do subcutâneo, o fechamento da aponeurose e o fechamento da pele, quais seriam os fios utilizados, respectivamente?",
+    "options": [
+      "(A) Algodão, PDS (polidioxanona), monocryl (poliglecaprona 25).",
+      "(B) Vicryl (poliglactina 370), nylon, monocryl (poliglecaprona 25).",
+      "(C) PDS (polidioxanona), monocryl (poligecaprina 25), algodão.",
+      "(D) Catgut, monocryl (poliglecaprona 25), nylon."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Algodão para vasos superficiais, PDS (fio de longa absorção) para aponeurose e Monocryl para sutura intradérmica na pele.",
+    "commentary": "Para ligaduras superficiais, o algodão é tradicional. A aponeurose exige um fio que suporte tração por tempo prolongado (PDS). Na pele, o monocryl evita cicatrizes exageradas.",
+    "reference": "Sabiston - Tratado de Cirurgia - 18ª Ed.",
+    "tags": [
+      "cirurgia geral",
+      "suturas"
+    ]
+  },
+  {
+    "id": "tp2021-80",
+    "topography": "1.5",
+    "topic": "Nódulos tireoidianos",
+    "module": "Cirurgia",
+    "text": "Homem, 60 anos, apresentou em ultrassom de carótidas um nódulo de 1 cm de diâmetro no lobo direito da tireoide, de aspecto sólido e hipoecogênico, com bordas irregulares e microcalcificações. Tem exames de sangue recentes sem alterações, com dosagens de TSH e T4 livre normais. A próxima conduta deve ser:",
+    "options": [
+      "(A) Repetir a ultrassom de tireoide em seis meses.",
+      "(B) Solicitar cintilografia de tireoide.",
+      "(C) Indicar lobectomia tireoidiana à direita.",
+      "(D) Fazer punção aspirativa com agulha fina do nódulo (PAAF)."
     ],
     "correctAnswer": 3,
-    "explanation": "A paciente apresenta hipertensão arterial crônica na gestação e antecedente de pré-eclâmpsia, configurando alto risco obstétrico. O enalapril (IECA) deve ser suspenso imediatamente, pois inibidores da enzima conversora de angiotensina são teratogênicos e contraindicados na gravidez. Entre os anti-hipertensivos seguros, a alfa-metildopa é a escolha padrão de primeira linha. Adicionalmente, gestantes com alto risco para pré-eclâmpsia se beneficiam de ácido acetilsalicílico (AAS) em baixa dose (iniciado preferencialmente antes de 16 semanas) associado à suplementação de carbonato de cálcio.",
-    "commentary": "As demais alternativas contêm fármacos formalmente contraindicados na gestação, como varfarina (anticoagulante oral altamente teratogênico), losartana (BRA) e captopril (IECA).",
-    "reference": "Diretrizes da FEBRASGO / Sociedade Brasileira de Cardiologia",
+    "explanation": "Nódulo de tireoide eutireoidiano medindo 1,0 cm com padrões de alta classificação de risco (TIRADS V/VI - hipoecoico, limites irregulares e microcalcificações) indica a feitura imediata de punção aspirativa por agulha fina (PAAF) guiada por USG.",
+    "commentary": "Nódulo de 1,0 cm de diâmetro com padrões ultrassonográficos suspeitos (formato sólido, hipoecogênico, limites microlobulados ou irregulares e com presença de microcalcificações de cálcio pontual) manifesta critérios diagnósticos consistentes com malignização (carcinoma papilífero de tireoide). Em pacientes eutireoidianos (com TSH e hormônios tieroidenos devidamente em faixa normal), a imediata investigação citológica por Punção Aspirativa com Agulha Fina (PAAF) dirigida é soberana. O rastreio por cintilografia é restrito a nódulos quentes ou hiperfuncionantes em vigência de TSH suprimido. Esperar seis meses ou lobectomia cirúrgica direta prévia sem estudo citopatológico são imprudentes.",
+    "reference": "Towsend, CM; Beauchamp, RD; Evans, BM; Sabiston - Tratado de Cirurgia, 20ª edição, Editora Guanabara-Koogan, 2019.",
+    "tags": [
+      "cabeça e pescoço",
+      "endocrinologia",
+      "oncologia"
+    ]
+  },
+  {
+    "id": "tp2024-87",
+    "topography": "5.1",
+    "topic": "Câncer de colo uterino",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Mulher, 30 anos, citologia: \"Células escamosas atípicas não podendo excluir lesão de alto grau (ASC-H)\". Conduta?",
+    "options": [
+      "(A) Encaminhar para colposcopia.",
+      "(B) Repetir citologia em 6 meses.",
+      "(C) Repetir citologia em 12 meses.",
+      "(D) Repetir citologia em 3 anos."
+    ],
+    "correctAnswer": 0,
+    "explanation": "ASC-H significa células escamosas atípicas em que não se pode afastar lesão de alto grau. Uma parte importante dessas mulheres tem, de fato, lesão intraepitelial de alto grau ou até câncer na investigação.\n\nPor isso as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero recomendam que toda mulher com ASC-H, em qualquer idade, seja encaminhada diretamente à colposcopia, com biópsia das áreas suspeitas. Não se repete a citologia.",
+    "commentary": "Repetir em 6 meses (B): é a conduta para ASC-US em mulheres a partir de 30 anos, não para ASC-H, que pode esconder lesão de alto grau.\n\nRepetir em 12 meses (C): é a conduta para ASC-US e LSIL em mulheres mais jovens; atrasaria o diagnóstico de uma lesão potencialmente grave.\n\nRepetir em 3 anos (D): é o intervalo do rastreamento após dois exames normais, sem lugar diante de um laudo alterado.",
+    "tip": "ASC-H, HSIL, AGC ou suspeita de invasão: colposcopia direto, sem repetir citologia.",
+    "reference": "Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero.",
+    "tags": [
+      "ginecologia oncológica",
+      "patologia do trato genital inferior"
+    ]
+  },
+  {
+    "id": "tp2022-92",
+    "topography": "5.2",
+    "topic": "Pré-natal",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Primigesta, 34 semanas, Hb 11,5 g/dL (era 12,5 g/dL com 10 semanas). Conduta correta?",
+    "options": [
+      "(A) Pesquisar hemoglobinopatias por eletroforese.",
+      "(B) Orientar dieta ricas em legumes, verduras e proteínas.",
+      "(C) Encaminhar ao alto risco por anemia severa.",
+      "(D) Ferro elementar em doses terapêuticas."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Na gestação, considera-se anemia a hemoglobina abaixo de 11 g/dL. Esta gestante tem 11,5 g/dL, portanto não está anêmica.\n\nA queda de 12,5 para 11,5 g/dL ao longo da gravidez é esperada: o volume de plasma aumenta mais do que a massa de hemácias, o que dilui a hemoglobina (hemodiluição fisiológica). A conduta é apenas orientar alimentação saudável e variada, com fontes de ferro e proteínas, e manter a suplementação profilática de ferro e ácido fólico que o Ministério da Saúde recomenda a todas as gestantes.",
+    "commentary": "Eletroforese de hemoglobina (A): investigação de hemoglobinopatias faz sentido diante de anemia, microcitose sem deficiência de ferro ou história familiar; aqui a hemoglobina é normal.\n\nEncaminhar ao alto risco por anemia severa (C): não há anemia; a anemia grave na gestação corresponde a valores muito mais baixos (abaixo de 8 g/dL).\n\nFerro em dose terapêutica (D): dose de tratamento é para gestante com anemia confirmada; com hemoglobina normal, usa-se apenas a dose profilática.",
+    "tip": "Gestação: anemia é Hb abaixo de 11 g/dL. Queda leve ao longo da gravidez é hemodiluição fisiológica.",
+    "reference": "MS - Atenção ao Pré-Natal de Baixo Risco.",
+    "tags": [
+      "obstetrícia",
+      "nutrição"
+    ]
+  },
+  {
+    "id": "tp2021-96",
+    "topography": "15",
+    "topic": "Saúde da mulher",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Adolescente, 15 anos, na 10ª semana de gravidez resultante de violência sexual, não deseja manter a gravidez. Vem à consulta acompanhada pelos pais. Para a interrupção legal desta gestação é necessário:",
+    "options": [
+      "(A) Autorização expedida pelo juiz da comarca de residência.",
+      "(B) Solicitação assinada pela paciente e representante legal.",
+      "(C) Laudo pericial do exame de corpo delito expedido pelo IML.",
+      "(D) Boletim de ocorrência lavrado pela autoridade policial."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pelas normas diretivas e leis penais brasileiras, a interrupção da gravidez fruto de abuso ou estupro (violento/vulnerável) independe de alvarás judiciais, registros policiais prévios de boletins de ocorrência ou atestados legistas periciais do Instituto Médico Legal (IML). O único documento de elegibilidade e autonomia obrigatório é o Termo de Consentimento Livre e Esclarecido assinado pela paciente acompanhada perante o seu representante ou responsável legal.",
+    "commentary": "A legislação nacional e as normativas de violência sexual preconizadas pelo Ministério da Saúde estabelecem que a palavra do doente presencial é soberana e suficiente para caracterizar e assegurar a violência contra a maturidade da mulher. Caberá à equipe multiprofissional (médico, psicólogo, enfermeiro e assistente social) ratificar a compatibilidade evolutiva da idade gestacional e o termo assinado, prosseguindo com o abortamento legal na rede pública garantida, sem necessidade de burocracias externas ou alvarás.",
+    "reference": "Norma Técnica de Prevenção e Tratamento dos Agravos Resultantes da Violência Sexual contra Mulheres e Adolescentes, Ministério da Saúde, 3ª ed (2012).",
+    "tags": [
+      "obstetrícia",
+      "aborto legal",
+      "violência sexual"
+    ]
+  },
+  {
+    "id": "tp2024-116",
+    "topography": "15",
+    "topic": "Atenção Primária",
+    "module": "Saúde Coletiva",
+    "text": "Sobre o Método Clínico Centrado na Pessoa (MCCP), é correto afirmar:",
+    "options": [
+      "O componente \"Sendo Realista\" foca apenas nos recursos financeiros do paciente.",
+      "O acrônimo SIFE refere-se à anamnese técnica por sistemas.",
+      "Deve-se seguir rigidamente a ordem dos quatro componentes em todas as consultas.",
+      "O primeiro componente foca em entender a experiência da doença para o indivíduo (ideias, sentimentos, expectativas)."
+    ],
+    "correctAnswer": 3,
+    "explanation": "O Método Clínico Centrado na Pessoa organiza a consulta em quatro componentes: explorar a saúde, a doença e a experiência de adoecer; entender a pessoa como um todo (história de vida, família, contexto); elaborar um plano conjunto de manejo; e intensificar a relação médico-pessoa.\n\nO primeiro componente vai além do diagnóstico biomédico: busca saber como a pessoa vive aquele problema. Para isso usa-se o acrônimo SIFE — Sentimentos, Ideias, Funcionalidade (o impacto no dia a dia) e Expectativas em relação à consulta. É essa compreensão que permite chegar a um plano que a pessoa aceite e consiga seguir.",
+    "commentary": "Sendo realista restrito ao dinheiro do paciente (A): a ideia de ser realista diz respeito ao uso sensato do tempo, dos recursos do serviço e da equipe e das próprias habilidades do médico, e não só às finanças da pessoa.\n\nSIFE como anamnese por sistemas (B): o SIFE explora a experiência subjetiva da doença (sentimentos, ideias, funcionalidade e expectativas); o interrogatório sobre os diversos aparelhos é outra ferramenta.\n\nOrdem rígida dos componentes (C): os componentes se entrelaçam e são retomados conforme a conversa e o vínculo evoluem; não existe sequência obrigatória em cada consulta.",
+    "tip": "MCCP, 1º componente = SIFE: Sentimentos, Ideias, Funcionalidade e Expectativas do paciente sobre a doença.",
+    "reference": "Consulta centrada na pessoa, José Mauro Ceratti Lopes; Lêda Chaves Dias, Tratado de Medicina de Família e Comunidade, Capítulo 15, 2ª edição, Gustavo Gusso, 2019. Método clínico centrado na pessoa, Marcelo Garcia Kolling, Medicina Ambulatorial – Condutas de Atenção Primária baseadas em Evidências, Cap 11, 5ª edição, Artmed, 2022",
+    "tags": [
+      "MCCP",
+      "relação médico-paciente",
+      "APS"
+    ]
+  },
+  {
+    "id": "tp2025-107",
+    "topography": "15",
+    "topic": "Atenção Primária",
+    "module": "Saúde Coletiva",
+    "text": "Paciente com diabetes mellitus tipo 2 já diagnosticada realiza acompanhamento regular com equipe multidisciplinar para evitar retinopatia e nefropatia diabética. Este caso representa qual nível de prevenção?",
+    "options": [
+      "(A) Prevenção primária",
+      "(B) Prevenção secundária",
+      "(C) Prevenção terciária",
+      "(D) Prevenção quaternária"
+    ],
+    "correctAnswer": 1,
+    "explanation": "De acordo com referenciais clássicos da Medicina de Família sobre níveis preventivos, a prevenção secundária visa à detecção precoce de lesões assintomáticas e ao tratamento de base imediato para conter o avanço ao espectro clínico desfavorável.",
+    "commentary": "Embora o manejo de complicações estabelecidas de longo prazo seja classificado sob o crivo preventivo terciário (focado em reabilitação e limitação de incapacidades), a conduta ativa diagnóstica multiprofissional periódica voltada a interceptar manifestações ainda subclínicas em fase latente (como a busca ativa precoce por microalbuminúria ou retinopatia diabética inicial incipiente em paciente diagnosticado) assenta-se sob o escopo preventivo secundário.",
+    "reference": "Lopes JM, Gusso G. Tratado de Medicina de Família e Comunidade, 2a ed. Porto Alegre: Artmed, 2019.",
+    "tags": [
+      "prevenção",
+      "atenção primária"
+    ]
+  },
+  {
+    "id": "tp2019-118",
+    "topography": "15",
+    "topic": "SUS",
+    "module": "Saúde Coletiva",
+    "text": "Quanto aos segmentos sociais que compõem o Conselho Nacional de Saúde (CNS), a alternativa correta de acordo com a lei 8.142/90 é:",
+    "options": [
+      "(A) 50% de usuário do SUS, 30% de trabalhadores do SUS e 20% de gestores/prestadores de serviço de saúde.",
+      "(B) 30% de usuário do SUS, 30% de trabalhadores do SUS e 40% de gestores/prestadores de serviço de saúde.",
+      "(C) 25% de usuário do SUS, 25% de trabalhadores do SUS e 50% de gestores/prestadores de serviço de saúde.",
+      "(D) 50% de usuário do SUS, 25% de trabalhadores do SUS e 25% de gestores/prestadores de serviço de saúde."
+    ],
+    "correctAnswer": 3,
+    "explanation": "A Lei 8.142/1990 estabelece a paridade nos conselhos de saúde: 50% de representantes de usuários e 50% divididos entre os demais segmentos — 25% de trabalhadores da saúde e 25% de gestores e prestadores.",
+    "commentary": "As demais distribuições não respeitam a paridade dos usuários.",
+    "reference": "Página do Conselho Nacional de Saúde – ministério da saúde, https://conselho.saude.gov.br/apresentacao/composicao.htm Lei 8.142/90, 28/12/90 / Instituto de Métrica e Avaliação em Saúde. Estudo de Carga de Doença Global: gerando evidências, informando políticas de saúde. Seattle, WA: IHME, 2013.",
+    "tags": [
+      "saúde coletiva",
+      "SUS",
+      "controle social"
+    ]
+  },
+  {
+    "id": "tp2021-13",
+    "topography": "14",
+    "topic": "Choque",
+    "module": "Ciências Básicas",
+    "text": "Homem, 23 anos, vítima de trauma abdominal fechado com hipovolemia por provável hemorragia intra-abdominal. Qual é a ação direta das células justaglomerulares nessa situação?",
+    "options": [
+      "(A) Bloqueio da liberação do hormônio antidiurético.",
+      "(B) Liberação de aldosterona.",
+      "(C) Aumento da reabsorção da creatinina.",
+      "(D) Liberação de renina."
+    ],
+    "correctAnswer": 3,
+    "explanation": "As células justaglomerulares renais respondem diretamente à hipotensão arterial e hipovolemia por meio da síntese e liberação de renina para ativar o eixo SRAA.",
+    "commentary": "A redução da pressão de perfusão na artéria aferente renal estimula as células do aparelho justaglomerular a secretar renina por ação direta. A renina cliva o angiotensinogênio hepático em angiotensina I, iniciando a cascata que estabiliza a pressão circulatória por vasoconstrição (via Angiotensina II) e retenção de sódio/água (via aldosterona, liberada pela adrenal pós-estímulo).",
+    "reference": "Berne & Levy - Fisiologia - 6a Ed. Elsevier",
+    "tags": [
+      "fisiologia",
+      "nefrologia",
+      "fisiopatologia"
+    ]
+  },
+  {
+    "id": "enamed-2025-25",
+    "topography": "5.2",
+    "topic": "Diabetes gestacional",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Multípara, 37 semanas, obesa, apresentando diabetes mellitus gestacional controlada com insulina NPH e regular. Evoluiu para parto normal, e o recém-nascido pesou 3.300 g.\n\nA conduta no puerpério imediato deve ser",
+    "options": [
+      "(A) suspender insulinoterapia.",
+      "(B) iniciar hipoglicemiante oral.",
+      "(C) manter insulina NPH em 1/3 da dose da gravidez.",
+      "(D) manter insulinoterapia com a dosagem do pré-natal."
+    ],
+    "correctAnswer": 0,
+    "explanation": "No diabetes mellitus gestacional (DMG), a resistência à insulina é induzida por hormônios de origem placentária (como o lactogênio placentário). Com a dequitação e saída da placenta no parto, há uma queda abrupta e imediata desses níveis hormonais contrarreguladores, cessando o estímulo diabetogênico temporário. Portanto, a insulinoterapia deve ser suspensa imediatamente no puerpério, mantendo-se apenas o monitoramento glicêmico capilar de rotina e agendando reavaliação de tolerância glicêmica (com TOTG 75g) entre 4 e 12 semanas pós-parto.",
+    "commentary": "Iniciar hipoglicemiantes orais ou manter a insulina pós-parto sem necessidade comprovada induzirá hipoglicemia iatrogênica na paciente, visto que a fisiologia retorna ao basal rapidamente.",
+    "reference": "Diretrizes da Sociedade Brasileira de Diabetes (SBD) / FEBRASGO",
     "tags": [
       "ginecologia",
       "obstetrícia",
-      "hipertensão na gravidez",
-      "pré-eclâmpsia"
+      "diabetes gestacional",
+      "puerpério"
     ]
   },
   {
@@ -1116,219 +1103,239 @@ export const SAMPLE_QUESTIONS: Question[] = [
     ]
   },
   {
-    "id": "unifesp2025-11",
-    "topography": "3.1",
-    "topic": "Diverticulose/diverticulite",
+    "id": "unifesp2025-13",
+    "topography": "2.1",
+    "topic": "Câncer de pulmão",
     "module": "Cirurgia",
-    "text": "Homem, 70 anos de idade, com doença diverticular do cólon, apresenta-se estável hemodinamicamente, com dor abdominal intensa, febre e leucócitose. A tomografia computadorizada mostra um abscesso pericólico de 5 cm associado a diverticulite aguda.\n\nQual é a conduta inicial mais adequada?",
+    "text": "Homem, 70 anos de idade, apresenta adenocarcinoma em lobo superior do pulmão esquerdo. Durante estadiamento da neoplasia observou-se comprometimento dos linfonodos das cadeias 4 ipsilateral e 7. Não foram identificadas metástases no PET-CT.\n\nQual a conduta mais adequada?",
     "options": [
-      "(A) Antibióticos intravenosos e observação.",
-      "(B) Colectomia segmentar de urgência.",
-      "(C) Cirurgia laparoscópica para drenagem e lavagem peritoneal.",
-      "(D) Drenagem percutânea do abscesso guiada por imagem."
-    ],
-    "correctAnswer": 3,
-    "explanation": "Diverticulite aguda complicada com abscesso pericólico de 5 cm (Hinchey Ib/II), em paciente estável.\n\nAbscessos maiores que 3–4 cm respondem mal só ao antibiótico, e a conduta inicial é a drenagem percutânea guiada por imagem associada à antibioticoterapia. Isso controla a sepse e evita a cirurgia de urgência. Se a cirurgia for necessária depois, ela pode ser feita de forma eletiva e em um tempo.",
-    "commentary": "Antibiótico e observação (A): adequados para abscessos pequenos (< 3–4 cm).\n\nColectomia de urgência (B): reservada para peritonite generalizada (Hinchey III/IV) ou falha do tratamento conservador.\n\nLavagem laparoscópica (C): opção discutível na peritonite purulenta (Hinchey III), não no abscesso localizado drenável por via percutânea.",
-    "reference": "Diretriz ASCRS 2020 para diverticulite / Classificação de Hinchey",
-    "tags": [
-      "coloproctologia",
-      "diverticulite",
-      "abscesso"
-    ]
-  },
-  {
-    "id": "unifesp2025-67",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher, 44 anos de idade, multípara, realizou a primeira mamografia da vida (quatro incidências básicas) que mostrou mamas lipossubstituídas com presença de calcificações heterogêneas localizadas na região retroareolar da mama esquerda, BI-RADS 0.\n\nQual é o complemento mamográfico adicional necessário para a classificação adequada?",
-    "options": [
-      "(A) Compressão localizada",
-      "(B) Incidência craniocaudal exagerada",
-      "(C) Ampliação",
-      "(D) Incidência em perfil absoluto"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Calcificações classificadas como BI-RADS 0 precisam de avaliação adicional da morfologia e da distribuição para serem categorizadas (benignas, suspeitas ou altamente suspeitas).\n\nO complemento específico para calcificações é a magnificação (ampliação), em geral associada a compressão localizada, que mostra o formato, o número e a distribuição das partículas.",
-    "commentary": "Compressão localizada (A): indicada principalmente para assimetrias e nódulos, para diferenciar sobreposição de tecido de lesão real.\n\nCraniocaudal exagerada (B): usada para lesões nas porções lateral ou medial posteriores não incluídas na CC padrão.\n\nPerfil absoluto (D): ajuda a localizar a lesão e a identificar calcificações em 'leite de cálcio', mas não substitui a ampliação para estudar a morfologia.",
-    "reference": "ACR BI-RADS Atlas, 5ª ed. / Colégio Brasileiro de Radiologia",
-    "tags": [
-      "mastologia",
-      "mamografia",
-      "BI-RADS",
-      "microcalcificações"
-    ]
-  },
-  {
-    "id": "hosbos2027-49",
-    "topography": "5.1",
-    "topic": "Sangramento uterino anormal",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "G.B.V., 18 anos, com queixa de amenorreia primária. Ao exame físico: estatura 1,75m, IMC 21 kg/m², mamas desenvolvidas (Tanner M4), pelos pubianos e axilares escassos (Tanner P1) e abaulamento sugestivo de hérnia inguinal bilateral. Paciente nega atividade sexual. Ultrassom pélvico revela: ausência de útero e ovários.\n\nDe acordo com o caso acima, assinale a alternativa que representa o diagnóstico mais provável.",
-    "options": [
-      "(A) Síndrome de Mayer-Rokitansky-Kuster-Hauser (Agenesia mulleriana).",
-      "(B) Disgenesia gonadal pura (Síndrome de Swyer).",
-      "(C) Síndrome da insensibilidade completa aos androgênios.",
-      "(D) Hiperplasia adrenal congênita forma não-clássica.",
-      "(E) Síndrome de Turner."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Amenorreia primária em fenótipo feminino alto, com mamas bem desenvolvidas, pelos pubianos e axilares ausentes ou escassos, hérnias inguinais bilaterais (testículos) e ausência de útero e ovários: síndrome de insensibilidade completa aos androgênios (cariótipo 46,XY).\n\nOs testículos produzem testosterona, que é aromatizada em estrogênio (por isso as mamas), mas os receptores androgênicos não funcionam (por isso não há pelos). O hormônio antimülleriano impede a formação de útero e trompas.",
-    "commentary": "MRKH (A): agenesia mülleriana em 46,XX, com ovários normais e pelos normais.\n\nDisgenesia gonadal pura (B): gônadas em fita sem estrogênio, logo sem desenvolvimento mamário, e com útero presente.\n\nHAC não clássica (D): causa hiperandrogenismo, com útero e ovários presentes.\n\nTurner (E): baixa estatura, sem mamas (falência ovariana) e com útero presente.",
-    "reference": "Speroff — Endocrinologia Ginecológica Clínica / Febrasgo — Amenorreia",
-    "tags": [
-      "ginecologia",
-      "amenorreia primária",
-      "insensibilidade androgênica",
-      "distúrbios da diferenciação sexual"
-    ]
-  },
-  {
-    "id": "scmbh2026-10",
-    "topography": "14",
-    "topic": "Queimaduras",
-    "module": "Cirurgia",
-    "text": "Uma senhora leucodérmica, com 34 anos de idade, estava cozinhando, quando entornou uma grande panela de água fervendo sobre ela, queimando toda a parte anterior do tórax e do abdome, bem como os dois membros superiores completamente. Ela foi levada ao hospital para tratamento.\n\nQual foi a extensão de sua queimadura?",
-    "options": [
-      "(A) 36%",
-      "(B) 44%",
-      "(C) 27%",
-      "(D) 22%"
-    ],
-    "correctAnswer": 2,
-    "explanation": "Pela regra dos nove de Wallace (adulto):\n\n• Tronco anterior (tórax e abdome): 18%\n• Cada membro superior completo: 9%, os dois somam 18%\n\nTotal: 36%. O gabarito oficial indica 27%, mas o cálculo correto é 36%, que também é aceito aqui.",
-    "commentary": "36% (A): é o valor correto pela regra dos nove; o gabarito oficial não o considerou.\n\n44% (B): superestima a área queimada.\n\n22% (D): subestima a área queimada.",
-    "reference": "ATLS — Lesões térmicas / Cartilha para tratamento de emergência das queimaduras (MS)",
-    "tags": [
-      "cirurgia plástica",
-      "queimaduras",
-      "regra dos nove",
-      "superfície corporal queimada"
-    ],
-    "alsoAccepted": [
-      0
-    ],
-    "alert": "Gabarito oficial discutível: pela regra dos nove, tronco anterior (18%) mais os dois membros superiores (18%) somam 36% (alternativa A). A alternativa A também é aceita como correta."
-  },
-  {
-    "id": "hiae2025-7",
-    "topography": "2.2",
-    "topic": "Hipertensão arterial sistêmica",
-    "module": "Clínica Médica",
-    "text": "Paciente, 59 anos, hipertenso, sedentário, obeso, em uso de enalapril 20 mg 12/12 horas, anlodipino 10 mg/dia, clortalidona 25 mg/dia, espironolactona 25 mg/dia e carvedilol 25 mg 12/12 horas. Apesar de ser aderente às medicações em uso, mantém pressão não controlada, com aferições acima de 140/90 mmHg. Com base no caso clínico, assinale a alternativa correta em relação ao manejo ambulatorial desse paciente.",
-    "options": [
-      "(A) Substituir a clortalidona por hidroclorotiazida, pois é o diurético de escolha em hipertensão resistente.",
-      "(B) Associar diurético de alça, como a furosemida e encaminhar ao cardiologista.",
-      "(C) Suspender a espironolactona pela falha terapêutica e associar hidralazina 50 mg 8/8 horas.",
-      "(D) Solicitar exames para investigação de causas secundárias de hipertensão e associar clonidina."
-    ],
-    "correctAnswer": 3,
-    "explanation": "Pressão não controlada com 5 classes em dose plena, incluindo diurético tiazídico-like e espironolactona, com boa adesão: hipertensão resistente (refratária). Deve-se investigar causas secundárias (hiperaldosteronismo, apneia do sono, doença renal, estenose de artéria renal) e associar outro fármaco, como clonidina (ou hidralazina, já que o betabloqueador está em uso).",
-    "commentary": "Trocar por hidroclorotiazida (A): a clortalidona é mais potente e de ação mais longa; é o tiazídico preferido.\n\nDiurético de alça (B): só na doença renal crônica avançada (TFG < 30) ou na congestão.\n\nSuspender espironolactona (C): ela é o quarto fármaco mais eficaz na hipertensão resistente (estudo PATHWAY-2).",
-    "reference": "Diretriz Brasileira de Hipertensão Arterial (2020/2025)",
-    "tags": [
-      "cardiologia",
-      "hipertensão resistente",
-      "hipertensão secundária",
-      "clonidina"
-    ],
-    "tip": "Hipertensão resistente: confirme adesão e MAPA, investigue causa secundária e use espironolactona."
-  },
-  {
-    "id": "unimedpb2026-5",
-    "topography": "7.2",
-    "topic": "Escabiose",
-    "module": "Pediatria",
-    "text": "Uma criança de 5 anos apresenta prurido intenso há 3 semanas, com piora à noite. No exame físico, observam-se pápulas eritematosas, escoriações e lesões agrupadas nas axilas, região periumbilical e nas mãos. A mãe relata que o avô, que mora na mesma casa, também tem “muita coceira nas mãos”. Qual conduta mais adequada para esse caso?",
-    "options": [
-      "Tratar apenas a criança com ivermectina.",
-      "Prescrever hidrocortisona tópica para reduzir o prurido.",
-      "Solicitar exame parasitológico da pele antes de iniciar o tratamento, pois o diagnóstico sempre exige confirmação.",
-      "Iniciar permetrina 5% para a criança e tratar simultaneamente todos os contatos domiciliares, mesmo assintomáticos.",
-      "Evitar retorno escolar por 10 dias, mesmo após início do tratamento, devido à alta transmissibilidade."
-    ],
-    "correctAnswer": 3,
-    "explanation": "Prurido intenso com piora noturna, pápulas e escoriações em axilas, região periumbilical e mãos, e um familiar com o mesmo prurido: quadro típico de escabiose, cujo diagnóstico é clínico-epidemiológico.\n\nA conduta é tratar o paciente com escabicida (permetrina 5% é a primeira escolha em crianças, aplicada do pescoço para baixo e repetida em 7 dias) e tratar todos os contatos domiciliares ao mesmo tempo, mesmo sem sintomas, para evitar reinfestação. Roupas de cama e roupas usadas devem ser lavadas em água quente.",
-    "commentary": "Só a criança com ivermectina (A): sem tratar os contatos há reinfestação; além disso, a ivermectina não é a primeira escolha em crianças pequenas (evitada abaixo de 15 kg).\n\nHidrocortisona (B): alivia o prurido, mas não elimina o ácaro.\n\nExame parasitológico obrigatório (C): o diagnóstico é clínico; o raspado tem baixa sensibilidade e não deve atrasar o tratamento.\n\nAfastamento por 10 dias (E): a criança pode voltar à escola 24 horas após o início do tratamento.",
-    "reference": "SBD — Escabiose / Ministério da Saúde — Protocolo de dermatologia na Atenção Básica",
-    "tags": [
-      "dermatologia",
-      "escabiose",
-      "permetrina",
-      "contatos domiciliares"
-    ],
-    "tip": "Escabiose: trate o paciente e TODOS da casa no mesmo dia."
-  },
-  {
-    "id": "iog2026-48",
-    "topography": "10",
-    "topic": "Meningococcemia",
-    "module": "Saúde Coletiva",
-    "text": "Dentre as alternativas a seguir, qual está correta sobre a epidemiologia da doença meningocócica?",
-    "options": [
-      "A transmissão da Neisseria meningitidis ocorre predominantemente no domicílio.",
-      "Menores de 5 anos de idade são os mais frequentes portadores do agente etiológico na orofaringe.",
-      "A ocorrência da doença meningocócica é sazonal, predominando nos meses quentes e úmidos.",
-      "A patogenicidade e a infectividade da Neisseria meningitidis são altas."
+      "(A) Tratamento não cirúrgico.",
+      "(B) Lobectomia superior esquerda.",
+      "(C) Pneumonectomia esquerda.",
+      "(D) Segmentectomia esquerda."
     ],
     "correctAnswer": 0,
-    "explanation": "A Neisseria meningitidis é transmitida por gotículas e secreções respiratórias, por contato próximo e prolongado, e o ambiente domiciliar é onde se concentra o maior risco de transmissão — por isso a quimioprofilaxia é dirigida aos contatos íntimos (domiciliares, creche, quem dormiu no mesmo ambiente).",
-    "commentary": "Menores de 5 anos como principais portadores (B): o estado de portador é mais frequente em adolescentes e adultos jovens; as crianças pequenas são as que mais adoecem.\n\nPredomínio em meses quentes e úmidos (C): a doença predomina no outono e inverno, com aglomeração em ambientes fechados.\n\nAlta patogenicidade e infectividade (D): a infectividade é baixa (muitos portadores assintomáticos e poucos doentes), embora a patogenicidade e a virulência sejam altas.",
-    "reference": "Ministério da Saúde — Guia de Vigilância em Saúde (doença meningocócica)",
+    "explanation": "Adenocarcinoma de lobo superior esquerdo com comprometimento das cadeias 4L (paratraqueal inferior ipsilateral) e 7 (subcarinal): doença N2 multiestação, estádio III, sem metástases ao PET-CT.\n\nCom N2 multiestação comprovado no estadiamento, a ressecção primária não é recomendada. O tratamento padrão é não cirúrgico: quimiorradioterapia concomitante seguida de imunoterapia de consolidação (durvalumabe). A cirurgia fica restrita a casos selecionados após indução e resposta mediastinal.",
+    "commentary": "Lobectomia (B): ressecção indicada em estádios I–II; na doença N2 multiestação não é o tratamento inicial.\n\nPneumonectomia (C): maior morbimortalidade, sem benefício oncológico na doença N2 multiestação.\n\nSegmentectomia (D): reservada a tumores periféricos pequenos (≤ 2 cm) e N0.",
+    "reference": "NCCN Guidelines — Non-Small Cell Lung Cancer / Estadiamento TNM 8ª ed. (IASLC)",
     "tags": [
-      "vigilância epidemiológica",
-      "doença meningocócica",
-      "meningococo",
-      "quimioprofilaxia"
-    ],
-    "tip": "Meningococo: portador = adolescente/adulto jovem; doente = criança; transmissão = domicílio."
+      "cirurgia torácica",
+      "câncer de pulmão",
+      "estadiamento"
+    ]
   },
   {
-    "id": "sespe2026-78",
+    "id": "unifesp2025-72",
+    "topography": "5.1",
+    "topic": "Infertilidade",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Um casal formado por um homem de 28 anos de idade e uma mulher nuligesta de 27 anos idade, refere 2 anos de tentativas de gestação. Ele, com histórico de uretrite tratada, exame físico sem alterações e espermograma normal. Ela, saudável, com ciclos menstruais regulares, sem queixas de dismenorreia ou dispareunia e com exame físico sem alterações.\n\nQual é o próximo exame na investigação da infertilidade desse casal?",
+    "options": [
+      "(A) Avaliação hormonal para ele.",
+      "(B) Ressonância magnética de pelve para ela.",
+      "(C) Histerossalpingografia para ela.",
+      "(D) Cariótipo para ambos."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Casal com 2 anos de infertilidade, espermograma normal e ciclos regulares (ovulação provável). Falta avaliar o fator tubário, sobretudo porque o homem tem antecedente de uretrite (risco de doença inflamatória pélvica e obstrução tubária na parceira, muitas vezes subclínica, como na clamídia).\n\nO exame inicial para permeabilidade tubária é a histerossalpingografia.",
+    "commentary": "Avaliação hormonal masculina (A): com espermograma normal, não há indicação.\n\nRM de pelve (B): útil para endometriose profunda ou adenomiose, sem suspeita clínica aqui (sem dismenorreia ou dispareunia).\n\nCariótipo (D): indicado em perdas gestacionais de repetição ou alterações graves do espermograma.",
+    "reference": "ASRM — Diagnostic evaluation of the infertile female (2021) / FEBRASGO — Investigação do casal infértil",
+    "tags": [
+      "ginecologia",
+      "infertilidade",
+      "fator tubário",
+      "histerossalpingografia"
+    ]
+  },
+  {
+    "id": "hosbos2027-55",
+    "topography": "5.2",
+    "topic": "Assistência ao parto",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Embora a distocia de ombro apresente risco adicional pela macrossomia fetal, mais de 50% dos casos ocorrem em RN de peso normal e não pode ser prevista. Desse modo, é essencial que o profissional médico esteja apto em executar, habilmente, as manobras para desimpactar o ombro e tenha cuidados efetivos.\n\nAssinale a alternativa que representa a primeira conduta a ser realizada para a resolução de distocia de ombro.",
+    "options": [
+      "(A) Manobra de Gaskin.",
+      "(B) Manobra de McRoberts com pressão supra púbica.",
+      "(C) Manobra de Zavanelli;",
+      "(D) Manobra de Jacquemier.",
+      "(E) Manobra de Rubin II e Wood."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Diante da distocia de ombro, a primeira medida (sequência ALEERTA/HELPERR) é chamar ajuda e realizar a manobra de McRoberts (hiperflexão das coxas sobre o abdome), associada à pressão suprapúbica (manobra de Rubin I).\n\nAs duas juntas resolvem a maioria dos casos. Depois vêm as manobras rotacionais (Rubin II, Woods), a retirada do braço posterior (Jacquemier), a posição de quatro apoios (Gaskin) e, como último recurso, Zavanelli.",
+    "commentary": "Gaskin (A): pode ser usada, mas não é a primeira conduta padronizada.\n\nZavanelli (C): recolocação do polo cefálico para cesárea, último recurso.\n\nJacquemier (D): retirada do braço posterior, manobra de segunda linha.\n\nRubin II e Woods (E): manobras rotacionais internas, tentadas após falha de McRoberts com pressão suprapúbica.",
+    "reference": "RCOG Green-top Guideline 42 (Shoulder Dystocia) / ACOG Practice Bulletin 178",
+    "tags": [
+      "obstetrícia",
+      "distocia de ombro",
+      "manobra de McRoberts"
+    ]
+  },
+  {
+    "id": "hosbos2025-38",
+    "topography": "1.1",
+    "topic": "AVC",
+    "module": "Clínica Médica",
+    "text": "Paciente vem a unidade de saúde com quadro de acidente vascular cerebral isquêmico. Considerando tal quadro, é correto afirmar que é critério atual de indicação de trombólise no AVC isquêmico o seguinte:",
+    "options": [
+      "(A) tempo < que 6 horas, desde o último momento visto assintomático.",
+      "(B) entre 2 e 4 horas e meia, desde o último momento visto assintomático.",
+      "(C) ≥ 18 anos.",
+      "(D) paciente diabético com glicemia, no momento do evento > 50 e < 250 mg/dL.",
+      "(E) pressão arterial 185 x 110 mmHg."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Critérios de inclusão para trombólise IV (alteplase ou tenecteplase) no AVC isquêmico: idade ≥ 18 anos, déficit neurológico mensurável, TC sem hemorragia e início dos sintomas (ou último momento visto bem) até 4,5 horas.",
+    "commentary": "Até 6 horas (A): a janela da trombólise é de 4,5 h; 6 h (ou até 24 h em casos selecionados) é para trombectomia.\n\nEntre 2 e 4,5 horas (B): a janela começa no início dos sintomas — quanto mais cedo, melhor; não há limite inferior.\n\nGlicemia > 50 e < 250 (D): a glicemia < 50 ou > 400 mg/dL é que deve ser corrigida/excluir mimetizadores; o critério não está formulado assim.\n\nPA 185 × 110 mmHg (E): a PA deve estar ABAIXO de 185 × 110 antes da trombólise.",
+    "reference": "AHA/ASA Guidelines for the Early Management of Acute Ischemic Stroke (2019) / Diretrizes da SBDCV",
+    "tags": [
+      "AVC isquêmico",
+      "trombólise",
+      "alteplase"
+    ]
+  },
+  {
+    "id": "usprp2025-50",
+    "topography": "5.2",
+    "topic": "Pré-natal",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Secundigesta (G2P0A1), 26 anos, com atraso menstrual de 18 semanas, inicia pré-natal hoje após teste de gravidez positivo. Nega doenças ou intercorrências até o momento. Exame físico geral sem alterações. A altura uterina é de 26cm. Fez ultrassonografia hoje, com achado de gestação gemelar dicoriônica, com idade gestacional de 24 semanas, achados fetais e anexiais normais.\n\nCom relação à profilaxia de pré-eclâmpsia, nesse caso, a alternativa correta é:",
+    "options": [
+      "(A) Iniciar ácido acetilsalicílico e cálcio.",
+      "(B) Prescrever ácido acetilsalicílico.",
+      "(C) Prescrever ácido acetilsalicílico e enoxaparina.",
+      "(D) Não deve ser prescrita."
+    ],
+    "correctAnswer": 3,
+    "explanation": "A gestação gemelar é fator de alto risco para pré-eclâmpsia e indicaria AAS em dose baixa (com cálcio se a ingesta for baixa). Mas o benefício do AAS depende do início precoce, idealmente entre 12 e 16 semanas, pois ele atua na placentação.\n\nA ultrassonografia, mais confiável que a DUM incerta, data a gestação em 24 semanas. Fora da janela recomendada pelas diretrizes brasileiras (até 16–20 semanas), o gabarito entende que não deve ser prescrito.",
+    "commentary": "AAS e cálcio (A): seria a conduta se a gestação estivesse dentro da janela de início.\n\nAAS isolado (B): mesmo problema de época de início.\n\nAAS e enoxaparina (C): a enoxaparina não previne pré-eclâmpsia.",
+    "reference": "Febrasgo/RBEHG — Prevenção da pré-eclâmpsia / ACOG Committee Opinion 743",
+    "tags": [
+      "obstetrícia",
+      "pré-eclâmpsia",
+      "ácido acetilsalicílico",
+      "gestação gemelar"
+    ],
+    "alert": "Gabarito discutível: a ACOG admite iniciar o AAS até 28 semanas (idealmente antes de 16). O gabarito segue a janela das diretrizes brasileiras e considera que, com 24 semanas, não se deve prescrever."
+  },
+  {
+    "id": "susba2025-4",
     "topography": "3.1",
-    "module": "Pediatria",
-    "text": "Um paciente, 8 anos, evoluindo com vômitos diários, seletividade alimentar, disfagia para sólidos (só consegue ingerir alimentos em pequenos pedaços e sempre se alimenta tomando água ou suco). Tem dermatite atópica e asma, sendo acompanhado em um ambulatório de alergologia pediátrica.\n\nO diagnóstico mais provável e exame necessário para confirmar é o seguinte:",
+    "topic": "Hemorragia digestiva alta",
+    "module": "Clínica Médica",
+    "text": "Homem, 62 anos de idade, portador de hepatite C crônica, comparece ao Pronto-Socorro com hematêmese volumosa e melena há três dias. O paciente apresenta-se ictérico, com PA: 90x60mmHg, FR: 115bpm e confusão mental. Ao exame, há ascite moderada. A avaliação laboratorial revela hemoglobina de 5,8g/dL, plaquetas de 70.000/mm³, RNI: 2,5.\n\nConsiderando o caso descrito, a conduta imediata mais adequada envolve:",
     "options": [
-      "Refluxo gastroesofágico/ estudo contrastado do esôfago, estômago e duodeno (EED).",
-      "Esofagite eosinofílica/ Endoscopia digestiva alta com biópsias de esôfago.",
-      "Acalásia congênita/ pHmetria esofágica de dois canais.",
-      "Estenose esofágica / estudo contrastado do esôfago, estômago e duodeno (EED).",
-      "Gastrite por Helicobacter pylori / Teste respiratório da ureia."
+      "(A) Iniciar terlipressina e ceftriaxone intravenosos.",
+      "(B) Infusão de albumina e noradrenalina.",
+      "(C) Passagem do balão de Sengstaken-Blakemore.",
+      "(D) Endoscopia digestiva alta com ligadura elástica."
     ],
-    "correctAnswer": 1,
-    "explanation": "Escolar atópico (asma, dermatite atópica) com disfagia para sólidos, vômitos e estratégias de compensação (cortar a comida em pedaços pequenos, beber líquido para engolir): quadro típico de esofagite eosinofílica. O diagnóstico é feito por endoscopia digestiva alta com biópsias em vários níveis do esôfago, mostrando ≥ 15 eosinófilos por campo de grande aumento.",
-    "commentary": "Refluxo com EED (A): o refluxo não costuma causar disfagia com impactação, e o EED não diagnostica esofagite.\n\nAcalasia com pHmetria (C): a acalasia é rara na infância e se diagnostica por manometria.\n\nEstenose esofágica (D): exigiria causa (cáustico, cirurgia), e a esofagite eosinofílica pode ser a causa da estenose.\n\nH. pylori (E): não causa disfagia.",
-    "reference": "Consenso internacional de esofagite eosinofílica (AGREE 2018) / SBP",
+    "correctAnswer": 0,
+    "explanation": "Cirrótico por hepatite C com hematêmese volumosa, melena, hipotensão, taquicardia, encefalopatia, ascite e Hb 5,8 g/dL: hemorragia digestiva alta varicosa grave (Child-Pugh C).\n\nAlém da reanimação (via aérea, acessos, transfusão restritiva com alvo de Hb 7–8 g/dL), na suspeita de sangramento varicoso deve-se iniciar imediatamente um vasoconstritor esplâncnico (terlipressina, octreotida ou somatostatina) e antibiótico profilático (ceftriaxona 1 g/dia por até 7 dias), que reduz infecção, ressangramento e mortalidade. A endoscopia vem depois, nas primeiras 12 horas, com o paciente estabilizado.",
+    "commentary": "Albumina e noradrenalina (B): combinação usada na síndrome hepatorrenal, não na hemorragia varicosa.\n\nBalão de Sengstaken-Blakemore (C): é ponte temporária para sangramento refratário ao tratamento clínico e endoscópico, não a primeira medida.\n\nEndoscopia com ligadura (D): é o tratamento definitivo, mas só após estabilização hemodinâmica e início das drogas vasoativas; não é a conduta imediata.",
+    "reference": "Baveno VII (2022) / Consenso da Sociedade Brasileira de Hepatologia — Hemorragia digestiva varicosa",
     "tags": [
-      "gastroenterologia pediátrica",
-      "esofagite eosinofílica",
-      "disfagia",
-      "atopia"
+      "hepatologia",
+      "cirrose",
+      "hemorragia digestiva alta",
+      "varizes esofágicas",
+      "terlipressina"
     ],
-    "tip": "Criança atópica com disfagia para sólidos: esofagite eosinofílica → EDA com biópsias."
+    "tip": "HDA no cirrótico: vasoconstritor + ceftriaxona já na chegada; endoscopia em até 12 h."
   },
   {
-    "id": "hpp2026-42",
-    "topography": "11",
-    "topic": "Anemia ferropriva",
-    "module": "Pediatria",
-    "text": "Um menino de 7 anos, morador da zona rural, é levado ao posto de saúde por fadiga, palidez e baixo rendimento escolar. A mãe refere que ele apresenta dor abdominal vaga, baixo ganho ponderal, e quando não está na escola, costuma brincar no quintal e no campo com os amigos. Ao exame apresentou sopro sistólico fraco em bordo esternal esquerdo. Qual o diagnóstico mais provável?",
+    "id": "revalida-2025-1-75",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Paciente de 35 anos, contente por sua primeira gravidez, começa o pré-natal na unidade básica de saúde (UBS) de seu bairro. Durante a consulta de enfermagem, é identificado, no exame das mamas, um nódulo na mama direita. Quando informada sobre esse achado, a paciente relata que sua mãe teve câncer de mama aos 38 anos.\n\nDiante desse quadro, a conduta médica indicada é",
     "options": [
-      "Ascaridíase",
-      "Ancilostomíase",
-      "Tricuríase",
-      "Enterobíase"
+      "(A) requisitar biópsia do nódulo mamário guiada por ultrassonografia.",
+      "(B) encaminhar a paciente para o ambulatório de gestação de alto risco.",
+      "(C) solicitar ultrassonografia de mamas e considerar realização de mamografia com proteção abdominal.",
+      "(D) aguardar o final da gestação para realizar investigação do nódulo a partir de ultrassonografia e de mamografia."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nódulo mamário palpável na gestação deve ser investigado sem atraso: o câncer de mama associado à gestação costuma ser diagnosticado tardiamente. O primeiro exame é a ultrassonografia de mamas; a mamografia pode ser feita com proteção abdominal (dose fetal desprezível), e a biópsia por agulha grossa é segura se houver lesão suspeita. A história de mãe com câncer aos 38 anos aumenta a suspeita.",
+    "commentary": "Biópsia direta (A): a biópsia vem depois da imagem, conforme a classificação do achado.\n\nAlto risco obstétrico (B): o nódulo não é fator de risco obstétrico; deve ser investigado pela mastologia.\n\nAguardar o fim da gestação (D): atrasa o diagnóstico de possível câncer.",
+    "reference": "Febrasgo — Câncer de mama na gestação / INCA",
+    "tags": [
+      "ginecologia",
+      "câncer de mama",
+      "gestação",
+      "nódulo mamário"
+    ],
+    "tip": "Nódulo na mama na gravidez: investigue já (USG; mamografia com proteção abdominal se precisar)."
+  },
+  {
+    "id": "iog2026-29",
+    "topography": "5.1",
+    "topic": "Câncer de ovário",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Paciente de 23 anos, vida sexual com uso de preservativo, ciclos menstruais regulares. Realiza exame ginecológico com achado de tumoração anexial direita, móvel e indolor. Exame ultrassonográfico complementar identifica tumoração ovariana de 6 cm compatível com diagnóstico de teratoma.\n\nA ooforoplastia direita prevenirá qual das seguintes complicações?",
+    "options": [
+      "Degeneração maligna.",
+      "Sangramento.",
+      "Infertilidade.",
+      "Torção."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Teratoma maduro (cisto dermoide) de 6 cm em mulher jovem. A complicação mais comum desse tumor é a torção ovariana, favorecida pelo tamanho (maior que 5 cm) e pelo peso do conteúdo. A cistectomia com preservação do ovário (ooforoplastia) é indicada justamente para prevenir a torção, além de confirmar a histologia.",
+    "commentary": "Degeneração maligna (A): é rara (menos de 2%), ocorre mais em mulheres mais velhas e não é o principal motivo da cirurgia.\n\nSangramento (B): não é complicação típica do teratoma.\n\nInfertilidade (C): o teratoma não causa infertilidade; a cirurgia preserva o ovário justamente para não comprometer a fertilidade.",
+    "reference": "FEBRASGO — Tumores anexiais benignos / ACOG Practice Bulletin 174",
+    "tags": [
+      "ginecologia",
+      "teratoma",
+      "torção ovariana",
+      "massa anexial"
+    ],
+    "tip": "Teratoma maduro: maior risco é torção."
+  },
+  {
+    "id": "sespe2026-60",
+    "topography": "5.1",
+    "topic": "Câncer de colo uterino",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Paciente de 40 anos, G4P4, chega ao ambulatório de ginecologia para avaliar resultado de exame citológico do colo uterino. O exame revela ASCUS-H.\n\nDiante do achado, qual a melhor conduta?",
+    "options": [
+      "Colposcopia para biópsia",
+      "Colposcopia com avaliação endometrial",
+      "Biópsia de canal endocervical",
+      "Repetir a citologia com seis meses",
+      "Histerectomia simples"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ASC-H (células escamosas atípicas, não se pode afastar lesão de alto grau) tem risco relevante de NIC 2+, por isso a conduta das Diretrizes do INCA é encaminhar diretamente para colposcopia, com biópsia de qualquer área alterada, em qualquer idade.",
+    "commentary": "Avaliação endometrial (B): é para células glandulares atípicas (AGC) em mulheres com mais de 35 anos ou com sangramento.\n\nBiópsia de canal endocervical isolada (C): não substitui a colposcopia.\n\nRepetir citologia em 6 meses (D): conduta para ASC-US (de significado indeterminado) em mulheres com 25–29 anos, não para ASC-H.\n\nHisterectomia (E): não há diagnóstico histológico; seria tratamento excessivo.",
+    "reference": "INCA — Diretrizes brasileiras para o rastreamento do câncer do colo do útero (2016)",
+    "tags": [
+      "ginecologia",
+      "câncer de colo uterino",
+      "ASC-H",
+      "colposcopia",
+      "rastreamento"
+    ],
+    "tip": "ASC-H, LSIL em > 25 anos ou HSIL: colposcopia."
+  },
+  {
+    "id": "hpp2026-40",
+    "topography": "16",
+    "topic": "Pré-operatório",
+    "module": "Cirurgia",
+    "text": "Segundo a Associação Americana de Anestesiologia (ASA), uma paciente com 40 anos, diabética bem controlada com medicamentos e que tem exame físico e laboratorial normal no pré-operatório, pode ser classificada como:",
+    "options": [
+      "ASA I.",
+      "ASA II.",
+      "ASA III.",
+      "ASA IV."
     ],
     "correctAnswer": 1,
-    "explanation": "Criança da zona rural que brinca descalça no quintal e no campo, com palidez, fadiga, baixo rendimento escolar, dor abdominal vaga e sopro sistólico (sopro funcional da anemia): anemia ferropriva por perda crônica de sangue intestinal.\n\nO quadro é típico da ancilostomíase (Ancylostoma duodenale/Necator americanus), cujas larvas penetram pela pele em contato com o solo contaminado e, já adultas no intestino, sugam sangue da mucosa. Tratamento: albendazol e reposição de ferro.",
-    "commentary": "Ascaridíase (A): infecção por ingestão de ovos; causa dor abdominal, sintomas pulmonares (Löffler) e obstrução intestinal, mas não é causa clássica de anemia importante.\n\nTricuríase (C): infestação maciça causa disenteria, prolapso retal e anemia, mas a transmissão é por ingestão de ovos, sem relação com andar descalço.\n\nEnterobíase (D): prurido anal noturno, sem anemia.",
-    "reference": "Ministério da Saúde — Doenças infecciosas e parasitárias: guia de bolso / SBP",
+    "explanation": "Na classificação ASA, o ASA II corresponde ao paciente com doença sistêmica leve, sem limitação funcional: hipertensão ou diabetes bem controlados, tabagismo, obesidade leve, gestação.\n\nA diabética bem controlada com exames normais é ASA II.",
+    "commentary": "ASA I (A): paciente saudável, sem doença sistêmica.\n\nASA III (C): doença sistêmica grave com limitação funcional (diabetes ou hipertensão mal controlados, DPOC, obesidade mórbida, IAM há mais de 3 meses).\n\nASA IV (D): doença sistêmica grave que é ameaça constante à vida (IAM recente, insuficiência cardíaca descompensada, sepse).",
+    "reference": "American Society of Anesthesiologists — ASA Physical Status Classification System (2020)",
     "tags": [
-      "ancilostomíase",
-      "parasitoses intestinais",
-      "anemia ferropriva",
-      "geo-helmintíases"
+      "classificação ASA",
+      "avaliação pré-operatória",
+      "risco anestésico"
     ],
-    "tip": "Pé descalço + anemia ferropriva = ancilostomíase (amarelão)."
+    "tip": "Doença sistêmica controlada = ASA II; com limitação = ASA III."
   },
   {
     "id": "hsrc2026-16",
@@ -1356,70 +1363,70 @@ export const SAMPLE_QUESTIONS: Question[] = [
     "tip": "Pulso fraco ou prega muito lenta = desidratação grave = Plano C (venoso)."
   },
   {
-    "id": "amp2026-24",
+    "id": "amp2026-32",
     "topography": "5.2",
-    "topic": "Infecções na gestação",
+    "topic": "Puerpério",
     "module": "Ginecologia e Obstetrícia",
-    "text": "Gestante de 22 anos, G1P0, com 10 semanas de gestação, traz sorologia com IgG e IgM reagentes para Toxoplasma gondii. Ela está assintomática e sem alterações no exame físico. Não há exames prévios disponíveis. Assinale a alternativa que considera o diagnóstico mais provável e a conduta inicial, respectivamente, para essa paciente.",
+    "text": "Puérpera com 24 horas de pós-parto cesáreo por rotura prematura de membranas de 29 horas e distócia de progressão foi diagnosticada com infecção puerperal. Quais os sinais e sintomas clínicos que mais levaram a este diagnóstico?",
     "options": [
-      "Infecção antiga: manter pré-natal habitual e repetir sorologia no terceiro trimestre.",
-      "Sorologia falsa-positiva: solicitar PCR para toxoplasma no sangue materno e repetir IgM em 2 semanas.",
-      "Infecção recente: indicar esquema triplo com sulfadiazina, pirimetamina e ácido folínico por 6 semanas.",
-      "Infecção recente: iniciar espiramicina imediatamente e encaminhar para ultrassonografia morfológica precoce.",
-      "Infecção de data indeterminada: solicitar teste de avidez da IgG e iniciar espiramicina enquanto aguarda resultado."
+      "Temperatura 38 °C, calafrio, dor abdominal e loquiação escassa.",
+      "Dor abdominal moderada, tremores, útero doloroso e hipoinvoluído.",
+      "Temperatura 37,9 °C, dor abdominal, taquicardia, tremores e calafrio.",
+      "Taquicardia, taquipneia, dor abdominal e lóquios abundantes e inodoro.",
+      "Temperatura 38,9 °C, taquicardia, útero doloroso, pastoso e hipoinvoluído."
     ],
     "correctAnswer": 4,
-    "explanation": "IgG e IgM reagentes no primeiro trimestre, sem exames anteriores: a IgM pode persistir por meses ou anos, então não se sabe se a infecção é recente ou antiga — data indeterminada.\n\nA conduta é pedir o teste de avidez de IgG (avidez alta antes de 16 semanas indica infecção há mais de 3–4 meses, anterior à gestação) e iniciar espiramicina enquanto se aguarda, para reduzir a transmissão vertical.",
-    "commentary": "Infecção antiga e pré-natal habitual (A): sem avidez não se pode afirmar que é antiga.\n\nFalso-positivo e PCR materna (B): a PCR no sangue materno não é o exame de escolha; a avidez esclarece a data.\n\nInfecção recente com esquema tríplice (C): o esquema tríplice é para infecção fetal confirmada (PCR no líquido amniótico) ou após 16–18 semanas em casos selecionados; e não está provado que a infecção seja recente.\n\nInfecção recente com espiramicina (D): a espiramicina está correta, mas não se pode afirmar que a infecção é recente.",
-    "reference": "Ministério da Saúde — Protocolo de toxoplasmose gestacional e congênita (2022) / FEBRASGO",
+    "explanation": "A infecção puerperal (endometrite) após cesárea com fatores de risco (rotura prolongada de membranas, trabalho de parto longo) se manifesta tipicamente com febre ≥ 38 °C (geralmente mais alta), taquicardia e útero doloroso, amolecido (pastoso) e hipoinvoluído, muitas vezes com lóquios fétidos.\n\nA alternativa E traz o conjunto mais característico. Tratamento: clindamicina + gentamicina EV.",
+    "commentary": "Febre com lóquios escassos (A): a febre está no limite e os demais achados são inespecíficos; falta a alteração uterina.\n\nSem febre (B): o diagnóstico exige febre.\n\nTemperatura de 37,9 °C (C): abaixo do critério de febre puerperal.\n\nLóquios abundantes e inodoros (D): lóquios normais; taquicardia e taquipneia sem febre ou alteração uterina são inespecíficos.",
+    "reference": "FEBRASGO — Infecção puerperal / Rezende — Obstetrícia",
     "tags": [
-      "toxoplasmose na gestação",
-      "teste de avidez",
-      "espiramicina"
+      "infecção puerperal",
+      "endometrite",
+      "puerpério"
     ],
-    "tip": "IgG + IgM no 1º trimestre: avidez de IgG e espiramicina enquanto espera."
+    "tip": "Endometrite: febre, útero doloroso, amolecido e subinvoluído, lóquios fétidos."
   },
   {
-    "id": "amrigs2025-24",
+    "id": "amrigs2025-28",
     "module": "Cirurgia",
-    "text": "Em pacientes adultos, obstruções intestinais em cólon causadas por doença neoplásica são mais comuns no:",
+    "text": "Sobre as hérnias de hiato, é INCORRETO afirmar que:",
     "options": [
-      "Ângulo hepático.",
-      "Ângulo esplênico.",
-      "Cólon transverso.",
-      "Cólon esquerdo."
+      "Qualquer tipo de hérnia pode gerar sintomas clássicos de refluxo.",
+      "A membrana frenoesofágica é uma continuação da fáscia endoabdominal que se ancora no esôfago.",
+      "As hérnias paraesofágicas podem estar associadas à doença do refluxo gastroesofágico (DRGE).",
+      "A pressão relativamente positiva dentro do tórax facilita a migração visceral."
     ],
     "correctAnswer": 3,
-    "explanation": "A obstrução do cólon por câncer é mais frequente no cólon esquerdo (descendente e sigmoide): a luz é mais estreita, as fezes são mais sólidas e os tumores costumam ser anulares e estenosantes (\"em anel de guardanapo\"). No cólon direito, de luz maior e fezes líquidas, o tumor tende a sangrar (anemia) antes de obstruir.",
-    "commentary": "Ângulo hepático (A): pertence ao cólon direito/transverso, menos sujeito a obstrução.\n\nÂngulo esplênico (B): é um ponto de estreitamento e pode obstruir, mas, isoladamente, não é a localização mais comum.\n\nCólon transverso (C): menos frequente que o cólon esquerdo como sede de câncer obstrutivo.",
-    "reference": "Sabiston — Tratado de Cirurgia / Diretrizes da SBCP",
+    "explanation": "A pergunta pede a INCORRETA. A pressão intratorácica é negativa em relação à abdominal; é esse gradiente (pressão abdominal positiva, torácica negativa) que favorece a migração das vísceras para o tórax. Dizer que o tórax tem pressão \"relativamente positiva\" está errado.",
+    "commentary": "Qualquer tipo pode dar sintomas de refluxo (A): correta — inclusive as paraesofágicas.\n\nMembrana frenoesofágica (B): correta — é uma continuação da fáscia endoabdominal (transversalis) que se ancora no esôfago.\n\nParaesofágicas associadas a DRGE (C): correta — sobretudo as mistas (tipo III), em que a junção também migra.",
+    "reference": "Sabiston — Tratado de Cirurgia / SAGES — Guidelines for the management of hiatal hernia (2013)",
     "tags": [
-      "câncer colorretal",
-      "obstrução intestinal",
-      "cólon esquerdo"
+      "hérnia de hiato",
+      "DRGE",
+      "membrana frenoesofágica"
     ],
-    "tip": "Cólon esquerdo obstrui; cólon direito sangra (anemia)."
+    "tip": "Gradiente: abdome com pressão positiva, tórax negativa — as vísceras sobem."
   },
   {
-    "id": "amrigs2025-88",
+    "id": "amrigs2025-96",
     "module": "Saúde Coletiva",
-    "text": "Assinale a alternativa que apresenta doenças ou agravos que se enquadram como situação de notificação compulsória imediata (até 24 horas) no Brasil.",
+    "text": "Um paciente é suspeito de ter uma infecção bacteriana grave. Dois testes rápidos, aplicados em paralelo, mostraram-se contraditórios: o primeiro deu positivo, e o segundo deu negativo. Como interpretar esse resultado?",
     "options": [
-      "Tuberculose e intoxicação exógena.",
-      "Esquistossomose e HIV/AIDS.",
-      "Raiva humana e síndrome da rubéola congênita.",
-      "Sífilis e casos de dengue."
+      "O paciente deve ser considerado negativo, pois um dos testes foi negativo.",
+      "O paciente deve ser considerado positivo, já que apenas um resultado positivo é necessário em testes em paralelo.",
+      "O paciente deve ser retestado com um terceiro teste para maior certeza.",
+      "O paciente está livre de infecção, já que não há concordância entre os testes."
     ],
-    "correctAnswer": 2,
-    "explanation": "Pela Lista Nacional de Notificação Compulsória (Portaria de Consolidação nº 4/2017, atualizada), raiva humana e síndrome da rubéola congênita são de notificação imediata (em até 24 horas) às três esferas de gestão.",
-    "commentary": "Tuberculose e intoxicação exógena (A): notificação semanal.\n\nEsquistossomose e HIV/aids (B): notificação semanal (esquistossomose é imediata só em área não endêmica).\n\nSífilis e dengue (D): notificação semanal; a dengue só é imediata nos óbitos.",
-    "reference": "Ministério da Saúde — Lista Nacional de Notificação Compulsória (Portaria GM/MS nº 217/2023 e atualizações)",
+    "correctAnswer": 1,
+    "explanation": "Em testes em paralelo, basta um resultado positivo para considerar o paciente positivo. A estratégia aumenta a sensibilidade (perde menos doentes) à custa de especificidade — adequada quando não se pode deixar passar uma doença grave, como infecção bacteriana grave.",
+    "commentary": "Considerar negativo (A): descreve a lógica dos testes em série, em que todos precisam ser positivos.\n\nTerceiro teste (C): não é a regra de interpretação dos testes em paralelo.\n\nLivre de infecção por discordância (D): discordância não exclui doença; em paralelo, um positivo basta.",
+    "reference": "Fletcher — Epidemiologia Clínica: elementos essenciais",
     "tags": [
-      "notificação compulsória",
-      "vigilância epidemiológica",
-      "raiva humana",
-      "rubéola congênita"
+      "testes em paralelo",
+      "testes diagnósticos",
+      "sensibilidade",
+      "especificidade"
     ],
-    "tip": "Imediatas clássicas: raiva, rubéola, sarampo, botulismo, cólera, febre amarela, pólio, PFA."
+    "tip": "Paralelo: ↑ sensibilidade (um positivo basta). Série: ↑ especificidade (todos positivos)."
   }
 ];
