@@ -1,8 +1,9 @@
 import { Question } from '../types';
 
 // Simulado "Sugerido ENAMED - 1" — 100 questões no formato ENAMED.
-// Gabarito TÉCNICO, não oficial (nenhuma banca publicou gabarito para estes itens).
-// Questões provisórias (com * no material de origem) levam `alert`.
+// Gabarito OFICIAL divulgado pelos organizadores do simulado.
+// Onde o oficial é discutível, a alternativa tecnicamente defensável entra em `alsoAccepted`
+// e o `alert` explica a controvérsia.
 export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
   {
     "id": "sug-enamed1-1",
@@ -16,18 +17,21 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(C) Realizar ecocardiograma transesofágico.",
       "(D) Iniciar anticoagulação plena."
     ],
-    "correctAnswer": 3,
-    "explanation": "Taquicardia de QRS estreito, com intervalos R-R irregulares e sem ondas P: fibrilação atrial (FA) com resposta ventricular rápida, iniciada há cerca de 2 horas. O paciente está estável — PA 128 × 78 mmHg, SatO₂ 98%, sem dor torácica, dispneia, congestão ou rebaixamento de consciência —, então não há indicação de cardioversão de emergência. O passo comum a qualquer estratégia é a proteção contra AVC: o CHA₂DS₂-VA é 2 (hipertensão + idade 65–74 anos), o que indica anticoagulação plena, mantida por tempo indeterminado, independentemente de se controlar a frequência ou reverter o ritmo.\n\nRoteiro da FA aguda:\n\n• Estabilidade: hipotensão/choque, angina, edema agudo de pulmão ou rebaixamento de consciência → cardioversão elétrica sincronizada imediata. Sem esses critérios, há tempo para decidir.\n• CHA₂DS₂-VA: insuficiência cardíaca (1), hipertensão (1), idade ≥ 75 anos (2), diabetes (1), AVC/AIT/embolia prévia (2), doença vascular (1), idade 65–74 anos (1). Escore ≥ 2 → anticoagular; escore 1 → considerar. Preferir os anticoagulantes diretos (apixabana, rivaroxabana, edoxabana, dabigatrana); varfarina se estenose mitral moderada a grave ou prótese mecânica.\n• Controle da frequência (alvo FC < 110 bpm em repouso): betabloqueador ou bloqueador de canal de cálcio não di-hidropiridínico (diltiazem, verapamil); digoxina ou amiodarona se disfunção ventricular.\n• Controle do ritmo (cardioversão elétrica ou química): FA < 24–48 h e baixo risco → pode reverter sem ecocardiograma transesofágico, já sob anticoagulação; FA ≥ 48 h, de início incerto ou com risco tromboembólico elevado → anticoagular por 3 semanas antes ou fazer ecocardiograma transesofágico para excluir trombo. Em todos os casos, anticoagular por pelo menos 4 semanas após a reversão.",
-    "commentary": "Alternativa (A): marca-passo temporário trata bradicardia sintomática ou bloqueio AV avançado; aqui a frequência é alta, não baixa.\n\nAlternativa (B): cardioversão elétrica imediata é reservada à FA instável. No paciente estável, é uma das opções de controle do ritmo, mas com CHA₂DS₂-VA 2 só deve ser feita sob anticoagulação — e não é obrigatória.\n\nAlternativa (C): o ecocardiograma transesofágico só é usado se a estratégia escolhida for reverter o ritmo sem as 3 semanas prévias de anticoagulação; não é o primeiro passo de todo paciente.\n\nPonto de controvérsia: em FA com menos de 48 h, parte da literatura aceita cardioversão precoce já com o anticoagulante iniciado, o que tornaria B defensável. A anticoagulação, porém, é a única conduta obrigatória em qualquer cenário.",
-    "tip": "FA estável: anticoagule conforme o CHA₂DS₂-VA e só depois escolha entre controlar a frequência ou o ritmo. FA instável: cardioversão elétrica sincronizada imediata.",
+    "correctAnswer": 1,
+    "alsoAccepted": [
+      3
+    ],
+    "explanation": "Fibrilação atrial (FA) com início há cerca de 2 horas, em paciente estável (PA preservada, SatO₂ 98%, sem dor torácica, congestão ou rebaixamento de consciência). O gabarito oficial é a cardioversão elétrica: com a FA de menos de 48 horas — e, de preferência, menos de 24 horas —, pode-se optar pelo controle do ritmo já, sem ecocardiograma transesofágico e sem as 3 semanas prévias de anticoagulação, porque a chance de trombo no átrio ainda é baixa. A cardioversão elétrica sincronizada, sob sedação, reverte o ritmo em mais de 90% dos casos. A anticoagulação deve ser iniciada antes ou junto da cardioversão e mantida por pelo menos 4 semanas — e, como o CHA₂DS₂-VA é 2 (hipertensão + idade de 65 a 74 anos), por tempo indeterminado. Por isso a alternativa D (anticoagulação plena) também é aceita: ela é obrigatória em qualquer estratégia.\n\nRoteiro da FA aguda:\n\n• Estabilidade: hipotensão/choque, angina, edema agudo de pulmão ou rebaixamento de consciência → cardioversão elétrica sincronizada imediata. Sem esses critérios, há tempo para decidir.\n• CHA₂DS₂-VA: insuficiência cardíaca (1), hipertensão (1), idade ≥ 75 anos (2), diabetes (1), AVC/AIT/embolia prévia (2), doença vascular (1), idade 65–74 anos (1). Escore ≥ 2 → anticoagular; escore 1 → considerar. Preferir os anticoagulantes diretos (apixabana, rivaroxabana, edoxabana, dabigatrana); varfarina se estenose mitral moderada a grave ou prótese mecânica.\n• Controle da frequência (alvo FC < 110 bpm em repouso): betabloqueador ou bloqueador de canal de cálcio não di-hidropiridínico (diltiazem, verapamil); digoxina ou amiodarona se disfunção ventricular.\n• Controle do ritmo (cardioversão elétrica ou química): FA < 24–48 h e baixo risco → pode reverter sem ecocardiograma transesofágico, já sob anticoagulação; FA ≥ 48 h, de início incerto ou com risco tromboembólico elevado → anticoagular por 3 semanas antes ou fazer ecocardiograma transesofágico para excluir trombo. Em todos os casos, anticoagular por pelo menos 4 semanas após a reversão.",
+    "commentary": "Alternativa (A): marca-passo temporário trata bradicardia sintomática ou bloqueio AV avançado; aqui a frequência é alta.\n\nAlternativa (C): o ecocardiograma transesofágico é usado para excluir trombo antes da cardioversão quando a FA tem 48 horas ou mais (ou duração incerta) e o paciente não está anticoagulado há 3 semanas — não é o caso de uma FA de 2 horas.\n\nAlternativa (D): também aceita. A anticoagulação plena é indispensável neste paciente (CHA₂DS₂-VA 2), e diretrizes recentes (ESC 2024) recomendam anticoagular antes de qualquer cardioversão quando o risco tromboembólico é elevado; muitas referências preferem controlar a frequência e anticoagular, deixando a cardioversão eletiva.",
+    "tip": "FA estável < 48 h: pode cardioverter já (elétrica ou química), anticoagulando antes e por ≥ 4 semanas depois. ≥ 48 h ou duração incerta: 3 semanas de anticoagulação ou ETE antes. Instável: cardioversão imediata. Anticoagulação a longo prazo pelo CHA₂DS₂-VA.",
     "reference": "Van Gelder IC et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J, 2024. Sociedade Brasileira de Cardiologia. Diretrizes Brasileiras de Fibrilação Atrial.",
     "tags": [
       "clínica médica",
-      "gabarito técnico",
-      "gabarito provisório"
+      "gabarito oficial",
+      "gabarito discutível"
     ],
-    "alert": "Gabarito provisório, não oficial (alta controvérsia). Resposta adotada: D (anticoagulação plena pelo CHA₂DS₂-VA de 2 pontos).",
-    "image": "/images/sugenamed1-1.webp"
+    "image": "/images/sugenamed1-1.webp",
+    "alert": "Gabarito oficial: B. A alternativa D (anticoagulação plena) também conta como acerto: com CHA₂DS₂-VA 2, anticoagular é obrigatório em qualquer estratégia, e diretrizes recentes priorizam anticoagular antes de cardioverter."
   },
   {
     "id": "sug-enamed1-2",
@@ -48,7 +52,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sweet DG et al. European Consensus Guidelines on the Management of Respiratory Distress Syndrome: 2022 Update. Neonatology, 2023. Sociedade Brasileira de Pediatria. Reanimação do prematuro < 34 semanas em sala de parto, 2022.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -70,7 +74,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sabiston Textbook of Surgery. 21ª ed. Cap. Fluidos, eletrólitos e equilíbrio ácido-base. Rose BD, Post TW. Clinical Physiology of Acid-Base and Electrolyte Disorders.",
     "tags": [
       "cirurgia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -92,7 +96,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "The 2022 Hormone Therapy Position Statement of The North American Menopause Society. Menopause, 2022. Pompei LM et al. Consenso Brasileiro de Terapêutica Hormonal da Menopausa — SOBRAC, 2018.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -114,7 +118,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Dengue: diagnóstico e manejo clínico — adulto e criança. 6ª ed. Brasília: MS, 2024.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -129,15 +133,20 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(C) Ampliar a abordagem multiprofissional das comorbidades e realizar ações educativas no território.",
       "(D) Articular cuidado com a rede intersetorial e abordar as interseccionalidades das mulheres."
     ],
-    "correctAnswer": 2,
-    "explanation": "A análise do território mostra um grupo de mulheres de 45 a 59 anos no climatério, com sintomas vasomotores, de humor, de sono e urogenitais, e com alta prevalência de hipertensão e diabetes. A resposta da atenção primária a um problema coletivo do território combina duas frentes: cuidado clínico integral (avaliar sintomas, tratar o climatério quando indicado e controlar as comorbidades cardiovasculares e metabólicas) com abordagem multiprofissional, e ações coletivas de educação em saúde. É exatamente o que propõe a alternativa C.\n\nPolíticas e redes que a questão cobra:\n\n• PNAISM (Política Nacional de Atenção Integral à Saúde da Mulher, 2004): incluiu o climatério como fase do ciclo de vida a ser cuidada, superando a visão restrita ao ciclo gravídico-puerperal.\n• Manual de Atenção à Mulher no Climatério/Menopausa (MS): o climatério é acompanhado na atenção primária, com abordagem integral (sintomas, saúde cardiovascular, óssea, mental, sexualidade), atividades educativas em grupo e encaminhamento só quando necessário.\n• Atributos da APS: primeiro contato, longitudinalidade, integralidade e coordenação do cuidado, mais orientação comunitária (agir sobre o perfil do território).\n• eMulti (antigo NASF): equipe multiprofissional que apoia as equipes de Saúde da Família com atendimento compartilhado, grupos e matriciamento.\n• Rede Alyne (2024, substituiu a Rede Cegonha): cuidado materno e infantil — pré-natal, parto, puerpério e criança até 2 anos.\n• RAPS (Rede de Atenção Psicossocial): pessoas com sofrimento mental grave e persistente ou uso problemático de álcool e outras drogas.",
-    "commentary": "Alternativa (A): estruturar fluxos para a RAPS trata irritabilidade e insônia do climatério como transtorno mental, o que medicaliza e encaminha sem necessidade. Sintomas psíquicos leves do climatério são cuidados na própria APS; a RAPS fica para casos graves.\n\nAlternativa (B): a Rede Alyne é voltada à gestação, ao parto, ao puerpério e à criança, não ao climatério; e comorbidades como hipertensão e diabetes são acompanhadas na própria APS, não referenciadas por si só.\n\nAlternativa (D): intersetorialidade e interseccionalidade (raça, classe, gênero, território) são princípios importantes, mas o enunciado aponta um problema clínico concreto — sintomas do climatério e comorbidades —, que exige primeiro o cuidado clínico multiprofissional. D é complementar, não a estratégia central.",
-    "tip": "Problema identificado no território da UBS: resolva na própria APS — cuidado integral multiprofissional + ação educativa coletiva. Climatério não é encaminhamento automático.",
+    "correctAnswer": 3,
+    "alsoAccepted": [
+      2
+    ],
+    "explanation": "Gabarito oficial: D. A análise do território mostra mulheres de 45 a 59 anos no climatério, com sintomas vasomotores, de humor, de sono e urogenitais, e alta prevalência de hipertensão e diabetes. A banca valorizou a abordagem ampliada da Política Nacional de Atenção Integral à Saúde da Mulher: o climatério não é só um evento biológico — renda, trabalho, raça/cor, violência, sobrecarga de cuidado e acesso aos serviços influenciam como os sintomas e as comorbidades aparecem e são tratados (interseccionalidade). Articular o cuidado com a rede intersetorial (assistência social, educação, trabalho, esporte e lazer) e considerar essas desigualdades faz parte do cuidado integral. A alternativa C — ampliar a abordagem multiprofissional das comorbidades e fazer ações educativas no território — também descreve cuidado adequado na APS e é aceita como certa.\n\nPolíticas e redes que a questão cobra:\n\n• PNAISM (Política Nacional de Atenção Integral à Saúde da Mulher, 2004): incluiu o climatério como fase do ciclo de vida a ser cuidada, superando a visão restrita ao ciclo gravídico-puerperal.\n• Manual de Atenção à Mulher no Climatério/Menopausa (MS): o climatério é acompanhado na atenção primária, com abordagem integral (sintomas, saúde cardiovascular, óssea, mental, sexualidade), atividades educativas em grupo e encaminhamento só quando necessário.\n• Atributos da APS: primeiro contato, longitudinalidade, integralidade e coordenação do cuidado, mais orientação comunitária (agir sobre o perfil do território).\n• eMulti (antigo NASF): equipe multiprofissional que apoia as equipes de Saúde da Família com atendimento compartilhado, grupos e matriciamento.\n• Rede Alyne (2024, substituiu a Rede Cegonha): cuidado materno e infantil — pré-natal, parto, puerpério e criança até 2 anos.\n• RAPS (Rede de Atenção Psicossocial): pessoas com sofrimento mental grave e persistente ou uso problemático de álcool e outras drogas.",
+    "commentary": "Alternativa (A): estruturar fluxos para a RAPS trata irritabilidade e insônia do climatério como transtorno mental, o que medicaliza e encaminha sem necessidade; sintomas psíquicos leves do climatério são cuidados na própria APS.\n\nAlternativa (B): a Rede Alyne é voltada à gestação, ao parto, ao puerpério e à criança, não ao climatério; e hipertensão e diabetes são acompanhadas na APS, não referenciadas por si só.\n\nAlternativa (C): também aceita. Cuidado clínico multiprofissional das comorbidades e ações educativas coletivas são o núcleo do que o Manual de Atenção à Mulher no Climatério propõe; o enunciado não traz elemento (como vulnerabilidade social explícita) que torne D claramente superior.",
+    "tip": "Climatério na APS: cuidado integral, multiprofissional e intersetorial, considerando as desigualdades (raça, renda, gênero, território), com ações educativas — não encaminhamento automático.",
     "reference": "Brasil. Ministério da Saúde. Manual de Atenção à Mulher no Climatério/Menopausa. Brasília: MS, 2008. Brasil. Política Nacional de Atenção Integral à Saúde da Mulher, 2004. Portaria GM/MS nº 5.350/2024 (Rede Alyne).",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
-    ]
+      "gabarito oficial",
+      "gabarito discutível"
+    ],
+    "alert": "Gabarito oficial: D. A alternativa C também conta como acerto: as duas descrevem estratégias de cuidado integral adequadas, e o enunciado não traz elemento que torne uma claramente superior."
   },
   {
     "id": "sug-enamed1-7",
@@ -158,7 +167,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Lam RW et al. Canadian Network for Mood and Anxiety Treatments (CANMAT) 2023 Update on Clinical Guidelines for Management of Major Depressive Disorder in Adults. Can J Psychiatry, 2024.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -180,7 +189,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American Diabetes Association. Standards of Care in Diabetes — 2025. KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease. Sociedade Brasileira de Diabetes. Diretriz Oficial, 2024.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -200,7 +209,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Pediatria. Tratado de Pediatria. 5ª ed. Doenças exantemáticas. Brasil. Ministério da Saúde. Guia de Vigilância em Saúde. 6ª ed., 2024.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -222,7 +231,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Morey AF et al. Urotrauma Guideline. American Urological Association, 2020. Sociedade Brasileira de Urologia — Trauma urogenital.",
     "tags": [
       "cirurgia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -244,7 +253,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Protocolo — Gravidez ectópica, 2021. ACOG Practice Bulletin nº 193: Tubal Ectopic Pregnancy, 2018.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -266,7 +275,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Diabetes. Diretriz Oficial — Tratamento farmacológico do diabetes tipo 2, 2024. American Diabetes Association. Standards of Care in Diabetes — 2025. KDIGO 2022 Diabetes in CKD.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -288,7 +297,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Cadernos de Atenção Básica nº 32 — Atenção ao pré-natal de baixo risco, 2012. Brasil. Ministério da Saúde. Manual de Gestação de Alto Risco, 2022.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -310,7 +319,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Portaria nº 3.088/2011 (Rede de Atenção Psicossocial), consolidada na Portaria de Consolidação nº 3/2017. Brasil. Lei nº 10.216, de 6 de abril de 2001.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -332,7 +341,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Larkin PJ et al. Diagnosis, assessment and management of constipation in advanced cancer: ESMO Clinical Practice Guidelines. Ann Oncol, 2018. Academia Nacional de Cuidados Paliativos (ANCP). Manual de Cuidados Paliativos. 2ª ed.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -354,7 +363,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Pediatria. Tratado de Pediatria. 5ª ed. Cardiopatias congênitas. Park MK. Park's Pediatric Cardiology for Practitioners. 7ª ed.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -369,17 +378,20 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(C) Drenagem torácica simples no quinto espaço intercostal.",
       "(D) Curativo oclusivo com fixação em três lados."
     ],
-    "correctAnswer": 3,
-    "explanation": "Ferimento por arma branca de 5 cm no 3º espaço intercostal direito, com taquipneia, dor ventilatória dependente, murmúrio vesicular reduzido e crepitações, em paciente hemodinamicamente estável: pneumotórax aberto (ferida torácica aspirativa). Quando o orifício da parede tem mais de cerca de 2/3 do diâmetro da traqueia, o ar entra preferencialmente pela ferida a cada inspiração, colapsando o pulmão. A conduta imediata do ATLS é o curativo oclusivo estéril fixado em três lados: na inspiração, o curativo é sugado e veda a ferida; na expiração, o lado livre deixa o ar sair, evitando o pneumotórax hipertensivo. Em seguida, drenagem torácica em local distante da ferida e, depois, fechamento cirúrgico da ferida.\n\nLesões torácicas que matam na avaliação primária (ATLS):\n\n• Pneumotórax hipertensivo: desvio de traqueia, turgência jugular, hipotensão, murmúrio abolido e hipertimpanismo. Diagnóstico clínico — descompressão imediata com agulha (5º espaço intercostal, entre as linhas axilares anterior e média no adulto) e depois dreno.\n• Pneumotórax aberto: curativo de três lados (ou selo torácico com válvula) e dreno em outro local.\n• Hemotórax maciço: > 1.500 mL na drenagem inicial ou > 200 mL/h por 2–4 h → toracotomia.\n• Tamponamento cardíaco: tríade de Beck (hipotensão, turgência jugular, abafamento de bulhas); FAST. Pericardiocentese como ponte, toracotomia/janela pericárdica como tratamento.\n• Tórax instável com contusão pulmonar: analgesia, oxigênio e ventilação se necessário.\n\nDrenagem torácica: 5º espaço intercostal, entre as linhas axilares anterior e média, na borda superior da costela inferior, nunca pelo próprio ferimento. A maioria dos traumas torácicos penetrantes (cerca de 85%) se resolve só com drenagem.",
-    "commentary": "Alternativa (A): drenar pelo próprio ferimento é contraindicado: o trajeto é contaminado, o dreno pode seguir o caminho da lesão para estruturas lesadas e a vedação ao redor do dreno fica ruim.\n\nAlternativa (B): o curativo fixado nos quatro lados transforma o pneumotórax aberto em pneumotórax hipertensivo, porque o ar que continua saindo do pulmão lesado não tem por onde escapar.\n\nAlternativa (C): a drenagem torácica no 5º espaço é o tratamento definitivo e deve ser feita logo em seguida, mas a medida imediata, na avaliação primária, é vedar a ferida aspirativa com o curativo de três lados. Por isso C fica como segundo passo.\n\nRessalva: o enunciado não descreve explicitamente o ar entrando e saindo pela ferida; a resposta parte da interpretação de que uma ferida de 5 cm é aspirativa. Hoje, quando disponível, usa-se selo torácico comercial com válvula no lugar do curativo improvisado.",
-    "tip": "Ferida torácica aspirativa (pneumotórax aberto): curativo oclusivo fixo em 3 lados e dreno em outro local. Fechar os 4 lados = pneumotórax hipertensivo.",
+    "correctAnswer": 2,
+    "alsoAccepted": [
+      3
+    ],
+    "explanation": "Gabarito oficial: C (drenagem torácica simples no 5º espaço intercostal). Ferimento penetrante no hemitórax direito com taquipneia, murmúrio vesicular reduzido e crepitações, em paciente hemodinamicamente estável: pneumotórax (ou hemopneumotórax) traumático. O tratamento é a drenagem pleural fechada em selo d'água no 5º espaço intercostal, entre as linhas axilares anterior e média, longe da ferida — a maioria dos traumas torácicos penetrantes (cerca de 85%) se resolve só com ela. Se a ferida for aspirativa (pneumotórax aberto — ar entrando e saindo pela lesão), o ATLS orienta, antes, vedá-la com curativo oclusivo fixado em três lados; como o enunciado não descreve ar passando pela ferida, a banca considerou a drenagem a conduta indicada. A alternativa D, medida imediata do pneumotórax aberto, também é aceita.\n\nLesões torácicas que matam na avaliação primária (ATLS):\n\n• Pneumotórax hipertensivo: desvio de traqueia, turgência jugular, hipotensão, murmúrio abolido e hipertimpanismo. Diagnóstico clínico — descompressão imediata com agulha (5º espaço intercostal, entre as linhas axilares anterior e média no adulto) e depois dreno.\n• Pneumotórax aberto: curativo de três lados (ou selo torácico com válvula) e dreno em outro local.\n• Hemotórax maciço: > 1.500 mL na drenagem inicial ou > 200 mL/h por 2–4 h → toracotomia.\n• Tamponamento cardíaco: tríade de Beck (hipotensão, turgência jugular, abafamento de bulhas); FAST. Pericardiocentese como ponte, toracotomia/janela pericárdica como tratamento.\n• Tórax instável com contusão pulmonar: analgesia, oxigênio e ventilação se necessário.\n\nDrenagem torácica: 5º espaço intercostal, entre as linhas axilares anterior e média, na borda superior da costela inferior, nunca pelo próprio ferimento. A maioria dos traumas torácicos penetrantes (cerca de 85%) se resolve só com drenagem.",
+    "commentary": "Alternativa (A): drenar pelo próprio ferimento é contraindicado: o trajeto é contaminado, o dreno pode seguir o caminho da lesão e a vedação ao redor do dreno fica ruim.\n\nAlternativa (B): o curativo fixado nos quatro lados transforma um pneumotórax aberto em hipertensivo, porque o ar que sai do pulmão lesado não tem por onde escapar.\n\nAlternativa (D): também aceita. Uma ferida de 5 cm (maior que 2/3 do diâmetro da traqueia) pode ser aspirativa; nesse caso, o curativo de três lados é a medida imediata da avaliação primária, seguida da drenagem em local distante — hoje, de preferência, com selo torácico valvulado.",
+    "tip": "Trauma torácico penetrante com pneumo/hemotórax em paciente estável: dreno no 5º espaço intercostal, entre as linhas axilares anterior e média, nunca pela ferida. Ferida aspirativa: curativo de 3 lados antes; fechar os 4 lados = pneumotórax hipertensivo.",
     "reference": "American College of Surgeons. Advanced Trauma Life Support (ATLS) — Student Course Manual. 10ª ed., 2018.",
     "tags": [
       "cirurgia",
-      "gabarito técnico",
-      "gabarito provisório"
+      "gabarito oficial",
+      "gabarito discutível"
     ],
-    "alert": "Gabarito provisório, não oficial (ressalva de diretriz). Distinguir conduta de prova tradicional e protocolos modernos de trauma; um selo ventilado substitui o curativo improvisado quando disponível."
+    "alert": "Gabarito oficial: C. A alternativa D também conta como acerto: se a ferida de 5 cm for aspirativa (pneumotórax aberto), o curativo de três lados é a medida imediata pelo ATLS, antes da drenagem."
   },
   {
     "id": "sug-enamed1-18",
@@ -398,7 +410,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American College of Radiology. ACR BI-RADS Atlas. 5ª ed., 2013. Urban LABD et al. Recomendações do CBR, SBM e FEBRASGO para o rastreamento do câncer de mama, 2023. INCA. Diretrizes para a detecção precoce do câncer de mama no Brasil.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -418,7 +430,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Manual de Vigilância e Controle da Leishmaniose Visceral, 2014. Brasil. Ministério da Saúde. Guia de Vigilância em Saúde. 6ª ed., 2024.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -440,7 +452,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Cardiologia. Diretrizes Brasileiras de Hipertensão Arterial — 2025. Fletcher GS. Epidemiologia Clínica: elementos essenciais. 6ª ed.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -462,7 +474,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Norma Técnica — Prevenção e tratamento dos agravos resultantes da violência sexual contra mulheres e adolescentes. 3ª ed., 2012. Brasil. PCDT para Profilaxia Pós-Exposição de Risco à Infecção pelo HIV, IST e Hepatites Virais. Leis nº 10.778/2003, 12.845/2013 e 13.931/2019.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -484,7 +496,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Cardiologia. Diretriz Brasileira de Doença Arterial Coronariana Crônica – 2024. Arq Bras Cardiol.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -506,7 +518,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Cadernos de Atenção Básica nº 23 — Saúde da criança: aleitamento materno e alimentação complementar. 2ª ed., 2015. OMS/UNICEF. Global Action Plan for Prevention and Control of Pneumonia and Diarrhoea (GAPPD), 2013.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -521,18 +533,21 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(C) Tração no antebraço e colocação de fixador externo.",
       "(D) Fasciotomia em antebraço e redução cirúrgica da fratura."
     ],
-    "correctAnswer": 0,
-    "explanation": "Criança de 6 anos com queda e apoio no membro estendido, dor, edema e deformidade no cotovelo e radiografia com fratura supracondiliana do úmero desviada: é a fratura mais comum do cotovelo na infância (pico entre 5 e 7 anos), quase sempre do tipo em extensão. O pulso radial e ulnar diminuídos indicam comprometimento vascular — o fragmento proximal pode comprimir ou estirar a artéria braquial —, o que torna a redução urgente. A conduta é a redução fechada (incruenta) o quanto antes, que costuma restabelecer o fluxo, seguida de estabilização (o padrão hoje é fixação percutânea com fios de Kirschner) e imobilização axilopalmar. Entre as alternativas, a A é a que contempla a redução urgente.\n\nRoteiro da fratura supracondiliana do úmero na criança:\n\n• Classificação de Gartland (tipo extensão): I — sem desvio → imobilização axilopalmar com cotovelo a 90° por cerca de 3 semanas. II — angulada com a cortical posterior íntegra → redução fechada e, na maioria, fixação com fios. III — desvio completo → redução fechada e fixação percutânea com fios de Kirschner, com urgência. IV — instabilidade em flexão e extensão.\n• Lesões nervosas: o nervo interósseo anterior (ramo do mediano) é o mais lesado — a criança não consegue fazer o sinal de OK com polegar e indicador; também nervo radial e, na fixação com fio medial, o ulnar (lesão iatrogênica).\n• Lesão vascular: mão sem pulso mas rosada e perfundida → redução e fixação, depois observação; mão branca, fria e sem perfusão → redução imediata e, se a perfusão não voltar, exploração da artéria braquial.\n• Síndrome compartimental do antebraço: dor desproporcional, que piora com a extensão passiva dos dedos, antebraço tenso. Exige fasciotomia; se não tratada, leva à contratura isquêmica de Volkmann.\n• Complicação tardia mais comum: cúbito varo (deformidade em coronha de espingarda), por consolidação viciosa.",
-    "commentary": "Alternativa (B): a tala em posição de Velpeau (braço junto ao tórax) é usada em fraturas do úmero proximal e da clavícula; não reduz a fratura supracondiliana desviada nem resolve o compromisso vascular.\n\nAlternativa (C): tração esquelética e fixador externo não são o tratamento padrão dessa fratura na criança; a tração ficou restrita a situações excepcionais, e atrasaria a redução num membro com pulso diminuído.\n\nAlternativa (D): fasciotomia é para síndrome compartimental, que o enunciado não descreve (dor desproporcional, dor à extensão passiva, compartimento tenso). Pulso diminuído por si só pede redução, não fasciotomia.\n\nSobre a alternativa (A): está incompleta — a redução deve ser feita no centro cirúrgico, com fixação percutânea por fios de Kirschner, e não apenas com tala. É a mais próxima da conduta correta por priorizar a redução urgente.",
-    "tip": "Criança + queda com mão estendida + cotovelo deformado = fratura supracondiliana. Desviada ou com pulso diminuído: redução fechada urgente e fios de Kirschner. Cheque o nervo interósseo anterior (sinal do OK).",
+    "correctAnswer": 3,
+    "alsoAccepted": [
+      0
+    ],
+    "explanation": "Gabarito oficial: D (fasciotomia do antebraço e redução cirúrgica). A radiografia mostra fratura supracondiliana do úmero com desvio completo (Gartland III), 6 horas após a queda, com cotovelo muito edemaciado, deformado e pulsos radial e ulnar diminuídos. A banca interpretou o quadro como fratura com comprometimento vascular e risco de síndrome compartimental do antebraço: além de reduzir e fixar a fratura no centro cirúrgico (redução aberta quando a fechada não é possível ou quando é preciso explorar a artéria braquial), faz-se a fasciotomia para descomprimir os compartimentos e evitar a contratura isquêmica de Volkmann. Pelos protocolos atuais, porém, a fasciotomia exige sinais de síndrome compartimental (dor desproporcional, dor à extensão passiva dos dedos, antebraço tenso), que o enunciado não descreve, e a 1ª conduta diante de pulso diminuído é a redução fechada urgente com fixação percutânea — por isso a alternativa A também é aceita.\n\nRoteiro da fratura supracondiliana do úmero na criança:\n\n• Classificação de Gartland (tipo extensão): I — sem desvio → imobilização axilopalmar com cotovelo a 90° por cerca de 3 semanas. II — angulada com a cortical posterior íntegra → redução fechada e, na maioria, fixação com fios. III — desvio completo → redução fechada e fixação percutânea com fios de Kirschner, com urgência. IV — instabilidade em flexão e extensão.\n• Lesões nervosas: o nervo interósseo anterior (ramo do mediano) é o mais lesado — a criança não consegue fazer o sinal de OK com polegar e indicador; também nervo radial e, na fixação com fio medial, o ulnar (lesão iatrogênica).\n• Lesão vascular: mão sem pulso mas rosada e perfundida → redução e fixação, depois observação; mão branca, fria e sem perfusão → redução imediata e, se a perfusão não voltar, exploração da artéria braquial.\n• Síndrome compartimental do antebraço: dor desproporcional, que piora com a extensão passiva dos dedos, antebraço tenso. Exige fasciotomia; se não tratada, leva à contratura isquêmica de Volkmann.\n• Complicação tardia mais comum: cúbito varo (deformidade em coronha de espingarda), por consolidação viciosa.",
+    "commentary": "Alternativa (A): também aceita. A redução incruenta urgente é o passo que costuma restabelecer o fluxo da artéria braquial; o padrão atual é complementá-la com fixação percutânea por fios de Kirschner no centro cirúrgico, e não só com tala.\n\nAlternativa (B): a tala em posição de Velpeau (braço junto ao tórax) é usada em fraturas do úmero proximal e da clavícula; não reduz a fratura supracondiliana desviada nem resolve o compromisso vascular.\n\nAlternativa (C): tração esquelética com fixador externo não é o tratamento dessa fratura na criança e atrasaria a redução num membro com pulso diminuído.",
+    "tip": "Supracondiliana desviada + pulso diminuído: redução urgente e fios de Kirschner; sem perfusão após reduzir, explorar a artéria. Dor desproporcional, dor à extensão passiva e antebraço tenso = síndrome compartimental → fasciotomia.",
     "reference": "Rockwood and Wilkins' Fractures in Children. 9ª ed. Supracondylar fractures of the distal humerus. American Academy of Orthopaedic Surgeons. Clinical Practice Guideline — Management of Pediatric Supracondylar Humerus Fractures.",
     "tags": [
       "cirurgia",
-      "gabarito técnico",
-      "gabarito provisório"
+      "gabarito oficial",
+      "gabarito discutível"
     ],
-    "alert": "Gabarito provisório, não oficial (potencial recurso). Nenhuma opção oferece redução urgente com estabilização percutânea e avaliação da perfusão arterial.",
-    "image": "/images/sugenamed1-24.webp"
+    "image": "/images/sugenamed1-24.webp",
+    "alert": "Gabarito oficial: D. A alternativa A também conta como acerto: sem sinais descritos de síndrome compartimental, a conduta padrão para fratura desviada com pulso diminuído é a redução fechada urgente (com fixação por fios), e a fasciotomia fica para síndrome compartimental estabelecida."
   },
   {
     "id": "sug-enamed1-25",
@@ -553,7 +568,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST), 2022.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -575,7 +590,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Chikungunya: manejo clínico, 2017. Brasil. Ministério da Saúde. Dengue: diagnóstico e manejo clínico — adulto e criança. 6ª ed., 2024.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -597,7 +612,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Fletcher GS. Epidemiologia Clínica: elementos essenciais. 6ª ed. Medronho RA et al. Epidemiologia. 2ª ed. Cap. Validade de testes diagnósticos.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -619,7 +634,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American Psychiatric Association. DSM-5-TR — Manual Diagnóstico e Estatístico de Transtornos Mentais, 2022. Yatham LN et al. CANMAT and ISBD 2018 guidelines for the management of patients with bipolar disorder. Bipolar Disord, 2018.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -641,7 +656,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Gordon H et al. ECCO Guidelines on Therapeutics in Crohn's Disease: Medical Treatment. J Crohns Colitis, 2024. Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas — Doença de Crohn.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -663,7 +678,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Manejo do paciente com diarreia (cartaz de avaliação e tratamento), 2023. Sociedade Brasileira de Pediatria. Guia Prático de Atualização — Diarreia aguda: diagnóstico e tratamento, 2017.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -685,7 +700,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American College of Surgeons. ATLS — Advanced Trauma Life Support. 10ª ed., 2018. Bullock MR et al. Guidelines for the Surgical Management of Traumatic Brain Injury. Neurosurgery, 2006.",
     "tags": [
       "cirurgia",
-      "gabarito técnico"
+      "gabarito oficial"
     ],
     "image": "/images/sugenamed1-31.webp"
   },
@@ -708,7 +723,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Protocolo — Abortamento espontâneo: classificação, diagnóstico e conduta, 2021. Brasil. Ministério da Saúde. Atenção humanizada ao abortamento: norma técnica. 2ª ed., 2011.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -730,13 +745,13 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Protocolo de profilaxia pré, pós e reexposição da raiva humana no Brasil, 2022. Brasil. Ministério da Saúde. Guia de Vigilância em Saúde. 6ª ed., 2024.",
     "tags": [
       "clínica médica",
-      "gabarito técnico",
-      "gabarito provisório"
+      "gabarito oficial",
+      "gabarito discutível"
     ],
     "alsoAccepted": [
       1
     ],
-    "alert": "Gabarito provisório, não oficial (potencial anulação por duplicidade): A e B estão corretas, e as duas contam como acerto aqui. Duas alternativas descrevem modalidades aceitas de profilaxia passiva; verificar eventual critério de disponibilidade não informado no enunciado."
+    "alert": "Gabarito oficial: A. A alternativa B também conta como acerto: vacina + imunoglobulina humana também é profilaxia completa; o soro heterólogo é a 1ª escolha do Ministério da Saúde, e a imunoglobulina fica para quem não pode recebê-lo."
   },
   {
     "id": "sug-enamed1-34",
@@ -757,7 +772,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Guia de Vigilância em Saúde. 6ª ed., 2024 (capítulo Doenças de transmissão hídrica e alimentar). Brasil. Lei nº 8.080/1990.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -779,7 +794,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Baile WF et al. SPIKES — A six-step protocol for delivering bad news. Oncologist, 2000. Brasil. Ministério da Saúde. Manual de instruções para o preenchimento da declaração de óbito, 2022.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -801,7 +816,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int, 2021. Sociedade Brasileira de Nefrologia — Diretrizes de glomerulopatias.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -823,7 +838,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Moon RY et al. Sleep-Related Infant Deaths: Updated 2022 Recommendations for Reducing Infant Deaths in the Sleep Environment. Pediatrics, 2022. Sociedade Brasileira de Pediatria. Documento científico — Síndrome da morte súbita do lactente.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -845,7 +860,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American College of Surgeons. ATLS — Advanced Trauma Life Support. 10ª ed., 2018 (capítulo Lesões térmicas). American Burn Association. Clinical Practice Guideline on Burn Shock Resuscitation, 2024. Brasil. Ministério da Saúde. Cartilha para tratamento de emergência das queimaduras, 2012.",
     "tags": [
       "cirurgia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -867,7 +882,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Protocolo — Gestação prolongada e indução do trabalho de parto, 2021. ACOG Practice Bulletin nº 146: Management of Late-Term and Postterm Pregnancies.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -889,7 +904,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sgarbi JA et al. Consenso brasileiro para a abordagem clínica e tratamento do hipotireoidismo subclínico em adultos — SBEM. Arq Bras Endocrinol Metab, 2013. Pearce SHS et al. 2013 ETA Guideline: Management of Subclinical Hypothyroidism. Eur Thyroid J, 2013.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -911,7 +926,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Alarcón-Segovia D, Cardiel MH. Comparison between 3 diagnostic criteria for mixed connective tissue disease. J Rheumatol, 1989. Sociedade Brasileira de Reumatologia. Doença mista do tecido conjuntivo — cartilha e recomendações.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -933,7 +948,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Pediatria. Consenso sobre anemia ferropriva: atualização — destaques 2021. Brasil. Ministério da Saúde. Programa Nacional de Suplementação de Ferro: manual de condutas gerais, 2013.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -948,15 +963,20 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(C) Tamponamento cardíaco.",
       "(D) Rotura de aorta ascendente."
     ],
-    "correctAnswer": 2,
-    "explanation": "Trauma torácico fechado (marca do cinto no tórax), com murmúrio vesicular preservado e simétrico, evoluindo com dispneia, turgência jugular, abafamento de bulhas e pulso paradoxal: tamponamento cardíaco. O sangue acumulado no saco pericárdico, inextensível, comprime o coração e impede o enchimento das câmaras direitas — choque obstrutivo. O murmúrio simétrico afasta pneumotórax hipertensivo, o principal diferencial de turgência jugular com choque no trauma. A PA de 110 × 60 mmHg ainda está compensada, mas a evolução esperada é hipotensão.\n\nRoteiro do tamponamento cardíaco:\n\n• Tríade de Beck: hipotensão, turgência jugular e abafamento de bulhas — completa em minoria dos casos.\n• Pulso paradoxal: queda > 10 mmHg da PA sistólica na inspiração. Sinal de Kussmaul: aumento da turgência jugular na inspiração.\n• Diagnóstico: FAST (janela subxifoide) ou ecocardiograma à beira do leito; não atrasar o tratamento em paciente instável.\n• Tratamento: volume para manter a pré-carga como ponte; pericardiocentese de alívio (subxifoide) se não houver cirurgião disponível; tratamento definitivo com toracotomia ou janela pericárdica.\n\nDiferenciais de choque no trauma torácico:\n\n• Pneumotórax hipertensivo: turgência jugular e hipotensão, mas com murmúrio ABOLIDO de um lado, hipertimpanismo e desvio da traqueia → descompressão com agulha.\n• Hemotórax maciço: murmúrio abolido e macicez, com veias jugulares colabadas (hipovolemia) → drenagem e, se > 1.500 mL, toracotomia.\n• Contusão miocárdica: arritmias e alterações no ECG após impacto no esterno; ECG normal praticamente afasta lesão significativa.\n• Lesão traumática da aorta: desaceleração brusca; quase sempre no istmo (aorta descendente, após a subclávia esquerda); mediastino alargado na radiografia; angiotomografia confirma.",
-    "commentary": "Alternativa (A): a contusão miocárdica se manifesta principalmente por arritmias (taquicardia sinusal, extrassístoles, bloqueios) e alterações do ECG; não causa pulso paradoxal e abafamento de bulhas, que indicam líquido no pericárdio.\n\nAlternativa (B): o pneumotórax hipertensivo também dá turgência jugular e choque, mas com murmúrio vesicular abolido no lado afetado e desvio da traqueia — aqui o murmúrio é presente e simétrico.\n\nAlternativa (D): a rotura traumática da aorta acontece quase sempre no istmo (aorta descendente), não na ascendente, e a maioria morre no local; os sobreviventes se apresentam com hematoma contido e mediastino alargado, sem o quadro de turgência jugular com abafamento de bulhas.",
-    "tip": "Trauma + turgência jugular + abafamento de bulhas + pulso paradoxal com murmúrio simétrico = tamponamento (FAST, pericardiocentese como ponte, toracotomia). Murmúrio abolido + desvio de traqueia = pneumotórax hipertensivo.",
+    "correctAnswer": 0,
+    "alsoAccepted": [
+      2
+    ],
+    "explanation": "Gabarito oficial: A (contusão miocárdica). Trauma fechado do tórax anterior, com escoriação oblíqua do cinto de segurança, num homem de 60 anos: o impacto direto sobre o esterno é o mecanismo clássico da contusão miocárdica (lesão cardíaca contusa), que causa arritmias, disfunção ventricular e, raramente, ruptura de câmara com hemopericárdio — e, por essa via, tamponamento. A banca associou o quadro ao mecanismo do trauma. Os achados descritos, porém — turgência jugular, abafamento de bulhas e pulso paradoxal, com murmúrio vesicular simétrico — são os sinais clássicos de tamponamento cardíaco (alternativa C), que é a síndrome clínica apresentada e a que exige conduta imediata (pericardiocentese, janela pericárdica ou toracotomia). Por isso C também é aceita, e é a resposta tecnicamente mais precisa.\n\nContusão miocárdica:\n\n• Manifestações: taquicardia sinusal inexplicada, extrassístoles, fibrilação atrial, bloqueio de ramo direito, alterações do segmento ST; hipotensão por disfunção do ventrículo direito.\n• Avaliação: ECG na admissão em todo trauma torácico anterior importante; ECG e troponina normais praticamente afastam lesão significativa. ECG alterado → monitorização por 24 horas; instabilidade → ecocardiograma.\n• Tratamento: suporte e tratamento das arritmias; ruptura de parede livre → hemopericárdio e tamponamento, com indicação cirúrgica.\n\nRoteiro do tamponamento cardíaco:\n\n• Tríade de Beck: hipotensão, turgência jugular e abafamento de bulhas — completa em minoria dos casos.\n• Pulso paradoxal: queda > 10 mmHg da PA sistólica na inspiração. Sinal de Kussmaul: aumento da turgência jugular na inspiração.\n• Diagnóstico: FAST (janela subxifoide) ou ecocardiograma à beira do leito; não atrasar o tratamento em paciente instável.\n• Tratamento: volume para manter a pré-carga como ponte; pericardiocentese de alívio (subxifoide) se não houver cirurgião disponível; tratamento definitivo com toracotomia ou janela pericárdica.\n\nDiferenciais de choque no trauma torácico:\n\n• Pneumotórax hipertensivo: turgência jugular e hipotensão, mas com murmúrio ABOLIDO de um lado, hipertimpanismo e desvio da traqueia → descompressão com agulha.\n• Hemotórax maciço: murmúrio abolido e macicez, com veias jugulares colabadas (hipovolemia) → drenagem e, se > 1.500 mL, toracotomia.\n• Contusão miocárdica: arritmias e alterações no ECG após impacto no esterno; ECG normal praticamente afasta lesão significativa.\n• Lesão traumática da aorta: desaceleração brusca; quase sempre no istmo (aorta descendente, após a subclávia esquerda); mediastino alargado na radiografia; angiotomografia confirma.",
+    "commentary": "Alternativa (B): o pneumotórax hipertensivo também dá turgência jugular e choque, mas com murmúrio vesicular abolido no lado afetado e desvio da traqueia — aqui o murmúrio é presente e simétrico.\n\nAlternativa (C): também aceita, e é a mais precisa: turgência jugular, abafamento de bulhas e pulso paradoxal após trauma torácico configuram tamponamento cardíaco (tríade de Beck, ainda sem hipotensão franca), que pode resultar justamente de uma lesão cardíaca contusa.\n\nAlternativa (D): a rotura traumática da aorta ocorre quase sempre no istmo (aorta descendente), e não na ascendente; os sobreviventes se apresentam com mediastino alargado, sem o quadro de turgência jugular com abafamento de bulhas.",
+    "tip": "Turgência jugular + abafamento de bulhas + pulso paradoxal = tamponamento. Impacto no esterno com arritmia ou ECG alterado = contusão miocárdica (ECG e troponina normais afastam).",
     "reference": "American College of Surgeons. ATLS — Advanced Trauma Life Support. 10ª ed., 2018 (capítulo Trauma torácico).",
     "tags": [
       "cirurgia",
-      "gabarito técnico"
-    ]
+      "gabarito oficial",
+      "gabarito discutível"
+    ],
+    "alert": "Gabarito oficial: A. A alternativa C também conta como acerto — e é a mais precisa: turgência jugular, abafamento de bulhas e pulso paradoxal após trauma torácico são os sinais de tamponamento cardíaco; a contusão miocárdica se manifesta principalmente por arritmias."
   },
   {
     "id": "sug-enamed1-44",
@@ -977,10 +997,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST), 2022.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico",
-      "gabarito provisório"
-    ],
-    "alert": "Gabarito provisório, não oficial (ponto discutível). Critérios de biópsia dependem da inspeção detalhada; ácido acético sozinho tem baixa especificidade."
+      "gabarito oficial"
+    ]
   },
   {
     "id": "sug-enamed1-45",
@@ -1004,10 +1022,10 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Protocolo de Tratamento de Influenza, 2023. Brasil. Ministério da Saúde. Guia de Vigilância em Saúde. 6ª ed., 2024.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico",
-      "gabarito provisório"
+      "gabarito oficial",
+      "gabarito discutível"
     ],
-    "alert": "Gabarito provisório, não oficial (condicional): A e C contam como acerto. A quimioprofilaxia da criança de 1 ano (grupo de risco) depende do estado vacinal, que o enunciado não informa."
+    "alert": "Gabarito oficial: A. A alternativa C também conta como acerto: a criança de 1 ano é grupo de risco, e a quimioprofilaxia depende do estado vacinal, que o enunciado não informa."
   },
   {
     "id": "sug-enamed1-46",
@@ -1028,7 +1046,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Katz PO et al. ACG Clinical Guideline for the Diagnosis and Management of Gastroesophageal Reflux Disease. Am J Gastroenterol, 2022. Gyawali CP et al. Updates to the modern diagnosis of GERD: Lyon consensus 2.0. Gut, 2024.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1050,7 +1068,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Tabbers MM et al. Evaluation and treatment of functional constipation in infants and children: ESPGHAN/NASPGHAN guidelines. J Pediatr Gastroenterol Nutr, 2014. Hyams JS et al. Childhood functional gastrointestinal disorders: child/adolescent — Rome IV. Gastroenterology, 2016.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1072,10 +1090,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American College of Surgeons. ATLS — Advanced Trauma Life Support. 10ª ed., 2018 (capítulo Via aérea e ventilação).",
     "tags": [
       "cirurgia",
-      "gabarito técnico",
-      "gabarito provisório"
-    ],
-    "alert": "Gabarito técnico revisado: a resposta adotada passou a ser A (cricotireoidostomia por punção). Pelo ATLS, a via aérea cirúrgica de emergência é feita pela membrana cricotireóidea; a cricotireoidostomia cirúrgica, preferida no adulto, não está entre as opções, e a traqueostomia não é via de emergência."
+      "gabarito oficial"
+    ]
   },
   {
     "id": "sug-enamed1-49",
@@ -1094,7 +1110,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American College of Obstetricians and Gynecologists. Committee Opinion nº 783: Adnexal Torsion in Adolescents, 2019. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Tratado de Ginecologia.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1116,7 +1132,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Guia de Vigilância em Saúde. 6ª ed., 2024 (capítulo Doenças de transmissão hídrica e alimentar). Brasil. Ministério da Saúde. Manual integrado de vigilância, prevenção e controle de doenças transmitidas por alimentos, 2010.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1138,7 +1154,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American Psychiatric Association. DSM-5-TR, 2022. American Psychiatric Association. Practice Guideline for the Treatment of Patients With Eating Disorders. 4ª ed., 2023.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1160,7 +1176,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Pediatria. Tratado de Pediatria. 5ª ed. Sopros cardíacos na infância. Park MK. Park's Pediatric Cardiology for Practitioners. 7ª ed.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1176,19 +1192,14 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Biópsia pleural com agulha."
     ],
     "correctAnswer": 0,
-    "alsoAccepted": [
-      1
-    ],
     "explanation": "Homem de 50 anos, diabético, com 4 dias de tosse produtiva, dor pleurítica, dispneia e murmúrio abolido na base direita: pneumonia com derrame pleural parapneumônico. As radiografias são em PA, perfil e decúbito lateral com raios horizontais (incidência de Laurell). A incidência de Laurell serve justamente para ver se o líquido escorre livremente e medir a espessura da lâmina: derrame livre com mais de 10 mm na Laurell indica toracocentese diagnóstica. O paciente está estável e o derrame ainda não foi caracterizado, então o primeiro passo é puncionar com agulha e analisar o líquido (aspecto, pH, glicose, LDH, proteínas, Gram, cultura, celularidade). O resultado define se é preciso drenar.\n\nRoteiro do derrame pleural:\n\n• Critérios de Light (exsudato se pelo menos 1): proteína pleural/sérica > 0,5; LDH pleural/sérica > 0,6; LDH pleural > 2/3 do limite superior sérico. Transudato: insuficiência cardíaca, cirrose, síndrome nefrótica. Exsudato: pneumonia, tuberculose, neoplasia, TEP, colagenoses.\n• Derrame parapneumônico não complicado: líquido livre, pH > 7,2, glicose > 60 mg/dL, Gram e cultura negativos → só antibiótico.\n• Derrame complicado ou empiema → drenagem torácica em selo d'água: pus franco, Gram ou cultura positivos, pH < 7,2, glicose < 60 mg/dL, derrame loculado, derrame volumoso (mais da metade do hemitórax) ou nível hidroaéreo.\n• Falha da drenagem (loculações, septações): fibrinolítico intrapleural (alteplase + dornase) ou videotoracoscopia para debridamento; decorticação nas fases tardias.\n• Exsudato linfocítico: pensar em tuberculose (ADA > 40 U/L) e neoplasia (citologia); biópsia pleural se a análise do líquido não esclarecer.",
-    "commentary": "Alternativa (B): a drenagem em selo d'água é indicada quando a análise do líquido mostra derrame complicado ou empiema, ou se a imagem já mostrar loculação, nível hidroaéreo ou derrame de mais da metade do hemitórax. Se o examinador interpretar a imagem como derrame volumoso ou com nível hidroaéreo, a drenagem direta é defensável — por isso B também é aceita aqui.\n\nAlternativa (C): a videotoracoscopia é reservada a derrames loculados ou ao empiema que não resolve com drenagem e antibiótico; não é a primeira conduta.\n\nAlternativa (D): a biópsia pleural por agulha investiga exsudatos sem diagnóstico (tuberculose, neoplasia) depois da toracocentese; não é conduta inicial no derrame associado a pneumonia aguda.",
+    "commentary": "Alternativa (B): a drenagem em selo d'água é indicada quando a análise do líquido mostra derrame complicado ou empiema, ou se a imagem já mostrar loculação, nível hidroaéreo ou derrame de mais da metade do hemitórax. Se a imagem mostrasse derrame volumoso ou nível hidroaéreo, a drenagem direta seria defensável.\n\nAlternativa (C): a videotoracoscopia é reservada a derrames loculados ou ao empiema que não resolve com drenagem e antibiótico; não é a primeira conduta.\n\nAlternativa (D): a biópsia pleural por agulha investiga exsudatos sem diagnóstico (tuberculose, neoplasia) depois da toracocentese; não é conduta inicial no derrame associado a pneumonia aguda.",
     "tip": "Derrame + pneumonia: Laurell com lâmina > 10 mm = toracocentese diagnóstica. Drenar se pus, Gram/cultura positivos, pH < 7,2, glicose < 60, loculação ou derrame > metade do hemitórax.",
     "reference": "Sociedade Brasileira de Pneumologia e Tisiologia. Diretrizes brasileiras para pneumonia adquirida na comunidade em adultos imunocompetentes. J Bras Pneumol. Light RW. Pleural Diseases. 6ª ed. British Thoracic Society Guideline for Pleural Disease, 2023.",
     "tags": [
       "clínica médica",
-      "gabarito técnico",
-      "gabarito provisório"
+      "gabarito oficial"
     ],
-    "alert": "Gabarito técnico revisado: a resposta adotada passou a ser A (toracocentese), com B (drenagem) também aceita. A incidência de Laurell está na prova para indicar punção diagnóstica de derrame livre; a drenagem direta só se justificaria se a imagem mostrar nível hidroaéreo, loculação ou derrame de mais da metade do hemitórax.",
     "image": "/images/sugenamed1-53.webp"
   },
   {
@@ -1210,7 +1221,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Mitchell KB et al. Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum, Revised 2022. Breastfeed Med, 2022. Brasil. Ministério da Saúde. Cadernos de Atenção Básica nº 23 — Saúde da criança: aleitamento materno e alimentação complementar, 2015.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1232,7 +1243,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Calendário Nacional de Vacinação — Criança (atualizado). Brasil. Ministério da Saúde. Manual de Normas e Procedimentos para Vacinação, 2014. Sociedade Brasileira de Imunizações (SBIm). Calendário de vacinação da criança 2025/2026.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1254,7 +1265,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Nota técnica sobre a adoção do esquema de dose única da vacina HPV, 2024. World Health Organization. Human papillomavirus vaccines: WHO position paper, 2022. Barnabas RV et al. Efficacy of single-dose HPV vaccination among young African women (KEN SHE). NEJM Evid, 2022.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1276,7 +1287,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American Psychiatric Association. DSM-5-TR, 2022. Flaherty EG, MacMillan HL; AAP Committee on Child Abuse and Neglect. Caregiver-Fabricated Illness in a Child: A Manifestation of Child Maltreatment. Pediatrics, 2013. Brasil. Lei nº 8.069/1990 (ECA).",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1298,7 +1309,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Manual de Recomendações para o Controle da Tuberculose no Brasil. 2ª ed. atualizada, 2019. Garg RK, Somvanshi DS. Spinal tuberculosis: a review. J Spinal Cord Med, 2011.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1318,10 +1329,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Dermatologia. Molusco contagioso. Centers for Disease Control and Prevention (CDC). Molluscum Contagiosum — clinical guidance. American Academy of Pediatrics. Red Book 2024–2027.",
     "tags": [
       "pediatria",
-      "gabarito técnico",
-      "gabarito provisório"
+      "gabarito oficial"
     ],
-    "alert": "Gabarito provisório, não oficial (gabarito corrigido). Se o diagnóstico baseado na fotografia original for outro, a classificação precisa ser revisada; a visualização não substitui exame da lesão.",
     "image": "/images/sugenamed1-59.webp"
   },
   {
@@ -1343,10 +1352,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Urologia. Escroto agudo — diretrizes. European Association of Urology (EAU)/ESPU Guidelines on Paediatric Urology, 2024 (capítulo Escroto agudo).",
     "tags": [
       "cirurgia",
-      "gabarito técnico",
-      "gabarito provisório"
-    ],
-    "alert": "Gabarito provisório, não oficial (potencial anulação). Nenhuma alternativa expressa exploração imediata com decisão intraoperatória de preservação versus orquiectomia."
+      "gabarito oficial"
+    ]
   },
   {
     "id": "sug-enamed1-61",
@@ -1358,15 +1365,20 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(C) Biópsia.",
       "(D) Citologia."
     ],
-    "correctAnswer": 0,
-    "explanation": "Mulher de 54 anos, na pós-menopausa, com derrame papilar espontâneo, unilateral, uniductal e sanguinolento — características de derrame PATOLÓGICO — e nódulo subareolar endurecido, pouco móvel, de 2 cm. Nódulo palpável em mulher acima de 40 anos é investigado primeiro por imagem: mamografia diagnóstica e ultrassonografia direcionada à região retroareolar. A imagem caracteriza a lesão (classificação BI-RADS), avalia o restante das duas mamas e guia a biópsia percutânea, que vem a seguir. Entre as alternativas, a ultrassonografia é o exame indicado agora.\n\nRoteiro do derrame papilar:\n\n• Fisiológico ou benigno: bilateral, multiductal, provocado pela expressão, de cor leitosa, esverdeada ou acastanhada → investigar galactorreia (gestação, prolactina, TSH, medicamentos como antipsicóticos, metoclopramida, antidepressivos) ou ectasia ductal.\n• Patológico: espontâneo, unilateral, uniductal, em água de rocha (cristalino) ou sanguinolento, associado a nódulo, ou em mulher acima de 50 anos.\n• Causas do derrame patológico: papiloma intraductal (a mais comum, em geral benigna, na região subareolar), ectasia ductal e carcinoma (cerca de 5–15%, mais provável com idade avançada e nódulo associado).\n• Investigação: mamografia e ultrassonografia; ressonância magnética ou ductografia se a imagem inicial for normal; biópsia percutânea (core biopsy) de qualquer lesão identificada.\n• Tratamento do derrame patológico persistente sem lesão definida: exérese do ducto acometido (ressecção seletiva) ou dos ductos principais retroareolares, com estudo histológico.\n\nNódulo mamário palpável: abaixo de 30–35 anos, começar pela ultrassonografia; acima de 40 anos, mamografia + ultrassonografia, e biópsia guiada se BI-RADS 4 ou 5. Nódulo clinicamente suspeito deve ser biopsiado mesmo que a imagem seja pouco alarmante.",
-    "commentary": "Alternativa (B): a ressonância magnética não é exame inicial; é complementar quando mamografia e ultrassonografia são normais apesar de derrame patológico, ou para estadiamento de câncer confirmado.\n\nAlternativa (C): a biópsia (core biopsy) será necessária, mas é feita depois da imagem, que caracteriza a lesão, guia a agulha e avalia o restante das mamas — biopsiar antes pode alterar a imagem por hematoma.\n\nAlternativa (D): a citologia do derrame tem baixa sensibilidade (um resultado negativo não afasta câncer) e não está indicada de rotina na investigação.",
-    "tip": "Derrame papilar espontâneo, unilateral, uniductal, sanguinolento ou cristalino = patológico (papiloma é a causa mais comum, mas exclua câncer). Nódulo palpável após os 40: mamografia + ultrassom, depois biópsia guiada.",
+    "correctAnswer": 2,
+    "alsoAccepted": [
+      0
+    ],
+    "explanation": "Gabarito oficial: C (biópsia). Mulher de 54 anos, na pós-menopausa, com derrame papilar espontâneo, unilateral, uniductal e sanguinolento (derrame patológico) e nódulo subareolar palpável, endurecido, pouco móvel, de 2 cm: lesão clinicamente suspeita. Nódulo palpável suspeito exige diagnóstico histológico — a biópsia percutânea por agulha grossa (core biopsy), guiada por ultrassonografia, define a natureza da lesão (papiloma intraductal × carcinoma), e a suspeita clínica alta obriga a biópsia mesmo que a imagem pareça pouco alarmante. Na sequência habitual, a biópsia é precedida e guiada pela imagem (mamografia diagnóstica + ultrassonografia), por isso a alternativa A também é aceita.\n\nRoteiro do derrame papilar:\n\n• Fisiológico ou benigno: bilateral, multiductal, provocado pela expressão, de cor leitosa, esverdeada ou acastanhada → investigar galactorreia (gestação, prolactina, TSH, medicamentos como antipsicóticos, metoclopramida, antidepressivos) ou ectasia ductal.\n• Patológico: espontâneo, unilateral, uniductal, em água de rocha (cristalino) ou sanguinolento, associado a nódulo, ou em mulher acima de 50 anos.\n• Causas do derrame patológico: papiloma intraductal (a mais comum, em geral benigna, na região subareolar), ectasia ductal e carcinoma (cerca de 5–15%, mais provável com idade avançada e nódulo associado).\n• Investigação: mamografia e ultrassonografia; ressonância magnética ou ductografia se a imagem inicial for normal; biópsia percutânea (core biopsy) de qualquer lesão identificada.\n• Tratamento do derrame patológico persistente sem lesão definida: exérese do ducto acometido (ressecção seletiva) ou dos ductos principais retroareolares, com estudo histológico.\n\nNódulo mamário palpável: abaixo de 30–35 anos, começar pela ultrassonografia; acima de 40 anos, mamografia + ultrassonografia, e biópsia guiada se BI-RADS 4 ou 5. Nódulo clinicamente suspeito deve ser biopsiado mesmo que a imagem seja pouco alarmante.",
+    "commentary": "Alternativa (A): também aceita. A ultrassonografia (com a mamografia) caracteriza o nódulo, avalia o restante das mamas e guia a agulha; na prática, é feita antes da biópsia.\n\nAlternativa (B): a ressonância magnética não é exame inicial; é complementar quando mamografia e ultrassonografia são normais apesar de derrame patológico, ou para estadiamento de câncer confirmado.\n\nAlternativa (D): a citologia do derrame tem baixa sensibilidade (um resultado negativo não afasta câncer) e não substitui a biópsia do nódulo.",
+    "tip": "Derrame papilar patológico + nódulo palpável suspeito = biópsia (core biopsy guiada por ultrassom), com mamografia e ultrassom para caracterizar e guiar. Citologia do derrame não exclui câncer.",
     "reference": "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Protocolo — Derrame papilar, 2021. American College of Radiology. ACR Appropriateness Criteria — Evaluation of Nipple Discharge, 2022.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
-    ]
+      "gabarito oficial",
+      "gabarito discutível"
+    ],
+    "alert": "Gabarito oficial: C. A alternativa A também conta como acerto: na sequência habitual, a ultrassonografia (com a mamografia) vem antes e guia a biópsia do nódulo."
   },
   {
     "id": "sug-enamed1-62",
@@ -1387,7 +1399,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Organização Mundial da Saúde. Mercury and health — fact sheet. Convenção de Minamata sobre Mercúrio, promulgada no Brasil pelo Decreto nº 9.470/2018.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1409,7 +1421,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Vigilância em saúde de populações expostas à poluição atmosférica (VIGIAR) — diretrizes. Brasil. Ministério da Saúde. Política Nacional de Vigilância em Saúde (Resolução CNS nº 588/2018).",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1431,7 +1443,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American Psychiatric Association. DSM-5-TR, 2022. Associação Brasileira de Psiquiatria. Diretrizes para o tratamento dos transtornos de ansiedade. National Institute for Health and Care Excellence (NICE). Generalised anxiety disorder and panic disorder in adults: management (CG113).",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1453,7 +1465,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Conselho Federal de Medicina. Código de Ética Médica — Resolução CFM nº 2.217/2018, capítulo IX (Sigilo profissional), arts. 73 a 79.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1475,7 +1487,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Rosen R et al. Pediatric Gastroesophageal Reflux Clinical Practice Guidelines: NASPGHAN/ESPGHAN. J Pediatr Gastroenterol Nutr, 2018. Sociedade Brasileira de Pediatria. Documento científico — Refluxo gastroesofágico em lactentes.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1497,7 +1509,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "de Franchis R et al. Baveno VII — Renewing consensus in portal hypertension. J Hepatol, 2022. Bittencourt PL et al. Variceal bleeding: update of recommendations from the Brazilian Association of Hepatology. Arq Gastroenterol, 2017.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1519,10 +1531,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Manual de Gestação de Alto Risco, 2022. Brasil. Ministério da Saúde. Protocolo de notificação e investigação: toxoplasmose gestacional e congênita, 2018.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico",
-      "gabarito provisório"
-    ],
-    "alert": "Gabarito provisório, não oficial (cuidado na interpretação). Fonte: Ministério da Saúde, Nota Técnica nº 100/2022 e Manual de Gestação de Alto Risco."
+      "gabarito oficial"
+    ]
   },
   {
     "id": "sug-enamed1-69",
@@ -1543,7 +1553,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Guia de tratamento da malária no Brasil, 2021 (atualizado). Brasil. Ministério da Saúde. Guia de Vigilância em Saúde. 6ª ed., 2024.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1565,7 +1575,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Política Nacional de Saúde do Trabalhador e da Trabalhadora — Portaria nº 1.823/2012. Brasil. Ministério da Saúde. Perda auditiva induzida por ruído (PAIR) — Protocolo de complexidade diferenciada, 2006.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1587,7 +1597,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Inouye SK et al. Delirium in elderly people. Lancet, 2014. National Institute for Health and Care Excellence (NICE). Delirium: prevention, diagnosis and management (CG103, atualizada 2023). American Psychiatric Association. DSM-5-TR, 2022.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1609,7 +1619,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Stabler SP. Vitamin B12 deficiency. N Engl J Med, 2013. Associação Brasileira de Hematologia, Hemoterapia e Terapia Celular (ABHH). Anemias carenciais — recomendações.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1629,7 +1639,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Guia de Vigilância em Saúde. 6ª ed., 2024 (capítulo Sarampo). Sociedade Brasileira de Pediatria. Tratado de Pediatria. 5ª ed. Doenças exantemáticas.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1651,7 +1661,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sartelli M et al. 2020 update of the WSES guidelines for the management of acute colonic diverticulitis in the emergency setting. World J Emerg Surg, 2020. Sabiston Textbook of Surgery. 21ª ed. Abdome agudo.",
     "tags": [
       "cirurgia",
-      "gabarito técnico"
+      "gabarito oficial"
     ],
     "image": "/images/sugenamed1-74.webp"
   },
@@ -1674,7 +1684,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Protocolo — Descolamento prematuro de placenta, 2021. Brasil. Ministério da Saúde. Manual de Gestação de Alto Risco, 2022.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1696,7 +1706,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Política Nacional de Atenção Básica — Portaria nº 2.436/2017. Gusso G, Lopes JMC, Dias LC (org.). Tratado de Medicina de Família e Comunidade. 2ª ed., 2019.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1718,7 +1728,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Rouquayrol MZ, Gurgel M. Epidemiologia & Saúde. 8ª ed. Medronho RA et al. Epidemiologia. 2ª ed. Rede Interagencial de Informações para a Saúde (RIPSA). Indicadores básicos para a saúde no Brasil. 2ª ed., 2008.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1738,7 +1748,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Montejo AL et al. Management strategies for antidepressant-related sexual dysfunction. J Clin Med, 2019. Sociedade Brasileira de Urologia. Diretrizes de disfunção erétil.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1760,7 +1770,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Diabetes. Diretriz Oficial — Cetoacidose diabética, 2023/2024. Umpierrez GE et al. Hyperglycemic Crises in Adults With Diabetes: A Consensus Report (ADA/EASD/JBDS/AACE/DTS). Diabetes Care, 2024.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1782,7 +1792,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Flynn JT et al. Clinical Practice Guideline for Screening and Management of High Blood Pressure in Children and Adolescents. Pediatrics, 2017. Sociedade Brasileira de Cardiologia. Diretrizes Brasileiras de Hipertensão Arterial — 2025 (capítulo Hipertensão na criança e no adolescente).",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1804,10 +1814,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American College of Surgeons. ATLS — Advanced Trauma Life Support. 10ª ed., 2018 (capítulo Trauma musculoesquelético). Sociedade Brasileira de Cirurgia da Mão. Orientações sobre amputações traumáticas e reimplantes.",
     "tags": [
       "cirurgia",
-      "gabarito técnico",
-      "gabarito provisório"
-    ],
-    "alert": "Gabarito provisório, não oficial (ressalva técnica). O método completo requer invólucro impermeável entre o tecido e o gelo."
+      "gabarito oficial"
+    ]
   },
   {
     "id": "sug-enamed1-82",
@@ -1828,7 +1836,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Practice Committee of the American Society for Reproductive Medicine. Fertility evaluation of infertile women: a committee opinion, 2021. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Protocolo — Investigação básica do casal infértil, 2021.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1850,7 +1858,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Organização Pan-Americana da Saúde, Ministério da Saúde, FEBRASGO e Sociedade Brasileira de Diabetes. Rastreamento e diagnóstico de diabetes mellitus gestacional no Brasil, 2016. Sociedade Brasileira de Diabetes. Diretriz Oficial — Diabetes na gestação, 2024.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1872,7 +1880,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Lei nº 9.656, de 3 de junho de 1998 (art. 32). Brasil. Lei nº 9.961, de 28 de janeiro de 2000 (cria a ANS). Agência Nacional de Saúde Suplementar. Ressarcimento ao SUS — informações e boletins.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1894,7 +1902,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American Psychiatric Association. DSM-5-TR, 2022. VA/DoD Clinical Practice Guideline for the Management of Posttraumatic Stress Disorder and Acute Stress Disorder, 2023. National Institute for Health and Care Excellence (NICE). Post-traumatic stress disorder (NG116), 2018.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1916,7 +1924,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global Strategy for the Diagnosis, Management and Prevention of COPD — 2025 Report. Sociedade Brasileira de Pneumologia e Tisiologia. Diretrizes brasileiras para o manejo da DPOC, 2021.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1938,7 +1946,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Pediatria. Documento científico — Litíase urinária na infância. Sociedade Brasileira de Nefrologia/Departamento de Nefrologia Pediátrica. Hipercalciúria idiopática na infância.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -1960,10 +1968,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American College of Surgeons. ATLS — Advanced Trauma Life Support. 10ª ed., 2018 (capítulos Trauma de pescoço e de coluna). Bromberg WJ et al. Blunt cerebrovascular injury practice management guidelines: EAST. J Trauma, 2010.",
     "tags": [
       "cirurgia",
-      "gabarito técnico",
-      "gabarito provisório"
-    ],
-    "alert": "Gabarito provisório, não oficial (dependente de anatomia). Hematoma expansivo é sinal de lesão vascular grave e exige abordagem rápida, independentemente da artéria identificada em prova."
+      "gabarito oficial"
+    ]
   },
   {
     "id": "sug-enamed1-89",
@@ -1984,7 +1990,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Diretrizes Nacionais de Assistência ao Parto Normal, 2017. American College of Obstetricians and Gynecologists. Practice Bulletin nº 219: Operative Vaginal Birth, 2020. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Protocolo — Parto vaginal operatório, 2021.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -2006,7 +2012,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Starfield B. Atenção primária: equilíbrio entre necessidades de saúde, serviços e tecnologia. Brasília: UNESCO/Ministério da Saúde, 2002. Brasil. Ministério da Saúde. Política Nacional de Atenção Básica — Portaria nº 2.436/2017.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -2028,10 +2034,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brugada J et al. 2019 ESC Guidelines for the management of patients with supraventricular tachycardia. Eur Heart J, 2020. Sociedade Brasileira de Cardiologia. Diretrizes Brasileiras de Arritmias Cardíacas.",
     "tags": [
       "clínica médica",
-      "gabarito técnico",
-      "gabarito provisório"
+      "gabarito oficial"
     ],
-    "alert": "Gabarito provisório, não oficial (dependente do ecg). Classificação depende da leitura do ECG original; não inferir WPW apenas pela frequência de 160 bpm.",
     "image": "/images/sugenamed1-91.webp"
   },
   {
@@ -2053,10 +2057,8 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Prevenção do suicídio: manual dirigido a profissionais das equipes de saúde mental, 2006. Brasil. Lei nº 13.819/2019 (Política Nacional de Prevenção da Automutilação e do Suicídio). Conselho Federal de Medicina. Código de Ética Médica, art. 74.",
     "tags": [
       "clínica médica",
-      "gabarito técnico",
-      "gabarito provisório"
-    ],
-    "alert": "Gabarito provisório, não oficial (atenção à segurança). ATENÇÃO À SEGURANÇA: história suicida sempre exige investigação imediata; não se limitar a agendar consulta futura."
+      "gabarito oficial"
+    ]
   },
   {
     "id": "sug-enamed1-93",
@@ -2077,7 +2079,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "American College of Surgeons. ATLS — Advanced Trauma Life Support. 10ª ed., 2018 (capítulo Choque). Rossaint R et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Crit Care, 2023.",
     "tags": [
       "cirurgia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -2099,7 +2101,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Teede HJ et al. Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome. J Clin Endocrinol Metab, 2023. Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Protocolo — Amenorreia, 2021.",
     "tags": [
       "ginecologia e obstetrícia",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -2121,7 +2123,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Sociedade Brasileira de Dermatologia. Escabiose — orientações. Engelman D et al. The 2020 International Alliance for the Control of Scabies Consensus Criteria for the Diagnosis of Scabies. Br J Dermatol, 2020. Brasil. Ministério da Saúde. Guia de Vigilância em Saúde. 6ª ed., 2024.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -2143,7 +2145,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Galvin R et al. EFNS guidelines for diagnosis, therapy and prevention of Wernicke encephalopathy. Eur J Neurol, 2010. Sechi G, Serra A. Wernicke's encephalopathy: new clinical settings and recent advances in diagnosis and management. Lancet Neurol, 2007.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -2165,7 +2167,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Manual de Recomendações para o Controle da Tuberculose no Brasil. 2ª ed. atualizada, 2019. Brasil. Ministério da Saúde. Protocolo de vigilância da infecção latente pelo Mycobacterium tuberculosis no Brasil. 2ª ed., 2022.",
     "tags": [
       "pediatria",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -2180,17 +2182,20 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(C) Circunstância notificável.",
       "(D) Erro médico."
     ],
-    "correctAnswer": 2,
-    "explanation": "Paciente anestesiado, posicionado e preparado para operar o lado errado; a divergência foi identificada na checagem da Cirurgia Segura antes da incisão, o erro foi corrigido e não houve dano. Pela Classificação Internacional de Segurança do Paciente (OMS), um evento que poderia ter causado dano, mas não causou, é um incidente sem dano — se atingiu o paciente — ou um quase erro (near miss) — se foi interceptado antes de atingi-lo. Nenhuma das duas está entre as alternativas. Das opções oferecidas, a circunstância notificável é a única que não pressupõe dano e descreve uma situação com potencial significativo de causar dano, que deve ser notificada para que o sistema aprenda com ela.\n\nClassificação Internacional de Segurança do Paciente (OMS):\n\n• Incidente: evento ou circunstância que poderia ter resultado, ou resultou, em dano desnecessário ao paciente.\n• Circunstância notificável: situação com potencial significativo de causar dano, sem que nenhum incidente tenha ocorrido (exemplo: desfibrilador quebrado na sala de emergência).\n• Quase erro (near miss): incidente que não atingiu o paciente (exemplo: medicação errada detectada antes de ser administrada).\n• Incidente sem dano: atingiu o paciente, mas não causou dano (exemplo: medicação errada administrada, sem consequência).\n• Evento adverso (incidente com dano): resultou em dano ao paciente (leve, moderado, grave ou óbito).\n• Erro: falha em executar uma ação planejada como pretendido, ou aplicação de um plano incorreto — é a causa, não a classificação do desfecho.\n\nPrograma Nacional de Segurança do Paciente (Portaria MS nº 529/2013 e RDC Anvisa nº 36/2013) — seis protocolos básicos: identificação do paciente, cirurgia segura, higiene das mãos, prevenção de quedas, prevenção de lesão por pressão, segurança na prescrição, uso e administração de medicamentos. O checklist de Cirurgia Segura da OMS tem três momentos: antes da indução anestésica (sign in), antes da incisão (time out — confirmação de paciente, procedimento e lateralidade por toda a equipe) e antes de o paciente sair da sala (sign out).",
-    "commentary": "Alternativa (A): dano leve pressupõe que houve dano (sintomas leves, intervenção mínima); o paciente evoluiu sem nenhuma consequência do erro de posicionamento.\n\nAlternativa (B): evento adverso é o incidente que resultou em dano; a cirurgia no lado errado não chegou a acontecer e não houve dano.\n\nAlternativa (D): \"erro médico\" não é uma categoria de classificação de incidentes na taxonomia da OMS; o erro é a falha na execução de um processo, e a abordagem de segurança do paciente foca no sistema, não na culpa individual.\n\nRessalva: a classificação tecnicamente mais precisa seria quase erro (near miss) ou incidente sem dano, que não estão entre as opções — motivo de possível anulação.",
+    "correctAnswer": 1,
+    "alsoAccepted": [
+      2
+    ],
+    "explanation": "Gabarito oficial: B (evento adverso). O paciente foi anestesiado, posicionado, preparado e coberto com campos para operar o lado errado; a falha só foi detectada na checagem antes da incisão. A banca considerou que o erro chegou ao paciente — ele passou por posicionamento e preparo indevidos, com prolongamento da anestesia e reposicionamento — e classificou o caso como evento adverso. Pela Classificação Internacional de Segurança do Paciente da OMS, porém, evento adverso é o incidente que resulta em dano; como não houve dano, a classificação mais precisa seria incidente sem dano ou quase erro (near miss). Entre as opções, a circunstância notificável (C) também é aceita.\n\nClassificação Internacional de Segurança do Paciente (OMS):\n\n• Incidente: evento ou circunstância que poderia ter resultado, ou resultou, em dano desnecessário ao paciente.\n• Circunstância notificável: situação com potencial significativo de causar dano, sem que nenhum incidente tenha ocorrido (exemplo: desfibrilador quebrado na sala de emergência).\n• Quase erro (near miss): incidente que não atingiu o paciente (exemplo: medicação errada detectada antes de ser administrada).\n• Incidente sem dano: atingiu o paciente, mas não causou dano (exemplo: medicação errada administrada, sem consequência).\n• Evento adverso (incidente com dano): resultou em dano ao paciente (leve, moderado, grave ou óbito).\n• Erro: falha em executar uma ação planejada como pretendido, ou aplicação de um plano incorreto — é a causa, não a classificação do desfecho.\n\nPrograma Nacional de Segurança do Paciente (Portaria MS nº 529/2013 e RDC Anvisa nº 36/2013) — seis protocolos básicos: identificação do paciente, cirurgia segura, higiene das mãos, prevenção de quedas, prevenção de lesão por pressão, segurança na prescrição, uso e administração de medicamentos. O checklist de Cirurgia Segura da OMS tem três momentos: antes da indução anestésica (sign in), antes da incisão (time out — confirmação de paciente, procedimento e lateralidade por toda a equipe) e antes de o paciente sair da sala (sign out).",
+    "commentary": "Alternativa (A): dano leve pressupõe dano (sintomas leves, intervenção mínima); o paciente evoluiu sem nenhuma consequência do erro de posicionamento.\n\nAlternativa (C): também aceita. É a única opção que não pressupõe dano e descreve situação com potencial significativo de causar dano, que deve ser notificada para que o serviço aprenda com ela.\n\nAlternativa (D): \"erro médico\" não é categoria de classificação de incidentes na taxonomia da OMS; o erro é a falha na execução de um processo, e a abordagem de segurança do paciente foca no sistema, não na culpa individual.",
     "tip": "OMS: circunstância notificável (potencial de dano, sem incidente) → quase erro (não atingiu o paciente) → incidente sem dano (atingiu, sem dano) → evento adverso (com dano). Time out antes da incisão confirma lado e procedimento.",
     "reference": "World Health Organization. Conceptual Framework for the International Classification for Patient Safety, 2009. Brasil. Ministério da Saúde. Portaria nº 529/2013 (Programa Nacional de Segurança do Paciente). Agência Nacional de Vigilância Sanitária. RDC nº 36/2013.",
     "tags": [
       "cirurgia",
-      "gabarito técnico",
-      "gabarito provisório"
+      "gabarito oficial",
+      "gabarito discutível"
     ],
-    "alert": "Gabarito provisório, não oficial (potencial anulação). Alternativa técnica correta ('incidente sem dano') não está oferecida."
+    "alert": "Gabarito oficial: B. A alternativa C também conta como acerto: pela taxonomia da OMS, evento adverso exige dano ao paciente, que não ocorreu; a classificação mais precisa (quase erro ou incidente sem dano) não está entre as opções."
   },
   {
     "id": "sug-enamed1-99",
@@ -2211,7 +2216,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Norma Técnica — Prevenção e tratamento dos agravos resultantes da violência sexual contra mulheres e adolescentes. 3ª ed., 2012. Brasil. Ministério da Saúde. Viva: Instrutivo de notificação de violência interpessoal e autoprovocada. 2ª ed., 2016. Brasil. Lei nº 8.069/1990 (ECA), art. 13.",
     "tags": [
       "saúde coletiva",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   },
   {
@@ -2233,7 +2238,7 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
     "reference": "Brasil. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas do Tabagismo, 2020. Instituto Nacional de Câncer (INCA). Programa Nacional de Controle do Tabagismo — tratamento do fumante. US Preventive Services Task Force. Lung Cancer Screening, 2021.",
     "tags": [
       "clínica médica",
-      "gabarito técnico"
+      "gabarito oficial"
     ]
   }
 ];
