@@ -460,15 +460,14 @@ export const SUGERIDO_ENAMED_1_QUESTIONS: Question[] = [
       "(D) Ecocardiograma transtorácico."
     ],
     "correctAnswer": 2,
-    "explanation": "Dor precordial típica desencadeada por esforço e aliviada por repouso caracteriza angina estável/síndrome coronariana crônica. Após estratificar probabilidade clínica e avaliar ECG basal, pode-se investigar isquemia com teste ergométrico se o traçado for interpretável e o paciente conseguir exercitar-se; exame funcional com imagem (como cintilografia) costuma ser preferível quando há alterações de repolarização basais que prejudicam o teste convencional. O ECG relata sobrecarga ventricular esquerda, mas não detalha alterações ST-T.",
-    "commentary": "B (cineangiocoronariografia) costuma ser reservada a alto risco/indicação específica, não automaticamente à primeira avaliação; D (eco de repouso) avalia estrutura e função, mas isoladamente não demonstra isquemia induzível. A e C podem ser defensáveis segundo o contexto; não há dados suficientes para afirmar superioridade universal de C.",
-    "tip": "Dor típica aos esforços pede estratificação de doença coronária; ECG com HVE pode prejudicar teste ergométrico simples. Escolha exame pela probabilidade e interpretabilidade.",
+    "explanation": "Homem de 62 anos com dor precordial desencadeada por esforço e aliviada pelo repouso: angina típica, suspeita de doença arterial coronariana (DAC) crônica. O primeiro passo é estimar a probabilidade pré-teste (PPT) de DAC obstrutiva, que define o exame:\n\n• Muito baixa (≤ 5%): sem necessidade de novos testes.\n• Baixa (> 5–15%): ajustar a PPT (ECG, ecocardiograma, teste ergométrico, escore de cálcio) ou angiotomografia de coronárias.\n• Moderada (> 15–50%): prova funcional ou angiotomografia.\n• Alta (> 50–85%): prova funcional com imagem (cintilografia de perfusão, ecocardiograma de estresse ou ressonância de estresse).\n• Muito alta (> 85%): cineangiocoronariografia direta.\n\nHomem na faixa de 60–69 anos com angina típica tem PPT em torno de 75–80%, e os fatores de risco (tabagismo, hipertensão, dislipidemia com LDL 190) e a alteração no ECG reforçam a categoria alta. Logo, o exame indicado é uma prova funcional. Além disso, o ECG com sobrecarga ventricular esquerda costuma vir com alteração de repolarização (padrão strain), que torna o segmento ST ininterpretável no teste ergométrico — por isso a prova funcional deve ter imagem: cintilografia miocárdica de perfusão.",
+    "commentary": "Alternativa (A): o teste ergométrico depende da análise do ST. Com sobrecarga ventricular esquerda no ECG de repouso, o exame perde acurácia (falso-positivos). No fluxograma, ele aparece como ferramenta para ajustar a PPT nas categorias baixas, não como prova funcional de escolha na PPT alta.\n\nAlternativa (B): a cineangiocoronariografia direta fica para PPT muito alta (> 85%) ou para quem já tem critério de alto risco (angina refratária ao tratamento, disfunção ventricular, arritmia grave, isquemia extensa em teste prévio). Não é o caso: paciente estável, sem esses achados.\n\nAlternativa (D): o ecocardiograma transtorácico de repouso avalia função ventricular e estrutura, mas não demonstra isquemia induzível; no fluxograma, entra apenas para ajustar a PPT. Ecocardiograma de ESTRESSE seria alternativa equivalente à cintilografia — não é o que está escrito.\n\nParalelamente ao exame, otimizar o tratamento: estatina de alta potência (sinvastatina 20 mg é insuficiente para LDL 190), AAS, controle pressórico e cessação do tabagismo.",
+    "tip": "DAC crônica: calcule a PPT. ≤ 5% nada; 5–15% ajustar ou angio-TC; 15–50% funcional ou angio-TC; 50–85% prova funcional; > 85% cateterismo. ECG basal alterado (HVE, BRE, marca-passo, digital) = prova funcional com imagem, não teste ergométrico.",
+    "reference": "Sociedade Brasileira de Cardiologia. Diretriz Brasileira de Doença Arterial Coronariana Crônica – 2024. Arq Bras Cardiol.",
     "tags": [
       "clínica médica",
-      "gabarito técnico",
-      "gabarito provisório"
-    ],
-    "alert": "Gabarito provisório, não oficial (ambiguidade entre alternativas). Sem saber se o ECG é interpretável para esforço e qual a probabilidade pré-teste, a unicidade A versus C fica prejudicada."
+      "gabarito técnico"
+    ]
   },
   {
     "id": "sug-enamed1-23",
