@@ -319,7 +319,10 @@ export const FAMEMA_2026_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 0,
     "explanation": "Após retorno da circulação espontânea, o adulto que não obedece comandos (Glasgow 6) deve receber controle direcionado de temperatura, que reduz a lesão neurológica. A recomendação usada pela banca (AHA) é manter temperatura constante entre 32 e 36 °C por pelo menos 24 horas, evitando febre depois.\n\nAtualizações mais recentes (ILCOR/ERC 2021 e AHA 2023) passaram a aceitar faixa de 32 a 37,5 °C, com ênfase em evitar febre por ao menos 72 horas, mas a alternativa A continua sendo a mais completa.",
-    "commentary": "Resfriar abaixo de 30 °C por 48 h (B): hipotermia profunda causa arritmias, coagulopatia e infecções, sem benefício adicional.\n\nApenas normotermia (C): prevenir febre é parte do cuidado, mas a banca considera que o controle ativo da temperatura (32–36 °C) é a medida recomendada.\n\nCorticoide em altas doses (D): não tem papel na neuroproteção pós-PCR e não substitui o controle de temperatura.",
+    "commentary": "Resfriar abaixo de 30 °C por 48 h (B): hipotermia profunda causa arritmias, coagulopatia e infecções, sem benefício adicional.\n\nApenas normotermia (C): após o estudo TTM2 (2021), ILCOR, ERC e AHA 2023 passaram a aceitar controle de temperatura com foco em evitar febre (≤ 37,5 °C), o que torna a alternativa defensável; por isso aparece como discutível. A banca seguiu a recomendação clássica de 32–36 °C por 24 horas. A afirmação de que se deve 'evitar hipotermia', porém, vai além das diretrizes, que ainda permitem a faixa de 32–36 °C.\n\nCorticoide em altas doses (D): não tem papel na neuroproteção pós-PCR e não substitui o controle de temperatura.",
+    "disputed": [
+      2
+    ],
     "tip": "Pós-PCR em coma: controle de temperatura (32–36 °C por ≥ 24 h, depois evitar febre), PAM ≥ 65, SpO₂ 92–98%, normocapnia, glicemia controlada.",
     "reference": "Panchal AR et al. 2020 AHA Guidelines – Post-Cardiac Arrest Care. Perman SM et al. 2023 AHA Focused Update on Adult Advanced Cardiovascular Life Support. Circulation, 2024.",
     "tags": [

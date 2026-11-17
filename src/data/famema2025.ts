@@ -361,8 +361,9 @@ export const FAMEMA_2025_QUESTIONS: Question[] = [
       "Subclávia e ponto de junção do terço médio e distal da clavícula."
     ],
     "correctAnswer": 3,
-    "explanation": "Na punção da veia subclávia por via infraclavicular, a agulha entra logo abaixo da clavícula, na junção do terço médio com o terço medial/distal da clavícula (referência descrita pela banca como junção do terço médio e distal), e é direcionada para a fúrcula esternal, paralela ao plano da mesa. O paciente fica em Trendelenburg, que distende a veia e reduz o risco de embolia gasosa.",
+    "explanation": "Na punção da veia subclávia por via infraclavicular, a agulha entra cerca de 1 cm abaixo da clavícula e é direcionada para a fúrcula esternal, paralela ao plano da mesa, com o paciente em Trendelenburg (distende a veia e reduz o risco de embolia gasosa).\n\nA referência clássica (ATLS, Sabiston) é a junção do terço médio com o terço medial da clavícula; alguns autores descrevem um ponto de entrada mais lateral, na junção do terço médio com o terço lateral (distal). A banca adotou essa segunda descrição. Mesmo com essa imprecisão, é a única alternativa que associa corretamente o sítio a uma referência anatômica usada na técnica.",
     "commentary": "Jugular anterior no triângulo de Sedillot (A): o triângulo de Sedillot (entre as duas cabeças do esternocleidomastoideo e a clavícula) é a referência do acesso central da jugular interna; a via anterior entra pela borda medial do músculo, na altura da cartilagem tireoide.\n\nAxilar acima da clavícula (B): a veia axilar fica abaixo da clavícula, lateral à subclávia; a punção é infraclavicular, idealmente guiada por ultrassom.\n\nFemoral com rotação interna (C): o membro deve ficar em leve abdução e rotação externa, que expõe o trígono femoral. A punção é medial à artéria femoral, cerca de 1–2 cm abaixo do ligamento inguinal.",
+    "alert": "Atenção à referência anatômica: a descrição mais usada para a punção da subclávia é a junção do terço médio com o terço medial da clavícula. A alternativa da banca (terço médio e distal) corresponde a uma via mais lateral, descrita por alguns autores.",
     "tip": "Subclávia: abaixo da clavícula, mirando a fúrcula, em Trendelenburg. Femoral: perna em rotação externa, veia medial à artéria (NAVeL).",
     "reference": "Townsend CM. Sabiston Textbook of Surgery, 21ª ed. Capítulo de procedimentos à beira do leito. Roberts JR. Clinical Procedures in Emergency Medicine.",
     "tags": [
@@ -408,7 +409,10 @@ export const FAMEMA_2025_QUESTIONS: Question[] = [
     ],
     "correctAnswer": 2,
     "explanation": "Pela classificação ASA: ASA 3 = doença sistêmica grave com limitação funcional; ASA 4 = doença sistêmica grave que é ameaça constante à vida. Insuficiência cardíaca sintomática e mal controlada (descompensada ou com fração de ejeção muito reduzida), somada a hipertensão sem tratamento, entra nos exemplos de ASA 4.\n\nNa prática, esse paciente não deve ir para correção eletiva de hérnia antes de compensar a insuficiência cardíaca.",
-    "commentary": "ASA 2 (A): doença sistêmica leve sem limitação, como hipertensão controlada.\n\nASA 1 (B): paciente saudável.\n\nASA 3 (D): doença grave porém compensada, como IC estável. Há quem classifique este paciente como ASA 3 por falta de detalhes de gravidade, mas a banca considerou que IC sintomática e mal controlada representa ameaça constante à vida.",
+    "commentary": "ASA 2 (A): doença sistêmica leve sem limitação, como hipertensão controlada.\n\nASA 1 (B): paciente saudável.\n\nASA 3 (D): doença grave porém compensada, como IC estável. Como o enunciado não detalha a gravidade (classe funcional, fração de ejeção, internações recentes), há quem classifique este paciente como ASA 3; por isso a alternativa aparece como discutível. A banca considerou que IC sintomática e mal controlada representa ameaça constante à vida (ASA 4).",
+    "disputed": [
+      3
+    ],
     "tip": "ASA 3: doença grave compensada. ASA 4: doença grave descompensada, ameaça à vida (IC descompensada, IAM < 3 meses, sepse).",
     "reference": "American Society of Anesthesiologists. ASA Physical Status Classification System (atualização 2020).",
     "tags": [
@@ -2176,6 +2180,9 @@ export const FAMEMA_2025_QUESTIONS: Question[] = [
     "correctAnswer": 1,
     "explanation": "Para procedimentos invasivos em paciente plaquetopênico, as diretrizes de transfusão definem contagens mínimas. Endoscopia digestiva (sobretudo com biópsia) é considerada segura com plaquetas acima de 50.000/mm³.\n\nOutros limiares usuais: punção lombar ≥ 40.000–50.000/mm³; cateter venoso central ≥ 20.000/mm³ (guiado por ultrassom); cirurgia de grande porte ≥ 50.000/mm³; neurocirurgia e cirurgia oftalmológica ≥ 100.000/mm³; profilaxia em paciente estável ≥ 10.000/mm³.",
     "commentary": "Pequena sutura com > 30.000 (A): para pequenos procedimentos cirúrgicos o limiar usual é de 50.000/mm³.\n\nPunção lombar com > 40.000 (C): a banca considerou o limiar de 50.000/mm³; algumas diretrizes (como a britânica) aceitam 40.000/mm³, o que torna a alternativa discutível, mas a B é a mais consensual.\n\nAcesso central com > 15.000 (D): o mínimo é 20.000/mm³, mesmo com ultrassom.",
+    "disputed": [
+      2
+    ],
     "tip": "Plaquetas: profilaxia 10 mil; cateter central 20 mil; punção lombar e cirurgias/endoscopia 50 mil; neurocirurgia e olho 100 mil.",
     "reference": "Ministério da Saúde. Guia para uso de hemocomponentes, 2ª ed., 2015. Kaufman RM et al. Platelet transfusion: a clinical practice guideline from the AABB. Ann Intern Med, 2015.",
     "tags": [
