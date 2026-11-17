@@ -53,7 +53,7 @@ export function settingsTitle(s: { module: string; areas?: string[]; sources?: s
 
 /** Primeiro parágrafo de um texto (para resumos curtos). */
 export function firstParagraph(text: string) {
-  return text.split(/\n\s*\n/)[0];
+  return text.split(/\n\s*\n/)[0].replace(/\*\*/g, '');
 }
 
 /** Remove o prefixo "(A) " do texto da alternativa — a letra já é exibida no marcador ao lado. */
