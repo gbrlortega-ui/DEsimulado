@@ -21,6 +21,7 @@ import { UNIMEDPB_2026_QUESTIONS } from './unimedpb2026';
 import { IOG_2026_QUESTIONS } from './iog2026';
 import { SESPE_2026_QUESTIONS } from './sespe2026';
 import { HPP_2026_QUESTIONS } from './hpp2026';
+import { CESUPA_2025_QUESTIONS } from './cesupa2025';
 import { HSRC_2026_QUESTIONS } from './hsrc2026';
 import { AMP_2026_QUESTIONS } from './amp2026';
 import { AMRIGS_2025_QUESTIONS } from './amrigs2025';
@@ -47,6 +48,7 @@ export const QUESTIONS: Question[] = [
   ...IOG_2026_QUESTIONS,
   ...SESPE_2026_QUESTIONS,
   ...HPP_2026_QUESTIONS,
+  ...CESUPA_2025_QUESTIONS,
   ...HSRC_2026_QUESTIONS,
   ...AMP_2026_QUESTIONS,
   ...AMRIGS_2025_QUESTIONS,
