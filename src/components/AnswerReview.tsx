@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Ban, CheckCircle2, ChevronDown, CircleDashed, Maximize2, XCircle } from 'lucide-react';
 import { Explanation } from './Explanation';
 import { Question, UserAnswer } from '../types';
-import { cn, examLabel, isAccepted, stripOptionLetter } from '../lib/utils';
+import { cn, examLabel, isAccepted, isDisputed, stripOptionLetter } from '../lib/utils';
 
 type Status = 'correct' | 'wrong' | 'blank' | 'annulled';
 type Filter = 'all' | Status;
@@ -88,13 +88,14 @@ const ReviewItem: React.FC<{ item: Item }> = ({ item }) => {
           <ul className="space-y-2">
             {q.options.map((opt, i) => {
               const right = isAccepted(q, i);
+              const disputed = !right && isDisputed(q, i);
               const mine = picked === i;
               return (
                 <li
                   key={i}
                   className={cn(
                     'option-btn locked gap-3 px-3.5 py-3',
-                    right ? 'correct' : mine ? 'incorrect' : 'opacity-60'
+                    right ? 'correct' : disputed ? 'disputed' : mine ? 'incorrect' : 'opacity-60'
                   )}
                 >
                   <span
@@ -102,6 +103,8 @@ const ReviewItem: React.FC<{ item: Item }> = ({ item }) => {
                       'w-6 h-6 rounded-md border flex items-center justify-center text-xs font-semibold shrink-0',
                       right
                         ? 'bg-accent-green border-accent-green text-white'
+                        : disputed
+                        ? 'bg-accent-amber border-accent-amber text-white'
                         : mine
                         ? 'bg-accent-coral border-accent-coral text-white'
                         : 'border-line-2 text-muted'

@@ -54,6 +54,10 @@ QUESTIONS.forEach((q, i) => {
   q.alsoAccepted?.forEach((i) => {
     if (i === q.correctAnswer || i < 0 || i >= q.options.length) err(`alsoAccepted inválido: ${i}`);
   });
+  q.disputed?.forEach((i) => {
+    if (i === q.correctAnswer || i < 0 || i >= q.options.length) err(`disputed inválido: ${i}`);
+    if (q.alsoAccepted?.includes(i)) err(`alternativa ${i} em disputed e alsoAccepted ao mesmo tempo`);
+  });
   if (!q.explanation?.trim()) err('sem explicação');
   if (!q.tags?.length) warn('sem tags');
   q.tags?.forEach((t) => {

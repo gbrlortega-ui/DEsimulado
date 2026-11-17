@@ -23,6 +23,8 @@ export interface Question {
   alert?: string;
   /** Outras alternativas aceitas como corretas (questões com duas respostas válidas). */
   alsoAccepted?: number[];
+  /** Alternativas discutíveis: NÃO contam como acerto, mas aparecem em amarelo na correção. */
+  disputed?: number[];
   /** Anulada pela banca: fica para estudo, mas não entra na nota do simulado. */
   annulled?: boolean;
   /** Bizu: dica curta para a tomada de decisão. */

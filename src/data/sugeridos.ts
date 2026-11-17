@@ -3,7 +3,7 @@ import { SUGERIDO_ENAMED_1_QUESTIONS } from './sugerido_enamed1';
 
 /**
  * Simulados sugeridos: listas fixas de questões, feitas na ordem, sem sorteio.
- * Ficam fora do banco geral (QUESTIONS): são listas fixas, com regras próprias de correção (alsoAccepted).
+ * Ficam fora do banco geral (QUESTIONS): são listas fixas, com gabarito próprio (alternativas discutíveis em `disputed`).
  */
 export interface SuggestedExam {
   id: string;
@@ -21,7 +21,7 @@ export const SUGERIDOS: SuggestedExam[] = [
     description: 'Questões no formato do ENAMED, de todas as áreas, sempre na mesma ordem.',
     warning:
       'O gabarito deste simulado é o oficial, divulgado pelos organizadores. ' +
-      'Onde ele é discutível, a questão tem um aviso no comentário e a alternativa tecnicamente defensável também conta como acerto.',
+      'Onde ele é discutível, a alternativa contestada aparece em amarelo na correção (sem contar como acerto) e o comentário explica a controvérsia.',
     questions: SUGERIDO_ENAMED_1_QUESTIONS,
   },
 ];

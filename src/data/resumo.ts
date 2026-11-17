@@ -770,7 +770,7 @@ export const SUGERIDOS_INFO: SuggestedExamInfo[] = [
     "id": "sugerido-enamed-1",
     "title": "ENAMED 1",
     "description": "Questões no formato do ENAMED, de todas as áreas, sempre na mesma ordem.",
-    "warning": "O gabarito deste simulado é o oficial, divulgado pelos organizadores. Onde ele é discutível, a questão tem um aviso no comentário e a alternativa tecnicamente defensável também conta como acerto.",
+    "warning": "O gabarito deste simulado é o oficial, divulgado pelos organizadores. Onde ele é discutível, a alternativa contestada aparece em amarelo na correção (sem contar como acerto) e o comentário explica a controvérsia.",
     "count": 100
   }
 ];

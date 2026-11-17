@@ -85,6 +85,10 @@
 .option-btn.incorrect {
   @apply border-accent-coral bg-coral-soft;
 }
+/* Alternativa discutível (gabarito oficial contestável): não conta como acerto. */
+.option-btn.disputed {
+  @apply border-accent-amber bg-amber-soft;
+}
 .option-btn.locked {
   @apply cursor-default;
 }

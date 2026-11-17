@@ -67,6 +67,11 @@ export function scored<T extends { annulled?: boolean }>(questions: T[]) {
 }
 
 /** A alternativa conta como certa? (considera questões com mais de uma resposta válida) */
+/** Alternativa discutível (destacada em amarelo, mas não conta como acerto)? */
+export function isDisputed(q: { disputed?: number[] }, option: number) {
+  return q.disputed?.includes(option) ?? false;
+}
+
 export function isAccepted(q: { correctAnswer: number; alsoAccepted?: number[] }, option: number) {
   return option === q.correctAnswer || (q.alsoAccepted?.includes(option) ?? false);
 }

@@ -14,7 +14,7 @@ import {
 import { Brand } from './Brand';
 import { Explanation } from './Explanation';
 import { Question, UserAnswer, QuizSettings, QuizResults, Module } from '../types';
-import { cn, examLabel, isAccepted, scored, settingsTitle, stripOptionLetter } from '../lib/utils';
+import { cn, examLabel, isAccepted, isDisputed, scored, settingsTitle, stripOptionLetter } from '../lib/utils';
 import { playCorrect, playWrong } from '../lib/sounds';
 import { clearProgress, progressFor, saveProgress } from '../lib/progress';
 
@@ -289,6 +289,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                 const letter = String.fromCharCode(65 + idx);
                 const isSelected = currentAnswer?.selectedOption === idx;
                 const isCorrectAnswer = isAccepted(currentQuestion, idx);
+                const isDisputedAnswer = !isCorrectAnswer && isDisputed(currentQuestion, idx);
                 const showFeedback = settings.immediateFeedback && currentAnswer;
 
                 return (
@@ -298,7 +299,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                     className={cn(
                       "option-btn w-full text-left gap-3 px-3.5 py-3.5 sm:px-4",
                       showFeedback
-                        ? cn("locked", isCorrectAnswer ? "correct" : isSelected ? "incorrect" : "opacity-60")
+                        ? cn("locked", isCorrectAnswer ? "correct" : isDisputedAnswer ? "disputed" : isSelected ? "incorrect" : "opacity-60")
                         : (isSelected ? "selected" : "")
                     )}
                     onClick={() => handleSelectOption(idx)}
@@ -306,7 +307,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                     <div className={cn(
                       "w-7 h-7 rounded-md border flex items-center justify-center font-semibold text-sm transition-colors shrink-0",
                       showFeedback
-                        ? (isCorrectAnswer ? "bg-accent-green border-accent-green text-white" : isSelected ? "bg-accent-coral border-accent-coral text-white" : "border-line-2 text-muted")
+                        ? (isCorrectAnswer ? "bg-accent-green border-accent-green text-white" : isDisputedAnswer ? "bg-accent-amber border-accent-amber text-white" : isSelected ? "bg-accent-coral border-accent-coral text-white" : "border-line-2 text-muted")
                         : (isSelected ? "bg-primary border-primary text-white" : "border-line-2 text-muted")
                     )}>
                       {letter}
@@ -322,7 +323,10 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                     {showFeedback && isCorrectAnswer && (
                       <CheckCircle2 className="w-5 h-5 text-accent-green shrink-0 ml-1.5 mt-1" aria-label="Alternativa correta" />
                     )}
-                    {showFeedback && isSelected && !isCorrectAnswer && (
+                    {showFeedback && isDisputedAnswer && (
+                      <AlertTriangle className="w-5 h-5 text-accent-amber shrink-0 ml-1.5 mt-1" aria-label="Alternativa discutível: não conta como acerto" />
+                    )}
+                    {showFeedback && isSelected && !isCorrectAnswer && !isDisputedAnswer && (
                       <XCircle className="w-5 h-5 text-accent-coral shrink-0 ml-1.5 mt-1" aria-label="Sua resposta" />
                     )}
                   </button>
