@@ -16,6 +16,21 @@ export const Explanation: React.FC<{ question: Question }> = ({ question: q }) =
     <section>
       <h3 className="text-base font-bold">Comentário</h3>
       <RichText text={q.explanation} className="mt-1.5 text-[15px] text-ink-2 leading-relaxed" />
+      {q.explanationImage && (
+        <figure className="mt-4 rounded-xl border border-line bg-white p-2">
+          <a href={q.explanationImage} target="_blank" rel="noreferrer">
+            <img
+              src={q.explanationImage}
+              alt={q.explanationImageCaption ?? 'Figura do comentário'}
+              loading="lazy"
+              className="w-full max-h-[420px] object-contain rounded-lg mx-auto"
+            />
+          </a>
+          {q.explanationImageCaption && (
+            <figcaption className="mt-1.5 px-1 text-xs text-gray-600 text-center">{q.explanationImageCaption}</figcaption>
+          )}
+        </figure>
+      )}
     </section>
 
     {q.commentary && (

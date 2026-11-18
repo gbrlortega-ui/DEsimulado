@@ -19,6 +19,10 @@ export interface Question {
   commentary?: string;
   tags: string[];
   image?: string;
+  /** Figura de apoio exibida no comentário, logo após a explicação. */
+  explanationImage?: string;
+  /** Legenda da figura do comentário. */
+  explanationImageCaption?: string;
   /** Aviso destacado no comentário (ex.: gabarito provisório). */
   alert?: string;
   /** Outras alternativas aceitas como corretas (questões com duas respostas válidas). */

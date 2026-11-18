@@ -66,11 +66,12 @@ QUESTIONS.forEach((q, i) => {
   });
   if (q.tags && new Set(q.tags.map((t) => t.toLowerCase())).size !== q.tags.length) warn('tag repetida');
   if (!q.reference?.trim() && !q.id.startsWith('sug-')) warn('sem referência');
-  if (q.image) {
-    if (!q.image.startsWith('/images/')) err(`imagem fora de /images/: ${q.image}`);
-    else if (!q.image.endsWith('.webp')) err(`imagem em ${q.image.split('.').pop()}: rode \`npm run imagens\` para converter em WebP`);
-    else if (!existsSync(join('public', q.image))) err(`imagem não encontrada: public${q.image}`);
-    else if (statSync(join('public', q.image)).size > 400 * 1024) warn(`imagem acima de 400 KB: ${q.image}`);
+  for (const img of [q.image, q.explanationImage]) {
+    if (!img) continue;
+    if (!img.startsWith('/images/')) err(`imagem fora de /images/: ${img}`);
+    else if (!img.endsWith('.webp')) err(`imagem em ${img.split('.').pop()}: rode \`npm run imagens\` para converter em WebP`);
+    else if (!existsSync(join('public', img))) err(`imagem não encontrada: public${img}`);
+    else if (statSync(join('public', img)).size > 400 * 1024) warn(`imagem acima de 400 KB: ${img}`);
   }
   const mentionsAnnulled = /quest[aã]o (foi )?(oficialmente )?(exclu[ií]da\/)?anulada|questão anulada/i.test(
     [q.explanation, q.commentary, q.alert, ...(q.tags ?? [])].join(' ')
