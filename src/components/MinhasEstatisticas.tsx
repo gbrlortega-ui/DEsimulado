@@ -68,7 +68,7 @@ function Bar({ placar, compact }: { placar?: Placar; compact?: boolean }) {
   const p = perc(placar);
   const poucas = !placar || placar.total < MIN_RESPOSTAS;
   return (
-    <div className={cn('rounded-full bg-line overflow-hidden', compact ? 'h-1.5' : 'h-2')}>
+    <div className={cn('rounded-full bg-bg-2 overflow-hidden', compact ? 'h-2' : 'h-2.5')}>
       {placar?.total ? (
         <div className={cn('h-full rounded-full', band(p), poucas && 'opacity-40')} style={{ width: `${Math.max(p, 2)}%` }} />
       ) : null}
@@ -164,10 +164,37 @@ function Linha({
 }
 
 function Card({ children, className }: { children: React.ReactNode; className?: string }) {
-  return <section className={cn('rounded-2xl border border-line-2 bg-white p-5 sm:p-7', className)}>{children}</section>;
+  return (
+    <section
+      className={cn(
+        'rounded-[2rem] border border-white bg-white/85 backdrop-blur-xl p-5 sm:p-7 shadow-[0_24px_60px_-40px_oklch(30%_0.08_200/0.45),0_0_0_1px_oklch(92%_0.01_165)]',
+        className
+      )}
+    >
+      {children}
+    </section>
+  );
 }
 
-const linkCls = 'inline-flex items-center gap-1 font-semibold text-primary-ink hover:text-ink transition-colors';
+/** Anel de acerto geral. */
+function Anel({ p }: { p: number }) {
+  const r = 34;
+  const c = 2 * Math.PI * r;
+  return (
+    <svg viewBox="0 0 80 80" className="w-20 h-20 sm:w-24 sm:h-24 -rotate-90" aria-hidden>
+      <defs>
+        <linearGradient id="anel-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="var(--color-lime)" />
+          <stop offset="100%" stopColor="var(--color-primary)" />
+        </linearGradient>
+      </defs>
+      <circle cx="40" cy="40" r={r} fill="none" stroke="oklch(100% 0 0 / 0.12)" strokeWidth="9" />
+      <circle cx="40" cy="40" r={r} fill="none" stroke="url(#anel-grad)" strokeWidth="9" strokeLinecap="round" strokeDasharray={`${(p / 100) * c} ${c}`} />
+    </svg>
+  );
+}
+
+const linkCls = 'inline-flex items-center gap-1 rounded-full bg-white border border-line px-2.5 py-1 font-semibold text-primary-ink hover:bg-primary-soft hover:border-primary/40 hover:text-ink transition-colors';
 
 /** Área "Minhas estatísticas": acerto por grande área, subárea e síndrome, e onde focar. */
 export const MinhasEstatisticas: React.FC<Props> = ({
@@ -213,10 +240,10 @@ export const MinhasEstatisticas: React.FC<Props> = ({
   const pesoLabel = ALVOS.find((a) => a.id === alvo)!.curto;
 
   const header = (
-    <header className="sticky top-0 z-40 bg-bg/85 backdrop-blur-md border-b border-line">
-      <div className="container-custom h-16 flex items-center justify-between">
+    <header className="sticky top-0 z-40 pt-3 px-3 sm:px-4">
+      <div className="max-w-6xl mx-auto h-14 pl-4 pr-2 flex items-center justify-between rounded-full bg-white/70 backdrop-blur-xl border border-white shadow-[0_10px_30px_-18px_oklch(30%_0.06_200/0.4),0_0_0_1px_oklch(92%_0.01_165)]">
         <Brand onClick={onHome} />
-        <button onClick={onHome} className="text-sm font-semibold text-muted hover:text-ink transition-colors flex items-center gap-1.5">
+        <button onClick={onHome} className="text-sm font-semibold text-ink-2 hover:text-ink hover:bg-bg-2 px-3.5 py-2 rounded-full transition-colors flex items-center gap-1.5">
           <Home size={15} />
           Início
         </button>
@@ -284,9 +311,11 @@ export const MinhasEstatisticas: React.FC<Props> = ({
   );
 
   const diagnostico = onDiagnostic && st.geral.total < META_RESPOSTAS && (
-    <Card className="border-accent-amber/50 bg-amber-soft">
+    <Card className="!bg-amber-soft !border-accent-amber/40">
       <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-        <Stethoscope className="hidden sm:block w-8 h-8 text-ink-2 shrink-0" aria-hidden />
+        <span className="hidden sm:flex w-12 h-12 rounded-2xl bg-accent-amber text-white items-center justify-center shrink-0 -rotate-6">
+          <Stethoscope className="w-6 h-6" aria-hidden />
+        </span>
         <div className="flex-1 min-w-0">
           <p className="font-semibold text-ink">Faça o simulado diagnóstico</p>
           <p className="mt-1 text-sm text-ink-2">
@@ -316,15 +345,24 @@ export const MinhasEstatisticas: React.FC<Props> = ({
   );
 
   return (
-    <div className="min-h-screen bg-bg pb-16">
+    <div className="relative min-h-screen bg-bg pb-16 overflow-x-clip">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[34rem] overflow-hidden">
+        <div className="absolute -top-40 -left-32 w-[32rem] h-[32rem] rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute -top-20 -right-32 w-[30rem] h-[30rem] rounded-full bg-violet/15 blur-3xl" />
+        <div className="absolute top-40 left-1/2 w-[22rem] h-[22rem] rounded-full bg-lime/25 blur-3xl" />
+      </div>
       {banner}
       {header}
 
-      <main className="container-custom pt-8 space-y-6">
+      <main className="relative container-custom pt-10 space-y-6">
         <div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold flex items-center gap-3">
-            <BarChart3 className="w-8 h-8 text-primary-ink" aria-hidden />
-            Minhas estatísticas
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-[-0.04em] flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span className="w-11 h-11 sm:w-14 sm:h-14 rounded-2xl bg-violet text-white flex items-center justify-center -rotate-6 shadow-[0_12px_26px_-12px_oklch(50%_0.2_295/0.8)]">
+              <BarChart3 className="w-6 h-6 sm:w-7 sm:h-7" aria-hidden />
+            </span>
+            <span>
+              Minhas <span className="text-gradient">estatísticas</span>
+            </span>
           </h1>
           <p className="mt-2 text-ink-2 max-w-2xl">
             Seu acerto por grande área, por subárea e pelas síndromes que as provas cobram — e onde vale a pena focar agora.
@@ -338,7 +376,7 @@ export const MinhasEstatisticas: React.FC<Props> = ({
         {account && account.status !== 'in' && <SaveHistoryCta account={account} compact />}
 
         {semDetalhe > 0 && (
-          <p className="flex items-start gap-2 rounded-xl bg-bg-2 border border-line px-4 py-3 text-sm text-ink-2">
+          <p className="flex items-start gap-2 rounded-2xl bg-white/70 border border-line px-4 py-3 text-sm text-ink-2">
             <Info size={16} className="shrink-0 mt-0.5 text-muted" aria-hidden />
             {semDetalhe === 1 ? '1 simulado antigo guarda' : `${semDetalhe} simulados antigos guardam`} só o acerto por área e não entra
             {semDetalhe === 1 ? '' : 'm'} aqui (continua{semDetalhe === 1 ? '' : 'm'} no painel “Seu desempenho” da página inicial).
@@ -362,16 +400,25 @@ export const MinhasEstatisticas: React.FC<Props> = ({
         ) : (
           <>
             <Card>
-              <dl className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+              <dl className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                <div className="col-span-2 lg:col-span-1 lg:row-span-1 rounded-[1.5rem] bg-ink text-white p-4 sm:p-5 flex items-center justify-between gap-3 relative overflow-hidden">
+                  <div aria-hidden className="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-violet/40 blur-2xl" />
+                  <div className="relative">
+                    <dt className="text-xs text-white/60">Acerto geral</dt>
+                    <dd className="font-heading text-4xl sm:text-5xl font-extrabold tabular-nums mt-1">{perc(st.geral)}%</dd>
+                  </div>
+                  <div className="relative">
+                    <Anel p={perc(st.geral)} />
+                  </div>
+                </div>
                 {[
-                  ['Simulados', fmt(simulados)],
-                  ['Questões respondidas', fmt(st.geral.total)],
-                  ['Acerto geral', `${perc(st.geral)}%`],
-                  ['Temas com dados', `${todasSubs.length} de ${GRANDES_AREAS.reduce((n, g) => n + g.subareas.length, 0)}`],
-                ].map(([label, value]) => (
-                  <div key={label}>
-                    <dt className="text-xs text-muted">{label}</dt>
-                    <dd className="font-heading text-2xl sm:text-3xl font-bold text-ink tabular-nums mt-0.5">{value}</dd>
+                  ['Simulados', fmt(simulados), 'bg-primary-soft'],
+                  ['Questões respondidas', fmt(st.geral.total), 'bg-lime-soft'],
+                  ['Temas com dados', `${todasSubs.length} de ${GRANDES_AREAS.reduce((n, g) => n + g.subareas.length, 0)}`, 'bg-violet-soft'],
+                ].map(([label, value, bg]) => (
+                  <div key={label} className={cn('rounded-[1.5rem] p-4 sm:p-5 flex flex-col justify-between', bg)}>
+                    <dt className="text-xs text-ink-2">{label}</dt>
+                    <dd className="font-heading text-2xl sm:text-3xl font-extrabold text-ink tabular-nums mt-2">{value}</dd>
                   </div>
                 ))}
               </dl>
@@ -384,9 +431,9 @@ export const MinhasEstatisticas: React.FC<Props> = ({
                   <button
                     type="button"
                     onClick={() => onReview(erradasGeral.slice(0, MAX_REVISAO), 'questões que errei')}
-                    className="inline-flex items-center gap-2 self-start sm:self-auto rounded-xl border border-line-2 bg-white px-4 py-2.5 text-sm sm:text-[15px] font-semibold text-ink text-left hover:border-ink/30 transition-colors"
+                    className="inline-flex items-center gap-2 self-start sm:self-auto rounded-full bg-ink text-white px-4 py-2.5 text-sm sm:text-[15px] font-semibold text-left hover:bg-ink-2 hover:-translate-y-0.5 active:scale-[0.97] transition-all"
                   >
-                    <RotateCcw size={16} className="shrink-0" aria-hidden />
+                    <RotateCcw size={16} className="shrink-0 text-lime" aria-hidden />
                     {erradasGeral.length > MAX_REVISAO
                       ? `Revisar as ${MAX_REVISAO} últimas que errei (de ${fmt(erradasGeral.length)})`
                       : `Revisar as ${fmt(erradasGeral.length)} que errei`}
@@ -398,11 +445,13 @@ export const MinhasEstatisticas: React.FC<Props> = ({
             {diagnostico}
 
             {/* Onde focar */}
-            <Card className="border-primary/40">
+            <Card className="relative overflow-hidden">
               <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-4">
                 <div>
-                  <h2 className="text-2xl font-extrabold flex items-center gap-2">
-                    <Crosshair className="w-5 h-5 text-primary-ink" aria-hidden />
+                  <h2 className="text-2xl sm:text-3xl font-extrabold flex items-center gap-2.5">
+                    <span className="w-9 h-9 rounded-xl bg-accent-coral text-white flex items-center justify-center rotate-6">
+                      <Crosshair className="w-5 h-5" aria-hidden />
+                    </span>
                     Onde focar agora
                   </h2>
                   <p className="mt-1 text-sm text-muted max-w-xl">
@@ -419,8 +468,10 @@ export const MinhasEstatisticas: React.FC<Props> = ({
                       aria-checked={alvo === a.id}
                       onClick={() => escolherAlvo(a.id)}
                       className={cn(
-                        'rounded-full border px-3 py-1 text-sm transition-colors',
-                        alvo === a.id ? 'bg-ink border-ink text-white' : 'bg-white border-line-2 text-ink hover:border-ink/30'
+                        'rounded-full border-[1.5px] px-3.5 py-1.5 text-sm font-semibold transition-all',
+                        alvo === a.id
+                          ? 'bg-ink border-ink text-white shadow-[0_8px_20px_-10px_oklch(20%_0.02_165/0.7)]'
+                          : 'bg-white border-line text-ink hover:border-ink/25 hover:-translate-y-0.5'
                       )}
                     >
                       {a.label}
@@ -433,14 +484,25 @@ export const MinhasEstatisticas: React.FC<Props> = ({
                   {foco.map((f, i) => {
                     const placar = f.placar;
                     return (
-                      <li key={f.key} className="rounded-xl border border-line-2 p-4 flex flex-col min-w-0">
+                      <li
+                        key={f.key}
+                        className="rounded-[1.5rem] border-[1.5px] border-line bg-white p-4 sm:p-5 flex flex-col min-w-0 transition-all hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-26px_oklch(30%_0.08_200/0.6)]"
+                      >
                         <div className="flex items-start justify-between gap-2">
-                          <span className="text-xs font-semibold text-muted">
-                            {i + 1}º · {f.kind === 'sindrome' ? 'Síndrome transversal' : f.area}
+                          <span className="flex items-center gap-2 text-xs font-semibold text-muted">
+                            <span
+                              className={cn(
+                                'w-7 h-7 rounded-lg font-heading text-sm font-extrabold flex items-center justify-center shrink-0',
+                                ['bg-accent-coral text-white -rotate-6', 'bg-violet text-white rotate-3', 'bg-lime text-ink -rotate-3'][i % 3]
+                              )}
+                            >
+                              {i + 1}
+                            </span>
+                            {f.kind === 'sindrome' ? 'Síndrome transversal' : f.area}
                           </span>
-                          <span className={cn('font-heading text-xl font-bold tabular-nums', bandText(perc(placar)))}>{perc(placar)}%</span>
+                          <span className={cn('font-heading text-2xl font-extrabold tabular-nums', bandText(perc(placar)))}>{perc(placar)}%</span>
                         </div>
-                        <p className="mt-1 font-semibold text-ink">{f.name}</p>
+                        <p className="mt-2 font-heading text-lg font-bold leading-snug text-ink">{f.name}</p>
                         <p className="mt-1 text-xs text-muted">
                           {placar.correct} de {placar.total} certas · {fmt(f.peso)} questões {pesoLabel}
                         </p>
@@ -450,7 +512,7 @@ export const MinhasEstatisticas: React.FC<Props> = ({
                         <div className="mt-2 min-h-4">
                           <Evolucao placar={placar} long />
                         </div>
-                        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm">{acoes(f.key, f.name)}</div>
+                        <div className="mt-3 flex flex-wrap gap-2 text-sm">{acoes(f.key, f.name)}</div>
                       </li>
                     );
                   })}
@@ -466,12 +528,14 @@ export const MinhasEstatisticas: React.FC<Props> = ({
               {fortes.length > 0 && (
                 <div className="mt-6 pt-5 border-t border-line">
                   <h3 className="text-sm font-semibold font-sans text-ink flex items-center gap-2">
-                    <Trophy size={15} className="text-primary-ink" aria-hidden />
+                    <span className="w-7 h-7 rounded-lg bg-lime text-ink flex items-center justify-center -rotate-6">
+                      <Trophy size={15} aria-hidden />
+                    </span>
                     Seus pontos fortes
                   </h3>
                   <ul className="mt-2 flex flex-wrap gap-2">
                     {fortes.map((f) => (
-                      <li key={f.name + f.area} className="rounded-full bg-primary-soft px-3 py-1 text-sm text-ink">
+                      <li key={f.name + f.area} className="rounded-full bg-lime-soft border border-lime px-3.5 py-1.5 text-sm font-medium text-ink">
                         {f.name} <span className="font-semibold text-primary-ink tabular-nums">{perc(f.placar)}%</span>
                       </li>
                     ))}
@@ -482,12 +546,12 @@ export const MinhasEstatisticas: React.FC<Props> = ({
 
             {/* Grandes áreas → subáreas */}
             <Card>
-              <h2 className="text-2xl font-extrabold">Por grande área</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold">Por grande área</h2>
               <p className="mt-1 text-sm text-muted">
                 Da mais fraca para a mais forte. Toque numa área para ver as subáreas. A seta mostra a evolução: acerto das suas respostas
                 mais recentes em relação às primeiras.
               </p>
-              <ul className="mt-5 divide-y divide-line">
+              <ul className="mt-5 space-y-2">
                 {areas.map(({ g, placar }) => {
                   const open = aberta === g.id;
                   const subs = [
@@ -498,7 +562,7 @@ export const MinhasEstatisticas: React.FC<Props> = ({
                     .filter((s) => s.id !== 'outros' || s.placar?.total)
                     .sort((a, b) => (b.placar?.total ? 1 : 0) - (a.placar?.total ? 1 : 0) || perc(a.placar) - perc(b.placar));
                   return (
-                    <li key={g.id} className="py-3">
+                    <li key={g.id} className={cn('rounded-[1.25rem] px-3 sm:px-4 py-3 transition-colors', open ? 'bg-bg-2' : 'hover:bg-bg-2/70')}>
                       <button
                         type="button"
                         onClick={() => setAberta(open ? null : g.id)}
@@ -508,10 +572,12 @@ export const MinhasEstatisticas: React.FC<Props> = ({
                         <div className="flex-1 min-w-0">
                           <Linha name={g.name} placar={placar} peso={weights.areas[g.id]?.total} pesoLabel={pesoLabel} />
                         </div>
-                        <ChevronDown size={18} className={cn('shrink-0 text-muted transition-transform', open && 'rotate-180')} aria-hidden />
+                        <span className={cn('w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all', open ? 'bg-ink text-white rotate-180' : 'bg-white text-muted')}>
+                          <ChevronDown size={17} aria-hidden />
+                        </span>
                       </button>
                       {open && (
-                        <ul className="mt-4 mb-2 ml-1 sm:ml-4 pl-3 sm:pl-5 border-l-2 border-line grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
+                        <ul className="mt-4 mb-2 ml-1 sm:ml-4 pl-3 sm:pl-5 border-l-2 border-primary/30 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
                           {subs.map((s) => (
                             <li key={s.id} className="min-w-0">
                               <Linha name={s.name} sub={s.temas} placar={s.placar} peso={s.peso} pesoLabel={pesoLabel} compact>
@@ -529,7 +595,7 @@ export const MinhasEstatisticas: React.FC<Props> = ({
 
             {/* Síndromes transversais */}
             <Card>
-              <h2 className="text-2xl font-extrabold">Síndromes e apresentações clínicas</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold">Síndromes e apresentações clínicas</h2>
               <p className="mt-1 text-sm text-muted">Questões que partem de uma queixa e pedem diagnóstico diferencial, de qualquer área.</p>
               <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-5">
                 {sindromes.map(({ sy, placar, peso }) => (
