@@ -44,6 +44,8 @@ interface ResumeInfo {
 interface LandingPageProps {
   onSetup: (module?: Module) => void;
   onQuickStart: () => void;
+  /** Abre "Minhas estatísticas". */
+  onStats: () => void;
   /** Simulado em andamento salvo neste navegador. */
   resume?: ResumeInfo;
   /** Simulados já feitos neste navegador. */
@@ -240,7 +242,7 @@ const SectionTitle: React.FC<{ eyebrow: string; title: string; text?: string; ce
 );
 
 /* ---------- Página ---------- */
-export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart, resume, history, onClearHistory, account, onPrivacy }) => {
+export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart, onStats, resume, history, onClearHistory, account, onPrivacy }) => {
   const tp = EDITIONS.filter((e) => e.kind === 'TP');
   const enamed = EDITIONS.filter((e) => e.kind === 'ENAMED');
   const years = (list: typeof EDITIONS) => (list.length ? `${list[0].year}–${list[list.length - 1].year}` : '');
@@ -264,7 +266,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
             <a href="#como-funciona" className="hover:text-ink transition-colors">Como funciona</a>
           </nav>
           <div className="flex items-center gap-1.5 sm:gap-2">
-            <AccountMenu account={account} onPrivacy={onPrivacy} />
+            <AccountMenu account={account} onPrivacy={onPrivacy} onStats={onStats} />
             <button onClick={() => onSetup()} className="text-[13px] sm:text-sm font-semibold px-2.5 sm:px-4 py-2 rounded-lg bg-ink text-white hover:bg-ink-2 transition-colors whitespace-nowrap">
               <span className="hidden sm:inline">Montar simulado</span>
               <span className="sm:hidden">Simulado</span>
@@ -386,7 +388,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSetup, onQuickStart,
           </div>
         </section>
 
-        {history.length > 0 && <ProgressPanel history={history} account={account} onTrain={onSetup} onClear={onClearHistory} />}
+        {history.length > 0 && <ProgressPanel history={history} account={account} onTrain={onSetup} onClear={onClearHistory} onStats={onStats} />}
 
         {/* Faixa com as provas do banco */}
         <section aria-label="Provas no banco" className="border-y border-line bg-white/70">

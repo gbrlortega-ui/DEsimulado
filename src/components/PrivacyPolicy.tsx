@@ -32,7 +32,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onHome }) => {
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-ink">Política de Privacidade</h1>
-        <p className="mt-3 text-sm text-muted">Vigente a partir de 10 de novembro de 2026 · Última atualização: 10 de novembro de 2026</p>
+        <p className="mt-3 text-sm text-muted">Vigente a partir de 10 de novembro de 2026 · Última atualização: 19 de novembro de 2026</p>
 
         <div className="mt-6 rounded-xl bg-primary-soft border border-line px-5 py-4 text-ink-2 leading-relaxed">
           <strong className="text-primary-ink">Resumo:</strong> o <Name /> funciona sem cadastro. Sem login, seus
@@ -80,7 +80,8 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onHome }) => {
             <li><strong>Dados da conta:</strong> nome, e-mail e identificador da sua conta Google.</li>
             <li>
               <strong>Histórico de simulados</strong> (no banco de dados Cloud Firestore, do Google): data, área ou
-              título do simulado, nota, acertos, total de questões, tempo gasto e acertos por área.
+              título do simulado, nota, acertos, total de questões, tempo gasto, acertos por área e quais questões você
+              acertou ou errou (usado em “Minhas estatísticas” para mostrar seu desempenho por tema).
             </li>
             <li>
               <strong>Simulado em andamento:</strong> questões sorteadas, respostas marcadas, posição atual e tempo.

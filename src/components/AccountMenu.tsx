@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Cloud, LogOut, ShieldCheck, Trash2 } from 'lucide-react';
+import { BarChart3, Cloud, LogOut, ShieldCheck, Trash2 } from 'lucide-react';
 import type { Account } from '../lib/account';
 import { cn } from '../lib/utils';
 
@@ -16,10 +16,12 @@ export const GoogleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
 interface AccountMenuProps {
   account: Account;
   onPrivacy: () => void;
+  /** Abre "Minhas estatísticas". */
+  onStats?: () => void;
 }
 
 /** Topo da página: "Entrar" para quem não tem conta; menu da conta para quem entrou. */
-export const AccountMenu: React.FC<AccountMenuProps> = ({ account, onPrivacy }) => {
+export const AccountMenu: React.FC<AccountMenuProps> = ({ account, onPrivacy, onStats }) => {
   const [open, setOpen] = useState(false);
   const [busy, setBusy] = useState(false);
   const box = useRef<HTMLDivElement>(null);
@@ -111,6 +113,7 @@ export const AccountMenu: React.FC<AccountMenuProps> = ({ account, onPrivacy }) 
           </div>
           <div className="h-px bg-line my-1" />
           {[
+            ...(onStats ? [{ label: 'Minhas estatísticas', Icon: BarChart3, onClick: () => { setOpen(false); onStats(); }, danger: false }] : []),
             { label: 'Política de privacidade', Icon: ShieldCheck, onClick: () => { setOpen(false); onPrivacy(); } },
             { label: 'Sair', Icon: LogOut, onClick: () => { setOpen(false); account.signOut(); } },
             { label: busy ? 'Excluindo…' : 'Excluir minha conta e meus dados', Icon: Trash2, onClick: remove, danger: true },

@@ -685,3 +685,13 @@ export function focusList(st: Estatisticas, weights: Estatisticas, limit = 6): F
     .sort((a, b) => b.prioridade - a.prioridade)
     .slice(0, limit);
 }
+
+/** Questões de um tema ("clinica/cardio" ou "sindrome/dispneia"), sem as anuladas. */
+export function questionsForTema(questions: Question[], tema: string): Question[] {
+  const [area, id] = tema.split('/');
+  return questions.filter((q) => {
+    if (q.annulled) return false;
+    const c = classify(q);
+    return area === 'sindrome' ? c.sindromes.includes(id) : c.areas.some((a) => a.area === area && a.subareas.includes(id));
+  });
+}

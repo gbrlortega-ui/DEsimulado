@@ -26,10 +26,15 @@ export async function pickQuestions(settings: QuizSettings): Promise<Question[]>
   if (preset) return preset.questions;
 
   let filtered = settings.topography ? topographyQuestions(settings.topography) : [...QUESTIONS];
+  if (settings.tema) {
+    // Treino de um tema de "Minhas estatísticas" (classificação baixada só quando precisa).
+    const { questionsForTema } = await import('../lib/taxonomia');
+    filtered = questionsForTema(QUESTIONS, settings.tema);
+  }
   if (settings.topography && settings.topics?.length) {
     filtered = filtered.filter((q) => q.topic && settings.topics!.includes(q.topic));
   }
-  if (!settings.topography) {
+  if (!settings.topography && !settings.tema) {
     const { areas, sources } = settingsFilters(settings);
     if (areas.length) filtered = filtered.filter((q) => areas.includes(q.module));
     if (sources.length) filtered = filtered.filter((q) => sources.includes(examSource(q.id)));

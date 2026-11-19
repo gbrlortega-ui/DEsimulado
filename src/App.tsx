@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Component, lazy, Suspense, useEffect, useState, type ReactNode } from 'react';
+import { Component, lazy, Suspense, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { MotionConfig } from 'motion/react';
 import { LandingPage } from './components/LandingPage';
 import { Module, Question, QuizSettings, QuizResults, UserAnswer } from './types';
@@ -11,19 +11,21 @@ import { SUGERIDOS_INFO } from './data/resumo';
 import { findTopographyGroup, TOPOGRAPHY } from './data/topografia';
 import { loadBank, pickQuestions, questionsByIds } from './data/banco';
 import { clearProgress, loadProgress, type SavedQuiz } from './lib/progress';
-import { addToHistory, clearHistory, loadHistory, summarize, type HistoryEntry } from './lib/history';
+import { addToHistory, answersFromHistory, clearHistory, loadHistory, summarize, type HistoryEntry } from './lib/history';
 import { useAccount } from './lib/account';
-import { settingsTitle } from './lib/utils';
+import { scored, settingsTitle } from './lib/utils';
 
 // Telas carregadas sob demanda: a página inicial abre sem esperar por elas.
 const loadSetup = () => import('./components/QuizSetup');
 const loadTopography = () => import('./components/TopographySetup');
 const loadSession = () => import('./components/QuizSession');
 const loadResults = () => import('./components/ResultsView');
+const loadStats = () => import('./components/MinhasEstatisticas');
 const QuizSetup = lazy(() => loadSetup().then((m) => ({ default: m.QuizSetup })));
 const TopographySetup = lazy(() => loadTopography().then((m) => ({ default: m.TopographySetup })));
 const QuizSession = lazy(() => loadSession().then((m) => ({ default: m.QuizSession })));
 const ResultsView = lazy(() => loadResults().then((m) => ({ default: m.ResultsView })));
+const MinhasEstatisticas = lazy(() => loadStats().then((m) => ({ default: m.MinhasEstatisticas })));
 const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy').then((m) => ({ default: m.PrivacyPolicy })));
 
 /** Se uma tela não carregar (sem internet ou depois de um deploy novo), oferece recarregar. */
@@ -37,7 +39,7 @@ class LoadBoundary extends Component<{ children: ReactNode }, { failed: boolean 
   }
 }
 
-type AppState = 'landing' | 'setup' | 'topography' | 'quiz' | 'results' | 'privacy';
+type AppState = 'landing' | 'setup' | 'topography' | 'quiz' | 'results' | 'privacy' | 'stats';
 
 const reload = () => window.location.reload();
 
@@ -88,6 +90,8 @@ export default function App() {
   const [history, setHistory] = useState<HistoryEntry[]>(() => loadHistory());
   /** Média de acerto antes do simulado atual, para comparar no resultado. */
   const [previousAverage, setPreviousAverage] = useState<number | null>(null);
+  /** Respostas questão a questão do histórico (tela "Minhas estatísticas"). */
+  const detalhe = useMemo(() => answersFromHistory(history), [history]);
   /** Conta opcional (login com Google): sincroniza histórico e simulado em andamento. */
   const account = useAccount({ onHistory: setHistory, onProgress: setSaved });
 
@@ -125,7 +129,7 @@ export default function App() {
     const preload = () => {
       loadBank().catch(() => {});
       account.prefetch(); // Firebase pronto para o login abrir a janela na hora do toque
-      [loadSetup, loadTopography, loadSession, loadResults].forEach((load) => load().catch(() => {}));
+      [loadSetup, loadTopography, loadSession, loadResults, loadStats].forEach((load) => load().catch(() => {}));
     };
     if ('requestIdleCallback' in window) {
       const id = window.requestIdleCallback(preload, { timeout: 3000 });
@@ -146,6 +150,7 @@ export default function App() {
   const sessionInfo = (() => {
     const preset = SUGERIDOS_INFO.find((s) => s.id === settings?.presetId);
     if (preset) return { title: preset.title, warning: preset.warning };
+    if (settings?.temaNome) return { title: settings.temaNome };
     const t = settings?.topography;
     if (!t) return undefined;
     const name = findTopographyGroup(t)?.name ?? TOPOGRAPHY.find((r) => r.id === t)?.name;
@@ -197,10 +202,23 @@ export default function App() {
     setSaved(null);
   };
 
+  /** "Treinar este tema" em Minhas estatísticas: simulado só com questões do tema. */
+  const handleTrainTema = (tema: string, temaNome: string) =>
+    startQuiz({ questionCount: 20, module: 'Misto', immediateFeedback: true, tema, temaNome });
+
   const handleQuickStart = () => startQuiz({ questionCount: 10, module: 'Misto', immediateFeedback: true });
 
   const handleFinishQuiz = (finalResults: QuizResults, answers: UserAnswer[]) => {
     const answered = finalResults.correctCount + finalResults.wrongCount;
+    // Questão a questão (para "Minhas estatísticas"): só as respondidas e que entram na nota.
+    const byQuestion = new Map(answers.map((a) => [a.questionId, a]));
+    const certas: string[] = [];
+    const erradas: string[] = [];
+    for (const q of scored(activeQuestions)) {
+      const a = byQuestion.get(q.id);
+      if (a?.selectedOption == null) continue;
+      (a.isCorrect ? certas : erradas).push(q.id);
+    }
     setPreviousAverage(history.length ? summarize(history).perc : null);
     if (answered > 0 && finalResults.totalQuestions > 0) {
       const updated = addToHistory({
@@ -213,6 +231,8 @@ export default function App() {
           areas: Object.fromEntries(
             Object.entries(finalResults.modulePerformance).filter(([, p]) => p.total > 0)
           ),
+          certas: certas.join(' '),
+          erradas: erradas.join(' '),
       });
       setHistory(updated);
       account.pushHistory(updated);
@@ -270,6 +290,7 @@ export default function App() {
           history={history}
           account={account}
           onPrivacy={() => go('privacy')}
+          onStats={() => go('stats')}
           onClearHistory={() => {
             clearHistory();
             setHistory([]);
@@ -328,6 +349,17 @@ export default function App() {
         />
       )}
       {screen === 'privacy' && <PrivacyPolicy onHome={handleGoHome} />}
+      {screen === 'stats' && (
+        <MinhasEstatisticas
+          respostas={detalhe.respostas}
+          simulados={detalhe.comDetalhe}
+          semDetalhe={detalhe.semDetalhe}
+          account={account}
+          onHome={handleGoHome}
+          onSetup={() => handleStartSetup()}
+          onTrain={handleTrainTema}
+        />
+      )}
       </Suspense>
       </LoadBoundary>
 

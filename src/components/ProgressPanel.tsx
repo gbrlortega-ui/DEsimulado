@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, TrendingUp } from 'lucide-react';
+import { BarChart3, ChevronRight, TrendingUp } from 'lucide-react';
 import { Module } from '../types';
 import { AREAS } from '../data/stats';
 import { HistoryEntry, summarize } from '../lib/history';
@@ -12,6 +12,8 @@ interface ProgressPanelProps {
   account: Account;
   onTrain: (area: Module) => void;
   onClear: () => void;
+  /** Abre "Minhas estatísticas". */
+  onStats?: () => void;
 }
 
 const fmt = (n: number) => n.toLocaleString('pt-BR');
@@ -22,7 +24,7 @@ const band = (perc: number) => (perc >= 60 ? 'bg-accent-green' : perc >= 40 ? 'b
 const LAST = 12;
 
 /** Painel "Seu desempenho": evolução das notas e acerto acumulado por área. */
-export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, account, onTrain, onClear }) => {
+export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, account, onTrain, onClear, onStats }) => {
   const { correct, total, perc, areas } = summarize(history);
   const recent = history.slice(-LAST);
   const byArea = AREAS.filter((a) => areas[a]?.total)
@@ -140,6 +142,16 @@ export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, account, 
             )}
           </div>
         </div>
+
+        {onStats && (
+          <div className="mt-7 pt-5 border-t border-line flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <p className="text-sm text-ink-2">Veja seu acerto por subárea e por síndrome, e onde focar.</p>
+            <button type="button" onClick={onStats} className="btn btn-ghost self-start sm:self-auto py-2.5">
+              <BarChart3 size={17} aria-hidden />
+              Minhas estatísticas
+            </button>
+          </div>
+        )}
 
         {account.status !== 'in' && (
           <div className="mt-7">

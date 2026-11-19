@@ -54,6 +54,10 @@ export interface QuizSettings {
   topography?: string;
   /** Assuntos escolhidos dentro da topografia (vazio = todos). */
   topics?: string[];
+  /** Treino de um tema de "Minhas estatísticas": "clinica/cardio" ou "sindrome/dispneia". */
+  tema?: string;
+  /** Nome do tema, exibido no simulado e no histórico ("Cardiologia"). */
+  temaNome?: string;
 }
 
 export interface UserAnswer {

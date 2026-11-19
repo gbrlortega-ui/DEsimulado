@@ -15,6 +15,12 @@ export interface HistoryEntry {
   timeSpent: number;
   /** Acertos por área neste simulado. */
   areas: Record<string, { correct: number; total: number }>;
+  /**
+   * IDs das questões respondidas que o aluno acertou / errou, separados por espaço (em branco e anuladas
+   * ficam de fora). Alimentam "Minhas estatísticas". Ausentes nos simulados feitos antes de 11/2026.
+   */
+  certas?: string;
+  erradas?: string;
 }
 
 const KEY = 'desimulados:historico';
@@ -79,4 +85,17 @@ export function summarize(history: HistoryEntry[]) {
     }
   }
   return { correct, total, perc: total ? Math.round((correct / total) * 100) : 0, areas };
+}
+
+/** Respostas questão a questão de todos os simulados (só os que guardam esse detalhe). */
+export function answersFromHistory(history: HistoryEntry[]) {
+  const respostas: { questionId: string; correct: boolean }[] = [];
+  let comDetalhe = 0;
+  for (const e of history) {
+    if (e.certas === undefined && e.erradas === undefined) continue;
+    comDetalhe++;
+    for (const id of (e.certas ?? '').split(' ')) if (id) respostas.push({ questionId: id, correct: true });
+    for (const id of (e.erradas ?? '').split(' ')) if (id) respostas.push({ questionId: id, correct: false });
+  }
+  return { respostas, comDetalhe, semDetalhe: history.length - comDetalhe };
 }
