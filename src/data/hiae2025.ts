@@ -112,7 +112,7 @@ export const HIAE_2025_QUESTIONS: Question[] = [
       "(D) dengue tetravalente em duas doses."
     ],
     "correctAnswer": 3,
-    "explanation": "Paciente em uso de anti-TNF (adalimumabe) está imunossuprimido. Vacinas de vírus vivos atenuados são contraindicadas, e a vacina da dengue (tetravalente, de vírus vivo atenuado) se enquadra nisso. Meningocócica, HPV e hepatite B (com dose dobrada para imunossuprimidos) são inativadas e podem ser aplicadas.",
+    "explanation": "Paciente em uso de anti-TNF (adalimumabe) está imunossuprimido. Vacinas de vírus vivos atenuados são contraindicadas, e a vacina da dengue (tetravalente, de vírus vivo atenuado) se enquadra nisso. Meningocócica, HPV e hepatite B (com dose dobrada para imunossuprimidos) são inativadas e podem ser aplicadas.\n\n**Vacinas de agentes vivos atenuados:** por conterem agentes vivos, em geral não são recomendadas para gestantes e para pessoas com o sistema imunológico comprometido (imunodeprimidos). Principais exemplos disponíveis:\n\n• **BCG** (contra formas graves de tuberculose)\n• **Febre amarela**\n• **Tríplice viral** (sarampo, caxumba e rubéola)\n• **Tetraviral** (sarampo, caxumba, rubéola e varicela)\n• **Varicela** (catapora)\n• **Rotavírus** (vacina oral)\n• **Poliomielite oral (VOP)** — a \"gotinha\"\n• **Dengue** (formulações de vírus vivo atenuado)",
     "commentary": "Meningocócica (A), HPV (B) e hepatite B (C): são inativadas/recombinantes e indicadas para imunossuprimidos.",
     "reference": "Manual dos Centros de Referência para Imunobiológicos Especiais (CRIE) — Ministério da Saúde, 2023",
     "tags": [
