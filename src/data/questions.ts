@@ -25,6 +25,7 @@ import { CESUPA_2025_QUESTIONS } from './cesupa2025';
 import { DANTE_2026_QUESTIONS } from './dante2026';
 import { FAMEMA_2025_QUESTIONS } from './famema2025';
 import { FAMEMA_2026_QUESTIONS } from './famema2026';
+import { FAMERP_2025_QUESTIONS } from './famerp2025';
 import { HSRC_2026_QUESTIONS } from './hsrc2026';
 import { AMP_2026_QUESTIONS } from './amp2026';
 import { AMRIGS_2025_QUESTIONS } from './amrigs2025';
@@ -55,6 +56,7 @@ export const QUESTIONS: Question[] = [
   ...DANTE_2026_QUESTIONS,
   ...FAMEMA_2025_QUESTIONS,
   ...FAMEMA_2026_QUESTIONS,
+  ...FAMERP_2025_QUESTIONS,
   ...HSRC_2026_QUESTIONS,
   ...AMP_2026_QUESTIONS,
   ...AMRIGS_2025_QUESTIONS,
