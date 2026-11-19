@@ -2,14 +2,14 @@
 // O build e o servidor local regeneram este arquivo sozinhos; o `npm run validate` acusa se ficar desatualizado.
 import type { Question } from '../types';
 
-export const TOTAL_QUESTIONS = 3124;
+export const TOTAL_QUESTIONS = 3204;
 
 export const COUNT_BY_AREA: Record<string, number> = {
-  "Pediatria": 590,
-  "Clínica Médica": 657,
-  "Cirurgia": 565,
-  "Ginecologia e Obstetrícia": 583,
-  "Saúde Coletiva": 569,
+  "Pediatria": 606,
+  "Clínica Médica": 673,
+  "Cirurgia": 581,
+  "Ginecologia e Obstetrícia": 599,
+  "Saúde Coletiva": 585,
   "Ciências Básicas": 160
 };
 
@@ -179,6 +179,12 @@ export const EDITIONS: ExamEdition[] = [
     "count": 100
   },
   {
+    "label": "FAMERP 2026",
+    "kind": "Residência",
+    "year": 2026,
+    "count": 80
+  },
+  {
     "label": "HPP 2026",
     "kind": "Residência",
     "year": 2026,
@@ -278,8 +284,8 @@ export const SOURCES: ExamSource[] = [
     "key": "FAMERP",
     "label": "FAMERP",
     "kind": "Residência",
-    "years": "2025",
-    "count": 80
+    "years": "2025–2026",
+    "count": 160
   },
   {
     "key": "HIAE",
@@ -464,11 +470,11 @@ export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
   "Pediatria|FAMEMA": 35,
   "Ginecologia e Obstetrícia|FAMEMA": 36,
   "Saúde Coletiva|FAMEMA": 34,
-  "Clínica Médica|FAMERP": 16,
-  "Ginecologia e Obstetrícia|FAMERP": 16,
-  "Saúde Coletiva|FAMERP": 16,
-  "Pediatria|FAMERP": 16,
-  "Cirurgia|FAMERP": 16,
+  "Clínica Médica|FAMERP": 32,
+  "Ginecologia e Obstetrícia|FAMERP": 32,
+  "Saúde Coletiva|FAMERP": 32,
+  "Pediatria|FAMERP": 32,
+  "Cirurgia|FAMERP": 32,
   "Clínica Médica|HSRC": 10,
   "Pediatria|HSRC": 10,
   "Cirurgia|HSRC": 10,
@@ -493,69 +499,69 @@ export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */
 export const TOPOGRAPHY_COUNT: Record<string, number> = {
-  "8": 82,
-  "9": 68,
-  "10": 129,
-  "11": 305,
+  "8": 86,
+  "9": 69,
+  "10": 134,
+  "11": 315,
   "12": 30,
   "13": 68,
-  "14": 140,
-  "15": 460,
-  "16": 194,
+  "14": 144,
+  "15": 473,
+  "16": 199,
   "1.2": 17,
   "1.3": 29,
-  "7.2": 45,
-  "4.2": 29,
-  "1.1": 94,
-  "1.5": 33,
+  "7.2": 48,
+  "4.2": 30,
+  "1.1": 95,
+  "1.5": 36,
   "6.1": 49,
-  "3.1": 102,
-  "4.1": 90,
-  "2.1": 99,
+  "3.1": 107,
+  "4.1": 92,
+  "2.1": 100,
   "6.2": 23,
-  "2.2": 107,
-  "3.2": 37,
-  "3.3": 36,
+  "2.2": 110,
+  "3.2": 38,
+  "3.3": 37,
   "7.1": 30,
   "1.4": 4,
-  "3.4": 21,
-  "5.1": 226,
-  "5.2": 273
+  "3.4": 23,
+  "5.1": 232,
+  "5.2": 282
 };
 
 /** Questões por assunto, na chave "1.1|Cefaleias". */
 export const TOPIC_COUNT: Record<string, number> = {
   "11|Puericultura": 35,
   "1.2|Catarata": 5,
-  "11|Icterícia neonatal": 11,
+  "11|Icterícia neonatal": 12,
   "11|Obesidade infantil": 9,
   "1.3|Amigdalite/faringoamigdalite": 13,
   "7.2|Urticária": 2,
   "1.2|Uveíte": 2,
   "4.2|Estenose de uretra": 3,
-  "11|Calendário vacinal": 18,
+  "11|Calendário vacinal": 19,
   "1.1|TCE": 18,
   "11|Maus-tratos infantis": 18,
-  "11|Prematuridade": 4,
+  "11|Prematuridade": 5,
   "11|Anemia ferropriva": 16,
   "9|Trombocitopenias": 6,
   "11|Aleitamento materno": 25,
-  "1.5|Hipotireoidismo": 8,
+  "1.5|Hipotireoidismo": 9,
   "11|Síndrome do desconforto respiratório neonatal": 8,
   "14|Emergências pediátricas": 16,
   "6.1|Artrite reumatoide": 7,
   "9|Talassemias": 2,
   "11|ITU pediátrica": 7,
   "11|Diarreia aguda": 11,
-  "14|Trauma": 42,
+  "14|Trauma": 43,
   "11|Cardiopatias congênitas": 24,
   "3.1|Constipação intestinal": 7,
-  "10|Raiva": 7,
+  "10|Raiva": 8,
   "1.1|Cefaleias": 10,
   "1.3|Surdez": 2,
   "11|Desenvolvimento neuropsicomotor": 22,
   "9|Anemia falciforme": 7,
-  "11|Asma infantil": 20,
+  "11|Asma infantil": 21,
   "11|Doença de Kawasaki": 3,
   "1.5|Hipertireoidismo": 11,
   "11|Desidratação": 12,
@@ -563,11 +569,11 @@ export const TOPIC_COUNT: Record<string, number> = {
   "9|Leucemias": 9,
   "1.3|Otite média aguda": 2,
   "11|Convulsão febril": 6,
-  "11|Pneumonia infantil": 12,
+  "11|Pneumonia infantil": 14,
   "11|Refluxo gastroesofágico": 2,
   "11|Bronquiolite": 12,
   "11|Desnutrição": 4,
-  "10|Sífilis": 21,
+  "10|Sífilis": 22,
   "4.1|Síndrome nefrítica": 4,
   "2.1|Bronquiectasias": 2,
   "8|Insuficiência adrenal": 7,
@@ -581,27 +587,27 @@ export const TOPIC_COUNT: Record<string, number> = {
   "8|Síndrome de Cushing": 3,
   "4.2|Torção testicular": 6,
   "2.2|Arritmias": 7,
-  "9|Anemias": 3,
+  "9|Anemias": 4,
   "10|Tétano": 1,
   "8|Feocromocitoma": 2,
   "9|Linfomas": 3,
-  "8|Cetoacidose diabética": 19,
+  "8|Cetoacidose diabética": 20,
   "3.1|Diarreia crônica": 3,
   "1.2|Erros refrativos": 1,
-  "10|Dengue": 20,
-  "4.1|Distúrbios hidroeletrolíticos": 15,
+  "10|Dengue": 21,
+  "4.1|Distúrbios hidroeletrolíticos": 16,
   "4.1|Lesão renal aguda": 17,
   "8|Diabetes mellitus tipo 1 e 2": 30,
   "1.1|Demências": 8,
   "6.1|Lúpus eritematoso sistêmico": 9,
   "1.1|Epilepsia": 10,
-  "10|Tuberculose": 24,
+  "10|Tuberculose": 25,
   "2.1|DPOC": 20,
   "9|Anemia ferropriva": 6,
   "3.2|Hepatites virais": 6,
   "2.2|Dislipidemia": 8,
   "2.2|Insuficiência cardíaca": 14,
-  "2.2|Hipertensão arterial sistêmica": 25,
+  "2.2|Hipertensão arterial sistêmica": 26,
   "4.1|Cistite": 6,
   "13|Dependência química": 8,
   "3.1|DRGE": 12,
@@ -613,7 +619,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "7.2|Herpes-zóster": 2,
   "1.1|AVC": 24,
   "7.2|Erisipela": 2,
-  "7.2|Melanoma": 4,
+  "7.2|Melanoma": 5,
   "4.1|Nefrolitíase": 10,
   "2.2|Valvopatias": 5,
   "6.1|Fibromialgia": 3,
@@ -623,12 +629,12 @@ export const TOPIC_COUNT: Record<string, number> = {
   "4.1|Pielonefrite": 6,
   "4.1|Doença renal crônica": 9,
   "3.1|Doença inflamatória intestinal": 12,
-  "3.1|Doença celíaca": 3,
+  "3.1|Doença celíaca": 4,
   "3.2|Cirrose hepática": 5,
   "1.1|Meningite": 12,
   "1.1|Parkinson": 3,
   "9|Anemia hemolítica": 3,
-  "3.2|Encefalopatia hepática": 3,
+  "3.2|Encefalopatia hepática": 4,
   "13|Esquizofrenia": 7,
   "6.1|Gota": 4,
   "7.2|Hanseníase": 10,
@@ -644,7 +650,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "6.1|Osteoporose": 8,
   "7.2|Carcinoma basocelular": 3,
   "9|Anemia megaloblástica": 10,
-  "2.1|Derrame pleural": 16,
+  "2.1|Derrame pleural": 17,
   "13|Transtornos de ansiedade": 7,
   "1.5|Tempestade tireotóxica": 1,
   "12|Demências": 1,
@@ -652,8 +658,8 @@ export const TOPIC_COUNT: Record<string, number> = {
   "8|Hiperaldosteronismo primário": 3,
   "16|Feridas": 20,
   "16|Pré-operatório": 24,
-  "16|Hérnias": 24,
-  "3.3|Colangite aguda": 6,
+  "16|Hérnias": 25,
+  "3.3|Colangite aguda": 7,
   "3.1|Hemorragia digestiva baixa": 5,
   "7.1|Doença arterial periférica": 6,
   "6.2|Fraturas": 5,
@@ -661,33 +667,33 @@ export const TOPIC_COUNT: Record<string, number> = {
   "14|Queimaduras": 13,
   "1.3|Câncer de cabeça e pescoço": 2,
   "1.2|Ceratite": 3,
-  "14|Choque": 8,
-  "16|Trauma abdominal": 20,
+  "14|Choque": 10,
+  "16|Trauma abdominal": 22,
   "6.2|Hérnia de disco": 3,
-  "16|Obstrução intestinal": 20,
+  "16|Obstrução intestinal": 21,
   "7.1|Trombose venosa profunda": 10,
   "4.2|Câncer de próstata": 6,
-  "3.1|Hemorragia digestiva alta": 11,
+  "3.1|Hemorragia digestiva alta": 12,
   "3.1|Doença hemorroidária": 8,
   "7.1|Aneurisma de aorta abdominal": 4,
   "3.2|Hepatocarcinoma": 6,
   "10|Doença de Chagas": 3,
   "1.4|Doença periodontal": 1,
   "3.3|Colecistite aguda": 6,
-  "16|Trauma torácico": 22,
+  "16|Trauma torácico": 23,
   "16|Apendicite aguda": 13,
   "16|Perfuração de víscera oca": 11,
   "3.3|Colangiocarcinoma": 3,
-  "3.4|Pancreatite aguda": 12,
+  "3.4|Pancreatite aguda": 13,
   "3.1|Câncer colorretal": 12,
-  "8|Obesidade": 11,
+  "8|Obesidade": 12,
   "7.1|Isquemia arterial aguda": 4,
   "7.2|Celulite": 2,
   "16|Pós-operatório": 25,
   "7.1|Insuficiência venosa crônica": 3,
   "6.2|Lesões do manguito rotador": 1,
   "16|Isquemia mesentérica": 4,
-  "1.5|Nódulos tireoidianos": 4,
+  "1.5|Nódulos tireoidianos": 5,
   "16|Abdome agudo": 6,
   "6.2|Lombalgia": 6,
   "7.2|Carcinoma espinocelular": 2,
@@ -696,34 +702,34 @@ export const TOPIC_COUNT: Record<string, number> = {
   "5.1|Sangramento uterino anormal": 19,
   "5.1|Climatério e menopausa": 26,
   "5.1|Contracepção": 32,
-  "5.1|Câncer de colo uterino": 35,
+  "5.1|Câncer de colo uterino": 37,
   "5.1|Vaginose bacteriana": 9,
   "5.2|Diabetes gestacional": 23,
-  "5.2|Assistência ao parto": 14,
+  "5.2|Assistência ao parto": 15,
   "5.2|Puerpério": 18,
-  "5.2|Infecções na gestação": 34,
-  "5.2|Rotura prematura de membranas": 9,
-  "15|Rastreamento": 26,
+  "5.2|Infecções na gestação": 35,
+  "5.2|Rotura prematura de membranas": 10,
+  "15|Rastreamento": 27,
   "5.1|Câncer de endométrio": 11,
   "5.2|Gravidez ectópica": 12,
   "5.2|Diagnóstico de gravidez": 2,
-  "5.2|Pré-natal": 41,
-  "5.2|Hemorragia pós-parto": 13,
-  "5.2|Trabalho de parto": 28,
-  "5.1|Mioma uterino": 13,
-  "5.1|Endometriose": 12,
-  "5.1|Infertilidade": 12,
+  "5.2|Pré-natal": 42,
+  "5.2|Hemorragia pós-parto": 14,
+  "5.2|Trabalho de parto": 30,
+  "5.1|Mioma uterino": 14,
+  "5.1|Endometriose": 13,
+  "5.1|Infertilidade": 13,
   "5.1|Prolapso genital": 9,
   "5.1|Câncer de ovário": 7,
   "15|Saúde da mulher": 12,
   "5.2|Pré-eclâmpsia": 19,
-  "5.2|Abortamento": 20,
+  "5.2|Abortamento": 21,
   "5.1|Síndrome dos ovários policísticos": 9,
   "5.1|Doença inflamatória pélvica": 10,
   "5.1|Candidíase vaginal": 4,
   "5.2|Eclâmpsia": 2,
   "5.2|Descolamento prematuro de placenta": 10,
-  "5.2|Isoimunização Rh": 6,
+  "5.2|Isoimunização Rh": 7,
   "5.1|Tricomoníase": 3,
   "5.2|Síndrome HELLP": 1,
   "5.1|Planejamento reprodutivo": 6,
@@ -733,15 +739,15 @@ export const TOPIC_COUNT: Record<string, number> = {
   "5.2|Idade gestacional": 5,
   "4.2|Incontinência urinária": 8,
   "5.2|Placenta prévia": 7,
-  "15|Atenção Primária": 87,
+  "15|Atenção Primária": 88,
   "15|Saúde do idoso": 7,
   "15|SUS": 64,
   "12|Polifarmácia": 4,
-  "15|Imunização": 30,
-  "15|Saúde do trabalhador": 29,
+  "15|Imunização": 32,
+  "15|Saúde do trabalhador": 36,
   "15|Estudos epidemiológicos": 38,
   "15|Epidemiologia": 44,
-  "15|Vigilância epidemiológica": 34,
+  "15|Vigilância epidemiológica": 36,
   "15|Testes diagnósticos": 27,
   "15|Estratégia Saúde da Família": 16,
   "12|Quedas": 3,
@@ -753,7 +759,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "3.2|Hipertensão portal": 7,
   "3.2|Icterícia": 2,
   "2.2|Febre reumática": 4,
-  "4.1|Distúrbios ácido-base": 9,
+  "4.1|Distúrbios ácido-base": 10,
   "14|Anafilaxia": 6,
   "10|Malária": 4,
   "9|Coagulopatias": 8,
@@ -763,7 +769,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "15|Bioestatística": 9,
   "3.2|Ascite": 3,
   "14|Crise hipertensiva": 2,
-  "7.2|Dermatite de contato": 2,
+  "7.2|Dermatite de contato": 3,
   "1.1|Esclerose múltipla": 2,
   "3.1|Úlcera péptica": 4,
   "9|Neutropenia febril": 4,
@@ -771,7 +777,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "4.2|Fimose": 1,
   "3.4|Câncer de pâncreas": 3,
   "3.4|Pancreatite crônica": 5,
-  "3.1|Diverticulose/diverticulite": 9,
+  "3.1|Diverticulose/diverticulite": 10,
   "6.1|Espondilite anquilosante": 4,
   "3.2|Colestase": 1,
   "1.5|Tireoidites": 1,
@@ -790,20 +796,20 @@ export const TOPIC_COUNT: Record<string, number> = {
   "4.2|Retenção urinária": 2,
   "1.3|Vertigem": 5,
   "6.2|Lesão do ligamento cruzado anterior": 1,
-  "8|Distúrbios do cálcio": 3,
-  "14|Parada cardiorrespiratória": 13,
+  "8|Distúrbios do cálcio": 4,
+  "14|Parada cardiorrespiratória": 14,
   "4.1|Nefropatia diabética": 3,
   "2.2|Choque cardiogênico": 1,
   "12|Cuidados paliativos": 11,
   "10|Toxoplasmose": 4,
   "1.5|Câncer de tireoide": 4,
-  "2.2|Endocardite infecciosa": 6,
+  "2.2|Endocardite infecciosa": 7,
   "2.1|Tabagismo": 6,
-  "1.5|Hiperparatireoidismo": 4,
+  "1.5|Hiperparatireoidismo": 5,
   "3.3|Câncer de vesícula": 4,
   "3.1|Diarreia aguda": 3,
   "5.2|Restrição de crescimento fetal": 9,
-  "11|Púrpura de Henoch-Schönlein": 2,
+  "11|Púrpura de Henoch-Schönlein": 3,
   "5.1|Adenomiose": 2,
   "7.2|Pênfigo e penfigoide": 1,
   "1.4|Câncer de boca": 1,
@@ -824,7 +830,7 @@ export const TOPIC_COUNT: Record<string, number> = {
   "10|Leptospirose": 1,
   "1.4|Herpes simples": 1,
   "3.1|Dispepsia funcional": 1,
-  "1.1|Encefalite": 1,
+  "1.1|Encefalite": 2,
   "1.4|Sialolitíase": 1,
   "2.2|Síncope": 1,
   "1.2|Glaucoma": 1,
@@ -835,6 +841,8 @@ export const TOPIC_COUNT: Record<string, number> = {
   "6.1|Pseudogota": 1,
   "2.2|Miocardite": 1,
   "3.3|Pancreatite biliar": 2,
+  "8|SIADH": 1,
+  "2.2|Cardiomiopatias": 1,
   "10|Chikungunya": 2,
   "1.2|Conjuntivite": 2,
   "6.1|Bursites e tendinopatias": 1,
@@ -887,661 +895,656 @@ export const SAMPLE_QUESTIONS: Question[] = [
     ]
   },
   {
-    "id": "tp2022-58",
+    "id": "tp2022-59",
     "topography": "11",
     "topic": "Icterícia neonatal",
     "module": "Pediatria",
-    "text": "Recém-nascido com 1 mês de vida, icterícia moderada, fezes claras (acolia) e urina escura (colúria). Qual o provável perfil laboratorial?",
+    "text": "Recém-nascido a termo (3530g), tipagem O- (mãe) e B+ (filho), Coombs e Eluato negativos. Icterícia Zona 4 com 48h (BI 15.5). Diagnóstico:",
     "options": [
-      "(A) Hiperbilirrubinemia direta e aumento de transaminases/GGT.",
-      "(B) Hiperbilirrubinemia indireta predominante.",
-      "(C) Transaminases normais.",
-      "(D) GGT diminuída e bilirrubina direta normal."
+      "(A) Icterícia por isoimunização ABO.",
+      "(B) Icterícia por deficiência de G6PD.",
+      "(C) Icterícia fisiológica do RN.",
+      "(D) Icterícia precoce por incompatibilidade."
     ],
-    "correctAnswer": 0,
-    "explanation": "Lactente de 1 mês com icterícia que não regride, fezes claras (acolia), urina escura (colúria), hepatomegalia e baixo ganho de peso: é colestase neonatal. Colúria e acolia significam que a bilirrubina conjugada não chega ao intestino e volta ao sangue, sendo eliminada pela urina.\n\nO perfil esperado é hiperbilirrubinemia predominantemente direta, com a indireta discretamente elevada. Também sobem as enzimas canaliculares (gama-GT e fosfatase alcalina) e, em menor grau, as transaminases. A principal causa a afastar é a atresia de vias biliares, que precisa ser operada (cirurgia de Kasai) idealmente antes dos 60 dias de vida.",
-    "commentary": "Predomínio de bilirrubina indireta (B): é o padrão da icterícia fisiológica, do leite materno ou da hemólise, que não causam colúria nem acolia.\n\nTransaminases e fosfatase alcalina normais (C): na colestase a fosfatase alcalina e a gama-GT sobem, e as transaminases costumam se elevar pela lesão hepática.\n\nGama-GT diminuída (D): a gama-GT costuma estar elevada na atresia de vias biliares e na maioria das colestases; GGT normal ou baixa com colestase é exceção que lembra doenças genéticas raras, não o padrão esperado.",
-    "tip": "Icterícia após 14 dias com colúria e acolia = colestase (BD alta, GGT alta): investigue atresia biliar já.",
-    "reference": "Cloherty, 2015. Manual de Neonatologia.",
+    "correctAnswer": 2,
+    "explanation": "Com Coombs e Eluato negativos, afasta-se isoimunização; BI elevada aos 2 dias sem precocidade extrema sugere fisiologia.",
+    "commentary": "Como não há evidência laboratorial de hemólise imune (Coombs/Eluato neg), trata-se de icterícia fisiológica, comum após 24h de vida.",
+    "reference": "Manual de Neonatologia Cloherty.",
     "tags": [
-      "gastroenterologia",
       "neonatologia"
     ]
   },
   {
-    "id": "tp2024-40",
-    "topography": "2.2",
-    "topic": "Dislipidemia",
+    "id": "tp2023-28",
+    "topography": "13",
+    "topic": "Dependência química",
     "module": "Clínica Médica",
-    "text": "Homem, 72 anos, diabético, hipertenso e dislipidêmico, com histórico de infarto do miocárdio há 6 meses, doença arterial periférica sintomática e doença renal crônica (ClCr estimado de 53mL/min/1,73m² – Valor de referência do clearance de creatinina: 75 a 115mL/min/1,73m²). Apresentou rabdomiólise em uso de estatinas. Qual estatina deve ser recomendada no tratamento de dislipidemia em pacientes com disfunção renal?",
+    "text": "JM está em situação de rua e na primeira vez em que experimentou cocaína teve uma sensação de intensa euforia, bem-estar, desinibição, perda de apetite e aumento da energia e libido; porém, com o uso prolongado da droga, passou a ter que usar cada vez mais a cocaína para obter esses mesmos efeitos. O nome que corresponde a esse efeito causado pelo consumo prolongado de drogas é:",
     "options": [
-      "(A) Pravastatina",
-      "(B) Atorvastatina",
-      "(C) Sinvastatina",
-      "(D) Rosuvastatina"
+      "(A) Abuso",
+      "(B) Abstinência",
+      "(C) Tolerância",
+      "(D) Overdose"
     ],
-    "correctAnswer": 0,
-    "explanation": "O paciente tem risco cardiovascular muito alto (infarto recente, doença arterial periférica, diabetes e doença renal crônica) e, portanto, precisa de hipolipemiante, mas já teve rabdomiólise com estatina. Nessa situação, prefere-se uma estatina com menor potencial de toxicidade muscular e de interação medicamentosa.\n\nA pravastatina é hidrofílica e não é metabolizada pelo citocromo CYP3A4, o que reduz interações que elevam o nível do fármaco e o risco de miopatia. Com clearance em torno de 53 mL/min, pode ser usada sem ajuste, iniciando em dose baixa e com monitoramento de sintomas musculares e CK. Como é uma estatina de menor potência, a meta de LDL costuma exigir associação com ezetimiba.",
-    "commentary": "Atorvastatina (B): quase não depende do rim e não exige ajuste na DRC, mas é metabolizada pelo CYP3A4 e é de maior potência, o que aumenta o risco muscular em quem já teve rabdomiólise.\n\nSinvastatina (C): é a mais associada a miopatia e rabdomiólise, sobretudo em doses altas e com interações pelo CYP3A4; deve ser evitada nesse paciente.\n\nRosuvastatina (D): é de alta potência, tem eliminação renal relevante e exige redução de dose na disfunção renal avançada; após rabdomiólise, não é a primeira escolha.",
-    "tip": "Estatina após miopatia: hidrofílica e fora do CYP3A4 (pravastatina), dose baixa, CK de controle e ezetimiba se preciso.",
-    "reference": "Dislipidemia na Prática Clínica. Renato JORGE ALVES e Raul Dias Santos. Editora dos Editores; 1ª edição (19 dezembro 2022). Ferreira SRC. Estatinas na doença renal crônica. Arquivos Brasileiros de Cardiologia - Volume 85, Suplemento V, outubro/2005.",
+    "correctAnswer": 2,
+    "explanation": "Precisar de doses cada vez maiores para obter o mesmo efeito, ou ter efeito menor com a mesma dose, é a definição de tolerância. Ela surge com o uso repetido, por adaptação do organismo à substância (mudanças nos receptores, na neurotransmissão e no metabolismo).\n\nA tolerância é um dos critérios do transtorno por uso de substâncias e costuma andar junto com a abstinência e a perda de controle sobre o consumo, por isso é peça central na evolução para a dependência.",
+    "commentary": "Abuso (A): designa um padrão de uso que traz prejuízos (sociais, legais, de saúde), não a necessidade de aumentar a dose; o DSM-5 substituiu abuso e dependência por transtorno por uso de substâncias.\n\nAbstinência (B): são os sintomas que surgem ao parar ou reduzir o uso; na cocaína, disforia, cansaço, sonolência, aumento do apetite e fissura.\n\nOverdose (D): é a intoxicação grave por dose excessiva, com risco de arritmia, infarto, convulsão e hipertermia.",
+    "tip": "Mais droga para o mesmo efeito = tolerância. Sintomas ao parar = abstinência.",
+    "reference": "DIEHL, A.; CORDEIRO, D. C.; LARANJEIRA, R. (Orgs.). Dependência química: prevenção, tratamento e políticas públicas. 2. ed. Porto Alegre: Artmed, 2018. 554 p.",
     "tags": [
-      "cardiologia",
-      "nefrologia"
+      "psiquiatria"
     ]
   },
   {
-    "id": "tp2026-22",
+    "id": "tp2026-29",
+    "topography": "1.1",
+    "topic": "Cefaleias",
+    "module": "Clínica Médica",
+    "text": "Mulher de 32 anos procura pronto atendimento por cefaleia hemicraniana pulsátil há 10 horas, associada a náuseas, fotofobia e piora com esforços habituais. Refere episódios semelhantes nos últimos dois anos, com melhora espontânea entre as crises, sem febre, déficit focal ou alteração do nível de consciência. Indique a investigação diagnóstica:",
+    "options": [
+      "(A) Realizar o diagnóstico clínico de enxaqueca.",
+      "(B) Solicitar tomografia computadorizada de crânio.",
+      "(C) Indicar punção lombar para afastar causas secundárias.",
+      "(D) Solicitar eletroencefalograma."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A enxaqueca é diagnosticada clinicamente com base em critérios estabelecidos (IHS), dispensando exames de imagem e laboratoriais na ausência de sinais de alerta (red flags).",
+    "commentary": "Comentários sobre a resposta correta:\n(A) A enxaqueca (migrânea) típica apresenta sintomas clássicos (hemicraniana, pulsátil, associada a náuseas e fotofobia, recidivante há anos). Na ausência completa de sinais de alarme (\"red flags\", como febre, déficit focal, início súbito em trovão, edema de papila), o diagnóstico é estritamente clínico e exames complementares de imagem são desnecessários.\n\nComentários sobre os distratores:\n(B) A tomografia computadorizada de crânio não deve ser solicitada em cefaleias recorrentes típicas sem sinais de alerta ou mudança de padrão álgico.\n(C) A punção lombar é indicada na investigação de suspeitas infecciosas (meningite), hemorragia subaracnoidea de TC normal, ou hipertensão intracraniana, não se aplicando à crise migranosa típica.\n(D) O eletroencefalograma não possui sensibilidade, especificidade ou utilidade no diagnóstico da enxaqueca ou outras cefaleias primárias.",
+    "reference": "INTERNATIONAL HEADACHE SOCIETY. The International Classification of Headache Disorders, 3rd edition. Cephalalgia, 2018. | HARRISON’S Principles of Internal Medicine. 21st ed. New York: McGraw-Hill, 2022.",
+    "tags": [
+      "neurologia"
+    ]
+  },
+  {
+    "id": "tp2022-61",
+    "topography": "16",
+    "topic": "Feridas",
+    "module": "Cirurgia",
+    "text": "Paciente de 25 anos, masculino, será submetido a correção de hérnia inguinal direita por via convencional - inguinotomia. Visando a ligadura dos vasos superficiais do subcutâneo, o fechamento da aponeurose e o fechamento da pele, quais seriam os fios utilizados, respectivamente?",
+    "options": [
+      "(A) Algodão, PDS (polidioxanona), monocryl (poliglecaprona 25).",
+      "(B) Vicryl (poliglactina 370), nylon, monocryl (poliglecaprona 25).",
+      "(C) PDS (polidioxanona), monocryl (poligecaprina 25), algodão.",
+      "(D) Catgut, monocryl (poliglecaprona 25), nylon."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Algodão para vasos superficiais, PDS (fio de longa absorção) para aponeurose e Monocryl para sutura intradérmica na pele.",
+    "commentary": "Para ligaduras superficiais, o algodão é tradicional. A aponeurose exige um fio que suporte tração por tempo prolongado (PDS). Na pele, o monocryl evita cicatrizes exageradas.",
+    "reference": "Sabiston - Tratado de Cirurgia - 18ª Ed.",
+    "tags": [
+      "cirurgia geral",
+      "suturas"
+    ]
+  },
+  {
+    "id": "tp2026-71",
+    "topography": "7.1",
+    "topic": "Insuficiência venosa crônica",
+    "module": "Cirurgia",
+    "text": "Uma mulher de 63 anos, obesa (IMC 32kg/m²), procura atendimento na UBS com queixa de dor, sensação de peso e edema em membros inferiores ao final do dia, com melhora ao elevar as pernas. Ao exame físico observam-se varizes bilaterais, edema maleolar e hiperpigmentação na região do tornozelo. Diante deste quadro clínico, qual o exame complementar mais indicado para avaliar a causa estrutural da doença?",
+    "options": [
+      "(A) Venografia contrastada dos membros inferiores.",
+      "(B) Pletismografia venosa dos membros inferiores.",
+      "(C) Angiotomografia venosa dos membros inferiores.",
+      "(D) Ultrassonografia venosa com Doppler dos membros inferiores."
+    ],
+    "correctAnswer": 3,
+    "explanation": "A ultrassonografia venosa com Doppler é o método de escolha (padrão-ouro não invasivo) para o diagnóstico e avaliação anatomofuncional da insuficiência venosa crônica.",
+    "commentary": "A ultrassonografia venosa com Doppler (duplex scan) é o exame complementar de primeira linha. Permite a avaliação anatômica (presença de trombos, calibres venosos) e funcional (mapeamento do refluxo valvular no sistema venoso superficial, profundo e perfurante) com excelente acurácia, de forma não invasiva e sem contraste. Sobre os distratores: (A) A venografia retrógrada contrastada é invasiva e hoje reservada apenas para fins terapêuticos de exceção ou anatomia complexa. (B) A pletismografia avalia a hemodinâmica global do esvaziamento venoso, mas não provê detalhes anatômicos estruturais específicos. (C) A angiotomografia venosa é reservada para investigação de eixos venosos ilíaco-cavais (ex: Síndrome de May-Thurner) e não como exame inicial estrutural periférico.",
+    "reference": "Eberhardt RT, Raffetto JD. Chronic Venous Insufficiency. Circulation. 2014;130:333-346. Wittens C et al. Management of Chronic Venous Disease: Clinical Practice Guidelines of the European Society for Vascular Surgery. Eur J Vasc Endovasc Surg. 2015. Gloviczki P et al. The care of patients with varicose veins and associated chronic venous diseases. J Vasc Surg. 2011.",
+    "tags": [
+      "vascular",
+      "insuficiência venosa",
+      "exames"
+    ]
+  },
+  {
+    "id": "tp2023-88",
+    "topography": "5.2",
+    "topic": "Infecções na gestação",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "26 anos, secundigesta com 1 abortamento anterior há 3 anos, portadora do vírus HIV, em uso regular de tenofovir, lamivudina e dolutegravir. Apresenta carga viral menor que 1000 cópias/mL com 36 semanas, tendo indicação de zidovudina intravenosa até o clampeamento do cordão. Apresentação cefálica. A conduta em relação ao parto é:",
+    "options": [
+      "(A) Interromper por cesárea com 39 semanas.",
+      "(B) Induzir com ocitocina na 37ª semana.",
+      "(C) Aguardar pelo parto vaginal.",
+      "(D) Iniciar prostaglandina via vaginal com 37 semanas."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Pelo protocolo do Ministério da Saúde para prevenção da transmissão vertical do HIV, a via de parto é decidida pela carga viral medida a partir de 34 semanas. Quando ela está inferior a 1.000 cópias/mL, a cesariana eletiva não reduz de forma relevante a transmissão, e a via de parto segue a indicação obstétrica.\n\nEsta gestante usa a terapia antirretroviral corretamente, tem carga viral inferior a 1.000 cópias/mL com 36 semanas e feto cefálico, então o correto é aguardar o trabalho de parto espontâneo e o parto vaginal. A cesariana nas mulheres vivendo com HIV tem mais complicações pós-operatórias e só é eletiva quando a carga viral é igual ou maior que 1.000 cópias/mL ou desconhecida.",
+    "commentary": "Cesárea com 39 semanas (A): a cesariana eletiva por HIV fica para carga viral igual ou maior que 1.000 cópias/mL ou desconhecida após 34 semanas (nesse caso, programada com 38 semanas), não para esta paciente.\n\nIndução com ocitocina na 37ª semana (B): não há indicação obstétrica para antecipar o parto; o HIV controlado não justifica indução.\n\nProstaglandina vaginal com 37 semanas (D): da mesma forma, não há motivo para preparar o colo e induzir; o caminho é esperar o trabalho de parto espontâneo.",
+    "tip": "HIV na gestação: carga viral abaixo de 1.000 após 34 semanas = parto vaginal; acima ou desconhecida = cesárea eletiva.",
+    "reference": "Ministério da saúde. Protocolo clínico e diretrizes terapêuticas para prevenção da transmissão vertical de hiv, sífilis e hepatites virais. Página 108. 2022. Disponível em https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_hiv_sifilis_hepatites.pdf",
+    "tags": [
+      "obstetrícia",
+      "infecções"
+    ]
+  },
+  {
+    "id": "tp2021-88",
+    "topography": "5.2",
+    "topic": "Descolamento prematuro de placenta",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Mulher, com idade gestacional de 32 semanas, chega à emergência com dor abdominal de início súbito, contínua, associada a sangramento transvaginal de coloração escura. Traz ultrassom do dia anterior mostrando feto vivo e placenta corporal posterior. Exame físico: PA = 160 x 90 mmHg, feto longitudinal, pélvico, BCF = 110 bpm constante, útero hipertônico, colo fechado. A conduta é:",
+    "options": [
+      "(A) Cesárea imediata.",
+      "(B) Conduta expectante.",
+      "(C) Inibição de trabalho de parto.",
+      "(D) Indução do trabalho de parto."
+    ],
+    "correctAnswer": 0,
+    "explanation": "O quadro de dor abdominal contínua súbita, hipertonia uterina (útero lenhoso), elevação da pressão arterial e sofrimento fetal agudo (BCF 110 bpm fixo) com sangramento escuro é típico de Descolamento Prematuro de Placenta (DPP). Sendo um feto vivo com sofrimento agudo e sem parto vaginal iminente, indica-se a cesariana imediata.",
+    "commentary": "A suspeita clínica de DPP é essencialmente clínica (dor abdominal súbita intensa contínua + hipertonia uterina + sangramento escuro). Sendo o feto vivo, e na presença de sofrimento fetal agudo sem parto vaginal iminente (no caso o colo está impérvio e fechado), a conduta prioritária é a resolução cirúrgica por cesariana rápida, precedida de amniotomia que reduz a hipertensão intraútero e evita infiltração miometrial (útero de Couvelaire) e coagulação intravascular disseminada.",
+    "reference": "Fernandes CE, Silva de Sá MF. Tratado de Obstetrícia FEBRASGO. São Paulo: Elsevier, 2018; Montenegro CABR. Rezende Obstetrícia. 13ª ED. Rio de Janeiro: Guanabara Koogan, 2017.",
+    "tags": [
+      "obstetrícia",
+      "descolamento de placenta",
+      "urgência"
+    ]
+  },
+  {
+    "id": "tp2024-116",
+    "topography": "15",
+    "topic": "Atenção Primária",
+    "module": "Saúde Coletiva",
+    "text": "Sobre o Método Clínico Centrado na Pessoa (MCCP), é correto afirmar:",
+    "options": [
+      "O componente \"Sendo Realista\" foca apenas nos recursos financeiros do paciente.",
+      "O acrônimo SIFE refere-se à anamnese técnica por sistemas.",
+      "Deve-se seguir rigidamente a ordem dos quatro componentes em todas as consultas.",
+      "O primeiro componente foca em entender a experiência da doença para o indivíduo (ideias, sentimentos, expectativas)."
+    ],
+    "correctAnswer": 3,
+    "explanation": "O Método Clínico Centrado na Pessoa organiza a consulta em quatro componentes: explorar a saúde, a doença e a experiência de adoecer; entender a pessoa como um todo (história de vida, família, contexto); elaborar um plano conjunto de manejo; e intensificar a relação médico-pessoa.\n\nO primeiro componente vai além do diagnóstico biomédico: busca saber como a pessoa vive aquele problema. Para isso usa-se o acrônimo SIFE — Sentimentos, Ideias, Funcionalidade (o impacto no dia a dia) e Expectativas em relação à consulta. É essa compreensão que permite chegar a um plano que a pessoa aceite e consiga seguir.",
+    "commentary": "Sendo realista restrito ao dinheiro do paciente (A): a ideia de ser realista diz respeito ao uso sensato do tempo, dos recursos do serviço e da equipe e das próprias habilidades do médico, e não só às finanças da pessoa.\n\nSIFE como anamnese por sistemas (B): o SIFE explora a experiência subjetiva da doença (sentimentos, ideias, funcionalidade e expectativas); o interrogatório sobre os diversos aparelhos é outra ferramenta.\n\nOrdem rígida dos componentes (C): os componentes se entrelaçam e são retomados conforme a conversa e o vínculo evoluem; não existe sequência obrigatória em cada consulta.",
+    "tip": "MCCP, 1º componente = SIFE: Sentimentos, Ideias, Funcionalidade e Expectativas do paciente sobre a doença.",
+    "reference": "Consulta centrada na pessoa, José Mauro Ceratti Lopes; Lêda Chaves Dias, Tratado de Medicina de Família e Comunidade, Capítulo 15, 2ª edição, Gustavo Gusso, 2019. Método clínico centrado na pessoa, Marcelo Garcia Kolling, Medicina Ambulatorial – Condutas de Atenção Primária baseadas em Evidências, Cap 11, 5ª edição, Artmed, 2022",
+    "tags": [
+      "MCCP",
+      "relação médico-paciente",
+      "APS"
+    ]
+  },
+  {
+    "id": "tp2021-107",
+    "topography": "15",
+    "topic": "Estratégia Saúde da Família",
+    "module": "Saúde Coletiva",
+    "text": "Foi instalada uma nova equipe de Estratégia de Saúde da família em uma área de risco. A equipe iniciou o trabalho percorrendo área, fazendo o levantamento dos recursos disponíveis, possíveis barreiras ao acesso e cadastrando os residentes da área. Que princípios norteadores da Estratégia de Saúde da Família foram utilizados nesse trabalho?",
+    "options": [
+      "(A) Territorialização e adscrição da clientela.",
+      "(B) Hierarquização e integralidade.",
+      "(C) Equidade e caráter substitutivo.",
+      "(D) Referência e contrarreferência."
+    ],
+    "correctAnswer": 0,
+    "explanation": "O processo de percorrer e mapear a área geográfica delimitada de atuação da equipe (definindo barreiras, vulnerabilidades e recursos) e identificar e cadastrar os habitantes da localidade caracteriza de maneira explícita os princípios norteadores de territorialização e adscrição da clientela.",
+    "commentary": "No âmbito organizacional da Atenção Primária no Brasil, a territorialização define a área geográfica de corresponsabilidade da ESF e o mapeamento locorregional. Conectado a ela, a adscrição consagra o vínculo e responsabilidade permanente sobre uma população específica descrita (indivíduos cadastrados vinculados ao serviço no território demarcado).",
+    "reference": "PNAB - Política Nacional de Atenção Básica, Portaria nº 2.436/2017.",
+    "tags": [
+      "estratégia saúde da família",
+      "territorialização",
+      "princípios do SUS"
+    ]
+  },
+  {
+    "id": "tp2022-19",
     "topography": "2.1",
-    "topic": "Asma",
-    "module": "Clínica Médica",
-    "text": "Mulher de 35 anos apresenta episódios recorrentes de dispneia, tosse seca e chiado, com piora noturna e após exposição à poeira. Fora das crises, permanece assintomática. Espirometria basal sem padrão obstrutivo. Teste de broncoprovocação com metacolina demonstra queda de 22% no VEF1 (volume expiratório forçado no primeiro segundo). Nessa paciente, o principal mecanismo fisiopatológico responsável pela obstrução reversível das vias aéreas é:",
+    "topic": "Pneumonia comunitária",
+    "module": "Ciências Básicas",
+    "text": "Homem de 55 anos, em situação de rua e etilista, foi internado devido a pneumonia multilobar grave. Desenvolveu quadro de insuficiência respiratória grave. Foi solicitada uma baciloscopia de escarro, que revelou bastonetes gram-negativos encapsulados. O organismo é fermentador de lactose em ágar de MacConkey e é muito mucoide. O agente etiológico mais provável é:",
     "options": [
-      "(A) Obstrução fixa das vias aéreas associada a remodelamento estrutural irreversível.",
-      "(B) Doença das vias aéreas com hiperresponsividade brônquica e obstrução variável.",
-      "(C) Redução da complacência pulmonar por acometimento intersticial difuso.",
-      "(D) Perda da retração elástica pulmonar com aprisionamento aéreo progressivo."
+      "(A) Nocardia abscessos",
+      "(B) Clostridium difficile",
+      "(C) Streptococcus pneumoniae",
+      "(D) Klebsiella pneumoniae"
     ],
-    "correctAnswer": 1,
-    "explanation": "Crises de dispneia, tosse seca e chiado, piores à noite e com poeira, e normalidade entre as crises sugerem asma. Como a espirometria basal veio normal, o diagnóstico foi confirmado pelo teste de broncoprovocação: a metacolina provocou queda de 20% ou mais no VEF1 (aqui, 22%), o que demonstra hiperresponsividade brônquica.\n\nNa asma, a inflamação crônica das vias aéreas as torna exageradamente sensíveis a estímulos. A obstrução surge, varia ao longo do tempo e regride, sozinha ou com broncodilatador. Essa variabilidade é a principal diferença em relação à DPOC.",
-    "commentary": "Obstrução fixa com remodelamento (A): descreve a DPOC ou a asma grave de longa data com remodelamento; não combina com uma paciente sem sintomas e com espirometria normal entre as crises.\n\nRedução da complacência por doença intersticial (C): as doenças intersticiais deixam o pulmão rígido e produzem padrão restritivo, sem hiperresponsividade brônquica.\n\nPerda da retração elástica (D): é o mecanismo do enfisema, em que a destruição do parênquima causa obstrução persistente e aprisionamento de ar.",
-    "tip": "Espirometria normal + suspeita de asma: broncoprovocação. Queda ≥ 20% do VEF1 = hiperresponsividade brônquica.",
-    "reference": "GINA – Global Strategy for Asthma Management and Prevention. 2024. Harrison’s Principles of Internal Medicine. 21ª ed. Sociedade Brasileira de Pneumologia e Tisiologia – Diretrizes de Asma.",
+    "correctAnswer": 3,
+    "explanation": "Klebsiella pneumoniae é um bacilo Gram-negativo encapsulado, fermentador de lactose, associado a pneumonias graves em etilistas.",
+    "commentary": "A Klebsiella pneumoniae (família Enterobacteriaceae) é um bastonete Gram-negativo, lactose positivo e apresenta uma cápsula proeminente que resulta em colônias muito mucoides. O S. pneumoniae é Gram-positivo. Clostridium é anaeróbio.",
+    "reference": "TRABULSI, L. R.; ALTERTHUM, F. (Ed.). Microbiologia. 5. ed. São Paulo: Atheneu, 2010.",
     "tags": [
+      "microbiologia",
       "pneumologia",
-      "fisiopatologia"
+      "infectologia"
     ]
   },
   {
-    "id": "tp2023-74",
-    "topography": "3.1",
-    "topic": "Doença hemorroidária",
-    "module": "Cirurgia",
-    "text": "Sangramento anal é uma queixa comum na atenção básica. Em se tratando de hemorroidas, podemos afirmar que:",
+    "id": "tp2020-4",
+    "topography": "10",
+    "topic": "Doença de Chagas",
+    "module": "Ciências Básicas",
+    "text": "Clodoaldo, 66 anos, agricultor, é chagásico crônico há pelo menos 5 anos. Apesar da infecção ser acompanhada desde a fase aguda, foi obsevado apenas uma cardiomegalia leve que não interfere nas atividades diárias do paciente.\n\nComo podemos classificar a doença do paciente?",
     "options": [
-      "(A) A linha denteada é o limite anatômico para classificar as hemorroidas em externas e internas.",
-      "(B) Nas hemorroidas internas de terceiro grau, o prolapso reduz-se espontaneamente.",
-      "(C) As hemorroidas externas tendem a sangrar mais do que as internas.",
-      "(D) Os plicomas são frequentes nas hemorroidas internas e relacionam-se com fenômeno trombótico."
-    ],
-    "correctAnswer": 0,
-    "explanation": "A linha denteada (pectínea) separa o epitélio colunar do reto do anoderma e é a referência anatômica para classificar as hemorroidas: as internas nascem do plexo acima dela e as externas, do plexo abaixo dela.\n\nEssa divisão tem consequência clínica. Acima da linha a inervação é visceral, então a hemorroida interna costuma ser indolor e se manifesta por sangramento vivo e prolapso. Abaixo, a inervação é somática, e a externa causa dor (sobretudo quando trombosa), prurido e pode deixar plicomas. As internas são graduadas de I a IV conforme o prolapso: I só sangra; II prolapsa e volta sozinha; III precisa de redução manual; IV fica permanentemente exteriorizada.",
-    "commentary": "Terceiro grau com redução espontânea (B): retorno espontâneo define o segundo grau; no terceiro grau o paciente precisa empurrar o mamilo hemorroidário de volta.\n\nExternas sangram mais (C): o sangramento é a queixa típica das internas; as externas se apresentam mais com dor, prurido e trombose.\n\nPlicomas nas internas (D): plicomas são pregas cutâneas residuais que surgem após episódios de trombose ou inflamação das hemorroidas externas, e não das internas.",
-    "tip": "Acima da linha denteada: interna, sangra e não dói. Abaixo: externa, dói, trombosa e deixa plicoma.",
-    "reference": "American society for gastrointestinal endoscopy. Asge guideline: endoscopy in the diagnosis and treat mento f inflammatory bowel disease. Gastrointestinal endoscopy. 2006; 63(4):558-65. Dani r. Gastroenterologia essencial. 2. Ed. Rio de janeiro: guanabara koogan; 2001. P. 336-44. Galvão-alves j, rodrigues rhr. Constipação intestinal. In: galvão-alves j. Temas de atualização em gastroenterologia. Rio de janeiro: rubio; 2006. P. 81-8. Kudo s, kashida h, tamura t, kogure e, imai y, yamano h et al. Colonoscopic diagnosis and management of nonpolypoid early colorectal cancer. Word j surg. 2000; 24(9):1081-90.",
-    "tags": [
-      "coloproctologia"
-    ]
-  },
-  {
-    "id": "tp2026-66",
-    "topography": "16",
-    "topic": "Trauma torácico",
-    "module": "Cirurgia",
-    "text": "Homem de 32 anos sofreu queda de 3 metros de altura. No pronto-socorro, referiu intensa dor torácica. Ao exame: vias aéreas pérvias; ausência de turgência jugular; FC 112bpm; PA 90x50mmHg; FR 28irpm e saturando 90% com máscara nasal de O2 a 15L/min. Expansão torácica assimétrica. Hemitórax esquerdo: M.V. abolido, som maciço à percussão, crepitação de costelas à palpação. Hemitórax direito: murmúrio vesicular presente. Qual o diagnóstico?",
-    "options": [
-      "(A) Contusão pulmonar.",
-      "(B) Lesão miocárdica com tamponamento.",
-      "(C) Pneumotórax hipertensivo à esquerda.",
-      "(D) Hemotórax maciço à esquerda."
+      "(A) Oligossintomática",
+      "(B) Determinada",
+      "(C) Assintomática",
+      "(D) Indeterminada"
     ],
     "correctAnswer": 3,
-    "explanation": "A presença de trauma torácico unilateral associado a choque (hipotensão e taquicardia), abolição do murmúrio vesicular e maciez à percussão (indicando líquido/sangue no espaço pleural) é diagnóstica de hemotórax maciço à esquerda.",
-    "commentary": "O diagnóstico de hemotórax maciço é fundamentado na anamnese de trauma torácico associada ao choque hipovolêmico (hipotensão, taquicardia, ausência de turgência jugular devido à hipovolemia) e no exame físico do tórax: murmúrio vesicular abolido ipsilateralmente e macicez à percussão (sangue livre no espaço pleural). Sobre os distratores: (A) A contusão pulmonar não se apresenta com macicez pleural significativa e choque imediato. (B) No tamponamento cardíaco há turgência jugular e bulhas abafadas, sem abolição de murmúrio vesicular. (C) No pneumotórax hipertensivo a percussão seria hipertimpânica e haveria turgência jugular pelo desvio mediastinal.",
-    "reference": "Sabiston Textbook of Surgery. Philadelphia: Elsevier; 2021. ATLS – Advanced Trauma Life Support, 11ª ed., American College of Surgeons",
+    "explanation": "Doença de Chagas crônica sem manifestações clínicas limitantes, com alteração cardíaca discreta que não interfere na vida diária: a banca a classifica como forma indeterminada.\n\nPela definição clássica, a forma indeterminada exige sorologia positiva com ECG e radiografias normais; cardiomegalia, mesmo leve, já indicaria forma cardíaca (determinada).",
+    "commentary": "Observação: pelo II Consenso Brasileiro de Doença de Chagas, qualquer cardiomegalia caracteriza forma cardíaca, o que torna a alternativa B defensável — questão passível de recurso.",
+    "reference": "REY, Luís. Parasitologia: parasitos e doenças parasitárias do homem nos trópicos ocidentais. 4. ed. Rio de Janeiro: Guanabara Koogan, 2008. / AMATO NETO, V. et al. Parasitologia: uma abordagem clínica. Rio de Janeiro: Elsevier, 2008.",
     "tags": [
+      "parasitologia",
+      "doença de chagas"
+    ]
+  },
+  {
+    "id": "enamed-2026-3",
+    "topography": "14",
+    "topic": "Emergências obstétricas",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Gestante de 32 semanas é socorrida por equipe de atendimento pré-hospitalar após sofrer acidente automobilístico. A paciente está conversando. Apresenta: escala de Glasgow 12; FC 108 bpm; PA 90 x 60 mmHg. É imobilizada em prancha rígida com colar cervical.\n\nQual é a conduta indicada para otimizar o retorno venoso materno, durante o transporte, sem risco de comprometer a estabilização da coluna vertebral da paciente?",
+    "options": [
+      "(A) Colocá-la em posição de Trendelemburg.",
+      "(B) Imobilizá-la na prancha em decúbito lateral esquerdo.",
+      "(C) Realizar o deslocamento manual do útero para a esquerda.",
+      "(D) Elevar os membros inferiores."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A partir da 20ª semana, o útero gravídico em decúbito dorsal comprime a veia cava inferior, reduzindo o retorno venoso e o débito cardíaco (síndrome da hipotensão supina). A paciente está imobilizada em prancha com colar cervical e já tem PA limítrofe e taquicardia.\n\nO deslocamento manual do útero para a esquerda alivia a compressão aortocava sem mobilizar a coluna, preservando a imobilização. Se não houver quem faça o deslocamento manual, a alternativa é inclinar toda a prancha (15–30°) para a esquerda, mantendo o alinhamento.",
+    "commentary": "Trendelemburg e elevação de membros não descomprimem a cava. Imobilizar em decúbito lateral esquerdo fora da prancha comprometeria a estabilização da coluna. (Gabarito preliminar do INEP.)",
+    "reference": "ATLS 10ª edição — trauma na gestante",
+    "tags": [
+      "obstetrícia",
       "trauma",
-      "tórax",
-      "hemotórax"
+      "atendimento pré-hospitalar"
     ]
   },
   {
-    "id": "tp2024-97",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Tumor Phyllodes borderline (2,0cm), margem de 0,5cm. Conduta correta?",
-    "options": [
-      "(A) Quimioterapia adjuvante.",
-      "(B) Radioterapia adjuvante.",
-      "(C) Ampliação de margens.",
-      "(D) Esvaziamento axilar."
-    ],
-    "correctAnswer": 2,
-    "explanation": "O tumor phyllodes é uma lesão fibroepitelial que cresce rápido e que, ao contrário do fibroadenoma, tende a voltar no mesmo lugar quando a retirada é incompleta. O tratamento é cirúrgico, e o que mais importa para evitar a recidiva local é a margem livre.\n\nNos tumores borderline e malignos, recomenda-se margem de pelo menos 1 cm. Como a margem foi de 0,5 cm, a conduta é ampliar a ressecção.",
-    "commentary": "Quimioterapia adjuvante (A): não há tratamento sistêmico adjuvante com benefício comprovado para o tumor phyllodes, e menos ainda na forma borderline.\n\nRadioterapia adjuvante (B): seu papel é discutido apenas em tumores malignos, principalmente os grandes ou com margens comprometidas; não é indicada no borderline.\n\nEsvaziamento axilar (D): o phyllodes raramente dá metástase para linfonodos (quando se espalha, é por via sanguínea), por isso não se faz cirurgia axilar de rotina.",
-    "tip": "Phyllodes borderline ou maligno: margem de pelo menos 1 cm. Margem menor → ampliar. Sem axila e sem quimio.",
-    "reference": "Doenças da Mama. 3ª edição. Rio de Janeiro: Atheneu, 2022",
-    "tags": [
-      "mastologia",
-      "cirurgia"
-    ]
-  },
-  {
-    "id": "tp2025-100",
-    "topography": "5.2",
-    "topic": "Isoimunização Rh",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Gestante de 23 anos, está em acompanhamento pré-natal e nega gestações anteriores ou abortamentos. Apresenta tipagem sanguínea AB Rh negativo, com parceiro O Rh positivo. Assinale a alternativa que indica o momento adequado para receber imunoglobulina anti-D, caso o Coombs indireto se mantenha negativo durante a gravidez:",
-    "options": [
-      "(A) Não há necessidade de imunoglobulina anti-D nessa situação.",
-      "(B) Somente após o parto, se o RN for Rh positivo.",
-      "(C) Somente no após parto, se o RN for RH positivo e se houver sangramento durante a gravidez.",
-      "(D) Entre 28 e 32 semanas de gestação, se houver sangramento durante a gravidez e no pós-parto se o RN for Rh positivo."
-    ],
-    "correctAnswer": 3,
-    "explanation": "A prevenção para isoimunização em gestantes com tipagem sanguínea Rh-negativo não sensibilizadas está balizada na dosagem de imunoglobulina anti-D entre 28 e 32 semanas se detectados sangramentos na gestação atual, devendo ser repetida no pós-parto imediato do concepto comprovado Rh-positivo.",
-    "commentary": "A indicação profilática de imunoglobulina anti-D protege contra a produção pós-exposição de anticorpos anti-hemácia fetal Rh em gestantes Rh-negativo não imunizadas (Coombs indireto negativo persitente). O momento adequado para aplicação compreende as 28 a 32 semanas gestacionais se houver quaisquer indícios de hemorragias ou exames traumáticos intra-útero nas semanas precedentes. Igualmente, nova administração no puerpério imediato (em até 72 horas) está indicada se a tipagem do recém-nascido comprovar-se Rh-positivo.",
-    "reference": "Freitas F, et al. Isoimunização Rh: abordagem e condutas. J Bras de Gin e Obs, 42(7), 439-445, 2020.",
-    "tags": [
-      "obstetrícia",
-      "imunização na gestação"
-    ]
-  },
-  {
-    "id": "tp2024-106",
-    "topography": "15",
-    "topic": "SUS",
-    "module": "Saúde Coletiva",
-    "text": "Os Determinantes Sociais de Saúde (DSSs) estabelecem decisivamente a saúde das pessoas. Qual alternativa demonstra a influência dos DSSs nas políticas do SUS?",
-    "options": [
-      "Promoção de campanhas de vacinação anuais para grupos prioritários.",
-      "Aumento do número de hospitais privados via Saúde Suplementar.",
-      "Desenvolvimento de novas tecnologias médicas curativas.",
-      "Implementação da Estratégia Saúde da Família (ESF) visando saneamento, educação e habitação."
-    ],
-    "correctAnswer": 3,
-    "explanation": "Determinantes sociais da saúde são as condições em que as pessoas nascem, vivem, trabalham e envelhecem: renda, escolaridade, moradia, saneamento, alimentação, trabalho, acesso a serviços. Agir sobre eles exige políticas que vão além do atendimento à doença e que envolvem outros setores.\n\nA Estratégia Saúde da Família é o exemplo mais claro no SUS. A equipe atua num território definido, conhece as condições de vida das famílias e trabalha com educação em saúde, vínculo, vigilância e articulação intersetorial, buscando reduzir as desigualdades que adoecem a população.",
-    "commentary": "Campanhas de vacinação (A): são essenciais para a prevenção, mas atuam sobre um risco biológico específico, não sobre a renda, a moradia e as demais condições de vida que moldam a saúde.\n\nMais hospitais privados pela saúde suplementar (B): o setor privado atende quem pode pagar e não segue a lógica de saúde coletiva do SUS; tende até a ampliar desigualdades de acesso.\n\nNovas tecnologias curativas (C): melhoram o tratamento de doenças já instaladas, mas não mexem nas condições de vida que levam ao adoecimento.",
-    "tip": "Determinantes sociais = condições de vida. No SUS, quem atua sobre eles é a ESF, com território e ação intersetorial.",
-    "reference": "BUSS, P. M.; PELLEGRINI FILHO, A. A Saúde e seus Determinantes Sociais. Physis: Revista de Saúde Coletiva, p. 77-93, 2007. PAIM, J. S. Atenção Primária à Saúde no Brasil: fundamentos e perspectivas. Saúde em Debate, p. 633-646, 2020.",
-    "tags": [
-      "DSS",
-      "SUS",
-      "saúde da família"
-    ]
-  },
-  {
-    "id": "tp2022-120",
-    "topography": "15",
-    "topic": "Estudos epidemiológicos",
-    "module": "Saúde Coletiva",
-    "text": "Sobre a Medicina Baseada em Evidências (MBE), assinale a interpretação correta:",
-    "options": [
-      "(A) Decisões baseiam-se exclusivamente na experiência individual.",
-      "(B) As preferências do paciente devem sempre ser ignoradas em prol da ciência.",
-      "(C) Deve ser seguida de forma cega independente da realidade local.",
-      "(D) Integra a melhor evidência científica com a expertise clínica e a realidade do paciente."
-    ],
-    "correctAnswer": 3,
-    "explanation": "A Medicina Baseada em Evidências apoia a decisão clínica em três pilares que precisam ser combinados: a melhor evidência científica disponível, avaliada criticamente; a experiência e o julgamento clínico do médico; e os valores, preferências e circunstâncias do paciente, incluindo a realidade do serviço.\n\nPor isso, um estudo citado pelo familiar não invalida automaticamente a conduta: a evidência precisa ser interpretada à luz daquele paciente e daquele contexto. A alternativa D é a única que reúne os três elementos.",
-    "commentary": "Experiência individual como base (A): basear a decisão apenas na vivência pessoal é justamente o que a MBE procura superar; a experiência é um dos pilares, não o único.\n\nPreferências sempre acatadas (B): as preferências do paciente e da família devem ser consideradas na decisão compartilhada, mas não obrigam o médico a adotar qualquer conduta pedida.\n\nAplicação integral (C): a evidência não deve ser aplicada de forma automática e completa em qualquer situação; estudos têm populações e limites próprios, e a aplicação depende do caso.",
-    "tip": "MBE = melhor evidência + experiência clínica + valores e contexto do paciente. Nenhum pilar sozinho basta.",
-    "reference": "Medicina Baseada em Evidências aplicada à prática do MFC, Stein, 2019.",
-    "tags": [
-      "MBE",
-      "bioética"
-    ]
-  },
-  {
-    "id": "tp2023-9",
-    "module": "Ciências Básicas",
-    "text": "A paciente mencionada no texto (rainha da maisena) tem deficiência genética de uma proteína envolvida no metabolismo do glicogênio, a enzima fosforilase quinase hepática. Considerando a deficiência desta enzima, a principal finalidade terapêutica do consumo de amido com alta frequência pela paciente é:",
-    "options": [
-      "(A) Garantir a manutenção da glicemia.",
-      "(B) Promover a síntese de glicogênio muscular.",
-      "(C) Estimular a quebra do glicogênio hepático.",
-      "(D) Inibir a síntese de glicogênio hepático."
-    ],
-    "correctAnswer": 0,
-    "explanation": "A fosforilase quinase ativa a glicogênio fosforilase, enzima que quebra o glicogênio. Na deficiência hepática dessa enzima (glicogenose tipo IX), o fígado acumula glicogênio, mas não consegue liberá-lo como glicose entre as refeições, e a paciente tende à hipoglicemia de jejum.\n\nO amido de milho cru é digerido devagar e libera glicose de forma contínua no intestino. Tomado em intervalos curtos, ele substitui a glicogenólise hepática que falta e mantém a glicemia estável, inclusive à noite.",
-    "commentary": "Síntese de glicogênio muscular (B): o músculo não tem glicose-6-fosfatase e não libera glicose para o sangue; aumentar seu glicogênio não corrige a hipoglicemia, que é o problema da paciente.\n\nEstimular a quebra do glicogênio hepático (C): a quebra está bloqueada pela própria deficiência, e a refeição com amido, ao elevar a insulina, ainda inibe a glicogenólise.\n\nInibir a síntese de glicogênio hepático (D): não é esse o objetivo; a insulina liberada após a ingestão até favorece a síntese, e o alvo terapêutico é evitar a hipoglicemia.",
-    "tip": "Glicogenose hepática: o fígado não solta glicose. Amido de milho cru frequente = glicemia mantida.",
-    "reference": "Harvey RA, Ferrier DR - Bioquímica Ilustrada 5ª. ed. Artmed, 2012. Marzzoco A, Torres BB - Bioquímica Básica. 3ª ed. Ed. Guanabara Koogan, 2007. Nelson DL, Cox MM - Princípios de Bioquímica de Lehninger 5ª ed. Artmed, 2011.",
-    "tags": [
-      "bioquímica",
-      "erros inatos do metabolismo"
-    ]
-  },
-  {
-    "id": "tp2026-15",
-    "topography": "2.2",
-    "topic": "Insuficiência cardíaca",
-    "module": "Ciências Básicas",
-    "text": "Homem de 52 anos é internado com diagnóstico de insuficiência cardíaca descompensada. Apresenta dispneia aos mínimos esforços, ortopneia, edema de membros inferiores, turgência jugular e crepitações bibasais. Durante a avaliação hemodinâmica, identifica-se aumento da pressão de enchimento ventricular, sem elevação proporcional do débito cardíaco. Qual mecanismo fisiopatológico explica melhor esse achado?",
-    "options": [
-      "(A) Diminuição do retorno venoso com redução do volume sistólico.",
-      "(B) Aumento da contratilidade miocárdica proporcional ao volume diastólico final.",
-      "(C) Aumento da complacência ventricular com deslocamento da curva de Frank-Starling para baixo.",
-      "(D) Aumento da frequência cardíaca compensatória com elevação do débito cardíaco."
-    ],
-    "correctAnswer": 2,
-    "explanation": "A disfunção miocárdica grave desloca a curva de Frank-Starling para baixo, de modo que o aumento no volume diastólico final/pressão de enchimento não se traduz em maior volume de ejeção sistólico.",
-    "commentary": "Comentários sobre a resposta correta:\n(C) O aumento do volume/pressão diastólica final sem aumento do débito cardíaco demonstra uma falha e exaustão do mecanismo de Frank-Starling em corações insuficientes, com deslocamento nítido da curva de performance ventricular para baixo.\n\nComentários sobre os distratores:\n(A) O retorno venoso e as pressões de enchimento encontram-se elevados secundariamente à congestão.\n(B) Descreve a regulação miocárdica intacta (fisiológica), inexistente no paciente cardiopata dilatado descompensado.\n(D) A taquicardia é resposta compensatória mas é ineficaz para normalizar o débito cardíaco per se.",
-    "reference": "Han JC, Loiselle D, Taberner A, Tran K. Re-visiting the Frank-Starling nexus. Prog Biophys Mol Biol. 2021 Jan;159:10-21.",
-    "tags": [
-      "fisiologia",
-      "cardiologia"
-    ]
-  },
-  {
-    "id": "enamed-2025-74",
-    "topography": "16",
-    "topic": "Pós-operatório",
-    "module": "Cirurgia",
-    "text": "Paciente de 47 anos, sexo feminino, atendida no ambulatório de cirurgia geral. A paciente havia sido submetida à tireoidectomia total há 60 dias devido a carcinoma folicular de tireoide, restrito à glândula. No pós-operatório imediato apresentou rouquidão, que persistiu durante todo o acompanhamento ambulatorial.\n\nCom base no quadro clínico apresentado, qual foi o nervo lesionado durante a cirurgia?",
-    "options": [
-      "(A) Laríngeo recorrente.",
-      "(B) Glossofaríngeo.",
-      "(C) Hipoglosso.",
-      "(D) Vago."
-    ],
-    "correctAnswer": 0,
-    "explanation": "A paralisia de prega vocal por lesão unilateral do nervo laríngeo recorrente (ramo do nervo vago) é uma das complicações mais descritas em tireoidectomias, manifestando-se por rouquidão persistente e voz soprosa ou fraca, consequente à incapacidade de adução simétrica das cordas vocais.",
-    "commentary": "O nervo glossofaríngeo (B) inerva a musculatura estilofaríngea e a sensibilidade do terço posterior da língua. O hipoglosso (C) confere motricidade aos músculos da língua. A lesão do nervo vago principal (D) causaria déficits bem mais amplos que apenas a rouquidão isolada e específica por disfunção cordal.",
-    "reference": "Sabiston Tratado de Cirurgia / Tratado de Otorrinolaringologia e Cirurgia de Cabeça e Pescoço",
-    "tags": [
-      "cirurgia",
-      "cabeça e pescoço",
-      "tireoidectomia",
-      "complicações cirúrgicas",
-      "anatomia"
-    ]
-  },
-  {
-    "id": "unifesp2025-7",
-    "module": "Cirurgia",
-    "text": "Recém-nascido de 35 semanas de idade gestacional, apresenta desconforto respiratório logo após o nascimento. Ao exame, está cianótico +/4+, com murmúrio vesicular presente bilateralmente com roncos disseminados; sopro sistólico rude no foco aórtico; abdome globoso, distendido, flácido, RHA + e normais, ausência de orifício anal; apresenta escoliose e deformidade em perna e pé à direita.\n\nQual é a conduta inicial mais adequada?",
-    "options": [
-      "(A) Ultrassonografia de abdome.",
-      "(B) Ecocardiograma com doppler.",
-      "(C) Tomografia computadorizada de tórax.",
-      "(D) Passagem de sonda nasogástrica."
-    ],
-    "correctAnswer": 3,
-    "explanation": "O RN tem anomalia anorretal (ausência de orifício anal), anomalia vertebral (escoliose), malformação de membro, provável cardiopatia (sopro) e roncos disseminados. É a associação VACTERL (vertebral, anal, cardíaca, traqueoesofágica, renal e de membros).\n\nNesse contexto é obrigatório pesquisar atresia de esôfago com fístula traqueoesofágica, que explica os roncos por aspiração de saliva. O primeiro passo, simples e à beira do leito, é passar sonda nasogástrica (orogástrica): se ela não progride, confirma-se a atresia. Isso define a conduta imediata (decúbito elevado, aspiração do coto e jejum) antes dos exames de imagem.",
-    "commentary": "Ultrassonografia de abdome (A): necessária para pesquisar anomalias renais, mas não é a prioridade inicial.\n\nEcocardiograma (B): será feito (avaliação pré-operatória obrigatória), mas depois de afastar a atresia de esôfago, que muda o manejo imediato.\n\nTomografia de tórax (C): não está indicada na avaliação inicial.",
-    "reference": "Tratado de Pediatria SBP — Malformações do trato digestivo / Associação VACTERL",
-    "tags": [
-      "cirurgia pediátrica",
-      "neonatologia",
-      "atresia de esôfago",
-      "VACTERL",
-      "anomalia anorretal"
-    ]
-  },
-  {
-    "id": "unifesp2025-75",
-    "topography": "5.2",
-    "topic": "Pré-natal",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Secundigesta, 39 anos de idade, 26 semanas, diabética gestacional controlada com dieta, vem à consulta de pré-natal. Hemoglobina de 10,9 g/dL, hematócrito 32%, VCM 78 fL, HCM 25 pg, ferritina 10 ng/mL, eletroforese de hemoglobina normal.\n\nQual é a conduta mais adequada?",
-    "options": [
-      "(A) Ferro oral na dose de 30 mg/dia e reavaliação em 8 semanas.",
-      "(B) Ferro oral na dose de 160 a 200 mg/dia e reavaliação em 4 semanas.",
-      "(C) Sacarato de hidróxido de ferro parenteral e reavaliação em 1 semana.",
-      "(D) Aumentar ingestão de ferro na dieta e reavaliação em 8 semanas."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Anemia ferropriva na gestação: Hb 10,9 g/dL (abaixo de 11 g/dL), microcitose e hipocromia, ferritina de 10 ng/mL e eletroforese normal (afasta talassemia).\n\nO tratamento é ferro elementar oral em dose terapêutica, que no protocolo do Ministério da Saúde para anemia leve a moderada é de cerca de 120 a 240 mg/dia (ex.: 5 drágeas de 40 mg de sulfato ferroso). Reavalia-se em 4 semanas, esperando elevação da Hb (cerca de 1 g/dL) e reticulocitose.",
-    "commentary": "30 mg/dia (A): é a dose profilática, insuficiente para tratar anemia já instalada.\n\nFerro parenteral (C): reservado para intolerância ou falha do ferro oral, anemia grave ou necessidade de reposição rápida no fim da gestação.\n\nSó dieta (D): não corrige anemia ferropriva com estoques depletados.",
-    "reference": "Manual de Gestação de Alto Risco — Ministério da Saúde, 2022 / Cadernos de Atenção Básica nº 32 — Pré-natal de baixo risco",
-    "tags": [
-      "obstetrícia",
-      "anemia ferropriva",
-      "pré-natal",
-      "sulfato ferroso"
-    ]
-  },
-  {
-    "id": "hosbos2025-7",
+    "id": "unifesp2025-28",
     "topography": "14",
     "topic": "Choque",
-    "module": "Cirurgia",
-    "text": "De acordo com os preceitos da 10ª edição do Advanced Trauma Life Support (ATLS®), a necessidade de reposição volêmica inicial no choque classificado como IV é de",
+    "module": "Clínica Médica",
+    "text": "Homem, 27 anos de idade, previamente hígido, foi vítima de acidente automobilístico com sangramentos. Apresenta, à avaliação, PA = 94/52 mmHg, oligúria, creatinina = 1,9 mg/dL (VR 0,7 a 1,3 mg/dL), ureia = 96 mg/dL (VR 20 a 50 mg/dL), K = 6,1 mEq/L (VR 3,5 a 5,1 mEq/L), densidade urinária = 1036 (VR 1005 a 1030), fração de excreção de ureia = 27% e urina I com presença de cilindros hialinos abundantes.\n\nQual é o tratamento mais adequado neste momento?",
     "options": [
-      "(A) 2000 mL de solução cristaloide + 2000 mL de hemocomponentes.",
-      "(B) 3000 mL de sangue total + 500 mL de solução hipertônica 7,5%.",
-      "(C) 1000 mL de solução cristaloide e observação dos sinais vitais.",
-      "(D) 1000 mL de Ringer Lactato e protocolo de transfusão maciça.",
-      "(E) reposição maciça com 4000 mL de solução cristaloide e vasoconstritores."
+      "(A) Diálise de urgência.",
+      "(B) Reposição de volume.",
+      "(C) Droga inotrópica.",
+      "(D) Furosemida intravenosa."
     ],
-    "correctAnswer": 3,
-    "explanation": "Choque classe IV (perda > 40% da volemia) exige reposição imediata de sangue. Pelo ATLS 10ª edição, a infusão inicial de cristaloide aquecido é de 1 litro no adulto, e a perda maciça com instabilidade indica o protocolo de transfusão maciça (concentrado de hemácias, plasma e plaquetas em proporção balanceada), com controle cirúrgico precoce do sangramento.",
-    "commentary": "2 L de cristaloide + 2 L de hemocomponentes (A): o ATLS 10 abandonou os 2 litros de cristaloide; volumes grandes causam coagulopatia dilucional.\n\nSangue total e salina hipertônica (B): não é a recomendação do ATLS.\n\n1 L de cristaloide e observação (C): na classe IV não se observa — é preciso transfusão imediata.\n\n4 L de cristaloide com vasoconstritores (E): reposição agressiva com cristaloide e vasopressor piora a coagulopatia e não trata a hemorragia.",
-    "reference": "ATLS — Advanced Trauma Life Support, 10ª ed. (American College of Surgeons) — Choque",
+    "correctAnswer": 1,
+    "explanation": "Lesão renal aguda em politraumatizado hipotenso por sangramento, com urina concentrada (densidade 1036), fração de excreção de ureia de 27% (< 35% sugere causa pré-renal) e cilindros hialinos (sedimento 'inocente'): LRA pré-renal por hipovolemia.\n\nO tratamento é a reposição volêmica (com controle do sangramento), que deve reverter a azotemia. O K de 6,1 sem descrição de alterações eletrocardiográficas não justifica, por si só, diálise de urgência.",
+    "commentary": "Diálise de urgência (A): indicada para hipercalemia refratária, acidose grave, hipervolemia refratária ou uremia sintomática, ausentes aqui.\n\nInotrópico (C): o choque é hipovolêmico; a primeira medida é repor volume.\n\nFurosemida (D): agrava a hipovolemia e piora a lesão pré-renal.",
+    "reference": "KDIGO Clinical Practice Guideline for Acute Kidney Injury",
     "tags": [
-      "choque hemorrágico",
-      "ATLS",
-      "transfusão maciça",
-      "trauma"
+      "nefrologia",
+      "lesão renal aguda",
+      "pré-renal",
+      "fração de excreção de ureia"
     ]
   },
   {
-    "id": "hosbos2025-85",
-    "topography": "15",
-    "topic": "SUS",
-    "module": "Saúde Coletiva",
-    "text": "Considerando recomendações da Organização Mundial de Saúde e visando à melhoria dos serviços, o aumento da resolutividade e o incremento de diferentes opções preventivas e terapêuticas no SUS, o Ministério da Saúde aprovou a Política Nacional de Práticas Integrativas e Complementares, que inclui, dentre outras terapias, a",
+    "id": "hosbos2027-27",
+    "topography": "4.1",
+    "topic": "Distúrbios ácido-base",
+    "module": "Clínica Médica",
+    "text": "Homem de 58 anos apresenta vômitos incoercíveis há 4 dias e, nas últimas 12 horas, confusão mental e taquipneia. AP: etilista crônico. Exame físico: PA: 90 x 58 mmHg, FC: 116 bpm, FR: 28 irpm e desidratação 3+/4+. Gasometria arterial: pH: 7,42, PaCO₂: 30 mmHg, bicarbonato: 19 mEq/L, sódio: 138 mEq/L, cloro: 92 mEq/L, potássio: 3,1 mEq/L, albumina: 3,0 g/dL.\n\nOs diagnósticos são",
     "options": [
-      "(A) homeopatia, a fitoterapia e a cromoterapia.",
-      "(B) homeopatia, a acupuntura e a apiterapia.",
-      "(C) fitoterapia, o termalismo social e a crenoterapia.",
-      "(D) acupuntura, o Reiki e a aromoterapia.",
-      "(E) cristaloterapia, a terapia do som e a acupuntura."
+      "(A) Acidose metabólica com ânion gap elevado, alcalose metabólica e alcalose respiratória.",
+      "(B) Acidose metabólica com ânion gap normal, alcalose metabólica e acidose respiratória.",
+      "(C) Alcalose metabólica e respiratória.",
+      "(D) Acidose metabólica com ânion gap elevado, acidose metabólica com ânion gap normal e alcalose respiratória.",
+      "(E) Alcalose respiratória e acidose respiratória."
     ],
-    "correctAnswer": 2,
-    "explanation": "A Política Nacional de Práticas Integrativas e Complementares (PNPIC, 2006) incluiu inicialmente medicina tradicional chinesa/acupuntura, homeopatia, plantas medicinais e fitoterapia, termalismo social/crenoterapia e medicina antroposófica. Em 2017 e 2018 foram acrescentadas outras práticas (arteterapia, ayurveda, meditação, reiki, aromaterapia, apiterapia, cromoterapia, bioenergética etc.), totalizando 29.\n\nA alternativa C reúne práticas da PNPIC original, sem nenhum item fora da política; a banca a considerou a correta.",
-    "commentary": "Homeopatia, fitoterapia e cromoterapia (A): todas hoje fazem parte da PNPIC (a cromoterapia desde 2018), mas a banca considerou só a combinação da política original.\n\nHomeopatia, acupuntura e apiterapia (B): a apiterapia entrou em 2018; mesma observação.\n\nAcupuntura, reiki e aromaterapia (D): reiki (2017) e aromaterapia (2018) foram incorporadas depois.\n\nCristaloterapia e terapia do som (E): não integram a PNPIC.",
-    "reference": "Ministério da Saúde — Política Nacional de Práticas Integrativas e Complementares no SUS (Portarias nº 971/2006, 849/2017 e 702/2018)",
+    "correctAnswer": 0,
+    "explanation": "pH normal não significa equilíbrio. Passo a passo:\n\n• Ânion-gap = 138 – (92 + 19) = 27; corrigido pela albumina de 3,0: cerca de 29,5. Está elevado: acidose metabólica de AG alto (cetoacidose alcoólica, lactato)\n• Delta-delta: o AG subiu cerca de 17 e o bicarbonato caiu só cerca de 5, indicando alcalose metabólica associada (vômitos, cloro baixo)\n• pCO₂ esperada para HCO₃⁻ de 19 = 1,5 × 19 + 8 ≈ 36,5; a medida é 30, logo há alcalose respiratória associada (taquipneia)\n\nSão três distúrbios: acidose metabólica de AG elevado, alcalose metabólica e alcalose respiratória.",
+    "commentary": "AG normal e acidose respiratória (B): o AG está elevado e a pCO₂ está abaixo do esperado.\n\nSó alcalose metabólica e respiratória (C): ignora a acidose de AG alto.\n\nDuas acidoses metabólicas (D): não há acidose de AG normal; o delta-delta mostra alcalose metabólica.\n\nAlcalose e acidose respiratórias (E): é impossível ter as duas ao mesmo tempo.",
+    "reference": "Harrison — Distúrbios ácido-base / Berend K et al. — Physiological approach to acid-base disturbances (NEJM 2014)",
     "tags": [
-      "PNPIC",
-      "práticas integrativas",
-      "SUS"
-    ],
-    "alert": "Gabarito discutível: após as ampliações de 2017 e 2018, as práticas citadas em A, B e D também passaram a integrar a PNPIC; a banca considerou apenas a combinação da política original de 2006."
-  },
-  {
-    "id": "scmbh2026-51",
-    "topography": "15",
-    "topic": "Epidemiologia",
-    "module": "Saúde Coletiva",
-    "text": "Óbito hospitalar com múltiplas comorbidades e pneumonia recente; houve queda domiciliar na semana anterior sem lesões graves relatadas.\n\nAssinale a alternativa que apresenta a conduta MAIS adequada na Declaração de Óbito (DO).",
-    "options": [
-      "(A) Indicar todos os diagnósticos como causas básicas para ampliar a captação de dados.",
-      "(B) Adotar apenas a pneumonia como causa básica, independentemente da sequência clínica.",
-      "(C) Priorizar o evento queda como causa básica sem avaliar nexo e contribuição clínica.",
-      "(D) Registrar causa básica após análise da cadeia causal, evitando mecanismos isolados."
-    ],
-    "correctAnswer": 3,
-    "explanation": "Na Declaração de Óbito, a causa básica é a doença ou lesão que iniciou a cadeia de eventos que levou diretamente à morte. Ela é registrada na última linha preenchida da Parte I, após análise da sequência causal. Comorbidades contribuintes que não fazem parte da cadeia vão na Parte II.\n\nEvita-se registrar apenas mecanismos terminais (parada cardiorrespiratória, falência de múltiplos órgãos) como causa.",
-    "commentary": "Todos os diagnósticos como causas básicas (A): há apenas uma causa básica; as demais são consequenciais ou contribuintes.\n\nSó a pneumonia, independentemente da sequência (B): a causa básica depende da análise da cadeia; a pneumonia pode ser consequência de outra doença.\n\nPriorizar a queda sem avaliar nexo (C): só seria causa básica se tivesse nexo causal com o óbito.",
-    "reference": "Ministério da Saúde — Declaração de Óbito: manual de instruções para preenchimento (2022) / CID-10",
-    "tags": [
-      "saúde coletiva",
-      "declaração de óbito",
-      "causa básica",
-      "estatísticas vitais"
+      "nefrologia",
+      "distúrbios ácido-base",
+      "ânion-gap",
+      "delta-delta"
     ]
   },
   {
-    "id": "revalida-2025-1-63",
-    "topography": "3.1",
-    "topic": "Constipação intestinal",
-    "module": "Pediatria",
-    "text": "Menino de 4 anos é levado a uma unidade de pronto atendimento (UPA) devido a dor abdominal e constipação. A mãe relata que a criança vem apresentando constipação importante desde o desfralde, que foi realizado antes dos dois anos de idade, com evacuações a cada 4 dias, fezes em cíbalos, esforço evacuatório e dor. O exame físico revela massa palpável em fossa ilíaca esquerda e dor abdominal difusa.\n\nNesse caso, a conduta inicial adequada é",
+    "id": "hosbos2025-28",
+    "topography": "2.1",
+    "topic": "Pneumonia comunitária",
+    "module": "Clínica Médica",
+    "text": "Paciente vem a unidade de saúde com quadro de pneumonia de comunidade. É critério do escore CURB 65:",
     "options": [
-      "(A) solicitar radiografia de abdome e coprológico funcional.",
-      "(B) indicar desimpactação retal com lactulose e óleo mineral.",
-      "(C) orientar sobre alimentação, ingesta hídrica e treinamento de toalete.",
-      "(D) indicar desimpactação fecal com enema retal ou polietilenoglicol por via oral."
+      "(A) PAS < 80 mmHg.",
+      "(B) PAD ≤ 60 mmHg.",
+      "(C) frequência respiratória > 35 ipm.",
+      "(D) idade > 65 anos.",
+      "(E) ureia > 40 mg/dL."
     ],
-    "correctAnswer": 3,
-    "explanation": "Constipação funcional com fecaloma (massa em fossa ilíaca esquerda). Antes da manutenção, é preciso desimpactar: polietilenoglicol oral em dose alta (1–1,5 g/kg/dia por 3–6 dias) ou enema retal. Depois vem a manutenção com PEG, dieta, água e treinamento de toalete.",
-    "commentary": "Radiografia e coprológico (A): o diagnóstico é clínico; não são necessários.\n\nLactulose e óleo mineral para desimpactar (B): são laxativos de manutenção, não de desimpactação.\n\nSó orientação (C): é parte da manutenção, mas não resolve o fecaloma.",
-    "reference": "NASPGHAN/ESPGHAN — Constipação funcional na criança (2014) / SBP",
+    "correctAnswer": 1,
+    "explanation": "CURB-65: Confusão, Ureia > 50 mg/dL (ou > 7 mmol/L), frequência Respiratória ≥ 30 irpm, pressão Baixa (PAS < 90 ou PAD ≤ 60 mmHg) e idade ≥ 65 anos. Cada item vale 1 ponto.\n\nA PAD ≤ 60 mmHg é critério.",
+    "commentary": "PAS < 80 mmHg (A): o corte é PAS < 90.\n\nFR > 35 (C): o corte é ≥ 30.\n\nIdade > 65 (D): o corte é ≥ 65 anos.\n\nUreia > 40 mg/dL (E): o corte é > 50 mg/dL.",
+    "reference": "Diretrizes Brasileiras para Pneumonia Adquirida na Comunidade em Adultos Imunocompetentes (SBPT, 2018)",
     "tags": [
-      "gastroenterologia pediátrica",
-      "constipação funcional",
-      "fecaloma",
-      "polietilenoglicol"
-    ],
-    "tip": "Fecaloma: primeiro desimpacta (PEG em dose alta ou enema), depois mantém."
+      "pneumonia comunitária",
+      "CURB-65",
+      "estratificação de risco"
+    ]
   },
   {
-    "id": "iog2026-47",
-    "topography": "15",
-    "topic": "Vigilância epidemiológica",
-    "module": "Saúde Coletiva",
-    "text": "Qual instrumento metodológico é utilizado em vigilância epidemiológica para definir a existência ou não de uma epidemia?",
-    "options": [
-      "Comparação da prevalência com municípios vizinhos.",
-      "Comparação da incidência com municípios vizinhos.",
-      "Busca ativa de casos utilizando visitas domiciliares.",
-      "Construção de um diagrama de controle."
-    ],
-    "correctAnswer": 3,
-    "explanation": "Para saber se há epidemia, compara-se a incidência atual com a incidência esperada para o mesmo local e período, com base na série histórica. O instrumento é o diagrama de controle: calcula-se a média histórica (por mês ou semana) e um limite superior (média + 1,96 desvio-padrão, por exemplo); incidências acima desse limite caracterizam epidemia.",
-    "commentary": "Comparar prevalência com municípios vizinhos (A): epidemia se avalia por casos novos (incidência), no próprio local, contra seu histórico.\n\nComparar incidência com vizinhos (B): realidades diferentes; a referência é a série histórica do próprio local.\n\nBusca ativa (C): é estratégia de investigação de casos, não método para definir epidemia.",
-    "reference": "Ministério da Saúde — Guia de Vigilância em Saúde / Rouquayrol — Epidemiologia & Saúde",
-    "tags": [
-      "vigilância epidemiológica",
-      "diagrama de controle",
-      "epidemia",
-      "incidência"
-    ],
-    "tip": "Epidemia: incidência acima do limite superior do diagrama de controle."
-  },
-  {
-    "id": "sespe2026-99",
-    "topography": "15",
-    "topic": "Atenção Primária",
-    "module": "Saúde Coletiva",
-    "text": "A estratégia Consultório na Rua, instituída pela Política Nacional de Atenção Básica, visa ampliar o acesso da população em situação de rua aos serviços de saúde, ofertando, de maneira mais oportuna, atenção integral à saúde para esse grupo populacional.\n\nSobre a organização das equipes dos Consultórios na Rua, assinale a alternativa CORRETA.",
-    "options": [
-      "São organizadas em 4 modalidades (I, II, III e IV).",
-      "A Modalidade I é formada minimamente por 6 (seis) profissionais.",
-      "A Modalidade II é formada minimamente por 8 (oito) profissionais.",
-      "A Modalidade III é formada minimamente por 6 (seis) profissionais, acrescida de um profissional médico.",
-      "A presença do Agente Social é obrigatória em todas as modalidades."
-    ],
-    "correctAnswer": 3,
-    "explanation": "Pela Portaria GM/MS nº 122/2011 (equipes de Consultório na Rua), existem três modalidades:\n\n• Modalidade I: mínimo de 4 profissionais (2 de nível superior e 2 de nível médio).\n• Modalidade II: mínimo de 6 profissionais (3 de nível superior e 3 de nível médio).\n• Modalidade III: a modalidade II acrescida de um médico.\n\nA alternativa D (modalidade III com 6 profissionais mais um médico) está correta.",
-    "commentary": "4 modalidades (A): são três.\n\nModalidade I com 6 profissionais (B): são 4.\n\nModalidade II com 8 profissionais (C): são 6.\n\nAgente social obrigatório em todas (E): o agente social é uma das categorias possíveis, não obrigatória em todas as modalidades.",
-    "reference": "Ministério da Saúde — Portaria GM/MS nº 122/2011 / PNAB 2017",
-    "tags": [
-      "atenção primária",
-      "consultório na rua",
-      "população em situação de rua",
-      "equidade"
-    ],
-    "tip": "Consultório na Rua: I = 4 profissionais, II = 6, III = II + médico."
-  },
-  {
-    "id": "hpp2026-73",
+    "id": "usprp2025-50",
     "topography": "5.2",
     "topic": "Pré-natal",
     "module": "Ginecologia e Obstetrícia",
-    "text": "Sobre a estratificação de risco no pré-natal é correto afirmar de acordo o Protocolo de Pré Natal Mãe Curitibana Vale a Vida 2025:",
+    "text": "Secundigesta (G2P0A1), 26 anos, com atraso menstrual de 18 semanas, inicia pré-natal hoje após teste de gravidez positivo. Nega doenças ou intercorrências até o momento. Exame físico geral sem alterações. A altura uterina é de 26cm. Fez ultrassonografia hoje, com achado de gestação gemelar dicoriônica, com idade gestacional de 24 semanas, achados fetais e anexiais normais.\n\nCom relação à profilaxia de pré-eclâmpsia, nesse caso, a alternativa correta é:",
     "options": [
-      "Pacientes com hipotireoidismo são classificadas como gestação de médio risco.",
-      "Adolescente de 14 anos é considerada gestante de baixo risco.",
-      "Paciente com Lesão de alto grau no citopatológico é considerada de alto risco.",
-      "Paciente com asma moderada é considerada de alto risco."
+      "(A) Iniciar ácido acetilsalicílico e cálcio.",
+      "(B) Prescrever ácido acetilsalicílico.",
+      "(C) Prescrever ácido acetilsalicílico e enoxaparina.",
+      "(D) Não deve ser prescrita."
     ],
     "correctAnswer": 3,
-    "explanation": "Na estratificação de risco do Mãe Curitibana Vale a Vida (2025), a asma é classificada pela gravidade: asma leve controlada pode seguir no risco habitual ou intermediário, mas asma moderada ou grave classifica a gestação como alto risco, com acompanhamento em ambulatório especializado.",
-    "commentary": "Hipotireoidismo como médio risco (A): pelo protocolo, as doenças da tireoide entram como alto risco.\n\nAdolescente de 14 anos como baixo risco (B): gestantes com menos de 15 anos são de risco intermediário.\n\nLesão de alto grau no citopatológico como alto risco (C): é risco intermediário, com encaminhamento à patologia cervical.",
-    "reference": "Secretaria Municipal da Saúde de Curitiba — Protocolo Pré-Natal Mãe Curitibana Vale a Vida (2025)",
+    "explanation": "A gestação gemelar é fator de alto risco para pré-eclâmpsia e indicaria AAS em dose baixa (com cálcio se a ingesta for baixa). Mas o benefício do AAS depende do início precoce, idealmente entre 12 e 16 semanas, pois ele atua na placentação.\n\nA ultrassonografia, mais confiável que a DUM incerta, data a gestação em 24 semanas. Fora da janela recomendada pelas diretrizes brasileiras (até 16–20 semanas), o gabarito entende que não deve ser prescrito.",
+    "commentary": "AAS e cálcio (A): seria a conduta se a gestação estivesse dentro da janela de início.\n\nAAS isolado (B): mesmo problema de época de início.\n\nAAS e enoxaparina (C): a enoxaparina não previne pré-eclâmpsia.",
+    "reference": "Febrasgo/RBEHG — Prevenção da pré-eclâmpsia / ACOG Committee Opinion 743",
     "tags": [
-      "pré-natal",
-      "estratificação de risco gestacional",
-      "asma na gestação",
-      "protocolo municipal"
+      "obstetrícia",
+      "pré-eclâmpsia",
+      "ácido acetilsalicílico",
+      "gestação gemelar"
     ],
-    "tip": "Mãe Curitibana: < 15 anos e lesão de alto grau = intermediário; asma moderada/grave = alto risco."
+    "alert": "Gabarito discutível: a ACOG admite iniciar o AAS até 28 semanas (idealmente antes de 16). O gabarito segue a janela das diretrizes brasileiras e considera que, com 24 semanas, não se deve prescrever."
   },
   {
-    "id": "famema2025-10",
-    "topography": "1.1",
-    "topic": "AVC",
-    "module": "Clínica Médica",
-    "text": "Paciente de 45 anos chega à unidade de saúde com quadro de hemiparesia direita e afasia, que teve início há 30 minutos. Ele não tem antecedentes prévios, assim como alergias. Considerando o diagnóstico de AVC, assinale a alternativa correta.",
+    "id": "susba2025-21",
+    "topography": "5.1",
+    "topic": "Câncer de ovário",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Uma paciente de 18 anos de idade comparece ao serviço médico com queixa de dor abdominal baixa e aumento de volume abdominal. Durante a avaliação, foi realizada uma ultrassonografia pélvica, que revelou a presença de uma massa ovariana de, aproximadamente, 8cm. O médico suspeita de um teratoma imaturo.\n\nEm relação ao prognóstico do teratoma imaturo, é correto afirmar:",
     "options": [
-      "Pacientes acima de 15 anos são elegíveis para realização de trombólise.",
-      "Para se realizar a trombólise, é necessário um nível pressórico ≤ 185 mmHg x 110 mmHg.",
-      "O acometimento está provavelmente relacionado à artéria cerebral média direita.",
-      "Glicemia < 70 e > 250 mg/dL contraindica a realização da trombólise."
+      "(A) O teratoma imaturo é benigno, independentemente do grau de diferenciação.",
+      "(B) A recorrência é rara após o tratamento inicial.",
+      "(C) O tratamento cirúrgico não é necessário, pois a observação é suficiente.",
+      "(D) O prognóstico é geralmente bom, mas depende das características histológicas."
     ],
-    "correctAnswer": 1,
-    "explanation": "Hemiparesia direita com afasia há 30 minutos: AVC isquêmico no território da artéria cerebral média esquerda (hemisfério dominante), dentro da janela de trombólise (até 4,5 h).\n\nPara receber alteplase ou tenecteplase, a pressão arterial precisa estar ≤ 185 × 110 mmHg antes da infusão e ser mantida ≤ 180 × 105 mmHg nas 24 horas seguintes, pelo risco de transformação hemorrágica.",
-    "commentary": "Acima de 15 anos (A): o critério de idade é ≥ 18 anos.\n\nArtéria cerebral média direita (C): a afasia indica lesão do hemisfério dominante (esquerdo na maioria) e a hemiparesia é contralateral; o território é a ACM esquerda.\n\nGlicemia < 70 e > 250 (D): glicemia < 50 mg/dL ou > 400 mg/dL é que precisa ser corrigida/considerada contraindicação, porque pode simular déficit focal.",
-    "tip": "Trombólise no AVC: ≥ 18 anos, até 4,5 h, PA ≤ 185 × 110 antes e ≤ 180 × 105 depois, glicemia entre 50 e 400 mg/dL, TC sem sangramento.",
-    "reference": "Powers WJ et al. 2019 AHA/ASA Guidelines for the Early Management of Acute Ischemic Stroke. Stroke, 2019. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas – Trombólise no AVC isquêmico agudo.",
+    "correctAnswer": 3,
+    "explanation": "O prognóstico do teratoma imaturo é bom, sobretudo nos estádios iniciais, mas depende do grau histológico (quantidade de neuroepitélio imaturo, graus 1 a 3) e do estádio. Tumores grau 1 em estádio IA podem ser só operados; os de grau mais alto recebem quimioterapia (BEP) com boas taxas de cura.",
+    "commentary": "Sempre benigno (A): é tumor maligno; o maduro (cisto dermoide) é que é benigno.\n\nRecorrência rara (B): a recorrência existe, sobretudo nos de alto grau.\n\nObservação suficiente (C): o tratamento cirúrgico é obrigatório.",
+    "reference": "Febrasgo — Tumores de células germinativas do ovário",
     "tags": [
-      "AVC isquêmico",
-      "trombólise",
-      "pressão arterial"
+      "ginecologia",
+      "tumores de ovário",
+      "teratoma imaturo",
+      "prognóstico"
     ]
   },
   {
-    "id": "famema2026-8",
-    "topography": "4.1",
-    "topic": "Distúrbios hidroeletrolíticos",
-    "module": "Clínica Médica",
-    "text": "Sobre distúrbios eletrolíticos, assinale a correta.",
-    "options": [
-      "A hiponatremia hipervolêmica é típica de insuficiência cardíaca, cirrose e síndrome nefrótica.",
-      "A hipercalemia nunca causa alterações no eletrocardiograma antes de níveis maiores que 8,0 mEq/L.",
-      "A hipocalcemia cursa com alargamento de QRS e ondas T apiculadas.",
-      "A hipernatremia sempre decorre de perda renal de água."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Na hiponatremia hipervolêmica há excesso de água corporal total maior que o excesso de sódio. Ocorre nos estados edematosos em que o volume circulante efetivo está reduzido, o que ativa o hormônio antidiurético e o sistema renina-angiotensina: insuficiência cardíaca, cirrose e síndrome nefrótica (além da doença renal avançada). O tratamento é restrição hídrica, diurético de alça e tratamento da doença de base.",
-    "commentary": "Hipercalemia sem alteração no ECG abaixo de 8 (B): alterações (onda T apiculada, depois QRS largo) podem aparecer a partir de 5,5–6,5 mEq/L, e a correlação com o nível sérico é imperfeita.\n\nHipocalcemia com QRS largo e T apiculada (C): esses são achados de hipercalemia; a hipocalcemia prolonga o intervalo QT.\n\nHipernatremia sempre por perda renal (D): pode vir de perdas extrarrenais (suor, diarreia, queimaduras), ingestão insuficiente de água ou ganho de sódio.",
-    "tip": "Hiponatremia hipervolêmica = IC, cirrose, nefrótica. Hipocalcemia = QT longo. Hipercalemia = T apiculada.",
-    "reference": "Spasovski G et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol, 2014.",
-    "tags": [
-      "hiponatremia",
-      "distúrbios eletrolíticos",
-      "eletrocardiograma"
-    ]
-  },
-  {
-    "id": "famerp2025-4",
-    "topography": "6.1",
-    "topic": "Pseudogota",
-    "module": "Clínica Médica",
-    "text": "Paciente de 50 anos, gênero masculino, com histórico de hipertensão e doença renal crônica é admitido por quadro de dor intensa e edema em joelho direito com início há 2 dias. Realizada artrocentese com líquido sinovial revelando cristais birrefringentes positivos sob microscopia de luz polarizada.\n\nQual é o diagnóstico mais provável?",
-    "options": [
-      "Gota",
-      "Pseudogota",
-      "Artrite séptica",
-      "Artrite reumatoide"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Monoartrite aguda de joelho com cristais de birrefringência POSITIVA à luz polarizada: cristais de pirofosfato de cálcio diidratado (romboides, fracamente positivos), que definem a artropatia por pirofosfato — pseudogota. O joelho é a articulação mais acometida.",
-    "commentary": "Gota (A): cristais de urato monossódico, em forma de agulha, com birrefringência NEGATIVA forte.\n\nArtrite séptica (C): o diagnóstico é por celularidade elevada (em geral > 50.000/mm³ com neutrófilos), Gram e cultura; cristais não definem infecção, embora possam coexistir.\n\nArtrite reumatoide (D): poliartrite crônica, simétrica, de pequenas articulações; não há cristais no líquido sinovial.",
-    "tip": "Pirofosfato: Positivo, Pseudogota, romboide. Urato: negativo, agulha.",
-    "reference": "Rosenthal AK, Ryan LM. Calcium Pyrophosphate Deposition Disease. N Engl J Med, 2016. Sociedade Brasileira de Reumatologia — Artropatias microcristalinas.",
-    "tags": [
-      "pseudogota",
-      "pirofosfato de cálcio",
-      "líquido sinovial",
-      "monoartrite"
-    ]
-  },
-  {
-    "id": "hsrc2026-28",
-    "topography": "3.4",
-    "topic": "Pancreatite crônica",
-    "module": "Cirurgia",
-    "text": "Paciente etilista crônico, de 55 anos de idade, apresenta dor abdominal intensa na região de dorso, com piora progressiva há 6 meses. Exame de tomografia de abdome demonstra pâncreas aumentado de volume, com múltiplas pequenas calcificações em seu parênquima e moderada dilatação do ducto pancreático, sem dilatação das vias biliares. Assinale a alternativa que apresenta o diagnóstico mais provável.",
-    "options": [
-      "Pancreatite aguda",
-      "Úlcera gástrica perfurada",
-      "Doença cística mucinosa do pâncreas",
-      "Adenocarcinoma de pâncreas",
-      "Pancreatite crônica"
-    ],
-    "correctAnswer": 4,
-    "explanation": "Etilista crônico com dor abdominal irradiada para o dorso há meses e tomografia mostrando calcificações no parênquima pancreático e dilatação do ducto pancreático principal: pancreatite crônica.\n\nAs calcificações são praticamente patognomônicas em contexto clínico compatível. A doença pode evoluir com insuficiência exócrina (esteatorreia) e endócrina (diabetes).",
-    "commentary": "Pancreatite aguda (A): quadro agudo, com enzimas elevadas; calcificações e dilatação ductal indicam cronicidade.\n\nÚlcera perfurada (B): abdome agudo súbito com pneumoperitônio.\n\nNeoplasia cística mucinosa (C): lesão cística, geralmente em mulheres de meia-idade, no corpo/cauda.\n\nAdenocarcinoma de pâncreas (D): massa hipodensa, frequentemente com icterícia (cabeça) e perda de peso; calcificações difusas não são típicas.",
-    "reference": "Sabiston — Pâncreas / Consenso brasileiro de pancreatite crônica",
-    "tags": [
-      "pancreatite crônica",
-      "calcificações pancreáticas",
-      "etilismo"
-    ],
-    "tip": "Etilista + dor crônica + calcificações pancreáticas = pancreatite crônica."
-  },
-  {
-    "id": "amp2026-85",
+    "id": "unimedpb2026-50",
     "topography": "15",
     "topic": "Atenção Primária",
     "module": "Saúde Coletiva",
-    "text": "A capacidade que as equipes de saúde da família têm de estabelecer mecanismos de integração e de cooperação clínica com os diferentes níveis de atenção, tendo como centro desses mecanismos as pessoas usuárias. A descrição supracitada diz respeito a:",
+    "text": "Um pai leva sua filha de um ano para vacinação de rotina e menciona que ela apresenta fezes amolecidas há três dias. A criança é avaliada, recebe o imunizante, soro de hidratação oral e orientações alimentares. De acordo com os níveis clássicos de prevenção, o conjunto das ações realizadas corresponde a:",
     "options": [
-      "Acesso.",
-      "Integralidade.",
-      "Resolubilidade.",
-      "Longitudinalidade.",
-      "Coordenação de cuidados."
+      "Prevenção secundária e terciária.",
+      "Prevenção primária e secundária.",
+      "Apenas prevenção primária.",
+      "Apenas prevenção terciária.",
+      "Prevenção quaternária."
     ],
-    "correctAnswer": 4,
-    "explanation": "A coordenação do cuidado é o atributo da APS que integra os diferentes serviços e níveis de atenção usados pela pessoa, articulando informações, encaminhamentos e contrarreferências, com o usuário no centro. É a definição apresentada no enunciado.",
-    "commentary": "Acesso (A): facilidade de chegar ao serviço e ser atendido (primeiro contato).\n\nIntegralidade (B): oferta do conjunto de ações necessárias às necessidades da pessoa, reconhecendo problemas biológicos, psicológicos e sociais.\n\nResolubilidade (C): capacidade de resolver a maioria dos problemas no próprio serviço.\n\nLongitudinalidade (D): acompanhamento da pessoa ao longo do tempo, com vínculo.",
-    "reference": "Starfield B — Atenção primária: equilíbrio entre necessidades de saúde, serviços e tecnologia",
+    "correctAnswer": 1,
+    "explanation": "Pelos níveis de prevenção de Leavell e Clark:\n\n• A vacina é proteção específica antes da doença → prevenção primária.\n• Avaliar a diarreia já presente, prescrever soro de reidratação oral e orientar a alimentação é diagnóstico e tratamento precoce para evitar desidratação → prevenção secundária.\n\nPortanto, o atendimento envolveu prevenção primária e secundária.",
+    "commentary": "Secundária e terciária (A): não houve reabilitação nem redução de sequelas (terciária), e a vacina é primária.\n\nApenas primária (C): o manejo da diarreia, que já existe, é secundário.\n\nApenas terciária (D): terciária é reabilitação após dano estabelecido.\n\nQuaternária (E): é evitar intervenções desnecessárias (iatrogenia); não descreve as ações realizadas.",
+    "reference": "Leavell & Clark — Medicina Preventiva / Ministério da Saúde — Cadernos de Atenção Básica",
     "tags": [
-      "atributos da APS",
-      "coordenação do cuidado",
-      "atenção primária"
+      "saúde coletiva",
+      "níveis de prevenção",
+      "história natural da doença",
+      "vacinação"
     ],
-    "tip": "Integrar os níveis de atenção com o usuário no centro = coordenação do cuidado."
+    "tip": "Vacina = primária. Tratar doença inicial = secundária. Reabilitar = terciária. Evitar excesso = quaternária."
   },
   {
-    "id": "amrigs2025-86",
-    "module": "Clínica Médica",
-    "text": "Qual dos seguintes achados laboratoriais é mais indicativo de anemia hemolítica?",
+    "id": "sespe2026-51",
+    "topography": "5.1",
+    "topic": "Prolapso genital",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Paciente de 60 anos de idade chega ao consultório com queixa de bola na vagina há um ano e perda involuntária de urina aos esforços, além de referir frouxidão vaginal durante ato sexual. DUM há 10 anos, G4 P4, partos vaginais. No momento do exame, foi evidenciado o seguinte cenário, segundo o POP-Q:\n• Aa +3, Ba +10, C +11\n• gh 10, pb 3, tvl 11\n• Ap +3, Bp +10, D não aferido\n\nAssinale a alternativa com o diagnóstico e a conduta CORRETA.",
     "options": [
-      "Aumento da bilirrubina indireta.",
-      "Diminuição da contagem de reticulócitos.",
-      "Presença de células em alvo no esfregaço de sangue periférico.",
-      "Aumento do nível de ferritina."
+      "Prolapso genital E IV, rotura perineal. Realizar colpocleise + sling",
+      "PPP E II, rotura perineal. Realizar colpocleise com sling.",
+      "PPA E I, hipertrofia de colo. Realizar traquelectomia parcial",
+      "Prolapso apical E II, rotura perineal. Realizar histerectomia vaginal",
+      "Prolapso apical, IUE mista e rotura perineal. Realizar colpoplastia posterior"
     ],
     "correctAnswer": 0,
-    "explanation": "Na hemólise, a destruição de hemácias libera hemoglobina, cujo heme é convertido em bilirrubina não conjugada: sobe a bilirrubina indireta. Outros marcadores: reticulocitose, LDH elevada e haptoglobina baixa.",
-    "commentary": "Reticulócitos diminuídos (B): na hemólise, a medula responde com reticulocitose (salvo crise aplásica).\n\nCélulas em alvo (C): aparecem em hemoglobinopatias, doença hepática e pós-esplenectomia; não são marcador geral de hemólise (esferócitos e esquizócitos são mais típicos).\n\nFerritina aumentada (D): marcador de estoque de ferro e de inflamação, não de hemólise.",
-    "reference": "Zago — Tratado de Hematologia / Goldman-Cecil Medicine",
+    "explanation": "No POP-Q, os pontos Ba (+10), C (+11) e Bp (+10) estão muito além do hímen, com comprimento vaginal total de 11 cm: o prolapso alcança quase toda a extensão da vagina (≥ TVL − 2 cm), ou seja, eversão completa — estágio IV. O corpo perineal curto e o hiato genital amplo indicam rotura perineal, e há incontinência urinária de esforço.\n\nEm idosa sem vida sexual ativa (a alternativa assume isso), a colpocleise (fechamento da vagina) com sling para a incontinência é uma opção cirúrgica com alta taxa de sucesso e baixa morbidade.",
+    "commentary": "PPP estádio II (B): o prolapso não é estágio II; os pontos estão bem além do hímen.\n\nPPA estádio I e hipertrofia de colo (C): estadiamento errado.\n\nApical estádio II com histerectomia vaginal (D): estadiamento errado.\n\nColpoplastia posterior (E): não corrige o prolapso total de todos os compartimentos.\n\nAtenção: a paciente refere frouxidão vaginal durante o ato sexual, ou seja, tem vida sexual; a colpocleise impede a relação vaginal. A banca considerou a colpocleise correta, mas na prática ela só é indicada para quem não deseja mais vida sexual com penetração.",
+    "reference": "IUGA/ICS — POP-Q / FEBRASGO — Prolapso genital",
     "tags": [
-      "anemia hemolítica",
-      "bilirrubina indireta",
-      "reticulócitos",
-      "LDH",
-      "haptoglobina"
+      "uroginecologia",
+      "prolapso genital",
+      "POP-Q",
+      "colpocleise",
+      "incontinência urinária"
     ],
-    "tip": "Hemólise: BI ↑, LDH ↑, reticulócitos ↑, haptoglobina ↓."
+    "tip": "POP-Q estágio IV: eversão total (ponto ≥ TVL − 2 cm)."
   },
   {
-    "id": "amrigs2026-86",
-    "module": "Saúde Coletiva",
-    "text": "A consulta embasada no Método Clínico Centrado na Pessoa (MCCP) apresenta alguns componentes. Nesse sentido, analise os componentes apresentados abaixo:\n1. Fortalecer a relação médico-paciente.\n2. Conhecer o contexto do paciente.\n3. Construir um entendimento acerca do problema e do que precisa ser feito.\n4. Focalizar os aspectos objetivos da doença, como sinais e sintomas.\n\nO resultado da somatória dos números correspondentes aos componentes corretos é:",
+    "id": "hpp2026-40",
+    "topography": "16",
+    "topic": "Pré-operatório",
+    "module": "Cirurgia",
+    "text": "Segundo a Associação Americana de Anestesiologia (ASA), uma paciente com 40 anos, diabética bem controlada com medicamentos e que tem exame físico e laboratorial normal no pré-operatório, pode ser classificada como:",
     "options": [
-      "05.",
-      "06.",
-      "08.",
-      "10."
+      "ASA I.",
+      "ASA II.",
+      "ASA III.",
+      "ASA IV."
     ],
     "correctAnswer": 1,
-    "explanation": "O Método Clínico Centrado na Pessoa (Stewart et al.) tem quatro componentes: explorar a saúde, a doença e a experiência da doença; entender a pessoa como um todo (inclusive seu contexto); elaborar um plano conjunto de manejo (entendimento comum do problema e do que fazer); e intensificar a relação médico-pessoa.\n\nCorretos: 1 (fortalecer a relação), 2 (conhecer o contexto) e 3 (construir entendimento comum). O 4 está errado: o método não foca apenas nos aspectos objetivos da doença. Soma: 1 + 2 + 3 = 6.",
-    "commentary": "05 (A): soma de 1 + 4 ou 2 + 3, deixando de fora componentes corretos.\n\n08 (C) e 10 (D): incluem o item 4, que contraria o método.",
-    "reference": "Stewart M et al. Medicina centrada na pessoa: transformando o método clínico (3ª ed.) / Gusso — Tratado de Medicina de Família e Comunidade",
+    "explanation": "Na classificação ASA, o ASA II corresponde ao paciente com doença sistêmica leve, sem limitação funcional: hipertensão ou diabetes bem controlados, tabagismo, obesidade leve, gestação.\n\nA diabética bem controlada com exames normais é ASA II.",
+    "commentary": "ASA I (A): paciente saudável, sem doença sistêmica.\n\nASA III (C): doença sistêmica grave com limitação funcional (diabetes ou hipertensão mal controlados, DPOC, obesidade mórbida, IAM há mais de 3 meses).\n\nASA IV (D): doença sistêmica grave que é ameaça constante à vida (IAM recente, insuficiência cardíaca descompensada, sepse).",
+    "reference": "American Society of Anesthesiologists — ASA Physical Status Classification System (2020)",
     "tags": [
-      "método clínico centrado na pessoa",
-      "medicina de família e comunidade",
-      "relação médico-paciente"
+      "classificação ASA",
+      "avaliação pré-operatória",
+      "risco anestésico"
     ],
-    "tip": "MCCP: experiência da doença, pessoa como um todo, plano conjunto, relação médico-pessoa."
+    "tip": "Doença sistêmica controlada = ASA II; com limitação = ASA III."
   },
   {
-    "id": "cerman2025-77",
+    "id": "cesupa2025-41",
     "topography": "11",
-    "topic": "Puericultura",
+    "topic": "Calendário vacinal",
     "module": "Pediatria",
-    "text": "Sobre o desenvolvimento dos caracteres sexuais secundários, pode-se afirmar que:",
+    "text": "“Criado nos anos 1980, o Zé Gotinha é uma marca da luta contra a poliomielite” (Ministério da saúde, 2024).\n\nSobre a vacina em questão, é correto afirmar que, segundo a partir do dia 4 de novembro de 2024:",
     "options": [
-      "(A) O final da puberdade nos meninos é o odor axilar.",
-      "(B) A telarca é o primeiro sinal de puberdade nas meninas.",
-      "(C) O primeiro sinal de puberdade masculina é o nascimento dos pelos pubianos.",
-      "(D) Nas meninas, a menarca ocorre simultaneamente à telarca, marcando o início da puberdade."
+      "O esquema a ser seguido será 2 doses da vacina inativada (VIP) e 2 doses da vacina oral (VOP).",
+      "O esquema a ser seguido será 3 doses da VIP aos 2,4,6 meses e 2 reforços com a VOP aos 15m e 4 anos.",
+      "O esquema a ser seguido será somente com a vacina VIP aos 2,4 ,6 m e um reforço aos 15m.",
+      "O esquema a ser seguido será somente com a vacina VIP aos 2,4,6m e reforços aos 15m e 4 anos."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Em 4 de novembro de 2024, o Ministério da Saúde substituiu a vacina oral (VOP, \"gotinha\") pela inativada injetável (VIP) em todo o esquema contra a poliomielite.\n\nO novo esquema:\n\n• Vacinação primária: VIP aos 2, 4 e 6 meses.\n• Reforço único: VIP aos 15 meses.\n\nO reforço dos 4 anos, que era feito com VOP, deixou de existir. A mudança elimina o risco, ainda que raro, de poliomielite associada à vacina oral e de poliovírus derivado da vacina.",
+    "commentary": "2 doses de VIP e 2 de VOP (A): esquema antigo de transição; a VOP foi retirada do calendário de rotina.\n\nVIP aos 2, 4 e 6 meses e reforços com VOP aos 15 meses e 4 anos (B): esse era o esquema até outubro de 2024.\n\nVIP aos 2, 4 e 6 meses e reforços aos 15 meses e 4 anos (D): o reforço dos 4 anos foi retirado; agora é apenas um reforço aos 15 meses.",
+    "tip": "Pólio desde 11/2024: só VIP — 2, 4 e 6 meses + reforço aos 15 meses. Fim da gotinha e do reforço dos 4 anos.",
+    "reference": "Ministério da Saúde. Nota técnica sobre a substituição da VOP pela VIP no Calendário Nacional de Vacinação, 2024.",
+    "tags": [
+      "calendário vacinal",
+      "poliomielite",
+      "VIP"
+    ]
+  },
+  {
+    "id": "famema2025-67",
+    "topography": "1.2",
+    "topic": "Retinopatia diabética",
+    "module": "Clínica Médica",
+    "text": "Assinale a alternativa correta sobre a retinopatia diabética.",
+    "options": [
+      "As avaliações de retina em diabéticos devem ser feitas a cada 10 anos.",
+      "A progressão da retinopatia diabética tem pouca relação com a glicemia e a pressão arterial.",
+      "Tem início súbito e evolução rápida.",
+      "É uma das principais causas de cegueira irreversível no Brasil."
+    ],
+    "correctAnswer": 3,
+    "explanation": "A retinopatia diabética é uma das principais causas de cegueira irreversível no Brasil e a principal em adultos em idade produtiva. A evolução é silenciosa: a visão costuma estar preservada até fases avançadas (edema macular, retinopatia proliferativa com hemorragia vítrea ou descolamento tracional).\n\nPor isso o rastreamento com fundo de olho é anual: no DM2 desde o diagnóstico e no DM1 após 5 anos de doença (ou na puberdade). Controle glicêmico e pressórico reduz a progressão.",
+    "commentary": "Avaliação a cada 10 anos (A): o exame é anual (pode ser a cada 1–2 anos se exames seguidos normais).\n\nPouca relação com glicemia e PA (B): estudos como DCCT e UKPDS mostraram que o controle glicêmico e pressórico reduz o surgimento e a progressão.\n\nInício súbito e evolução rápida (C): a evolução é lenta e assintomática, ao longo de anos; daí a necessidade do rastreamento.",
+    "tip": "Retinopatia diabética: silenciosa. Fundo de olho anual — DM2 desde o diagnóstico, DM1 após 5 anos.",
+    "reference": "Sociedade Brasileira de Diabetes. Diretriz 2024 – Retinopatia diabética. Conselho Brasileiro de Oftalmologia. Diretrizes de retinopatia diabética.",
+    "tags": [
+      "retinopatia diabética",
+      "rastreamento",
+      "cegueira"
+    ]
+  },
+  {
+    "id": "famema2026-82",
+    "topography": "13",
+    "topic": "Dependência química",
+    "module": "Clínica Médica",
+    "text": "Assinale a alternativa que indica corretamente os sinais e sintomas clínicos que podem ser observados para respaldar, durante a avaliação emergencial de um caso, a hipótese de suspeita de intoxicação ou overdose por cocaína.",
+    "options": [
+      "Bradicardia e hipotensão arterial.",
+      "Midríase ou irritabilidade.",
+      "Mutismo e estereotipias dos membros superiores.",
+      "Tremores grosseiros com roda denteada e alucinações visuais com pequenos animais."
     ],
     "correctAnswer": 1,
-    "explanation": "Nas meninas, o primeiro sinal de puberdade é a telarca (broto mamário, M2), em geral entre 8 e 13 anos. A menarca ocorre em média 2 a 2,5 anos depois, no estádio M4.",
-    "commentary": "Odor axilar como final da puberdade masculina (A): odor axilar é sinal de adrenarca e aparece cedo.\n\nPelos pubianos como primeiro sinal masculino (C): o primeiro sinal no menino é o aumento testicular (volume ≥ 4 mL).\n\nMenarca simultânea à telarca (D): a menarca é evento tardio da puberdade.",
-    "reference": "SBP — Departamento de Endocrinologia: Puberdade normal / Tanner JM",
+    "explanation": "A cocaína bloqueia a recaptação de noradrenalina, dopamina e serotonina, causando síndrome simpatomimética: midríase, taquicardia, hipertensão, hipertermia, sudorese, agitação, irritabilidade, ansiedade, paranoia e, nos casos graves, convulsões, arritmias, infarto e AVC. Midríase e irritabilidade são sinais que apoiam a suspeita.\n\nNo tratamento, benzodiazepínicos controlam a agitação e a hiperatividade simpática; betabloqueador isolado deve ser evitado.",
+    "commentary": "Bradicardia e hipotensão (A): são sinais de intoxicação por depressores (opioides, sedativos, betabloqueadores), o oposto do quadro simpatomimético.\n\nMutismo e estereotipias (C): sugerem catatonia ou outros transtornos psiquiátricos.\n\nTremores com roda denteada e alucinações com pequenos animais (D): roda denteada sugere parkinsonismo (inclusive por antipsicótico); alucinações com pequenos animais são típicas do delirium tremens.",
+    "tip": "Cocaína = simpatomimético: midríase, taquicardia, hipertensão, hipertermia, agitação. Tratar agitação com benzodiazepínico.",
+    "reference": "Nelson LS et al. Goldfrank's Toxicologic Emergencies, 11ª ed. Associação Brasileira de Psiquiatria. Diretrizes de abuso e dependência de cocaína, 2012.",
     "tags": [
-      "puberdade",
-      "telarca",
-      "estadiamento de Tanner",
-      "adolescência"
+      "intoxicação por cocaína",
+      "síndrome simpatomimética",
+      "dependência química"
+    ]
+  },
+  {
+    "id": "famerp2026-2",
+    "topography": "15",
+    "topic": "Saúde do trabalhador",
+    "module": "Saúde Coletiva",
+    "text": "Nos Textos de História da Medicina do Trabalho, da lavra de autores brasileiros, é costume referir-se como \"Pai da Medicina do Trabalho\", inclusive quem padronizou a célebre pergunta ao trabalhador, que auxilia no diagnóstico das patologias relacionadas ao trabalho - \"qual é a sua profissão?\":",
+    "options": [
+      "Hipócrates",
+      "Bernardino Ramazzini",
+      "Sir Robert Backer",
+      "Bernardo Bedrikow"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bernardino Ramazzini (1633–1714), médico italiano, é o \"Pai da Medicina do Trabalho\". Em 1700 publicou De Morbis Artificum Diatriba (As doenças dos trabalhadores), descrevendo doenças de mais de 50 ocupações, e acrescentou à anamnese hipocrática a pergunta \"qual é a sua ocupação?\", base da investigação do nexo entre trabalho e doença.",
+    "commentary": "Hipócrates (A): é o pai da medicina; descreveu a intoxicação por chumbo em mineiros, mas não sistematizou a medicina do trabalho.\n\nRobert Baker (C): foi um dos primeiros médicos inspetores de fábricas na Inglaterra, após o Factory Act de 1833.\n\nBernardo Bedrikow (D): médico brasileiro, pioneiro da medicina do trabalho no país, mas não é o \"pai\" da especialidade.",
+    "tip": "Ramazzini, 1700, De Morbis Artificum: \"qual é a sua ocupação?\".",
+    "reference": "Ramazzini B. As doenças dos trabalhadores (De Morbis Artificum Diatriba). Trad. Fundacentro, 4ª ed., 2016. Mendes R. Patologia do Trabalho, 3ª ed.",
+    "tags": [
+      "história da medicina do trabalho",
+      "pai da medicina do trabalho",
+      "saúde do trabalhador"
+    ]
+  },
+  {
+    "id": "hsrc2026-21",
+    "topography": "16",
+    "topic": "Hérnias",
+    "module": "Cirurgia",
+    "text": "Paciente de 70 anos de idade, hipertenso e com arritmia, apresenta hérnia umbilical há 10 anos. Há 3 meses vem relatando incômodo e episódios de dor. Ao exame, apresenta hérnia umbilical de cerca de 2 cm. Nesse caso, a melhor estratégia para este paciente é",
+    "options": [
+      "Manter observação clínica e acompanhamento.",
+      "Indicação cirúrgica de herniorrafia com fechamento primário da falha da aponeurose.",
+      "Correção aberta com colocação de tela intraperitoneal.",
+      "Correção da hérnia aberta com colocação de tela pré-peritoneal.",
+      "Reparo laparoscópico primário sem colocação de tela."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hérnia umbilical sintomática (dor e desconforto) tem indicação cirúrgica. Pelas diretrizes da European Hernia Society, defeitos ≥ 1 cm devem ser corrigidos com tela, que reduz a recidiva. Em hérnias pequenas a médias (1–4 cm) operadas por via aberta, a tela é colocada preferencialmente no espaço pré-peritoneal (ou retromuscular), longe das vísceras.",
+    "commentary": "Observação (A): poderia ser considerada em hérnias pequenas e assintomáticas; aqui já há dor.\n\nFechamento primário sem tela (B): aceitável apenas em defeitos < 1 cm, pela recidiva maior.\n\nTela intraperitoneal na cirurgia aberta (C): o contato com as alças aumenta aderências, obstrução e fístula; é evitada.\n\nLaparoscopia sem tela (E): reparo sem tela tem mais recidiva, e a via laparoscópica é reservada a defeitos maiores.",
+    "reference": "European Hernia Society/Americas Hernia Society — Guidelines for umbilical and epigastric hernias (2020)",
+    "tags": [
+      "hérnia umbilical",
+      "tela pré-peritoneal",
+      "hernioplastia"
+    ],
+    "tip": "Umbilical ≥ 1 cm: tela. Via aberta: pré-peritoneal, não intraperitoneal."
+  },
+  {
+    "id": "amp2026-76",
+    "topography": "14",
+    "topic": "Trauma",
+    "module": "Cirurgia",
+    "text": "Caso Clinico: Homem de 25 anos, chega ao Pronto Atendimento após sofrer colisão automobilística frontal. O exame físico apresenta PA 120/80 mmHg, dor em hipocôndrio direito. FAST será realizado. Assinale a alternativa correta.",
+    "options": [
+      "Avaliar pericárdio, estômago, retroperitônio e pelve.",
+      "Avaliar apenas esplenorrenal e pelve para reduzir tempo de exame.",
+      "Avaliar apenas o espaço hepatorrenal; demais janelas só se instável.",
+      "Avaliar pericárdio e hepatorrenal; demais janelas não são obrigatórias.",
+      "Avaliar pericárdio, espaço hepatorrenal, espaço esplenorrenal e fundo de saco pélvico."
+    ],
+    "correctAnswer": 4,
+    "explanation": "O FAST (Focused Assessment with Sonography for Trauma) avalia quatro janelas para líquido livre: pericárdica (subxifoide), hepatorrenal (espaço de Morison), esplenorrenal e pélvica (fundo de saco). O FAST estendido (e-FAST) acrescenta as janelas torácicas para pneumotórax e hemotórax.",
+    "commentary": "Pericárdio, estômago, retroperitônio e pelve (A): o FAST não avalia estômago nem retroperitônio, que é mal visto pelo ultrassom.\n\nApenas esplenorrenal e pelve (B), apenas hepatorrenal (C) ou pericárdio e hepatorrenal (D): o exame completo inclui sempre as quatro janelas.",
+    "reference": "ATLS — 11ª edição: Trauma abdominal e pélvico",
+    "tags": [
+      "FAST",
+      "trauma abdominal",
+      "ultrassonografia no trauma"
+    ],
+    "tip": "FAST: pericárdio, hepatorrenal, esplenorrenal e pelve. e-FAST: + tórax."
+  },
+  {
+    "id": "amrigs2025-74",
+    "module": "Pediatria",
+    "text": "Escolar, 6 anos, há 2 dias com dor abdominal difusa, há 1 dia com náuseas e vômitos e há 12h com febre e piora da dor, associadas à diarreia aguda, sem restos patológicos. Após ultrassonografia (US) abdominal, é encaminhado para apendicectomia de urgência. No transoperatório, evidencia-se secreção purulenta em cavidade abdominal. Considerando a situação clínica apresentada, é correto afirmar que:",
+    "options": [
+      "A clínica é mais sugestiva de diarreia viral com adenite mesentérica.",
+      "A US abdominal é o exame de escolha para diagnosticar apendicite.",
+      "Trata-se de um caso de apendicite aguda complicada.",
+      "O início dos sintomas com dor abdominal é uma manifestação infrequente na apendicite."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dor abdominal seguida de náuseas e vômitos e, depois, febre, com evolução de 2 dias e secreção purulenta na cavidade, caracteriza apendicite aguda complicada (perfurada, com peritonite). Em crianças, o diagnóstico costuma ser mais tardio, e a perfuração, mais frequente.",
+    "commentary": "Diarreia viral com adenite mesentérica (A): o achado de pus na cirurgia confirma processo bacteriano complicado.\n\nUltrassom como exame de escolha (B): o diagnóstico é essencialmente clínico; o ultrassom é o exame de imagem preferido em crianças quando há dúvida, mas não é o \"exame de escolha para diagnosticar\" em todos os casos — e ele não confirma a complicação.\n\nDor como manifestação infrequente (D): a dor abdominal é o primeiro sintoma da apendicite na grande maioria dos casos.",
+    "reference": "SBP — Abdome agudo na criança / WSES Jerusalem guidelines (2020)",
+    "tags": [
+      "apendicite aguda",
+      "apendicite complicada",
+      "abdome agudo",
+      "pediatria"
+    ],
+    "tip": "Na apendicite, a dor vem antes dos vômitos e da febre."
+  },
+  {
+    "id": "amrigs2026-76",
+    "module": "Pediatria",
+    "text": "Em uma criança vítima de acidente por submersão, a lesão que mais agressivamente deve ser tratada, por estar diretamente relacionada à morbimortalidade nesse tipo de acidente, é a:",
+    "options": [
+      "Hipernatremia por afogamento em água salgada.",
+      "Hipoxemia sistêmica.",
+      "Infecção por afogamento em águas contaminadas.",
+      "Obstrução de via aérea pela aspiração de água."
+    ],
+    "correctAnswer": 1,
+    "explanation": "No afogamento, a lesão central é a hipóxia: a aspiração de água lesa o surfactante e a membrana alveolocapilar, causando shunt e hipoxemia, que levam à parada cardíaca e à lesão cerebral. A correção agressiva da hipoxemia (ventilação, oxigênio, PEEP) é o que mais muda a morbimortalidade.",
+    "commentary": "Hipernatremia em água salgada (A): a quantidade aspirada raramente causa distúrbio eletrolítico relevante.\n\nInfecção (C): complicação possível e tardia, não a prioridade.\n\nObstrução da via aérea por água (D): a água aspirada não obstrui a via aérea; manobras para \"retirar água\" (como Heimlich) não são indicadas.",
+    "reference": "Sociedade Brasileira de Salvamento Aquático — Afogamento / AHA — Drowning (2019)",
+    "tags": [
+      "afogamento",
+      "hipoxemia",
+      "emergência pediátrica"
+    ],
+    "tip": "Afogamento: o problema é a hipóxia — ventile e oxigene."
+  },
+  {
+    "id": "cerman2025-74",
+    "module": "Pediatria",
+    "text": "Eduardo tem três anos e há 10 dias apresenta febre alta. Ao exame físico, apresenta edema palpebral bilateral, petéquias no palato, exsudato amigdaliano, adenomegalia cervical anterior e posterior, fígado palpável a 4cm do rebordo costal direito e baço a 5cm do rebordo costa esquerdo. Qual exame mais indicado para confirmação do diagnóstico neste momento?",
+    "options": [
+      "(A) Sorologia para dengue.",
+      "(B) Sorologia para Epstein-Barr vírus.",
+      "(C) Aspirado e cultura de medula óssea.",
+      "(D) Teste rápido para pesquisa de estreptococo do grupo A."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Febre prolongada com faringoamigdalite exsudativa, petéquias no palato, linfonodomegalia cervical anterior e posterior, edema palpebral (sinal de Hoagland), hepatomegalia e esplenomegalia: mononucleose infecciosa pelo vírus Epstein-Barr.\n\nEm crianças pequenas o teste de anticorpos heterófilos (Paul-Bunnell, monoteste) é frequentemente negativo; a sorologia específica para EBV (IgM anti-VCA) confirma o diagnóstico.",
+    "commentary": "Sorologia para dengue (A): dengue não causa amigdalite exsudativa nem linfonodomegalia cervical posterior.\n\nAspirado de medula (C): seria indicado na suspeita de leucemia (citopenias, blastos); o quadro é típico de mononucleose.\n\nTeste rápido para estreptococo (D): a faringite estreptocócica não causa hepatoesplenomegalia nem adenomegalia cervical posterior.",
+    "reference": "Red Book (AAP), 2024 — Epstein-Barr Virus Infections / Nelson Textbook of Pediatrics, 21ª ed.",
+    "tags": [
+      "mononucleose infecciosa",
+      "vírus Epstein-Barr",
+      "sorologia",
+      "hepatoesplenomegalia"
     ]
   }
 ];
