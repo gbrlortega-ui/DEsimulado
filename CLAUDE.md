@@ -30,6 +30,12 @@ Google sincroniza tudo no Firestore, em `alunos/{uid}` — projeto Firebase `des
 - Gravações são poucas de propósito (plano gratuito: 20 mil/dia): na entrega do simulado e ao sair
   da aba, nunca a cada clique.
 - Política de privacidade: `src/components/PrivacyPolicy.tsx` — atualizar se mudar o que é salvo.
+- **Minhas estatísticas** (`src/components/MinhasEstatisticas.tsx`): cada simulado do histórico guarda
+  `certas`/`erradas` (IDs separados por espaço; em branco e anuladas ficam de fora). A classificação em
+  grande área → subárea → síndrome é automática, por palavras-chave nas tags, no `topic` e na topografia,
+  em `src/lib/taxonomia.ts` (carregado sob demanda — não importar em telas iniciais). Tema sem cobertura?
+  Acrescente a tag/palavra-chave lá. "Treinar este tema" usa `QuizSettings.tema` (`clinica/cardio`,
+  `sindrome/dispneia`).
 
 ## Comandos
 
