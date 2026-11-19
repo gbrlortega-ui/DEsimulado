@@ -13,5 +13,9 @@ export default defineConfig({
   build: {
     // O banco de questões é um arquivo grande de propósito, baixado em segundo plano (src/data/banco.ts).
     chunkSizeWarningLimit: 3000,
+    rollupOptions: {
+      // Página de teste da área "Minhas estatísticas" (separada do site, não aparece em nenhum link).
+      input: { main: 'index.html', estatisticas: 'estatisticas-teste.html' },
+    },
   },
 });
