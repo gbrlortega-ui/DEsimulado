@@ -58,6 +58,10 @@ export interface QuizSettings {
   tema?: string;
   /** Nome do tema, exibido no simulado e no histórico ("Cardiologia"). */
   temaNome?: string;
+  /** Lista fixa de questões, na ordem (revisão das erradas em "Minhas estatísticas"). */
+  ids?: string[];
+  /** Simulado diagnóstico: questões distribuídas igualmente entre as cinco grandes áreas. */
+  diagnostico?: boolean;
 }
 
 export interface UserAnswer {

@@ -1,4 +1,5 @@
 import type { Module, Question } from '../types';
+import { examSource } from './utils';
 import { findTopographyGroup } from '../data/topografia';
 
 /**
@@ -589,11 +590,15 @@ export function classify(q: Question): Classificacao {
 export interface Resposta {
   questionId: string;
   correct: boolean;
+  /** Quando o simulado foi entregue (ms): ordena as respostas para a evolução por tema. */
+  at?: number;
 }
 
 export interface Placar {
   correct: number;
   total: number;
+  /** Acertos em ordem cronológica (para a evolução do tema). */
+  serie?: boolean[];
 }
 
 export interface Estatisticas {
@@ -602,34 +607,82 @@ export interface Estatisticas {
   /** chave "area/subarea" */
   subareas: Record<string, Placar>;
   sindromes: Record<string, Placar>;
+  /**
+   * Questões cuja última resposta foi errada, por tema: chaves "area/subarea", "sindrome/id" e "geral".
+   * Uma questão errada e depois acertada sai da lista.
+   */
+  erradas: Record<string, string[]>;
 }
 
-const add = (rec: Record<string, Placar>, key: string, ok: boolean) => {
-  rec[key] ??= { correct: 0, total: 0 };
+const add = (rec: Record<string, Placar>, key: string, ok: boolean, serie = false) => {
+  rec[key] ??= { correct: 0, total: 0, ...(serie ? { serie: [] } : {}) };
   rec[key].total++;
   if (ok) rec[key].correct++;
+  rec[key].serie?.push(ok);
 };
 
 export function computeStats(respostas: Resposta[], byId: Map<string, Question>): Estatisticas {
-  const st: Estatisticas = { geral: { correct: 0, total: 0 }, areas: {}, subareas: {}, sindromes: {} };
-  for (const r of respostas) {
+  const st: Estatisticas = { geral: { correct: 0, total: 0, serie: [] }, areas: {}, subareas: {}, sindromes: {}, erradas: {} };
+  const ordered = [...respostas].sort((a, b) => (a.at ?? 0) - (b.at ?? 0));
+  const ultima = new Map<string, boolean>();
+  for (const r of ordered) {
     const q = byId.get(r.questionId);
     if (!q || q.annulled) continue;
-    st.geral.total++;
-    if (r.correct) st.geral.correct++;
+    add({ g: st.geral }, 'g', r.correct, true);
+    ultima.set(q.id, r.correct);
     const c = classify(q);
     for (const { area, subareas } of c.areas) {
-      add(st.areas, area, r.correct);
-      for (const sub of subareas) add(st.subareas, `${area}/${sub}`, r.correct);
+      add(st.areas, area, r.correct, true);
+      for (const sub of subareas) add(st.subareas, `${area}/${sub}`, r.correct, true);
     }
-    for (const sy of c.sindromes) add(st.sindromes, sy, r.correct);
+    for (const sy of c.sindromes) add(st.sindromes, sy, r.correct, true);
+  }
+  // Erradas na última tentativa, da mais recente para a mais antiga.
+  const push = (key: string, id: string) => (st.erradas[key] ??= []).push(id);
+  for (const [id, ok] of [...ultima].reverse()) {
+    if (ok) continue;
+    push('geral', id);
+    const c = classify(byId.get(id)!);
+    for (const { area, subareas } of c.areas) for (const sub of subareas) push(`${area}/${sub}`, id);
+    for (const sy of c.sindromes) push(`sindrome/${sy}`, id);
   }
   return st;
 }
 
+/** Mínimo de respostas para mostrar a evolução de um tema (metade antiga × metade recente). */
+export const MIN_EVOLUCAO = 6;
+
+/** Evolução do tema: acerto na primeira metade das respostas × na metade mais recente. */
+export function evolucao(p?: Placar): { antes: number; depois: number } | null {
+  const s = p?.serie;
+  if (!s || s.length < MIN_EVOLUCAO) return null;
+  const meio = Math.floor(s.length / 2);
+  const pct = (list: boolean[]) => Math.round((list.filter(Boolean).length / list.length) * 100);
+  return { antes: pct(s.slice(0, meio)), depois: pct(s.slice(meio)) };
+}
+
+/** Prova-alvo do aluno: muda o peso dos temas (quantas questões daquela prova caem em cada tema). */
+export type Alvo = 'todas' | 'enamed' | 'residencia' | 'tp';
+export const ALVOS: { id: Alvo; label: string; curto: string }[] = [
+  { id: 'todas', label: 'Todas as provas', curto: 'no banco' },
+  { id: 'enamed', label: 'ENAMED e Revalida', curto: 'no ENAMED/Revalida' },
+  { id: 'residencia', label: 'Residência', curto: 'na Residência' },
+  { id: 'tp', label: 'Teste de Progresso', curto: 'no TP' },
+];
+
+export function questionsForAlvo(questions: Question[], alvo: Alvo): Question[] {
+  if (alvo === 'todas') return questions;
+  return questions.filter((q) => {
+    const src = examSource(q.id);
+    if (alvo === 'tp') return src === 'TP';
+    if (alvo === 'enamed') return src === 'ENAMED' || src === 'REVALIDA';
+    return src !== 'TP' && src !== 'ENAMED' && src !== 'REVALIDA';
+  });
+}
+
 /** Quantas questões do banco caem em cada área, subárea e síndrome (mostra o peso do tema nas provas). */
 export function bankWeights(questions: Question[]) {
-  const w: Estatisticas = { geral: { correct: 0, total: questions.length }, areas: {}, subareas: {}, sindromes: {} };
+  const w: Estatisticas = { geral: { correct: 0, total: questions.length }, areas: {}, subareas: {}, sindromes: {}, erradas: {} };
   for (const q of questions) {
     const c = classify(q);
     for (const { area, subareas } of c.areas) {

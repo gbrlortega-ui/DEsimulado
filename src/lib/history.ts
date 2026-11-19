@@ -89,13 +89,13 @@ export function summarize(history: HistoryEntry[]) {
 
 /** Respostas questão a questão de todos os simulados (só os que guardam esse detalhe). */
 export function answersFromHistory(history: HistoryEntry[]) {
-  const respostas: { questionId: string; correct: boolean }[] = [];
+  const respostas: { questionId: string; correct: boolean; at: number }[] = [];
   let comDetalhe = 0;
   for (const e of history) {
     if (e.certas === undefined && e.erradas === undefined) continue;
     comDetalhe++;
-    for (const id of (e.certas ?? '').split(' ')) if (id) respostas.push({ questionId: id, correct: true });
-    for (const id of (e.erradas ?? '').split(' ')) if (id) respostas.push({ questionId: id, correct: false });
+    for (const id of (e.certas ?? '').split(' ')) if (id) respostas.push({ questionId: id, correct: true, at: e.at });
+    for (const id of (e.erradas ?? '').split(' ')) if (id) respostas.push({ questionId: id, correct: false, at: e.at });
   }
   return { respostas, comDetalhe, semDetalhe: history.length - comDetalhe };
 }

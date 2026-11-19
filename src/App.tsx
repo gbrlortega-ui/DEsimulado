@@ -206,6 +206,14 @@ export default function App() {
   const handleTrainTema = (tema: string, temaNome: string) =>
     startQuiz({ questionCount: 20, module: 'Misto', immediateFeedback: true, tema, temaNome });
 
+  /** "Revisar as que errei": as questões erradas (do tema ou todas), com o comentário a cada resposta. */
+  const handleReview = (ids: string[], nome: string) =>
+    startQuiz({ questionCount: ids.length, module: 'Misto', immediateFeedback: true, ids, temaNome: `Revisão · ${nome}` });
+
+  /** Simulado diagnóstico: 60 questões, 12 de cada grande área, com correção no fim (como a prova). */
+  const handleDiagnostic = () =>
+    startQuiz({ questionCount: 60, module: 'Misto', immediateFeedback: false, diagnostico: true, temaNome: 'Simulado diagnóstico' });
+
   const handleQuickStart = () => startQuiz({ questionCount: 10, module: 'Misto', immediateFeedback: true });
 
   const handleFinishQuiz = (finalResults: QuizResults, answers: UserAnswer[]) => {
@@ -358,6 +366,8 @@ export default function App() {
           onHome={handleGoHome}
           onSetup={() => handleStartSetup()}
           onTrain={handleTrainTema}
+          onReview={handleReview}
+          onDiagnostic={handleDiagnostic}
         />
       )}
       </Suspense>

@@ -25,6 +25,12 @@ export async function pickQuestions(settings: QuizSettings): Promise<Question[]>
   const preset = findSugerido(settings.presetId);
   if (preset) return preset.questions;
 
+  // Revisão das erradas: lista fixa, na ordem (questões que saíram do banco são puladas).
+  if (settings.ids?.length) {
+    const found = await questionsByIds(settings.ids, true);
+    if (found?.length) return found;
+  }
+
   let filtered = settings.topography ? topographyQuestions(settings.topography) : [...QUESTIONS];
   if (settings.tema) {
     // Treino de um tema de "Minhas estatísticas" (classificação baixada só quando precisa).
@@ -52,9 +58,14 @@ export async function pickQuestions(settings: QuizSettings): Promise<Question[]>
   const seenEnd = new Set<string>();
   const seenOptions = new Set<string>();
   const picked: Question[] = [];
+  // Diagnóstico: mesma quantidade de cada grande área (Ciências Básicas fica de fora).
+  const quota = settings.diagnostico ? Math.ceil(settings.questionCount / DIAGNOSTICO_AREAS.length) : Infinity;
+  const perArea = new Map<string, number>();
   for (const q of shuffled) {
+    if (settings.diagnostico && (!DIAGNOSTICO_AREAS.includes(q.module) || (perArea.get(q.module) ?? 0) >= quota)) continue;
     const { byEnd, byOptions } = repeatKeys(q);
     if (seenEnd.has(byEnd) || seenOptions.has(byOptions)) continue;
+    perArea.set(q.module, (perArea.get(q.module) ?? 0) + 1);
     seenEnd.add(byEnd);
     seenOptions.add(byOptions);
     picked.push(q);
@@ -62,6 +73,9 @@ export async function pickQuestions(settings: QuizSettings): Promise<Question[]>
   }
   return picked;
 }
+
+const DIAGNOSTICO_AREAS: string[] = ['Clínica Médica', 'Cirurgia', 'Pediatria', 'Ginecologia e Obstetrícia', 'Saúde Coletiva'];
+
 
 /** Texto normalizado para comparar questões (ignora maiúsculas, acentos, espaços e pontuação). */
 function normalize(text: string) {
@@ -81,10 +95,11 @@ function repeatKeys(q: Question) {
 }
 
 /** Recupera as questões de um simulado salvo, na mesma ordem. Retorna null se alguma não existir mais. */
-export async function questionsByIds(ids: string[]): Promise<Question[] | null> {
+export async function questionsByIds(ids: string[], skipMissing = false): Promise<Question[] | null> {
   const { QUESTIONS, SUGERIDOS, TOPOGRAPHY_QUESTIONS } = await loadBank();
   const byId = new Map<string, Question>();
   [...QUESTIONS, ...SUGERIDOS.flatMap((s) => s.questions), ...TOPOGRAPHY_QUESTIONS].forEach((q) => byId.set(q.id, q));
   const found = ids.map((id) => byId.get(id));
+  if (skipMissing) return found.filter((q): q is Question => !!q);
   return found.every(Boolean) ? (found as Question[]) : null;
 }

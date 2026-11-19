@@ -35,7 +35,10 @@ Google sincroniza tudo no Firestore, em `alunos/{uid}` — projeto Firebase `des
   grande área → subárea → síndrome é automática, por palavras-chave nas tags, no `topic` e na topografia,
   em `src/lib/taxonomia.ts` (carregado sob demanda — não importar em telas iniciais). Tema sem cobertura?
   Acrescente a tag/palavra-chave lá. "Treinar este tema" usa `QuizSettings.tema` (`clinica/cardio`,
-  `sindrome/dispneia`).
+  `sindrome/dispneia`); "Revisar erradas" usa `QuizSettings.ids` (lista fixa, até 50 questões cuja última
+  resposta foi errada); o simulado diagnóstico usa `QuizSettings.diagnostico` (12 questões de cada uma das
+  5 grandes áreas). A evolução compara a metade mais antiga das respostas do tema com a mais recente
+  (a partir de 6). A prova-alvo (peso dos temas) fica no `localStorage` (`desimulados:prova-alvo`).
 
 ## Comandos
 

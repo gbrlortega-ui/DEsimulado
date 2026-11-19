@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { ArrowRight, BarChart3, ChevronDown, Crosshair, Home, Info, Target, Trophy } from 'lucide-react';
+import { ArrowRight, BarChart3, ChevronDown, Crosshair, Home, Info, RotateCcw, Stethoscope, Target, TrendingDown, TrendingUp, Trophy } from 'lucide-react';
 import type { Question } from '../types';
 import { loadBank } from '../data/banco';
 import { Brand } from './Brand';
@@ -7,13 +7,17 @@ import { SaveHistoryCta } from './AccountMenu';
 import type { Account } from '../lib/account';
 import { cn } from '../lib/utils';
 import {
+  ALVOS,
   bankWeights,
   computeStats,
+  evolucao,
   focusList,
   GRANDES_AREAS,
   MIN_RESPOSTAS,
   perc,
+  questionsForAlvo,
   SINDROMES,
+  type Alvo,
   type Placar,
   type Resposta,
 } from '../lib/taxonomia';
@@ -30,15 +34,35 @@ interface Props {
   onSetup: () => void;
   /** Abre um simulado só com questões do tema. */
   onTrain?: (tema: string, nome: string) => void;
+  /** Abre as questões erradas (do tema ou todas), com o comentário. */
+  onReview?: (ids: string[], nome: string) => void;
+  /** Abre o simulado diagnóstico (60 questões de todas as áreas). */
+  onDiagnostic?: () => void;
   /** Faixa extra no topo (usada na página de teste). */
   banner?: React.ReactNode;
 }
 
 const Name = () => <span translate="no">DEsimulados</span>;
 
+/** A partir de quantas respostas as recomendações ficam bem confiáveis (abaixo disso, oferece o diagnóstico). */
+const META_RESPOSTAS = 150;
+/** Uma revisão abre no máximo estas erradas (as mais recentes). */
+const MAX_REVISAO = 50;
+const ALVO_KEY = 'desimulados:prova-alvo';
+
 const band = (p: number) => (p >= 60 ? 'bg-accent-green' : p >= 40 ? 'bg-accent-amber' : 'bg-accent-coral');
 const bandText = (p: number) => (p >= 60 ? 'text-primary-ink' : p >= 40 ? 'text-[oklch(50%_0.12_70)]' : 'text-accent-coral');
 const fmt = (n: number) => n.toLocaleString('pt-BR');
+const plural = (n: number, um: string, varios: string) => `${fmt(n)} ${n === 1 ? um : varios}`;
+
+function loadAlvo(): Alvo {
+  try {
+    const v = localStorage.getItem(ALVO_KEY);
+    return ALVOS.some((a) => a.id === v) ? (v as Alvo) : 'todas';
+  } catch {
+    return 'todas';
+  }
+}
 
 function Bar({ placar, compact }: { placar?: Placar; compact?: boolean }) {
   const p = perc(placar);
@@ -52,37 +76,89 @@ function Bar({ placar, compact }: { placar?: Placar; compact?: boolean }) {
   );
 }
 
-function Linha({ name, sub, placar, peso, compact }: { name: string; sub?: string; placar?: Placar; peso?: number; compact?: boolean }) {
+/** Seta de evolução: acerto da metade mais antiga das respostas → metade mais recente. */
+function Evolucao({ placar, long }: { placar?: Placar; long?: boolean }) {
+  const ev = evolucao(placar);
+  if (!ev) return null;
+  const diff = ev.depois - ev.antes;
+  if (Math.abs(diff) < 5) {
+    return long ? <span className="text-xs text-muted">Estável: {ev.antes}% → {ev.depois}%</span> : null;
+  }
+  const up = diff > 0;
+  const Icon = up ? TrendingUp : TrendingDown;
+  return (
+    <span
+      className={cn('inline-flex items-center gap-1 text-xs font-semibold tabular-nums', up ? 'text-primary-ink' : 'text-accent-coral')}
+      title={`Primeiras respostas: ${ev.antes}% · mais recentes: ${ev.depois}%`}
+    >
+      <Icon size={13} aria-hidden />
+      {long ? `${up ? 'Melhorando' : 'Piorando'}: ${ev.antes}% → ${ev.depois}%` : `${up ? '+' : ''}${diff}`}
+    </span>
+  );
+}
+
+function Linha({
+  name,
+  sub,
+  placar,
+  peso,
+  pesoLabel,
+  compact,
+  children,
+}: {
+  name: string;
+  sub?: string;
+  placar?: Placar;
+  peso?: number;
+  pesoLabel: string;
+  compact?: boolean;
+  children?: React.ReactNode;
+}) {
   const p = perc(placar);
   const vazio = !placar?.total;
-  const poucas = !vazio && placar!.total < MIN_RESPOSTAS;
+  const faltam = vazio ? 0 : Math.max(0, MIN_RESPOSTAS - placar!.total);
   return (
-    <div className={cn('min-w-0', vazio && 'opacity-60')}>
-      <div className="flex items-baseline justify-between gap-3 text-sm">
-        <span className="min-w-0 flex-1 break-words">
-          <span className={cn('text-ink', compact ? 'font-normal' : 'font-medium')}>{name}</span>
-          {sub && <span className="block text-xs text-muted leading-snug mt-0.5">{sub}</span>}
-        </span>
-        <span className="shrink-0 text-muted tabular-nums text-right whitespace-nowrap">
-          {vazio ? (
-            <span className="text-xs">
-              sem respostas
-              {peso ? <span className="hidden sm:inline"> · {fmt(peso)} no banco</span> : null}
-            </span>
-          ) : (
-            <>
+    <div className="min-w-0">
+      <div className={cn(vazio && 'opacity-60')}>
+        <div className="flex items-baseline justify-between gap-3 text-sm">
+          <span className="min-w-0 flex-1 break-words">
+            <span className={cn('text-ink', compact ? 'font-normal' : 'font-medium')}>{name}</span>
+            {sub && <span className="block text-xs text-muted leading-snug mt-0.5">{sub}</span>}
+          </span>
+          <span className="shrink-0 text-muted tabular-nums text-right whitespace-nowrap">
+            {vazio ? (
               <span className="text-xs">
-                {placar!.correct}/{placar!.total}
-                {poucas && ' · poucas'}
+                sem respostas
+                {peso ? (
+                  <span className="hidden sm:inline">
+                    {' '}
+                    · {fmt(peso)} {pesoLabel}
+                  </span>
+                ) : null}
               </span>
-              <span className={cn('font-semibold ml-2', bandText(p))}>{p}%</span>
-            </>
+            ) : (
+              <>
+                <Evolucao placar={placar} />
+                <span className="text-xs ml-2">{placar!.correct}/{placar!.total}</span>
+                <span className={cn('font-semibold ml-2', faltam ? 'text-muted' : bandText(p))}>{p}%</span>
+              </>
+            )}
+          </span>
+        </div>
+        <div className="mt-1.5">
+          <Bar placar={placar} compact={compact} />
+        </div>
+      </div>
+      {(faltam > 0 || children) && (
+        <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
+          {faltam > 0 && (
+            <span className="text-muted" title="Com poucas respostas, o percentual ainda pode ser obra do acaso">
+              Dados insuficientes: responda mais {faltam}
+            </span>
           )}
-        </span>
-      </div>
-      <div className="mt-1.5">
-        <Bar placar={placar} compact={compact} />
-      </div>
+          {children}
+        </div>
+      )}
     </div>
   );
 }
@@ -91,11 +167,25 @@ function Card({ children, className }: { children: React.ReactNode; className?: 
   return <section className={cn('rounded-2xl border border-line-2 bg-white p-5 sm:p-7', className)}>{children}</section>;
 }
 
+const linkCls = 'inline-flex items-center gap-1 font-semibold text-primary-ink hover:text-ink transition-colors';
+
 /** Área "Minhas estatísticas": acerto por grande área, subárea e síndrome, e onde focar. */
-export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semDetalhe, account, onHome, onSetup, onTrain, banner }) => {
+export const MinhasEstatisticas: React.FC<Props> = ({
+  respostas,
+  simulados,
+  semDetalhe,
+  account,
+  onHome,
+  onSetup,
+  onTrain,
+  onReview,
+  onDiagnostic,
+  banner,
+}) => {
   const [questions, setQuestions] = useState<Question[] | null>(null);
   const [erro, setErro] = useState(false);
   const [aberta, setAberta] = useState<string | null>(null);
+  const [alvo, setAlvo] = useState<Alvo>(loadAlvo);
 
   useEffect(() => {
     loadBank()
@@ -103,11 +193,24 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
       .catch(() => setErro(true));
   }, []);
 
+  const escolherAlvo = (a: Alvo) => {
+    setAlvo(a);
+    try {
+      localStorage.setItem(ALVO_KEY, a);
+    } catch {
+      // ignora
+    }
+  };
+
   const byId = useMemo(() => new Map((questions ?? []).map((q) => [q.id, q])), [questions]);
-  // Peso dos temas: só o banco geral (os sugeridos repetem questões de provas).
-  const weights = useMemo(() => (questions ? bankWeights(questions.filter((q) => !q.id.startsWith('sug-'))) : null), [questions]);
+  // Peso dos temas: questões da prova-alvo no banco geral (os sugeridos repetem questões de provas).
+  const weights = useMemo(
+    () => (questions ? bankWeights(questionsForAlvo(questions.filter((q) => !q.id.startsWith('sug-')), alvo)) : null),
+    [questions, alvo]
+  );
   const st = useMemo(() => (questions ? computeStats(respostas, byId) : null), [questions, respostas, byId]);
   const foco = useMemo(() => (st && weights ? focusList(st, weights) : []), [st, weights]);
+  const pesoLabel = ALVOS.find((a) => a.id === alvo)!.curto;
 
   const header = (
     <header className="sticky top-0 z-40 bg-bg/85 backdrop-blur-md border-b border-line">
@@ -141,6 +244,28 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
   }
 
   const vazio = st.geral.total === 0;
+  const erradasGeral = st.erradas.geral ?? [];
+
+  /** Links "Treinar" e "Revisar N erradas" de um tema. */
+  const acoes = (key: string, nome: string, treinar = true) => {
+    const erradas = st.erradas[key] ?? [];
+    return (
+      <>
+        {treinar && onTrain && (
+          <button type="button" onClick={() => onTrain(key, nome)} className={linkCls}>
+            <Target size={13} aria-hidden />
+            Treinar
+          </button>
+        )}
+        {onReview && erradas.length > 0 && (
+          <button type="button" onClick={() => onReview(erradas.slice(0, MAX_REVISAO), nome)} className={linkCls}>
+            <RotateCcw size={13} aria-hidden />
+            Revisar {plural(erradas.length, 'errada', 'erradas')}
+          </button>
+        )}
+      </>
+    );
+  };
 
   const areas = GRANDES_AREAS.map((g) => ({ g, placar: st.areas[g.id] }))
     .filter((a) => a.placar?.total || weights.areas[a.g.id]?.total)
@@ -156,6 +281,38 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
 
   const sindromes = SINDROMES.map((sy) => ({ sy, placar: st.sindromes[sy.id], peso: weights.sindromes[sy.id]?.total ?? 0 })).sort(
     (a, b) => (b.placar?.total ? 1 : 0) - (a.placar?.total ? 1 : 0) || perc(a.placar) - perc(b.placar)
+  );
+
+  const diagnostico = onDiagnostic && st.geral.total < META_RESPOSTAS && (
+    <Card className="border-accent-amber/50 bg-amber-soft">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+        <Stethoscope className="hidden sm:block w-8 h-8 text-ink-2 shrink-0" aria-hidden />
+        <div className="flex-1 min-w-0">
+          <p className="font-semibold text-ink">Faça o simulado diagnóstico</p>
+          <p className="mt-1 text-sm text-ink-2">
+            60 questões, 12 de cada grande área, com correção no fim. Em uma sessão, ele dá dados para quase todos os temas e as
+            recomendações ficam bem mais confiáveis.
+          </p>
+          {!vazio && (
+            <div className="mt-3">
+              <div className="flex justify-between text-xs text-muted tabular-nums">
+                <span>Suas respostas até agora</span>
+                <span>
+                  {fmt(st.geral.total)} de {META_RESPOSTAS}
+                </span>
+              </div>
+              <div className="mt-1 h-1.5 rounded-full bg-white overflow-hidden">
+                <div className="h-full rounded-full bg-accent-amber" style={{ width: `${(st.geral.total / META_RESPOSTAS) * 100}%` }} />
+              </div>
+            </div>
+          )}
+        </div>
+        <button type="button" onClick={onDiagnostic} className="btn btn-primary self-start sm:self-auto">
+          Começar diagnóstico
+          <ArrowRight size={18} />
+        </button>
+      </div>
+    </Card>
   );
 
   return (
@@ -189,16 +346,19 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
         )}
 
         {vazio ? (
-          <Card className="text-center py-12">
-            <p className="font-heading text-2xl font-bold text-ink">Ainda não há respostas para analisar</p>
-            <p className="mt-2 text-ink-2 max-w-md mx-auto">
-              Faça um simulado no <Name />: a cada entrega, esta página mostra seu acerto por tema e onde focar.
-            </p>
-            <button type="button" onClick={onSetup} className="btn btn-primary mt-6">
-              Montar meu simulado
-              <ArrowRight size={18} />
-            </button>
-          </Card>
+          <>
+            <Card className="text-center py-12">
+              <p className="font-heading text-2xl font-bold text-ink">Ainda não há respostas para analisar</p>
+              <p className="mt-2 text-ink-2 max-w-md mx-auto">
+                Faça um simulado no <Name />: a cada entrega, esta página mostra seu acerto por tema e onde focar.
+              </p>
+              <button type="button" onClick={onSetup} className="btn btn-ghost mt-6">
+                Montar um simulado
+                <ArrowRight size={18} />
+              </button>
+            </Card>
+            {diagnostico}
+          </>
         ) : (
           <>
             <Card>
@@ -215,46 +375,85 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
                   </div>
                 ))}
               </dl>
+              <div className="mt-5 pt-4 border-t border-line flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="text-sm text-ink-2">
+                  <Evolucao placar={st.geral} long />
+                  {!evolucao(st.geral) && <span className="text-muted">A evolução aparece a partir de 6 respostas.</span>}
+                </div>
+                {onReview && erradasGeral.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => onReview(erradasGeral.slice(0, MAX_REVISAO), 'questões que errei')}
+                    className="inline-flex items-center gap-2 self-start sm:self-auto rounded-xl border border-line-2 bg-white px-4 py-2.5 text-sm sm:text-[15px] font-semibold text-ink text-left hover:border-ink/30 transition-colors"
+                  >
+                    <RotateCcw size={16} className="shrink-0" aria-hidden />
+                    {erradasGeral.length > MAX_REVISAO
+                      ? `Revisar as ${MAX_REVISAO} últimas que errei (de ${fmt(erradasGeral.length)})`
+                      : `Revisar as ${fmt(erradasGeral.length)} que errei`}
+                  </button>
+                )}
+              </div>
             </Card>
+
+            {diagnostico}
 
             {/* Onde focar */}
             <Card className="border-primary/40">
-              <h2 className="text-2xl font-extrabold flex items-center gap-2">
-                <Crosshair className="w-5 h-5 text-primary-ink" aria-hidden />
-                Onde focar agora
-              </h2>
-              <p className="mt-1 text-sm text-muted">
-                Temas com acerto baixo e que mais caem nas provas (peso = questões do tema no banco). Só entram temas com pelo menos{' '}
-                {MIN_RESPOSTAS} respostas.
-              </p>
+              <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-4">
+                <div>
+                  <h2 className="text-2xl font-extrabold flex items-center gap-2">
+                    <Crosshair className="w-5 h-5 text-primary-ink" aria-hidden />
+                    Onde focar agora
+                  </h2>
+                  <p className="mt-1 text-sm text-muted max-w-xl">
+                    Temas com acerto baixo e que mais caem na prova escolhida. Só entram temas com pelo menos {MIN_RESPOSTAS} respostas.
+                  </p>
+                </div>
+                <div role="radiogroup" aria-label="Prova-alvo (peso dos temas)" className="flex flex-wrap gap-1.5">
+                  <span className="w-full text-xs text-muted">Sua prova-alvo</span>
+                  {ALVOS.map((a) => (
+                    <button
+                      key={a.id}
+                      type="button"
+                      role="radio"
+                      aria-checked={alvo === a.id}
+                      onClick={() => escolherAlvo(a.id)}
+                      className={cn(
+                        'rounded-full border px-3 py-1 text-sm transition-colors',
+                        alvo === a.id ? 'bg-ink border-ink text-white' : 'bg-white border-line-2 text-ink hover:border-ink/30'
+                      )}
+                    >
+                      {a.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
               {foco.length ? (
                 <ol className="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {foco.map((f, i) => (
-                    <li key={f.key} className="rounded-xl border border-line-2 p-4 flex flex-col">
-                      <div className="flex items-start justify-between gap-2">
-                        <span className="text-xs font-semibold text-muted">
-                          {i + 1}º · {f.kind === 'sindrome' ? 'Síndrome transversal' : f.area}
-                        </span>
-                        <span className={cn('font-heading text-xl font-bold tabular-nums', bandText(perc(f.placar)))}>{perc(f.placar)}%</span>
-                      </div>
-                      <p className="mt-1 font-semibold text-ink">{f.name}</p>
-                      <p className="mt-1 text-xs text-muted">
-                        {f.placar.correct} de {f.placar.total} certas · {fmt(f.peso)} questões no banco
-                      </p>
-                      <div className="mt-3">
-                        <Bar placar={f.placar} compact />
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => onTrain?.(f.key, f.name)}
-                        disabled={!onTrain}
-                        className="mt-4 self-start inline-flex items-center gap-1 text-sm font-semibold text-primary-ink hover:text-ink transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
-                      >
-                        <Target size={15} aria-hidden />
-                        Treinar este tema
-                      </button>
-                    </li>
-                  ))}
+                  {foco.map((f, i) => {
+                    const placar = f.placar;
+                    return (
+                      <li key={f.key} className="rounded-xl border border-line-2 p-4 flex flex-col min-w-0">
+                        <div className="flex items-start justify-between gap-2">
+                          <span className="text-xs font-semibold text-muted">
+                            {i + 1}º · {f.kind === 'sindrome' ? 'Síndrome transversal' : f.area}
+                          </span>
+                          <span className={cn('font-heading text-xl font-bold tabular-nums', bandText(perc(placar)))}>{perc(placar)}%</span>
+                        </div>
+                        <p className="mt-1 font-semibold text-ink">{f.name}</p>
+                        <p className="mt-1 text-xs text-muted">
+                          {placar.correct} de {placar.total} certas · {fmt(f.peso)} questões {pesoLabel}
+                        </p>
+                        <div className="mt-3">
+                          <Bar placar={placar} compact />
+                        </div>
+                        <div className="mt-2 min-h-4">
+                          <Evolucao placar={placar} long />
+                        </div>
+                        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm">{acoes(f.key, f.name)}</div>
+                      </li>
+                    );
+                  })}
                 </ol>
               ) : (
                 <p className="mt-5 text-sm text-ink-2">
@@ -285,8 +484,8 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
             <Card>
               <h2 className="text-2xl font-extrabold">Por grande área</h2>
               <p className="mt-1 text-sm text-muted">
-                Da mais fraca para a mais forte. Toque numa área para ver as subáreas. Uma questão pode contar em mais de uma área (ex.:
-                cetoacidose conta em Clínica e em Emergência).
+                Da mais fraca para a mais forte. Toque numa área para ver as subáreas. A seta mostra a evolução: acerto das suas respostas
+                mais recentes em relação às primeiras.
               </p>
               <ul className="mt-5 divide-y divide-line">
                 {areas.map(({ g, placar }) => {
@@ -307,15 +506,17 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
                         className="w-full text-left flex items-center gap-3"
                       >
                         <div className="flex-1 min-w-0">
-                          <Linha name={g.name} placar={placar} peso={weights.areas[g.id]?.total} />
+                          <Linha name={g.name} placar={placar} peso={weights.areas[g.id]?.total} pesoLabel={pesoLabel} />
                         </div>
                         <ChevronDown size={18} className={cn('shrink-0 text-muted transition-transform', open && 'rotate-180')} aria-hidden />
                       </button>
                       {open && (
-                        <ul className="mt-4 mb-2 ml-1 sm:ml-4 pl-3 sm:pl-5 border-l-2 border-line grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+                        <ul className="mt-4 mb-2 ml-1 sm:ml-4 pl-3 sm:pl-5 border-l-2 border-line grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
                           {subs.map((s) => (
                             <li key={s.id} className="min-w-0">
-                              <Linha name={s.name} sub={s.temas} placar={s.placar} peso={s.peso} compact />
+                              <Linha name={s.name} sub={s.temas} placar={s.placar} peso={s.peso} pesoLabel={pesoLabel} compact>
+                                {acoes(`${g.id}/${s.id}`, s.name, s.id !== 'outros')}
+                              </Linha>
                             </li>
                           ))}
                         </ul>
@@ -330,10 +531,12 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
             <Card>
               <h2 className="text-2xl font-extrabold">Síndromes e apresentações clínicas</h2>
               <p className="mt-1 text-sm text-muted">Questões que partem de uma queixa e pedem diagnóstico diferencial, de qualquer área.</p>
-              <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4">
+              <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-5">
                 {sindromes.map(({ sy, placar, peso }) => (
                   <li key={sy.id} className="min-w-0">
-                    <Linha name={sy.name} sub={sy.diferenciais} placar={placar} peso={peso} compact />
+                    <Linha name={sy.name} sub={sy.diferenciais} placar={placar} peso={peso} pesoLabel={pesoLabel} compact>
+                      {acoes(`sindrome/${sy.id}`, sy.name)}
+                    </Linha>
                   </li>
                 ))}
               </ul>
