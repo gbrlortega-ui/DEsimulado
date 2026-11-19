@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, Check, Lock } from 'lucide-react';
 import { Brand } from './Brand';
+import { FloatingHeader, PageGlow, headerLink } from './PageChrome';
 import { QuizSettings } from '../types';
 import { TOPOGRAPHY, findTopographyGroup } from '../data/topografia';
 import { TOPIC_COUNT, TOPOGRAPHY_COUNT } from '../data/resumo';
@@ -44,23 +45,24 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
     setTopics((cur) => (cur.includes(t) ? cur.filter((x) => x !== t) : [...cur, t]));
 
   return (
-    <div className="min-h-screen bg-bg">
-      <header className="sticky top-0 z-40 bg-bg/85 backdrop-blur-md border-b border-line">
-        <div className="container-custom h-16 flex items-center justify-between">
-          <Brand onClick={onHome} />
-          <button onClick={onBack} className="text-sm font-semibold text-muted hover:text-ink transition-colors flex items-center gap-1">
-            <ChevronLeft size={16} />
-            Voltar
-          </button>
-        </div>
-      </header>
+    <div className="relative min-h-screen bg-bg overflow-x-clip">
+      <PageGlow />
+      <FloatingHeader className="max-w-3xl">
+        <Brand onClick={onHome} />
+        <button onClick={onBack} className={headerLink}>
+          <ChevronLeft size={16} />
+          Voltar
+        </button>
+      </FloatingHeader>
 
-      <main className={cn('max-w-3xl mx-auto px-4 sm:px-6 pt-10', selected ? 'pb-72 sm:pb-56' : 'pb-16')}>
-        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-[-0.03em]">Simulado por topografia</h1>
+      <main className={cn('relative max-w-3xl mx-auto px-4 sm:px-6 pt-10', selected ? 'pb-80 sm:pb-64' : 'pb-16')}>
+        <h1 className="text-4xl sm:text-6xl font-extrabold tracking-[-0.04em]">
+          Simulado por <span className="text-gradient">topografia</span>
+        </h1>
         <p className="mt-3 text-ink-2 text-lg">
           Estude por região do corpo: escolha a especialidade e responda só questões dela.
         </p>
-        <p className="mt-2 text-sm text-muted">
+        <p className="mt-3 inline-flex rounded-full bg-white/80 border border-white px-3.5 py-1.5 text-sm text-ink-2 shadow-[0_6px_20px_-12px_oklch(30%_0.06_200/0.5)]">
           {available === 0
             ? 'As especialidades estão sendo preparadas e serão liberadas aos poucos.'
             : `${available} de ${TOPOGRAPHY.flatMap((r) => r.groups).length} especialidades já disponíveis; as demais serão liberadas aos poucos.`}
@@ -69,8 +71,15 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
         <div className="mt-10 space-y-10">
           {TOPOGRAPHY.map((region) => (
             <section key={region.id}>
-              <h2 className="text-xl font-extrabold">
-                <span className="text-muted tabular-nums mr-2">{region.id}.</span>
+              <h2 className="text-xl sm:text-2xl font-extrabold flex items-center gap-3">
+                <span
+                  className={cn(
+                    'w-9 h-9 rounded-xl font-heading text-sm font-extrabold flex items-center justify-center shrink-0 tabular-nums',
+                    ['bg-primary text-white -rotate-6', 'bg-lime text-ink rotate-3', 'bg-violet text-white -rotate-3', 'bg-ink text-white rotate-6'][(Number(region.id) - 1) % 4] ?? 'bg-ink text-white'
+                  )}
+                >
+                  {region.id}
+                </span>
                 {region.name}
               </h2>
               <div className="mt-3 space-y-2">
@@ -86,11 +95,11 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
                       aria-pressed={active}
                       onClick={() => pick(g.id)}
                       className={cn(
-                        'w-full flex items-start justify-between gap-4 px-4 py-3.5 rounded-xl border text-left transition-colors',
+                        'w-full flex items-start justify-between gap-4 px-4 sm:px-5 py-4 rounded-[1.25rem] border-[1.5px] text-left transition-all',
                         active
-                          ? 'border-primary bg-primary-soft'
+                          ? 'border-primary bg-primary-soft shadow-[0_0_0_4px_oklch(68%_0.2_160/0.14)]'
                           : open
-                          ? 'border-line bg-white hover:border-line-2'
+                          ? 'border-line bg-white hover:border-ink/15 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_-22px_oklch(30%_0.08_200/0.6)]'
                           : 'border-line bg-bg-2/60 cursor-not-allowed'
                       )}
                     >
@@ -109,8 +118,8 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
                             <span className="text-xs text-muted tabular-nums whitespace-nowrap">{fmt(n)} questões</span>
                             <span
                               className={cn(
-                                'w-5 h-5 rounded-full border flex items-center justify-center',
-                                active ? 'bg-primary border-primary text-white' : 'border-line-2'
+                                'w-6 h-6 rounded-full border-[1.5px] flex items-center justify-center',
+                                active ? 'bg-lime border-lime text-ink' : 'border-line-2'
                               )}
                             >
                               {active && <Check size={12} strokeWidth={3} />}
@@ -125,7 +134,7 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
                       </span>
                     </button>
                     {active && (
-                      <div className="mt-2 rounded-xl border border-line bg-white px-4 py-3.5">
+                      <div className="mt-2 rounded-[1.25rem] border border-line bg-white px-4 sm:px-5 py-4">
                         <p className="text-sm font-semibold text-ink">Assuntos</p>
                         <p className="text-xs text-muted mt-0.5">Marque os que quer treinar. Sem nenhum marcado, entram todos.</p>
                         <div className="mt-3 flex flex-wrap gap-2">
@@ -134,8 +143,8 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
                             aria-pressed={topics.length === 0}
                             onClick={() => setTopics([])}
                             className={cn(
-                              'px-3 py-1.5 rounded-full border text-sm font-semibold transition-colors',
-                              topics.length === 0 ? 'bg-ink border-ink text-white' : 'bg-white border-line text-ink hover:border-line-2'
+                              'px-3.5 py-1.5 rounded-full border-[1.5px] text-sm font-semibold transition-all',
+                              topics.length === 0 ? 'bg-ink border-ink text-white' : 'bg-white border-line text-ink hover:border-ink/25'
                             )}
                           >
                             Todos
@@ -152,9 +161,9 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
                                 title={t.points}
                                 onClick={() => toggleTopic(t.name)}
                                 className={cn(
-                                  'px-3 py-1.5 rounded-full border text-sm transition-colors',
+                                  'px-3.5 py-1.5 rounded-full border-[1.5px] text-sm transition-all',
                                   on
-                                    ? 'bg-primary border-primary text-white font-semibold'
+                                    ? 'bg-ink border-ink text-white font-semibold'
                                     : tn > 0
                                     ? 'bg-white border-line text-ink hover:border-primary'
                                     : 'bg-bg-2/60 border-line text-muted cursor-not-allowed'
@@ -178,10 +187,10 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
       </main>
 
       {selected && group && (
-        <div className="fixed bottom-0 inset-x-0 z-40 bg-white border-t border-line shadow-[0_-12px_32px_-20px_oklch(30%_0.06_160/0.4)]">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 py-4 space-y-3">
+        <div className="fixed bottom-3 inset-x-3 z-40">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 py-4 space-y-3 rounded-[1.75rem] bg-ink text-white shadow-[0_20px_40px_-18px_oklch(20%_0.03_200/0.7)]">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-sm font-semibold text-ink mr-1">Questões:</span>
+              <span className="text-sm font-semibold text-white mr-1">Questões:</span>
               {chips.map((c) => (
                 <button
                   key={c}
@@ -189,8 +198,8 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
                   aria-pressed={count === c}
                   onClick={() => setCount(c)}
                   className={cn(
-                    'px-3 py-1.5 rounded-lg border text-sm font-heading font-bold tabular-nums',
-                    count === c ? 'bg-ink border-ink text-white' : 'bg-white border-line text-ink'
+                    'px-3.5 py-1.5 rounded-full border text-sm font-heading font-bold tabular-nums transition-colors',
+                    count === c ? 'bg-lime border-lime text-ink' : 'bg-white/10 border-white/15 text-white hover:bg-white/20'
                   )}
                 >
                   {c}
@@ -201,20 +210,20 @@ export const TopographySetup: React.FC<TopographySetupProps> = ({ onBack, onHome
                 aria-pressed={count === 'all'}
                 onClick={() => setCount('all')}
                 className={cn(
-                  'px-3 py-1.5 rounded-lg border text-sm font-semibold',
-                  count === 'all' ? 'bg-ink border-ink text-white' : 'bg-white border-line text-ink'
+                  'px-3.5 py-1.5 rounded-full border text-sm font-semibold transition-colors',
+                  count === 'all' ? 'bg-lime border-lime text-ink' : 'bg-white/10 border-white/15 text-white hover:bg-white/20'
                 )}
               >
                 Todas ({fmt(pool)})
               </button>
             </div>
-            <label className="flex items-center gap-2.5 text-sm text-ink-2 cursor-pointer select-none">
+            <label className="flex items-center gap-2.5 text-sm text-white/75 cursor-pointer select-none">
               <input type="checkbox" checked={feedback} onChange={(e) => setFeedback(e.target.checked)} className="w-4 h-4 accent-[var(--color-primary)]" />
               Mostrar o gabarito ao responder cada questão
             </label>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <p className="text-ink-2 text-sm">
-                <span className="font-semibold text-ink">
+              <p className="text-white/70 text-sm">
+                <span className="font-semibold text-white">
                   {total} questões de {topics.length === 0 ? group.name : topics.length === 1 ? topics[0] : `${topics.length} assuntos de ${group.name}`}
                 </span>, sorteadas entre {fmt(pool)}.
               </p>

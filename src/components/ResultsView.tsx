@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { RefreshCcw, Plus, Home, RotateCcw } from 'lucide-react';
 import confeti from 'canvas-confetti';
 import { Brand } from './Brand';
+import { FloatingHeader, PageGlow, headerLink } from './PageChrome';
 import { AnswerReview } from './AnswerReview';
 import { SaveHistoryCta } from './AccountMenu';
 import type { Account } from '../lib/account';
@@ -35,7 +36,7 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
 
   useEffect(() => {
     if (results.score >= 70 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      confeti({ particleCount: 90, spread: 60, origin: { y: 0.4 }, colors: ['#00bf75', '#009f57', '#0f2a1f'] });
+      confeti({ particleCount: 110, spread: 70, origin: { y: 0.4 }, colors: ['#00bf75', '#c6f432', '#8b5cf6', '#2dd4bf'] });
     }
   }, [results.score]);
 
@@ -65,34 +66,35 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
   const seg = (n: number) => (results.totalQuestions ? `${(n / results.totalQuestions) * 100}%` : "0%");
 
   return (
-    <div className="min-h-screen bg-bg pb-16">
-      <header className="sticky top-0 z-40 bg-bg/85 backdrop-blur-md border-b border-line">
-        <div className="container-custom h-16 flex items-center justify-between">
-          <Brand onClick={onHome} />
-          <button onClick={onHome} className="text-sm font-semibold text-muted hover:text-ink transition-colors flex items-center gap-1.5">
-            <Home size={15} />
-            Início
-          </button>
-        </div>
-      </header>
+    <div className="relative min-h-screen bg-bg pb-16 overflow-x-clip">
+      <PageGlow />
+      <FloatingHeader className="max-w-3xl">
+        <Brand onClick={onHome} />
+        <button onClick={onHome} className={headerLink}>
+          <Home size={15} />
+          Início
+        </button>
+      </FloatingHeader>
 
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14">
+      <main className="relative max-w-3xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12">
         {/* Nota */}
-        <section className="grid sm:grid-cols-[auto_1fr] gap-x-10 gap-y-4 items-end">
+        <section className="relative overflow-hidden rounded-[2.25rem] bg-ink text-white p-6 sm:p-9 grid sm:grid-cols-[auto_1fr] gap-x-10 gap-y-4 items-end">
+          <div aria-hidden className="absolute -top-24 -left-16 w-72 h-72 rounded-full bg-primary/35 blur-3xl" />
+          <div aria-hidden className="absolute -bottom-24 -right-16 w-72 h-72 rounded-full bg-violet/40 blur-3xl" />
           <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, ease: 'easeOut' }}
-            className="font-heading font-extrabold text-ink leading-none tracking-[-0.05em] text-[7rem] sm:text-[9rem] tabular-nums"
+            initial={{ opacity: 0, y: 8, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.5, type: 'spring', bounce: 0.4 }}
+            className="relative font-heading font-extrabold leading-none tracking-[-0.05em] text-[6.5rem] sm:text-[8.5rem] tabular-nums"
           >
-            {score}
-            <span className="text-[0.4em] text-muted tracking-normal ml-1">%</span>
+            <span className="bg-[linear-gradient(135deg,var(--color-lime),var(--color-primary)_55%,var(--color-mint))] bg-clip-text text-transparent">{score}</span>
+            <span className="text-[0.4em] text-white/50 tracking-normal ml-1">%</span>
           </motion.div>
-          <div className="pb-3">
-            <h1 className="text-3xl sm:text-4xl font-extrabold">{title}</h1>
-            <p className="mt-3 text-ink-2 leading-relaxed">{advice}</p>
+          <div className="relative pb-3">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white">{title}</h1>
+            <p className="mt-3 text-white/75 leading-relaxed">{advice}</p>
             {previousAverage != null && answered > 0 && (
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-3 inline-block rounded-full bg-white/10 px-3 py-1 text-sm text-white/80">
                 Sua média nos simulados anteriores era {previousAverage}%
                 {score !== previousAverage &&
                   ` — ${score > previousAverage ? '+' : '−'}${Math.abs(score - previousAverage)} ${Math.abs(score - previousAverage) === 1 ? 'ponto' : 'pontos'} neste`}
@@ -110,19 +112,19 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
 
         {/* Distribuição */}
         <section className="mt-10">
-          <div className="flex h-3 rounded-full overflow-hidden bg-line" role="img"
+          <div className="flex h-4 rounded-full overflow-hidden bg-white border border-line gap-0.5 p-0.5" role="img"
             aria-label={`${results.correctCount} acertos, ${results.wrongCount} erros e ${blank} em branco`}>
-            <div className="bg-accent-green" style={{ width: seg(results.correctCount) }} />
-            <div className="bg-accent-coral" style={{ width: seg(results.wrongCount) }} />
+            <div className="bg-accent-green rounded-full" style={{ width: seg(results.correctCount) }} />
+            <div className="bg-accent-coral rounded-full" style={{ width: seg(results.wrongCount) }} />
           </div>
-          <dl className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <dl className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
-              { label: 'Acertos', value: `${results.correctCount} de ${results.totalQuestions}`, dot: 'bg-accent-green' },
-              { label: 'Erros', value: results.wrongCount, dot: 'bg-accent-coral' },
-              { label: 'Em branco', value: blank, dot: 'bg-line-2' },
-              { label: 'Tempo total', value: formatDuration(results.timeSpent), dot: null },
+              { label: 'Acertos', value: `${results.correctCount} de ${results.totalQuestions}`, dot: 'bg-accent-green', bg: 'bg-primary-soft' },
+              { label: 'Erros', value: results.wrongCount, dot: 'bg-accent-coral', bg: 'bg-coral-soft' },
+              { label: 'Em branco', value: blank, dot: 'bg-line-2', bg: 'bg-white border border-line' },
+              { label: 'Tempo total', value: formatDuration(results.timeSpent), dot: null, bg: 'bg-violet-soft' },
             ].map((s) => (
-              <div key={s.label} className="border-t border-line pt-3">
+              <div key={s.label} className={cn('rounded-[1.25rem] px-4 py-3.5', s.bg)}>
                 <dt className="flex items-center gap-1.5 text-sm text-muted">
                   {s.dot && <span className={cn('w-2 h-2 rounded-full', s.dot)} />}
                   {s.label}
@@ -142,8 +144,8 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
 
         {/* Por área */}
         {areas.length > 0 && (
-          <section className="mt-12">
-            <h2 className="text-2xl font-extrabold">Desempenho por área</h2>
+          <section className="mt-8 rounded-[2rem] border border-white bg-white/85 backdrop-blur-xl p-5 sm:p-7 shadow-[0_24px_60px_-40px_oklch(30%_0.08_200/0.45),0_0_0_1px_oklch(92%_0.01_165)]">
+            <h2 className="text-2xl sm:text-3xl font-extrabold">Desempenho por área</h2>
             <ul className="mt-5 space-y-4">
               {[...areas].sort((a, b) => b.total - a.total).map((a, i) => (
                 <li key={a.name}>
@@ -153,7 +155,7 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
                       {a.correct} de {a.total} <span className="text-ink font-semibold ml-1">{a.perc}%</span>
                     </span>
                   </div>
-                  <div className="mt-2 h-2 rounded-full bg-line overflow-hidden">
+                  <div className="mt-2 h-2.5 rounded-full bg-bg-2 overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
                       animate={{ width: `${a.perc}%` }}
@@ -168,7 +170,7 @@ export const ResultsView: React.FC<ResultsViewProps> = ({ results, questions, an
         )}
 
         {/* Ações */}
-        <section className="mt-12 pt-8 border-t border-line flex flex-col sm:flex-row sm:flex-wrap gap-3">
+        <section className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3">
           <button onClick={onNew} className="btn btn-primary sm:flex-1">
             <Plus size={18} />
             Novo simulado

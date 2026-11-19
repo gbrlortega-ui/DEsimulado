@@ -204,10 +204,10 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
       </header>
 
       {/* Discrete Progress Bar */}
-      <div className="w-full bg-line h-1 shrink-0">
+      <div className="w-full bg-line h-1.5 shrink-0">
         <div
           style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
-          className="bg-primary h-full transition-all duration-300"
+          className="h-full rounded-r-full bg-[linear-gradient(90deg,var(--color-primary),var(--color-mint),var(--color-violet))] transition-all duration-300"
         />
       </div>
 

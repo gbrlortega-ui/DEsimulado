@@ -146,11 +146,13 @@ export const SaveHistoryCta: React.FC<{ account: Account; compact?: boolean }> =
   return (
     <div
       className={cn(
-        'flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 rounded-2xl border border-primary/30 bg-primary-soft',
+        'flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 rounded-[1.5rem] border border-primary/25 bg-[linear-gradient(110deg,oklch(96.5%_0.04_160),oklch(96%_0.03_295))]',
         compact ? 'px-4 py-3.5' : 'px-5 py-4'
       )}
     >
-      <Cloud className="hidden sm:block w-7 h-7 text-primary-ink shrink-0" aria-hidden />
+      <span className="hidden sm:flex w-11 h-11 rounded-2xl bg-white text-primary-ink items-center justify-center shrink-0 -rotate-6 shadow-sm">
+        <Cloud className="w-6 h-6" aria-hidden />
+      </span>
       <div className="flex-1">
         <p className="font-semibold text-ink">Cadastre-se para salvar seu histórico</p>
         <p className="text-sm text-ink-2 mt-0.5">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home } from 'lucide-react';
 import { Brand } from './Brand';
+import { FloatingHeader, PageGlow, headerLink } from './PageChrome';
 
 interface PrivacyPolicyProps {
   onHome: () => void;
@@ -19,22 +20,23 @@ const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title
 
 export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onHome }) => {
   return (
-    <div className="min-h-screen bg-bg pb-16">
-      <header className="sticky top-0 z-40 bg-bg/85 backdrop-blur-md border-b border-line">
-        <div className="container-custom h-16 flex items-center justify-between">
-          <Brand onClick={onHome} />
-          <button onClick={onHome} className="text-sm font-semibold text-muted hover:text-ink transition-colors flex items-center gap-1.5">
-            <Home size={15} />
-            Início
-          </button>
-        </div>
-      </header>
+    <div className="relative min-h-screen bg-bg pb-16 overflow-x-clip">
+      <PageGlow />
+      <FloatingHeader className="max-w-3xl">
+        <Brand onClick={onHome} />
+        <button onClick={onHome} className={headerLink}>
+          <Home size={15} />
+          Início
+        </button>
+      </FloatingHeader>
 
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-ink">Política de Privacidade</h1>
+      <main className="relative max-w-3xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14">
+        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-[-0.04em] text-ink">
+          Política de <span className="text-gradient">Privacidade</span>
+        </h1>
         <p className="mt-3 text-sm text-muted">Vigente a partir de 10 de novembro de 2026 · Última atualização: 19 de novembro de 2026</p>
 
-        <div className="mt-6 rounded-xl bg-primary-soft border border-line px-5 py-4 text-ink-2 leading-relaxed">
+        <div className="mt-6 rounded-[1.5rem] bg-primary-soft border border-primary/25 px-5 py-4 text-ink-2 leading-relaxed">
           <strong className="text-primary-ink">Resumo:</strong> o <Name /> funciona sem cadastro. Sem login, seus
           simulados ficam só no seu navegador. Se você escolher entrar com o Google, guardamos seu histórico para
           sincronizar entre aparelhos — e você pode apagar tudo a qualquer momento. Não vendemos dados, não temos

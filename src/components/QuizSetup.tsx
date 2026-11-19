@@ -20,6 +20,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { Brand } from './Brand';
+import { FloatingHeader, PageGlow, headerLink } from './PageChrome';
 import { Module, QuizSettings } from '../types';
 import { AREAS, COUNT_BY_AREA_SOURCE, SOURCES, type ExamSource } from '../data/stats';
 import { SUGERIDOS_INFO, TOPOGRAPHY_COUNT, type SuggestedExamInfo } from '../data/resumo';
@@ -279,20 +280,14 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
 
   return (
     <div className="relative min-h-screen bg-bg overflow-x-clip">
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[34rem] overflow-hidden">
-        <div className="absolute -top-40 -left-32 w-[32rem] h-[32rem] rounded-full bg-primary/20 blur-3xl" />
-        <div className="absolute -top-20 -right-32 w-[30rem] h-[30rem] rounded-full bg-violet/15 blur-3xl" />
-        <div className="absolute top-40 left-1/2 w-[22rem] h-[22rem] rounded-full bg-lime/25 blur-3xl" />
-      </div>
-      <header className="sticky top-0 z-40 pt-3 px-3 sm:px-4">
-        <div className="max-w-5xl mx-auto h-14 pl-4 pr-2 flex items-center justify-between rounded-full bg-white/70 backdrop-blur-xl border border-white shadow-[0_10px_30px_-18px_oklch(30%_0.06_200/0.4),0_0_0_1px_oklch(92%_0.01_165)]">
+      <PageGlow />
+      <FloatingHeader className="max-w-5xl">
           <Brand onClick={onBack} />
-          <button onClick={onBack} className="text-sm font-semibold text-ink-2 hover:text-ink hover:bg-bg-2 px-3.5 py-2 rounded-full transition-colors flex items-center gap-1">
+          <button onClick={onBack} className={headerLink}>
             <ChevronLeft size={16} />
             Voltar
           </button>
-        </div>
-      </header>
+        </FloatingHeader>
 
       <main className="relative max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20">
         <h1 className="text-4xl sm:text-6xl font-extrabold tracking-[-0.04em]">

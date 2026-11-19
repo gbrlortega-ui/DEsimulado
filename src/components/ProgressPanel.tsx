@@ -38,10 +38,12 @@ export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, account, 
 
   return (
     <section className="container-custom pt-6" aria-labelledby="desempenho-titulo">
-      <div className="rounded-2xl border border-line-2 bg-white p-5 sm:p-7">
+      <div className="rounded-[2rem] border border-white bg-white/85 backdrop-blur-xl p-5 sm:p-7 shadow-[0_24px_60px_-40px_oklch(30%_0.08_200/0.45),0_0_0_1px_oklch(92%_0.01_165)]">
         <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-          <h2 id="desempenho-titulo" className="text-2xl font-extrabold flex items-center gap-2">
-            <TrendingUp className="w-5 h-5 text-primary-ink" aria-hidden />
+          <h2 id="desempenho-titulo" className="text-2xl sm:text-3xl font-extrabold flex items-center gap-2.5">
+            <span className="w-9 h-9 rounded-xl bg-primary text-white flex items-center justify-center -rotate-6">
+              <TrendingUp className="w-5 h-5" aria-hidden />
+            </span>
             Seu desempenho
           </h2>
           <p className="text-xs text-muted">
@@ -52,13 +54,13 @@ export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, account, 
           </p>
         </div>
 
-        <dl className="mt-5 grid grid-cols-3 gap-3 sm:gap-6 max-w-lg">
+        <dl className="mt-5 grid grid-cols-3 gap-2 sm:gap-3 max-w-xl">
           {[
-            ['Simulados', fmt(history.length)],
-            ['Questões', fmt(total)],
-            ['Acerto geral', `${perc}%`],
-          ].map(([label, value]) => (
-            <div key={label}>
+            ['Simulados', fmt(history.length), 'bg-primary-soft'],
+            ['Questões', fmt(total), 'bg-lime-soft'],
+            ['Acerto geral', `${perc}%`, 'bg-violet-soft'],
+          ].map(([label, value, bg]) => (
+            <div key={label} className={cn('rounded-[1.25rem] px-3.5 py-3 sm:px-4', bg)}>
               <dt className="text-xs text-muted">{label}</dt>
               <dd className="font-heading text-2xl font-bold text-ink tabular-nums mt-0.5">{value}</dd>
             </div>
@@ -101,7 +103,7 @@ export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, account, 
                         {Math.round(e.score)}%
                       </span>
                       <span
-                        className={cn('relative block w-full rounded-t-[4px]', last ? 'bg-primary' : 'bg-primary/55 group-hover:bg-primary group-focus:bg-primary')}
+                        className={cn('relative block w-full rounded-t-lg rounded-b-sm', last ? 'bg-[linear-gradient(180deg,var(--color-lime),var(--color-primary))]' : 'bg-primary/45 group-hover:bg-primary group-focus:bg-primary')}
                         style={{ height: `${h}%` }}
                       />
                     </li>
@@ -124,7 +126,7 @@ export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, account, 
                       {a.correct} de {a.total} <span className="text-ink font-semibold ml-1">{a.perc}%</span>
                     </span>
                   </div>
-                  <div className="mt-1.5 h-2 rounded-full bg-line overflow-hidden">
+                  <div className="mt-1.5 h-2.5 rounded-full bg-bg-2 overflow-hidden">
                     <div className={cn('h-full rounded-full', band(a.perc))} style={{ width: `${a.perc}%` }} />
                   </div>
                 </li>
@@ -134,7 +136,7 @@ export const ProgressPanel: React.FC<ProgressPanelProps> = ({ history, account, 
               <button
                 type="button"
                 onClick={() => onTrain(weakest.name)}
-                className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary-ink hover:text-ink transition-colors"
+                className="mt-5 inline-flex items-center gap-1 rounded-full bg-primary-soft px-3.5 py-2 text-sm font-semibold text-primary-ink hover:bg-primary hover:text-white transition-colors"
               >
                 Treinar {weakest.name}, sua área mais fraca
                 <ChevronRight size={16} />

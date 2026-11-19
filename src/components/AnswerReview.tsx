@@ -32,7 +32,7 @@ const ReviewItem: React.FC<{ item: Item }> = ({ item }) => {
   const panelId = `revisao-${q.id}`;
 
   return (
-    <li className="rounded-xl border border-line bg-white overflow-hidden">
+    <li className="rounded-[1.25rem] border-[1.5px] border-line bg-white overflow-hidden transition-shadow hover:shadow-[0_14px_30px_-22px_oklch(30%_0.08_200/0.6)]">
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
@@ -44,9 +44,9 @@ const ReviewItem: React.FC<{ item: Item }> = ({ item }) => {
         <div className="flex-1 min-w-0">
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs">
             <span className="font-heading font-bold text-sm text-ink">Questão {n}</span>
-            <span className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-ink font-semibold">{examLabel(q.id)}</span>
-            {q.module !== 'ENAMED' && <span className="text-muted">{q.module}</span>}
-            {q.annulled && <span className="px-1.5 py-0.5 rounded bg-amber-soft text-ink font-semibold">Anulada · fora da nota</span>}
+            <span className="px-2 py-0.5 rounded-full bg-primary-soft text-primary-ink font-semibold">{examLabel(q.id)}</span>
+            {q.module !== 'ENAMED' && <span className="px-2 py-0.5 rounded-full bg-violet-soft text-violet font-medium">{q.module}</span>}
+            {q.annulled && <span className="px-2 py-0.5 rounded-full bg-amber-soft text-ink font-semibold">Anulada · fora da nota</span>}
           </div>
           {!open && (
             <p className="mt-1 text-sm text-ink-2 line-clamp-2">{q.text}</p>
@@ -66,7 +66,7 @@ const ReviewItem: React.FC<{ item: Item }> = ({ item }) => {
           <p className="text-[15px] text-ink leading-[1.7] whitespace-pre-line">{q.text}</p>
 
           {q.image && (
-            <figure className="relative bg-bg-2 border border-line rounded-xl p-2">
+            <figure className="relative bg-bg-2 border border-line rounded-2xl p-2">
               <img
                 src={q.image}
                 alt={`Figura da questão ${n}`}
@@ -77,7 +77,7 @@ const ReviewItem: React.FC<{ item: Item }> = ({ item }) => {
                 href={q.image}
                 target="_blank"
                 rel="noreferrer"
-                className="absolute top-3 right-3 flex items-center gap-1 text-xs font-semibold text-ink bg-white/90 border border-line rounded-md px-2 py-1"
+                className="absolute top-3 right-3 flex items-center gap-1 text-xs font-semibold text-ink bg-white/90 border border-line rounded-full px-2.5 py-1"
               >
                 <Maximize2 size={12} />
                 Ampliar
@@ -156,7 +156,7 @@ export const AnswerReview: React.FC<AnswerReviewProps> = ({ questions, answers }
 
   return (
     <section className="mt-12" aria-labelledby="revisao-titulo">
-      <h2 id="revisao-titulo" className="text-2xl font-extrabold">Revisão das questões</h2>
+      <h2 id="revisao-titulo" className="text-2xl sm:text-3xl font-extrabold">Revisão das questões</h2>
       <p className="mt-2 text-ink-2">Toque em uma questão para ver o gabarito e o comentário.</p>
 
       <div role="group" aria-label="Filtrar questões" className="mt-5 flex flex-wrap gap-2">
@@ -169,8 +169,10 @@ export const AnswerReview: React.FC<AnswerReviewProps> = ({ questions, answers }
               onClick={() => setFilter(f.id)}
               aria-pressed={filter === f.id}
               className={cn(
-                'px-3.5 py-2 rounded-lg text-sm font-semibold border transition-colors',
-                filter === f.id ? 'bg-ink text-white border-ink' : 'bg-white text-ink-2 border-line-2 hover:border-ink/30'
+                'px-4 py-2 rounded-full text-sm font-semibold border-[1.5px] transition-all',
+                filter === f.id
+                  ? 'bg-ink text-white border-ink shadow-[0_8px_20px_-10px_oklch(20%_0.02_165/0.7)]'
+                  : 'bg-white text-ink-2 border-line hover:border-ink/25 hover:-translate-y-0.5'
               )}
             >
               {f.label} <span className="tabular-nums opacity-70">{f.n}</span>

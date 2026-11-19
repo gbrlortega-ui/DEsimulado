@@ -3,6 +3,7 @@ import { ArrowRight, BarChart3, ChevronDown, Crosshair, Home, Info, RotateCcw, S
 import type { Question } from '../types';
 import { loadBank } from '../data/banco';
 import { Brand } from './Brand';
+import { FloatingHeader, PageGlow, headerLink } from './PageChrome';
 import { SaveHistoryCta } from './AccountMenu';
 import type { Account } from '../lib/account';
 import { cn } from '../lib/utils';
@@ -240,15 +241,13 @@ export const MinhasEstatisticas: React.FC<Props> = ({
   const pesoLabel = ALVOS.find((a) => a.id === alvo)!.curto;
 
   const header = (
-    <header className="sticky top-0 z-40 pt-3 px-3 sm:px-4">
-      <div className="max-w-6xl mx-auto h-14 pl-4 pr-2 flex items-center justify-between rounded-full bg-white/70 backdrop-blur-xl border border-white shadow-[0_10px_30px_-18px_oklch(30%_0.06_200/0.4),0_0_0_1px_oklch(92%_0.01_165)]">
+    <FloatingHeader>
         <Brand onClick={onHome} />
-        <button onClick={onHome} className="text-sm font-semibold text-ink-2 hover:text-ink hover:bg-bg-2 px-3.5 py-2 rounded-full transition-colors flex items-center gap-1.5">
+        <button onClick={onHome} className={headerLink}>
           <Home size={15} />
           Início
         </button>
-      </div>
-    </header>
+      </FloatingHeader>
   );
 
   if (erro || !st || !weights) {
@@ -346,11 +345,7 @@ export const MinhasEstatisticas: React.FC<Props> = ({
 
   return (
     <div className="relative min-h-screen bg-bg pb-16 overflow-x-clip">
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[34rem] overflow-hidden">
-        <div className="absolute -top-40 -left-32 w-[32rem] h-[32rem] rounded-full bg-primary/20 blur-3xl" />
-        <div className="absolute -top-20 -right-32 w-[30rem] h-[30rem] rounded-full bg-violet/15 blur-3xl" />
-        <div className="absolute top-40 left-1/2 w-[22rem] h-[22rem] rounded-full bg-lime/25 blur-3xl" />
-      </div>
+      <PageGlow />
       {banner}
       {header}
 
