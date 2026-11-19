@@ -100,7 +100,7 @@ const ReviewItem: React.FC<{ item: Item }> = ({ item }) => {
                 >
                   <span
                     className={cn(
-                      'w-6 h-6 rounded-md border flex items-center justify-center text-xs font-semibold shrink-0',
+                      'w-7 h-7 rounded-full border-[1.5px] flex items-center justify-center text-xs font-semibold shrink-0',
                       right
                         ? 'bg-accent-green border-accent-green text-white'
                         : disputed

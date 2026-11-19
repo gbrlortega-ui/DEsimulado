@@ -195,7 +195,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
 
             <button
               onClick={() => setIsSubmitModalOpen(true)}
-              className="bg-ink text-white hover:bg-ink-2 px-4 py-2 rounded-lg font-semibold text-sm transition-colors shrink-0"
+              className="bg-ink text-white hover:bg-ink-2 px-4 py-2 rounded-full font-semibold text-sm transition-colors shrink-0"
             >
               Finalizar
             </button>
@@ -224,15 +224,15 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                   Questão {currentIndex + 1} <span className="text-muted font-sans font-medium">de {questions.length}</span>
                 </span>
                 {currentQuestion.module !== 'ENAMED' && (
-                  <span className="bg-white text-ink-2 border border-line px-2 py-0.5 rounded-md font-medium text-xs">
+                  <span className="bg-white text-ink-2 border border-line px-2 py-0.5 rounded-full font-medium text-xs">
                     {currentQuestion.module}
                   </span>
                 )}
-                <span className="bg-primary-soft text-primary-ink px-2 py-0.5 rounded-md font-semibold text-xs">
+                <span className="bg-primary-soft text-primary-ink px-2.5 py-0.5 rounded-full font-semibold text-xs">
                   {examLabel(currentQuestion.id)}
                 </span>
                 {currentQuestion.annulled && (
-                  <span className="bg-amber-soft text-ink border border-accent-amber/50 px-2 py-0.5 rounded-md font-semibold text-xs" title="Anulada pela banca: não conta na nota">
+                  <span className="bg-amber-soft text-ink border border-accent-amber/50 px-2 py-0.5 rounded-full font-semibold text-xs" title="Anulada pela banca: não conta na nota">
                     Anulada
                   </span>
                 )}
@@ -240,7 +240,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
 
               {/* Question Countdown */}
               <div className={cn(
-                "flex items-center gap-1.5 px-2 py-0.5 rounded-md text-xs font-semibold tabular-nums shrink-0",
+                "flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-semibold tabular-nums shrink-0",
                 questionTimeLeft > 30 ? "text-muted" :
                 questionTimeLeft > 10 ? "text-accent-amber" :
                 "text-accent-coral"
@@ -251,7 +251,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
             </div>
 
             {info?.warning && currentIndex === 0 && (
-              <div role="note" className="flex gap-3 rounded-xl border border-accent-amber/50 bg-amber-soft px-4 py-3 text-sm leading-relaxed text-ink">
+              <div role="note" className="flex gap-3 rounded-2xl border border-accent-amber/50 bg-amber-soft px-4 py-3 text-sm leading-relaxed text-ink">
                 <AlertTriangle className="w-5 h-5 text-accent-amber shrink-0 mt-0.5" aria-hidden />
                 <p><span className="font-semibold">{info.title}.</span> {info.warning}</p>
               </div>
@@ -264,7 +264,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
               </p>
 
               {currentQuestion.image && (
-                <figure className="relative bg-white border border-line rounded-xl p-2 sm:p-3">
+                <figure className="relative bg-white border border-line rounded-2xl p-2 sm:p-3">
                   <img
                     alt={`Figura da questão ${currentIndex + 1}`}
                     className="w-full max-h-[300px] sm:max-h-[440px] object-contain rounded-lg mx-auto"
@@ -305,7 +305,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                     onClick={() => handleSelectOption(idx)}
                   >
                     <div className={cn(
-                      "w-7 h-7 rounded-md border flex items-center justify-center font-semibold text-sm transition-colors shrink-0",
+                      "w-8 h-8 rounded-full border-[1.5px] flex items-center justify-center font-semibold text-sm transition-colors shrink-0",
                       showFeedback
                         ? (isCorrectAnswer ? "bg-accent-green border-accent-green text-white" : isDisputedAnswer ? "bg-accent-amber border-accent-amber text-white" : isSelected ? "bg-accent-coral border-accent-coral text-white" : "border-line-2 text-muted")
                         : (isSelected ? "bg-primary border-primary text-white" : "border-line-2 text-muted")
@@ -346,7 +346,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   className={cn(
-                    "rounded-xl border bg-white overflow-hidden",
+                    "rounded-2xl border bg-white overflow-hidden",
                     currentQuestion.annulled ? "border-accent-amber/50" : currentAnswer.isCorrect ? "border-accent-green/40" : "border-accent-coral/40"
                   )}
                 >
@@ -373,7 +373,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
               <button
                 onClick={() => setCurrentIndex(prev => Math.max(0, prev - 1))}
                 disabled={currentIndex === 0}
-                className="flex items-center gap-1 px-3 py-2.5 text-ink-2 font-semibold text-sm hover:bg-white border border-transparent hover:border-line transition-colors rounded-lg disabled:opacity-30"
+                className="flex items-center gap-1 px-3 py-2.5 text-ink-2 font-semibold text-sm hover:bg-white border border-transparent hover:border-line transition-colors rounded-full disabled:opacity-30"
               >
                 <ChevronLeft className="w-4 h-4" />
                 Anterior
@@ -383,7 +383,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
               <button
                 type="button"
                 onClick={() => setIsMobileMapOpen(true)}
-                className="lg:hidden flex items-center gap-1.5 px-3 py-2.5 bg-white border border-line rounded-lg text-sm font-semibold text-ink"
+                className="lg:hidden flex items-center gap-1.5 px-3 py-2.5 bg-white border border-line rounded-full text-sm font-semibold text-ink"
               >
                 <LayoutGrid className="w-4 h-4 text-muted" />
                 <span className="tabular-nums">{answeredCount}/{questions.length}</span>
@@ -392,7 +392,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
               {currentIndex < questions.length - 1 ? (
                 <button
                   onClick={() => setCurrentIndex(prev => prev + 1)}
-                  className="flex items-center gap-1 px-5 py-2.5 bg-primary text-white font-semibold text-sm rounded-lg hover:bg-primary-2 transition-colors"
+                  className="flex items-center gap-1 px-5 py-2.5 btn-primary text-white font-semibold text-sm rounded-full transition-all"
                 >
                   Próxima
                   <ChevronRight className="w-4 h-4" />
@@ -400,7 +400,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
               ) : (
                 <button
                   onClick={() => setIsSubmitModalOpen(true)}
-                  className="flex items-center gap-1 px-5 py-2.5 bg-primary text-white font-semibold text-sm rounded-lg hover:bg-primary-2 transition-colors"
+                  className="flex items-center gap-1 px-5 py-2.5 btn-primary text-white font-semibold text-sm rounded-full transition-all"
                 >
                   Concluir
                   <Trophy className="w-4 h-4" />
@@ -448,7 +448,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                     type="button"
                     onClick={() => setCurrentIndex(idx)}
                     className={cn(
-                      "w-10 h-10 flex items-center justify-center rounded-lg text-xs font-bold transition-all shrink-0",
+                      "w-10 h-10 flex items-center justify-center rounded-xl text-xs font-bold transition-all shrink-0",
                       btnStyle,
                       isActive && "ring-2 ring-ink ring-offset-2 z-10"
                     )}
@@ -502,13 +502,13 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                       clearProgress();
                       onFinish(calculateResults(), userAnswers);
                     }}
-                    className="w-full py-3 bg-primary hover:bg-primary-2 text-white font-bold rounded-lg text-xs sm:text-sm shadow-sm"
+                    className="w-full py-3 bg-primary hover:bg-primary-2 text-white font-bold rounded-full text-xs sm:text-sm shadow-sm"
                   >
                     Finalizar e ver resultado
                   </button>
                   <button
                     onClick={() => setIsSubmitModalOpen(false)}
-                    className="w-full py-3 bg-bg hover:bg-line text-ink font-bold rounded-lg text-xs sm:text-sm"
+                    className="w-full py-3 bg-bg hover:bg-line text-ink font-bold rounded-full text-xs sm:text-sm"
                   >
                     Continuar respondendo
                   </button>
@@ -578,7 +578,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
                           setIsMobileMapOpen(false);
                         }}
                         className={cn(
-                          "w-11 h-11 flex items-center justify-center rounded-lg text-xs font-bold transition-all",
+                          "w-11 h-11 flex items-center justify-center rounded-xl text-xs font-bold transition-all",
                           btnStyle,
                           isActive && "ring-2 ring-ink ring-offset-2 z-10"
                         )}
@@ -593,7 +593,7 @@ export const QuizSession: React.FC<QuizSessionProps> = ({ questions, settings, i
               {/* Quick Dismiss Button */}
               <button
                 onClick={() => setIsMobileMapOpen(false)}
-                className="w-full py-3 bg-bg hover:bg-line text-ink font-bold rounded-lg text-xs sm:text-sm shrink-0"
+                className="w-full py-3 bg-bg hover:bg-line text-ink font-bold rounded-full text-xs sm:text-sm shrink-0"
               >
                 Voltar à questão
               </button>
