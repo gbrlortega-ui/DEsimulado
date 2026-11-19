@@ -45,6 +45,17 @@ const duration = (n: number) => {
   return m ? `${h}h${String(m).padStart(2, '0')}` : `${h}h`;
 };
 
+/** Cor de cada área (mesmas da página inicial). */
+const AREA_TINT: Partial<Record<Module, string>> = {
+  Misto: 'bg-[linear-gradient(135deg,oklch(93%_0.07_160),oklch(93.5%_0.05_295))] text-[oklch(40%_0.12_200)]',
+  'Clínica Médica': 'bg-[oklch(93%_0.07_160)] text-[oklch(42%_0.12_160)]',
+  Cirurgia: 'bg-[oklch(93.5%_0.05_230)] text-[oklch(42%_0.12_240)]',
+  Pediatria: 'bg-[oklch(94%_0.08_90)] text-[oklch(45%_0.11_65)]',
+  'Ginecologia e Obstetrícia': 'bg-[oklch(93.5%_0.05_350)] text-[oklch(45%_0.13_350)]',
+  'Saúde Coletiva': 'bg-[oklch(93.5%_0.05_195)] text-[oklch(42%_0.1_200)]',
+  'Ciências Básicas': 'bg-[oklch(93.5%_0.05_290)] text-[oklch(44%_0.13_290)]',
+};
+
 const AREA_ICON: Partial<Record<Module, LucideIcon>> = {
   Misto: Layers,
   'Clínica Médica': Stethoscope,
@@ -63,31 +74,68 @@ const FilterCard: React.FC<{
   icon: LucideIcon;
   title: string;
   detail: string;
+  tint?: string;
   onClick: () => void;
-}> = ({ active, disabled, icon: Icon, title, detail, onClick }) => (
+}> = ({ active, disabled, icon: Icon, title, detail, tint, onClick }) => (
   <button
     type="button"
     aria-pressed={active}
     disabled={disabled && !active}
     onClick={onClick}
     className={cn(
-      'relative flex flex-col items-start gap-3 p-3.5 sm:p-4 rounded-2xl border text-left transition-colors',
-      active ? 'border-primary bg-primary-soft' : 'border-line bg-white hover:border-line-2 hover:bg-bg',
-      disabled && !active && 'opacity-45 cursor-not-allowed hover:bg-white hover:border-line'
+      'group relative flex flex-col items-start gap-3 p-3.5 sm:p-4 rounded-[1.25rem] border-[1.5px] text-left transition-all',
+      active
+        ? 'border-primary bg-primary-soft shadow-[0_0_0_4px_oklch(68%_0.2_160/0.14)]'
+        : 'border-line bg-white hover:border-ink/15 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_-22px_oklch(30%_0.08_200/0.6)]',
+      disabled && !active && 'opacity-45 cursor-not-allowed hover:translate-y-0 hover:shadow-none hover:border-line'
     )}
   >
-    <span className={cn('w-9 h-9 rounded-xl flex items-center justify-center', active ? 'bg-primary text-white' : 'bg-bg-2 text-ink-2')}>
-      <Icon size={18} aria-hidden />
+    <span
+      className={cn(
+        'w-10 h-10 rounded-xl flex items-center justify-center transition-transform group-hover:rotate-6',
+        active ? 'bg-[linear-gradient(135deg,oklch(72%_0.2_150),oklch(62%_0.18_185))] text-white' : tint ?? 'bg-bg-2 text-ink-2'
+      )}
+    >
+      <Icon size={19} aria-hidden />
     </span>
     <span>
       <span className={cn('block font-semibold leading-snug', active ? 'text-primary-ink' : 'text-ink')}>{title}</span>
       <span className="block text-xs text-muted mt-0.5 tabular-nums">{detail}</span>
     </span>
     {active && (
-      <span className="absolute top-3 right-3 w-5 h-5 rounded-full bg-primary text-white flex items-center justify-center">
+      <span className="absolute top-3 right-3 w-6 h-6 rounded-full bg-lime text-ink flex items-center justify-center shadow-sm">
         <Check size={12} strokeWidth={3} />
       </span>
     )}
+  </button>
+);
+
+/** Etiqueta marcável (origem da prova). */
+const FilterChip: React.FC<{ active: boolean; disabled?: boolean; label: string; count: number; title?: string; onClick: () => void }> = ({
+  active,
+  disabled,
+  label,
+  count,
+  title,
+  onClick,
+}) => (
+  <button
+    type="button"
+    aria-pressed={active}
+    disabled={disabled && !active}
+    title={title}
+    onClick={onClick}
+    className={cn(
+      'inline-flex items-center gap-2 pl-3.5 pr-2 py-2 rounded-full border-[1.5px] text-sm font-semibold transition-all',
+      active
+        ? 'bg-ink border-ink text-white shadow-[0_8px_20px_-10px_oklch(20%_0.02_165/0.7)]'
+        : 'bg-white border-line text-ink hover:border-ink/25 hover:-translate-y-0.5',
+      disabled && !active && 'opacity-40 cursor-not-allowed hover:translate-y-0 hover:border-line'
+    )}
+  >
+    {active && <Check size={14} strokeWidth={3} className="text-lime -ml-1" aria-hidden />}
+    {label}
+    <span className={cn('px-2 py-0.5 rounded-full text-xs tabular-nums', active ? 'bg-white/15 text-white' : 'bg-bg-2 text-muted')}>{fmt(count)}</span>
   </button>
 );
 
@@ -100,8 +148,15 @@ const SOURCE_ICON: Record<ExamSource['kind'], LucideIcon> = {
 const Step: React.FC<{ n: number; title: string; hint?: string; children: React.ReactNode }> = ({ n, title, hint, children }) => (
   <section className="pt-7 first:pt-0">
     <div className="flex items-center gap-3">
-      <span className="w-6 h-6 rounded-full bg-ink text-white text-xs font-bold flex items-center justify-center shrink-0">{n}</span>
-      <h2 className="text-lg font-extrabold">{title}</h2>
+      <span
+        className={cn(
+          'w-8 h-8 rounded-xl font-heading text-sm font-extrabold flex items-center justify-center shrink-0',
+          ['bg-primary text-white -rotate-6', 'bg-lime text-ink rotate-3', 'bg-violet text-white -rotate-3', 'bg-ink text-white rotate-6'][(n - 1) % 4]
+        )}
+      >
+        {n}
+      </span>
+      <h2 className="text-xl font-extrabold">{title}</h2>
       {hint && <span className="text-sm text-muted hidden sm:inline">{hint}</span>}
     </div>
     <div className="mt-3.5">{children}</div>
@@ -114,10 +169,11 @@ const SuggestedCard: React.FC<{ exam: SuggestedExamInfo; onStart: (settings: Qui
   const start = (immediateFeedback: boolean) =>
     onStart({ questionCount: n, module: 'Misto', immediateFeedback, presetId: exam.id });
   return (
-    <article className="relative flex flex-col rounded-2xl bg-ink text-white p-6 overflow-hidden">
-      <div aria-hidden className="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-primary/25 blur-2xl" />
+    <article className="relative flex flex-col rounded-[2rem] bg-ink text-white p-6 sm:p-7 overflow-hidden">
+      <div aria-hidden className="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-violet/40 blur-3xl" />
+      <div aria-hidden className="absolute -left-16 -bottom-16 w-56 h-56 rounded-full bg-primary/30 blur-3xl" />
       <div className="relative">
-        <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-primary">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-lime px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-ink">
           <GraduationCap size={14} aria-hidden />
           Simulado sugerido
         </span>
@@ -157,9 +213,9 @@ const TopographyCard: React.FC<{ onOpen: () => void }> = ({ onOpen }) => {
     <button
       type="button"
       onClick={onOpen}
-      className="group flex flex-col text-left rounded-2xl border border-line-2 bg-white p-6 hover:border-primary hover:shadow-[0_20px_50px_-30px_oklch(30%_0.06_160/0.45)] transition-all"
+      className="group relative overflow-hidden flex flex-col text-left rounded-[2rem] border border-violet/25 bg-violet-soft p-6 sm:p-7 hover:-translate-y-1 hover:shadow-[0_24px_50px_-30px_oklch(40%_0.15_295/0.6)] transition-all"
     >
-      <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-primary-ink">
+      <span className="self-start inline-flex items-center gap-1.5 rounded-full bg-violet px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-white">
         <Map size={14} aria-hidden />
         Novo
       </span>
@@ -169,17 +225,17 @@ const TopographyCard: React.FC<{ onOpen: () => void }> = ({ onOpen }) => {
       </span>
       <span className="mt-4 flex flex-wrap gap-1.5">
         {regions.map((r) => (
-          <span key={r} className="px-2.5 py-1 rounded-full bg-bg-2 text-xs font-medium text-ink-2">
+          <span key={r} className="px-2.5 py-1 rounded-full bg-white text-xs font-medium text-ink-2">
             {r}
           </span>
         ))}
-        <span className="px-2.5 py-1 rounded-full bg-bg-2 text-xs font-medium text-muted">+{TOPOGRAPHY.length - regions.length}</span>
+        <span className="px-2.5 py-1 rounded-full bg-white text-xs font-medium text-muted">+{TOPOGRAPHY.length - regions.length}</span>
       </span>
       <span className="mt-auto pt-6 flex items-center justify-between gap-3">
         <span className="text-sm text-muted">
           {open === 0 ? 'Especialidades liberadas aos poucos' : `${open} de ${TOPOGRAPHY_GROUPS.length} especialidades disponíveis`}
         </span>
-        <span className="flex items-center gap-1.5 text-sm font-semibold text-primary-ink shrink-0">
+        <span className="flex items-center gap-1.5 text-sm font-semibold text-violet shrink-0">
           Ver regiões
           <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
         </span>
@@ -222,31 +278,39 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
   ];
 
   return (
-    <div className="min-h-screen bg-bg">
-      <header className="sticky top-0 z-40 bg-bg/85 backdrop-blur-md border-b border-line">
-        <div className="container-custom h-16 flex items-center justify-between">
+    <div className="relative min-h-screen bg-bg overflow-x-clip">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[34rem] overflow-hidden">
+        <div className="absolute -top-40 -left-32 w-[32rem] h-[32rem] rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute -top-20 -right-32 w-[30rem] h-[30rem] rounded-full bg-violet/15 blur-3xl" />
+        <div className="absolute top-40 left-1/2 w-[22rem] h-[22rem] rounded-full bg-lime/25 blur-3xl" />
+      </div>
+      <header className="sticky top-0 z-40 pt-3 px-3 sm:px-4">
+        <div className="max-w-5xl mx-auto h-14 pl-4 pr-2 flex items-center justify-between rounded-full bg-white/70 backdrop-blur-xl border border-white shadow-[0_10px_30px_-18px_oklch(30%_0.06_200/0.4),0_0_0_1px_oklch(92%_0.01_165)]">
           <Brand onClick={onBack} />
-          <button onClick={onBack} className="text-sm font-semibold text-muted hover:text-ink transition-colors flex items-center gap-1">
+          <button onClick={onBack} className="text-sm font-semibold text-ink-2 hover:text-ink hover:bg-bg-2 px-3.5 py-2 rounded-full transition-colors flex items-center gap-1">
             <ChevronLeft size={16} />
             Voltar
           </button>
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20">
-        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-[-0.03em]">Monte seu simulado</h1>
+      <main className="relative max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20">
+        <h1 className="text-4xl sm:text-6xl font-extrabold tracking-[-0.04em]">
+          Monte seu <span className="text-gradient">simulado</span>
+        </h1>
         <p className="mt-3 text-ink-2 text-lg max-w-2xl">
           Escolha as áreas, a origem das provas, a quantidade e o jeito de responder. As questões são sorteadas a cada vez, então dá para repetir sem ver sempre as mesmas.
         </p>
 
         {/* Monte o seu */}
-        <div className="mt-9 rounded-3xl border border-line-2 bg-white shadow-[0_30px_70px_-45px_oklch(30%_0.06_160/0.45)] overflow-hidden">
+        <div className="mt-9 rounded-[2rem] border border-white bg-white/85 backdrop-blur-xl shadow-[0_30px_70px_-40px_oklch(30%_0.08_200/0.45),0_0_0_1px_oklch(92%_0.01_165)]">
           <div className="p-5 sm:p-8 divide-y divide-line [&>section]:pb-7 [&>section:last-child]:pb-0">
             <Step n={1} title="Áreas" hint="escolha uma ou mais">
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                 <FilterCard
                   active={!areas.length}
                   icon={Layers}
+                  tint={AREA_TINT.Misto}
                   title="Todas as áreas"
                   detail={`${fmt(countFor([], sources))} questões`}
                   onClick={() => setAreas([])}
@@ -259,6 +323,7 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
                       active={areas.includes(a)}
                       disabled={n === 0}
                       icon={AREA_ICON[a] ?? Layers}
+                      tint={AREA_TINT[a]}
                       title={a}
                       detail={n === 0 ? 'Sem questões nessa origem' : `${fmt(n)} questões`}
                       onClick={() => setAreas(toggle(areas, a, AREAS))}
@@ -269,26 +334,35 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
             </Step>
 
             <Step n={2} title="Origem da prova" hint="escolha uma ou mais">
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
-                <FilterCard
-                  active={!sources.length}
-                  icon={Layers}
-                  title="Todas as provas"
-                  detail={`${fmt(countFor(areas, []))} questões`}
-                  onClick={() => setSources([])}
-                />
-                {SOURCES.map((src) => {
-                  const n = countFor(areas, [src.key]);
+              <div className="space-y-4">
+                <FilterChip active={!sources.length} label="Todas as provas" count={countFor(areas, [])} onClick={() => setSources([])} />
+                {(['TP', 'ENAMED', 'Residência'] as const).map((kind) => {
+                  const list = SOURCES.filter((src) => src.kind === kind);
+                  if (!list.length) return null;
+                  const Icon = SOURCE_ICON[kind];
                   return (
-                    <FilterCard
-                      key={src.key}
-                      active={sources.includes(src.key)}
-                      disabled={n === 0}
-                      icon={SOURCE_ICON[src.kind]}
-                      title={src.label}
-                      detail={`${src.kind === 'Residência' && src.key !== 'REVALIDA' ? 'Residência ' : ''}${src.years} · ${fmt(n)} questões`}
-                      onClick={() => setSources(toggle(sources, src.key, allSources))}
-                    />
+                    <div key={kind}>
+                      <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted mb-2">
+                        <Icon size={14} aria-hidden />
+                        {kind === 'TP' ? 'Teste de Progresso' : kind === 'ENAMED' ? 'ENAMED' : 'Residência e Revalida'}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {list.map((src) => {
+                          const n = countFor(areas, [src.key]);
+                          return (
+                            <FilterChip
+                              key={src.key}
+                              active={sources.includes(src.key)}
+                              disabled={n === 0}
+                              label={src.label}
+                              count={n}
+                              title={`${src.label} · ${src.years}`}
+                              onClick={() => setSources(toggle(sources, src.key, allSources))}
+                            />
+                          );
+                        })}
+                      </div>
+                    </div>
                   );
                 })}
               </div>
@@ -305,8 +379,10 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
                       aria-pressed={active}
                       onClick={() => setQuestionCount(count)}
                       className={cn(
-                        'py-3 rounded-xl border font-heading font-bold tabular-nums transition-colors',
-                        active ? 'bg-ink border-ink text-white' : 'bg-white border-line text-ink hover:border-line-2'
+                        'py-3 rounded-full border-[1.5px] font-heading font-bold tabular-nums transition-all',
+                        active
+                          ? 'border-transparent text-white bg-[linear-gradient(135deg,oklch(70%_0.2_155),oklch(62%_0.18_180))] shadow-[0_10px_22px_-10px_oklch(60%_0.18_165/0.8)] scale-105'
+                          : 'bg-white border-line text-ink hover:border-ink/25 hover:-translate-y-0.5'
                       )}
                     >
                       {count}
@@ -331,11 +407,18 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
                       aria-pressed={active}
                       onClick={() => setImmediateFeedback(m.value)}
                       className={cn(
-                        'flex items-start gap-3 p-4 rounded-2xl border text-left transition-colors',
-                        active ? 'border-primary bg-primary-soft' : 'border-line bg-white hover:border-line-2 hover:bg-bg'
+                        'flex items-start gap-3 p-4 rounded-[1.25rem] border-[1.5px] text-left transition-all',
+                        active
+                          ? 'border-primary bg-primary-soft shadow-[0_0_0_4px_oklch(68%_0.2_160/0.14)]'
+                          : 'border-line bg-white hover:border-ink/15 hover:-translate-y-0.5'
                       )}
                     >
-                      <span className={cn('w-9 h-9 rounded-xl flex items-center justify-center shrink-0', active ? 'bg-primary text-white' : 'bg-bg-2 text-ink-2')}>
+                      <span
+                        className={cn(
+                          'w-10 h-10 rounded-xl flex items-center justify-center shrink-0',
+                          active ? 'bg-[linear-gradient(135deg,oklch(72%_0.2_150),oklch(62%_0.18_185))] text-white' : m.value ? 'bg-lime-soft text-[oklch(45%_0.12_130)]' : 'bg-violet-soft text-violet'
+                        )}
+                      >
                         <m.icon size={18} aria-hidden />
                       </span>
                       <span>
@@ -349,17 +432,17 @@ export const QuizSetup: React.FC<QuizSetupProps> = ({ initialModule = 'Misto', o
             </Step>
           </div>
 
-          <div className="px-5 sm:px-8 py-5 bg-bg-2 border-t border-line flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <p className="text-ink-2">
+          <div className="sticky bottom-3 z-30 mx-2 sm:mx-3 mb-2 sm:mb-3 px-4 sm:px-6 py-3.5 sm:py-4 rounded-[1.5rem] bg-ink text-white shadow-[0_20px_40px_-18px_oklch(20%_0.03_200/0.7)] flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+            <p className="text-white/70 text-sm sm:text-base">
               {pool === 0 ? (
-                <span className="font-semibold text-ink">Nenhuma questão nessa combinação de área e prova.</span>
+                <span className="font-semibold text-white">Nenhuma questão nessa combinação de área e prova.</span>
               ) : (
                 <>
-                  <span className="font-semibold text-ink">
+                  <span className="font-semibold text-white">
                     {Math.min(questionCount, pool)} questões · {settingsTitle(settings)}
                   </span>
                   , sorteadas entre {fmt(pool)} · {immediateFeedback ? 'modo estudo' : 'modo prova'}
-                  {pool < questionCount && <span className="block text-sm text-muted mt-0.5">Essa combinação tem só {fmt(pool)} questões.</span>}
+                  {pool < questionCount && <span className="block text-sm text-lime mt-0.5">Essa combinação tem só {fmt(pool)} questões.</span>}
                 </>
               )}
             </p>
