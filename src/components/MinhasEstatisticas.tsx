@@ -57,15 +57,18 @@ function Linha({ name, sub, placar, peso, compact }: { name: string; sub?: strin
   const vazio = !placar?.total;
   const poucas = !vazio && placar!.total < MIN_RESPOSTAS;
   return (
-    <div className={cn(vazio && 'opacity-60')}>
+    <div className={cn('min-w-0', vazio && 'opacity-60')}>
       <div className="flex items-baseline justify-between gap-3 text-sm">
-        <span className="min-w-0">
+        <span className="min-w-0 flex-1 break-words">
           <span className={cn('text-ink', compact ? 'font-normal' : 'font-medium')}>{name}</span>
-          {sub && <span className="block text-xs text-muted truncate">{sub}</span>}
+          {sub && <span className="block text-xs text-muted leading-snug mt-0.5">{sub}</span>}
         </span>
-        <span className="shrink-0 text-muted tabular-nums text-right">
+        <span className="shrink-0 text-muted tabular-nums text-right whitespace-nowrap">
           {vazio ? (
-            <span className="text-xs">sem respostas{peso ? ` · ${fmt(peso)} no banco` : ''}</span>
+            <span className="text-xs">
+              sem respostas
+              {peso ? <span className="hidden sm:inline"> · {fmt(peso)} no banco</span> : null}
+            </span>
           ) : (
             <>
               <span className="text-xs">
@@ -309,9 +312,9 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
                         <ChevronDown size={18} className={cn('shrink-0 text-muted transition-transform', open && 'rotate-180')} aria-hidden />
                       </button>
                       {open && (
-                        <ul className="mt-4 mb-2 ml-1 sm:ml-4 pl-3 sm:pl-5 border-l-2 border-line grid sm:grid-cols-2 gap-x-8 gap-y-4">
+                        <ul className="mt-4 mb-2 ml-1 sm:ml-4 pl-3 sm:pl-5 border-l-2 border-line grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                           {subs.map((s) => (
-                            <li key={s.id}>
+                            <li key={s.id} className="min-w-0">
                               <Linha name={s.name} sub={s.temas} placar={s.placar} peso={s.peso} compact />
                             </li>
                           ))}
@@ -327,9 +330,9 @@ export const MinhasEstatisticas: React.FC<Props> = ({ respostas, simulados, semD
             <Card>
               <h2 className="text-2xl font-extrabold">Síndromes e apresentações clínicas</h2>
               <p className="mt-1 text-sm text-muted">Questões que partem de uma queixa e pedem diagnóstico diferencial, de qualquer área.</p>
-              <ul className="mt-5 grid sm:grid-cols-2 gap-x-10 gap-y-4">
+              <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4">
                 {sindromes.map(({ sy, placar, peso }) => (
-                  <li key={sy.id}>
+                  <li key={sy.id} className="min-w-0">
                     <Linha name={sy.name} sub={sy.diferenciais} placar={placar} peso={peso} compact />
                   </li>
                 ))}
