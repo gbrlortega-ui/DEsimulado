@@ -37,6 +37,7 @@ import { FUBOG_2025_QUESTIONS } from './fubog2025';
 import { FUBOG_2027_QUESTIONS } from './fubog2027';
 import { VIV_2026_QUESTIONS } from './viv2026';
 import { FMJ_2026_QUESTIONS } from './fmj2026';
+import { HCPA_2025_QUESTIONS } from './hcpa2025';
 
 export const QUESTIONS: Question[] = [
   ...PEDIATRIA_QUESTIONS,
@@ -76,5 +77,6 @@ export const QUESTIONS: Question[] = [
   ...FUBOG_2025_QUESTIONS,
   ...FUBOG_2027_QUESTIONS,
   ...VIV_2026_QUESTIONS,
-  ...FMJ_2026_QUESTIONS
+  ...FMJ_2026_QUESTIONS,
+  ...HCPA_2025_QUESTIONS
 ];
