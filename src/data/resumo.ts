@@ -2,14 +2,14 @@
 // O build e o servidor local regeneram este arquivo sozinhos; o `npm run validate` acusa se ficar desatualizado.
 import type { Question } from '../types';
 
-export const TOTAL_QUESTIONS = 3479;
+export const TOTAL_QUESTIONS = 3579;
 
 export const COUNT_BY_AREA: Record<string, number> = {
-  "Pediatria": 659,
-  "Clínica Médica": 718,
-  "Cirurgia": 638,
-  "Ginecologia e Obstetrícia": 659,
-  "Saúde Coletiva": 644,
+  "Pediatria": 679,
+  "Clínica Médica": 738,
+  "Cirurgia": 658,
+  "Ginecologia e Obstetrícia": 679,
+  "Saúde Coletiva": 664,
   "Ciências Básicas": 161
 };
 
@@ -239,6 +239,12 @@ export const EDITIONS: ExamEdition[] = [
     "count": 75
   },
   {
+    "label": "FUBOG 2027",
+    "kind": "Residência",
+    "year": 2027,
+    "count": 100
+  },
+  {
     "label": "HOS-BOS 2027",
     "kind": "Residência",
     "year": 2027,
@@ -316,8 +322,8 @@ export const SOURCES: ExamSource[] = [
     "key": "FUBOG",
     "label": "FUBOG",
     "kind": "Residência",
-    "years": "2025",
-    "count": 100
+    "years": "2025–2027",
+    "count": 200
   },
   {
     "key": "HIAE",
@@ -544,11 +550,11 @@ export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
   "Clínica Médica|FELUMA": 14,
   "Pediatria|FELUMA": 15,
   "Saúde Coletiva|FELUMA": 15,
-  "Clínica Médica|FUBOG": 8,
-  "Pediatria|FUBOG": 21,
-  "Ginecologia e Obstetrícia|FUBOG": 23,
-  "Saúde Coletiva|FUBOG": 24,
-  "Cirurgia|FUBOG": 23,
+  "Clínica Médica|FUBOG": 28,
+  "Pediatria|FUBOG": 41,
+  "Ginecologia e Obstetrícia|FUBOG": 43,
+  "Saúde Coletiva|FUBOG": 44,
+  "Cirurgia|FUBOG": 43,
   "Ciências Básicas|FUBOG": 1
 };
 

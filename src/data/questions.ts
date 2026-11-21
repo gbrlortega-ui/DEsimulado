@@ -34,6 +34,7 @@ import { AMRIGS_2026_QUESTIONS } from './amrigs2026';
 import { ENARE_2025_QUESTIONS } from './enare2025';
 import { FELUMA_2027_QUESTIONS } from './feluma2027';
 import { FUBOG_2025_QUESTIONS } from './fubog2025';
+import { FUBOG_2027_QUESTIONS } from './fubog2027';
 
 export const QUESTIONS: Question[] = [
   ...PEDIATRIA_QUESTIONS,
@@ -70,5 +71,6 @@ export const QUESTIONS: Question[] = [
   ...CERMAN_2026_QUESTIONS,
   ...ENARE_2025_QUESTIONS,
   ...FELUMA_2027_QUESTIONS,
-  ...FUBOG_2025_QUESTIONS
+  ...FUBOG_2025_QUESTIONS,
+  ...FUBOG_2027_QUESTIONS
 ];
