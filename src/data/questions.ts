@@ -31,6 +31,7 @@ import { HSRC_2026_QUESTIONS } from './hsrc2026';
 import { AMP_2026_QUESTIONS } from './amp2026';
 import { AMRIGS_2025_QUESTIONS } from './amrigs2025';
 import { AMRIGS_2026_QUESTIONS } from './amrigs2026';
+import { ENARE_2025_QUESTIONS } from './enare2025';
 
 export const QUESTIONS: Question[] = [
   ...PEDIATRIA_QUESTIONS,
@@ -64,5 +65,6 @@ export const QUESTIONS: Question[] = [
   ...AMRIGS_2025_QUESTIONS,
   ...AMRIGS_2026_QUESTIONS,
   ...CERMAN_2025_QUESTIONS,
-  ...CERMAN_2026_QUESTIONS
+  ...CERMAN_2026_QUESTIONS,
+  ...ENARE_2025_QUESTIONS
 ];
