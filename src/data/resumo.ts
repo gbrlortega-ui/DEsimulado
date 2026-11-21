@@ -2,14 +2,14 @@
 // O build e o servidor local regeneram este arquivo sozinhos; o `npm run validate` acusa se ficar desatualizado.
 import type { Question } from '../types';
 
-export const TOTAL_QUESTIONS = 3579;
+export const TOTAL_QUESTIONS = 3679;
 
 export const COUNT_BY_AREA: Record<string, number> = {
-  "Pediatria": 679,
-  "Clínica Médica": 738,
-  "Cirurgia": 658,
-  "Ginecologia e Obstetrícia": 679,
-  "Saúde Coletiva": 664,
+  "Pediatria": 699,
+  "Clínica Médica": 761,
+  "Cirurgia": 675,
+  "Ginecologia e Obstetrícia": 699,
+  "Saúde Coletiva": 684,
   "Ciências Básicas": 161
 };
 
@@ -233,6 +233,12 @@ export const EDITIONS: ExamEdition[] = [
     "count": 60
   },
   {
+    "label": "VIV 2026",
+    "kind": "Residência",
+    "year": 2026,
+    "count": 100
+  },
+  {
     "label": "FELUMA 2027",
     "kind": "Residência",
     "year": 2027,
@@ -424,6 +430,13 @@ export const SOURCES: ExamSource[] = [
     "count": 60
   },
   {
+    "key": "VIV",
+    "label": "VIV",
+    "kind": "Residência",
+    "years": "2026",
+    "count": 100
+  },
+  {
     "key": "FELUMA",
     "label": "FELUMA",
     "kind": "Residência",
@@ -555,7 +568,12 @@ export const COUNT_BY_AREA_SOURCE: Record<string, number> = {
   "Ginecologia e Obstetrícia|FUBOG": 43,
   "Saúde Coletiva|FUBOG": 44,
   "Cirurgia|FUBOG": 43,
-  "Ciências Básicas|FUBOG": 1
+  "Ciências Básicas|FUBOG": 1,
+  "Clínica Médica|VIV": 23,
+  "Pediatria|VIV": 20,
+  "Cirurgia|VIV": 17,
+  "Ginecologia e Obstetrícia|VIV": 20,
+  "Saúde Coletiva|VIV": 20
 };
 
 /** Questões por especialidade ou região da topografia ("1.1", "8"). */
@@ -956,651 +974,662 @@ export const SAMPLE_QUESTIONS: Question[] = [
     ]
   },
   {
-    "id": "tp2025-54",
-    "topography": "14",
-    "topic": "Emergências pediátricas",
+    "id": "tp2021-46",
+    "topography": "11",
+    "topic": "Refluxo gastroesofágico",
     "module": "Pediatria",
-    "text": "Recém-nascido, em sala de parto, apresenta apneia e cianose. Ao exame, encontra-se sem resposta, sem respiração espontânea e sem pulso palpável. O protocolo de reanimação é iniciado. Qual a primeira medida a ser adotada para otimizar as chances de sucesso da reanimação cardiopulmonar (RCP) neste paciente?",
+    "text": "Lactente, 3 meses, com história de vômitos após todas as mamadas. Mãe refere que algumas vezes o conteúdo alimentar sai pelas narinas, mas nega cianose, tosse ou outros sintomas relacionados ao quadro. O lactente encontra-se com bom estado geral e está no escore 0 para peso e comprimento. A conduta é:",
     "options": [
-      "(A) Priorizar a ventilação com pressão positiva.",
-      "(B) Iniciar compressões torácicas imediatamente antes da ventilação.",
-      "(C) Administrar epinefrina intravenosa antes de iniciar qualquer outra medida.",
-      "(D) Realizar desfibrilação precoce com carga baixa, devido à idade do paciente."
+      "(A) Iniciar tratamento farmacológico para doença do refluxo gastroesofágico.",
+      "(B) Solicitar exame radiológico contrastado do esôfago, estômago e duodeno.",
+      "(C) Tranquilizar os familiares pois se trata de refluxo gastroesofágico fisiológico.",
+      "(D) Solicitar pHmetria esofágica de 24 horas para avaliar esofagite péptica."
     ],
-    "correctAnswer": 0,
-    "explanation": "Em neonatos, a etiologia típica da parada cardiopulmonar é respiratória/asfíxica. A priorização absoluta inicial deve ser direcionada à ventilação com pressão positiva (VPP).",
-    "commentary": "A reanimação neonatal e manejo de PCR em sala de parto priorizam maciçamente a ventilação alveolar (VPP), pois nela repousa a reversão da asfixia secundária na imensa maioria dos casos. Compressões torácicas só são indicadas se, após 30 segundos de VPP bem executada com oxigênio, a FC se mantiver menor que 60 bpm. A epinefrina é uma medida tardia no algoritmo.",
-    "reference": "Diretrizes 2022 da Sociedade Brasileira de Pediatria – Programa de Reanimação Neonatal.",
+    "correctAnswer": 2,
+    "explanation": "Lactente saudável, em aleitamento, apresentando regurgitações ou vômitos pós-prandiais indolores, sem engasgos incapacitantes ou cianose, e mantendo ótimo desenvolvimento pondero-estatural (Z-score 0), é classificado como \"regurgitador feliz\" (refluxo gastroesofágico fisiológico). A conduta consiste apenas em suporte educativo e tranquilização familiar.",
+    "commentary": "O lactente apresenta bom ganho de peso e estatura, bom estado geral e ausência de complicações, caracterizando o clássico refluxo fisiológico do lactente. Não há indicação para investigações ou exames diagnósticos invasivos (como pHmetria ou REED) e nenhuma terapia medicamentosa está sugerida.",
+    "reference": "SOCIEDADE BRASILEIRA DE PEDIATRIA. Tratado de Pediatria. Editora Manole, 2017.",
     "tags": [
-      "neonatologia"
+      "gastroenterologia",
+      "puericultura"
     ]
   },
   {
-    "id": "tp2022-34",
-    "topography": "2.2",
-    "topic": "Insuficiência cardíaca",
+    "id": "tp2025-26",
+    "topography": "2.1",
+    "topic": "DPOC",
     "module": "Clínica Médica",
-    "text": "Mulher de 62 anos, HAS crônica. Há 6 meses com dispneia progressiva, paroxística noturna, edema de MMII e presença de B3. ECG com sobrecarga de VE. Qual o exame complementar e conduta mais apropriados?",
+    "text": "Homem de 65 anos, tabagista atual e com antecedente de DPOC, procura PS devido a piora aguda da tosse, aumento do volume de expectoração com coloração mais escura que seu padrão habitual, sem febre. Teve outros dois quadros similares nos últimos doze meses. Ao exame físico, cianose com saturação de O2 = 86%, roncos difusos e frequência respiratória = 30ipm. A conduta adequada para seu tratamento é:",
     "options": [
-      "(A) Monitorização Ambulatorial da Pressão Arterial; substituir Captopril por Hidralazina.",
-      "(B) Ecocardiograma; manter Captopril e associar Carvedilol e Furosemida.",
-      "(C) Cintilografia Miocárdica; manter Captopril, associar Ivabradina e Furosemida.",
-      "(D) Holter de 24 horas; manter Captopril, associar Carvedilol e Sustrate."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Hipertensa de longa data, mal controlada, com dispneia progressiva, dispneia paroxística noturna, ortopneia, edema de membros inferiores, B3, estertores em bases, hepatomegalia e cardiomegalia: quadro de insuficiência cardíaca congestiva, provavelmente de causa hipertensiva.\n\nO ecocardiograma é o exame que confirma o diagnóstico e mede a fração de ejeção, que define o tratamento. Na conduta, mantém-se o IECA (captopril, agora em uso correto), usa-se furosemida para aliviar a congestão e associa-se betabloqueador com benefício comprovado na IC (carvedilol), iniciado em dose baixa e aumentado aos poucos, o que também ajuda a controlar a taquicardia.",
-    "commentary": "MAPA e hidralazina com tiazídico (A): a dúvida não é se a paciente é hipertensa, e sim a função do coração. Trocar o IECA por hidralazina retira um fármaco que reduz mortalidade na IC, e o tiazídico é fraco para a congestão.\n\nCintilografia e ivabradina (C): a cintilografia investiga isquemia, não é o exame inicial da IC. A ivabradina só entra em IC com fração reduzida em ritmo sinusal que segue com FC alta já em uso de betabloqueador na dose tolerada.\n\nHolter e Sustrate (D): o Holter avalia arritmias, que não são o problema principal. Sustrate (propatilnitrato) é nitrato antianginoso, sem papel no tratamento crônico dessa paciente.",
-    "tip": "Suspeita de IC: ecocardiograma. Congestão: furosemida. Base do tratamento: IECA + betabloqueador da IC.",
-    "reference": "Diretriz Brasileira de Insuficiência Cardíaca Aguda e Crônica – SBC. 2019.",
-    "tags": [
-      "cardiologia"
-    ]
-  },
-  {
-    "id": "tp2020-54",
-    "topography": "9",
-    "topic": "Anemia megaloblástica",
-    "module": "Clínica Médica",
-    "text": "R.L.N., sexo masculino, 22 anos, vegano há aproximadamente 3 anos, sem suplementação alimentar, com queixa de fraqueza, parestesias e hipoestesia nos membros inferiores. Ao exame físico, apresenta-se descorado 2+/4+, sem outras alterações. Realizou hemograma: Hb: 9,2 g/dL; Ht: 28%; VCM: 100fL; RDW: 16%; Leucócitos: 8.300/mm³ com diferencial normal. Plaquetas: 214.000/mm³; DHL: 1.500 U/L.\n\nDetermine a causa da anemia e do quadro clínico do paciente:",
-    "options": [
-      "(A) Anemia megaloblástica, deficiência de vitamina B12.",
-      "(B) Anemia megaloblástica, deficiência de ácido fólico.",
-      "(C) Anemia falciforme, microinfartos em circulação de membro inferior.",
-      "(D) Anemia hemolítica autoimune pelo aumento do DHL."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Vegano sem suplementação, com anemia macrocítica, DHL elevada (eritropoiese ineficaz) e parestesias/hipoestesia em membros inferiores (lesão de cordões posteriores — degeneração combinada subaguda): deficiência de vitamina B12.",
-    "commentary": "A deficiência de folato causa anemia megaloblástica sem alterações neurológicas, e é improvável em vegano. Não há dados de anemia falciforme. A DHL alta reflete hemólise intramedular, não autoimune.",
-    "reference": "ZAGO, Marco Antônio; FALCÃO, Roberto Passetto; PASQUINI, Ricardo. Tratado de hematologia. São Paulo: Atheneu, 2013.",
-    "tags": [
-      "hematologia",
-      "anemia megaloblástica",
-      "neurologia"
-    ]
-  },
-  {
-    "id": "tp2025-62",
-    "topography": "3.3",
-    "topic": "Colangiocarcinoma",
-    "module": "Cirurgia",
-    "text": "Homem de 65 anos, tabagista e com histórico de colangite esclerosante primária, apresenta icterícia progressiva há dois meses, associada a perda de peso não intencional e prurido cutâneo. Colangiopancreatografia por ressonância magnética revela uma estenose irregular da via biliar hepática comum, com dilatação dos ductos intra-hepáticos. Qual é o diagnóstico mais provável?",
-    "options": [
-      "(A) Hepatocarcinoma com invasão da via biliar.",
-      "(B) Adenocarcinoma pancreático com invasão da via biliar.",
-      "(C) Colelitíase complicada com colangite crônica.",
-      "(D) Colangiocarcinoma peri-hilar – Tumor de Klatskin."
+      "(A) Amoxacilina + clavulanato oral e internação hospitalar.",
+      "(B) Ciprofloxacina endovenosa em hospital-dia.",
+      "(C) Claritromicina endovenosa em hospital-dia.",
+      "(D) Levofloxacina endovenosa e internação hospitalar."
     ],
     "correctAnswer": 3,
-    "explanation": "O colangiocarcinoma peri-hilar (Tumor de Klatskin) é o tumor biliar primário mais comum no hilo hepático, fortemente associado à colangite esclerosante primária.",
-    "commentary": "O colangiocarcinoma peri-hilar, ou hilar (chamado tumor de Klatskin), é um tumor maligno da árvore biliar, frequentemente associado à colangite esclerosante primária. Os achados clínicos incluem icterícia progressiva indolor, perda de peso e prurido, além de exames de imagem demonstrando estenose irregular da via biliar com dilatação dos ductos intra-hepáticos. O hepatocarcinoma está usualmente associado a cirrose e nódulos parenquimatosos. O adenocarcinoma pancreático cursa com massa pancreática e sinal de Courvoisier. A colelitíase cursa com quadro febril e álgico mais agudo.",
-    "reference": "Rizvi, S., & Gores, G. J. (2013). Pathogenesis, diagnosis, and management of cholangiocarcinoma. Gastroenterology, 145(6), 1215-1229; Khan, S. A., Davidson, B. R. et al. (2012). Guidelines for the diagnosis and treatment of cholangiocarcinoma. Gut, 61(12), 1657-1669.",
+    "explanation": "O paciente possui perfil exacerbador de DPOC clássico, com indícios de hipoxemia severa (SatO2 = 86%), acidose provável e alto risco para Pseudomonas, exigindo internação para antibioticoterapia endovenosa de largo espectro (Levofloxacina).",
+    "commentary": "O paciente apresenta perfil exacerbador com alto risco para pseudomonas e hipoxemia acentuada que exige tratamento inicialmente endovenoso com levofloxacina (quinolona respiratória) e internação hospitalar.",
+    "reference": "PCDT – DPOC – Ministério da Saúde 2022; GOLD – COPD – 2025",
     "tags": [
-      "oncologia",
-      "gastroenterologia"
+      "pneumologia",
+      "infectologia",
+      "emergência"
     ]
   },
   {
-    "id": "tp2024-83",
-    "topography": "5.1",
-    "topic": "Climatério e menopausa",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher negra, 54 anos, menopausa há 15 anos. Asma grave (corticoide crônico), hipertensa (tiazídico), insônia (benzodiazepínico). Tabagista, sedentária. Mãe/avó com osteoporose. Fatores de risco para osteoporose presentes:",
+    "id": "tp2024-71",
+    "topography": "1.1",
+    "topic": "Hipertensão intracraniana",
+    "module": "Cirurgia",
+    "text": "Homem, 70 anos, HAS. Evolui com Glasgow 7, midríase fixa à direita, Bradipneia (8), Bradicardia (48) e PA 240/120. Qual o diagnóstico e conduta inicial?",
     "options": [
-      "(A) Raça negra, uso de benzodiazepínico e sedentarismo.",
-      "(B) Menopausa precoce, antecedente familiar de osteoporose, tabagismo.",
-      "(C) Uso de benzodiazepínico, antecedente familiar e obesidade.",
-      "(D) História familiar de câncer de mama, sedentarismo e uso crônico de corticoide."
+      "(A) Síndrome de hipertensão intracraniana e intubação orotraqueal.",
+      "(B) AVC isquêmico e TC de crânio.",
+      "(C) Hematoma intracerebral e drenagem cirúrgica imediata.",
+      "(D) Estado de mal não convulsivo e hidantalização."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Idoso hipertenso com déficit motor súbito que, em 30 minutos, cai para Glasgow 7, com midríase fixa unilateral, bradicardia, bradipneia e hipertensão grave. A pupila dilatada e fixa indica herniação do uncus comprimindo o nervo oculomotor, e a associação de hipertensão arterial, bradicardia e alteração respiratória forma a tríade de Cushing, resposta do tronco à hipertensão intracraniana.\n\nO diagnóstico sindrômico é hipertensão intracraniana com herniação, e a prioridade é proteger a via aérea: Glasgow igual ou menor que 8 e respiração irregular indicam intubação orotraqueal. Depois de estabilizar, faz-se a tomografia de crânio para definir a causa (provavelmente hemorragia intracerebral hipertensiva) e as medidas para baixar a pressão intracraniana.",
+    "commentary": "AVC isquêmico e tomografia (B): sem imagem não é possível dizer se o AVC é isquêmico ou hemorrágico, e a piora rápida com herniação favorece hemorragia; além disso, a tomografia vem depois de garantir a via aérea.\n\nHematoma intracerebral com drenagem imediata (C): o hematoma é uma hipótese, mas só pode ser confirmado por imagem, e a indicação cirúrgica depende do tamanho e do local; a via aérea vem antes.\n\nEstado de mal não convulsivo e hidantalização (D): não há crises nem dados que sugiram esse diagnóstico, e a tríade de Cushing com anisocoria aponta para hipertensão intracraniana.",
+    "tip": "Hipertensão + bradicardia + respiração irregular = tríade de Cushing (HIC). Glasgow ≤ 8: intubar primeiro.",
+    "reference": "Tratado de Neurologia da Academia Brasileira de Neurologia, 2ª edição.",
+    "tags": [
+      "neurocirurgia",
+      "emergência"
+    ]
+  },
+  {
+    "id": "tp2021-65",
+    "topography": "7.1",
+    "topic": "Insuficiência venosa crônica",
+    "module": "Cirurgia",
+    "text": "Mulher, 60 anos, com áreas de hiperpigmentação em bota no terço inferior de perna esquerda, pele ressecada e descamativa, úlcera de aproximadamente 5 cm com bordas irregulares e escavadas. Veias dilatadas bilateralmente e pulsos normais. Nega dor local. Além de curativo, a conduta é:",
+    "options": [
+      "(A) Elasto-compressão.",
+      "(B) Antibioticoterapia.",
+      "(C) Repouso em céfalo-aclive.",
+      "(D) Safenectomia."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A úlcera com hiperpigmentação ocre ao redor em região maleolar com pulsos distais preservados representa insuficiência venosa crônica. O pilar terapêutico para reverter a hipertensão venosa é a terapia elastocompressiva (elasto-compressão).",
+    "commentary": "As características apresentadas para a lesão são compatíveis com úlcera de origem venosa. O mecanismo fisiopatológico consiste em hipertensão venosa nos capilares cutâneos, devido à insuficiência venosa (refluxo venoso pelas veias insuficientes), com subsequente edema, translocação de hemácias com deposição de hemossiderina (hiperpigmentação em bota), processo inflamatório cutâneo crônico e lesão. Para regressão do quadro deve-se reduzir a pressão através de elasto-compressão da perna e curativos locais. A paciente precisa evitar quaisquer posições que dificultem o retorno venoso, pois contribuirão para a manutenção do edema e, consequente, piora do quadro (por isso o céfalo-aclive ou posições declives prolongadas são proscritos). A paciente não apresenta dados que sugiram infecção (dor aguda forte, calor, hiperemia local franca em ascensão e secreção fétida), portanto não há indicação imediata para antibioticoterapia sistêmica.",
+    "reference": "BRITO, C.J. et al. Cirurgia Vascular: Cirurgia Endovascular, Angiologia. 4ª ed. Rio de Janeiro: Dilivros, 2020.",
+    "tags": [
+      "cirurgia vascular"
+    ]
+  },
+  {
+    "id": "tp2024-98",
+    "topography": "15",
+    "topic": "Rastreamento",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Mulher, 58 anos, dor mamária esporádica. Tia-avó com câncer de mama aos 72 anos. Exame físico normal. Qual o exame indicado?",
+    "options": [
+      "(A) Mamografia Bilateral.",
+      "(B) Ressonância Magnética com contraste.",
+      "(C) Ressonância Magnética sem contraste.",
+      "(D) Ultrassonografia apenas."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mulher de 58 anos sem sinais suspeitos no exame físico e cuja única queixa é dor mamária passageira, que isoladamente raramente indica câncer. A tia-avó que teve câncer de mama aos 72 anos é parente distante, com diagnóstico em idade avançada, e não coloca a paciente em alto risco.\n\nEla tem, portanto, risco habitual e está na faixa do rastreamento recomendada pelo Ministério da Saúde e pelo INCA (50 a 69 anos, a cada 2 anos). Como nunca fez exame de imagem, o indicado é a mamografia bilateral.",
+    "commentary": "Ressonância com contraste (B): é reservada ao rastreamento de mulheres de alto risco (mutação BRCA, radioterapia torácica na juventude, risco calculado elevado) e a situações diagnósticas específicas.\n\nRessonância sem contraste (C): sem contraste a ressonância não avalia o tecido mamário em busca de câncer; serve, por exemplo, para avaliar implantes de silicone.\n\nUltrassonografia (D): não é exame de rastreamento isolado; complementa a mamografia em mamas densas ou na avaliação de nódulos.",
+    "tip": "Risco habitual, 50 a 69 anos: mamografia a cada 2 anos. Ressonância é para alto risco.",
+    "reference": "Instituto Nacional de Câncer José Alencar Gomes da Silva. Diretrizes para a detecção precoce do câncer de mama no Brasil/ Instituto Nacional de Câncer José Alencar Gomes da Silva – Rio de Janeiro: INCA, 2015. https://www.gov.br/conitec/ptbr/midias/protocolos/diretrizes_de teccaoprecoce_cm.pdf",
+    "tags": [
+      "mastologia",
+      "rastreamento"
+    ]
+  },
+  {
+    "id": "tp2021-90",
+    "topography": "5.2",
+    "topic": "Infecções na gestação",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Primigesta, 24 anos, portadora do vírus HIV, idade gestacional de 36 semanas, em uso de Nevirapina, Zidovudina e Lamivudina. Com 35 semanas, apresentou carga viral menor do que mil cópias. No nascimento, será administrada Zidovudina endovenosa em dose de ataque e de manutenção até o clampeamento do cordão umbilical. A resolução da gestação nessa paciente é:",
+    "options": [
+      "(A) Interromper por cesariana com 39 semanas.",
+      "(B) Induzir com Ocitocina na 37ª semana.",
+      "(C) Induzir com Prostaglandina na 38ª semana.",
+      "(D) Aguardar pelo parto vaginal."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Gestantes portadoras do vírus HIV que atingem carga viral indetectável ou de baixo título (< 1.000 cópias/mL) documentada a partir da 34ª semana de gestação têm indicação de parto com base puramente em critérios obstétricos regulares, ou seja, pode-se aguardar/conduzir o parto por via vaginal espontâneo.",
+    "commentary": "De acordo com o Ministério da Saúde do Brasil, grávidas sob terapia antirretroviral (TARV) regular com carga viral menor que 1.000 cópias pós-34 semanas não apresentam benefício mensurável na taxa de transmissão vertical ao se indicarem cesarianas eletivas isoladas. Portanto, a indicação assistencial deve aguardar ou induzir o parto via vaginal normal, mantendo-se a infusão endovenosa recomendada de Zidovudina (AZT) intraparto.",
+    "reference": "Protocolo Clínico e Diretrizes Terapêuticas para Prevenção da Transmissão Vertical do HIV, Sífilis e Hepatites Virais, Ministério da Saúde (2019).",
+    "tags": [
+      "obstetrícia",
+      "HIV na gestação",
+      "transmissão vertical"
+    ]
+  },
+  {
+    "id": "tp2023-107",
+    "topography": "10",
+    "topic": "Tuberculose",
+    "module": "Saúde Coletiva",
+    "text": "Homem, 25 anos, relata perda de peso espontânea de oito quilos em três meses, acompanhada de tosse e febre diária. Para a confirmação da suspeita de tuberculose pulmonar, quais são os exames laboratoriais e/ou complementares mais facilmente indicados e realizados?",
+    "options": [
+      "(A) Biópsia pulmonar com exame histopatológico; sorologia com pesquisa de IgM.",
+      "(B) Broncoscopia com baciloscopia do lavado broncoalveolar; radiografia de tórax.",
+      "(C) Teste rápido molecular de escarro; tomografia de tórax.",
+      "(D) Baciloscopia; teste rápido molecular; radiografia de tórax."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Perda de peso, tosse e febre diária em adulto jovem configuram suspeita de tuberculose pulmonar. Pelo Ministério da Saúde, a confirmação é feita no escarro: o teste rápido molecular (TRM-TB) é o exame preferencial, porque é mais sensível que a baciloscopia, dá resultado em poucas horas e ainda detecta resistência à rifampicina; a baciloscopia continua útil, inclusive no acompanhamento do tratamento.\n\nA radiografia de tórax complementa, mostrando a extensão da doença e lesões sugestivas, mas não confirma o diagnóstico sozinha. São exames disponíveis na rede pública e de fácil acesso, por isso a alternativa D.",
+    "commentary": "Biópsia pulmonar e sorologia IgM (A): a biópsia é invasiva e reservada a casos selecionados, e sorologia não é usada para diagnosticar tuberculose.\n\nBroncoscopia com lavado (B): é opção quando o paciente não consegue escarrar ou os exames de escarro são negativos com forte suspeita; não é a primeira escolha.\n\nTomografia de tórax (C): é mais cara e menos disponível; a radiografia simples já atende à avaliação inicial.",
+    "tip": "Suspeita de TB pulmonar: escarro para TRM-TB (e baciloscopia) + radiografia de tórax.",
+    "reference": "Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de Vigilância das Doenças Transmissíveis. Manual de Recomendações para o Controle da Tuberculose no Brasil / Ministério da Saúde, Secretaria de Vigilância em Saúde, Departamento de Vigilância das Doenças Transmissíveis. – Brasília: Ministério da Saúde, 2019. 364 p.: il. ISBN 978-85-334-2696-2.",
+    "tags": [
+      "vigilância em saúde",
+      "infectologia"
+    ]
+  },
+  {
+    "id": "tp2019-101",
+    "topography": "15",
+    "topic": "SUS",
+    "module": "Saúde Coletiva",
+    "text": "Conforme normatização vigente do SUS, as Redes de Atenção à Saúde (RAS) são entendidas como entrelaçamentos organizativos entre ações e serviços de saúde com diferentes densidades tecnológicas, integradas por meio de sistemas de apoio técnico, logístico e gestão, com a finalidade de:",
+    "options": [
+      "(A) Garantir a integralidade do cuidado.",
+      "(B) Aumentar a eficiência da gestão municipal.",
+      "(C) Ofertar mais serviços pelo SUS.",
+      "(D) Compor uma rede de atenção secundária."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Segundo a Portaria 4.279/2010, as Redes de Atenção à Saúde são arranjos de ações e serviços de diferentes densidades tecnológicas, integrados por sistemas de apoio técnico, logístico e de gestão, com o objetivo de garantir a integralidade do cuidado.",
+    "commentary": "Eficiência, ampliação de oferta e composição da atenção secundária podem ser consequências, mas não são a finalidade definida pela norma.",
+    "reference": "BRASIL. Ministério da Saúde. Portaria nº 4279, de 30 de dezembro de 2010. Estabelece as diretrizes para a organização da Rede de Atenção à Saúde no âmbito do Sistema Único de Saúde (SUS). Disponível em: http://bvsms.saude.gov.br/bvs/saudelegis/gm/2010/anexos/anexo s_prt4279_30_12_2010.pdf. Acesso em: 24 abr 2016.",
+    "tags": [
+      "saúde coletiva",
+      "SUS",
+      "redes de atenção"
+    ]
+  },
+  {
+    "id": "tp2026-6",
+    "topography": "1.3",
+    "topic": "Amigdalite/faringoamigdalite",
+    "module": "Ciências Básicas",
+    "text": "Um adolescente de 16 anos é acompanhado em atendimento domiciliar por quadro de faringite bacteriana, com cultura positiva para Streptococcus pyogenes. O médico prescreve a Benzetacil (Penicilina G) como tratamento. Considerando os aspectos da bactéria e do antibiótico prescrito para o caso clínico, qual alternativa melhor explica como esse fármaco atua sobre a bactéria?",
+    "options": [
+      "(A) Inibe a síntese proteica ao se ligar à subunidade 30S do ribossomo bacteriano.",
+      "(B) Inibe a síntese da parede celular bacteriana ao interferir na formação do peptidoglicano.",
+      "(C) Altera a permeabilidade da membrana celular ao se ligar a ergosterol.",
+      "(D) Inibe a replicação do DNA bacteriano por bloqueio da DNA girase."
     ],
     "correctAnswer": 1,
-    "explanation": "A paciente tem 54 anos e está na menopausa há 15 anos, ou seja, parou de menstruar por volta dos 39 anos: menopausa precoce (antes dos 40), que expõe o osso a longo período sem estrogênio. Somam-se o tabagismo e a história de osteoporose na mãe e na avó, todos fatores de risco reconhecidos.\n\nO uso crônico de corticoide sistêmico também é fator de risco importante, mas a única alternativa que reúne apenas fatores verdadeiros é a que cita menopausa precoce, história familiar e tabagismo. Ela tem indicação de densitometria óssea.",
-    "commentary": "Raça negra e benzodiazepínico (A): mulheres negras têm, em média, maior massa óssea, o que é proteção, não risco. O benzodiazepínico aumenta o risco de quedas e fraturas, mas não é fator de risco para baixa massa óssea; sedentarismo também não completa a alternativa.\n\nObesidade (C): o caso não descreve obesidade, e o baixo peso (IMC abaixo de 18,5) é que se associa a osteoporose; o benzodiazepínico, como dito, não entra na lista.\n\nHistória familiar de câncer de mama (D): não tem relação com a massa óssea; o corticoide crônico é fator de risco, mas a alternativa traz um item errado.",
-    "tip": "Menopausa antes dos 40, cigarro, corticoide, baixo peso e osteoporose ou fratura de quadril na família: fatores de risco para osteoporose.",
-    "reference": "Manual brasileiro de osteoporose: orientações práticas para os profissionais de saúde / organização Adriana Orcesi Pedro , Perola Grinberg Plapler , Vera Lúcia Szejnfeld - 1. ed. - São Paulo: Editora Clannad, 2021, ISBN 978-65-89832-00-3",
+    "explanation": "A penicilina G benzatina é um betalactâmico. Esses antibióticos se ligam às proteínas ligadoras de penicilina (PBPs), enzimas transpeptidases que fazem as ligações cruzadas entre as cadeias de peptidoglicano, a malha que dá rigidez à parede bacteriana.\n\nSem essas ligações, a parede fica frágil e a bactéria se rompe por lise osmótica, efeito bactericida sobre células em multiplicação. O Streptococcus pyogenes, gram-positivo com parede espessa de peptidoglicano, continua sensível à penicilina, que segue como tratamento de escolha da faringite estreptocócica, inclusive para prevenir febre reumática.",
+    "commentary": "Ligação à subunidade 30S (A): é o mecanismo dos aminoglicosídeos e das tetraciclinas, que atuam no ribossomo e bloqueiam a síntese proteica.\n\nLigação ao ergosterol (C): o ergosterol existe na membrana dos fungos, não das bactérias; esse é o mecanismo dos polienos, como a anfotericina B e a nistatina.\n\nBloqueio da DNA girase (D): é a ação das quinolonas, que atuam na replicação do DNA, sem relação com a parede.",
+    "tip": "Betalactâmico = liga-se às PBPs e impede as ligações cruzadas do peptidoglicano → lise da bactéria.",
+    "reference": "Goodman & Gilman's The Pharmacological Basis of Therapeutics. Brunton LL, Hilal-Dandan R, Knollmann BC.",
     "tags": [
-      "climatério",
+      "farmacologia",
+      "infectologia"
+    ]
+  },
+  {
+    "id": "enamed-2025-79",
+    "topography": "10",
+    "topic": "Sepse",
+    "module": "Clínica Médica",
+    "text": "Mulher de 62 anos, com histórico de infecções urinárias de repetição, procura a Unidade de Pronto Atendimento (UPA) apresentando febre alta e calafrios. É portadora de diabetes mellitus tipo 2. Ao exame: pressão arterial de 110 × 70 mmHg, frequência cardíaca de 106 bpm, frequência respiratória de 25 irpm e temperatura de 38 °C. Exames laboratoriais mostram leucocitose de 14.000/mm³, neutrofilia e desvio à esquerda.\n\nA conduta para esse caso deve recomendar",
+    "options": [
+      "(A) antitérmico, hidratação oral vigorosa e observação.",
+      "(B) tratamento com esquema antibiótico de amplo espectro ainda na primeira hora da chegada da paciente.",
+      "(C) cobertura antifúngica para Candida por ser diabética com ITU de repetição.",
+      "(D) manter antibiótico de amplo espectro durante todo o tratamento, independentemente do resultado das culturas."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A paciente apresenta manifestações clínicas e laboratoriais de resposta inflamatória sistêmica severa (taquicardia, taquipneia, febre, leucocitose marcante com desvio à esquerda) secundária a um provável foco infeccioso urinário (ITU de repetição prévia), configurando um quadro grave de sepse de foco urinário (urosepse). Segundo as diretrizes internacionais e nacionais da Surviving Sepsis Campaign (SSC), a administração rápida de antimicrobianos empíricos de amplo espectro na primeira hora da identificação da sepse ou choque séptico é o fator determinante mais crítico para reduzir a mortalidade.",
+    "commentary": "A conduta expectante com hidratação oral (A) é perigosa e insuficiente para sepse. Cobertura empírica para Candida (C) não é indicada de rotina na admissão sem evidência de fungemia. Manter o amplo espectro cegamente (D) sem descalonamento após as culturas contraria o uso racional de antibióticos e estimula a multirresistência bacteriana.",
+    "reference": "Diretrizes da Surviving Sepsis Campaign (SSC) / Protocolo de Sepse do Instituto Latino-Americano de Sepse (ILAS)",
+    "tags": [
+      "clínica médica",
+      "infectologia",
+      "sepse",
+      "uropatologia",
+      "antibioticoterapia"
+    ]
+  },
+  {
+    "id": "unifesp2025-22",
+    "topography": "8",
+    "topic": "Distúrbios do cálcio",
+    "module": "Clínica Médica",
+    "text": "Mulher, 70 anos de idade, com hipertensão, osteoartrose e osteoporose em coluna lombar (T-score -2,9), realiza investigação laboratorial com os seguintes resultados: creatinina = 0,9 mg/dL (VR 0,6 a 1,1 mg/dL), TSH = 3,0 mUI/L (VR 0,44 a 5,4 mUI/L), PTH = 15 pg/mL (VR 22 a 84 pg/mL), cálcio total = 10,7 mg/dL (VR 8,6 a 10,3 mg/dL).\n\nQual medicamento listado abaixo pode causar a alteração laboratorial observada?",
+    "options": [
+      "(A) Denosumabe.",
+      "(B) Glicocorticoide.",
+      "(C) Diurético tiazídico.",
+      "(D) Cloroquina."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A paciente tem hipercalcemia com PTH suprimido, ou seja, hipercalcemia não mediada por PTH. Entre as opções, o diurético tiazídico é o fármaco que eleva o cálcio sérico, por aumentar a reabsorção tubular distal de cálcio. A paciente é hipertensa, o que torna o uso provável.\n\nNo hiperparatireoidismo primário o PTH estaria alto ou inapropriadamente normal. Com PTH baixo, a causa é extraparatireoidiana: medicamentos (tiazídicos, intoxicação por vitamina D ou A), malignidade e doenças granulomatosas.",
+    "commentary": "Denosumabe (A): inibe a reabsorção óssea e causa hipocalcemia, não hipercalcemia.\n\nGlicocorticoide (B): reduz a absorção intestinal e aumenta a excreção renal de cálcio; é inclusive tratamento de algumas hipercalcemias.\n\nCloroquina (D): não causa hipercalcemia; é usada para tratar a hipercalcemia de doenças granulomatosas.",
+    "reference": "Harrison — Distúrbios do cálcio / Diretrizes da SBEM para hipercalcemia",
+    "tags": [
+      "endocrinologia",
+      "hipercalcemia",
+      "diurético tiazídico",
       "osteoporose"
     ]
   },
   {
-    "id": "tp2022-100",
-    "topography": "5.2",
-    "topic": "Rotura prematura de membranas",
+    "id": "hosbos2027-42",
+    "topography": "5.1",
+    "topic": "Câncer de colo uterino",
     "module": "Ginecologia e Obstetrícia",
-    "text": "Gestante (36 semanas), perda líquida clara. Especular: saída ativa por Valsalva. Toque: colo fechado. Sobre este caso:",
+    "text": "R.B.A., 27 anos, submetida a exame para rastreamento do câncer de colo uterino. Resultado do DNA-HPV oncogênico: HPV subtipo 16 positivo.\n\nDe acordo com as novas Diretrizes do Ministério da Saúde para o Rastreamento do Câncer do Colo Uterino, assinale a alternativa que representa a conduta adequada.",
     "options": [
-      "(A) Prescrição de penicilina após 18h de bolsa rota.",
-      "(B) Cesárea de urgência obrigatória se bolsa rota > 6h.",
-      "(C) Corticoindução é mandatória.",
-      "(D) USG com ILA normal não exclui o diagnóstico de amniorexe."
+      "(A) Novo rastreamento em 5 anos.",
+      "(B) Novo rastreamento em 6 meses.",
+      "(C) Solicitar Papanicolaou (citologia líquida).",
+      "(D) Solicitar Colposcopia.",
+      "(E) Indicar CAF (cauterização alta frequência)."
     ],
     "correctAnswer": 3,
-    "explanation": "O diagnóstico de rotura de membranas é clínico (anamnese e especular); o volume de líquido no USG pode estar normal em roturas altas.",
-    "commentary": "O ILA normal não afasta bolsa rota. Com 36 semanas, a conduta é resolução da gravidez e profilaxia para GBS se indicado (sem necessidade de corticoide após 34 semanas).",
-    "reference": "Cartilha Ministério da Saúde, 2021.",
-    "tags": [
-      "obstetrícia"
-    ]
-  },
-  {
-    "id": "tp2020-100",
-    "topography": "5.2",
-    "topic": "Trabalho de parto",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Gestante de 25 anos, 35 semanas de amenorreia, pré-natal adequado, última consulta há 3 semanas. Procura UBS referindo dor em BV há 4 horas. Exame físico: bom estado geral, PA 120/80 mmHg, peso 52kg, ausência de edema em MMII. Exame obstétrico AU = 32cm; BCF 144 bpm; DU: 3 contrações moderadas de 10 minutos com toque vaginal de 2,0cm, esvaecido 60%, cefálico, plano-2 De Lee, bolsa íntegra.\n\nA conduta correta é:",
-    "options": [
-      "(A) Investigar infecção urinária, soroterapia com antiespasmódico e alta com sintomáticos.",
-      "(B) Avaliar vitalidade fetal e encaminhar para unidade terciária.",
-      "(C) Antibiótico profilático, investigar infecção urinária, corticoterapia e encaminhar para unidade terciária.",
-      "(D) Corticoterapia, profilaxia do streptococcus do grupo B e encaminhar para unidade terciária."
-    ],
-    "correctAnswer": 1,
-    "explanation": "Trabalho de parto prematuro a 35 semanas. Após 34 semanas não há indicação de tocólise nem, de rotina, de corticoide. A conduta na UBS é avaliar a vitalidade fetal e encaminhar a gestante à unidade terciária para assistência ao parto pré-termo.",
-    "commentary": "Alta com sintomáticos é inadequada. Corticoide e antibiótico profilático não são as condutas centrais na UBS nessa idade gestacional.",
-    "reference": "Montenegro, Carlos Antonio Barbosa Rezende, Obstetrícia Fundamental /Carlos Antonio Barbosa Montenegro, Jorge de Rezende Filho -11ª ed - Rio de Janeiro; Guanabara Koogan, 2008. / Luis Camano, Eduardo de Souza, Nelson Sass, Rosiane Mattar Guias de Medicina Ambulatorial e Hospitalar UNIFESP / EPM 1ª ed = São Paulo, Manole, 2003.",
-    "tags": [
-      "obstetrícia",
-      "trabalho de parto prematuro"
-    ]
-  },
-  {
-    "id": "tp2025-107",
-    "topography": "15",
-    "topic": "Atenção Primária",
-    "module": "Saúde Coletiva",
-    "text": "Paciente com diabetes mellitus tipo 2 já diagnosticada realiza acompanhamento regular com equipe multidisciplinar para evitar retinopatia e nefropatia diabética. Este caso representa qual nível de prevenção?",
-    "options": [
-      "(A) Prevenção primária",
-      "(B) Prevenção secundária",
-      "(C) Prevenção terciária",
-      "(D) Prevenção quaternária"
-    ],
-    "correctAnswer": 1,
-    "explanation": "De acordo com referenciais clássicos da Medicina de Família sobre níveis preventivos, a prevenção secundária visa à detecção precoce de lesões assintomáticas e ao tratamento de base imediato para conter o avanço ao espectro clínico desfavorável.",
-    "commentary": "Embora o manejo de complicações estabelecidas de longo prazo seja classificado sob o crivo preventivo terciário (focado em reabilitação e limitação de incapacidades), a conduta ativa diagnóstica multiprofissional periódica voltada a interceptar manifestações ainda subclínicas em fase latente (como a busca ativa precoce por microalbuminúria ou retinopatia diabética inicial incipiente em paciente diagnosticado) assenta-se sob o escopo preventivo secundário.",
-    "reference": "Lopes JM, Gusso G. Tratado de Medicina de Família e Comunidade, 2a ed. Porto Alegre: Artmed, 2019.",
-    "tags": [
-      "prevenção",
-      "atenção primária"
-    ]
-  },
-  {
-    "id": "tp2022-6",
-    "topography": "5.1",
-    "topic": "Infertilidade",
-    "module": "Ciências Básicas",
-    "text": "Homem de 35 anos, sem filhos, não fumante, nega história de doenças crônicas ou recorrentes, bem como exposição tóxica prévia. Ao exame físico, apresenta volume testicular reduzido com ductos palpáveis. Os níveis de FSH séricos estão aumentados. Há presença de oligospermia em volume de sêmen normal, com espermatozoides com motilidade e morfologia normais. Cariótipo em bandamento GTG: 46,XY. A investigação diagnóstica deve prosseguir para:",
-    "options": [
-      "(A) Análise de microdeleções no cromossomo Y.",
-      "(B) Análise molecular do gene CFTR.",
-      "(C) Painel de genes por NGS para síndrome de Kallmann.",
-      "(D) Diagnóstico molecular da síndrome de Kartagener."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Em casos de insuficiência testicular primária (FSH alto) com cariótipo normal, a análise de microdeleções do cromossomo Y é a próxima etapa.",
-    "commentary": "O enunciado apresenta quadro de insuficiência testicular primária (FSH elevado) com oligospermia e cariótipo 46,XY normal. A avaliação inicial padrão nestes casos é o cariótipo seguido pela análise de microdeleções no braço longo do cromossomo Y (região AZF). A análise do gene CFTR seria mais indicada em casos obstrutivos (azoospermia com volume seminal baixo). A síndrome de Kallmann cursaria com FSH baixo (hipogonadismo hipogonadotrófico).",
-    "reference": "Wosnitzer, M.S. - Genetic evaluation of male infertility. Transl Androl Urol 2014;3(1):17-26.",
-    "tags": [
-      "genética",
-      "urologia"
-    ]
-  },
-  {
-    "id": "tp2020-4",
-    "topography": "10",
-    "topic": "Doença de Chagas",
-    "module": "Ciências Básicas",
-    "text": "Clodoaldo, 66 anos, agricultor, é chagásico crônico há pelo menos 5 anos. Apesar da infecção ser acompanhada desde a fase aguda, foi obsevado apenas uma cardiomegalia leve que não interfere nas atividades diárias do paciente.\n\nComo podemos classificar a doença do paciente?",
-    "options": [
-      "(A) Oligossintomática",
-      "(B) Determinada",
-      "(C) Assintomática",
-      "(D) Indeterminada"
-    ],
-    "correctAnswer": 3,
-    "explanation": "Doença de Chagas crônica sem manifestações clínicas limitantes, com alteração cardíaca discreta que não interfere na vida diária: a banca a classifica como forma indeterminada.\n\nPela definição clássica, a forma indeterminada exige sorologia positiva com ECG e radiografias normais; cardiomegalia, mesmo leve, já indicaria forma cardíaca (determinada).",
-    "commentary": "Observação: pelo II Consenso Brasileiro de Doença de Chagas, qualquer cardiomegalia caracteriza forma cardíaca, o que torna a alternativa B defensável — questão passível de recurso.",
-    "reference": "REY, Luís. Parasitologia: parasitos e doenças parasitárias do homem nos trópicos ocidentais. 4. ed. Rio de Janeiro: Guanabara Koogan, 2008. / AMATO NETO, V. et al. Parasitologia: uma abordagem clínica. Rio de Janeiro: Elsevier, 2008.",
-    "tags": [
-      "parasitologia",
-      "doença de chagas"
-    ]
-  },
-  {
-    "id": "enamed-2026-25",
-    "topography": "5.1",
-    "topic": "Doença inflamatória pélvica",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher de 20 anos procura Unidade de Pronto Atendimento devido a queixa de corrimento vaginal há 7 dias, associado a odor fétido e prurido leve. Refere início recente de dor pélvica hipogástrica, febre não aferida e dispareunia. O exame ginecológico mostra corrimento acinzentado, colo uterino doloroso à mobilização e dor à palpação anexial bilateral.\n\nQual é o tratamento medicamentoso nesse caso, considerando-se o diagnóstico provável?",
-    "options": [
-      "(A) Metronidazol, ceftriaxona e doxiciclina.",
-      "(B) Fluconazol, azitromicina e clidamicina.",
-      "(C) Doxiciclina, ceftriaxona e gentamicina.",
-      "(D) Miconazol, metronidazol e azitromicina."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Corrimento acinzentado com odor fétido sugere vaginose bacteriana, e dor pélvica, febre, dor à mobilização do colo e dor anexial definem doença inflamatória pélvica (DIP).\n\nO esquema ambulatorial do Ministério da Saúde para DIP é ceftriaxona 500 mg IM dose única + doxiciclina 100 mg VO 12/12 h por 14 dias + metronidazol 500 mg VO 12/12 h por 14 dias, cobrindo gonococo, clamídia e anaeróbios.",
-    "commentary": "Fluconazol e miconazol tratam candidíase. Gentamicina e clindamicina fazem parte de esquemas parenterais hospitalares, e não na combinação proposta. (Gabarito preliminar do INEP.)",
-    "reference": "Ministério da Saúde. PCDT para Atenção Integral às Pessoas com IST, 2022",
+    "explanation": "Nas novas Diretrizes do Ministério da Saúde para rastreamento do câncer do colo do útero (com teste de DNA-HPV oncogênico a partir dos 25 anos), um resultado positivo para HPV 16 e/ou 18 leva diretamente à colposcopia.\n\nSe o teste for positivo para outros tipos oncogênicos (não 16/18), faz-se citologia reflexa (de preferência em base líquida) para triagem.",
+    "commentary": "Novo rastreamento em 5 anos (A): intervalo para teste de HPV negativo.\n\nRepetir em 6 meses (B): não é a conduta para HPV 16, de maior risco.\n\nPapanicolaou (C): a citologia reflexa é para HPV de outros tipos oncogênicos, não 16/18.\n\nCAF (E): tratamento excisional só após diagnóstico colposcópico ou histológico de lesão de alto grau.",
+    "reference": "Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero — Parte I: rastreamento organizado com teste de DNA-HPV (INCA/MS)",
     "tags": [
       "ginecologia",
-      "IST",
-      "doença inflamatória pélvica"
+      "rastreamento",
+      "câncer do colo do útero",
+      "HPV",
+      "colposcopia"
     ]
   },
   {
-    "id": "unifesp2025-43",
-    "topography": "15",
-    "topic": "Vigilância epidemiológica",
-    "module": "Saúde Coletiva",
-    "text": "Criança, 10 anos de idade, refugiada, é atendida no pronto-socorro apresentando febre e deficiência motora flácida de início súbito. A situação vacinal é ignorada.\n\nConsiderando a(s) hipótese(s) diagnóstica(s) mais provável(eis), a conduta adequada neste momento, em relação à vigilância epidemiológica, é notificar o caso às autoridades de saúde:",
-    "options": [
-      "(A) Após resultado positivo da cultura de líquor.",
-      "(B) Após resultado positivo da cultura de fezes.",
-      "(C) Em até 24 horas após o atendimento.",
-      "(D) Após resultado positivo da cultura de fezes e líquor."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Criança com paralisia flácida aguda (PFA) e situação vacinal desconhecida. Todo caso de PFA em menor de 15 anos é de notificação compulsória imediata, por ser a estratégia de vigilância da poliomielite, que tem risco de reintrodução no Brasil pela baixa cobertura vacinal e pela migração.\n\nA notificação deve ser feita em até 24 horas, com coleta de fezes até o 14º dia do déficit. Não se espera confirmação laboratorial: notificar é obrigatório diante da suspeita.",
-    "commentary": "Após cultura de líquor (A): a notificação não depende de resultado laboratorial.\n\nApós cultura de fezes (B): a amostra de fezes é colhida para investigação, mas a notificação é imediata, diante da suspeita.\n\nApós fezes e líquor (D): mesmo erro — notificação compulsória imediata não aguarda exames.",
-    "reference": "Guia de Vigilância em Saúde — Ministério da Saúde, 2024 (Poliomielite/Paralisia flácida aguda)",
-    "tags": [
-      "vigilância epidemiológica",
-      "paralisia flácida aguda",
-      "poliomielite",
-      "notificação compulsória"
-    ]
-  },
-  {
-    "id": "hosbos2027-51",
+    "id": "hosbos2025-43",
     "topography": "5.2",
     "topic": "Pré-natal",
     "module": "Ginecologia e Obstetrícia",
-    "text": "Paciente vem para avaliação pela medicina fetal, para ser submetida ao primeiro ultrassom da gestação. Refere idade gestacional cronológica de 8 semanas. À imagem, identificados 2 sacos gestacionais e 2 embriões, sendo 1 em cada saco gestacional.\n\nDe acordo com o caso apresentado e com os conhecimentos sobre gemelidade, assinale a alternativa correta.",
+    "text": "R.T.B., 29 anos, primigesta, idade gestacional de 11 semanas, veio à segunda consulta de pré-natal com glicemia de jejum de 92 mg/dL. IMC de 24 kg/m², sorologia para toxoplasmose: IgG positivo e IgM positivo. Teste de avidez para IgG 90%. Nega comorbidades. Sobre o caso, assinale a alternativa correta.",
     "options": [
-      "(A) A presença de 2 sacos gestacionais confirma gestação dizigótica.",
-      "(B) Presença de 2 sacos gestacionais indica gestação monocoriônica e diamniótica.",
-      "(C) A presença de 2 sacos gestacionais origina o sinal do lâmbda.",
-      "(D) O sinal do T é característico de gestação dicoriônica.",
-      "(E) Nesta gestação será identificada 1 placenta."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Dois sacos gestacionais separados, cada um com um embrião, na ultrassonografia de 8 semanas, indicam gestação dicoriônica e diamniótica.\n\nNa dicoriônica, o tecido coriônico se insinua entre as membranas na inserção placentária e forma o sinal do lambda (ou do twin peak). Na monocoriônica diamniótica, a membrana fina forma o sinal do T. A corionicidade é mais bem definida no primeiro trimestre.",
-    "commentary": "Confirma dizigótica (A): cerca de 1/3 dos monozigóticos (divisão até o 3º dia) também são dicoriônicos; a corionicidade não define a zigoticidade.\n\nMonocoriônica diamniótica (B): esta tem um único saco coriônico com duas cavidades amnióticas.\n\nSinal do T na dicoriônica (D): o sinal do T é da monocoriônica.\n\nUma placenta (E): na dicoriônica há duas placentas (que podem se fundir, mas os córions são separados).",
-    "reference": "ISUOG Practice Guidelines: role of ultrasound in twin pregnancy / Zugaib Obstetrícia",
-    "tags": [
-      "obstetrícia",
-      "gestação gemelar",
-      "corionicidade",
-      "sinal do lambda"
-    ]
-  },
-  {
-    "id": "hosbos2025-54",
-    "topography": "5.1",
-    "topic": "Climatério e menopausa",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Diversos mecanismos biológicos estão potencialmente ligados à relação entre alterações hormonais da pós-menopausa, comprometimento cognitivo e início da demência. Assinale a alternativa que apresenta o hormônio que possui diretamente grande impacto nos processos neurais por meio de ações genômicas e não genômicas, incluindo alterações na espinogênese e sinaptogênese, no número neuronal e nas taxas metabólicas de glicose.",
-    "options": [
-      "(A) Estrogênio.",
-      "(B) Progesterona.",
-      "(C) FSH.",
-      "(D) LH.",
-      "(E) Testosterona."
+      "(A) Trata-se de diabetes gestacional.",
+      "(B) Trata-se de overt diabetes.",
+      "(C) Trata-se de diabetes tipo II.",
+      "(D) Deve-se solicitar TOTG (Teste Oral de Tolerância à Glicose) com idade gestacional de 24 – 28 semanas.",
+      "(E) Deve-se introduzir insulina com 2/3 da dose pela manhã."
     ],
     "correctAnswer": 0,
-    "explanation": "O estrogênio tem receptores amplamente distribuídos no cérebro (hipocampo, córtex pré-frontal). Por ações genômicas e não genômicas, ele estimula a formação de espinhas dendríticas e sinapses, preserva neurônios e aumenta o metabolismo cerebral da glicose.\n\nA queda do estrogênio na menopausa é o principal mecanismo hormonal estudado na relação entre menopausa e declínio cognitivo.",
-    "commentary": "Progesterona (B): tem ações neuroativas (por metabólitos como a alopregnanolona), mas não é o hormônio central nesse processo.\n\nFSH (C) e LH (D): sobem na menopausa; há estudos experimentais, mas sem o papel direto descrito.\n\nTestosterona (E): tem efeitos neurais menores nas mulheres.",
-    "reference": "The 2022 Hormone Therapy Position Statement of The North American Menopause Society",
+    "explanation": "No Brasil (critérios da OPAS/MS/FEBRASGO/SBD, baseados na IADPSG), a glicemia de jejum na primeira consulta classifica: < 92 mg/dL normal (fazer TOTG 24–28 semanas); 92–125 mg/dL = diabetes mellitus gestacional; ≥ 126 mg/dL = diabetes prévio (overt).\n\nGlicemia de 92 mg/dL já define diabetes gestacional, sem necessidade de TOTG.",
+    "commentary": "Overt diabetes (B): exige jejum ≥ 126 mg/dL, HbA1c ≥ 6,5% ou glicemia ao acaso ≥ 200 mg/dL.\n\nDiabetes tipo 2 (C): não há critério para diabetes fora da gestação.\n\nTOTG com 24–28 semanas (D): só se o jejum inicial for < 92 mg/dL; aqui o diagnóstico já está feito.\n\nInsulina com 2/3 pela manhã (E): o tratamento inicial é dieta e atividade física; insulina só se as metas não forem atingidas.",
+    "reference": "OPAS/MS/FEBRASGO/SBD — Rastreamento e diagnóstico de diabetes mellitus gestacional no Brasil (2017)",
     "tags": [
-      "menopausa",
-      "estrogênio",
-      "cognição",
-      "demência"
+      "diabetes gestacional",
+      "glicemia de jejum",
+      "pré-natal"
     ]
   },
   {
-    "id": "scmbh2026-47",
-    "topography": "15",
-    "topic": "Vigilância epidemiológica",
-    "module": "Saúde Coletiva",
-    "text": "É CORRETO afirmar que a Vigilância Sanitária (VISA), no controle de água e alimentos:",
+    "id": "scmbh2026-27",
+    "topography": "2.1",
+    "topic": "Pneumonia comunitária",
+    "module": "Clínica Médica",
+    "text": "Em um plantão em terapia intensiva, você é responsável por paciente do sexo masculino, 62 anos, com pneumonia adquirida na comunidade grave, internado em UTI. Apresenta hipotensão arterial, hipoxemia e necessidade de altas frações de oxigênio, já recebendo antibioticoterapia empírica ampla. Mantém instabilidade hemodinâmica e PCR aumentado. Pro-calcitonina aumentada.\n\nQual a conduta sobre o uso de corticoide nesse contexto?",
     "options": [
-      "(A) Limita-se à punição administrativa, sem interface com educação sanitária.",
-      "(B) Atua apenas em produtos industrializados, sem alcance em serviços de alimentação artesanal.",
-      "(C) Integra vigilância ambiental e epidemiológica, articulando risco, inspeção e comunicação.",
-      "(D) Não executa análise laboratorial, delegando-a exclusivamente a serviços assistenciais."
+      "(A) Contraindicado em qualquer situação.",
+      "(B) Indicado apenas se houver asma associada.",
+      "(C) Pode ser considerado em casos de resposta inflamatória exacerbada.",
+      "(D) Indicado para pacientes em terapia intensiva."
     ],
     "correctAnswer": 2,
-    "explanation": "A Vigilância Sanitária, no controle de água e alimentos, atua de forma integrada com a vigilância ambiental (qualidade da água, programa Vigiagua) e a epidemiológica (surtos de DTA). Articula avaliação de risco, inspeção, análise laboratorial (por meio dos LACEN), educação sanitária e comunicação de risco.",
-    "commentary": "Só punição administrativa (A): a VISA também educa, orienta e comunica risco.\n\nSó produtos industrializados (B): também fiscaliza serviços de alimentação, inclusive artesanais e comerciais.\n\nSem análise laboratorial (D): conta com a rede de laboratórios de saúde pública (LACEN) para análises fiscais.",
-    "reference": "Lei nº 9.782/1999 (Sistema Nacional de Vigilância Sanitária) / Lei nº 8.080/1990",
+    "explanation": "Pneumonia comunitária grave em UTI com hipoxemia importante e instabilidade hemodinâmica, apesar de antibiótico adequado.\n\nEstudos recentes (CAPE COD, 2023) mostraram redução de mortalidade com hidrocortisona na PAC grave. As diretrizes (ATS 2023, SCCM 2024) passaram a sugerir corticoide na PAC grave, sobretudo com resposta inflamatória exacerbada ou choque refratário. Entre as opções, 'pode ser considerado' é a resposta adequada.",
+    "commentary": "Contraindicado sempre (A): há evidência de benefício em casos graves.\n\nSó com asma (B): a indicação não depende de asma.\n\nPara todo paciente em UTI (D): a indicação é seletiva (PAC grave, choque refratário), não universal.",
+    "reference": "Dequin PF et al. — CAPE COD (NEJM 2023) / SCCM Guidelines on Corticosteroids (2024)",
+    "tags": [
+      "terapia intensiva",
+      "pneumonia grave",
+      "corticoide",
+      "hidrocortisona"
+    ]
+  },
+  {
+    "id": "revalida-2025-1-80",
+    "topography": "15",
+    "topic": "Imunização",
+    "module": "Saúde Coletiva",
+    "text": "Mulher comparece na unidade básica de saúde (UBS) com seus dois filhos, um menino de 8 anos e uma menina de 13 anos, buscando orientações quanto à vacinação contra o HPV.\n\nDiante desse quadro, qual a orientação correta?",
+    "options": [
+      "(A) O menino e a menina podem receber dose única nessa visita.",
+      "(B) O menino e a menina podem receber a primeira dose nessa visita e agendar a segunda dose em 60 dias.",
+      "(C) A menina não deve ser vacinada e o menino poderá receber a primeira dose ao completar 11 anos.",
+      "(D) A menina pode ser vacinada em dose única nessa visita e não há indicação para que o filho seja vacinado agora."
+    ],
+    "correctAnswer": 3,
+    "explanation": "Desde 2024 o Ministério da Saúde adota dose única da vacina HPV para meninas e meninos de 9 a 14 anos. A menina de 13 anos pode ser vacinada em dose única nessa visita. O menino de 8 anos ainda não tem idade: deve receber a vacina a partir dos 9 anos.",
+    "commentary": "Ambos em dose única agora (A) e duas doses para ambos (B): o menino ainda não tem 9 anos, e o esquema atual é de dose única.\n\nMenina não deve ser vacinada (C): ela está na faixa indicada; e a vacina para meninos começa aos 9, não aos 11 anos.",
+    "reference": "Ministério da Saúde — Nota técnica sobre dose única da vacina HPV (2024) / Calendário Nacional de Vacinação",
     "tags": [
       "saúde coletiva",
-      "vigilância sanitária",
-      "vigilância em saúde",
-      "segurança dos alimentos"
-    ]
+      "imunização",
+      "vacina HPV",
+      "calendário vacinal"
+    ],
+    "tip": "HPV no SUS: dose única dos 9 aos 14 anos, meninas e meninos."
   },
   {
-    "id": "revalida-2025-1-75",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Paciente de 35 anos, contente por sua primeira gravidez, começa o pré-natal na unidade básica de saúde (UBS) de seu bairro. Durante a consulta de enfermagem, é identificado, no exame das mamas, um nódulo na mama direita. Quando informada sobre esse achado, a paciente relata que sua mãe teve câncer de mama aos 38 anos.\n\nDiante desse quadro, a conduta médica indicada é",
-    "options": [
-      "(A) requisitar biópsia do nódulo mamário guiada por ultrassonografia.",
-      "(B) encaminhar a paciente para o ambulatório de gestação de alto risco.",
-      "(C) solicitar ultrassonografia de mamas e considerar realização de mamografia com proteção abdominal.",
-      "(D) aguardar o final da gestação para realizar investigação do nódulo a partir de ultrassonografia e de mamografia."
-    ],
-    "correctAnswer": 2,
-    "explanation": "Nódulo mamário palpável na gestação deve ser investigado sem atraso: o câncer de mama associado à gestação costuma ser diagnosticado tardiamente. O primeiro exame é a ultrassonografia de mamas; a mamografia pode ser feita com proteção abdominal (dose fetal desprezível), e a biópsia por agulha grossa é segura se houver lesão suspeita. A história de mãe com câncer aos 38 anos aumenta a suspeita.",
-    "commentary": "Biópsia direta (A): a biópsia vem depois da imagem, conforme a classificação do achado.\n\nAlto risco obstétrico (B): o nódulo não é fator de risco obstétrico; deve ser investigado pela mastologia.\n\nAguardar o fim da gestação (D): atrasa o diagnóstico de possível câncer.",
-    "reference": "Febrasgo — Câncer de mama na gestação / INCA",
-    "tags": [
-      "ginecologia",
-      "câncer de mama",
-      "gestação",
-      "nódulo mamário"
-    ],
-    "tip": "Nódulo na mama na gravidez: investigue já (USG; mamografia com proteção abdominal se precisar)."
-  },
-  {
-    "id": "sespe2026-17",
+    "id": "sespe2026-25",
     "topography": "16",
-    "topic": "Pós-operatório",
-    "module": "Clínica Médica",
-    "text": "Homem de 66 anos, pós-operatório de colectomia por tumor, apresenta febre persistente, dor abdominal difusa, distensão e piora hemodinâmica. Chega à UTI com PA 86/54 mmHg após 2 L de cristaloide, lactato 4,7 mmol/L, leucócitos 19.000/mm³ e PCR > 300 mg/L. Tomografia apresenta coleção sub-hepática de 6 cm com gás, sugerindo processo infeccioso ativo. Norepinefrina já em 0,15 mcg/kg/min com pouca melhora clínica.\n\nQual é a conduta imediata mais adequada?",
+    "topic": "Nutrição cirúrgica",
+    "module": "Cirurgia",
+    "text": "Na REMIT, Resposta Endócrino-Metabólica-Imunológica ao Trauma, incluindo os hormônios envolvidos, qual das substâncias abaixo NÃO causa lipólise?",
     "options": [
-      "Aumentar vasopressor até normalizar PA.",
-      "Trocar antibiótico e observar por 24 h.",
-      "Realizar controle de foco cirúrgico/percutâneo + antibiótico adequado.",
-      "Usar corticoide em altas doses como primeira medida.",
-      "Aguardar evolução clínica para decidir intervenção."
+      "Catecolaminas",
+      "Glucagon",
+      "Insulina",
+      "GH",
+      "Cortisol"
     ],
     "correctAnswer": 2,
-    "explanation": "Choque séptico no pós-operatório de colectomia com coleção sub-hepática de 6 cm com gás: há um foco infeccioso drenável. O pilar do tratamento é o controle do foco — drenagem percutânea guiada por imagem ou reabordagem cirúrgica — o quanto antes (idealmente em até 6–12 horas), junto com antibiótico de amplo espectro. Sem drenar o foco, o choque não se resolve.",
-    "commentary": "Só aumentar vasopressor (A): trata a consequência e não a causa.\n\nTrocar o antibiótico e observar (B): antibiótico não penetra bem em abscesso; sem drenagem não há cura.\n\nCorticoide em dose alta (D): hidrocortisona em dose baixa é adjuvante no choque refratário, não primeira medida.\n\nAguardar (E): atrasar o controle de foco aumenta a mortalidade.",
-    "reference": "Surviving Sepsis Campaign 2021 / WSES — Management of intra-abdominal infections (2017)",
+    "explanation": "Na resposta endócrino-metabólica ao trauma predominam os hormônios catabólicos — catecolaminas, glucagon, cortisol e GH —, que estimulam a lipólise para fornecer energia. A insulina é o principal hormônio anabólico e antilipolítico: inibe a lipase hormônio-sensível e promove armazenamento de gordura. No trauma há resistência à insulina, mas ela, em si, não causa lipólise.",
+    "commentary": "Catecolaminas (A): ativam a lipase hormônio-sensível via receptores β, são fortemente lipolíticas.\n\nGlucagon (B): estimula lipólise e gliconeogênese.\n\nGH (D): tem efeito lipolítico, poupando proteína.\n\nCortisol (E): favorece lipólise, proteólise e gliconeogênese.",
+    "reference": "Sabiston — Tratado de Cirurgia (resposta metabólica ao trauma) / Guyton — Fisiologia",
     "tags": [
-      "sepse",
-      "controle de foco",
-      "abscesso intra-abdominal",
-      "pós-operatório"
+      "cirurgia geral",
+      "resposta metabólica ao trauma",
+      "insulina",
+      "lipólise"
     ],
-    "tip": "Sepse com coleção: drene o foco — antibiótico sozinho não resolve."
+    "tip": "No trauma, todos os hormônios contrarreguladores fazem lipólise — a insulina não."
   },
   {
-    "id": "hpp2026-17",
-    "topography": "1.1",
-    "topic": "Demências",
-    "module": "Clínica Médica",
-    "text": "Homem de 70 anos apresenta declínio cognitivo progressivo há 18 meses, caracterizado por lentificação do raciocínio e dificuldades de atenção. A família refere que, nos últimos 6 meses, ele passou a ter incontinência urinária e quedas frequentes. No exame, observa-se marcha em passos curtos e magnéticos, com preservação de força muscular. A tomografia de crânio mostra ventriculomegalia desproporcional à atrofia cortical. Qual o diagnóstico mais provável?",
+    "id": "hpp2026-36",
+    "topography": "14",
+    "topic": "Trauma",
+    "module": "Cirurgia",
+    "text": "Homem de 36 anos, envolveu-se em uma briga após um jogo de futebol e foi vítima de ferimentos por arma branca. Dá entrada no Pronto Socorro queixando-se de desconforto torácico. No exame físico observa-se ferimento cortante de 04 cm no terceiro espaço intercostal E, linha axilar anterior. O paciente apresenta distensão das veias jugulares, hipotensão e abafamento dos batimentos cardíacos. A principal suspeita diagnóstica deve ser:",
     "options": [
-      "Demência com corpos de Lewy.",
-      "Doença de Alzheimer.",
-      "Demência vascular.",
-      "Hidrocefalia de pressão normal."
-    ],
-    "correctAnswer": 3,
-    "explanation": "Idoso com a tríade de Hakim-Adams: distúrbio de marcha (passos curtos, \"magnética\", com força preservada), incontinência urinária e declínio cognitivo de padrão subcortical (lentificação, desatenção). A tomografia mostra ventriculomegalia desproporcional à atrofia cortical.\n\nO diagnóstico é hidrocefalia de pressão normal, uma das demências potencialmente reversíveis. O tap test (punção liquórica de alívio) ajuda a prever resposta à derivação ventriculoperitoneal.",
-    "commentary": "Corpos de Lewy (A): flutuação cognitiva, alucinações visuais bem formadas e parkinsonismo; não cursa com ventriculomegalia desproporcional.\n\nAlzheimer (B): começa com perda de memória episódica; incontinência e distúrbio de marcha aparecem só em fases avançadas, e a imagem mostra atrofia hipocampal.\n\nDemência vascular (C): evolução em degraus, sinais focais e lesões isquêmicas/leucoaraiose na imagem.",
-    "reference": "Diretrizes da Academia Brasileira de Neurologia — Demências / Harrison",
-    "tags": [
-      "hidrocefalia de pressão normal",
-      "demências",
-      "tríade de Hakim"
-    ],
-    "tip": "Marcha magnética + incontinência + demência = hidrocefalia de pressão normal (\"wet, wobbly, wacky\")."
-  },
-  {
-    "id": "cesupa2025-36",
-    "topography": "5.1",
-    "topic": "Mioma uterino",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Paciente 28 anos, casada há 05 anos, há 02 anos tentando engravidar sem sucesso. Parceiro com espermograma normal, afastados todos os fatores masculinos. Na histerossalpingografia, achado relevante de tumoração intra cavitária uterina em parede fúndica com obstrução do óstio tubário direito; prova de Cotté positiva à esquerda e negativa à direita.\n\nQual a conduta em relação à tumoração uterina, podendo-se tratar de um mioma submucoso, categoria FIGO Zero?",
-    "options": [
-      "Histerectomia.",
-      "Miomectomia Histeroscópica.",
-      "Miomectomia por laparotomia.",
-      "Conduta expectante."
+      "Rotura traumática de aorta.",
+      "Tamponamento cardíaco.",
+      "Pneumotórax aberto.",
+      "Lesão traumática do baço."
     ],
     "correctAnswer": 1,
-    "explanation": "Infertilidade há 2 anos, parceiro normal, e histerossalpingografia com tumoração intracavitária no fundo uterino obstruindo o óstio tubário direito (prova de Cotté negativa à direita), compatível com mioma submucoso FIGO 0 (totalmente dentro da cavidade, pediculado).\n\nMiomas submucosos distorcem a cavidade e reduzem as taxas de implantação e gravidez; sua retirada melhora a fertilidade. Para os tipos 0 e 1 (e alguns tipo 2 pequenos), o tratamento de escolha é a miomectomia histeroscópica: minimamente invasiva, sem incisão no útero, preserva a fertilidade e permite gravidez com mais segurança.",
-    "commentary": "Histerectomia (A): elimina a possibilidade de gravidez numa paciente que quer engravidar.\n\nMiomectomia por laparotomia (C): é para miomas intramurais ou subserosos grandes ou múltiplos; para mioma submucoso tipo 0, é mais invasiva, deixa cicatriz uterina e aderências, sem vantagem.\n\nConduta expectante (D): mioma submucoso em paciente infértil deve ser retirado; esperar mantém a causa da infertilidade.",
-    "tip": "Mioma submucoso FIGO 0–1 + infertilidade ou sangramento = miomectomia histeroscópica.",
-    "reference": "FEBRASGO. Leiomioma uterino – Protocolo nº 32, 2021. Munro MG et al. FIGO classification system (PALM-COEIN), 2018.",
+    "explanation": "Ferimento por arma branca na região precordial (\"caixa de Ziedler\") com a tríade de Beck: turgência jugular, hipotensão e abafamento de bulhas. O diagnóstico é tamponamento cardíaco.\n\nO FAST confirma o derrame pericárdico; o tratamento definitivo é cirúrgico (toracotomia/esternotomia), com pericardiocentese apenas como ponte quando a cirurgia não está imediatamente disponível.",
+    "commentary": "Rotura de aorta (A): típica de trauma contuso por desaceleração; causa choque hipovolêmico, sem turgência jugular.\n\nPneumotórax aberto (C): ferimento soprante com entrada de ar e insuficiência respiratória; não justifica bulhas abafadas.\n\nLesão de baço (D): choque hemorrágico com jugulares colabadas; o ferimento é torácico alto, longe do baço.",
+    "reference": "ATLS — 10ª edição: Trauma torácico",
     "tags": [
-      "mioma submucoso",
-      "infertilidade",
-      "histeroscopia"
-    ]
+      "tamponamento cardíaco",
+      "tríade de Beck",
+      "trauma torácico"
+    ],
+    "tip": "Tríade de Beck = tamponamento: hipotensão + turgência jugular + bulhas abafadas."
   },
   {
-    "id": "famema2025-67",
-    "topography": "1.2",
-    "topic": "Retinopatia diabética",
-    "module": "Clínica Médica",
-    "text": "Assinale a alternativa correta sobre a retinopatia diabética.",
+    "id": "dante2026-70",
+    "topography": "5.1",
+    "topic": "Câncer de colo uterino",
+    "module": "Saúde Coletiva",
+    "text": "Mulher, de 27 anos de idade, comparece à Unidade Básica de Saúde para “fazer o preventivo”. Ela está assintomática, nunca teve sangramento vaginal anormal nem sangramento pós-coito e não está grávida. Relata vida sexual ativa desde os 17 anos de idade e nunca fez rastreamento para câncer do colo do útero.\n\nApós dois meses, a paciente retorna com o resultado do exame alterado e presença do genótipo 16 do HPV.\n\nQual é a conduta recomendada?",
     "options": [
-      "As avaliações de retina em diabéticos devem ser feitas a cada 10 anos.",
-      "A progressão da retinopatia diabética tem pouca relação com a glicemia e a pressão arterial.",
-      "Tem início súbito e evolução rápida.",
-      "É uma das principais causas de cegueira irreversível no Brasil."
+      "Indicar tratamento ablativo imediato do colo uterino.",
+      "Aguardar 12 meses e repetir o teste de DNA-HPV oncogênico.",
+      "Solicitar citologia reflexa e encaminhar para colposcopia.",
+      "Encaminhar diretamente para a colposcopia."
     ],
     "correctAnswer": 3,
-    "explanation": "A retinopatia diabética é uma das principais causas de cegueira irreversível no Brasil e a principal em adultos em idade produtiva. A evolução é silenciosa: a visão costuma estar preservada até fases avançadas (edema macular, retinopatia proliferativa com hemorragia vítrea ou descolamento tracional).\n\nPor isso o rastreamento com fundo de olho é anual: no DM2 desde o diagnóstico e no DM1 após 5 anos de doença (ou na puberdade). Controle glicêmico e pressórico reduz a progressão.",
-    "commentary": "Avaliação a cada 10 anos (A): o exame é anual (pode ser a cada 1–2 anos se exames seguidos normais).\n\nPouca relação com glicemia e PA (B): estudos como DCCT e UKPDS mostraram que o controle glicêmico e pressórico reduz o surgimento e a progressão.\n\nInício súbito e evolução rápida (C): a evolução é lenta e assintomática, ao longo de anos; daí a necessidade do rastreamento.",
-    "tip": "Retinopatia diabética: silenciosa. Fundo de olho anual — DM2 desde o diagnóstico, DM1 após 5 anos.",
-    "reference": "Sociedade Brasileira de Diabetes. Diretriz 2024 – Retinopatia diabética. Conselho Brasileiro de Oftalmologia. Diretrizes de retinopatia diabética.",
+    "explanation": "Teste de DNA-HPV positivo para o genótipo 16. Os tipos 16 e 18 respondem por cerca de 70% dos cânceres de colo e têm o maior risco de lesão de alto grau. Pela diretriz de 2025, o resultado positivo para HPV 16 e/ou 18 leva diretamente à colposcopia, sem necessidade de citologia antes.\n\nJá o positivo para outros tipos oncogênicos (não 16/18) segue para citologia reflexa: se alterada, colposcopia; se normal, repetir o teste de HPV em 1 ano.",
+    "commentary": "Tratamento ablativo imediato (A): não se trata sem diagnóstico; a colposcopia com biópsia define se há lesão e qual tratamento.\n\nRepetir o HPV em 12 meses (B): conduta para HPV positivo de outros tipos com citologia reflexa normal; não para HPV 16.\n\nCitologia reflexa e colposcopia (C): a citologia reflexa é usada para os tipos não 16/18; no 16/18 o encaminhamento é direto.",
+    "tip": "DNA-HPV: 16/18 → colposcopia direto. Outros oncogênicos → citologia reflexa (alterada → colposcopia; normal → HPV em 1 ano).",
+    "reference": "INCA/Ministério da Saúde. Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, 2025.",
     "tags": [
-      "retinopatia diabética",
-      "rastreamento",
-      "cegueira"
+      "DNA-HPV",
+      "HPV 16",
+      "colposcopia",
+      "câncer de colo uterino"
     ]
   },
   {
-    "id": "famema2026-87",
-    "topography": "13",
-    "topic": "Transtornos de ansiedade",
-    "module": "Saúde Coletiva",
-    "text": "Assinale a alternativa que inclui os transtornos psiquiátricos prevalentes nos Centros de Atenção Primária, os chamados “transtornos mentais comuns”.",
+    "id": "famema2025-98",
+    "topography": "14",
+    "topic": "Insuficiência respiratória",
+    "module": "Clínica Médica",
+    "text": "É possível realizar o desmame da ventilação mecânica uma vez que o paciente tenha tido resolução do motivo que o levou à intubação, apresente tosse e drive respiratório adequados e",
     "options": [
-      "Ansiedade, depressão e somatização.",
-      "Transtorno bipolar e esquizofrenia.",
-      "Transtorno de personalidade e transtorno de sintomas neurológicos funcionais.",
-      "Transtorno de déficit de atenção e hiperatividade e transtorno obsessivo-compulsivo."
+      "estabilidade hemodinâmica, com FC < 140 bpm sem vasopressor.",
+      "pontuação na escala de Glasgow > 12.",
+      "PEEP ≤ 5-9 mmHg.",
+      "relação PO2/FIO2 ≥ 140."
     ],
     "correctAnswer": 0,
-    "explanation": "Transtornos mentais comuns são quadros de sofrimento psíquico frequentes na atenção primária, que combinam sintomas depressivos, ansiosos e somáticos (insônia, fadiga, irritabilidade, esquecimento, dificuldade de concentração, queixas físicas sem causa orgânica). Têm prevalência alta (cerca de 30–50% dos atendimentos na APS) e são manejados majoritariamente pela própria atenção primária, com apoio matricial.",
-    "commentary": "Transtorno bipolar e esquizofrenia (B): são transtornos mentais graves e persistentes, menos prevalentes e geralmente acompanhados também pelos CAPS.\n\nTranstorno de personalidade e sintomas neurológicos funcionais (C): não são o núcleo dos transtornos mentais comuns.\n\nTDAH e TOC (D): têm prevalência menor e não compõem o conceito.",
-    "tip": "Transtornos mentais comuns = ansiedade + depressão + somatização. Muito prevalentes na APS; rastreio com SRQ-20.",
-    "reference": "Ministério da Saúde. Caderno de Atenção Básica nº 34 – Saúde Mental, 2013. Goldberg D, Huxley P. Common mental disorders: a bio-social model, 1992.",
+    "explanation": "Para iniciar o teste de respiração espontânea, o paciente deve ter resolvido a causa da intubação, ter drive respiratório e tosse adequados, oxigenação aceitável e estabilidade hemodinâmica. Nos critérios clássicos, estabilidade hemodinâmica significa FC ≤ 140 bpm, sem isquemia miocárdica e sem vasopressor (ou dose baixa e estável).",
+    "commentary": "Glasgow > 12 (B): exigência excessiva; os protocolos pedem paciente desperto, capaz de obedecer comandos, em geral com Glasgow ≥ 8–9 (sem sedação ou com sedação leve).\n\nPEEP ≤ 5–9 mmHg (C): a PEEP é medida em cmH₂O, e o critério é PEEP ≤ 5–8 cmH₂O.\n\nPaO₂/FiO₂ ≥ 140 (D): o critério de oxigenação é PaO₂/FiO₂ ≥ 150–200, com FiO₂ ≤ 0,4–0,5.",
+    "tip": "Pronto para o TRE: causa resolvida, desperto, tosse eficaz, PaO₂/FiO₂ ≥ 150–200 com FiO₂ ≤ 0,4 e PEEP ≤ 5–8 cmH₂O, FC ≤ 140 e sem vasopressor relevante.",
+    "reference": "Associação de Medicina Intensiva Brasileira (AMIB) e SBPT. Diretrizes Brasileiras de Ventilação Mecânica, 2013. Boles JM et al. Weaning from mechanical ventilation. Eur Respir J, 2007.",
     "tags": [
-      "transtornos mentais comuns",
-      "atenção primária",
-      "saúde mental"
+      "desmame da ventilação mecânica",
+      "teste de respiração espontânea",
+      "terapia intensiva"
     ]
   },
   {
-    "id": "famerp2026-21",
+    "id": "famerp2025-25",
     "topography": "5.1",
-    "topic": "Mioma uterino",
+    "topic": "Câncer de colo uterino",
     "module": "Ginecologia e Obstetrícia",
-    "text": "Mulher, 38 anos, nuligesta com desejo reprodutivo, procura ambulatório de ginecologia com queixa de aumento do volume do fluxo menstrual há 6 meses. A ultrassonografia pélvica endovaginal evidenciou dois nódulos de mioma, sendo o maior em parede uterina anterior de 2 x 3 cm (FIGO 1) e o menor com 1,5 x 2 cm (FIGO 4).\n\nAssinale a melhor alternativa para o tratamento definitivo do quadro:",
+    "text": "Mulher, 35 anos de idade, G=2 P=2 (N) A=0, colhe sua Colpocitologia Oncótica de rotina, cujo resultado veio LSIL (Lesão Intra-epitelial de Baixo grau).\n\nDe acordo com as Diretrizes Brasileiras para Rastreamento de Câncer do Colo Uterino, 2016, qual a próxima conduta?",
     "options": [
-      "Curetagem uterina para remoção de leiomioma FIGO 4",
-      "Anti-inflamatório e ácido tranexâmico para controle do sangramento",
-      "Miomectomia do leiomioma FIGO 1 por histeroscopia cirúrgica",
-      "Propor tratamento com anticoncepcional combinado de uso contínuo"
+      "Fazer Colposcopia",
+      "Repetir a Colpocitologia Oncótica em 6 meses",
+      "Repetir a Colpocitologia Oncótica em 1 ano",
+      "Repetir a Colpocitologia Oncótica em 3 anos"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Pelas Diretrizes Brasileiras de 2016, em mulheres com 25 anos ou mais e citologia com LSIL, a conduta é repetir a citologia em 6 meses. A maioria das lesões de baixo grau regride espontaneamente.\n\nSe duas citologias seguidas forem negativas, volta-se ao rastreamento trienal; se qualquer citologia repetida mostrar alteração igual ou mais grave, encaminha-se à colposcopia. (Abaixo de 25 anos, repete-se em 3 anos.)",
+    "commentary": "Colposcopia (A): é a conduta para HSIL, ASC-H, AGC ou LSIL persistente, não para o primeiro LSIL.\n\nRepetir em 1 ano (C): o intervalo para LSIL em ≥ 25 anos é de 6 meses.\n\nRepetir em 3 anos (D): é a conduta para LSIL em mulheres com menos de 25 anos, ou o rastreamento de rotina após exames normais.",
+    "tip": "LSIL: ≥ 25 anos → repetir em 6 meses; < 25 anos → repetir em 3 anos.",
+    "reference": "INCA. Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, 2ª ed., 2016.",
+    "tags": [
+      "LSIL",
+      "rastreamento de câncer do colo",
+      "citologia oncótica",
+      "diretrizes brasileiras"
+    ]
+  },
+  {
+    "id": "famerp2026-66",
+    "topography": "16",
+    "topic": "Hérnias",
+    "module": "Cirurgia",
+    "text": "Mulher de 60 anos refere abaulamento doloroso na região inguinal direita há 3 meses, que desaparece quando se deita. Ao exame físico, observa-se presença de hérnia femoral redutível.\n\nQual é a estrutura anatômica determinante para a diferenciação clínica entre as hérnias inguinais e femorais?",
+    "options": [
+      "Anel inguinal interno",
+      "Fáscia transversalis",
+      "Ligamento inguinal",
+      "Vasos epigástricos inferiores"
     ],
     "correctAnswer": 2,
-    "explanation": "Nuligesta de 38 anos com desejo reprodutivo e sangramento menstrual aumentado. Pela classificação FIGO, o mioma FIGO 1 é submucoso com menos de 50% de componente intramural — é ele que distorce a cavidade e causa o sangramento. O FIGO 4 é intramural, sem contato com a cavidade, e de 2 cm, sem indicação de tratamento.\n\nO tratamento definitivo que preserva a fertilidade é a miomectomia histeroscópica do mioma FIGO 1 (indicada para FIGO 0, 1 e, em mãos experientes, 2).",
-    "commentary": "Curetagem para o FIGO 4 (A): a curetagem não remove mioma, e o FIGO 4 é intramural, sem acesso pela cavidade.\n\nAINE e ácido tranexâmico (B): controlam o sangramento, mas não são tratamento definitivo.\n\nAnticoncepcional contínuo (D): controle sintomático; impede a gestação desejada e não trata o mioma submucoso.",
-    "tip": "Mioma submucoso FIGO 0–1 (e 2 selecionado) + sangramento ou infertilidade = miomectomia histeroscópica.",
-    "reference": "Munro MG et al. The two FIGO systems for normal and abnormal uterine bleeding symptoms and classification of causes of AUB (PALM-COEIN). Int J Gynaecol Obstet, 2018. FEBRASGO. Miomatose uterina — Protocolo, 2021.",
+    "explanation": "O ligamento inguinal é o marco que separa os dois tipos: as hérnias inguinais (diretas e indiretas) se exteriorizam ACIMA do ligamento inguinal, pelo canal inguinal; as hérnias femorais passam ABAIXO dele, pelo canal femoral (medialmente à veia femoral). A hérnia femoral é mais comum em mulheres e tem alto risco de encarceramento e estrangulamento, por isso deve ser sempre operada.",
+    "commentary": "Anel inguinal interno (A): é por onde passa a hérnia inguinal indireta; não diferencia inguinal de femoral.\n\nFáscia transversalis (B): sua fraqueza no triângulo de Hesselbach causa a hérnia direta.\n\nVasos epigástricos inferiores (D): diferenciam hérnia inguinal direta (medial a eles) de indireta (lateral).",
+    "tip": "Acima do ligamento inguinal = inguinal; abaixo = femoral. Vasos epigástricos: medial = direta, lateral = indireta.",
+    "reference": "HerniaSurge Group. International guidelines for groin hernia management. Hernia, 2018. Sabiston Textbook of Surgery, 21ª ed. — Hérnias.",
     "tags": [
-      "mioma submucoso",
-      "classificação FIGO",
-      "miomectomia histeroscópica",
-      "sangramento uterino anormal"
+      "hérnia femoral",
+      "ligamento inguinal",
+      "hérnia inguinal",
+      "anatomia cirúrgica"
     ]
   },
   {
-    "id": "hsrc2026-41",
-    "topography": "15",
-    "topic": "Saúde do trabalhador",
-    "module": "Saúde Coletiva",
-    "text": "A Norma Regulamentadora n.º 1 que trata das disposições gerais e gerenciamento de riscos ocupacionais, incluiu explicitamente que a partir de 2022 as organizações obrigadas a constituir CIPA nos termos da NR-05 devem adotar medidas com vistas à prevenção e ao combate do",
-    "options": [
-      "Assédio moral e discriminação de raça.",
-      "Assédio sexual e às demais formas de violência no âmbito do trabalho.",
-      "Assédio moral e discriminação de gênero.",
-      "Assédio sexual e discriminação de credo religioso.",
-      "Assédio moral e discriminação de trabalhadores PCD."
-    ],
-    "correctAnswer": 1,
-    "explanation": "A Lei 14.457/2022 alterou a NR-5 e passou a chamar a CIPA de Comissão Interna de Prevenção de Acidentes e de Assédio. As empresas obrigadas a constituir CIPA devem adotar medidas de prevenção e combate ao assédio sexual e às demais formas de violência no trabalho, como regras de conduta, canais de denúncia e capacitação anual.",
-    "commentary": "Assédio moral e discriminação racial (A): o texto legal fala em assédio sexual e demais formas de violência, não destacando apenas raça.\n\nAssédio moral e discriminação de gênero (C): o foco explícito da lei é o assédio sexual.\n\nAssédio sexual e discriminação religiosa (D): a lei não especifica credo; fala em todas as formas de violência.\n\nAssédio moral e PCD (E): não corresponde ao texto.",
-    "reference": "Lei nº 14.457/2022 / Norma Regulamentadora nº 5 (Portaria MTP 4.219/2022)",
-    "tags": [
-      "saúde do trabalhador",
-      "CIPA",
-      "assédio sexual",
-      "normas regulamentadoras"
-    ],
-    "tip": "Desde 2022 a CIPA é \"de Prevenção de Acidentes e de Assédio\"."
-  },
-  {
-    "id": "amrigs2025-24",
+    "id": "amp2026-69",
+    "topography": "3.3",
+    "topic": "Câncer de vesícula",
     "module": "Cirurgia",
-    "text": "Em pacientes adultos, obstruções intestinais em cólon causadas por doença neoplásica são mais comuns no:",
+    "text": "Durante avaliação de rotina, uma mulher de 63 anos, assintomática, realiza ultrassonografia abdominal que identifica imagem polipoide única na vesícula biliar, medindo 11 mm, sem sinais de colelitíase. A paciente não apresenta colangite esclerosante primária ou história familiar de câncer de vesícula. Exames laboratoriais estão normais. Com base nos critérios atuais, qual deve ser a conduta mais adequada?",
     "options": [
-      "Ângulo hepático.",
-      "Ângulo esplênico.",
-      "Cólon transverso.",
-      "Cólon esquerdo."
+      "Iniciar tratamento com ácido ursodesoxicólico e acompanhar clinicamente.",
+      "Repetir a ultrassonografia abdominal em 6 meses para avaliar crescimento da lesão.",
+      "Realizar ressonância magnética das vias biliares para melhor caracterização do pólipo.",
+      "Indicar colecistectomia laparoscópica eletiva devido ao risco aumentado de malignidade.",
+      "Observar anualmente com exames de imagem, pois pólipos < 2 cm não exigem intervenção."
     ],
     "correctAnswer": 3,
-    "explanation": "A obstrução do cólon por câncer é mais frequente no cólon esquerdo (descendente e sigmoide): a luz é mais estreita, as fezes são mais sólidas e os tumores costumam ser anulares e estenosantes (\"em anel de guardanapo\"). No cólon direito, de luz maior e fezes líquidas, o tumor tende a sangrar (anemia) antes de obstruir.",
-    "commentary": "Ângulo hepático (A): pertence ao cólon direito/transverso, menos sujeito a obstrução.\n\nÂngulo esplênico (B): é um ponto de estreitamento e pode obstruir, mas, isoladamente, não é a localização mais comum.\n\nCólon transverso (C): menos frequente que o cólon esquerdo como sede de câncer obstrutivo.",
-    "reference": "Sabiston — Tratado de Cirurgia / Diretrizes da SBCP",
+    "explanation": "Pólipo de vesícula biliar ≥ 10 mm tem risco aumentado de malignidade e indicação de colecistectomia, mesmo sem sintomas. Outros fatores de risco são idade > 50–60 anos, crescimento ≥ 2 mm, base séssil, colangite esclerosante e etnia indiana. Nesta paciente de 63 anos, com pólipo de 11 mm, a colecistectomia laparoscópica eletiva está indicada.",
+    "commentary": "Ácido ursodesoxicólico (A): não trata pólipos.\n\nRepetir o ultrassom em 6 meses (B) ou anualmente (E): o seguimento é para pólipos menores que 10 mm; o limite de cirurgia é 10 mm, não 20 mm.\n\nRessonância (C): não muda a indicação já definida pelo tamanho.",
+    "reference": "ESGAR/EAES/EFISDS/ESGE 2022 — Management of gallbladder polyps",
     "tags": [
-      "câncer colorretal",
-      "obstrução intestinal",
-      "cólon esquerdo"
+      "pólipo de vesícula biliar",
+      "colecistectomia",
+      "câncer de vesícula"
     ],
-    "tip": "Cólon esquerdo obstrui; cólon direito sangra (anemia)."
+    "tip": "Pólipo de vesícula ≥ 10 mm = colecistectomia."
   },
   {
-    "id": "amrigs2026-15",
-    "module": "Clínica Médica",
-    "text": "Em relação à dengue, analise as seguintes assertivas:\nI. Na febre hemorrágica da dengue, a trombocitopenia com plaquetas abaixo de 100.000 células/ml e alargamento do tempo de protrombina são característicos.\nII. A leucopenia desenvolve-se no segundo dia de febre, caindo para 1.000 a 2.000 células/ml no quinto ou sexto dia.\nIII. O anticorpo IgM surge de 3 a 5 dias após a infecção, e o IgG, de 9 a 10 dias após.\n\nQuais estão corretas?",
-    "options": [
-      "Apenas I e II.",
-      "Apenas I e III.",
-      "Apenas II e III.",
-      "I, II e III."
-    ],
-    "correctAnswer": 3,
-    "explanation": "A banca considerou corretas as três assertivas, com dados clássicos do Harrison:\n\nI: na febre hemorrágica da dengue, plaquetas abaixo de 100.000/mm³ e alargamento do tempo de protrombina são característicos.\nII: a leucopenia começa por volta do segundo dia de febre e pode chegar a 1.000–2.000/mm³ no 5º–6º dia.\nIII: na infecção primária, IgM surge em 3 a 5 dias e IgG em cerca de 9 a 10 dias.",
-    "commentary": "Apenas I e II (A), Apenas I e III (B), Apenas II e III (C): todas deixam de fora uma assertiva considerada correta.\n\nObservação: \"febre hemorrágica da dengue\" é terminologia antiga; a classificação atual (OMS 2009, MS) usa dengue sem sinais de alarme, com sinais de alarme e grave.",
-    "reference": "Harrison — Medicina Interna (arboviroses) / Ministério da Saúde — Dengue: diagnóstico e manejo clínico (2024)",
-    "tags": [
-      "dengue",
-      "plaquetopenia",
-      "leucopenia",
-      "sorologia"
-    ],
-    "tip": "Dengue: leucopenia precoce e plaquetopenia; IgM a partir do 5º–6º dia."
-  },
-  {
-    "id": "cerman2025-53",
-    "topography": "5.1",
-    "topic": "Vaginose bacteriana",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "Uma paciente de 28 anos apresenta queixa de corrimento vaginal branco-acinzentado, com odor fétido semelhante a peixe, especialmente após as relações sexuais. Ao exame microscópico, nota-se a presença de células clue (células epiteliais cobertas por bactérias). Qual é o diagnóstico mais provável e o tratamento de escolha para essa condição?",
-    "options": [
-      "(A) Vaginose bacteriana – metronidazol 500 mg, duas vezes ao dia por 7 dias.",
-      "(B) Vaginose bacteriana – Azitromicina 1g dose única por via oral.",
-      "(C) Tricomoníase – Azitromicina 1g, dose única por via oral.",
-      "(D) Tricomoníase – metronidazol 2g, dose única por via oral."
-    ],
-    "correctAnswer": 0,
-    "explanation": "Corrimento branco-acinzentado, homogêneo, com odor de peixe que piora após o coito (liberação de aminas com o pH alcalino do sêmen) e clue cells: vaginose bacteriana (critérios de Amsel). O tratamento de escolha é metronidazol 500 mg VO de 12 em 12 horas por 7 dias.",
-    "commentary": "Vaginose com azitromicina (B): azitromicina não trata vaginose bacteriana.\n\nTricomoníase com azitromicina (C): o diagnóstico é vaginose (clue cells); e tricomoníase se trata com metronidazol.\n\nTricomoníase com metronidazol 2 g (D): o corrimento da tricomoníase é amarelo-esverdeado e bolhoso, com colo em framboesa e protozoário móvel ao exame a fresco.",
-    "reference": "Ministério da Saúde — PCDT para Atenção Integral às Pessoas com IST (2022)",
-    "tags": [
-      "vaginose bacteriana",
-      "clue cells",
-      "metronidazol",
-      "critérios de Amsel"
-    ]
-  },
-  {
-    "id": "cerman2026-41",
-    "topography": "5.1",
-    "topic": "Contracepção",
-    "module": "Ginecologia e Obstetrícia",
-    "text": "De acordo com os critérios de elegibilidade da OMS (2015), o uso de métodos contraceptivos injetáveis mensais NÃO deve ser indicado em mulheres que fazem uso de:",
-    "options": [
-      "(A) rifampicina.",
-      "(B) lamotrigina.",
-      "(C) cetoconazol.",
-      "(D) zidovudina."
-    ],
-    "correctAnswer": 0,
-    "explanation": "A rifampicina é um potente indutor enzimático hepático e acelera o metabolismo dos estrogênios e progestagênios, reduzindo a eficácia de métodos hormonais combinados. Pelos critérios da OMS (2015), seu uso classifica o injetável mensal (combinado) como categoria 3 — o método não deve ser indicado. Prefere-se DIU de cobre, DIU hormonal ou acetato de medroxiprogesterona trimestral.",
-    "commentary": "Lamotrigina (B): os combinados reduzem o nível da lamotrigina, mas o anticonvulsivante não reduz a eficácia do contraceptivo; para o injetável mensal é categoria 2/3 conforme a fonte, menos restritivo que a rifampicina.\n\nCetoconazol (C): antifúngicos não reduzem a eficácia dos contraceptivos (categoria 1).\n\nZidovudina (D): os ITRN não interagem de forma relevante (categoria 1).",
-    "reference": "OMS — Critérios Médicos de Elegibilidade para Uso de Métodos Anticoncepcionais, 5ª ed. (2015)",
-    "tags": [
-      "contracepção",
-      "critérios de elegibilidade da OMS",
-      "rifampicina",
-      "interação medicamentosa"
-    ]
-  },
-  {
-    "id": "enare2025-40",
-    "module": "Cirurgia",
-    "text": "Durante o pneumoperitônio para realização de cirurgias por acesso videolaparoscópico, algumas alterações hemodinâmicas podem ocorrer no paciente.\n\nEm relação a essas alterações, é correto afirmar que:",
-    "options": [
-      "há diminuição do débito cardíaco, com aumento do retorno venoso",
-      "ocorre hipotensão por compressão mecânica da aorta abdominal",
-      "a oligúria ocorre devido à hipercapnia e retenção de bicarbonato pelos rins",
-      "a bradicardia ocorre por estímulo vasovagal pela distensão abdominal",
-      "arritmias cardíacas e outros distúrbios de ritmo cardíaco são raros"
-    ],
-    "correctAnswer": 3,
-    "explanation": "Durante a insuflação do pneumoperitônio, a distensão súbita do peritônio estimula o vago e pode causar bradicardia, às vezes intensa (até assistolia), sobretudo na insuflação inicial. É uma das alterações hemodinâmicas descritas na videolaparoscopia, tratada com desinsuflação e atropina.",
-    "commentary": "Diminuição do débito com aumento do retorno venoso (A): a pressão intra-abdominal comprime a veia cava e reduz o retorno venoso.\n\nHipotensão por compressão da aorta (B): o efeito habitual é aumento da resistência vascular sistêmica e da pressão arterial (pela compressão arterial e pela liberação de catecolaminas e vasopressina).\n\nOligúria por hipercapnia e retenção de bicarbonato (C): a oligúria decorre da compressão de veias e parênquima renal e da liberação de ADH, não da retenção de bicarbonato.\n\nArritmias raras (E): arritmias são frequentes pela hipercapnia, estímulo vagal e embolia gasosa.\n\nGabarito oficial do ENARE 2025.",
-    "reference": "Miller's Anesthesia, 9ª ed. (anestesia para cirurgia laparoscópica)",
-    "tags": [
-      "videolaparoscopia",
-      "pneumoperitônio",
-      "fisiologia cirúrgica",
-      "anestesiologia"
-    ],
-    "tip": "Insuflação do pneumoperitônio pode dar bradicardia vagal: desinsufla e atropina."
-  },
-  {
-    "id": "fubog2025-23",
+    "id": "amrigs2025-75",
     "module": "Pediatria",
-    "text": "A última doença erradicada no Brasil graças às campanhas de vacinação do Programa Nacional de Imunização (PNI) é:",
+    "text": "Criança, 7 anos, há 2 semanas em uso de fenitoína oral para tratamento de epilepsia de diagnóstico recente. Inicia com febre, linfadenopatia e rash pruriginoso de acometimento de cerca de 5% do tegumento cutâneo, associado a áreas de formação de bolhas, inclusive em mucosas. A principal hipótese diagnóstica é:",
     "options": [
-      "Sarampo",
-      "Rubéola",
-      "Varíola",
-      "Poliomielite"
+      "Stevens-Johnson.",
+      "Meningite viral aguda.",
+      "Pênfigo foliáceo.",
+      "Meningite bacteriana aguda."
     ],
-    "correctAnswer": 1,
-    "explanation": "O Brasil recebeu em 2015 a certificação da OPAS/OMS de eliminação da rubéola e da síndrome da rubéola congênita, graças às campanhas de vacinação do PNI — a mais recente doença eliminada entre as opções. O termo correto é eliminação (interrupção da transmissão endêmica no país), não erradicação.",
-    "commentary": "Sarampo (A): o Brasil foi certificado como livre do sarampo em 2016, perdeu a certificação em 2019 com a volta da circulação e só a recuperou em 2024.\n\nVaríola (C): é a única doença humana erradicada no mundo (1980); no Brasil o último caso foi em 1971 — não é a mais recente.\n\nPoliomielite (D): eliminada no Brasil em 1994, antes da rubéola.",
-    "reference": "Ministério da Saúde – Programa Nacional de Imunizações; OPAS – Certificação de eliminação da rubéola nas Américas (2015)",
+    "correctAnswer": 0,
+    "explanation": "Febre, rash com bolhas e acometimento de mucosas 1 a 3 semanas após iniciar fenitoína (anticonvulsivante aromático) sugerem reação cutânea grave a fármaco. Com descolamento de menos de 10% da superfície corporal, o diagnóstico é síndrome de Stevens-Johnson (10–30% = sobreposição; >30% = necrólise epidérmica tóxica). A conduta é suspender o fármaco e dar suporte.",
+    "commentary": "Meningite viral (B) e bacteriana (D): não explicam bolhas cutâneas e mucosas; não há sinais meníngeos.\n\nPênfigo foliáceo (C): bolhas superficiais, sem acometimento de mucosas e sem relação temporal com fármaco.",
+    "reference": "SBD — Consenso sobre reações cutâneas graves a medicamentos / Nelson Textbook of Pediatrics",
     "tags": [
-      "rubéola",
-      "eliminação de doenças",
-      "PNI",
-      "imunizações"
+      "síndrome de Stevens-Johnson",
+      "farmacodermia",
+      "fenitoína",
+      "necrólise epidérmica tóxica"
     ],
-    "tip": "Eliminação (país sem transmissão endêmica) ≠ erradicação (agente extinto no mundo)."
+    "tip": "SSJ <10% da pele; NET >30%. Anticonvulsivante aromático é causa clássica."
+  },
+  {
+    "id": "cerman2025-1",
+    "topography": "1.5",
+    "topic": "Hipotireoidismo",
+    "module": "Clínica Médica",
+    "text": "Uma paciente de 30 anos, previamente saudável e assintomática, apresenta TSH elevado e T4 livre normal. Ao exame físico, não há sinais de bócio. Qual é a conduta mais apropriada neste caso?",
+    "options": [
+      "(A) Iniciar levotiroxina.",
+      "(B) Realizar cintilografia da tireoide.",
+      "(C) Repetir o TSH, T4 livre e anticorpo anti tireoperoxidase em 3 a 6 meses.",
+      "(D) Dosar tireoglobulina, anti-tireoglobulina e anti tireoperoxidase para esclarecer a etiologia."
+    ],
+    "correctAnswer": 2,
+    "explanation": "TSH elevado com T4 livre normal é hipotireoidismo subclínico. Em mulher jovem, assintomática, sem bócio e fora da gestação, o primeiro passo é confirmar: repetir TSH e T4 livre em 3 a 6 meses (o TSH se normaliza espontaneamente em boa parte dos casos) e dosar o anti-TPO, que indica tireoidite de Hashimoto e maior risco de progressão para hipotireoidismo clínico.\n\nO tratamento é considerado com TSH ≥ 10 mUI/L, sintomas, desejo de gestar ou anti-TPO positivo com TSH em elevação.",
+    "commentary": "Iniciar levotiroxina (A): não se trata um único TSH levemente alterado em paciente assintomática; antes, confirma-se a persistência.\n\nCintilografia (B): serve para investigar hipertireoidismo e nódulos, não hipotireoidismo.\n\nTireoglobulina e anti-Tg (D): a tireoglobulina é marcador de seguimento do câncer diferenciado de tireoide; para etiologia do hipotireoidismo, basta o anti-TPO.",
+    "reference": "Consenso da SBEM sobre hipotireoidismo subclínico (2013) / ATA Guidelines for the Treatment of Hypothyroidism (2014)",
+    "tags": [
+      "hipotireoidismo subclínico",
+      "TSH",
+      "anti-TPO",
+      "tireoide"
+    ]
+  },
+  {
+    "id": "cerman2026-4",
+    "topography": "1.5",
+    "topic": "Hipertireoidismo",
+    "module": "Clínica Médica",
+    "text": "Qual dos seguintes achados é mais característico do hipertireoidismo por Doença de Graves?",
+    "options": [
+      "(A) Exoftalmia.",
+      "(B) Bradicardia.",
+      "(C) Mixedema.",
+      "(D) Hiponatremia."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A oftalmopatia (exoftalmia), junto com o mixedema pré-tibial e a acropaquia, é manifestação específica da doença de Graves, causada pelos anticorpos contra o receptor do TSH (TRAb), que também atuam sobre fibroblastos orbitários. Não ocorre em outras causas de hipertireoidismo.",
+    "commentary": "Bradicardia (B): o hipertireoidismo causa taquicardia e fibrilação atrial.\n\nMixedema (C): o mixedema generalizado é do hipotireoidismo; na Graves, há o mixedema pré-tibial localizado — mas a alternativa fala em mixedema genérico, e a exoftalmia é o achado mais característico.\n\nHiponatremia (D): não é achado típico do hipertireoidismo.",
+    "reference": "Consenso Brasileiro para o diagnóstico e tratamento do hipertireoidismo (SBEM, 2013) / ATA Guidelines (2016)",
+    "tags": [
+      "doença de Graves",
+      "hipertireoidismo",
+      "oftalmopatia de Graves"
+    ]
+  },
+  {
+    "id": "enare2025-19",
+    "module": "Clínica Médica",
+    "text": "Um homem de 50 anos em tratamento para hepatite C, com cirrose hepática compensada CHILD PUGH A, tem histórico de falha terapêutica com uso prévio de antivirais de ação direta. O médico assistente do serviço de atenção especializada prescreveu um novo esquema terapêutico, recomendado pelo Ministério da Saúde.\n\nO esquema prescrito foi:",
+    "options": [
+      "sofosbuvir/velpastavir/ribavirina por 24 semanas",
+      "sofosbuvir/daclatasvir por 12 semanas",
+      "sofosbuvir/pibrentasvir + glecaprevir por 12 semanas",
+      "sofosbuvir/velpastavir por 12 semanas",
+      "sofosbuvir/ribavirina por 24 semanas"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Para pacientes com hepatite C e falha prévia a esquema com antiviral de ação direta (incluindo inibidores de NS5A), o PCDT do Ministério da Saúde recomenda retratamento com esquema de resgate. Em cirrose compensada (Child-Pugh A), o esquema disponível no SUS é glecaprevir/pibrentasvir associado a sofosbuvir por 12 semanas (a associação de três classes — inibidor de protease, inibidor de NS5A e inibidor de polimerase — aumenta a barreira genética). Inibidores de protease, como o glecaprevir, são contraindicados apenas na cirrose descompensada (Child B/C).",
+    "commentary": "Sofosbuvir/velpatasvir/ribavirina por 24 semanas (A): é opção de retratamento em cirrose descompensada, situação em que inibidores de protease são contraindicados — não é o caso de Child A.\n\nSofosbuvir/daclatasvir por 12 semanas (B): esquema de primeira linha antigo; repeti-lo após falha não supera a resistência.\n\nSofosbuvir/velpatasvir por 12 semanas (D): é esquema de tratamento inicial; não é suficiente como resgate após falha a NS5A.\n\nSofosbuvir/ribavirina por 24 semanas (E): esquema antigo, de baixa eficácia, não recomendado para retratamento.\n\nGabarito oficial do ENARE 2025.",
+    "reference": "Ministério da Saúde – PCDT para Hepatite C e Coinfecções (2019, atualizações)",
+    "tags": [
+      "hepatite C",
+      "antivirais de ação direta",
+      "retratamento",
+      "cirrose",
+      "hepatologia"
+    ],
+    "tip": "Falha a DAA em Child A: sofosbuvir + glecaprevir/pibrentasvir por 12 semanas."
+  },
+  {
+    "id": "fubog2025-4",
+    "module": "Pediatria",
+    "text": "Com relação ao rastreamento para displasia evolutiva do quadril na infância, é CORRETO afirmar:",
+    "options": [
+      "Manobra de Barlow não é mais utilizada no rastreio de displasia do quadril",
+      "O diagnóstico precoce antes dos 3 a 6 meses de idade não impacta na escolha de tratamentos",
+      "Gênero masculino é fator de risco para displasia de quadril",
+      "A manobra de Ortolani provoca a redução do quadril"
+    ],
+    "correctAnswer": 3,
+    "explanation": "No rastreamento da displasia do desenvolvimento do quadril, a manobra de Ortolani reduz um quadril luxado (o “clique” de entrada da cabeça femoral no acetábulo, com abdução), enquanto a de Barlow provoca a luxação de um quadril instável (adução e pressão posterior). Ambas são feitas até cerca de 3 meses. Os fatores de risco são sexo feminino, apresentação pélvica, primogênito, história familiar e oligoâmnio.",
+    "commentary": "Barlow não é mais usada (A): Barlow e Ortolani continuam fazendo parte do exame do recém-nascido.\n\nDiagnóstico precoce não muda o tratamento (B): diagnosticado antes de 6 meses, o tratamento é com suspensório de Pavlik; mais tarde, costuma exigir redução fechada ou aberta.\n\nSexo masculino como fator de risco (C): a DDQ é muito mais frequente no sexo feminino.",
+    "reference": "Sociedade Brasileira de Ortopedia Pediátrica; AAP Clinical Report – Evaluation and Referral for DDH (2016)",
+    "tags": [
+      "displasia do desenvolvimento do quadril",
+      "manobra de Ortolani",
+      "ortopedia pediátrica",
+      "neonatologia"
+    ],
+    "tip": "Ortolani reduz (entra); Barlow luxa (sai)."
+  },
+  {
+    "id": "fubog2025-74",
+    "module": "Ginecologia e Obstetrícia",
+    "text": "Paciente, 45 anos, com queixa de perda urinária ao esforço e sem histórico de cirurgias pélvicas. A conduta mais adequada em relação ao uso do Estudo Urodinâmico (EUD) na abordagem da Incontinência Urinária (IU) feminina é:",
+    "options": [
+      "Solicitar o EUD para todos os casos de IU, a fim de definir a melhor conduta",
+      "Solicitar o EUD antes do tratamento conservador da IU",
+      "Não solicitar o EUD antes do tratamento conservador da IU",
+      "Solicitar o EUD apenas se houver suspeita de disfunção do esvaziamento vesical"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Na incontinência urinária de esforço sem complicadores (sem cirurgia prévia, sem prolapso significativo, sem sintomas de esvaziamento), o diagnóstico é clínico, e o estudo urodinâmico não é necessário antes do tratamento conservador (fisioterapia do assoalho pélvico, mudança de hábitos). Ele fica reservado para casos complexos, falha do tratamento ou antes de cirurgia em situações selecionadas.",
+    "commentary": "EUD para todos os casos (A) e antes do tratamento conservador (B): não muda a conduta inicial e acrescenta custo e desconforto.\n\nEUD só se suspeita de disfunção de esvaziamento (D): é uma das indicações, mas não a única (incontinência mista complexa, falha de tratamento, cirurgia prévia).",
+    "reference": "Febrasgo – Incontinência urinária feminina; AUA/SUFU Guideline on Stress Urinary Incontinence (2023)",
+    "tags": [
+      "incontinência urinária de esforço",
+      "estudo urodinâmico",
+      "uroginecologia"
+    ],
+    "tip": "IUE simples: tratamento conservador sem urodinâmica."
+  },
+  {
+    "id": "viv2026-29",
+    "module": "Pediatria",
+    "text": "O componente anatômico que determina a gravidade clínica e o grau de cianose na Tetralogia de Fallot é:",
+    "options": [
+      "A presença de hipertrofia ventricular direita",
+      "O tamanho da comunicação interventricular",
+      "O grau de obstrução da via de saída do ventrículo direito (estenose pulmonar)",
+      "O grau de dextroposição da aorta"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Na tetralogia de Fallot (CIV ampla, cavalgamento da aorta, obstrução da via de saída do VD e hipertrofia do VD), o grau de obstrução da via de saída do ventrículo direito (estenose pulmonar infundibular/valvar) determina quanto sangue é desviado da direita para a esquerda pela CIV e, portanto, a intensidade da cianose e a gravidade clínica.",
+    "commentary": "Hipertrofia do VD (A): é consequência da obstrução, não determinante da cianose.\n\nTamanho da CIV (B): a CIV é sempre grande (não restritiva) e não modula a cianose.\n\nGrau de dextroposição da aorta (D): não é o principal determinante da gravidade.",
+    "reference": "Nelson – Tratado de Pediatria, 21ª ed.; Sociedade Brasileira de Cardiologia",
+    "tags": [
+      "tetralogia de Fallot",
+      "cardiopatias congênitas cianóticas",
+      "cardiologia pediátrica"
+    ],
+    "tip": "Fallot: mais estenose pulmonar = mais cianose."
   }
 ];
